@@ -38,7 +38,7 @@ jobs:
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: master
-          keep_history: false
+          keep_history: true
           build_dir: ./doc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
