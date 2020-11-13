@@ -27,7 +27,7 @@ git submodule update --init --recursive
 
 mkdir code_build
 cd code_build
-cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -GNinja
+cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DBUILD_TESTING=ON -GNinja
 cmake --build . --parallel $(nproc)
 cd ..
 
