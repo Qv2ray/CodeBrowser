@@ -37,4 +37,3 @@ cd $PROJECT_ROOT_PATH
 
 cp -rvf $PROJECT_ROOT_PATH/woboq_codebrowser/data $PROJECT_ROOT_PATH/doc
 cd $PROJECT_ROOT_PATH/doc
-rm ./index.html
