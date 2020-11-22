@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
 
@@ -31,9 +31,11 @@ jobs:
           sudo apt install -y libgl-dev libx11-dev libxkbcommon-x11-dev libxcb-image0-dev libxcb-icccm4-dev libssl-dev libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0
           sudo apt install -y libprotobuf-dev protobuf-compiler protobuf-c-compiler libgrpc++-dev protobuf-compiler-grpc ninja-build
           sudo apt install -y libcurl4-openssl-dev llvm-9 clang-9 libclang-9-dev
-          QV2RAY_BUILD_BRANCH=dev ./export.sh || true
-          QV2RAY_BUILD_BRANCH=version-v2 ./export.sh || true
-          QV2RAY_BUILD_BRANCH=master ./export.sh || true
+          
+      - run: |
+          QV2RAY_BUILD_BRANCH=dev ./export.sh
+          QV2RAY_BUILD_BRANCH=version-v2 ./export.sh
+          QV2RAY_BUILD_BRANCH=master ./export.sh
 
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
