@@ -2,13 +2,6 @@
 
 echo $QV2RAY_BUILD_BRANCH
 PROJECT_ROOT_PATH=$PWD
-
-git submodule update --init
-cd woboq_codebrowser
-mkdir build; cd build;
-cmake .. -DCMAKE_BUILD_TYPE=Release
-cmake --build . --parallel $(nproc)
-
 cd $PROJECT_ROOT_PATH
 
 OUTPUT_DIRECTORY=$PROJECT_ROOT_PATH/doc/$QV2RAY_BUILD_BRANCH
