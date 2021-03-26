@@ -11,11 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-          
-      - name: Debugging with tmate
-        # You may pin to the exact commit or the version.
-        # uses: mxschmitt/action-tmate@03e13f10cd0b4e4d7002dbb0f55e7dd92b7fb9d6
-        uses: mxschmitt/action-tmate@v3.4
       - run: |
           sudo apt update
           sudo apt install -y libcurl4-openssl-dev llvm-11 llvm-11-dev clang-11 libclang-11-dev ninja-build
