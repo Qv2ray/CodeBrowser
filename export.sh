@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo $QV2RAY_BUILD_BRANCH
+
 PROJECT_ROOT_PATH=$PWD
 cd $PROJECT_ROOT_PATH
 
