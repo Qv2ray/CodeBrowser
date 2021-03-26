@@ -17,7 +17,8 @@ jobs:
         uses: mxschmitt/action-tmate@v3.4
       - run: |
           sudo apt update
-          sudo apt install -y libcurl4-openssl-dev llvm llvm-dev clang libclang-dev ninja-build
+          sudo apt install -y libcurl4-openssl-dev llvm-11 llvm-11-dev clang-11 libclang-11-dev ninja-build
+          sudo apt remove -y llvm-8 llvm-9 llvm-10
           git submodule update --init
           cd woboq_codebrowser
           mkdir build; cd build;
