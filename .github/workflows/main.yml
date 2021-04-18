@@ -40,6 +40,7 @@ jobs:
           sudo apt install -y libprotobuf-dev protobuf-compiler protobuf-c-compiler libgrpc++-dev protobuf-compiler-grpc
 
       - run: |
+          QV2RAY_BUILD_BRANCH=dev-v3 ./export.sh
           QV2RAY_BUILD_BRANCH=dev ./export.sh
           QV2RAY_BUILD_BRANCH=version-v2 ./export.sh
           QV2RAY_BUILD_BRANCH=master ./export.sh
