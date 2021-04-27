@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/extension_set.h' l='408' type='google::protobuf::uint8 * google::protobuf::internal::ExtensionSet::InternalSerializeWithCachedSizesToArray(int start_field_number, int end_field_number, bool deterministic, google::protobuf::uint8 * target) const'/>
+<doc f='include/google/protobuf/extension_set.h' l='403'>// Same as SerializeWithCachedSizes, but without any bounds checking.
+  // The caller must ensure that target has sufficient capacity for the
+  // serialized extensions.
+  //
+  // Returns a pointer past the last written byte.</doc>

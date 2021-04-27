@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/atomic-ops.h' l='26' type='void cpu_relax()'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/atomic-ops.h' l='53' ll='59' macro='1' type='void cpu_relax()'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='103' u='c' c='uv__async_spin'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/spinlock.h' l='38' u='c' c='uv_spinlock_lock'/>

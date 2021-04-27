@@ -1,0 +1,8 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='599' type='grpc_metadata_array *'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='556' u='w' c='_ZN4grpc8internal22CallOpClientRecvStatus5AddOpEP7grpc_opPm'/>
+<offset>0</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='594'>/** ownership of the array is with the caller, but ownership of the
+          elements stays with the call object (ie key, value members are owned
+          by the call object, trailing_metadata-&gt;array is owned by the caller).
+          After the operation completes, call grpc_metadata_array_destroy on
+          this value, or reuse it in a future op. */</doc>

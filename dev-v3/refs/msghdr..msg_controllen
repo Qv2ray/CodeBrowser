@@ -1,0 +1,13 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='266' type='size_t'/>
+<offset>320</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='266'>/* Ancillary data buffer length.
+				   !! The type should be socklen_t but the
+				   definition of the kernel is incompatible
+				   with this.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='687' u='r' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='689' macro='1' u='r' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='868' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='870' macro='1' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1063' macro='1' u='r' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1166' u='w' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='211' u='w' c='uv__udp_recvmmsg'/>

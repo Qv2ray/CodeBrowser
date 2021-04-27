@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='505' type='QRcode_List * QRcode_encodeString8bitStructured(const char * string, int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='501'>/**
+ * Same to QRcode_encodeStringStructured(), but encode whole data in 8-bit mode.
+ * @warning This function is THREAD UNSAFE when pthread is disabled.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='846' ll='852' type='QRcode_List * QRcode_encodeString8bitStructured(const char * string, int version, QRecLevel level)'/>

@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='882' type='int uv_getaddrinfo(uv_loop_t * loop, uv_getaddrinfo_t * req, uv_getaddrinfo_cb getaddrinfo_cb, const char * node, const char * service, const struct addrinfo * hints)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='141' ll='220' type='int uv_getaddrinfo(uv_loop_t * loop, uv_getaddrinfo_t * req, uv_getaddrinfo_cb cb, const char * hostname, const char * service, const struct addrinfo * hints)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='37' u='a' c='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='43' u='c' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>

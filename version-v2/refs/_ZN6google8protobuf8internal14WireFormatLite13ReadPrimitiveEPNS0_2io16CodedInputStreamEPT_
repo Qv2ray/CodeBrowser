@@ -1,0 +1,33 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='277' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, CType * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='56' ll='64' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::int32 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='65' ll='73' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::int64 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='74' ll='79' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::uint32 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='80' ll='85' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::uint64 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='86' ll='94' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::int32 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='95' ll='103' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::int64 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='104' ll='109' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::uint32 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='110' ll='115' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::uint64 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='116' ll='124' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::int32 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='125' ll='133' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, google::protobuf::int64 * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='134' ll='142' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, float * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='143' ll='151' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, double * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='152' ll='160' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, bool * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='161' ll='169' type='static bool google::protobuf::internal::WireFormatLite::ReadPrimitive(io::CodedInputStream * input, int * value)'/>
+<doc f='include/google/protobuf/wire_format_lite_inl.h' l='54'>// Implementation details of ReadPrimitive.</doc>
+<use f='/v2ray_api.pb.cc' l='454' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='733' u='c' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1248' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1926' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1940' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1954' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1968' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1982' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1996' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2010' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2024' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2038' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2052' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='487' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='502' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='802' u='c' c='_ZN5v2ray4core3app6router12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1139' u='c' c='_ZN5v2ray4core3app6router4CIDR27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>

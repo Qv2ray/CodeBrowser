@@ -1,0 +1,15 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='38' c='ZXing::Reader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='34' ll='43'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='56' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='80' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<size>48</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='29'>/**
+* This implementation can detect and decode QR Codes in an image.
+*
+* @author Sean Owen
+*/</doc>
+<fun r='_ZN5ZXing6QRCode6ReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<mbr r='ZXing::QRCode::Reader::_tryHarder' o='64' t='bool'/>
+<mbr r='ZXing::QRCode::Reader::_isPure' o='72' t='bool'/>
+<mbr r='ZXing::QRCode::Reader::_charset' o='128' t='std::string'/>

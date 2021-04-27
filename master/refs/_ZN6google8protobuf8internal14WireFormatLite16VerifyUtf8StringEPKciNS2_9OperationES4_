@@ -1,0 +1,22 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='345' type='static bool google::protobuf::internal::WireFormatLite::VerifyUtf8String(const char * data, int size, google::protobuf::internal::WireFormatLite::Operation op, const char * field_name)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='344'>// Returns true if the data is valid UTF-8.</doc>
+<use f='include/google/protobuf/wire_format.h' l='310' u='c' c='_ZN6google8protobuf8internal10WireFormat16VerifyUTF8StringEPKciNS2_9OperationE'/>
+<use f='include/google/protobuf/wire_format.h' l='322' u='c' c='_ZN6google8protobuf8internal10WireFormat26VerifyUTF8StringNamedFieldEPKciNS2_9OperationES4_'/>
+<use f='/v2ray_api.pb.cc' l='438' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='490' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='519' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_api.pb.cc' l='717' u='c' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='769' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='798' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_api.pb.cc' l='1232' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1284' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1313' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='361' u='c' c='_ZN22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='429' u='c' c='_ZNK22DomainObject_Attribute24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='463' u='c' c='_ZNK22DomainObject_Attribute39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='707' u='c' c='_ZN12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='763' u='c' c='_ZNK12DomainObject24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='802' u='c' c='_ZNK12DomainObject39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='1016' u='c' c='_ZN7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1066' u='c' c='_ZNK7GeoSite24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1099' u='c' c='_ZNK7GeoSite39InternalSerializeWithCachedSizesToArrayEbPh'/>

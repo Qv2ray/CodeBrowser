@@ -1,0 +1,22 @@
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='144'/>
+<def f='include/grpcpp/impl/codegen/rpc_service_method.h' l='39' ll='54'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='61' c='_ZN4grpc8internal16RpcServiceMethodC1EPKcNS0_9RpcMethod7RpcTypeEPNS0_13MethodHandlerE'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='76' c='_ZNK4grpc8internal16RpcServiceMethod7handlerEv'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='77' c='_ZN4grpc8internal16RpcServiceMethod10SetHandlerEPNS0_13MethodHandlerE'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='99'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='167' c='_ZN4grpc7Service18MarkMethodStreamedEiPNS_8internal13MethodHandlerE'/>
+<ovr f='include/grpcpp/impl/codegen/method_handler_impl.h' l='53' c='grpc::internal::RpcMethodHandler'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='53'/>
+<ovr f='include/grpcpp/impl/codegen/method_handler_impl.h' l='100' c='grpc::internal::ClientStreamingHandler'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='100'/>
+<ovr f='include/grpcpp/impl/codegen/method_handler_impl.h' l='143' c='grpc::internal::ServerStreamingHandler'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='143'/>
+<ovr f='include/grpcpp/impl/codegen/method_handler_impl.h' l='195' c='grpc::internal::TemplatedBidiStreamingHandler'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='195'/>
+<ovr f='include/grpcpp/impl/codegen/method_handler_impl.h' l='278' c='grpc::internal::ErrorMethodHandler'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='278'/>
+<use f='include/grpcpp/server.h' l='253'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/rpc_service_method.h' l='38'>/// Base class for running an RPC handler.</doc>
+<fun r='_ZN4grpc8internal13MethodHandlerD1Ev'/>
+<fun r='_ZN4grpc8internal13MethodHandler10RunHandlerERKNS1_16HandlerParameterE'/>

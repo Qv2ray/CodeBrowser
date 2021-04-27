@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='213' type='int QRinput_appendECIheader(QRinput * input, unsigned int ecinum)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='202'>/**
+ * Append ECI header.
+ * @param input input object.
+ * @param ecinum ECI indicator number (0 - 999999)
+ * @retval 0 success.
+ * @retval -1 an error occurred and errno is set to indeicate the error.
+ *            See Execptions for the details.
+ * @throw ENOMEM unable to allocate memory.
+ * @throw EINVAL input data is invalid.
+ *
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='276' ll='292' type='int QRinput_appendECIheader(QRinput * input, unsigned int ecinum)'/>

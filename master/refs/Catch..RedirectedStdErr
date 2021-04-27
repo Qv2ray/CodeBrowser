@@ -1,0 +1,13 @@
+<def f='qv2ray/test/catch.hpp' l='11876' ll='11883'/>
+<use f='qv2ray/test/catch.hpp' l='11898'/>
+<size>72</size>
+<doc f='qv2ray/test/catch.hpp' l='11873'>// StdErr has two constituent streams in C++, std::cerr and std::clog
+    // This means that we need to redirect 2 streams into 1 to keep proper
+    // order of writes</doc>
+<mbr r='Catch::RedirectedStdErr::m_rss' o='0' t='Catch::ReusableStringStream'/>
+<mbr r='Catch::RedirectedStdErr::m_cerr' o='192' t='Catch::RedirectedStream'/>
+<mbr r='Catch::RedirectedStdErr::m_clog' o='384' t='Catch::RedirectedStream'/>
+<fun r='_ZN5Catch16RedirectedStdErrC1Ev'/>
+<fun r='_ZNK5Catch16RedirectedStdErr3strB5cxx11Ev'/>
+<fun r='_ZN5Catch16RedirectedStdErrC1Ev'/>
+<fun r='_ZNK5Catch16RedirectedStdErr3strB5cxx11Ev'/>

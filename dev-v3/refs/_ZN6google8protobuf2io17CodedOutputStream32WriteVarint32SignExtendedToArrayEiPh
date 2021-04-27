@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='776' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteVarint32SignExtendedToArray(google::protobuf::int32 value, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1164' ll='1167' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteVarint32SignExtendedToArray(google::protobuf::int32 value, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='550' u='c' c='_ZN6google8protobuf8internal14WireFormatLite22WriteInt32NoTagToArrayEiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='609' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21WriteEnumNoTagToArrayEiPh'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='775'>// Like WriteVarint32SignExtended()  but writing directly to the target array.</doc>

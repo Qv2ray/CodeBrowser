@@ -1,0 +1,9 @@
+<def f='include/c++/10/bits/regex.h' l='1882' ll='1887' type='std::__cxx11::match_results::const_reference std::__cxx11::match_results::prefix() const'/>
+<doc f='include/c++/10/bits/regex.h' l='1874'>/**
+       * @brief Gets a %sub_match representing the match prefix.
+       * @pre   ready() == true
+       *
+       * This function gets a reference to a %sub_match object representing the
+       * part of the target range between the start of the target range and the
+       * start of the match.
+       */</doc>

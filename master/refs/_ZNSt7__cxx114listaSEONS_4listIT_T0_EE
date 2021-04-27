@@ -1,0 +1,17 @@
+<def f='include/c++/10/bits/stl_list.h' l='852' ll='861' type='list&lt;_Tp, _Alloc&gt; &amp; std::__cxx11::list::operator=(list&lt;_Tp, _Alloc&gt; &amp;&amp; __x)'/>
+<doc f='include/c++/10/bits/stl_list.h' l='842'>/**
+       *  @brief  %List move assignment operator.
+       *  @param  __x  A %list of identical element and allocator types.
+       *
+       *  The contents of @a __x are moved into this %list (without copying).
+       *
+       *  Afterwards @a __x is a valid, but unspecified %list
+       *
+       *  Whether the allocator is moved depends on the allocator traits.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='86' u='c' c='_ZNR5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' u='c' c='_ZNO5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='388' u='c' c='_ZN5ZXing5Aztec16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='393' u='c' c='_ZN5ZXing5Aztec16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='640' u='c' c='_ZN5ZXing4OneDL15DecodeRow2PairsEiRKNS_8BitArrayEbRNSt7__cxx114listINS0_3RSS11ExpandedRowESaIS7_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='338' u='c' c='_ZN5ZXing6Pdf4178Detector6DetectERKNS_12BinaryBitmapEbRNS1_6ResultE'/>

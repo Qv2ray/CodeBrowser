@@ -1,0 +1,25 @@
+<def f='include/c++/10/chrono' l='988' ll='1019'/>
+<use f='include/c++/10/chrono' l='993'/>
+<use f='include/c++/10/chrono' l='1015' c='_ZNSt6chrono3_V212system_clock11from_time_tEl'/>
+<use f='include/c++/10/chrono' l='1050'/>
+<use f='include/c++/10/chrono' l='1234'/>
+<use f='include/c++/10/mutex' l='155' c='_ZNSt18__timed_mutex_impl17_M_try_lock_untilERKNSt6chrono10time_pointINS0_3_V212system_clockETL0__EE'/>
+<use f='include/c++/10/condition_variable' l='74'/>
+<use f='include/c++/10/bits/atomic_futex.h' l='67'/>
+<size>1</size>
+<doc f='include/c++/10/chrono' l='982'>/**
+     *  @brief System clock.
+     *
+     *  Time returned represents wall time from the system-wide clock.
+     *  @ingroup chrono
+    */</doc>
+<smbr r='std::chrono::_V2::system_clock::is_steady' t='const bool'/>
+<fun r='_ZNSt6chrono3_V212system_clock3nowEv'/>
+<fun r='_ZNSt6chrono3_V212system_clock9to_time_tERKNS_10time_pointIS1_NS_8durationIlSt5ratioILl1ELl1000000000EEEEEE'/>
+<fun r='_ZNSt6chrono3_V212system_clock11from_time_tEl'/>
+<use f='include/c++/10/shared_mutex' l='504' c='_ZNSt18shared_timed_mutex14try_lock_untilERKNSt6chrono10time_pointINS0_3_V212system_clockET_EE'/>
+<use f='include/c++/10/shared_mutex' l='577' c='_ZNSt18shared_timed_mutex21try_lock_shared_untilERKNSt6chrono10time_pointINS0_3_V212system_clockET_EE'/>
+<size>1</size>
+<use f='qv2ray/test/catch.hpp' l='2144'/>
+<use f='qv2ray/test/catch.hpp' l='2145' c='_ZN5Catch11StringMakerINSt6chrono10time_pointINS1_3_V212system_clockET_EEvE7convertB5cxx11ERKS6_'/>
+<size>1</size>

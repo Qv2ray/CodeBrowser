@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/byte_buffer.h' l='160' ll='165' type='void grpc::ByteBuffer::set_buffer(grpc_byte_buffer * buf)'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='188' u='c' c='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE11DeserializeEPS1_S3_'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='45' u='c' c='_ZN4grpc8internal13MethodHandler16HandlerParameterC1EPNS0_4CallEPNS_13ServerContextEP16grpc_byte_buffer'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='69' u='c' c='_ZN4grpc17ProtoBufferWriterC1EPNS_10ByteBufferEii'/>
+<doc f='include/grpcpp/impl/codegen/byte_buffer.h' l='159'>// takes ownership</doc>

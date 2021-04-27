@@ -1,0 +1,19 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='139' ll='143' type='void uvw::Handle::close()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='130'>/**
+	 * @brief Request handle to be closed.
+	 *
+	 * This **must** be called on each handle before memory is released.&lt;br/&gt;
+	 * In-progress requests are cancelled and this can result in an ErrorEvent
+	 * emitted.
+	 *
+	 * The handle will emit a CloseEvent when finished.
+	 */</doc>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='128' u='c' c='_ZL13handle_socketPviiS_S_'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='256' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing14notifyTestHostEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='79' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='97' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='104' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='125' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='179' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='189' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='199' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>

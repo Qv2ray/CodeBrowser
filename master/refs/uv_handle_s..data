@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='429' type='void *'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='20' u='r' c='uv_handle_get_data'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='28' u='w' c='uv_handle_set_data'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='33' u='r' c='_ZN3uvw6Handle13closeCallbackEP11uv_handle_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='113' u='r' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>

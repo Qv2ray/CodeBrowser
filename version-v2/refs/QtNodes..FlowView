@@ -1,0 +1,68 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowView.hpp' l='8' ll='42'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowView.hpp' l='14' c='_ZN7QtNodes8FlowViewC1ERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowView.hpp' l='15' c='_ZN7QtNodes8FlowViewaSERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowView.hpp' l='15' c='_ZN7QtNodes8FlowViewaSERKS0_'/>
+<size>88</size>
+<smbr r='QtNodes::FlowView::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK7QtNodes8FlowView10metaObjectEv'/>
+<fun r='_ZN7QtNodes8FlowView11qt_metacastEPKc'/>
+<fun r='_ZN7QtNodes8FlowView11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN7QtNodes8FlowView2trEPKcS2_i'/>
+<fun r='_ZN7QtNodes8FlowView6trUtf8EPKcS2_i'/>
+<fun r='_ZN7QtNodes8FlowView18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN7QtNodes8FlowViewC1EP7QWidget'/>
+<fun r='_ZN7QtNodes8FlowViewC1EPNS_9FlowSceneEP7QWidget'/>
+<fun r='_ZN7QtNodes8FlowViewC1ERKS0_'/>
+<fun r='_ZN7QtNodes8FlowViewaSERKS0_'/>
+<fun r='_ZNK7QtNodes8FlowView20clearSelectionActionEv'/>
+<fun r='_ZNK7QtNodes8FlowView21deleteSelectionActionEv'/>
+<fun r='_ZN7QtNodes8FlowView8setSceneEPNS_9FlowSceneE'/>
+<fun r='_ZN7QtNodes8FlowView7scaleUpEv'/>
+<fun r='_ZN7QtNodes8FlowView9scaleDownEv'/>
+<fun r='_ZN7QtNodes8FlowView19deleteSelectedNodesEv'/>
+<fun r='_ZN7QtNodes8FlowView16contextMenuEventEP17QContextMenuEvent'/>
+<fun r='_ZN7QtNodes8FlowView10wheelEventEP11QWheelEvent'/>
+<fun r='_ZN7QtNodes8FlowView13keyPressEventEP9QKeyEvent'/>
+<fun r='_ZN7QtNodes8FlowView15keyReleaseEventEP9QKeyEvent'/>
+<fun r='_ZN7QtNodes8FlowView15mousePressEventEP11QMouseEvent'/>
+<fun r='_ZN7QtNodes8FlowView14mouseMoveEventEP11QMouseEvent'/>
+<fun r='_ZN7QtNodes8FlowView14drawBackgroundEP8QPainterRK6QRectF'/>
+<fun r='_ZN7QtNodes8FlowView9showEventEP10QShowEvent'/>
+<fun r='_ZN7QtNodes8FlowView5sceneEv'/>
+<mbr r='QtNodes::FlowView::_clearSelectionAction' o='384' t='QAction *'/>
+<mbr r='QtNodes::FlowView::_deleteSelectionAction' o='448' t='QAction *'/>
+<mbr r='QtNodes::FlowView::_clickPos' o='512' t='QPointF'/>
+<mbr r='QtNodes::FlowView::_scene' o='640' t='QtNodes::FlowScene *'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowView.cpp' l='38' c='_ZN7QtNodes8FlowViewC1EPNS_9FlowSceneEP7QWidget'/>
+<size>88</size>
+<fun r='_ZN7QtNodes8FlowViewC1EP7QWidget'/>
+<fun r='_ZN7QtNodes8FlowViewC1EPNS_9FlowSceneEP7QWidget'/>
+<fun r='_ZNK7QtNodes8FlowView20clearSelectionActionEv'/>
+<fun r='_ZNK7QtNodes8FlowView21deleteSelectionActionEv'/>
+<fun r='_ZN7QtNodes8FlowView8setSceneEPNS_9FlowSceneE'/>
+<fun r='_ZN7QtNodes8FlowView16contextMenuEventEP17QContextMenuEvent'/>
+<fun r='_ZN7QtNodes8FlowView10wheelEventEP11QWheelEvent'/>
+<fun r='_ZN7QtNodes8FlowView7scaleUpEv'/>
+<fun r='_ZN7QtNodes8FlowView9scaleDownEv'/>
+<fun r='_ZN7QtNodes8FlowView19deleteSelectedNodesEv'/>
+<fun r='_ZN7QtNodes8FlowView13keyPressEventEP9QKeyEvent'/>
+<fun r='_ZN7QtNodes8FlowView15keyReleaseEventEP9QKeyEvent'/>
+<fun r='_ZN7QtNodes8FlowView15mousePressEventEP11QMouseEvent'/>
+<fun r='_ZN7QtNodes8FlowView14mouseMoveEventEP11QMouseEvent'/>
+<fun r='_ZN7QtNodes8FlowView14drawBackgroundEP8QPainterRK6QRectF'/>
+<fun r='_ZN7QtNodes8FlowView9showEventEP10QShowEvent'/>
+<fun r='_ZN7QtNodes8FlowView5sceneEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='57'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.hpp' l='42'/>
+<size>88</size>
+<use f='/qv2ray_nodeeditor_autogen/J7PFPXRXWT/moc_FlowView.cpp' l='76' c='_ZN7QtNodes8FlowView18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>88</size>
+<fun r='_ZN7QtNodes8FlowView18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='QtNodes::FlowView::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK7QtNodes8FlowView10metaObjectEv'/>
+<fun r='_ZN7QtNodes8FlowView11qt_metacastEPKc'/>
+<fun r='_ZN7QtNodes8FlowView11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='13' c='_ZN17ChainEditorWidgetC1ESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<size>88</size>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='19' c='_ZN19RoutingEditorWidgetC1ESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<size>88</size>

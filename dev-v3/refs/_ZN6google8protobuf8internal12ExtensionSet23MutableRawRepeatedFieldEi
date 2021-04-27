@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/extension_set.h' l='297' type='void * google::protobuf::internal::ExtensionSet::MutableRawRepeatedField(int number)'/>
+<doc f='include/google/protobuf/extension_set.h' l='293'>// This is an overload of MutableRawRepeatedField to maintain compatibility
+  // with old code using a previous API. This version of
+  // MutableRawRepeatedField() will GOOGLE_CHECK-fail on a missing extension.
+  // (E.g.: borg/clients/internal/proto1/proto2_reflection.cc.)</doc>

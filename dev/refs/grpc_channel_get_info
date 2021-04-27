@@ -1,0 +1,5 @@
+<dec f='include/grpc/grpc.h' l='287' type='void grpc_channel_get_info(grpc_channel * channel, const grpc_channel_info * channel_info)'/>
+<doc f='include/grpc/grpc.h' l='283'>/** Request info about the channel.
+    \a channel_info indicates what information is being requested and
+    how that information will be returned.
+    \a channel_info is owned by the caller. */</doc>

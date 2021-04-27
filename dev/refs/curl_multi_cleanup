@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/curl/multi.h' l='229' type='CURLMcode curl_multi_cleanup(CURLM * multi_handle)'/>
+<doc f='include/x86_64-linux-gnu/curl/multi.h' l='219'>/*
+  * Name:    curl_multi_cleanup()
+  *
+  * Desc:    Cleans up and removes a whole multi stack. It does not free or
+  *          touch any individual easy handles in any way. We need to define
+  *          in what state those handles will be if this function is called
+  *          in the middle of a transfer.
+  *
+  * Returns: CURLMcode type, general multi error code.
+  */</doc>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='222' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>

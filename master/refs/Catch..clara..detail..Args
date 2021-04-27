@@ -1,0 +1,11 @@
+<def f='qv2ray/test/catch.hpp' l='8810' ll='8828'/>
+<use f='qv2ray/test/catch.hpp' l='8887' c='_ZN5Catch5clara6detail11TokenStreamC1ERKNS1_4ArgsE'/>
+<use f='qv2ray/test/catch.hpp' l='9216' c='_ZNK5Catch5clara6detail10ParserBase5parseERKNS1_4ArgsE'/>
+<use f='qv2ray/test/catch.hpp' l='13282' c='_ZN5Catch7Session16applyCommandLineEiPKPKc'/>
+<size>56</size>
+<doc f='qv2ray/test/catch.hpp' l='8809'>// Transport for raw args (copied from main args, or supplied via init list for testing)</doc>
+<mbr r='Catch::clara::detail::Args::m_exeName' o='0' t='std::string'/>
+<mbr r='Catch::clara::detail::Args::m_args' o='256' t='std::vector&lt;std::string&gt;'/>
+<fun r='_ZN5Catch5clara6detail4ArgsC1EiPKPKc'/>
+<fun r='_ZN5Catch5clara6detail4ArgsC1ESt16initializer_listINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE'/>
+<fun r='_ZNK5Catch5clara6detail4Args7exeNameB5cxx11Ev'/>

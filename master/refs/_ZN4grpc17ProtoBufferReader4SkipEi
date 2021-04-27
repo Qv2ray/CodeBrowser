@@ -1,0 +1,4 @@
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='169' c='_ZN6google8protobuf2io19ZeroCopyInputStream4SkipEi'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='109' ll='122' type='bool grpc::ProtoBufferReader::Skip(int count)'/>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='107'>/// The proto library calls this to skip over \a count bytes. Implement this
+  /// using Next and BackUp combined.</doc>

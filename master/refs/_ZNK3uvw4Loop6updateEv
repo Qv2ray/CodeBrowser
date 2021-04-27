@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='329' type='void uvw::Loop::update() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='320'>/**
+     * @brief Updates the event loop’s concept of _now_.
+     *
+     * The current time is cached at the start of the event loop tick in order
+     * to reduce the number of time-related system calls.&lt;br/&gt;
+     * You won’t normally need to call this function unless you have callbacks
+     * that block the event loop for longer periods of time, where _longer_ is
+     * somewhat subjective but probably on the order of a millisecond or more.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='105' ll='107' type='void uvw::Loop::update() const'/>

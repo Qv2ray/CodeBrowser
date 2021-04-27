@@ -1,0 +1,15 @@
+<def f='include/google/protobuf/stubs/stringpiece.h' l='435' ll='469'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='437' c='_ZN6google8protobuf8internal14StringPiecePod21CreateFromStringPieceENS0_11StringPieceE'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='438' c='_ZN6google8protobuf8internal14StringPiecePod21CreateFromStringPieceENS0_11StringPieceE'/>
+<size>16</size>
+<doc f='include/google/protobuf/stubs/stringpiece.h' l='433'>// StringPiece is not a POD and can not be used in an union (pre C++11). We
+// need a POD version of it.</doc>
+<fun r='_ZN6google8protobuf8internal14StringPiecePod21CreateFromStringPieceENS0_11StringPieceE'/>
+<fun r='_ZNK6google8protobuf8internal14StringPiecePodcvNS0_11StringPieceEEv'/>
+<fun r='_ZNK6google8protobuf8internal14StringPiecePodeqEPKc'/>
+<fun r='_ZNK6google8protobuf8internal14StringPiecePodixEl'/>
+<fun r='_ZNK6google8protobuf8internal14StringPiecePod4dataEv'/>
+<fun r='_ZNK6google8protobuf8internal14StringPiecePod4sizeEv'/>
+<fun r='_ZNK6google8protobuf8internal14StringPiecePod8ToStringB5cxx11Ev'/>
+<mbr r='google::protobuf::internal::StringPiecePod::data_' o='0' t='const char *'/>
+<mbr r='google::protobuf::internal::StringPiecePod::size_' o='64' t='google::protobuf::stringpiece_ssize_type'/>

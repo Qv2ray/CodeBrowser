@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/stubs/stringpiece.h' l='185' ll='198' type='static google::protobuf::stringpiece_ssize_type google::protobuf::StringPiece::CheckedSsizeTFromSizeT(size_t size)'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='215' u='c' c='_ZN6google8protobuf11StringPieceC1EPKc'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='223' u='c' c='_ZN6google8protobuf11StringPieceC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcET_EE'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='264' u='c' c='_ZN6google8protobuf11StringPiece3setEPKc'/>
+<doc f='include/google/protobuf/stubs/stringpiece.h' l='183'>// Prevent overflow in debug mode or fortified mode.
+  // sizeof(stringpiece_ssize_type) may be smaller than sizeof(size_t).</doc>

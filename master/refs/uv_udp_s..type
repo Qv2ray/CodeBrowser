@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='432' type='uv_handle_type'/>
+<offset>128</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='177' u='r' c='uv__udp_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='177' u='r' c='uv__udp_io'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='331' u='r' c='uv_udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='368' u='r' c='uv_udp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='396' u='r' c='uv__udp_is_connected'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='410' u='r' c='uv__udp_check_before_send'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='471' u='r' c='uv_udp_recv_start'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='479' u='r' c='uv_udp_recv_stop'/>

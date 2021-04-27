@@ -1,0 +1,36 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='120' type='6'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='111' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='180' c='_ZN6google8protobuf8internal14WireFormatLite22ReadPrimitiveFromArrayEPKhPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='308' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='308' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='414' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='414' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='128' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='268' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='268' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='268' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='268' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='268' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='268' macro='1'/>
+<use f='include/google/protobuf/map_type_handler.h' l='310' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E8ByteSizeERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E20MapEntryAccessorTypeE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='357' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E13GetCachedSizeERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E20MapEntryAccessorTypeE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='407' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E5WriteEiRKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E20MapEntryAccessorT13673531'/>
+<use f='include/google/protobuf/map_type_handler.h' l='407' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E20InternalWriteToArrayEiRKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E20M10843466'/>
+<use f='include/google/protobuf/map_type_handler.h' l='451' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_69578188'/>
+<use f='include/google/protobuf/map_type_handler.h' l='451' macro='1' u='c' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_69578188'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E20GetExternalReferenceERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E20GetExternalReferenceERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E23SpaceUsedInMapEntryLongERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E18SpaceUsedInMapLongERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E5ClearEPNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E23ClearMaybeByDefaultEnumEPNS1_22MapWireFieldTypeTraitsILS4_6ES5_E121902280'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E5MergeERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E20MapEntryAccessorTy12317196'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E13DeleteNoArenaERNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E18AssignDefaultValueEPNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E10InitializeEPNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E28InitializeMaybeByDefaultEnumEPNS1_22MapWireFieldTypeTraitsILS4_6ES6683026'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E13EnsureMutableEPNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E13EnsureMutableEPNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E23DefaultIfNotInitializedERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryESB_'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E23DefaultIfNotInitializedERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryESB_'/>
+<use f='include/google/protobuf/map_type_handler.h' l='728' macro='1' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E13IsInitializedERKNS1_22MapWireFieldTypeTraitsILS4_6ES5_E12TypeOnMemoryE'/>

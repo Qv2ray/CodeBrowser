@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='67' type='bool ZXing::BinaryBitmap::getBlackRow(int y, ZXing::BitArray &amp; outArray) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='73' u='c' c='_ZNK5ZXing12BinaryBitmap13getPatternRowEiRSt6vectorItSaItEE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='115' c='_ZNK5ZXing24GlobalHistogramBinarizer11getBlackRowEiRNS_8BitArrayE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='57'>/**
+	* Converts one row of luminance data to 1 bit data.
+	* This method is intended for decoding 1D barcodes and may choose to apply sharpening.
+	*
+	* @param y The row to fetch, which must be in [0, bitmap height)
+	* @param row An optional preallocated array. If null or too small, it will be ignored.
+	*            If used, the Binarizer will call BitArray.clearBits(). Always use the returned object.
+	* @return The array of bits for this row (true means black).
+	* @throws NotFoundException if row can&apos;t be binarized
+	*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='44' c='_ZNK5ZXing18ThresholdBinarizer11getBlackRowEiRNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='136' u='c' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>

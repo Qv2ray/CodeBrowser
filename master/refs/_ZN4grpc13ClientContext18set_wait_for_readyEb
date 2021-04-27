@@ -1,0 +1,8 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='252' ll='255' type='void grpc::ClientContext::set_wait_for_ready(bool wait_for_ready)'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='258' u='c' c='_ZN4grpc13ClientContext13set_fail_fastEb'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='246'>/// EXPERIMENTAL: Trigger wait-for-ready or not on this request.
+  /// See https://github.com/grpc/grpc/blob/master/doc/wait-for-ready.md.
+  /// If set, if an RPC is made when a channel&apos;s connectivity state is
+  /// TRANSIENT_FAILURE or CONNECTING, the call will not &quot;fail fast&quot;,
+  /// and the channel will wait until the channel is READY before making the
+  /// call.</doc>

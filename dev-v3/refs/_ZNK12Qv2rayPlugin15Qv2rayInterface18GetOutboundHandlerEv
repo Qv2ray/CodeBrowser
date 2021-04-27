@@ -1,0 +1,6 @@
+<def f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='28' ll='31' type='std::shared_ptr&lt;PluginOutboundHandler&gt; Qv2rayPlugin::Qv2rayInterface::GetOutboundHandler() const'/>
+<doc f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='27'>//</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='240' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost23TryDeserializeShareLinkERK7QStringPS3_S6_S6_Rb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='274' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15GetOutboundInfoERK7QStringRK11QJsonObjectRb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='292' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15SetOutboundInfoERK7QStringRK4QMapIN12Qv2rayPlugin8handlers8outbound17OutboundInfoFlagsE8QVariantER11QJsonObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='313' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost17SerializeOutboundERK7QStringRK11QJsonObjectS8_S5_S5_Pb'/>

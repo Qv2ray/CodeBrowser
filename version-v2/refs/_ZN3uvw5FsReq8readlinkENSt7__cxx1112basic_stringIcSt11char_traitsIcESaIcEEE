@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1250' type='void uvw::FsReq::readlink(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='489' ll='491' type='void uvw::FsReq::readlink(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1242'>/**
+     * @brief Async [readlink](http://linux.die.net/man/2/readlink).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::READLINK&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     */</doc>

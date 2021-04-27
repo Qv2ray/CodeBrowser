@@ -1,0 +1,8 @@
+<dec f='include/grpc/grpc.h' l='212' type='grpc_call * grpc_channel_create_call(grpc_channel * channel, grpc_call * parent_call, uint32_t propagation_mask, grpc_completion_queue * completion_queue, grpc_slice method, const grpc_slice * host, gpr_timespec deadline, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='205'>/** Create a call given a grpc_channel, in order to call &apos;method&apos;. All
+    completions are sent to &apos;completion_queue&apos;. &apos;method&apos; and &apos;host&apos; need only
+    live through the invocation of this function.
+    If parent_call is non-NULL, it must be a server-side call. It will be used
+    to propagate properties from the server call to this new client call,
+    depending on the value of \a propagation_mask (see propagation_bits.h for
+    possible values). */</doc>

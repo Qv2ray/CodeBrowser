@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1572' type='int uv_signal_start(uv_signal_t * handle, uv_signal_cb signal_cb, int signum)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='485' u='c' c='uv_spawn'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='338' ll='340' type='int uv_signal_start(uv_signal_t * handle, uv_signal_cb signal_cb, int signum)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/signal.cpp' l='28' u='a' c='_ZN3uvw12SignalHandle5startEi'/>

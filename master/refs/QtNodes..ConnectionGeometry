@@ -1,0 +1,33 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionGeometry.hpp' l='9' ll='48'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='57' c='_ZN7QtNodes10Connection18connectionGeometryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='58' c='_ZNK7QtNodes10Connection18connectionGeometryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='86'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='174' c='_ZN7QtNodes10Connection18connectionGeometryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='178' c='_ZNK7QtNodes10Connection18connectionGeometryEv'/>
+<size>48</size>
+<fun r='_ZN7QtNodes18ConnectionGeometryC1Ev'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry11getEndPointENS_8PortTypeE'/>
+<fun r='_ZN7QtNodes18ConnectionGeometry11setEndPointENS_8PortTypeERK7QPointF'/>
+<fun r='_ZN7QtNodes18ConnectionGeometry12moveEndPointENS_8PortTypeERK7QPointF'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry12boundingRectEv'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry10pointsC1C2Ev'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry6sourceEv'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry4sinkEv'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry9lineWidthEv'/>
+<fun r='_ZNK7QtNodes18ConnectionGeometry7hoveredEv'/>
+<fun r='_ZN7QtNodes18ConnectionGeometry10setHoveredEb'/>
+<mbr r='QtNodes::ConnectionGeometry::_in' o='0' t='QPointF'/>
+<mbr r='QtNodes::ConnectionGeometry::_out' o='128' t='QPointF'/>
+<mbr r='QtNodes::ConnectionGeometry::_lineWidth' o='256' t='double'/>
+<mbr r='QtNodes::ConnectionGeometry::_hovered' o='320' t='bool'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.hpp' l='12' c='_ZN7QtNodes17ConnectionPainter16getPainterStrokeERKNS_18ConnectionGeometryE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='14' c='_ZL9cubicPathRKN7QtNodes18ConnectionGeometryE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='24' c='_ZN7QtNodes17ConnectionPainter16getPainterStrokeERKNS_18ConnectionGeometryE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='44' c='_ZL12debugDrawingP8QPainterRKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='79' c='_ZL14drawSketchLineP8QPainterRKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='88' c='_ZL21drawHoveredOrSelectedP8QPainterRKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='130' c='_ZL14drawNormalLineP8QPainterRKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='188' c='_ZN7QtNodes17ConnectionPainter5paintEP8QPainterRKNS_10ConnectionE'/>
+<size>48</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='120' c='_ZNK7QtNodes25NodeConnectionInteraction26connectionEndScenePositionENS_8PortTypeE'/>
+<size>48</size>

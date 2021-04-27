@@ -1,0 +1,17 @@
+<dec f='include/c++/10/bits/basic_string.h' l='2289' type='void std::__cxx11::basic_string::swap(basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; __s)'/>
+<def f='include/c++/10/bits/basic_string.tcc' l='56' ll='128' type='void std::__cxx11::basic_string::swap(basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; __s)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='2281'>/**
+       *  @brief  Swap contents with another string.
+       *  @param __s  String to swap with.
+       *
+       *  Exchanges the contents of this string with that of @a __s in constant
+       *  time.
+      */</doc>
+<use f='include/c++/10/bits/locale_facets_nonio.tcc' l='344' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/arenastring.h' l='113' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr17ReleaseNonDefaultEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/arenastring.h' l='192' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr4SwapEPS2_PKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/inlined_string_field.h' l='219' u='c' c='_ZN6google8protobuf8internal18InlinedStringField24ReleaseNonDefaultNoArenaEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/inlined_string_field.h' l='241' u='c' c='_ZN6google8protobuf8internal18InlinedStringField4SwapEPS2_'/>
+<use f='include/google/protobuf/metadata_lite.h' l='178' u='c' c='_ZN6google8protobuf8internal29InternalMetadataWithArenaLite6DoSwapEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/metadata_lite.h' l='207' u='c' c='_ZN6google8protobuf8internal22LiteUnknownFieldSetterC1EPNS1_29InternalMetadataWithArenaLiteE'/>
+<use f='include/google/protobuf/metadata_lite.h' l='211' u='c' c='_ZN6google8protobuf8internal22LiteUnknownFieldSetterD1Ev'/>

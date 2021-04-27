@@ -1,0 +1,18 @@
+<dec f='include/google/protobuf/message.h' l='222' type='void google::protobuf::Message::MergeFrom(const google::protobuf::Message &amp; from)'/>
+<doc f='include/google/protobuf/message.h' l='217'>// Merge the fields from the given message into this message.  Singular
+  // fields will be overwritten, if specified in from, except for embedded
+  // messages which will be merged.  Repeated fields will be concatenated.
+  // The given message must be of the same type as this message (i.e. the
+  // exact same class).</doc>
+<ovr f='/v2ray_api.pb.cc' l='567' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='848' c='_ZN5v2ray4core3app5stats7command4Stat9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1088' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1361' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1598' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1779' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='2292' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='2511' c='_ZN5v2ray4core3app5stats7command6Config9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='528' c='_ZN22DomainObject_Attribute9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='865' c='_ZN12DomainObject9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1156' c='_ZN7GeoSite9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1391' c='_ZN11GeoSiteList9MergeFromERKN6google8protobuf7MessageE'/>

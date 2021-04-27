@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='527' type='static void grpc::ClientAsyncReaderWriter::operator delete(void * , void * )'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='522'>// This operator should never be called as the memory should be freed as part
+  // of the arena destruction. It only exists to provide a matching operator
+  // delete to the operator new so that some compilers will not complain (see
+  // https://github.com/grpc/grpc/issues/11301) Note at the time of adding this
+  // there are no tests catching the compiler warning.</doc>

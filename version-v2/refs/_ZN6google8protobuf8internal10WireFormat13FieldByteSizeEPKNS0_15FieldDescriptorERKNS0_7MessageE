@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/wire_format.h' l='202' type='static size_t google::protobuf::internal::WireFormat::FieldByteSize(const google::protobuf::FieldDescriptor * field, const google::protobuf::Message &amp; message)'/>
+<doc f='include/google/protobuf/wire_format.h' l='199'>// Compute size of a single field.  If the field is a message type, this
+  // will call ByteSize() for the embedded message, insuring that it caches
+  // its size.</doc>

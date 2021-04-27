@@ -1,0 +1,31 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='215'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='759' ll='764'/>
+<size>264</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='753'>/*
+ * uv_pipe_t is a subclass of uv_stream_t.
+ *
+ * Representing a pipe stream or pipe server. On Windows this is a Named
+ * Pipe. On Unix this is a Unix domain socket.
+ */</doc>
+<mbr r='uv_pipe_s::data' o='0' t='void *'/>
+<mbr r='uv_pipe_s::loop' o='64' t='uv_loop_t *'/>
+<mbr r='uv_pipe_s::type' o='128' t='uv_handle_type'/>
+<mbr r='uv_pipe_s::close_cb' o='192' t='uv_close_cb'/>
+<mbr r='uv_pipe_s::handle_queue' o='256' t='void *[2]'/>
+<mbr r='uv_pipe_s::u' o='384' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/dev-v3/code_build/../3rdparty/libuv/include/uv.h:760:3)'/>
+<mbr r='uv_pipe_s::next_closing' o='640' t='uv_handle_t *'/>
+<mbr r='uv_pipe_s::flags' o='704' t='unsigned int'/>
+<mbr r='uv_pipe_s::write_queue_size' o='768' t='size_t'/>
+<mbr r='uv_pipe_s::alloc_cb' o='832' t='uv_alloc_cb'/>
+<mbr r='uv_pipe_s::read_cb' o='896' t='uv_read_cb'/>
+<mbr r='uv_pipe_s::connect_req' o='960' t='uv_connect_t *'/>
+<mbr r='uv_pipe_s::shutdown_req' o='1024' t='uv_shutdown_t *'/>
+<mbr r='uv_pipe_s::io_watcher' o='1088' t='uv__io_t'/>
+<mbr r='uv_pipe_s::write_queue' o='1536' t='void *[2]'/>
+<mbr r='uv_pipe_s::write_completed_queue' o='1664' t='void *[2]'/>
+<mbr r='uv_pipe_s::connection_cb' o='1792' t='uv_connection_cb'/>
+<mbr r='uv_pipe_s::delayed_error' o='1856' t='int'/>
+<mbr r='uv_pipe_s::accepted_fd' o='1888' t='int'/>
+<mbr r='uv_pipe_s::queued_fds' o='1920' t='void *'/>
+<mbr r='uv_pipe_s::ipc' o='1984' t='int'/>
+<mbr r='uv_pipe_s::pipe_fname' o='2048' t='const char *'/>

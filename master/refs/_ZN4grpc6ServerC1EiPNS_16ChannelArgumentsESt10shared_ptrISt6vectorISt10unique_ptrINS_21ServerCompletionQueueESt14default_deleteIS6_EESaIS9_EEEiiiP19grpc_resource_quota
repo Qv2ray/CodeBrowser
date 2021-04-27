@@ -1,0 +1,26 @@
+<dec f='include/grpcpp/server.h' l='173' type='void grpc::Server::Server(int max_message_size, grpc::ChannelArguments * args, std::shared_ptr&lt;std::vector&lt;std::unique_ptr&lt;ServerCompletionQueue&gt;&gt;&gt; sync_server_cqs, int min_pollers, int max_pollers, int sync_cq_timeout_msec, grpc_resource_quota * server_rq = nullptr)'/>
+<doc f='include/grpcpp/server.h' l='148'>/// NOTE: This is *NOT* a public API. The server constructors are supposed to
+  /// be used by \a ServerBuilder class only. The constructor will be made
+  /// &apos;private&apos; very soon.
+  ///
+  /// Server constructors. To be used by \a ServerBuilder only.
+  ///
+  /// \param max_message_size Maximum message length that the channel can
+  /// receive.
+  ///
+  /// \param args The channel args
+  ///
+  /// \param sync_server_cqs The completion queues to use if the server is a
+  /// synchronous server (or a hybrid server). The server polls for new RPCs on
+  /// these queues
+  ///
+  /// \param min_pollers The minimum number of polling threads per server
+  /// completion queue (in param sync_server_cqs) to use for listening to
+  /// incoming requests (used only in case of sync server)
+  ///
+  /// \param max_pollers The maximum number of polling threads per server
+  /// completion queue (in param sync_server_cqs) to use for listening to
+  /// incoming requests (used only in case of sync server)
+  ///
+  /// \param sync_cq_timeout_msec The timeout to use when calling AsyncNext() on
+  /// server completion queues passed via sync_server_cqs param.</doc>

@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='70' type='uvw::HandleType uvw::BaseHandle::type() const'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='91' c='_ZNK3uvw6Handle4typeEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='61'>/**
+     * @brief Gets the type of the handle.
+     *
+     * A base handle offers no functionality to promote it to the actual handle
+     * type. By means of this function, the type of the underlying handle as
+     * specified by HandleType is made available to the user.
+     *
+     * @return The actual type of the handle.
+     */</doc>

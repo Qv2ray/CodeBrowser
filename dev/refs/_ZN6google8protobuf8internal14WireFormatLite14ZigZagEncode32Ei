@@ -1,0 +1,34 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='250' type='static google::protobuf::uint32 google::protobuf::internal::WireFormatLite::ZigZagEncode32(google::protobuf::int32 n)'/>
+<def f='include/google/protobuf/wire_format_lite.h' l='854' ll='858' type='static google::protobuf::uint32 google::protobuf::internal::WireFormatLite::ZigZagEncode32(google::protobuf::int32 n)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='480' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteSInt32NoTagEiPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='567' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteSInt32NoTagToArrayEiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='943' u='c' c='_ZN6google8protobuf8internal14WireFormatLite10SInt32SizeEi'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='244'>// Helper functions for mapping signed integers to unsigned integers in
+  // such a way that numbers with small magnitudes will encode to smaller
+  // varints.  If you simply static_cast a negative number to an unsigned
+  // number and varint-encode it, it will always take 10 bytes, defeating
+  // the purpose of varint.  So, for the &quot;sint32&quot; and &quot;sint64&quot; field types,
+  // we ZigZag-encode the values.</doc>
+<doc f='include/google/protobuf/wire_format_lite.h' l='830'>// ZigZag Transform:  Encodes signed integers so that they can be
+// effectively used with varint encoding.
+//
+// varint operates on unsigned integers, encoding smaller numbers into
+// fewer bytes.  If you try to use it on a signed integer, it will treat
+// this number as a very large unsigned integer, which means that even
+// small signed numbers like -1 will take the maximum number of bytes
+// (10) to encode.  ZigZagEncode() maps signed integers to unsigned
+// in such a way that those with a small absolute value will have smaller
+// encoded values, making them appropriate for encoding using varint.
+//
+//       int32 -&gt;     uint32
+// -------------------------
+//           0 -&gt;          0
+//          -1 -&gt;          1
+//           1 -&gt;          2
+//          -2 -&gt;          3
+//         ... -&gt;        ...
+//  2147483647 -&gt; 4294967294
+// -2147483648 -&gt; 4294967295
+//
+//        &gt;&gt; encode &gt;&gt;
+//        &lt;&lt; decode &lt;&lt;</doc>

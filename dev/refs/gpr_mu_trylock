@@ -1,0 +1,5 @@
+<dec f='include/grpc/support/sync.h' l='58' type='int gpr_mu_trylock(gpr_mu * mu)'/>
+<doc f='include/grpc/support/sync.h' l='54'>/** Without blocking, attempt to acquire an exclusive lock on *mu for the
+   calling thread, then return non-zero iff success.  Fail, if any thread holds
+   the lock; succeeds with high probability if no thread holds the lock.
+   Requires:  *mu initialized.  */</doc>

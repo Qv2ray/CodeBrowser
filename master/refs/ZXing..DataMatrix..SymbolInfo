@@ -1,0 +1,57 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.h' l='39' c='_ZN5ZXing10DataMatrix9ECEncoder12EncodeECC200ERNS_9ByteArrayERKNS0_10SymbolInfoE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h' l='24' ll='106'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h' l='37' c='_ZN5ZXing10DataMatrix10SymbolInfoC1Ebiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h' l='46' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h' l='47' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h' l='48' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h' l='49' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='139' c='_ZN5ZXing10DataMatrix9ECEncoder12EncodeECC200ERNS_9ByteArrayERKNS0_10SymbolInfoE'/>
+<size>32</size>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_rectangular' o='0' t='bool'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_dataCapacity' o='32' t='int'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_errorCodewords' o='64' t='int'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_matrixWidth' o='96' t='int'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_matrixHeight' o='128' t='int'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_dataRegions' o='160' t='int'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_rsBlockData' o='192' t='int'/>
+<mbr r='ZXing::DataMatrix::SymbolInfo::_rsBlockError' o='224' t='int'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfoC1Ebiiiii'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfoC1Ebiiiiiii'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEi'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeE'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEib'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeEiiii'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo21horizontalDataRegionsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo19verticalDataRegionsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo15symbolDataWidthEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo16symbolDataHeightEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo11symbolWidthEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo12symbolHeightEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo11matrixWidthEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo12matrixHeightEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo13codewordCountEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo21interleavedBlockCountEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo12dataCapacityEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo14errorCodewordsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo29dataLengthForInterleavedBlockEi'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo30errorLengthForInterleavedBlockEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='42'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='121' c='_ZN5ZXing10DataMatrix14EncoderContext16updateSymbolInfoEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='135' c='_ZNK5ZXing10DataMatrix14EncoderContext10symbolInfoEv'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='29'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='65'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='86' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='92' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='98' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='104' c='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeEiiii'/>
+<size>32</size>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEi'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeE'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEib'/>
+<fun r='_ZN5ZXing10DataMatrix10SymbolInfo6LookupEiNS0_11SymbolShapeEiiii'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo21horizontalDataRegionsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix10SymbolInfo19verticalDataRegionsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='42' c='_ZN5ZXing10DataMatrixL14EncodeLowLevelERKNS_9BitMatrixERKNS0_10SymbolInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='107' c='_ZNK5ZXing10DataMatrix6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<size>32</size>

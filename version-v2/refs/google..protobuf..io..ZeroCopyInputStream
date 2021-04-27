@@ -1,0 +1,23 @@
+<use f='include/google/protobuf/io/coded_stream.h' l='168' c='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='531'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1333' c='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='235' c='_ZN6google8protobuf11MessageLite23ParseFromZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='238' c='_ZN6google8protobuf11MessageLite30ParsePartialFromZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='242' c='_ZN6google8protobuf11MessageLite30ParseFromBoundedZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamEi'/>
+<use f='include/google/protobuf/message_lite.h' l='245' c='_ZN6google8protobuf11MessageLite37ParsePartialFromBoundedZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='159' c='_ZN6google8protobuf15UnknownFieldSet23ParseFromZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamE'/>
+<def f='include/google/protobuf/io/zero_copy_stream.h' l='124' ll='177'/>
+<use f='include/google/protobuf/io/zero_copy_stream.h' l='176' c='_ZN6google8protobuf2io19ZeroCopyInputStreamC1ERKS2_'/>
+<use f='include/google/protobuf/io/zero_copy_stream.h' l='176' c='_ZN6google8protobuf2io19ZeroCopyInputStreamaSERKS2_'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='65'/>
+<ovr f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='46' c='grpc::ProtoBufferReader'/>
+<size>8</size>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='122'>// Abstract interface similar to an input stream but designed to minimize
+// copying.</doc>
+<fun r='_ZN6google8protobuf2io19ZeroCopyInputStreamC1Ev'/>
+<fun r='_ZN6google8protobuf2io19ZeroCopyInputStreamD1Ev'/>
+<fun r='_ZN6google8protobuf2io19ZeroCopyInputStream4NextEPPKvPi'/>
+<fun r='_ZN6google8protobuf2io19ZeroCopyInputStream6BackUpEi'/>
+<fun r='_ZN6google8protobuf2io19ZeroCopyInputStream4SkipEi'/>
+<fun r='_ZNK6google8protobuf2io19ZeroCopyInputStream9ByteCountEv'/>
+<fun r='_ZN6google8protobuf2io19ZeroCopyInputStreamC1ERKS2_'/>

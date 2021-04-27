@@ -1,0 +1,22 @@
+<dec f='include/grpcpp/impl/codegen/server_context.h' l='298' type='std::multimap&lt;grpc::string, grpc::string&gt;'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='713' u='r' c='_ZN4grpc17ServerAsyncReader19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='742' u='r' c='_ZN4grpc17ServerAsyncReader6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='772' u='r' c='_ZN4grpc17ServerAsyncReader15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='862' u='r' c='_ZN4grpc17ServerAsyncWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='935' c='_ZN4grpc17ServerAsyncWriter25EnsureInitialMetadataSentEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1028' u='r' c='_ZN4grpc23ServerAsyncReaderWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1109' c='_ZN4grpc23ServerAsyncReaderWriter25EnsureInitialMetadataSentEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='217' u='r' c='_ZN4grpc25ServerAsyncResponseWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='244' u='r' c='_ZN4grpc25ServerAsyncResponseWriter6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='277' u='r' c='_ZN4grpc25ServerAsyncResponseWriter15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='586' u='r' c='_ZN4grpc12ServerReader19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='638' u='r' c='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='663' u='r' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='711' u='r' c='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='741' u='r' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='76' u='r' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='120' u='r' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='166' u='r' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='209' u='r' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='284' c='_ZN4grpc8internal18ErrorMethodHandler7FillOpsEPNS_13ServerContextEPTL0__'/>
+<offset>1280</offset>

@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.h' l='54' type='ZXing::QRCode::AlignmentPattern ZXing::QRCode::AlignmentPattern::combineEstimate(float i, float j, float newModuleSize) const'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.cpp' l='45' ll='51' type='ZXing::QRCode::AlignmentPattern ZXing::QRCode::AlignmentPattern::combineEstimate(float i, float j, float newModuleSize) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.cpp' l='41'>/**
+* Combines this object&apos;s current estimate of a finder pattern position and module size
+* with a new estimate. It returns a new {@code FinderPattern} containing an average of the two.
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.h' l='50'>/**
+	* Combines this object&apos;s current estimate of a finder pattern position and module size
+	* with a new estimate. It returns a new {@code FinderPattern} containing an average of the two.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='140' u='c' c='_ZN5ZXing6QRCodeL20HandlePossibleCenterERKNS_9BitMatrixERKSt5arrayIiLm3EEiifRSt6vectorINS0_16AlignmentPatternESaIS9_EE'/>

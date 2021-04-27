@@ -1,0 +1,7 @@
+<dec f='include/pthread.h' l='198' type='int pthread_create(pthread_t *__restrict __newthread, const pthread_attr_t *__restrict __attr, void *(*)(void *) __start_routine, void *__restrict __arg)'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/gthr-default.h' l='106' c='__gthrw_pthread_create'/>
+<use f='include/c++/10/thread' l='142' u='a' c='_ZNSt6threadC1EOT_DpOT0_'/>
+<doc f='include/pthread.h' l='195'>/* Create a new thread, starting with execution of START-ROUTINE
+   getting passed ARG.  Creation attributed come from ATTR.  The new
+   handle is stored in *NEWTHREAD.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='259' u='c' c='uv_thread_create_ex'/>

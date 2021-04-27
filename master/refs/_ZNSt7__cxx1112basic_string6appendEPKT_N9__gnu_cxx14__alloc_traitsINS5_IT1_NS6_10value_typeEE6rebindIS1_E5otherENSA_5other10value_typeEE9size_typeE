@@ -1,0 +1,11 @@
+<def f='include/c++/10/bits/basic_string.h' l='1220' ll='1226' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::append(const _CharT * __s, std::__cxx11::basic_string::size_type __n)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1214'>/**
+       *  @brief  Append a C substring.
+       *  @param __s  The C string to append.
+       *  @param __n  The number of characters to append.
+       *  @return  Reference to this string.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextUtfEncoding.cpp' l='231' u='c' c='_ZN5ZXingL13ConvertToUtf8ERKNSt7__cxx1112basic_stringIT_St11char_traitsIS2_ESaIS2_EEERNS1_IcS3_IcESaIcEEEPNSt9enable_ifIXeqstS2_Li2EEvE4typeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextUtfEncoding.cpp' l='273' u='c' c='_ZN5ZXing15TextUtfEncoding11AppendUtf16ERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKtm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='493' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeBase256SegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS4_4listINS4118670'/>
+<use f='qv2ray/test/catch.hpp' l='13759' u='c' c='_ZN5CatchpLERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_9StringRefE'/>

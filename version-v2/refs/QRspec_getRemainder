@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='72' type='int QRspec_getRemainder(int version)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='67'>/**
+ * Return the numer of remainder bits.
+ * @param version
+ * @return number of remainder bits
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='481' u='c' c='QRcode_encodeMask'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='126' ll='129' type='int QRspec_getRemainder(int version)'/>

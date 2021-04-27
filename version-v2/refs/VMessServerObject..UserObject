@@ -1,0 +1,18 @@
+<def f='qv2ray/src/plugins/common/CommonTypes.hpp' l='81' ll='89'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='87' c='_ZNK17VMessServerObject10UserObjecteqERKS0_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='88' c='_ZN17VMessServerObject10UserObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='88' c='_ZNK17VMessServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='88' c='_ZN17VMessServerObject10UserObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='93'/>
+<size>32</size>
+<mbr r='VMessServerObject::UserObject::id' o='0' t='QString'/>
+<mbr r='VMessServerObject::UserObject::alterId' o='64' t='int'/>
+<mbr r='VMessServerObject::UserObject::security' o='128' t='QString'/>
+<mbr r='VMessServerObject::UserObject::level' o='192' t='int'/>
+<fun r='_ZN17VMessServerObject10UserObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK17VMessServerObject10UserObject6toJsonEv'/>
+<fun r='_ZN17VMessServerObject10UserObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vmess.cpp' l='58' c='_ZN19VmessOutboundEditor24on_idLineEdit_textEditedERK7QString'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vmess.cpp' l='65' c='_ZN19VmessOutboundEditor35on_securityCombo_currentTextChangedERK7QString'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vmess.cpp' l='72' c='_ZN19VmessOutboundEditor29on_alterLineEdit_valueChangedEi'/>
+<size>32</size>

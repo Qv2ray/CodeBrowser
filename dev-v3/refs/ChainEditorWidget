@@ -1,0 +1,43 @@
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='73'/>
+<inh f='/qv2ray_autogen/include/ui_ChainEditorWidget.h' l='75' c='Ui::ChainEditorWidget'/>
+<def f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='13' ll='63'/>
+<use f='/qv2ray_autogen/5XHV6SBJ63/moc_ChainEditorWidget.cpp' l='106' c='_ZN17ChainEditorWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>152</size>
+<smbr r='ChainEditorWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17ChainEditorWidget10metaObjectEv'/>
+<fun r='_ZN17ChainEditorWidget11qt_metacastEPKc'/>
+<fun r='_ZN17ChainEditorWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17ChainEditorWidget2trEPKcS1_i'/>
+<fun r='_ZN17ChainEditorWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17ChainEditorWidgetC1ESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<fun r='_ZN17ChainEditorWidgetD1Ev'/>
+<fun r='_ZN17ChainEditorWidget8getSceneEv'/>
+<fun r='_ZN17ChainEditorWidget11changeEventEP6QEvent'/>
+<fun r='_ZN17ChainEditorWidget36on_chainComboBox_currentIndexChangedEi'/>
+<fun r='_ZN17ChainEditorWidget34OnDispatcherChainedOutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<fun r='_ZN17ChainEditorWidget34OnDispatcherChainedOutboundDeletedERKN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<fun r='_ZN17ChainEditorWidget24OnDispatcherChainCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEE'/>
+<fun r='_ZN17ChainEditorWidget24OnDispatcherChainDeletedERKN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<fun r='_ZN17ChainEditorWidget28OnDispatcherObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<fun r='_ZN17ChainEditorWidget24OnSceneConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZN17ChainEditorWidget24OnSceneConnectionRemovedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZN17ChainEditorWidget14BeginEditChainERK7QString'/>
+<fun r='_ZN17ChainEditorWidget17updateColorSchemeEv'/>
+<fun r='_ZN17ChainEditorWidget19ShowChainLinkedListEv'/>
+<fun r='_ZN17ChainEditorWidget21VerifyChainLinkedListERK5QUuid'/>
+<fun r='_ZN17ChainEditorWidget23TrySaveChainOutboudDataERK5QUuid'/>
+<fun r='_ZN17ChainEditorWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<mbr r='ChainEditorWidget::connectionSignalBlocked' o='640' t='bool'/>
+<mbr r='ChainEditorWidget::scene' o='704' t='QtNodes::FlowScene *'/>
+<mbr r='ChainEditorWidget::view' o='768' t='QtNodes::FlowView *'/>
+<mbr r='ChainEditorWidget::dispatcher' o='832' t='std::shared_ptr&lt;NodeDispatcher&gt;'/>
+<mbr r='ChainEditorWidget::outboundNodes' o='960' t='QMap&lt;QString, QUuid&gt;'/>
+<mbr r='ChainEditorWidget::currentChain' o='1024' t='std::shared_ptr&lt;OutboundObjectMeta&gt;'/>
+<mbr r='ChainEditorWidget::chains' o='1152' t='QMap&lt;QString, std::shared_ptr&lt;OutboundObjectMeta&gt;&gt;'/>
+<fun r='_ZN17ChainEditorWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='ChainEditorWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17ChainEditorWidget10metaObjectEv'/>
+<fun r='_ZN17ChainEditorWidget11qt_metacastEPKc'/>
+<fun r='_ZN17ChainEditorWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='92' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<size>152</size>

@@ -1,0 +1,18 @@
+<def f='include/google/protobuf/extension_set.h' l='584' ll='599'/>
+<use f='include/google/protobuf/extension_set.h' l='589' c='_ZNK6google8protobuf8internal12ExtensionSet8KeyValue15FirstComparatorclERKS3_S6_'/>
+<use f='include/google/protobuf/extension_set.h' l='589' c='_ZNK6google8protobuf8internal12ExtensionSet8KeyValue15FirstComparatorclERKS3_S6_'/>
+<use f='include/google/protobuf/extension_set.h' l='592' c='_ZNK6google8protobuf8internal12ExtensionSet8KeyValue15FirstComparatorclERKS3_i'/>
+<use f='include/google/protobuf/extension_set.h' l='595' c='_ZNK6google8protobuf8internal12ExtensionSet8KeyValue15FirstComparatorclEiRKS3_'/>
+<use f='include/google/protobuf/extension_set.h' l='721' c='_ZN6google8protobuf8internal12ExtensionSet10flat_beginEv'/>
+<use f='include/google/protobuf/extension_set.h' l='725' c='_ZNK6google8protobuf8internal12ExtensionSet10flat_beginEv'/>
+<use f='include/google/protobuf/extension_set.h' l='729' c='_ZN6google8protobuf8internal12ExtensionSet8flat_endEv'/>
+<use f='include/google/protobuf/extension_set.h' l='733' c='_ZNK6google8protobuf8internal12ExtensionSet8flat_endEv'/>
+<use f='include/google/protobuf/extension_set.h' l='746'/>
+<size>32</size>
+<doc f='include/google/protobuf/extension_set.h' l='578'>// The Extension struct is small enough to be passed by value, so we use it
+  // directly as the value type in mappings rather than use pointers.  We use
+  // sorted maps rather than hash-maps because we expect most ExtensionSets will
+  // only contain a small number of extension.  Also, we want AppendToList and
+  // deterministic serialization to order fields by field number.</doc>
+<mbr r='google::protobuf::internal::ExtensionSet::KeyValue::first' o='0' t='int'/>
+<mbr r='google::protobuf::internal::ExtensionSet::KeyValue::second' o='64' t='google::protobuf::internal::ExtensionSet::Extension'/>

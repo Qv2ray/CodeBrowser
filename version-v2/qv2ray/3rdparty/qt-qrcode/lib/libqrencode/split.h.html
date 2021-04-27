@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>split.h source code [qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>qt-qrcode</a>/<a href='..'>lib</a>/<a href='./'>libqrencode</a>/<a href='split.h.html'>split.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * qrencode - QR Code encoder</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Input data splitter.</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2006-2013 Kentaro Fukuchi &lt;kentaro@fukuchi.org&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * The following data / specifications are taken from</i></td></tr>
+<tr><th id="8">8</th><td><i> * "Two dimensional symbol -- QR-code -- Basic Specification" (JIS X0510:2004)</i></td></tr>
+<tr><th id="9">9</th><td><i> *  or</i></td></tr>
+<tr><th id="10">10</th><td><i> * "Automatic identification and data capture techniques -- </i></td></tr>
+<tr><th id="11">11</th><td><i> *  QR Code 2005 bar code symbology specification" (ISO/IEC 18004:2006)</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="14">14</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="16">16</th><td><i> * version 2.1 of the License, or any later version.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="19">19</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="20">20</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</i></td></tr>
+<tr><th id="21">21</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="22">22</th><td><i> *</i></td></tr>
+<tr><th id="23">23</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="24">24</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="25">25</th><td><i> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</i></td></tr>
+<tr><th id="26">26</th><td><i> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/__SPLIT_H__">__SPLIT_H__</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/__SPLIT_H__" data-ref="_M/__SPLIT_H__">__SPLIT_H__</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="qrencode.h.html">"qrencode.h"</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * Split the input string (null terminated) into QRinput.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">string</span> input string</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">hint</span> give QR_MODE_KANJI if the input string contains Kanji character encoded in Shift-JIS. If not, give QR_MODE_8.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">casesensitive</span> 0 for case-insensitive encoding (all alphabet characters are replaced to UPPER-CASE CHARACTERS.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * <span class="command">@retval</span> 0 success.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * <span class="command">@retval</span> -1 an error occurred. errno is set to indicate the error. See</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *               Exceptions for the details.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">@throw</span> EINVAL invalid input object.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * <span class="command">@throw</span> ENOMEM unable to allocate memory for input objects.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="44">44</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="Split_splitStringToQRinput" title='Split_splitStringToQRinput' data-ref="Split_splitStringToQRinput" data-ref-filename="Split_splitStringToQRinput">Split_splitStringToQRinput</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12string" title='string' data-type='const char *' data-ref="12string" data-ref-filename="12string">string</dfn>, <a class="typedef" href="qrencode.h.html#QRinput" title='QRinput' data-type='struct _QRinput' data-ref="QRinput" data-ref-filename="QRinput">QRinput</a> *<dfn class="local col3 decl" id="13input" title='input' data-type='QRinput *' data-ref="13input" data-ref-filename="13input">input</dfn>,</td></tr>
+<tr><th id="45">45</th><td>		<a class="typedef" href="qrencode.h.html#QRencodeMode" title='QRencodeMode' data-type='enum QRencodeMode' data-ref="QRencodeMode" data-ref-filename="QRencodeMode">QRencodeMode</a> <dfn class="local col4 decl" id="14hint" title='hint' data-type='QRencodeMode' data-ref="14hint" data-ref-filename="14hint">hint</dfn>, <em>int</em> <dfn class="local col5 decl" id="15casesensitive" title='casesensitive' data-type='int' data-ref="15casesensitive" data-ref-filename="15casesensitive">casesensitive</dfn>);</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="28">endif</span> /* __SPLIT_H__ */</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='qrencode.c.html'>qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

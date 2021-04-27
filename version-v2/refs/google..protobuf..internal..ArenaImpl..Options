@@ -1,0 +1,10 @@
+<def f='include/google/protobuf/arena_impl.h' l='66' ll='82'/>
+<use f='include/google/protobuf/arena_impl.h' l='298'/>
+<size>48</size>
+<mbr r='google::protobuf::internal::ArenaImpl::Options::start_block_size' o='0' t='size_t'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Options::max_block_size' o='64' t='size_t'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Options::initial_block' o='128' t='char *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Options::initial_block_size' o='192' t='size_t'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Options::block_alloc' o='256' t='void *(*)(size_t)'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Options::block_dealloc' o='320' t='void (*)(void *, size_t)'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl7OptionsC1ERKT_'/>

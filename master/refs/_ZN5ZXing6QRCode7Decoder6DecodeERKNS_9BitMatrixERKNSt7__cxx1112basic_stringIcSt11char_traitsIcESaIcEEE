@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.h' l='59' type='static ZXing::DecoderResult ZXing::QRCode::Decoder::Decode(const ZXing::BitMatrix &amp; bits, const std::string &amp; hintedCharset)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='468' ll='511' type='static ZXing::DecoderResult ZXing::QRCode::Decoder::Decode(const ZXing::BitMatrix &amp; bits_, const std::string &amp; hintedCharset)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.h' l='50'>/**
+	* &lt;p&gt;Decodes a QR Code represented as a {@link BitMatrix}. A 1 or &quot;true&quot; is taken to mean a black module.&lt;/p&gt;
+	*
+	* @param bits booleans representing white/black QR Code modules
+	* @param hints decoding hints that should be used to influence decoding
+	* @return text and bytes encoded within the QR Code
+	* @throws FormatException if the QR Code cannot be decoded
+	* @throws ChecksumException if error correction fails
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='53' u='c' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>

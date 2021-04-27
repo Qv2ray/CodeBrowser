@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>bitstream.h source code [qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>qt-qrcode</a>/<a href='..'>lib</a>/<a href='./'>libqrencode</a>/<a href='bitstream.h.html'>bitstream.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * qrencode - QR Code encoder</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Binary sequence class.</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2006-2014 Kentaro Fukuchi &lt;kentaro@fukuchi.org&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__BITSTREAM_H__">__BITSTREAM_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__BITSTREAM_H__" data-ref="_M/__BITSTREAM_H__">__BITSTREAM_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="26">26</th><td>	<em>int</em> <dfn class="decl field" id="(anonymous)::length" title='(anonymous struct)::length' data-ref="(anonymous)::length" data-ref-filename="(anonymous)..length">length</dfn>;</td></tr>
+<tr><th id="27">27</th><td>	<em>unsigned</em> <em>char</em> *<dfn class="decl field" id="(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data" data-ref-filename="(anonymous)..data">data</dfn>;</td></tr>
+<tr><th id="28">28</th><td>	<em>int</em> <dfn class="decl field" id="(anonymous)::datasize" title='(anonymous struct)::datasize' data-ref="(anonymous)::datasize" data-ref-filename="(anonymous)..datasize">datasize</dfn>;</td></tr>
+<tr><th id="29">29</th><td>} <dfn class="typedef" id="BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</dfn>;</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>extern</b> <a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<a class="decl fn" href="bitstream.c.html#BitStream_new" title='BitStream_new' data-ref="BitStream_new" data-ref-filename="BitStream_new" id="BitStream_new">BitStream_new</a>(<em>void</em>);</td></tr>
+<tr><th id="32">32</th><td><b>extern</b> <em>int</em> <a class="decl fn" href="bitstream.c.html#BitStream_append" title='BitStream_append' data-ref="BitStream_append" data-ref-filename="BitStream_append" id="BitStream_append">BitStream_append</a>(<a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<dfn class="local col1 decl" id="1bstream" title='bstream' data-type='BitStream *' data-ref="1bstream" data-ref-filename="1bstream">bstream</dfn>, <a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<dfn class="local col2 decl" id="2arg" title='arg' data-type='BitStream *' data-ref="2arg" data-ref-filename="2arg">arg</dfn>);</td></tr>
+<tr><th id="33">33</th><td><b>extern</b> <em>int</em> <a class="decl fn" href="bitstream.c.html#BitStream_appendNum" title='BitStream_appendNum' data-ref="BitStream_appendNum" data-ref-filename="BitStream_appendNum" id="BitStream_appendNum">BitStream_appendNum</a>(<a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<dfn class="local col3 decl" id="3bstream" title='bstream' data-type='BitStream *' data-ref="3bstream" data-ref-filename="3bstream">bstream</dfn>, <em>int</em> <dfn class="local col4 decl" id="4bits" title='bits' data-type='int' data-ref="4bits" data-ref-filename="4bits">bits</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="5num" title='num' data-type='unsigned int' data-ref="5num" data-ref-filename="5num">num</dfn>);</td></tr>
+<tr><th id="34">34</th><td><b>extern</b> <em>int</em> <a class="decl fn" href="bitstream.c.html#BitStream_appendBytes" title='BitStream_appendBytes' data-ref="BitStream_appendBytes" data-ref-filename="BitStream_appendBytes" id="BitStream_appendBytes">BitStream_appendBytes</a>(<a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<dfn class="local col6 decl" id="6bstream" title='bstream' data-type='BitStream *' data-ref="6bstream" data-ref-filename="6bstream">bstream</dfn>, <em>int</em> <dfn class="local col7 decl" id="7size" title='size' data-type='int' data-ref="7size" data-ref-filename="7size">size</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col8 decl" id="8data" title='data' data-type='unsigned char *' data-ref="8data" data-ref-filename="8data">data</dfn>);</td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/BitStream_size" data-ref="_M/BitStream_size">BitStream_size</dfn>(__bstream__) (__bstream__-&gt;length)</u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/BitStream_reset" data-ref="_M/BitStream_reset">BitStream_reset</dfn>(__bstream__) (__bstream__-&gt;length = 0)</u></td></tr>
+<tr><th id="37">37</th><td><b>extern</b> <em>unsigned</em> <em>char</em> *<a class="decl fn" href="bitstream.c.html#BitStream_toByte" title='BitStream_toByte' data-ref="BitStream_toByte" data-ref-filename="BitStream_toByte" id="BitStream_toByte">BitStream_toByte</a>(<a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<dfn class="local col9 decl" id="9bstream" title='bstream' data-type='BitStream *' data-ref="9bstream" data-ref-filename="9bstream">bstream</dfn>);</td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <em>void</em> <a class="decl fn" href="bitstream.c.html#BitStream_free" title='BitStream_free' data-ref="BitStream_free" data-ref-filename="BitStream_free" id="BitStream_free">BitStream_free</a>(<a class="typedef" href="#BitStream" title='BitStream' data-type='struct BitStream' data-ref="BitStream" data-ref-filename="BitStream">BitStream</a> *<dfn class="local col0 decl" id="10bstream" title='bstream' data-type='BitStream *' data-ref="10bstream" data-ref-filename="10bstream">bstream</dfn>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="22">endif</span> /* __BITSTREAM_H__ */</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='bitstream.c.html'>qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

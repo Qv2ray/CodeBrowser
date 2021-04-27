@@ -1,0 +1,18 @@
+<def f='include/c++/10/bits/stl_set.h' l='508' ll='514' type='std::pair&lt;iterator, bool&gt; std::set::insert(const std::set::value_type &amp; __x)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='92' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='104' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<doc f='include/c++/10/bits/stl_set.h' l='495'>/**
+       *  @brief Attempts to insert an element into the %set.
+       *  @param  __x  Element to be inserted.
+       *  @return  A pair, of which the first element is an iterator that points
+       *           to the possibly inserted element, and the second is a bool
+       *           that is true if the element was actually inserted.
+       *
+       *  This function attempts to insert an element into the %set.  A %set
+       *  relies on unique keys and thus an element is only inserted if it is
+       *  not already present in the %set.
+       *
+       *  Insertion requires logarithmic time.
+       */</doc>
+<use f='qv2ray/test/catch.hpp' l='11211' u='c' c='_ZN5Catch7TagInfo3addERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14092' u='c' c='_ZN5Catch27enforceNoDuplicateTestCasesERKSt6vectorINS_8TestCaseESaIS1_EE'/>

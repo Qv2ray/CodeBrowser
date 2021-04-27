@@ -1,0 +1,26 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSFinderPattern.h' l='27' ll='58'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSPair.h' l='28'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSPair.h' l='33' c='_ZN5ZXing4OneD3RSS4PairC1EiiRKNS1_13FinderPatternE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSPair.h' l='35' c='_ZNK5ZXing4OneD3RSS4Pair13finderPatternEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='88' c='_ZN5ZXing4OneDL23ParseFoundFinderPatternERKNS_8BitArrayEibNS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEERSt5arrayIiLm4EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='253' c='_ZN5ZXing4OneDL19DecodeDataCharacterERKNS_8BitArrayERKNS0_3RSS13FinderPatternEb'/>
+<size>48</size>
+<mbr r='ZXing::OneD::RSS::FinderPattern::_value' o='0' t='int'/>
+<mbr r='ZXing::OneD::RSS::FinderPattern::_start' o='32' t='int'/>
+<mbr r='ZXing::OneD::RSS::FinderPattern::_end' o='64' t='int'/>
+<mbr r='ZXing::OneD::RSS::FinderPattern::_points' o='128' t='std::array&lt;ResultPoint, 2&gt;'/>
+<fun r='_ZN5ZXing4OneD3RSS13FinderPatternC1Ev'/>
+<fun r='_ZN5ZXing4OneD3RSS13FinderPatternC1EiiiRKSt5arrayINS_11ResultPointELm2EE'/>
+<fun r='_ZNK5ZXing4OneD3RSS13FinderPattern7isValidEv'/>
+<fun r='_ZNK5ZXing4OneD3RSS13FinderPattern5valueEv'/>
+<fun r='_ZNK5ZXing4OneD3RSS13FinderPattern8startPosEv'/>
+<fun r='_ZNK5ZXing4OneD3RSS13FinderPattern6endPosEv'/>
+<fun r='_ZNK5ZXing4OneD3RSS13FinderPattern6pointsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedPair.h' l='33'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedPair.h' l='38' c='_ZN5ZXing4OneD3RSS12ExpandedPairC1ERKNS1_13DataCharacterES5_RKNS1_13FinderPatternEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedPair.h' l='53' c='_ZNK5ZXing4OneD3RSS12ExpandedPair13finderPatternEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='137' c='_ZN5ZXing4OneDL23ParseFoundFinderPatternERKNS_8BitArrayEibNS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEERSt5arrayIiLm4EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='171' c='_ZN5ZXing4OneDL11IsNotA1leftENS0_3RSS13FinderPatternEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='281' c='_ZN5ZXing4OneDL19DecodeDataCharacterERKNS_8BitArrayERKNS0_3RSS13FinderPatternEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='386' c='_ZN5ZXing4OneDL16RetrieveNextPairERKNS_8BitArrayERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS7_EEEibRS7_'/>
+<size>48</size>

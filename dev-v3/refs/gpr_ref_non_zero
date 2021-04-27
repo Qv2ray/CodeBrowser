@@ -1,0 +1,3 @@
+<dec f='include/grpc/support/sync.h' l='145' type='void gpr_ref_non_zero(gpr_refcount * r)'/>
+<doc f='include/grpc/support/sync.h' l='143'>/** Increment the reference count *r.  Requires *r initialized.
+   Crashes if refcount is zero */</doc>

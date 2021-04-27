@@ -1,0 +1,18 @@
+<use f='include/google/protobuf/message.h' l='336' u='c' c='_ZNK6google8protobuf7Message13GetDescriptorEv'/>
+<use f='include/google/protobuf/message.h' l='346' u='c' c='_ZNK6google8protobuf7Message13GetReflectionEv'/>
+<dec f='include/google/protobuf/message.h' l='353' type='google::protobuf::Metadata google::protobuf::Message::GetMetadata() const'/>
+<doc f='include/google/protobuf/message.h' l='350'>// Get a struct containing the metadata for the Message. Most subclasses only
+  // need to implement this method, rather than the GetDescriptor() and
+  // GetReflection() wrappers.</doc>
+<ovr f='/v2ray_api.pb.cc' l='628' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='909' c='_ZNK5v2ray4core3app5stats7command4Stat11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1143' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1422' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1651' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1830' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='2383' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='2562' c='_ZNK5v2ray4core3app5stats7command6Config11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='600' c='_ZNK22DomainObject_Attribute11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='928' c='_ZNK12DomainObject11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1215' c='_ZNK7GeoSite11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1444' c='_ZNK11GeoSiteList11GetMetadataEv'/>

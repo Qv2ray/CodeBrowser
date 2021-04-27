@@ -1,0 +1,30 @@
+<dec f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='88' type='void SingleApplication::SingleApplication(int &amp; argc, char ** argv, bool allowSecondary = false, SingleApplication::Options options = Mode::User, int timeout = 1000)'/>
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='43' ll='140' type='void SingleApplication::SingleApplication(int &amp; argc, char ** argv, bool allowSecondary = false, SingleApplication::Options options = Mode::User, int timeout = 1000)'/>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='36'>/**
+ * @brief Constructor. Checks and fires up LocalServer or closes the program
+ * if another instance already exists
+ * @param argc
+ * @param argv
+ * @param {bool} allowSecondaryInstances
+ */</doc>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='68'>/**
+     * @brief Intitializes a SingleApplication instance with argc command line
+     * arguments in argv
+     * @arg {int &amp;} argc - Number of arguments in argv
+     * @arg {const char *[]} argv - Supplied command line arguments
+     * @arg {bool} allowSecondary - Whether to start the instance as secondary
+     * if there is already a primary instance.
+     * @arg {Mode} mode - Whether for the SingleApplication block to be applied
+     * User wide or System wide.
+     * @arg {int} timeout - Timeout to wait in milliseconds.
+     * @note argc and argv may be changed as Qt removes arguments that it
+     * recognizes
+     * @note Mode::SecondaryNotification only works if set on both the primary
+     * instance and the secondary instance.
+     * @note The timeout is just a hint for the maximum time of blocking
+     * operations. It does not guarantee that the SingleApplication
+     * initialisation will be completed in given time, though is a good hint.
+     * Usually 4*timeout would be the worst case (fail) scenario.
+     * @see See the corresponding QAPPLICATION_CLASS constructor for reference
+     */</doc>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='32' u='c' c='_ZN6Qv2ray17Qv2rayApplicationC1ERiPPc'/>

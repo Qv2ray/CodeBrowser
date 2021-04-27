@@ -1,0 +1,8 @@
+<dec f='include/grpc/grpc.h' l='160' type='void grpc_completion_queue_shutdown(grpc_completion_queue * cq)'/>
+<doc f='include/grpc/grpc.h' l='153'>/** Begin destruction of a completion queue. Once all possible events are
+    drained then grpc_completion_queue_next will start to produce
+    GRPC_QUEUE_SHUTDOWN events only. At that point it&apos;s safe to call
+    grpc_completion_queue_destroy.
+
+    After calling this function applications should ensure that no
+    NEW work is added to be published on this completion queue. */</doc>

@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1289' type='uv_dirent_t *'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='594' u='r' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='608' u='r' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='609' u='r' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1884' u='r' c='uv_fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='733' u='r' c='uv__fs_readdir_cleanup'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='249' u='r' c='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='249' u='r' c='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='568' u='w' c='_ZN3uvw5FsReq7readdirEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='577' u='w' c='_ZN3uvw5FsReq11readdirSyncEv'/>

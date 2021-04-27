@@ -1,0 +1,16 @@
+<dec f='include/google/protobuf/message.h' l='563' type='const std::string &amp; google::protobuf::Reflection::GetStringReference(const google::protobuf::Message &amp; message, const google::protobuf::FieldDescriptor * field, std::string * scratch) const'/>
+<doc f='include/google/protobuf/message.h' l='548'>// Get a string value without copying, if possible.
+  //
+  // GetString() necessarily returns a copy of the string.  This can be
+  // inefficient when the string is already stored in a string object in the
+  // underlying message.  GetStringReference() will return a reference to the
+  // underlying string in this case.  Otherwise, it will copy the string into
+  // *scratch and return that.
+  //
+  // Note:  It is perfectly reasonable and useful to write code like:
+  //     str = reflection-&gt;GetStringReference(field, &amp;str);
+  //   This line would ensure that only one copy of the string is made
+  //   regardless of the field&apos;s underlying representation.  When initializing
+  //   a newly-constructed string, though, it&apos;s just as fast and more readable
+  //   to use code like:
+  //     string str = reflection-&gt;GetString(message, field);</doc>

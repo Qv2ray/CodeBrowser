@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='992' type='void uvw::FsReq::stat(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='369' ll='371' type='void uvw::FsReq::stat(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='984'>/**
+     * @brief Async [stat](http://linux.die.net/man/2/stat).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::STAT&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     */</doc>

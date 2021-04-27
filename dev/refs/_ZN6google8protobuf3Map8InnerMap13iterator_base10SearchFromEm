@@ -1,0 +1,6 @@
+<use f='include/google/protobuf/map.h' l='394' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseC1EPKS2_'/>
+<def f='include/google/protobuf/map.h' l='416' ll='432' type='void google::protobuf::Map::InnerMap::iterator_base::SearchFrom(google::protobuf::Map::size_type start_bucket)'/>
+<use f='include/google/protobuf/map.h' l='449' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseppEv'/>
+<use f='include/google/protobuf/map.h' l='454' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseppEv'/>
+<doc f='include/google/protobuf/map.h' l='414'>// Advance through buckets, looking for the first that isn&apos;t empty.
+      // If nothing non-empty is found then leave node_ == NULL.</doc>

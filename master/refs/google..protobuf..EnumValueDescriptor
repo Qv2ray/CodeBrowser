@@ -1,0 +1,60 @@
+<use f='include/google/protobuf/descriptor.h' l='332' c='_ZNK6google8protobuf10Descriptor19FindEnumValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='653' c='_ZNK6google8protobuf15FieldDescriptor18default_value_enumEv'/>
+<use f='include/google/protobuf/descriptor.h' l='789'/>
+<use f='include/google/protobuf/descriptor.h' l='904' c='_ZNK6google8protobuf14EnumDescriptor5valueEi'/>
+<use f='include/google/protobuf/descriptor.h' l='907' c='_ZNK6google8protobuf14EnumDescriptor15FindValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='910' c='_ZNK6google8protobuf14EnumDescriptor17FindValueByNumberEi'/>
+<use f='include/google/protobuf/descriptor.h' l='988' c='_ZNK6google8protobuf14EnumDescriptor34FindValueByNumberCreatingIfUnknownEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1012'/>
+<use f='include/google/protobuf/descriptor.h' l='1028'/>
+<def f='include/google/protobuf/descriptor.h' l='1040' ll='1112'/>
+<use f='include/google/protobuf/descriptor.h' l='1111' c='_ZN6google8protobuf19EnumValueDescriptorC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1111' c='_ZN6google8protobuf19EnumValueDescriptoraSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1367' c='_ZNK6google8protobuf14FileDescriptor19FindEnumValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1465'/>
+<use f='include/google/protobuf/descriptor.h' l='1559' c='_ZNK6google8protobuf14DescriptorPool19FindEnumValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1904' c='_ZNK6google8protobuf14EnumDescriptor5valueEi'/>
+<use f='include/google/protobuf/message.h' l='532' c='_ZNK6google8protobuf10Reflection7GetEnumERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='590' c='_ZNK6google8protobuf10Reflection7SetEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEPKNS0_19EnumValueDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='658' c='_ZNK6google8protobuf10Reflection15GetRepeatedEnumERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<use f='include/google/protobuf/message.h' l='708' c='_ZNK6google8protobuf10Reflection15SetRepeatedEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEiPKNS0_19EnumValueDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='744' c='_ZNK6google8protobuf10Reflection7AddEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEPKNS0_19EnumValueDescriptorE'/>
+<size>40</size>
+<doc f='include/google/protobuf/descriptor.h' l='1035'>// Describes an individual enum constant of a particular type.  To get the
+// EnumValueDescriptor for a given enum value, first get the EnumDescriptor
+// for its type, then use EnumDescriptor::FindValueByName() or
+// EnumDescriptor::FindValueByNumber().  Use DescriptorPool to construct
+// your own descriptors.</doc>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor5indexEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor6numberEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor4typeEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor6CopyToEPNS0_24EnumValueDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor11DebugStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor15GetLocationPathEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::EnumValueDescriptor::name_' o='0' t='const std::string *'/>
+<mbr r='google::protobuf::EnumValueDescriptor::full_name_' o='64' t='const std::string *'/>
+<mbr r='google::protobuf::EnumValueDescriptor::number_' o='128' t='int'/>
+<mbr r='google::protobuf::EnumValueDescriptor::type_' o='192' t='const google::protobuf::EnumDescriptor *'/>
+<mbr r='google::protobuf::EnumValueDescriptor::options_' o='256' t='const google::protobuf::EnumValueOptions *'/>
+<fun r='_ZN6google8protobuf19EnumValueDescriptorC1Ev'/>
+<fun r='_ZN6google8protobuf19EnumValueDescriptorC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor6numberEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor4typeEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf19EnumValueDescriptor5indexEv'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='351' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection7GetEnumERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='401' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection7SetEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEPKNS0_19EnumValueDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='431' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection15GetRepeatedEnumERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='460' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection15SetRepeatedEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEiPKNS0_19EnumValueDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='486' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection7AddEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEPKNS0_19EnumValueDescriptorE'/>
+<size>40</size>

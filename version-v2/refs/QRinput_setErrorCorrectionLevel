@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='247' type='int QRinput_setErrorCorrectionLevel(QRinput * input, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='239'>/**
+ * Set error correction level of the QR code that is to be encoded.
+ * This function cannot be applied to Micro QR Code.
+ * @param input input object.
+ * @param level Error correction level.
+ * @retval 0 success.
+ * @retval -1 invalid argument.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='179' ll='189' type='int QRinput_setErrorCorrectionLevel(QRinput * input, QRecLevel level)'/>

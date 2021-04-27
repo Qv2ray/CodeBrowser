@@ -1,0 +1,22 @@
+<def f='include/c++/10/bits/basic_string.h' l='1054' ll='1063' type='std::__cxx11::basic_string::const_reference std::__cxx11::basic_string::at(std::__cxx11::basic_string::size_type __n) const'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1044'>/**
+       *  @brief  Provides access to the data contained in the %string.
+       *  @param __n The index of the character to access.
+       *  @return  Read-only (const) reference to the character.
+       *  @throw  std::out_of_range  If @a n is an invalid index.
+       *
+       *  This function provides for safer data access.  The parameter is
+       *  first checked that it is in the range of the string.  The function
+       *  throws out_of_range if the check fails.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='78' u='c' c='_ZNK5ZXing10DataMatrix14EncoderContext11currentCharEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='82' u='c' c='_ZNK5ZXing10DataMatrix14EncoderContext8nextCharEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='194' u='c' c='_ZN5ZXing10DataMatrixL13LookAheadTestERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='298' u='c' c='_ZN5ZXing10DataMatrixL13LookAheadTestERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='436' u='c' c='_ZN5ZXing10DataMatrix10C40EncoderL17EncodeToCodewordsERNS0_14EncoderContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='437' u='c' c='_ZN5ZXing10DataMatrix10C40EncoderL17EncodeToCodewordsERNS0_14EncoderContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='438' u='c' c='_ZN5ZXing10DataMatrix10C40EncoderL17EncodeToCodewordsERNS0_14EncoderContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='698' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='699' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='700' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='701' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>

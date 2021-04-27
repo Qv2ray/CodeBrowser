@@ -1,0 +1,47 @@
+<def f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='38' ll='43'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='68' c='_ZN11RouteEditor28OnDispatcherObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='/qv2ray_autogen/DWD7ZFCWQR/moc_w_RoutesEditor.cpp' l='187' c='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='76'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='127' c='_ZN14NodeDispatcher18OnObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='142' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='226' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='361' c='_ZN14NodeDispatcher18OnObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/BalancerWidget.hpp' l='25' c='_ZN14BalancerWidget12OnTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.hpp' l='13' c='_ZN21InboundOutboundWidgetC1EN6Qv2ray4base7objects7complex18ComplexTagNodeModeESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.hpp' l='26'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='41' c='_ZN17ChainEditorWidget28OnDispatcherObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='/qv2ray_autogen/5XHV6SBJ63/moc_ChainEditorWidget.cpp' l='116' c='_ZN17ChainEditorWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<doc f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='9'>/*****************************************************************
+     *   ROOT
+     *      | Original Structures
+     *      | ======================
+     *      | - Inbounds
+     *      | - Routing Rules
+     *      | - DNS /
+     *      |
+     *      | Qv2ray-only structures
+     *      | ======================
+     *      |
+     *      | - Outbounds
+     *      |   |
+     *      |   | - OUTBOUND
+     *      |   |   - Original Outbound Object
+     *      |   |   ==========================================
+     *      |   |   - &quot;QV2RAY_OUTBOUND_METADATA&quot; -&gt; OutboundObjectMeta
+     *      |   |     - realOutbound                -&gt; OUTBOUND A.K.A ref&lt;OUTBOUND&gt;
+     *      |   |     - chainId                     -&gt; ChainID
+     *      |   |     - object                      -&gt; OutboundObject
+     *      |   |     - metaType                    -&gt; MetaOutboundObjectType
+     *      |   |       - ORIGINAL                      -&gt; Enables realOutbound
+     *      |   |       - EXTERNAL                      -&gt; Enables connectionId
+     *      |   |       - CHAINED                       -&gt; Enables chainId
+     *      |   |       - BALANCER                      -&gt; ?
+     *      |
+     *
+     *******************************************************************/</doc>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='188' c='_ZN11RouteEditor28OnDispatcherObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='qv2ray/src/ui/widgets/node/models/RuleNodeModel.cpp' l='18' c='_ZN6Qv2ray2ui10nodemodels13RuleNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_INS_4base7objects10RuleObjectEE'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/BalancerWidget.cpp' l='59' c='_ZN14BalancerWidget12OnTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/ChainOutboundWidget.cpp' l='7' c='_ZN19ChainOutboundWidgetC1ESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='10' c='_ZN21InboundOutboundWidgetC1EN6Qv2ray4base7objects7complex18ComplexTagNodeModeESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='263' c='_ZN17ChainEditorWidget28OnDispatcherObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='299' type='void uvw::Condition::signal()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='183' ll='185' type='void uvw::Condition::signal()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='293'>/**
+     * @brief Signals a condition.
+     *
+     * This function shall unblock at least one of the threads that are blocked
+     * on the specified condition variable (if any threads are blocked on it).
+     */</doc>

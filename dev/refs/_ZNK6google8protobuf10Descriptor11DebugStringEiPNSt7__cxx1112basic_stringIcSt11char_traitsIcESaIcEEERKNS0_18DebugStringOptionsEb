@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='435' type='void google::protobuf::Descriptor::DebugString(int depth, std::string * contents, const google::protobuf::DebugStringOptions &amp; options, bool include_opening_clause) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='431'>// Internal version of DebugString; controls the level of indenting for
+  // correct depth. Takes |options| to control debug-string options, and
+  // |include_opening_clause| to indicate whether the &quot;message ... &quot; part of the
+  // clause has already been generated (this varies depending on context).</doc>

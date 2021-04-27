@@ -1,0 +1,3 @@
+<dec f='include/google/protobuf/wire_format.h' l='137' type='static bool google::protobuf::internal::WireFormat::ReadPackedEnumPreserveUnknowns(io::CodedInputStream * input, google::protobuf::uint32 field_number, bool (*)(int) is_valid, google::protobuf::UnknownFieldSet * unknown_fields, RepeatedField&lt;int&gt; * values)'/>
+<doc f='include/google/protobuf/wire_format.h' l='135'>// Read a packed enum field. If the is_valid function is not NULL, values for
+  // which is_valid(value) returns false are appended to unknown_fields_stream.</doc>

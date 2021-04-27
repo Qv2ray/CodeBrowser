@@ -1,0 +1,22 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='29' ll='55'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='29'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/prepare.cpp' l='12' c='_ZN3uvw13PrepareHandle13startCallbackEP12uv_prepare_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/prepare.cpp' l='12' c='_ZN3uvw13PrepareHandle13startCallbackEP12uv_prepare_s'/>
+<size>232</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='21'>/**
+ * @brief The PrepareHandle handle.
+ *
+ * Prepare handles will emit a PrepareEvent event once per loop iteration, right
+ * before polling for I/O.
+ *
+ * To create a `PrepareHandle` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw13PrepareHandle13startCallbackEP12uv_prepare_s'/>
+<fun r='_ZN3uvw13PrepareHandle4initEv'/>
+<fun r='_ZN3uvw13PrepareHandle5startEv'/>
+<fun r='_ZN3uvw13PrepareHandle4stopEv'/>
+<fun r='_ZN3uvw13PrepareHandle13startCallbackEP12uv_prepare_s'/>
+<fun r='_ZN3uvw13PrepareHandle4initEv'/>
+<fun r='_ZN3uvw13PrepareHandle5startEv'/>
+<fun r='_ZN3uvw13PrepareHandle4stopEv'/>

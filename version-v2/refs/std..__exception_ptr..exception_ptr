@@ -1,0 +1,63 @@
+<use f='include/c++/10/bits/exception_ptr.h' l='64' c='_ZSt17current_exceptionv'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='67' c='_ZSt18make_exception_ptrT_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='70' c='_ZSt17rethrow_exceptionNSt15__exception_ptr13exception_ptrE'/>
+<def f='include/c++/10/bits/exception_ptr.h' l='80' ll='156'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='91' c='_ZSt17current_exceptionv'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='92' c='_ZSt17rethrow_exceptionNSt15__exception_ptr13exception_ptrE'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='94' c='_ZSt18make_exception_ptrT_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='99' c='_ZNSt15__exception_ptr13exception_ptrC1ERKS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='106' c='_ZNSt15__exception_ptr13exception_ptrC1EOS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='118' c='_ZNSt15__exception_ptr13exception_ptraSERKS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='119' c='_ZNSt15__exception_ptr13exception_ptraSERKS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='122' c='_ZNSt15__exception_ptr13exception_ptraSEOS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='123' c='_ZNSt15__exception_ptr13exception_ptraSEOS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='125' c='_ZNSt15__exception_ptr13exception_ptraSEOS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='125' c='_ZNSt15__exception_ptr13exception_ptraSEOS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='133' c='_ZNSt15__exception_ptr13exception_ptr4swapERS0_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='150' c='_ZNSt15__exception_ptreqERKNS_13exception_ptrES2_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='150' c='_ZNSt15__exception_ptreqERKNS_13exception_ptrES2_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='161' c='_ZNSt15__exception_ptreqERKNS_13exception_ptrES2_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='161' c='_ZNSt15__exception_ptreqERKNS_13exception_ptrES2_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='165' c='_ZNSt15__exception_ptrneERKNS_13exception_ptrES2_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='165' c='_ZNSt15__exception_ptrneERKNS_13exception_ptrES2_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='169' c='_ZNSt15__exception_ptr4swapERNS_13exception_ptrES1_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='169' c='_ZNSt15__exception_ptr4swapERNS_13exception_ptrES1_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='185' c='_ZSt18make_exception_ptrT_'/>
+<use f='include/c++/10/bits/exception_ptr.h' l='196' c='_ZSt18make_exception_ptrT_'/>
+<use f='include/c++/10/bits/nested_exception.h' l='54'/>
+<use f='include/c++/10/bits/nested_exception.h' l='74' c='_ZNKSt16nested_exception10nested_ptrEv'/>
+<use f='include/c++/10/future' l='203'/>
+<use f='include/c++/10/future' l='524'/>
+<use f='include/c++/10/future' l='537' c='_ZNSt13__future_base13_State_baseV28__setterERNSt15__exception_ptr13exception_ptrEPSt7promiseIT_E'/>
+<use f='include/c++/10/future' l='1120' c='_ZNSt7promise13set_exceptionENSt15__exception_ptr13exception_ptrE'/>
+<use f='include/c++/10/future' l='1138' c='_ZNSt7promise28set_exception_at_thread_exitENSt15__exception_ptr13exception_ptrE'/>
+<use f='include/c++/10/future' l='1227' c='_ZNSt7promiseIRT_E13set_exceptionENSt15__exception_ptr13exception_ptrE'/>
+<use f='include/c++/10/future' l='1238' c='_ZNSt7promiseIRT_E28set_exception_at_thread_exitENSt15__exception_ptr13exception_ptrE'/>
+<use f='include/c++/10/future' l='1319' c='_ZNSt7promiseIvE13set_exceptionENSt15__exception_ptr13exception_ptrE'/>
+<use f='include/c++/10/future' l='1327' c='_ZNSt7promiseIvE28set_exception_at_thread_exitENSt15__exception_ptr13exception_ptrE'/>
+<size>8</size>
+<doc f='include/c++/10/bits/exception_ptr.h' l='76'>/**
+     *  @brief An opaque pointer to an arbitrary exception.
+     *  @ingroup exceptions
+     */</doc>
+<mbr r='std::__exception_ptr::exception_ptr::_M_exception_object' o='0' t='void *'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1EPv'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptr9_M_addrefEv'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptr10_M_releaseEv'/>
+<fun r='_ZNKSt15__exception_ptr13exception_ptr6_M_getEv'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1Ev'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1ERKS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1EDn'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1EOS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptraSERKS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptraSEOS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrD1Ev'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptr4swapERS0_'/>
+<fun r='_ZNKSt15__exception_ptr13exception_ptrcvbEv'/>
+<fun r='_ZNKSt15__exception_ptr13exception_ptr20__cxa_exception_typeEv'/>
+<use f='qv2ray/test/catch.hpp' l='12394' c='_ZN5Catch24StartupExceptionRegistry3addERKNSt15__exception_ptr13exception_ptrE'/>
+<use f='qv2ray/test/catch.hpp' l='12395' c='_ZNK5Catch24StartupExceptionRegistry13getExceptionsEv'/>
+<use f='qv2ray/test/catch.hpp' l='12397'/>
+<use f='qv2ray/test/catch.hpp' l='13603' c='_ZN5Catch24StartupExceptionRegistry3addERKNSt15__exception_ptr13exception_ptrE'/>
+<use f='qv2ray/test/catch.hpp' l='13612' c='_ZNK5Catch24StartupExceptionRegistry13getExceptionsEv'/>
+<size>8</size>

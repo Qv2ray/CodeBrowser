@@ -1,0 +1,9 @@
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='74' ll='92'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='159'/>
+<fun r='_ZN4grpc8internal32ClientAsyncResponseReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__b'/>
+<use f='/v2ray_api.grpc.pb.cc' l='51' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub16AsyncGetStatsRawEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='55' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub23PrepareAsyncGetStatsRawEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='67' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18AsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='71' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub25PrepareAsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='83' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub19AsyncGetSysStatsRawEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='87' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub26PrepareAsyncGetSysStatsRawEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>

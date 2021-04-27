@@ -1,0 +1,9 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='639' type='0'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='101' u='r' c='_ZN4grpc15CompletionQueueC1Ev'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='376' u='r' c='_ZN4grpc21ServerCompletionQueueC1Ev'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='246' u='r' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='380' u='r' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='554' u='r' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='637'>/** The completion queue will have an associated pollset and there is no
+      restriction on the type of file descriptors the pollset may contain */</doc>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='53' u='r' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>

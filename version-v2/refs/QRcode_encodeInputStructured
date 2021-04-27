@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='478' type='QRcode_List * QRcode_encodeInputStructured(QRinput_Struct * s)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='472'>/**
+ * Create structured symbols from the input data.
+ * @warning This function is THREAD UNSAFE when pthread is disabled.
+ * @param s
+ * @return a singly-linked list of QRcode.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='760' ll='790' type='QRcode_List * QRcode_encodeInputStructured(QRinput_Struct * s)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='800' u='c' c='QRcode_encodeInputToStructured'/>

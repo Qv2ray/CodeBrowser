@@ -1,0 +1,11 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='471' type='int'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='304' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='309' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='325' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='343' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE12gpr_timespec'/>
+<offset>32</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='466'>/** If the grpc_completion_type is GRPC_OP_COMPLETE, this field indicates
+      whether the operation was successful or not; 0 in case of failure and
+      non-zero in case of success.
+      If grpc_completion_type is GRPC_QUEUE_SHUTDOWN or GRPC_QUEUE_TIMEOUT, this
+      field is guaranteed to be 0 */</doc>

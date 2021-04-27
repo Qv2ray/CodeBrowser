@@ -1,0 +1,4 @@
+<dec f='include/grpc/grpc.h' l='385' type='grpc_call_error grpc_server_request_registered_call(grpc_server * server, void * registered_method, grpc_call ** call, gpr_timespec * deadline, grpc_metadata_array * request_metadata, grpc_byte_buffer ** optional_payload, grpc_completion_queue * cq_bound_to_call, grpc_completion_queue * cq_for_notification, void * tag_new)'/>
+<doc f='include/grpc/grpc.h' l='382'>/** Request notification of a new pre-registered call. &apos;cq_for_notification&apos;
+    must have been registered to the server via
+    grpc_server_register_completion_queue. */</doc>

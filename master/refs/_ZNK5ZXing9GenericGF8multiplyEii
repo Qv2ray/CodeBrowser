@@ -1,0 +1,13 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='113' ll='123' type='int ZXing::GenericGF::multiply(int a, int b) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='110'>/**
+	* @return product of a and b in GF(size)
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='45' u='c' c='_ZNK5ZXing13GenericGFPoly10evaluateAtEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='95' u='c' c='_ZN5ZXing13GenericGFPoly8multiplyERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='116' u='c' c='_ZN5ZXing13GenericGFPoly8multiplyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='133' u='c' c='_ZN5ZXing13GenericGFPoly18multiplyByMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='160' u='c' c='_ZN5ZXing13GenericGFPoly6divideERKS0_RS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='122' u='c' c='_ZN5ZXingL19FindErrorMagnitudesERKNS_9GenericGFERKNS_13GenericGFPolyERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='124' u='c' c='_ZN5ZXingL19FindErrorMagnitudesERKNS_9GenericGFERKNS_13GenericGFPolyERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='127' u='c' c='_ZN5ZXingL19FindErrorMagnitudesERKNS_9GenericGFERKNS_13GenericGFPolyERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='129' u='c' c='_ZN5ZXingL19FindErrorMagnitudesERKNS_9GenericGFERKNS_13GenericGFPolyERKSt6vectorIiSaIiEE'/>

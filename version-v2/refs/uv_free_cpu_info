@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1213' type='void uv_free_cpu_info(uv_cpu_info_t * cpu_infos, int count)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='637' u='c' c='uv_cpu_info'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='846' ll='853' type='void uv_free_cpu_info(uv_cpu_info_t * cpu_infos, int count)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='202' u='c' c='_ZN3uvw9Utilities7cpuInfoEv'/>

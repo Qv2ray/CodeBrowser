@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='59' ll='65'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='66'/>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='49'>/**
+     * @brief Mode of operation of SingleApplication.
+     * Whether the block should be user-wide or system-wide and whether the
+     * primary instance should be notified when a secondary instance had been
+     * started.
+     * @note Operating system can restrict the shared memory blocks to the same
+     * user, in which case the User/System modes will have no effect and the
+     * block will be user wide.
+     * @enum
+     */</doc>

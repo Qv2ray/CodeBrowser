@@ -1,0 +1,13 @@
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='179'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='384'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2220' c='curl_mime_headers'/>
+<def f='include/x86_64-linux-gnu/curl/curl.h' l='2460' ll='2463'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2462'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2514' c='curl_slist_append'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2514' c='curl_slist_append'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2524' c='curl_slist_free_all'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2541'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='2459'>/* linked-list structure for the CURLOPT_QUOTE option (and other) */</doc>
+<mbr r='curl_slist::data' o='0' t='char *'/>
+<mbr r='curl_slist::next' o='64' t='struct curl_slist *'/>

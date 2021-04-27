@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='651' macro='1' type='ssize_t'/>
+<offset>1920</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='113' u='w' c='uv__udp_finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='156' u='r' c='uv__udp_run_completed'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='159' u='r' c='uv__udp_run_completed'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='375' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='390' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='459' u='w' c='uv__udp_sendmsg'/>

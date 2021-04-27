@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='54' type='void QtNodes::Node::onDataUpdated(QtNodes::PortIndex index)'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='52'>/// Fetches data from model&apos;s OUT #index port
+        /// and propagates it to the connection</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='72' u='c' c='_ZN7QtNodes9FlowScene16createConnectionERNS_4NodeEiS2_iRKSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='27' u='a' c='_ZN7QtNodes4NodeC1EOSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='128' ll='132' type='void QtNodes::Node::onDataUpdated(QtNodes::PortIndex index)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='102' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<use f='/qv2ray_nodeeditor_autogen/J7PFPXRXWT/moc_Node.cpp' l='84' u='c' c='_ZN7QtNodes4Node18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>

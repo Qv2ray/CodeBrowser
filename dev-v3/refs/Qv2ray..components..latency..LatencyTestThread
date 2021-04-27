@@ -1,0 +1,27 @@
+<use f='qv2ray/src/components/latency/LatencyTest.hpp' l='49'/>
+<def f='qv2ray/src/components/latency/LatencyTestThread.hpp' l='16' ll='51'/>
+<size>120</size>
+<smbr r='Qv2ray::components::latency::LatencyTestThread::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray10components7latency17LatencyTestThread10metaObjectEv'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThreadC1EP7QObject'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread15stopLatencyTestEv'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERK5QListINS_4base6IDTypeINS4_14__ConnectionIdEEEEiNS4_6config26Qv2rayLatencyTestingMethodE'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERKNS_4base6IDTypeINS3_14__ConnectionIdEEEiNS3_6config26Qv2rayLatencyTestingMethodE'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<mbr r='Qv2ray::components::latency::LatencyTestThread::loop' o='128' t='std::shared_ptr&lt;uvw::Loop&gt;'/>
+<mbr r='Qv2ray::components::latency::LatencyTestThread::curlGlobal' o='256' t='Qv2ray::components::latency::LatencyTestThread::CURLGlobal'/>
+<mbr r='Qv2ray::components::latency::LatencyTestThread::isStop' o='264' t='bool'/>
+<mbr r='Qv2ray::components::latency::LatencyTestThread::stopTimer' o='320' t='std::shared_ptr&lt;uvw::TimerHandle&gt;'/>
+<mbr r='Qv2ray::components::latency::LatencyTestThread::requests' o='448' t='std::vector&lt;LatencyTestRequest&gt;'/>
+<mbr r='Qv2ray::components::latency::LatencyTestThread::m' o='640' t='std::mutex'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::components::latency::LatencyTestThread::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray10components7latency17LatencyTestThread10metaObjectEv'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray10components7latency17LatencyTestThread11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='13' c='_ZN6Qv2ray10components7latency15LatencyTestHostC1EiP7QObject'/>
+<size>120</size>

@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='308' type='bool google::protobuf::io::CodedInputStream::ExpectAtEnd()'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1109' ll='1122' type='bool google::protobuf::io::CodedInputStream::ExpectAtEnd()'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='212' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='370' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='304'>// Usually returns true if no more bytes can be read.  Always returns false
+  // if more bytes can be read.  If ExpectAtEnd() returns true, a subsequent
+  // call to LastTagWas() will act as if ReadTag() had been called and returned
+  // zero, and ConsumedEntireMessage() will return true.</doc>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/curl/multi.h' l='271' type='const char * curl_multi_strerror(CURLMcode )'/>
+<doc f='include/x86_64-linux-gnu/curl/multi.h' l='262'>/*
+ * Name:    curl_multi_strerror()
+ *
+ * Desc:    The curl_multi_strerror function may be used to turn a CURLMcode
+ *          value into the equivalent human readable error string.  This is
+ *          useful for printing meaningful error messages.
+ *
+ * Returns: A pointer to a zero-terminated error message.
+ */</doc>

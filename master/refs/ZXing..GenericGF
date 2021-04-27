@@ -1,0 +1,87 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='76' c='_ZN5ZXing13GenericGFPolyC1ERKNS_9GenericGFEOSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='82' c='_ZN5ZXing13GenericGFPolyC1ERKNS_9GenericGFERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='142'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='146'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='39' ll='152'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='42' c='_ZN5ZXing9GenericGF11AztecData12Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='43' c='_ZN5ZXing9GenericGF11AztecData10Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='44' c='_ZN5ZXing9GenericGF10AztecData6Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='45' c='_ZN5ZXing9GenericGF10AztecParamEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='46' c='_ZN5ZXing9GenericGF14QRCodeField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='47' c='_ZN5ZXing9GenericGF18DataMatrixField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='48' c='_ZN5ZXing9GenericGF10AztecData8Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='49' c='_ZN5ZXing9GenericGF15MaxiCodeField64Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='22' c='_ZN5ZXing9GenericGF11AztecData12Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='25' c='_ZN5ZXing9GenericGF11AztecData12Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='29' c='_ZN5ZXing9GenericGF11AztecData10Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='32' c='_ZN5ZXing9GenericGF11AztecData10Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='36' c='_ZN5ZXing9GenericGF10AztecData6Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='39' c='_ZN5ZXing9GenericGF10AztecData6Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='43' c='_ZN5ZXing9GenericGF10AztecParamEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='46' c='_ZN5ZXing9GenericGF10AztecParamEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='50' c='_ZN5ZXing9GenericGF14QRCodeField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='53' c='_ZN5ZXing9GenericGF14QRCodeField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='57' c='_ZN5ZXing9GenericGF18DataMatrixField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='60' c='_ZN5ZXing9GenericGF18DataMatrixField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='64' c='_ZN5ZXing9GenericGF10AztecData8Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='67' c='_ZN5ZXing9GenericGF10AztecData8Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='71' c='_ZN5ZXing9GenericGF15MaxiCodeField64Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='74' c='_ZN5ZXing9GenericGF15MaxiCodeField64Ev'/>
+<size>56</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='28'>/**
+* &lt;p&gt;This class contains utility methods for performing mathematical operations over
+* the Galois Fields. Operations use a given primitive polynomial in calculations.&lt;/p&gt;
+*
+* &lt;p&gt;Throughout this package, elements of the GF are represented as an {@code int}
+* for convenience and speed (but at the cost of memory).
+* &lt;/p&gt;
+*
+* @author Sean Owen
+* @author David Olivier
+*/</doc>
+<fun r='_ZN5ZXing9GenericGF11AztecData12Ev'/>
+<fun r='_ZN5ZXing9GenericGF11AztecData10Ev'/>
+<fun r='_ZN5ZXing9GenericGF10AztecData6Ev'/>
+<fun r='_ZN5ZXing9GenericGF10AztecParamEv'/>
+<fun r='_ZN5ZXing9GenericGF14QRCodeField256Ev'/>
+<fun r='_ZN5ZXing9GenericGF18DataMatrixField256Ev'/>
+<fun r='_ZN5ZXing9GenericGF10AztecData8Ev'/>
+<fun r='_ZN5ZXing9GenericGF15MaxiCodeField64Ev'/>
+<fun r='_ZNK5ZXing9GenericGF11setMonomialERNS_13GenericGFPolyEii'/>
+<fun r='_ZNK5ZXing9GenericGF7setZeroERNS_13GenericGFPolyE'/>
+<fun r='_ZNK5ZXing9GenericGF6setOneERNS_13GenericGFPolyE'/>
+<fun r='_ZNK5ZXing9GenericGF13addOrSubtractEii'/>
+<fun r='_ZNK5ZXing9GenericGF3expEi'/>
+<fun r='_ZNK5ZXing9GenericGF3logEi'/>
+<fun r='_ZNK5ZXing9GenericGF7inverseEi'/>
+<fun r='_ZNK5ZXing9GenericGF8multiplyEii'/>
+<fun r='_ZNK5ZXing9GenericGF4sizeEv'/>
+<fun r='_ZNK5ZXing9GenericGF13generatorBaseEv'/>
+<mbr r='ZXing::GenericGF::_size' o='0' t='const int'/>
+<mbr r='ZXing::GenericGF::_generatorBase' o='32' t='int'/>
+<mbr r='ZXing::GenericGF::_expTable' o='64' t='std::vector&lt;int&gt;'/>
+<mbr r='ZXing::GenericGF::_logTable' o='256' t='std::vector&lt;int&gt;'/>
+<fun r='_ZN5ZXing9GenericGFC1Eiii'/>
+<fun r='_ZN5ZXing9GenericGF11AztecData12Ev'/>
+<fun r='_ZN5ZXing9GenericGF11AztecData10Ev'/>
+<fun r='_ZN5ZXing9GenericGF10AztecData6Ev'/>
+<fun r='_ZN5ZXing9GenericGF10AztecParamEv'/>
+<fun r='_ZN5ZXing9GenericGF14QRCodeField256Ev'/>
+<fun r='_ZN5ZXing9GenericGF18DataMatrixField256Ev'/>
+<fun r='_ZN5ZXing9GenericGF10AztecData8Ev'/>
+<fun r='_ZN5ZXing9GenericGF15MaxiCodeField64Ev'/>
+<fun r='_ZN5ZXing9GenericGFC1Eiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.h' l='59' c='_ZN5ZXing18ReedSolomonDecoder6DecodeERKNS_9GenericGFERSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='30' c='_ZN5ZXingL21RunEuclideanAlgorithmERKNS_9GenericGFEOSt6vectorIiSaIiEEiRNS_13GenericGFPolyES8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='85' c='_ZN5ZXingL18FindErrorLocationsERKNS_9GenericGFERKNS_13GenericGFPolyE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='108' c='_ZN5ZXingL19FindErrorMagnitudesERKNS_9GenericGFERKNS_13GenericGFPolyERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='137' c='_ZN5ZXing18ReedSolomonDecoder6DecodeERKNS_9GenericGFERSt6vectorIiSaIiEEi'/>
+<size>56</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.h' l='27' c='_ZN5ZXing18ReedSolomonEncoderC1ERKNS_9GenericGFE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.h' l='32'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='27' c='_ZN5ZXing18ReedSolomonEncoderC1ERKNS_9GenericGFE'/>
+<size>56</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='153' c='_ZN5ZXing5AztecL11CorrectBitsERKNS0_14DetectorResultERKSt6vectorIbSaIbEERS6_'/>
+<size>56</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='60' c='_ZN5ZXing5AztecL17GetGFFromWordSizeEi'/>
+<size>56</size>

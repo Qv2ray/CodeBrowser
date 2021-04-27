@@ -1,0 +1,4 @@
+<dec f='include/signal.h' l='196' type='int sigemptyset(sigset_t * __set)'/>
+<doc f='include/signal.h' l='195'>/* Clear all signals from SET.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='274' u='c' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='393' u='c' c='uv__process_child_init'/>

@@ -1,0 +1,25 @@
+<inh f='qv2ray/src/plugin-interface/gui/QvGUIPluginInterface.hpp' l='66' c='Qv2rayPlugin::QvPluginEditor'/>
+<inh f='/QvPlugin-BuiltinProtocolSupport_autogen/include/ui_vless.h' l='114' c='Ui::vlessOutEditor'/>
+<def f='qv2ray/src/plugins/protocols/ui/outbound/vless.hpp' l='7' ll='55'/>
+<size>456</size>
+<smbr r='VlessOutboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK19VlessOutboundEditor10metaObjectEv'/>
+<fun r='_ZN19VlessOutboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN19VlessOutboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN19VlessOutboundEditor2trEPKcS1_i'/>
+<fun r='_ZN19VlessOutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN19VlessOutboundEditorC1EP7QWidget'/>
+<fun r='_ZN19VlessOutboundEditor14SetHostAddressERK7QStringi'/>
+<fun r='_ZNK19VlessOutboundEditor14GetHostAddressEv'/>
+<fun r='_ZN19VlessOutboundEditor10SetContentERK11QJsonObject'/>
+<fun r='_ZNK19VlessOutboundEditor10GetContentEv'/>
+<fun r='_ZN19VlessOutboundEditor11changeEventEP6QEvent'/>
+<mbr r='VlessOutboundEditor::vless' o='896' t='VLESSServerObject'/>
+<mbr r='VlessOutboundEditor::property_bindings' o='3456' t='std::list&lt;QPropertyChangeHandler&lt;std::function&lt;void ()&gt;&gt;&gt;'/>
+<fun r='_ZN19VlessOutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='VlessOutboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK19VlessOutboundEditor10metaObjectEv'/>
+<fun r='_ZN19VlessOutboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN19VlessOutboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/plugins/protocols/ui/Interface.hpp' l='48' c='_ZNK20ProtocolGUIInterface21createOutboundEditorsEv'/>
+<size>456</size>

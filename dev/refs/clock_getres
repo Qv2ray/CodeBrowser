@@ -1,0 +1,3 @@
+<dec f='include/time.h' l='210' type='int clock_getres(clockid_t __clock_id, struct timespec * __res)'/>
+<doc f='include/time.h' l='209'>/* Get resolution of clock CLOCK_ID.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='487' u='c' c='uv__hrtime'/>

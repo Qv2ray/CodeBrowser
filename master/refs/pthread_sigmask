@@ -1,0 +1,8 @@
+<dec f='include/x86_64-linux-gnu/bits/sigthread.h' l='31' type='int pthread_sigmask(int __how, const __sigset_t *__restrict __newmask, __sigset_t *__restrict __oldmask)'/>
+<doc f='include/x86_64-linux-gnu/bits/sigthread.h' l='29'>/* Modify the signal mask for the calling thread.  The arguments have
+   the same meaning as for sigprocmask(2). */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='292' u='c' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='318' u='c' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='394' u='c' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='146' u='c' c='uv__signal_block_and_lock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='158' u='c' c='uv__signal_unlock_and_unblock'/>

@@ -1,0 +1,6 @@
+<dec f='include/grpcpp/channel.h' l='100' type='grpc::CompletionQueue *'/>
+<offset>1024</offset>
+<doc f='include/grpcpp/channel.h' l='96'>// callback_cq_ references the callbackable completion queue associated
+  // with this channel (if any). It is set on the first call to CallbackCQ().
+  // It is _not owned_ by the channel; ownership belongs with its internal
+  // shutdown callback tag (invoked when the CQ is fully shutdown).</doc>

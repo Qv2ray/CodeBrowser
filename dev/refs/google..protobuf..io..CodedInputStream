@@ -1,0 +1,313 @@
+<def f='include/google/protobuf/io/coded_stream.h' l='165' ll='632'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='527' c='_ZN6google8protobuf2io16CodedInputStreamC1ERKS2_'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='527' c='_ZN6google8protobuf2io16CodedInputStreamaSERKS2_'/>
+<use f='include/google/protobuf/message_lite.h' l='229' c='_ZN6google8protobuf11MessageLite20ParseFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='232' c='_ZN6google8protobuf11MessageLite27ParsePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='274' c='_ZN6google8protobuf11MessageLite20MergeFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='281' c='_ZN6google8protobuf11MessageLite27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='72' c='_ZN6google8protobuf8internal19ImplicitWeakMessage27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='183' c='_ZN6google8protobuf8internal14WireFormatLite9SkipFieldEPNS0_2io16CodedInputStreamEj'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='188' c='_ZN6google8protobuf8internal14WireFormatLite9SkipFieldEPNS0_2io16CodedInputStreamEjPNS3_17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='194' c='_ZN6google8protobuf8internal14WireFormatLite11SkipMessageEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='198' c='_ZN6google8protobuf8internal14WireFormatLite11SkipMessageEPNS0_2io16CodedInputStreamEPNS3_17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='277' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='284' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='291' c='_ZN6google8protobuf8internal14WireFormatLite29ReadRepeatedPrimitiveNoInlineEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='306' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='312' c='_ZN6google8protobuf8internal14WireFormatLite27ReadPackedPrimitiveNoInlineEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='317' c='_ZN6google8protobuf8internal14WireFormatLite22ReadPackedEnumNoInlineEPNS0_2io16CodedInputStreamEPFbiEPNS0_13RepeatedFieldIiEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='324' c='_ZN6google8protobuf8internal14WireFormatLite30ReadPackedEnumPreserveUnknownsEPNS0_2io16CodedInputStreamEiPFbiEPNS3_17CodedOutputStreamEPNS0_13RepeatedFieldIiEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='328' c='_ZN6google8protobuf8internal14WireFormatLite10ReadStringEPNS0_2io16CodedInputStreamEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='334' c='_ZN6google8protobuf8internal14WireFormatLite10ReadStringEPNS0_2io16CodedInputStreamEPPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='336' c='_ZN6google8protobuf8internal14WireFormatLite9ReadBytesEPNS0_2io16CodedInputStreamEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='337' c='_ZN6google8protobuf8internal14WireFormatLite9ReadBytesEPNS0_2io16CodedInputStreamEPPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='350' c='_ZN6google8protobuf8internal14WireFormatLite9ReadGroupEiPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='354' c='_ZN6google8protobuf8internal14WireFormatLite11ReadMessageEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='360' c='_ZN6google8protobuf8internal14WireFormatLite18ReadGroupNoVirtualEiPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='366' c='_ZN6google8protobuf8internal14WireFormatLite20ReadMessageNoVirtualEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='720' c='_ZN6google8protobuf8internal14WireFormatLite30ReadRepeatedFixedSizePrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='727' c='_ZN6google8protobuf8internal14WireFormatLite28ReadPackedFixedSizePrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='745' c='_ZN6google8protobuf8internal12FieldSkipper9SkipFieldEPNS0_2io16CodedInputStreamEj'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='749' c='_ZN6google8protobuf8internal12FieldSkipper11SkipMessageEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='766' c='_ZN6google8protobuf8internal29CodedOutputStreamFieldSkipper9SkipFieldEPNS0_2io16CodedInputStreamEj'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='767' c='_ZN6google8protobuf8internal29CodedOutputStreamFieldSkipper11SkipMessageEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='879' c='_ZN6google8protobuf8internal14WireFormatLite10ReadStringEPNS0_2io16CodedInputStreamEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='884' c='_ZN6google8protobuf8internal14WireFormatLite10ReadStringEPNS0_2io16CodedInputStreamEPPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='58' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='67' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='76' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='82' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='88' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='97' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='106' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='112' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='118' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='127' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='136' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='145' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='154' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='163' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='230' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='248' c='_ZN6google8protobuf8internal14WireFormatLite30ReadRepeatedFixedSizePrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='300' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='300' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='300' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='300' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='300' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='300' c='_ZN6google8protobuf8internal14WireFormatLite21ReadRepeatedPrimitiveEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='320' c='_ZN6google8protobuf8internal14WireFormatLite29ReadRepeatedPrimitiveNoInlineEijPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='327' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='343' c='_ZN6google8protobuf8internal14WireFormatLite28ReadPackedFixedSizePrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='407' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='407' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='407' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='407' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='407' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='407' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='423' c='_ZN6google8protobuf8internal14WireFormatLite27ReadPackedPrimitiveNoInlineEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='431' c='_ZN6google8protobuf8internal14WireFormatLite9ReadGroupEiPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='444' c='_ZN6google8protobuf8internal14WireFormatLite11ReadMessageEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/map_type_handler.h' l='162' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE11ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_3866974'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE9ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_91594782'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE12ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_7634019'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE3ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_39124740'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE4ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_46627441'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE5ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_52486413'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE13ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_10500290'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE18ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_7658671'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE17ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_11882432'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE14ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_6867205'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE1ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_12766813'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE2ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_211062608'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_69578188'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE7ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_74460302'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE16ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_11326367'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE15ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_1850731'/>
+<use f='include/google/protobuf/map_type_handler.h' l='221' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE8ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_814829839'/>
+<use f='include/google/protobuf/map_type_handler.h' l='417' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE11ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_3866974'/>
+<use f='include/google/protobuf/map_type_handler.h' l='423' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE9ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_91594782'/>
+<use f='include/google/protobuf/map_type_handler.h' l='429' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE12ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_7634019'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE3ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_39124740'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE4ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_46627441'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE5ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_52486413'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE13ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_10500290'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE18ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_7658671'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE17ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_11882432'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE14ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_6867205'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE1ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_12766813'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE2ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_211062608'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE6ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_69578188'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE7ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_74460302'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE16ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_11326367'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE15ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_1850731'/>
+<use f='include/google/protobuf/map_type_handler.h' l='436' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE8ET_E4ReadEPNS0_2io16CodedInputStreamEPNS1_22MapWireFieldTypeTraitsILS4_814829839'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='186' c='_ZN6google8protobuf8internal12MapEntryImpl27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='343' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='407' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='125'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='179' c='_ZN6google8protobuf8internal27MergePartialFromCodedStreamEPNS0_11MessageLiteERKNS1_10ParseTableEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='181' c='_ZN6google8protobuf8internal31MergePartialFromCodedStreamLiteEPNS0_11MessageLiteERKNS1_10ParseTableEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='184' c='_ZN6google8protobuf8internal8ParseMapEPNS0_2io16CodedInputStreamEPv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='157' c='_ZN6google8protobuf15UnknownFieldSet20MergeFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='158' c='_ZN6google8protobuf15UnknownFieldSet20ParseFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/message.h' l='312' c='_ZN6google8protobuf7Message27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/extension_set.h' l='362' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_12FieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='372' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='374' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_7MessageEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='377' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteEPNS3_17CodedOutputStreamE'/>
+<use f='include/google/protobuf/extension_set.h' l='383' c='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='389' c='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='391' c='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPKNS0_7MessageEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='479' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension11ReadMessageERKNS0_11MessageLiteEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/extension_set.h' l='686' c='_ZN6google8protobuf8internal12ExtensionSet27ParseFieldWithExtensionInfoEibRKNS1_13ExtensionInfoEPNS0_2io16CodedInputStreamEPNS1_12FieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='692' c='_ZN6google8protobuf8internal12ExtensionSet21ParseFieldMaybeLazilyEiiPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='707' c='_ZN6google8protobuf8internal12ExtensionSet19ParseMessageSetItemEPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<use f='/v2ray_api.pb.h' l='162' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='280' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='398' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='507' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='625' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='734' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='830' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.h' l='996' c='_ZN5v2ray4core3app5stats7command6Config27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='379' c='_ZN6google8protobuf17FileDescriptorSet27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='511' c='_ZN6google8protobuf19FileDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='848' c='_ZN6google8protobuf30DescriptorProto_ExtensionRange27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1005' c='_ZN6google8protobuf29DescriptorProto_ReservedRange27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1144' c='_ZN6google8protobuf15DescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1425' c='_ZN6google8protobuf21ExtensionRangeOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1560' c='_ZN6google8protobuf20FieldDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1958' c='_ZN6google8protobuf20OneofDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2122' c='_ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2261' c='_ZN6google8protobuf19EnumDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2476' c='_ZN6google8protobuf24EnumValueDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2650' c='_ZN6google8protobuf22ServiceDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2827' c='_ZN6google8protobuf21MethodDescriptorProto27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3065' c='_ZN6google8protobuf11FileOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3598' c='_ZN6google8protobuf14MessageOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3773' c='_ZN6google8protobuf12FieldOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4024' c='_ZN6google8protobuf12OneofOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4159' c='_ZN6google8protobuf11EnumOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4314' c='_ZN6google8protobuf16EnumValueOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4459' c='_ZN6google8protobuf14ServiceOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4604' c='_ZN6google8protobuf13MethodOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4787' c='_ZN6google8protobuf28UninterpretedOption_NamePart27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4946' c='_ZN6google8protobuf19UninterpretedOption27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5191' c='_ZN6google8protobuf23SourceCodeInfo_Location27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5415' c='_ZN6google8protobuf14SourceCodeInfo27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5549' c='_ZN6google8protobuf28GeneratedCodeInfo_Annotation27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5729' c='_ZN6google8protobuf17GeneratedCodeInfo27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='66'/>
+<size>80</size>
+<doc f='include/google/protobuf/io/coded_stream.h' l='158'>// Class which reads and decodes binary data which is composed of varint-
+// encoded integers and fixed-width pieces.  Wraps a ZeroCopyInputStream.
+// Most users will not need to deal with CodedInputStream.
+//
+// Most methods of CodedInputStream that return a bool return false if an
+// underlying I/O error occurs or if the data is malformed.  Once such a
+// failure occurs, the CodedInputStream is broken and is no longer useful.</doc>
+<fun r='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStreamC1EPKhi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStreamD1Ev'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream6IsFlatEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream4SkipEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream22GetDirectBufferPointerEPPKvPi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream28GetDirectBufferPointerInlineEPPKvPi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream7ReadRawEPvi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream21InternalReadRawInlineEPvi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream10ReadStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream24InternalReadStringInlineEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ReadLittleEndian32EPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ReadLittleEndian64EPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream27ReadLittleEndian32FromArrayEPKhPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream27ReadLittleEndian64FromArrayEPKhPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream12ReadVarint32EPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream12ReadVarint64EPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream19ReadVarintSizeAsIntEPi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream7ReadTagEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream16ReadTagNoLastTagEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream17ReadTagWithCutoffEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream26ReadTagWithCutoffNoLastTagEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream9ExpectTagEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ExpectTagFromArrayEPKhj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream11ExpectAtEndEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream10LastTagWasEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream10SetLastTagEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream21ConsumedEntireMessageEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream9PushLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream8PopLimitEi'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream15BytesUntilLimitEv'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream15CurrentPositionEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18SetTotalBytesLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18SetTotalBytesLimitEii'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream25BytesUntilTotalBytesLimitEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream17SetRecursionLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream23IncrementRecursionDepthEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream23DecrementRecursionDepthEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream29UnsafeDecrementRecursionDepthEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream35IncrementRecursionDepthAndPushLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream22ReadLengthAndPushLimitEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream34DecrementRecursionDepthAndPopLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream37CheckEntireMessageConsumedAndPopLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream20SetExtensionRegistryEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream16GetExtensionPoolEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream19GetExtensionFactoryEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStreamC1ERKS2_'/>
+<mbr r='google::protobuf::io::CodedInputStream::buffer_' o='0' t='const google::protobuf::uint8 *'/>
+<mbr r='google::protobuf::io::CodedInputStream::buffer_end_' o='64' t='const google::protobuf::uint8 *'/>
+<mbr r='google::protobuf::io::CodedInputStream::input_' o='128' t='google::protobuf::io::ZeroCopyInputStream *'/>
+<mbr r='google::protobuf::io::CodedInputStream::total_bytes_read_' o='192' t='int'/>
+<mbr r='google::protobuf::io::CodedInputStream::overflow_bytes_' o='224' t='int'/>
+<mbr r='google::protobuf::io::CodedInputStream::last_tag_' o='256' t='google::protobuf::uint32'/>
+<mbr r='google::protobuf::io::CodedInputStream::legitimate_message_end_' o='288' t='bool'/>
+<mbr r='google::protobuf::io::CodedInputStream::aliasing_enabled_' o='296' t='bool'/>
+<mbr r='google::protobuf::io::CodedInputStream::current_limit_' o='320' t='google::protobuf::io::CodedInputStream::Limit'/>
+<mbr r='google::protobuf::io::CodedInputStream::buffer_size_after_limit_' o='352' t='int'/>
+<mbr r='google::protobuf::io::CodedInputStream::total_bytes_limit_' o='384' t='int'/>
+<mbr r='google::protobuf::io::CodedInputStream::recursion_budget_' o='416' t='int'/>
+<mbr r='google::protobuf::io::CodedInputStream::recursion_limit_' o='448' t='int'/>
+<mbr r='google::protobuf::io::CodedInputStream::extension_pool_' o='512' t='const google::protobuf::DescriptorPool *'/>
+<mbr r='google::protobuf::io::CodedInputStream::extension_factory_' o='576' t='google::protobuf::MessageFactory *'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream12SkipFallbackEii'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream7AdvanceEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream28BackUpInputToCurrentPositionEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream21RecomputeBufferLimitsEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream25PrintTotalBytesLimitErrorEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream7RefreshEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream20ReadVarint32FallbackEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream27ReadVarintSizeAsIntFallbackEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream20ReadVarint64FallbackEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream16ReadVarint32SlowEPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream16ReadVarint64SlowEPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream23ReadVarintSizeAsIntSlowEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream26ReadLittleEndian32FallbackEPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream26ReadLittleEndian64FallbackEPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream15ReadTagFallbackEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream11ReadTagSlowEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ReadStringFallbackEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream10BufferSizeEv'/>
+<smbr r='google::protobuf::io::CodedInputStream::kDefaultTotalBytesLimit' t='const int'/>
+<smbr r='google::protobuf::io::CodedInputStream::default_recursion_limit_' t='int'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream12ReadVarint32EPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream12ReadVarint64EPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream19ReadVarintSizeAsIntEPi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream27ReadLittleEndian32FromArrayEPKhPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream27ReadLittleEndian64FromArrayEPKhPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ReadLittleEndian32EPj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ReadLittleEndian64EPm'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream16ReadTagNoLastTagEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream26ReadTagWithCutoffNoLastTagEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream10LastTagWasEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream21ConsumedEntireMessageEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream9ExpectTagEj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream18ExpectTagFromArrayEPKhj'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream28GetDirectBufferPointerInlineEPPKvPi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream11ExpectAtEndEv'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream15CurrentPositionEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream7AdvanceEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream17SetRecursionLimitEi'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream23IncrementRecursionDepthEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream23DecrementRecursionDepthEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream29UnsafeDecrementRecursionDepthEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream20SetExtensionRegistryEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream16GetExtensionPoolEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream19GetExtensionFactoryEv'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream10BufferSizeEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStreamC1EPKhi'/>
+<fun r='_ZNK6google8protobuf2io16CodedInputStream6IsFlatEv'/>
+<fun r='_ZN6google8protobuf2io16CodedInputStream4SkipEi'/>
+<use f='include/google/protobuf/wire_format.h' l='100' c='_ZN6google8protobuf8internal10WireFormat20ParseAndMergePartialEPNS0_2io16CodedInputStreamEPNS0_7MessageE'/>
+<use f='include/google/protobuf/wire_format.h' l='127' c='_ZN6google8protobuf8internal10WireFormat9SkipFieldEPNS0_2io16CodedInputStreamEjPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='132' c='_ZN6google8protobuf8internal10WireFormat11SkipMessageEPNS0_2io16CodedInputStreamEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='137' c='_ZN6google8protobuf8internal10WireFormat30ReadPackedEnumPreserveUnknownsEPNS0_2io16CodedInputStreamEjPFbiEPNS0_15UnknownFieldSetEPNS0_13RepeatedFieldIiEE'/>
+<use f='include/google/protobuf/wire_format.h' l='191' c='_ZN6google8protobuf8internal10WireFormat18ParseAndMergeFieldEjPKNS0_15FieldDescriptorEPNS0_7MessageEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/wire_format.h' l='209' c='_ZN6google8protobuf8internal10WireFormat27ParseAndMergeMessageSetItemEPNS0_2io16CodedInputStreamEPNS0_7MessageE'/>
+<use f='include/google/protobuf/wire_format.h' l='245' c='_ZN6google8protobuf8internal10WireFormat19SkipMessageSetFieldEPNS0_2io16CodedInputStreamEjPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='253' c='_ZN6google8protobuf8internal10WireFormat28ParseAndMergeMessageSetFieldEjPKNS0_15FieldDescriptorEPNS0_7MessageEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/wire_format.h' l='266' c='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipper9SkipFieldEPNS0_2io16CodedInputStreamEj'/>
+<use f='include/google/protobuf/wire_format.h' l='267' c='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipper11SkipMessageEPNS0_2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='424' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='703' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='986' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1218' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1488' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1714' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1912' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2446' c='_ZN5v2ray4core3app5stats7command6Config27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<size>80</size>
+<use f='/v2ray_geosite.pb.h' l='185' c='_ZN5v2ray4core3app6router22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.h' l='328' c='_ZN5v2ray4core3app6router12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.h' l='491' c='_ZN5v2ray4core3app6router4CIDR27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.h' l='609' c='_ZN5v2ray4core3app6router5GeoIP27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.h' l='733' c='_ZN5v2ray4core3app6router9GeoIPList27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.h' l='842' c='_ZN5v2ray4core3app6router7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.h' l='966' c='_ZN5v2ray4core3app6router11GeoSiteList27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='457' c='_ZN5v2ray4core3app6router22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='788' c='_ZN5v2ray4core3app6router12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1113' c='_ZN5v2ray4core3app6router4CIDR27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1381' c='_ZN5v2ray4core3app6router5GeoIP27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1660' c='_ZN5v2ray4core3app6router9GeoIPList27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1897' c='_ZN5v2ray4core3app6router7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='2176' c='_ZN5v2ray4core3app6router11GeoSiteList27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<size>80</size>

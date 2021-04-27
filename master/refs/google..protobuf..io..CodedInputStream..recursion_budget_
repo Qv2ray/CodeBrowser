@@ -1,0 +1,14 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='569' type='int'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1297' u='w' c='_ZN6google8protobuf2io16CodedInputStream17SetRecursionLimitEi'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1302' u='w' c='_ZN6google8protobuf2io16CodedInputStream23IncrementRecursionDepthEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1303' u='r' c='_ZN6google8protobuf2io16CodedInputStream23IncrementRecursionDepthEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1307' u='r' c='_ZN6google8protobuf2io16CodedInputStream23DecrementRecursionDepthEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1307' u='w' c='_ZN6google8protobuf2io16CodedInputStream23DecrementRecursionDepthEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1311' u='r' c='_ZN6google8protobuf2io16CodedInputStream29UnsafeDecrementRecursionDepthEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1312' u='w' c='_ZN6google8protobuf2io16CodedInputStream29UnsafeDecrementRecursionDepthEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1345' u='w' c='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1365' u='w' c='_ZN6google8protobuf2io16CodedInputStreamC1EPKhi'/>
+<offset>416</offset>
+<doc f='include/google/protobuf/io/coded_stream.h' l='566'>// Current recursion budget, controlled by IncrementRecursionDepth() and
+  // similar.  Starts at recursion_limit_ and goes down: if this reaches
+  // -1 we are over budget.</doc>

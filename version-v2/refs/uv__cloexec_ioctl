@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='188' type='int uv__cloexec_ioctl(int fd, int set)'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='187'>/* core */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='447' macro='1' u='c' c='uv__socket'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='585' ll='596' type='int uv__cloexec_ioctl(int fd, int set)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='695' macro='1' u='c' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='754' macro='1' u='c' c='uv_disable_stdio_inheritance'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='340' macro='1' u='c' c='uv__fs_mkstemp'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='97' macro='1' u='c' c='uv__platform_loop_init'/>

@@ -1,0 +1,15 @@
+<dec f='include/string.h' l='64' type='int memcmp(const void * __s1, const void * __s2, size_t __n)'/>
+<doc f='include/string.h' l='63'>/* Compare N bytes of S1 and S2.  */</doc>
+<use f='include/google/protobuf/stubs/fastmem.h' l='68' u='c' c='_ZN6google8protobuf8internal5memeqEPKcS3_m'/>
+<use f='include/google/protobuf/stubs/fastmem.h' l='83' u='c' c='_ZN6google8protobuf8internal5memeqEPKcS3_m'/>
+<use f='include/google/protobuf/stubs/fastmem.h' l='100' u='c' c='_ZN6google8protobuf8internal18fastmemcmp_inlinedEPKcS3_m'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='295' u='c' c='_ZNK6google8protobuf11StringPiece7compareES1_'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='325' u='c' c='_ZNK6google8protobuf11StringPiece11starts_withES1_'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='330' u='c' c='_ZNK6google8protobuf11StringPiece9ends_withES1_'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='403' u='c' c='_ZN6google8protobufeqENS0_11StringPieceES1_'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='413' u='c' c='_ZN6google8protobufltENS0_11StringPieceES1_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='94' u='c' c='_ZNK4grpc10string_ref7compareES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='103' u='c' c='_ZNK4grpc10string_ref11starts_withES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='108' u='c' c='_ZNK4grpc10string_ref9ends_withES0_'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='145' u='c' c='_ZN12_GLOBAL__N_19isIPv6AnyER8in6_addr'/>
+<use f='qv2ray/test/catch.hpp' l='13751' u='c' c='_ZNK5Catch9StringRefeqERKS0_'/>

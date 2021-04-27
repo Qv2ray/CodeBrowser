@@ -1,0 +1,15 @@
+<dec f='include/c++/10/bits/std_function.h' l='348' type='void std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;(const function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp; __x)'/>
+<def f='include/c++/10/bits/std_function.h' l='586' ll='597' type='void std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;(const function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp; __x)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='250' u='c' c='_ZNK7QtNodes10Connection16getTypeConverterEv'/>
+<doc f='include/c++/10/bits/std_function.h' l='340'>/**
+       *  @brief %Function copy constructor.
+       *  @param __x A %function object with identical call signature.
+       *  @post @c bool(*this) == bool(__x)
+       *
+       *  The newly-created %function contains a copy of the target of @a
+       *  __x (if it has one).
+       */</doc>
+<doc f='include/c++/10/bits/std_function.h' l='585'>// Out-of-line member definitions.</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/DataModelRegistry.cpp' l='36' u='c' c='_ZNK7QtNodes17DataModelRegistry16getTypeConverterERK7QStringS3_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='87' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/work.cpp' l='14' u='c' c='_ZN3uvw7WorkReqC1ENS_14UnderlyingTypeIS0_9uv_work_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvvEE'/>

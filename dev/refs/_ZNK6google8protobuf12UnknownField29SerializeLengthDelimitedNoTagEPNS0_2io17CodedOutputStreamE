@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/unknown_field_set.h' l='221' type='void google::protobuf::UnknownField::SerializeLengthDelimitedNoTag(io::CodedOutputStream * output) const'/>
+<doc f='include/google/protobuf/unknown_field_set.h' l='217'>// Serialization API.
+  // These methods can take advantage of the underlying implementation and may
+  // archieve a better performance than using getters to retrieve the data and
+  // do the serialization yourself.</doc>

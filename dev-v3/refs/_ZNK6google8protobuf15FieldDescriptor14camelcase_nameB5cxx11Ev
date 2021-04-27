@@ -1,0 +1,11 @@
+<dec f='include/google/protobuf/descriptor.h' l='599' type='const std::string &amp; google::protobuf::FieldDescriptor::camelcase_name() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1870' macro='1' type='const std::string &amp; google::protobuf::FieldDescriptor::camelcase_name() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='590'>// Same as name() except converted to camel-case.  In this conversion, any
+  // time an underscore appears in the name, it is removed and the next
+  // letter is capitalized.  Furthermore, the first letter of the name is
+  // lower-cased.  Examples:
+  //   FooBar -&gt; fooBar
+  //   foo_bar -&gt; fooBar
+  //   fooBar -&gt; fooBar
+  // This (and especially the FindFieldByCamelcaseName() method) can be useful
+  // when parsing formats which prefer to use camel-case naming style.</doc>

@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='275' type='int QRinput_check(QRencodeMode mode, int size, const unsigned char * data)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='267'>/**
+ * Validate the input data.
+ * @param mode encoding mode.
+ * @param size size of data (byte).
+ * @param data a pointer to the memory area of the input data.
+ * @retval 0 success.
+ * @retval -1 invalid arguments.
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='52' u='c' c='QRinput_List_newEntry'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='819' ll='845' type='int QRinput_check(QRencodeMode mode, int size, const unsigned char * data)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='815'>/******************************************************************************
+ * Validation
+ *****************************************************************************/</doc>

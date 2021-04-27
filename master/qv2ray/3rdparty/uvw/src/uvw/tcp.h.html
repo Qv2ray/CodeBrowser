@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tcp.h source code [qv2ray/3rdparty/uvw/src/uvw/tcp.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::TCPHandle,uvw::details::UVTCPFlags "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/tcp.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='tcp.h.html'>tcp.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_TCP_INCLUDE_H">UVW_TCP_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_TCP_INCLUDE_H" data-ref="_M/UVW_TCP_INCLUDE_H">UVW_TCP_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../../../../../include/c++/10/chrono.html">&lt;chrono&gt;</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="request.hpp.html">"request.hpp"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="stream.h.html">"stream.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVTCPFlags" title='uvw::details::UVTCPFlags' data-ref="uvw::details::UVTCPFlags" data-ref-filename="uvw..details..UVTCPFlags">UVTCPFlags</dfn>: std::underlying_type_t&lt;uv_tcp_flags&gt; {</td></tr>
+<tr><th id="23">23</th><td>    <dfn class="enum" id="uvw::details::UVTCPFlags::IPV6ONLY" title='uvw::details::UVTCPFlags::IPV6ONLY' data-ref="uvw::details::UVTCPFlags::IPV6ONLY" data-ref-filename="uvw..details..UVTCPFlags..IPV6ONLY">IPV6ONLY</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_TCP_IPV6ONLY" title='UV_TCP_IPV6ONLY' data-ref="UV_TCP_IPV6ONLY" data-ref-filename="UV_TCP_IPV6ONLY">UV_TCP_IPV6ONLY</a></td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * <span class="command">@brief</span> The TCPHandle handle.</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * TCP handles are used to represent both TCP streams and servers.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * By default, _IPv4_ is used as a template parameter. The handle already</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * supports _IPv6_ out-of-the-box by using `uvw::IPv6`.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * To create a `TCPHandle` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * * An optional integer value that indicates the flags used to initialize</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * the socket.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * See the official</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * [documentation](<a href="http://docs.libuv.org/en/v1.x/tcp.html#c.uv_tcp_init_ex">http://docs.libuv.org/en/v1.x/tcp.html#c.uv_tcp_init_ex</a>)</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * for further details.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="46">46</th><td><b>class</b> <dfn class="type def" id="uvw::TCPHandle" title='uvw::TCPHandle' data-ref="uvw::TCPHandle" data-ref-filename="uvw..TCPHandle">TCPHandle</dfn> final: <b>public</b> <a class="type" href="stream.h.html#uvw::StreamHandle" title='uvw::StreamHandle' data-ref="uvw::StreamHandle" data-ref-filename="uvw..StreamHandle">StreamHandle</a>&lt;<a class="type" href="#uvw::TCPHandle" title='uvw::TCPHandle' data-ref="uvw::TCPHandle" data-ref-filename="uvw..TCPHandle">TCPHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_tcp_t" title='uv_tcp_t' data-type='struct uv_tcp_s' data-ref="uv_tcp_t" data-ref-filename="uv_tcp_t">uv_tcp_t</a>&gt; {</td></tr>
+<tr><th id="47">47</th><td><b>public</b>:</td></tr>
+<tr><th id="48">48</th><td>    <b>using</b> <dfn class="typedef" id="uvw::TCPHandle::Time" title='uvw::TCPHandle::Time' data-type='std::chrono::duration&lt;unsigned int&gt;' data-ref="uvw::TCPHandle::Time" data-ref-filename="uvw..TCPHandle..Time">Time</dfn> = <span class="namespace">std::chrono::</span><a class="type" href="../../../../../include/c++/10/chrono.html#std::chrono::duration" title='std::chrono::duration' data-ref="std::chrono::duration" data-ref-filename="std..chrono..duration">duration</a>&lt;<em>unsigned</em> <em>int</em>&gt;;</td></tr>
+<tr><th id="49">49</th><td>    <b>using</b> <dfn class="typedef" id="uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVTCPFlags" title='uvw::details::UVTCPFlags' data-ref="uvw::details::UVTCPFlags" data-ref-filename="uvw..details..UVTCPFlags">UVTCPFlags</a>;</td></tr>
+<tr><th id="50">50</th><td>    <b>using</b> <dfn class="typedef" id="uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</dfn> = <span class="namespace">uvw::</span><a class="type" href="util.h.html#uvw::IPv4" title='uvw::IPv4' data-ref="uvw::IPv4" data-ref-filename="uvw..IPv4">IPv4</a>;</td></tr>
+<tr><th id="51">51</th><td>    <b>using</b> <dfn class="typedef" id="uvw::TCPHandle::IPv6" title='uvw::TCPHandle::IPv6' data-type='uvw::IPv6' data-ref="uvw::TCPHandle::IPv6" data-ref-filename="uvw..TCPHandle..IPv6">IPv6</dfn> = <span class="namespace">uvw::</span><a class="type" href="util.h.html#uvw::IPv6" title='uvw::IPv6' data-ref="uvw::IPv6" data-ref-filename="uvw..IPv6">IPv6</a>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>    <b>explicit</b> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" title='uvw::TCPHandle::TCPHandle' data-ref="_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" data-ref-filename="_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" id="_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj">TCPHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::TCPHandle,uv_tcp_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::TCPHandle, uv_tcp_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;TCPHandle, uv_tcp_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::TCPHandle,uv_tcp_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..TCPHandle,uv_tcp_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col1 decl" id="1ca" title='ca' data-type='uvw::Resource&lt;uvw::TCPHandle, uv_tcp_s&gt;::ConstructorAccess' data-ref="1ca" data-ref-filename="1ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col2 decl" id="2ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="2ref" data-ref-filename="2ref">ref</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="3f" title='f' data-type='unsigned int' data-ref="3f" data-ref-filename="3f">f</dfn> = {});</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle. No socket is created as of yet.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="59">59</th><td>    <em>bool</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle4initEv" title='uvw::TCPHandle::init' data-ref="_ZN3uvw9TCPHandle4initEv" data-ref-filename="_ZN3uvw9TCPHandle4initEv" id="_ZN3uvw9TCPHandle4initEv">init</a>();</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">     * <span class="command">@brief</span> Opens an existing file descriptor or SOCKET as a TCP handle.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">     * The passed file descriptor or SOCKET is not checked for its type, but</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc">     * it’s required that it represents a valid stream socket.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">socket</span> A valid socket handle (either a file descriptor or a SOCKET).</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="69">69</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle4openENS_7details13UVTypeWrapperIiEE" title='uvw::TCPHandle::open' data-ref="_ZN3uvw9TCPHandle4openENS_7details13UVTypeWrapperIiEE" data-ref-filename="_ZN3uvw9TCPHandle4openENS_7details13UVTypeWrapperIiEE" id="_ZN3uvw9TCPHandle4openENS_7details13UVTypeWrapperIiEE">open</a>(<a class="typedef" href="util.h.html#uvw::OSSocketHandle" title='uvw::OSSocketHandle' data-type='details::UVTypeWrapper&lt;uv_os_sock_t&gt;' data-ref="uvw::OSSocketHandle" data-ref-filename="uvw..OSSocketHandle">OSSocketHandle</a> <dfn class="local col4 decl" id="4socket" title='socket' data-type='uvw::OSSocketHandle' data-ref="4socket" data-ref-filename="4socket">socket</dfn>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">     * <span class="command">@brief</span> Enables/Disables Nagle’s algorithm.</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">value</span> True to enable it, false otherwise.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="76">76</th><td>    <em>bool</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle7noDelayEb" title='uvw::TCPHandle::noDelay' data-ref="_ZN3uvw9TCPHandle7noDelayEb" data-ref-filename="_ZN3uvw9TCPHandle7noDelayEb" id="_ZN3uvw9TCPHandle7noDelayEb">noDelay</a>(<em>bool</em> <dfn class="local col5 decl" id="5value" title='value' data-type='bool' data-ref="5value" data-ref-filename="5value">value</dfn> = <b>false</b>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     * <span class="command">@brief</span> Enables/Disables TCP keep-alive.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">enable</span> True to enable it, false otherwise.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">time</span> Initial delay in seconds (use</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">     * `std::chrono::duration&lt;unsigned int&gt;`).</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="85">85</th><td>    <em>bool</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle9keepAliveEbNSt6chrono8durationIjSt5ratioILl1ELl1EEEE" title='uvw::TCPHandle::keepAlive' data-ref="_ZN3uvw9TCPHandle9keepAliveEbNSt6chrono8durationIjSt5ratioILl1ELl1EEEE" data-ref-filename="_ZN3uvw9TCPHandle9keepAliveEbNSt6chrono8durationIjSt5ratioILl1ELl1EEEE" id="_ZN3uvw9TCPHandle9keepAliveEbNSt6chrono8durationIjSt5ratioILl1ELl1EEEE">keepAlive</a>(<em>bool</em> <dfn class="local col6 decl" id="6enable" title='enable' data-type='bool' data-ref="6enable" data-ref-filename="6enable">enable</dfn> = <b>false</b>, <a class="typedef" href="#uvw::TCPHandle::Time" title='uvw::TCPHandle::Time' data-type='std::chrono::duration&lt;unsigned int&gt;' data-ref="uvw::TCPHandle::Time" data-ref-filename="uvw..TCPHandle..Time">Time</a> <dfn class="local col7 decl" id="7time" title='time' data-type='uvw::TCPHandle::Time' data-ref="7time" data-ref-filename="7time">time</dfn> = <a class="typedef" href="#uvw::TCPHandle::Time" title='uvw::TCPHandle::Time' data-type='std::chrono::duration&lt;unsigned int&gt;' data-ref="uvw::TCPHandle::Time" data-ref-filename="uvw..TCPHandle..Time">Time</a><a class="ref fn" href="../../../../../include/c++/10/chrono.html#_ZNSt6chrono8durationC1ERKTL0__" title='std::chrono::duration::duration&lt;_Rep, _Period&gt;' data-ref="_ZNSt6chrono8durationC1ERKTL0__" data-ref-filename="_ZNSt6chrono8durationC1ERKTL0__">{</a><var>0</var>});</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">     * <span class="command">@brief</span> Enables/Disables simultaneous asynchronous accept requests.</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     * Enables/Disables simultaneous asynchronous accept requests that are</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     * queued by the operating system when listening for new TCP</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     * connections.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     * This setting is used to tune a TCP server for the desired performance.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * Having simultaneous accepts can significantly improve the rate of</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     * accepting connections (which is why it is enabled by default) but may</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * lead to uneven load distribution in multi-process setups.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">enable</span> True to enable it, false otherwise.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="101">101</th><td>    <em>bool</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle19simultaneousAcceptsEb" title='uvw::TCPHandle::simultaneousAccepts' data-ref="_ZN3uvw9TCPHandle19simultaneousAcceptsEb" data-ref-filename="_ZN3uvw9TCPHandle19simultaneousAcceptsEb" id="_ZN3uvw9TCPHandle19simultaneousAcceptsEb">simultaneousAccepts</a>(<em>bool</em> <dfn class="local col8 decl" id="8enable" title='enable' data-type='bool' data-ref="8enable" data-ref-filename="8enable">enable</dfn> = <b>true</b>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     * <span class="command">@brief</span> Binds the handle to an address and port.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">     * A successful call to this function does not guarantee that the call to</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">     * `listen()` or `connect()` will work properly.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">     * ErrorEvent events can be emitted because of either this function or the</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     * ones mentioned above.</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * * `TCPHandle::Bind::IPV6ONLY`: it disables dual-stack support and only</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * IPv6 is used.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">opts</span> Optional additional flags.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="119">119</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE" title='uvw::TCPHandle::bind' data-ref="_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE" data-ref-filename="_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE" id="_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE">bind</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col9 decl" id="9addr" title='addr' data-type='const sockaddr &amp;' data-ref="9addr" data-ref-filename="9addr">addr</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</a>&gt; <dfn class="local col0 decl" id="10opts" title='opts' data-type='Flags&lt;uvw::TCPHandle::Bind&gt;' data-ref="10opts" data-ref-filename="10opts">opts</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">     * <span class="command">@brief</span> Binds the handle to an address and port.</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">     * A successful call to this function does not guarantee that the call to</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     * `listen()` or `connect()` will work properly.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     * ErrorEvent events can be emitted because of either this function or the</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     * ones mentioned above.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     * * `TCPHandle::Bind::IPV6ONLY`: it disables dual-stack support and only</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">     * IPv6 is used.</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to bind.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to bind.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">opts</span> Optional additional flags.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="138">138</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="139">139</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE" title='uvw::TCPHandle::bind' data-ref="_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE" data-ref-filename="_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE" id="_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE">bind</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col1 decl" id="11ip" title='ip' data-type='std::string' data-ref="11ip" data-ref-filename="11ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="12port" title='port' data-type='unsigned int' data-ref="12port" data-ref-filename="12port">port</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</a>&gt; <dfn class="local col3 decl" id="13opts" title='opts' data-type='Flags&lt;uvw::TCPHandle::Bind&gt;' data-ref="13opts" data-ref-filename="13opts">opts</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">     * <span class="command">@brief</span> Binds the handle to an address and port.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">     * A successful call to this function does not guarantee that the call to</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc">     * `listen()` or `connect()` will work properly.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">     * ErrorEvent events can be emitted because of either this function or the</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc">     * ones mentioned above.</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">     * * `TCPHandle::Bind::IPV6ONLY`: it disables dual-stack support and only</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc">     * IPv6 is used.</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">opts</span> Optional additional flags.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="157">157</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="158">158</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE" title='uvw::TCPHandle::bind' data-ref="_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE" data-ref-filename="_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE" id="_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE">bind</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col4 decl" id="14addr" title='addr' data-type='uvw::Addr' data-ref="14addr" data-ref-filename="14addr">addr</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</a>&gt; <dfn class="local col5 decl" id="15opts" title='opts' data-type='Flags&lt;uvw::TCPHandle::Bind&gt;' data-ref="15opts" data-ref-filename="15opts">opts</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::TCPHandle::Bind" title='uvw::TCPHandle::Bind' data-type='details::UVTCPFlags' data-ref="uvw::TCPHandle::Bind" data-ref-filename="uvw..TCPHandle..Bind">Bind</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc">     * <span class="command">@brief</span> Gets the current address to which the handle is bound.</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc">     * <span class="command">@return</span> A valid instance of Addr, an empty one in case of errors.</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="164">164</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="165">165</th><td>    <a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <a class="decl fn" href="tcp.cpp.html#_ZNK3uvw9TCPHandle4sockEv" title='uvw::TCPHandle::sock' data-ref="_ZNK3uvw9TCPHandle4sockEv" data-ref-filename="_ZNK3uvw9TCPHandle4sockEv" id="_ZNK3uvw9TCPHandle4sockEv">sock</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc">     * <span class="command">@brief</span> Gets the address of the peer connected to the handle.</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc">     * <span class="command">@return</span> A valid instance of Addr, an empty one in case of errors.</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="171">171</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="172">172</th><td>    <a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <a class="decl fn" href="tcp.cpp.html#_ZNK3uvw9TCPHandle4peerEv" title='uvw::TCPHandle::peer' data-ref="_ZNK3uvw9TCPHandle4peerEv" data-ref-filename="_ZNK3uvw9TCPHandle4peerEv" id="_ZNK3uvw9TCPHandle4peerEv">peer</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc">     * <span class="command">@brief</span> Establishes an IPv4 or IPv6 TCP connection.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc">     * On Windows if the addr is initialized to point to an unspecified address</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc">     * (`0.0.0.0` or `::`) it will be changed to point to localhost. This is</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc">     * done to match the behavior of Linux systems.</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc">     * A ConnectEvent event is emitted when the connection has been</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">     * established.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="187">187</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle7connectERK8sockaddr" title='uvw::TCPHandle::connect' data-ref="_ZN3uvw9TCPHandle7connectERK8sockaddr" data-ref-filename="_ZN3uvw9TCPHandle7connectERK8sockaddr" id="_ZN3uvw9TCPHandle7connectERK8sockaddr">connect</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col6 decl" id="16addr" title='addr' data-type='const sockaddr &amp;' data-ref="16addr" data-ref-filename="16addr">addr</dfn>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc">     * <span class="command">@brief</span> Establishes an IPv4 or IPv6 TCP connection.</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc">     * A ConnectEvent event is emitted when the connection has been</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc">     * established.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to bind.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to bind.</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="199">199</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="200">200</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj" title='uvw::TCPHandle::connect' data-ref="_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj" data-ref-filename="_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj" id="_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj">connect</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col7 decl" id="17ip" title='ip' data-type='std::string' data-ref="17ip" data-ref-filename="17ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="18port" title='port' data-type='unsigned int' data-ref="18port" data-ref-filename="18port">port</dfn>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc">     * <span class="command">@brief</span> Establishes an IPv4 or IPv6 TCP connection.</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc">     * A ConnectEvent event is emitted when the connection has been</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc">     * established.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="211">211</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::TCPHandle::IPv4" title='uvw::TCPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::TCPHandle::IPv4" data-ref-filename="uvw..TCPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="212">212</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle7connectENS_4AddrE" title='uvw::TCPHandle::connect' data-ref="_ZN3uvw9TCPHandle7connectENS_4AddrE" data-ref-filename="_ZN3uvw9TCPHandle7connectENS_4AddrE" id="_ZN3uvw9TCPHandle7connectENS_4AddrE">connect</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col9 decl" id="19addr" title='addr' data-type='uvw::Addr' data-ref="19addr" data-ref-filename="19addr">addr</dfn>);</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc">     * <span class="command">@brief</span> Resets a TCP connection by sending a RST packet.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc">     * This is accomplished by setting the `SO_LINGER` socket option with a</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc">     * linger interval of zero and then calling `close`.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc">     * Due to some platform inconsistencies, mixing of `shutdown` and</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc">     * `closeReset` calls is not allowed.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc">     * A CloseEvent event is emitted when the connection has been reset.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors.</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="225">225</th><td>    <em>void</em> <a class="decl fn" href="tcp.cpp.html#_ZN3uvw9TCPHandle10closeResetEv" title='uvw::TCPHandle::closeReset' data-ref="_ZN3uvw9TCPHandle10closeResetEv" data-ref-filename="_ZN3uvw9TCPHandle10closeResetEv" id="_ZN3uvw9TCPHandle10closeResetEv">closeReset</a>();</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><b>private</b>:</td></tr>
+<tr><th id="228">228</th><td>    <b>enum</b> { <dfn class="enum" id="uvw::TCPHandle::DEFAULT" title='uvw::TCPHandle::DEFAULT' data-ref="uvw::TCPHandle::DEFAULT" data-ref-filename="uvw..TCPHandle..DEFAULT">DEFAULT</dfn>, <dfn class="enum" id="uvw::TCPHandle::FLAGS" title='uvw::TCPHandle::FLAGS' data-ref="uvw::TCPHandle::FLAGS" data-ref-filename="uvw..TCPHandle..FLAGS">FLAGS</dfn> } <dfn class="decl field" id="uvw::TCPHandle::tag" title='uvw::TCPHandle::tag' data-ref="uvw::TCPHandle::tag" data-ref-filename="uvw..TCPHandle..tag">tag</dfn>;</td></tr>
+<tr><th id="229">229</th><td>    <em>unsigned</em> <em>int</em> <dfn class="decl field" id="uvw::TCPHandle::flags" title='uvw::TCPHandle::flags' data-ref="uvw::TCPHandle::flags" data-ref-filename="uvw..TCPHandle..flags">flags</dfn>;</td></tr>
+<tr><th id="230">230</th><td>};</td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> *<span class="command"> @cond</span> TURN_OFF_DOXYGEN</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> * Internal details not to be documented.</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"></i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"></i></td></tr>
+<tr><th id="239">239</th><td><i class="doc">// (extern) explicit instantiations</i></td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::bind&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="242">242</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::bind&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::bind&lt;IPv4&gt;(Addr, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="245">245</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::bind&lt;IPv6&gt;(Addr, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td><b>extern</b> <b>template</b> Addr TCPHandle::sock&lt;IPv4&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="248">248</th><td><b>extern</b> <b>template</b> Addr TCPHandle::sock&lt;IPv6&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><b>extern</b> <b>template</b> Addr TCPHandle::peer&lt;IPv4&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="251">251</th><td><b>extern</b> <b>template</b> Addr TCPHandle::peer&lt;IPv6&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::connect&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="254">254</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::connect&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::connect&lt;IPv4&gt;(Addr addr);</td></tr>
+<tr><th id="257">257</th><td><b>extern</b> <b>template</b> <em>void</em> TCPHandle::connect&lt;IPv6&gt;(Addr addr);</td></tr>
+<tr><th id="258">258</th><td></td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> * Internal details not to be documented.</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> *<span class="command"> @endcond</span></i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td>}</td></tr>
+<tr><th id="267">267</th><td></td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><u>#<span data-ppcond="269">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="270">270</th><td><u>#include "tcp.cpp"</u></td></tr>
+<tr><th id="271">271</th><td><u>#<span data-ppcond="269">endif</span></u></td></tr>
+<tr><th id="272">272</th><td></td></tr>
+<tr><th id="273">273</th><td><u>#<span data-ppcond="1">endif</span> // UVW_TCP_INCLUDE_H</u></td></tr>
+<tr><th id="274">274</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='tcp.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/tcp.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

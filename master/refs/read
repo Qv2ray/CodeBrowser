@@ -1,0 +1,18 @@
+<dec f='include/unistd.h' l='360' type='ssize_t read(int __fd, void * __buf, size_t __nbytes)'/>
+<doc f='include/unistd.h' l='355'>/* Read NBYTES into BUF from FD.  Return the
+   number read, -1 for errors or 0 for EOF.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='132' u='c' c='uv__async_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='450' u='c' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='817' u='c' c='uv__fs_sendfile_emul'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='522' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='998' u='c' c='uv__read_proc_meminfo'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1072' u='c' c='uv__read_cgroups_uint64'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='183' u='c' c='uv__inotify_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='511' u='c' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='55' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='121' u='c' c='uv__signal_lock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='427' u='c' c='uv__signal_event'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1155' u='c' c='uv__read'/>

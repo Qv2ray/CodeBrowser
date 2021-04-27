@@ -1,0 +1,21 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.h' l='51' type='int'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='442' u='r' c='QRcode_encodeMask'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='520' u='r' c='QRcode_encodeMaskMQR'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='589' u='r' c='QRcode_encodeInput'/>
+<offset>192</offset>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='132' u='w' c='QRinput_new2'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='148' u='w' c='QRinput_newMQR'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='164' u='r' c='QRinput_setVersion'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='181' u='r' c='QRinput_setErrorCorrectionLevel'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='193' u='r' c='QRinput_setVersionAndErrorCorrectionLevel'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='333' u='r' c='QRinput_dup'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='920' u='r' c='QRinput_estimateBitStreamSize'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1080' u='r' c='QRinput_createBitStream'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1268' u='r' c='QRinput_mergeBitStream'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1299' u='r' c='QRinput_getBitStream'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1386' u='r' c='QRinput_Struct_appendInput'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1482' u='r' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1508' u='r' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1511' u='r' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1609' u='r' c='QRinput_setFNC1First'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1620' u='r' c='QRinput_setFNC1Second'/>

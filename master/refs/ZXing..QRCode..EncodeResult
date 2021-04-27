@@ -1,0 +1,19 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.h' l='44' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncodeResult.h' l='33' ll='41'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='496' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='566' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>
+<size>64</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncodeResult.h' l='26'>/**
+* @author satorux@google.com (Satoru Takabayashi) - creator
+* @author dswitkin@google.com (Daniel Switkin) - ported from C++
+*
+* Original class name in Java was QRCode, as this name is taken already for the namespace,
+* so it&apos;s renamed here EncodeResult.
+*/</doc>
+<mbr r='ZXing::QRCode::EncodeResult::ecLevel' o='0' t='ZXing::QRCode::ErrorCorrectionLevel'/>
+<mbr r='ZXing::QRCode::EncodeResult::mode' o='32' t='CodecMode::Mode'/>
+<mbr r='ZXing::QRCode::EncodeResult::version' o='64' t='const ZXing::QRCode::Version *'/>
+<mbr r='ZXing::QRCode::EncodeResult::maskPattern' o='128' t='int'/>
+<mbr r='ZXing::QRCode::EncodeResult::matrix' o='192' t='ZXing::BitMatrix'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.cpp' l='54' c='_ZNK5ZXing6QRCode6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<size>64</size>

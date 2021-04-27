@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='502' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WriteFixedNoTagToArray(const RepeatedField&lt;T&gt; &amp; value, google::protobuf::uint8 *(*)(T, google::protobuf::uint8 *) Writer, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='629' ll='645' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WriteFixedNoTagToArray(const RepeatedField&lt;T&gt; &amp; value, google::protobuf::uint8 *(*)(T, google::protobuf::uint8 *) Writer, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='673' u='c' c='_ZN6google8protobuf8internal14WireFormatLite24WriteFixed32NoTagToArrayERKNS0_13RepeatedFieldIjEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='677' u='c' c='_ZN6google8protobuf8internal14WireFormatLite24WriteFixed64NoTagToArrayERKNS0_13RepeatedFieldImEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='681' u='c' c='_ZN6google8protobuf8internal14WireFormatLite25WriteSFixed32NoTagToArrayERKNS0_13RepeatedFieldIiEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='685' u='c' c='_ZN6google8protobuf8internal14WireFormatLite25WriteSFixed64NoTagToArrayERKNS0_13RepeatedFieldIlEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='689' u='c' c='_ZN6google8protobuf8internal14WireFormatLite22WriteFloatNoTagToArrayERKNS0_13RepeatedFieldIfEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='693' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteDoubleNoTagToArrayERKNS0_13RepeatedFieldIdEEPh'/>

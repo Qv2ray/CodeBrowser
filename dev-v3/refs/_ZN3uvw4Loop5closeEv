@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='174' type='void uvw::Loop::close()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='166'>/**
+     * @brief Releases all internal loop resources.
+     *
+     * Call this function only when the loop has finished executing and all open
+     * handles and requests have been closed, or the loop will emit an error.
+     *
+     * An ErrorEvent will be emitted in case of errors.
+     */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='60' u='c' c='_ZN3uvw4LoopD1Ev'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='65' ll='68' type='void uvw::Loop::close()'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='53' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>

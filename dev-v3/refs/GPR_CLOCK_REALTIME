@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/gpr_types.h' l='36' type='1'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='173' u='r' c='_ZN4grpc15CompletionQueue4NextEPPvPb'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='301' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='321' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<doc f='include/grpc/impl/codegen/gpr_types.h' l='34'>/** Realtime clock. May jump forwards or backwards. Settable by
+     the system administrator. Has its epoch at 0:00:00 UTC 1 Jan 1970. */</doc>

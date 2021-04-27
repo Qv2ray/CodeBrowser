@@ -1,0 +1,52 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' ll='272'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='33' c='_ZN3uvw6Handle13closeCallbackEP11uv_handle_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='141' c='_ZN3uvw6Handle5closeEv'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/async.h' l='29' c='uvw::AsyncHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/async.h' l='29'/>
+<fun r='_ZN3uvw6Handle13closeCallbackEP11uv_handle_s'/>
+<fun r='_ZN3uvw6Handle13allocCallbackEP11uv_handle_smP8uv_buf_t'/>
+<fun r='_ZN3uvw6Handle10initializeEOTL0__DpOTL0_0_'/>
+<fun r='_ZN3uvw6Handle6invokeEOTL0__DpOTL0_0_'/>
+<fun r='_ZNK3uvw6Handle8categoryEv'/>
+<fun r='_ZNK3uvw6Handle4typeEv'/>
+<fun r='_ZNK3uvw6Handle6activeEv'/>
+<fun r='_ZNK3uvw6Handle7closingEv'/>
+<fun r='_ZN3uvw6Handle5closeEv'/>
+<fun r='_ZN3uvw6Handle9referenceEv'/>
+<fun r='_ZN3uvw6Handle11unreferenceEv'/>
+<fun r='_ZNK3uvw6Handle10referencedEv'/>
+<fun r='_ZNK3uvw6Handle4sizeEv'/>
+<fun r='_ZN3uvw6Handle14sendBufferSizeEv'/>
+<fun r='_ZN3uvw6Handle14sendBufferSizeEi'/>
+<fun r='_ZN3uvw6Handle14recvBufferSizeEv'/>
+<fun r='_ZN3uvw6Handle14recvBufferSizeEi'/>
+<fun r='_ZNK3uvw6Handle2fdEv'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/check.h' l='29' c='uvw::CheckHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/check.h' l='29'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='76' c='uvw::FsEventHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='76'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='38' c='uvw::FsPollHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='38'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/idle.h' l='37' c='uvw::IdleHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/idle.h' l='37'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='128'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='164'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='67' c='uvw::PollHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='67'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='19' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='24' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE'/>
+<size>264</size>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='29' c='uvw::PrepareHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='29'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='65' c='uvw::ProcessHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='65'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='24' c='_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<size>240</size>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='38' c='uvw::SignalHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='38'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='29' c='uvw::TimerHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='29'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='93' c='uvw::UDPHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='93'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='29' c='_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<size>320</size>

@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='37' type='ZXing::Result ZXing::DataMatrix::Reader::decode(const ZXing::BinaryBitmap &amp; image) const'/>
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='57' c='_ZNK5ZXing6Reader6decodeERKNS_12BinaryBitmapE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='47' ll='61' type='ZXing::Result ZXing::DataMatrix::Reader::decode(const ZXing::BinaryBitmap &amp; image) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='39'>/**
+* Locates and decodes a Data Matrix code in an image.
+*
+* @return a string representing the content encoded by the Data Matrix code
+* @throws NotFoundException if a Data Matrix code cannot be found
+* @throws FormatException if a Data Matrix code cannot be decoded
+* @throws ChecksumException if error correction fails
+*/</doc>

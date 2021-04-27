@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='308' type='int QRinput_Struct_appendInput(QRinput_Struct * s, QRinput * input)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='297'>/**
+ * Append a QRinput object to the set. QRinput created by QRinput_newMQR()
+ * will be rejected.
+ * @warning never append the same QRinput object twice or more.
+ * @param s structured input object.
+ * @param input an input object.
+ * @retval &gt;0 number of input objects in the structure.
+ * @retval -1 an error occurred. See Exceptions for the details.
+ * @throw ENOMEM unable to allocate memory.
+ * @throw EINVAL invalid arguments.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1382' ll='1404' type='int QRinput_Struct_appendInput(QRinput_Struct * s, QRinput * input)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1545' u='c' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1554' u='c' c='QRinput_splitQRinputToStruct'/>

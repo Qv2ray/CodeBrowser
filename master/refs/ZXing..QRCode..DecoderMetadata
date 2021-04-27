@@ -1,0 +1,13 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/CustomData.h' l='21' c='ZXing::CustomData'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoderMetadata.h' l='29' ll='42'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='506' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoderMetadata.h' l='24'>/**
+* Meta-data container for QR Code decoding. Instances of this class may be used to convey information back to the
+* decoding caller. Callers are expected to process this.
+*/</doc>
+<mbr r='ZXing::QRCode::DecoderMetadata::_mirrored' o='64' t='bool'/>
+<fun r='_ZN5ZXing6QRCode15DecoderMetadataC1Eb'/>
+<fun r='_ZNK5ZXing6QRCode15DecoderMetadata10isMirroredEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='58' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>16</size>

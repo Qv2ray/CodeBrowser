@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JPTextDecoder.h source code [qv2ray/3rdparty/zxing-cpp/core/src/textcodec/JPTextDecoder.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="JPTextDecoder "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/textcodec/JPTextDecoder.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>textcodec</a>/<a href='JPTextDecoder.h.html'>JPTextDecoder.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="3">3</th><td><i>**</i></td></tr>
+<tr><th id="4">4</th><td><i>** Copyright (C) 2015 The Qt Company Ltd.</i></td></tr>
+<tr><th id="5">5</th><td><i>** Contact: <a href="http://www.qt.io/licensing/">http://www.qt.io/licensing/</a></i></td></tr>
+<tr><th id="6">6</th><td><i>**</i></td></tr>
+<tr><th id="7">7</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="8">8</th><td><i>**</i></td></tr>
+<tr><th id="9">9</th><td><i>** $QT_BEGIN_LICENSE:LGPL21$</i></td></tr>
+<tr><th id="10">10</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="11">11</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="12">12</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="13">13</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="14">14</th><td><i>** a written agreement between you and The Qt Company. For licensing terms</i></td></tr>
+<tr><th id="15">15</th><td><i>** and conditions see <a href="http://www.qt.io/terms-conditions">http://www.qt.io/terms-conditions</a>. For further</i></td></tr>
+<tr><th id="16">16</th><td><i>** information use the contact form at <a href="http://www.qt.io/contact-us">http://www.qt.io/contact-us</a>.</i></td></tr>
+<tr><th id="17">17</th><td><i>**</i></td></tr>
+<tr><th id="18">18</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="19">19</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="20">20</th><td><i>** General Public License version 2.1 or version 3 as published by the Free</i></td></tr>
+<tr><th id="21">21</th><td><i>** Software Foundation and appearing in the file LICENSE.LGPLv21 and</i></td></tr>
+<tr><th id="22">22</th><td><i>** LICENSE.LGPLv3 included in the packaging of this file. Please review the</i></td></tr>
+<tr><th id="23">23</th><td><i>** following information to ensure the GNU Lesser General Public License</i></td></tr>
+<tr><th id="24">24</th><td><i>** requirements will be met: <a href="https://www.gnu.org/licenses/lgpl.html">https://www.gnu.org/licenses/lgpl.html</a> and</i></td></tr>
+<tr><th id="25">25</th><td><i>** <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="26">26</th><td><i>**</i></td></tr>
+<tr><th id="27">27</th><td><i>** As a special exception, The Qt Company gives you certain additional</i></td></tr>
+<tr><th id="28">28</th><td><i>** rights. These rights are described in The Qt Company LGPL Exception</i></td></tr>
+<tr><th id="29">29</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="30">30</th><td><i>**</i></td></tr>
+<tr><th id="31">31</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="32">32</th><td><i>**</i></td></tr>
+<tr><th id="33">33</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="34">34</th><td><i></i></td></tr>
+<tr><th id="35">35</th><td><i>// Most of the code here was originally written by Serika Kurusugawa</i></td></tr>
+<tr><th id="36">36</th><td><i>// a.k.a. Junji Takagi, and is included in Qt with the author's permission,</i></td></tr>
+<tr><th id="37">37</th><td><i>// and the grateful thanks of the Qt team.</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i>/*</i></td></tr>
+<tr><th id="40">40</th><td><i> * Copyright (C) 1999 Serika Kurusugawa, All rights reserved.</i></td></tr>
+<tr><th id="41">41</th><td><i> *</i></td></tr>
+<tr><th id="42">42</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="43">43</th><td><i> * modification, are permitted provided that the following conditions</i></td></tr>
+<tr><th id="44">44</th><td><i> * are met:</i></td></tr>
+<tr><th id="45">45</th><td><i> * 1. Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="46">46</th><td><i> *    notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="47">47</th><td><i> * 2. Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="48">48</th><td><i> *    notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="49">49</th><td><i> *    documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="50">50</th><td><i> *</i></td></tr>
+<tr><th id="51">51</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND</i></td></tr>
+<tr><th id="52">52</th><td><i> * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="53">53</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="54">54</th><td><i> * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE</i></td></tr>
+<tr><th id="55">55</th><td><i> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</i></td></tr>
+<tr><th id="56">56</th><td><i> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS</i></td></tr>
+<tr><th id="57">57</th><td><i> * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</i></td></tr>
+<tr><th id="58">58</th><td><i> * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</i></td></tr>
+<tr><th id="59">59</th><td><i> * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</i></td></tr>
+<tr><th id="60">60</th><td><i> * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</i></td></tr>
+<tr><th id="61">61</th><td><i> * SUCH DAMAGE.</i></td></tr>
+<tr><th id="62">62</th><td><i> */</i></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><u>#include <a href="../../../../../../include/c++/10/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="65">65</th><td><u>#include <a href="../../../../../../include/c++/10/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="66">66</th><td><u>#include <a href="../../../../../../include/c++/10/cstddef.html">&lt;cstddef&gt;</a></u></td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>class</b> <dfn class="type def" id="JPTextDecoder" title='JPTextDecoder' data-ref="JPTextDecoder" data-ref-filename="JPTextDecoder">JPTextDecoder</dfn></td></tr>
+<tr><th id="69">69</th><td>{</td></tr>
+<tr><th id="70">70</th><td><b>public</b>:</td></tr>
+<tr><th id="71">71</th><td>	<em>static</em> <em>void</em> <dfn class="decl fn" id="_ZN13JPTextDecoder14AppendShiftJISERSt6vectorItSaItEEPKhm" title='JPTextDecoder::AppendShiftJIS' data-ref="_ZN13JPTextDecoder14AppendShiftJISERSt6vectorItSaItEEPKhm" data-ref-filename="_ZN13JPTextDecoder14AppendShiftJISERSt6vectorItSaItEEPKhm">AppendShiftJIS</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="typedef" href="../../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint16_t" title='uint16_t' data-type='__uint16_t' data-ref="uint16_t" data-ref-filename="uint16_t">uint16_t</a>&gt;&amp; <dfn class="local col5 decl" id="15utf16" title='utf16' data-type='std::vector&lt;uint16_t&gt; &amp;' data-ref="15utf16" data-ref-filename="15utf16">utf16</dfn>, <em>const</em> <a class="typedef" href="../../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint8_t" title='uint8_t' data-type='__uint8_t' data-ref="uint8_t" data-ref-filename="uint8_t">uint8_t</a>* <dfn class="local col6 decl" id="16bytes" title='bytes' data-type='const uint8_t *' data-ref="16bytes" data-ref-filename="16bytes">bytes</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col7 decl" id="17length" title='length' data-type='size_t' data-ref="17length" data-ref-filename="17length">length</dfn>);</td></tr>
+<tr><th id="72">72</th><td>	<em>static</em> <em>void</em> <dfn class="decl fn" id="_ZN13JPTextDecoder11AppendEUCJPERSt6vectorItSaItEEPKhm" title='JPTextDecoder::AppendEUCJP' data-ref="_ZN13JPTextDecoder11AppendEUCJPERSt6vectorItSaItEEPKhm" data-ref-filename="_ZN13JPTextDecoder11AppendEUCJPERSt6vectorItSaItEEPKhm">AppendEUCJP</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="typedef" href="../../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint16_t" title='uint16_t' data-type='__uint16_t' data-ref="uint16_t" data-ref-filename="uint16_t">uint16_t</a>&gt;&amp; <dfn class="local col8 decl" id="18utf16" title='utf16' data-type='std::vector&lt;uint16_t&gt; &amp;' data-ref="18utf16" data-ref-filename="18utf16">utf16</dfn>, <em>const</em> <a class="typedef" href="../../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint8_t" title='uint8_t' data-type='__uint8_t' data-ref="uint8_t" data-ref-filename="uint8_t">uint8_t</a>* <dfn class="local col9 decl" id="19bytes" title='bytes' data-type='const uint8_t *' data-ref="19bytes" data-ref-filename="19bytes">bytes</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col0 decl" id="20length" title='length' data-type='size_t' data-ref="20length" data-ref-filename="20length">length</dfn>);</td></tr>
+<tr><th id="73">73</th><td>};</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../TextDecoder.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

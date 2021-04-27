@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/wire_format.h' l='165' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormat::SerializeUnknownMessageSetItemsToArray(const google::protobuf::UnknownFieldSet &amp; unknown_fields, google::protobuf::uint8 * target)'/>
+<doc f='include/google/protobuf/wire_format.h' l='160'>// Same as above, except writing directly to the provided buffer.
+  // Requires that the buffer have sufficient capacity for
+  // ComputeUnknownMessageSetItemsSize(unknown_fields).
+  //
+  // Returns a pointer past the last written byte.</doc>

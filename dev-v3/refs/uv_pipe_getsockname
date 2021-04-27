@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='773' type='int uv_pipe_getsockname(const uv_pipe_t * handle, char * buffer, size_t * size)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='284' ll='286' type='int uv_pipe_getsockname(const uv_pipe_t * handle, char * buffer, size_t * size)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='343' u='c' c='uv_pipe_chmod'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='351' u='c' c='uv_pipe_chmod'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='46' u='a' c='_ZNK3uvw10PipeHandle4sockB5cxx11Ev'/>

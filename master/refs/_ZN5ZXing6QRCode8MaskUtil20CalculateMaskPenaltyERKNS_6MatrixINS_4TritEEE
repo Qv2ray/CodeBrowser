@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMaskUtil.h' l='24' type='int ZXing::QRCode::MaskUtil::CalculateMaskPenalty(const ZXing::TritMatrix &amp; matrix)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='465' u='c' c='_ZN5ZXing6QRCodeL17ChooseMaskPatternERKNS_8BitArrayENS0_20ErrorCorrectionLevelERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMaskUtil.cpp' l='157' ll='163' type='int ZXing::QRCode::MaskUtil::CalculateMaskPenalty(const ZXing::TritMatrix &amp; matrix)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMaskUtil.cpp' l='155'>// The mask penalty calculation is complicated.  See Table 21 of JISX0510:2004 (p.45) for details.
+// Basically it applies four rules and summate all penalties.</doc>

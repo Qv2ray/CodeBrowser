@@ -1,0 +1,5 @@
+<dec f='qv2ray/test/catch.hpp' l='3429' type='bool Catch::Matchers::Floating::WithinAbsMatcher::match(const double &amp; matchee) const'/>
+<inh f='qv2ray/test/catch.hpp' l='3261' c='_ZNK5Catch8Matchers4Impl13MatcherMethod5matchERKT_'/>
+<def f='qv2ray/test/catch.hpp' l='11567' ll='11569' type='bool Catch::Matchers::Floating::WithinAbsMatcher::match(const double &amp; matchee) const'/>
+<doc f='qv2ray/test/catch.hpp' l='11565'>// Performs equivalent check of std::fabs(lhs - rhs) &lt;= margin
+    // But without the subtraction to allow for INFINITY in comparison</doc>

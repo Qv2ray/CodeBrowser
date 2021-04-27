@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='292'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='288'>/** The maximum amount of memory used by trace events per channel trace node.
+ * Once the maximum is reached, subsequent events will evict the oldest events
+ * from the buffer. The unit for this knob is bytes. Setting it to zero causes
+ * channel tracing to be disabled. */</doc>

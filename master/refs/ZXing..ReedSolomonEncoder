@@ -1,0 +1,14 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.h' l='24' ll='36'/>
+<size>32</size>
+<fun r='_ZN5ZXing18ReedSolomonEncoderC1ERKNS_9GenericGFE'/>
+<fun r='_ZN5ZXing18ReedSolomonEncoder6encodeERSt6vectorIiSaIiEEi'/>
+<mbr r='ZXing::ReedSolomonEncoder::_field' o='0' t='const ZXing::GenericGF *'/>
+<mbr r='ZXing::ReedSolomonEncoder::_cachedGenerators' o='64' t='std::list&lt;GenericGFPoly&gt;'/>
+<fun r='_ZN5ZXing18ReedSolomonEncoder14buildGeneratorEi'/>
+<fun r='_ZN5ZXing18ReedSolomonEncoderC1ERKNS_9GenericGFE'/>
+<fun r='_ZN5ZXing18ReedSolomonEncoder14buildGeneratorEi'/>
+<fun r='_ZN5ZXing18ReedSolomonEncoder6encodeERSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='97' c='_ZN5ZXing5AztecL18GenerateCheckWordsERKNS_8BitArrayEiiRS1_'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='387' c='_ZN5ZXing6QRCodeL15GenerateECBytesERKNS_9ByteArrayEiRS1_'/>
+<size>32</size>

@@ -1,0 +1,31 @@
+<dec f='include/c++/10/type_traits' l='2653' type='_Require&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;, is_move_constructible&lt;_Tp&gt;, is_move_assignable&lt;_Tp&gt;&gt; std::swap(_Tp &amp; , _Tp &amp; )'/>
+<def f='include/c++/10/bits/move.h' l='181' ll='200' type='typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;, is_move_constructible&lt;_Tp&gt;, is_move_assignable&lt;_Tp&gt;&gt;::value&gt;::type std::swap(_Tp &amp; __a, _Tp &amp; __b)'/>
+<use f='include/c++/10/thread' l='177' u='c' c='_ZNSt6thread4swapERS_'/>
+<use f='include/c++/10/bits/regex.h' l='363' u='c' c='_ZNSt7__cxx1112regex_traits5imbueESt6locale'/>
+<use f='include/google/protobuf/arenastring.h' l='172' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr4SwapEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1670' u='c' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapElementsEii'/>
+<use f='include/google/protobuf/repeated_field.h' l='2383' u='c' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='2384' u='c' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='2385' u='c' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='277' u='c' c='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='78' u='c' c='_ZN4grpc5SliceaSES0_'/>
+<use f='/v2ray_api.pb.cc' l='625' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='906' u='c' c='_ZN5v2ray4core3app5stats7command4Stat12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='1140' u='c' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='1419' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2371' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2372' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2373' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2374' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2375' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2376' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2377' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2378' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2379' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_api.pb.cc' l='2380' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse12InternalSwapEPS4_'/>
+<use f='/v2ray_geosite.pb.cc' l='706' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute12InternalSwapEPS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='707' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute12InternalSwapEPS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='1035' u='c' c='_ZN5v2ray4core3app6router12DomainObject12InternalSwapEPS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='1304' u='c' c='_ZN5v2ray4core3app6router4CIDR12InternalSwapEPS3_'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/basic_file.h' l='79' u='c' c='_ZNSt12__basic_fileIcE4swapERS0_'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/basic_file.h' l='80' u='c' c='_ZNSt12__basic_fileIcE4swapERS0_'/>

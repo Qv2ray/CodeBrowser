@@ -1,0 +1,74 @@
+<def f='qv2ray/src/base/models/QvCoreSettings.hpp' l='23' ll='38'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='37' c='_ZN6Qv2ray4base6config14QvConfig_RouteC1ERKS2_'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='37' c='_ZN6Qv2ray4base6config14QvConfig_RouteaSERKS2_'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='37' c='_ZN6Qv2ray4base6config14QvConfig_RouteaSERKS2_'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='37' c='_ZNK6Qv2ray4base6config14QvConfig_RouteeqERKS2_'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='37' c='_ZNK6Qv2ray4base6config14QvConfig_RouteneERKS2_'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='122'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='122'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='122'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='19' c='_ZNK6Qv2ray4core7handler12RouteHandler26GetAdvancedRoutingSettingsERKNS_4base6IDTypeINS3_16__GroupRoutingIdEEE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='25' c='_ZN6Qv2ray4core7handler12RouteHandler24SetAdvancedRouteSettingsERKNS_4base6IDTypeINS3_16__GroupRoutingIdEEEbRKNS3_6config14QvConfig_RouteE'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.hpp' l='18' c='_ZN25RouteSettingsMatrixWidget14SetRouteConfigERKN6Qv2ray4base6config14QvConfig_RouteE'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.hpp' l='19' c='_ZNK25RouteSettingsMatrixWidget14GetRouteConfigEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.hpp' l='26' c='_ZN25RouteSettingsMatrixWidget14schemeToActionERK7QStringRKN6Qv2ray4base6config14QvConfig_RouteE'/>
+<size>2608</size>
+<smbr r='Qv2ray::base::config::QvConfig_Route::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4base6config14QvConfig_Route10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_RouteC1ERKNS1_18QvRouteConfig_ImplES5_RK7QString'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route25on_domainStrategy_changedEv'/>
+<mbr r='Qv2ray::base::config::QvConfig_Route::domainStrategy' o='128' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route24on_domainMatcher_changedEv'/>
+<mbr r='Qv2ray::base::config::QvConfig_Route::domainMatcher' o='1088' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route18on_domains_changedEv'/>
+<mbr r='Qv2ray::base::config::QvConfig_Route::domains' o='2048' t='QJS_Prop&lt;Qv2ray::base::config::QvRouteConfig_Impl&gt;'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route14on_ips_changedEv'/>
+<mbr r='Qv2ray::base::config::QvConfig_Route::ips' o='11456' t='QJS_Prop&lt;Qv2ray::base::config::QvRouteConfig_Impl&gt;'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_RouteC1Ev'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_RouteC1ERKS2_'/>
+<fun r='_ZNK6Qv2ray4base6config14QvConfig_Route6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_RouteC1ERK11QJsonObject'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvConfigIdentifier.cpp' l='426' c='_ZN6Qv2ray4base18GroupRoutingConfig18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvConfigIdentifier.cpp' l='463' c='_ZN6Qv2ray4base18GroupRoutingConfig18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvConfigIdentifier.cpp' l='464' c='_ZN6Qv2ray4base18GroupRoutingConfig18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvConfigIdentifier.cpp' l='508'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='296' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='308' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='315' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='322' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='329' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='338' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvCoreSettings.cpp' l='349' c='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='5'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='6'/>
+<ovr f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='12' c='Qv2ray::components::route::Qv2rayRouteScheme'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='12'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='32' c='_ZNK6Qv2ray10components5route17Qv2rayRouteSchemeeqERKS2_'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='32' c='_ZNK6Qv2ray10components5route17Qv2rayRouteSchemeeqERKS2_'/>
+<size>2608</size>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::base::config::QvConfig_Route::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4base6config14QvConfig_Route10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route25on_domainStrategy_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route24on_domainMatcher_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route18on_domains_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config14QvConfig_Route14on_ips_changedEv'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='18' c='_ZN6Qv2ray4core10connection10generation7routing14GenerateRoutesEbbbRK7QStringRKNS_4base6config14QvConfig_RouteE'/>
+<size>2608</size>
+<use f='qv2ray/src/core/connection/generation/routing.cpp' l='35' c='_ZN6Qv2ray4core10connection10generation7routing14GenerateRoutesEbbbRK7QStringRKNS_4base6config14QvConfig_RouteE'/>
+<size>2608</size>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='45' c='_ZN6Qv2ray4core7handler12RouteHandler24SetAdvancedRouteSettingsERKNS_4base6IDTypeINS3_16__GroupRoutingIdEEEbRKNS3_6config14QvConfig_RouteE'/>
+<size>2608</size>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='53' c='_ZN25RouteSettingsMatrixWidget14schemeToActionERK7QStringRKN6Qv2ray4base6config14QvConfig_RouteE'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='61' c='_ZN25RouteSettingsMatrixWidget14SetRouteConfigERKN6Qv2ray4base6config14QvConfig_RouteE'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='75' c='_ZNK25RouteSettingsMatrixWidget14GetRouteConfigEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='77' c='_ZNK25RouteSettingsMatrixWidget14GetRouteConfigEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='125' c='_ZN25RouteSettingsMatrixWidget26on_importSchemeBtn_clickedEv'/>
+<size>2608</size>

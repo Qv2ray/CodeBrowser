@@ -1,0 +1,15 @@
+<dec f='qv2ray/src/common/QvHelpers.hpp' l='31' type='QString Qv2ray::common::StringFromFile(const QString &amp; filePath)'/>
+<doc f='qv2ray/src/common/QvHelpers.hpp' l='30'>//</doc>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='388' u='c' c='_ZN6Qv2ray17Qv2rayApplication17LoadConfigurationEv'/>
+<def f='qv2ray/src/common/QvHelpers.cpp' l='24' ll='28' type='QString Qv2ray::common::StringFromFile(const QString &amp; filePath)'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='167' u='c' c='_ZN6Qv2ray10components7plugins12QvPluginHost16InitializePluginERK7QString'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='10' u='c' c='_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='16' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='17' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='55' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='11' u='c' c='_ZN6Qv2ray4core7handler12RouteHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='287' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='318' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/ui/styles/StyleManager.cpp' l='100' u='c' c='_ZN6Qv2ray2ui6styles14QvStyleManager10ApplyStyleERK7QString'/>
+<use f='qv2ray/src/ui/widgets/RouteSettingsMatrix.cpp' l='107' u='c' c='_ZN25RouteSettingsMatrixWidget26on_importSchemeBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_PreferencesWindow.cpp' l='53' u='c' c='_ZN17PreferencesWindowC1EP7QWidget'/>

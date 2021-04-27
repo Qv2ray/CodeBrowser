@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/arena.h' l='135' type='void *(*)(size_t)'/>
+<use f='include/google/protobuf/arena.h' l='146' u='w' c='_ZN6google8protobuf12ArenaOptionsC1Ev'/>
+<offset>256</offset>
+<doc f='include/google/protobuf/arena.h' l='130'>// A function pointer to an alloc method that returns memory blocks of size
+  // requested. By default, it contains a ptr to the malloc function.
+  //
+  // NOTE: block_alloc and dealloc functions are expected to behave like
+  // malloc and free, including Asan poisoning.</doc>

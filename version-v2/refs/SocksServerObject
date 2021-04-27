@@ -1,0 +1,15 @@
+<def f='qv2ray/src/plugins/common/CommonTypes.hpp' l='24' ll='31'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='29' c='_ZNK17SocksServerObjecteqERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='30' c='_ZN17SocksServerObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='30' c='_ZNK17SocksServerObject6toJsonEv'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='30' c='_ZN17SocksServerObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/socksout.hpp' l='58'/>
+<size>24</size>
+<doc f='qv2ray/src/plugins/common/CommonTypes.hpp' l='22'>//
+// Socks, OutBound</doc>
+<mbr r='SocksServerObject::address' o='0' t='QString'/>
+<mbr r='SocksServerObject::port' o='64' t='int'/>
+<mbr r='SocksServerObject::users' o='128' t='QList&lt;HTTPSOCKSUserObject&gt;'/>
+<fun r='_ZN17SocksServerObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK17SocksServerObject6toJsonEv'/>
+<fun r='_ZN17SocksServerObject8fromJsonERK10QJsonValue'/>

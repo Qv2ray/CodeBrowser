@@ -1,0 +1,16 @@
+<dec f='qv2ray/src/plugin-interface/QvGUIPluginInterface.hpp' l='54' type='void Qv2rayPlugin::QvPluginEditor::SetContent(const QJsonObject &amp; )'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/dns.hpp' l='21' c='_ZN17DnsOutboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/freedom.hpp' l='21' c='_ZN21FreedomOutboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/httpout.hpp' l='27' c='_ZN18HttpOutboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/loopback.hpp' l='20' c='_ZN22LoopbackSettingsEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.hpp' l='26' c='_ZN25ShadowsocksOutboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/socksout.hpp' l='27' c='_ZN19SocksOutboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/vless.hpp' l='26' c='_ZN19VlessOutboundEditor10SetContentERK11QJsonObject'/>
+<doc f='qv2ray/src/plugin-interface/QvGUIPluginInterface.hpp' l='53'>//</doc>
+<ovr f='qv2ray/src/plugins/protocols/ui/inbound/dokodemo-door.cpp' l='19' c='_ZN25DokodemoDoorInboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/inbound/httpin.cpp' l='21' c='_ZN17HTTPInboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/inbound/socksin.cpp' l='21' c='_ZN18SocksInboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/blackhole.cpp' l='20' c='_ZN23BlackholeOutboundEditor10SetContentERK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/vmess.cpp' l='22' c='_ZN19VmessOutboundEditor10SetContentERK11QJsonObject'/>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.cpp' l='136' u='c' c='_ZN13InboundEditor6loadUIEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.cpp' l='133' u='c' c='_ZN14OutboundEditor9reloadGUIEv'/>

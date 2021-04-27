@@ -1,0 +1,30 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='21' ll='75'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='71' c='uvw::GetAddrInfoReq'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='71'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='156' c='uvw::GetNameInfoReq'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='156'/>
+<fun r='_ZN3uvw7Request7reserveEPT0_'/>
+<fun r='_ZN3uvw7Request15defaultCallbackEPT0_i'/>
+<fun r='_ZN3uvw7Request6invokeEOTL0__DpOTL0_0_'/>
+<fun r='_ZN3uvw7Request6cancelEv'/>
+<fun r='_ZNK3uvw7Request4sizeEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='374'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='378' c='_ZN3uvw9FsRequest17fsGenericCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='385' c='_ZN3uvw9FsRequest16fsResultCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='392' c='_ZN3uvw9FsRequest14fsStatCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='398' c='_ZN3uvw9FsRequest16fsStatfsCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='420'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='75' c='uvw::details::ConnectReq'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='75'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='85' c='uvw::details::ShutdownReq'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='85'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='93'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='94'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='98' c='_ZN3uvw7details8WriteReqC1ENS_7RequestINS0_8WriteReqIT_EE10uv_write_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cS4_Ej'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='60' c='uvw::details::SendReq'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='60'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='17' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/work.h' l='37' c='uvw::WorkReq'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/work.h' l='37'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/work.cpp' l='14' c='_ZN3uvw7WorkReqC1ENS_14UnderlyingTypeIS0_9uv_work_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvvEE'/>
+<size>232</size>

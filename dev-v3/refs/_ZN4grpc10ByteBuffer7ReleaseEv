@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/byte_buffer.h' l='118' type='void grpc::ByteBuffer::Release()'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='350' u='c' c='_ZN4grpc8internal17CallOpRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='424' u='c' c='_ZN4grpc8internal24CallOpGenericRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='47' u='c' c='_ZN4grpc8internal13MethodHandler16HandlerParameterD1Ev'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='216' u='c' c='_ZN4grpc15ServerInterface19PayloadAsyncRequestD1Ev'/>
+<doc f='include/grpcpp/impl/codegen/byte_buffer.h' l='116'>/// Forget underlying byte buffer without destroying
+  /// Use this only for un-owned byte buffers</doc>

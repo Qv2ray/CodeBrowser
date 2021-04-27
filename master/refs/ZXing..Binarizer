@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='33' ll='39'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='50'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='78' c='_ZNK5ZXing11DecodeHints9binarizerEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='78' c='_ZN5ZXing11DecodeHints12setBinarizerENS_9BinarizerE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='26'>/**
+ * @brief The Binarizer enum
+ *
+ * Specify which algorithm to use for the grayscale to binary transformation.
+ * The difference is how to get to a threshold value T which results in a bit
+ * value R = L &lt;= T.
+ */</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='33'>// needs to unsigned for the bitfield below to work, uint8_t fails as well</doc>

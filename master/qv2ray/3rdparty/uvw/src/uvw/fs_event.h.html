@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>fs_event.h source code [qv2ray/3rdparty/uvw/src/uvw/fs_event.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::FsEventEvent,uvw::FsEventHandle,uvw::details::UVFsEvent,uvw::details::UVFsEventFlags "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/fs_event.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='fs_event.h.html'>fs_event.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_FS_EVENT_INCLUDE_H">UVW_FS_EVENT_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_FS_EVENT_INCLUDE_H" data-ref="_M/UVW_FS_EVENT_INCLUDE_H">UVW_FS_EVENT_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="handle.hpp.html">"handle.hpp"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="loop.h.html">"loop.h"</a></u></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVFsEventFlags" title='uvw::details::UVFsEventFlags' data-ref="uvw::details::UVFsEventFlags" data-ref-filename="uvw..details..UVFsEventFlags">UVFsEventFlags</dfn>: std::underlying_type_t&lt;uv_fs_event_flags&gt; {</td></tr>
+<tr><th id="20">20</th><td>    <dfn class="enum" id="uvw::details::UVFsEventFlags::WATCH_ENTRY" title='uvw::details::UVFsEventFlags::WATCH_ENTRY' data-ref="uvw::details::UVFsEventFlags::WATCH_ENTRY" data-ref-filename="uvw..details..UVFsEventFlags..WATCH_ENTRY">WATCH_ENTRY</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_FS_EVENT_WATCH_ENTRY" title='UV_FS_EVENT_WATCH_ENTRY' data-ref="UV_FS_EVENT_WATCH_ENTRY" data-ref-filename="UV_FS_EVENT_WATCH_ENTRY">UV_FS_EVENT_WATCH_ENTRY</a>,</td></tr>
+<tr><th id="21">21</th><td>    <dfn class="enum" id="uvw::details::UVFsEventFlags::STAT" title='uvw::details::UVFsEventFlags::STAT' data-ref="uvw::details::UVFsEventFlags::STAT" data-ref-filename="uvw..details..UVFsEventFlags..STAT">STAT</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_FS_EVENT_STAT" title='UV_FS_EVENT_STAT' data-ref="UV_FS_EVENT_STAT" data-ref-filename="UV_FS_EVENT_STAT">UV_FS_EVENT_STAT</a>,</td></tr>
+<tr><th id="22">22</th><td>    <dfn class="enum" id="uvw::details::UVFsEventFlags::RECURSIVE" title='uvw::details::UVFsEventFlags::RECURSIVE' data-ref="uvw::details::UVFsEventFlags::RECURSIVE" data-ref-filename="uvw..details..UVFsEventFlags..RECURSIVE">RECURSIVE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_FS_EVENT_RECURSIVE" title='UV_FS_EVENT_RECURSIVE' data-ref="UV_FS_EVENT_RECURSIVE" data-ref-filename="UV_FS_EVENT_RECURSIVE">UV_FS_EVENT_RECURSIVE</a></td></tr>
+<tr><th id="23">23</th><td>};</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVFsEvent" title='uvw::details::UVFsEvent' data-ref="uvw::details::UVFsEvent" data-ref-filename="uvw..details..UVFsEvent">UVFsEvent</dfn>: std::underlying_type_t&lt;uv_fs_event&gt; {</td></tr>
+<tr><th id="27">27</th><td>    <dfn class="enum" id="uvw::details::UVFsEvent::RENAME" title='uvw::details::UVFsEvent::RENAME' data-ref="uvw::details::UVFsEvent::RENAME" data-ref-filename="uvw..details..UVFsEvent..RENAME">RENAME</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_RENAME" title='UV_RENAME' data-ref="UV_RENAME" data-ref-filename="UV_RENAME">UV_RENAME</a>,</td></tr>
+<tr><th id="28">28</th><td>    <dfn class="enum" id="uvw::details::UVFsEvent::CHANGE" title='uvw::details::UVFsEvent::CHANGE' data-ref="uvw::details::UVFsEvent::CHANGE" data-ref-filename="uvw..details..UVFsEvent..CHANGE">CHANGE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_CHANGE" title='UV_CHANGE' data-ref="UV_CHANGE" data-ref-filename="UV_CHANGE">UV_CHANGE</a></td></tr>
+<tr><th id="29">29</th><td>};</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>}</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * <span class="command">@brief</span> FsEventEvent event.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * It will be emitted by FsEventHandle according with its functionalities.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="40">40</th><td><b>struct</b> <dfn class="type def" id="uvw::FsEventEvent" title='uvw::FsEventEvent' data-ref="uvw::FsEventEvent" data-ref-filename="uvw..FsEventEvent">FsEventEvent</dfn> {</td></tr>
+<tr><th id="41">41</th><td>    <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw12FsEventEventC1EPKcNS_5FlagsINS_7details9UVFsEventEEE" title='uvw::FsEventEvent::FsEventEvent' data-ref="_ZN3uvw12FsEventEventC1EPKcNS_5FlagsINS_7details9UVFsEventEEE" data-ref-filename="_ZN3uvw12FsEventEventC1EPKcNS_5FlagsINS_7details9UVFsEventEEE" id="_ZN3uvw12FsEventEventC1EPKcNS_5FlagsINS_7details9UVFsEventEEE">FsEventEvent</a>(<em>const</em> <em>char</em> * <dfn class="local col1 decl" id="1pathname" title='pathname' data-type='const char *' data-ref="1pathname" data-ref-filename="1pathname">pathname</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<span class="namespace">details::</span><a class="type" href="#uvw::details::UVFsEvent" title='uvw::details::UVFsEvent' data-ref="uvw::details::UVFsEvent" data-ref-filename="uvw..details..UVFsEvent">UVFsEvent</a>&gt; <dfn class="local col2 decl" id="2events" title='events' data-type='Flags&lt;details::UVFsEvent&gt;' data-ref="2events" data-ref-filename="2events">events</dfn>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc">     * <span class="command">@brief</span> The path to the file being monitored.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">     * If the handle was started with a directory, the filename parameter will</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc">     * be a relative path to a file contained in the directory.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="49">49</th><td>    <em>const</em> <em>char</em> * <dfn class="decl field" id="uvw::FsEventEvent::filename" title='uvw::FsEventEvent::filename' data-ref="uvw::FsEventEvent::filename" data-ref-filename="uvw..FsEventEvent..filename">filename</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">     * <span class="command">@brief</span> Detected events all in one.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">     * * `FsEventHandle::Watch::RENAME`</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">     * * `FsEventHandle::Watch::CHANGE`</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="59">59</th><td>    <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<span class="namespace">details::</span><a class="type" href="#uvw::details::UVFsEvent" title='uvw::details::UVFsEvent' data-ref="uvw::details::UVFsEvent" data-ref-filename="uvw..details..UVFsEvent">UVFsEvent</a>&gt; <dfn class="decl field" id="uvw::FsEventEvent::flags" title='uvw::FsEventEvent::flags' data-ref="uvw::FsEventEvent::flags" data-ref-filename="uvw..FsEventEvent..flags">flags</dfn>;</td></tr>
+<tr><th id="60">60</th><td>};</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * <span class="command">@brief</span> The FsEventHandle handle.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> * These handles allow the user to monitor a given path for changes, for</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * example, if the file was renamed or there was a generic change in it. The</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * best backend for the job on each platform is chosen by the handle.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * To create a `FsEventHandle` through a `Loop`, no arguments are required.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * See the official</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * [documentation](<a href="http://docs.libuv.org/en/v1.x/fs_event.html">http://docs.libuv.org/en/v1.x/fs_event.html</a>)</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> * for further details.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="76">76</th><td><b>class</b> <dfn class="type def" id="uvw::FsEventHandle" title='uvw::FsEventHandle' data-ref="uvw::FsEventHandle" data-ref-filename="uvw..FsEventHandle">FsEventHandle</dfn> final: <b>public</b> <a class="type" href="handle.hpp.html#uvw::Handle" title='uvw::Handle' data-ref="uvw::Handle" data-ref-filename="uvw..Handle">Handle</a>&lt;<a class="type" href="#uvw::FsEventHandle" title='uvw::FsEventHandle' data-ref="uvw::FsEventHandle" data-ref-filename="uvw..FsEventHandle">FsEventHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_fs_event_t" title='uv_fs_event_t' data-type='struct uv_fs_event_s' data-ref="uv_fs_event_t" data-ref-filename="uv_fs_event_t">uv_fs_event_t</a>&gt; {</td></tr>
+<tr><th id="77">77</th><td>    <em>static</em> <em>void</em> <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii" title='uvw::FsEventHandle::startCallback' data-ref="_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii" data-ref-filename="_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii" id="_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii">startCallback</a>(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_fs_event_t" title='uv_fs_event_t' data-type='struct uv_fs_event_s' data-ref="uv_fs_event_t" data-ref-filename="uv_fs_event_t">uv_fs_event_t</a> *<dfn class="local col3 decl" id="3handle" title='handle' data-type='uv_fs_event_t *' data-ref="3handle" data-ref-filename="3handle">handle</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4filename" title='filename' data-type='const char *' data-ref="4filename" data-ref-filename="4filename">filename</dfn>, <em>int</em> <dfn class="local col5 decl" id="5events" title='events' data-type='int' data-ref="5events" data-ref-filename="5events">events</dfn>, <em>int</em> <dfn class="local col6 decl" id="6status" title='status' data-type='int' data-ref="6status" data-ref-filename="6status">status</dfn>);</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><b>public</b>:</td></tr>
+<tr><th id="80">80</th><td>    <b>using</b> <dfn class="typedef" id="uvw::FsEventHandle::Watch" title='uvw::FsEventHandle::Watch' data-type='details::UVFsEvent' data-ref="uvw::FsEventHandle::Watch" data-ref-filename="uvw..FsEventHandle..Watch">Watch</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVFsEvent" title='uvw::details::UVFsEvent' data-ref="uvw::details::UVFsEvent" data-ref-filename="uvw..details..UVFsEvent">UVFsEvent</a>;</td></tr>
+<tr><th id="81">81</th><td>    <b>using</b> <dfn class="typedef" id="uvw::FsEventHandle::Event" title='uvw::FsEventHandle::Event' data-type='details::UVFsEventFlags' data-ref="uvw::FsEventHandle::Event" data-ref-filename="uvw..FsEventHandle..Event">Event</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVFsEventFlags" title='uvw::details::UVFsEventFlags' data-ref="uvw::details::UVFsEventFlags" data-ref-filename="uvw..details..UVFsEventFlags">UVFsEventFlags</a>;</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <b>using</b> <a class="type" href="handle.hpp.html#uvw::Handle" title='uvw::Handle' data-ref="uvw::Handle" data-ref-filename="uvw..Handle">Handle</a>::Handle;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="89">89</th><td>    <em>bool</em> <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw13FsEventHandle4initEv" title='uvw::FsEventHandle::init' data-ref="_ZN3uvw13FsEventHandle4initEv" data-ref-filename="_ZN3uvw13FsEventHandle4initEv" id="_ZN3uvw13FsEventHandle4initEv">init</a>();</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     * <span class="command">@brief</span> Starts watching the specified path.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * It will watch the specified path for changes.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     * As soon as a change is observed, a FsEventEvent is emitted by the</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * handle.<span class="tag">&lt;br&gt;</span></i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     * It could happen that ErrorEvent events are emitted while running.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     * * `FsEventHandle::Event::WATCH_ENTRY`</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">     * * `FsEventHandle::Event::STAT`</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">     * * `FsEventHandle::Event::RECURSIVE`</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">path</span> The file or directory to be monitored.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flags</span> Additional flags to control the behavior.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="108">108</th><td>    <em>void</em> <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details14UVFsEventFlagsEEE" title='uvw::FsEventHandle::start' data-ref="_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details14UVFsEventFlagsEEE" data-ref-filename="_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details14UVFsEventFlagsEEE" id="_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details14UVFsEventFlagsEEE">start</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col7 decl" id="7path" title='path' data-type='std::string' data-ref="7path" data-ref-filename="7path">path</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::FsEventHandle::Event" title='uvw::FsEventHandle::Event' data-type='details::UVFsEventFlags' data-ref="uvw::FsEventHandle::Event" data-ref-filename="uvw..FsEventHandle..Event">Event</a>&gt; <dfn class="local col8 decl" id="8flags" title='flags' data-type='Flags&lt;uvw::FsEventHandle::Event&gt;' data-ref="8flags" data-ref-filename="8flags">flags</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::FsEventHandle::Event" title='uvw::FsEventHandle::Event' data-type='details::UVFsEventFlags' data-ref="uvw::FsEventHandle::Event" data-ref-filename="uvw..FsEventHandle..Event">Event</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     * <span class="command">@brief</span> Starts watching the specified path.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * It will watch the specified path for changes.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * As soon as a change is observed, a FsEventEvent is emitted by the</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * handle.<span class="tag">&lt;br&gt;</span></i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     * It could happen that ErrorEvent events are emitted while running.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">     * * `FsEventHandle::Event::WATCH_ENTRY`</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">     * * `FsEventHandle::Event::STAT`</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">     * * `FsEventHandle::Event::RECURSIVE`</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">path</span> The file or directory to be monitored.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flag</span> Additional flag to control the behavior.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="127">127</th><td>    <em>void</em> <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE" title='uvw::FsEventHandle::start' data-ref="_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE" data-ref-filename="_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE" id="_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE">start</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col9 decl" id="9path" title='path' data-type='std::string' data-ref="9path" data-ref-filename="9path">path</dfn>, <a class="typedef" href="#uvw::FsEventHandle::Event" title='uvw::FsEventHandle::Event' data-type='details::UVFsEventFlags' data-ref="uvw::FsEventHandle::Event" data-ref-filename="uvw..FsEventHandle..Event">Event</a> <dfn class="local col0 decl" id="10flag" title='flag' data-type='uvw::FsEventHandle::Event' data-ref="10flag" data-ref-filename="10flag">flag</dfn>);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">     * <span class="command">@brief</span> Stops polling the file descriptor.</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="132">132</th><td>    <em>void</em> <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw13FsEventHandle4stopEv" title='uvw::FsEventHandle::stop' data-ref="_ZN3uvw13FsEventHandle4stopEv" data-ref-filename="_ZN3uvw13FsEventHandle4stopEv" id="_ZN3uvw13FsEventHandle4stopEv">stop</a>();</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     * <span class="command">@brief</span> Gets the path being monitored.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     * <span class="command">@return</span> The path being monitored, an empty string in case of errors.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="138">138</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="decl fn" href="fs_event.cpp.html#_ZN3uvw13FsEventHandle4pathB5cxx11Ev" title='uvw::FsEventHandle::path' data-ref="_ZN3uvw13FsEventHandle4pathB5cxx11Ev" data-ref-filename="_ZN3uvw13FsEventHandle4pathB5cxx11Ev" id="_ZN3uvw13FsEventHandle4pathB5cxx11Ev">path</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="139">139</th><td>};</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td>}</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><u>#<span data-ppcond="145">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="146">146</th><td><u>#include "fs_event.cpp"</u></td></tr>
+<tr><th id="147">147</th><td><u>#<span data-ppcond="145">endif</span></u></td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><u>#<span data-ppcond="1">endif</span> // UVW_FS_EVENT_INCLUDE_H</u></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='fs_event.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

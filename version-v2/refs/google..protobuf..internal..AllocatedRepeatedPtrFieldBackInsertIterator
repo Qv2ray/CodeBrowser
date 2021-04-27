@@ -1,0 +1,15 @@
+<def f='include/google/protobuf/repeated_field.h' l='2517' ll='2542'/>
+<use f='include/google/protobuf/repeated_field.h' l='2524' c='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratoraSEPT_'/>
+<use f='include/google/protobuf/repeated_field.h' l='2529' c='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratordeEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='2532' c='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratorppEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='2535' c='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratorppEi'/>
+<use f='include/google/protobuf/repeated_field.h' l='2601' c='_ZN6google8protobuf37AllocatedRepeatedPtrFieldBackInserterEPNS0_16RepeatedPtrFieldIT_EE'/>
+<use f='include/google/protobuf/repeated_field.h' l='2604' c='_ZN6google8protobuf37AllocatedRepeatedPtrFieldBackInserterEPNS0_16RepeatedPtrFieldIT_EE'/>
+<doc f='include/google/protobuf/repeated_field.h' l='2515'>// A back inserter for RepeatedPtrFields that inserts by transferring ownership
+// of a pointer.</doc>
+<fun r='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratorC1EPNS0_16RepeatedPtrFieldIT_EE'/>
+<fun r='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratoraSEPT_'/>
+<fun r='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratordeEv'/>
+<fun r='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratorppEv'/>
+<fun r='_ZN6google8protobuf8internal43AllocatedRepeatedPtrFieldBackInsertIteratorppEi'/>
+<mbr r='google::protobuf::internal::AllocatedRepeatedPtrFieldBackInsertIterator::field_' t='RepeatedPtrField&lt;T&gt; *'/>

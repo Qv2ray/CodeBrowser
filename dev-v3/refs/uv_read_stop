@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='506' type='int uv_read_stop(uv_stream_t * )'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1590' ll='1603' type='int uv_read_stop(uv_stream_t * stream)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1659' u='c' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='240' u='a' c='_ZN3uvw12StreamHandle4stopEv'/>

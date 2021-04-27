@@ -1,0 +1,14 @@
+<dec f='include/google/protobuf/extension_set.h' l='290' type='void * google::protobuf::internal::ExtensionSet::MutableRawRepeatedField(int number, google::protobuf::internal::FieldType field_type, bool packed, const google::protobuf::FieldDescriptor * desc)'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='937' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1017' u='c' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits15MutableRepeatedB5cxx11EihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1100' u='c' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1210' u='c' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<doc f='include/google/protobuf/extension_set.h' l='287'>// Fetches a mutable version of a RepeatedField extension by number,
+  // instantiating one if none exists. Similar to above, user should not use
+  // this directly; it underlies MutableRepeatedExtension().</doc>

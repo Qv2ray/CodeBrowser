@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PDFBarcodeMetadata.h source code [qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeMetadata.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::Pdf417::BarcodeMetadata "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeMetadata.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>pdf417</a>/<a href='PDFBarcodeMetadata.h.html'>PDFBarcodeMetadata.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">Pdf417</span> {</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc">* <span class="command">@author</span> Guenther Grau</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="25">25</th><td><b>class</b> <dfn class="type def" id="ZXing::Pdf417::BarcodeMetadata" title='ZXing::Pdf417::BarcodeMetadata' data-ref="ZXing::Pdf417::BarcodeMetadata" data-ref-filename="ZXing..Pdf417..BarcodeMetadata">BarcodeMetadata</dfn></td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>	<em>int</em> <dfn class="decl field" id="ZXing::Pdf417::BarcodeMetadata::_columnCount" title='ZXing::Pdf417::BarcodeMetadata::_columnCount' data-ref="ZXing::Pdf417::BarcodeMetadata::_columnCount" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._columnCount">_columnCount</dfn> = <var>0</var>;</td></tr>
+<tr><th id="28">28</th><td>	<em>int</em> <dfn class="decl field" id="ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel" title='ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel' data-ref="ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._errorCorrectionLevel">_errorCorrectionLevel</dfn> = <var>0</var>;</td></tr>
+<tr><th id="29">29</th><td>	<em>int</em> <dfn class="decl field" id="ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountUpperPart">_rowCountUpperPart</dfn> = <var>0</var>;</td></tr>
+<tr><th id="30">30</th><td>	<em>int</em> <dfn class="decl field" id="ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountLowerPart">_rowCountLowerPart</dfn> = <var>0</var>;</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>public</b>:</td></tr>
+<tr><th id="33">33</th><td>	<dfn class="decl def fn" id="_ZN5ZXing6Pdf41715BarcodeMetadataC1Ev" title='ZXing::Pdf417::BarcodeMetadata::BarcodeMetadata' data-ref="_ZN5ZXing6Pdf41715BarcodeMetadataC1Ev" data-ref-filename="_ZN5ZXing6Pdf41715BarcodeMetadataC1Ev">BarcodeMetadata</dfn>() = <b>default</b>;</td></tr>
+<tr><th id="34">34</th><td>	<dfn class="decl def fn" id="_ZN5ZXing6Pdf41715BarcodeMetadataC1Eiiii" title='ZXing::Pdf417::BarcodeMetadata::BarcodeMetadata' data-ref="_ZN5ZXing6Pdf41715BarcodeMetadataC1Eiiii" data-ref-filename="_ZN5ZXing6Pdf41715BarcodeMetadataC1Eiiii">BarcodeMetadata</dfn>(<em>int</em> <dfn class="local col1 decl" id="1columnCount" title='columnCount' data-type='int' data-ref="1columnCount" data-ref-filename="1columnCount">columnCount</dfn>, <em>int</em> <dfn class="local col2 decl" id="2rowCountUpperPart" title='rowCountUpperPart' data-type='int' data-ref="2rowCountUpperPart" data-ref-filename="2rowCountUpperPart">rowCountUpperPart</dfn>, <em>int</em> <dfn class="local col3 decl" id="3rowCountLowerPart" title='rowCountLowerPart' data-type='int' data-ref="3rowCountLowerPart" data-ref-filename="3rowCountLowerPart">rowCountLowerPart</dfn>, <em>int</em> <dfn class="local col4 decl" id="4errorCorrectionLevel" title='errorCorrectionLevel' data-type='int' data-ref="4errorCorrectionLevel" data-ref-filename="4errorCorrectionLevel">errorCorrectionLevel</dfn>)</td></tr>
+<tr><th id="35">35</th><td>	    : <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_columnCount" title='ZXing::Pdf417::BarcodeMetadata::_columnCount' data-ref="ZXing::Pdf417::BarcodeMetadata::_columnCount" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._columnCount">_columnCount</a>(<a class="local col1 ref" href="#1columnCount" title='columnCount' data-ref="1columnCount" data-ref-filename="1columnCount">columnCount</a>), <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel" title='ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel' data-ref="ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._errorCorrectionLevel">_errorCorrectionLevel</a>(<a class="local col4 ref" href="#4errorCorrectionLevel" title='errorCorrectionLevel' data-ref="4errorCorrectionLevel" data-ref-filename="4errorCorrectionLevel">errorCorrectionLevel</a>), <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountUpperPart">_rowCountUpperPart</a>(<a class="local col2 ref" href="#2rowCountUpperPart" title='rowCountUpperPart' data-ref="2rowCountUpperPart" data-ref-filename="2rowCountUpperPart">rowCountUpperPart</a>),</td></tr>
+<tr><th id="36">36</th><td>	      <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountLowerPart">_rowCountLowerPart</a>(<a class="local col3 ref" href="#3rowCountLowerPart" title='rowCountLowerPart' data-ref="3rowCountLowerPart" data-ref-filename="3rowCountLowerPart">rowCountLowerPart</a>)</td></tr>
+<tr><th id="37">37</th><td>	{</td></tr>
+<tr><th id="38">38</th><td>	}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>	<em>int</em> <dfn class="decl def fn" id="_ZNK5ZXing6Pdf41715BarcodeMetadata11columnCountEv" title='ZXing::Pdf417::BarcodeMetadata::columnCount' data-ref="_ZNK5ZXing6Pdf41715BarcodeMetadata11columnCountEv" data-ref-filename="_ZNK5ZXing6Pdf41715BarcodeMetadata11columnCountEv">columnCount</dfn>() <em>const</em> {</td></tr>
+<tr><th id="41">41</th><td>		<b>return</b> <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_columnCount" title='ZXing::Pdf417::BarcodeMetadata::_columnCount' data-ref="ZXing::Pdf417::BarcodeMetadata::_columnCount" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._columnCount">_columnCount</a>;</td></tr>
+<tr><th id="42">42</th><td>	}</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<em>int</em> <dfn class="decl def fn" id="_ZNK5ZXing6Pdf41715BarcodeMetadata20errorCorrectionLevelEv" title='ZXing::Pdf417::BarcodeMetadata::errorCorrectionLevel' data-ref="_ZNK5ZXing6Pdf41715BarcodeMetadata20errorCorrectionLevelEv" data-ref-filename="_ZNK5ZXing6Pdf41715BarcodeMetadata20errorCorrectionLevelEv">errorCorrectionLevel</dfn>() <em>const</em> {</td></tr>
+<tr><th id="45">45</th><td>		<b>return</b> <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel" title='ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel' data-ref="ZXing::Pdf417::BarcodeMetadata::_errorCorrectionLevel" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._errorCorrectionLevel">_errorCorrectionLevel</a>;</td></tr>
+<tr><th id="46">46</th><td>	}</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>	<em>int</em> <dfn class="decl def fn" id="_ZNK5ZXing6Pdf41715BarcodeMetadata8rowCountEv" title='ZXing::Pdf417::BarcodeMetadata::rowCount' data-ref="_ZNK5ZXing6Pdf41715BarcodeMetadata8rowCountEv" data-ref-filename="_ZNK5ZXing6Pdf41715BarcodeMetadata8rowCountEv">rowCount</dfn>() <em>const</em> {</td></tr>
+<tr><th id="49">49</th><td>		<b>return</b> <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountUpperPart">_rowCountUpperPart</a> + <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountLowerPart">_rowCountLowerPart</a>;</td></tr>
+<tr><th id="50">50</th><td>	}</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>	<em>int</em> <dfn class="decl def fn" id="_ZNK5ZXing6Pdf41715BarcodeMetadata17rowCountUpperPartEv" title='ZXing::Pdf417::BarcodeMetadata::rowCountUpperPart' data-ref="_ZNK5ZXing6Pdf41715BarcodeMetadata17rowCountUpperPartEv" data-ref-filename="_ZNK5ZXing6Pdf41715BarcodeMetadata17rowCountUpperPartEv">rowCountUpperPart</dfn>() <em>const</em> {</td></tr>
+<tr><th id="53">53</th><td>		<b>return</b> <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountUpperPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountUpperPart">_rowCountUpperPart</a>;</td></tr>
+<tr><th id="54">54</th><td>	}</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>	<em>int</em> <dfn class="decl def fn" id="_ZNK5ZXing6Pdf41715BarcodeMetadata17rowCountLowerPartEv" title='ZXing::Pdf417::BarcodeMetadata::rowCountLowerPart' data-ref="_ZNK5ZXing6Pdf41715BarcodeMetadata17rowCountLowerPartEv" data-ref-filename="_ZNK5ZXing6Pdf41715BarcodeMetadata17rowCountLowerPartEv">rowCountLowerPart</dfn>() <em>const</em> {</td></tr>
+<tr><th id="57">57</th><td>		<b>return</b> <a class="member field" href="#ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" title='ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart' data-ref="ZXing::Pdf417::BarcodeMetadata::_rowCountLowerPart" data-ref-filename="ZXing..Pdf417..BarcodeMetadata.._rowCountLowerPart">_rowCountLowerPart</a>;</td></tr>
+<tr><th id="58">58</th><td>	}</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>};</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td>} <i>// Pdf417</i></td></tr>
+<tr><th id="63">63</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='PDFDetectionResult.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

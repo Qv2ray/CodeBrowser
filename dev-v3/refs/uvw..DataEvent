@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='64' ll='69'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='145' c='_ZN3uvw12StreamHandle12readCallbackEP11uv_stream_slPK8uv_buf_t'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='59'>/**
+ * @brief DataEvent event.
+ *
+ * It will be emitted by StreamHandle according with its functionalities.
+ */</doc>
+<fun r='_ZN3uvw9DataEventC1ESt10unique_ptrIA_cSt14default_deleteIS2_EEm'/>
+<mbr r='uvw::DataEvent::data' o='0' t='std::unique_ptr&lt;char []&gt;'/>
+<mbr r='uvw::DataEvent::length' o='64' t='std::size_t'/>

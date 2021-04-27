@@ -1,0 +1,11 @@
+<def f='include/google/protobuf/stubs/mutex.h' l='48' ll='59'/>
+<use f='include/google/protobuf/stubs/mutex.h' l='61'/>
+<size>40</size>
+<doc f='include/google/protobuf/stubs/mutex.h' l='45'>// Mutex is a natural type to wrap. As both google and other organization have
+// specialized mutexes. gRPC also provides an injection mechanism for custom
+// mutexes.</doc>
+<fun r='_ZN6google8protobuf8internal12WrappedMutexC1Ev'/>
+<fun r='_ZN6google8protobuf8internal12WrappedMutex4LockEv'/>
+<fun r='_ZN6google8protobuf8internal12WrappedMutex6UnlockEv'/>
+<fun r='_ZNK6google8protobuf8internal12WrappedMutex10AssertHeldEv'/>
+<mbr r='google::protobuf::internal::WrappedMutex::mu_' o='0' t='std::mutex'/>

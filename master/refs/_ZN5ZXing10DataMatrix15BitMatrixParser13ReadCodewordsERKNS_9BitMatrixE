@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.h' l='31' type='static ZXing::ByteArray ZXing::DataMatrix::BitMatrixParser::ReadCodewords(const ZXing::BitMatrix &amp; bits)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='94' ll='121' type='static ZXing::ByteArray ZXing::DataMatrix::BitMatrixParser::ReadCodewords(const ZXing::BitMatrix &amp; bits)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='86'>/**
+* &lt;p&gt;Reads the bits in the {@link BitMatrix} representing the mapping matrix (No alignment patterns)
+* in the correct order in order to reconstitute the codewords bytes contained within the
+* Data Matrix Code.&lt;/p&gt;
+*
+* @return bytes encoded within the Data Matrix Code
+* @throws FormatException if the exact number of bytes expected is not read
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='594' u='c' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>

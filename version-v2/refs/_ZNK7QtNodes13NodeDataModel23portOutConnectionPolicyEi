@@ -1,0 +1,8 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='65' ll='68' type='QtNodes::NodeDataModel::ConnectionPolicy QtNodes::NodeDataModel::portOutConnectionPolicy(QtNodes::PortIndex ) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='162' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction15nodePortIsEmptyENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='25' u='c' c='_ZNK7QtNodes13NodeDataModel20portConnectionPolicyENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='177' u='c' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='118' c='_ZNK6Qv2ray2ui10nodemodels16InboundNodeModel23portOutConnectionPolicyEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='122' c='_ZNK6Qv2ray2ui10nodemodels17OutboundNodeModel23portOutConnectionPolicyEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='127' c='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel23portOutConnectionPolicyEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='131' c='_ZNK6Qv2ray2ui10nodemodels22ChainOutboundNodeModel23portOutConnectionPolicyEi'/>

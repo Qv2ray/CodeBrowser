@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/message_lite.h' l='316' type='std::string google::protobuf::MessageLite::SerializeAsString() const'/>
+<doc f='include/google/protobuf/message_lite.h' l='310'>// Make a string encoding the message. Is equivalent to calling
+  // SerializeToString() on a string and using that.  Returns the empty
+  // string if SerializeToString() would have returned an error.
+  // Note: If you intend to generate many such strings, you may
+  // reduce heap fragmentation by instead re-using the same string
+  // object with calls to SerializeToString().</doc>

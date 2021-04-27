@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.h' l='57' type='static ZXing::QRCode::AlignmentPattern ZXing::QRCode::AlignmentPatternFinder::Find(const ZXing::BitMatrix &amp; image, int startX, int startY, int width, int height, float moduleSize)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='149' ll='217' type='static ZXing::QRCode::AlignmentPattern ZXing::QRCode::AlignmentPatternFinder::Find(const ZXing::BitMatrix &amp; image, int startX, int startY, int width, int height, float moduleSize)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.h' l='44'>/**
+	* &lt;p&gt;This method attempts to find the bottom-right alignment pattern in the image. It is a bit messy since
+	* it&apos;s pretty performance-critical and so is written to be fast foremost.&lt;/p&gt;
+	* @param image image to search
+	* @param startX left column from which to start searching
+	* @param startY top row from which to start searching
+	* @param width width of region to search
+	* @param height height of region to search
+	* @param moduleSize estimated module size so far
+	*
+	* @return {@link AlignmentPattern} if found
+	* @throws NotFoundException if not found
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='212' u='c' c='_ZN5ZXing6QRCode21FindAlignmentInRegionERKNS_9BitMatrixEfiif'/>

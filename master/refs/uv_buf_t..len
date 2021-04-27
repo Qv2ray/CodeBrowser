@@ -1,0 +1,28 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='123' type='size_t'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='101' u='a' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='407' u='r' c='uv__fs_preadv'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='422' u='r' c='uv__fs_preadv'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='450' u='r' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='455' u='r' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='777' u='r' c='uv__fs_sendfile_emul'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='890' u='r' c='uv__fs_sendfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1063' u='r' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1068' u='r' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1078' u='r' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1473' u='r' c='uv__fs_buf_offset'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1474' u='r' c='uv__fs_buf_offset'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1479' u='w' c='uv__fs_buf_offset'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1953' u='w' c='uv_fs_sendfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='749' u='r' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='749' u='r' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='751' u='w' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='752' u='r' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1144' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1155' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1206' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='200' u='r' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='266' u='r' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='390' u='r' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='160' u='w' c='uv_buf_init'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='579' u='r' c='uv__count_bufs'/>

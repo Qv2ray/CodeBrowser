@@ -1,0 +1,5 @@
+<def f='include/netinet/ip_icmp.h' l='146' ll='150'/>
+<use f='include/netinet/ip_icmp.h' l='146'/>
+<size>4</size>
+<mbr r='icmp::(anonymousunion)::ih_idseq::icd_id' o='0' t='uint16_t'/>
+<mbr r='icmp::(anonymousunion)::ih_idseq::icd_seq' o='16' t='uint16_t'/>

@@ -1,0 +1,9 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='132' ll='155' type='bool ZXing::OneD::DecodeExtendedCode39AndCode93(std::string &amp; encoded, const char * ctrl)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='209' u='c' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='264' u='c' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='130'>/** Decode the extended string in place. Return false if FormatError occured.
+ * ctrl is either &quot;$%/+&quot; for code39 or &quot;abcd&quot; for code93. */</doc>
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='108' type='bool ZXing::OneD::DecodeExtendedCode39AndCode93(std::string &amp; encoded, const char * ctrl)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='156' u='c' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='217' u='c' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='107'>// forward declare here. see ODCode39Reader.cpp. Not put in header to not pollute the public facing API</doc>

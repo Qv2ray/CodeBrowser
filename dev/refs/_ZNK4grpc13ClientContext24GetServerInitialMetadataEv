@@ -1,0 +1,9 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='204' ll='208' type='const std::multimap&lt;grpc::string_ref, grpc::string_ref&gt; &amp; grpc::ClientContext::GetServerInitialMetadata() const'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='196'>/// Return a collection of initial metadata key-value pairs. Note that keys
+  /// may happen more than once (ie, a \a std::multimap is returned).
+  ///
+  /// \warning This method should only be called after initial metadata has been
+  /// received. For streaming calls, see \a
+  /// ClientReaderInterface::WaitForInitialMetadata().
+  ///
+  /// \return A multimap of initial metadata key-value pairs from the server.</doc>

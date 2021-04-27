@@ -1,0 +1,22 @@
+<def f='include/grpcpp/impl/codegen/server_context.h' l='176' ll='178' type='grpc_compression_level grpc::ServerContext::compression_level() const'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='716' u='c' c='_ZN4grpc17ServerAsyncReader19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='745' u='c' c='_ZN4grpc17ServerAsyncReader6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='775' u='c' c='_ZN4grpc17ServerAsyncReader15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='865' u='c' c='_ZN4grpc17ServerAsyncWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='938' u='c' c='_ZN4grpc17ServerAsyncWriter25EnsureInitialMetadataSentEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1031' u='c' c='_ZN4grpc23ServerAsyncReaderWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1112' u='c' c='_ZN4grpc23ServerAsyncReaderWriter25EnsureInitialMetadataSentEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='220' u='c' c='_ZN4grpc25ServerAsyncResponseWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='247' u='c' c='_ZN4grpc25ServerAsyncResponseWriter6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='280' u='c' c='_ZN4grpc25ServerAsyncResponseWriter15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='589' u='c' c='_ZN4grpc12ServerReader19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='641' u='c' c='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='666' u='c' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='714' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='744' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='79' u='c' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='123' u='c' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='169' u='c' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='212' u='c' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='287' u='c' c='_ZN4grpc8internal18ErrorMethodHandler7FillOpsEPNS_13ServerContextEPTL0__'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='175'>/// Return the compression algorithm to be used by the server call.</doc>

@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='101' type='bool uvw::TCPHandle::simultaneousAccepts(bool enable = true)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='36' ll='38' type='bool uvw::TCPHandle::simultaneousAccepts(bool enable = true)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='87'>/**
+     * @brief Enables/Disables simultaneous asynchronous accept requests.
+     *
+     * Enables/Disables simultaneous asynchronous accept requests that are
+     * queued by the operating system when listening for new TCP
+     * connections.&lt;br/&gt;
+     * This setting is used to tune a TCP server for the desired performance.
+     * Having simultaneous accepts can significantly improve the rate of
+     * accepting connections (which is why it is enabled by default) but may
+     * lead to uneven load distribution in multi-process setups.
+     *
+     * @param enable True to enable it, false otherwise.
+     * @return True in case of success, false otherwise.
+     */</doc>

@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1373' type='int uv_fs_mkdtemp(uv_loop_t * loop, uv_fs_t * req, const char * tpl, uv_fs_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1788' ll='1797' type='int uv_fs_mkdtemp(uv_loop_t * loop, uv_fs_t * req, const char * tpl, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='284' u='a' c='_ZN3uvw5FsReq7mkdtempENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='290' u='a' c='_ZN3uvw5FsReq11mkdtempSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='303' u='a' c='_ZN3uvw5FsReq11mkstempSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

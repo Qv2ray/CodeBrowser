@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='610' type='4'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='602'>/*
+   * Indicates if SO_REUSEADDR will be set when binding the handle.
+   * This sets the SO_REUSEPORT socket flag on the BSDs and OS X. On other
+   * Unix platforms, it sets the SO_REUSEADDR flag.  What that means is that
+   * multiple threads or processes can bind to the same address without error
+   * (provided they all set the flag) but only the last one to bind will receive
+   * any traffic, in effect &quot;stealing&quot; the port from the previous listener.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='520' u='r' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='536' u='r' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='867' u='r' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='913' u='r' c='uv__udp_set_source_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1014' u='r' c='uv_udp_set_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1019' u='r' c='uv_udp_set_membership'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='48'/>

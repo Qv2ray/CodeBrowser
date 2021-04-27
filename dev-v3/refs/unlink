@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='825' type='int unlink(const char * __name)'/>
+<doc f='include/unistd.h' l='824'>/* Remove the link NAME.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1577' u='c' c='uv__fs_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='128' u='c' c='uv__pipe_close'/>

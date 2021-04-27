@@ -1,0 +1,8 @@
+<dec f='include/grpc/impl/codegen/compression_types.h' l='51'/>
+<doc f='include/grpc/impl/codegen/compression_types.h' l='44'>/** Compression algorithms supported by the channel.
+ * Its value is a bitset (an int). Bits correspond to algorithms in \a
+ * grpc_compression_algorithm. For example, its LSB corresponds to
+ * GRPC_COMPRESS_NONE, the next bit to GRPC_COMPRESS_DEFLATE, etc.
+ * Unset bits disable support for the algorithm. By default all algorithms are
+ * supported. It&apos;s not possible to disable GRPC_COMPRESS_NONE (the attempt will
+ * be ignored). */</doc>

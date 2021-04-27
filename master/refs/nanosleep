@@ -1,0 +1,8 @@
+<dec f='include/time.h' l='205' type='int nanosleep(const struct timespec * __requested_time, struct timespec * __remaining)'/>
+<use f='include/c++/10/thread' l='405' u='c' c='_ZNSt11this_thread9sleep_forERKNSt6chrono8durationIT_T0_EE'/>
+<doc f='include/time.h' l='201'>/* Pause execution for a number of nanoseconds.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1529' u='c' c='uv_sleep'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='582' u='c' c='uv__server_io'/>

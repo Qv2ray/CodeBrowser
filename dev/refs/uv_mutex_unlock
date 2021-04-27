@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1693' type='void uv_mutex_unlock(uv_mutex_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='83' u='c' c='worker'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='119' u='c' c='worker'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='129' u='c' c='worker'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='150' u='c' c='post'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='159' u='c' c='post'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='279' u='c' c='uv__work_cancel'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='280' u='c' c='uv__work_cancel'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='289' u='c' c='uv__work_cancel'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='305' u='c' c='uv__work_done'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='166' u='c' c='uv__loop_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='119' u='c' c='uv_set_process_title'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='133' u='c' c='uv_get_process_title'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='142' u='c' c='uv_get_process_title'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='350' ll='353' type='void uv_mutex_unlock(uv_mutex_t * mutex)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='569' u='c' c='uv__custom_sem_post'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='581' u='c' c='uv__custom_sem_wait'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='593' u='c' c='uv__custom_sem_trywait'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='598' u='c' c='uv__custom_sem_trywait'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='98' u='c' c='_ZN3uvw5Mutex6unlockEv'/>

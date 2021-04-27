@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='140' type='uvw::ProcessHandle &amp; uvw::ProcessHandle::cwd(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='85' ll='88' type='uvw::ProcessHandle &amp; uvw::ProcessHandle::cwd(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='135'>/**
+     * @brief Sets the current working directory for the subprocess.
+     * @param path The working directory to be used when `spawn()` is invoked.
+     * @return A reference to this process handle.
+     */</doc>

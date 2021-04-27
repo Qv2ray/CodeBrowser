@@ -1,0 +1,16 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='113' ll='116' type='std::shared_ptr&lt;BinaryBitmap&gt; ZXing::BinaryBitmap::cropped(int , int , int , int ) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='258' c='_ZNK5ZXing24GlobalHistogramBinarizer7croppedEiiii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='103'>/**
+	* Returns a new object with cropped image data. Implementations may keep a reference to the
+	* original data rather than a copy. Only callable if isCropSupported() is true.
+	*
+	* @param left The left coordinate, which must be in [0,getWidth())
+	* @param top The top coordinate, which must be in [0,getHeight())
+	* @param width The width of the rectangle to crop.
+	* @param height The height of the rectangle to crop.
+	* @return A cropped version of this object.
+	*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='113'>/*left*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='113'>/*top*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='113'>/*width*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='113'>/*height*/</doc>

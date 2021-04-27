@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>compression_types.h source code [include/grpc/impl/codegen/compression_types.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpc/impl/codegen/compression_types.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>grpc</a>/<a href='..'>impl</a>/<a href='./'>codegen</a>/<a href='compression_types.h.html'>compression_types.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2016 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPC_IMPL_CODEGEN_COMPRESSION_TYPES_H">GRPC_IMPL_CODEGEN_COMPRESSION_TYPES_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPC_IMPL_CODEGEN_COMPRESSION_TYPES_H" data-ref="_M/GRPC_IMPL_CODEGEN_COMPRESSION_TYPES_H">GRPC_IMPL_CODEGEN_COMPRESSION_TYPES_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="port_platform.h.html">&lt;grpc/impl/codegen/port_platform.h&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="25">25</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/** To be used as initial metadata key for the request of a concrete compression</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * algorithm */</i></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/GRPC_COMPRESSION_REQUEST_ALGORITHM_MD_KEY" data-ref="_M/GRPC_COMPRESSION_REQUEST_ALGORITHM_MD_KEY">GRPC_COMPRESSION_REQUEST_ALGORITHM_MD_KEY</dfn> \</u></td></tr>
+<tr><th id="31">31</th><td><u>  "grpc-internal-encoding-request"</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i class="doc">/** To be used in channel arguments.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * <span class="command">\addtogroup</span> <span class="verb">grpc_arg_keys</span></i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * \{ */</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/** Default compression algorithm for the channel.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * Its value is an int from the<span class="command"> \a</span> <span class="arg">grpc_compression_algorithm</span> enum. */</i></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM" data-ref="_M/GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM">GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM</dfn> \</u></td></tr>
+<tr><th id="40">40</th><td><u>  "grpc.default_compression_algorithm"</u></td></tr>
+<tr><th id="41">41</th><td><i class="doc">/** Default compression level for the channel.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * Its value is an int from the<span class="command"> \a</span> <span class="arg">grpc_compression_level</span> enum. */</i></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL" data-ref="_M/GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL">GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL</dfn> "grpc.default_compression_level"</u></td></tr>
+<tr><th id="44">44</th><td><i class="doc">/** Compression algorithms supported by the channel.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * Its value is a bitset (an int). Bits correspond to algorithms in<span class="command"> \a</span></i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * <span class="arg">grpc_compression_algorithm.</span> For example, its LSB corresponds to</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * GRPC_COMPRESS_NONE, the next bit to GRPC_COMPRESS_DEFLATE, etc.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * Unset bits disable support for the algorithm. By default all algorithms are</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * supported. It's not possible to disable GRPC_COMPRESS_NONE (the attempt will</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * be ignored). */</i></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET" data-ref="_M/GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET">GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET</dfn> \</u></td></tr>
+<tr><th id="52">52</th><td><u>  "grpc.compression_enabled_algorithms_bitset"</u></td></tr>
+<tr><th id="53">53</th><td><i class="doc">/** \} */</i></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><i class="doc">/** The various compression algorithms supported by gRPC */</i></td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="57">57</th><td>  <dfn class="enum" id="GRPC_COMPRESS_NONE" title='GRPC_COMPRESS_NONE' data-ref="GRPC_COMPRESS_NONE" data-ref-filename="GRPC_COMPRESS_NONE">GRPC_COMPRESS_NONE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="58">58</th><td>  <dfn class="enum" id="GRPC_COMPRESS_DEFLATE" title='GRPC_COMPRESS_DEFLATE' data-ref="GRPC_COMPRESS_DEFLATE" data-ref-filename="GRPC_COMPRESS_DEFLATE">GRPC_COMPRESS_DEFLATE</dfn>,</td></tr>
+<tr><th id="59">59</th><td>  <dfn class="enum" id="GRPC_COMPRESS_GZIP" title='GRPC_COMPRESS_GZIP' data-ref="GRPC_COMPRESS_GZIP" data-ref-filename="GRPC_COMPRESS_GZIP">GRPC_COMPRESS_GZIP</dfn>,</td></tr>
+<tr><th id="60">60</th><td>  <i>/* EXPERIMENTAL: Stream compression is currently experimental. */</i></td></tr>
+<tr><th id="61">61</th><td>  <dfn class="enum" id="GRPC_COMPRESS_STREAM_GZIP" title='GRPC_COMPRESS_STREAM_GZIP' data-ref="GRPC_COMPRESS_STREAM_GZIP" data-ref-filename="GRPC_COMPRESS_STREAM_GZIP">GRPC_COMPRESS_STREAM_GZIP</dfn>,</td></tr>
+<tr><th id="62">62</th><td>  <i>/* TODO(ctiller): snappy */</i></td></tr>
+<tr><th id="63">63</th><td>  <dfn class="enum" id="GRPC_COMPRESS_ALGORITHMS_COUNT" title='GRPC_COMPRESS_ALGORITHMS_COUNT' data-ref="GRPC_COMPRESS_ALGORITHMS_COUNT" data-ref-filename="GRPC_COMPRESS_ALGORITHMS_COUNT">GRPC_COMPRESS_ALGORITHMS_COUNT</dfn></td></tr>
+<tr><th id="64">64</th><td>} <dfn class="typedef" id="grpc_compression_algorithm" title='grpc_compression_algorithm' data-type='enum grpc_compression_algorithm' data-ref="grpc_compression_algorithm" data-ref-filename="grpc_compression_algorithm">grpc_compression_algorithm</dfn>;</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><i class="doc">/** Compression levels allow a party with knowledge of its peer's accepted</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * encodings to request compression in an abstract way. The level-algorithm</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * mapping is performed internally and depends on the peer's supported</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> * compression algorithms. */</i></td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="71">71</th><td>  <dfn class="enum" id="GRPC_COMPRESS_LEVEL_NONE" title='GRPC_COMPRESS_LEVEL_NONE' data-ref="GRPC_COMPRESS_LEVEL_NONE" data-ref-filename="GRPC_COMPRESS_LEVEL_NONE">GRPC_COMPRESS_LEVEL_NONE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="72">72</th><td>  <dfn class="enum" id="GRPC_COMPRESS_LEVEL_LOW" title='GRPC_COMPRESS_LEVEL_LOW' data-ref="GRPC_COMPRESS_LEVEL_LOW" data-ref-filename="GRPC_COMPRESS_LEVEL_LOW">GRPC_COMPRESS_LEVEL_LOW</dfn>,</td></tr>
+<tr><th id="73">73</th><td>  <dfn class="enum" id="GRPC_COMPRESS_LEVEL_MED" title='GRPC_COMPRESS_LEVEL_MED' data-ref="GRPC_COMPRESS_LEVEL_MED" data-ref-filename="GRPC_COMPRESS_LEVEL_MED">GRPC_COMPRESS_LEVEL_MED</dfn>,</td></tr>
+<tr><th id="74">74</th><td>  <dfn class="enum" id="GRPC_COMPRESS_LEVEL_HIGH" title='GRPC_COMPRESS_LEVEL_HIGH' data-ref="GRPC_COMPRESS_LEVEL_HIGH" data-ref-filename="GRPC_COMPRESS_LEVEL_HIGH">GRPC_COMPRESS_LEVEL_HIGH</dfn>,</td></tr>
+<tr><th id="75">75</th><td>  <dfn class="enum" id="GRPC_COMPRESS_LEVEL_COUNT" title='GRPC_COMPRESS_LEVEL_COUNT' data-ref="GRPC_COMPRESS_LEVEL_COUNT" data-ref-filename="GRPC_COMPRESS_LEVEL_COUNT">GRPC_COMPRESS_LEVEL_COUNT</dfn></td></tr>
+<tr><th id="76">76</th><td>} <dfn class="typedef" id="grpc_compression_level" title='grpc_compression_level' data-type='enum grpc_compression_level' data-ref="grpc_compression_level" data-ref-filename="grpc_compression_level">grpc_compression_level</dfn>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_compression_options" title='grpc_compression_options' data-ref="grpc_compression_options" data-ref-filename="grpc_compression_options"><a class="type" href="#grpc_compression_options" title='grpc_compression_options' data-ref="grpc_compression_options" data-ref-filename="grpc_compression_options">grpc_compression_options</a></dfn> {</td></tr>
+<tr><th id="79">79</th><td>  <i class="doc">/** All algs are enabled by default. This option corresponds to the channel</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">   * argument key behind<span class="command"> \a</span> <span class="arg">GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET</span></i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">   */</i></td></tr>
+<tr><th id="82">82</th><td>  <a class="typedef" href="../../../x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="decl field" id="grpc_compression_options::enabled_algorithms_bitset" title='grpc_compression_options::enabled_algorithms_bitset' data-ref="grpc_compression_options::enabled_algorithms_bitset" data-ref-filename="grpc_compression_options..enabled_algorithms_bitset">enabled_algorithms_bitset</dfn>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>  <i class="doc">/** The default compression level. It'll be used in the absence of call</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">   * specific settings. This option corresponds to the channel</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">   * argument key behind<span class="command"> \a</span> <span class="arg">GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL.</span> If present,</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">   * takes precedence over<span class="command"> \a</span> <span class="arg">default_algorithm.</span></i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">   * TODO(dgq): currently only available for server channels. */</i></td></tr>
+<tr><th id="89">89</th><td>  <b>struct</b> <dfn class="type def" id="grpc_compression_options::grpc_compression_options_default_level" title='grpc_compression_options::grpc_compression_options_default_level' data-ref="grpc_compression_options::grpc_compression_options_default_level" data-ref-filename="grpc_compression_options..grpc_compression_options_default_level"><a class="type" href="#grpc_compression_options::grpc_compression_options_default_level" title='grpc_compression_options::grpc_compression_options_default_level' data-ref="grpc_compression_options::grpc_compression_options_default_level" data-ref-filename="grpc_compression_options..grpc_compression_options_default_level">grpc_compression_options_default_level</a></dfn> {</td></tr>
+<tr><th id="90">90</th><td>    <em>int</em> <dfn class="decl field" id="grpc_compression_options::grpc_compression_options_default_level::is_set" title='grpc_compression_options::grpc_compression_options_default_level::is_set' data-ref="grpc_compression_options::grpc_compression_options_default_level::is_set" data-ref-filename="grpc_compression_options..grpc_compression_options_default_level..is_set">is_set</dfn>;</td></tr>
+<tr><th id="91">91</th><td>    <a class="typedef" href="#grpc_compression_level" title='grpc_compression_level' data-type='enum grpc_compression_level' data-ref="grpc_compression_level" data-ref-filename="grpc_compression_level">grpc_compression_level</a> <dfn class="decl field" id="grpc_compression_options::grpc_compression_options_default_level::level" title='grpc_compression_options::grpc_compression_options_default_level::level' data-ref="grpc_compression_options::grpc_compression_options_default_level::level" data-ref-filename="grpc_compression_options..grpc_compression_options_default_level..level">level</dfn>;</td></tr>
+<tr><th id="92">92</th><td>  } <dfn class="decl field" id="grpc_compression_options::default_level" title='grpc_compression_options::default_level' data-ref="grpc_compression_options::default_level" data-ref-filename="grpc_compression_options..default_level">default_level</dfn>;</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>  <i class="doc">/** The default message compression algorithm. It'll be used in the absence of</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">   * call specific settings. This option corresponds to the channel argument key</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">   * behind<span class="command"> \a</span> <span class="arg">GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM.</span> */</i></td></tr>
+<tr><th id="97">97</th><td>  <b>struct</b> <dfn class="type def" id="grpc_compression_options::grpc_compression_options_default_algorithm" title='grpc_compression_options::grpc_compression_options_default_algorithm' data-ref="grpc_compression_options::grpc_compression_options_default_algorithm" data-ref-filename="grpc_compression_options..grpc_compression_options_default_algorithm"><a class="type" href="#grpc_compression_options::grpc_compression_options_default_algorithm" title='grpc_compression_options::grpc_compression_options_default_algorithm' data-ref="grpc_compression_options::grpc_compression_options_default_algorithm" data-ref-filename="grpc_compression_options..grpc_compression_options_default_algorithm">grpc_compression_options_default_algorithm</a></dfn> {</td></tr>
+<tr><th id="98">98</th><td>    <em>int</em> <dfn class="decl field" id="grpc_compression_options::grpc_compression_options_default_algorithm::is_set" title='grpc_compression_options::grpc_compression_options_default_algorithm::is_set' data-ref="grpc_compression_options::grpc_compression_options_default_algorithm::is_set" data-ref-filename="grpc_compression_options..grpc_compression_options_default_algorithm..is_set">is_set</dfn>;</td></tr>
+<tr><th id="99">99</th><td>    <a class="typedef" href="#grpc_compression_algorithm" title='grpc_compression_algorithm' data-type='enum grpc_compression_algorithm' data-ref="grpc_compression_algorithm" data-ref-filename="grpc_compression_algorithm">grpc_compression_algorithm</a> <dfn class="decl field" id="grpc_compression_options::grpc_compression_options_default_algorithm::algorithm" title='grpc_compression_options::grpc_compression_options_default_algorithm::algorithm' data-ref="grpc_compression_options::grpc_compression_options_default_algorithm::algorithm" data-ref-filename="grpc_compression_options..grpc_compression_options_default_algorithm..algorithm">algorithm</dfn>;</td></tr>
+<tr><th id="100">100</th><td>  } <dfn class="decl field" id="grpc_compression_options::default_algorithm" title='grpc_compression_options::default_algorithm' data-ref="grpc_compression_options::default_algorithm" data-ref-filename="grpc_compression_options..default_algorithm">default_algorithm</dfn>;</td></tr>
+<tr><th id="101">101</th><td>} <dfn class="typedef" id="grpc_compression_options" title='grpc_compression_options' data-type='struct grpc_compression_options' data-ref="grpc_compression_options" data-ref-filename="grpc_compression_options">grpc_compression_options</dfn>;</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><u>#<span data-ppcond="103">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="104">104</th><td>}</td></tr>
+<tr><th id="105">105</th><td><u>#<span data-ppcond="103">endif</span></u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="19">endif</span> /* GRPC_IMPL_CODEGEN_COMPRESSION_TYPES_H */</u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

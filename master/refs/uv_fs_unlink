@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1333' type='int uv_fs_unlink(uv_loop_t * loop, uv_fs_t * req, const char * path, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1254' u='c' c='uv__fs_copyfile'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1978' ll='1982' type='int uv_fs_unlink(uv_loop_t * loop, uv_fs_t * req, const char * path, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='260' u='a' c='_ZN3uvw5FsReq6unlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='266' u='a' c='_ZN3uvw5FsReq10unlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

@@ -1,0 +1,39 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='542' type='bool uvw::FileReq::openSync(std::string path, Flags&lt;uvw::FileReq::FileOpen&gt; flags, int mode)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='74' ll='84' type='bool uvw::FileReq::openSync(std::string path, Flags&lt;uvw::FileReq::FileOpen&gt; flags, int mode)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='505'>/**
+     * @brief Sync [open](http://linux.die.net/man/2/open).
+     *
+     * Available flags are:
+     *
+     * * `FileReq::FileOpen::APPEND`
+     * * `FileReq::FileOpen::CREAT`
+     * * `FileReq::FileOpen::DIRECT`
+     * * `FileReq::FileOpen::DIRECTORY`
+     * * `FileReq::FileOpen::DSYNC`
+     * * `FileReq::FileOpen::EXCL`
+     * * `FileReq::FileOpen::EXLOCK`
+     * * `FileReq::FileOpen::FILEMAP`
+     * * `FileReq::FileOpen::NOATIME`
+     * * `FileReq::FileOpen::NOCTTY`
+     * * `FileReq::FileOpen::NOFOLLOW`
+     * * `FileReq::FileOpen::NONBLOCK`
+     * * `FileReq::FileOpen::RANDOM`
+     * * `FileReq::FileOpen::RDONLY`
+     * * `FileReq::FileOpen::RDWR`
+     * * `FileReq::FileOpen::SEQUENTIAL`
+     * * `FileReq::FileOpen::SHORT_LIVED`
+     * * `FileReq::FileOpen::SYMLINK`
+     * * `FileReq::FileOpen::SYNC`
+     * * `FileReq::FileOpen::TEMPORARY`
+     * * `FileReq::FileOpen::TRUNC`
+     * * `FileReq::FileOpen::WRONLY`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/fs.html#file-open-constants)
+     * for further details.
+     *
+     * @param path A valid path name for a file.
+     * @param flags Flags made out of underlying constants.
+     * @param mode Mode, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

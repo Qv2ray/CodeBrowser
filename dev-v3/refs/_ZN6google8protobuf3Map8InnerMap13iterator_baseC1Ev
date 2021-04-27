@@ -1,0 +1,8 @@
+<def f='include/google/protobuf/map.h' l='391' type='void google::protobuf::Map::InnerMap::iterator_base::iterator_base&lt;KeyValueType&gt;()'/>
+<doc f='include/google/protobuf/map.h' l='384'>// Invariants:
+      // node_ is always correct. This is handy because the most common
+      // operations are operator* and operator-&gt; and they only use node_.
+      // When node_ is set to a non-NULL value, all the other non-const fields
+      // are updated to be correct also, but those fields can become stale
+      // if the underlying map is modified.  When those fields are needed they
+      // are rechecked, and updated if necessary.</doc>

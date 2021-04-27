@@ -1,0 +1,39 @@
+<def f='include/c++/10/bits/stl_vector.h' l='828' ll='830' type='std::vector::iterator std::vector::end()'/>
+<use f='include/c++/10/bits/random.tcc' l='2632' u='c' c='_ZNSt21discrete_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2634' u='c' c='_ZNSt21discrete_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2638' u='c' c='_ZNSt21discrete_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2728' u='c' c='_ZStlsRSt13basic_ostreamIT0_T1_ERKSt21discrete_distributionIT_E'/>
+<use f='include/c++/10/bits/random.tcc' l='2772' u='c' c='_ZStrsRSt13basic_istreamIT0_T1_ERSt21discrete_distributionIT_E'/>
+<use f='include/c++/10/bits/random.tcc' l='2796' u='c' c='_ZNSt31piecewise_constant_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2798' u='c' c='_ZNSt31piecewise_constant_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2802' u='c' c='_ZNSt31piecewise_constant_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2954' u='c' c='_ZStlsRSt13basic_ostreamIT0_T1_ERKSt31piecewise_constant_distributionIT_E'/>
+<use f='include/c++/10/bits/random.tcc' l='3021' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='3024' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='3026' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='3159' u='c' c='_ZStlsRSt13basic_ostreamIT0_T1_ERKSt29piecewise_linear_distributionIT_E'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='823'>/**
+       *  Returns a read/write iterator that points one past the last
+       *  element in the %vector.  Iteration is done in ordinary
+       *  element order.
+       */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='60' u='c' c='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='102' u='c' c='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>
+<use f='qv2ray/test/catch.hpp' l='9497' u='c' c='_ZN5Catch5clara6detail6ParseroRERKS2_'/>
+<use f='qv2ray/test/catch.hpp' l='9498' u='c' c='_ZN5Catch5clara6detail6ParseroRERKS2_'/>
+<use f='qv2ray/test/catch.hpp' l='9517' u='c' c='_ZNK5Catch5clara6detail6Parser14getHelpColumnsEv'/>
+<use f='qv2ray/test/catch.hpp' l='9517' u='c' c='_ZNK5Catch5clara6detail6Parser14getHelpColumnsEv'/>
+<use f='qv2ray/test/catch.hpp' l='9725' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='12720' u='c' c='_ZN5Catch10RunContext16popScopedMessageERKNS_11MessageInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='12720' u='c' c='_ZN5Catch10RunContext16popScopedMessageERKNS_11MessageInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='13913' u='c' c='_ZN5Catch12makeTestCaseEPNS_12ITestInvokerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11NameAndTagsERKNS_14SourceLineInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='14044' u='c' c='_ZN5Catch9sortTestsERKNS_7IConfigERKSt6vectorINS_8TestCaseESaIS4_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14060' u='c' c='_ZN5Catch9sortTestsERKNS_7IConfigERKSt6vectorINS_8TestCaseESaIS4_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14242' u='c' c='_ZN5Catch16TestCaseTracking11TrackerBase9findChildERKNS0_15NameAndLocationE'/>
+<use f='qv2ray/test/catch.hpp' l='14248' u='c' c='_ZN5Catch16TestCaseTracking11TrackerBase9findChildERKNS0_15NameAndLocationE'/>
+<use f='qv2ray/test/catch.hpp' l='14289' u='c' c='_ZN5Catch16TestCaseTracking11TrackerBase5closeEv'/>
+<use f='qv2ray/test/catch.hpp' l='14376' u='c' c='_ZN5Catch16TestCaseTracking14SectionTracker17addInitialFiltersERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14381' u='c' c='_ZN5Catch16TestCaseTracking14SectionTracker14addNextFiltersERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>
+<use f='qv2ray/test/catch.hpp' l='15784' u='c' c='_ZN5Catch12_GLOBAL__N_116AssertionPrinter12printMessageEv'/>
+<use f='qv2ray/test/catch.hpp' l='15791' u='c' c='_ZN5Catch12_GLOBAL__N_116AssertionPrinter22printRemainingMessagesENS_6Colour4CodeE'/>
+<use f='qv2ray/test/catch.hpp' l='16408' u='c' c='_ZN5Catch15ConsoleReporter29printTestCaseAndSectionHeaderEv'/>

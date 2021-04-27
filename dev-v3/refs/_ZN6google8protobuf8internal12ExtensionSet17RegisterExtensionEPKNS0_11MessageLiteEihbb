@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/extension_set.h' l='171' type='static void google::protobuf::internal::ExtensionSet::RegisterExtension(const google::protobuf::MessageLite * containing_type, int number, google::protobuf::internal::FieldType type, bool is_repeated, bool is_packed)'/>
+<use f='include/google/protobuf/extension_set.h' l='848' u='c' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits8RegisterEihb'/>
+<use f='include/google/protobuf/extension_set.h' l='876' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits8RegisterEihb'/>
+<use f='include/google/protobuf/extension_set.h' l='974' u='c' c='_ZN6google8protobuf8internal16StringTypeTraits8RegisterEihb'/>
+<use f='include/google/protobuf/extension_set.h' l='1025' u='c' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits8RegisterEihb'/>
+<doc f='include/google/protobuf/extension_set.h' l='166'>// These are called at startup by protocol-compiler-generated code to
+  // register known extensions.  The registrations are used by ParseField()
+  // to look up extensions for parsed field numbers.  Note that dynamic parsing
+  // does not use ParseField(); only protocol-compiler-generated parsing
+  // methods do.</doc>

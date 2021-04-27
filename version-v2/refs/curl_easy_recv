@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/curl/easy.h' l='84' type='CURLcode curl_easy_recv(CURL * curl, void * buffer, size_t buflen, size_t * n)'/>
+<doc f='include/x86_64-linux-gnu/curl/easy.h' l='76'>/*
+ * NAME curl_easy_recv()
+ *
+ * DESCRIPTION
+ *
+ * Receives data from the connected socket. Use after successful
+ * curl_easy_perform() with CURLOPT_CONNECT_ONLY option.
+ */</doc>

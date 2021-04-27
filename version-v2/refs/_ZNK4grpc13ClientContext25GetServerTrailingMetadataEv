@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='216' ll='220' type='const std::multimap&lt;grpc::string_ref, grpc::string_ref&gt; &amp; grpc::ClientContext::GetServerTrailingMetadata() const'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='210'>/// Return a collection of trailing metadata key-value pairs. Note that keys
+  /// may happen more than once (ie, a \a std::multimap is returned).
+  ///
+  /// \warning This method is only callable once the stream has finished.
+  ///
+  /// \return A multimap of metadata trailing key-value pairs from the server.</doc>

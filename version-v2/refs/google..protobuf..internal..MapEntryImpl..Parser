@@ -1,0 +1,12 @@
+<def f='include/google/protobuf/map_entry_lite.h' l='336' ll='436'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl6ParserC1EPTL0__'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl6Parser3keyEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl6Parser5valueEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl6Parser23UseKeyAndValueFromEntryEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::Parser::mf_' t='MapField *const'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::Parser::map_' t='Map *const'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::Parser::key_' t='Key'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::Parser::value_ptr_' t='Value *'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::Parser::entry_' t='std::unique_ptr&lt;MapEntryImpl&lt;Derived, Base, Key, Value, kKeyFieldType, kValueFieldType, default_enum_value&gt;&gt;'/>

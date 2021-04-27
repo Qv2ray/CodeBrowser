@@ -1,0 +1,8 @@
+<dec f='include/grpc/grpc.h' l='399' type='grpc_server * grpc_server_create(const grpc_channel_args * args, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='392'>/** Create a server. Additional configuration for each incoming channel can
+    be specified with args. If no additional configuration is needed, args can
+    be NULL. The user data in &apos;args&apos; need only live through the invocation of
+    this function. However, if any args of the &apos;pointer&apos; type are passed, then
+    the referenced vtable must be maintained by the caller until
+    grpc_server_destroy terminates. See grpc_channel_args definition for more
+    on this. */</doc>

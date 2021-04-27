@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='553' type='int uv_tcp_init_ex(uv_loop_t * , uv_tcp_t * handle, unsigned int flags)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='114' ll='140' type='int uv_tcp_init_ex(uv_loop_t * loop, uv_tcp_t * tcp, unsigned int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='144' u='c' c='uv_tcp_init'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='17' u='a' c='_ZN3uvw9TCPHandle4initEv'/>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1070' type='bool uvw::FsReq::renameSync(std::string old, std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='410' ll='414' type='bool uvw::FsReq::renameSync(std::string old, std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1064'>/**
+     * @brief Sync [rename](http://linux.die.net/man/2/rename).
+     * @param old Old path, as described in the official documentation.
+     * @param path New path, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

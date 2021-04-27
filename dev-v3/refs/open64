@@ -1,0 +1,6 @@
+<dec f='include/fcntl.h' l='171' type='int open(const char * __file, int __oflag)'/>
+<dec f='include/fcntl.h' l='178' type='int open64(const char * __file, int __oflag)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='999' u='c' c='uv__open_cloexec'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='356' u='c' c='uv__fs_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='515' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='307' u='c' c='uv__process_child_init'/>

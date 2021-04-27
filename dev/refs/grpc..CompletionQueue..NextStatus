@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='115' ll='120'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='188' c='_ZN4grpc15CompletionQueue9AsyncNextEPPvPbRKT_'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='207' c='_ZN4grpc15CompletionQueue15DoThenAsyncNextEOT0_PPvPbRKT_'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='295' c='_ZN4grpc15CompletionQueue17AsyncNextInternalEPPvPb12gpr_timespec'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='114'>/// Tri-state return for AsyncNext: SHUTDOWN, GOT_EVENT, TIMEOUT.</doc>

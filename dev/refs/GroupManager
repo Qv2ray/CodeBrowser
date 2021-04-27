@@ -1,0 +1,64 @@
+<inh f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='85' c='QvDialog'/>
+<inh f='/qv2ray_autogen/include/ui_w_GroupManager.h' l='457' c='Ui::w_GroupManager'/>
+<def f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='13' ll='85'/>
+<use f='/qv2ray_autogen/ABGKN4OIHM/moc_w_GroupManager.cpp' l='160' c='_ZN12GroupManager18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>632</size>
+<smbr r='GroupManager::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK12GroupManager10metaObjectEv'/>
+<fun r='_ZN12GroupManager11qt_metacastEPKc'/>
+<fun r='_ZN12GroupManager11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN12GroupManager2trEPKcS1_i'/>
+<fun r='_ZN12GroupManager6trUtf8EPKcS1_i'/>
+<fun r='_ZN12GroupManager18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN12GroupManagerC1EP7QWidget'/>
+<fun r='_ZN12GroupManagerD1Ev'/>
+<fun r='_ZN12GroupManager15processCommandsE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZN12GroupManager20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN12GroupManager25on_addGroupButton_clickedEv'/>
+<fun r='_ZN12GroupManager23on_updateButton_clickedEv'/>
+<fun r='_ZN12GroupManager28on_removeGroupButton_clickedEv'/>
+<fun r='_ZN12GroupManager21on_buttonBox_acceptedEv'/>
+<fun r='_ZN12GroupManager33on_groupList_itemSelectionChangedEv'/>
+<fun r='_ZN12GroupManager37on_IncludeRelation_currentTextChangedERK7QString'/>
+<fun r='_ZN12GroupManager37on_ExcludeRelation_currentTextChangedERK7QString'/>
+<fun r='_ZN12GroupManager30on_IncludeKeywords_textChangedEv'/>
+<fun r='_ZN12GroupManager30on_ExcludeKeywords_textChangedEv'/>
+<fun r='_ZN12GroupManager24on_groupList_itemClickedEP15QListWidgetItem'/>
+<fun r='_ZN12GroupManager31on_groupList_currentItemChangedEP15QListWidgetItemS1_'/>
+<fun r='_ZN12GroupManager24on_subAddrTxt_textEditedERK7QString'/>
+<fun r='_ZN12GroupManager32on_updateIntervalSB_valueChangedEd'/>
+<fun r='_ZN12GroupManager37on_connectionsList_currentItemChangedEP15QListWidgetItemS1_'/>
+<fun r='_ZN12GroupManager35on_groupIsSubscriptionGroup_clickedEb'/>
+<fun r='_ZN12GroupManager26on_groupNameTxt_textEditedERK7QString'/>
+<fun r='_ZN12GroupManager30onRCMDeleteConnectionTriggeredEv'/>
+<fun r='_ZN12GroupManager30onRCMExportConnectionTriggeredEv'/>
+<fun r='_ZN12GroupManager32on_deleteSelectedConnBtn_clickedEv'/>
+<fun r='_ZN12GroupManager32on_exportSelectedConnBtn_clickedEv'/>
+<fun r='_ZN12GroupManager46on_connectionsTable_customContextMenuRequestedERK6QPoint'/>
+<fun r='_ZN12GroupManager41on_subscriptionTypeCB_currentIndexChangedEi'/>
+<fun r='_ZN12GroupManager17updateColorSchemeEv'/>
+<fun r='_ZN12GroupManager21reloadConnectionsListERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEE'/>
+<fun r='_ZN12GroupManager25onRCMActionTriggered_MoveEv'/>
+<fun r='_ZN12GroupManager25onRCMActionTriggered_CopyEv'/>
+<fun r='_ZN12GroupManager25onRCMActionTriggered_LinkEv'/>
+<fun r='_ZN12GroupManager21reloadGroupRCMActionsEv'/>
+<fun r='_ZN12GroupManager22exportConnectionFilterER13SAFETYPE_IMPLIN6Qv2ray4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<mbr r='GroupManager::dnsSettingsWidget' o='4352' t='DnsSettingsWidget *'/>
+<mbr r='GroupManager::routeSettingsWidget' o='4416' t='RouteSettingsMatrixWidget *'/>
+<mbr r='GroupManager::connectionListRCMenu' o='4480' t='QMenu *'/>
+<mbr r='GroupManager::exportConnectionAction' o='4544' t='QAction *'/>
+<mbr r='GroupManager::deleteConnectionAction' o='4608' t='QAction *'/>
+<mbr r='GroupManager::connectionListRCMenu_CopyToMenu' o='4672' t='QMenu *'/>
+<mbr r='GroupManager::connectionListRCMenu_MoveToMenu' o='4736' t='QMenu *'/>
+<mbr r='GroupManager::connectionListRCMenu_LinkToMenu' o='4800' t='QMenu *'/>
+<mbr r='GroupManager::isUpdateInProgress' o='4864' t='bool'/>
+<mbr r='GroupManager::currentGroupId' o='4928' t='Qv2ray::base::GroupId'/>
+<mbr r='GroupManager::currentConnectionId' o='4992' t='Qv2ray::base::ConnectionId'/>
+<fun r='_ZN12GroupManager18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='GroupManager::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK12GroupManager10metaObjectEv'/>
+<fun r='_ZN12GroupManager11qt_metacastEPKc'/>
+<fun r='_ZN12GroupManager11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='376' c='_ZN10MainWindow14ProcessCommandE7QString11QStringList4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='648' c='_ZN10MainWindow21on_subsButton_clickedEv'/>
+<size>632</size>

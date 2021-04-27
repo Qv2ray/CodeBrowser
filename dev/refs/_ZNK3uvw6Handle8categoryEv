@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='78' ll='80' type='uvw::HandleCategory uvw::Handle::category() const'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='92' u='c' c='_ZNK3uvw6Handle4typeEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='69'>/**
+	 * @brief Gets the category of the handle.
+	 *
+	 * A base handle offers no functionality to promote it to the actual handle
+	 * type. By means of this function, an opaque value that identifies the
+	 * category of the handle is made available to the users.
+	 *
+	 * @return The actual category of the handle.
+	 */</doc>

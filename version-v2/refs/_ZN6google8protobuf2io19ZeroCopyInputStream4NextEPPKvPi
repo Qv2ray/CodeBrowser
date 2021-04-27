@@ -1,0 +1,18 @@
+<dec f='include/google/protobuf/io/zero_copy_stream.h' l='145' type='bool google::protobuf::io::ZeroCopyInputStream::Next(const void ** data, int * size)'/>
+<ovr f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='70' c='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='129'>// Obtains a chunk of data from the stream.
+  //
+  // Preconditions:
+  // * &quot;size&quot; and &quot;data&quot; are not NULL.
+  //
+  // Postconditions:
+  // * If the returned value is false, there is no more data to return or
+  //   an error occurred.  All errors are permanent.
+  // * Otherwise, &quot;size&quot; points to the actual number of bytes read and &quot;data&quot;
+  //   points to a pointer to a buffer containing these bytes.
+  // * Ownership of this buffer remains with the stream, and the buffer
+  //   remains valid only until some other method of the stream is called
+  //   or the stream is destroyed.
+  // * It is legal for the returned buffer to have zero size, as long
+  //   as repeatedly calling Next() eventually yields a buffer with non-zero
+  //   size.</doc>

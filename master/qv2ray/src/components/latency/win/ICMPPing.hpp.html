@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ICMPPing.hpp source code [qv2ray/src/components/latency/win/ICMPPing.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/latency/win/ICMPPing.hpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>components</a>/<a href='..'>latency</a>/<a href='./'>win</a>/<a href='ICMPPing.hpp.html'>ICMPPing.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include &lt;QtGlobal&gt;</u></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifdef</span> <span class="macro" data-ref="_M/Q_OS_WIN">Q_OS_WIN</span></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td>    <u>#include "../DNSBase.hpp"</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td>    <u>#include &lt;memory&gt;</u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>namespace</b> Qv2ray::components::latency::icmping</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    <b>class</b> ICMPPing : <b>public</b> DNSBase&lt;ICMPPing&gt;</td></tr>
+<tr><th id="13">13</th><td>    {</td></tr>
+<tr><th id="14">14</th><td>      <b>public</b>:</td></tr>
+<tr><th id="15">15</th><td>        <b>using</b> DNSBase&lt;ICMPPing&gt;::DNSBase;</td></tr>
+<tr><th id="16">16</th><td>        ~ICMPPing();</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>      <b>public</b>:</td></tr>
+<tr><th id="19">19</th><td>        <em>static</em> <em>const</em> uint64_t DEFAULT_TIMEOUT = <var>10000U</var>;</td></tr>
+<tr><th id="20">20</th><td>        <em>void</em> start();</td></tr>
+<tr><th id="21">21</th><td>        <em>bool</em> notifyTestHost(LatencyTestHost *testHost, <em>const</em> ConnectionId &amp;id);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td>      <b>private</b>:</td></tr>
+<tr><th id="24">24</th><td>        <em>void</em> ping() override;</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>      <b>private</b>:</td></tr>
+<tr><th id="27">27</th><td>        <em>void</em> pingImpl();</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td>      <b>private</b>:</td></tr>
+<tr><th id="30">30</th><td>        uint64_t timeout = DEFAULT_TIMEOUT;</td></tr>
+<tr><th id="31">31</th><td>        std::shared_ptr&lt;uvw::TimerHandle&gt; waitHandleTimer;</td></tr>
+<tr><th id="32">32</th><td>    };</td></tr>
+<tr><th id="33">33</th><td>} <i>// namespace Qv2ray::components::latency::icmping</i></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='ICMPPing.cpp.html'>qv2ray/src/components/latency/win/ICMPPing.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

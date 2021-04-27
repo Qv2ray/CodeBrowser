@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/repeated_field.h' l='969' type='void google::protobuf::RepeatedPtrField::AddCleared(Element * value)'/>
+<def f='include/google/protobuf/repeated_field.h' l='2172' ll='2175' type='void google::protobuf::RepeatedPtrField::AddCleared(Element * value)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='963'>// Add an element to the pool of cleared objects, passing ownership to
+  // the RepeatedPtrField.  The element must be cleared prior to calling
+  // this method.
+  //
+  // This method cannot be called when the repeated field is on an arena or when
+  // |value| is; both cases will trigger a GOOGLE_DCHECK-failure.</doc>

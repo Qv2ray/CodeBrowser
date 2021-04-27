@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/arena.h' l='119' type='size_t'/>
+<use f='include/google/protobuf/arena.h' l='143' u='w' c='_ZN6google8protobuf12ArenaOptionsC1Ev'/>
+<offset>64</offset>
+<doc f='include/google/protobuf/arena.h' l='115'>// This defines the maximum block size requested from system malloc (unless an
+  // individual arena allocation request occurs with a size larger than this
+  // maximum). Requested block sizes increase up to this value, then remain
+  // here.</doc>

@@ -1,0 +1,17 @@
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='135' ll='148'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='144' c='_ZNK6Qv2ray4base24SubscriptionConfigObjecteqERKS1_'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='146' c='_ZN6Qv2ray4base24SubscriptionConfigObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='146' c='_ZNK6Qv2ray4base24SubscriptionConfigObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='146' c='_ZN6Qv2ray4base24SubscriptionConfigObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='155'/>
+<size>48</size>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::address' o='0' t='QString'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::type' o='64' t='QString'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::updateInterval' o='128' t='float'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::IncludeKeywords' o='192' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::ExcludeKeywords' o='256' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::IncludeRelation' o='320' t='Qv2ray::base::SubscriptionFilterRelation'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::ExcludeRelation' o='352' t='Qv2ray::base::SubscriptionFilterRelation'/>
+<fun r='_ZN6Qv2ray4base24SubscriptionConfigObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base24SubscriptionConfigObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base24SubscriptionConfigObject8fromJsonERK10QJsonValue'/>

@@ -1,0 +1,17 @@
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='40' ll='46'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='77' c='_ZN17SingleApplicationC1ERiPPcb6QFlagsINS_4ModeEEiRK7QString'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='101' c='_ZN17SingleApplicationC1ERiPPcb6QFlagsINS_4ModeEEiRK7QString'/>
+<size>152</size>
+<mbr r='InstancesInfo::primary' o='0' t='bool'/>
+<mbr r='InstancesInfo::secondary' o='32' t='quint32'/>
+<mbr r='InstancesInfo::primaryPid' o='64' t='qint64'/>
+<mbr r='InstancesInfo::primaryUser' o='128' t='char [128]'/>
+<mbr r='InstancesInfo::checksum' o='1152' t='quint16'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='85' c='_ZN24SingleApplicationPrivateD1Ev'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='166' c='_ZNK24SingleApplicationPrivate21initializeMemoryBlockEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='177' c='_ZN24SingleApplicationPrivate12startPrimaryEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='208' c='_ZN24SingleApplicationPrivate14startSecondaryEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='287' c='_ZNK24SingleApplicationPrivate13blockChecksumEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='297' c='_ZNK24SingleApplicationPrivate10primaryPidEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='309' c='_ZNK24SingleApplicationPrivate11primaryUserEv'/>
+<size>152</size>

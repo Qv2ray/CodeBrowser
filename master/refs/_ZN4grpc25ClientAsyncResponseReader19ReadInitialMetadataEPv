@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='125' ll='133' type='void grpc::ClientAsyncResponseReader::ReadInitialMetadata(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_unary_call.h' l='119'>/// See \a ClientAsyncResponseReaderInterface::ReadInitialMetadata for
+  /// semantics.
+  ///
+  /// Side effect:
+  ///   - the \a ClientContext associated with this call is updated with
+  ///     possible initial and trailing metadata sent from the server.</doc>

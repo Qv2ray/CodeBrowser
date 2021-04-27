@@ -1,0 +1,20 @@
+<def f='include/c++/10/bits/unique_ptr.h' l='63' ll='87'/>
+<use f='include/c++/10/bits/unique_ptr.h' l='75' c='_ZNSt14default_deleteC1ERKSt14default_deleteITL0__E'/>
+<def f='include/c++/10/bits/unique_ptr.h' l='93' ll='122'/>
+<use f='include/c++/10/bits/unique_ptr.h' l='111' c='_ZNSt14default_deleteIA_T_EC1ERKS_IA_TL0__E'/>
+<use f='include/c++/10/bits/unique_ptr.h' l='241'/>
+<use f='include/c++/10/bits/unique_ptr.h' l='349'/>
+<doc f='include/c++/10/bits/unique_ptr.h' l='89'>// _GLIBCXX_RESOLVE_LIB_DEFECTS
+  // DR 740 - omit specialization for array objects with a compile time length
+
+  /// Specialization of default_delete for arrays, used by `unique_ptr&lt;T[]&gt;`</doc>
+<fun r='_ZNSt14default_deleteC1Ev'/>
+<fun r='_ZNSt14default_deleteC1ERKSt14default_deleteITL0__E'/>
+<fun r='_ZNKSt14default_deleteclEPT_'/>
+<fun r='_ZNSt14default_deleteIA_T_EC1Ev'/>
+<fun r='_ZNSt14default_deleteIA_T_EC1ERKS_IA_TL0__E'/>
+<fun r='_ZNKSt14default_deleteIA_T_EclEPTL0__'/>
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='304' ll='308'/>
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='309' ll='313'/>
+<fun r='_ZNSt14default_deleteIN4grpc25ClientAsyncResponseReaderIT_EEEclEPv'/>
+<fun r='_ZNSt14default_deleteIN4grpc34ClientAsyncResponseReaderInterfaceIT_EEEclEPv'/>

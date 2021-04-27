@@ -1,0 +1,20 @@
+<dec f='include/x86_64-linux-gnu/curl/curlver.h' l='60'/>
+<doc f='include/x86_64-linux-gnu/curl/curlver.h' l='41'>/* This is the numeric version of the libcurl version number, meant for easier
+   parsing and comparions by programs. The LIBCURL_VERSION_NUM define will
+   always follow this syntax:
+
+         0xXXYYZZ
+
+   Where XX, YY and ZZ are the main version, release and patch numbers in
+   hexadecimal (using 8 bits each). All three numbers are always represented
+   using two digits.  1.2 would appear as &quot;0x010200&quot; while version 9.11.7
+   appears as &quot;0x090b07&quot;.
+
+   This 6-digit (24 bits) hexadecimal number does not show pre-release number,
+   and it is always a greater number in a more recent release. It makes
+   comparisons with greater than and less than work.
+
+   Note: This define is the full hex number and _does not_ use the
+   CURL_VERSION_BITS() macro since curl&apos;s own configure script greps for it
+   and needs it to contain the full number.
+*/</doc>

@@ -1,0 +1,20 @@
+<dec f='qv2ray/src/common/QvHelpers.hpp' l='29' type='const QString Qv2ray::common::GenerateRandomString(int len = 12)'/>
+<use f='qv2ray/src/common/QvHelpers.hpp' l='49' u='c' c='_ZN6Qv2ray6common12GenerateUuidEv'/>
+<def f='qv2ray/src/common/QvHelpers.cpp' l='8' ll='22' type='const QString Qv2ray::common::GenerateRandomString(int len = 12)'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='83' u='c' c='_ZN6Qv2ray4core10connection10generation7filters16FillupTagsFilterERNS_4base8safetype10CONFIGROOTERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='29' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='399' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='413' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler17GetGroupRoutingIdERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='304' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='658' u='c' c='_ZN11RouteEditor32on_enableBalancerCB_stateChangedEi'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='18' u='c' c='_ZN11RouteEditor10AddInboundEN6Qv2ray4base8safetype7INBOUNDE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='38' u='c' c='_ZN11RouteEditor11AddOutboundEN6Qv2ray4base8safetype8OUTBOUNDE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='61' u='c' c='_ZN11RouteEditor10AddNewRuleEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='62' u='c' c='_ZN11RouteEditor10AddNewRuleEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='74' u='c' c='_ZN11RouteEditor7AddRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='133' u='c' c='_ZN11RouteEditor13RenameItemTagE15ROUTE_EDIT_MODE7QStringPS1_'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='181' u='c' c='_ZN11RouteEditor13RenameItemTagE15ROUTE_EDIT_MODE7QStringPS1_'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='227' u='c' c='_ZN11RouteEditor13RenameItemTagE15ROUTE_EDIT_MODE7QStringPS1_'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='268' u='c' c='_ZN12GroupManager25on_addGroupButton_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='92' u='c' c='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='107' u='c' c='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>

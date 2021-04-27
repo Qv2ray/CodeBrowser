@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1761' type='bool google::protobuf::DescriptorPool::TryFindFileInFallbackDatabase(const std::string &amp; name) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1757'>// Tries to find something in the fallback database and link in the
+  // corresponding proto file.  Returns true if successful, in which case
+  // the caller should search for the thing again.  These are declared
+  // const because they are called by (semantically) const methods.</doc>

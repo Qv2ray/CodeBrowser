@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='237' type='bool google::protobuf::io::CodedInputStream::ReadVarint32(google::protobuf::uint32 * value)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='902' ll='915' type='bool google::protobuf::io::CodedInputStream::ReadVarint32(google::protobuf::uint32 * value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='61' u='c' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='78' u='c' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='91' u='c' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='166' u='c' c='_ZN6google8protobuf8internal14WireFormatLite13ReadPrimitiveEPNS0_2io16CodedInputStreamEPT_'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='234'>// Read an unsigned integer with Varint encoding, truncating to 32 bits.
+  // Reading a 32-bit value is equivalent to reading a 64-bit one and casting
+  // it to uint32, but may be more efficient.</doc>
+<doc f='include/google/protobuf/io/coded_stream.h' l='898'>// inline methods ====================================================
+// The vast majority of varints are only one byte.  These inline
+// methods optimize for that case.</doc>

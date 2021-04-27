@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1396' type='int uv_fs_readdir(uv_loop_t * loop, uv_fs_t * req, uv_dir_t * dir, uv_fs_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1878' ll='1889' type='int uv_fs_readdir(uv_loop_t * loop, uv_fs_t * req, uv_dir_t * dir, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='570' u='a' c='_ZN3uvw5FsReq7readdirEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='579' u='a' c='_ZN3uvw5FsReq11readdirSyncEv'/>

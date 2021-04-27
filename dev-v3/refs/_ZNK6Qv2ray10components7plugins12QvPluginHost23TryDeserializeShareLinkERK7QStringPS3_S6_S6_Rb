@@ -1,0 +1,5 @@
+<dec f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='56' type='const QList&lt;std::tuple&lt;QString, QString, QJsonObject&gt;&gt; Qv2ray::components::plugins::QvPluginHost::TryDeserializeShareLink(const QString &amp; sharelink, QString * aliasPrefix, QString * errMessage, QString * newGroupName, bool &amp; status) const'/>
+<doc f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='56'>//</doc>
+<def f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='227' ll='265' type='const QList&lt;std::tuple&lt;QString, QString, QJsonObject&gt;&gt; Qv2ray::components::plugins::QvPluginHost::TryDeserializeShareLink(const QString &amp; sharelink, QString * aliasPrefix, QString * errMessage, QString * newGroupName, bool &amp; ok) const'/>
+<doc f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='227'>//</doc>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='44' u='c' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>

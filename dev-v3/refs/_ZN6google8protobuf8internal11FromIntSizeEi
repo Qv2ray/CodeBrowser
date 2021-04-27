@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/message_lite.h' l='80' ll='83' type='size_t google::protobuf::internal::FromIntSize(int size)'/>
+<doc f='include/google/protobuf/message_lite.h' l='75'>// We mainly calculate sizes in terms of size_t, but some functions that
+// compute sizes return &quot;int&quot;.  These int sizes are expected to always be
+// positive. This function is more efficient than casting an int to size_t
+// directly on 64-bit platforms because it avoids making the compiler emit a
+// sign extending instruction, which we don&apos;t want and don&apos;t want to pay for.</doc>

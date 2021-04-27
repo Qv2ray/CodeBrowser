@@ -1,0 +1,12 @@
+<dec f='include/grpcpp/server_builder.h' l='68' type='std::unique_ptr&lt;Server&gt; grpc::ServerBuilder::BuildAndStart()'/>
+<doc f='include/grpcpp/server_builder.h' l='57'>//////////////////////////////////////////////////////////////////////////////
+  // Primary API&apos;s
+
+  /// Return a running server which is ready for processing calls.
+  /// Before calling, one typically needs to ensure that:
+  ///  1. a service is registered - so that the server knows what to serve
+  ///     (via RegisterService, or RegisterAsyncGenericService)
+  ///  2. a listening port has been added - so the server knows where to receive
+  ///     traffic (via AddListeningPort)
+  ///  3. [for async api only] completion queues have been added via
+  ///     AddCompletionQueue</doc>

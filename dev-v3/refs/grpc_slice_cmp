@@ -1,0 +1,4 @@
+<dec f='include/grpc/slice.h' l='140' type='int grpc_slice_cmp(grpc_slice a, grpc_slice b)'/>
+<doc f='include/grpc/slice.h' l='137'>/** Returns &lt;0 if a &lt; b, ==0 if a == b, &gt;0 if a &gt; b
+   The order is arbitrary, and is not guaranteed to be stable across different
+   versions of the API. */</doc>

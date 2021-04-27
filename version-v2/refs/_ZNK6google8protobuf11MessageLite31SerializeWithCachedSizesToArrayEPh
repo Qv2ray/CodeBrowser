@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/message_lite.h' l='355' type='google::protobuf::uint8 * google::protobuf::MessageLite::SerializeWithCachedSizesToArray(google::protobuf::uint8 * target) const'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='56' u='c' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<doc f='include/google/protobuf/message_lite.h' l='345'>// Functions below here are not part of the public interface.  It isn&apos;t
+  // enforced, but they should be treated as private, and will be private
+  // at some future time.  Unfortunately the implementation of the &quot;friend&quot;
+  // keyword in GCC is broken at the moment, but we expect it will be fixed.
+
+  // Like SerializeWithCachedSizes, but writes directly to *target, returning
+  // a pointer to the byte immediately after the last byte written.  &quot;target&quot;
+  // must point at a byte array of at least ByteSize() bytes.  Whether to use
+  // deterministic serialization, e.g., maps in sorted order, is determined by
+  // CodedOutputStream::IsDefaultSerializationDeterministic().</doc>

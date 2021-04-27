@@ -1,0 +1,8 @@
+<dec f='include/grpc/slice_buffer.h' l='45' type='size_t grpc_slice_buffer_add_indexed(grpc_slice_buffer * sb, grpc_slice slice)'/>
+<doc f='include/grpc/slice_buffer.h' l='38'>/** add an element to a slice buffer - takes ownership of the slice and returns
+   the index of the slice.
+   Guarantees that the slice will not be concatenated at the end of another
+   slice (i.e. the data for this slice will begin at the first byte of the
+   slice at the returned index in sb-&gt;slices)
+   The implementation MAY decide to concatenate data at the end of a small
+   slice added in this fashion. */</doc>

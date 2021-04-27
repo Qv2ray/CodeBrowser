@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='179' type='static int ZXing::Pdf417::Encoder::GetRecommendedMinimumErrorCorrectionLevel(int n)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='558' ll='573' type='static int ZXing::Pdf417::Encoder::GetRecommendedMinimumErrorCorrectionLevel(int n)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='551'>/**
+* Returns the recommended minimum error correction level as described in annex E of
+* ISO/IEC 15438:2001(E).
+*
+* @param n the number of data codewords
+* @return the recommended minimum error correction level
+*/</doc>

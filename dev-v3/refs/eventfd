@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/eventfd.h' l='34' type='int eventfd(unsigned int __count, int __flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='210' u='c' c='uv__async_start'/>
+<doc f='include/x86_64-linux-gnu/sys/eventfd.h' l='32'>/* Return file descriptor for generic event channel.  Set initial
+   value to COUNT.  */</doc>

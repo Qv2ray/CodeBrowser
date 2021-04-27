@@ -1,0 +1,15 @@
+<def f='include/c++/10/bits/regex.h' l='1865' ll='1872' type='std::__cxx11::match_results::const_reference std::__cxx11::match_results::operator[](std::__cxx11::match_results::size_type __sub) const'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='148' u='c' c='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='148' u='c' c='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='149' u='c' c='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<doc f='include/c++/10/bits/regex.h' l='1854'>/**
+       * @brief Gets a %sub_match reference for the match or submatch.
+       * @param __sub indicates the submatch.
+       * @pre   ready() == true
+       *
+       * This function gets a reference to the indicated submatch, or
+       * the entire match if @p __sub is zero.
+       *
+       * If @p __sub &gt;= size() then this function returns a %sub_match with a
+       * special value indicating no submatch.
+       */</doc>

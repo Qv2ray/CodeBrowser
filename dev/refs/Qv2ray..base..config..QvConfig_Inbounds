@@ -1,0 +1,18 @@
+<def f='qv2ray/src/base/models/QvCoreSettings.hpp' l='126' ll='143'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='137' c='_ZNK6Qv2ray4base6config17QvConfig_InboundseqERKS2_'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='139' c='_ZN6Qv2ray4base6config17QvConfig_Inbounds8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='139' c='_ZNK6Qv2ray4base6config17QvConfig_Inbounds6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='139' c='_ZN6Qv2ray4base6config17QvConfig_Inbounds8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='195'/>
+<size>184</size>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::listenip' o='0' t='QString'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::useSocks' o='64' t='bool'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::useHTTP' o='72' t='bool'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::useTPROXY' o='80' t='bool'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::tProxySettings' o='128' t='Qv2ray::base::config::QvConfig_TProxy'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::httpSettings' o='704' t='Qv2ray::base::config::QvConfig_HttpInbound'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::socksSettings' o='1024' t='Qv2ray::base::config::QvConfig_SocksInbound'/>
+<mbr r='Qv2ray::base::config::QvConfig_Inbounds::systemProxySettings' o='1408' t='Qv2ray::base::config::QvConfig_SystemProxy'/>
+<fun r='_ZN6Qv2ray4base6config17QvConfig_Inbounds8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base6config17QvConfig_Inbounds6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base6config17QvConfig_Inbounds8fromJsonERK10QJsonValue'/>

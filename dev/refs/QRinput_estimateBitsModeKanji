@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.h' l='84' type='int QRinput_estimateBitsModeKanji(int size)'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='616' ll='619' type='int QRinput_estimateBitsModeKanji(int size)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='877' u='c' c='QRinput_estimateBitStreamSizeOfEntry'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='611'>/**
+ * Estimate the length of the encoded bit stream of kanji data.
+ * @param size
+ * @return number of bits
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='qv2ray/src/common/QvTranslator.hpp' l='24' type='bool Qv2ray::common::QvTranslator::InstallTranslation(const QString &amp; )'/>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='56' u='c' c='_ZN6Qv2ray17Qv2rayApplication11SetupQv2rayEv'/>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='429' u='c' c='_ZN6Qv2ray17Qv2rayApplication17LoadConfigurationEv'/>
+<doc f='qv2ray/src/common/QvTranslator.hpp' l='20'>/**
+         * @brief reload the translation from file
+         * @param code eg: en_US, zh_CN, ...
+         */</doc>
+<def f='qv2ray/src/common/QvTranslator.cpp' l='44' ll='65' type='bool Qv2ray::common::QvTranslator::InstallTranslation(const QString &amp; code)'/>
+<use f='qv2ray/src/ui/windows/w_PreferencesWindow.cpp' l='333' u='c' c='_ZN17PreferencesWindow21on_buttonBox_acceptedEv'/>

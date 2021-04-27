@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.h' l='39' type='static ZXing::QRCode::FormatInformation ZXing::QRCode::FormatInformation::DecodeFormatInformation(int maskedFormatInfo1, int maskedFormatInfo2)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='125' u='c' c='_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.cpp' l='86' ll='98' type='static ZXing::QRCode::FormatInformation ZXing::QRCode::FormatInformation::DecodeFormatInformation(int maskedFormatInfo1, int maskedFormatInfo2)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.cpp' l='79'>/**
+* @param maskedFormatInfo1 format info indicator, with mask still applied
+* @param maskedFormatInfo2 second copy of same info; both are checked at the same time
+*  to establish best match
+* @return information about the format it specifies, or {@code null}
+*  if doesn&apos;t seem to match any known pattern
+*/</doc>

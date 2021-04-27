@@ -1,0 +1,8 @@
+<def f='include/grpcpp/impl/codegen/byte_buffer.h' l='102' ll='107' type='void grpc::ByteBuffer::Clear()'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='162' u='c' c='_ZN4grpc10ByteBuffer10set_bufferEP16grpc_byte_buffer'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='290' u='c' c='_ZN4grpc8internal17CallOpSendMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='353' u='c' c='_ZN4grpc8internal17CallOpRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='427' u='c' c='_ZN4grpc8internal24CallOpGenericRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='302' u='c' c='_ZN4grpc8internal18ErrorMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='94' u='c' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<doc f='include/grpcpp/impl/codegen/byte_buffer.h' l='101'>/// Remove all data.</doc>

@@ -1,0 +1,22 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='886' type='std::pair&lt;bool, std::pair&lt;std::string, std::size_t&gt;&gt; uvw::FsReq::mkstempSync(std::string tpl)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='300' ll='312' type='std::pair&lt;bool, std::pair&lt;std::string, std::size_t&gt;&gt; uvw::FsReq::mkstempSync(std::string tpl)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='866'>/**
+     * @brief Sync [mkstemp](https://linux.die.net/man/3/mkstemp).
+     *
+     * Returns a composed value where:
+     *
+     * * The first parameter indicates the created file path.
+     * * The second parameter is the file descriptor as an integer.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/fs.html#c.uv_fs_mkstemp)
+     * for further details.
+     *
+     * @param tpl Template, as described in the official documentation.
+     *
+     * @return A pair where:
+
+     * * The first parameter is a boolean value that is true in case of success,
+     * false otherwise.
+     * * The second parameter is a composed value (see above).
+     */</doc>

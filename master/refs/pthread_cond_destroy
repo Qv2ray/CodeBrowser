@@ -1,0 +1,5 @@
+<dec f='include/pthread.h' l='970' type='int pthread_cond_destroy(pthread_cond_t * __cond)'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/gthr-default.h' l='130' c='__gthrw_pthread_cond_destroy'/>
+<doc f='include/pthread.h' l='969'>/* Destroy condition variable COND.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='729' u='c' c='uv_cond_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='767' u='c' c='uv_cond_destroy'/>

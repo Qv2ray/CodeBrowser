@@ -1,0 +1,9 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='103' type='void uvw::Flags::Flags&lt;E&gt;(E flag)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='99'>/**
+     * @brief Constructs a Flags object from a value of the enum `E`.
+     * @param flag A value of the enum `E`.
+     */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='40' u='c' c='_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='50' u='c' c='_ZN3uvw10PollHandle5startENS_7details11UVPollEventE'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='110' u='c' c='_ZL13handle_socketPviiS_S_'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='112' u='c' c='_ZL13handle_socketPviiS_S_'/>

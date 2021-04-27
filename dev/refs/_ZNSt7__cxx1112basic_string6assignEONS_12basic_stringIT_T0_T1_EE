@@ -1,0 +1,15 @@
+<def f='include/c++/10/bits/basic_string.h' l='1379' ll='1386' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::assign(basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp;&amp; __str)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1371'>/**
+       *  @brief  Set value to contents of another string.
+       *  @param  __str  Source string to use.
+       *  @return  Reference to this string.
+       *
+       *  This function sets this string to the exact contents of @a __str.
+       *  @a __str is a valid, but unspecified string.
+       */</doc>
+<use f='include/google/protobuf/inlined_string_field.h' l='193' u='c' c='_ZN6google8protobuf8internal18InlinedStringField19SetAllocatedNoArenaEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS8_'/>
+<use f='include/google/protobuf/inlined_string_field.h' l='236' u='c' c='_ZN6google8protobuf8internal18InlinedStringField10SetNoArenaEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEOS8_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6030' u='c' c='_ZN6google8protobuf19FileDescriptorProto14set_dependencyEiONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7049' u='c' c='_ZN6google8protobuf15DescriptorProto17set_reserved_nameEiONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8197' u='c' c='_ZN6google8protobuf19EnumDescriptorProto17set_reserved_nameEiONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11533' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location29set_leading_detached_commentsEiONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

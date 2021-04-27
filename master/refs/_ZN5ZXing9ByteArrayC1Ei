@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ByteArray.h' l='31' type='void ZXing::ByteArray::ByteArray(int len)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.cpp' l='125' u='c' c='_ZNK5ZXing8BitArray7toBytesEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='356' u='c' c='_ZN5ZXing5AztecL27ConvertBoolArrayToByteArrayERKSt6vectorIbSaIbEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='104' u='c' c='_ZN5ZXing10DataMatrix15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='481' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeBase256SegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS4_4listINS4118670'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='608' u='c' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='120' u='c' c='_ZN5ZXing10DataMatrixL14CreateECCBlockERNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCBitMatrixParser.cpp' l='65' u='c' c='_ZN5ZXing8MaxiCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='146' u='c' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='148' u='c' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='441' u='c' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

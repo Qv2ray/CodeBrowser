@@ -1,0 +1,4 @@
+<dec f='include/c++/10/bits/shared_ptr_base.h' l='728' type='void std::__shared_count::__shared_count&lt;_Lp&gt;(const __weak_count&lt;_Lp&gt; &amp; __r, std::nothrow_t )'/>
+<def f='include/c++/10/bits/shared_ptr_base.h' l='907' ll='916' type='void std::__shared_count::__shared_count&lt;_Lp&gt;(const __weak_count&lt;_Lp&gt; &amp; __r, std::nothrow_t )'/>
+<doc f='include/c++/10/bits/shared_ptr_base.h' l='727'>// Does not throw if __r._M_get_use_count() == 0, caller must check.</doc>
+<doc f='include/c++/10/bits/shared_ptr_base.h' l='906'>// Now that __weak_count is defined we can define this constructor:</doc>

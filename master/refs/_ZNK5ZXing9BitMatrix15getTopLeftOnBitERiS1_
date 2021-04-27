@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='229' type='bool ZXing::BitMatrix::getTopLeftOnBit(int &amp; left, int &amp; top) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='119' u='c' c='_ZNK5ZXing9BitMatrix15findBoundingBoxERiS1_S1_S1_i'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='171' ll='184' type='bool ZXing::BitMatrix::getTopLeftOnBit(int &amp; left, int &amp; top) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='224'>/**
+	* This is useful in detecting a corner of a &apos;pure&apos; barcode.
+	*
+	* @return {@code x,y} coordinate of top-left-most 1 bit, or null if it is all white
+	*/</doc>

@@ -1,0 +1,7 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='682' ll='699'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='682'/>
+<size>24</size>
+<mbr r='grpc_completion_queue_attributes::version' o='0' t='int'/>
+<mbr r='grpc_completion_queue_attributes::cq_completion_type' o='32' t='grpc_cq_completion_type'/>
+<mbr r='grpc_completion_queue_attributes::cq_polling_type' o='64' t='grpc_cq_polling_type'/>
+<mbr r='grpc_completion_queue_attributes::cq_shutdown_cb' o='128' t='grpc_experimental_completion_queue_functor *'/>

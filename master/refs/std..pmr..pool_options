@@ -1,0 +1,17 @@
+<def f='include/c++/10/memory_resource' l='376' ll='391'/>
+<use f='include/c++/10/memory_resource' l='399' c='_ZNSt3pmr15__pool_resourceC1ERKNS_12pool_optionsEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='425'/>
+<use f='include/c++/10/memory_resource' l='440' c='_ZNSt3pmr26synchronized_pool_resourceC1ERKNS_12pool_optionsEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='445' c='_ZNSt3pmr26synchronized_pool_resourceC1Ev'/>
+<use f='include/c++/10/memory_resource' l='451' c='_ZNSt3pmr26synchronized_pool_resourceC1EPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='455' c='_ZNSt3pmr26synchronized_pool_resourceC1ERKNS_12pool_optionsE'/>
+<use f='include/c++/10/memory_resource' l='472' c='_ZNKSt3pmr26synchronized_pool_resource7optionsEv'/>
+<use f='include/c++/10/memory_resource' l='507' c='_ZNSt3pmr28unsynchronized_pool_resourceC1ERKNS_12pool_optionsEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='511' c='_ZNSt3pmr28unsynchronized_pool_resourceC1Ev'/>
+<use f='include/c++/10/memory_resource' l='517' c='_ZNSt3pmr28unsynchronized_pool_resourceC1EPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='521' c='_ZNSt3pmr28unsynchronized_pool_resourceC1ERKNS_12pool_optionsE'/>
+<use f='include/c++/10/memory_resource' l='538' c='_ZNKSt3pmr28unsynchronized_pool_resource7optionsEv'/>
+<size>16</size>
+<doc f='include/c++/10/memory_resource' l='375'>/// Parameters for tuning a pool resource&apos;s behaviour.</doc>
+<mbr r='std::pmr::pool_options::max_blocks_per_chunk' o='0' t='std::size_t'/>
+<mbr r='std::pmr::pool_options::largest_required_pool_block' o='64' t='std::size_t'/>

@@ -1,0 +1,28 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='221' type='uvw::ProcessHandle &amp; uvw::ProcessHandle::stdio(uvw::FileHandle fd, Flags&lt;uvw::ProcessHandle::StdIO&gt; flags)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='97' ll='117' type='uvw::ProcessHandle &amp; uvw::ProcessHandle::stdio(uvw::FileHandle fd, Flags&lt;uvw::ProcessHandle::StdIO&gt; flags)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='195'>/**
+     * @brief Makes a file descriptor available to the child process.
+     *
+     * Available flags are:
+     *
+     * * `ProcessHandle::StdIO::IGNORE_STREAM`
+     * * `ProcessHandle::StdIO::CREATE_PIPE`
+     * * `ProcessHandle::StdIO::INHERIT_FD`
+     * * `ProcessHandle::StdIO::INHERIT_STREAM`
+     * * `ProcessHandle::StdIO::READABLE_PIPE`
+     * * `ProcessHandle::StdIO::WRITABLE_PIPE`
+     * * `ProcessHandle::StdIO::OVERLAPPED_PIPE`
+     *
+     * Default file descriptors are:
+     *     * `uvw::StdIN` for `stdin`
+     *     * `uvw::StdOUT` for `stdout`
+     *     * `uvw::StdERR` for `stderr`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/process.html#c.uv_stdio_flags)
+     * for further details.
+     *
+     * @param fd A valid file descriptor.
+     * @param flags A valid set of flags.
+     * @return A reference to this process handle.
+     */</doc>

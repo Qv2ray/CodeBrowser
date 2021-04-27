@@ -1,0 +1,7 @@
+<def f='include/google/protobuf/arenastring.h' l='347' ll='349' type='::std::string ** google::protobuf::internal::ArenaStringPtr::UnsafeRawStringPointer()'/>
+<use f='include/google/protobuf/arenastring.h' l='391' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr17AssignWithDefaultEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES2_'/>
+<use f='include/google/protobuf/arenastring.h' l='392' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr17AssignWithDefaultEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES2_'/>
+<doc f='include/google/protobuf/arenastring.h' l='343'>// Internal accessor used only at parse time to provide direct access to the
+  // raw pointer from the shared parse routine (in the non-arenas case). The
+  // parse routine does the string allocation in order to save code size in the
+  // generated parsing code.</doc>

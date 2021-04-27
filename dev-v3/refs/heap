@@ -1,0 +1,26 @@
+<def f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='40' ll='43'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='50' c='heap_init'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='51' c='heap_min'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='52' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='55' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='58' c='heap_dequeue'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='62' c='heap_init'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='67' c='heap_min'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='72' c='heap_node_swap'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='106' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='150' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='239' c='heap_dequeue'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='29' c='timer_heap'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='33' c='timer_heap'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='33'>/* A binary min heap.  The usual properties hold: the root is the lowest
+ * element in the set, the height of the tree is at most log2(nodes) and
+ * it&apos;s always a complete binary tree.
+ *
+ * The heap function try hard to detect corrupted tree nodes at the cost
+ * of a minor reduction in performance.  Compile with -DNDEBUG to disable.
+ */</doc>
+<mbr r='heap::min' o='0' t='struct heap_node *'/>
+<mbr r='heap::nelts' o='64' t='unsigned int'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='39' c='uv_loop_init'/>
+<size>16</size>

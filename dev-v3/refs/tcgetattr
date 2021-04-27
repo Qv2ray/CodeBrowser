@@ -1,0 +1,3 @@
+<dec f='include/termios.h' l='66' type='int tcgetattr(int __fd, struct termios * __termios_p)'/>
+<doc f='include/termios.h' l='65'>/* Put the state of FD into *TERMIOS_P.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='259' u='c' c='uv_tty_set_mode'/>

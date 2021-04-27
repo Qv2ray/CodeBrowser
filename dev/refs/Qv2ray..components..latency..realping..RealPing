@@ -1,0 +1,30 @@
+<inh f='include/c++/10/bits/shared_ptr.h' l='791' c='std::enable_shared_from_this'/>
+<def f='qv2ray/src/components/latency/RealPing.hpp' l='15' ll='34'/>
+<use f='qv2ray/src/components/latency/RealPing.hpp' l='15'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='82' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<size>200</size>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPingD1Ev'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing14notifyTestHostEv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing15recordHanleTimeEPv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing13getHandleTimeEPv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing15getProxyAddressB5cxx11Ev'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::successCount' o='128' t='int'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::req' o='192' t='Qv2ray::components::latency::LatencyTestRequest'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::data' o='448' t='Qv2ray::components::latency::LatencyTestResult'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::testHost' o='832' t='Qv2ray::components::latency::LatencyTestHost *'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::loop' o='896' t='std::shared_ptr&lt;uvw::Loop&gt;'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::timeout' o='1024' t='std::shared_ptr&lt;uvw::TimerHandle&gt;'/>
+<mbr r='Qv2ray::components::latency::realping::RealPing::reqStartTime' o='1152' t='std::unordered_map&lt;CURL *, std::chrono::system_clock::time_point&gt;'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='19'/>
+<size>200</size>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing15getProxyAddressB5cxx11Ev'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing14notifyTestHostEv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPingD1Ev'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing13getHandleTimeEPv'/>
+<fun r='_ZN6Qv2ray10components7latency8realping8RealPing15recordHanleTimeEPv'/>
+<use f='qv2ray/test/src/components/latency/TestRealPing.cpp' l='15' c='____C_A_T_C_H____T_E_S_T____2'/>
+<size>200</size>

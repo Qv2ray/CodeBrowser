@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message.h' l='616' type='void google::protobuf::Reflection::SetAllocatedMessage(google::protobuf::Message * message, google::protobuf::Message * sub_message, const google::protobuf::FieldDescriptor * field) const'/>
+<doc f='include/google/protobuf/message.h' l='612'>// Replaces the message specified by &apos;field&apos; with the already-allocated object
+  // sub_message, passing ownership to the message.  If the field contained a
+  // message, that message is deleted.  If sub_message is NULL, the field is
+  // cleared.</doc>

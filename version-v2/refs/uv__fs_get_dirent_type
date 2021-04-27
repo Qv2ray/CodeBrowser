@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='211' type='uv_dirent_type_t uv__fs_get_dirent_type(uv__dirent_t * dent)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='596' u='c' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='683' u='c' c='uv_fs_scandir_next'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='688' ll='722' type='uv_dirent_type_t uv__fs_get_dirent_type(uv__dirent_t * dent)'/>

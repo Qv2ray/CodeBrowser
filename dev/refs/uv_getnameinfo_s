@@ -1,0 +1,19 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='231'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='896' ll='902'/>
+<size>1320</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='891'>/*
+* uv_getnameinfo_t is a subclass of uv_req_t.
+*
+* Request object for uv_getnameinfo.
+*/</doc>
+<mbr r='uv_getnameinfo_s::data' o='0' t='void *'/>
+<mbr r='uv_getnameinfo_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_getnameinfo_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_getnameinfo_s::loop' o='512' t='uv_loop_t *'/>
+<mbr r='uv_getnameinfo_s::work_req' o='576' t='struct uv__work'/>
+<mbr r='uv_getnameinfo_s::getnameinfo_cb' o='896' t='uv_getnameinfo_cb'/>
+<mbr r='uv_getnameinfo_s::storage' o='960' t='struct sockaddr_storage'/>
+<mbr r='uv_getnameinfo_s::flags' o='1984' t='int'/>
+<mbr r='uv_getnameinfo_s::host' o='2016' t='char [1025]'/>
+<mbr r='uv_getnameinfo_s::service' o='10216' t='char [32]'/>
+<mbr r='uv_getnameinfo_s::retcode' o='10496' t='int'/>

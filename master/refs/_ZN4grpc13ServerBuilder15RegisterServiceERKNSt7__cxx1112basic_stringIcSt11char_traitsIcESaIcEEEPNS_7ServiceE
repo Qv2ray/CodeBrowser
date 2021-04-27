@@ -1,0 +1,8 @@
+<dec f='include/grpcpp/server_builder.h' l='135' type='grpc::ServerBuilder &amp; grpc::ServerBuilder::RegisterService(const grpc::string &amp; host, grpc::Service * service)'/>
+<doc f='include/grpcpp/server_builder.h' l='128'>//////////////////////////////////////////////////////////////////////////////
+  // Less commonly used RegisterService variants
+
+  /// Register a service. This call does not take ownership of the service.
+  /// The service must exist for the lifetime of the \a Server instance returned
+  /// by \a BuildAndStart().
+  /// Only matches requests with :authority \a host</doc>

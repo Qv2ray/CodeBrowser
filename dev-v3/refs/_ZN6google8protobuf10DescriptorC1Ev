@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/descriptor.h' l='478' type='void google::protobuf::Descriptor::Descriptor()'/>
+<doc f='include/google/protobuf/descriptor.h' l='473'>// IMPORTANT:  If you add a new field, make sure to search for all instances
+  // of Allocate&lt;Descriptor&gt;() and AllocateArray&lt;Descriptor&gt;() in descriptor.cc
+  // and update them to initialize the field.
+
+  // Must be constructed using DescriptorPool.</doc>

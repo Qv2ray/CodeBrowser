@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='418' type='void google::protobuf::io::CodedInputStream::UnsafeDecrementRecursionDepth()'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1310' ll='1313' type='void google::protobuf::io::CodedInputStream::UnsafeDecrementRecursionDepth()'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='435' u='c' c='_ZN6google8protobuf8internal14WireFormatLite9ReadGroupEiPNS0_2io16CodedInputStreamEPT_'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='415'>// Decrements the recursion depth blindly.  This is faster than
+  // DecrementRecursionDepth().  It should be used only if all previous
+  // increments to recursion depth were successful.</doc>

@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='88' type='static void uvw::ProcessHandle::disableStdIOInheritance()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='28' ll='30' type='static void uvw::ProcessHandle::disableStdIOInheritance()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='74'>/**
+     * @brief Disables inheritance for file descriptors/handles.
+     *
+     * Disables inheritance for file descriptors/handles that this process
+     * inherited from its parent. The effect is that child processes spawned by
+     * this process don’t accidentally inherit these handles.&lt;br/&gt;
+     * It is recommended to call this function as early in your program as
+     * possible, before the inherited file descriptors can be closed or
+     * duplicated.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/process.html#c.uv_disable_stdio_inheritance)
+     * for further details.
+     */</doc>

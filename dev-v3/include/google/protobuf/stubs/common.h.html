@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>common.h source code [include/google/protobuf/stubs/common.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="google::protobuf::FatalException "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/google/protobuf/stubs/common.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>google</a>/<a href='..'>protobuf</a>/<a href='./'>stubs</a>/<a href='common.h.html'>common.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Protocol Buffers - Google's data interchange format</i></td></tr>
+<tr><th id="2">2</th><td><i>// Copyright 2008 Google Inc.  All rights reserved.</i></td></tr>
+<tr><th id="3">3</th><td><i>// <a href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a></i></td></tr>
+<tr><th id="4">4</th><td><i>//</i></td></tr>
+<tr><th id="5">5</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="7">7</th><td><i>// met:</i></td></tr>
+<tr><th id="8">8</th><td><i>//</i></td></tr>
+<tr><th id="9">9</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="10">10</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="12">12</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="13">13</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="14">14</th><td><i>// distribution.</i></td></tr>
+<tr><th id="15">15</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="16">16</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="17">17</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="18">18</th><td><i>//</i></td></tr>
+<tr><th id="19">19</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="20">20</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="21">21</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="22">22</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="23">23</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="24">24</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="25">25</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="26">26</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="27">27</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="28">28</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="29">29</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="30">30</th><td><i></i></td></tr>
+<tr><th id="31">31</th><td><i>// Author: kenton@google.com (Kenton Varda) and others</i></td></tr>
+<tr><th id="32">32</th><td><i>//</i></td></tr>
+<tr><th id="33">33</th><td><i>// Contains basic types and utilities used by the rest of the library.</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="35">ifndef</span> <span class="macro" data-ref="_M/GOOGLE_PROTOBUF_COMMON_H__">GOOGLE_PROTOBUF_COMMON_H__</span></u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_COMMON_H__" data-ref="_M/GOOGLE_PROTOBUF_COMMON_H__">GOOGLE_PROTOBUF_COMMON_H__</dfn></u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#include <a href="../../../c++/10/algorithm.html">&lt;algorithm&gt;</a></u></td></tr>
+<tr><th id="39">39</th><td><u>#include <a href="../../../c++/10/iostream.html">&lt;iostream&gt;</a></u></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="../../../c++/10/map.html">&lt;map&gt;</a></u></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="../../../c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="../../../c++/10/set.html">&lt;set&gt;</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="../../../c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="44">44</th><td><u>#include <a href="../../../c++/10/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="port.h.html">&lt;google/protobuf/stubs/port.h&gt;</a></u></td></tr>
+<tr><th id="47">47</th><td><u>#include <a href="macros.h.html">&lt;google/protobuf/stubs/macros.h&gt;</a></u></td></tr>
+<tr><th id="48">48</th><td><u>#include <a href="platform_macros.h.html">&lt;google/protobuf/stubs/platform_macros.h&gt;</a></u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i>// TODO(liujisi): Remove the following includes after the include clean-up.</i></td></tr>
+<tr><th id="51">51</th><td><u>#include <a href="logging.h.html">&lt;google/protobuf/stubs/logging.h&gt;</a></u></td></tr>
+<tr><th id="52">52</th><td><u>#include <a href="mutex.h.html">&lt;google/protobuf/stubs/mutex.h&gt;</a></u></td></tr>
+<tr><th id="53">53</th><td><u>#include <a href="callback.h.html">&lt;google/protobuf/stubs/callback.h&gt;</a></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="55">ifndef</span> <span class="macro" data-ref="_M/PROTOBUF_USE_EXCEPTIONS">PROTOBUF_USE_EXCEPTIONS</span></u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/_CPPUNWIND">_CPPUNWIND</span>)</u></td></tr>
+<tr><th id="57">57</th><td>  <u>#define PROTOBUF_USE_EXCEPTIONS 1</u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="56">elif</span> defined(<span class="macro" data-ref="_M/__EXCEPTIONS">__EXCEPTIONS</span>)</u></td></tr>
+<tr><th id="59">59</th><td>  <u>#define <dfn class="macro" id="_M/PROTOBUF_USE_EXCEPTIONS" data-ref="_M/PROTOBUF_USE_EXCEPTIONS">PROTOBUF_USE_EXCEPTIONS</dfn> 1</u></td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="56">else</span></u></td></tr>
+<tr><th id="61">61</th><td>  <u>#define PROTOBUF_USE_EXCEPTIONS 0</u></td></tr>
+<tr><th id="62">62</th><td><u>#<span data-ppcond="56">endif</span></u></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="55">endif</span></u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="65">if</span> <a class="macro" href="#59" title="1" data-ref="_M/PROTOBUF_USE_EXCEPTIONS">PROTOBUF_USE_EXCEPTIONS</a></u></td></tr>
+<tr><th id="66">66</th><td><u>#include <a href="../../../c++/10/exception.html">&lt;exception&gt;</a></u></td></tr>
+<tr><th id="67">67</th><td><u>#<span data-ppcond="65">endif</span></u></td></tr>
+<tr><th id="68">68</th><td><u>#<span data-ppcond="68">if</span> defined(<span class="macro" data-ref="_M/__APPLE__">__APPLE__</span>)</u></td></tr>
+<tr><th id="69">69</th><td><u>#include &lt;TargetConditionals.h&gt;  // for TARGET_OS_IPHONE</u></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="68">endif</span></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="72">if</span> defined(<span class="macro" data-ref="_M/__ANDROID__">__ANDROID__</span>) || defined(<span class="macro" data-ref="_M/GOOGLE_PROTOBUF_OS_ANDROID">GOOGLE_PROTOBUF_OS_ANDROID</span>) || (defined(<span class="macro" data-ref="_M/TARGET_OS_IPHONE">TARGET_OS_IPHONE</span>) &amp;&amp; TARGET_OS_IPHONE) || defined(<span class="macro" data-ref="_M/GOOGLE_PROTOBUF_OS_IPHONE">GOOGLE_PROTOBUF_OS_IPHONE</span>)</u></td></tr>
+<tr><th id="73">73</th><td><u>#include &lt;pthread.h&gt;</u></td></tr>
+<tr><th id="74">74</th><td><u>#<span data-ppcond="72">endif</span></u></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><u>#<span data-ppcond="76">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/GetMessage">GetMessage</span>)</u></td></tr>
+<tr><th id="77">77</th><td><i>// Allow GetMessage to be used as a valid method name in protobuf classes.</i></td></tr>
+<tr><th id="78">78</th><td><i>// windows.h defines GetMessage() as a macro.  Let's re-define it as an inline</i></td></tr>
+<tr><th id="79">79</th><td><i>// function.  The inline function should be equivalent for C++ users.</i></td></tr>
+<tr><th id="80">80</th><td><b>inline</b> BOOL GetMessage_Win32(</td></tr>
+<tr><th id="81">81</th><td>    LPMSG lpMsg, HWND hWnd,</td></tr>
+<tr><th id="82">82</th><td>    UINT wMsgFilterMin, UINT wMsgFilterMax) {</td></tr>
+<tr><th id="83">83</th><td>  <b>return</b> GetMessage(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax);</td></tr>
+<tr><th id="84">84</th><td>}</td></tr>
+<tr><th id="85">85</th><td><u>#undef GetMessage</u></td></tr>
+<tr><th id="86">86</th><td><b>inline</b> BOOL GetMessage(</td></tr>
+<tr><th id="87">87</th><td>    LPMSG lpMsg, HWND hWnd,</td></tr>
+<tr><th id="88">88</th><td>    UINT wMsgFilterMin, UINT wMsgFilterMax) {</td></tr>
+<tr><th id="89">89</th><td>  <b>return</b> GetMessage_Win32(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax);</td></tr>
+<tr><th id="90">90</th><td>}</td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="76">endif</span></u></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><b>namespace</b> <span class="namespace">std</span> {}</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><b>namespace</b> <span class="namespace">google</span> {</td></tr>
+<tr><th id="96">96</th><td><b>namespace</b> <span class="namespace">protobuf</span> {</td></tr>
+<tr><th id="97">97</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><i>// Some of these constants are macros rather than const ints so that they can</i></td></tr>
+<tr><th id="100">100</th><td><i>// be used in #if directives.</i></td></tr>
+<tr><th id="101">101</th><td><i></i></td></tr>
+<tr><th id="102">102</th><td><i>// The current version, represented as a single integer to make comparison</i></td></tr>
+<tr><th id="103">103</th><td><i>// easier:  major * 10^6 + minor * 10^3 + micro</i></td></tr>
+<tr><th id="104">104</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_VERSION" data-ref="_M/GOOGLE_PROTOBUF_VERSION">GOOGLE_PROTOBUF_VERSION</dfn> 3006001</u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i>// A suffix string for alpha, beta or rc releases. Empty for stable releases.</i></td></tr>
+<tr><th id="107">107</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_VERSION_SUFFIX" data-ref="_M/GOOGLE_PROTOBUF_VERSION_SUFFIX">GOOGLE_PROTOBUF_VERSION_SUFFIX</dfn> ""</u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i>// The minimum library version which works with the current version of the</i></td></tr>
+<tr><th id="110">110</th><td><i>// headers.</i></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION" data-ref="_M/GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION">GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION</dfn> 3006001</u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><i>// The minimum header version which works with the current version of</i></td></tr>
+<tr><th id="114">114</th><td><i>// the library.  This constant should only be used by protoc's C++ code</i></td></tr>
+<tr><th id="115">115</th><td><i>// generator.</i></td></tr>
+<tr><th id="116">116</th><td><em>static</em> <em>const</em> <em>int</em> <dfn class="decl def" id="google::protobuf::internal::kMinHeaderVersionForLibrary" title='google::protobuf::internal::kMinHeaderVersionForLibrary' data-ref="google::protobuf::internal::kMinHeaderVersionForLibrary" data-ref-filename="google..protobuf..internal..kMinHeaderVersionForLibrary">kMinHeaderVersionForLibrary</dfn> = <var>3006001</var>;</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i>// The minimum protoc version which works with the current version of the</i></td></tr>
+<tr><th id="119">119</th><td><i>// headers.</i></td></tr>
+<tr><th id="120">120</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_MIN_PROTOC_VERSION" data-ref="_M/GOOGLE_PROTOBUF_MIN_PROTOC_VERSION">GOOGLE_PROTOBUF_MIN_PROTOC_VERSION</dfn> 3006001</u></td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i>// The minimum header version which works with the current version of</i></td></tr>
+<tr><th id="123">123</th><td><i>// protoc.  This constant should only be used in VerifyVersion().</i></td></tr>
+<tr><th id="124">124</th><td><em>static</em> <em>const</em> <em>int</em> <dfn class="decl def" id="google::protobuf::internal::kMinHeaderVersionForProtoc" title='google::protobuf::internal::kMinHeaderVersionForProtoc' data-ref="google::protobuf::internal::kMinHeaderVersionForProtoc" data-ref-filename="google..protobuf..internal..kMinHeaderVersionForProtoc">kMinHeaderVersionForProtoc</dfn> = <var>3006001</var>;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><i>// Verifies that the headers and libraries are compatible.  Use the macro</i></td></tr>
+<tr><th id="127">127</th><td><i>// below to call this.</i></td></tr>
+<tr><th id="128">128</th><td><em>void</em> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="decl fn" id="_ZN6google8protobuf8internal13VerifyVersionEiiPKc" title='google::protobuf::internal::VerifyVersion' data-ref="_ZN6google8protobuf8internal13VerifyVersionEiiPKc" data-ref-filename="_ZN6google8protobuf8internal13VerifyVersionEiiPKc">VerifyVersion</dfn>(<em>int</em> <dfn class="local col1 decl" id="1771headerVersion" title='headerVersion' data-type='int' data-ref="1771headerVersion" data-ref-filename="1771headerVersion">headerVersion</dfn>, <em>int</em> <dfn class="local col2 decl" id="1772minLibraryVersion" title='minLibraryVersion' data-type='int' data-ref="1772minLibraryVersion" data-ref-filename="1772minLibraryVersion">minLibraryVersion</dfn>,</td></tr>
+<tr><th id="129">129</th><td>                                      <em>const</em> <em>char</em>* <dfn class="local col3 decl" id="1773filename" title='filename' data-type='const char *' data-ref="1773filename" data-ref-filename="1773filename">filename</dfn>);</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><i>// Converts a numeric version number to a string.</i></td></tr>
+<tr><th id="132">132</th><td><span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="decl fn" id="_ZN6google8protobuf8internal13VersionStringB5cxx11Ei" title='google::protobuf::internal::VersionString' data-ref="_ZN6google8protobuf8internal13VersionStringB5cxx11Ei" data-ref-filename="_ZN6google8protobuf8internal13VersionStringB5cxx11Ei">VersionString</dfn>(<em>int</em> <dfn class="local col4 decl" id="1774version" title='version' data-type='int' data-ref="1774version" data-ref-filename="1774version">version</dfn>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><i>// Place this macro in your main() function (or somewhere before you attempt</i></td></tr>
+<tr><th id="137">137</th><td><i>// to use the protobuf library) to verify that the version you link against</i></td></tr>
+<tr><th id="138">138</th><td><i>// matches the headers you compiled against.  If a version mismatch is</i></td></tr>
+<tr><th id="139">139</th><td><i>// detected, the process will abort.</i></td></tr>
+<tr><th id="140">140</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_VERIFY_VERSION" data-ref="_M/GOOGLE_PROTOBUF_VERIFY_VERSION">GOOGLE_PROTOBUF_VERIFY_VERSION</dfn>                                    \</u></td></tr>
+<tr><th id="141">141</th><td><u>  ::google::protobuf::internal::VerifyVersion(                            \</u></td></tr>
+<tr><th id="142">142</th><td><u>    GOOGLE_PROTOBUF_VERSION, GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION,         \</u></td></tr>
+<tr><th id="143">143</th><td><u>    __FILE__)</u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i>// ===================================================================</i></td></tr>
+<tr><th id="147">147</th><td><i>// from google3/util/utf8/public/unilib.h</i></td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><b>class</b> <a class="type" href="stringpiece.h.html#google::protobuf::StringPiece" title='google::protobuf::StringPiece' data-ref="google::protobuf::StringPiece" data-ref-filename="google..protobuf..StringPiece" id="google::protobuf::StringPiece">StringPiece</a>;</td></tr>
+<tr><th id="150">150</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><i>// Checks if the buffer contains structurally-valid UTF-8.  Implemented in</i></td></tr>
+<tr><th id="153">153</th><td><i>// structurally_valid.cc.</i></td></tr>
+<tr><th id="154">154</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <em>bool</em> <dfn class="decl fn" id="_ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci" title='google::protobuf::internal::IsStructurallyValidUTF8' data-ref="_ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci" data-ref-filename="_ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci">IsStructurallyValidUTF8</dfn>(<em>const</em> <em>char</em>* <dfn class="local col5 decl" id="1775buf" title='buf' data-type='const char *' data-ref="1775buf" data-ref-filename="1775buf">buf</dfn>, <em>int</em> <dfn class="local col6 decl" id="1776len" title='len' data-type='int' data-ref="1776len" data-ref-filename="1776len">len</dfn>);</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><b>inline</b> <em>bool</em> <dfn class="decl def fn" id="_ZN6google8protobuf8internal23IsStructurallyValidUTF8ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='google::protobuf::internal::IsStructurallyValidUTF8' data-ref="_ZN6google8protobuf8internal23IsStructurallyValidUTF8ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN6google8protobuf8internal23IsStructurallyValidUTF8ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">IsStructurallyValidUTF8</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col7 decl" id="1777str" title='str' data-type='const std::string &amp;' data-ref="1777str" data-ref-filename="1777str">str</dfn>) {</td></tr>
+<tr><th id="157">157</th><td>  <b>return</b> <a class="ref fn" href="#_ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci" title='google::protobuf::internal::IsStructurallyValidUTF8' data-ref="_ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci" data-ref-filename="_ZN6google8protobuf8internal23IsStructurallyValidUTF8EPKci">IsStructurallyValidUTF8</a>(<a class="local col7 ref" href="#1777str" title='str' data-ref="1777str" data-ref-filename="1777str">str</a>.<a class="ref fn" href="../../../c++/10/bits/basic_string.h.html#_ZNKSt7__cxx1112basic_string4dataEv" title='std::__cxx11::basic_string::data' data-ref="_ZNKSt7__cxx1112basic_string4dataEv" data-ref-filename="_ZNKSt7__cxx1112basic_string4dataEv">data</a>(), <b>static_cast</b>&lt;<em>int</em>&gt;(<a class="local col7 ref" href="#1777str" title='str' data-ref="1777str" data-ref-filename="1777str">str</a>.<a class="ref fn" href="../../../c++/10/bits/basic_string.h.html#_ZNKSt7__cxx1112basic_string6lengthEv" title='std::__cxx11::basic_string::length' data-ref="_ZNKSt7__cxx1112basic_string6lengthEv" data-ref-filename="_ZNKSt7__cxx1112basic_string6lengthEv">length</a>()));</td></tr>
+<tr><th id="158">158</th><td>}</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><i>// Returns initial number of bytes of structually valid UTF-8.</i></td></tr>
+<tr><th id="161">161</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <em>int</em> <dfn class="decl fn" id="_ZN6google8protobuf8internal24UTF8SpnStructurallyValidERKNS0_11StringPieceE" title='google::protobuf::internal::UTF8SpnStructurallyValid' data-ref="_ZN6google8protobuf8internal24UTF8SpnStructurallyValidERKNS0_11StringPieceE" data-ref-filename="_ZN6google8protobuf8internal24UTF8SpnStructurallyValidERKNS0_11StringPieceE">UTF8SpnStructurallyValid</dfn>(<em>const</em> <a class="type" href="stringpiece.h.html#google::protobuf::StringPiece" title='google::protobuf::StringPiece' data-ref="google::protobuf::StringPiece" data-ref-filename="google..protobuf..StringPiece">StringPiece</a>&amp; <dfn class="local col8 decl" id="1778str" title='str' data-type='const google::protobuf::StringPiece &amp;' data-ref="1778str" data-ref-filename="1778str">str</dfn>);</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i>// Coerce UTF-8 byte string in src_str to be</i></td></tr>
+<tr><th id="164">164</th><td><i>// a structurally-valid equal-length string by selectively</i></td></tr>
+<tr><th id="165">165</th><td><i>// overwriting illegal bytes with replace_char (typically ' ' or '?').</i></td></tr>
+<tr><th id="166">166</th><td><i>// replace_char must be legal printable 7-bit Ascii 0x20..0x7e.</i></td></tr>
+<tr><th id="167">167</th><td><i>// src_str is read-only.</i></td></tr>
+<tr><th id="168">168</th><td><i>//</i></td></tr>
+<tr><th id="169">169</th><td><i>// Returns pointer to output buffer, src_str.data() if no changes were made,</i></td></tr>
+<tr><th id="170">170</th><td><i>//  or idst if some bytes were changed. idst is allocated by the caller</i></td></tr>
+<tr><th id="171">171</th><td><i>//  and must be at least as big as src_str</i></td></tr>
+<tr><th id="172">172</th><td><i>//</i></td></tr>
+<tr><th id="173">173</th><td><i>// Optimized for: all structurally valid and no byte copying is done.</i></td></tr>
+<tr><th id="174">174</th><td><i>//</i></td></tr>
+<tr><th id="175">175</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <em>char</em>* <dfn class="decl fn" id="_ZN6google8protobuf8internal29UTF8CoerceToStructurallyValidERKNS0_11StringPieceEPcc" title='google::protobuf::internal::UTF8CoerceToStructurallyValid' data-ref="_ZN6google8protobuf8internal29UTF8CoerceToStructurallyValidERKNS0_11StringPieceEPcc" data-ref-filename="_ZN6google8protobuf8internal29UTF8CoerceToStructurallyValidERKNS0_11StringPieceEPcc">UTF8CoerceToStructurallyValid</dfn>(</td></tr>
+<tr><th id="176">176</th><td>    <em>const</em> <a class="type" href="stringpiece.h.html#google::protobuf::StringPiece" title='google::protobuf::StringPiece' data-ref="google::protobuf::StringPiece" data-ref-filename="google..protobuf..StringPiece">StringPiece</a>&amp; <dfn class="local col9 decl" id="1779str" title='str' data-type='const google::protobuf::StringPiece &amp;' data-ref="1779str" data-ref-filename="1779str">str</dfn>, <em>char</em>* <dfn class="local col0 decl" id="1780dst" title='dst' data-type='char *' data-ref="1780dst" data-ref-filename="1780dst">dst</dfn>, <em>char</em> <dfn class="local col1 decl" id="1781replace_char" title='replace_char' data-type='char' data-ref="1781replace_char" data-ref-filename="1781replace_char">replace_char</dfn>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><i>// ===================================================================</i></td></tr>
+<tr><th id="182">182</th><td><i>// Shutdown support.</i></td></tr>
+<tr><th id="183">183</th><td><i></i></td></tr>
+<tr><th id="184">184</th><td><i>// Shut down the entire protocol buffers library, deleting all static-duration</i></td></tr>
+<tr><th id="185">185</th><td><i>// objects allocated by the library or by generated .pb.cc files.</i></td></tr>
+<tr><th id="186">186</th><td><i>//</i></td></tr>
+<tr><th id="187">187</th><td><i>// There are two reasons you might want to call this:</i></td></tr>
+<tr><th id="188">188</th><td><i>// * You use a draconian definition of "memory leak" in which you expect</i></td></tr>
+<tr><th id="189">189</th><td><i>//   every single malloc() to have a corresponding free(), even for objects</i></td></tr>
+<tr><th id="190">190</th><td><i>//   which live until program exit.</i></td></tr>
+<tr><th id="191">191</th><td><i>// * You are writing a dynamically-loaded library which needs to clean up</i></td></tr>
+<tr><th id="192">192</th><td><i>//   after itself when the library is unloaded.</i></td></tr>
+<tr><th id="193">193</th><td><i>//</i></td></tr>
+<tr><th id="194">194</th><td><i>// It is safe to call this multiple times.  However, it is not safe to use</i></td></tr>
+<tr><th id="195">195</th><td><i>// any other part of the protocol buffers library after</i></td></tr>
+<tr><th id="196">196</th><td><i>// ShutdownProtobufLibrary() has been called. Furthermore this call is not</i></td></tr>
+<tr><th id="197">197</th><td><i>// thread safe, user needs to synchronize multiple calls.</i></td></tr>
+<tr><th id="198">198</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <em>void</em> <dfn class="decl fn" id="_ZN6google8protobuf23ShutdownProtobufLibraryEv" title='google::protobuf::ShutdownProtobufLibrary' data-ref="_ZN6google8protobuf23ShutdownProtobufLibraryEv" data-ref-filename="_ZN6google8protobuf23ShutdownProtobufLibraryEv">ShutdownProtobufLibrary</dfn>();</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td><i>// Register a function to be called when ShutdownProtocolBuffers() is called.</i></td></tr>
+<tr><th id="203">203</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <em>void</em> <dfn class="decl fn" id="_ZN6google8protobuf8internal10OnShutdownEPFvvE" title='google::protobuf::internal::OnShutdown' data-ref="_ZN6google8protobuf8internal10OnShutdownEPFvvE" data-ref-filename="_ZN6google8protobuf8internal10OnShutdownEPFvvE">OnShutdown</dfn>(<em>void</em> (*<dfn class="local col2 decl" id="1782func" title='func' data-type='void (*)()' data-ref="1782func" data-ref-filename="1782func">func</dfn>)());</td></tr>
+<tr><th id="204">204</th><td><i>// Run an arbitrary function on an arg</i></td></tr>
+<tr><th id="205">205</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <em>void</em> <dfn class="decl fn" id="_ZN6google8protobuf8internal13OnShutdownRunEPFvPKvES3_" title='google::protobuf::internal::OnShutdownRun' data-ref="_ZN6google8protobuf8internal13OnShutdownRunEPFvPKvES3_" data-ref-filename="_ZN6google8protobuf8internal13OnShutdownRunEPFvPKvES3_">OnShutdownRun</dfn>(<em>void</em> (*<dfn class="local col3 decl" id="1783f" title='f' data-type='void (*)(const void *)' data-ref="1783f" data-ref-filename="1783f">f</dfn>)(<em>const</em> <em>void</em>*), <em>const</em> <em>void</em>* <dfn class="local col4 decl" id="1784arg" title='arg' data-type='const void *' data-ref="1784arg" data-ref-filename="1784arg">arg</dfn>);</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="208">208</th><td>T* <dfn class="decl def fn" id="_ZN6google8protobuf8internal16OnShutdownDeleteEPT_" title='google::protobuf::internal::OnShutdownDelete' data-ref="_ZN6google8protobuf8internal16OnShutdownDeleteEPT_" data-ref-filename="_ZN6google8protobuf8internal16OnShutdownDeleteEPT_">OnShutdownDelete</dfn>(T* <dfn class="local col5 decl" id="1785p" title='p' data-type='T *' data-ref="1785p" data-ref-filename="1785p">p</dfn>) {</td></tr>
+<tr><th id="209">209</th><td>  OnShutdownRun([](<em>const</em> <em>void</em>* <dfn class="local col6 decl" id="1786p" title='p' data-type='const void *' data-ref="1786p" data-ref-filename="1786p">p</dfn>) { <b>delete</b> <b>static_cast</b>&lt;<em>const</em> T*&gt;(<a class="local col6 ref" href="#1786p" title='p' data-ref="1786p" data-ref-filename="1786p">p</a>); }, <a class="local col5 ref" href="#1785p" title='p' data-ref="1785p" data-ref-filename="1785p">p</a>);</td></tr>
+<tr><th id="210">210</th><td>  <b>return</b> <a class="local col5 ref" href="#1785p" title='p' data-ref="1785p" data-ref-filename="1785p">p</a>;</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td><u>#<span data-ppcond="215">if</span> <a class="macro" href="#59" title="1" data-ref="_M/PROTOBUF_USE_EXCEPTIONS">PROTOBUF_USE_EXCEPTIONS</a></u></td></tr>
+<tr><th id="216">216</th><td><b>class</b> <dfn class="type def" id="google::protobuf::FatalException" title='google::protobuf::FatalException' data-ref="google::protobuf::FatalException" data-ref-filename="google..protobuf..FatalException">FatalException</dfn> : <b>public</b> <span class="namespace">std::</span><a class="type" href="../../../c++/10/bits/exception.h.html#std::exception" title='std::exception' data-ref="std::exception" data-ref-filename="std..exception">exception</a> {</td></tr>
+<tr><th id="217">217</th><td> <b>public</b>:</td></tr>
+<tr><th id="218">218</th><td>  <dfn class="decl def fn" id="_ZN6google8protobuf14FatalExceptionC1EPKciRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='google::protobuf::FatalException::FatalException' data-ref="_ZN6google8protobuf14FatalExceptionC1EPKciRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN6google8protobuf14FatalExceptionC1EPKciRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">FatalException</dfn>(<em>const</em> <em>char</em>* <dfn class="local col7 decl" id="1787filename" title='filename' data-type='const char *' data-ref="1787filename" data-ref-filename="1787filename">filename</dfn>, <em>int</em> <dfn class="local col8 decl" id="1788line" title='line' data-type='int' data-ref="1788line" data-ref-filename="1788line">line</dfn>, <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col9 decl" id="1789message" title='message' data-type='const std::string &amp;' data-ref="1789message" data-ref-filename="1789message">message</dfn>)</td></tr>
+<tr><th id="219">219</th><td>      : <a class="member field" href="#google::protobuf::FatalException::filename_" title='google::protobuf::FatalException::filename_' data-ref="google::protobuf::FatalException::filename_" data-ref-filename="google..protobuf..FatalException..filename_">filename_</a>(<a class="local col7 ref" href="#1787filename" title='filename' data-ref="1787filename" data-ref-filename="1787filename">filename</a>), <a class="member field" href="#google::protobuf::FatalException::line_" title='google::protobuf::FatalException::line_' data-ref="google::protobuf::FatalException::line_" data-ref-filename="google..protobuf..FatalException..line_">line_</a>(<a class="local col8 ref" href="#1788line" title='line' data-ref="1788line" data-ref-filename="1788line">line</a>), <a class="member field" href="#google::protobuf::FatalException::message_" title='google::protobuf::FatalException::message_' data-ref="google::protobuf::FatalException::message_" data-ref-filename="google..protobuf..FatalException..message_">message_</a><a class="ref fn" href="../../../c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1ERKNS_12basic_stringIT_T0_T1_EE" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1ERKNS_12basic_stringIT_T0_T1_EE" data-ref-filename="_ZNSt7__cxx1112basic_stringC1ERKNS_12basic_stringIT_T0_T1_EE">(</a><a class="local col9 ref" href="#1789message" title='message' data-ref="1789message" data-ref-filename="1789message">message</a>) {}</td></tr>
+<tr><th id="220">220</th><td>  <b>virtual</b> <dfn class="virtual decl fn" id="_ZN6google8protobuf14FatalExceptionD1Ev" title='google::protobuf::FatalException::~FatalException' data-ref="_ZN6google8protobuf14FatalExceptionD1Ev" data-ref-filename="_ZN6google8protobuf14FatalExceptionD1Ev">~FatalException</dfn>() <b>throw</b>();</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td>  <b>virtual</b> <em>const</em> <em>char</em>* <dfn class="virtual decl fn" id="_ZNK6google8protobuf14FatalException4whatEv" title='google::protobuf::FatalException::what' data-ref="_ZNK6google8protobuf14FatalException4whatEv" data-ref-filename="_ZNK6google8protobuf14FatalException4whatEv">what</dfn>() <em>const</em> <b>throw</b>();</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td>  <em>const</em> <em>char</em>* <dfn class="decl def fn" id="_ZNK6google8protobuf14FatalException8filenameEv" title='google::protobuf::FatalException::filename' data-ref="_ZNK6google8protobuf14FatalException8filenameEv" data-ref-filename="_ZNK6google8protobuf14FatalException8filenameEv">filename</dfn>() <em>const</em> { <b>return</b> <a class="member field" href="#google::protobuf::FatalException::filename_" title='google::protobuf::FatalException::filename_' data-ref="google::protobuf::FatalException::filename_" data-ref-filename="google..protobuf..FatalException..filename_">filename_</a>; }</td></tr>
+<tr><th id="225">225</th><td>  <em>int</em> <dfn class="decl def fn" id="_ZNK6google8protobuf14FatalException4lineEv" title='google::protobuf::FatalException::line' data-ref="_ZNK6google8protobuf14FatalException4lineEv" data-ref-filename="_ZNK6google8protobuf14FatalException4lineEv">line</dfn>() <em>const</em> { <b>return</b> <a class="member field" href="#google::protobuf::FatalException::line_" title='google::protobuf::FatalException::line_' data-ref="google::protobuf::FatalException::line_" data-ref-filename="google..protobuf..FatalException..line_">line_</a>; }</td></tr>
+<tr><th id="226">226</th><td>  <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="decl def fn" id="_ZNK6google8protobuf14FatalException7messageB5cxx11Ev" title='google::protobuf::FatalException::message' data-ref="_ZNK6google8protobuf14FatalException7messageB5cxx11Ev" data-ref-filename="_ZNK6google8protobuf14FatalException7messageB5cxx11Ev">message</dfn>() <em>const</em> { <b>return</b> <a class="member field" href="#google::protobuf::FatalException::message_" title='google::protobuf::FatalException::message_' data-ref="google::protobuf::FatalException::message_" data-ref-filename="google..protobuf..FatalException..message_">message_</a>; }</td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td> <b>private</b>:</td></tr>
+<tr><th id="229">229</th><td>  <em>const</em> <em>char</em>* <dfn class="decl field" id="google::protobuf::FatalException::filename_" title='google::protobuf::FatalException::filename_' data-ref="google::protobuf::FatalException::filename_" data-ref-filename="google..protobuf..FatalException..filename_">filename_</dfn>;</td></tr>
+<tr><th id="230">230</th><td>  <em>const</em> <em>int</em> <dfn class="decl field" id="google::protobuf::FatalException::line_" title='google::protobuf::FatalException::line_' data-ref="google::protobuf::FatalException::line_" data-ref-filename="google..protobuf..FatalException..line_">line_</dfn>;</td></tr>
+<tr><th id="231">231</th><td>  <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="decl field" id="google::protobuf::FatalException::message_" title='google::protobuf::FatalException::message_' data-ref="google::protobuf::FatalException::message_" data-ref-filename="google..protobuf..FatalException..message_">message_</dfn>;</td></tr>
+<tr><th id="232">232</th><td>};</td></tr>
+<tr><th id="233">233</th><td><u>#<span data-ppcond="215">endif</span></u></td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><i>// This is at the end of the file instead of the beginning to work around a bug</i></td></tr>
+<tr><th id="236">236</th><td><i>// in some versions of MSVC.</i></td></tr>
+<tr><th id="237">237</th><td><b>using</b> <span class="namespace">std::</span>string;</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td>}  <i>// namespace protobuf</i></td></tr>
+<tr><th id="240">240</th><td>}  <i>// namespace google</i></td></tr>
+<tr><th id="241">241</th><td></td></tr>
+<tr><th id="242">242</th><td><u>#<span data-ppcond="35">endif</span>  // GOOGLE_PROTOBUF_COMMON_H__</u></td></tr>
+<tr><th id="243">243</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

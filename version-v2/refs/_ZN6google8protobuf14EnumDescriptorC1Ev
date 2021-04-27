@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/descriptor.h' l='1024' type='void google::protobuf::EnumDescriptor::EnumDescriptor()'/>
+<doc f='include/google/protobuf/descriptor.h' l='1019'>// IMPORTANT:  If you add a new field, make sure to search for all instances
+  // of Allocate&lt;EnumDescriptor&gt;() and AllocateArray&lt;EnumDescriptor&gt;() in
+  // descriptor.cc and update them to initialize the field.
+
+  // Must be constructed using DescriptorPool.</doc>

@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='529' macro='1' type='int'/>
+<offset>992</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='451' u='w' c='uv__stream_flush_write_queue'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='774' u='r' c='uv__write_req_finish'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='918' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='953' u='r' c='uv__write_callbacks'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1445' u='w' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1549' u='r' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1549' u='r' c='uv_try_write'/>

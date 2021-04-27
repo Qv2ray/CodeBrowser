@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv/threadpool.h' l='32' type='void (*)(struct uv__work *, int)'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='264' u='w' c='uv__work_submit'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='313' u='r' c='uv__work_done'/>

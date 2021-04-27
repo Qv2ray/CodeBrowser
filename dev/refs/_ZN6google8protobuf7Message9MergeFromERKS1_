@@ -1,0 +1,21 @@
+<dec f='include/google/protobuf/message.h' l='222' type='void google::protobuf::Message::MergeFrom(const google::protobuf::Message &amp; from)'/>
+<doc f='include/google/protobuf/message.h' l='217'>// Merge the fields from the given message into this message.  Singular
+  // fields will be overwritten, if specified in from, except for embedded
+  // messages which will be merged.  Repeated fields will be concatenated.
+  // The given message must be of the same type as this message (i.e. the
+  // exact same class).</doc>
+<ovr f='/v2ray_api.pb.cc' l='568' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='849' c='_ZN5v2ray4core3app5stats7command4Stat9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1089' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1362' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1599' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1780' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='2293' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='2512' c='_ZN5v2ray4core3app5stats7command6Config9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='639' c='_ZN5v2ray4core3app6router22DomainObject_Attribute9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='976' c='_ZN5v2ray4core3app6router12DomainObject9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1247' c='_ZN5v2ray4core3app6router4CIDR9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1536' c='_ZN5v2ray4core3app6router5GeoIP9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1771' c='_ZN5v2ray4core3app6router9GeoIPList9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='2052' c='_ZN5v2ray4core3app6router7GeoSite9MergeFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='2287' c='_ZN5v2ray4core3app6router11GeoSiteList9MergeFromERKN6google8protobuf7MessageE'/>

@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='355' ll='364' type='grpc::Status grpc::ClientWriter::Finish()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='349'>/// See the ClientStreamingInterface.Finish method for semantics.
+  /// Side effects:
+  ///   - Also receives initial metadata if not already received.
+  ///   - Attempts to fill in the \a response parameter passed
+  ///     to the constructor of this instance with the response
+  ///     message from the server.</doc>

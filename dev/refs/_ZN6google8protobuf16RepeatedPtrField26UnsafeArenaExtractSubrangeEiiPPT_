@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/repeated_field.h' l='950' type='void google::protobuf::RepeatedPtrField::UnsafeArenaExtractSubrange(int start, int num, Element ** elements)'/>
+<use f='include/google/protobuf/repeated_field.h' l='2054' u='c' c='_ZN6google8protobuf16RepeatedPtrField23ExtractSubrangeInternalEiiPPT_St17integral_constantIbLb0EE'/>
+<def f='include/google/protobuf/repeated_field.h' l='2057' ll='2073' type='void google::protobuf::RepeatedPtrField::UnsafeArenaExtractSubrange(int start, int num, Element ** elements)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='946'>// Identical to ExtractSubrange() described above, except that when this
+  // repeated field is on an arena, no object copies are performed. Instead, the
+  // raw object pointers are returned. Thus, if on an arena, the returned
+  // objects must not be freed, because they will not be heap-allocated objects.</doc>

@@ -1,0 +1,5 @@
+<def f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='72' ll='104' type='void heap_node_swap(struct heap * heap, struct heap_node * parent, struct heap_node * child)'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='147' u='c' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='228' u='c' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='236' u='c' c='heap_remove'/>
+<doc f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='71'>/* Swap parent with child. Child moves closer to the root, parent moves away. */</doc>

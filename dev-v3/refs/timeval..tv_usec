@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/bits/types/struct_timeval.h' l='11' type='__suseconds_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/types/struct_timeval.h' l='11'>/* Microseconds.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='969' u='r' c='uv_getrusage'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='972' u='r' c='uv_getrusage'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1514' u='r' c='uv_gettimeofday'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='218' u='w' c='uv__fs_to_timeval'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='169' u='r' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='169' u='r' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>

@@ -1,0 +1,13 @@
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='432' c='_ZN4grpc8internal25ClientReaderWriterFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='435' c='_ZN4grpc8internal25ClientReaderWriterFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextE'/>
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='445' ll='566'/>
+<fun r='_ZN4grpc18ClientReaderWriter22WaitForInitialMetadataEv'/>
+<fun r='_ZN4grpc18ClientReaderWriter15NextMessageSizeEPj'/>
+<fun r='_ZN4grpc18ClientReaderWriter4ReadEPT0_'/>
+<fun r='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<fun r='_ZN4grpc18ClientReaderWriter10WritesDoneEv'/>
+<fun r='_ZN4grpc18ClientReaderWriter6FinishEv'/>
+<mbr r='grpc::ClientReaderWriter::context_' t='grpc::ClientContext *'/>
+<mbr r='grpc::ClientReaderWriter::cq_' t='grpc::CompletionQueue'/>
+<mbr r='grpc::ClientReaderWriter::call_' t='::grpc::internal::Call'/>
+<fun r='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>

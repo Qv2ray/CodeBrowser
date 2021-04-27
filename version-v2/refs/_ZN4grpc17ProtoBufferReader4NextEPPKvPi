@@ -1,0 +1,5 @@
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='145' c='_ZN6google8protobuf2io19ZeroCopyInputStream4NextEPPKvPi'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='70' ll='94' type='bool grpc::ProtoBufferReader::Next(const void ** data, int * size)'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='112' u='c' c='_ZN4grpc17ProtoBufferReader4SkipEi'/>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='68'>/// Give the proto library a chunk of data from the stream. The caller
+  /// may safely read from data[0, size - 1].</doc>

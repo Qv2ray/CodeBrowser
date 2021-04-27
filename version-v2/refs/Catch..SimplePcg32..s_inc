@@ -1,0 +1,6 @@
+<dec f='qv2ray/test/catch.hpp' l='4584' type='const std::uint64_t'/>
+<use f='qv2ray/test/catch.hpp' l='12249' u='r' c='_ZN5Catch11SimplePcg32clEv'/>
+<doc f='qv2ray/test/catch.hpp' l='4580'>// This part of the state determines which &quot;stream&quot; of the numbers
+        // is chosen -- we take it as a constant for Catch2, so we only
+        // need to deal with seeding the main state.
+        // Picked by reading 8 bytes from `/dev/random` :-)</doc>

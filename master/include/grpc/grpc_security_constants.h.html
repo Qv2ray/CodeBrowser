@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>grpc_security_constants.h source code [include/grpc/grpc_security_constants.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpc/grpc_security_constants.h'; var root_path = '../..'; var data_path = '../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>grpc</a>/<a href='grpc_security_constants.h.html'>grpc_security_constants.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2016 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPC_GRPC_SECURITY_CONSTANTS_H">GRPC_GRPC_SECURITY_CONSTANTS_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPC_GRPC_SECURITY_CONSTANTS_H" data-ref="_M/GRPC_GRPC_SECURITY_CONSTANTS_H">GRPC_GRPC_SECURITY_CONSTANTS_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="23">23</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="22">endif</span></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/GRPC_TRANSPORT_SECURITY_TYPE_PROPERTY_NAME" data-ref="_M/GRPC_TRANSPORT_SECURITY_TYPE_PROPERTY_NAME">GRPC_TRANSPORT_SECURITY_TYPE_PROPERTY_NAME</dfn> "transport_security_type"</u></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/GRPC_SSL_TRANSPORT_SECURITY_TYPE" data-ref="_M/GRPC_SSL_TRANSPORT_SECURITY_TYPE">GRPC_SSL_TRANSPORT_SECURITY_TYPE</dfn> "ssl"</u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/GRPC_X509_CN_PROPERTY_NAME" data-ref="_M/GRPC_X509_CN_PROPERTY_NAME">GRPC_X509_CN_PROPERTY_NAME</dfn> "x509_common_name"</u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/GRPC_X509_SAN_PROPERTY_NAME" data-ref="_M/GRPC_X509_SAN_PROPERTY_NAME">GRPC_X509_SAN_PROPERTY_NAME</dfn> "x509_subject_alternative_name"</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/GRPC_X509_PEM_CERT_PROPERTY_NAME" data-ref="_M/GRPC_X509_PEM_CERT_PROPERTY_NAME">GRPC_X509_PEM_CERT_PROPERTY_NAME</dfn> "x509_pem_cert"</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/GRPC_SSL_SESSION_REUSED_PROPERTY" data-ref="_M/GRPC_SSL_SESSION_REUSED_PROPERTY">GRPC_SSL_SESSION_REUSED_PROPERTY</dfn> "ssl_session_reused"</u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i class="doc">/** Environment variable that points to the default SSL roots file. This file</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc">   must be a PEM encoded file with all the roots such as the one that can be</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc">   downloaded from <a href="https://pki.google.com/roots.pem">https://pki.google.com/roots.pem</a>.  */</i></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/GRPC_DEFAULT_SSL_ROOTS_FILE_PATH_ENV_VAR" data-ref="_M/GRPC_DEFAULT_SSL_ROOTS_FILE_PATH_ENV_VAR">GRPC_DEFAULT_SSL_ROOTS_FILE_PATH_ENV_VAR</dfn> \</u></td></tr>
+<tr><th id="38">38</th><td><u>  "GRPC_DEFAULT_SSL_ROOTS_FILE_PATH"</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i class="doc">/** Environment variable that points to the google default application</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">   credentials json key or refresh token. Used in the</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc">   grpc_google_default_credentials_create function. */</i></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GRPC_GOOGLE_CREDENTIALS_ENV_VAR" data-ref="_M/GRPC_GOOGLE_CREDENTIALS_ENV_VAR">GRPC_GOOGLE_CREDENTIALS_ENV_VAR</dfn> "GOOGLE_APPLICATION_CREDENTIALS"</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i class="doc">/** Results for the SSL roots override callback. */</i></td></tr>
+<tr><th id="46">46</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="47">47</th><td>  <dfn class="enum" id="GRPC_SSL_ROOTS_OVERRIDE_OK" title='GRPC_SSL_ROOTS_OVERRIDE_OK' data-ref="GRPC_SSL_ROOTS_OVERRIDE_OK" data-ref-filename="GRPC_SSL_ROOTS_OVERRIDE_OK">GRPC_SSL_ROOTS_OVERRIDE_OK</dfn>,</td></tr>
+<tr><th id="48">48</th><td>  <dfn class="enum" id="GRPC_SSL_ROOTS_OVERRIDE_FAIL_PERMANENTLY" title='GRPC_SSL_ROOTS_OVERRIDE_FAIL_PERMANENTLY' data-ref="GRPC_SSL_ROOTS_OVERRIDE_FAIL_PERMANENTLY" data-ref-filename="GRPC_SSL_ROOTS_OVERRIDE_FAIL_PERMANENTLY">GRPC_SSL_ROOTS_OVERRIDE_FAIL_PERMANENTLY</dfn>, <i class="doc">/** Do not try fallback options. */</i></td></tr>
+<tr><th id="49">49</th><td>  <dfn class="enum" id="GRPC_SSL_ROOTS_OVERRIDE_FAIL" title='GRPC_SSL_ROOTS_OVERRIDE_FAIL' data-ref="GRPC_SSL_ROOTS_OVERRIDE_FAIL" data-ref-filename="GRPC_SSL_ROOTS_OVERRIDE_FAIL">GRPC_SSL_ROOTS_OVERRIDE_FAIL</dfn></td></tr>
+<tr><th id="50">50</th><td>} <dfn class="typedef" id="grpc_ssl_roots_override_result" title='grpc_ssl_roots_override_result' data-type='enum grpc_ssl_roots_override_result' data-ref="grpc_ssl_roots_override_result" data-ref-filename="grpc_ssl_roots_override_result">grpc_ssl_roots_override_result</dfn>;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i class="doc">/** Callback results for dynamically loading a SSL certificate config. */</i></td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="54">54</th><td>  <dfn class="enum" id="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_UNCHANGED" title='GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_UNCHANGED' data-ref="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_UNCHANGED" data-ref-filename="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_UNCHANGED">GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_UNCHANGED</dfn>,</td></tr>
+<tr><th id="55">55</th><td>  <dfn class="enum" id="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_NEW" title='GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_NEW' data-ref="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_NEW" data-ref-filename="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_NEW">GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_NEW</dfn>,</td></tr>
+<tr><th id="56">56</th><td>  <dfn class="enum" id="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_FAIL" title='GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_FAIL' data-ref="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_FAIL" data-ref-filename="GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_FAIL">GRPC_SSL_CERTIFICATE_CONFIG_RELOAD_FAIL</dfn></td></tr>
+<tr><th id="57">57</th><td>} <dfn class="typedef" id="grpc_ssl_certificate_config_reload_status" title='grpc_ssl_certificate_config_reload_status' data-type='enum grpc_ssl_certificate_config_reload_status' data-ref="grpc_ssl_certificate_config_reload_status" data-ref-filename="grpc_ssl_certificate_config_reload_status">grpc_ssl_certificate_config_reload_status</dfn>;</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="60">60</th><td>  <i class="doc">/** Server does not request client certificate.</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc">     The certificate presented by the client is not checked by the server at</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">     all. (A client may present a self signed or signed certificate or not</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">     present a certificate at all and any of those option would be accepted) */</i></td></tr>
+<tr><th id="64">64</th><td>  <dfn class="enum" id="GRPC_SSL_DONT_REQUEST_CLIENT_CERTIFICATE" title='GRPC_SSL_DONT_REQUEST_CLIENT_CERTIFICATE' data-ref="GRPC_SSL_DONT_REQUEST_CLIENT_CERTIFICATE" data-ref-filename="GRPC_SSL_DONT_REQUEST_CLIENT_CERTIFICATE">GRPC_SSL_DONT_REQUEST_CLIENT_CERTIFICATE</dfn>,</td></tr>
+<tr><th id="65">65</th><td>  <i class="doc">/** Server requests client certificate but does not enforce that the client</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc">     presents a certificate.</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"></i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">     If the client presents a certificate, the client authentication is left to</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">     the application (the necessary metadata will be available to the</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">     application via authentication context properties, see grpc_auth_context).</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"></i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">     The client's key certificate pair must be valid for the SSL connection to</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc">     be established. */</i></td></tr>
+<tr><th id="74">74</th><td>  <dfn class="enum" id="GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_BUT_DONT_VERIFY" title='GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_BUT_DONT_VERIFY' data-ref="GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_BUT_DONT_VERIFY" data-ref-filename="GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_BUT_DONT_VERIFY">GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_BUT_DONT_VERIFY</dfn>,</td></tr>
+<tr><th id="75">75</th><td>  <i class="doc">/** Server requests client certificate but does not enforce that the client</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">     presents a certificate.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"></i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     If the client presents a certificate, the client authentication is done by</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     the gRPC framework. (For a successful connection the client needs to either</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     present a certificate that can be verified against the root certificate</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     configured by the server or not present a certificate at all)</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"></i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     The client's key certificate pair must be valid for the SSL connection to</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     be established. */</i></td></tr>
+<tr><th id="85">85</th><td>  <dfn class="enum" id="GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_AND_VERIFY" title='GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_AND_VERIFY' data-ref="GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_AND_VERIFY" data-ref-filename="GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_AND_VERIFY">GRPC_SSL_REQUEST_CLIENT_CERTIFICATE_AND_VERIFY</dfn>,</td></tr>
+<tr><th id="86">86</th><td>  <i class="doc">/** Server requests client certificate and enforces that the client presents a</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     certificate.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"></i></td></tr>
+<tr><th id="89">89</th><td><i class="doc">     If the client presents a certificate, the client authentication is left to</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     the application (the necessary metadata will be available to the</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     application via authentication context properties, see grpc_auth_context).</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"></i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     The client's key certificate pair must be valid for the SSL connection to</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     be established. */</i></td></tr>
+<tr><th id="95">95</th><td>  <dfn class="enum" id="GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_BUT_DONT_VERIFY" title='GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_BUT_DONT_VERIFY' data-ref="GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_BUT_DONT_VERIFY" data-ref-filename="GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_BUT_DONT_VERIFY">GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_BUT_DONT_VERIFY</dfn>,</td></tr>
+<tr><th id="96">96</th><td>  <i class="doc">/** Server requests client certificate and enforces that the client presents a</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     certificate.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"></i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     The cerificate presented by the client is verified by the gRPC framework.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     (For a successful connection the client needs to present a certificate that</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     can be verified against the root certificate configured by the server)</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"></i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">     The client's key certificate pair must be valid for the SSL connection to</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     be established. */</i></td></tr>
+<tr><th id="105">105</th><td>  <dfn class="enum" id="GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_AND_VERIFY" title='GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_AND_VERIFY' data-ref="GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_AND_VERIFY" data-ref-filename="GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_AND_VERIFY">GRPC_SSL_REQUEST_AND_REQUIRE_CLIENT_CERTIFICATE_AND_VERIFY</dfn></td></tr>
+<tr><th id="106">106</th><td>} <dfn class="typedef" id="grpc_ssl_client_certificate_request_type" title='grpc_ssl_client_certificate_request_type' data-type='enum grpc_ssl_client_certificate_request_type' data-ref="grpc_ssl_client_certificate_request_type" data-ref-filename="grpc_ssl_client_certificate_request_type">grpc_ssl_client_certificate_request_type</dfn>;</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * Type of local connection for which local channel/server credentials will be</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * applied. It only supports UDS for now.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="112">112</th><td><b>typedef</b> <b>enum</b> { <dfn class="enum" id="UDS" title='UDS' data-ref="UDS" data-ref-filename="UDS">UDS</dfn> = <var>0</var> } <dfn class="typedef" id="grpc_local_connect_type" title='grpc_local_connect_type' data-type='enum grpc_local_connect_type' data-ref="grpc_local_connect_type" data-ref-filename="grpc_local_connect_type">grpc_local_connect_type</dfn>;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="114">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="114">endif</span></u></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="19">endif</span> /* GRPC_GRPC_SECURITY_CONSTANTS_H */</u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

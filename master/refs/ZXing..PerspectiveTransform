@@ -1,0 +1,47 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.h' l='32' ll='54'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.h' l='43' c='_ZNK5ZXing20PerspectiveTransform7inverseEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.h' l='44' c='_ZNK5ZXing20PerspectiveTransform5timesERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.h' l='44' c='_ZNK5ZXing20PerspectiveTransform5timesERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.h' l='46' c='_ZN5ZXing20PerspectiveTransform12UnitSquareToERKNS_13QuadrilateralINS_6PointTIdEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.h' l='36' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.cpp' l='23' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<size>80</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.h' l='27'>/**
+* &lt;p&gt;This class implements a perspective transform in two dimensions. Given four source and four
+* destination points, it will compute the transformation implied between them. The code is based
+* directly upon section 3.4.2 of George Wolberg&apos;s &quot;Digital Image Warping&quot;; see pages 54-56.&lt;/p&gt;
+*/</doc>
+<mbr r='ZXing::PerspectiveTransform::a11' o='0' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a12' o='64' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a13' o='128' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a21' o='192' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a22' o='256' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a23' o='320' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a31' o='384' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a32' o='448' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::a33' o='512' t='ZXing::PerspectiveTransform::value_t'/>
+<mbr r='ZXing::PerspectiveTransform::_isValid' o='576' t='bool'/>
+<fun r='_ZN5ZXing20PerspectiveTransformC1Eddddddddd'/>
+<fun r='_ZNK5ZXing20PerspectiveTransform7inverseEv'/>
+<fun r='_ZNK5ZXing20PerspectiveTransform5timesERKS0_'/>
+<fun r='_ZN5ZXing20PerspectiveTransform12UnitSquareToERKNS_13QuadrilateralINS_6PointTIdEEEE'/>
+<fun r='_ZN5ZXing20PerspectiveTransformC1ERKNS_13QuadrilateralINS_6PointTIdEEEES6_'/>
+<fun r='_ZNK5ZXing20PerspectiveTransformclENS_6PointTIdEE'/>
+<fun r='_ZNK5ZXing20PerspectiveTransform7isValidEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.cpp' l='26' c='_ZNK5ZXing20PerspectiveTransform7inverseEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.cpp' l='43' c='_ZNK5ZXing20PerspectiveTransform5timesERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.cpp' l='43' c='_ZNK5ZXing20PerspectiveTransform5timesERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/PerspectiveTransform.cpp' l='58' c='_ZN5ZXing20PerspectiveTransform12UnitSquareToERKNS_13QuadrilateralINS_6PointTIdEEEE'/>
+<size>80</size>
+<fun r='_ZNK5ZXing20PerspectiveTransform7inverseEv'/>
+<fun r='_ZNK5ZXing20PerspectiveTransform5timesERKS0_'/>
+<fun r='_ZN5ZXing20PerspectiveTransform12UnitSquareToERKNS_13QuadrilateralINS_6PointTIdEEEE'/>
+<fun r='_ZN5ZXing20PerspectiveTransformC1ERKNS_13QuadrilateralINS_6PointTIdEEEES6_'/>
+<fun r='_ZNK5ZXing20PerspectiveTransformclENS_6PointTIdEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='474' c='_ZN5ZXing5AztecL10SampleGridERKNS_9BitMatrixERKNS_11ResultPointES6_S6_S6_bii'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='848' c='_ZN5ZXing10DataMatrixL10SampleGridERKNS_9BitMatrixENS_6PointTIdEES5_S5_S5_ii'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='215' c='_ZN5ZXing6QRCodeL15CreateTransformERKNS_11ResultPointES3_S3_RKNS0_16AlignmentPatternEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='292' c='_ZN5ZXing6QRCodeL24ProcessFinderPatternInfoERKNS_9BitMatrixERKNS0_17FinderPatternInfoE'/>
+<size>80</size>

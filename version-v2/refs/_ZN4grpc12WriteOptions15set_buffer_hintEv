@@ -1,0 +1,15 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='121' ll='124' type='grpc::WriteOptions &amp; grpc::WriteOptions::set_buffer_hint()'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='396' u='c' c='_ZN4grpc17ClientAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='573' u='c' c='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='882' u='c' c='_ZN4grpc17ServerAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='905' u='c' c='_ZN4grpc17ServerAsyncWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1054' u='c' c='_ZN4grpc23ServerAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1076' u='c' c='_ZN4grpc23ServerAsyncReaderWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='326' u='c' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='497' u='c' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='656' u='c' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='735' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<doc f='include/grpcpp/impl/codegen/call.h' l='117'>/// Sets flag indicating that the write may be buffered and need not go out on
+  /// the wire immediately.
+  ///
+  /// \sa GRPC_WRITE_BUFFER_HINT</doc>

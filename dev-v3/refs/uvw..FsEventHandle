@@ -1,0 +1,32 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='278' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='76' ll='139'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='76'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='19' c='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='19' c='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<size>240</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='63'>/**
+ * @brief The FsEventHandle handle.
+ *
+ * These handles allow the user to monitor a given path for changes, for
+ * example, if the file was renamed or there was a generic change in it. The
+ * best backend for the job on each platform is chosen by the handle.
+ *
+ * To create a `FsEventHandle` through a `Loop`, no arguments are required.
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/fs_event.html)
+ * for further details.
+ */</doc>
+<fun r='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<fun r='_ZN3uvw13FsEventHandle4initEv'/>
+<fun r='_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details14UVFsEventFlagsEEE'/>
+<fun r='_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE'/>
+<fun r='_ZN3uvw13FsEventHandle4stopEv'/>
+<fun r='_ZN3uvw13FsEventHandle4pathB5cxx11Ev'/>
+<fun r='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<fun r='_ZN3uvw13FsEventHandle4initEv'/>
+<fun r='_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details14UVFsEventFlagsEEE'/>
+<fun r='_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE'/>
+<fun r='_ZN3uvw13FsEventHandle4stopEv'/>
+<fun r='_ZN3uvw13FsEventHandle4pathB5cxx11Ev'/>

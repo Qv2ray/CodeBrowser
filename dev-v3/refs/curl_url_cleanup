@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/curl/urlapi.h' l='96' type='void curl_url_cleanup(CURLU * handle)'/>
+<doc f='include/x86_64-linux-gnu/curl/urlapi.h' l='91'>/*
+ * curl_url_cleanup() frees the CURLU handle and related resources used for
+ * the URL parsing. It will not free strings previously returned with the URL
+ * API.
+ */</doc>

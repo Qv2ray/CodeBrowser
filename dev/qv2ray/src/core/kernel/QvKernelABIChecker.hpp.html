@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QvKernelABIChecker.hpp source code [qv2ray/src/core/kernel/QvKernelABIChecker.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/core/kernel/QvKernelABIChecker.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>core</a>/<a href='./'>kernel</a>/<a href='QvKernelABIChecker.hpp.html'>QvKernelABIChecker.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../base/Qv2rayFeatures.hpp.html">"base/Qv2rayFeatures.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#<span data-ppcond="5">if</span> <a class="macro" href="../../base/Qv2rayFeatures.hpp.html#22" title="((1 / -1) == 1)" data-ref="_M/QV2RAY_FEATURE">QV2RAY_FEATURE</a>(kernel_check_abi)</u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;QDataStream&gt;</u></td></tr>
+<tr><th id="8">8</th><td><u>#include &lt;QFile&gt;</u></td></tr>
+<tr><th id="9">9</th><td><u>#include &lt;QString&gt;</u></td></tr>
+<tr><th id="10">10</th><td><u>#include &lt;QtGlobal&gt;</u></td></tr>
+<tr><th id="11">11</th><td><u>#include &lt;optional&gt;</u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><b>namespace</b> Qv2ray::core::kernel</td></tr>
+<tr><th id="14">14</th><td>{</td></tr>
+<tr><th id="15">15</th><td>    <b>namespace</b> abi</td></tr>
+<tr><th id="16">16</th><td>    {</td></tr>
+<tr><th id="17">17</th><td>        <b>enum</b> QvKernelABIType</td></tr>
+<tr><th id="18">18</th><td>        {</td></tr>
+<tr><th id="19">19</th><td>            ABI_WIN32,</td></tr>
+<tr><th id="20">20</th><td>            ABI_MACH_O,</td></tr>
+<tr><th id="21">21</th><td>            ABI_ELF_X86,</td></tr>
+<tr><th id="22">22</th><td>            ABI_ELF_X86_64,</td></tr>
+<tr><th id="23">23</th><td>            ABI_ELF_AARCH64,</td></tr>
+<tr><th id="24">24</th><td>            ABI_ELF_ARM,</td></tr>
+<tr><th id="25">25</th><td>            ABI_ELF_OTHER,</td></tr>
+<tr><th id="26">26</th><td>            ABI_TRUSTED,</td></tr>
+<tr><th id="27">27</th><td>        };</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td>        <b>enum</b> QvKernelABICompatibility</td></tr>
+<tr><th id="30">30</th><td>        {</td></tr>
+<tr><th id="31">31</th><td>            ABI_NOPE,</td></tr>
+<tr><th id="32">32</th><td>            ABI_MAYBE,</td></tr>
+<tr><th id="33">33</th><td>            ABI_PERFECT,</td></tr>
+<tr><th id="34">34</th><td>        };</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>        <b>inline</b> <b>constexpr</b> <em>auto</em> COMPILED_ABI_TYPE =</td></tr>
+<tr><th id="37">37</th><td><u>#if defined(Q_OS_LINUX) &amp;&amp; defined(Q_PROCESSOR_X86_64)</u></td></tr>
+<tr><th id="38">38</th><td>            QvKernelABIType::ABI_ELF_X86_64;</td></tr>
+<tr><th id="39">39</th><td><u>#elif defined(Q_OS_LINUX) &amp;&amp; defined(Q_PROCESSOR_X86_32)</u></td></tr>
+<tr><th id="40">40</th><td>            QvKernelABIType::ABI_ELF_X86;</td></tr>
+<tr><th id="41">41</th><td><u>#elif defined(Q_OS_MACOS)</u></td></tr>
+<tr><th id="42">42</th><td>            QvKernelABIType::ABI_MACH_O;</td></tr>
+<tr><th id="43">43</th><td><u>#elif defined(Q_OS_WINDOWS)</u></td></tr>
+<tr><th id="44">44</th><td>            QvKernelABIType::ABI_WIN32;</td></tr>
+<tr><th id="45">45</th><td><u>#elif defined(Q_OS_LINUX) &amp;&amp; defined(Q_PROCESSOR_ARM_64)</u></td></tr>
+<tr><th id="46">46</th><td>            QvKernelABIType::ABI_ELF_AARCH64;</td></tr>
+<tr><th id="47">47</th><td><u>#elif defined(Q_OS_LINUX) &amp;&amp; defined(Q_PROCESSOR_ARM_V7)</u></td></tr>
+<tr><th id="48">48</th><td>            QvKernelABIType::ABI_ELF_ARM;</td></tr>
+<tr><th id="49">49</th><td><u>#else</u></td></tr>
+<tr><th id="50">50</th><td>            QvKernelABIType::ABI_TRUSTED;</td></tr>
+<tr><th id="51">51</th><td><u>#define QV2RAY_TRUSTED_ABI</u></td></tr>
+<tr><th id="52">52</th><td><u>#endif</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>        std::pair&lt;std::optional&lt;QvKernelABIType&gt;, std::optional&lt;QString&gt;&gt; deduceKernelABI(<em>const</em> QString &amp;pathCoreExecutable);</td></tr>
+<tr><th id="55">55</th><td>        QvKernelABICompatibility checkCompatibility(QvKernelABIType hostType, QvKernelABIType targetType);</td></tr>
+<tr><th id="56">56</th><td>        QString abiToString(QvKernelABIType abi);</td></tr>
+<tr><th id="57">57</th><td>    } <i>// namespace abi</i></td></tr>
+<tr><th id="58">58</th><td>} <i>// namespace Qv2ray::core::kernel</i></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="5">endif</span></u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

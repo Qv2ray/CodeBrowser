@@ -1,0 +1,27 @@
+<use f='include/grpcpp/impl/codegen/client_context.h' l='376'/>
+<def f='include/grpcpp/impl/codegen/call.h' l='511' ll='537'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='292'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='294'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='297'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='457'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='463'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='628'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='630'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='637'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='188'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='188' c='_ZN4grpc12ClientReader22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='206' c='_ZN4grpc12ClientReader4ReadEPT_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='305' c='_ZN4grpc12ClientWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='397'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='456' c='_ZN4grpc18ClientReaderWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='473' c='_ZN4grpc18ClientReaderWriter4ReadEPT0_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='526' c='_ZN4grpc18ClientReaderWriter6FinishEv'/>
+<size>8</size>
+<fun r='_ZN4grpc8internal25CallOpRecvInitialMetadataC1Ev'/>
+<fun r='_ZN4grpc8internal25CallOpRecvInitialMetadata19RecvInitialMetadataEPNS_13ClientContextE'/>
+<fun r='_ZN4grpc8internal25CallOpRecvInitialMetadata5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal25CallOpRecvInitialMetadata8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpRecvInitialMetadata::metadata_map_' o='0' t='grpc::internal::MetadataMap *'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='57' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='64' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<size>8</size>

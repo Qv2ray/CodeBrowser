@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1051' type='std::pair&lt;bool, Statfs&gt; uvw::FsReq::statfsSync(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='398' ll='402' type='std::pair&lt;bool, Statfs&gt; uvw::FsReq::statfsSync(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1039'>/**
+     * @brief Sync [statfs](http://linux.die.net/man/2/statfs).
+     *
+     * Any fields in the resulting object that are not supported by the
+     * underlying operating system are set to zero.
+     *
+     * @param path Path, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * An initialized instance of Statfs.
+     */</doc>

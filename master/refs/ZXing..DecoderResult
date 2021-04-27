@@ -1,0 +1,149 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='51' c='_ZN5ZXing6ResultC1EONS_13DecoderResultEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='39' ll='103'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='54' c='_ZN5ZXing13DecoderResultC1ERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='55' c='_ZN5ZXing13DecoderResultaSERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='55' c='_ZN5ZXing13DecoderResultaSERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='64' c='_ZN5ZXing13DecoderResultC1EOS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='65' c='_ZN5ZXing13DecoderResultaSEOS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='65' c='_ZN5ZXing13DecoderResultaSEOS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult10setNumBitsERKi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult10setNumBitsEOi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult10setEcLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult10setEcLevelEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult18setErrorsCorrectedERKi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult18setErrorsCorrectedEOi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult11setErasuresERKi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult11setErasuresEOi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult25setStructuredAppendParityERKi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult25setStructuredAppendParityEOi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult33setStructuredAppendSequenceNumberERKi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult33setStructuredAppendSequenceNumberEOi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult28setStructuredAppendCodeCountERKi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult28setStructuredAppendCodeCountEOi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' c='_ZNO5ZXing13DecoderResult8setExtraERKSt10shared_ptrINS_10CustomDataEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' c='_ZNO5ZXing13DecoderResult8setExtraEOSt10shared_ptrINS_10CustomDataEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.cpp' l='36' c='_ZN5ZXing6ResultC1EONS_13DecoderResultEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatE'/>
+<size>168</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='32'>/**
+* &lt;p&gt;Encapsulates the result of decoding a matrix of bits. This typically
+* applies to 2D barcode formats. For now it contains the raw bytes obtained,
+* as well as a string interpretation of those bytes, if applicable.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::DecoderResult::_status' o='0' t='ZXing::DecodeStatus'/>
+<mbr r='ZXing::DecoderResult::_rawBytes' o='64' t='ZXing::ByteArray'/>
+<mbr r='ZXing::DecoderResult::_numBits' o='256' t='int'/>
+<mbr r='ZXing::DecoderResult::_text' o='320' t='std::wstring'/>
+<mbr r='ZXing::DecoderResult::_byteSegments' o='576' t='std::list&lt;ByteArray&gt;'/>
+<mbr r='ZXing::DecoderResult::_ecLevel' o='768' t='std::wstring'/>
+<mbr r='ZXing::DecoderResult::_errorsCorrected' o='1024' t='int'/>
+<mbr r='ZXing::DecoderResult::_erasures' o='1056' t='int'/>
+<mbr r='ZXing::DecoderResult::_structuredAppendSequenceNumber' o='1088' t='int'/>
+<mbr r='ZXing::DecoderResult::_structuredAppendCodeCount' o='1120' t='int'/>
+<mbr r='ZXing::DecoderResult::_structuredAppendParity' o='1152' t='int'/>
+<mbr r='ZXing::DecoderResult::_extra' o='1216' t='std::shared_ptr&lt;CustomData&gt;'/>
+<fun r='_ZN5ZXing13DecoderResultC1ERKS0_'/>
+<fun r='_ZN5ZXing13DecoderResultaSERKS0_'/>
+<fun r='_ZN5ZXing13DecoderResultC1ENS_12DecodeStatusE'/>
+<fun r='_ZN5ZXing13DecoderResultC1EONS_9ByteArrayEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<fun r='_ZN5ZXing13DecoderResultC1Ev'/>
+<fun r='_ZN5ZXing13DecoderResultC1EOS0_'/>
+<fun r='_ZN5ZXing13DecoderResultaSEOS0_'/>
+<fun r='_ZNK5ZXing13DecoderResult7isValidEv'/>
+<fun r='_ZNK5ZXing13DecoderResult9errorCodeEv'/>
+<fun r='_ZNKR5ZXing13DecoderResult8rawBytesEv'/>
+<fun r='_ZNO5ZXing13DecoderResult8rawBytesEv'/>
+<fun r='_ZNKR5ZXing13DecoderResult4textB5cxx11Ev'/>
+<fun r='_ZNO5ZXing13DecoderResult4textB5cxx11Ev'/>
+<fun r='_ZNKR5ZXing13DecoderResult7numBitsEv'/>
+<fun r='_ZNO5ZXing13DecoderResult7numBitsEv'/>
+<fun r='_ZNR5ZXing13DecoderResult10setNumBitsERKi'/>
+<fun r='_ZNR5ZXing13DecoderResult10setNumBitsEOi'/>
+<fun r='_ZNO5ZXing13DecoderResult10setNumBitsERKi'/>
+<fun r='_ZNO5ZXing13DecoderResult10setNumBitsEOi'/>
+<fun r='_ZNKR5ZXing13DecoderResult12byteSegmentsB5cxx11Ev'/>
+<fun r='_ZNO5ZXing13DecoderResult12byteSegmentsB5cxx11Ev'/>
+<fun r='_ZNR5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<fun r='_ZNR5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<fun r='_ZNO5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<fun r='_ZNO5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<fun r='_ZNKR5ZXing13DecoderResult7ecLevelB5cxx11Ev'/>
+<fun r='_ZNO5ZXing13DecoderResult7ecLevelB5cxx11Ev'/>
+<fun r='_ZNR5ZXing13DecoderResult10setEcLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<fun r='_ZNR5ZXing13DecoderResult10setEcLevelEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<fun r='_ZNO5ZXing13DecoderResult10setEcLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<fun r='_ZNO5ZXing13DecoderResult10setEcLevelEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<fun r='_ZNKR5ZXing13DecoderResult15errorsCorrectedEv'/>
+<fun r='_ZNO5ZXing13DecoderResult15errorsCorrectedEv'/>
+<fun r='_ZNR5ZXing13DecoderResult18setErrorsCorrectedERKi'/>
+<fun r='_ZNR5ZXing13DecoderResult18setErrorsCorrectedEOi'/>
+<fun r='_ZNO5ZXing13DecoderResult18setErrorsCorrectedERKi'/>
+<fun r='_ZNO5ZXing13DecoderResult18setErrorsCorrectedEOi'/>
+<fun r='_ZNKR5ZXing13DecoderResult8erasuresEv'/>
+<fun r='_ZNO5ZXing13DecoderResult8erasuresEv'/>
+<fun r='_ZNR5ZXing13DecoderResult11setErasuresERKi'/>
+<fun r='_ZNR5ZXing13DecoderResult11setErasuresEOi'/>
+<fun r='_ZNO5ZXing13DecoderResult11setErasuresERKi'/>
+<fun r='_ZNO5ZXing13DecoderResult11setErasuresEOi'/>
+<fun r='_ZNKR5ZXing13DecoderResult22structuredAppendParityEv'/>
+<fun r='_ZNO5ZXing13DecoderResult22structuredAppendParityEv'/>
+<fun r='_ZNR5ZXing13DecoderResult25setStructuredAppendParityERKi'/>
+<fun r='_ZNR5ZXing13DecoderResult25setStructuredAppendParityEOi'/>
+<fun r='_ZNO5ZXing13DecoderResult25setStructuredAppendParityERKi'/>
+<fun r='_ZNO5ZXing13DecoderResult25setStructuredAppendParityEOi'/>
+<fun r='_ZNKR5ZXing13DecoderResult30structuredAppendSequenceNumberEv'/>
+<fun r='_ZNO5ZXing13DecoderResult30structuredAppendSequenceNumberEv'/>
+<fun r='_ZNR5ZXing13DecoderResult33setStructuredAppendSequenceNumberERKi'/>
+<fun r='_ZNR5ZXing13DecoderResult33setStructuredAppendSequenceNumberEOi'/>
+<fun r='_ZNO5ZXing13DecoderResult33setStructuredAppendSequenceNumberERKi'/>
+<fun r='_ZNO5ZXing13DecoderResult33setStructuredAppendSequenceNumberEOi'/>
+<fun r='_ZNKR5ZXing13DecoderResult25structuredAppendCodeCountEv'/>
+<fun r='_ZNO5ZXing13DecoderResult25structuredAppendCodeCountEv'/>
+<fun r='_ZNR5ZXing13DecoderResult28setStructuredAppendCodeCountERKi'/>
+<fun r='_ZNR5ZXing13DecoderResult28setStructuredAppendCodeCountEOi'/>
+<fun r='_ZNO5ZXing13DecoderResult28setStructuredAppendCodeCountERKi'/>
+<fun r='_ZNO5ZXing13DecoderResult28setStructuredAppendCodeCountEOi'/>
+<fun r='_ZNKR5ZXing13DecoderResult5extraEv'/>
+<fun r='_ZNO5ZXing13DecoderResult5extraEv'/>
+<fun r='_ZNR5ZXing13DecoderResult8setExtraERKSt10shared_ptrINS_10CustomDataEE'/>
+<fun r='_ZNR5ZXing13DecoderResult8setExtraEOSt10shared_ptrINS_10CustomDataEE'/>
+<fun r='_ZNO5ZXing13DecoderResult8setExtraERKSt10shared_ptrINS_10CustomDataEE'/>
+<fun r='_ZNO5ZXing13DecoderResult8setExtraEOSt10shared_ptrINS_10CustomDataEE'/>
+<fun r='_ZNK5ZXing13DecoderResult19hasStructuredAppendEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.h' l='36' c='_ZN5ZXing5Aztec7Decoder6DecodeERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='363' c='_ZN5ZXing5Aztec7Decoder6DecodeERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='368' c='_ZN5ZXing5Aztec7Decoder6DecodeERKNS0_14DetectorResultE'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='42' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.h' l='55' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='498' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL6DecodeEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='543' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL6DecodeEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='585' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.h' l='35' c='_ZN5ZXing8MaxiCode7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='249' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6DecodeEONS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='275' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6DecodeEONS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='282' c='_ZN5ZXing8MaxiCode7Decoder6DecodeERKNS_9BitMatrixE'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.h' l='36' c='_ZN5ZXing6Pdf41722DecodedBitStreamParser6DecodeERKSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='671' c='_ZN5ZXing6Pdf41722DecodedBitStreamParser6DecodeERKSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='748' c='_ZN5ZXing6Pdf41722DecodedBitStreamParser6DecodeERKSt6vectorIiSaIiEEi'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.h' l='34' c='_ZN5ZXing6Pdf41715ScanningDecoder6DecodeERKNS_9BitMatrixERKNS_8NullableINS_11ResultPointEEES9_S9_S9_ii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='76' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='584' c='_ZN5ZXing6Pdf417L15DecodeCodewordsERSt6vectorIiSaIiEEiRKS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='621' c='_ZN5ZXing6Pdf417L38CreateDecoderResultFromAmbiguousValuesEiRSt6vectorIiSaIiEERKS3_S6_RKS1_IS3_SaIS3_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='655' c='_ZN5ZXing6Pdf417L19CreateDecoderResultERNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='689' c='_ZN5ZXing6Pdf41715ScanningDecoder6DecodeERKNS_9BitMatrixERKNS_8NullableINS_11ResultPointEEES9_S9_S9_ii'/>
+<size>168</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.h' l='59' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='309' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='413' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='421' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='468' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>168</size>

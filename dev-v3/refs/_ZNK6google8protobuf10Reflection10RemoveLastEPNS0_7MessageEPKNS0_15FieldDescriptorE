@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/message.h' l='478' type='void google::protobuf::Reflection::RemoveLast(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field) const'/>
+<doc f='include/google/protobuf/message.h' l='471'>// Removes the last element of a repeated field.
+  // We don&apos;t provide a way to remove any element other than the last
+  // because it invites inefficient use, such as O(n^2) filtering loops
+  // that should have been O(n).  If you want to remove an element other
+  // than the last, the best way to do it is to re-arrange the elements
+  // (using Swap()) so that the one you want removed is at the end, then
+  // call RemoveLast().</doc>

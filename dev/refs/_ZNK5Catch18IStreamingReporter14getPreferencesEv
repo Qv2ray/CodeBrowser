@@ -1,0 +1,10 @@
+<dec f='qv2ray/test/catch.hpp' l='5649' type='Catch::ReporterPreferences Catch::IStreamingReporter::getPreferences() const'/>
+<ovr f='qv2ray/test/catch.hpp' l='5738' c='_ZNK5Catch21StreamingReporterBase14getPreferencesEv'/>
+<ovr f='qv2ray/test/catch.hpp' l='5856' c='_ZNK5Catch22CumulativeReporterBase14getPreferencesEv'/>
+<use f='qv2ray/test/catch.hpp' l='12712' u='c' c='_ZN5Catch10RunContextC1ERKSt10shared_ptrIKNS_7IConfigEEOSt10unique_ptrINS_18IStreamingReporterESt14default_deleteIS8_EE'/>
+<use f='qv2ray/test/catch.hpp' l='12976' u='c' c='_ZN5Catch10RunContext14runCurrentTestERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'/>
+<use f='qv2ray/test/catch.hpp' l='17072' u='c' c='_ZN5Catch17ListeningReporter11addReporterEOSt10unique_ptrINS_18IStreamingReporterESt14default_deleteIS2_EE'/>
+<ovr f='qv2ray/test/catch.hpp' l='17075' c='_ZNK5Catch17ListeningReporter14getPreferencesEv'/>
+<doc f='qv2ray/test/catch.hpp' l='5645'>// Implementing class must also provide the following static methods:
+        // static std::string getDescription();
+        // static std::set&lt;Verbosity&gt; getSupportedVerbosities()</doc>

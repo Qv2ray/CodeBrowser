@@ -1,0 +1,8 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='675' type='void (*)(struct grpc_experimental_completion_queue_functor *, int)'/>
+<offset>0</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='671'>/** The run member specifies a function that will be called when this
+      tag is extracted from the completion queue. Its arguments will be a
+      pointer to this functor and a boolean that indicates whether the
+      operation succeeded (non-zero) or failed (zero) */</doc>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='71' u='w' c='_ZN4grpc8internal21CallbackWithStatusTagC1EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='128' u='w' c='_ZN4grpc8internal22CallbackWithSuccessTagC1EP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagE'/>

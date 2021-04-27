@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='920' type='const google::protobuf::EnumOptions &amp; google::protobuf::EnumDescriptor::options() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1905' macro='1' type='const google::protobuf::EnumOptions &amp; google::protobuf::EnumDescriptor::options() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='916'>// Get options for this enum type.  These are specified in the .proto file by
+  // placing lines like &quot;option foo = 1234;&quot; in the enum definition.  Allowed
+  // options are defined by EnumOptions in google/protobuf/descriptor.proto,
+  // and any available extensions of that message.</doc>

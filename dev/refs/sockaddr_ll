@@ -1,0 +1,11 @@
+<def f='include/netpacket/packet.h' l='22' ll='31'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='887' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='952' c='uv_interface_addresses'/>
+<size>20</size>
+<mbr r='sockaddr_ll::sll_family' o='0' t='unsigned short'/>
+<mbr r='sockaddr_ll::sll_protocol' o='16' t='unsigned short'/>
+<mbr r='sockaddr_ll::sll_ifindex' o='32' t='int'/>
+<mbr r='sockaddr_ll::sll_hatype' o='64' t='unsigned short'/>
+<mbr r='sockaddr_ll::sll_pkttype' o='80' t='unsigned char'/>
+<mbr r='sockaddr_ll::sll_halen' o='88' t='unsigned char'/>
+<mbr r='sockaddr_ll::sll_addr' o='96' t='unsigned char [8]'/>

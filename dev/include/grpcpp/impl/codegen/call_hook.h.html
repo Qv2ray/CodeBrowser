@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>call_hook.h source code [include/grpcpp/impl/codegen/call_hook.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="grpc::internal::CallHook "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpcpp/impl/codegen/call_hook.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>grpcpp</a>/<a href='..'>impl</a>/<a href='./'>codegen</a>/<a href='call_hook.h.html'>call_hook.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2015 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPCPP_IMPL_CODEGEN_CALL_HOOK_H">GRPCPP_IMPL_CODEGEN_CALL_HOOK_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPCPP_IMPL_CODEGEN_CALL_HOOK_H" data-ref="_M/GRPCPP_IMPL_CODEGEN_CALL_HOOK_H">GRPCPP_IMPL_CODEGEN_CALL_HOOK_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>namespace</b> <span class="namespace">grpc</span> {</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="25">25</th><td><b>class</b> <a class="type" href="call.h.html#grpc::internal::CallOpSetInterface" title='grpc::internal::CallOpSetInterface' data-ref="grpc::internal::CallOpSetInterface" data-ref-filename="grpc..internal..CallOpSetInterface" id="grpc::internal::CallOpSetInterface">CallOpSetInterface</a>;</td></tr>
+<tr><th id="26">26</th><td><b>class</b> <a class="type" href="call.h.html#grpc::internal::Call" title='grpc::internal::Call' data-ref="grpc::internal::Call" data-ref-filename="grpc..internal..Call" id="grpc::internal::Call">Call</a>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/// This is an interface that Channel and Server implement to allow them to hook</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc">/// performing ops.</i></td></tr>
+<tr><th id="30">30</th><td><b>class</b> <dfn class="type def" id="grpc::internal::CallHook" title='grpc::internal::CallHook' data-ref="grpc::internal::CallHook" data-ref-filename="grpc..internal..CallHook">CallHook</dfn> {</td></tr>
+<tr><th id="31">31</th><td> <b>public</b>:</td></tr>
+<tr><th id="32">32</th><td>  <b>virtual</b> <dfn class="virtual decl def fn" id="_ZN4grpc8internal8CallHookD1Ev" title='grpc::internal::CallHook::~CallHook' data-ref="_ZN4grpc8internal8CallHookD1Ev" data-ref-filename="_ZN4grpc8internal8CallHookD1Ev">~CallHook</dfn>() {}</td></tr>
+<tr><th id="33">33</th><td>  <b>virtual</b> <em>void</em> <dfn class="virtual decl fn" id="_ZN4grpc8internal8CallHook16PerformOpsOnCallEPNS0_18CallOpSetInterfaceEPNS0_4CallE" title='grpc::internal::CallHook::PerformOpsOnCall' data-ref="_ZN4grpc8internal8CallHook16PerformOpsOnCallEPNS0_18CallOpSetInterfaceEPNS0_4CallE" data-ref-filename="_ZN4grpc8internal8CallHook16PerformOpsOnCallEPNS0_18CallOpSetInterfaceEPNS0_4CallE">PerformOpsOnCall</dfn>(<a class="type" href="call.h.html#grpc::internal::CallOpSetInterface" title='grpc::internal::CallOpSetInterface' data-ref="grpc::internal::CallOpSetInterface" data-ref-filename="grpc..internal..CallOpSetInterface">CallOpSetInterface</a>* <dfn class="local col0 decl" id="5700ops" title='ops' data-type='grpc::internal::CallOpSetInterface *' data-ref="5700ops" data-ref-filename="5700ops">ops</dfn>, <a class="type" href="call.h.html#grpc::internal::Call" title='grpc::internal::Call' data-ref="grpc::internal::Call" data-ref-filename="grpc..internal..Call">Call</a>* <dfn class="local col1 decl" id="5701call" title='call' data-type='grpc::internal::Call *' data-ref="5701call" data-ref-filename="5701call">call</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="34">34</th><td>};</td></tr>
+<tr><th id="35">35</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>}  <i>// namespace grpc</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="19">endif</span>  // GRPCPP_IMPL_CODEGEN_CALL_HOOK_H</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

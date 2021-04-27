@@ -1,0 +1,21 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='48' ll='54'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='53' c='_ZN6Qv2ray4base7objects13AccountObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='87'/>
+<size>16</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='46'>//
+    // Used in config generation</doc>
+<mbr r='Qv2ray::base::objects::AccountObject::user' o='0' t='QString'/>
+<mbr r='Qv2ray::base::objects::AccountObject::pass' o='64' t='QString'/>
+<fun r='_ZN6Qv2ray4base7objects13AccountObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects13AccountObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects13AccountObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects13AccountObject6toJsonEv'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='24' c='_ZN6Qv2ray4core10connection10generation8inbounds14GenerateHTTPINERK5QListINS_4base7objects13AccountObjectEEibi'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='25' c='_ZN6Qv2ray4core10connection10generation8inbounds15GenerateSocksINERK7QStringRK5QListINS_4base7objects13AccountObjectEEbS6_i'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='12' c='_ZN6Qv2ray4core10connection10generation8inbounds14GenerateHTTPINERK5QListINS_4base7objects13AccountObjectEEibi'/>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='31' c='_ZN6Qv2ray4core10connection10generation8inbounds15GenerateSocksINERK7QStringRK5QListINS_4base7objects13AccountObjectEEbS6_i'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='710' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='719' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<size>16</size>

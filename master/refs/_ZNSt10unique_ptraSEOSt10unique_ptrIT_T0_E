@@ -1,0 +1,15 @@
+<def f='include/c++/10/bits/unique_ptr.h' l='371' type='unique_ptr&lt;_Tp, _Dp&gt; &amp; std::unique_ptr::operator=(unique_ptr&lt;_Tp, _Dp&gt; &amp;&amp; )'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='110' u='c' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<doc f='include/c++/10/bits/unique_ptr.h' l='367'>/** @brief Move assignment operator.
+       *
+       * Invokes the deleter if this object owns a pointer.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='118' u='c' c='_ZN7QtNodes9FlowScene10createNodeEOSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='133' u='c' c='_ZN7QtNodes9FlowScene11restoreNodeERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='77' u='c' c='_ZN7QtNodes4Node17setGraphicsObjectEOSt10unique_ptrINS_18NodeGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='55' u='c' c='_ZN6Qv2ray17Qv2rayApplication11SetupQv2rayEv'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='97' u='c' c='_ZN6Qv2ray4core6kernel9APIWorker7processEv'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.cpp' l='10' u='c' c='_ZN10JsonEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_PluginManager.cpp' l='59' u='c' c='_ZN18PluginManageWindow38on_pluginListWidget_currentItemChangedEP15QListWidgetItemS1_'/>
+<use f='qv2ray/test/catch.hpp' l='12531' u='c' c='_ZN5Catch10Generators16GeneratorTracker12setGeneratorEOSt10unique_ptrINS0_20GeneratorUntypedBaseESt14default_deleteIS3_EE'/>
+<use f='qv2ray/test/catch.hpp' l='16840' u='c' c='_ZN5Catch17ListeningReporter11addReporterEOSt10unique_ptrINS_18IStreamingReporterESt14default_deleteIS2_EE'/>

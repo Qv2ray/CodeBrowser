@@ -1,0 +1,30 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/idle.h' l='37' ll='61'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/idle.h' l='37'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/idle.cpp' l='12' c='_ZN3uvw10IdleHandle13startCallbackEP9uv_idle_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/idle.cpp' l='12' c='_ZN3uvw10IdleHandle13startCallbackEP9uv_idle_s'/>
+<size>232</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/idle.h' l='21'>/**
+ * @brief The IdleHandle handle.
+ *
+ * Idle handles will emit a IdleEvent event once per loop iteration, right
+ * before the PrepareHandle handles.
+ *
+ * The notable difference with prepare handles is that when there are active
+ * idle handles, the loop will perform a zero timeout poll instead of blocking
+ * for I/O.
+ *
+ * @note
+ * Despite the name, idle handles will emit events on every loop iteration, not
+ * when the loop is actually _idle_.
+ *
+ * To create an `IdleHandle` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw10IdleHandle13startCallbackEP9uv_idle_s'/>
+<fun r='_ZN3uvw10IdleHandle4initEv'/>
+<fun r='_ZN3uvw10IdleHandle5startEv'/>
+<fun r='_ZN3uvw10IdleHandle4stopEv'/>
+<fun r='_ZN3uvw10IdleHandle13startCallbackEP9uv_idle_s'/>
+<fun r='_ZN3uvw10IdleHandle4initEv'/>
+<fun r='_ZN3uvw10IdleHandle5startEv'/>
+<fun r='_ZN3uvw10IdleHandle4stopEv'/>

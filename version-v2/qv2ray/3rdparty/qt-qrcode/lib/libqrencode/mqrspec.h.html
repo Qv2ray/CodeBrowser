@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mqrspec.h source code [qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>qt-qrcode</a>/<a href='..'>lib</a>/<a href='./'>libqrencode</a>/<a href='mqrspec.h.html'>mqrspec.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * qrencode - QR Code encoder</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Micro QR Code specification in convenient format. </i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2006-2011 Kentaro Fukuchi &lt;kentaro@fukuchi.org&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__MQRSPEC_H__">__MQRSPEC_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__MQRSPEC_H__" data-ref="_M/__MQRSPEC_H__">__MQRSPEC_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="qrencode.h.html">"qrencode.h"</a></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i>/******************************************************************************</i></td></tr>
+<tr><th id="28">28</th><td><i> * Version and capacity</i></td></tr>
+<tr><th id="29">29</th><td><i> *****************************************************************************/</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * Maximum width of a symbol</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/MQRSPEC_WIDTH_MAX" data-ref="_M/MQRSPEC_WIDTH_MAX">MQRSPEC_WIDTH_MAX</dfn> 17</u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * Return maximum data code length (bits) for the version.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">level</span></i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">@return</span> maximum size (bits)</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="42">42</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_getDataLengthBit" title='MQRspec_getDataLengthBit' data-ref="MQRspec_getDataLengthBit" data-ref-filename="MQRspec_getDataLengthBit">MQRspec_getDataLengthBit</dfn>(<em>int</em> <dfn class="local col1 decl" id="1version" title='version' data-type='int' data-ref="1version" data-ref-filename="1version">version</dfn>, <a class="typedef" href="qrencode.h.html#QRecLevel" title='QRecLevel' data-type='enum QRecLevel' data-ref="QRecLevel" data-ref-filename="QRecLevel">QRecLevel</a> <dfn class="local col2 decl" id="2level" title='level' data-type='QRecLevel' data-ref="2level" data-ref-filename="2level">level</dfn>);</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * Return maximum data code length (bytes) for the version.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">level</span></i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * <span class="command">@return</span> maximum size (bytes)</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="50">50</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_getDataLength" title='MQRspec_getDataLength' data-ref="MQRspec_getDataLength" data-ref-filename="MQRspec_getDataLength">MQRspec_getDataLength</dfn>(<em>int</em> <dfn class="local col3 decl" id="3version" title='version' data-type='int' data-ref="3version" data-ref-filename="3version">version</dfn>, <a class="typedef" href="qrencode.h.html#QRecLevel" title='QRecLevel' data-type='enum QRecLevel' data-ref="QRecLevel" data-ref-filename="QRecLevel">QRecLevel</a> <dfn class="local col4 decl" id="4level" title='level' data-type='QRecLevel' data-ref="4level" data-ref-filename="4level">level</dfn>);</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * Return maximum error correction code length (bytes) for the version.</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">level</span></i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * <span class="command">@return</span> ECC size (bytes)</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="58">58</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_getECCLength" title='MQRspec_getECCLength' data-ref="MQRspec_getECCLength" data-ref-filename="MQRspec_getECCLength">MQRspec_getECCLength</dfn>(<em>int</em> <dfn class="local col5 decl" id="5version" title='version' data-type='int' data-ref="5version" data-ref-filename="5version">version</dfn>, <a class="typedef" href="qrencode.h.html#QRecLevel" title='QRecLevel' data-type='enum QRecLevel' data-ref="QRecLevel" data-ref-filename="QRecLevel">QRecLevel</a> <dfn class="local col6 decl" id="6level" title='level' data-type='QRecLevel' data-ref="6level" data-ref-filename="6level">level</dfn>);</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * Return a version number that satisfies the input code length.</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">size</span> input code length (byte)</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">level</span></i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * <span class="command">@return</span> version number</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="66">66</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_getMinimumVersion" title='MQRspec_getMinimumVersion' data-ref="MQRspec_getMinimumVersion" data-ref-filename="MQRspec_getMinimumVersion">MQRspec_getMinimumVersion</dfn>(<em>int</em> <dfn class="local col7 decl" id="7size" title='size' data-type='int' data-ref="7size" data-ref-filename="7size">size</dfn>, <a class="typedef" href="qrencode.h.html#QRecLevel" title='QRecLevel' data-type='enum QRecLevel' data-ref="QRecLevel" data-ref-filename="QRecLevel">QRecLevel</a> <dfn class="local col8 decl" id="8level" title='level' data-type='QRecLevel' data-ref="8level" data-ref-filename="8level">level</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> * Return the width of the symbol for the version.</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> * <span class="command">@return</span> width</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="73">73</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_getWidth" title='MQRspec_getWidth' data-ref="MQRspec_getWidth" data-ref-filename="MQRspec_getWidth">MQRspec_getWidth</dfn>(<em>int</em> <dfn class="local col9 decl" id="9version" title='version' data-type='int' data-ref="9version" data-ref-filename="9version">version</dfn>);</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * Return the numer of remainder bits.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * <span class="command">@return</span> number of remainder bits</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="80">80</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_getRemainder" title='MQRspec_getRemainder' data-ref="MQRspec_getRemainder" data-ref-filename="MQRspec_getRemainder">MQRspec_getRemainder</dfn>(<em>int</em> <dfn class="local col0 decl" id="10version" title='version' data-type='int' data-ref="10version" data-ref-filename="10version">version</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i>/******************************************************************************</i></td></tr>
+<tr><th id="83">83</th><td><i> * Length indicator</i></td></tr>
+<tr><th id="84">84</th><td><i> *****************************************************************************/</i></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * Return the size of lenght indicator for the mode and version.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">mode</span></i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * <span class="command">@return</span> the size of the appropriate length indicator (bits).</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="92">92</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_lengthIndicator" title='MQRspec_lengthIndicator' data-ref="MQRspec_lengthIndicator" data-ref-filename="MQRspec_lengthIndicator">MQRspec_lengthIndicator</dfn>(<a class="typedef" href="qrencode.h.html#QRencodeMode" title='QRencodeMode' data-type='enum QRencodeMode' data-ref="QRencodeMode" data-ref-filename="QRencodeMode">QRencodeMode</a> <dfn class="local col1 decl" id="11mode" title='mode' data-type='QRencodeMode' data-ref="11mode" data-ref-filename="11mode">mode</dfn>, <em>int</em> <dfn class="local col2 decl" id="12version" title='version' data-type='int' data-ref="12version" data-ref-filename="12version">version</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * Return the maximum length for the mode and version.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">mode</span></i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * <span class="command">@return</span> the maximum length (bytes)</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="100">100</th><td><b>extern</b> <em>int</em> <dfn class="decl fn" id="MQRspec_maximumWords" title='MQRspec_maximumWords' data-ref="MQRspec_maximumWords" data-ref-filename="MQRspec_maximumWords">MQRspec_maximumWords</dfn>(<a class="typedef" href="qrencode.h.html#QRencodeMode" title='QRencodeMode' data-type='enum QRencodeMode' data-ref="QRencodeMode" data-ref-filename="QRencodeMode">QRencodeMode</a> <dfn class="local col3 decl" id="13mode" title='mode' data-type='QRencodeMode' data-ref="13mode" data-ref-filename="13mode">mode</dfn>, <em>int</em> <dfn class="local col4 decl" id="14version" title='version' data-type='int' data-ref="14version" data-ref-filename="14version">version</dfn>);</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><i>/******************************************************************************</i></td></tr>
+<tr><th id="103">103</th><td><i> * Version information pattern</i></td></tr>
+<tr><th id="104">104</th><td><i> *****************************************************************************/</i></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * Return BCH encoded version information pattern that is used for the symbol</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> * of version 7 or greater. Use lower 18 bits.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * <span class="command">@return</span> BCH encoded version information pattern</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="112">112</th><td><b>extern</b> <em>unsigned</em> <em>int</em> <dfn class="decl fn" id="MQRspec_getVersionPattern" title='MQRspec_getVersionPattern' data-ref="MQRspec_getVersionPattern" data-ref-filename="MQRspec_getVersionPattern">MQRspec_getVersionPattern</dfn>(<em>int</em> <dfn class="local col5 decl" id="15version" title='version' data-type='int' data-ref="15version" data-ref-filename="15version">version</dfn>);</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i>/******************************************************************************</i></td></tr>
+<tr><th id="115">115</th><td><i> * Format information</i></td></tr>
+<tr><th id="116">116</th><td><i> *****************************************************************************/</i></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * Return BCH encoded format information pattern.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">mask</span></i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">level</span></i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * <span class="command">@return</span> BCH encoded format information pattern</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="125">125</th><td><b>extern</b> <em>unsigned</em> <em>int</em> <dfn class="decl fn" id="MQRspec_getFormatInfo" title='MQRspec_getFormatInfo' data-ref="MQRspec_getFormatInfo" data-ref-filename="MQRspec_getFormatInfo">MQRspec_getFormatInfo</dfn>(<em>int</em> <dfn class="local col6 decl" id="16mask" title='mask' data-type='int' data-ref="16mask" data-ref-filename="16mask">mask</dfn>, <em>int</em> <dfn class="local col7 decl" id="17version" title='version' data-type='int' data-ref="17version" data-ref-filename="17version">version</dfn>, <a class="typedef" href="qrencode.h.html#QRecLevel" title='QRecLevel' data-type='enum QRecLevel' data-ref="QRecLevel" data-ref-filename="QRecLevel">QRecLevel</a> <dfn class="local col8 decl" id="18level" title='level' data-type='QRecLevel' data-ref="18level" data-ref-filename="18level">level</dfn>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><i>/******************************************************************************</i></td></tr>
+<tr><th id="128">128</th><td><i> * Frame</i></td></tr>
+<tr><th id="129">129</th><td><i> *****************************************************************************/</i></td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * Return a copy of initialized frame.</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * When the same version is requested twice or more, a copy of cached frame</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * is returned.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">version</span></i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * <span class="command">@return</span> Array of unsigned char. You can free it by free().</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="138">138</th><td><b>extern</b> <em>unsigned</em> <em>char</em> *<dfn class="decl fn" id="MQRspec_newFrame" title='MQRspec_newFrame' data-ref="MQRspec_newFrame" data-ref-filename="MQRspec_newFrame">MQRspec_newFrame</dfn>(<em>int</em> <dfn class="local col9 decl" id="19version" title='version' data-type='int' data-ref="19version" data-ref-filename="19version">version</dfn>);</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i>/******************************************************************************</i></td></tr>
+<tr><th id="141">141</th><td><i> * Mode indicator</i></td></tr>
+<tr><th id="142">142</th><td><i> *****************************************************************************/</i></td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> * Mode indicator. See Table 2 in Appendix 1 of JIS X0510:2004, pp.107.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="147">147</th><td><u>#define <dfn class="macro" id="_M/MQRSPEC_MODEID_NUM" data-ref="_M/MQRSPEC_MODEID_NUM">MQRSPEC_MODEID_NUM</dfn>       0</u></td></tr>
+<tr><th id="148">148</th><td><u>#define <dfn class="macro" id="_M/MQRSPEC_MODEID_AN" data-ref="_M/MQRSPEC_MODEID_AN">MQRSPEC_MODEID_AN</dfn>        1</u></td></tr>
+<tr><th id="149">149</th><td><u>#define <dfn class="macro" id="_M/MQRSPEC_MODEID_8" data-ref="_M/MQRSPEC_MODEID_8">MQRSPEC_MODEID_8</dfn>         2</u></td></tr>
+<tr><th id="150">150</th><td><u>#define <dfn class="macro" id="_M/MQRSPEC_MODEID_KANJI" data-ref="_M/MQRSPEC_MODEID_KANJI">MQRSPEC_MODEID_KANJI</dfn>     3</u></td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="22">endif</span> /* __MQRSPEC_H__ */</u></td></tr>
+<tr><th id="153">153</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='mmask.c.html'>qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mmask.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

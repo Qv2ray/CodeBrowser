@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>zero_copy_stream.h source code [include/google/protobuf/io/zero_copy_stream.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="google::protobuf::io::ZeroCopyInputStream,google::protobuf::io::ZeroCopyOutputStream "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/google/protobuf/io/zero_copy_stream.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>google</a>/<a href='..'>protobuf</a>/<a href='./'>io</a>/<a href='zero_copy_stream.h.html'>zero_copy_stream.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Protocol Buffers - Google's data interchange format</i></td></tr>
+<tr><th id="2">2</th><td><i>// Copyright 2008 Google Inc.  All rights reserved.</i></td></tr>
+<tr><th id="3">3</th><td><i>// <a href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a></i></td></tr>
+<tr><th id="4">4</th><td><i>//</i></td></tr>
+<tr><th id="5">5</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="7">7</th><td><i>// met:</i></td></tr>
+<tr><th id="8">8</th><td><i>//</i></td></tr>
+<tr><th id="9">9</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="10">10</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="12">12</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="13">13</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="14">14</th><td><i>// distribution.</i></td></tr>
+<tr><th id="15">15</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="16">16</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="17">17</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="18">18</th><td><i>//</i></td></tr>
+<tr><th id="19">19</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="20">20</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="21">21</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="22">22</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="23">23</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="24">24</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="25">25</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="26">26</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="27">27</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="28">28</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="29">29</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="30">30</th><td><i></i></td></tr>
+<tr><th id="31">31</th><td><i>// Author: kenton@google.com (Kenton Varda)</i></td></tr>
+<tr><th id="32">32</th><td><i>//  Based on original Protocol Buffers design by</i></td></tr>
+<tr><th id="33">33</th><td><i>//  Sanjay Ghemawat, Jeff Dean, and others.</i></td></tr>
+<tr><th id="34">34</th><td><i>//</i></td></tr>
+<tr><th id="35">35</th><td><i>// This file contains the ZeroCopyInputStream and ZeroCopyOutputStream</i></td></tr>
+<tr><th id="36">36</th><td><i>// interfaces, which represent abstract I/O streams to and from which</i></td></tr>
+<tr><th id="37">37</th><td><i>// protocol buffers can be read and written.  For a few simple</i></td></tr>
+<tr><th id="38">38</th><td><i>// implementations of these interfaces, see zero_copy_stream_impl.h.</i></td></tr>
+<tr><th id="39">39</th><td><i>//</i></td></tr>
+<tr><th id="40">40</th><td><i>// These interfaces are different from classic I/O streams in that they</i></td></tr>
+<tr><th id="41">41</th><td><i>// try to minimize the amount of data copying that needs to be done.</i></td></tr>
+<tr><th id="42">42</th><td><i>// To accomplish this, responsibility for allocating buffers is moved to</i></td></tr>
+<tr><th id="43">43</th><td><i>// the stream object, rather than being the responsibility of the caller.</i></td></tr>
+<tr><th id="44">44</th><td><i>// So, the stream can return a buffer which actually points directly into</i></td></tr>
+<tr><th id="45">45</th><td><i>// the final data structure where the bytes are to be stored, and the caller</i></td></tr>
+<tr><th id="46">46</th><td><i>// can interact directly with that buffer, eliminating an intermediate copy</i></td></tr>
+<tr><th id="47">47</th><td><i>// operation.</i></td></tr>
+<tr><th id="48">48</th><td><i>//</i></td></tr>
+<tr><th id="49">49</th><td><i>// As an example, consider the common case in which you are reading bytes</i></td></tr>
+<tr><th id="50">50</th><td><i>// from an array that is already in memory (or perhaps an mmap()ed file).</i></td></tr>
+<tr><th id="51">51</th><td><i>// With classic I/O streams, you would do something like:</i></td></tr>
+<tr><th id="52">52</th><td><i>//   char buffer[BUFFER_SIZE];</i></td></tr>
+<tr><th id="53">53</th><td><i>//   input-&gt;Read(buffer, BUFFER_SIZE);</i></td></tr>
+<tr><th id="54">54</th><td><i>//   DoSomething(buffer, BUFFER_SIZE);</i></td></tr>
+<tr><th id="55">55</th><td><i>// Then, the stream basically just calls memcpy() to copy the data from</i></td></tr>
+<tr><th id="56">56</th><td><i>// the array into your buffer.  With a ZeroCopyInputStream, you would do</i></td></tr>
+<tr><th id="57">57</th><td><i>// this instead:</i></td></tr>
+<tr><th id="58">58</th><td><i>//   const void* buffer;</i></td></tr>
+<tr><th id="59">59</th><td><i>//   int size;</i></td></tr>
+<tr><th id="60">60</th><td><i>//   input-&gt;Next(&amp;buffer, &amp;size);</i></td></tr>
+<tr><th id="61">61</th><td><i>//   DoSomething(buffer, size);</i></td></tr>
+<tr><th id="62">62</th><td><i>// Here, no copy is performed.  The input stream returns a pointer directly</i></td></tr>
+<tr><th id="63">63</th><td><i>// into the backing array, and the caller ends up reading directly from it.</i></td></tr>
+<tr><th id="64">64</th><td><i>//</i></td></tr>
+<tr><th id="65">65</th><td><i>// If you want to be able to read the old-fashion way, you can create</i></td></tr>
+<tr><th id="66">66</th><td><i>// a CodedInputStream or CodedOutputStream wrapping these objects and use</i></td></tr>
+<tr><th id="67">67</th><td><i>// their ReadRaw()/WriteRaw() methods.  These will, of course, add a copy</i></td></tr>
+<tr><th id="68">68</th><td><i>// step, but Coded*Stream will handle buffering so at least it will be</i></td></tr>
+<tr><th id="69">69</th><td><i>// reasonably efficient.</i></td></tr>
+<tr><th id="70">70</th><td><i>//</i></td></tr>
+<tr><th id="71">71</th><td><i>// ZeroCopyInputStream example:</i></td></tr>
+<tr><th id="72">72</th><td><i>//   // Read in a file and print its contents to stdout.</i></td></tr>
+<tr><th id="73">73</th><td><i>//   int fd = open("myfile", O_RDONLY);</i></td></tr>
+<tr><th id="74">74</th><td><i>//   ZeroCopyInputStream* input = new FileInputStream(fd);</i></td></tr>
+<tr><th id="75">75</th><td><i>//</i></td></tr>
+<tr><th id="76">76</th><td><i>//   const void* buffer;</i></td></tr>
+<tr><th id="77">77</th><td><i>//   int size;</i></td></tr>
+<tr><th id="78">78</th><td><i>//   while (input-&gt;Next(&amp;buffer, &amp;size)) {</i></td></tr>
+<tr><th id="79">79</th><td><i>//     cout.write(buffer, size);</i></td></tr>
+<tr><th id="80">80</th><td><i>//   }</i></td></tr>
+<tr><th id="81">81</th><td><i>//</i></td></tr>
+<tr><th id="82">82</th><td><i>//   delete input;</i></td></tr>
+<tr><th id="83">83</th><td><i>//   close(fd);</i></td></tr>
+<tr><th id="84">84</th><td><i>//</i></td></tr>
+<tr><th id="85">85</th><td><i>// ZeroCopyOutputStream example:</i></td></tr>
+<tr><th id="86">86</th><td><i>//   // Copy the contents of "infile" to "outfile", using plain read() for</i></td></tr>
+<tr><th id="87">87</th><td><i>//   // "infile" but a ZeroCopyOutputStream for "outfile".</i></td></tr>
+<tr><th id="88">88</th><td><i>//   int infd = open("infile", O_RDONLY);</i></td></tr>
+<tr><th id="89">89</th><td><i>//   int outfd = open("outfile", O_WRONLY);</i></td></tr>
+<tr><th id="90">90</th><td><i>//   ZeroCopyOutputStream* output = new FileOutputStream(outfd);</i></td></tr>
+<tr><th id="91">91</th><td><i>//</i></td></tr>
+<tr><th id="92">92</th><td><i>//   void* buffer;</i></td></tr>
+<tr><th id="93">93</th><td><i>//   int size;</i></td></tr>
+<tr><th id="94">94</th><td><i>//   while (output-&gt;Next(&amp;buffer, &amp;size)) {</i></td></tr>
+<tr><th id="95">95</th><td><i>//     int bytes = read(infd, buffer, size);</i></td></tr>
+<tr><th id="96">96</th><td><i>//     if (bytes &lt; size) {</i></td></tr>
+<tr><th id="97">97</th><td><i>//       // Reached EOF.</i></td></tr>
+<tr><th id="98">98</th><td><i>//       output-&gt;BackUp(size - bytes);</i></td></tr>
+<tr><th id="99">99</th><td><i>//       break;</i></td></tr>
+<tr><th id="100">100</th><td><i>//     }</i></td></tr>
+<tr><th id="101">101</th><td><i>//   }</i></td></tr>
+<tr><th id="102">102</th><td><i>//</i></td></tr>
+<tr><th id="103">103</th><td><i>//   delete output;</i></td></tr>
+<tr><th id="104">104</th><td><i>//   close(infd);</i></td></tr>
+<tr><th id="105">105</th><td><i>//   close(outfd);</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="107">ifndef</span> <span class="macro" data-ref="_M/GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__">GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__</span></u></td></tr>
+<tr><th id="108">108</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__" data-ref="_M/GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__">GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__</dfn></u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#include <a href="../../../c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="111">111</th><td><u>#include <a href="../stubs/common.h.html">&lt;google/protobuf/stubs/common.h&gt;</a></u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><b>namespace</b> <span class="namespace">google</span> {</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><b>namespace</b> <span class="namespace">protobuf</span> {</td></tr>
+<tr><th id="116">116</th><td><b>namespace</b> <span class="namespace">io</span> {</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i>// Defined in this file.</i></td></tr>
+<tr><th id="119">119</th><td><b>class</b> <a class="type" href="#google::protobuf::io::ZeroCopyInputStream" title='google::protobuf::io::ZeroCopyInputStream' data-ref="google::protobuf::io::ZeroCopyInputStream" data-ref-filename="google..protobuf..io..ZeroCopyInputStream">ZeroCopyInputStream</a>;</td></tr>
+<tr><th id="120">120</th><td><b>class</b> <a class="type" href="#google::protobuf::io::ZeroCopyOutputStream" title='google::protobuf::io::ZeroCopyOutputStream' data-ref="google::protobuf::io::ZeroCopyOutputStream" data-ref-filename="google..protobuf..io..ZeroCopyOutputStream">ZeroCopyOutputStream</a>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i>// Abstract interface similar to an input stream but designed to minimize</i></td></tr>
+<tr><th id="123">123</th><td><i>// copying.</i></td></tr>
+<tr><th id="124">124</th><td><b>class</b> <a class="macro" href="../stubs/port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::io::ZeroCopyInputStream" title='google::protobuf::io::ZeroCopyInputStream' data-ref="google::protobuf::io::ZeroCopyInputStream" data-ref-filename="google..protobuf..io..ZeroCopyInputStream">ZeroCopyInputStream</dfn> {</td></tr>
+<tr><th id="125">125</th><td> <b>public</b>:</td></tr>
+<tr><th id="126">126</th><td>  <dfn class="decl def fn" id="_ZN6google8protobuf2io19ZeroCopyInputStreamC1Ev" title='google::protobuf::io::ZeroCopyInputStream::ZeroCopyInputStream' data-ref="_ZN6google8protobuf2io19ZeroCopyInputStreamC1Ev" data-ref-filename="_ZN6google8protobuf2io19ZeroCopyInputStreamC1Ev">ZeroCopyInputStream</dfn>() {}</td></tr>
+<tr><th id="127">127</th><td>  <b>virtual</b> <dfn class="virtual decl def fn" id="_ZN6google8protobuf2io19ZeroCopyInputStreamD1Ev" title='google::protobuf::io::ZeroCopyInputStream::~ZeroCopyInputStream' data-ref="_ZN6google8protobuf2io19ZeroCopyInputStreamD1Ev" data-ref-filename="_ZN6google8protobuf2io19ZeroCopyInputStreamD1Ev">~ZeroCopyInputStream</dfn>() {}</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td>  <i>// Obtains a chunk of data from the stream.</i></td></tr>
+<tr><th id="130">130</th><td><i>  //</i></td></tr>
+<tr><th id="131">131</th><td><i>  // Preconditions:</i></td></tr>
+<tr><th id="132">132</th><td><i>  // * "size" and "data" are not NULL.</i></td></tr>
+<tr><th id="133">133</th><td><i>  //</i></td></tr>
+<tr><th id="134">134</th><td><i>  // Postconditions:</i></td></tr>
+<tr><th id="135">135</th><td><i>  // * If the returned value is false, there is no more data to return or</i></td></tr>
+<tr><th id="136">136</th><td><i>  //   an error occurred.  All errors are permanent.</i></td></tr>
+<tr><th id="137">137</th><td><i>  // * Otherwise, "size" points to the actual number of bytes read and "data"</i></td></tr>
+<tr><th id="138">138</th><td><i>  //   points to a pointer to a buffer containing these bytes.</i></td></tr>
+<tr><th id="139">139</th><td><i>  // * Ownership of this buffer remains with the stream, and the buffer</i></td></tr>
+<tr><th id="140">140</th><td><i>  //   remains valid only until some other method of the stream is called</i></td></tr>
+<tr><th id="141">141</th><td><i>  //   or the stream is destroyed.</i></td></tr>
+<tr><th id="142">142</th><td><i>  // * It is legal for the returned buffer to have zero size, as long</i></td></tr>
+<tr><th id="143">143</th><td><i>  //   as repeatedly calling Next() eventually yields a buffer with non-zero</i></td></tr>
+<tr><th id="144">144</th><td><i>  //   size.</i></td></tr>
+<tr><th id="145">145</th><td>  <b>virtual</b> <em>bool</em> <dfn class="virtual decl fn" id="_ZN6google8protobuf2io19ZeroCopyInputStream4NextEPPKvPi" title='google::protobuf::io::ZeroCopyInputStream::Next' data-ref="_ZN6google8protobuf2io19ZeroCopyInputStream4NextEPPKvPi" data-ref-filename="_ZN6google8protobuf2io19ZeroCopyInputStream4NextEPPKvPi">Next</dfn>(<em>const</em> <em>void</em>** <dfn class="local col6 decl" id="8266data" title='data' data-type='const void **' data-ref="8266data" data-ref-filename="8266data">data</dfn>, <em>int</em>* <dfn class="local col7 decl" id="8267size" title='size' data-type='int *' data-ref="8267size" data-ref-filename="8267size">size</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>  <i>// Backs up a number of bytes, so that the next call to Next() returns</i></td></tr>
+<tr><th id="148">148</th><td><i>  // data again that was already returned by the last call to Next().  This</i></td></tr>
+<tr><th id="149">149</th><td><i>  // is useful when writing procedures that are only supposed to read up</i></td></tr>
+<tr><th id="150">150</th><td><i>  // to a certain point in the input, then return.  If Next() returns a</i></td></tr>
+<tr><th id="151">151</th><td><i>  // buffer that goes beyond what you wanted to read, you can use BackUp()</i></td></tr>
+<tr><th id="152">152</th><td><i>  // to return to the point where you intended to finish.</i></td></tr>
+<tr><th id="153">153</th><td><i>  //</i></td></tr>
+<tr><th id="154">154</th><td><i>  // Preconditions:</i></td></tr>
+<tr><th id="155">155</th><td><i>  // * The last method called must have been Next().</i></td></tr>
+<tr><th id="156">156</th><td><i>  // * count must be less than or equal to the size of the last buffer</i></td></tr>
+<tr><th id="157">157</th><td><i>  //   returned by Next().</i></td></tr>
+<tr><th id="158">158</th><td><i>  //</i></td></tr>
+<tr><th id="159">159</th><td><i>  // Postconditions:</i></td></tr>
+<tr><th id="160">160</th><td><i>  // * The last "count" bytes of the last buffer returned by Next() will be</i></td></tr>
+<tr><th id="161">161</th><td><i>  //   pushed back into the stream.  Subsequent calls to Next() will return</i></td></tr>
+<tr><th id="162">162</th><td><i>  //   the same data again before producing new data.</i></td></tr>
+<tr><th id="163">163</th><td>  <b>virtual</b> <em>void</em> <dfn class="virtual decl fn" id="_ZN6google8protobuf2io19ZeroCopyInputStream6BackUpEi" title='google::protobuf::io::ZeroCopyInputStream::BackUp' data-ref="_ZN6google8protobuf2io19ZeroCopyInputStream6BackUpEi" data-ref-filename="_ZN6google8protobuf2io19ZeroCopyInputStream6BackUpEi">BackUp</dfn>(<em>int</em> <dfn class="local col8 decl" id="8268count" title='count' data-type='int' data-ref="8268count" data-ref-filename="8268count">count</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>  <i>// Skips a number of bytes.  Returns false if the end of the stream is</i></td></tr>
+<tr><th id="166">166</th><td><i>  // reached or some input error occurred.  In the end-of-stream case, the</i></td></tr>
+<tr><th id="167">167</th><td><i>  // stream is advanced to the end of the stream (so ByteCount() will return</i></td></tr>
+<tr><th id="168">168</th><td><i>  // the total size of the stream).</i></td></tr>
+<tr><th id="169">169</th><td>  <b>virtual</b> <em>bool</em> <dfn class="virtual decl fn" id="_ZN6google8protobuf2io19ZeroCopyInputStream4SkipEi" title='google::protobuf::io::ZeroCopyInputStream::Skip' data-ref="_ZN6google8protobuf2io19ZeroCopyInputStream4SkipEi" data-ref-filename="_ZN6google8protobuf2io19ZeroCopyInputStream4SkipEi">Skip</dfn>(<em>int</em> <dfn class="local col9 decl" id="8269count" title='count' data-type='int' data-ref="8269count" data-ref-filename="8269count">count</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>  <i>// Returns the total number of bytes read since this object was created.</i></td></tr>
+<tr><th id="172">172</th><td>  <b>virtual</b> <a class="typedef" href="../stubs/port.h.html#google::protobuf::int64" title='google::protobuf::int64' data-type='int64_t' data-ref="google::protobuf::int64" data-ref-filename="google..protobuf..int64">int64</a> <dfn class="virtual decl fn" id="_ZNK6google8protobuf2io19ZeroCopyInputStream9ByteCountEv" title='google::protobuf::io::ZeroCopyInputStream::ByteCount' data-ref="_ZNK6google8protobuf2io19ZeroCopyInputStream9ByteCountEv" data-ref-filename="_ZNK6google8protobuf2io19ZeroCopyInputStream9ByteCountEv">ByteCount</dfn>() <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td> <b>private</b>:</td></tr>
+<tr><th id="176">176</th><td>  <a class="macro" href="../stubs/macros.h.html#40" title="ZeroCopyInputStream(const ZeroCopyInputStream&amp;); void operator=(const ZeroCopyInputStream&amp;)" data-ref="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS">GOOGLE_DISALLOW_EVIL_CONSTRUCTORS</a>(<dfn class="decl fn" id="_ZN6google8protobuf2io19ZeroCopyInputStreamC1ERKS2_" title='google::protobuf::io::ZeroCopyInputStream::ZeroCopyInputStream' data-ref="_ZN6google8protobuf2io19ZeroCopyInputStreamC1ERKS2_" data-ref-filename="_ZN6google8protobuf2io19ZeroCopyInputStreamC1ERKS2_"><a class="type" href="#google::protobuf::io::ZeroCopyInputStream" title='google::protobuf::io::ZeroCopyInputStream' data-ref="google::protobuf::io::ZeroCopyInputStream" data-ref-filename="google..protobuf..io..ZeroCopyInputStream"><a class="type" href="#google::protobuf::io::ZeroCopyInputStream" title='google::protobuf::io::ZeroCopyInputStream' data-ref="google::protobuf::io::ZeroCopyInputStream" data-ref-filename="google..protobuf..io..ZeroCopyInputStream">ZeroCopyInputStream</a></a></dfn>);</td></tr>
+<tr><th id="177">177</th><td>};</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><i>// Abstract interface similar to an output stream but designed to minimize</i></td></tr>
+<tr><th id="180">180</th><td><i>// copying.</i></td></tr>
+<tr><th id="181">181</th><td><b>class</b> <a class="macro" href="../stubs/port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::io::ZeroCopyOutputStream" title='google::protobuf::io::ZeroCopyOutputStream' data-ref="google::protobuf::io::ZeroCopyOutputStream" data-ref-filename="google..protobuf..io..ZeroCopyOutputStream">ZeroCopyOutputStream</dfn> {</td></tr>
+<tr><th id="182">182</th><td> <b>public</b>:</td></tr>
+<tr><th id="183">183</th><td>  <dfn class="decl def fn" id="_ZN6google8protobuf2io20ZeroCopyOutputStreamC1Ev" title='google::protobuf::io::ZeroCopyOutputStream::ZeroCopyOutputStream' data-ref="_ZN6google8protobuf2io20ZeroCopyOutputStreamC1Ev" data-ref-filename="_ZN6google8protobuf2io20ZeroCopyOutputStreamC1Ev">ZeroCopyOutputStream</dfn>() {}</td></tr>
+<tr><th id="184">184</th><td>  <b>virtual</b> <dfn class="virtual decl def fn" id="_ZN6google8protobuf2io20ZeroCopyOutputStreamD1Ev" title='google::protobuf::io::ZeroCopyOutputStream::~ZeroCopyOutputStream' data-ref="_ZN6google8protobuf2io20ZeroCopyOutputStreamD1Ev" data-ref-filename="_ZN6google8protobuf2io20ZeroCopyOutputStreamD1Ev">~ZeroCopyOutputStream</dfn>() {}</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td>  <i>// Obtains a buffer into which data can be written.  Any data written</i></td></tr>
+<tr><th id="187">187</th><td><i>  // into this buffer will eventually (maybe instantly, maybe later on)</i></td></tr>
+<tr><th id="188">188</th><td><i>  // be written to the output.</i></td></tr>
+<tr><th id="189">189</th><td><i>  //</i></td></tr>
+<tr><th id="190">190</th><td><i>  // Preconditions:</i></td></tr>
+<tr><th id="191">191</th><td><i>  // * "size" and "data" are not NULL.</i></td></tr>
+<tr><th id="192">192</th><td><i>  //</i></td></tr>
+<tr><th id="193">193</th><td><i>  // Postconditions:</i></td></tr>
+<tr><th id="194">194</th><td><i>  // * If the returned value is false, an error occurred.  All errors are</i></td></tr>
+<tr><th id="195">195</th><td><i>  //   permanent.</i></td></tr>
+<tr><th id="196">196</th><td><i>  // * Otherwise, "size" points to the actual number of bytes in the buffer</i></td></tr>
+<tr><th id="197">197</th><td><i>  //   and "data" points to the buffer.</i></td></tr>
+<tr><th id="198">198</th><td><i>  // * Ownership of this buffer remains with the stream, and the buffer</i></td></tr>
+<tr><th id="199">199</th><td><i>  //   remains valid only until some other method of the stream is called</i></td></tr>
+<tr><th id="200">200</th><td><i>  //   or the stream is destroyed.</i></td></tr>
+<tr><th id="201">201</th><td><i>  // * Any data which the caller stores in this buffer will eventually be</i></td></tr>
+<tr><th id="202">202</th><td><i>  //   written to the output (unless BackUp() is called).</i></td></tr>
+<tr><th id="203">203</th><td><i>  // * It is legal for the returned buffer to have zero size, as long</i></td></tr>
+<tr><th id="204">204</th><td><i>  //   as repeatedly calling Next() eventually yields a buffer with non-zero</i></td></tr>
+<tr><th id="205">205</th><td><i>  //   size.</i></td></tr>
+<tr><th id="206">206</th><td>  <b>virtual</b> <em>bool</em> <dfn class="virtual decl fn" id="_ZN6google8protobuf2io20ZeroCopyOutputStream4NextEPPvPi" title='google::protobuf::io::ZeroCopyOutputStream::Next' data-ref="_ZN6google8protobuf2io20ZeroCopyOutputStream4NextEPPvPi" data-ref-filename="_ZN6google8protobuf2io20ZeroCopyOutputStream4NextEPPvPi">Next</dfn>(<em>void</em>** <dfn class="local col0 decl" id="8270data" title='data' data-type='void **' data-ref="8270data" data-ref-filename="8270data">data</dfn>, <em>int</em>* <dfn class="local col1 decl" id="8271size" title='size' data-type='int *' data-ref="8271size" data-ref-filename="8271size">size</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td>  <i>// Backs up a number of bytes, so that the end of the last buffer returned</i></td></tr>
+<tr><th id="209">209</th><td><i>  // by Next() is not actually written.  This is needed when you finish</i></td></tr>
+<tr><th id="210">210</th><td><i>  // writing all the data you want to write, but the last buffer was bigger</i></td></tr>
+<tr><th id="211">211</th><td><i>  // than you needed.  You don't want to write a bunch of garbage after the</i></td></tr>
+<tr><th id="212">212</th><td><i>  // end of your data, so you use BackUp() to back up.</i></td></tr>
+<tr><th id="213">213</th><td><i>  //</i></td></tr>
+<tr><th id="214">214</th><td><i>  // Preconditions:</i></td></tr>
+<tr><th id="215">215</th><td><i>  // * The last method called must have been Next().</i></td></tr>
+<tr><th id="216">216</th><td><i>  // * count must be less than or equal to the size of the last buffer</i></td></tr>
+<tr><th id="217">217</th><td><i>  //   returned by Next().</i></td></tr>
+<tr><th id="218">218</th><td><i>  // * The caller must not have written anything to the last "count" bytes</i></td></tr>
+<tr><th id="219">219</th><td><i>  //   of that buffer.</i></td></tr>
+<tr><th id="220">220</th><td><i>  //</i></td></tr>
+<tr><th id="221">221</th><td><i>  // Postconditions:</i></td></tr>
+<tr><th id="222">222</th><td><i>  // * The last "count" bytes of the last buffer returned by Next() will be</i></td></tr>
+<tr><th id="223">223</th><td><i>  //   ignored.</i></td></tr>
+<tr><th id="224">224</th><td>  <b>virtual</b> <em>void</em> <dfn class="virtual decl fn" id="_ZN6google8protobuf2io20ZeroCopyOutputStream6BackUpEi" title='google::protobuf::io::ZeroCopyOutputStream::BackUp' data-ref="_ZN6google8protobuf2io20ZeroCopyOutputStream6BackUpEi" data-ref-filename="_ZN6google8protobuf2io20ZeroCopyOutputStream6BackUpEi">BackUp</dfn>(<em>int</em> <dfn class="local col2 decl" id="8272count" title='count' data-type='int' data-ref="8272count" data-ref-filename="8272count">count</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="225">225</th><td></td></tr>
+<tr><th id="226">226</th><td>  <i>// Returns the total number of bytes written since this object was created.</i></td></tr>
+<tr><th id="227">227</th><td>  <b>virtual</b> <a class="typedef" href="../stubs/port.h.html#google::protobuf::int64" title='google::protobuf::int64' data-type='int64_t' data-ref="google::protobuf::int64" data-ref-filename="google..protobuf..int64">int64</a> <dfn class="virtual decl fn" id="_ZNK6google8protobuf2io20ZeroCopyOutputStream9ByteCountEv" title='google::protobuf::io::ZeroCopyOutputStream::ByteCount' data-ref="_ZNK6google8protobuf2io20ZeroCopyOutputStream9ByteCountEv" data-ref-filename="_ZNK6google8protobuf2io20ZeroCopyOutputStream9ByteCountEv">ByteCount</dfn>() <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="228">228</th><td></td></tr>
+<tr><th id="229">229</th><td>  <i>// Write a given chunk of data to the output.  Some output streams may</i></td></tr>
+<tr><th id="230">230</th><td><i>  // implement this in a way that avoids copying. Check AllowsAliasing() before</i></td></tr>
+<tr><th id="231">231</th><td><i>  // calling WriteAliasedRaw(). It will GOOGLE_CHECK fail if WriteAliasedRaw() is</i></td></tr>
+<tr><th id="232">232</th><td><i>  // called on a stream that does not allow aliasing.</i></td></tr>
+<tr><th id="233">233</th><td><i>  //</i></td></tr>
+<tr><th id="234">234</th><td><i>  // NOTE: It is caller's responsibility to ensure that the chunk of memory</i></td></tr>
+<tr><th id="235">235</th><td><i>  // remains live until all of the data has been consumed from the stream.</i></td></tr>
+<tr><th id="236">236</th><td>  <b>virtual</b> <em>bool</em> <dfn class="virtual decl fn" id="_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi" title='google::protobuf::io::ZeroCopyOutputStream::WriteAliasedRaw' data-ref="_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi" data-ref-filename="_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi">WriteAliasedRaw</dfn>(<em>const</em> <em>void</em>* <dfn class="local col3 decl" id="8273data" title='data' data-type='const void *' data-ref="8273data" data-ref-filename="8273data">data</dfn>, <em>int</em> <dfn class="local col4 decl" id="8274size" title='size' data-type='int' data-ref="8274size" data-ref-filename="8274size">size</dfn>);</td></tr>
+<tr><th id="237">237</th><td>  <b>virtual</b> <em>bool</em> <dfn class="virtual decl def fn" id="_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv" title='google::protobuf::io::ZeroCopyOutputStream::AllowsAliasing' data-ref="_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv" data-ref-filename="_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv">AllowsAliasing</dfn>() <em>const</em> { <b>return</b> <b>false</b>; }</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td> <b>private</b>:</td></tr>
+<tr><th id="241">241</th><td>  <a class="macro" href="../stubs/macros.h.html#40" title="ZeroCopyOutputStream(const ZeroCopyOutputStream&amp;); void operator=(const ZeroCopyOutputStream&amp;)" data-ref="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS">GOOGLE_DISALLOW_EVIL_CONSTRUCTORS</a>(<dfn class="decl fn" id="_ZN6google8protobuf2io20ZeroCopyOutputStreamC1ERKS2_" title='google::protobuf::io::ZeroCopyOutputStream::ZeroCopyOutputStream' data-ref="_ZN6google8protobuf2io20ZeroCopyOutputStreamC1ERKS2_" data-ref-filename="_ZN6google8protobuf2io20ZeroCopyOutputStreamC1ERKS2_"><a class="type" href="#google::protobuf::io::ZeroCopyOutputStream" title='google::protobuf::io::ZeroCopyOutputStream' data-ref="google::protobuf::io::ZeroCopyOutputStream" data-ref-filename="google..protobuf..io..ZeroCopyOutputStream"><a class="type" href="#google::protobuf::io::ZeroCopyOutputStream" title='google::protobuf::io::ZeroCopyOutputStream' data-ref="google::protobuf::io::ZeroCopyOutputStream" data-ref-filename="google..protobuf..io..ZeroCopyOutputStream">ZeroCopyOutputStream</a></a></dfn>);</td></tr>
+<tr><th id="242">242</th><td>};</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td>}  <i>// namespace io</i></td></tr>
+<tr><th id="245">245</th><td>}  <i>// namespace protobuf</i></td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td>}  <i>// namespace google</i></td></tr>
+<tr><th id="248">248</th><td><u>#<span data-ppcond="107">endif</span>  // GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__</u></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

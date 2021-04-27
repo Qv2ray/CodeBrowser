@@ -1,0 +1,6 @@
+<dec f='include/grpc/support/sync.h' l='102' type='void gpr_once_init(gpr_once * once, void (*)() init_routine)'/>
+<doc f='include/grpc/support/sync.h' l='97'>/** Ensure that (*init_routine)() has been called exactly once (for the
+   specified gpr_once instance) and then return.
+   If multiple threads call gpr_once() on the same gpr_once instance, one of
+   them will call (*init_routine)(), and the others will block until that call
+   finishes.*/</doc>

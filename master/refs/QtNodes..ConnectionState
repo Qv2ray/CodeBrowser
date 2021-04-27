@@ -1,0 +1,29 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='11' ll='51'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='17' c='_ZN7QtNodes15ConnectionStateC1ERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='18' c='_ZN7QtNodes15ConnectionStateaSERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='18' c='_ZN7QtNodes15ConnectionStateaSERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='55' c='_ZNK7QtNodes10Connection15connectionStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='56' c='_ZN7QtNodes10Connection15connectionStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='85'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='166' c='_ZN7QtNodes10Connection15connectionStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='170' c='_ZNK7QtNodes10Connection15connectionStateEv'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='9'>/// Stores currently draggind end.
+    /// Remembers last hovered Node.</doc>
+<fun r='_ZN7QtNodes15ConnectionStateC1ENS_8PortTypeE'/>
+<fun r='_ZN7QtNodes15ConnectionStateC1ERKS0_'/>
+<fun r='_ZN7QtNodes15ConnectionStateaSERKS0_'/>
+<fun r='_ZN7QtNodes15ConnectionStateD1Ev'/>
+<fun r='_ZN7QtNodes15ConnectionState15setRequiredPortENS_8PortTypeE'/>
+<fun r='_ZNK7QtNodes15ConnectionState12requiredPortEv'/>
+<fun r='_ZNK7QtNodes15ConnectionState12requiresPortEv'/>
+<fun r='_ZN7QtNodes15ConnectionState17setNoRequiredPortEv'/>
+<fun r='_ZN7QtNodes15ConnectionState16interactWithNodeEPNS_4NodeE'/>
+<fun r='_ZN7QtNodes15ConnectionState18setLastHoveredNodeEPNS_4NodeE'/>
+<fun r='_ZNK7QtNodes15ConnectionState15lastHoveredNodeEv'/>
+<fun r='_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv'/>
+<mbr r='QtNodes::ConnectionState::_requiredPort' o='0' t='QtNodes::PortType'/>
+<mbr r='QtNodes::ConnectionState::_lastHoveredNode' o='64' t='QtNodes::Node *'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='68' c='_ZL14drawSketchLineP8QPainterRKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='110' c='_ZL14drawNormalLineP8QPainterRKN7QtNodes10ConnectionE'/>
+<size>16</size>

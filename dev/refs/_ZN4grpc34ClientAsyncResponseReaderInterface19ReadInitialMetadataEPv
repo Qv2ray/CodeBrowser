@@ -1,0 +1,7 @@
+<dec f='include/grpcpp/impl/codegen/async_unary_call.h' l='53' type='void grpc::ClientAsyncResponseReaderInterface::ReadInitialMetadata(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_unary_call.h' l='47'>/// Request notification of the reading of initial metadata. Completion
+  /// will be notified by \a tag on the associated completion queue.
+  /// This call is optional, but if it is used, it cannot be used concurrently
+  /// with or after the \a Finish method.
+  ///
+  /// \param[in] tag Tag identifying this request.</doc>

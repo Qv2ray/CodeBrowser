@@ -1,0 +1,41 @@
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='47' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='54' c='_ZNK7QtNodes10Connection27getConnectionGraphicsObjectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='87'/>
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionGraphicsObject.hpp' l='14' ll='52'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='108' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='162' c='_ZNK7QtNodes10Connection27getConnectionGraphicsObjectEv'/>
+<size>48</size>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionGraphicsObject.hpp' l='13'>/// Graphic Object for connection. Adds itself to scene</doc>
+<smbr r='QtNodes::ConnectionGraphicsObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK7QtNodes24ConnectionGraphicsObject10metaObjectEv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject11qt_metacastEPKc'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject2trEPKcS2_i'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject6trUtf8EPKcS2_i'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObjectC1ERNS_9FlowSceneERNS_10ConnectionE'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObjectD1Ev'/>
+<fun r='_ZNK7QtNodes24ConnectionGraphicsObject4typeEv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject10connectionEv'/>
+<fun r='_ZNK7QtNodes24ConnectionGraphicsObject12boundingRectEv'/>
+<fun r='_ZNK7QtNodes24ConnectionGraphicsObject5shapeEv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject18setGeometryChangedEv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject4moveEv'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject4lockEb'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject14mouseMoveEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject15hoverEnterEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject15hoverLeaveEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes24ConnectionGraphicsObject17addGraphicsEffectEv'/>
+<mbr r='QtNodes::ConnectionGraphicsObject::_scene' o='256' t='QtNodes::FlowScene &amp;'/>
+<mbr r='QtNodes::ConnectionGraphicsObject::_connection' o='320' t='QtNodes::Connection &amp;'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionBlurEffect.hpp' l='9' c='_ZN7QtNodes20ConnectionBlurEffectC1EPNS_24ConnectionGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionBlurEffect.cpp' l='7' c='_ZN7QtNodes20ConnectionBlurEffectC1EPNS_24ConnectionGraphicsObjectE'/>
+<size>48</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='53' c='_ZN7QtNodes9FlowScene16createConnectionENS_8PortTypeERNS_4NodeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='66' c='_ZN7QtNodes9FlowScene16createConnectionERNS_4NodeEiS2_iRKSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<size>48</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowView.cpp' l='178' c='_ZN7QtNodes8FlowView19deleteSelectedNodesEv'/>
+<size>48</size>

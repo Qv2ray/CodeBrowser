@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='49' type='void uvw::PrepareHandle::start()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/prepare.cpp' l='22' ll='24' type='void uvw::PrepareHandle::start()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/prepare.h' l='41'>/**
+     * @brief Starts the handle.
+     *
+     * A PrepareEvent event will be emitted once per loop iteration, right
+     * before polling for I/O.
+     *
+     * The handle will start emitting PrepareEvent when needed.
+     */</doc>

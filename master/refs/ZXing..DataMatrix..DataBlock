@@ -1,0 +1,22 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='35' ll='65'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='60' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.cpp' l='27' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.cpp' l='32' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='28'>/**
+* &lt;p&gt;Encapsulates a block of data within a Data Matrix Code. Data Matrix Codes may split their data into
+* multiple blocks, each of which is a unit of data and error-correction codewords. Each
+* is represented by an instance of this class.&lt;/p&gt;
+*
+* @author bbrown@google.com (Brian Brown)
+*/</doc>
+<fun r='_ZNK5ZXing10DataMatrix9DataBlock16numDataCodewordsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix9DataBlock9codewordsEv'/>
+<fun r='_ZN5ZXing10DataMatrix9DataBlock9codewordsEv'/>
+<fun r='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<mbr r='ZXing::DataMatrix::DataBlock::_numDataCodewords' o='0' t='int'/>
+<mbr r='ZXing::DataMatrix::DataBlock::_codewords' o='64' t='ZXing::ByteArray'/>
+<fun r='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='599' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='605' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<size>32</size>

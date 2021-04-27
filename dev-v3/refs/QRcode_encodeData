@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='458' type='QRcode * QRcode_encodeData(int size, const unsigned char * data, int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='446'>/**
+ * Encode byte stream (may include &apos;\0&apos;) in 8-bit mode.
+ * @warning This function is THREAD UNSAFE when pthread is disabled.
+ * @param size size of the input data.
+ * @param data input data.
+ * @param version version of the symbol. If 0, the library chooses the minimum
+ *                version for the given input data.
+ * @param level error correction level.
+ * @throw EINVAL invalid input object.
+ * @throw ENOMEM unable to allocate memory for input objects.
+ * @throw ERANGE input data is too large.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='668' ll='671' type='QRcode * QRcode_encodeData(int size, const unsigned char * data, int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='131' u='c' c='_ZN8QtQrCode10encodeDataEv'/>

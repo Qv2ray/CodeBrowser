@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='51' type='void ZXing::Result::Result(ZXing::DecoderResult &amp;&amp; decodeResult, ZXing::Position &amp;&amp; position, ZXing::BarcodeFormat format)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/Result.cpp' l='36' ll='58' type='void ZXing::Result::Result(ZXing::DecoderResult &amp;&amp; decodeResult, ZXing::Position &amp;&amp; position, ZXing::BarcodeFormat format)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='55' u='c' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='59' u='c' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='74' u='c' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='81' u='c' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='62' u='c' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>

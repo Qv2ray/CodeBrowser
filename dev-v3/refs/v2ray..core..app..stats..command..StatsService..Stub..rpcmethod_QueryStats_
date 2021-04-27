@@ -1,0 +1,7 @@
+<dec f='/v2ray_api.grpc.pb.h' l='127' type='const ::grpc::internal::RpcMethod'/>
+<offset>512</offset>
+<use f='/v2ray_api.grpc.pb.cc' l='38' u='w' c='_ZN5v2ray4core3app5stats7command12StatsService4StubC1ERKSt10shared_ptrIN4grpc16ChannelInterfaceEE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='59' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub10QueryStatsEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='63' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async10QueryStatsEPN4grpc13ClientContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStats2892321'/>
+<use f='/v2ray_api.grpc.pb.cc' l='67' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18AsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='71' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub25PrepareAsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>

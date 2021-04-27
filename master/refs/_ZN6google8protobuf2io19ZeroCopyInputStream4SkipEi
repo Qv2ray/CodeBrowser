@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/zero_copy_stream.h' l='169' type='bool google::protobuf::io::ZeroCopyInputStream::Skip(int count)'/>
+<ovr f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='109' c='_ZN4grpc17ProtoBufferReader4SkipEi'/>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='165'>// Skips a number of bytes.  Returns false if the end of the stream is
+  // reached or some input error occurred.  In the end-of-stream case, the
+  // stream is advanced to the end of the stream (so ByteCount() will return
+  // the total size of the stream).</doc>

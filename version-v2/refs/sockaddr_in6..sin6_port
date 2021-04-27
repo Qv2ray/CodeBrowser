@@ -1,0 +1,6 @@
+<dec f='include/netinet/in.h' l='256' type='in_port_t'/>
+<offset>16</offset>
+<doc f='include/netinet/in.h' l='256'>/* Transport layer port # */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='93' u='r' c='maybe_new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='239' u='w' c='uv_ip6_addr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='386' u='r' c='_ZN3uvw7details8IpTraitsINS_4IPv6EE7sinPortEPK12sockaddr_in6'/>

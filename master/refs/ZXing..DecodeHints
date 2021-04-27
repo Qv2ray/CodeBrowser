@@ -1,0 +1,102 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='41' ll='129'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints10setFormatsENS_5FlagsINS_13BarcodeFormatEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints12setTryHarderEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints12setTryRotateEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints12setBinarizerENS_9BinarizerE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints9setIsPureEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints15setCharacterSetENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints17setAllowedLengthsESt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints24setTryCode39ExtendedModeEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints25setAssumeCode39CheckDigitEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints12setAssumeGS1Eb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints24setReturnCodabarStartEndEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' c='_ZN5ZXing11DecodeHints23setAllowedEanExtensionsESt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='122' c='_ZN5ZXing11DecodeHints18setPossibleFormatsERKSt6vectorINS_13BarcodeFormatESaIS2_EE'/>
+<size>88</size>
+<mbr r='ZXing::DecodeHints::_tryHarder' o='0' t='bool'/>
+<mbr r='ZXing::DecodeHints::_tryRotate' o='1' t='bool'/>
+<mbr r='ZXing::DecodeHints::_isPure' o='2' t='bool'/>
+<mbr r='ZXing::DecodeHints::_tryCode39ExtendedMode' o='3' t='bool'/>
+<mbr r='ZXing::DecodeHints::_assumeCode39CheckDigit' o='4' t='bool'/>
+<mbr r='ZXing::DecodeHints::_assumeGS1' o='5' t='bool'/>
+<mbr r='ZXing::DecodeHints::_returnCodabarStartEnd' o='6' t='bool'/>
+<mbr r='ZXing::DecodeHints::_binarizer' o='8' t='ZXing::Binarizer'/>
+<mbr r='ZXing::DecodeHints::_formats' o='32' t='ZXing::BarcodeFormats'/>
+<mbr r='ZXing::DecodeHints::_characterSet' o='64' t='std::string'/>
+<mbr r='ZXing::DecodeHints::_allowedLengths' o='320' t='std::vector&lt;int&gt;'/>
+<mbr r='ZXing::DecodeHints::_allowedEanExtensions' o='512' t='std::vector&lt;int&gt;'/>
+<fun r='_ZN5ZXing11DecodeHintsC1Ev'/>
+<fun r='_ZNK5ZXing11DecodeHints7formatsEv'/>
+<fun r='_ZN5ZXing11DecodeHints10setFormatsENS_5FlagsINS_13BarcodeFormatEEE'/>
+<fun r='_ZNK5ZXing11DecodeHints9tryHarderEv'/>
+<fun r='_ZN5ZXing11DecodeHints12setTryHarderEb'/>
+<fun r='_ZNK5ZXing11DecodeHints9tryRotateEv'/>
+<fun r='_ZN5ZXing11DecodeHints12setTryRotateEb'/>
+<fun r='_ZNK5ZXing11DecodeHints9binarizerEv'/>
+<fun r='_ZN5ZXing11DecodeHints12setBinarizerENS_9BinarizerE'/>
+<fun r='_ZNK5ZXing11DecodeHints6isPureEv'/>
+<fun r='_ZN5ZXing11DecodeHints9setIsPureEb'/>
+<fun r='_ZNK5ZXing11DecodeHints12characterSetB5cxx11Ev'/>
+<fun r='_ZN5ZXing11DecodeHints15setCharacterSetENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing11DecodeHints14allowedLengthsEv'/>
+<fun r='_ZN5ZXing11DecodeHints17setAllowedLengthsESt6vectorIiSaIiEE'/>
+<fun r='_ZNK5ZXing11DecodeHints21tryCode39ExtendedModeEv'/>
+<fun r='_ZN5ZXing11DecodeHints24setTryCode39ExtendedModeEb'/>
+<fun r='_ZNK5ZXing11DecodeHints22assumeCode39CheckDigitEv'/>
+<fun r='_ZN5ZXing11DecodeHints25setAssumeCode39CheckDigitEb'/>
+<fun r='_ZNK5ZXing11DecodeHints9assumeGS1Ev'/>
+<fun r='_ZN5ZXing11DecodeHints12setAssumeGS1Eb'/>
+<fun r='_ZNK5ZXing11DecodeHints21returnCodabarStartEndEv'/>
+<fun r='_ZN5ZXing11DecodeHints24setReturnCodabarStartEndEb'/>
+<fun r='_ZNK5ZXing11DecodeHints20allowedEanExtensionsEv'/>
+<fun r='_ZN5ZXing11DecodeHints23setAllowedEanExtensionsESt6vectorIiSaIiEE'/>
+<fun r='_ZNK5ZXing11DecodeHints9hasFormatENS_13BarcodeFormatE'/>
+<fun r='_ZNK5ZXing11DecodeHints11hasNoFormatEv'/>
+<fun r='_ZN5ZXing11DecodeHints18setPossibleFormatsERKSt6vectorINS_13BarcodeFormatESaIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.h' l='40' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='38' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='37' c='_ZN5ZXing6QRCode6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='36' c='_ZN5ZXing10DataMatrix6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.h' l='32' c='_ZN5ZXing8MaxiCode6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='34' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='52' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='81' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='81' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='92' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='117' c='_ZN5ZXing11ReadBarcodeEiiPKhiNS_5FlagsINS_13BarcodeFormatEEEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='124' c='_ZN5ZXing11ReadBarcodeEiiPKhiiiiiNS_5FlagsINS_13BarcodeFormatEEEbb'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='34' c='_ZN5ZXing10DataMatrix6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='58' c='_ZN5ZXing8MaxiCode6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.h' l='36' c='_ZN5ZXing4OneD13CodabarReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='213' c='_ZN5ZXing4OneD13CodabarReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.h' l='35' c='_ZN5ZXing4OneD13Code128ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='194' c='_ZN5ZXing4OneD13Code128ReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='46' c='_ZN5ZXing4OneD12Code39ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='158' c='_ZN5ZXing4OneD12Code39ReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='72' c='_ZN5ZXing4OneD12UPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN13Reader.h' l='34' c='_ZN5ZXing4OneD11EAN13ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN8Reader.h' l='32' c='_ZN5ZXing4OneD10EAN8ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='48' c='_ZN5ZXing4OneD9ITFReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='197' c='_ZN5ZXing4OneD9ITFReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='43' c='_ZN5ZXing4OneD17MultiUPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.h' l='33' c='_ZN5ZXing4OneD10UPCAReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h' l='34' c='_ZN5ZXing4OneD10UPCEReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='32' c='_ZN5ZXing4OneD17MultiUPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='35' c='_ZN5ZXing4OneD17MultiUPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='38' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='35' c='_ZN5ZXing4OneD12UPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='36' c='_ZN5ZXing6QRCode6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>88</size>
+<use f='qv2ray/src/ui/common/QRCodeHelper.cpp' l='15' c='_ZN6Qv2ray2ui12DecodeQRCodeERK6QImage'/>
+<size>88</size>

@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>loop.h source code [qv2ray/3rdparty/uvw/src/uvw/loop.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::Loop,uvw::details::UVLoopOption,uvw::details::UVRunMode "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/loop.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='loop.h.html'>loop.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_LOOP_INCLUDE_H">UVW_LOOP_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_LOOP_INCLUDE_H" data-ref="_M/UVW_LOOP_INCLUDE_H">UVW_LOOP_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#<span data-ppcond="5">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;ciso646&gt;</u></td></tr>
+<tr><th id="7">7</th><td><u>#<span data-ppcond="5">endif</span></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../../../../../include/c++/10/functional.html">&lt;functional&gt;</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../../../../../include/c++/10/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="../../../../../include/c++/10/chrono.html">&lt;chrono&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="emitter.h.html">"emitter.h"</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>class</b> <a class="type" href="async.h.html#uvw::AsyncHandle" title='uvw::AsyncHandle' data-ref="uvw::AsyncHandle" data-ref-filename="uvw..AsyncHandle" id="uvw::AsyncHandle">AsyncHandle</a>;</td></tr>
+<tr><th id="23">23</th><td><b>class</b> <dfn class="type" id="uvw::CheckHandle" title='uvw::CheckHandle' data-ref="uvw::CheckHandle" data-ref-filename="uvw..CheckHandle">CheckHandle</dfn>;</td></tr>
+<tr><th id="24">24</th><td><b>class</b> <dfn class="type" id="uvw::FsEventHandle" title='uvw::FsEventHandle' data-ref="uvw::FsEventHandle" data-ref-filename="uvw..FsEventHandle">FsEventHandle</dfn>;</td></tr>
+<tr><th id="25">25</th><td><b>class</b> <dfn class="type" id="uvw::FsPollHandle" title='uvw::FsPollHandle' data-ref="uvw::FsPollHandle" data-ref-filename="uvw..FsPollHandle">FsPollHandle</dfn>;</td></tr>
+<tr><th id="26">26</th><td><b>class</b> <dfn class="type" id="uvw::IdleHandle" title='uvw::IdleHandle' data-ref="uvw::IdleHandle" data-ref-filename="uvw..IdleHandle">IdleHandle</dfn>;</td></tr>
+<tr><th id="27">27</th><td><b>class</b> <dfn class="type" id="uvw::PipeHandle" title='uvw::PipeHandle' data-ref="uvw::PipeHandle" data-ref-filename="uvw..PipeHandle">PipeHandle</dfn>;</td></tr>
+<tr><th id="28">28</th><td><b>class</b> <dfn class="type" id="uvw::PollHandle" title='uvw::PollHandle' data-ref="uvw::PollHandle" data-ref-filename="uvw..PollHandle">PollHandle</dfn>;</td></tr>
+<tr><th id="29">29</th><td><b>class</b> <dfn class="type" id="uvw::PrepareHandle" title='uvw::PrepareHandle' data-ref="uvw::PrepareHandle" data-ref-filename="uvw..PrepareHandle">PrepareHandle</dfn>;</td></tr>
+<tr><th id="30">30</th><td><b>class</b> <dfn class="type" id="uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</dfn>;</td></tr>
+<tr><th id="31">31</th><td><b>class</b> <dfn class="type" id="uvw::SignalHandle" title='uvw::SignalHandle' data-ref="uvw::SignalHandle" data-ref-filename="uvw..SignalHandle">SignalHandle</dfn>;</td></tr>
+<tr><th id="32">32</th><td><b>class</b> <dfn class="type" id="uvw::TCPHandle" title='uvw::TCPHandle' data-ref="uvw::TCPHandle" data-ref-filename="uvw..TCPHandle">TCPHandle</dfn>;</td></tr>
+<tr><th id="33">33</th><td><b>class</b> <dfn class="type" id="uvw::TimerHandle" title='uvw::TimerHandle' data-ref="uvw::TimerHandle" data-ref-filename="uvw..TimerHandle">TimerHandle</dfn>;</td></tr>
+<tr><th id="34">34</th><td><b>class</b> <dfn class="type" id="uvw::TTYHandle" title='uvw::TTYHandle' data-ref="uvw::TTYHandle" data-ref-filename="uvw..TTYHandle">TTYHandle</dfn>;</td></tr>
+<tr><th id="35">35</th><td><b>class</b> <dfn class="type" id="uvw::UDPHandle" title='uvw::UDPHandle' data-ref="uvw::UDPHandle" data-ref-filename="uvw..UDPHandle">UDPHandle</dfn>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVLoopOption" title='uvw::details::UVLoopOption' data-ref="uvw::details::UVLoopOption" data-ref-filename="uvw..details..UVLoopOption">UVLoopOption</dfn>: std::underlying_type_t&lt;uv_loop_option&gt; {</td></tr>
+<tr><th id="42">42</th><td>    <dfn class="enum" id="uvw::details::UVLoopOption::BLOCK_SIGNAL" title='uvw::details::UVLoopOption::BLOCK_SIGNAL' data-ref="uvw::details::UVLoopOption::BLOCK_SIGNAL" data-ref-filename="uvw..details..UVLoopOption..BLOCK_SIGNAL">BLOCK_SIGNAL</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_LOOP_BLOCK_SIGNAL" title='UV_LOOP_BLOCK_SIGNAL' data-ref="UV_LOOP_BLOCK_SIGNAL" data-ref-filename="UV_LOOP_BLOCK_SIGNAL">UV_LOOP_BLOCK_SIGNAL</a></td></tr>
+<tr><th id="43">43</th><td>};</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVRunMode" title='uvw::details::UVRunMode' data-ref="uvw::details::UVRunMode" data-ref-filename="uvw..details..UVRunMode">UVRunMode</dfn>: std::underlying_type_t&lt;uv_run_mode&gt; {</td></tr>
+<tr><th id="47">47</th><td>    <dfn class="enum" id="uvw::details::UVRunMode::DEFAULT" title='uvw::details::UVRunMode::DEFAULT' data-ref="uvw::details::UVRunMode::DEFAULT" data-ref-filename="uvw..details..UVRunMode..DEFAULT">DEFAULT</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_RUN_DEFAULT" title='UV_RUN_DEFAULT' data-ref="UV_RUN_DEFAULT" data-ref-filename="UV_RUN_DEFAULT">UV_RUN_DEFAULT</a>,</td></tr>
+<tr><th id="48">48</th><td>    <dfn class="enum" id="uvw::details::UVRunMode::ONCE" title='uvw::details::UVRunMode::ONCE' data-ref="uvw::details::UVRunMode::ONCE" data-ref-filename="uvw..details..UVRunMode..ONCE">ONCE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_RUN_ONCE" title='UV_RUN_ONCE' data-ref="UV_RUN_ONCE" data-ref-filename="UV_RUN_ONCE">UV_RUN_ONCE</a>,</td></tr>
+<tr><th id="49">49</th><td>    <dfn class="enum" id="uvw::details::UVRunMode::NOWAIT" title='uvw::details::UVRunMode::NOWAIT' data-ref="uvw::details::UVRunMode::NOWAIT" data-ref-filename="uvw..details..UVRunMode..NOWAIT">NOWAIT</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_RUN_NOWAIT" title='UV_RUN_NOWAIT' data-ref="UV_RUN_NOWAIT" data-ref-filename="UV_RUN_NOWAIT">UV_RUN_NOWAIT</a></td></tr>
+<tr><th id="50">50</th><td>};</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>}</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * <span class="command">@brief</span> The Loop class.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * The event loop is the central part of `uvw`'s functionalities, as well as</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * `libuv`'s ones.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * It takes care of polling for I/O and scheduling callbacks to be run based on</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * different sources of events.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="64">64</th><td><b>class</b> <dfn class="type def" id="uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</dfn> final: <b>public</b> <a class="type" href="emitter.h.html#uvw::Emitter" title='uvw::Emitter' data-ref="uvw::Emitter" data-ref-filename="uvw..Emitter">Emitter</a>&lt;<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt;, <b>public</b> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::enable_shared_from_this" title='std::enable_shared_from_this' data-ref="std::enable_shared_from_this" data-ref-filename="std..enable_shared_from_this">enable_shared_from_this</a>&lt;<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; {</td></tr>
+<tr><th id="65">65</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Loop::Deleter" title='uvw::Loop::Deleter' data-type='void (*)(uv_loop_t *)' data-ref="uvw::Loop::Deleter" data-ref-filename="uvw..Loop..Deleter">Deleter</dfn> = <em>void</em>(*)(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a> *);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>    <b>template</b>&lt;<b>typename</b>, <b>typename</b>&gt;</td></tr>
+<tr><th id="68">68</th><td>    <b>friend</b> <b>class</b> <a class="type" href="resource.hpp.html#uvw::Resource" title='uvw::Resource' data-ref="uvw::Resource" data-ref-filename="uvw..Resource" id="uvw::Resource">Resource</a>;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>    <b>template</b>&lt;<b>typename</b> R, <b>typename</b>... Args&gt;</td></tr>
+<tr><th id="71">71</th><td>    <em>auto</em> <dfn class="decl def fn" id="_ZN3uvw4Loop15create_resourceEiDpOT0_" title='uvw::Loop::create_resource' data-ref="_ZN3uvw4Loop15create_resourceEiDpOT0_" data-ref-filename="_ZN3uvw4Loop15create_resourceEiDpOT0_">create_resource</dfn>(<em>int</em>, Args&amp;&amp;... <dfn class="local col0 decl" id="90args" title='args' data-type='Args &amp;&amp;...' data-ref="90args" data-ref-filename="90args">args</dfn>) -&gt; <b>decltype</b>(<span class="namespace">std::</span>declval&lt;R&gt;().init(), <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;R&gt;{}) {</td></tr>
+<tr><th id="72">72</th><td>        <em>auto</em> <dfn class="local col1 decl" id="91ptr" title='ptr' data-type='auto' data-ref="91ptr" data-ref-filename="91ptr">ptr</dfn> = R::create(<a class="member fn" href="../../../../../include/c++/10/bits/shared_ptr.h.html#_ZNSt23enable_shared_from_this16shared_from_thisEv" title='std::enable_shared_from_this::shared_from_this' data-ref="_ZNSt23enable_shared_from_this16shared_from_thisEv" data-ref-filename="_ZNSt23enable_shared_from_this16shared_from_thisEv">shared_from_this</a>(), <span class="namespace">std::</span>forward&lt;Args&gt;(<a class="local col0 ref" href="#90args" title='args' data-ref="90args" data-ref-filename="90args">args</a>)...);</td></tr>
+<tr><th id="73">73</th><td>        <a class="local col1 ref" href="#91ptr" title='ptr' data-ref="91ptr" data-ref-filename="91ptr">ptr</a> = <a class="local col1 ref" href="#91ptr" title='ptr' data-ref="91ptr" data-ref-filename="91ptr">ptr</a>-&gt;init() ? <a class="local col1 ref" href="#91ptr" title='ptr' data-ref="91ptr" data-ref-filename="91ptr">ptr</a> : <b>nullptr</b>;</td></tr>
+<tr><th id="74">74</th><td>        <b>return</b> <a class="local col1 ref" href="#91ptr" title='ptr' data-ref="91ptr" data-ref-filename="91ptr">ptr</a>;</td></tr>
+<tr><th id="75">75</th><td>    }</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>    <b>template</b>&lt;<b>typename</b> R, <b>typename</b>... Args&gt;</td></tr>
+<tr><th id="78">78</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;R&gt; <dfn class="decl def fn" id="_ZN3uvw4Loop15create_resourceEcDpOT0_" title='uvw::Loop::create_resource' data-ref="_ZN3uvw4Loop15create_resourceEcDpOT0_" data-ref-filename="_ZN3uvw4Loop15create_resourceEcDpOT0_">create_resource</dfn>(<em>char</em>, Args&amp;&amp;... <dfn class="local col2 decl" id="92args" title='args' data-type='Args &amp;&amp;...' data-ref="92args" data-ref-filename="92args">args</dfn>) {</td></tr>
+<tr><th id="79">79</th><td>        <b>return</b> R::create(<a class="member fn" href="../../../../../include/c++/10/bits/shared_ptr.h.html#_ZNSt23enable_shared_from_this16shared_from_thisEv" title='std::enable_shared_from_this::shared_from_this' data-ref="_ZNSt23enable_shared_from_this16shared_from_thisEv" data-ref-filename="_ZNSt23enable_shared_from_this16shared_from_thisEv">shared_from_this</a>(), <span class="namespace">std::</span>forward&lt;Args&gt;(<a class="local col2 ref" href="#92args" title='args' data-ref="92args" data-ref-filename="92args">args</a>)...);</td></tr>
+<tr><th id="80">80</th><td>    }</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>    <dfn class="decl fn" id="_ZN3uvw4LoopC1ESt10unique_ptrI9uv_loop_sPFvPS2_EE" title='uvw::Loop::Loop' data-ref="_ZN3uvw4LoopC1ESt10unique_ptrI9uv_loop_sPFvPS2_EE" data-ref-filename="_ZN3uvw4LoopC1ESt10unique_ptrI9uv_loop_sPFvPS2_EE">Loop</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>, <a class="typedef" href="#uvw::Loop::Deleter" title='uvw::Loop::Deleter' data-type='void (*)(uv_loop_t *)' data-ref="uvw::Loop::Deleter" data-ref-filename="uvw..Loop..Deleter">Deleter</a>&gt; <dfn class="local col3 decl" id="93ptr" title='ptr' data-type='std::unique_ptr&lt;uv_loop_t, Deleter&gt;' data-ref="93ptr" data-ref-filename="93ptr">ptr</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><b>public</b>:</td></tr>
+<tr><th id="85">85</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Loop::Time" title='uvw::Loop::Time' data-type='std::chrono::duration&lt;uint64_t, std::milli&gt;' data-ref="uvw::Loop::Time" data-ref-filename="uvw..Loop..Time">Time</dfn> = <span class="namespace">std::chrono::</span><a class="type" href="../../../../../include/c++/10/chrono.html#std::chrono::duration" title='std::chrono::duration' data-ref="std::chrono::duration" data-ref-filename="std..chrono..duration">duration</a>&lt;<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint64_t" title='uint64_t' data-type='__uint64_t' data-ref="uint64_t" data-ref-filename="uint64_t">uint64_t</a>, <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/ratio.html#std::milli" title='std::milli' data-type='ratio&lt;1, 1000&gt;' data-ref="std::milli" data-ref-filename="std..milli">milli</a>&gt;;</td></tr>
+<tr><th id="86">86</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Loop::Configure" title='uvw::Loop::Configure' data-type='details::UVLoopOption' data-ref="uvw::Loop::Configure" data-ref-filename="uvw..Loop..Configure">Configure</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVLoopOption" title='uvw::details::UVLoopOption' data-ref="uvw::details::UVLoopOption" data-ref-filename="uvw..details..UVLoopOption">UVLoopOption</a>;</td></tr>
+<tr><th id="87">87</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Loop::Mode" title='uvw::Loop::Mode' data-type='details::UVRunMode' data-ref="uvw::Loop::Mode" data-ref-filename="uvw..Loop..Mode">Mode</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVRunMode" title='uvw::details::UVRunMode' data-ref="uvw::details::UVRunMode" data-ref-filename="uvw..details..UVRunMode">UVRunMode</a>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     * <span class="command">@brief</span> Initializes a new Loop instance.</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     * <span class="command">@return</span> A pointer to the newly created loop.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="93">93</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="decl fn" id="_ZN3uvw4Loop6createEv" title='uvw::Loop::create' data-ref="_ZN3uvw4Loop6createEv" data-ref-filename="_ZN3uvw4Loop6createEv">create</dfn>();</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * <span class="command">@brief</span> Initializes a new Loop instance from an existing resource.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     * The lifetime of the resource must exceed that of the instance to which</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * it's associated. Management of the memory associated with the resource is</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     * in charge of the user.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">loop</span> A valid pointer to a correctly initialized resource.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">     * <span class="command">@return</span> A pointer to the newly created loop.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="105">105</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="decl fn" id="_ZN3uvw4Loop6createEP9uv_loop_s" title='uvw::Loop::create' data-ref="_ZN3uvw4Loop6createEP9uv_loop_s" data-ref-filename="_ZN3uvw4Loop6createEP9uv_loop_s">create</dfn>(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a> *<dfn class="local col4 decl" id="94loop" title='loop' data-type='uv_loop_t *' data-ref="94loop" data-ref-filename="94loop">loop</dfn>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">     * <span class="command">@brief</span> Gets the initialized default loop.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     * It may return an empty pointer in case of failure.<span class="tag">&lt;br&gt;</span></i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     * This function is just a convenient way for having a global loop</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     * throughout an application, the default loop is in no way different than</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * the ones initialized with `create()`.<span class="tag">&lt;br&gt;</span></i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * As such, the default loop can be closed with `close()` so the resources</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * associated with it are freed (even if it is not strictly necessary).</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     * <span class="command">@return</span> The initialized default loop.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="119">119</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="decl fn" id="_ZN3uvw4Loop10getDefaultEv" title='uvw::Loop::getDefault' data-ref="_ZN3uvw4Loop10getDefaultEv" data-ref-filename="_ZN3uvw4Loop10getDefaultEv">getDefault</dfn>();</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <dfn class="decl def fn" id="_ZN3uvw4LoopC1ERKS0_" title='uvw::Loop::Loop' data-ref="_ZN3uvw4LoopC1ERKS0_" data-ref-filename="_ZN3uvw4LoopC1ERKS0_">Loop</dfn>(<em>const</em> <a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a> &amp;) = <b>delete</b>;</td></tr>
+<tr><th id="122">122</th><td>    <dfn class="decl def fn" id="_ZN3uvw4LoopC1EOS0_" title='uvw::Loop::Loop' data-ref="_ZN3uvw4LoopC1EOS0_" data-ref-filename="_ZN3uvw4LoopC1EOS0_">Loop</dfn>(<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a> &amp;&amp;<dfn class="local col5 decl" id="95other" title='other' data-type='uvw::Loop &amp;&amp;' data-ref="95other" data-ref-filename="95other">other</dfn>) = <b>delete</b>;</td></tr>
+<tr><th id="123">123</th><td>    <a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a> &amp; <dfn class="decl def fn" id="_ZN3uvw4LoopaSERKS0_" title='uvw::Loop::operator=' data-ref="_ZN3uvw4LoopaSERKS0_" data-ref-filename="_ZN3uvw4LoopaSERKS0_"><b>operator</b>=</dfn>(<em>const</em> <a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a> &amp;) = <b>delete</b>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a> &amp; <dfn class="decl def fn" id="_ZN3uvw4LoopaSEOS0_" title='uvw::Loop::operator=' data-ref="_ZN3uvw4LoopaSEOS0_" data-ref-filename="_ZN3uvw4LoopaSEOS0_"><b>operator</b>=</dfn>(<a class="type" href="#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a> &amp;&amp;<dfn class="local col6 decl" id="96other" title='other' data-type='uvw::Loop &amp;&amp;' data-ref="96other" data-ref-filename="96other">other</dfn>) = <b>delete</b>;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>    <dfn class="virtual decl fn" id="_ZN3uvw4LoopD1Ev" title='uvw::Loop::~Loop' data-ref="_ZN3uvw4LoopD1Ev" data-ref-filename="_ZN3uvw4LoopD1Ev">~Loop</dfn>() <b>noexcept</b>;</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">     * <span class="command">@brief</span> Sets additional loop options.</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     * You should normally call this before the first call to uv_run() unless</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">     * mentioned otherwise.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">     * Supported options:</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     * * `Loop::Configure::BLOCK_SIGNAL`: Block a signal when polling for new</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     * events. A second argument is required and it is the signal number.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc">     * An ErrorEvent will be emitted in case of errors.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/loop.html#c.uv_loop_configure">http://docs.libuv.org/en/v1.x/loop.html#c.uv_loop_configure</a>)</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="144">144</th><td>    <b>template</b>&lt;<b>typename</b>... Args&gt;</td></tr>
+<tr><th id="145">145</th><td>    <em>void</em> <dfn class="decl def fn" id="_ZN3uvw4Loop9configureENS_7details12UVLoopOptionEDpOT_" title='uvw::Loop::configure' data-ref="_ZN3uvw4Loop9configureENS_7details12UVLoopOptionEDpOT_" data-ref-filename="_ZN3uvw4Loop9configureENS_7details12UVLoopOptionEDpOT_">configure</dfn>(<a class="typedef" href="#uvw::Loop::Configure" title='uvw::Loop::Configure' data-type='details::UVLoopOption' data-ref="uvw::Loop::Configure" data-ref-filename="uvw..Loop..Configure">Configure</a> <dfn class="local col7 decl" id="97flag" title='flag' data-type='uvw::Loop::Configure' data-ref="97flag" data-ref-filename="97flag">flag</dfn>, Args&amp;&amp;... <dfn class="local col8 decl" id="98args" title='args' data-type='Args &amp;&amp;...' data-ref="98args" data-ref-filename="98args">args</dfn>) {</td></tr>
+<tr><th id="146">146</th><td>        <em>auto</em> <dfn class="local col9 decl" id="99option" title='option' data-type='unsigned int' data-ref="99option" data-ref-filename="99option">option</dfn> = <b>static_cast</b>&lt;<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/type_traits.html#std::underlying_type_t" title='std::underlying_type_t' data-ref="std::underlying_type_t" data-ref-filename="std..underlying_type_t">underlying_type_t</a>&lt;<a class="typedef" href="#uvw::Loop::Configure" title='uvw::Loop::Configure' data-type='details::UVLoopOption' data-ref="uvw::Loop::Configure" data-ref-filename="uvw..Loop..Configure">Configure</a>&gt;&gt;(<a class="local col7 ref" href="#97flag" title='flag' data-ref="97flag" data-ref-filename="97flag">flag</a>);</td></tr>
+<tr><th id="147">147</th><td>        <em>auto</em> <dfn class="local col0 decl" id="100err" title='err' data-type='auto' data-ref="100err" data-ref-filename="100err">err</dfn> = uv_loop_configure(<a class="member field" href="#uvw::Loop::loop" title='uvw::Loop::loop' data-ref="uvw::Loop::loop" data-ref-filename="uvw..Loop..loop">loop</a>.<a class="ref fn" href="../../../../../include/c++/10/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv" data-ref-filename="_ZNKSt10unique_ptr3getEv">get</a>(), <b>static_cast</b>&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_option" title='uv_loop_option' data-type='enum uv_loop_option' data-ref="uv_loop_option" data-ref-filename="uv_loop_option">uv_loop_option</a>&gt;(<a class="local col9 ref" href="#99option" title='option' data-ref="99option" data-ref-filename="99option">option</a>), <span class="namespace">std::</span>forward&lt;Args&gt;(<a class="local col8 ref" href="#98args" title='args' data-ref="98args" data-ref-filename="98args">args</a>)...);</td></tr>
+<tr><th id="148">148</th><td>        <b>if</b>(<a class="local col0 ref" href="#100err" title='err' data-ref="100err" data-ref-filename="100err">err</a>) { <a class="member fn" href="emitter.h.html#_ZN3uvw7Emitter7publishETL0__" title='uvw::Emitter::publish' data-ref="_ZN3uvw7Emitter7publishETL0__" data-ref-filename="_ZN3uvw7Emitter7publishETL0__">publish</a>(<a class="type" href="emitter.h.html#uvw::ErrorEvent" title='uvw::ErrorEvent' data-ref="uvw::ErrorEvent" data-ref-filename="uvw..ErrorEvent">ErrorEvent</a>{<a class="local col0 ref" href="#100err" title='err' data-ref="100err" data-ref-filename="100err">err</a>}); }</td></tr>
+<tr><th id="149">149</th><td>    }</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc">     * <span class="command">@brief</span> Creates resources of any type.</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc">     * This should be used as a default method to create resources.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">     * The arguments are the ones required for the specific resource.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc">     * Use it as `loop-&gt;resource&lt;uvw::TimerHandle&gt;()`.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc">     * <span class="command">@return</span> A pointer to the newly created resource.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="161">161</th><td>    <b>template</b>&lt;<b>typename</b> R, <b>typename</b>... Args&gt;</td></tr>
+<tr><th id="162">162</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;R&gt; <dfn class="decl def fn" id="_ZN3uvw4Loop8resourceEDpOT0_" title='uvw::Loop::resource' data-ref="_ZN3uvw4Loop8resourceEDpOT0_" data-ref-filename="_ZN3uvw4Loop8resourceEDpOT0_">resource</dfn>(Args&amp;&amp;... <dfn class="local col1 decl" id="101args" title='args' data-type='Args &amp;&amp;...' data-ref="101args" data-ref-filename="101args">args</dfn>) {</td></tr>
+<tr><th id="163">163</th><td>        <b>return</b> create_resource&lt;R&gt;(<var>0</var>, <span class="namespace">std::</span>forward&lt;Args&gt;(<a class="local col1 ref" href="#101args" title='args' data-ref="101args" data-ref-filename="101args">args</a>)...);</td></tr>
+<tr><th id="164">164</th><td>    }</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc">     * <span class="command">@brief</span> Releases all internal loop resources.</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc">     * Call this function only when the loop has finished executing and all open</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc">     * handles and requests have been closed, or the loop will emit an error.</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc">     * An ErrorEvent will be emitted in case of errors.</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="174">174</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN3uvw4Loop5closeEv" title='uvw::Loop::close' data-ref="_ZN3uvw4Loop5closeEv" data-ref-filename="_ZN3uvw4Loop5closeEv">close</dfn>();</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc">     * <span class="command">@brief</span> Runs the event loop.</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc">     * Available modes are:</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc">     * * `Loop::Mode::DEFAULT`: Runs the event loop until there are no more</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">     * active and referenced handles or requests.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc">     * * `Loop::Mode::ONCE`: Poll for i/o once. Note that this function blocks</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc">     * if there are no pending callbacks.</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc">     * * `Loop::Mode::NOWAIT`: Poll for i/o once but don’t block if there are no</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc">     * pending callbacks.</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/loop.html#c.uv_run">http://docs.libuv.org/en/v1.x/loop.html#c.uv_run</a>)</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc">     * <span class="command">@return</span> True when done, false in all other cases.</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="194">194</th><td>    <b>template</b>&lt;<a class="typedef" href="#uvw::Loop::Mode" title='uvw::Loop::Mode' data-type='details::UVRunMode' data-ref="uvw::Loop::Mode" data-ref-filename="uvw..Loop..Mode">Mode</a> mode = <a class="typedef" href="#uvw::Loop::Mode" title='uvw::Loop::Mode' data-type='details::UVRunMode' data-ref="uvw::Loop::Mode" data-ref-filename="uvw..Loop..Mode">Mode</a>::<a class="enum" href="#uvw::details::UVRunMode::DEFAULT" title='uvw::details::UVRunMode::DEFAULT' data-ref="uvw::details::UVRunMode::DEFAULT" data-ref-filename="uvw..details..UVRunMode..DEFAULT">DEFAULT</a>&gt;</td></tr>
+<tr><th id="195">195</th><td>    <em>bool</em> <dfn class="decl fn" id="_ZN3uvw4Loop3runEv" title='uvw::Loop::run' data-ref="_ZN3uvw4Loop3runEv" data-ref-filename="_ZN3uvw4Loop3runEv">run</dfn>() <b>noexcept</b>;</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc">     * <span class="command">@brief</span> Checks if there are active resources.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc">     * <span class="command">@return</span> True if there are active resources in the loop.</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="201">201</th><td>    <em>bool</em> <dfn class="decl fn" id="_ZNK3uvw4Loop5aliveEv" title='uvw::Loop::alive' data-ref="_ZNK3uvw4Loop5aliveEv" data-ref-filename="_ZNK3uvw4Loop5aliveEv">alive</dfn>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">     * <span class="command">@brief</span> Stops the event loop.</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc">     * It causes `run()` to end as soon as possible.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc">     * This will happen not sooner than the next loop iteration.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc">     * If this function was called before blocking for I/O, the loop won’t block</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc">     * for I/O on this iteration.</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="211">211</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN3uvw4Loop4stopEv" title='uvw::Loop::stop' data-ref="_ZN3uvw4Loop4stopEv" data-ref-filename="_ZN3uvw4Loop4stopEv">stop</dfn>() <b>noexcept</b>;</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc">     * <span class="command">@brief</span> Get backend file descriptor.</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc">     * Only kqueue, epoll and event ports are supported.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc">     * This can be used in conjunction with `run&lt;Loop::Mode::NOWAIT&gt;()` to poll</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc">     * in one thread and run the event loop’s callbacks in another.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc">     * <span class="command">@return</span> The backend file descriptor.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="222">222</th><td>    <em>int</em> <dfn class="decl fn" id="_ZNK3uvw4Loop10descriptorEv" title='uvw::Loop::descriptor' data-ref="_ZNK3uvw4Loop10descriptorEv" data-ref-filename="_ZNK3uvw4Loop10descriptorEv">descriptor</dfn>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc">     * <span class="command">@brief</span> Gets the poll timeout.</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc">     * <span class="command">@return</span> A `std::pair` composed as it follows:</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc">     * * A boolean value that is true in case of valid timeout, false otherwise.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc">     * * Milliseconds (`std::chrono::duration&lt;uint64_t, std::milli&gt;`).</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="230">230</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair" data-ref-filename="std..pair">pair</a>&lt;<em>bool</em>, <a class="typedef" href="#uvw::Loop::Time" title='uvw::Loop::Time' data-type='std::chrono::duration&lt;uint64_t, std::milli&gt;' data-ref="uvw::Loop::Time" data-ref-filename="uvw..Loop..Time">Time</a>&gt; <dfn class="decl fn" id="_ZNK3uvw4Loop7timeoutEv" title='uvw::Loop::timeout' data-ref="_ZNK3uvw4Loop7timeoutEv" data-ref-filename="_ZNK3uvw4Loop7timeoutEv">timeout</dfn>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc">     * <span class="command">@brief</span> Returns the current timestamp in milliseconds.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc">     * The timestamp is cached at the start of the event loop tick.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc">     * The timestamp increases monotonically from some arbitrary point in</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc">     * time.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc">     * Don’t make assumptions about the starting point, you will only get</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc">     * disappointed.</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc">     * <span class="command">@return</span> The current timestamp in milliseconds (actual type is</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc">     * `std::chrono::duration&lt;uint64_t, std::milli&gt;`).</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="244">244</th><td>    <a class="typedef" href="#uvw::Loop::Time" title='uvw::Loop::Time' data-type='std::chrono::duration&lt;uint64_t, std::milli&gt;' data-ref="uvw::Loop::Time" data-ref-filename="uvw..Loop..Time">Time</a> <dfn class="decl fn" id="_ZNK3uvw4Loop3nowEv" title='uvw::Loop::now' data-ref="_ZNK3uvw4Loop3nowEv" data-ref-filename="_ZNK3uvw4Loop3nowEv">now</dfn>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc">     * <span class="command">@brief</span> Updates the event loop’s concept of _now_.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc">     * The current time is cached at the start of the event loop tick in order</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc">     * to reduce the number of time-related system calls.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc">     * You won’t normally need to call this function unless you have callbacks</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc">     * that block the event loop for longer periods of time, where _longer_ is</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc">     * somewhat subjective but probably on the order of a millisecond or more.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="255">255</th><td>    <em>void</em> <dfn class="decl fn" id="_ZNK3uvw4Loop6updateEv" title='uvw::Loop::update' data-ref="_ZNK3uvw4Loop6updateEv" data-ref-filename="_ZNK3uvw4Loop6updateEv">update</dfn>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="256">256</th><td></td></tr>
+<tr><th id="257">257</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc">     * <span class="command">@brief</span> Walks the list of handles.</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc">     * The callback will be executed once for each handle that is still active.</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">callback</span> A function to be invoked once for each active handle.</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="264">264</th><td>    <b>template</b>&lt;<b>typename</b> Func&gt;</td></tr>
+<tr><th id="265">265</th><td>    <em>void</em> <dfn class="decl def fn" id="_ZN3uvw4Loop4walkET_" title='uvw::Loop::walk' data-ref="_ZN3uvw4Loop4walkET_" data-ref-filename="_ZN3uvw4Loop4walkET_">walk</dfn>(Func <dfn class="local col2 decl" id="102callback" title='callback' data-type='Func' data-ref="102callback" data-ref-filename="102callback">callback</dfn>) {</td></tr>
+<tr><th id="266">266</th><td>        <i>// remember: non-capturing lambdas decay to pointers to functions</i></td></tr>
+<tr><th id="267">267</th><td>        uv_walk(<a class="member field" href="#uvw::Loop::loop" title='uvw::Loop::loop' data-ref="uvw::Loop::loop" data-ref-filename="uvw..Loop..loop">loop</a>.<a class="ref fn" href="../../../../../include/c++/10/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv" data-ref-filename="_ZNKSt10unique_ptr3getEv">get</a>(), [](<a class="typedef" href="../../../libuv/include/uv.h.html#uv_handle_t" title='uv_handle_t' data-type='struct uv_handle_s' data-ref="uv_handle_t" data-ref-filename="uv_handle_t">uv_handle_t</a> *<dfn class="local col3 decl" id="103handle" title='handle' data-type='uv_handle_t *' data-ref="103handle" data-ref-filename="103handle">handle</dfn>, <em>void</em> *<dfn class="local col4 decl" id="104func" title='func' data-type='void *' data-ref="104func" data-ref-filename="104func">func</dfn>) {</td></tr>
+<tr><th id="268">268</th><td>            <em>auto</em> &amp;<dfn class="local col5 decl" id="105cb" title='cb' data-type='auto &amp;' data-ref="105cb" data-ref-filename="105cb">cb</dfn> = *<b>static_cast</b>&lt;Func *&gt;(<a class="local col4 ref" href="#104func" title='func' data-ref="104func" data-ref-filename="104func">func</a>);</td></tr>
+<tr><th id="269">269</th><td></td></tr>
+<tr><th id="270">270</th><td>            <b>switch</b>(<a class="type" href="util.h.html#uvw::Utilities" title='uvw::Utilities' data-ref="uvw::Utilities" data-ref-filename="uvw..Utilities">Utilities</a>::<a class="ref fn" href="util.h.html#_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperI14uv_handle_typeEE" title='uvw::Utilities::guessHandle' data-ref="_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperI14uv_handle_typeEE" data-ref-filename="_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperI14uv_handle_typeEE">guessHandle</a>(<a class="typedef" href="util.h.html#uvw::HandleCategory" title='uvw::HandleCategory' data-type='details::UVTypeWrapper&lt;uv_handle_type&gt;' data-ref="uvw::HandleCategory" data-ref-filename="uvw..HandleCategory">HandleCategory</a><a class="ref fn" href="util.h.html#_ZN3uvw7details13UVTypeWrapperC1ET_" title='uvw::details::UVTypeWrapper::UVTypeWrapper&lt;T&gt;' data-ref="_ZN3uvw7details13UVTypeWrapperC1ET_" data-ref-filename="_ZN3uvw7details13UVTypeWrapperC1ET_">{</a><a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::type' data-ref="uv_handle_s::type" data-ref-filename="uv_handle_s..type">type</a>})) {</td></tr>
+<tr><th id="271">271</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::ASYNC" title='uvw::details::UVHandleType::ASYNC' data-ref="uvw::details::UVHandleType::ASYNC" data-ref-filename="uvw..details..UVHandleType..ASYNC">ASYNC</a>:</td></tr>
+<tr><th id="272">272</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="async.h.html#uvw::AsyncHandle" title='uvw::AsyncHandle' data-ref="uvw::AsyncHandle" data-ref-filename="uvw..AsyncHandle">AsyncHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="273">273</th><td>                <b>break</b>;</td></tr>
+<tr><th id="274">274</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::CHECK" title='uvw::details::UVHandleType::CHECK' data-ref="uvw::details::UVHandleType::CHECK" data-ref-filename="uvw..details..UVHandleType..CHECK">CHECK</a>:</td></tr>
+<tr><th id="275">275</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::CheckHandle" title='uvw::CheckHandle' data-ref="uvw::CheckHandle" data-ref-filename="uvw..CheckHandle">CheckHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="276">276</th><td>                <b>break</b>;</td></tr>
+<tr><th id="277">277</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::FS_EVENT" title='uvw::details::UVHandleType::FS_EVENT' data-ref="uvw::details::UVHandleType::FS_EVENT" data-ref-filename="uvw..details..UVHandleType..FS_EVENT">FS_EVENT</a>:</td></tr>
+<tr><th id="278">278</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::FsEventHandle" title='uvw::FsEventHandle' data-ref="uvw::FsEventHandle" data-ref-filename="uvw..FsEventHandle">FsEventHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="279">279</th><td>                <b>break</b>;</td></tr>
+<tr><th id="280">280</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::FS_POLL" title='uvw::details::UVHandleType::FS_POLL' data-ref="uvw::details::UVHandleType::FS_POLL" data-ref-filename="uvw..details..UVHandleType..FS_POLL">FS_POLL</a>:</td></tr>
+<tr><th id="281">281</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::FsPollHandle" title='uvw::FsPollHandle' data-ref="uvw::FsPollHandle" data-ref-filename="uvw..FsPollHandle">FsPollHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="282">282</th><td>                <b>break</b>;</td></tr>
+<tr><th id="283">283</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::IDLE" title='uvw::details::UVHandleType::IDLE' data-ref="uvw::details::UVHandleType::IDLE" data-ref-filename="uvw..details..UVHandleType..IDLE">IDLE</a>:</td></tr>
+<tr><th id="284">284</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::IdleHandle" title='uvw::IdleHandle' data-ref="uvw::IdleHandle" data-ref-filename="uvw..IdleHandle">IdleHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="285">285</th><td>                <b>break</b>;</td></tr>
+<tr><th id="286">286</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::PIPE" title='uvw::details::UVHandleType::PIPE' data-ref="uvw::details::UVHandleType::PIPE" data-ref-filename="uvw..details..UVHandleType..PIPE">PIPE</a>:</td></tr>
+<tr><th id="287">287</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::PipeHandle" title='uvw::PipeHandle' data-ref="uvw::PipeHandle" data-ref-filename="uvw..PipeHandle">PipeHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="288">288</th><td>                <b>break</b>;</td></tr>
+<tr><th id="289">289</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::POLL" title='uvw::details::UVHandleType::POLL' data-ref="uvw::details::UVHandleType::POLL" data-ref-filename="uvw..details..UVHandleType..POLL">POLL</a>:</td></tr>
+<tr><th id="290">290</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::PollHandle" title='uvw::PollHandle' data-ref="uvw::PollHandle" data-ref-filename="uvw..PollHandle">PollHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="291">291</th><td>                <b>break</b>;</td></tr>
+<tr><th id="292">292</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::PREPARE" title='uvw::details::UVHandleType::PREPARE' data-ref="uvw::details::UVHandleType::PREPARE" data-ref-filename="uvw..details..UVHandleType..PREPARE">PREPARE</a>:</td></tr>
+<tr><th id="293">293</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::PrepareHandle" title='uvw::PrepareHandle' data-ref="uvw::PrepareHandle" data-ref-filename="uvw..PrepareHandle">PrepareHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="294">294</th><td>                <b>break</b>;</td></tr>
+<tr><th id="295">295</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::PROCESS" title='uvw::details::UVHandleType::PROCESS' data-ref="uvw::details::UVHandleType::PROCESS" data-ref-filename="uvw..details..UVHandleType..PROCESS">PROCESS</a>:</td></tr>
+<tr><th id="296">296</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="297">297</th><td>                <b>break</b>;</td></tr>
+<tr><th id="298">298</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::SIGNAL" title='uvw::details::UVHandleType::SIGNAL' data-ref="uvw::details::UVHandleType::SIGNAL" data-ref-filename="uvw..details..UVHandleType..SIGNAL">SIGNAL</a>:</td></tr>
+<tr><th id="299">299</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::SignalHandle" title='uvw::SignalHandle' data-ref="uvw::SignalHandle" data-ref-filename="uvw..SignalHandle">SignalHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="300">300</th><td>                <b>break</b>;</td></tr>
+<tr><th id="301">301</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::TCP" title='uvw::details::UVHandleType::TCP' data-ref="uvw::details::UVHandleType::TCP" data-ref-filename="uvw..details..UVHandleType..TCP">TCP</a>:</td></tr>
+<tr><th id="302">302</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::TCPHandle" title='uvw::TCPHandle' data-ref="uvw::TCPHandle" data-ref-filename="uvw..TCPHandle">TCPHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="303">303</th><td>                <b>break</b>;</td></tr>
+<tr><th id="304">304</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::TIMER" title='uvw::details::UVHandleType::TIMER' data-ref="uvw::details::UVHandleType::TIMER" data-ref-filename="uvw..details..UVHandleType..TIMER">TIMER</a>:</td></tr>
+<tr><th id="305">305</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::TimerHandle" title='uvw::TimerHandle' data-ref="uvw::TimerHandle" data-ref-filename="uvw..TimerHandle">TimerHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="306">306</th><td>                <b>break</b>;</td></tr>
+<tr><th id="307">307</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::TTY" title='uvw::details::UVHandleType::TTY' data-ref="uvw::details::UVHandleType::TTY" data-ref-filename="uvw..details..UVHandleType..TTY">TTY</a>:</td></tr>
+<tr><th id="308">308</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::TTYHandle" title='uvw::TTYHandle' data-ref="uvw::TTYHandle" data-ref-filename="uvw..TTYHandle">TTYHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="309">309</th><td>                <b>break</b>;</td></tr>
+<tr><th id="310">310</th><td>            <b>case</b> <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a>::<a class="enum" href="util.h.html#uvw::details::UVHandleType::UDP" title='uvw::details::UVHandleType::UDP' data-ref="uvw::details::UVHandleType::UDP" data-ref-filename="uvw..details..UVHandleType..UDP">UDP</a>:</td></tr>
+<tr><th id="311">311</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(*<b>static_cast</b>&lt;<a class="type" href="#uvw::UDPHandle" title='uvw::UDPHandle' data-ref="uvw::UDPHandle" data-ref-filename="uvw..UDPHandle">UDPHandle</a> *&gt;(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#444" title='uv_handle_s::data' data-ref="uv_handle_s::data" data-ref-filename="uv_handle_s..data">data</a>));</td></tr>
+<tr><th id="312">312</th><td>                <b>break</b>;</td></tr>
+<tr><th id="313">313</th><td>            <b>default</b>:</td></tr>
+<tr><th id="314">314</th><td>                <i>// returns the underlying handle, uvw doesn't manage it properly yet</i></td></tr>
+<tr><th id="315">315</th><td>                <a class="local col5 ref" href="#105cb" title='cb' data-ref="105cb" data-ref-filename="105cb">cb</a>(<a class="local col3 ref" href="#103handle" title='handle' data-ref="103handle" data-ref-filename="103handle">handle</a>);</td></tr>
+<tr><th id="316">316</th><td>                <b>break</b>;</td></tr>
+<tr><th id="317">317</th><td>            }</td></tr>
+<tr><th id="318">318</th><td>        }, &amp;<a class="local col2 ref" href="#102callback" title='callback' data-ref="102callback" data-ref-filename="102callback">callback</a>);</td></tr>
+<tr><th id="319">319</th><td>    }</td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="322">322</th><td><i class="doc">     * <span class="command">@brief</span> Reinitialize any kernel state necessary in the child process after</i></td></tr>
+<tr><th id="323">323</th><td><i class="doc">     * a fork(2) system call.</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc">     * Previously started watchers will continue to be started in the child</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc">     * process.</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc">     * It is necessary to explicitly call this function on every event loop</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc">     * created in the parent process that you plan to continue to use in the</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc">     * child, including the default loop (even if you don’t continue to use it</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc">     * in the parent). This function must be called before calling any API</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc">     * function using the loop in the child. Failure to do so will result in</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc">     * undefined behaviour, possibly including duplicate events delivered to</i></td></tr>
+<tr><th id="334">334</th><td><i class="doc">     * both parent and child or aborting the child process.</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc">     * When possible, it is preferred to create a new loop in the child process</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc">     * instead of reusing a loop created in the parent. New loops created in the</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc">     * child process after the fork should not use this function.</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc">     * Note that this function is not implemented on Windows.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc">     * Note also that this function is experimental in `libuv`. It may contain</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc">     * bugs, and is subject to change or removal. API and ABI stability is not</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc">     * guaranteed.</i></td></tr>
+<tr><th id="344">344</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc">     * An ErrorEvent will be emitted in case of errors.</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/loop.html#c.uv_loop_fork">http://docs.libuv.org/en/v1.x/loop.html#c.uv_loop_fork</a>)</i></td></tr>
+<tr><th id="349">349</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="350">350</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="351">351</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN3uvw4Loop4forkEv" title='uvw::Loop::fork' data-ref="_ZN3uvw4Loop4forkEv" data-ref-filename="_ZN3uvw4Loop4forkEv">fork</dfn>() <b>noexcept</b>;</td></tr>
+<tr><th id="352">352</th><td></td></tr>
+<tr><th id="353">353</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="354">354</th><td><i class="doc">     * <span class="command">@brief</span> Gets user-defined data. `uvw` won't use this field in any case.</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc">     * <span class="command">@return</span> User-defined data if any, an invalid pointer otherwise.</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="357">357</th><td>    <b>template</b>&lt;<b>typename</b> R = <em>void</em>&gt;</td></tr>
+<tr><th id="358">358</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;R&gt; <dfn class="decl def fn" id="_ZNK3uvw4Loop4dataEv" title='uvw::Loop::data' data-ref="_ZNK3uvw4Loop4dataEv" data-ref-filename="_ZNK3uvw4Loop4dataEv">data</dfn>() <em>const</em> {</td></tr>
+<tr><th id="359">359</th><td>        <b>return</b> <span class="namespace">std::</span>static_pointer_cast&lt;R&gt;(<a class="member field" href="#uvw::Loop::userData" title='uvw::Loop::userData' data-ref="uvw::Loop::userData" data-ref-filename="uvw..Loop..userData">userData</a>);</td></tr>
+<tr><th id="360">360</th><td>    }</td></tr>
+<tr><th id="361">361</th><td></td></tr>
+<tr><th id="362">362</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="363">363</th><td><i class="doc">     * <span class="command">@brief</span> Sets arbitrary data. `uvw` won't use this field in any case.</i></td></tr>
+<tr><th id="364">364</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">uData</span> User-defined arbitrary data.</i></td></tr>
+<tr><th id="365">365</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="366">366</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN3uvw4Loop4dataESt10shared_ptrIvE" title='uvw::Loop::data' data-ref="_ZN3uvw4Loop4dataESt10shared_ptrIvE" data-ref-filename="_ZN3uvw4Loop4dataESt10shared_ptrIvE">data</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<em>void</em>&gt; <dfn class="local col6 decl" id="106uData" title='uData' data-type='std::shared_ptr&lt;void&gt;' data-ref="106uData" data-ref-filename="106uData">uData</dfn>);</td></tr>
+<tr><th id="367">367</th><td></td></tr>
+<tr><th id="368">368</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="369">369</th><td><i class="doc">     * <span class="command">@brief</span> Gets the underlying raw data structure.</i></td></tr>
+<tr><th id="370">370</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="371">371</th><td><i class="doc">     * This function should not be used, unless you know exactly what you are</i></td></tr>
+<tr><th id="372">372</th><td><i class="doc">     * doing and what are the risks.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="373">373</th><td><i class="doc">     * Going raw is dangerous, mainly because the lifetime management of a loop,</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc">     * a handle or a request is in charge to the library itself and users should</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc">     * not work around it.</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="377">377</th><td><i class="doc">     * <span class="command">@warning</span></i></td></tr>
+<tr><th id="378">378</th><td><i class="doc">     * Use this function at your own risk, but do not expect any support in case</i></td></tr>
+<tr><th id="379">379</th><td><i class="doc">     * of bugs.</i></td></tr>
+<tr><th id="380">380</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="381">381</th><td><i class="doc">     * <span class="command">@return</span> The underlying raw data structure.</i></td></tr>
+<tr><th id="382">382</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="383">383</th><td>    <em>const</em> <a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a> * <dfn class="decl fn" id="_ZNK3uvw4Loop3rawEv" title='uvw::Loop::raw' data-ref="_ZNK3uvw4Loop3rawEv" data-ref-filename="_ZNK3uvw4Loop3rawEv">raw</dfn>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="384">384</th><td></td></tr>
+<tr><th id="385">385</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="386">386</th><td><i class="doc">     * <span class="command">@brief</span> Gets the underlying raw data structure.</i></td></tr>
+<tr><th id="387">387</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="388">388</th><td><i class="doc">     * This function should not be used, unless you know exactly what you are</i></td></tr>
+<tr><th id="389">389</th><td><i class="doc">     * doing and what are the risks.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="390">390</th><td><i class="doc">     * Going raw is dangerous, mainly because the lifetime management of a loop,</i></td></tr>
+<tr><th id="391">391</th><td><i class="doc">     * a handle or a request is in charge to the library itself and users should</i></td></tr>
+<tr><th id="392">392</th><td><i class="doc">     * not work around it.</i></td></tr>
+<tr><th id="393">393</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="394">394</th><td><i class="doc">     * <span class="command">@warning</span></i></td></tr>
+<tr><th id="395">395</th><td><i class="doc">     * Use this function at your own risk, but do not expect any support in case</i></td></tr>
+<tr><th id="396">396</th><td><i class="doc">     * of bugs.</i></td></tr>
+<tr><th id="397">397</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="398">398</th><td><i class="doc">     * <span class="command">@return</span> The underlying raw data structure.</i></td></tr>
+<tr><th id="399">399</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="400">400</th><td>    <a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a> * <dfn class="decl fn" id="_ZN3uvw4Loop3rawEv" title='uvw::Loop::raw' data-ref="_ZN3uvw4Loop3rawEv" data-ref-filename="_ZN3uvw4Loop3rawEv">raw</dfn>() <b>noexcept</b>;</td></tr>
+<tr><th id="401">401</th><td></td></tr>
+<tr><th id="402">402</th><td><b>private</b>:</td></tr>
+<tr><th id="403">403</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>, <a class="typedef" href="#uvw::Loop::Deleter" title='uvw::Loop::Deleter' data-type='void (*)(uv_loop_t *)' data-ref="uvw::Loop::Deleter" data-ref-filename="uvw..Loop..Deleter">Deleter</a>&gt; <dfn class="decl field" id="uvw::Loop::loop" title='uvw::Loop::loop' data-ref="uvw::Loop::loop" data-ref-filename="uvw..Loop..loop">loop</dfn>;</td></tr>
+<tr><th id="404">404</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<em>void</em>&gt; <dfn class="decl field" id="uvw::Loop::userData" title='uvw::Loop::userData' data-ref="uvw::Loop::userData" data-ref-filename="uvw..Loop..userData">userData</dfn><a class="ref fn" href="../../../../../include/c++/10/bits/shared_ptr.h.html#_ZNSt10shared_ptrC1EDn" title='std::shared_ptr::shared_ptr&lt;_Tp&gt;' data-ref="_ZNSt10shared_ptrC1EDn" data-ref-filename="_ZNSt10shared_ptrC1EDn">{</a><b>nullptr</b>};</td></tr>
+<tr><th id="405">405</th><td>};</td></tr>
+<tr><th id="406">406</th><td></td></tr>
+<tr><th id="407">407</th><td></td></tr>
+<tr><th id="408">408</th><td><i>// (extern) explicit instantiations</i></td></tr>
+<tr><th id="409">409</th><td></td></tr>
+<tr><th id="410">410</th><td><b>extern</b> <b>template</b> <em>bool</em> Loop::run&lt;Loop::Mode::DEFAULT&gt;() <b>noexcept</b>;</td></tr>
+<tr><th id="411">411</th><td><b>extern</b> <b>template</b> <em>bool</em> Loop::run&lt;Loop::Mode::ONCE&gt;() <b>noexcept</b>;</td></tr>
+<tr><th id="412">412</th><td><b>extern</b> <b>template</b> <em>bool</em> Loop::run&lt;Loop::Mode::NOWAIT&gt;() <b>noexcept</b>;</td></tr>
+<tr><th id="413">413</th><td></td></tr>
+<tr><th id="414">414</th><td></td></tr>
+<tr><th id="415">415</th><td>}</td></tr>
+<tr><th id="416">416</th><td></td></tr>
+<tr><th id="417">417</th><td></td></tr>
+<tr><th id="418">418</th><td><u>#<span data-ppcond="418">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="419">419</th><td><u>#include "loop.cpp"</u></td></tr>
+<tr><th id="420">420</th><td><u>#<span data-ppcond="418">endif</span></u></td></tr>
+<tr><th id="421">421</th><td></td></tr>
+<tr><th id="422">422</th><td><u>#<span data-ppcond="1">endif</span> // UVW_LOOP_INCLUDE_H</u></td></tr>
+<tr><th id="423">423</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='async.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/async.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

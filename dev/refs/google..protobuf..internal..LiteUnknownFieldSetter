@@ -1,0 +1,15 @@
+<def f='include/google/protobuf/metadata_lite.h' l='202' ll='218'/>
+<size>40</size>
+<doc f='include/google/protobuf/metadata_lite.h' l='194'>// This helper RAII class is needed to efficiently parse unknown fields. We
+// should only call mutable_unknown_fields if there are actual unknown fields.
+// The obvious thing to just use a stack string and swap it at the end of the
+// parse won&apos;t work, because the destructor of StringOutputStream needs to be
+// called before we can modify the string (it check-fails). Using
+// LiteUnknownFieldSetter setter(&amp;_internal_metadata_);
+// StringOutputStream stream(setter.buffer());
+// guarantees that the string is only swapped after stream is destroyed.</doc>
+<fun r='_ZN6google8protobuf8internal22LiteUnknownFieldSetterC1EPNS1_29InternalMetadataWithArenaLiteE'/>
+<fun r='_ZN6google8protobuf8internal22LiteUnknownFieldSetterD1Ev'/>
+<fun r='_ZN6google8protobuf8internal22LiteUnknownFieldSetter6bufferB5cxx11Ev'/>
+<mbr r='google::protobuf::internal::LiteUnknownFieldSetter::metadata_' o='0' t='google::protobuf::internal::InternalMetadataWithArenaLite *'/>
+<mbr r='google::protobuf::internal::LiteUnknownFieldSetter::buffer_' o='64' t='std::string'/>

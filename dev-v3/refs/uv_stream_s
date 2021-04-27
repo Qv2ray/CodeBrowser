@@ -1,0 +1,30 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='212'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='493' ll='496'/>
+<size>248</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='486'>/*
+ * uv_stream_t is a subclass of uv_handle_t.
+ *
+ * uv_stream is an abstract class.
+ *
+ * uv_stream_t is the parent class of uv_tcp_t, uv_pipe_t and uv_tty_t.
+ */</doc>
+<mbr r='uv_stream_s::data' o='0' t='void *'/>
+<mbr r='uv_stream_s::loop' o='64' t='uv_loop_t *'/>
+<mbr r='uv_stream_s::type' o='128' t='uv_handle_type'/>
+<mbr r='uv_stream_s::close_cb' o='192' t='uv_close_cb'/>
+<mbr r='uv_stream_s::handle_queue' o='256' t='void *[2]'/>
+<mbr r='uv_stream_s::u' o='384' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/dev-v3/code_build/../3rdparty/libuv/include/uv.h:494:3)'/>
+<mbr r='uv_stream_s::next_closing' o='640' t='uv_handle_t *'/>
+<mbr r='uv_stream_s::flags' o='704' t='unsigned int'/>
+<mbr r='uv_stream_s::write_queue_size' o='768' t='size_t'/>
+<mbr r='uv_stream_s::alloc_cb' o='832' t='uv_alloc_cb'/>
+<mbr r='uv_stream_s::read_cb' o='896' t='uv_read_cb'/>
+<mbr r='uv_stream_s::connect_req' o='960' t='uv_connect_t *'/>
+<mbr r='uv_stream_s::shutdown_req' o='1024' t='uv_shutdown_t *'/>
+<mbr r='uv_stream_s::io_watcher' o='1088' t='uv__io_t'/>
+<mbr r='uv_stream_s::write_queue' o='1536' t='void *[2]'/>
+<mbr r='uv_stream_s::write_completed_queue' o='1664' t='void *[2]'/>
+<mbr r='uv_stream_s::connection_cb' o='1792' t='uv_connection_cb'/>
+<mbr r='uv_stream_s::delayed_error' o='1856' t='int'/>
+<mbr r='uv_stream_s::accepted_fd' o='1888' t='int'/>
+<mbr r='uv_stream_s::queued_fds' o='1920' t='void *'/>

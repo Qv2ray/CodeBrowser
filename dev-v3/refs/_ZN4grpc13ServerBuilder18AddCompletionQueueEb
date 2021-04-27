@@ -1,0 +1,31 @@
+<dec f='include/grpcpp/server_builder.h' l='125' type='std::unique_ptr&lt;ServerCompletionQueue&gt; grpc::ServerBuilder::AddCompletionQueue(bool is_frequently_polled = true)'/>
+<doc f='include/grpcpp/server_builder.h' l='95'>/// Add a completion queue for handling asynchronous services.
+  ///
+  /// Best performance is typically obtained by using one thread per polling
+  /// completion queue.
+  ///
+  /// Caller is required to shutdown the server prior to shutting down the
+  /// returned completion queue. Caller is also required to drain the
+  /// completion queue after shutting it down. A typical usage scenario:
+  ///
+  /// // While building the server:
+  /// ServerBuilder builder;
+  /// ...
+  /// cq_ = builder.AddCompletionQueue();
+  /// server_ = builder.BuildAndStart();
+  ///
+  /// // While shutting down the server;
+  /// server_-&gt;Shutdown();
+  /// cq_-&gt;Shutdown();  // Always *after* the associated server&apos;s Shutdown()!
+  /// // Drain the cq_ that was created
+  /// void* ignored_tag;
+  /// bool ignored_ok;
+  /// while (cq_-&gt;Next(&amp;ignored_tag, &amp;ignored_ok)) { }
+  ///
+  /// \param is_frequently_polled This is an optional parameter to inform gRPC
+  /// library about whether this completion queue would be frequently polled
+  /// (i.e. by calling \a Next() or \a AsyncNext()). The default value is
+  /// &apos;true&apos; and is the recommended setting. Setting this to &apos;false&apos; (i.e.
+  /// not polling the completion queue frequently) will have a significantly
+  /// negative performance impact and hence should not be used in production
+  /// use cases.</doc>

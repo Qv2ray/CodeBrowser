@@ -1,0 +1,30 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='192' macro='1' type='7'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='115' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='188' u='r' c='uv__socket_sockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='284' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='764' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='34' u='r' c='uv_pipe_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='192' u='r' c='uv__process_init_stdio'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='600' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='664' c='uv_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='790' c='uv__handle_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='986' u='r' c='uv__handle_type'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1132' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1262' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1262' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1293' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1293' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1349' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1349' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1403' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1403' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1414' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1558' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1558' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='337' u='r' c='uv_guess_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='367' u='r' c='uv_guess_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='135' macro='1' c='uv_handle_size'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='521' macro='1' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='6' macro='1' c='uv_handle_type_name'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='30'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='157' c='_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperI14uv_handle_typeEE'/>

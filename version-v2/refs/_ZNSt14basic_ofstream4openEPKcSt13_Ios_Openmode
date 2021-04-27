@@ -1,0 +1,10 @@
+<def f='include/c++/10/fstream' l='920' ll='929' type='void std::basic_ofstream::open(const char * __s, ios_base::openmode __mode = ios_base::out)'/>
+<use f='qv2ray/test/catch.hpp' l='13684' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_110FileStreamC1ENS_9StringRefE'/>
+<doc f='include/c++/10/fstream' l='912'>/**
+       *  @brief  Opens an external file.
+       *  @param  __s  The name of the file.
+       *  @param  __mode  The open mode flags.
+       *
+       *  Calls @c std::basic_filebuf::open(__s,__mode|out).  If that
+       *  function fails, @c failbit is set in the stream&apos;s error state.
+       */</doc>

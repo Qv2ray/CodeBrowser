@@ -1,0 +1,37 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='20' c='uvw::UnderlyingType'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='49' ll='107'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='49'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='73' c='_ZN3uvw6Thread5equalERKS0_S2_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='73' c='_ZN3uvw6Thread5equalERKS0_S2_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='17' c='_ZN3uvw6Thread14createCallbackEPv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='17' c='_ZN3uvw6Thread14createCallbackEPv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='27' c='_ZN3uvw6Thread5equalERKS0_S2_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='27' c='_ZN3uvw6Thread5equalERKS0_S2_'/>
+<size>80</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='40'>/**
+ * @brief The Thread wrapper.
+ *
+ * To create a `Thread` through a `Loop`, arguments follow:
+ *
+ * * A callback invoked to initialize thread execution. The type must be such
+ * that it can be assigned to an `std::function&lt;void(std::shared_ptr&lt;void&gt;)&gt;`.
+ * * An optional payload the type of which is `std::shared_ptr&lt;void&gt;`.
+ */</doc>
+<fun r='_ZN3uvw6Thread14createCallbackEPv'/>
+<fun r='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<fun r='_ZN3uvw6Thread4selfEv'/>
+<fun r='_ZN3uvw6Thread5equalERKS0_S2_'/>
+<fun r='_ZN3uvw6ThreadD1Ev'/>
+<fun r='_ZN3uvw6Thread3runEv'/>
+<fun r='_ZN3uvw6Thread3runENS_5FlagsINS_7details19UVThreadCreateFlagsEEEm'/>
+<fun r='_ZN3uvw6Thread4joinEv'/>
+<mbr r='uvw::Thread::data' o='256' t='std::shared_ptr&lt;void&gt;'/>
+<mbr r='uvw::Thread::task' o='384' t='uvw::Thread::Task'/>
+<fun r='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<fun r='_ZN3uvw6Thread14createCallbackEPv'/>
+<fun r='_ZN3uvw6Thread4selfEv'/>
+<fun r='_ZN3uvw6Thread5equalERKS0_S2_'/>
+<fun r='_ZN3uvw6ThreadD1Ev'/>
+<fun r='_ZN3uvw6Thread3runEv'/>
+<fun r='_ZN3uvw6Thread3runENS_5FlagsINS_7details19UVThreadCreateFlagsEEEm'/>
+<fun r='_ZN3uvw6Thread4joinEv'/>

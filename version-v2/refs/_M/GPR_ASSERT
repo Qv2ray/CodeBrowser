@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/log.h' l='94'/>
+<doc f='include/grpc/impl/codegen/log.h' l='89'>/** abort() the process if x is zero, having written a line to the log.
+
+   Intended for internal invariants.  If the error can be recovered from,
+   without the possibility of corruption, or might best be reflected via
+   an exception in a higher-level language, consider returning error code.  */</doc>

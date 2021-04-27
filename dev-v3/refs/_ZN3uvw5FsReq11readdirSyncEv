@@ -1,0 +1,35 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1420' type='std::pair&lt;bool, std::pair&lt;EntryType, const char *&gt;&gt; uvw::FsReq::readdirSync()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='574' ll='581' type='std::pair&lt;bool, std::pair&lt;FsReq::EntryType, const char *&gt;&gt; uvw::FsReq::readdirSync()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1387'>/**
+     * @brief Iterates synchronously over a directory stream one entry at a
+     * time.
+     *
+     * Returns a composed value where:
+     *
+     * * The first parameter indicates the entry type (see below).
+     * * The second parameter is a string that contains the actual value.
+     *
+     * Available entry types are:
+     *
+     * * `FsReq::EntryType::UNKNOWN`
+     * * `FsReq::EntryType::FILE`
+     * * `FsReq::EntryType::DIR`
+     * * `FsReq::EntryType::LINK`
+     * * `FsReq::EntryType::FIFO`
+     * * `FsReq::EntryType::SOCKET`
+     * * `FsReq::EntryType::CHAR`
+     * * `FsReq::EntryType::BLOCK`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/fs.html#c.uv_dirent_t)
+     * for further details.
+     *
+     * This function isn&apos;t thread safe. Moreover, it doesn&apos;t return the `.` and
+     * `..` entries.
+     *
+     * @return A pair where:
+     *
+     * * The first parameter is a boolean value that indicates if the current
+     * entry is still valid.
+     * * The second parameter is a composed value (see above).
+     */</doc>

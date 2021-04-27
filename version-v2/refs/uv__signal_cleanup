@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='218' type='void uv__signal_cleanup()'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='80' ll='97' type='void uv__signal_cleanup()'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='101' u='c' c='uv__signal_global_reinit'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='866' u='c' c='uv_library_shutdown'/>

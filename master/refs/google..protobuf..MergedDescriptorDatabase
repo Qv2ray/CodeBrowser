@@ -1,0 +1,16 @@
+<inh f='include/google/protobuf/descriptor_database.h' l='65' c='google::protobuf::DescriptorDatabase'/>
+<def f='include/google/protobuf/descriptor_database.h' l='349' ll='378'/>
+<use f='include/google/protobuf/descriptor_database.h' l='377' c='_ZN6google8protobuf24MergedDescriptorDatabaseC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='377' c='_ZN6google8protobuf24MergedDescriptorDatabaseaSERKS1_'/>
+<size>32</size>
+<doc f='include/google/protobuf/descriptor_database.h' l='347'>// A DescriptorDatabase that wraps two or more others.  It first searches the
+// first database and, if that fails, tries the second, and so on.</doc>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabaseC1EPNS0_18DescriptorDatabaseES3_'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabaseC1ERKSt6vectorIPNS0_18DescriptorDatabaseESaIS4_EE'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabaseD1Ev'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabase14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabase24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabase27FindFileContainingExtensionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabase23FindAllExtensionNumbersERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::MergedDescriptorDatabase::sources_' o='64' t='std::vector&lt;DescriptorDatabase *&gt;'/>
+<fun r='_ZN6google8protobuf24MergedDescriptorDatabaseC1ERKS1_'/>

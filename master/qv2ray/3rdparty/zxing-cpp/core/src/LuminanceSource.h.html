@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LuminanceSource.h source code [qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::LuminanceSource "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='LuminanceSource.h.html'>LuminanceSource.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>class</b> <a class="type" href="ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray" id="ZXing::ByteArray">ByteArray</a>;</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc">* The purpose of this class hierarchy is to abstract different bitmap implementations across</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc">* platforms into a standard interface for requesting greyscale luminance values. The interface</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc">* only provides immutable methods; therefore crop and rotation create copies. This is to ensure</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc">* that one Reader does not modify the original luminance source and leave it in an unknown state</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc">* for other Readers in the chain.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc">*</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc">* <span class="command">@author</span> dswitki<span class="command">n@google</span>.com (Daniel Switkin)</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="34">34</th><td><b>class</b> <dfn class="type def" id="ZXing::LuminanceSource" title='ZXing::LuminanceSource' data-ref="ZXing::LuminanceSource" data-ref-filename="ZXing..LuminanceSource">LuminanceSource</dfn></td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td><b>public</b>:</td></tr>
+<tr><th id="37">37</th><td>	<b>virtual</b> <dfn class="virtual decl def fn" id="_ZN5ZXing15LuminanceSourceD1Ev" title='ZXing::LuminanceSource::~LuminanceSource' data-ref="_ZN5ZXing15LuminanceSourceD1Ev" data-ref-filename="_ZN5ZXing15LuminanceSourceD1Ev">~LuminanceSource</dfn>() = <b>default</b>;</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc">	* <span class="command">@return</span> The width of the bitmap.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="42">42</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource5widthEv" title='ZXing::LuminanceSource::width' data-ref="_ZNK5ZXing15LuminanceSource5widthEv" data-ref-filename="_ZNK5ZXing15LuminanceSource5widthEv">width</dfn>() <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">	* <span class="command">@return</span> The height of the bitmap.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="47">47</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource6heightEv" title='ZXing::LuminanceSource::height' data-ref="_ZNK5ZXing15LuminanceSource6heightEv" data-ref-filename="_ZNK5ZXing15LuminanceSource6heightEv">height</dfn>() <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc">	* Fetches one row of luminance data from the underlying platform's bitmap. Values range from</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">	* 0 (black) to 255 (white). Because Java does not have an unsigned byte type, callers will have</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">	* to bitwise and with 0xff for each value. It is preferable for implementations of this method</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc">	* to only fetch this row rather than the whole image, since no 2D Readers may be installed and</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc">	* getMatrix() may never be called.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">	*</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">y</span> The row to fetch, which must be in [0,getHeight())</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">row</span> An optional preallocated array. If null or too small, it will be ignored.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">	*            Always use the returned object, and ignore the .length of the array.</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc">	* <span class="command">@return</span> An array containing the luminance data.</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="61">61</th><td>	<b>virtual</b> <em>const</em> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint8_t" title='uint8_t' data-type='__uint8_t' data-ref="uint8_t" data-ref-filename="uint8_t">uint8_t</a>* <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource6getRowEiRNS_9ByteArrayEb" title='ZXing::LuminanceSource::getRow' data-ref="_ZNK5ZXing15LuminanceSource6getRowEiRNS_9ByteArrayEb" data-ref-filename="_ZNK5ZXing15LuminanceSource6getRowEiRNS_9ByteArrayEb">getRow</dfn>(<em>int</em> <dfn class="local col1 decl" id="1y" title='y' data-type='int' data-ref="1y" data-ref-filename="1y">y</dfn>, <a class="type" href="ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray">ByteArray</a>&amp; <dfn class="local col2 decl" id="2buffer" title='buffer' data-type='ZXing::ByteArray &amp;' data-ref="2buffer" data-ref-filename="2buffer">buffer</dfn>, <em>bool</em> <dfn class="local col3 decl" id="3forceCopy" title='forceCopy' data-type='bool' data-ref="3forceCopy" data-ref-filename="3forceCopy">forceCopy</dfn> = <b>false</b>) <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">	* Fetches luminance data for the underlying bitmap. Values should be fetched using:</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc">	* {<span class="command">@code</span><span class="verb"> int luminance = array[y * width + x] &amp; 0xff}</span></i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"></span></i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> @return A row-major 2D array of luminance values. Do not use result.length as it may be</span></i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">         larger than width * height bytes on some platforms. Do not modify the contents</span></i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">         of the result.</span></i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"><span class="verb"></span><span class="verb">	*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="71">71</th><td><span class="verb"></span>	<b>virtual</b> <em>const</em> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint8_t" title='uint8_t' data-type='__uint8_t' data-ref="uint8_t" data-ref-filename="uint8_t">uint8_t</a>* <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource9getMatrixERNS_9ByteArrayERib" title='ZXing::LuminanceSource::getMatrix' data-ref="_ZNK5ZXing15LuminanceSource9getMatrixERNS_9ByteArrayERib" data-ref-filename="_ZNK5ZXing15LuminanceSource9getMatrixERNS_9ByteArrayERib">getMatrix</dfn>(<a class="type" href="ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray">ByteArray</a>&amp; <dfn class="local col4 decl" id="4buffer" title='buffer' data-type='ZXing::ByteArray &amp;' data-ref="4buffer" data-ref-filename="4buffer">buffer</dfn>, <em>int</em>&amp; <dfn class="local col5 decl" id="5outRowBytes" title='outRowBytes' data-type='int &amp;' data-ref="5outRowBytes" data-ref-filename="5outRowBytes">outRowBytes</dfn>, <em>bool</em> <dfn class="local col6 decl" id="6forceCopy" title='forceCopy' data-type='bool' data-ref="6forceCopy" data-ref-filename="6forceCopy">forceCopy</dfn> = <b>false</b>) <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">	* <span class="command">@return</span> Whether this subclass supports cropping.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="76">76</th><td>	<b>virtual</b> <em>bool</em> <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource7canCropEv" title='ZXing::LuminanceSource::canCrop' data-ref="_ZNK5ZXing15LuminanceSource7canCropEv" data-ref-filename="_ZNK5ZXing15LuminanceSource7canCropEv">canCrop</dfn>() <em>const</em>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">	* Returns a new object with cropped image data. Implementations may keep a reference to the</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">	* original data rather than a copy. Only callable if isCropSupported() is true.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">	*</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">left</span> The left coordinate, which must be in [0,getWidth())</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">top</span> The top coordinate, which must be in [0,getHeight())</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">width</span> The width of the rectangle to crop.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">height</span> The height of the rectangle to crop.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">	* <span class="command">@return</span> A cropped version of this object.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="88">88</th><td>	<b>virtual</b> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::LuminanceSource" title='ZXing::LuminanceSource' data-ref="ZXing::LuminanceSource" data-ref-filename="ZXing..LuminanceSource">LuminanceSource</a>&gt; <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource7croppedEiiii" title='ZXing::LuminanceSource::cropped' data-ref="_ZNK5ZXing15LuminanceSource7croppedEiiii" data-ref-filename="_ZNK5ZXing15LuminanceSource7croppedEiiii">cropped</dfn>(<em>int</em> <dfn class="local col7 decl" id="7left" title='left' data-type='int' data-ref="7left" data-ref-filename="7left">left</dfn>, <em>int</em> <dfn class="local col8 decl" id="8top" title='top' data-type='int' data-ref="8top" data-ref-filename="8top">top</dfn>, <em>int</em> <dfn class="local col9 decl" id="9width" title='width' data-type='int' data-ref="9width" data-ref-filename="9width">width</dfn>, <em>int</em> <dfn class="local col0 decl" id="10height" title='height' data-type='int' data-ref="10height" data-ref-filename="10height">height</dfn>) <em>const</em>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">	* <span class="command">@return</span> Whether this subclass supports counter-clockwise rotation.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="93">93</th><td>	<b>virtual</b> <em>bool</em> <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource9canRotateEv" title='ZXing::LuminanceSource::canRotate' data-ref="_ZNK5ZXing15LuminanceSource9canRotateEv" data-ref-filename="_ZNK5ZXing15LuminanceSource9canRotateEv">canRotate</dfn>() <em>const</em>;</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">	* Returns a new object with rotated image data by 90 degrees counterclockwise.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">	* Only callable if {<span class="command">@link</span><span class="verb"> #isRotateSupported()} is true.</span></i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"></span></i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> @return A rotated version of this object.</span></i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"><span class="verb"></span><span class="verb">	*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="101">101</th><td><span class="verb"></span>	<b>virtual</b> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::LuminanceSource" title='ZXing::LuminanceSource' data-ref="ZXing::LuminanceSource" data-ref-filename="ZXing..LuminanceSource">LuminanceSource</a>&gt; <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource7rotatedEi" title='ZXing::LuminanceSource::rotated' data-ref="_ZNK5ZXing15LuminanceSource7rotatedEi" data-ref-filename="_ZNK5ZXing15LuminanceSource7rotatedEi">rotated</dfn>(<em>int</em> <dfn class="local col1 decl" id="11degreeCW" title='degreeCW' data-type='int' data-ref="11degreeCW" data-ref-filename="11degreeCW">degreeCW</dfn>) <em>const</em>;</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">	* <span class="command">@return</span> a wrapper of this {<span class="command">@code</span><span class="verb"> LuminanceSource} which inverts the luminances it returns -- black becomes</span></i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">  white and vice versa, and each value becomes (255-value).</span></i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"><span class="verb"></span><span class="verb">	*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="107">107</th><td><span class="verb"></span>	<em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::LuminanceSource" title='ZXing::LuminanceSource' data-ref="ZXing::LuminanceSource" data-ref-filename="ZXing..LuminanceSource">LuminanceSource</a>&gt; <dfn class="decl fn" id="_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E" title='ZXing::LuminanceSource::CreateInverted' data-ref="_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E" data-ref-filename="_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E">CreateInverted</dfn>(<em>const</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::LuminanceSource" title='ZXing::LuminanceSource' data-ref="ZXing::LuminanceSource" data-ref-filename="ZXing..LuminanceSource">LuminanceSource</a>&gt;&amp; <dfn class="local col2 decl" id="12src" title='src' data-type='const std::shared_ptr&lt;LuminanceSource&gt; &amp;' data-ref="12src" data-ref-filename="12src">src</dfn>);</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><b>protected</b>:</td></tr>
+<tr><th id="110">110</th><td>	<b>virtual</b> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::LuminanceSource" title='ZXing::LuminanceSource' data-ref="ZXing::LuminanceSource" data-ref-filename="ZXing..LuminanceSource">LuminanceSource</a>&gt; <dfn class="virtual decl fn" id="_ZNK5ZXing15LuminanceSource11getInvertedEv" title='ZXing::LuminanceSource::getInverted' data-ref="_ZNK5ZXing15LuminanceSource11getInvertedEv" data-ref-filename="_ZNK5ZXing15LuminanceSource11getInvertedEv">getInverted</dfn>() <em>const</em>;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>};</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='GenericLuminanceSource.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

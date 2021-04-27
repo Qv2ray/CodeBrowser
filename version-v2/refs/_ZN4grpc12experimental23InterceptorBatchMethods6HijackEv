@@ -1,0 +1,3 @@
+<dec f='include/grpcpp/impl/codegen/interceptor.h' l='62' type='void grpc::experimental::InterceptorBatchMethods::Hijack()'/>
+<doc f='include/grpcpp/impl/codegen/interceptor.h' l='60'>// Calling this indicates that the interceptor has hijacked the RPC (only
+  // valid if the batch contains send_initial_metadata on the client side)</doc>

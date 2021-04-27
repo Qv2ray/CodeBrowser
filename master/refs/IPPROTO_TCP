@@ -1,0 +1,8 @@
+<dec f='include/netinet/in.h' l='50' type='6'/>
+<doc f='include/netinet/in.h' l='50'>/* Transmission Control Protocol.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='371' macro='1' u='r' c='uv__tcp_nodelay'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='385' macro='1' u='r' c='uv__tcp_keepalive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='387' macro='1' u='r' c='uv__tcp_keepalive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='389' macro='1' u='r' c='uv__tcp_keepalive'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='28' macro='1' u='r' c='_ZN6Qv2ray10components7latency6tcping9getSocketEiii'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='66' macro='1' u='r' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>

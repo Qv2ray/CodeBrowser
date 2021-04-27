@@ -1,0 +1,68 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='28' ll='82'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='76' c='_ZN5ZXing6Pdf41711BoundingBox6CreateEiiRKNS_8NullableINS_11ResultPointEEES6_S6_S6_RS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='77' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='77' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='77' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='78' c='_ZN5ZXing6Pdf41711BoundingBox14AddMissingRowsERKS1_iibRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='78' c='_ZN5ZXing6Pdf41711BoundingBox14AddMissingRowsERKS1_iibRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='30' c='_ZN5ZXing6Pdf41711BoundingBox6CreateEiiRKNS_8NullableINS_11ResultPointEEES6_S6_S6_RS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='67' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='67' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='67' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='77' c='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='86' c='_ZN5ZXing6Pdf41711BoundingBox14AddMissingRowsERKS1_iibRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.cpp' l='86' c='_ZN5ZXing6Pdf41711BoundingBox14AddMissingRowsERKS1_iibRS1_'/>
+<size>120</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBoundingBox.h' l='25'>/**
+* @author Guenther Grau
+*/</doc>
+<mbr r='ZXing::Pdf417::BoundingBox::_imgWidth' o='0' t='int'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_imgHeight' o='32' t='int'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_topLeft' o='64' t='Nullable&lt;ZXing::ResultPoint&gt;'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_bottomLeft' o='256' t='Nullable&lt;ZXing::ResultPoint&gt;'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_topRight' o='448' t='Nullable&lt;ZXing::ResultPoint&gt;'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_bottomRight' o='640' t='Nullable&lt;ZXing::ResultPoint&gt;'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_minX' o='832' t='int'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_maxX' o='864' t='int'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_minY' o='896' t='int'/>
+<mbr r='ZXing::Pdf417::BoundingBox::_maxY' o='928' t='int'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBoxC1Ev'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox4minXEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox4maxXEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox4minYEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox4maxYEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox7topLeftEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox8topRightEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox10bottomLeftEv'/>
+<fun r='_ZNK5ZXing6Pdf41711BoundingBox11bottomRightEv'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox6CreateEiiRKNS_8NullableINS_11ResultPointEEES6_S6_S6_RS1_'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox14AddMissingRowsERKS1_iibRS1_'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox21calculateMinMaxValuesEv'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBoxC1Ev'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox6CreateEiiRKNS_8NullableINS_11ResultPointEEES6_S6_S6_RS1_'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox21calculateMinMaxValuesEv'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox5MergeERKNS_8NullableIS1_EES5_RS3_'/>
+<fun r='_ZN5ZXing6Pdf41711BoundingBox14AddMissingRowsERKS1_iibRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='43' c='_ZN5ZXing6Pdf41721DetectionResultColumnC1ERKNS0_11BoundingBoxENS1_12RowIndicatorE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='67' c='_ZNK5ZXing6Pdf41721DetectionResultColumn11boundingBoxEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='84'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='35'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='39' c='_ZN5ZXing6Pdf41715DetectionResultC1ERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='41' c='_ZN5ZXing6Pdf41715DetectionResult4initERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='57' c='_ZN5ZXing6Pdf41715DetectionResult14setBoundingBoxERKNS0_11BoundingBoxE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='61' c='_ZNK5ZXing6Pdf41715DetectionResult14getBoundingBoxEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='65' c='_ZN5ZXing6Pdf41715DetectionResult14setBoundingBoxERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='29' c='_ZN5ZXing6Pdf41715DetectionResultC1ERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='37' c='_ZN5ZXing6Pdf41715DetectionResult4initERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='31' c='_ZN5ZXing6Pdf41721DetectionResultColumnC1ERKNS0_11BoundingBoxENS1_12RowIndicatorE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='175' c='_ZN5ZXing6Pdf417L21GetRowIndicatorColumnERKNS_9BitMatrixERKNS0_11BoundingBoxERKNS_11ResultPointEbii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='226' c='_ZN5ZXing6Pdf417L17AdjustBoundingBoxERNS_8NullableINS0_21DetectionResultColumnEEERNS1_INS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='259' c='_ZN5ZXing6Pdf417L17AdjustBoundingBoxERNS_8NullableINS0_21DetectionResultColumnEEERNS1_INS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='272' c='_ZN5ZXing6Pdf417L5MergeERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='272' c='_ZN5ZXing6Pdf417L5MergeERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='272' c='_ZN5ZXing6Pdf417L5MergeERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='694' c='_ZN5ZXing6Pdf41715ScanningDecoder6DecodeERKNS_9BitMatrixERKNS_8NullableINS_11ResultPointEEES9_S9_S9_ii'/>
+<size>120</size>

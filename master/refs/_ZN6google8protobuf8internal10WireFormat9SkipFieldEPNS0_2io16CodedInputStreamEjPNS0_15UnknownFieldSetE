@@ -1,0 +1,19 @@
+<dec f='include/google/protobuf/wire_format.h' l='127' type='static bool google::protobuf::internal::WireFormat::SkipField(io::CodedInputStream * input, google::protobuf::uint32 tag, google::protobuf::UnknownFieldSet * unknown_fields)'/>
+<use f='/v2ray_api.pb.cc' l='467' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='746' u='c' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1011' u='c' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1261' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1513' u='c' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1725' u='c' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2065' u='c' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2457' u='c' c='_ZN5v2ray4core3app5stats7command6Config27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<doc f='include/google/protobuf/wire_format.h' l='121'>// -----------------------------------------------------------------
+  // Helpers for dealing with unknown fields
+
+  // Skips a field value of the given WireType.  The input should start
+  // positioned immediately after the tag.  If unknown_fields is non-NULL,
+  // the contents of the field will be added to it.</doc>
+<use f='/v2ray_geosite.pb.cc' l='406' u='c' c='_ZN22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='734' u='c' c='_ZN12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1043' u='c' c='_ZN7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1306' u='c' c='_ZN11GeoSiteList27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>

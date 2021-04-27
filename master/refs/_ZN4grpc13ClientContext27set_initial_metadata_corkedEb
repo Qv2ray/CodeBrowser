@@ -1,0 +1,13 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='316' ll='318' type='void grpc::ClientContext::set_initial_metadata_corked(bool corked)'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='332' u='c' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='503' u='c' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='306'>/// Flag whether the initial metadata should be \a corked
+  ///
+  /// If \a corked is true, then the initial metadata will be coalesced with the
+  /// write of first message in the stream. As a result, any tag set for the
+  /// initial metadata operation (starting a client-streaming or bidi-streaming
+  /// RPC) will not actually be sent to the completion queue or delivered
+  /// via Next.
+  ///
+  /// \param corked The flag indicating whether the initial metadata is to be
+  /// corked or not.</doc>

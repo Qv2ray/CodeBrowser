@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GBTextEncoder.h source code [qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="GBTextEncoder "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>textcodec</a>/<a href='GBTextEncoder.h.html'>GBTextEncoder.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="3">3</th><td><i>**</i></td></tr>
+<tr><th id="4">4</th><td><i>** Copyright (C) 2015 The Qt Company Ltd.</i></td></tr>
+<tr><th id="5">5</th><td><i>** Contact: <a href="http://www.qt.io/licensing/">http://www.qt.io/licensing/</a></i></td></tr>
+<tr><th id="6">6</th><td><i>**</i></td></tr>
+<tr><th id="7">7</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="8">8</th><td><i>**</i></td></tr>
+<tr><th id="9">9</th><td><i>** $QT_BEGIN_LICENSE:LGPL21$</i></td></tr>
+<tr><th id="10">10</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="11">11</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="12">12</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="13">13</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="14">14</th><td><i>** a written agreement between you and The Qt Company. For licensing terms</i></td></tr>
+<tr><th id="15">15</th><td><i>** and conditions see <a href="http://www.qt.io/terms-conditions">http://www.qt.io/terms-conditions</a>. For further</i></td></tr>
+<tr><th id="16">16</th><td><i>** information use the contact form at <a href="http://www.qt.io/contact-us">http://www.qt.io/contact-us</a>.</i></td></tr>
+<tr><th id="17">17</th><td><i>**</i></td></tr>
+<tr><th id="18">18</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="19">19</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="20">20</th><td><i>** General Public License version 2.1 or version 3 as published by the Free</i></td></tr>
+<tr><th id="21">21</th><td><i>** Software Foundation and appearing in the file LICENSE.LGPLv21 and</i></td></tr>
+<tr><th id="22">22</th><td><i>** LICENSE.LGPLv3 included in the packaging of this file. Please review the</i></td></tr>
+<tr><th id="23">23</th><td><i>** following information to ensure the GNU Lesser General Public License</i></td></tr>
+<tr><th id="24">24</th><td><i>** requirements will be met: <a href="https://www.gnu.org/licenses/lgpl.html">https://www.gnu.org/licenses/lgpl.html</a> and</i></td></tr>
+<tr><th id="25">25</th><td><i>** <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="26">26</th><td><i>**</i></td></tr>
+<tr><th id="27">27</th><td><i>** As a special exception, The Qt Company gives you certain additional</i></td></tr>
+<tr><th id="28">28</th><td><i>** rights. These rights are described in The Qt Company LGPL Exception</i></td></tr>
+<tr><th id="29">29</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="30">30</th><td><i>**</i></td></tr>
+<tr><th id="31">31</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="32">32</th><td><i>**</i></td></tr>
+<tr><th id="33">33</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="../../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>class</b> <dfn class="type def" id="GBTextEncoder" title='GBTextEncoder' data-ref="GBTextEncoder" data-ref-filename="GBTextEncoder">GBTextEncoder</dfn></td></tr>
+<tr><th id="38">38</th><td>{</td></tr>
+<tr><th id="39">39</th><td><b>public</b>:</td></tr>
+<tr><th id="40">40</th><td>	<em>static</em> <em>void</em> <dfn class="decl fn" id="_ZN13GBTextEncoder13EncodeGB18030ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE" title='GBTextEncoder::EncodeGB18030' data-ref="_ZN13GBTextEncoder13EncodeGB18030ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE" data-ref-filename="_ZN13GBTextEncoder13EncodeGB18030ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE">EncodeGB18030</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::wstring" title='std::wstring' data-type='basic_string&lt;wchar_t&gt;' data-ref="std::wstring" data-ref-filename="std..wstring">wstring</a>&amp; <dfn class="local col3 decl" id="13str" title='str' data-type='const std::wstring &amp;' data-ref="13str" data-ref-filename="13str">str</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col4 decl" id="14bytes" title='bytes' data-type='std::string &amp;' data-ref="14bytes" data-ref-filename="14bytes">bytes</dfn>);</td></tr>
+<tr><th id="41">41</th><td>	<em>static</em> <em>void</em> <dfn class="decl fn" id="_ZN13GBTextEncoder12EncodeGB2312ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE" title='GBTextEncoder::EncodeGB2312' data-ref="_ZN13GBTextEncoder12EncodeGB2312ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE" data-ref-filename="_ZN13GBTextEncoder12EncodeGB2312ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE">EncodeGB2312</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::wstring" title='std::wstring' data-type='basic_string&lt;wchar_t&gt;' data-ref="std::wstring" data-ref-filename="std..wstring">wstring</a>&amp; <dfn class="local col5 decl" id="15str" title='str' data-type='const std::wstring &amp;' data-ref="15str" data-ref-filename="15str">str</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col6 decl" id="16bytes" title='bytes' data-type='std::string &amp;' data-ref="16bytes" data-ref-filename="16bytes">bytes</dfn>);</td></tr>
+<tr><th id="42">42</th><td>};</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../TextEncoder.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

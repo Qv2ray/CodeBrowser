@@ -1,0 +1,25 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='270' ll='299'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='572' c='_ZN3uvw9Utilities2OS5unameEv'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='261'>/**
+ * @brief Utility class.
+ *
+ * This class can be used to get name and information about the current kernel.
+ * The populated data includes the operating system name, release, version, and
+ * machine.
+ *
+ * \sa Utilities::uname
+ */</doc>
+<fun r='_ZN3uvw7UtsNameC1ESt10shared_ptrI12uv_utsname_sE'/>
+<fun r='_ZNK3uvw7UtsName7sysnameB5cxx11Ev'/>
+<fun r='_ZNK3uvw7UtsName7releaseB5cxx11Ev'/>
+<fun r='_ZNK3uvw7UtsName7versionB5cxx11Ev'/>
+<fun r='_ZNK3uvw7UtsName7machineB5cxx11Ev'/>
+<mbr r='uvw::UtsName::utsname' o='0' t='std::shared_ptr&lt;uv_utsname_t&gt;'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='108' c='_ZN3uvw9Utilities2OS5unameEv'/>
+<size>16</size>
+<fun r='_ZN3uvw7UtsNameC1ESt10shared_ptrI12uv_utsname_sE'/>
+<fun r='_ZNK3uvw7UtsName7sysnameB5cxx11Ev'/>
+<fun r='_ZNK3uvw7UtsName7releaseB5cxx11Ev'/>
+<fun r='_ZNK3uvw7UtsName7versionB5cxx11Ev'/>
+<fun r='_ZNK3uvw7UtsName7machineB5cxx11Ev'/>

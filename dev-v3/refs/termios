@@ -1,0 +1,23 @@
+<def f='include/x86_64-linux-gnu/bits/termios-struct.h' l='24' ll='36'/>
+<use f='include/termios.h' l='48' c='cfgetospeed'/>
+<use f='include/termios.h' l='51' c='cfgetispeed'/>
+<use f='include/termios.h' l='54' c='cfsetospeed'/>
+<use f='include/termios.h' l='57' c='cfsetispeed'/>
+<use f='include/termios.h' l='61' c='cfsetspeed'/>
+<use f='include/termios.h' l='66' c='tcgetattr'/>
+<use f='include/termios.h' l='71' c='tcsetattr'/>
+<use f='include/termios.h' l='76' c='cfmakeraw'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='709' macro='1'/>
+<size>60</size>
+<mbr r='termios::c_iflag' o='0' t='tcflag_t'/>
+<mbr r='termios::c_oflag' o='32' t='tcflag_t'/>
+<mbr r='termios::c_cflag' o='64' t='tcflag_t'/>
+<mbr r='termios::c_lflag' o='96' t='tcflag_t'/>
+<mbr r='termios::c_line' o='128' t='cc_t'/>
+<mbr r='termios::c_cc' o='136' t='cc_t [32]'/>
+<mbr r='termios::c_ispeed' o='416' t='speed_t'/>
+<mbr r='termios::c_ospeed' o='448' t='speed_t'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='66'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='231' c='uv__tty_make_raw'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='251' c='uv_tty_set_mode'/>
+<size>60</size>

@@ -1,0 +1,18 @@
+<inh f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='82' c='Qv2ray::base::__Qv2rayConfigObjectBase'/>
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='93' ll='118'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='113' c='_ZN6Qv2ray4base18GroupRoutingConfig8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='193'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='35'/>
+<size>184</size>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideDNS' o='192' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::dnsConfig' o='256' t='config::QvConfig_DNS'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideRoute' o='512' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::routeConfig' o='576' t='config::QvConfig_Route'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideConnectionConfig' o='1024' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::connectionConfig' o='1032' t='config::QvConfig_Connection'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideForwardProxyConfig' o='1080' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::forwardProxyConfig' o='1088' t='config::QvConfig_ForwardProxy'/>
+<fun r='_ZN6Qv2ray4base18GroupRoutingConfigC1Ev'/>
+<fun r='_ZN6Qv2ray4base18GroupRoutingConfig8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base18GroupRoutingConfig8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base18GroupRoutingConfig6toJsonEv'/>

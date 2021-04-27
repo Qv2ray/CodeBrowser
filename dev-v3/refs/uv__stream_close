@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='264' type='void uv__stream_close(uv_stream_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='120' u='c' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='133' u='c' c='uv__pipe_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='244' u='c' c='uv__process_close_stream'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1633' ll='1685' type='void uv__stream_close(uv_stream_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='460' u='c' c='uv__tcp_close'/>

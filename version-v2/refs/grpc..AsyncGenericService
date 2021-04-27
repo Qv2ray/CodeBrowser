@@ -1,0 +1,27 @@
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='114' c='_ZN4grpc15ServerInterface27RegisterAsyncGenericServiceEPNS_19AsyncGenericServiceE'/>
+<def f='include/grpcpp/impl/codegen/async_generic_service.h' l='65' ll='77'/>
+<use f='include/grpcpp/server.h' l='190'/>
+<use f='include/grpcpp/server.h' l='206' c='_ZN4grpc6Server27RegisterAsyncGenericServiceEPNS_19AsyncGenericServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='141' c='_ZN4grpc13ServerBuilder27RegisterAsyncGenericServiceEPNS_19AsyncGenericServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='290'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/async_generic_service.h' l='48'>// A generic service at the server side accepts all RPC methods and hosts. It is
+// typically used in proxies. The generic service can be registered to a server
+// which also has other services.
+// Sample usage:
+//   ServerBuilder builder;
+//   auto cq = builder.AddCompletionQueue();
+//   AsyncGenericService generic_service;
+//   builder.RegisterAsyncGenericService(&amp;generic_service);
+//   auto server = builder.BuildAndStart();
+//
+//   // request a new call
+//   GenericServerContext context;
+//   GenericServerAsyncReaderWriter stream;
+//   generic_service.RequestCall(&amp;context, &amp;stream, cq.get(), cq.get(), tag);
+//
+// When tag is retrieved from cq-&gt;Next(), context.method() can be used to look
+// at the method and the RPC can be handled accordingly.</doc>
+<fun r='_ZN4grpc19AsyncGenericServiceC1Ev'/>
+<fun r='_ZN4grpc19AsyncGenericService11RequestCallEPNS_20GenericServerContextEPNS_23ServerAsyncReaderWriterINS_10ByteBufferES4_EEPNS_15CompletionQueueEPNS_21S230995'/>
+<mbr r='grpc::AsyncGenericService::server_' o='0' t='grpc::Server *'/>

@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/impl/codegen/completion_queue.h' l='107' type='void grpc::CompletionQueue::CompletionQueue(grpc_completion_queue * take)'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='104'>/// Wrap \a take, taking ownership of the instance.
+  ///
+  /// \param take The completion queue instance to wrap. Ownership is taken.</doc>

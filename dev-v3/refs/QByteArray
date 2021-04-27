@@ -1,0 +1,83 @@
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Style.hpp' l='14' c='_ZN7QtNodes5Style21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeStyle.hpp' l='22' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='67' c='_ZNK7QtNodes9FlowScene12saveToMemoryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='68' c='_ZN7QtNodes9FlowScene14loadFromMemoryERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionStyle.hpp' l='22' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowViewStyle.hpp' l='22' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='105' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='314' c='_ZN7QtNodes9FlowScene4loadEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='318' c='_ZNK7QtNodes9FlowScene12saveToMemoryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='340' c='_ZN7QtNodes9FlowScene14loadFromMemoryERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='85' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='93' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='134' c='_ZN17SingleApplication11sendMessageERK10QByteArrayi'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='144' c='_ZN17SingleApplication15receivedMessageEj10QByteArray'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='240' c='_ZN17SingleApplication11sendMessageERK10QByteArrayi'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='249' c='_ZN24SingleApplicationPrivate16connectToPrimaryEiNS_14ConnectionTypeE'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='260' c='_ZN24SingleApplicationPrivate16connectToPrimaryEiNS_14ConnectionTypeE'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='267' c='_ZN24SingleApplicationPrivate16connectToPrimaryEiNS_14ConnectionTypeE'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='285' c='_ZNK24SingleApplicationPrivate13blockChecksumEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='306' c='_ZNK24SingleApplicationPrivate11primaryUserEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='401' c='_ZN24SingleApplicationPrivate19readInitMessageBodyEP12QLocalSocket'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='409' c='_ZN24SingleApplicationPrivate19readInitMessageBodyEP12QLocalSocket'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='427' c='_ZN24SingleApplicationPrivate19readInitMessageBodyEP12QLocalSocket'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.h' l='58' c='_ZN8QtQrCodeC1ERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.h' l='72' c='_ZNK8QtQrCode4dataEv'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.h' l='73' c='_ZN8QtQrCode7setDataERK10QByteArray'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.h' l='94' c='_ZN8QtQrCode18constructorPrivateERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='44'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='61' c='_ZN8QtQrCodeC1ERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='69' c='_ZN8QtQrCode18constructorPrivateERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='197' c='_ZNK8QtQrCode4dataEv'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='202' c='_ZN8QtQrCode7setDataERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/plugin-interface/handlers/SubscriptionHandler.hpp' l='30' c='_ZNK12Qv2rayPlugin8handlers12subscription19SubscriptionDecoder10DecodeDataERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='164' c='_ZN6Qv2ray4core7handler15QvConfigHandler22p_CHUpdateSubscriptionERKNS_4base6IDTypeINS3_9__GroupIdEEERK10QByteArray'/>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.hpp' l='73' c='_ZN25Qv2rayPlatformApplication17onMessageReceivedEj10QByteArray'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.hpp' l='36' c='_ZN6Qv2ray23Qv2rayWidgetApplication17onMessageReceivedEj10QByteArray'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='74' c='_ZN10QJsonModelC1ERK10QByteArrayP7QObject'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='78' c='_ZN10QJsonModel8loadJsonERK10QByteArray'/>
+<size>24</size>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='76' c='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='89' c='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='105'/>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='151' c='_ZN17SingleApplication15receivedMessageEj10QByteArray'/>
+<use f='qv2ray/src/components/update/UpdateChecker.hpp' l='33' c='_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.hpp' l='18' c='_ZN6Qv2ray6common7network20NetworkRequestHelper12AsyncHttpGetERK7QStringSt8functionIFvRK10QByteArrayEE'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.hpp' l='19' c='_ZN6Qv2ray6common7network20NetworkRequestHelper7HttpGetERK4QUrl'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.hpp' l='23' c='_ZN6Qv2ray6common7network20NetworkRequestHelper9setHeaderER15QNetworkRequestRK10QByteArrayS7_'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.hpp' l='23' c='_ZN6Qv2ray6common7network20NetworkRequestHelper9setHeaderER15QNetworkRequestRK10QByteArrayS7_'/>
+<size>24</size>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='37' c='_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='477' c='_ZN6Qv2ray4core7handler15QvConfigHandler23UpdateSubscriptionAsyncERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='491' c='_ZN6Qv2ray4core7handler15QvConfigHandler22p_CHUpdateSubscriptionERKNS_4base6IDTypeINS3_9__GroupIdEEERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.hpp' l='17' c='_ZNK19SimpleBase64Decoder10DecodeDataERK10QByteArray'/>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.hpp' l='24' c='_ZNK13SIP008Decoder10DecodeDataERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.cpp' l='12' c='_Z16SafeBase64Decode7QString'/>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.cpp' l='23' c='_ZNK19SimpleBase64Decoder10DecodeDataERK10QByteArray'/>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.cpp' l='34' c='_ZNK13SIP008Decoder10DecodeDataERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='42' c='_ZN6Qv2ray23Qv2rayWidgetApplication17onMessageReceivedEj10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='160' c='_ZN10QJsonModelC1ERK10QByteArrayP7QObject'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='193' c='_ZN10QJsonModel8loadJsonERK10QByteArray'/>
+<size>24</size>
+<use f='qv2ray/src/utils/HTTPRequestHelper.cpp' l='12' c='_ZN6Qv2ray6common7network20NetworkRequestHelper9setHeaderER15QNetworkRequestRK10QByteArrayS7_'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.cpp' l='12' c='_ZN6Qv2ray6common7network20NetworkRequestHelper9setHeaderER15QNetworkRequestRK10QByteArrayS7_'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.cpp' l='65' c='_ZN6Qv2ray6common7network20NetworkRequestHelper7HttpGetERK4QUrl'/>
+<use f='qv2ray/src/utils/HTTPRequestHelper.cpp' l='85' c='_ZN6Qv2ray6common7network20NetworkRequestHelper12AsyncHttpGetERK7QStringSt8functionIFvRK10QByteArrayEE'/>
+<size>24</size>
+<use f='qv2ray/src/utils/QvHelpers.cpp' l='136' c='_ZN6Qv2ray6common16SafeBase64DecodeE7QString'/>
+<size>24</size>

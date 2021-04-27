@@ -1,0 +1,36 @@
+<inh f='qv2ray/test/catch.hpp' l='5634' c='Catch::IStreamingReporter'/>
+<def f='qv2ray/test/catch.hpp' l='5716' ll='5785'/>
+<ovr f='qv2ray/test/catch.hpp' l='5954' c='Catch::TestEventListenerBase'/>
+<use f='qv2ray/test/catch.hpp' l='5954'/>
+<ovr f='qv2ray/test/catch.hpp' l='6098' c='Catch::CompactReporter'/>
+<use f='qv2ray/test/catch.hpp' l='6098'/>
+<ovr f='qv2ray/test/catch.hpp' l='6137' c='Catch::ConsoleReporter'/>
+<use f='qv2ray/test/catch.hpp' l='6137'/>
+<ovr f='qv2ray/test/catch.hpp' l='6357' c='Catch::XmlReporter'/>
+<use f='qv2ray/test/catch.hpp' l='6357'/>
+<use f='qv2ray/test/catch.hpp' l='15580' c='_ZN5Catch21TestEventListenerBaseC1ERKNS_14ReporterConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='16210' c='_ZN5Catch15ConsoleReporterC1ERKNS_14ReporterConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='16989' c='_ZN5Catch11XmlReporterC1ERKNS_14ReporterConfigE'/>
+<size>360</size>
+<fun r='_ZN5Catch21StreamingReporterBaseC1ERKNS_14ReporterConfigE'/>
+<fun r='_ZNK5Catch21StreamingReporterBase14getPreferencesEv'/>
+<fun r='_ZN5Catch21StreamingReporterBase23getSupportedVerbositiesEv'/>
+<fun r='_ZN5Catch21StreamingReporterBaseD1Ev'/>
+<fun r='_ZN5Catch21StreamingReporterBase19noMatchingTestCasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN5Catch21StreamingReporterBase22reportInvalidArgumentsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN5Catch21StreamingReporterBase15testRunStartingERKNS_11TestRunInfoE'/>
+<fun r='_ZN5Catch21StreamingReporterBase17testGroupStartingERKNS_9GroupInfoE'/>
+<fun r='_ZN5Catch21StreamingReporterBase16testCaseStartingERKNS_12TestCaseInfoE'/>
+<fun r='_ZN5Catch21StreamingReporterBase15sectionStartingERKNS_11SectionInfoE'/>
+<fun r='_ZN5Catch21StreamingReporterBase12sectionEndedERKNS_12SectionStatsE'/>
+<fun r='_ZN5Catch21StreamingReporterBase13testCaseEndedERKNS_13TestCaseStatsE'/>
+<fun r='_ZN5Catch21StreamingReporterBase14testGroupEndedERKNS_14TestGroupStatsE'/>
+<fun r='_ZN5Catch21StreamingReporterBase12testRunEndedERKNS_12TestRunStatsE'/>
+<fun r='_ZN5Catch21StreamingReporterBase8skipTestERKNS_12TestCaseInfoE'/>
+<mbr r='Catch::StreamingReporterBase::m_config' t='Catch::IConfigPtr'/>
+<mbr r='Catch::StreamingReporterBase::stream' t='std::ostream &amp;'/>
+<mbr r='Catch::StreamingReporterBase::currentTestRunInfo' t='LazyStat&lt;Catch::TestRunInfo&gt;'/>
+<mbr r='Catch::StreamingReporterBase::currentGroupInfo' t='LazyStat&lt;Catch::GroupInfo&gt;'/>
+<mbr r='Catch::StreamingReporterBase::currentTestCaseInfo' t='LazyStat&lt;Catch::TestCaseInfo&gt;'/>
+<mbr r='Catch::StreamingReporterBase::m_sectionStack' t='std::vector&lt;SectionInfo&gt;'/>
+<mbr r='Catch::StreamingReporterBase::m_reporterPrefs' t='Catch::ReporterPreferences'/>

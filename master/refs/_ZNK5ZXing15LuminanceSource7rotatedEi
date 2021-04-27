@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='101' type='std::shared_ptr&lt;LuminanceSource&gt; ZXing::LuminanceSource::rotated(int degreeCW) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='175' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='95'>/**
+	* Returns a new object with rotated image data by 90 degrees counterclockwise.
+	* Only callable if {@link #isRotateSupported()} is true.
+	*
+	* @return A rotated version of this object.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='272' u='c' c='_ZNK5ZXing24GlobalHistogramBinarizer7rotatedEi'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='84' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='86' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7rotatedEi'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='124' ll='128' type='std::shared_ptr&lt;LuminanceSource&gt; ZXing::LuminanceSource::rotated(int ) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='118'>/**
+* Returns a new object with rotated image data by 90 degrees counterclockwise.
+* Only callable if {@link #isRotateSupported()} is true.
+*
+* @return A rotated version of this object.
+*/</doc>

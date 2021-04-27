@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1408' type='int uv_fs_fstat(uv_loop_t * loop, uv_fs_t * req, uv_file file, uv_fs_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1709' ll='1713' type='int uv_fs_fstat(uv_loop_t * loop, uv_fs_t * req, uv_file file, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='130' u='a' c='_ZN3uvw7FileReq4statEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='136' u='a' c='_ZN3uvw7FileReq8statSyncEv'/>

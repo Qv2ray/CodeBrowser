@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1695' type='int uv_rwlock_init(uv_rwlock_t * rwlock)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='80' u='c' c='uv_loop_init'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='356' ll='358' type='int uv_rwlock_init(uv_rwlock_t * rwlock)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='105' u='c' c='_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>

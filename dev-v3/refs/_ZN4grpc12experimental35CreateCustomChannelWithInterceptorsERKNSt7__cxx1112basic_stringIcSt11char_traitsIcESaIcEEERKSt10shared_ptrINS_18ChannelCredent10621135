@@ -1,0 +1,14 @@
+<dec f='include/grpcpp/security/credentials.h' l='45' type='std::shared_ptr&lt;Channel&gt; grpc::experimental::CreateCustomChannelWithInterceptors(const grpc::string &amp; target, const std::shared_ptr&lt;ChannelCredentials&gt; &amp; creds, const grpc::ChannelArguments &amp; args, std::unique_ptr&lt;std::vector&lt;std::unique_ptr&lt;experimental::ClientInterceptorFactoryInterface&gt;&gt;&gt; interceptor_creators)'/>
+<dec f='include/grpcpp/security/credentials.h' l='79' type='std::shared_ptr&lt;Channel&gt; grpc::experimental::CreateCustomChannelWithInterceptors(const grpc::string &amp; target, const std::shared_ptr&lt;ChannelCredentials&gt; &amp; creds, const grpc::ChannelArguments &amp; args, std::unique_ptr&lt;std::vector&lt;std::unique_ptr&lt;experimental::ClientInterceptorFactoryInterface&gt;&gt;&gt; interceptor_creators)'/>
+<dec f='include/grpcpp/create_channel.h' l='69' type='std::shared_ptr&lt;Channel&gt; grpc::experimental::CreateCustomChannelWithInterceptors(const grpc::string &amp; target, const std::shared_ptr&lt;ChannelCredentials&gt; &amp; creds, const grpc::ChannelArguments &amp; args, std::unique_ptr&lt;std::vector&lt;std::unique_ptr&lt;experimental::ClientInterceptorFactoryInterface&gt;&gt;&gt; interceptor_creators)'/>
+<doc f='include/grpcpp/create_channel.h' l='58'>/// Create a new \em custom \a Channel pointing to \a target with \a
+/// interceptors being invoked per call.
+///
+/// \warning For advanced use and testing ONLY. Override default channel
+/// arguments only if necessary.
+///
+/// \param target The URI of the endpoint to connect to.
+/// \param creds Credentials to use for the created channel. If it does not
+/// hold an object or is invalid, a lame channel (one on which all operations
+/// fail) is returned.
+/// \param args Options for channel creation.</doc>

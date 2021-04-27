@@ -1,0 +1,43 @@
+<inh f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='22' c='QtNodes::NodeDataModel'/>
+<def f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='7' ll='108'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='99' c='_ZNK15QvRuleNodeModel5cloneEv'/>
+<size>304</size>
+<smbr r='QvRuleNodeModel::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK15QvRuleNodeModel10metaObjectEv'/>
+<fun r='_ZN15QvRuleNodeModel11qt_metacastEPKc'/>
+<fun r='_ZN15QvRuleNodeModel11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN15QvRuleNodeModel2trEPKcS1_i'/>
+<fun r='_ZN15QvRuleNodeModel6trUtf8EPKcS1_i'/>
+<fun r='_ZN15QvRuleNodeModel18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN15QvRuleNodeModelC1ESt10shared_ptrIN6Qv2ray2ui10nodemodels12RuleNodeDataEE'/>
+<fun r='_ZN15QvRuleNodeModelD1Ev'/>
+<fun r='_ZNK15QvRuleNodeModel7captionEv'/>
+<fun r='_ZNK15QvRuleNodeModel14captionVisibleEv'/>
+<fun r='_ZNK15QvRuleNodeModel6nPortsEN7QtNodes8PortTypeE'/>
+<fun r='_ZNK15QvRuleNodeModel4nameEv'/>
+<fun r='_ZNK15QvRuleNodeModel8dataTypeEN7QtNodes8PortTypeEi'/>
+<fun r='_ZN15QvRuleNodeModel7outDataEi'/>
+<fun r='_ZN15QvRuleNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<fun r='_ZN15QvRuleNodeModel9setInDataESt6vectorISt10shared_ptrIN7QtNodes8NodeDataEESaIS4_EEi'/>
+<fun r='_ZN15QvRuleNodeModel7setDataERK7QString'/>
+<fun r='_ZN15QvRuleNodeModel14embeddedWidgetEv'/>
+<fun r='_ZNK15QvRuleNodeModel22portInConnectionPolicyEi'/>
+<fun r='_ZNK15QvRuleNodeModel23portOutConnectionPolicyEi'/>
+<fun r='_ZNK15QvRuleNodeModel5cloneEv'/>
+<mbr r='QvRuleNodeModel::modelValidationState' o='2112' t='QtNodes::NodeValidationState'/>
+<mbr r='QvRuleNodeModel::modelValidationError' o='2176' t='QString'/>
+<mbr r='QvRuleNodeModel::_ruleTag' o='2240' t='std::shared_ptr&lt;RuleNodeData&gt;'/>
+<mbr r='QvRuleNodeModel::_label' o='2368' t='QLabel *'/>
+<fun r='_ZN15QvRuleNodeModel18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='QvRuleNodeModel::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK15QvRuleNodeModel10metaObjectEv'/>
+<fun r='_ZN15QvRuleNodeModel11qt_metacastEPKc'/>
+<fun r='_ZN15QvRuleNodeModel11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='163' macro='1' c='_ZN11RouteEditor13onNodeClickedERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='286' macro='1' c='_ZN11RouteEditor19onConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='296' macro='1' c='_ZN11RouteEditor19onConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='876' macro='1' c='_ZN11RouteEditor17on_delBtn_clickedEv'/>
+<size>304</size>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='81' c='_ZN11RouteEditor7AddRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='136' c='_ZN11RouteEditor13RenameItemTagE15ROUTE_EDIT_MODE7QStringPS1_'/>
+<size>304</size>

@@ -1,0 +1,13 @@
+<def f='include/grpcpp/impl/codegen/client_interceptor.h' l='35' ll='39'/>
+<use f='include/grpcpp/channel.h' l='68' c='_ZN4grpc21CreateChannelInternalERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP12grpc_channelSt10unique_ptrISt6vectorISA_INS_12experimental33C11425818'/>
+<use f='include/grpcpp/channel.h' l='72' c='_ZN4grpc7ChannelC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP12grpc_channelSt10unique_ptrISt6vectorISB_INS_12experimental33ClientIntercep1530088'/>
+<use f='include/grpcpp/channel.h' l='102'/>
+<use f='include/grpcpp/security/credentials.h' l='50' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/security/credentials.h' l='84' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/security/credentials.h' l='95' c='_ZN4grpc18ChannelCredentials29CreateChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_16ChannelArgumentsESt10unique_p633212'/>
+<use f='include/grpcpp/create_channel.h' l='74' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/create_channel_posix.h' l='60' c='_ZN4grpc12experimental49CreateCustomInsecureChannelWithInterceptorsFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumen7356499'/>
+<use f='include/grpcpp/server.h' l='115' c='_ZN4grpc6Server17experimental_type32InProcessChannelWithInterceptorsERKNS_16ChannelArgumentsESt10unique_ptrISt6vectorIS5_INS_12experimental33ClientInt8051591'/>
+<size>8</size>
+<fun r='_ZN4grpc12experimental33ClientInterceptorFactoryInterfaceD1Ev'/>
+<fun r='_ZN4grpc12experimental33ClientInterceptorFactoryInterface23CreateClientInterceptorEPNS0_13ClientRpcInfoE'/>

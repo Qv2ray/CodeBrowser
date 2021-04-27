@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='230' type='int uv__accept(int sockfd)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='477' ll='507' type='int uv__accept(int sockfd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='508' u='c' c='uv__emfile_trick'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='550' u='c' c='uv__server_io'/>

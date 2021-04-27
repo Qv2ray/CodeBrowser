@@ -1,0 +1,28 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='330' type='char * uv__strdup(const char * s)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1271' u='c' c='uv_os_environ'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='73' u='c' c='uv__dlerror'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='595' u='c' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_access'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_chmod'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_chown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_lchown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_lutime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_lstat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_mkdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1797' u='c' c='uv_fs_mkdtemp'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1809' u='c' c='uv_fs_mkstemp'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_scandir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_opendir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_readlink'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_realpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_rmdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_unlink'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_utime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='114' u='c' c='uv_fs_statfs'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='921' u='c' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='120' u='c' c='uv__inotify_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='56' u='c' c='uv_pipe_bind'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='55' ll='61' type='char * uv__strdup(const char * s)'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='170' u='c' c='uv__unknown_err_code'/>

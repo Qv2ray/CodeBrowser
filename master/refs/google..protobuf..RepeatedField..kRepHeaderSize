@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/repeated_field.h' l='280' type='const size_t'/>
+<def f='include/google/protobuf/repeated_field.h' l='337' ll='339' type='const size_t'/>
+<use f='include/google/protobuf/repeated_field.h' l='1346' u='r' c='_ZNK6google8protobuf13RepeatedField26SpaceUsedExcludingSelfLongEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='1360' u='r' c='_ZN6google8protobuf13RepeatedField7ReserveEi'/>
+<use f='include/google/protobuf/repeated_field.h' l='1362' u='r' c='_ZN6google8protobuf13RepeatedField7ReserveEi'/>
+<doc f='include/google/protobuf/repeated_field.h' l='276'>// We can not use sizeof(Rep) - sizeof(Element) due to the trailing padding on
+  // the struct. We can not use sizeof(Arena*) as well because there might be
+  // a &quot;gap&quot; after the field arena and before the field elements (e.g., when
+  // Element is double and pointer is 32bit).</doc>

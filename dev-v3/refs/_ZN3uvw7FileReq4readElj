@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='553' type='void uvw::FileReq::read(int64_t offset, unsigned int len)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='87' ll='92' type='void uvw::FileReq::read(int64_t offset, unsigned int len)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='544'>/**
+     * @brief Async [read](http://linux.die.net/man/2/preadv).
+     *
+     * Emit a `FsEvent&lt;FileReq::Type::READ&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param offset Offset, as described in the official documentation.
+     * @param len Length, as described in the official documentation.
+     */</doc>

@@ -1,0 +1,26 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='215' type='int setsockopt(int __fd, int __level, int __optname, const void * __optval, socklen_t __optlen)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='212'>/* Set socket FD&apos;s option OPTNAME at protocol level LEVEL
+   to *OPTVAL (which is OPTLEN bytes long).
+   Returns 0 on success, -1 for errors.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='204' u='c' c='uv__socket_sockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='164' u='c' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='171' u='c' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='320' u='c' c='uv_tcp_close_reset'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='371' u='c' c='uv__tcp_nodelay'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='378' u='c' c='uv__tcp_keepalive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='385' u='c' c='uv__tcp_keepalive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='387' u='c' c='uv__tcp_keepalive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='389' u='c' c='uv__tcp_keepalive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='503' u='c' c='uv__set_reuse'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='545' u='c' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='794' u='c' c='uv__udp_set_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='841' u='c' c='uv__udp_set_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='891' u='c' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='940' u='c' c='uv__udp_set_source_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1076' u='c' c='uv__setsockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1082' u='c' c='uv__setsockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1113' u='c' c='uv_udp_set_broadcast'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1237' u='c' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1245' u='c' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='28' u='c' c='_ZN6Qv2ray10components7latency6tcping9getSocketEiii'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='65' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi'/>

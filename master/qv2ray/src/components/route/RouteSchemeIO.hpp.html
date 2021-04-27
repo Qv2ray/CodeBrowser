@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RouteSchemeIO.hpp source code [qv2ray/src/components/route/RouteSchemeIO.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Qv2ray::components::route::Qv2rayRouteScheme "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/route/RouteSchemeIO.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>components</a>/<a href='./'>route</a>/<a href='RouteSchemeIO.hpp.html'>RouteSchemeIO.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../../base/Qv2rayBase.hpp.html">"base/Qv2rayBase.hpp"</a></u></td></tr>
+<tr><th id="3">3</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">components</span>::<span class="namespace">route</span></td></tr>
+<tr><th id="4">4</th><td>{</td></tr>
+<tr><th id="5">5</th><td>    <em>const</em> <b>inline</b> <a class="type" href="../../base/models/QvCoreSettings.hpp.html#Qv2ray::base::config::QvConfig_Route" title='Qv2ray::base::config::QvConfig_Route' data-ref="Qv2ray::base::config::QvConfig_Route" data-ref-filename="Qv2ray..base..config..QvConfig_Route">QvConfig_Route</a> <a class="ref fn fake" href="../../base/models/QvCoreSettings.hpp.html#_ZN6Qv2ray4base6config14QvConfig_RouteC1Ev" title='Qv2ray::base::config::QvConfig_Route::QvConfig_Route' data-ref="_ZN6Qv2ray4base6config14QvConfig_RouteC1Ev" data-ref-filename="_ZN6Qv2ray4base6config14QvConfig_RouteC1Ev"></a><dfn class="decl def" id="Qv2ray::components::route::emptyScheme" title='Qv2ray::components::route::emptyScheme' data-ref="Qv2ray::components::route::emptyScheme" data-ref-filename="Qv2ray..components..route..emptyScheme">emptyScheme</dfn>;</td></tr>
+<tr><th id="6">6</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="7">7</th><td><i class="doc">     * <span class="command">@brief</span> The Qv2rayRouteScheme struct</i></td></tr>
+<tr><th id="8">8</th><td><i class="doc">     * <span class="command">@author</span> DuckSoft &lt;realducksof<span class="command">t@gmail</span>.com&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="10">10</th><td>    <b>struct</b> <dfn class="type def" id="Qv2ray::components::route::Qv2rayRouteScheme" title='Qv2ray::components::route::Qv2rayRouteScheme' data-ref="Qv2ray::components::route::Qv2rayRouteScheme" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme">Qv2rayRouteScheme</dfn> : <a class="type" href="../../base/models/QvCoreSettings.hpp.html#Qv2ray::base::config::QvConfig_Route" title='Qv2ray::base::config::QvConfig_Route' data-ref="Qv2ray::base::config::QvConfig_Route" data-ref-filename="Qv2ray..base..config..QvConfig_Route">QvConfig_Route</a></td></tr>
+<tr><th id="11">11</th><td>    {</td></tr>
+<tr><th id="12">12</th><td>        <i class="doc">/**</i></td></tr>
+<tr><th id="13">13</th><td><i class="doc">         * <span class="command">@brief</span> the name of the scheme.</i></td></tr>
+<tr><th id="14">14</th><td><i class="doc">         *<span class="command"> @example</span> "Untitled Scheme"</i></td></tr>
+<tr><th id="15">15</th><td><i class="doc">         */</i></td></tr>
+<tr><th id="16">16</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::route::Qv2rayRouteScheme::name" title='Qv2ray::components::route::Qv2rayRouteScheme::name' data-ref="Qv2ray::components::route::Qv2rayRouteScheme::name" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme..name">name</dfn>;</td></tr>
+<tr><th id="17">17</th><td>        <i class="doc">/**</i></td></tr>
+<tr><th id="18">18</th><td><i class="doc">         * <span class="command">@brief</span> the author of the scheme.</i></td></tr>
+<tr><th id="19">19</th><td><i class="doc">         *<span class="command"> @example</span> "DuckSoft &lt;realducksof<span class="command">t@gmail</span>.com&gt;"</i></td></tr>
+<tr><th id="20">20</th><td><i class="doc">         */</i></td></tr>
+<tr><th id="21">21</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::route::Qv2rayRouteScheme::author" title='Qv2ray::components::route::Qv2rayRouteScheme::author' data-ref="Qv2ray::components::route::Qv2rayRouteScheme::author" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme..author">author</dfn>;</td></tr>
+<tr><th id="22">22</th><td>        <i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc">         * <span class="command">@brief</span> details of this scheme.</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc">         *<span class="command"> @example</span> "A scheme to bypass China mainland, while allowing bilibili to go through proxy."</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc">         */</i></td></tr>
+<tr><th id="26">26</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::route::Qv2rayRouteScheme::description" title='Qv2ray::components::route::Qv2rayRouteScheme::description' data-ref="Qv2ray::components::route::Qv2rayRouteScheme::description" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme..description">description</dfn>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>        <i>// M: all these fields are mandatory</i></td></tr>
+<tr><th id="29">29</th><td>        <a class="macro" href="../../../libs/QJsonStruct/QJsonStruct.hpp.html#52" title="void loadJson(const QJsonValue &amp;___json_object_) { JsonStructHelper::___json_struct_load_data(this-&gt;name, ___json_object_[&quot;name&quot;]); JsonStructHelper::___json_struct_load_data(this-&gt;author, ___json_object_[&quot;author&quot;]); JsonStructHelper::___json_struct_load_data(this-&gt;description, ___json_object_[&quot;description&quot;]); QvConfig_Route::loadJson(___json_object_);; } [[nodiscard]] static auto fromJson(const QJsonValue &amp;___json_object_) { Qv2rayRouteScheme _t; _t.loadJson(___json_object_); return _t; } [[nodiscard]] const QJsonObject toJson() const { QJsonObject ___json_object_; ___json_object_.insert(&quot;name&quot;, JsonStructHelper::___json_struct_store_data(name)); ___json_object_.insert(&quot;author&quot;, JsonStructHelper::___json_struct_store_data(author)); ___json_object_.insert(&quot;description&quot;, JsonStructHelper::___json_struct_store_data(description)); JsonStructHelper::__json_struct_merge_json(___json_object_, QvConfig_Route::toJson());; return ___json_object_; }" data-ref="_M/JSONSTRUCT_REGISTER">JSONSTRUCT_REGISTER</a>(<a class="type" href="#Qv2ray::components::route::Qv2rayRouteScheme" title='Qv2ray::components::route::Qv2rayRouteScheme' data-ref="Qv2ray::components::route::Qv2rayRouteScheme" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme">Qv2rayRouteScheme</a>, F(<a class="member field" href="#Qv2ray::components::route::Qv2rayRouteScheme::name" title='Qv2ray::components::route::Qv2rayRouteScheme::name' data-ref="Qv2ray::components::route::Qv2rayRouteScheme::name" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme..name">name</a>, <a class="member field" href="#Qv2ray::components::route::Qv2rayRouteScheme::author" title='Qv2ray::components::route::Qv2rayRouteScheme::author' data-ref="Qv2ray::components::route::Qv2rayRouteScheme::author" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme..author">author</a>, <a class="member field" href="#Qv2ray::components::route::Qv2rayRouteScheme::description" title='Qv2ray::components::route::Qv2rayRouteScheme::description' data-ref="Qv2ray::components::route::Qv2rayRouteScheme::description" data-ref-filename="Qv2ray..components..route..Qv2rayRouteScheme..description">description</a>), B(<a class="type" href="../../base/models/QvCoreSettings.hpp.html#Qv2ray::base::config::QvConfig_Route" title='Qv2ray::base::config::QvConfig_Route' data-ref="Qv2ray::base::config::QvConfig_Route" data-ref-filename="Qv2ray..base..config..QvConfig_Route">QvConfig_Route</a>));</td></tr>
+<tr><th id="30">30</th><td>    };</td></tr>
+<tr><th id="31">31</th><td>} <i>// namespace Qv2ray::components::route</i></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2ray::components::route</span>;</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='RouteSchemeIO.cpp.html'>qv2ray/src/components/route/RouteSchemeIO.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

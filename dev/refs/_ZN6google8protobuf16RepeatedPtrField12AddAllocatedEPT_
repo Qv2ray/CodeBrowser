@@ -1,0 +1,17 @@
+<dec f='include/google/protobuf/repeated_field.h' l='899' type='void google::protobuf::RepeatedPtrField::AddAllocated(Element * value)'/>
+<def f='include/google/protobuf/repeated_field.h' l='2147' ll='2150' type='void google::protobuf::RepeatedPtrField::AddAllocated(Element * value)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='884'>// Advanced memory management --------------------------------------
+  // When hardcore memory management becomes necessary -- as it sometimes
+  // does here at Google -- the following methods may be useful.
+
+  // Add an already-allocated object, passing ownership to the
+  // RepeatedPtrField.
+  //
+  // Note that some special behavior occurs with respect to arenas:
+  //
+  //   (i) if this field holds submessages, the new submessage will be copied if
+  //   the original is in an arena and this RepeatedPtrField is either in a
+  //   different arena, or on the heap.
+  //   (ii) if this field holds strings, the passed-in string *must* be
+  //   heap-allocated, not arena-allocated. There is no way to dynamically check
+  //   this at runtime, so User Beware.</doc>

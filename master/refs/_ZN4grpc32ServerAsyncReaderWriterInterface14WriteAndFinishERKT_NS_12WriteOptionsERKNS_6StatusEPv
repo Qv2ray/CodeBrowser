@@ -1,0 +1,15 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='1002' type='void grpc::ServerAsyncReaderWriterInterface::WriteAndFinish(const W &amp; msg, grpc::WriteOptions options, const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='988'>/// Request the writing of \a msg and coalesce it with trailing metadata which
+  /// contains \a status, using WriteOptions options with
+  /// identifying tag \a tag.
+  ///
+  /// WriteAndFinish is equivalent of performing WriteLast and Finish in a
+  /// single step.
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a msg and \a status, so it
+  /// is safe to to deallocate once WriteAndFinish returns.
+  ///
+  /// \param[in] msg The message to be written.
+  /// \param[in] options The WriteOptions to be used to write this message.
+  /// \param[in] status The Status that server returns to client.
+  /// \param[in] tag The tag identifying the operation.</doc>

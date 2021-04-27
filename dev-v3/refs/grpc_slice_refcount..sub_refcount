@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/slice.h' l='61' type='struct grpc_slice_refcount *'/>
+<offset>64</offset>
+<doc f='include/grpc/impl/codegen/slice.h' l='57'>/** If a subset of this slice is taken, use this pointer for the refcount.
+     Typically points back to the refcount itself, however iterning
+     implementations can use this to avoid a verification step on each hash
+     or equality check */</doc>

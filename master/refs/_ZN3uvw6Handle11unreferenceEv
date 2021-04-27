@@ -1,0 +1,8 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='117' c='_ZN3uvw10BaseHandle11unreferenceEv'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='161' ll='163' type='void uvw::Handle::unreference()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='155'>/**
+     * @brief Unreference the given handle.
+     *
+     * References are idempotent, that is, if a handle is not referenced calling
+     * this function again will have no effect.
+     */</doc>

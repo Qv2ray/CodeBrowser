@@ -1,0 +1,13 @@
+<dec f='include/c++/10/bits/basic_string.h' l='2817' type='std::__cxx11::basic_string::size_type std::__cxx11::basic_string::find_last_not_of(_CharT __c, std::__cxx11::basic_string::size_type __pos = npos) const'/>
+<def f='include/c++/10/bits/basic_string.tcc' l='1373' ll='1391' type='typename basic_string&lt;_CharT, _Traits, _Alloc&gt;::size_type std::__cxx11::basic_string::find_last_not_of(_CharT __c, std::__cxx11::basic_string::size_type __pos = npos) const'/>
+<doc f='include/c++/10/bits/basic_string.h' l='2806'>/**
+       *  @brief  Find last position of a different character.
+       *  @param __c  Character to avoid.
+       *  @param __pos  Index of character to search back from (default end).
+       *  @return  Index of last occurrence.
+       *
+       *  Starting from @a __pos, searches backward for a character other than
+       *  @a __c within this string.  If found, returns the index where it was
+       *  found.  If not found, returns npos.
+      */</doc>
+<use f='qv2ray/test/catch.hpp' l='15055' u='c' c='_ZN5Catch10fpToStringB5cxx11ET_i'/>

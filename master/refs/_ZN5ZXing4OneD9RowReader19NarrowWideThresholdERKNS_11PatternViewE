@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='240' ll='262' type='static ZXing::BarAndSpaceI ZXing::OneD::RowReader::NarrowWideThreshold(const ZXing::PatternView &amp; view)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='270' u='c' c='_ZN5ZXing4OneD9RowReader20NarrowWideBitPatternERKNS_11PatternViewE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='231'>/**
+	 * @brief NarrowWideThreshold calculates width thresholds to separate narrow and wide bars and spaces.
+	 *
+	 * This is useful for codes like Codabar, Code39 and ITF which distinguish between narrow and wide
+	 * bars/spaces. Where wide ones are between 2 and 3 times as wide as the narrow ones.
+	 *
+	 * @param view containing one character
+	 * @return threshold value for bars and spaces
+	 */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='257' u='c' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>

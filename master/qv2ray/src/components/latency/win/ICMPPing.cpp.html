@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ICMPPing.cpp source code [qv2ray/src/components/latency/win/ICMPPing.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/latency/win/ICMPPing.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>components</a>/<a href='..'>latency</a>/<a href='./'>win</a>/<a href='ICMPPing.cpp.html'>ICMPPing.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="ICMPPing.hpp.html">"ICMPPing.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#<span data-ppcond="2">ifdef</span> <span class="macro" data-ref="_M/Q_OS_WIN">Q_OS_WIN</span></u></td></tr>
+<tr><th id="3">3</th><td><b>typedef</b> <b>struct</b> _IO_STATUS_BLOCK</td></tr>
+<tr><th id="4">4</th><td>{</td></tr>
+<tr><th id="5">5</th><td>    <b>union</b></td></tr>
+<tr><th id="6">6</th><td>    {</td></tr>
+<tr><th id="7">7</th><td>        NTSTATUS Status;</td></tr>
+<tr><th id="8">8</th><td>        PVOID Pointer;</td></tr>
+<tr><th id="9">9</th><td>    } DUMMYUNIONNAME;</td></tr>
+<tr><th id="10">10</th><td>    ULONG_PTR Information;</td></tr>
+<tr><th id="11">11</th><td>} IO_STATUS_BLOCK, *PIO_STATUS_BLOCK;</td></tr>
+<tr><th id="12">12</th><td><b>typedef</b> VOID(NTAPI *PIO_APC_ROUTINE)(IN PVOID ApcContext, IN PIO_STATUS_BLOCK IoStatusBlock, IN ULONG Reserved);</td></tr>
+<tr><th id="13">13</th><td>    <u>#define PIO_APC_ROUTINE_DEFINED</u></td></tr>
+<tr><th id="14">14</th><td>    <u>#include &lt;WS2tcpip.h&gt;</u></td></tr>
+<tr><th id="15">15</th><td>    <i>//</i></td></tr>
+<tr><th id="16">16</th><td>    <u>#include &lt;Windows.h&gt;</u></td></tr>
+<tr><th id="17">17</th><td>    <i>//</i></td></tr>
+<tr><th id="18">18</th><td>    <u>#include &lt;iphlpapi.h&gt;</u></td></tr>
+<tr><th id="19">19</th><td>    <i>//</i></td></tr>
+<tr><th id="20">20</th><td>    <u>#include &lt;IcmpAPI.h&gt;</u></td></tr>
+<tr><th id="21">21</th><td>    <i>//</i></td></tr>
+<tr><th id="22">22</th><td>    <u>#include &lt;QString&gt;</u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> Qv2ray::components::latency::icmping</td></tr>
+<tr><th id="25">25</th><td>{</td></tr>
+<tr><th id="26">26</th><td>    ICMPPing ::~ICMPPing()</td></tr>
+<tr><th id="27">27</th><td>    {</td></tr>
+<tr><th id="28">28</th><td>    }</td></tr>
+<tr><th id="29">29</th><td>    <em>void</em> ICMPPing::ping()</td></tr>
+<tr><th id="30">30</th><td>    {</td></tr>
+<tr><th id="31">31</th><td>        waitHandleTimer = loop-&gt;resource&lt;uvw::TimerHandle&gt;();</td></tr>
+<tr><th id="32">32</th><td>        waitHandleTimer-&gt;on&lt;uvw::TimerEvent&gt;([ptr = shared_from_this(), <b>this</b>](<em>auto</em> &amp;&amp;, <em>auto</em> &amp;&amp;h) {</td></tr>
+<tr><th id="33">33</th><td>            SleepEx(<var>0</var>, TRUE);</td></tr>
+<tr><th id="34">34</th><td>            <b>if</b> (data.failedCount + successCount == data.totalCount)</td></tr>
+<tr><th id="35">35</th><td>            {</td></tr>
+<tr><th id="36">36</th><td>                waitHandleTimer-&gt;stop();</td></tr>
+<tr><th id="37">37</th><td>                waitHandleTimer-&gt;close();</td></tr>
+<tr><th id="38">38</th><td>                waitHandleTimer-&gt;clear();</td></tr>
+<tr><th id="39">39</th><td>            }</td></tr>
+<tr><th id="40">40</th><td>        });</td></tr>
+<tr><th id="41">41</th><td>        <b>for</b> (; data.totalCount &lt; req.totalCount; ++data.totalCount)</td></tr>
+<tr><th id="42">42</th><td>        {</td></tr>
+<tr><th id="43">43</th><td>            pingImpl();</td></tr>
+<tr><th id="44">44</th><td>        }</td></tr>
+<tr><th id="45">45</th><td>        waitHandleTimer-&gt;start(uvw::TimerHandle::Time{ <var>500</var> }, uvw::TimerHandle::Time{ <var>500</var> });</td></tr>
+<tr><th id="46">46</th><td>    }</td></tr>
+<tr><th id="47">47</th><td>    <em>void</em> ICMPPing::pingImpl()</td></tr>
+<tr><th id="48">48</th><td>    {</td></tr>
+<tr><th id="49">49</th><td>        <b>constexpr</b> WORD payload_size = <var>1</var>;</td></tr>
+<tr><th id="50">50</th><td>        <b>constexpr</b> DWORD reply_buf_size = <b>sizeof</b>(ICMP_ECHO_REPLY) + payload_size + <var>8</var>;</td></tr>
+<tr><th id="51">51</th><td>        <b>struct</b> ICMPReply</td></tr>
+<tr><th id="52">52</th><td>        {</td></tr>
+<tr><th id="53">53</th><td>            ICMPReply(std::function&lt;<em>void</em>(<em>bool</em>, <em>long</em>, <em>const</em> QString &amp;, HANDLE)&gt; f) : whenIcmpFailed(std::move(f))</td></tr>
+<tr><th id="54">54</th><td>            {</td></tr>
+<tr><th id="55">55</th><td>                hIcmpFile = IcmpCreateFile();</td></tr>
+<tr><th id="56">56</th><td>            }</td></tr>
+<tr><th id="57">57</th><td>            <em>unsigned</em> <em>char</em> reply_buf[reply_buf_size]{};</td></tr>
+<tr><th id="58">58</th><td>            <em>unsigned</em> <em>char</em> payload[payload_size]{ <var>42</var> };</td></tr>
+<tr><th id="59">59</th><td>            HANDLE hIcmpFile;</td></tr>
+<tr><th id="60">60</th><td>            std::function&lt;<em>void</em>(<em>bool</em>, <em>long</em>, <em>const</em> QString &amp;, HANDLE)&gt; whenIcmpFailed;</td></tr>
+<tr><th id="61">61</th><td>            ~ICMPReply()</td></tr>
+<tr><th id="62">62</th><td>            {</td></tr>
+<tr><th id="63">63</th><td>                <b>if</b> (hIcmpFile != INVALID_HANDLE_VALUE)</td></tr>
+<tr><th id="64">64</th><td>                    IcmpCloseHandle(hIcmpFile);</td></tr>
+<tr><th id="65">65</th><td>            }</td></tr>
+<tr><th id="66">66</th><td>        };</td></tr>
+<tr><th id="67">67</th><td>        <em>auto</em> icmpReply = <b>new</b> ICMPReply{ [<b>this</b>, id = req.id](<em>bool</em> isSuccess, <em>long</em> res, <em>const</em> QString &amp;message, HANDLE h) {</td></tr>
+<tr><th id="68">68</th><td>            <b>if</b> (!isSuccess)</td></tr>
+<tr><th id="69">69</th><td>            {</td></tr>
+<tr><th id="70">70</th><td>                data.errorMessage = message;</td></tr>
+<tr><th id="71">71</th><td>                data.failedCount++;</td></tr>
+<tr><th id="72">72</th><td>            }</td></tr>
+<tr><th id="73">73</th><td>            <b>else</b></td></tr>
+<tr><th id="74">74</th><td>            {</td></tr>
+<tr><th id="75">75</th><td>                data.avg += res;</td></tr>
+<tr><th id="76">76</th><td>                data.best = std::min(res, data.best);</td></tr>
+<tr><th id="77">77</th><td>                data.worst = std::max(res, data.worst);</td></tr>
+<tr><th id="78">78</th><td>                successCount++;</td></tr>
+<tr><th id="79">79</th><td>            }</td></tr>
+<tr><th id="80">80</th><td>            notifyTestHost(testHost, id);</td></tr>
+<tr><th id="81">81</th><td>        } };</td></tr>
+<tr><th id="82">82</th><td>        <b>if</b> (icmpReply-&gt;hIcmpFile == INVALID_HANDLE_VALUE)</td></tr>
+<tr><th id="83">83</th><td>        {</td></tr>
+<tr><th id="84">84</th><td>            data.errorMessage = <q>"IcmpCreateFile failed"</q>;</td></tr>
+<tr><th id="85">85</th><td>            data.failedCount++;</td></tr>
+<tr><th id="86">86</th><td>            notifyTestHost(testHost, req.id);</td></tr>
+<tr><th id="87">87</th><td>            <b>delete</b> icmpReply;</td></tr>
+<tr><th id="88">88</th><td>            <b>return</b>;</td></tr>
+<tr><th id="89">89</th><td>        }</td></tr>
+<tr><th id="90">90</th><td>        IcmpSendEcho2(</td></tr>
+<tr><th id="91">91</th><td>            icmpReply-&gt;hIcmpFile, NULL,</td></tr>
+<tr><th id="92">92</th><td>            [](PVOID ctx, PIO_STATUS_BLOCK b, ULONG r) {</td></tr>
+<tr><th id="93">93</th><td>                <em>static</em> <em>int</em> i = <var>1</var>;</td></tr>
+<tr><th id="94">94</th><td>                LOG(MODULE_NETWORK, <q>"hit"</q> + QSTRN(i++))</td></tr>
+<tr><th id="95">95</th><td>                <em>auto</em> replyPtr = <b>reinterpret_cast</b>&lt;ICMPReply *&gt;(ctx);</td></tr>
+<tr><th id="96">96</th><td>                <em>auto</em> isSuccess = (NTSTATUS(b-&gt;Status)) &gt;= <var>0</var>;</td></tr>
+<tr><th id="97">97</th><td>                <em>long</em> res = <var>0</var>;</td></tr>
+<tr><th id="98">98</th><td>                QString message;</td></tr>
+<tr><th id="99">99</th><td>                <b>if</b> (isSuccess)</td></tr>
+<tr><th id="100">100</th><td>                {</td></tr>
+<tr><th id="101">101</th><td>                    <em>const</em> ICMP_ECHO_REPLY *r = (<em>const</em> ICMP_ECHO_REPLY *) replyPtr-&gt;reply_buf;</td></tr>
+<tr><th id="102">102</th><td>                    res = r-&gt;RoundTripTime * <var>1000</var>;</td></tr>
+<tr><th id="103">103</th><td>                }</td></tr>
+<tr><th id="104">104</th><td>                <b>else</b></td></tr>
+<tr><th id="105">105</th><td>                {</td></tr>
+<tr><th id="106">106</th><td>                    <em>auto</em> e = GetLastError();</td></tr>
+<tr><th id="107">107</th><td>                    DWORD buf_size = <var>1000</var>;</td></tr>
+<tr><th id="108">108</th><td>                    TCHAR buf[<var>1000</var>];</td></tr>
+<tr><th id="109">109</th><td>                    GetIpErrorString(e, buf, &amp;buf_size);</td></tr>
+<tr><th id="110">110</th><td>                    message = <q>"IcmpSendEcho returned error ("</q> + QString::fromStdWString(buf) + <q>")"</q>;</td></tr>
+<tr><th id="111">111</th><td>                }</td></tr>
+<tr><th id="112">112</th><td>                replyPtr-&gt;whenIcmpFailed(isSuccess, res, message, replyPtr-&gt;hIcmpFile);</td></tr>
+<tr><th id="113">113</th><td>                <b>delete</b> replyPtr;</td></tr>
+<tr><th id="114">114</th><td>            },</td></tr>
+<tr><th id="115">115</th><td>            icmpReply, <b>reinterpret_cast</b>&lt;IPAddr &amp;&gt;(<b>reinterpret_cast</b>&lt;sockaddr_in &amp;&gt;(storage).sin_addr), icmpReply-&gt;payload, payload_size, NULL,</td></tr>
+<tr><th id="116">116</th><td>            icmpReply-&gt;reply_buf, reply_buf_size, <var>10000</var>);</td></tr>
+<tr><th id="117">117</th><td>    }</td></tr>
+<tr><th id="118">118</th><td>    <em>bool</em> ICMPPing::notifyTestHost(LatencyTestHost *testHost, <em>const</em> ConnectionId &amp;id)</td></tr>
+<tr><th id="119">119</th><td>    {</td></tr>
+<tr><th id="120">120</th><td>        <b>if</b> (data.failedCount + successCount == data.totalCount)</td></tr>
+<tr><th id="121">121</th><td>        {</td></tr>
+<tr><th id="122">122</th><td>            <b>if</b> (data.failedCount == data.totalCount)</td></tr>
+<tr><th id="123">123</th><td>                data.avg = LATENCY_TEST_VALUE_ERROR;</td></tr>
+<tr><th id="124">124</th><td>            <b>else</b></td></tr>
+<tr><th id="125">125</th><td>                data.errorMessage.clear(), data.avg = data.avg / successCount / <var>1000</var>;</td></tr>
+<tr><th id="126">126</th><td>            testHost-&gt;OnLatencyTestCompleted(id, data);</td></tr>
+<tr><th id="127">127</th><td>            <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="128">128</th><td>        }</td></tr>
+<tr><th id="129">129</th><td>        <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="130">130</th><td>    }</td></tr>
+<tr><th id="131">131</th><td>    <em>void</em> ICMPPing::start()</td></tr>
+<tr><th id="132">132</th><td>    {</td></tr>
+<tr><th id="133">133</th><td>        data.totalCount = <var>0</var>;</td></tr>
+<tr><th id="134">134</th><td>        data.failedCount = <var>0</var>;</td></tr>
+<tr><th id="135">135</th><td>        data.worst = <var>0</var>;</td></tr>
+<tr><th id="136">136</th><td>        data.avg = <var>0</var>;</td></tr>
+<tr><th id="137">137</th><td>        af = isAddr();</td></tr>
+<tr><th id="138">138</th><td>        <b>if</b> (af == -<var>1</var>)</td></tr>
+<tr><th id="139">139</th><td>        {</td></tr>
+<tr><th id="140">140</th><td>            getAddrHandle = loop-&gt;resource&lt;uvw::GetAddrInfoReq&gt;();</td></tr>
+<tr><th id="141">141</th><td>            sprintf(digitBuffer, <q>"%d"</q>, req.port);</td></tr>
+<tr><th id="142">142</th><td>        }</td></tr>
+<tr><th id="143">143</th><td>        async_DNS_lookup(<var>0</var>, <var>0</var>);</td></tr>
+<tr><th id="144">144</th><td>    }</td></tr>
+<tr><th id="145">145</th><td>} <i>// namespace Qv2ray::components::latency::icmping</i></td></tr>
+<tr><th id="146">146</th><td><u>#<span data-ppcond="2">endif</span></u></td></tr>
+<tr><th id="147">147</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

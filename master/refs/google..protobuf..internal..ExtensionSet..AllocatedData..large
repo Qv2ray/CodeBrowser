@@ -1,0 +1,9 @@
+<use f='include/google/protobuf/extension_set.h' l='628' u='r' c='_ZNK6google8protobuf8internal12ExtensionSet4SizeEv'/>
+<use f='include/google/protobuf/extension_set.h' l='645' u='r' c='_ZN6google8protobuf8internal12ExtensionSet7ForEachET_'/>
+<use f='include/google/protobuf/extension_set.h' l='645' u='r' c='_ZN6google8protobuf8internal12ExtensionSet7ForEachET_'/>
+<use f='include/google/protobuf/extension_set.h' l='654' u='r' c='_ZNK6google8protobuf8internal12ExtensionSet7ForEachET_'/>
+<use f='include/google/protobuf/extension_set.h' l='654' u='r' c='_ZNK6google8protobuf8internal12ExtensionSet7ForEachET_'/>
+<dec f='include/google/protobuf/extension_set.h' l='750' type='google::protobuf::internal::ExtensionSet::LargeMap *'/>
+<offset>0</offset>
+<doc f='include/google/protobuf/extension_set.h' l='748'>// If flat_capacity_ &gt; kMaximumFlatCapacity, switch to LargeMap,
+    // which guarantees O(n lg n) CPU but larger constant factors.</doc>

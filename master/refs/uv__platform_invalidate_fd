@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='253' type='void uv__platform_invalidate_fd(uv_loop_t * loop, int fd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='936' u='c' c='uv__io_close'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='147' ll='177' type='void uv__platform_invalidate_fd(uv_loop_t * loop, int fd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='107' u='c' c='uv__poll_stop'/>

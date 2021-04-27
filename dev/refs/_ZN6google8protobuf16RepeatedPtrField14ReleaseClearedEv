@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/repeated_field.h' l='977' type='Element * google::protobuf::RepeatedPtrField::ReleaseCleared()'/>
+<def f='include/google/protobuf/repeated_field.h' l='2177' ll='2180' type='Element * google::protobuf::RepeatedPtrField::ReleaseCleared()'/>
+<doc f='include/google/protobuf/repeated_field.h' l='970'>// Remove a single element from the cleared pool and return it, passing
+  // ownership to the caller.  The element is guaranteed to be cleared.
+  // Requires:  ClearedCount() &gt; 0
+  //
+  //
+  // This method cannot be called when the repeated field is on an arena; doing
+  // so will trigger a GOOGLE_DCHECK-failure.</doc>

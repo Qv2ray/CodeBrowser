@@ -1,0 +1,48 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='31' ll='54'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='36' c='_ZN5ZXing14DetectorResultC1ERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='37' c='_ZN5ZXing14DetectorResultaSERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='37' c='_ZN5ZXing14DetectorResultaSERKS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='41' c='_ZN5ZXing14DetectorResultC1EOS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='42' c='_ZN5ZXing14DetectorResultaSEOS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='42' c='_ZN5ZXing14DetectorResultaSEOS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.h' l='36' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.cpp' l='23' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<size>72</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='26'>/**
+* Encapsulates the result of detecting a barcode in an image. This includes the raw
+* matrix of black/white pixels corresponding to the barcode and the position of the code
+* in the input image.
+*/</doc>
+<mbr r='ZXing::DetectorResult::_bits' o='0' t='ZXing::BitMatrix'/>
+<mbr r='ZXing::DetectorResult::_position' o='320' t='ZXing::QuadrilateralI'/>
+<fun r='_ZN5ZXing14DetectorResultC1ERKS0_'/>
+<fun r='_ZN5ZXing14DetectorResultaSERKS0_'/>
+<fun r='_ZN5ZXing14DetectorResultC1Ev'/>
+<fun r='_ZN5ZXing14DetectorResultC1EOS0_'/>
+<fun r='_ZN5ZXing14DetectorResultaSEOS0_'/>
+<fun r='_ZN5ZXing14DetectorResultC1EONS_9BitMatrixEONS_13QuadrilateralINS_6PointTIiEEEE'/>
+<fun r='_ZNKR5ZXing14DetectorResult4bitsEv'/>
+<fun r='_ZNO5ZXing14DetectorResult4bitsEv'/>
+<fun r='_ZNKR5ZXing14DetectorResult8positionEv'/>
+<fun r='_ZNO5ZXing14DetectorResult8positionEv'/>
+<fun r='_ZNK5ZXing14DetectorResult7isValidEv'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='25' c='ZXing::Aztec::DetectorResult'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='25'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='39' c='_ZN5ZXing5Aztec14DetectorResultC1EONS_14DetectorResultEbii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='40' c='_ZN5ZXing5Aztec14DetectorResultC1EONS_14DetectorResultEbii'/>
+<size>72</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='466' c='_ZN5ZXing5AztecL10SampleGridERKNS_9BitMatrixERKNS_11ResultPointES6_S6_S6_bii'/>
+<size>72</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.h' l='41' c='_ZN5ZXing10DataMatrix8Detector6DetectERKNS_9BitMatrixEbbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='205' c='_ZN5ZXing10DataMatrixL10SampleGridERKNS_9BitMatrixERKNS_11ResultPointES6_S6_S6_ii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='266' c='_ZN5ZXing10DataMatrixL9DetectOldERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='827' c='_ZN5ZXing10DataMatrixL10SampleGridERKNS_9BitMatrixENS_6PointTIdEES5_S5_S5_ii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='851' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='1018' c='_ZN5ZXing10DataMatrixL10DetectPureERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='1049' c='_ZN5ZXing10DataMatrix8Detector6DetectERKNS_9BitMatrixEbbb'/>
+<size>72</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.h' l='43' c='_ZN5ZXing6QRCode8Detector6DetectERKNS_9BitMatrixEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='251' c='_ZN5ZXing6QRCodeL24ProcessFinderPatternInfoERKNS_9BitMatrixERKNS0_17FinderPatternInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='303' c='_ZN5ZXing6QRCodeL10DetectPureERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='334' c='_ZN5ZXing6QRCode8Detector6DetectERKNS_9BitMatrixEbb'/>
+<size>72</size>

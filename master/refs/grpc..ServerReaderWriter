@@ -1,0 +1,11 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='772' ll='802'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='798'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='237'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='241' c='_ZN4grpc8internal20BidiStreamingHandlerC1ESt8functionIFNS_6StatusEPT_PNS_13ServerContextEPNS_18ServerReaderWriterIT1_T0_EEEES5_'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='245' c='_ZN4grpc8internal20BidiStreamingHandlerC1ESt8functionIFNS_6StatusEPT_PNS_13ServerContextEPNS_18ServerReaderWriterIT1_T0_EEEES5_'/>
+<fun r='_ZN4grpc18ServerReaderWriter19SendInitialMetadataEv'/>
+<fun r='_ZN4grpc18ServerReaderWriter15NextMessageSizeEPj'/>
+<fun r='_ZN4grpc18ServerReaderWriter4ReadEPT0_'/>
+<fun r='_ZN4grpc18ServerReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<mbr r='grpc::ServerReaderWriter::body_' t='internal::ServerReaderWriterBody&lt;W, R&gt;'/>
+<fun r='_ZN4grpc18ServerReaderWriterC1EPNS_8internal4CallEPNS_13ServerContextE'/>

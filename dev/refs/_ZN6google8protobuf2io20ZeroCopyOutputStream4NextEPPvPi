@@ -1,0 +1,22 @@
+<dec f='include/google/protobuf/io/zero_copy_stream.h' l='206' type='bool google::protobuf::io::ZeroCopyOutputStream::Next(void ** data, int * size)'/>
+<ovr f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='81' c='_ZN4grpc17ProtoBufferWriter4NextEPPvPi'/>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='186'>// Obtains a buffer into which data can be written.  Any data written
+  // into this buffer will eventually (maybe instantly, maybe later on)
+  // be written to the output.
+  //
+  // Preconditions:
+  // * &quot;size&quot; and &quot;data&quot; are not NULL.
+  //
+  // Postconditions:
+  // * If the returned value is false, an error occurred.  All errors are
+  //   permanent.
+  // * Otherwise, &quot;size&quot; points to the actual number of bytes in the buffer
+  //   and &quot;data&quot; points to the buffer.
+  // * Ownership of this buffer remains with the stream, and the buffer
+  //   remains valid only until some other method of the stream is called
+  //   or the stream is destroyed.
+  // * Any data which the caller stores in this buffer will eventually be
+  //   written to the output (unless BackUp() is called).
+  // * It is legal for the returned buffer to have zero size, as long
+  //   as repeatedly calling Next() eventually yields a buffer with non-zero
+  //   size.</doc>

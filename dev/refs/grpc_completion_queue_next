@@ -1,0 +1,9 @@
+<dec f='include/grpc/grpc.h' l='130' type='grpc_event grpc_completion_queue_next(grpc_completion_queue * cq, gpr_timespec deadline, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='122'>/** Blocks until an event is available, the completion queue is being shut down,
+    or deadline is reached.
+
+    Returns a grpc_event with type GRPC_QUEUE_TIMEOUT on timeout,
+    otherwise a grpc_event describing the event that occurred.
+
+    Callers must not call grpc_completion_queue_next and
+    grpc_completion_queue_pluck simultaneously on the same completion queue. */</doc>

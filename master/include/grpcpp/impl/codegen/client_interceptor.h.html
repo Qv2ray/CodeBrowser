@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>client_interceptor.h source code [include/grpcpp/impl/codegen/client_interceptor.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="grpc::experimental::ClientInterceptor,grpc::experimental::ClientInterceptorFactoryInterface,grpc::experimental::ClientRpcInfo "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpcpp/impl/codegen/client_interceptor.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>grpcpp</a>/<a href='..'>impl</a>/<a href='./'>codegen</a>/<a href='client_interceptor.h.html'>client_interceptor.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2018 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPCPP_IMPL_CODEGEN_CLIENT_INTERCEPTOR_H">GRPCPP_IMPL_CODEGEN_CLIENT_INTERCEPTOR_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPCPP_IMPL_CODEGEN_CLIENT_INTERCEPTOR_H" data-ref="_M/GRPCPP_IMPL_CODEGEN_CLIENT_INTERCEPTOR_H">GRPCPP_IMPL_CODEGEN_CLIENT_INTERCEPTOR_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="interceptor.h.html">&lt;grpcpp/impl/codegen/interceptor.h&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">grpc</span> {</td></tr>
+<tr><th id="25">25</th><td><b>namespace</b> <span class="namespace">experimental</span> {</td></tr>
+<tr><th id="26">26</th><td><b>class</b> <dfn class="type def" id="grpc::experimental::ClientInterceptor" title='grpc::experimental::ClientInterceptor' data-ref="grpc::experimental::ClientInterceptor" data-ref-filename="grpc..experimental..ClientInterceptor">ClientInterceptor</dfn> {</td></tr>
+<tr><th id="27">27</th><td> <b>public</b>:</td></tr>
+<tr><th id="28">28</th><td>  <b>virtual</b> <dfn class="virtual decl def fn" id="_ZN4grpc12experimental17ClientInterceptorD1Ev" title='grpc::experimental::ClientInterceptor::~ClientInterceptor' data-ref="_ZN4grpc12experimental17ClientInterceptorD1Ev" data-ref-filename="_ZN4grpc12experimental17ClientInterceptorD1Ev">~ClientInterceptor</dfn>() {}</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>  <b>virtual</b> <em>void</em> <dfn class="virtual decl fn" id="_ZN4grpc12experimental17ClientInterceptor9InterceptEPNS0_23InterceptorBatchMethodsE" title='grpc::experimental::ClientInterceptor::Intercept' data-ref="_ZN4grpc12experimental17ClientInterceptor9InterceptEPNS0_23InterceptorBatchMethodsE" data-ref-filename="_ZN4grpc12experimental17ClientInterceptor9InterceptEPNS0_23InterceptorBatchMethodsE">Intercept</dfn>(<a class="type" href="interceptor.h.html#grpc::experimental::InterceptorBatchMethods" title='grpc::experimental::InterceptorBatchMethods' data-ref="grpc::experimental::InterceptorBatchMethods" data-ref-filename="grpc..experimental..InterceptorBatchMethods">InterceptorBatchMethods</a>* <dfn class="local col2 decl" id="8822methods" title='methods' data-type='grpc::experimental::InterceptorBatchMethods *' data-ref="8822methods" data-ref-filename="8822methods">methods</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="31">31</th><td>};</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>class</b> <dfn class="type def" id="grpc::experimental::ClientRpcInfo" title='grpc::experimental::ClientRpcInfo' data-ref="grpc::experimental::ClientRpcInfo" data-ref-filename="grpc..experimental..ClientRpcInfo">ClientRpcInfo</dfn> {};</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>class</b> <dfn class="type def" id="grpc::experimental::ClientInterceptorFactoryInterface" title='grpc::experimental::ClientInterceptorFactoryInterface' data-ref="grpc::experimental::ClientInterceptorFactoryInterface" data-ref-filename="grpc..experimental..ClientInterceptorFactoryInterface">ClientInterceptorFactoryInterface</dfn> {</td></tr>
+<tr><th id="36">36</th><td> <b>public</b>:</td></tr>
+<tr><th id="37">37</th><td>  <b>virtual</b> <dfn class="virtual decl def fn" id="_ZN4grpc12experimental33ClientInterceptorFactoryInterfaceD1Ev" title='grpc::experimental::ClientInterceptorFactoryInterface::~ClientInterceptorFactoryInterface' data-ref="_ZN4grpc12experimental33ClientInterceptorFactoryInterfaceD1Ev" data-ref-filename="_ZN4grpc12experimental33ClientInterceptorFactoryInterfaceD1Ev">~ClientInterceptorFactoryInterface</dfn>() {}</td></tr>
+<tr><th id="38">38</th><td>  <b>virtual</b> <a class="type" href="#grpc::experimental::ClientInterceptor" title='grpc::experimental::ClientInterceptor' data-ref="grpc::experimental::ClientInterceptor" data-ref-filename="grpc..experimental..ClientInterceptor">ClientInterceptor</a>* <dfn class="virtual decl fn" id="_ZN4grpc12experimental33ClientInterceptorFactoryInterface23CreateClientInterceptorEPNS0_13ClientRpcInfoE" title='grpc::experimental::ClientInterceptorFactoryInterface::CreateClientInterceptor' data-ref="_ZN4grpc12experimental33ClientInterceptorFactoryInterface23CreateClientInterceptorEPNS0_13ClientRpcInfoE" data-ref-filename="_ZN4grpc12experimental33ClientInterceptorFactoryInterface23CreateClientInterceptorEPNS0_13ClientRpcInfoE">CreateClientInterceptor</dfn>(<a class="type" href="#grpc::experimental::ClientRpcInfo" title='grpc::experimental::ClientRpcInfo' data-ref="grpc::experimental::ClientRpcInfo" data-ref-filename="grpc..experimental..ClientRpcInfo">ClientRpcInfo</a>* <dfn class="local col3 decl" id="8823info" title='info' data-type='grpc::experimental::ClientRpcInfo *' data-ref="8823info" data-ref-filename="8823info">info</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="39">39</th><td>};</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>}  <i>// namespace experimental</i></td></tr>
+<tr><th id="42">42</th><td>}  <i>// namespace grpc</i></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="19">endif</span>  // GRPCPP_IMPL_CODEGEN_CLIENT_INTERCEPTOR_H</u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

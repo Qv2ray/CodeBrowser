@@ -1,0 +1,675 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>udp.h source code [qv2ray/3rdparty/uvw/src/uvw/udp.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::SendEvent,uvw::UDPDataEvent,uvw::UDPHandle,uvw::details::SendReq,uvw::details::UVMembership,uvw::details::UVUDPFlags "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/udp.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='udp.h.html'>udp.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_UDP_INCLUDE_H">UVW_UDP_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_UDP_INCLUDE_H" data-ref="_M/UVW_UDP_INCLUDE_H">UVW_UDP_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../../../include/c++/10/cstddef.html">&lt;cstddef&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="request.hpp.html">"request.hpp"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="handle.hpp.html">"handle.hpp"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="20">20</th><td><i class="doc"> * <span class="command">@brief</span> SendEvent event.</i></td></tr>
+<tr><th id="21">21</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="22">22</th><td><i class="doc"> * It will be emitted by UDPHandle according with its functionalities.</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="24">24</th><td><b>struct</b> <dfn class="type def" id="uvw::SendEvent" title='uvw::SendEvent' data-ref="uvw::SendEvent" data-ref-filename="uvw..SendEvent">SendEvent</dfn> {};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * <span class="command">@brief</span> UDPDataEvent event.</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * It will be emitted by UDPHandle according with its functionalities.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="32">32</th><td><b>struct</b> <dfn class="type def" id="uvw::UDPDataEvent" title='uvw::UDPDataEvent' data-ref="uvw::UDPDataEvent" data-ref-filename="uvw..UDPDataEvent">UDPDataEvent</dfn> {</td></tr>
+<tr><th id="33">33</th><td>    <b>explicit</b> <a class="decl fn" href="udp.cpp.html#_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb" title='uvw::UDPDataEvent::UDPDataEvent' data-ref="_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb" data-ref-filename="_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb" id="_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb">UDPDataEvent</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col1 decl" id="1sndr" title='sndr' data-type='uvw::Addr' data-ref="1sndr" data-ref-filename="1sndr">sndr</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col2 decl" id="2buf" title='buf' data-type='std::unique_ptr&lt;char []&gt;' data-ref="2buf" data-ref-filename="2buf">buf</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="local col3 decl" id="3len" title='len' data-type='std::size_t' data-ref="3len" data-ref-filename="3len">len</dfn>, <em>bool</em> <dfn class="local col4 decl" id="4part" title='part' data-type='bool' data-ref="4part" data-ref-filename="4part">part</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="decl field" id="uvw::UDPDataEvent::data" title='uvw::UDPDataEvent::data' data-ref="uvw::UDPDataEvent::data" data-ref-filename="uvw..UDPDataEvent..data">data</dfn>; <i class="doc">/*!&lt; A bunch of data read on the stream. */</i></td></tr>
+<tr><th id="36">36</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="decl field" id="uvw::UDPDataEvent::length" title='uvw::UDPDataEvent::length' data-ref="uvw::UDPDataEvent::length" data-ref-filename="uvw..UDPDataEvent..length">length</dfn>;  <i class="doc">/*!&lt; The amount of data read on the stream. */</i></td></tr>
+<tr><th id="37">37</th><td>    <a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="decl field" id="uvw::UDPDataEvent::sender" title='uvw::UDPDataEvent::sender' data-ref="uvw::UDPDataEvent::sender" data-ref-filename="uvw..UDPDataEvent..sender">sender</dfn>; <i class="doc">/*!&lt; A valid instance of Addr. */</i></td></tr>
+<tr><th id="38">38</th><td>    <em>bool</em> <dfn class="decl field" id="uvw::UDPDataEvent::partial" title='uvw::UDPDataEvent::partial' data-ref="uvw::UDPDataEvent::partial" data-ref-filename="uvw..UDPDataEvent..partial">partial</dfn>; <i class="doc">/*!&lt; True if the message was truncated, false otherwise. */</i></td></tr>
+<tr><th id="39">39</th><td>};</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVUDPFlags" title='uvw::details::UVUDPFlags' data-ref="uvw::details::UVUDPFlags" data-ref-filename="uvw..details..UVUDPFlags">UVUDPFlags</dfn>: std::underlying_type_t&lt;uv_udp_flags&gt; {</td></tr>
+<tr><th id="46">46</th><td>    <dfn class="enum" id="uvw::details::UVUDPFlags::IPV6ONLY" title='uvw::details::UVUDPFlags::IPV6ONLY' data-ref="uvw::details::UVUDPFlags::IPV6ONLY" data-ref-filename="uvw..details..UVUDPFlags..IPV6ONLY">IPV6ONLY</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_UDP_IPV6ONLY" title='UV_UDP_IPV6ONLY' data-ref="UV_UDP_IPV6ONLY" data-ref-filename="UV_UDP_IPV6ONLY">UV_UDP_IPV6ONLY</a>,</td></tr>
+<tr><th id="47">47</th><td>    <dfn class="enum" id="uvw::details::UVUDPFlags::UDP_PARTIAL" title='uvw::details::UVUDPFlags::UDP_PARTIAL' data-ref="uvw::details::UVUDPFlags::UDP_PARTIAL" data-ref-filename="uvw..details..UVUDPFlags..UDP_PARTIAL">UDP_PARTIAL</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_UDP_PARTIAL" title='UV_UDP_PARTIAL' data-ref="UV_UDP_PARTIAL" data-ref-filename="UV_UDP_PARTIAL">UV_UDP_PARTIAL</a>,</td></tr>
+<tr><th id="48">48</th><td>    <dfn class="enum" id="uvw::details::UVUDPFlags::REUSEADDR" title='uvw::details::UVUDPFlags::REUSEADDR' data-ref="uvw::details::UVUDPFlags::REUSEADDR" data-ref-filename="uvw..details..UVUDPFlags..REUSEADDR">REUSEADDR</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_UDP_REUSEADDR" title='UV_UDP_REUSEADDR' data-ref="UV_UDP_REUSEADDR" data-ref-filename="UV_UDP_REUSEADDR">UV_UDP_REUSEADDR</a>,</td></tr>
+<tr><th id="49">49</th><td>    <dfn class="enum" id="uvw::details::UVUDPFlags::UDP_MMSG_CHUNK" title='uvw::details::UVUDPFlags::UDP_MMSG_CHUNK' data-ref="uvw::details::UVUDPFlags::UDP_MMSG_CHUNK" data-ref-filename="uvw..details..UVUDPFlags..UDP_MMSG_CHUNK">UDP_MMSG_CHUNK</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_UDP_MMSG_CHUNK" title='UV_UDP_MMSG_CHUNK' data-ref="UV_UDP_MMSG_CHUNK" data-ref-filename="UV_UDP_MMSG_CHUNK">UV_UDP_MMSG_CHUNK</a>,</td></tr>
+<tr><th id="50">50</th><td>    <dfn class="enum" id="uvw::details::UVUDPFlags::UDP_RECVMMSG" title='uvw::details::UVUDPFlags::UDP_RECVMMSG' data-ref="uvw::details::UVUDPFlags::UDP_RECVMMSG" data-ref-filename="uvw..details..UVUDPFlags..UDP_RECVMMSG">UDP_RECVMMSG</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_UDP_RECVMMSG" title='UV_UDP_RECVMMSG' data-ref="UV_UDP_RECVMMSG" data-ref-filename="UV_UDP_RECVMMSG">UV_UDP_RECVMMSG</a></td></tr>
+<tr><th id="51">51</th><td>};</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVMembership" title='uvw::details::UVMembership' data-ref="uvw::details::UVMembership" data-ref-filename="uvw..details..UVMembership">UVMembership</dfn>: std::underlying_type_t&lt;uv_membership&gt; {</td></tr>
+<tr><th id="55">55</th><td>    <dfn class="enum" id="uvw::details::UVMembership::LEAVE_GROUP" title='uvw::details::UVMembership::LEAVE_GROUP' data-ref="uvw::details::UVMembership::LEAVE_GROUP" data-ref-filename="uvw..details..UVMembership..LEAVE_GROUP">LEAVE_GROUP</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_LEAVE_GROUP" title='UV_LEAVE_GROUP' data-ref="UV_LEAVE_GROUP" data-ref-filename="UV_LEAVE_GROUP">UV_LEAVE_GROUP</a>,</td></tr>
+<tr><th id="56">56</th><td>    <dfn class="enum" id="uvw::details::UVMembership::JOIN_GROUP" title='uvw::details::UVMembership::JOIN_GROUP' data-ref="uvw::details::UVMembership::JOIN_GROUP" data-ref-filename="uvw..details..UVMembership..JOIN_GROUP">JOIN_GROUP</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_JOIN_GROUP" title='UV_JOIN_GROUP' data-ref="UV_JOIN_GROUP" data-ref-filename="UV_JOIN_GROUP">UV_JOIN_GROUP</a></td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>class</b> <dfn class="type def" id="uvw::details::SendReq" title='uvw::details::SendReq' data-ref="uvw::details::SendReq" data-ref-filename="uvw..details..SendReq">SendReq</dfn> final: <b>public</b> <a class="type" href="request.hpp.html#uvw::Request" title='uvw::Request' data-ref="uvw::Request" data-ref-filename="uvw..Request">Request</a>&lt;<a class="type" href="#uvw::details::SendReq" title='uvw::details::SendReq' data-ref="uvw::details::SendReq" data-ref-filename="uvw..details..SendReq">SendReq</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_udp_send_t" title='uv_udp_send_t' data-type='struct uv_udp_send_s' data-ref="uv_udp_send_t" data-ref-filename="uv_udp_send_t">uv_udp_send_t</a>&gt; {</td></tr>
+<tr><th id="61">61</th><td><b>public</b>:</td></tr>
+<tr><th id="62">62</th><td>    <b>using</b> <dfn class="typedef" id="uvw::details::SendReq::Deleter" title='uvw::details::SendReq::Deleter' data-type='void (*)(char *)' data-ref="uvw::details::SendReq::Deleter" data-ref-filename="uvw..details..SendReq..Deleter">Deleter</dfn> = <em>void</em>(*)(<em>char</em> *);</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <a class="decl fn" href="udp.cpp.html#_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj" title='uvw::details::SendReq::SendReq' data-ref="_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj" data-ref-filename="_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj" id="_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj">SendReq</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::details::SendReq,uv_udp_send_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::details::SendReq, uv_udp_send_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;SendReq, uv_udp_send_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::details::SendReq,uv_udp_send_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..details..SendReq,uv_udp_send_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col5 decl" id="5ca" title='ca' data-type='uvw::Resource&lt;uvw::details::SendReq, uv_udp_send_s&gt;::ConstructorAccess' data-ref="5ca" data-ref-filename="5ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col6 decl" id="6loop" title='loop' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="6loop" data-ref-filename="6loop">loop</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[], <a class="typedef" href="#uvw::details::SendReq::Deleter" title='uvw::details::SendReq::Deleter' data-type='void (*)(char *)' data-ref="uvw::details::SendReq::Deleter" data-ref-filename="uvw..details..SendReq..Deleter">Deleter</a>&gt; <dfn class="local col7 decl" id="7dt" title='dt' data-type='std::unique_ptr&lt;char [], Deleter&gt;' data-ref="7dt" data-ref-filename="7dt">dt</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="8len" title='len' data-type='unsigned int' data-ref="8len" data-ref-filename="8len">len</dfn>);</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr" title='uvw::details::SendReq::send' data-ref="_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr" data-ref-filename="_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr" id="_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr">send</a>(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a> *<dfn class="local col9 decl" id="9handle" title='handle' data-type='uv_udp_t *' data-ref="9handle" data-ref-filename="9handle">handle</dfn>, <em>const</em> <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col0 decl" id="10addr" title='addr' data-type='const struct sockaddr *' data-ref="10addr" data-ref-filename="10addr">addr</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>private</b>:</td></tr>
+<tr><th id="69">69</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[], <a class="typedef" href="#uvw::details::SendReq::Deleter" title='uvw::details::SendReq::Deleter' data-type='void (*)(char *)' data-ref="uvw::details::SendReq::Deleter" data-ref-filename="uvw..details..SendReq..Deleter">Deleter</a>&gt; <dfn class="decl field" id="uvw::details::SendReq::data" title='uvw::details::SendReq::data' data-ref="uvw::details::SendReq::data" data-ref-filename="uvw..details..SendReq..data">data</dfn>;</td></tr>
+<tr><th id="70">70</th><td>    <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_buf_t" title='uv_buf_t' data-type='struct uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</a> <dfn class="decl field" id="uvw::details::SendReq::buf" title='uvw::details::SendReq::buf' data-ref="uvw::details::SendReq::buf" data-ref-filename="uvw..details..SendReq..buf">buf</dfn>;</td></tr>
+<tr><th id="71">71</th><td>};</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * <span class="command">@brief</span> The UDPHandle handle.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * UDP handles encapsulate UDP communication for both clients and servers.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * By default, _IPv4_ is used as a template parameter. The handle already</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * supports _IPv6_ out-of-the-box by using `uvw::IPv6`.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * To create an `UDPHandle` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * * An optional integer value that indicates optional flags used to initialize</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * the socket.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * See the official</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * [documentation](<a href="http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_init_ex">http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_init_ex</a>)</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * for further details.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="93">93</th><td><b>class</b> <dfn class="type def" id="uvw::UDPHandle" title='uvw::UDPHandle' data-ref="uvw::UDPHandle" data-ref-filename="uvw..UDPHandle">UDPHandle</dfn> final: <b>public</b> <a class="type" href="handle.hpp.html#uvw::Handle" title='uvw::Handle' data-ref="uvw::Handle" data-ref-filename="uvw..Handle">Handle</a>&lt;<a class="type" href="#uvw::UDPHandle" title='uvw::UDPHandle' data-ref="uvw::UDPHandle" data-ref-filename="uvw..UDPHandle">UDPHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>&gt; {</td></tr>
+<tr><th id="94">94</th><td>    <b>template</b>&lt;<b>typename</b> I&gt;</td></tr>
+<tr><th id="95">95</th><td>    <em>static</em> <em>void</em> <dfn class="decl def fn" id="_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj" title='uvw::UDPHandle::recvCallback' data-ref="_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj" data-ref-filename="_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj">recvCallback</dfn>(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a> *<dfn class="local col1 decl" id="11handle" title='handle' data-type='uv_udp_t *' data-ref="11handle" data-ref-filename="11handle">handle</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t" data-ref-filename="ssize_t">ssize_t</a> <dfn class="local col2 decl" id="12nread" title='nread' data-type='ssize_t' data-ref="12nread" data-ref-filename="12nread">nread</dfn>, <em>const</em> <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_buf_t" title='uv_buf_t' data-type='struct uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</a> *<dfn class="local col3 decl" id="13buf" title='buf' data-type='const uv_buf_t *' data-ref="13buf" data-ref-filename="13buf">buf</dfn>, <em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> *<dfn class="local col4 decl" id="14addr" title='addr' data-type='const sockaddr *' data-ref="14addr" data-ref-filename="14addr">addr</dfn>, <em>unsigned</em> <dfn class="local col5 decl" id="15flags" title='flags' data-type='unsigned int' data-ref="15flags" data-ref-filename="15flags">flags</dfn>) {</td></tr>
+<tr><th id="96">96</th><td>        <em>const</em> <b>typename</b> <span class="namespace">details::</span><a class="type" href="util.h.html#uvw::details::IpTraits" title='uvw::details::IpTraits' data-ref="uvw::details::IpTraits" data-ref-filename="uvw..details..IpTraits">IpTraits</a>&lt;I&gt;::Type *<dfn class="local col6 decl" id="16aptr" title='aptr' data-type='const typename details::IpTraits&lt;I&gt;::Type *' data-ref="16aptr" data-ref-filename="16aptr">aptr</dfn> = <b>reinterpret_cast</b>&lt;<em>const</em> <b>typename</b> <span class="namespace">details::</span><a class="type" href="util.h.html#uvw::details::IpTraits" title='uvw::details::IpTraits' data-ref="uvw::details::IpTraits" data-ref-filename="uvw..details..IpTraits">IpTraits</a>&lt;I&gt;::Type *&gt;(<a class="local col4 ref" href="#14addr" title='addr' data-ref="14addr" data-ref-filename="14addr">addr</a>);</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>        <a class="type" href="#uvw::UDPHandle" title='uvw::UDPHandle' data-ref="uvw::UDPHandle" data-ref-filename="uvw..UDPHandle">UDPHandle</a> &amp;<dfn class="local col7 decl" id="17udp" title='udp' data-type='uvw::UDPHandle &amp;' data-ref="17udp" data-ref-filename="17udp">udp</dfn> = *(<b>static_cast</b>&lt;<a class="type" href="#uvw::UDPHandle" title='uvw::UDPHandle' data-ref="uvw::UDPHandle" data-ref-filename="uvw..UDPHandle">UDPHandle</a>*&gt;(<a class="local col1 ref" href="#11handle" title='handle' data-ref="11handle" data-ref-filename="11handle">handle</a>-&gt;<a class="ref field" href="../../../libuv/include/uv.h.html#632" title='uv_udp_s::data' data-ref="uv_udp_s::data" data-ref-filename="uv_udp_s..data">data</a>));</td></tr>
+<tr><th id="99">99</th><td>        <i>// data will be destroyed no matter of what the value of nread is</i></td></tr>
+<tr><th id="100">100</th><td>        <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col8 decl" id="18data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="18data" data-ref-filename="18data">data</dfn><a class="ref fn" href="../../../../../include/c++/10/bits/unique_ptr.h.html#_ZNSt10unique_ptrIA_T_T0_EC1ETL0__" title='std::unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt;::unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt;' data-ref="_ZNSt10unique_ptrIA_T_T0_EC1ETL0__" data-ref-filename="_ZNSt10unique_ptrIA_T_T0_EC1ETL0__">{</a><a class="local col3 ref" href="#13buf" title='buf' data-ref="13buf" data-ref-filename="13buf">buf</a>-&gt;<a class="ref field" href="../../../libuv/include/uv/unix.h.html#uv_buf_t::base" title='uv_buf_t::base' data-ref="uv_buf_t::base" data-ref-filename="uv_buf_t..base">base</a>};</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>        <b>if</b>(<a class="local col2 ref" href="#12nread" title='nread' data-ref="12nread" data-ref-filename="12nread">nread</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="103">103</th><td>            <i>// data available (can be truncated)</i></td></tr>
+<tr><th id="104">104</th><td>            <a class="local col7 ref" href="#17udp" title='udp' data-ref="17udp" data-ref-filename="17udp">udp</a>.<a class="member fn" href="emitter.h.html#_ZN3uvw7Emitter7publishETL0__" title='uvw::Emitter::publish' data-ref="_ZN3uvw7Emitter7publishETL0__" data-ref-filename="_ZN3uvw7Emitter7publishETL0__">publish</a>(<a class="type" href="#uvw::UDPDataEvent" title='uvw::UDPDataEvent' data-ref="uvw::UDPDataEvent" data-ref-filename="uvw..UDPDataEvent">UDPDataEvent</a>{<span class="namespace">details::</span>address&lt;I&gt;(<a class="local col6 ref" href="#16aptr" title='aptr' data-ref="16aptr" data-ref-filename="16aptr">aptr</a>), <span class="namespace">std::</span><a class="ref fn" href="../../../../../include/c++/10/bits/move.h.html#_ZSt4moveOT_" title='std::move' data-ref="_ZSt4moveOT_" data-ref-filename="_ZSt4moveOT_">move</a>(<span class='refarg'><a class="local col8 ref" href="#18data" title='data' data-ref="18data" data-ref-filename="18data">data</a></span>), <b>static_cast</b>&lt;<span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a>&gt;(<a class="local col2 ref" href="#12nread" title='nread' data-ref="12nread" data-ref-filename="12nread">nread</a>), !(<var>0</var> == (<a class="local col5 ref" href="#15flags" title='flags' data-ref="15flags" data-ref-filename="15flags">flags</a> &amp; <a class="enum" href="../../../libuv/include/uv.h.html#UV_UDP_PARTIAL" title='UV_UDP_PARTIAL' data-ref="UV_UDP_PARTIAL" data-ref-filename="UV_UDP_PARTIAL">UV_UDP_PARTIAL</a>))});</td></tr>
+<tr><th id="105">105</th><td>        } <b>else</b> <b>if</b>(<a class="local col2 ref" href="#12nread" title='nread' data-ref="12nread" data-ref-filename="12nread">nread</a> == <var>0</var> &amp;&amp; <a class="local col4 ref" href="#14addr" title='addr' data-ref="14addr" data-ref-filename="14addr">addr</a> == <b>nullptr</b>) {</td></tr>
+<tr><th id="106">106</th><td>            <i>// no more data to be read, doing nothing is fine</i></td></tr>
+<tr><th id="107">107</th><td>        } <b>else</b> <b>if</b>(<a class="local col2 ref" href="#12nread" title='nread' data-ref="12nread" data-ref-filename="12nread">nread</a> == <var>0</var> &amp;&amp; <a class="local col4 ref" href="#14addr" title='addr' data-ref="14addr" data-ref-filename="14addr">addr</a> != <b>nullptr</b>) {</td></tr>
+<tr><th id="108">108</th><td>            <i>// empty udp packet</i></td></tr>
+<tr><th id="109">109</th><td>            <a class="local col7 ref" href="#17udp" title='udp' data-ref="17udp" data-ref-filename="17udp">udp</a>.<a class="member fn" href="emitter.h.html#_ZN3uvw7Emitter7publishETL0__" title='uvw::Emitter::publish' data-ref="_ZN3uvw7Emitter7publishETL0__" data-ref-filename="_ZN3uvw7Emitter7publishETL0__">publish</a>(<a class="type" href="#uvw::UDPDataEvent" title='uvw::UDPDataEvent' data-ref="uvw::UDPDataEvent" data-ref-filename="uvw..UDPDataEvent">UDPDataEvent</a>{<span class="namespace">details::</span>address&lt;I&gt;(<a class="local col6 ref" href="#16aptr" title='aptr' data-ref="16aptr" data-ref-filename="16aptr">aptr</a>), <span class="namespace">std::</span><a class="ref fn" href="../../../../../include/c++/10/bits/move.h.html#_ZSt4moveOT_" title='std::move' data-ref="_ZSt4moveOT_" data-ref-filename="_ZSt4moveOT_">move</a>(<span class='refarg'><a class="local col8 ref" href="#18data" title='data' data-ref="18data" data-ref-filename="18data">data</a></span>), <b>static_cast</b>&lt;<span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a>&gt;(<a class="local col2 ref" href="#12nread" title='nread' data-ref="12nread" data-ref-filename="12nread">nread</a>), <b>false</b>});</td></tr>
+<tr><th id="110">110</th><td>        } <b>else</b> {</td></tr>
+<tr><th id="111">111</th><td>            <i>// transmission error</i></td></tr>
+<tr><th id="112">112</th><td>            <a class="local col7 ref" href="#17udp" title='udp' data-ref="17udp" data-ref-filename="17udp">udp</a>.<a class="member fn" href="emitter.h.html#_ZN3uvw7Emitter7publishETL0__" title='uvw::Emitter::publish' data-ref="_ZN3uvw7Emitter7publishETL0__" data-ref-filename="_ZN3uvw7Emitter7publishETL0__">publish</a>(<a class="type" href="emitter.h.html#uvw::ErrorEvent" title='uvw::ErrorEvent' data-ref="uvw::ErrorEvent" data-ref-filename="uvw..ErrorEvent">ErrorEvent</a><a class="ref fn" href="emitter.h.html#_ZN3uvw10ErrorEventC1ET_" title='uvw::ErrorEvent::ErrorEvent' data-ref="_ZN3uvw10ErrorEventC1ET_" data-ref-filename="_ZN3uvw10ErrorEventC1ET_">(</a><a class="local col2 ref" href="#12nread" title='nread' data-ref="12nread" data-ref-filename="12nread">nread</a>));</td></tr>
+<tr><th id="113">113</th><td>        }</td></tr>
+<tr><th id="114">114</th><td>    }</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><b>public</b>:</td></tr>
+<tr><th id="117">117</th><td>    <b>using</b> <dfn class="typedef" id="uvw::UDPHandle::Membership" title='uvw::UDPHandle::Membership' data-type='details::UVMembership' data-ref="uvw::UDPHandle::Membership" data-ref-filename="uvw..UDPHandle..Membership">Membership</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVMembership" title='uvw::details::UVMembership' data-ref="uvw::details::UVMembership" data-ref-filename="uvw..details..UVMembership">UVMembership</a>;</td></tr>
+<tr><th id="118">118</th><td>    <b>using</b> <dfn class="typedef" id="uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVUDPFlags" title='uvw::details::UVUDPFlags' data-ref="uvw::details::UVUDPFlags" data-ref-filename="uvw..details..UVUDPFlags">UVUDPFlags</a>;</td></tr>
+<tr><th id="119">119</th><td>    <b>using</b> <dfn class="typedef" id="uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</dfn> = <span class="namespace">uvw::</span><a class="type" href="util.h.html#uvw::IPv4" title='uvw::IPv4' data-ref="uvw::IPv4" data-ref-filename="uvw..IPv4">IPv4</a>;</td></tr>
+<tr><th id="120">120</th><td>    <b>using</b> <dfn class="typedef" id="uvw::UDPHandle::IPv6" title='uvw::UDPHandle::IPv6' data-type='uvw::IPv6' data-ref="uvw::UDPHandle::IPv6" data-ref-filename="uvw..UDPHandle..IPv6">IPv6</dfn> = <span class="namespace">uvw::</span><a class="type" href="util.h.html#uvw::IPv6" title='uvw::IPv6' data-ref="uvw::IPv6" data-ref-filename="uvw..IPv6">IPv6</a>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>    <b>explicit</b> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" title='uvw::UDPHandle::UDPHandle' data-ref="_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" data-ref-filename="_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" id="_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj">UDPHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::UDPHandle,uv_udp_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::UDPHandle, uv_udp_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;UDPHandle, uv_udp_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::UDPHandle,uv_udp_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..UDPHandle,uv_udp_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col9 decl" id="19ca" title='ca' data-type='uvw::Resource&lt;uvw::UDPHandle, uv_udp_s&gt;::ConstructorAccess' data-ref="19ca" data-ref-filename="19ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col0 decl" id="20ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="20ref" data-ref-filename="20ref">ref</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="21f" title='f' data-type='unsigned int' data-ref="21f" data-ref-filename="21f">f</dfn> = {});</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle. The actual socket is created lazily.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="128">128</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4initEv" title='uvw::UDPHandle::init' data-ref="_ZN3uvw9UDPHandle4initEv" data-ref-filename="_ZN3uvw9UDPHandle4initEv" id="_ZN3uvw9UDPHandle4initEv">init</a>();</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     * <span class="command">@brief</span> Opens an existing file descriptor or SOCKET as a UDP handle.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">     * The passed file descriptor or SOCKET is not checked for its type, but</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">     * it’s required that it represents a valid datagram socket.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_open">http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_open</a>)</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">socket</span> A valid socket handle (either a file descriptor or a SOCKET).</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="142">142</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE" title='uvw::UDPHandle::open' data-ref="_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE" data-ref-filename="_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE" id="_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE">open</a>(<a class="typedef" href="util.h.html#uvw::OSSocketHandle" title='uvw::OSSocketHandle' data-type='details::UVTypeWrapper&lt;uv_os_sock_t&gt;' data-ref="uvw::OSSocketHandle" data-ref-filename="uvw..OSSocketHandle">OSSocketHandle</a> <dfn class="local col2 decl" id="22socket" title='socket' data-type='uvw::OSSocketHandle' data-ref="22socket" data-ref-filename="22socket">socket</dfn>);</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc">     * <span class="command">@brief</span> Binds the UDP handle to an IP address and port.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">     * * `UDPHandle::Bind::IPV6ONLY`</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_PARTIAL`</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">     * * `UDPHandle::Bind::REUSEADDR`</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_RECVMMSG`</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags">http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags</a>)</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">opts</span> Optional additional flags.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="161">161</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE" title='uvw::UDPHandle::bind' data-ref="_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE" data-ref-filename="_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE" id="_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE">bind</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col3 decl" id="23addr" title='addr' data-type='const sockaddr &amp;' data-ref="23addr" data-ref-filename="23addr">addr</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</a>&gt; <dfn class="local col4 decl" id="24opts" title='opts' data-type='Flags&lt;uvw::UDPHandle::Bind&gt;' data-ref="24opts" data-ref-filename="24opts">opts</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc">     * <span class="command">@brief</span> Associates the handle to a remote address and port (either IPv4 or</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc">     * IPv6).</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc">     * Every message sent by this handle is automatically sent to the given</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc">     * destination.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc">     * Trying to call this function on an already connected handle isn't</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc">     * allowed.</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="176">176</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7connectERK8sockaddr" title='uvw::UDPHandle::connect' data-ref="_ZN3uvw9UDPHandle7connectERK8sockaddr" data-ref-filename="_ZN3uvw9UDPHandle7connectERK8sockaddr" id="_ZN3uvw9UDPHandle7connectERK8sockaddr">connect</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col5 decl" id="25addr" title='addr' data-type='const sockaddr &amp;' data-ref="25addr" data-ref-filename="25addr">addr</dfn>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc">     * <span class="command">@brief</span> Associates the handle to a remote address and port (either IPv4 or</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc">     * IPv6).</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">     * Every message sent by this handle is automatically sent to the given</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc">     * destination.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc">     * Trying to call this function on an already connected handle isn't</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc">     * allowed.</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to bind.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to bind.</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="192">192</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="193">193</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj" title='uvw::UDPHandle::connect' data-ref="_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj" data-ref-filename="_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj" id="_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj">connect</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col6 decl" id="26ip" title='ip' data-type='std::string' data-ref="26ip" data-ref-filename="26ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="27port" title='port' data-type='unsigned int' data-ref="27port" data-ref-filename="27port">port</dfn>);</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc">     * <span class="command">@brief</span> Associates the handle to a remote address and port (either IPv4 or</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc">     * IPv6).</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc">     * Every message sent by this handle is automatically sent to the given</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc">     * destination.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc">     * Trying to call this function on an already connected handle isn't</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc">     * allowed.</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="208">208</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="209">209</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7connectENS_4AddrE" title='uvw::UDPHandle::connect' data-ref="_ZN3uvw9UDPHandle7connectENS_4AddrE" data-ref-filename="_ZN3uvw9UDPHandle7connectENS_4AddrE" id="_ZN3uvw9UDPHandle7connectENS_4AddrE">connect</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col8 decl" id="28addr" title='addr' data-type='uvw::Addr' data-ref="28addr" data-ref-filename="28addr">addr</dfn>);</td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc">     * <span class="command">@brief</span> Disconnects the handle.</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc">     * Trying to disconnect a handle that is not connected isn't allowed.</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors.</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="218">218</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle10disconnectEv" title='uvw::UDPHandle::disconnect' data-ref="_ZN3uvw9UDPHandle10disconnectEv" data-ref-filename="_ZN3uvw9UDPHandle10disconnectEv" id="_ZN3uvw9UDPHandle10disconnectEv">disconnect</a>();</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc">     * <span class="command">@brief</span> Gets the remote address to which the handle is connected, if any.</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc">     * <span class="command">@return</span> A valid instance of Addr, an empty one in case of errors.</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="224">224</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="225">225</th><td>    <a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <a class="decl fn" href="udp.cpp.html#_ZNK3uvw9UDPHandle4peerEv" title='uvw::UDPHandle::peer' data-ref="_ZNK3uvw9UDPHandle4peerEv" data-ref-filename="_ZNK3uvw9UDPHandle4peerEv" id="_ZNK3uvw9UDPHandle4peerEv">peer</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc">     * <span class="command">@brief</span> Binds the UDP handle to an IP address and port.</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc">     * * `UDPHandle::Bind::IPV6ONLY`</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_PARTIAL`</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc">     * * `UDPHandle::Bind::REUSEADDR`</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_MMSG_CHUNK`</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_RECVMMSG`</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags">http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags</a>)</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The IP address to which to bind.</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to bind.</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">opts</span> Optional additional flags.</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="246">246</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="247">247</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE" title='uvw::UDPHandle::bind' data-ref="_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE" data-ref-filename="_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE" id="_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE">bind</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col9 decl" id="29ip" title='ip' data-type='std::string' data-ref="29ip" data-ref-filename="29ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="30port" title='port' data-type='unsigned int' data-ref="30port" data-ref-filename="30port">port</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</a>&gt; <dfn class="local col1 decl" id="31opts" title='opts' data-type='Flags&lt;uvw::UDPHandle::Bind&gt;' data-ref="31opts" data-ref-filename="31opts">opts</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc">     * <span class="command">@brief</span> Binds the UDP handle to an IP address and port.</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc">     * * `UDPHandle::Bind::IPV6ONLY`</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_PARTIAL`</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc">     * * `UDPHandle::Bind::REUSEADDR`</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_MMSG_CHUNK`</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc">     * * `UDPHandle::Bind::UDP_RECVMMSG`</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags">http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags</a>)</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="264">264</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="265">265</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">opts</span> Optional additional flags.</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="267">267</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="268">268</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE" title='uvw::UDPHandle::bind' data-ref="_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE" data-ref-filename="_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE" id="_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE">bind</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col2 decl" id="32addr" title='addr' data-type='uvw::Addr' data-ref="32addr" data-ref-filename="32addr">addr</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</a>&gt; <dfn class="local col3 decl" id="33opts" title='opts' data-type='Flags&lt;uvw::UDPHandle::Bind&gt;' data-ref="33opts" data-ref-filename="33opts">opts</dfn> = <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::UDPHandle::Bind" title='uvw::UDPHandle::Bind' data-type='details::UVUDPFlags' data-ref="uvw::UDPHandle::Bind" data-ref-filename="uvw..UDPHandle..Bind">Bind</a>&gt;<a class="ref fn" href="util.h.html#_ZN3uvw5FlagsC1Ev" title='uvw::Flags::Flags&lt;E&gt;' data-ref="_ZN3uvw5FlagsC1Ev" data-ref-filename="_ZN3uvw5FlagsC1Ev">{</a>});</td></tr>
+<tr><th id="269">269</th><td></td></tr>
+<tr><th id="270">270</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc">     * <span class="command">@brief</span> Get the local IP and port of the UDP handle.</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc">     * <span class="command">@return</span> A valid instance of Addr, an empty one in case of errors.</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="274">274</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="275">275</th><td>    <a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <a class="decl fn" href="udp.cpp.html#_ZNK3uvw9UDPHandle4sockEv" title='uvw::UDPHandle::sock' data-ref="_ZNK3uvw9UDPHandle4sockEv" data-ref-filename="_ZNK3uvw9UDPHandle4sockEv" id="_ZNK3uvw9UDPHandle4sockEv">sock</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="276">276</th><td></td></tr>
+<tr><th id="277">277</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc">     * <span class="command">@brief</span> Sets membership for a multicast address.</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc">     * Available values for `membership` are:</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc">     * * `UDPHandle::Membership::LEAVE_GROUP`</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc">     * * `UDPHandle::Membership::JOIN_GROUP`</i></td></tr>
+<tr><th id="284">284</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">multicast</span> Multicast address to set membership for.</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">iface</span> Interface address.</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">membership</span> Action to be performed.</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="290">290</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="291">291</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE" title='uvw::UDPHandle::multicastMembership' data-ref="_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE" data-ref-filename="_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE" id="_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE">multicastMembership</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col4 decl" id="34multicast" title='multicast' data-type='std::string' data-ref="34multicast" data-ref-filename="34multicast">multicast</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col5 decl" id="35iface" title='iface' data-type='std::string' data-ref="35iface" data-ref-filename="35iface">iface</dfn>, <a class="typedef" href="#uvw::UDPHandle::Membership" title='uvw::UDPHandle::Membership' data-type='details::UVMembership' data-ref="uvw::UDPHandle::Membership" data-ref-filename="uvw..UDPHandle..Membership">Membership</a> <dfn class="local col6 decl" id="36membership" title='membership' data-type='uvw::UDPHandle::Membership' data-ref="36membership" data-ref-filename="36membership">membership</dfn>);</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="294">294</th><td><i class="doc">     * <span class="command">@brief</span> Sets IP multicast loop flag.</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc">     * This makes multicast packets loop back to local sockets.</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">enable</span> True to enable multicast loop, false otherwise.</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="301">301</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle13multicastLoopEb" title='uvw::UDPHandle::multicastLoop' data-ref="_ZN3uvw9UDPHandle13multicastLoopEb" data-ref-filename="_ZN3uvw9UDPHandle13multicastLoopEb" id="_ZN3uvw9UDPHandle13multicastLoopEb">multicastLoop</a>(<em>bool</em> <dfn class="local col7 decl" id="37enable" title='enable' data-type='bool' data-ref="37enable" data-ref-filename="37enable">enable</dfn> = <b>true</b>);</td></tr>
+<tr><th id="302">302</th><td></td></tr>
+<tr><th id="303">303</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc">     * <span class="command">@brief</span> Sets the multicast ttl.</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">val</span> A value in the range `[1, 255]`.</i></td></tr>
+<tr><th id="306">306</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="308">308</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle12multicastTtlEi" title='uvw::UDPHandle::multicastTtl' data-ref="_ZN3uvw9UDPHandle12multicastTtlEi" data-ref-filename="_ZN3uvw9UDPHandle12multicastTtlEi" id="_ZN3uvw9UDPHandle12multicastTtlEi">multicastTtl</a>(<em>int</em> <dfn class="local col8 decl" id="38val" title='val' data-type='int' data-ref="38val" data-ref-filename="38val">val</dfn>);</td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc">     * <span class="command">@brief</span> Sets the multicast interface to send or receive data on.</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">iface</span> Interface address.</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="315">315</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="316">316</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle18multicastInterfaceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='uvw::UDPHandle::multicastInterface' data-ref="_ZN3uvw9UDPHandle18multicastInterfaceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN3uvw9UDPHandle18multicastInterfaceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" id="_ZN3uvw9UDPHandle18multicastInterfaceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">multicastInterface</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col9 decl" id="39iface" title='iface' data-type='std::string' data-ref="39iface" data-ref-filename="39iface">iface</dfn>);</td></tr>
+<tr><th id="317">317</th><td></td></tr>
+<tr><th id="318">318</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc">     * <span class="command">@brief</span> Sets broadcast on or off.</i></td></tr>
+<tr><th id="320">320</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">enable</span> True to set broadcast on, false otherwise.</i></td></tr>
+<tr><th id="321">321</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="322">322</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="323">323</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle9broadcastEb" title='uvw::UDPHandle::broadcast' data-ref="_ZN3uvw9UDPHandle9broadcastEb" data-ref-filename="_ZN3uvw9UDPHandle9broadcastEb" id="_ZN3uvw9UDPHandle9broadcastEb">broadcast</a>(<em>bool</em> <dfn class="local col0 decl" id="40enable" title='enable' data-type='bool' data-ref="40enable" data-ref-filename="40enable">enable</dfn> = <b>false</b>);</td></tr>
+<tr><th id="324">324</th><td></td></tr>
+<tr><th id="325">325</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc">     * <span class="command">@brief</span> Sets the time to live.</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">val</span> A value in the range `[1, 255]`.</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="330">330</th><td>    <em>bool</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle3ttlEi" title='uvw::UDPHandle::ttl' data-ref="_ZN3uvw9UDPHandle3ttlEi" data-ref-filename="_ZN3uvw9UDPHandle3ttlEi" id="_ZN3uvw9UDPHandle3ttlEi">ttl</a>(<em>int</em> <dfn class="local col1 decl" id="41val" title='val' data-type='int' data-ref="41val" data-ref-filename="41val">val</dfn>);</td></tr>
+<tr><th id="331">331</th><td></td></tr>
+<tr><th id="332">332</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="334">334</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc">     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc">     * random port number.</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc">     * The handle takes the ownership of the data and it is in charge of delete</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc">     * them.</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc">     * A SendEvent event will be emitted when the data have been sent.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="344">344</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="349">349</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj" title='uvw::UDPHandle::send' data-ref="_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj" data-ref-filename="_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj" id="_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj">send</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col2 decl" id="42addr" title='addr' data-type='const sockaddr &amp;' data-ref="42addr" data-ref-filename="42addr">addr</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col3 decl" id="43data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="43data" data-ref-filename="43data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="44len" title='len' data-type='unsigned int' data-ref="44len" data-ref-filename="44len">len</dfn>);</td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="352">352</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="353">353</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="354">354</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc">     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc">     * random port number.</i></td></tr>
+<tr><th id="357">357</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="358">358</th><td><i class="doc">     * The handle takes the ownership of the data and it is in charge of delete</i></td></tr>
+<tr><th id="359">359</th><td><i class="doc">     * them.</i></td></tr>
+<tr><th id="360">360</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="361">361</th><td><i class="doc">     * A SendEvent event will be emitted when the data have been sent.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="362">362</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="363">363</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="364">364</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to send data.</i></td></tr>
+<tr><th id="365">365</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to send data.</i></td></tr>
+<tr><th id="366">366</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="367">367</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="368">368</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="369">369</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="370">370</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj" title='uvw::UDPHandle::send' data-ref="_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj" data-ref-filename="_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj" id="_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj">send</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col5 decl" id="45ip" title='ip' data-type='std::string' data-ref="45ip" data-ref-filename="45ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="46port" title='port' data-type='unsigned int' data-ref="46port" data-ref-filename="46port">port</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col7 decl" id="47data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="47data" data-ref-filename="47data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="48len" title='len' data-type='unsigned int' data-ref="48len" data-ref-filename="48len">len</dfn>);</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="373">373</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc">     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a</i></td></tr>
+<tr><th id="377">377</th><td><i class="doc">     * random port number.</i></td></tr>
+<tr><th id="378">378</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="379">379</th><td><i class="doc">     * The handle takes the ownership of the data and it is in charge of delete</i></td></tr>
+<tr><th id="380">380</th><td><i class="doc">     * them.</i></td></tr>
+<tr><th id="381">381</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="382">382</th><td><i class="doc">     * A SendEvent event will be emitted when the data have been sent.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="383">383</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="384">384</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="385">385</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="386">386</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="387">387</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="388">388</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="389">389</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="390">390</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj" title='uvw::UDPHandle::send' data-ref="_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj" data-ref-filename="_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj" id="_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj">send</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col9 decl" id="49addr" title='addr' data-type='uvw::Addr' data-ref="49addr" data-ref-filename="49addr">addr</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col0 decl" id="50data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="50data" data-ref-filename="50data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="51len" title='len' data-type='unsigned int' data-ref="51len" data-ref-filename="51len">len</dfn>);</td></tr>
+<tr><th id="391">391</th><td></td></tr>
+<tr><th id="392">392</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="393">393</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="394">394</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="395">395</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="396">396</th><td><i class="doc">     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a</i></td></tr>
+<tr><th id="397">397</th><td><i class="doc">     * random port number.</i></td></tr>
+<tr><th id="398">398</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="399">399</th><td><i class="doc">     * The handle doesn't take the ownership of the data. Be sure that their</i></td></tr>
+<tr><th id="400">400</th><td><i class="doc">     * lifetime overcome the one of the request.</i></td></tr>
+<tr><th id="401">401</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="402">402</th><td><i class="doc">     * A SendEvent event will be emitted when the data have been sent.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="403">403</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="404">404</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="405">405</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="406">406</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="407">407</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="408">408</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="409">409</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4sendERK8sockaddrPcj" title='uvw::UDPHandle::send' data-ref="_ZN3uvw9UDPHandle4sendERK8sockaddrPcj" data-ref-filename="_ZN3uvw9UDPHandle4sendERK8sockaddrPcj" id="_ZN3uvw9UDPHandle4sendERK8sockaddrPcj">send</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col2 decl" id="52addr" title='addr' data-type='const sockaddr &amp;' data-ref="52addr" data-ref-filename="52addr">addr</dfn>, <em>char</em> *<dfn class="local col3 decl" id="53data" title='data' data-type='char *' data-ref="53data" data-ref-filename="53data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="54len" title='len' data-type='unsigned int' data-ref="54len" data-ref-filename="54len">len</dfn>);</td></tr>
+<tr><th id="410">410</th><td></td></tr>
+<tr><th id="411">411</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="412">412</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="413">413</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="414">414</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="415">415</th><td><i class="doc">     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a</i></td></tr>
+<tr><th id="416">416</th><td><i class="doc">     * random port number.</i></td></tr>
+<tr><th id="417">417</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="418">418</th><td><i class="doc">     * The handle doesn't take the ownership of the data. Be sure that their</i></td></tr>
+<tr><th id="419">419</th><td><i class="doc">     * lifetime overcome the one of the request.</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="421">421</th><td><i class="doc">     * A SendEvent event will be emitted when the data have been sent.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="422">422</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="423">423</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="424">424</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to send data.</i></td></tr>
+<tr><th id="425">425</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to send data.</i></td></tr>
+<tr><th id="426">426</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="427">427</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="428">428</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="429">429</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="430">430</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj" title='uvw::UDPHandle::send' data-ref="_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj" data-ref-filename="_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj" id="_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj">send</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col5 decl" id="55ip" title='ip' data-type='std::string' data-ref="55ip" data-ref-filename="55ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="56port" title='port' data-type='unsigned int' data-ref="56port" data-ref-filename="56port">port</dfn>, <em>char</em> *<dfn class="local col7 decl" id="57data" title='data' data-type='char *' data-ref="57data" data-ref-filename="57data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="58len" title='len' data-type='unsigned int' data-ref="58len" data-ref-filename="58len">len</dfn>);</td></tr>
+<tr><th id="431">431</th><td></td></tr>
+<tr><th id="432">432</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="433">433</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="434">434</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="435">435</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="436">436</th><td><i class="doc">     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a</i></td></tr>
+<tr><th id="437">437</th><td><i class="doc">     * random port number.</i></td></tr>
+<tr><th id="438">438</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="439">439</th><td><i class="doc">     * The handle doesn't take the ownership of the data. Be sure that their</i></td></tr>
+<tr><th id="440">440</th><td><i class="doc">     * lifetime overcome the one of the request.</i></td></tr>
+<tr><th id="441">441</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="442">442</th><td><i class="doc">     * A SendEvent event will be emitted when the data have been sent.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="443">443</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="444">444</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="445">445</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="446">446</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="447">447</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="448">448</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="449">449</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="450">450</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4sendENS_4AddrEPcj" title='uvw::UDPHandle::send' data-ref="_ZN3uvw9UDPHandle4sendENS_4AddrEPcj" data-ref-filename="_ZN3uvw9UDPHandle4sendENS_4AddrEPcj" id="_ZN3uvw9UDPHandle4sendENS_4AddrEPcj">send</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col9 decl" id="59addr" title='addr' data-type='uvw::Addr' data-ref="59addr" data-ref-filename="59addr">addr</dfn>, <em>char</em> *<dfn class="local col0 decl" id="60data" title='data' data-type='char *' data-ref="60data" data-ref-filename="60data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="61len" title='len' data-type='unsigned int' data-ref="61len" data-ref-filename="61len">len</dfn>);</td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="453">453</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="454">454</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="455">455</th><td><i class="doc">     * Same as `send()`, but it won’t queue a send request if it can’t be</i></td></tr>
+<tr><th id="456">456</th><td><i class="doc">     * completed immediately.</i></td></tr>
+<tr><th id="457">457</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="458">458</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="459">459</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="460">460</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="461">461</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes written.</i></td></tr>
+<tr><th id="462">462</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="463">463</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="464">464</th><td>    <em>int</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj" title='uvw::UDPHandle::trySend' data-ref="_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj" data-ref-filename="_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj" id="_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj">trySend</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col2 decl" id="62addr" title='addr' data-type='const sockaddr &amp;' data-ref="62addr" data-ref-filename="62addr">addr</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col3 decl" id="63data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="63data" data-ref-filename="63data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="64len" title='len' data-type='unsigned int' data-ref="64len" data-ref-filename="64len">len</dfn>);</td></tr>
+<tr><th id="465">465</th><td></td></tr>
+<tr><th id="466">466</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="468">468</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="469">469</th><td><i class="doc">     * Same as `send()`, but it won’t queue a send request if it can’t be</i></td></tr>
+<tr><th id="470">470</th><td><i class="doc">     * completed immediately.</i></td></tr>
+<tr><th id="471">471</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="472">472</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to send data.</i></td></tr>
+<tr><th id="473">473</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to send data.</i></td></tr>
+<tr><th id="474">474</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="475">475</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="476">476</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes written.</i></td></tr>
+<tr><th id="477">477</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="478">478</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="479">479</th><td>    <em>int</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj" title='uvw::UDPHandle::trySend' data-ref="_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj" data-ref-filename="_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj" id="_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj">trySend</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col5 decl" id="65ip" title='ip' data-type='std::string' data-ref="65ip" data-ref-filename="65ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="66port" title='port' data-type='unsigned int' data-ref="66port" data-ref-filename="66port">port</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col7 decl" id="67data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="67data" data-ref-filename="67data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="68len" title='len' data-type='unsigned int' data-ref="68len" data-ref-filename="68len">len</dfn>);</td></tr>
+<tr><th id="480">480</th><td></td></tr>
+<tr><th id="481">481</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="482">482</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="483">483</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="484">484</th><td><i class="doc">     * Same as `send()`, but it won’t queue a send request if it can’t be</i></td></tr>
+<tr><th id="485">485</th><td><i class="doc">     * completed immediately.</i></td></tr>
+<tr><th id="486">486</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="487">487</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="488">488</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="489">489</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="490">490</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes written.</i></td></tr>
+<tr><th id="491">491</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="492">492</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="493">493</th><td>    <em>int</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj" title='uvw::UDPHandle::trySend' data-ref="_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj" data-ref-filename="_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj" id="_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj">trySend</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col9 decl" id="69addr" title='addr' data-type='uvw::Addr' data-ref="69addr" data-ref-filename="69addr">addr</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<em>char</em>[]&gt; <dfn class="local col0 decl" id="70data" title='data' data-type='std::unique_ptr&lt;char []&gt;' data-ref="70data" data-ref-filename="70data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="71len" title='len' data-type='unsigned int' data-ref="71len" data-ref-filename="71len">len</dfn>);</td></tr>
+<tr><th id="494">494</th><td></td></tr>
+<tr><th id="495">495</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="496">496</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="497">497</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc">     * Same as `send()`, but it won’t queue a send request if it can’t be</i></td></tr>
+<tr><th id="499">499</th><td><i class="doc">     * completed immediately.</i></td></tr>
+<tr><th id="500">500</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="501">501</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> Initialized `sockaddr_in` or `sockaddr_in6` data structure.</i></td></tr>
+<tr><th id="502">502</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="504">504</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes written.</i></td></tr>
+<tr><th id="505">505</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="506">506</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="507">507</th><td>    <em>int</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj" title='uvw::UDPHandle::trySend' data-ref="_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj" data-ref-filename="_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj" id="_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj">trySend</a>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> &amp;<dfn class="local col2 decl" id="72addr" title='addr' data-type='const sockaddr &amp;' data-ref="72addr" data-ref-filename="72addr">addr</dfn>, <em>char</em> *<dfn class="local col3 decl" id="73data" title='data' data-type='char *' data-ref="73data" data-ref-filename="73data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="74len" title='len' data-type='unsigned int' data-ref="74len" data-ref-filename="74len">len</dfn>);</td></tr>
+<tr><th id="508">508</th><td></td></tr>
+<tr><th id="509">509</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="510">510</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="511">511</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="512">512</th><td><i class="doc">     * Same as `send()`, but it won’t queue a send request if it can’t be</i></td></tr>
+<tr><th id="513">513</th><td><i class="doc">     * completed immediately.</i></td></tr>
+<tr><th id="514">514</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="515">515</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">ip</span> The address to which to send data.</i></td></tr>
+<tr><th id="516">516</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">port</span> The port to which to send data.</i></td></tr>
+<tr><th id="517">517</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="518">518</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="519">519</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes written.</i></td></tr>
+<tr><th id="520">520</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="521">521</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="522">522</th><td>    <em>int</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj" title='uvw::UDPHandle::trySend' data-ref="_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj" data-ref-filename="_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj" id="_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj">trySend</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col5 decl" id="75ip" title='ip' data-type='std::string' data-ref="75ip" data-ref-filename="75ip">ip</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="76port" title='port' data-type='unsigned int' data-ref="76port" data-ref-filename="76port">port</dfn>, <em>char</em> *<dfn class="local col7 decl" id="77data" title='data' data-type='char *' data-ref="77data" data-ref-filename="77data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="78len" title='len' data-type='unsigned int' data-ref="78len" data-ref-filename="78len">len</dfn>);</td></tr>
+<tr><th id="523">523</th><td></td></tr>
+<tr><th id="524">524</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="525">525</th><td><i class="doc">     * <span class="command">@brief</span> Sends data over the UDP socket.</i></td></tr>
+<tr><th id="526">526</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="527">527</th><td><i class="doc">     * Same as `send()`, but it won’t queue a send request if it can’t be</i></td></tr>
+<tr><th id="528">528</th><td><i class="doc">     * completed immediately.</i></td></tr>
+<tr><th id="529">529</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="530">530</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">addr</span> A valid instance of Addr.</i></td></tr>
+<tr><th id="531">531</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">data</span> The data to be sent.</i></td></tr>
+<tr><th id="532">532</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">len</span> The lenght of the submitted data.</i></td></tr>
+<tr><th id="533">533</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes written.</i></td></tr>
+<tr><th id="534">534</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="535">535</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="536">536</th><td>    <em>int</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj" title='uvw::UDPHandle::trySend' data-ref="_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj" data-ref-filename="_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj" id="_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj">trySend</a>(<a class="type" href="util.h.html#uvw::Addr" title='uvw::Addr' data-ref="uvw::Addr" data-ref-filename="uvw..Addr">Addr</a> <dfn class="local col9 decl" id="79addr" title='addr' data-type='uvw::Addr' data-ref="79addr" data-ref-filename="79addr">addr</dfn>, <em>char</em> *<dfn class="local col0 decl" id="80data" title='data' data-type='char *' data-ref="80data" data-ref-filename="80data">data</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="81len" title='len' data-type='unsigned int' data-ref="81len" data-ref-filename="81len">len</dfn>);</td></tr>
+<tr><th id="537">537</th><td></td></tr>
+<tr><th id="538">538</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="539">539</th><td><i class="doc">     * <span class="command">@brief</span> Prepares for receiving data.</i></td></tr>
+<tr><th id="540">540</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="541">541</th><td><i class="doc">     * Note that if the socket has not previously been bound with `bind()`, it</i></td></tr>
+<tr><th id="542">542</th><td><i class="doc">     * is bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a random</i></td></tr>
+<tr><th id="543">543</th><td><i class="doc">     * port number.</i></td></tr>
+<tr><th id="544">544</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="545">545</th><td><i class="doc">     * An UDPDataEvent event will be emitted when the handle receives data.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="546">546</th><td><i class="doc">     * An ErrorEvent event will be emitted in case of errors.</i></td></tr>
+<tr><th id="547">547</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="548">548</th><td>    <b>template</b>&lt;<b>typename</b> I = <a class="typedef" href="#uvw::UDPHandle::IPv4" title='uvw::UDPHandle::IPv4' data-type='uvw::IPv4' data-ref="uvw::UDPHandle::IPv4" data-ref-filename="uvw..UDPHandle..IPv4">IPv4</a>&gt;</td></tr>
+<tr><th id="549">549</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4recvEv" title='uvw::UDPHandle::recv' data-ref="_ZN3uvw9UDPHandle4recvEv" data-ref-filename="_ZN3uvw9UDPHandle4recvEv" id="_ZN3uvw9UDPHandle4recvEv">recv</a>();</td></tr>
+<tr><th id="550">550</th><td></td></tr>
+<tr><th id="551">551</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="552">552</th><td><i class="doc">     * <span class="command">@brief</span> Stops listening for incoming datagrams.</i></td></tr>
+<tr><th id="553">553</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="554">554</th><td>    <em>void</em> <a class="decl fn" href="udp.cpp.html#_ZN3uvw9UDPHandle4stopEv" title='uvw::UDPHandle::stop' data-ref="_ZN3uvw9UDPHandle4stopEv" data-ref-filename="_ZN3uvw9UDPHandle4stopEv" id="_ZN3uvw9UDPHandle4stopEv">stop</a>();</td></tr>
+<tr><th id="555">555</th><td></td></tr>
+<tr><th id="556">556</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="557">557</th><td><i class="doc">     * <span class="command">@brief</span> Gets the number of bytes queued for sending.</i></td></tr>
+<tr><th id="558">558</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc">     * It strictly shows how much information is currently queued.</i></td></tr>
+<tr><th id="560">560</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="561">561</th><td><i class="doc">     * <span class="command">@return</span> Number of bytes queued for sending.</i></td></tr>
+<tr><th id="562">562</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="563">563</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <a class="decl fn" href="udp.cpp.html#_ZNK3uvw9UDPHandle13sendQueueSizeEv" title='uvw::UDPHandle::sendQueueSize' data-ref="_ZNK3uvw9UDPHandle13sendQueueSizeEv" data-ref-filename="_ZNK3uvw9UDPHandle13sendQueueSizeEv" id="_ZNK3uvw9UDPHandle13sendQueueSizeEv">sendQueueSize</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="564">564</th><td></td></tr>
+<tr><th id="565">565</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="566">566</th><td><i class="doc">     * <span class="command">@brief</span> Number of send requests currently in the queue awaiting to be processed.</i></td></tr>
+<tr><th id="567">567</th><td><i class="doc">     * <span class="command">@return</span> Number of send requests currently in the queue.</i></td></tr>
+<tr><th id="568">568</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="569">569</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <a class="decl fn" href="udp.cpp.html#_ZNK3uvw9UDPHandle14sendQueueCountEv" title='uvw::UDPHandle::sendQueueCount' data-ref="_ZNK3uvw9UDPHandle14sendQueueCountEv" data-ref-filename="_ZNK3uvw9UDPHandle14sendQueueCountEv" id="_ZNK3uvw9UDPHandle14sendQueueCountEv">sendQueueCount</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="570">570</th><td></td></tr>
+<tr><th id="571">571</th><td><b>private</b>:</td></tr>
+<tr><th id="572">572</th><td>    <b>enum</b> { <dfn class="enum" id="uvw::UDPHandle::DEFAULT" title='uvw::UDPHandle::DEFAULT' data-ref="uvw::UDPHandle::DEFAULT" data-ref-filename="uvw..UDPHandle..DEFAULT">DEFAULT</dfn>, <dfn class="enum" id="uvw::UDPHandle::FLAGS" title='uvw::UDPHandle::FLAGS' data-ref="uvw::UDPHandle::FLAGS" data-ref-filename="uvw..UDPHandle..FLAGS">FLAGS</dfn> } <dfn class="decl field" id="uvw::UDPHandle::tag" title='uvw::UDPHandle::tag' data-ref="uvw::UDPHandle::tag" data-ref-filename="uvw..UDPHandle..tag">tag</dfn>{<a class="enum" href="#uvw::UDPHandle::DEFAULT" title='uvw::UDPHandle::DEFAULT' data-ref="uvw::UDPHandle::DEFAULT" data-ref-filename="uvw..UDPHandle..DEFAULT">DEFAULT</a>};</td></tr>
+<tr><th id="573">573</th><td>    <em>unsigned</em> <em>int</em> <dfn class="decl field" id="uvw::UDPHandle::flags" title='uvw::UDPHandle::flags' data-ref="uvw::UDPHandle::flags" data-ref-filename="uvw..UDPHandle..flags">flags</dfn>{};</td></tr>
+<tr><th id="574">574</th><td>};</td></tr>
+<tr><th id="575">575</th><td></td></tr>
+<tr><th id="576">576</th><td></td></tr>
+<tr><th id="577">577</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc"> *<span class="command"> @cond</span> TURN_OFF_DOXYGEN</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc"> * Internal details not to be documented.</i></td></tr>
+<tr><th id="580">580</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="581">581</th><td><i class="doc"></i></td></tr>
+<tr><th id="582">582</th><td><i class="doc"></i></td></tr>
+<tr><th id="583">583</th><td><i class="doc">// (extern) explicit instantiations</i></td></tr>
+<tr><th id="584">584</th><td></td></tr>
+<tr><th id="585">585</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::connect&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="586">586</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::connect&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="587">587</th><td></td></tr>
+<tr><th id="588">588</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::connect&lt;IPv4&gt;(Addr);</td></tr>
+<tr><th id="589">589</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::connect&lt;IPv6&gt;(Addr);</td></tr>
+<tr><th id="590">590</th><td></td></tr>
+<tr><th id="591">591</th><td><b>extern</b> <b>template</b> Addr UDPHandle::peer&lt;IPv4&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="592">592</th><td><b>extern</b> <b>template</b> Addr UDPHandle::peer&lt;IPv6&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="593">593</th><td></td></tr>
+<tr><th id="594">594</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::bind&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="595">595</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::bind&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="596">596</th><td></td></tr>
+<tr><th id="597">597</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::bind&lt;IPv4&gt;(Addr, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="598">598</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::bind&lt;IPv6&gt;(Addr, Flags&lt;Bind&gt;);</td></tr>
+<tr><th id="599">599</th><td></td></tr>
+<tr><th id="600">600</th><td><b>extern</b> <b>template</b> Addr UDPHandle::sock&lt;IPv4&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="601">601</th><td><b>extern</b> <b>template</b> Addr UDPHandle::sock&lt;IPv6&gt;() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="602">602</th><td></td></tr>
+<tr><th id="603">603</th><td><b>extern</b> <b>template</b> <em>bool</em> UDPHandle::multicastMembership&lt;IPv4&gt;(std::string, std::string, Membership);</td></tr>
+<tr><th id="604">604</th><td><b>extern</b> <b>template</b> <em>bool</em> UDPHandle::multicastMembership&lt;IPv6&gt;(std::string, std::string, Membership);</td></tr>
+<tr><th id="605">605</th><td></td></tr>
+<tr><th id="606">606</th><td><b>extern</b> <b>template</b> <em>bool</em> UDPHandle::multicastInterface&lt;IPv4&gt;(std::string);</td></tr>
+<tr><th id="607">607</th><td><b>extern</b> <b>template</b> <em>bool</em> UDPHandle::multicastInterface&lt;IPv6&gt;(std::string);</td></tr>
+<tr><th id="608">608</th><td></td></tr>
+<tr><th id="609">609</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="610">610</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="611">611</th><td></td></tr>
+<tr><th id="612">612</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv4&gt;(Addr, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="613">613</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv6&gt;(Addr, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="614">614</th><td></td></tr>
+<tr><th id="615">615</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="616">616</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="617">617</th><td></td></tr>
+<tr><th id="618">618</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv4&gt;(Addr, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="619">619</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::send&lt;IPv6&gt;(Addr, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="620">620</th><td></td></tr>
+<tr><th id="621">621</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv4&gt;(<em>const</em> sockaddr &amp;, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="622">622</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv6&gt;(<em>const</em> sockaddr &amp;, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="623">623</th><td></td></tr>
+<tr><th id="624">624</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="625">625</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="626">626</th><td></td></tr>
+<tr><th id="627">627</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv4&gt;(Addr, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="628">628</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv6&gt;(Addr, std::unique_ptr&lt;<em>char</em>[]&gt;, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="629">629</th><td></td></tr>
+<tr><th id="630">630</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv4&gt;(<em>const</em> sockaddr &amp;, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="631">631</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv6&gt;(<em>const</em> sockaddr &amp;, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="632">632</th><td></td></tr>
+<tr><th id="633">633</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv4&gt;(std::string, <em>unsigned</em> <em>int</em>, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="634">634</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv6&gt;(std::string, <em>unsigned</em> <em>int</em>, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="635">635</th><td></td></tr>
+<tr><th id="636">636</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv4&gt;(Addr, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="637">637</th><td><b>extern</b> <b>template</b> <em>int</em> UDPHandle::trySend&lt;IPv6&gt;(Addr, <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="638">638</th><td></td></tr>
+<tr><th id="639">639</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::recv&lt;IPv4&gt;();</td></tr>
+<tr><th id="640">640</th><td><b>extern</b> <b>template</b> <em>void</em> UDPHandle::recv&lt;IPv6&gt;();</td></tr>
+<tr><th id="641">641</th><td></td></tr>
+<tr><th id="642">642</th><td></td></tr>
+<tr><th id="643">643</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="644">644</th><td><i class="doc"> * Internal details not to be documented.</i></td></tr>
+<tr><th id="645">645</th><td><i class="doc"> *<span class="command"> @endcond</span></i></td></tr>
+<tr><th id="646">646</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="647">647</th><td></td></tr>
+<tr><th id="648">648</th><td></td></tr>
+<tr><th id="649">649</th><td>}</td></tr>
+<tr><th id="650">650</th><td></td></tr>
+<tr><th id="651">651</th><td></td></tr>
+<tr><th id="652">652</th><td><u>#<span data-ppcond="652">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="653">653</th><td><u>#include "udp.cpp"</u></td></tr>
+<tr><th id="654">654</th><td><u>#<span data-ppcond="652">endif</span></u></td></tr>
+<tr><th id="655">655</th><td></td></tr>
+<tr><th id="656">656</th><td><u>#<span data-ppcond="1">endif</span> // UVW_UDP_INCLUDE_H</u></td></tr>
+<tr><th id="657">657</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='udp.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/udp.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

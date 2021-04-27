@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='405' type='void google::protobuf::io::CodedInputStream::SetRecursionLimit(int limit)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1296' ll='1299' type='void google::protobuf::io::CodedInputStream::SetRecursionLimit(int limit)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='398'>// Recursion Limit -------------------------------------------------
+  // To prevent corrupt or malicious messages from causing stack overflows,
+  // we must keep track of the depth of recursion when parsing embedded
+  // messages and groups.  CodedInputStream keeps track of this because it
+  // is the only object that is passed down the stack during parsing.
+
+  // Sets the maximum recursion depth.  The default is 100.</doc>

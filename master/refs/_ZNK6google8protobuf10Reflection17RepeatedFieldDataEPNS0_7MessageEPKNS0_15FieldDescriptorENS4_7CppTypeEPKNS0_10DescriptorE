@@ -1,0 +1,17 @@
+<dec f='include/google/protobuf/message.h' l='940' type='void * google::protobuf::Reflection::RepeatedFieldData(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, FieldDescriptor::CppType cpp_type, const google::protobuf::Descriptor * message_type) const'/>
+<doc f='include/google/protobuf/message.h' l='924'>// The following methods are used to implement (Mutable)RepeatedFieldRef.
+  // A Ref object will store a raw pointer to the repeated field data (obtained
+  // from RepeatedFieldData()) and a pointer to a Accessor (obtained from
+  // RepeatedFieldAccessor) which will be used to access the raw data.
+  //
+  // TODO(xiaofeng): Make these methods pure-virtual.
+
+  // Returns a raw pointer to the repeated field
+  //
+  // &quot;cpp_type&quot; and &quot;message_type&quot; are deduced from the type parameter T passed
+  // to Get(Mutable)RepeatedFieldRef. If T is a generated message type,
+  // &quot;message_type&quot; should be set to its descriptor. Otherwise &quot;message_type&quot;
+  // should be set to NULL. Implementations of this method should check whether
+  // &quot;cpp_type&quot;/&quot;message_type&quot; is consistent with the actual type of the field.
+  // We use 1 routine rather than 2 (const vs mutable) because it is protected
+  // and it doesn&apos;t change the message.</doc>

@@ -1,0 +1,18 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='46' ll='72'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='52' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='81' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='34'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='39' c='_ZN5ZXing18ThresholdBinarizerC1ERKNS_9ImageViewEh'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='92' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='43'>/**
+ * Simple class that stores a non-owning const pointer to image data plus layout and format information.
+ */</doc>
+<mbr r='ZXing::ImageView::_data' o='0' t='const uint8_t *'/>
+<mbr r='ZXing::ImageView::_format' o='64' t='ZXing::ImageFormat'/>
+<mbr r='ZXing::ImageView::_width' o='96' t='int'/>
+<mbr r='ZXing::ImageView::_height' o='128' t='int'/>
+<mbr r='ZXing::ImageView::_pixStride' o='160' t='int'/>
+<mbr r='ZXing::ImageView::_rowStride' o='192' t='int'/>
+<fun r='_ZN5ZXing9ImageViewC1EPKhiiNS_11ImageFormatEii'/>
+<fun r='_ZNK5ZXing9ImageView4dataEii'/>

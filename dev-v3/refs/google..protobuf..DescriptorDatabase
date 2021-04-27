@@ -1,0 +1,35 @@
+<use f='include/google/protobuf/descriptor.h' l='1527' c='_ZN6google8protobuf14DescriptorPoolC1EPNS0_18DescriptorDatabaseEPNS1_14ErrorCollectorE'/>
+<use f='include/google/protobuf/descriptor.h' l='1799'/>
+<def f='include/google/protobuf/descriptor_database.h' l='65' ll='119'/>
+<use f='include/google/protobuf/descriptor_database.h' l='118' c='_ZN6google8protobuf18DescriptorDatabaseC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='118' c='_ZN6google8protobuf18DescriptorDatabaseaSERKS1_'/>
+<ovr f='include/google/protobuf/descriptor_database.h' l='142' c='google::protobuf::SimpleDescriptorDatabase'/>
+<use f='include/google/protobuf/descriptor_database.h' l='142'/>
+<ovr f='include/google/protobuf/descriptor_database.h' l='280' c='google::protobuf::EncodedDescriptorDatabase'/>
+<use f='include/google/protobuf/descriptor_database.h' l='280'/>
+<ovr f='include/google/protobuf/descriptor_database.h' l='326' c='google::protobuf::DescriptorPoolDatabase'/>
+<use f='include/google/protobuf/descriptor_database.h' l='326'/>
+<ovr f='include/google/protobuf/descriptor_database.h' l='349' c='google::protobuf::MergedDescriptorDatabase'/>
+<use f='include/google/protobuf/descriptor_database.h' l='349'/>
+<use f='include/google/protobuf/descriptor_database.h' l='352' c='_ZN6google8protobuf24MergedDescriptorDatabaseC1EPNS0_18DescriptorDatabaseES3_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='353' c='_ZN6google8protobuf24MergedDescriptorDatabaseC1EPNS0_18DescriptorDatabaseES3_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='358' c='_ZN6google8protobuf24MergedDescriptorDatabaseC1ERKSt6vectorIPNS0_18DescriptorDatabaseESaIS4_EE'/>
+<use f='include/google/protobuf/descriptor_database.h' l='376'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='54'/>
+<size>8</size>
+<doc f='include/google/protobuf/descriptor_database.h' l='57'>// Abstract interface for a database of descriptors.
+//
+// This is useful if you want to create a DescriptorPool which loads
+// descriptors on-demand from some sort of large database.  If the database
+// is large, it may be inefficient to enumerate every .proto file inside it
+// calling DescriptorPool::BuildFile() for each one.  Instead, a DescriptorPool
+// can be created which wraps a DescriptorDatabase and only builds particular
+// descriptors when they are needed.</doc>
+<fun r='_ZN6google8protobuf18DescriptorDatabaseC1Ev'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabaseD1Ev'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabase14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabase24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabase27FindFileContainingExtensionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabase23FindAllExtensionNumbersERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIiSaIiEE'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabase16FindAllFileNamesEPSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>
+<fun r='_ZN6google8protobuf18DescriptorDatabaseC1ERKS1_'/>

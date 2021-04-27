@@ -1,0 +1,24 @@
+<def f='qv2ray/test/catch.hpp' l='8000' ll='8024'/>
+<use f='qv2ray/test/catch.hpp' l='8028'/>
+<use f='qv2ray/test/catch.hpp' l='8030' c='_ZN5Catch26FatalConditionHandlerGuardC1EPNS_21FatalConditionHandlerE'/>
+<use f='qv2ray/test/catch.hpp' l='8165'/>
+<size>1</size>
+<doc f='qv2ray/test/catch.hpp' l='7992'>// Wrapper for platform-specific fatal error (signals/SEH) handlers
+    //
+    // Tries to be cooperative with other handlers, and not step over
+    // other handlers. This means that unknown structured exceptions
+    // are passed on, previous signal handlers are called, and so on.
+    //
+    // Can only be instantiated once, and assumes that once a signal
+    // is caught, the binary will end up terminating. Thus, there</doc>
+<mbr r='Catch::FatalConditionHandler::m_started' o='0' t='bool'/>
+<fun r='_ZN5Catch21FatalConditionHandler15engage_platformEv'/>
+<fun r='_ZN5Catch21FatalConditionHandler18disengage_platformEv'/>
+<fun r='_ZN5Catch21FatalConditionHandlerC1Ev'/>
+<fun r='_ZN5Catch21FatalConditionHandlerD1Ev'/>
+<fun r='_ZN5Catch21FatalConditionHandler6engageEv'/>
+<fun r='_ZN5Catch21FatalConditionHandler9disengageEv'/>
+<fun r='_ZN5Catch21FatalConditionHandlerC1Ev'/>
+<fun r='_ZN5Catch21FatalConditionHandlerD1Ev'/>
+<fun r='_ZN5Catch21FatalConditionHandler15engage_platformEv'/>
+<fun r='_ZN5Catch21FatalConditionHandler18disengage_platformEv'/>

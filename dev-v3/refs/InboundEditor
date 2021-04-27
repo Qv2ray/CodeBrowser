@@ -1,0 +1,47 @@
+<inh f='/qv2ray_autogen/include/ui_w_InboundEditor.h' l='329' c='Ui::InboundEditor'/>
+<def f='qv2ray/src/ui/widgets/editors/w_InboundEditor.hpp' l='12' ll='67'/>
+<use f='/qv2ray_autogen/DWD7ZFCWQR/moc_w_InboundEditor.cpp' l='121' c='_ZN13InboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>416</size>
+<smbr r='InboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK13InboundEditor10metaObjectEv'/>
+<fun r='_ZN13InboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN13InboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN13InboundEditor2trEPKcS1_i'/>
+<fun r='_ZN13InboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN13InboundEditorC1E13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectEP7QWidget'/>
+<fun r='_ZN13InboundEditorD1Ev'/>
+<fun r='_ZN13InboundEditor10OpenEditorEv'/>
+<fun r='_ZN13InboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN13InboundEditor43on_inboundProtocolCombo_currentIndexChangedEi'/>
+<fun r='_ZN13InboundEditor27on_inboundTagTxt_textEditedERK7QString'/>
+<fun r='_ZN13InboundEditor36on_strategyCombo_currentIndexChangedEi'/>
+<fun r='_ZN13InboundEditor32on_refreshNumberBox_valueChangedEi'/>
+<fun r='_ZN13InboundEditor36on_concurrencyNumberBox_valueChangedEi'/>
+<fun r='_ZN13InboundEditor28on_inboundHostTxt_textEditedERK7QString'/>
+<fun r='_ZN13InboundEditor28on_inboundPortTxt_textEditedERK7QString'/>
+<fun r='_ZN13InboundEditor27on_sniffingGroupBox_clickedEb'/>
+<fun r='_ZN13InboundEditor27on_sniffHTTPCB_stateChangedEi'/>
+<fun r='_ZN13InboundEditor26on_sniffTLSCB_stateChangedEi'/>
+<fun r='_ZN13InboundEditor31on_stackedWidget_currentChangedEi'/>
+<fun r='_ZN13InboundEditor30on_sniffMetaDataOnlyCB_clickedEb'/>
+<fun r='_ZN13InboundEditor35on_sniffFakeDNSOtherCB_stateChangedEi'/>
+<fun r='_ZN13InboundEditor30on_sniffFakeDNSCB_stateChangedEi'/>
+<mbr r='InboundEditor::streamSettingsWidget' o='2688' t='StreamSettingsWidget *'/>
+<fun r='_ZN13InboundEditor9getResultEv'/>
+<fun r='_ZN13InboundEditor6loadUIEv'/>
+<mbr r='InboundEditor::original' o='2752' t='Qv2ray::base::safetype::INBOUND'/>
+<mbr r='InboundEditor::current' o='2816' t='Qv2ray::base::safetype::INBOUND'/>
+<mbr r='InboundEditor::isLoading' o='2880' t='bool'/>
+<mbr r='InboundEditor::sniffingSettings' o='2944' t='QJsonObject'/>
+<mbr r='InboundEditor::allocateSettings' o='3008' t='QJsonObject'/>
+<mbr r='InboundEditor::inboundProtocol' o='3072' t='QString'/>
+<mbr r='InboundEditor::pluginWidgets' o='3264' t='QMap&lt;QString, Qv2rayPlugin::QvPluginEditor *&gt;'/>
+<fun r='_ZN13InboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='InboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK13InboundEditor10metaObjectEv'/>
+<fun r='_ZN13InboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN13InboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='410' c='_ZN11RouteEditor24on_addInboundBtn_clickedEv'/>
+<size>416</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='53' c='_ZN21InboundOutboundWidget18on_editBtn_clickedEv'/>
+<size>416</size>

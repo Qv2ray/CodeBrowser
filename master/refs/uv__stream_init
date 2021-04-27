@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='222' type='void uv__stream_init(uv_loop_t * loop, uv_stream_t * stream, uv_handle_type type)'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='221'>/* stream */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='34' u='c' c='uv_pipe_init'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='85' ll='120' type='void uv__stream_init(uv_loop_t * loop, uv_stream_t * stream, uv_handle_type type)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='125' u='c' c='uv_tcp_init_ex'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='197' u='c' c='uv_tty_init'/>

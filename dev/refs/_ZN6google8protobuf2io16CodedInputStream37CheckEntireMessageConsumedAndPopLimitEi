@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='445' type='bool google::protobuf::io::CodedInputStream::CheckEntireMessageConsumedAndPopLimit(google::protobuf::io::CodedInputStream::Limit limit)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='440'>// Helper that is equivalent to: {
+  //  bool result = ConsumedEntireMessage();
+  //  PopLimit(limit);
+  //  return result; }
+  // Using this can reduce code size and complexity in some cases.</doc>

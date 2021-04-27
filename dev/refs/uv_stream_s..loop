@@ -1,0 +1,49 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='431' type='uv_loop_t *'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='463' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='463' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='463' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='477' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='477' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='477' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='537' u='r' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='594' u='r' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='594' u='r' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='594' u='r' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='594' u='r' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='650' u='r' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='673' macro='1' u='r' c='uv_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='684' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='696' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='696' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='696' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='784' u='r' c='uv__write_req_finish'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='910' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='920' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='922' macro='1' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='942' u='r' c='uv__write_callbacks'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='942' u='r' c='uv__write_callbacks'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='942' u='r' c='uv__write_callbacks'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1004' u='r' c='uv__stream_eof'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1006' macro='1' u='r' c='uv__stream_eof'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1180' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1194' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1196' macro='1' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1274' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1280' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1374' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1374' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1374' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1377' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1442' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1481' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1537' u='r' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1537' u='r' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1537' u='r' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1544' u='r' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1582' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1583' macro='1' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1595' u='r' c='uv_read_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1597' macro='1' u='r' c='uv_read_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1658' u='r' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1660' macro='1' u='r' c='uv__stream_close'/>

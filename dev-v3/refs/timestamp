@@ -1,0 +1,7 @@
+<def f='include/netinet/ip.h' l='28' ll='42'/>
+<size>40</size>
+<mbr r='timestamp::len' o='0' t='uint8_t'/>
+<mbr r='timestamp::ptr' o='8' t='uint8_t'/>
+<mbr r='timestamp::flags' o='16' t='unsigned int'/>
+<mbr r='timestamp::overflow' o='20' t='unsigned int'/>
+<mbr r='timestamp::data' o='32' t='uint32_t [9]'/>

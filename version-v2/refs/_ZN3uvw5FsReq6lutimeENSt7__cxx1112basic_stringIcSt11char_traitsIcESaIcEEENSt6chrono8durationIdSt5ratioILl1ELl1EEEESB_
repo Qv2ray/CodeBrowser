@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='900' type='void uvw::FsReq::lutime(std::string path, uvw::FsRequest&lt;uvw::FsReq&gt;::Time atime, uvw::FsRequest&lt;uvw::FsReq&gt;::Time mtime)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='315' ll='317' type='void uvw::FsReq::lutime(std::string path, uvw::FsRequest&lt;uvw::FsReq&gt;::Time atime, uvw::FsRequest&lt;uvw::FsReq&gt;::Time mtime)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='888'>/**
+     * @brief Async [lutime](http://linux.die.net/man/3/lutimes).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::UTIME&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     * @param atime `std::chrono::duration&lt;double&gt;`, having the same meaning as
+     * described in the official documentation.
+     * @param mtime `std::chrono::duration&lt;double&gt;`, having the same meaning as
+     * described in the official documentation.
+     */</doc>

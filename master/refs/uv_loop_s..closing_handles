@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='uv_handle_t *'/>
+<offset>2880</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='215' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='216' u='w' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='308' u='r' c='uv__run_closing_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='309' u='w' c='uv__run_closing_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='342' u='r' c='uv_backend_timeout'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='352' u='r' c='uv__loop_alive'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='55' u='w' c='uv_loop_init'/>

@@ -1,0 +1,4 @@
+<use f='include/google/protobuf/map.h' l='682' u='c' c='_ZN6google8protobuf3Map8InnerMap12InsertUniqueEmPNS2_4NodeE'/>
+<def f='include/google/protobuf/map.h' l='869' ll='880' type='bool google::protobuf::Map::InnerMap::TableEntryIsTooLong(google::protobuf::Map::size_type b)'/>
+<doc f='include/google/protobuf/map.h' l='867'>// Return whether table_[b] is a linked list that seems awfully long.
+    // Requires table_[b] to point to a non-empty linked list.</doc>

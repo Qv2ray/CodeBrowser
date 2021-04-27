@@ -1,0 +1,4 @@
+<dec f='include/pthread.h' l='756' type='int pthread_mutex_unlock(pthread_mutex_t * __mutex)'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/gthr-default.h' l='121' c='__gthrw_pthread_mutex_unlock'/>
+<doc f='include/pthread.h' l='755'>/* Unlock a mutex.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='351' u='c' c='uv_mutex_unlock'/>

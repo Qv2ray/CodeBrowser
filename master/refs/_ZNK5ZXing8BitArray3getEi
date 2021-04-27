@@ -1,0 +1,27 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='165' ll='171' type='bool ZXing::BitArray::get(int i) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.cpp' l='128' u='c' c='_ZNK5ZXing8BitArray7toBytesEii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='161'>/**
+	* @param i bit to get
+	* @return true iff bit i is set
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='86' u='c' c='_ZN5ZXing5AztecL11BitsToWordsERKNS_8BitArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='131' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='134' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='137' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='140' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='148' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='151' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='154' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='157' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='173' u='c' c='_ZN5ZXing5AztecL9StuffBitsERKNS_8BitArrayEiRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='308' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='311' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='314' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='317' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='297' u='c' c='_ZN5ZXing4OneD3RSS21ExpandedBinaryDecoder6DecodeB5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='300' u='c' c='_ZN5ZXing4OneD3RSS21ExpandedBinaryDecoder6DecodeB5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSGenericAppIdDecoder.cpp' l='237' u='c' c='_ZN5ZXing4OneD3RSSL24IsAlphaTo646ToAlphaLatchERKNS_8BitArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSGenericAppIdDecoder.cpp' l='241' u='c' c='_ZN5ZXing4OneD3RSSL24IsAlphaTo646ToAlphaLatchERKNS_8BitArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='314' u='c' c='_ZN5ZXing6QRCodeL13EmbedTypeInfoENS0_20ErrorCorrectionLevelEiRNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='364' u='c' c='_ZN5ZXing6QRCodeL21MaybeEmbedVersionInfoERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='439' u='c' c='_ZN5ZXing6QRCodeL13EmbedDataBitsERKNS_8BitArrayEiRNS_6MatrixINS_4TritEEE'/>

@@ -1,0 +1,23 @@
+<dec f='include/google/protobuf/extension_set.h' l='1284'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1469' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3670' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3915' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4068' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4217' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4365' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4510' u='c'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4690' u='c'/>
+<doc f='include/google/protobuf/extension_set.h' l='1271'>// -------------------------------------------------------------------
+// Generated accessors
+
+// This macro should be expanded in the context of a generated type which
+// has extensions.
+//
+// We use &quot;_proto_TypeTraits&quot; as a type name below because &quot;TypeTraits&quot;
+// causes problems if the class has a nested message or enum type with that
+// name and &quot;_TypeTraits&quot; is technically reserved for the C++ library since
+// it starts with an underscore followed by a capital letter.
+//
+// For similar reason, we use &quot;_field_type&quot; and &quot;_is_packed&quot; as parameter names
+// below, so that &quot;field_type&quot; and &quot;is_packed&quot; can be used as field names.</doc>

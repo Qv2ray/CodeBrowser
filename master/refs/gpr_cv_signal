@@ -1,0 +1,5 @@
+<dec f='include/grpc/support/sync.h' l='86' type='void gpr_cv_signal(gpr_cv * cv)'/>
+<doc f='include/grpc/support/sync.h' l='82'>/** If any threads are waiting on *cv, wake at least one.
+   Clients may treat this as an optimization of gpr_cv_broadcast()
+   for use in the case where waking more than one waiter is not useful.
+   Requires:  *cv initialized.  */</doc>

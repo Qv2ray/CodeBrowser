@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='539' type='int dup3(int __fd, int __fd2, int __flags)'/>
+<doc f='include/unistd.h' l='537'>/* Duplicate FD to FD2, closing FD2 and making it open on the same
+   file while setting flags according to FLAGS.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1023' u='c' c='uv__dup2_cloexec'/>

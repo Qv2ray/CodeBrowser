@@ -1,0 +1,49 @@
+<def f='include/x86_64-linux-gnu/bits/types/struct_iovec.h' l='26' ll='30'/>
+<use f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='413' c='vmsplice'/>
+<use f='include/x86_64-linux-gnu/bits/socket.h' l='262'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.h' l='64' c='uv__preadv'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.h' l='65' c='uv__pwritev'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/bits/types/struct_iovec.h' l='25'>/* Structure for scatter/gather I/O.  */</doc>
+<mbr r='iovec::iov_base' o='0' t='void *'/>
+<mbr r='iovec::iov_len' o='64' t='size_t'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='41' c='readv'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='52' c='writev'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='84' c='preadv64'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='87' c='pwritev64'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='106' c='preadv64'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='118' c='pwritev64'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='136' c='pwritev64v2'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='140' c='preadv64v2'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='152' c='preadv64v2'/>
+<use f='include/x86_64-linux-gnu/sys/uio.h' l='157' c='pwritev64v2'/>
+<use f='include/x86_64-linux-gnu/bits/uio-ext.h' l='29' c='process_vm_readv'/>
+<use f='include/x86_64-linux-gnu/bits/uio-ext.h' l='31' c='process_vm_readv'/>
+<use f='include/x86_64-linux-gnu/bits/uio-ext.h' l='37' c='process_vm_writev'/>
+<use f='include/x86_64-linux-gnu/bits/uio-ext.h' l='39' c='process_vm_writev'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='94' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='96' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='98' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='99' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='100' c='uv__static_assert'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='448' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='467' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1061' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1079' c='uv__fs_write'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='156' c='uv__preadv'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='165' c='uv__pwritev'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='711' c='uv__writev'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='803' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='826' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='826' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='827' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1161' c='uv__read'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='191' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='357' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='447' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='745' c='uv__udp_try_send'/>
+<size>16</size>

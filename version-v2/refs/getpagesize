@@ -1,0 +1,6 @@
+<dec f='include/unistd.h' l='976' type='int getpagesize()'/>
+<doc f='include/unistd.h' l='974'>/* Return the number of bytes in a page.  This is the system&apos;s page size,
+   which is not necessarily the same as the hardware page size.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='555' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='181' u='c' c='thread_stack_size'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='239' u='c' c='uv_thread_create_ex'/>

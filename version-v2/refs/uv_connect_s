@@ -1,0 +1,10 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='234'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='582' ll='587'/>
+<size>96</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='581'>/* uv_connect_t is a subclass of uv_req_t. */</doc>
+<mbr r='uv_connect_s::data' o='0' t='void *'/>
+<mbr r='uv_connect_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_connect_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_connect_s::cb' o='512' t='uv_connect_cb'/>
+<mbr r='uv_connect_s::handle' o='576' t='uv_stream_t *'/>
+<mbr r='uv_connect_s::queue' o='640' t='void *[2]'/>

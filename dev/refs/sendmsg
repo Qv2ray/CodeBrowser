@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='173' type='ssize_t sendmsg(int __fd, const struct msghdr * __message, int __flags)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='168'>/* Send a message described MESSAGE on socket FD.
+   Returns the number of bytes sent, or -1 for errors.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='883' u='c' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='451' u='c' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='749' u='c' c='uv__udp_try_send'/>

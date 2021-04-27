@@ -1,0 +1,21 @@
+<inh f='include/c++/10/bits/stl_iterator_base_types.h' l='127' c='std::iterator'/>
+<def f='include/grpcpp/impl/codegen/security/auth_context.h' l='37' ll='59'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='41' c='_ZN4grpc20AuthPropertyIteratorppEv'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='42' c='_ZN4grpc20AuthPropertyIteratorppEi'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='43' c='_ZNK4grpc20AuthPropertyIteratoreqERKS0_'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='44' c='_ZNK4grpc20AuthPropertyIteratorneERKS0_'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='84' c='_ZNK4grpc11AuthContext5beginEv'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='85' c='_ZNK4grpc11AuthContext3endEv'/>
+<size>32</size>
+<fun r='_ZN4grpc20AuthPropertyIteratorD1Ev'/>
+<fun r='_ZN4grpc20AuthPropertyIteratorppEv'/>
+<fun r='_ZN4grpc20AuthPropertyIteratorppEi'/>
+<fun r='_ZNK4grpc20AuthPropertyIteratoreqERKS0_'/>
+<fun r='_ZNK4grpc20AuthPropertyIteratorneERKS0_'/>
+<fun r='_ZN4grpc20AuthPropertyIteratordeEv'/>
+<fun r='_ZN4grpc20AuthPropertyIteratorC1Ev'/>
+<fun r='_ZN4grpc20AuthPropertyIteratorC1EPK18grpc_auth_propertyPK27grpc_auth_property_iterator'/>
+<mbr r='grpc::AuthPropertyIterator::property_' o='0' t='const grpc_auth_property *'/>
+<mbr r='grpc::AuthPropertyIterator::ctx_' o='64' t='const grpc_auth_context *'/>
+<mbr r='grpc::AuthPropertyIterator::index_' o='128' t='size_t'/>
+<mbr r='grpc::AuthPropertyIterator::name_' o='192' t='const char *'/>

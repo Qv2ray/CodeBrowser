@@ -1,0 +1,12 @@
+<def f='include/google/protobuf/descriptor_database.h' l='99' ll='102' type='bool google::protobuf::DescriptorDatabase::FindAllExtensionNumbers(const std::string &amp; , std::vector&lt;int&gt; * )'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='89'>// Finds the tag numbers used by all known extensions of
+  // extendee_type, and appends them to output in an undefined
+  // order. This method is best-effort: it&apos;s not guaranteed that the
+  // database will find all extensions, and it&apos;s not guaranteed that
+  // FindFileContainingExtension will return true on all of the found
+  // numbers. Returns true if the search was successful, otherwise
+  // returns false and leaves output unchanged.
+  //
+  // This method has a default implementation that always returns
+  // false.</doc>
+<doc f='include/google/protobuf/descriptor_database.h' l='99'>/* extendee_type */</doc>

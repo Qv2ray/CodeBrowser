@@ -1,0 +1,21 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='60' c='ZXing::OneD::RowReader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='40' ll='51'/>
+<size>40</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='33'>/**
+* &lt;p&gt;A reader that can read all available UPC/EAN formats. If a caller wants to try to
+* read all such formats, it is most efficient to use this implementation rather than invoke
+* individual readers.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<fun r='_ZN5ZXing4OneD17MultiUPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZN5ZXing4OneD17MultiUPCEANReaderD1Ev'/>
+<fun r='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<mbr r='ZXing::OneD::MultiUPCEANReader::_readers' o='64' t='std::vector&lt;std::unique_ptr&lt;const UPCEANReader&gt;&gt;'/>
+<mbr r='ZXing::OneD::MultiUPCEANReader::_canReturnUPCA' o='256' t='bool'/>
+<fun r='_ZN5ZXing4OneD17MultiUPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZN5ZXing4OneD17MultiUPCEANReaderD1Ev'/>
+<fun r='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='45' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='59' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>40</size>

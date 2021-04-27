@@ -1,0 +1,14 @@
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='143'/>
+<def f='include/grpcpp/impl/codegen/call.h' l='390' ll='442'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='464'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='398'/>
+<size>32</size>
+<fun r='_ZN4grpc8internal24CallOpGenericRecvMessageC1Ev'/>
+<fun r='_ZN4grpc8internal24CallOpGenericRecvMessage11RecvMessageEPT_'/>
+<fun r='_ZN4grpc8internal24CallOpGenericRecvMessage14AllowNoMessageEv'/>
+<mbr r='grpc::internal::CallOpGenericRecvMessage::got_message' o='0' t='bool'/>
+<fun r='_ZN4grpc8internal24CallOpGenericRecvMessage5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal24CallOpGenericRecvMessage8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpGenericRecvMessage::deserialize_' o='64' t='std::unique_ptr&lt;DeserializeFunc&gt;'/>
+<mbr r='grpc::internal::CallOpGenericRecvMessage::recv_buf_' o='128' t='grpc::ByteBuffer'/>
+<mbr r='grpc::internal::CallOpGenericRecvMessage::allow_not_getting_message_' o='192' t='bool'/>

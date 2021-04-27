@@ -1,0 +1,9 @@
+<inh f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='45' c='Qv2rayPlugin::SubscriptionInterface'/>
+<def f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.hpp' l='32' ll='61'/>
+<use f='qv2ray/src/plugins/subscription-adapters/BuiltinSubscriptionAdapter.cpp' l='8' c='_ZN33InternalSubscriptionSupportPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<size>40</size>
+<fun r='_ZN35BuiltinSubscriptionAdapterInterfaceC1Ev'/>
+<fun r='_ZNK35BuiltinSubscriptionAdapterInterface26SupportedSubscriptionTypesEv'/>
+<fun r='_ZNK35BuiltinSubscriptionAdapterInterface22GetSubscriptionDecoderERK7QString'/>
+<mbr r='BuiltinSubscriptionAdapterInterface::simple_base64' o='64' t='std::shared_ptr&lt;SubscriptionDecoder&gt;'/>
+<mbr r='BuiltinSubscriptionAdapterInterface::sip008' o='192' t='std::shared_ptr&lt;SubscriptionDecoder&gt;'/>

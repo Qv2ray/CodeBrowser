@@ -1,0 +1,15 @@
+<def f='include/c++/10/bits/std_function.h' l='357' ll='360' type='void std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;(function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp;&amp; __x)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='35' u='c' c='_ZN7QtNodes10ConnectionC1ERNS_4NodeEiS2_iSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<doc f='include/c++/10/bits/std_function.h' l='350'>/**
+       *  @brief %Function move constructor.
+       *  @param __x A %function object rvalue with identical call signature.
+       *
+       *  The newly-created %function contains the target of @a __x
+       *  (if it has one).
+       */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='12' u='c' c='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='69' u='c' c='_ZN4grpc8internal21CallbackWithStatusTagC1EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='126' u='c' c='_ZN4grpc8internal22CallbackWithSuccessTagC1EP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='47' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async8GetStatsEPN4grpc13ClientContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsRespons8593868'/>
+<use f='/v2ray_api.grpc.pb.cc' l='63' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async10QueryStatsEPN4grpc13ClientContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStats2892321'/>
+<use f='/v2ray_api.grpc.pb.cc' l='79' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async11GetSysStatsEPN4grpc13ClientContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsRes15940938'/>

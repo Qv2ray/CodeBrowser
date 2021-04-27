@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/extension_set.h' l='718' type='static size_t google::protobuf::internal::ExtensionSet::RepeatedMessage_SpaceUsedExcludingSelfLong(google::protobuf::internal::RepeatedPtrFieldBase * field)'/>
+<doc f='include/google/protobuf/extension_set.h' l='711'>// Hack:  RepeatedPtrFieldBase declares ExtensionSet as a friend.  This
+  //   friendship should automatically extend to ExtensionSet::Extension, but
+  //   unfortunately some older compilers (e.g. GCC 3.4.4) do not implement this
+  //   correctly.  So, we must provide helpers for calling methods of that
+  //   class.
+
+  // Defined in extension_set_heavy.cc.</doc>

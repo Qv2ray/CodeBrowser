@@ -1,0 +1,32 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='151' type='void ZXing::GenericGF::GenericGF(int primitive, int size, int b)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='25' u='c' c='_ZN5ZXing9GenericGF11AztecData12Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='32' u='c' c='_ZN5ZXing9GenericGF11AztecData10Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='39' u='c' c='_ZN5ZXing9GenericGF10AztecData6Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='46' u='c' c='_ZN5ZXing9GenericGF10AztecParamEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='53' u='c' c='_ZN5ZXing9GenericGF14QRCodeField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='60' u='c' c='_ZN5ZXing9GenericGF18DataMatrixField256Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='67' u='c' c='_ZN5ZXing9GenericGF10AztecData8Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='74' u='c' c='_ZN5ZXing9GenericGF15MaxiCodeField64Ev'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='90' ll='111' type='void ZXing::GenericGF::GenericGF(int primitive, int size, int b)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='79'>/**
+* Create a representation of GF(size) using the given primitive polynomial.
+*
+* @param primitive irreducible polynomial whose coefficients are represented by
+*  the bits of an int, where the least-significant bit represents the constant
+*  coefficient
+* @param size the size of the field
+* @param b the factor b in the generator polynomial can be 0- or 1-based
+*  (g(x) = (x+a^b)(x+a^(b+1))...(x+a^(b+2t-1))).
+*  In most cases it should be 1, but for QR code it is 0.
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='140'>/**
+	* Create a representation of GF(size) using the given primitive polynomial.
+	*
+	* @param primitive irreducible polynomial whose coefficients are represented by
+	*  the bits of an int, where the least-significant bit represents the constant
+	*  coefficient
+	* @param size the size of the field
+	* @param b the factor b in the generator polynomial can be 0- or 1-based
+	*  (g(x) = (x+a^b)(x+a^(b+1))...(x+a^(b+2t-1))).
+	*  In most cases it should be 1, but for QR code it is 0.
+	*/</doc>

@@ -1,0 +1,23 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='267' ll='271' type='uvw::OSFileDescriptor uvw::Handle::fd() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='245'>/**
+     * @brief Gets the platform dependent file descriptor equivalent.
+     *
+     * Supported handles:
+     *
+     * * TCPHandle
+     * * PipeHandle
+     * * TTYHandle
+     * * UDPHandle
+     * * PollHandle
+     *
+     * It will emit an ErrorEvent event if invoked on any other handle.&lt;br/&gt;
+     * If a handle doesn’t have an attached file descriptor yet or the handle
+     * itself has been closed, an ErrorEvent event will be emitted.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/handle.html#c.uv_fileno)
+     * for further details.
+     *
+     * @return The file descriptor attached to the hande or a negative value in
+     * case of errors.
+     */</doc>

@@ -1,0 +1,27 @@
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='61' type='void Qv2ray::base::ConnectionGroupPair::ConnectionGroupPair(const Qv2ray::base::ConnectionId &amp; conn, const Qv2ray::base::GroupId &amp; group)'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.hpp' l='25' u='c' c='_ZNK20ConnectionItemWidget10IdentifierEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='166' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler15ClearGroupUsageERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='218' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler25RemoveConnectionFromGroupERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS4_INS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='226' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler25RemoveConnectionFromGroupERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS4_INS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='256' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler23LinkConnectionWithGroupERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS4_INS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='287' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler25MoveConnectionFromToGroupERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS4_INS3_9__QvGroupEEESC_'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='288' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler25MoveConnectionFromToGroupERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS4_INS3_9__QvGroupEEESC_'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='719' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERKNS_4base8safetype10CONFIGROOTERK7QStringRKNS3_6IDTypeINS3_9__QvGroupEEEb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='726' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERKNS_4base8safetype10CONFIGROOTERK7QStringRKNS3_6IDTypeINS3_9__QvGroupEEEb'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='217' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='103' u='c' c='_ZN20ConnectionInfoWidget11ShowDetailsERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='126' u='c' c='_ZN20ConnectionInfoWidget20OnConnectionModifiedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='146' u='c' c='_ZN20ConnectionInfoWidget21on_connectBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='152' u='c' c='_ZN20ConnectionInfoWidget21on_connectBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='205' u='c' c='_ZN20ConnectionInfoWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='213' u='c' c='_ZN20ConnectionInfoWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='83' u='c' c='_ZN20ConnectionItemWidget15BeginConnectionEv'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='115' u='c' c='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='125' u='c' c='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='196' u='c' c='_ZN20ConnectionItemWidget23OnConnectionItemRenamedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEERK7QStringS9_'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='107' u='c' c='_ZN12GroupManager30onRCMExportConnectionTriggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='129' u='c' c='_ZN12GroupManager30onRCMExportConnectionTriggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='178' u='c' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='186' u='c' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='323' u='c' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='928' u='c' c='_ZN10MainWindow14OnGroupDeletedERKN6Qv2ray4base6IDTypeINS1_9__QvGroupEEERK5QListINS2_INS1_14__QvConnectionEEEE'/>

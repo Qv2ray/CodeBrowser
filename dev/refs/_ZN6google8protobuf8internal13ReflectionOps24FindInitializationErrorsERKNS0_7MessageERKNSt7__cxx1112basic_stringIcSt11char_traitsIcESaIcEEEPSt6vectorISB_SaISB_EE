@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/reflection_ops.h' l='68' type='static void google::protobuf::internal::ReflectionOps::FindInitializationErrors(const google::protobuf::Message &amp; message, const std::string &amp; prefix, std::vector&lt;string&gt; * errors)'/>
+<doc f='include/google/protobuf/reflection_ops.h' l='65'>// Finds all unset required fields in the message and adds their full
+  // paths (e.g. &quot;foo.bar[5].baz&quot;) to *names.  &quot;prefix&quot; will be attached to
+  // the front of each name.</doc>

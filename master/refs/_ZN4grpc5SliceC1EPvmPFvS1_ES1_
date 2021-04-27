@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/slice.h' l='87' ll='89' type='void grpc::Slice::Slice(void * buf, size_t len, void (*)(void *) destroy, void * user_data)'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='93' u='c' c='_ZN4grpc5SliceC1EPvmPFvS1_E'/>
+<doc f='include/grpcpp/impl/codegen/slice.h' l='82'>/// Create a slice pointing at some data. Calls malloc to allocate a refcount
+  /// for the object, and arranges that destroy will be called with the
+  /// user data pointer passed in at destruction. Can be the same as buf or
+  /// different (e.g., if data is part of a larger structure that must be
+  /// destroyed when the data is no longer needed)</doc>

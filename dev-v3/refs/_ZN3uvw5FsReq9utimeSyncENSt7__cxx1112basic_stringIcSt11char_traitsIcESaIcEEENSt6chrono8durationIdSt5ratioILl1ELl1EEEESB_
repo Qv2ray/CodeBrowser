@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1185' type='bool uvw::FsReq::utimeSync(std::string path, uvw::FsRequest&lt;uvw::FsReq&gt;::Time atime, uvw::FsRequest&lt;uvw::FsReq&gt;::Time mtime)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='458' ll='462' type='bool uvw::FsReq::utimeSync(std::string path, FsRequest&lt;FsReq&gt;::Time atime, FsRequest&lt;FsReq&gt;::Time mtime)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1176'>/**
+     * @brief Sync [utime](http://linux.die.net/man/2/utime).
+     * @param path Path, as described in the official documentation.
+     * @param atime `std::chrono::duration&lt;double&gt;`, having the same meaning as
+     * described in the official documentation.
+     * @param mtime `std::chrono::duration&lt;double&gt;`, having the same meaning as
+     * described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

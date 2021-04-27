@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.h' l='55' type='static ZXing::DecoderResult ZXing::DataMatrix::Decoder::Decode(const ZXing::BitMatrix &amp; bits)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='585' ll='627' type='static ZXing::DecoderResult ZXing::DataMatrix::Decoder::Decode(const ZXing::BitMatrix &amp; bits)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.h' l='46'>/**
+	* &lt;p&gt;Decodes a Data Matrix Code represented as a {@link BitMatrix}. A 1 or &quot;true&quot; is taken
+	* to mean a black module.&lt;/p&gt;
+	*
+	* @param bits booleans representing white/black Data Matrix Code modules
+	* @return text and bytes encoded within the Data Matrix Code
+	* @throws FormatException if the Data Matrix Code cannot be decoded
+	* @throws ChecksumException if error correction fails
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='59' u='c' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>

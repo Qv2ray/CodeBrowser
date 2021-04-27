@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='46' type='void ZXing::OneD::Code39Reader::Code39Reader(const ZXing::DecodeHints &amp; hints)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='158' ll='162' type='void ZXing::OneD::Code39Reader::Code39Reader(const ZXing::DecodeHints &amp; hints)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='36'>/**
+	* Creates a reader that can be configured to check the last character as a check digit,
+	* or optionally attempt to decode &quot;extended Code 39&quot; sequences that are used to encode
+	* the full ASCII character set.
+	*
+	* @param usingCheckDigit if true, treat the last data character as a check digit, not
+	* data, and verify that the checksum passes.
+	* @param extendedMode if true, will attempt to decode extended Code 39 sequences in the
+	* text.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='46' u='c' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='62' u='c' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>

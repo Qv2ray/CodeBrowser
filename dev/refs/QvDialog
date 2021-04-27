@@ -1,0 +1,43 @@
+<inh f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='38' c='QvStateObject'/>
+<def f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='85' ll='110'/>
+<ovr f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='29' c='RouteEditor'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='30'/>
+<ovr f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='13' c='GroupManager'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='14'/>
+<ovr f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='6' c='ImportConfigWindow'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='7'/>
+<ovr f='qv2ray/src/ui/widgets/windows/w_PluginManager.hpp' l='14' c='PluginManageWindow'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.hpp' l='15'/>
+<ovr f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='11' c='PreferencesWindow'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='12'/>
+<size>104</size>
+<smbr r='QvDialog::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK8QvDialog10metaObjectEv'/>
+<fun r='_ZN8QvDialog11qt_metacastEPKc'/>
+<fun r='_ZN8QvDialog11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN8QvDialog2trEPKcS1_i'/>
+<fun r='_ZN8QvDialog6trUtf8EPKcS1_i'/>
+<fun r='_ZN8QvDialog18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN8QvDialogC1ERK7QStringP7QWidget'/>
+<fun r='_ZN8QvDialogD1Ev'/>
+<fun r='_ZN8QvDialog15processCommandsE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZN8QvDialog20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN8QvDialog17updateColorSchemeEv'/>
+<fun r='_ZN8QvDialog9showEventEP10QShowEvent'/>
+<fun r='_ZN8QvDialog18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='QvDialog::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK8QvDialog10metaObjectEv'/>
+<fun r='_ZN8QvDialog11qt_metacastEPKc'/>
+<fun r='_ZN8QvDialog11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='80' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<size>104</size>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.cpp' l='36' c='_ZN12GroupManagerC1EP7QWidget'/>
+<size>104</size>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.cpp' l='26' c='_ZN18ImportConfigWindowC1EP7QWidget'/>
+<size>104</size>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='370' c='_ZN10MainWindow14ProcessCommandE7QString11QStringList4QMapIS0_S0_E'/>
+<size>104</size>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.cpp' l='10' c='_ZN18PluginManageWindowC1EP7QWidget'/>
+<size>104</size>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='49' c='_ZN17PreferencesWindowC1EP7QWidget'/>
+<size>104</size>

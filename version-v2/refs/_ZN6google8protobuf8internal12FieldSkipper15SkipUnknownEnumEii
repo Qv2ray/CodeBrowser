@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='754' type='void google::protobuf::internal::FieldSkipper::SkipUnknownEnum(int field_number, int value)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='751'>// Deal with an already-parsed unrecognized enum value.  The default
+  // implementation does nothing, but the UnknownFieldSet-based implementation
+  // saves it as an unknown varint.</doc>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1316' type='const google::protobuf::FileDescriptor * google::protobuf::FileDescriptor::weak_dependency(int index) const'/>
+<def f='include/google/protobuf/descriptor.h' l='2120' ll='2123' type='const google::protobuf::FileDescriptor * google::protobuf::FileDescriptor::weak_dependency(int index) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1313'>// Gets a weak imported file by index, where 0 &lt;= index &lt;
+  // weak_dependency_count().
+  // These are returned in the order they were defined in the .proto file.</doc>

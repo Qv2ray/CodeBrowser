@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message_lite.h' l='217' type='void google::protobuf::MessageLite::CheckTypeAndMergeFrom(const google::protobuf::MessageLite &amp; other)'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='68' c='_ZN6google8protobuf8internal19ImplicitWeakMessage21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='124' u='c' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler5MergeERKNS0_11MessageLiteEPS3_'/>
+<doc f='include/google/protobuf/message_lite.h' l='215'>// If |other| is the exact same class as this, calls MergeFrom(). Otherwise,
+  // results are undefined (probably crash).</doc>

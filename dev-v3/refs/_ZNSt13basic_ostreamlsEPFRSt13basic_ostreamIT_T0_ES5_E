@@ -1,0 +1,45 @@
+<def f='include/c++/10/ostream' l='107' ll='114' type='std::basic_ostream::__ostream_type &amp; std::basic_ostream::operator&lt;&lt;(std::basic_ostream::__ostream_type &amp;(*)(std::basic_ostream::__ostream_type &amp;) __pf)'/>
+<doc f='include/c++/10/ostream' l='100'>/**
+       *  @brief  Interface for manipulators.
+       *
+       *  Manipulators such as @c std::endl and @c std::hex use these
+       *  functions in constructs like &quot;std::cout &lt;&lt; std::endl&quot;.  For more
+       *  information, see the iomanip header.
+      */</doc>
+<use f='qv2ray/src/base/Qv2rayLog.hpp' l='76' u='c' c='_ZN6Qv2ray4base12log_internalEDpT0_'/>
+<use f='qv2ray/src/main.cpp' l='150' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/main.cpp' l='158' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/main.cpp' l='160' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/main.cpp' l='167' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/test/catch.hpp' l='9543' u='c' c='_ZNK5Catch5clara6detail6Parser13writeToStreamERSo'/>
+<use f='qv2ray/test/catch.hpp' l='9559' u='c' c='_ZNK5Catch5clara6detail6Parser13writeToStreamERSo'/>
+<use f='qv2ray/test/catch.hpp' l='11175' u='c' c='_ZN5Catch9listTestsERKNS_6ConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='11179' u='c' c='_ZN5Catch9listTestsERKNS_6ConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='11186' u='c' c='_ZN5Catch9listTestsERKNS_6ConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='11188' u='c' c='_ZN5Catch9listTestsERKNS_6ConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='11204' u='c' c='_ZN5Catch18listTestsNamesOnlyERKNS_6ConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='11261' u='c' c='_ZN5Catch8listTagsERKNS_6ConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='11283' u='c' c='_ZN5Catch13listReportersEv'/>
+<use f='qv2ray/test/catch.hpp' l='13268' u='c' c='_ZNK5Catch7Session8showHelpEv'/>
+<use f='qv2ray/test/catch.hpp' l='13267' u='c' c='_ZNK5Catch7Session8showHelpEv'/>
+<use f='qv2ray/test/catch.hpp' l='13275' u='c' c='_ZN5Catch7Session11libIdentifyEv'/>
+<use f='qv2ray/test/catch.hpp' l='13291' u='c' c='_ZN5Catch7Session16applyCommandLineEiPKPKc'/>
+<use f='qv2ray/test/catch.hpp' l='13334' u='c' c='_ZN5Catch7Session3runEv'/>
+<use f='qv2ray/test/catch.hpp' l='13339' u='c' c='_ZN5Catch7Session3runEv'/>
+<use f='qv2ray/test/catch.hpp' l='13393' u='c' c='_ZN5Catch7Session11runInternalEv'/>
+<use f='qv2ray/test/catch.hpp' l='15457' u='c' c='_ZN5Catch9XmlWriter10endElementENS_13XmlFormattingE'/>
+<use f='qv2ray/test/catch.hpp' l='15509' u='c' c='_ZN5Catch9XmlWriter15ensureTagClosedEv'/>
+<use f='qv2ray/test/catch.hpp' l='15525' u='c' c='_ZN5Catch9XmlWriter18newlineIfNecessaryEv'/>
+<use f='qv2ray/test/catch.hpp' l='15835' u='c' c='_ZN5Catch15CompactReporter19noMatchingTestCasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='15855' u='c' c='_ZN5Catch15CompactReporter14assertionEndedERKNS_14AssertionStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='15861' u='c' c='_ZN5Catch15CompactReporter12sectionEndedERKNS_12SectionStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='15867' u='c' c='_ZN5Catch15CompactReporter12testRunEndedERKNS_12TestRunStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16167' u='c' c='_ZN5Catch12TablePrinter5closeEv'/>
+<use f='qv2ray/test/catch.hpp' l='16239' u='c' c='_ZN5Catch15ConsoleReporter19noMatchingTestCasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='16243' u='c' c='_ZN5Catch15ConsoleReporter22reportInvalidArgumentsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='16261' u='c' c='_ZN5Catch15ConsoleReporter14assertionEndedERKNS_14AssertionStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16279' u='c' c='_ZN5Catch15ConsoleReporter12sectionEndedERKNS_12SectionStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16282' u='c' c='_ZN5Catch15ConsoleReporter12sectionEndedERKNS_12SectionStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16348' u='c' c='_ZN5Catch15ConsoleReporter14testGroupEndedERKNS_14TestGroupStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16355' u='c' c='_ZN5Catch15ConsoleReporter12testRunEndedERKNS_12TestRunStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16418' u='c' c='_ZN5Catch15ConsoleReporter29printTestCaseAndSectionHeaderEv'/>

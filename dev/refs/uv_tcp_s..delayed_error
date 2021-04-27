@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='548' macro='1' type='int'/>
+<offset>1856</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='194' u='w' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='223' u='w' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='247' u='w' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='260' u='r' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='287' u='r' c='uv_tcp_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='288' u='r' c='uv_tcp_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='301' u='r' c='uv_tcp_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='302' u='r' c='uv_tcp_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='334' u='r' c='uv_tcp_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='335' u='r' c='uv_tcp_listen'/>

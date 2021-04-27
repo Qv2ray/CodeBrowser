@@ -1,0 +1,13 @@
+<dec f='include/netinet/in.h' l='242' type='struct in_addr'/>
+<offset>32</offset>
+<doc f='include/netinet/in.h' l='242'>/* Internet address.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='587' u='m' c='uv__udp_maybe_deferred_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='781' u='m' c='uv__udp_set_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='881' u='m' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='882' u='m' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1226' u='m' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1240' u='a' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1241' u='r' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='228' u='m' c='uv_ip4_addr'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='268' u='a' c='uv_ip4_name'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='178' u='a' c='_ZN6Qv2ray10components7latency8realping8RealPing15getProxyAddressB5cxx11Ev'/>

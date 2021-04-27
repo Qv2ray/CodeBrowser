@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/wire_format.h' l='235' type='static void google::protobuf::internal::WireFormat::VerifyUTF8String(const char * data, int size, google::protobuf::internal::WireFormat::Operation op)'/>
+<def f='include/google/protobuf/wire_format.h' l='307' ll='316' type='static void google::protobuf::internal::WireFormat::VerifyUTF8String(const char * data, int size, WireFormat::Operation op)'/>
+<doc f='include/google/protobuf/wire_format.h' l='232'>// Verifies that a string field is valid UTF8, logging an error if not.
+  // This function will not be called by newly generated protobuf code
+  // but remains present to support existing code.</doc>

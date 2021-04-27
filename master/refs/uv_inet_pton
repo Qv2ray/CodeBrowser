@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1631' type='int uv_inet_pton(int af, const char * src, void * dst)'/>
+<def f='qv2ray/3rdparty/libuv/src/inet.c' l='150' ll='176' type='int uv_inet_pton(int af, const char * src, void * dst)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='774' u='c' c='uv__udp_set_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='874' u='c' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='228' u='c' c='uv_ip4_addr'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='263' u='c' c='uv_ip6_addr'/>

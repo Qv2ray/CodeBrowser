@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>grpc_types.h source code [include/grpc/impl/codegen/grpc_types.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpc/impl/codegen/grpc_types.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>grpc</a>/<a href='..'>impl</a>/<a href='./'>codegen</a>/<a href='grpc_types.h.html'>grpc_types.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2015 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPC_IMPL_CODEGEN_GRPC_TYPES_H">GRPC_IMPL_CODEGEN_GRPC_TYPES_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPC_IMPL_CODEGEN_GRPC_TYPES_H" data-ref="_M/GRPC_IMPL_CODEGEN_GRPC_TYPES_H">GRPC_IMPL_CODEGEN_GRPC_TYPES_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="port_platform.h.html">&lt;grpc/impl/codegen/port_platform.h&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="compression_types.h.html">&lt;grpc/impl/codegen/compression_types.h&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="gpr_types.h.html">&lt;grpc/impl/codegen/gpr_types.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="slice.h.html">&lt;grpc/impl/codegen/slice.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="status.h.html">&lt;grpc/impl/codegen/status.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="32">32</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="31">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="36">36</th><td>  <dfn class="enum" id="GRPC_BB_RAW" title='GRPC_BB_RAW' data-ref="GRPC_BB_RAW" data-ref-filename="GRPC_BB_RAW">GRPC_BB_RAW</dfn></td></tr>
+<tr><th id="37">37</th><td>  <i class="doc">/** Future types may include GRPC_BB_PROTOBUF, etc. */</i></td></tr>
+<tr><th id="38">38</th><td>} <dfn class="typedef" id="grpc_byte_buffer_type" title='grpc_byte_buffer_type' data-type='enum grpc_byte_buffer_type' data-ref="grpc_byte_buffer_type" data-ref-filename="grpc_byte_buffer_type">grpc_byte_buffer_type</dfn>;</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_byte_buffer" title='grpc_byte_buffer' data-ref="grpc_byte_buffer" data-ref-filename="grpc_byte_buffer"><a class="type" href="#grpc_byte_buffer" title='grpc_byte_buffer' data-ref="grpc_byte_buffer" data-ref-filename="grpc_byte_buffer">grpc_byte_buffer</a></dfn> {</td></tr>
+<tr><th id="41">41</th><td>  <em>void</em>* <dfn class="decl field" id="grpc_byte_buffer::reserved" title='grpc_byte_buffer::reserved' data-ref="grpc_byte_buffer::reserved" data-ref-filename="grpc_byte_buffer..reserved">reserved</dfn>;</td></tr>
+<tr><th id="42">42</th><td>  <a class="typedef" href="#grpc_byte_buffer_type" title='grpc_byte_buffer_type' data-type='enum grpc_byte_buffer_type' data-ref="grpc_byte_buffer_type" data-ref-filename="grpc_byte_buffer_type">grpc_byte_buffer_type</a> <dfn class="decl field" id="grpc_byte_buffer::type" title='grpc_byte_buffer::type' data-ref="grpc_byte_buffer::type" data-ref-filename="grpc_byte_buffer..type">type</dfn>;</td></tr>
+<tr><th id="43">43</th><td>  <b>union</b> <dfn class="type def" id="grpc_byte_buffer::grpc_byte_buffer_data" title='grpc_byte_buffer::grpc_byte_buffer_data' data-ref="grpc_byte_buffer::grpc_byte_buffer_data" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data"><a class="type" href="#grpc_byte_buffer::grpc_byte_buffer_data" title='grpc_byte_buffer::grpc_byte_buffer_data' data-ref="grpc_byte_buffer::grpc_byte_buffer_data" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data">grpc_byte_buffer_data</a></dfn> {</td></tr>
+<tr><th id="44">44</th><td>    <b>struct</b> <i>/* internal */</i> {</td></tr>
+<tr><th id="45">45</th><td>      <em>void</em>* <dfn class="decl field" id="grpc_byte_buffer::grpc_byte_buffer_data::(anonymous)::reserved" title='grpc_byte_buffer::grpc_byte_buffer_data::(anonymous struct)::reserved' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::(anonymous)::reserved" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..(anonymous)..reserved">reserved</dfn>[<var>8</var>];</td></tr>
+<tr><th id="46">46</th><td>    } <dfn class="decl field" id="grpc_byte_buffer::grpc_byte_buffer_data::reserved" title='grpc_byte_buffer::grpc_byte_buffer_data::reserved' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::reserved" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..reserved">reserved</dfn>;</td></tr>
+<tr><th id="47">47</th><td>    <b>struct</b> <dfn class="type def" id="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer" title='grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..grpc_compressed_buffer"><a class="type" href="#grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer" title='grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..grpc_compressed_buffer">grpc_compressed_buffer</a></dfn> {</td></tr>
+<tr><th id="48">48</th><td>      <a class="typedef" href="compression_types.h.html#grpc_compression_algorithm" title='grpc_compression_algorithm' data-type='enum grpc_compression_algorithm' data-ref="grpc_compression_algorithm" data-ref-filename="grpc_compression_algorithm">grpc_compression_algorithm</a> <dfn class="decl field" id="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer::compression" title='grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer::compression' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer::compression" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..grpc_compressed_buffer..compression">compression</dfn>;</td></tr>
+<tr><th id="49">49</th><td>      <a class="typedef" href="slice.h.html#grpc_slice_buffer" title='grpc_slice_buffer' data-type='struct grpc_slice_buffer' data-ref="grpc_slice_buffer" data-ref-filename="grpc_slice_buffer">grpc_slice_buffer</a> <dfn class="decl field" id="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer::slice_buffer" title='grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer::slice_buffer' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::grpc_compressed_buffer::slice_buffer" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..grpc_compressed_buffer..slice_buffer">slice_buffer</dfn>;</td></tr>
+<tr><th id="50">50</th><td>    } <dfn class="decl field" id="grpc_byte_buffer::grpc_byte_buffer_data::raw" title='grpc_byte_buffer::grpc_byte_buffer_data::raw' data-ref="grpc_byte_buffer::grpc_byte_buffer_data::raw" data-ref-filename="grpc_byte_buffer..grpc_byte_buffer_data..raw">raw</dfn>;</td></tr>
+<tr><th id="51">51</th><td>  } <dfn class="decl field" id="grpc_byte_buffer::data" title='grpc_byte_buffer::data' data-ref="grpc_byte_buffer::data" data-ref-filename="grpc_byte_buffer..data">data</dfn>;</td></tr>
+<tr><th id="52">52</th><td>} <dfn class="typedef" id="grpc_byte_buffer" title='grpc_byte_buffer' data-type='struct grpc_byte_buffer' data-ref="grpc_byte_buffer" data-ref-filename="grpc_byte_buffer">grpc_byte_buffer</dfn>;</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i class="doc">/** Completion Queues enable notification of the completion of</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * asynchronous actions. */</i></td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_completion_queue" title='grpc_completion_queue' data-ref="grpc_completion_queue" data-ref-filename="grpc_completion_queue"><a class="type" href="#grpc_completion_queue" title='grpc_completion_queue' data-ref="grpc_completion_queue" data-ref-filename="grpc_completion_queue">grpc_completion_queue</a></dfn> <dfn class="typedef" id="grpc_completion_queue" title='grpc_completion_queue' data-type='struct grpc_completion_queue' data-ref="grpc_completion_queue" data-ref-filename="grpc_completion_queue">grpc_completion_queue</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i class="doc">/** An alarm associated with a completion queue. */</i></td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_alarm" title='grpc_alarm' data-ref="grpc_alarm" data-ref-filename="grpc_alarm"><a class="type" href="#grpc_alarm" title='grpc_alarm' data-ref="grpc_alarm" data-ref-filename="grpc_alarm">grpc_alarm</a></dfn> <dfn class="typedef" id="grpc_alarm" title='grpc_alarm' data-type='struct grpc_alarm' data-ref="grpc_alarm" data-ref-filename="grpc_alarm">grpc_alarm</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc">/** The Channel interface allows creation of Call objects. */</i></td></tr>
+<tr><th id="62">62</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_channel" title='grpc_channel' data-ref="grpc_channel" data-ref-filename="grpc_channel"><a class="type" href="#grpc_channel" title='grpc_channel' data-ref="grpc_channel" data-ref-filename="grpc_channel">grpc_channel</a></dfn> <dfn class="typedef" id="grpc_channel" title='grpc_channel' data-type='struct grpc_channel' data-ref="grpc_channel" data-ref-filename="grpc_channel">grpc_channel</dfn>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i class="doc">/** A server listens to some port and responds to request calls */</i></td></tr>
+<tr><th id="65">65</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_server" title='grpc_server' data-ref="grpc_server" data-ref-filename="grpc_server"><a class="type" href="#grpc_server" title='grpc_server' data-ref="grpc_server" data-ref-filename="grpc_server">grpc_server</a></dfn> <dfn class="typedef" id="grpc_server" title='grpc_server' data-type='struct grpc_server' data-ref="grpc_server" data-ref-filename="grpc_server">grpc_server</dfn>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i class="doc">/** A Call represents an RPC. When created, it is in a configuration state</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">    allowing properties to be set until it is invoked. After invoke, the Call</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">    can have messages written to it and read from it. */</i></td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_call" title='grpc_call' data-ref="grpc_call" data-ref-filename="grpc_call"><a class="type" href="#grpc_call" title='grpc_call' data-ref="grpc_call" data-ref-filename="grpc_call">grpc_call</a></dfn> <dfn class="typedef" id="grpc_call" title='grpc_call' data-type='struct grpc_call' data-ref="grpc_call" data-ref-filename="grpc_call">grpc_call</dfn>;</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i class="doc">/** The Socket Mutator interface allows changes on socket options */</i></td></tr>
+<tr><th id="73">73</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_socket_mutator" title='grpc_socket_mutator' data-ref="grpc_socket_mutator" data-ref-filename="grpc_socket_mutator"><a class="type" href="#grpc_socket_mutator" title='grpc_socket_mutator' data-ref="grpc_socket_mutator" data-ref-filename="grpc_socket_mutator">grpc_socket_mutator</a></dfn> <dfn class="typedef" id="grpc_socket_mutator" title='grpc_socket_mutator' data-type='struct grpc_socket_mutator' data-ref="grpc_socket_mutator" data-ref-filename="grpc_socket_mutator">grpc_socket_mutator</dfn>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i class="doc">/** The Socket Factory interface creates and binds sockets */</i></td></tr>
+<tr><th id="76">76</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_socket_factory" title='grpc_socket_factory' data-ref="grpc_socket_factory" data-ref-filename="grpc_socket_factory"><a class="type" href="#grpc_socket_factory" title='grpc_socket_factory' data-ref="grpc_socket_factory" data-ref-filename="grpc_socket_factory">grpc_socket_factory</a></dfn> <dfn class="typedef" id="grpc_socket_factory" title='grpc_socket_factory' data-type='struct grpc_socket_factory' data-ref="grpc_socket_factory" data-ref-filename="grpc_socket_factory">grpc_socket_factory</dfn>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i class="doc">/** Type specifier for grpc_arg */</i></td></tr>
+<tr><th id="79">79</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="80">80</th><td>  <dfn class="enum" id="GRPC_ARG_STRING" title='GRPC_ARG_STRING' data-ref="GRPC_ARG_STRING" data-ref-filename="GRPC_ARG_STRING">GRPC_ARG_STRING</dfn>,</td></tr>
+<tr><th id="81">81</th><td>  <dfn class="enum" id="GRPC_ARG_INTEGER" title='GRPC_ARG_INTEGER' data-ref="GRPC_ARG_INTEGER" data-ref-filename="GRPC_ARG_INTEGER">GRPC_ARG_INTEGER</dfn>,</td></tr>
+<tr><th id="82">82</th><td>  <dfn class="enum" id="GRPC_ARG_POINTER" title='GRPC_ARG_POINTER' data-ref="GRPC_ARG_POINTER" data-ref-filename="GRPC_ARG_POINTER">GRPC_ARG_POINTER</dfn></td></tr>
+<tr><th id="83">83</th><td>} <dfn class="typedef" id="grpc_arg_type" title='grpc_arg_type' data-type='enum grpc_arg_type' data-ref="grpc_arg_type" data-ref-filename="grpc_arg_type">grpc_arg_type</dfn>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_arg_pointer_vtable" title='grpc_arg_pointer_vtable' data-ref="grpc_arg_pointer_vtable" data-ref-filename="grpc_arg_pointer_vtable"><a class="type" href="#grpc_arg_pointer_vtable" title='grpc_arg_pointer_vtable' data-ref="grpc_arg_pointer_vtable" data-ref-filename="grpc_arg_pointer_vtable">grpc_arg_pointer_vtable</a></dfn> {</td></tr>
+<tr><th id="86">86</th><td>  <em>void</em>* (*<dfn class="decl field" id="grpc_arg_pointer_vtable::copy" title='grpc_arg_pointer_vtable::copy' data-ref="grpc_arg_pointer_vtable::copy" data-ref-filename="grpc_arg_pointer_vtable..copy">copy</dfn>)(<em>void</em>* <dfn class="local col9 decl" id="5519p" title='p' data-type='void *' data-ref="5519p" data-ref-filename="5519p">p</dfn>);</td></tr>
+<tr><th id="87">87</th><td>  <em>void</em> (*<dfn class="decl field" id="grpc_arg_pointer_vtable::destroy" title='grpc_arg_pointer_vtable::destroy' data-ref="grpc_arg_pointer_vtable::destroy" data-ref-filename="grpc_arg_pointer_vtable..destroy">destroy</dfn>)(<em>void</em>* <dfn class="local col0 decl" id="5520p" title='p' data-type='void *' data-ref="5520p" data-ref-filename="5520p">p</dfn>);</td></tr>
+<tr><th id="88">88</th><td>  <em>int</em> (*<dfn class="decl field" id="grpc_arg_pointer_vtable::cmp" title='grpc_arg_pointer_vtable::cmp' data-ref="grpc_arg_pointer_vtable::cmp" data-ref-filename="grpc_arg_pointer_vtable..cmp">cmp</dfn>)(<em>void</em>* <dfn class="local col1 decl" id="5521p" title='p' data-type='void *' data-ref="5521p" data-ref-filename="5521p">p</dfn>, <em>void</em>* <dfn class="local col2 decl" id="5522q" title='q' data-type='void *' data-ref="5522q" data-ref-filename="5522q">q</dfn>);</td></tr>
+<tr><th id="89">89</th><td>} <dfn class="typedef" id="grpc_arg_pointer_vtable" title='grpc_arg_pointer_vtable' data-type='struct grpc_arg_pointer_vtable' data-ref="grpc_arg_pointer_vtable" data-ref-filename="grpc_arg_pointer_vtable">grpc_arg_pointer_vtable</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/** A single argument... each argument has a key and a value</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"></i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">    A note on naming keys:</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">      Keys are namespaced into groups, usually grouped by library, and are</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">      keys for module XYZ are named XYZ.key1, XYZ.key2, etc. Module names must</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">      be restricted to the regex [A-Za-z][_A-Za-z0-9]{,15}.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">      Key names must be restricted to the regex [A-Za-z][_A-Za-z0-9]{,47}.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"></i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">    GRPC core library keys are prefixed by grpc.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"></i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">    Library authors are strongly encouraged to \#define symbolic constants for</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">    their keys so that it's possible to change them in the future. */</i></td></tr>
+<tr><th id="103">103</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="104">104</th><td>  <a class="typedef" href="#grpc_arg_type" title='grpc_arg_type' data-type='enum grpc_arg_type' data-ref="grpc_arg_type" data-ref-filename="grpc_arg_type">grpc_arg_type</a> <dfn class="decl field" id="(anonymous)::type" title='(anonymous struct)::type' data-ref="(anonymous)::type" data-ref-filename="(anonymous)..type">type</dfn>;</td></tr>
+<tr><th id="105">105</th><td>  <em>char</em>* <dfn class="decl field" id="(anonymous)::key" title='(anonymous struct)::key' data-ref="(anonymous)::key" data-ref-filename="(anonymous)..key">key</dfn>;</td></tr>
+<tr><th id="106">106</th><td>  <b>union</b> <dfn class="type def" id="(anonymousstruct)::grpc_arg_value" title='(anonymous struct)::grpc_arg_value' data-ref="(anonymousstruct)::grpc_arg_value" data-ref-filename="(anonymousstruct)..grpc_arg_value"><a class="type" href="#(anonymousstruct)::grpc_arg_value" title='(anonymous struct)::grpc_arg_value' data-ref="(anonymousstruct)::grpc_arg_value" data-ref-filename="(anonymousstruct)..grpc_arg_value">grpc_arg_value</a></dfn> {</td></tr>
+<tr><th id="107">107</th><td>    <em>char</em>* <dfn class="decl field" id="(anonymousstruct)::grpc_arg_value::string" title='(anonymous struct)::grpc_arg_value::string' data-ref="(anonymousstruct)::grpc_arg_value::string" data-ref-filename="(anonymousstruct)..grpc_arg_value..string">string</dfn>;</td></tr>
+<tr><th id="108">108</th><td>    <em>int</em> <dfn class="decl field" id="(anonymousstruct)::grpc_arg_value::integer" title='(anonymous struct)::grpc_arg_value::integer' data-ref="(anonymousstruct)::grpc_arg_value::integer" data-ref-filename="(anonymousstruct)..grpc_arg_value..integer">integer</dfn>;</td></tr>
+<tr><th id="109">109</th><td>    <b>struct</b> <dfn class="type def" id="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer" title='(anonymous struct)::grpc_arg_value::grpc_arg_pointer' data-ref="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer" data-ref-filename="(anonymousstruct)..grpc_arg_value..grpc_arg_pointer"><a class="type" href="#(anonymousstruct)::grpc_arg_value::grpc_arg_pointer" title='(anonymous struct)::grpc_arg_value::grpc_arg_pointer' data-ref="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer" data-ref-filename="(anonymousstruct)..grpc_arg_value..grpc_arg_pointer">grpc_arg_pointer</a></dfn> {</td></tr>
+<tr><th id="110">110</th><td>      <em>void</em>* <dfn class="decl field" id="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer::p" title='(anonymous struct)::grpc_arg_value::grpc_arg_pointer::p' data-ref="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer::p" data-ref-filename="(anonymousstruct)..grpc_arg_value..grpc_arg_pointer..p">p</dfn>;</td></tr>
+<tr><th id="111">111</th><td>      <em>const</em> <a class="typedef" href="#grpc_arg_pointer_vtable" title='grpc_arg_pointer_vtable' data-type='struct grpc_arg_pointer_vtable' data-ref="grpc_arg_pointer_vtable" data-ref-filename="grpc_arg_pointer_vtable">grpc_arg_pointer_vtable</a>* <dfn class="decl field" id="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer::vtable" title='(anonymous struct)::grpc_arg_value::grpc_arg_pointer::vtable' data-ref="(anonymousstruct)::grpc_arg_value::grpc_arg_pointer::vtable" data-ref-filename="(anonymousstruct)..grpc_arg_value..grpc_arg_pointer..vtable">vtable</dfn>;</td></tr>
+<tr><th id="112">112</th><td>    } <dfn class="decl field" id="(anonymousstruct)::grpc_arg_value::pointer" title='(anonymous struct)::grpc_arg_value::pointer' data-ref="(anonymousstruct)::grpc_arg_value::pointer" data-ref-filename="(anonymousstruct)..grpc_arg_value..pointer">pointer</dfn>;</td></tr>
+<tr><th id="113">113</th><td>  } <dfn class="decl field" id="(anonymous)::value" title='(anonymous struct)::value' data-ref="(anonymous)::value" data-ref-filename="(anonymous)..value">value</dfn>;</td></tr>
+<tr><th id="114">114</th><td>} <dfn class="typedef" id="grpc_arg" title='grpc_arg' data-type='struct grpc_arg' data-ref="grpc_arg" data-ref-filename="grpc_arg">grpc_arg</dfn>;</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><i class="doc">/** An array of arguments that can be passed around.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"></i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">    Used to set optional channel-level configuration.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">    These configuration options are modelled as key-value pairs as defined</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">    by grpc_arg; keys are strings to allow easy backwards-compatible extension</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">    by arbitrary parties. All evaluation is performed at channel creation</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">    time (i.e. the keys and values in this structure need only live through the</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">    creation invocation).</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"></i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">    However, if one of the args has grpc_arg_type==GRPC_ARG_POINTER, then the</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">    grpc_arg_pointer_vtable must live until the channel args are done being</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">    used by core (i.e. when the object for use with which they were passed</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">    is destroyed).</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"></i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">    See the description of the<span class="command"> \ref</span> <span class="arg">grpc_arg_keys</span> "available args" for more</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">    details. */</i></td></tr>
+<tr><th id="132">132</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="133">133</th><td>  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl field" id="(anonymous)::num_args" title='(anonymous struct)::num_args' data-ref="(anonymous)::num_args" data-ref-filename="(anonymous)..num_args">num_args</dfn>;</td></tr>
+<tr><th id="134">134</th><td>  <a class="typedef" href="#grpc_arg" title='grpc_arg' data-type='struct grpc_arg' data-ref="grpc_arg" data-ref-filename="grpc_arg">grpc_arg</a>* <dfn class="decl field" id="(anonymous)::args" title='(anonymous struct)::args' data-ref="(anonymous)::args" data-ref-filename="(anonymous)..args">args</dfn>;</td></tr>
+<tr><th id="135">135</th><td>} <dfn class="typedef" id="grpc_channel_args" title='grpc_channel_args' data-type='struct grpc_channel_args' data-ref="grpc_channel_args" data-ref-filename="grpc_channel_args">grpc_channel_args</dfn>;</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><i class="doc">/** <span class="command">\defgroup</span> <span class="verb">grpc_arg_keys</span></i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * Channel argument keys.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * \{</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/** If non-zero, enable census for tracing and stats collection. */</i></td></tr>
+<tr><th id="142">142</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_CENSUS" data-ref="_M/GRPC_ARG_ENABLE_CENSUS">GRPC_ARG_ENABLE_CENSUS</dfn> "grpc.census"</u></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/** If non-zero, enable load reporting. */</i></td></tr>
+<tr><th id="144">144</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_LOAD_REPORTING" data-ref="_M/GRPC_ARG_ENABLE_LOAD_REPORTING">GRPC_ARG_ENABLE_LOAD_REPORTING</dfn> "grpc.loadreporting"</u></td></tr>
+<tr><th id="145">145</th><td><i class="doc">/** Request that optional features default to off (regardless of what they</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">    usually default to) - to enable tight control over what gets enabled */</i></td></tr>
+<tr><th id="147">147</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MINIMAL_STACK" data-ref="_M/GRPC_ARG_MINIMAL_STACK">GRPC_ARG_MINIMAL_STACK</dfn> "grpc.minimal_stack"</u></td></tr>
+<tr><th id="148">148</th><td><i class="doc">/** Maximum number of concurrent incoming streams to allow on a http2</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">    connection. Int valued. */</i></td></tr>
+<tr><th id="150">150</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_CONCURRENT_STREAMS" data-ref="_M/GRPC_ARG_MAX_CONCURRENT_STREAMS">GRPC_ARG_MAX_CONCURRENT_STREAMS</dfn> "grpc.max_concurrent_streams"</u></td></tr>
+<tr><th id="151">151</th><td><i class="doc">/** Maximum message length that the channel can receive. Int valued, bytes.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc">    -1 means unlimited. */</i></td></tr>
+<tr><th id="153">153</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_RECEIVE_MESSAGE_LENGTH" data-ref="_M/GRPC_ARG_MAX_RECEIVE_MESSAGE_LENGTH">GRPC_ARG_MAX_RECEIVE_MESSAGE_LENGTH</dfn> "grpc.max_receive_message_length"</u></td></tr>
+<tr><th id="154">154</th><td><i class="doc">/** <span class="command">\deprecated</span> For backward compatibility.</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * Use GRPC_ARG_MAX_RECEIVE_MESSAGE_LENGTH instead. */</i></td></tr>
+<tr><th id="156">156</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_MESSAGE_LENGTH" data-ref="_M/GRPC_ARG_MAX_MESSAGE_LENGTH">GRPC_ARG_MAX_MESSAGE_LENGTH</dfn> GRPC_ARG_MAX_RECEIVE_MESSAGE_LENGTH</u></td></tr>
+<tr><th id="157">157</th><td><i class="doc">/** Maximum message length that the channel can send. Int valued, bytes.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc">    -1 means unlimited. */</i></td></tr>
+<tr><th id="159">159</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_SEND_MESSAGE_LENGTH" data-ref="_M/GRPC_ARG_MAX_SEND_MESSAGE_LENGTH">GRPC_ARG_MAX_SEND_MESSAGE_LENGTH</dfn> "grpc.max_send_message_length"</u></td></tr>
+<tr><th id="160">160</th><td><i class="doc">/** Maximum time that a channel may have no outstanding rpcs. Int valued,</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc">    milliseconds. INT_MAX means unlimited. */</i></td></tr>
+<tr><th id="162">162</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_CONNECTION_IDLE_MS" data-ref="_M/GRPC_ARG_MAX_CONNECTION_IDLE_MS">GRPC_ARG_MAX_CONNECTION_IDLE_MS</dfn> "grpc.max_connection_idle_ms"</u></td></tr>
+<tr><th id="163">163</th><td><i class="doc">/** Maximum time that a channel may exist. Int valued, milliseconds.</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * INT_MAX means unlimited. */</i></td></tr>
+<tr><th id="165">165</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_CONNECTION_AGE_MS" data-ref="_M/GRPC_ARG_MAX_CONNECTION_AGE_MS">GRPC_ARG_MAX_CONNECTION_AGE_MS</dfn> "grpc.max_connection_age_ms"</u></td></tr>
+<tr><th id="166">166</th><td><i class="doc">/** Grace period after the chennel reaches its max age. Int valued,</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc">   milliseconds. INT_MAX means unlimited. */</i></td></tr>
+<tr><th id="168">168</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_CONNECTION_AGE_GRACE_MS" data-ref="_M/GRPC_ARG_MAX_CONNECTION_AGE_GRACE_MS">GRPC_ARG_MAX_CONNECTION_AGE_GRACE_MS</dfn> "grpc.max_connection_age_grace_ms"</u></td></tr>
+<tr><th id="169">169</th><td><i class="doc">/** Enable/disable support for per-message compression. Defaults to 1, unless</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc">    GRPC_ARG_MINIMAL_STACK is enabled, in which case it defaults to 0. */</i></td></tr>
+<tr><th id="171">171</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_PER_MESSAGE_COMPRESSION" data-ref="_M/GRPC_ARG_ENABLE_PER_MESSAGE_COMPRESSION">GRPC_ARG_ENABLE_PER_MESSAGE_COMPRESSION</dfn> "grpc.per_message_compression"</u></td></tr>
+<tr><th id="172">172</th><td><i class="doc">/** Enable/disable support for deadline checking. Defaults to 1, unless</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc">    GRPC_ARG_MINIMAL_STACK is enabled, in which case it defaults to 0 */</i></td></tr>
+<tr><th id="174">174</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_DEADLINE_CHECKS" data-ref="_M/GRPC_ARG_ENABLE_DEADLINE_CHECKS">GRPC_ARG_ENABLE_DEADLINE_CHECKS</dfn> "grpc.enable_deadline_checking"</u></td></tr>
+<tr><th id="175">175</th><td><i class="doc">/** Initial stream ID for http2 transports. Int valued. */</i></td></tr>
+<tr><th id="176">176</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_INITIAL_SEQUENCE_NUMBER" data-ref="_M/GRPC_ARG_HTTP2_INITIAL_SEQUENCE_NUMBER">GRPC_ARG_HTTP2_INITIAL_SEQUENCE_NUMBER</dfn> \</u></td></tr>
+<tr><th id="177">177</th><td><u>  "grpc.http2.initial_sequence_number"</u></td></tr>
+<tr><th id="178">178</th><td><i class="doc">/** Amount to read ahead on individual streams. Defaults to 64kb, larger</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc">    values can help throughput on high-latency connections.</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc">    NOTE: at some point we'd like to auto-tune this, and this parameter</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc">    will become a no-op. Int valued, bytes. */</i></td></tr>
+<tr><th id="182">182</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_STREAM_LOOKAHEAD_BYTES" data-ref="_M/GRPC_ARG_HTTP2_STREAM_LOOKAHEAD_BYTES">GRPC_ARG_HTTP2_STREAM_LOOKAHEAD_BYTES</dfn> "grpc.http2.lookahead_bytes"</u></td></tr>
+<tr><th id="183">183</th><td><i class="doc">/** How much memory to use for hpack decoding. Int valued, bytes. */</i></td></tr>
+<tr><th id="184">184</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_HPACK_TABLE_SIZE_DECODER" data-ref="_M/GRPC_ARG_HTTP2_HPACK_TABLE_SIZE_DECODER">GRPC_ARG_HTTP2_HPACK_TABLE_SIZE_DECODER</dfn> \</u></td></tr>
+<tr><th id="185">185</th><td><u>  "grpc.http2.hpack_table_size.decoder"</u></td></tr>
+<tr><th id="186">186</th><td><i class="doc">/** How much memory to use for hpack encoding. Int valued, bytes. */</i></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_HPACK_TABLE_SIZE_ENCODER" data-ref="_M/GRPC_ARG_HTTP2_HPACK_TABLE_SIZE_ENCODER">GRPC_ARG_HTTP2_HPACK_TABLE_SIZE_ENCODER</dfn> \</u></td></tr>
+<tr><th id="188">188</th><td><u>  "grpc.http2.hpack_table_size.encoder"</u></td></tr>
+<tr><th id="189">189</th><td><i class="doc">/** How big a frame are we willing to receive via HTTP2.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc">    Min 16384, max 16777215. Larger values give lower CPU usage for large</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc">    messages, but more head of line blocking for small messages. */</i></td></tr>
+<tr><th id="192">192</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_MAX_FRAME_SIZE" data-ref="_M/GRPC_ARG_HTTP2_MAX_FRAME_SIZE">GRPC_ARG_HTTP2_MAX_FRAME_SIZE</dfn> "grpc.http2.max_frame_size"</u></td></tr>
+<tr><th id="193">193</th><td><i class="doc">/** Should BDP probing be performed? */</i></td></tr>
+<tr><th id="194">194</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_BDP_PROBE" data-ref="_M/GRPC_ARG_HTTP2_BDP_PROBE">GRPC_ARG_HTTP2_BDP_PROBE</dfn> "grpc.http2.bdp_probe"</u></td></tr>
+<tr><th id="195">195</th><td><i class="doc">/** Minimum time between sending successive ping frames without receiving any</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc">    data frame, Int valued, milliseconds. */</i></td></tr>
+<tr><th id="197">197</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_MIN_SENT_PING_INTERVAL_WITHOUT_DATA_MS" data-ref="_M/GRPC_ARG_HTTP2_MIN_SENT_PING_INTERVAL_WITHOUT_DATA_MS">GRPC_ARG_HTTP2_MIN_SENT_PING_INTERVAL_WITHOUT_DATA_MS</dfn> \</u></td></tr>
+<tr><th id="198">198</th><td><u>  "grpc.http2.min_time_between_pings_ms"</u></td></tr>
+<tr><th id="199">199</th><td><i class="doc">/** Minimum allowed time between a server receiving successive ping frames</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc">   without sending any data frame. Int valued, milliseconds */</i></td></tr>
+<tr><th id="201">201</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_MIN_RECV_PING_INTERVAL_WITHOUT_DATA_MS" data-ref="_M/GRPC_ARG_HTTP2_MIN_RECV_PING_INTERVAL_WITHOUT_DATA_MS">GRPC_ARG_HTTP2_MIN_RECV_PING_INTERVAL_WITHOUT_DATA_MS</dfn> \</u></td></tr>
+<tr><th id="202">202</th><td><u>  "grpc.http2.min_ping_interval_without_data_ms"</u></td></tr>
+<tr><th id="203">203</th><td><i class="doc">/** Channel arg to override the http2 :scheme header */</i></td></tr>
+<tr><th id="204">204</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_SCHEME" data-ref="_M/GRPC_ARG_HTTP2_SCHEME">GRPC_ARG_HTTP2_SCHEME</dfn> "grpc.http2_scheme"</u></td></tr>
+<tr><th id="205">205</th><td><i class="doc">/** How many pings can we send before needing to send a data frame or header</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc">    frame? (0 indicates that an infinite number of pings can be sent without</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc">    sending a data frame or header frame) */</i></td></tr>
+<tr><th id="208">208</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_MAX_PINGS_WITHOUT_DATA" data-ref="_M/GRPC_ARG_HTTP2_MAX_PINGS_WITHOUT_DATA">GRPC_ARG_HTTP2_MAX_PINGS_WITHOUT_DATA</dfn> \</u></td></tr>
+<tr><th id="209">209</th><td><u>  "grpc.http2.max_pings_without_data"</u></td></tr>
+<tr><th id="210">210</th><td><i class="doc">/** How many misbehaving pings the server can bear before sending goaway and</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc">    closing the transport? (0 indicates that the server can bear an infinite</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc">    number of misbehaving pings) */</i></td></tr>
+<tr><th id="213">213</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_MAX_PING_STRIKES" data-ref="_M/GRPC_ARG_HTTP2_MAX_PING_STRIKES">GRPC_ARG_HTTP2_MAX_PING_STRIKES</dfn> "grpc.http2.max_ping_strikes"</u></td></tr>
+<tr><th id="214">214</th><td><i class="doc">/** How much data are we willing to queue up per stream if</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc">    GRPC_WRITE_BUFFER_HINT is set? This is an upper bound */</i></td></tr>
+<tr><th id="216">216</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_WRITE_BUFFER_SIZE" data-ref="_M/GRPC_ARG_HTTP2_WRITE_BUFFER_SIZE">GRPC_ARG_HTTP2_WRITE_BUFFER_SIZE</dfn> "grpc.http2.write_buffer_size"</u></td></tr>
+<tr><th id="217">217</th><td><i class="doc">/** Should we allow receipt of true-binary data on http2 connections?</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc">    Defaults to on (1) */</i></td></tr>
+<tr><th id="219">219</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_HTTP2_ENABLE_TRUE_BINARY" data-ref="_M/GRPC_ARG_HTTP2_ENABLE_TRUE_BINARY">GRPC_ARG_HTTP2_ENABLE_TRUE_BINARY</dfn> "grpc.http2.true_binary"</u></td></tr>
+<tr><th id="220">220</th><td><i class="doc">/** After a duration of this time the client/server pings its peer to see if the</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc">    transport is still alive. Int valued, milliseconds. */</i></td></tr>
+<tr><th id="222">222</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_KEEPALIVE_TIME_MS" data-ref="_M/GRPC_ARG_KEEPALIVE_TIME_MS">GRPC_ARG_KEEPALIVE_TIME_MS</dfn> "grpc.keepalive_time_ms"</u></td></tr>
+<tr><th id="223">223</th><td><i class="doc">/** After waiting for a duration of this time, if the keepalive ping sender does</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc">    not receive the ping ack, it will close the transport. Int valued,</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc">    milliseconds. */</i></td></tr>
+<tr><th id="226">226</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_KEEPALIVE_TIMEOUT_MS" data-ref="_M/GRPC_ARG_KEEPALIVE_TIMEOUT_MS">GRPC_ARG_KEEPALIVE_TIMEOUT_MS</dfn> "grpc.keepalive_timeout_ms"</u></td></tr>
+<tr><th id="227">227</th><td><i class="doc">/** Is it permissible to send keepalive pings without any outstanding streams.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc">    Int valued, 0(false)/1(true). */</i></td></tr>
+<tr><th id="229">229</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_KEEPALIVE_PERMIT_WITHOUT_CALLS" data-ref="_M/GRPC_ARG_KEEPALIVE_PERMIT_WITHOUT_CALLS">GRPC_ARG_KEEPALIVE_PERMIT_WITHOUT_CALLS</dfn> \</u></td></tr>
+<tr><th id="230">230</th><td><u>  "grpc.keepalive_permit_without_calls"</u></td></tr>
+<tr><th id="231">231</th><td><i class="doc">/** Default authority to pass if none specified on call construction. A string.</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> * */</i></td></tr>
+<tr><th id="233">233</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_DEFAULT_AUTHORITY" data-ref="_M/GRPC_ARG_DEFAULT_AUTHORITY">GRPC_ARG_DEFAULT_AUTHORITY</dfn> "grpc.default_authority"</u></td></tr>
+<tr><th id="234">234</th><td><i class="doc">/** Primary user agent: goes at the start of the user-agent metadata</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc">    sent on each request. A string. */</i></td></tr>
+<tr><th id="236">236</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_PRIMARY_USER_AGENT_STRING" data-ref="_M/GRPC_ARG_PRIMARY_USER_AGENT_STRING">GRPC_ARG_PRIMARY_USER_AGENT_STRING</dfn> "grpc.primary_user_agent"</u></td></tr>
+<tr><th id="237">237</th><td><i class="doc">/** Secondary user agent: goes at the end of the user-agent metadata</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc">    sent on each request. A string. */</i></td></tr>
+<tr><th id="239">239</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SECONDARY_USER_AGENT_STRING" data-ref="_M/GRPC_ARG_SECONDARY_USER_AGENT_STRING">GRPC_ARG_SECONDARY_USER_AGENT_STRING</dfn> "grpc.secondary_user_agent"</u></td></tr>
+<tr><th id="240">240</th><td><i class="doc">/** The minimum time between subsequent connection attempts, in ms */</i></td></tr>
+<tr><th id="241">241</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MIN_RECONNECT_BACKOFF_MS" data-ref="_M/GRPC_ARG_MIN_RECONNECT_BACKOFF_MS">GRPC_ARG_MIN_RECONNECT_BACKOFF_MS</dfn> "grpc.min_reconnect_backoff_ms"</u></td></tr>
+<tr><th id="242">242</th><td><i class="doc">/** The maximum time between subsequent connection attempts, in ms */</i></td></tr>
+<tr><th id="243">243</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_RECONNECT_BACKOFF_MS" data-ref="_M/GRPC_ARG_MAX_RECONNECT_BACKOFF_MS">GRPC_ARG_MAX_RECONNECT_BACKOFF_MS</dfn> "grpc.max_reconnect_backoff_ms"</u></td></tr>
+<tr><th id="244">244</th><td><i class="doc">/** The time between the first and second connection attempts, in ms */</i></td></tr>
+<tr><th id="245">245</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_INITIAL_RECONNECT_BACKOFF_MS" data-ref="_M/GRPC_ARG_INITIAL_RECONNECT_BACKOFF_MS">GRPC_ARG_INITIAL_RECONNECT_BACKOFF_MS</dfn> \</u></td></tr>
+<tr><th id="246">246</th><td><u>  "grpc.initial_reconnect_backoff_ms"</u></td></tr>
+<tr><th id="247">247</th><td><i class="doc">/** Minimum amount of time between DNS resolutions, in ms */</i></td></tr>
+<tr><th id="248">248</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_DNS_MIN_TIME_BETWEEN_RESOLUTIONS_MS" data-ref="_M/GRPC_ARG_DNS_MIN_TIME_BETWEEN_RESOLUTIONS_MS">GRPC_ARG_DNS_MIN_TIME_BETWEEN_RESOLUTIONS_MS</dfn> \</u></td></tr>
+<tr><th id="249">249</th><td><u>  "grpc.dns_min_time_between_resolutions_ms"</u></td></tr>
+<tr><th id="250">250</th><td><i class="doc">/** The timeout used on servers for finishing handshaking on an incoming</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc">    connection.  Defaults to 120 seconds. */</i></td></tr>
+<tr><th id="252">252</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SERVER_HANDSHAKE_TIMEOUT_MS" data-ref="_M/GRPC_ARG_SERVER_HANDSHAKE_TIMEOUT_MS">GRPC_ARG_SERVER_HANDSHAKE_TIMEOUT_MS</dfn> "grpc.server_handshake_timeout_ms"</u></td></tr>
+<tr><th id="253">253</th><td><i class="doc">/** This *should* be used for testing only.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc">    The caller of the secure_channel_create functions may override the target</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc">    name used for SSL host name checking using this channel argument which is of</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc">    type<span class="command"> \a</span> <span class="arg">GRPC_ARG_STRING.</span> If this argument is not specified, the name used</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc">    for SSL host name checking will be the target parameter (assuming that the</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc">    secure channel is an SSL channel). If this parameter is specified and the</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc">    underlying is not an SSL channel, it will just be ignored. */</i></td></tr>
+<tr><th id="260">260</th><td><u>#define <dfn class="macro" id="_M/GRPC_SSL_TARGET_NAME_OVERRIDE_ARG" data-ref="_M/GRPC_SSL_TARGET_NAME_OVERRIDE_ARG">GRPC_SSL_TARGET_NAME_OVERRIDE_ARG</dfn> "grpc.ssl_target_name_override"</u></td></tr>
+<tr><th id="261">261</th><td><i class="doc">/** If non-zero, a pointer to a session cache (a pointer of type</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc">    grpc_ssl_session_cache*). (use grpc_ssl_session_cache_arg_vtable() to fetch</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc">    an appropriate pointer arg vtable) */</i></td></tr>
+<tr><th id="264">264</th><td><u>#define <dfn class="macro" id="_M/GRPC_SSL_SESSION_CACHE_ARG" data-ref="_M/GRPC_SSL_SESSION_CACHE_ARG">GRPC_SSL_SESSION_CACHE_ARG</dfn> "grpc.ssl_session_cache"</u></td></tr>
+<tr><th id="265">265</th><td><i class="doc">/** Maximum metadata size, in bytes. Note this limit applies to the max sum of</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc">    all metadata key-value entries in a batch of headers. */</i></td></tr>
+<tr><th id="267">267</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_METADATA_SIZE" data-ref="_M/GRPC_ARG_MAX_METADATA_SIZE">GRPC_ARG_MAX_METADATA_SIZE</dfn> "grpc.max_metadata_size"</u></td></tr>
+<tr><th id="268">268</th><td><i class="doc">/** If non-zero, allow the use of SO_REUSEPORT if it's available (default 1) */</i></td></tr>
+<tr><th id="269">269</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ALLOW_REUSEPORT" data-ref="_M/GRPC_ARG_ALLOW_REUSEPORT">GRPC_ARG_ALLOW_REUSEPORT</dfn> "grpc.so_reuseport"</u></td></tr>
+<tr><th id="270">270</th><td><i class="doc">/** If non-zero, a pointer to a buffer pool (a pointer of type</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> * grpc_resource_quota*). (use grpc_resource_quota_arg_vtable() to fetch an</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> * appropriate pointer arg vtable) */</i></td></tr>
+<tr><th id="273">273</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_RESOURCE_QUOTA" data-ref="_M/GRPC_ARG_RESOURCE_QUOTA">GRPC_ARG_RESOURCE_QUOTA</dfn> "grpc.resource_quota"</u></td></tr>
+<tr><th id="274">274</th><td><i class="doc">/** If non-zero, expand wildcard addresses to a list of local addresses. */</i></td></tr>
+<tr><th id="275">275</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_EXPAND_WILDCARD_ADDRS" data-ref="_M/GRPC_ARG_EXPAND_WILDCARD_ADDRS">GRPC_ARG_EXPAND_WILDCARD_ADDRS</dfn> "grpc.expand_wildcard_addrs"</u></td></tr>
+<tr><th id="276">276</th><td><i class="doc">/** Service config data in JSON form.</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc">    This value will be ignored if the name resolver returns a service config. */</i></td></tr>
+<tr><th id="278">278</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SERVICE_CONFIG" data-ref="_M/GRPC_ARG_SERVICE_CONFIG">GRPC_ARG_SERVICE_CONFIG</dfn> "grpc.service_config"</u></td></tr>
+<tr><th id="279">279</th><td><i class="doc">/** Disable looking up the service config via the name resolver. */</i></td></tr>
+<tr><th id="280">280</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SERVICE_CONFIG_DISABLE_RESOLUTION" data-ref="_M/GRPC_ARG_SERVICE_CONFIG_DISABLE_RESOLUTION">GRPC_ARG_SERVICE_CONFIG_DISABLE_RESOLUTION</dfn> \</u></td></tr>
+<tr><th id="281">281</th><td><u>  "grpc.service_config_disable_resolution"</u></td></tr>
+<tr><th id="282">282</th><td><i class="doc">/** LB policy name. */</i></td></tr>
+<tr><th id="283">283</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_LB_POLICY_NAME" data-ref="_M/GRPC_ARG_LB_POLICY_NAME">GRPC_ARG_LB_POLICY_NAME</dfn> "grpc.lb_policy_name"</u></td></tr>
+<tr><th id="284">284</th><td><i class="doc">/** The grpc_socket_mutator instance that set the socket options. A pointer. */</i></td></tr>
+<tr><th id="285">285</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SOCKET_MUTATOR" data-ref="_M/GRPC_ARG_SOCKET_MUTATOR">GRPC_ARG_SOCKET_MUTATOR</dfn> "grpc.socket_mutator"</u></td></tr>
+<tr><th id="286">286</th><td><i class="doc">/** The grpc_socket_factory instance to create and bind sockets. A pointer. */</i></td></tr>
+<tr><th id="287">287</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SOCKET_FACTORY" data-ref="_M/GRPC_ARG_SOCKET_FACTORY">GRPC_ARG_SOCKET_FACTORY</dfn> "grpc.socket_factory"</u></td></tr>
+<tr><th id="288">288</th><td><i class="doc">/** The maximum amount of memory used by trace events per channel trace node.</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> * Once the maximum is reached, subsequent events will evict the oldest events</i></td></tr>
+<tr><th id="290">290</th><td><i class="doc"> * from the buffer. The unit for this knob is bytes. Setting it to zero causes</i></td></tr>
+<tr><th id="291">291</th><td><i class="doc"> * channel tracing to be disabled. */</i></td></tr>
+<tr><th id="292">292</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MAX_CHANNEL_TRACE_EVENT_MEMORY_PER_NODE" data-ref="_M/GRPC_ARG_MAX_CHANNEL_TRACE_EVENT_MEMORY_PER_NODE">GRPC_ARG_MAX_CHANNEL_TRACE_EVENT_MEMORY_PER_NODE</dfn> \</u></td></tr>
+<tr><th id="293">293</th><td><u>  "grpc.max_channel_trace_event_memory_per_node"</u></td></tr>
+<tr><th id="294">294</th><td><i class="doc">/** If non-zero, gRPC library will track stats and information at at per channel</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> * level. Disabling channelz naturally disables channel tracing. The default</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> * is for channelz to be disabled. */</i></td></tr>
+<tr><th id="297">297</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_CHANNELZ" data-ref="_M/GRPC_ARG_ENABLE_CHANNELZ">GRPC_ARG_ENABLE_CHANNELZ</dfn> "grpc.enable_channelz"</u></td></tr>
+<tr><th id="298">298</th><td><i class="doc">/** If non-zero, Cronet transport will coalesce packets to fewer frames</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> * when possible. */</i></td></tr>
+<tr><th id="300">300</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_USE_CRONET_PACKET_COALESCING" data-ref="_M/GRPC_ARG_USE_CRONET_PACKET_COALESCING">GRPC_ARG_USE_CRONET_PACKET_COALESCING</dfn> \</u></td></tr>
+<tr><th id="301">301</th><td><u>  "grpc.use_cronet_packet_coalescing"</u></td></tr>
+<tr><th id="302">302</th><td><i class="doc">/** Channel arg (integer) setting how large a slice to try and read from the</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc">   wire each time recvmsg (or equivalent) is called **/</i></td></tr>
+<tr><th id="304">304</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_TCP_READ_CHUNK_SIZE" data-ref="_M/GRPC_ARG_TCP_READ_CHUNK_SIZE">GRPC_ARG_TCP_READ_CHUNK_SIZE</dfn> "grpc.experimental.tcp_read_chunk_size"</u></td></tr>
+<tr><th id="305">305</th><td><i class="doc">/** Note this is not a "channel arg" key. This is the default slice size to use</i></td></tr>
+<tr><th id="306">306</th><td><i class="doc"> * when trying to read from the wire if the GRPC_ARG_TCP_READ_CHUNK_SIZE</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc"> * channel arg is unspecified. */</i></td></tr>
+<tr><th id="308">308</th><td><u>#define <dfn class="macro" id="_M/GRPC_TCP_DEFAULT_READ_SLICE_SIZE" data-ref="_M/GRPC_TCP_DEFAULT_READ_SLICE_SIZE">GRPC_TCP_DEFAULT_READ_SLICE_SIZE</dfn> 8192</u></td></tr>
+<tr><th id="309">309</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_TCP_MIN_READ_CHUNK_SIZE" data-ref="_M/GRPC_ARG_TCP_MIN_READ_CHUNK_SIZE">GRPC_ARG_TCP_MIN_READ_CHUNK_SIZE</dfn> \</u></td></tr>
+<tr><th id="310">310</th><td><u>  "grpc.experimental.tcp_min_read_chunk_size"</u></td></tr>
+<tr><th id="311">311</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_TCP_MAX_READ_CHUNK_SIZE" data-ref="_M/GRPC_ARG_TCP_MAX_READ_CHUNK_SIZE">GRPC_ARG_TCP_MAX_READ_CHUNK_SIZE</dfn> \</u></td></tr>
+<tr><th id="312">312</th><td><u>  "grpc.experimental.tcp_max_read_chunk_size"</u></td></tr>
+<tr><th id="313">313</th><td><i>/* Timeout in milliseconds to use for calls to the grpclb load balancer.</i></td></tr>
+<tr><th id="314">314</th><td><i>   If 0 or unset, the balancer calls will have no deadline. */</i></td></tr>
+<tr><th id="315">315</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_GRPCLB_CALL_TIMEOUT_MS" data-ref="_M/GRPC_ARG_GRPCLB_CALL_TIMEOUT_MS">GRPC_ARG_GRPCLB_CALL_TIMEOUT_MS</dfn> "grpc.grpclb_call_timeout_ms"</u></td></tr>
+<tr><th id="316">316</th><td><i>/* Timeout in milliseconds to wait for the serverlist from the grpclb load</i></td></tr>
+<tr><th id="317">317</th><td><i>   balancer before using fallback backend addresses from the resolver.</i></td></tr>
+<tr><th id="318">318</th><td><i>   If 0, fallback will never be used. Default value is 10000. */</i></td></tr>
+<tr><th id="319">319</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_GRPCLB_FALLBACK_TIMEOUT_MS" data-ref="_M/GRPC_ARG_GRPCLB_FALLBACK_TIMEOUT_MS">GRPC_ARG_GRPCLB_FALLBACK_TIMEOUT_MS</dfn> "grpc.grpclb_fallback_timeout_ms"</u></td></tr>
+<tr><th id="320">320</th><td><i class="doc">/** If non-zero, grpc server's cronet compression workaround will be enabled */</i></td></tr>
+<tr><th id="321">321</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_WORKAROUND_CRONET_COMPRESSION" data-ref="_M/GRPC_ARG_WORKAROUND_CRONET_COMPRESSION">GRPC_ARG_WORKAROUND_CRONET_COMPRESSION</dfn> \</u></td></tr>
+<tr><th id="322">322</th><td><u>  "grpc.workaround.cronet_compression"</u></td></tr>
+<tr><th id="323">323</th><td><i class="doc">/** String defining the optimization target for a channel.</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc">    Can be: "latency"    - attempt to minimize latency at the cost of throughput</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc">            "blend"      - try to balance latency and throughput</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc">            "throughput" - attempt to maximize throughput at the expense of</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc">                           latency</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc">    Defaults to "blend". In the current implementation "blend" is equivalent to</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc">    "latency". */</i></td></tr>
+<tr><th id="330">330</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_OPTIMIZATION_TARGET" data-ref="_M/GRPC_ARG_OPTIMIZATION_TARGET">GRPC_ARG_OPTIMIZATION_TARGET</dfn> "grpc.optimization_target"</u></td></tr>
+<tr><th id="331">331</th><td><i class="doc">/** If set to zero, disables retry behavior. Otherwise, transparent retries</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc">    are enabled for all RPCs, and configurable retries are enabled when they</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc">    are configured via the service config. For details, see:</i></td></tr>
+<tr><th id="334">334</th><td><i class="doc">      <a href="https://github.com/grpc/proposal/blob/master/A6-client-retries.md">https://github.com/grpc/proposal/blob/master/A6-client-retries.md</a></i></td></tr>
+<tr><th id="335">335</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="336">336</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_RETRIES" data-ref="_M/GRPC_ARG_ENABLE_RETRIES">GRPC_ARG_ENABLE_RETRIES</dfn> "grpc.enable_retries"</u></td></tr>
+<tr><th id="337">337</th><td><i class="doc">/** Per-RPC retry buffer size, in bytes. Default is 256 KiB. */</i></td></tr>
+<tr><th id="338">338</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_PER_RPC_RETRY_BUFFER_SIZE" data-ref="_M/GRPC_ARG_PER_RPC_RETRY_BUFFER_SIZE">GRPC_ARG_PER_RPC_RETRY_BUFFER_SIZE</dfn> "grpc.per_rpc_retry_buffer_size"</u></td></tr>
+<tr><th id="339">339</th><td><i class="doc">/** Channel arg that carries the bridged objective c object for custom metrics</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> * logging filter. */</i></td></tr>
+<tr><th id="341">341</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_MOBILE_LOG_CONTEXT" data-ref="_M/GRPC_ARG_MOBILE_LOG_CONTEXT">GRPC_ARG_MOBILE_LOG_CONTEXT</dfn> "grpc.mobile_log_context"</u></td></tr>
+<tr><th id="342">342</th><td><i class="doc">/** If non-zero, client authority filter is disabled for the channel */</i></td></tr>
+<tr><th id="343">343</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_DISABLE_CLIENT_AUTHORITY_FILTER" data-ref="_M/GRPC_ARG_DISABLE_CLIENT_AUTHORITY_FILTER">GRPC_ARG_DISABLE_CLIENT_AUTHORITY_FILTER</dfn> \</u></td></tr>
+<tr><th id="344">344</th><td><u>  "grpc.disable_client_authority_filter"</u></td></tr>
+<tr><th id="345">345</th><td><i class="doc">/** If set to zero, disables use of http proxies. Enabled by default. */</i></td></tr>
+<tr><th id="346">346</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_ENABLE_HTTP_PROXY" data-ref="_M/GRPC_ARG_ENABLE_HTTP_PROXY">GRPC_ARG_ENABLE_HTTP_PROXY</dfn> "grpc.enable_http_proxy"</u></td></tr>
+<tr><th id="347">347</th><td><i class="doc">/** If set to non zero, surfaces the user agent string to the server. User</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc">    agent is surfaced by default. */</i></td></tr>
+<tr><th id="349">349</th><td><u>#define <dfn class="macro" id="_M/GRPC_ARG_SURFACE_USER_AGENT" data-ref="_M/GRPC_ARG_SURFACE_USER_AGENT">GRPC_ARG_SURFACE_USER_AGENT</dfn> "grpc.surface_user_agent"</u></td></tr>
+<tr><th id="350">350</th><td><i class="doc">/** \} */</i></td></tr>
+<tr><th id="351">351</th><td></td></tr>
+<tr><th id="352">352</th><td><i class="doc">/** Result of a grpc call. If the caller satisfies the prerequisites of a</i></td></tr>
+<tr><th id="353">353</th><td><i class="doc">    particular operation, the grpc_call_error returned will be GRPC_CALL_OK.</i></td></tr>
+<tr><th id="354">354</th><td><i class="doc">    Receiving any other value listed here is an indication of a bug in the</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc">    caller. */</i></td></tr>
+<tr><th id="356">356</th><td><b>typedef</b> <b>enum</b> <dfn class="type def" id="grpc_call_error" title='grpc_call_error' data-ref="grpc_call_error" data-ref-filename="grpc_call_error"><a class="type" href="#grpc_call_error" title='grpc_call_error' data-ref="grpc_call_error" data-ref-filename="grpc_call_error">grpc_call_error</a></dfn> {</td></tr>
+<tr><th id="357">357</th><td>  <i class="doc">/** everything went ok */</i></td></tr>
+<tr><th id="358">358</th><td>  <dfn class="enum" id="GRPC_CALL_OK" title='GRPC_CALL_OK' data-ref="GRPC_CALL_OK" data-ref-filename="GRPC_CALL_OK">GRPC_CALL_OK</dfn> = <var>0</var>,</td></tr>
+<tr><th id="359">359</th><td>  <i class="doc">/** something failed, we don't know what */</i></td></tr>
+<tr><th id="360">360</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR" title='GRPC_CALL_ERROR' data-ref="GRPC_CALL_ERROR" data-ref-filename="GRPC_CALL_ERROR">GRPC_CALL_ERROR</dfn>,</td></tr>
+<tr><th id="361">361</th><td>  <i class="doc">/** this method is not available on the server */</i></td></tr>
+<tr><th id="362">362</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_NOT_ON_SERVER" title='GRPC_CALL_ERROR_NOT_ON_SERVER' data-ref="GRPC_CALL_ERROR_NOT_ON_SERVER" data-ref-filename="GRPC_CALL_ERROR_NOT_ON_SERVER">GRPC_CALL_ERROR_NOT_ON_SERVER</dfn>,</td></tr>
+<tr><th id="363">363</th><td>  <i class="doc">/** this method is not available on the client */</i></td></tr>
+<tr><th id="364">364</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_NOT_ON_CLIENT" title='GRPC_CALL_ERROR_NOT_ON_CLIENT' data-ref="GRPC_CALL_ERROR_NOT_ON_CLIENT" data-ref-filename="GRPC_CALL_ERROR_NOT_ON_CLIENT">GRPC_CALL_ERROR_NOT_ON_CLIENT</dfn>,</td></tr>
+<tr><th id="365">365</th><td>  <i class="doc">/** this method must be called before server_accept */</i></td></tr>
+<tr><th id="366">366</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_ALREADY_ACCEPTED" title='GRPC_CALL_ERROR_ALREADY_ACCEPTED' data-ref="GRPC_CALL_ERROR_ALREADY_ACCEPTED" data-ref-filename="GRPC_CALL_ERROR_ALREADY_ACCEPTED">GRPC_CALL_ERROR_ALREADY_ACCEPTED</dfn>,</td></tr>
+<tr><th id="367">367</th><td>  <i class="doc">/** this method must be called before invoke */</i></td></tr>
+<tr><th id="368">368</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_ALREADY_INVOKED" title='GRPC_CALL_ERROR_ALREADY_INVOKED' data-ref="GRPC_CALL_ERROR_ALREADY_INVOKED" data-ref-filename="GRPC_CALL_ERROR_ALREADY_INVOKED">GRPC_CALL_ERROR_ALREADY_INVOKED</dfn>,</td></tr>
+<tr><th id="369">369</th><td>  <i class="doc">/** this method must be called after invoke */</i></td></tr>
+<tr><th id="370">370</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_NOT_INVOKED" title='GRPC_CALL_ERROR_NOT_INVOKED' data-ref="GRPC_CALL_ERROR_NOT_INVOKED" data-ref-filename="GRPC_CALL_ERROR_NOT_INVOKED">GRPC_CALL_ERROR_NOT_INVOKED</dfn>,</td></tr>
+<tr><th id="371">371</th><td>  <i class="doc">/** this call is already finished</i></td></tr>
+<tr><th id="372">372</th><td><i class="doc">      (writes_done or write_status has already been called) */</i></td></tr>
+<tr><th id="373">373</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_ALREADY_FINISHED" title='GRPC_CALL_ERROR_ALREADY_FINISHED' data-ref="GRPC_CALL_ERROR_ALREADY_FINISHED" data-ref-filename="GRPC_CALL_ERROR_ALREADY_FINISHED">GRPC_CALL_ERROR_ALREADY_FINISHED</dfn>,</td></tr>
+<tr><th id="374">374</th><td>  <i class="doc">/** there is already an outstanding read/write operation on the call */</i></td></tr>
+<tr><th id="375">375</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_TOO_MANY_OPERATIONS" title='GRPC_CALL_ERROR_TOO_MANY_OPERATIONS' data-ref="GRPC_CALL_ERROR_TOO_MANY_OPERATIONS" data-ref-filename="GRPC_CALL_ERROR_TOO_MANY_OPERATIONS">GRPC_CALL_ERROR_TOO_MANY_OPERATIONS</dfn>,</td></tr>
+<tr><th id="376">376</th><td>  <i class="doc">/** the flags value was illegal for this call */</i></td></tr>
+<tr><th id="377">377</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_INVALID_FLAGS" title='GRPC_CALL_ERROR_INVALID_FLAGS' data-ref="GRPC_CALL_ERROR_INVALID_FLAGS" data-ref-filename="GRPC_CALL_ERROR_INVALID_FLAGS">GRPC_CALL_ERROR_INVALID_FLAGS</dfn>,</td></tr>
+<tr><th id="378">378</th><td>  <i class="doc">/** invalid metadata was passed to this call */</i></td></tr>
+<tr><th id="379">379</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_INVALID_METADATA" title='GRPC_CALL_ERROR_INVALID_METADATA' data-ref="GRPC_CALL_ERROR_INVALID_METADATA" data-ref-filename="GRPC_CALL_ERROR_INVALID_METADATA">GRPC_CALL_ERROR_INVALID_METADATA</dfn>,</td></tr>
+<tr><th id="380">380</th><td>  <i class="doc">/** invalid message was passed to this call */</i></td></tr>
+<tr><th id="381">381</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_INVALID_MESSAGE" title='GRPC_CALL_ERROR_INVALID_MESSAGE' data-ref="GRPC_CALL_ERROR_INVALID_MESSAGE" data-ref-filename="GRPC_CALL_ERROR_INVALID_MESSAGE">GRPC_CALL_ERROR_INVALID_MESSAGE</dfn>,</td></tr>
+<tr><th id="382">382</th><td>  <i class="doc">/** completion queue for notification has not been registered</i></td></tr>
+<tr><th id="383">383</th><td><i class="doc">   * with the server */</i></td></tr>
+<tr><th id="384">384</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_NOT_SERVER_COMPLETION_QUEUE" title='GRPC_CALL_ERROR_NOT_SERVER_COMPLETION_QUEUE' data-ref="GRPC_CALL_ERROR_NOT_SERVER_COMPLETION_QUEUE" data-ref-filename="GRPC_CALL_ERROR_NOT_SERVER_COMPLETION_QUEUE">GRPC_CALL_ERROR_NOT_SERVER_COMPLETION_QUEUE</dfn>,</td></tr>
+<tr><th id="385">385</th><td>  <i class="doc">/** this batch of operations leads to more operations than allowed */</i></td></tr>
+<tr><th id="386">386</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_BATCH_TOO_BIG" title='GRPC_CALL_ERROR_BATCH_TOO_BIG' data-ref="GRPC_CALL_ERROR_BATCH_TOO_BIG" data-ref-filename="GRPC_CALL_ERROR_BATCH_TOO_BIG">GRPC_CALL_ERROR_BATCH_TOO_BIG</dfn>,</td></tr>
+<tr><th id="387">387</th><td>  <i class="doc">/** payload type requested is not the type registered */</i></td></tr>
+<tr><th id="388">388</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_PAYLOAD_TYPE_MISMATCH" title='GRPC_CALL_ERROR_PAYLOAD_TYPE_MISMATCH' data-ref="GRPC_CALL_ERROR_PAYLOAD_TYPE_MISMATCH" data-ref-filename="GRPC_CALL_ERROR_PAYLOAD_TYPE_MISMATCH">GRPC_CALL_ERROR_PAYLOAD_TYPE_MISMATCH</dfn>,</td></tr>
+<tr><th id="389">389</th><td>  <i class="doc">/** completion queue has been shutdown */</i></td></tr>
+<tr><th id="390">390</th><td>  <dfn class="enum" id="GRPC_CALL_ERROR_COMPLETION_QUEUE_SHUTDOWN" title='GRPC_CALL_ERROR_COMPLETION_QUEUE_SHUTDOWN' data-ref="GRPC_CALL_ERROR_COMPLETION_QUEUE_SHUTDOWN" data-ref-filename="GRPC_CALL_ERROR_COMPLETION_QUEUE_SHUTDOWN">GRPC_CALL_ERROR_COMPLETION_QUEUE_SHUTDOWN</dfn></td></tr>
+<tr><th id="391">391</th><td>} <dfn class="typedef" id="grpc_call_error" title='grpc_call_error' data-type='enum grpc_call_error' data-ref="grpc_call_error" data-ref-filename="grpc_call_error">grpc_call_error</dfn>;</td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td><i class="doc">/** Default send/receive message size limits in bytes. -1 for unlimited. */</i></td></tr>
+<tr><th id="394">394</th><td><i class="doc">/** TODO(roth) Make this match the default receive limit after next release */</i></td></tr>
+<tr><th id="395">395</th><td><u>#define <dfn class="macro" id="_M/GRPC_DEFAULT_MAX_SEND_MESSAGE_LENGTH" data-ref="_M/GRPC_DEFAULT_MAX_SEND_MESSAGE_LENGTH">GRPC_DEFAULT_MAX_SEND_MESSAGE_LENGTH</dfn> -1</u></td></tr>
+<tr><th id="396">396</th><td><u>#define <dfn class="macro" id="_M/GRPC_DEFAULT_MAX_RECV_MESSAGE_LENGTH" data-ref="_M/GRPC_DEFAULT_MAX_RECV_MESSAGE_LENGTH">GRPC_DEFAULT_MAX_RECV_MESSAGE_LENGTH</dfn> (4 * 1024 * 1024)</u></td></tr>
+<tr><th id="397">397</th><td></td></tr>
+<tr><th id="398">398</th><td><i class="doc">/** Write Flags: */</i></td></tr>
+<tr><th id="399">399</th><td><i class="doc">/** Hint that the write may be buffered and need not go out on the wire</i></td></tr>
+<tr><th id="400">400</th><td><i class="doc">    immediately. GRPC is free to buffer the message until the next non-buffered</i></td></tr>
+<tr><th id="401">401</th><td><i class="doc">    write, or until writes_done, but it need not buffer completely or at all. */</i></td></tr>
+<tr><th id="402">402</th><td><u>#define <dfn class="macro" id="_M/GRPC_WRITE_BUFFER_HINT" data-ref="_M/GRPC_WRITE_BUFFER_HINT">GRPC_WRITE_BUFFER_HINT</dfn> (0x00000001u)</u></td></tr>
+<tr><th id="403">403</th><td><i class="doc">/** Force compression to be disabled for a particular write</i></td></tr>
+<tr><th id="404">404</th><td><i class="doc">    (start_write/add_metadata). Illegal on invoke/accept. */</i></td></tr>
+<tr><th id="405">405</th><td><u>#define <dfn class="macro" id="_M/GRPC_WRITE_NO_COMPRESS" data-ref="_M/GRPC_WRITE_NO_COMPRESS">GRPC_WRITE_NO_COMPRESS</dfn> (0x00000002u)</u></td></tr>
+<tr><th id="406">406</th><td><i class="doc">/** Force this message to be written to the socket before completing it */</i></td></tr>
+<tr><th id="407">407</th><td><u>#define <dfn class="macro" id="_M/GRPC_WRITE_THROUGH" data-ref="_M/GRPC_WRITE_THROUGH">GRPC_WRITE_THROUGH</dfn> (0x00000004u)</u></td></tr>
+<tr><th id="408">408</th><td><i class="doc">/** Mask of all valid flags. */</i></td></tr>
+<tr><th id="409">409</th><td><u>#define <dfn class="macro" id="_M/GRPC_WRITE_USED_MASK" data-ref="_M/GRPC_WRITE_USED_MASK">GRPC_WRITE_USED_MASK</dfn> \</u></td></tr>
+<tr><th id="410">410</th><td><u>  (GRPC_WRITE_BUFFER_HINT | GRPC_WRITE_NO_COMPRESS | GRPC_WRITE_THROUGH)</u></td></tr>
+<tr><th id="411">411</th><td></td></tr>
+<tr><th id="412">412</th><td><i class="doc">/** Initial metadata flags */</i></td></tr>
+<tr><th id="413">413</th><td><i class="doc">/** Signal that the call is idempotent */</i></td></tr>
+<tr><th id="414">414</th><td><u>#define <dfn class="macro" id="_M/GRPC_INITIAL_METADATA_IDEMPOTENT_REQUEST" data-ref="_M/GRPC_INITIAL_METADATA_IDEMPOTENT_REQUEST">GRPC_INITIAL_METADATA_IDEMPOTENT_REQUEST</dfn> (0x00000010u)</u></td></tr>
+<tr><th id="415">415</th><td><i class="doc">/** Signal that the call should not return UNAVAILABLE before it has started */</i></td></tr>
+<tr><th id="416">416</th><td><u>#define <dfn class="macro" id="_M/GRPC_INITIAL_METADATA_WAIT_FOR_READY" data-ref="_M/GRPC_INITIAL_METADATA_WAIT_FOR_READY">GRPC_INITIAL_METADATA_WAIT_FOR_READY</dfn> (0x00000020u)</u></td></tr>
+<tr><th id="417">417</th><td><i class="doc">/** Signal that the call is cacheable. GRPC is free to use GET verb */</i></td></tr>
+<tr><th id="418">418</th><td><u>#define <dfn class="macro" id="_M/GRPC_INITIAL_METADATA_CACHEABLE_REQUEST" data-ref="_M/GRPC_INITIAL_METADATA_CACHEABLE_REQUEST">GRPC_INITIAL_METADATA_CACHEABLE_REQUEST</dfn> (0x00000040u)</u></td></tr>
+<tr><th id="419">419</th><td><i class="doc">/** Signal that GRPC_INITIAL_METADATA_WAIT_FOR_READY was explicitly set</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc">    by the calling application. */</i></td></tr>
+<tr><th id="421">421</th><td><u>#define <dfn class="macro" id="_M/GRPC_INITIAL_METADATA_WAIT_FOR_READY_EXPLICITLY_SET" data-ref="_M/GRPC_INITIAL_METADATA_WAIT_FOR_READY_EXPLICITLY_SET">GRPC_INITIAL_METADATA_WAIT_FOR_READY_EXPLICITLY_SET</dfn> (0x00000080u)</u></td></tr>
+<tr><th id="422">422</th><td><i class="doc">/** Signal that the initial metadata should be corked */</i></td></tr>
+<tr><th id="423">423</th><td><u>#define <dfn class="macro" id="_M/GRPC_INITIAL_METADATA_CORKED" data-ref="_M/GRPC_INITIAL_METADATA_CORKED">GRPC_INITIAL_METADATA_CORKED</dfn> (0x00000100u)</u></td></tr>
+<tr><th id="424">424</th><td></td></tr>
+<tr><th id="425">425</th><td><i class="doc">/** Mask of all valid flags */</i></td></tr>
+<tr><th id="426">426</th><td><u>#define <dfn class="macro" id="_M/GRPC_INITIAL_METADATA_USED_MASK" data-ref="_M/GRPC_INITIAL_METADATA_USED_MASK">GRPC_INITIAL_METADATA_USED_MASK</dfn>                  \</u></td></tr>
+<tr><th id="427">427</th><td><u>  (GRPC_INITIAL_METADATA_IDEMPOTENT_REQUEST |            \</u></td></tr>
+<tr><th id="428">428</th><td><u>   GRPC_INITIAL_METADATA_WAIT_FOR_READY |                \</u></td></tr>
+<tr><th id="429">429</th><td><u>   GRPC_INITIAL_METADATA_CACHEABLE_REQUEST |             \</u></td></tr>
+<tr><th id="430">430</th><td><u>   GRPC_INITIAL_METADATA_WAIT_FOR_READY_EXPLICITLY_SET | \</u></td></tr>
+<tr><th id="431">431</th><td><u>   GRPC_INITIAL_METADATA_CORKED | GRPC_WRITE_THROUGH)</u></td></tr>
+<tr><th id="432">432</th><td></td></tr>
+<tr><th id="433">433</th><td><i class="doc">/** A single metadata element */</i></td></tr>
+<tr><th id="434">434</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_metadata" title='grpc_metadata' data-ref="grpc_metadata" data-ref-filename="grpc_metadata"><a class="type" href="#grpc_metadata" title='grpc_metadata' data-ref="grpc_metadata" data-ref-filename="grpc_metadata">grpc_metadata</a></dfn> {</td></tr>
+<tr><th id="435">435</th><td>  <i class="doc">/** the key, value values are expected to line up with grpc_mdelem: if</i></td></tr>
+<tr><th id="436">436</th><td><i class="doc">     changing them, update metadata.h at the same time. */</i></td></tr>
+<tr><th id="437">437</th><td>  <a class="typedef" href="slice.h.html#grpc_slice" title='grpc_slice' data-type='struct grpc_slice' data-ref="grpc_slice" data-ref-filename="grpc_slice">grpc_slice</a> <dfn class="decl field" id="grpc_metadata::key" title='grpc_metadata::key' data-ref="grpc_metadata::key" data-ref-filename="grpc_metadata..key">key</dfn>;</td></tr>
+<tr><th id="438">438</th><td>  <a class="typedef" href="slice.h.html#grpc_slice" title='grpc_slice' data-type='struct grpc_slice' data-ref="grpc_slice" data-ref-filename="grpc_slice">grpc_slice</a> <dfn class="decl field" id="grpc_metadata::value" title='grpc_metadata::value' data-ref="grpc_metadata::value" data-ref-filename="grpc_metadata..value">value</dfn>;</td></tr>
+<tr><th id="439">439</th><td></td></tr>
+<tr><th id="440">440</th><td>  <a class="typedef" href="../../../x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="decl field" id="grpc_metadata::flags" title='grpc_metadata::flags' data-ref="grpc_metadata::flags" data-ref-filename="grpc_metadata..flags">flags</dfn>;</td></tr>
+<tr><th id="441">441</th><td></td></tr>
+<tr><th id="442">442</th><td>  <i class="doc">/** The following fields are reserved for grpc internal use.</i></td></tr>
+<tr><th id="443">443</th><td><i class="doc">      There is no need to initialize them, and they will be set to garbage</i></td></tr>
+<tr><th id="444">444</th><td><i class="doc">      during calls to grpc. */</i></td></tr>
+<tr><th id="445">445</th><td>  <b>struct</b> <i>/* internal */</i> {</td></tr>
+<tr><th id="446">446</th><td>    <em>void</em>* <dfn class="decl field" id="grpc_metadata::(anonymous)::obfuscated" title='grpc_metadata::(anonymous struct)::obfuscated' data-ref="grpc_metadata::(anonymous)::obfuscated" data-ref-filename="grpc_metadata..(anonymous)..obfuscated">obfuscated</dfn>[<var>4</var>];</td></tr>
+<tr><th id="447">447</th><td>  } <dfn class="decl field" id="grpc_metadata::internal_data" title='grpc_metadata::internal_data' data-ref="grpc_metadata::internal_data" data-ref-filename="grpc_metadata..internal_data">internal_data</dfn>;</td></tr>
+<tr><th id="448">448</th><td>} <dfn class="typedef" id="grpc_metadata" title='grpc_metadata' data-type='struct grpc_metadata' data-ref="grpc_metadata" data-ref-filename="grpc_metadata">grpc_metadata</dfn>;</td></tr>
+<tr><th id="449">449</th><td></td></tr>
+<tr><th id="450">450</th><td><i class="doc">/** The type of completion (for grpc_event) */</i></td></tr>
+<tr><th id="451">451</th><td><b>typedef</b> <b>enum</b> <dfn class="type def" id="grpc_completion_type" title='grpc_completion_type' data-ref="grpc_completion_type" data-ref-filename="grpc_completion_type"><a class="type" href="#grpc_completion_type" title='grpc_completion_type' data-ref="grpc_completion_type" data-ref-filename="grpc_completion_type">grpc_completion_type</a></dfn> {</td></tr>
+<tr><th id="452">452</th><td>  <i class="doc">/** Shutting down */</i></td></tr>
+<tr><th id="453">453</th><td>  <dfn class="enum" id="GRPC_QUEUE_SHUTDOWN" title='GRPC_QUEUE_SHUTDOWN' data-ref="GRPC_QUEUE_SHUTDOWN" data-ref-filename="GRPC_QUEUE_SHUTDOWN">GRPC_QUEUE_SHUTDOWN</dfn>,</td></tr>
+<tr><th id="454">454</th><td>  <i class="doc">/** No event before timeout */</i></td></tr>
+<tr><th id="455">455</th><td>  <dfn class="enum" id="GRPC_QUEUE_TIMEOUT" title='GRPC_QUEUE_TIMEOUT' data-ref="GRPC_QUEUE_TIMEOUT" data-ref-filename="GRPC_QUEUE_TIMEOUT">GRPC_QUEUE_TIMEOUT</dfn>,</td></tr>
+<tr><th id="456">456</th><td>  <i class="doc">/** Operation completion */</i></td></tr>
+<tr><th id="457">457</th><td>  <dfn class="enum" id="GRPC_OP_COMPLETE" title='GRPC_OP_COMPLETE' data-ref="GRPC_OP_COMPLETE" data-ref-filename="GRPC_OP_COMPLETE">GRPC_OP_COMPLETE</dfn></td></tr>
+<tr><th id="458">458</th><td>} <dfn class="typedef" id="grpc_completion_type" title='grpc_completion_type' data-type='enum grpc_completion_type' data-ref="grpc_completion_type" data-ref-filename="grpc_completion_type">grpc_completion_type</dfn>;</td></tr>
+<tr><th id="459">459</th><td></td></tr>
+<tr><th id="460">460</th><td><i class="doc">/** The result of an operation.</i></td></tr>
+<tr><th id="461">461</th><td><i class="doc"></i></td></tr>
+<tr><th id="462">462</th><td><i class="doc">    Returned by a completion queue when the operation started with tag. */</i></td></tr>
+<tr><th id="463">463</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_event" title='grpc_event' data-ref="grpc_event" data-ref-filename="grpc_event"><a class="type" href="#grpc_event" title='grpc_event' data-ref="grpc_event" data-ref-filename="grpc_event">grpc_event</a></dfn> {</td></tr>
+<tr><th id="464">464</th><td>  <i class="doc">/** The type of the completion. */</i></td></tr>
+<tr><th id="465">465</th><td>  <a class="typedef" href="#grpc_completion_type" title='grpc_completion_type' data-type='enum grpc_completion_type' data-ref="grpc_completion_type" data-ref-filename="grpc_completion_type">grpc_completion_type</a> <dfn class="decl field" id="grpc_event::type" title='grpc_event::type' data-ref="grpc_event::type" data-ref-filename="grpc_event..type">type</dfn>;</td></tr>
+<tr><th id="466">466</th><td>  <i class="doc">/** If the grpc_completion_type is GRPC_OP_COMPLETE, this field indicates</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc">      whether the operation was successful or not; 0 in case of failure and</i></td></tr>
+<tr><th id="468">468</th><td><i class="doc">      non-zero in case of success.</i></td></tr>
+<tr><th id="469">469</th><td><i class="doc">      If grpc_completion_type is GRPC_QUEUE_SHUTDOWN or GRPC_QUEUE_TIMEOUT, this</i></td></tr>
+<tr><th id="470">470</th><td><i class="doc">      field is guaranteed to be 0 */</i></td></tr>
+<tr><th id="471">471</th><td>  <em>int</em> <dfn class="decl field" id="grpc_event::success" title='grpc_event::success' data-ref="grpc_event::success" data-ref-filename="grpc_event..success">success</dfn>;</td></tr>
+<tr><th id="472">472</th><td>  <i class="doc">/** The tag passed to grpc_call_start_batch etc to start this operation.</i></td></tr>
+<tr><th id="473">473</th><td><i class="doc">      Only GRPC_OP_COMPLETE has a tag. */</i></td></tr>
+<tr><th id="474">474</th><td>  <em>void</em>* <dfn class="decl field" id="grpc_event::tag" title='grpc_event::tag' data-ref="grpc_event::tag" data-ref-filename="grpc_event..tag">tag</dfn>;</td></tr>
+<tr><th id="475">475</th><td>} <dfn class="typedef" id="grpc_event" title='grpc_event' data-type='struct grpc_event' data-ref="grpc_event" data-ref-filename="grpc_event">grpc_event</dfn>;</td></tr>
+<tr><th id="476">476</th><td></td></tr>
+<tr><th id="477">477</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="478">478</th><td>  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl field" id="(anonymous)::count" title='(anonymous struct)::count' data-ref="(anonymous)::count" data-ref-filename="(anonymous)..count">count</dfn>;</td></tr>
+<tr><th id="479">479</th><td>  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl field" id="(anonymous)::capacity" title='(anonymous struct)::capacity' data-ref="(anonymous)::capacity" data-ref-filename="(anonymous)..capacity">capacity</dfn>;</td></tr>
+<tr><th id="480">480</th><td>  <a class="typedef" href="#grpc_metadata" title='grpc_metadata' data-type='struct grpc_metadata' data-ref="grpc_metadata" data-ref-filename="grpc_metadata">grpc_metadata</a>* <dfn class="decl field" id="(anonymous)::metadata" title='(anonymous struct)::metadata' data-ref="(anonymous)::metadata" data-ref-filename="(anonymous)..metadata">metadata</dfn>;</td></tr>
+<tr><th id="481">481</th><td>} <dfn class="typedef" id="grpc_metadata_array" title='grpc_metadata_array' data-type='struct grpc_metadata_array' data-ref="grpc_metadata_array" data-ref-filename="grpc_metadata_array">grpc_metadata_array</dfn>;</td></tr>
+<tr><th id="482">482</th><td></td></tr>
+<tr><th id="483">483</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="484">484</th><td>  <a class="typedef" href="slice.h.html#grpc_slice" title='grpc_slice' data-type='struct grpc_slice' data-ref="grpc_slice" data-ref-filename="grpc_slice">grpc_slice</a> <dfn class="decl field" id="(anonymous)::method" title='(anonymous struct)::method' data-ref="(anonymous)::method" data-ref-filename="(anonymous)..method">method</dfn>;</td></tr>
+<tr><th id="485">485</th><td>  <a class="typedef" href="slice.h.html#grpc_slice" title='grpc_slice' data-type='struct grpc_slice' data-ref="grpc_slice" data-ref-filename="grpc_slice">grpc_slice</a> <dfn class="decl field" id="(anonymous)::host" title='(anonymous struct)::host' data-ref="(anonymous)::host" data-ref-filename="(anonymous)..host">host</dfn>;</td></tr>
+<tr><th id="486">486</th><td>  <a class="typedef" href="gpr_types.h.html#gpr_timespec" title='gpr_timespec' data-type='struct gpr_timespec' data-ref="gpr_timespec" data-ref-filename="gpr_timespec">gpr_timespec</a> <dfn class="decl field" id="(anonymous)::deadline" title='(anonymous struct)::deadline' data-ref="(anonymous)::deadline" data-ref-filename="(anonymous)..deadline">deadline</dfn>;</td></tr>
+<tr><th id="487">487</th><td>  <a class="typedef" href="../../../x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="decl field" id="(anonymous)::flags" title='(anonymous struct)::flags' data-ref="(anonymous)::flags" data-ref-filename="(anonymous)..flags">flags</dfn>;</td></tr>
+<tr><th id="488">488</th><td>  <em>void</em>* <dfn class="decl field" id="(anonymous)::reserved" title='(anonymous struct)::reserved' data-ref="(anonymous)::reserved" data-ref-filename="(anonymous)..reserved">reserved</dfn>;</td></tr>
+<tr><th id="489">489</th><td>} <dfn class="typedef" id="grpc_call_details" title='grpc_call_details' data-type='struct grpc_call_details' data-ref="grpc_call_details" data-ref-filename="grpc_call_details">grpc_call_details</dfn>;</td></tr>
+<tr><th id="490">490</th><td></td></tr>
+<tr><th id="491">491</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="492">492</th><td>  <i class="doc">/** Send initial metadata: one and only one instance MUST be sent for each</i></td></tr>
+<tr><th id="493">493</th><td><i class="doc">      call, unless the call was cancelled - in which case this can be skipped.</i></td></tr>
+<tr><th id="494">494</th><td><i class="doc">      This op completes after all bytes of metadata have been accepted by</i></td></tr>
+<tr><th id="495">495</th><td><i class="doc">      outgoing flow control. */</i></td></tr>
+<tr><th id="496">496</th><td>  <dfn class="enum" id="GRPC_OP_SEND_INITIAL_METADATA" title='GRPC_OP_SEND_INITIAL_METADATA' data-ref="GRPC_OP_SEND_INITIAL_METADATA" data-ref-filename="GRPC_OP_SEND_INITIAL_METADATA">GRPC_OP_SEND_INITIAL_METADATA</dfn> = <var>0</var>,</td></tr>
+<tr><th id="497">497</th><td>  <i class="doc">/** Send a message: 0 or more of these operations can occur for each call.</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc">      This op completes after all bytes for the message have been accepted by</i></td></tr>
+<tr><th id="499">499</th><td><i class="doc">      outgoing flow control. */</i></td></tr>
+<tr><th id="500">500</th><td>  <dfn class="enum" id="GRPC_OP_SEND_MESSAGE" title='GRPC_OP_SEND_MESSAGE' data-ref="GRPC_OP_SEND_MESSAGE" data-ref-filename="GRPC_OP_SEND_MESSAGE">GRPC_OP_SEND_MESSAGE</dfn>,</td></tr>
+<tr><th id="501">501</th><td>  <i class="doc">/** Send a close from the client: one and only one instance MUST be sent from</i></td></tr>
+<tr><th id="502">502</th><td><i class="doc">      the client, unless the call was cancelled - in which case this can be</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc">      skipped. This op completes after all bytes for the call</i></td></tr>
+<tr><th id="504">504</th><td><i class="doc">      (including the close) have passed outgoing flow control. */</i></td></tr>
+<tr><th id="505">505</th><td>  <dfn class="enum" id="GRPC_OP_SEND_CLOSE_FROM_CLIENT" title='GRPC_OP_SEND_CLOSE_FROM_CLIENT' data-ref="GRPC_OP_SEND_CLOSE_FROM_CLIENT" data-ref-filename="GRPC_OP_SEND_CLOSE_FROM_CLIENT">GRPC_OP_SEND_CLOSE_FROM_CLIENT</dfn>,</td></tr>
+<tr><th id="506">506</th><td>  <i class="doc">/** Send status from the server: one and only one instance MUST be sent from</i></td></tr>
+<tr><th id="507">507</th><td><i class="doc">      the server unless the call was cancelled - in which case this can be</i></td></tr>
+<tr><th id="508">508</th><td><i class="doc">      skipped. This op completes after all bytes for the call</i></td></tr>
+<tr><th id="509">509</th><td><i class="doc">      (including the status) have passed outgoing flow control. */</i></td></tr>
+<tr><th id="510">510</th><td>  <dfn class="enum" id="GRPC_OP_SEND_STATUS_FROM_SERVER" title='GRPC_OP_SEND_STATUS_FROM_SERVER' data-ref="GRPC_OP_SEND_STATUS_FROM_SERVER" data-ref-filename="GRPC_OP_SEND_STATUS_FROM_SERVER">GRPC_OP_SEND_STATUS_FROM_SERVER</dfn>,</td></tr>
+<tr><th id="511">511</th><td>  <i class="doc">/** Receive initial metadata: one and only one MUST be made on the client,</i></td></tr>
+<tr><th id="512">512</th><td><i class="doc">      must not be made on the server.</i></td></tr>
+<tr><th id="513">513</th><td><i class="doc">      This op completes after all initial metadata has been read from the</i></td></tr>
+<tr><th id="514">514</th><td><i class="doc">      peer. */</i></td></tr>
+<tr><th id="515">515</th><td>  <dfn class="enum" id="GRPC_OP_RECV_INITIAL_METADATA" title='GRPC_OP_RECV_INITIAL_METADATA' data-ref="GRPC_OP_RECV_INITIAL_METADATA" data-ref-filename="GRPC_OP_RECV_INITIAL_METADATA">GRPC_OP_RECV_INITIAL_METADATA</dfn>,</td></tr>
+<tr><th id="516">516</th><td>  <i class="doc">/** Receive a message: 0 or more of these operations can occur for each call.</i></td></tr>
+<tr><th id="517">517</th><td><i class="doc">      This op completes after all bytes of the received message have been</i></td></tr>
+<tr><th id="518">518</th><td><i class="doc">      read, or after a half-close has been received on this call. */</i></td></tr>
+<tr><th id="519">519</th><td>  <dfn class="enum" id="GRPC_OP_RECV_MESSAGE" title='GRPC_OP_RECV_MESSAGE' data-ref="GRPC_OP_RECV_MESSAGE" data-ref-filename="GRPC_OP_RECV_MESSAGE">GRPC_OP_RECV_MESSAGE</dfn>,</td></tr>
+<tr><th id="520">520</th><td>  <i class="doc">/** Receive status on the client: one and only one must be made on the client.</i></td></tr>
+<tr><th id="521">521</th><td><i class="doc">      This operation always succeeds, meaning ops paired with this operation</i></td></tr>
+<tr><th id="522">522</th><td><i class="doc">      will also appear to succeed, even though they may not have. In that case</i></td></tr>
+<tr><th id="523">523</th><td><i class="doc">      the status will indicate some failure.</i></td></tr>
+<tr><th id="524">524</th><td><i class="doc">      This op completes after all activity on the call has completed. */</i></td></tr>
+<tr><th id="525">525</th><td>  <dfn class="enum" id="GRPC_OP_RECV_STATUS_ON_CLIENT" title='GRPC_OP_RECV_STATUS_ON_CLIENT' data-ref="GRPC_OP_RECV_STATUS_ON_CLIENT" data-ref-filename="GRPC_OP_RECV_STATUS_ON_CLIENT">GRPC_OP_RECV_STATUS_ON_CLIENT</dfn>,</td></tr>
+<tr><th id="526">526</th><td>  <i class="doc">/** Receive close on the server: one and only one must be made on the</i></td></tr>
+<tr><th id="527">527</th><td><i class="doc">      server. This op completes after the close has been received by the</i></td></tr>
+<tr><th id="528">528</th><td><i class="doc">      server. This operation always succeeds, meaning ops paired with</i></td></tr>
+<tr><th id="529">529</th><td><i class="doc">      this operation will also appear to succeed, even though they may not</i></td></tr>
+<tr><th id="530">530</th><td><i class="doc">      have. */</i></td></tr>
+<tr><th id="531">531</th><td>  <dfn class="enum" id="GRPC_OP_RECV_CLOSE_ON_SERVER" title='GRPC_OP_RECV_CLOSE_ON_SERVER' data-ref="GRPC_OP_RECV_CLOSE_ON_SERVER" data-ref-filename="GRPC_OP_RECV_CLOSE_ON_SERVER">GRPC_OP_RECV_CLOSE_ON_SERVER</dfn></td></tr>
+<tr><th id="532">532</th><td>} <dfn class="typedef" id="grpc_op_type" title='grpc_op_type' data-type='enum grpc_op_type' data-ref="grpc_op_type" data-ref-filename="grpc_op_type">grpc_op_type</dfn>;</td></tr>
+<tr><th id="533">533</th><td></td></tr>
+<tr><th id="534">534</th><td><b>struct</b> <a class="type" href="#grpc_byte_buffer" title='grpc_byte_buffer' data-ref="grpc_byte_buffer" data-ref-filename="grpc_byte_buffer">grpc_byte_buffer</a>;</td></tr>
+<tr><th id="535">535</th><td></td></tr>
+<tr><th id="536">536</th><td><i class="doc">/** Operation data: one field for each op type (except SEND_CLOSE_FROM_CLIENT</i></td></tr>
+<tr><th id="537">537</th><td><i class="doc">   which has no arguments) */</i></td></tr>
+<tr><th id="538">538</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_op" title='grpc_op' data-ref="grpc_op" data-ref-filename="grpc_op"><a class="type" href="#grpc_op" title='grpc_op' data-ref="grpc_op" data-ref-filename="grpc_op">grpc_op</a></dfn> {</td></tr>
+<tr><th id="539">539</th><td>  <i class="doc">/** Operation type, as defined by grpc_op_type */</i></td></tr>
+<tr><th id="540">540</th><td>  <a class="typedef" href="#grpc_op_type" title='grpc_op_type' data-type='enum grpc_op_type' data-ref="grpc_op_type" data-ref-filename="grpc_op_type">grpc_op_type</a> <dfn class="decl field" id="grpc_op::op" title='grpc_op::op' data-ref="grpc_op::op" data-ref-filename="grpc_op..op">op</dfn>;</td></tr>
+<tr><th id="541">541</th><td>  <i class="doc">/** Write flags bitset for grpc_begin_messages */</i></td></tr>
+<tr><th id="542">542</th><td>  <a class="typedef" href="../../../x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="decl field" id="grpc_op::flags" title='grpc_op::flags' data-ref="grpc_op::flags" data-ref-filename="grpc_op..flags">flags</dfn>;</td></tr>
+<tr><th id="543">543</th><td>  <i class="doc">/** Reserved for future usage */</i></td></tr>
+<tr><th id="544">544</th><td>  <em>void</em>* <dfn class="decl field" id="grpc_op::reserved" title='grpc_op::reserved' data-ref="grpc_op::reserved" data-ref-filename="grpc_op..reserved">reserved</dfn>;</td></tr>
+<tr><th id="545">545</th><td>  <b>union</b> <dfn class="type def" id="grpc_op::grpc_op_data" title='grpc_op::grpc_op_data' data-ref="grpc_op::grpc_op_data" data-ref-filename="grpc_op..grpc_op_data"><a class="type" href="#grpc_op::grpc_op_data" title='grpc_op::grpc_op_data' data-ref="grpc_op::grpc_op_data" data-ref-filename="grpc_op..grpc_op_data">grpc_op_data</a></dfn> {</td></tr>
+<tr><th id="546">546</th><td>    <i class="doc">/** Reserved for future usage */</i></td></tr>
+<tr><th id="547">547</th><td>    <b>struct</b> <i>/* internal */</i> {</td></tr>
+<tr><th id="548">548</th><td>      <em>void</em>* <dfn class="decl field" id="grpc_op::grpc_op_data::(anonymous)::reserved" title='grpc_op::grpc_op_data::(anonymous struct)::reserved' data-ref="grpc_op::grpc_op_data::(anonymous)::reserved" data-ref-filename="grpc_op..grpc_op_data..(anonymous)..reserved">reserved</dfn>[<var>8</var>];</td></tr>
+<tr><th id="549">549</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::reserved" title='grpc_op::grpc_op_data::reserved' data-ref="grpc_op::grpc_op_data::reserved" data-ref-filename="grpc_op..grpc_op_data..reserved">reserved</dfn>;</td></tr>
+<tr><th id="550">550</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_send_initial_metadata" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata">grpc_op_send_initial_metadata</a></dfn> {</td></tr>
+<tr><th id="551">551</th><td>      <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::count" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::count' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::count" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..count">count</dfn>;</td></tr>
+<tr><th id="552">552</th><td>      <a class="typedef" href="#grpc_metadata" title='grpc_metadata' data-type='struct grpc_metadata' data-ref="grpc_metadata" data-ref-filename="grpc_metadata">grpc_metadata</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::metadata" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::metadata' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..metadata">metadata</dfn>;</td></tr>
+<tr><th id="553">553</th><td>      <i class="doc">/** If<span class="command"> \a</span> <span class="arg">is_set,</span><span class="command"> \a</span> <span class="arg">compression_level</span> will be used for the call.</i></td></tr>
+<tr><th id="554">554</th><td><i class="doc">       * Otherwise,<span class="command"> \a</span> <span class="arg">compression_level</span> won't be considered */</i></td></tr>
+<tr><th id="555">555</th><td>      <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..grpc_op_send_initial_metadata_maybe_compression_level"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..grpc_op_send_initial_metadata_maybe_compression_level">grpc_op_send_initial_metadata_maybe_compression_level</a></dfn> {</td></tr>
+<tr><th id="556">556</th><td>        <a class="typedef" href="../../../x86_64-linux-gnu/bits/stdint-uintn.h.html#uint8_t" title='uint8_t' data-type='__uint8_t' data-ref="uint8_t" data-ref-filename="uint8_t">uint8_t</a> <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level::is_set" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level::is_set' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level::is_set" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..grpc_op_send_initial_metadata_maybe_compression_level..is_set">is_set</dfn>;</td></tr>
+<tr><th id="557">557</th><td>        <a class="typedef" href="compression_types.h.html#grpc_compression_level" title='grpc_compression_level' data-type='enum grpc_compression_level' data-ref="grpc_compression_level" data-ref-filename="grpc_compression_level">grpc_compression_level</a> <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level::level" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level::level' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::grpc_op_send_initial_metadata_maybe_compression_level::level" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..grpc_op_send_initial_metadata_maybe_compression_level..level">level</dfn>;</td></tr>
+<tr><th id="558">558</th><td>      } <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::maybe_compression_level" title='grpc_op::grpc_op_data::grpc_op_send_initial_metadata::maybe_compression_level' data-ref="grpc_op::grpc_op_data::grpc_op_send_initial_metadata::maybe_compression_level" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_initial_metadata..maybe_compression_level">maybe_compression_level</dfn>;</td></tr>
+<tr><th id="559">559</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::send_initial_metadata" title='grpc_op::grpc_op_data::send_initial_metadata' data-ref="grpc_op::grpc_op_data::send_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..send_initial_metadata">send_initial_metadata</dfn>;</td></tr>
+<tr><th id="560">560</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_send_message" title='grpc_op::grpc_op_data::grpc_op_send_message' data-ref="grpc_op::grpc_op_data::grpc_op_send_message" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_message"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_send_message" title='grpc_op::grpc_op_data::grpc_op_send_message' data-ref="grpc_op::grpc_op_data::grpc_op_send_message" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_message">grpc_op_send_message</a></dfn> {</td></tr>
+<tr><th id="561">561</th><td>      <i class="doc">/** This op takes ownership of the slices in send_message.  After</i></td></tr>
+<tr><th id="562">562</th><td><i class="doc">       * a call completes, the contents of send_message are not guaranteed</i></td></tr>
+<tr><th id="563">563</th><td><i class="doc">       * and likely empty.  The original owner should still call</i></td></tr>
+<tr><th id="564">564</th><td><i class="doc">       * grpc_byte_buffer_destroy() on this object however.</i></td></tr>
+<tr><th id="565">565</th><td><i class="doc">       */</i></td></tr>
+<tr><th id="566">566</th><td>      <b>struct</b> <a class="type" href="#grpc_byte_buffer" title='grpc_byte_buffer' data-ref="grpc_byte_buffer" data-ref-filename="grpc_byte_buffer">grpc_byte_buffer</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_message::send_message" title='grpc_op::grpc_op_data::grpc_op_send_message::send_message' data-ref="grpc_op::grpc_op_data::grpc_op_send_message::send_message" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_message..send_message">send_message</dfn>;</td></tr>
+<tr><th id="567">567</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::send_message" title='grpc_op::grpc_op_data::send_message' data-ref="grpc_op::grpc_op_data::send_message" data-ref-filename="grpc_op..grpc_op_data..send_message">send_message</dfn>;</td></tr>
+<tr><th id="568">568</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_send_status_from_server" title='grpc_op::grpc_op_data::grpc_op_send_status_from_server' data-ref="grpc_op::grpc_op_data::grpc_op_send_status_from_server" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_status_from_server"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_send_status_from_server" title='grpc_op::grpc_op_data::grpc_op_send_status_from_server' data-ref="grpc_op::grpc_op_data::grpc_op_send_status_from_server" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_status_from_server">grpc_op_send_status_from_server</a></dfn> {</td></tr>
+<tr><th id="569">569</th><td>      <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_status_from_server::trailing_metadata_count" title='grpc_op::grpc_op_data::grpc_op_send_status_from_server::trailing_metadata_count' data-ref="grpc_op::grpc_op_data::grpc_op_send_status_from_server::trailing_metadata_count" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_status_from_server..trailing_metadata_count">trailing_metadata_count</dfn>;</td></tr>
+<tr><th id="570">570</th><td>      <a class="typedef" href="#grpc_metadata" title='grpc_metadata' data-type='struct grpc_metadata' data-ref="grpc_metadata" data-ref-filename="grpc_metadata">grpc_metadata</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_status_from_server::trailing_metadata" title='grpc_op::grpc_op_data::grpc_op_send_status_from_server::trailing_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_send_status_from_server::trailing_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_status_from_server..trailing_metadata">trailing_metadata</dfn>;</td></tr>
+<tr><th id="571">571</th><td>      <a class="typedef" href="status.h.html#grpc_status_code" title='grpc_status_code' data-type='enum grpc_status_code' data-ref="grpc_status_code" data-ref-filename="grpc_status_code">grpc_status_code</a> <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_status_from_server::status" title='grpc_op::grpc_op_data::grpc_op_send_status_from_server::status' data-ref="grpc_op::grpc_op_data::grpc_op_send_status_from_server::status" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_status_from_server..status">status</dfn>;</td></tr>
+<tr><th id="572">572</th><td>      <i class="doc">/** optional: set to NULL if no details need sending, non-NULL if they do</i></td></tr>
+<tr><th id="573">573</th><td><i class="doc">       * pointer will not be retained past the start_batch call</i></td></tr>
+<tr><th id="574">574</th><td><i class="doc">       */</i></td></tr>
+<tr><th id="575">575</th><td>      <a class="typedef" href="slice.h.html#grpc_slice" title='grpc_slice' data-type='struct grpc_slice' data-ref="grpc_slice" data-ref-filename="grpc_slice">grpc_slice</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_send_status_from_server::status_details" title='grpc_op::grpc_op_data::grpc_op_send_status_from_server::status_details' data-ref="grpc_op::grpc_op_data::grpc_op_send_status_from_server::status_details" data-ref-filename="grpc_op..grpc_op_data..grpc_op_send_status_from_server..status_details">status_details</dfn>;</td></tr>
+<tr><th id="576">576</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::send_status_from_server" title='grpc_op::grpc_op_data::send_status_from_server' data-ref="grpc_op::grpc_op_data::send_status_from_server" data-ref-filename="grpc_op..grpc_op_data..send_status_from_server">send_status_from_server</dfn>;</td></tr>
+<tr><th id="577">577</th><td>    <i class="doc">/** ownership of the array is with the caller, but ownership of the elements</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc">        stays with the call object (ie key, value members are owned by the call</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc">        object, recv_initial_metadata-&gt;array is owned by the caller).</i></td></tr>
+<tr><th id="580">580</th><td><i class="doc">        After the operation completes, call grpc_metadata_array_destroy on this</i></td></tr>
+<tr><th id="581">581</th><td><i class="doc">        value, or reuse it in a future op. */</i></td></tr>
+<tr><th id="582">582</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_recv_initial_metadata" title='grpc_op::grpc_op_data::grpc_op_recv_initial_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_recv_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_initial_metadata"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_recv_initial_metadata" title='grpc_op::grpc_op_data::grpc_op_recv_initial_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_recv_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_initial_metadata">grpc_op_recv_initial_metadata</a></dfn> {</td></tr>
+<tr><th id="583">583</th><td>      <a class="typedef" href="#grpc_metadata_array" title='grpc_metadata_array' data-type='struct grpc_metadata_array' data-ref="grpc_metadata_array" data-ref-filename="grpc_metadata_array">grpc_metadata_array</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_initial_metadata::recv_initial_metadata" title='grpc_op::grpc_op_data::grpc_op_recv_initial_metadata::recv_initial_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_recv_initial_metadata::recv_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_initial_metadata..recv_initial_metadata">recv_initial_metadata</dfn>;</td></tr>
+<tr><th id="584">584</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::recv_initial_metadata" title='grpc_op::grpc_op_data::recv_initial_metadata' data-ref="grpc_op::grpc_op_data::recv_initial_metadata" data-ref-filename="grpc_op..grpc_op_data..recv_initial_metadata">recv_initial_metadata</dfn>;</td></tr>
+<tr><th id="585">585</th><td>    <i class="doc">/** ownership of the byte buffer is moved to the caller; the caller must</i></td></tr>
+<tr><th id="586">586</th><td><i class="doc">        call grpc_byte_buffer_destroy on this value, or reuse it in a future op.</i></td></tr>
+<tr><th id="587">587</th><td><i class="doc">        The returned byte buffer will be NULL if trailing metadata was</i></td></tr>
+<tr><th id="588">588</th><td><i class="doc">        received instead of a message.</i></td></tr>
+<tr><th id="589">589</th><td><i class="doc">       */</i></td></tr>
+<tr><th id="590">590</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_recv_message" title='grpc_op::grpc_op_data::grpc_op_recv_message' data-ref="grpc_op::grpc_op_data::grpc_op_recv_message" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_message"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_recv_message" title='grpc_op::grpc_op_data::grpc_op_recv_message' data-ref="grpc_op::grpc_op_data::grpc_op_recv_message" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_message">grpc_op_recv_message</a></dfn> {</td></tr>
+<tr><th id="591">591</th><td>      <b>struct</b> <a class="type" href="#grpc_byte_buffer" title='grpc_byte_buffer' data-ref="grpc_byte_buffer" data-ref-filename="grpc_byte_buffer">grpc_byte_buffer</a>** <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_message::recv_message" title='grpc_op::grpc_op_data::grpc_op_recv_message::recv_message' data-ref="grpc_op::grpc_op_data::grpc_op_recv_message::recv_message" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_message..recv_message">recv_message</dfn>;</td></tr>
+<tr><th id="592">592</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::recv_message" title='grpc_op::grpc_op_data::recv_message' data-ref="grpc_op::grpc_op_data::recv_message" data-ref-filename="grpc_op..grpc_op_data..recv_message">recv_message</dfn>;</td></tr>
+<tr><th id="593">593</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_recv_status_on_client" title='grpc_op::grpc_op_data::grpc_op_recv_status_on_client' data-ref="grpc_op::grpc_op_data::grpc_op_recv_status_on_client" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_status_on_client"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_recv_status_on_client" title='grpc_op::grpc_op_data::grpc_op_recv_status_on_client' data-ref="grpc_op::grpc_op_data::grpc_op_recv_status_on_client" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_status_on_client">grpc_op_recv_status_on_client</a></dfn> {</td></tr>
+<tr><th id="594">594</th><td>      <i class="doc">/** ownership of the array is with the caller, but ownership of the</i></td></tr>
+<tr><th id="595">595</th><td><i class="doc">          elements stays with the call object (ie key, value members are owned</i></td></tr>
+<tr><th id="596">596</th><td><i class="doc">          by the call object, trailing_metadata-&gt;array is owned by the caller).</i></td></tr>
+<tr><th id="597">597</th><td><i class="doc">          After the operation completes, call grpc_metadata_array_destroy on</i></td></tr>
+<tr><th id="598">598</th><td><i class="doc">          this value, or reuse it in a future op. */</i></td></tr>
+<tr><th id="599">599</th><td>      <a class="typedef" href="#grpc_metadata_array" title='grpc_metadata_array' data-type='struct grpc_metadata_array' data-ref="grpc_metadata_array" data-ref-filename="grpc_metadata_array">grpc_metadata_array</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::trailing_metadata" title='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::trailing_metadata' data-ref="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::trailing_metadata" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_status_on_client..trailing_metadata">trailing_metadata</dfn>;</td></tr>
+<tr><th id="600">600</th><td>      <a class="typedef" href="status.h.html#grpc_status_code" title='grpc_status_code' data-type='enum grpc_status_code' data-ref="grpc_status_code" data-ref-filename="grpc_status_code">grpc_status_code</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status" title='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status' data-ref="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_status_on_client..status">status</dfn>;</td></tr>
+<tr><th id="601">601</th><td>      <a class="typedef" href="slice.h.html#grpc_slice" title='grpc_slice' data-type='struct grpc_slice' data-ref="grpc_slice" data-ref-filename="grpc_slice">grpc_slice</a>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status_details" title='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status_details' data-ref="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status_details" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_status_on_client..status_details">status_details</dfn>;</td></tr>
+<tr><th id="602">602</th><td>      <i class="doc">/** If this is not nullptr, it will be populated with the full fidelity</i></td></tr>
+<tr><th id="603">603</th><td><i class="doc">       * error string for debugging purposes. The application is responsible</i></td></tr>
+<tr><th id="604">604</th><td><i class="doc">       * for freeing the data by using gpr_free(). */</i></td></tr>
+<tr><th id="605">605</th><td>      <em>const</em> <em>char</em>** <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::error_string" title='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::error_string' data-ref="grpc_op::grpc_op_data::grpc_op_recv_status_on_client::error_string" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_status_on_client..error_string">error_string</dfn>;</td></tr>
+<tr><th id="606">606</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::recv_status_on_client" title='grpc_op::grpc_op_data::recv_status_on_client' data-ref="grpc_op::grpc_op_data::recv_status_on_client" data-ref-filename="grpc_op..grpc_op_data..recv_status_on_client">recv_status_on_client</dfn>;</td></tr>
+<tr><th id="607">607</th><td>    <b>struct</b> <dfn class="type def" id="grpc_op::grpc_op_data::grpc_op_recv_close_on_server" title='grpc_op::grpc_op_data::grpc_op_recv_close_on_server' data-ref="grpc_op::grpc_op_data::grpc_op_recv_close_on_server" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_close_on_server"><a class="type" href="#grpc_op::grpc_op_data::grpc_op_recv_close_on_server" title='grpc_op::grpc_op_data::grpc_op_recv_close_on_server' data-ref="grpc_op::grpc_op_data::grpc_op_recv_close_on_server" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_close_on_server">grpc_op_recv_close_on_server</a></dfn> {</td></tr>
+<tr><th id="608">608</th><td>      <i class="doc">/** out argument, set to 1 if the call failed in any way (seen as a</i></td></tr>
+<tr><th id="609">609</th><td><i class="doc">          cancellation on the server), or 0 if the call succeeded */</i></td></tr>
+<tr><th id="610">610</th><td>      <em>int</em>* <dfn class="decl field" id="grpc_op::grpc_op_data::grpc_op_recv_close_on_server::cancelled" title='grpc_op::grpc_op_data::grpc_op_recv_close_on_server::cancelled' data-ref="grpc_op::grpc_op_data::grpc_op_recv_close_on_server::cancelled" data-ref-filename="grpc_op..grpc_op_data..grpc_op_recv_close_on_server..cancelled">cancelled</dfn>;</td></tr>
+<tr><th id="611">611</th><td>    } <dfn class="decl field" id="grpc_op::grpc_op_data::recv_close_on_server" title='grpc_op::grpc_op_data::recv_close_on_server' data-ref="grpc_op::grpc_op_data::recv_close_on_server" data-ref-filename="grpc_op..grpc_op_data..recv_close_on_server">recv_close_on_server</dfn>;</td></tr>
+<tr><th id="612">612</th><td>  } <dfn class="decl field" id="grpc_op::data" title='grpc_op::data' data-ref="grpc_op::data" data-ref-filename="grpc_op..data">data</dfn>;</td></tr>
+<tr><th id="613">613</th><td>} <dfn class="typedef" id="grpc_op" title='grpc_op' data-type='struct grpc_op' data-ref="grpc_op" data-ref-filename="grpc_op">grpc_op</dfn>;</td></tr>
+<tr><th id="614">614</th><td></td></tr>
+<tr><th id="615">615</th><td><i class="doc">/** Information requested from the channel. */</i></td></tr>
+<tr><th id="616">616</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="617">617</th><td>  <i class="doc">/** If non-NULL, will be set to point to a string indicating the LB</i></td></tr>
+<tr><th id="618">618</th><td><i class="doc">   * policy name.  Caller takes ownership. */</i></td></tr>
+<tr><th id="619">619</th><td>  <em>char</em>** <dfn class="decl field" id="(anonymous)::lb_policy_name" title='(anonymous struct)::lb_policy_name' data-ref="(anonymous)::lb_policy_name" data-ref-filename="(anonymous)..lb_policy_name">lb_policy_name</dfn>;</td></tr>
+<tr><th id="620">620</th><td>  <i class="doc">/** If non-NULL, will be set to point to a string containing the</i></td></tr>
+<tr><th id="621">621</th><td><i class="doc">   * service config used by the channel in JSON form. */</i></td></tr>
+<tr><th id="622">622</th><td>  <em>char</em>** <dfn class="decl field" id="(anonymous)::service_config_json" title='(anonymous struct)::service_config_json' data-ref="(anonymous)::service_config_json" data-ref-filename="(anonymous)..service_config_json">service_config_json</dfn>;</td></tr>
+<tr><th id="623">623</th><td>} <dfn class="typedef" id="grpc_channel_info" title='grpc_channel_info' data-type='struct grpc_channel_info' data-ref="grpc_channel_info" data-ref-filename="grpc_channel_info">grpc_channel_info</dfn>;</td></tr>
+<tr><th id="624">624</th><td></td></tr>
+<tr><th id="625">625</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_resource_quota" title='grpc_resource_quota' data-ref="grpc_resource_quota" data-ref-filename="grpc_resource_quota"><a class="type" href="#grpc_resource_quota" title='grpc_resource_quota' data-ref="grpc_resource_quota" data-ref-filename="grpc_resource_quota">grpc_resource_quota</a></dfn> <dfn class="typedef" id="grpc_resource_quota" title='grpc_resource_quota' data-type='struct grpc_resource_quota' data-ref="grpc_resource_quota" data-ref-filename="grpc_resource_quota">grpc_resource_quota</dfn>;</td></tr>
+<tr><th id="626">626</th><td></td></tr>
+<tr><th id="627">627</th><td><i class="doc">/** Completion queues internally MAY maintain a set of file descriptors in a</i></td></tr>
+<tr><th id="628">628</th><td><i class="doc">    structure called 'pollset'. This enum specifies if a completion queue has an</i></td></tr>
+<tr><th id="629">629</th><td><i class="doc">    associated pollset and any restrictions on the type of file descriptors that</i></td></tr>
+<tr><th id="630">630</th><td><i class="doc">    can be present in the pollset.</i></td></tr>
+<tr><th id="631">631</th><td><i class="doc"></i></td></tr>
+<tr><th id="632">632</th><td><i class="doc">    I/O progress can only be made when grpc_completion_queue_next() or</i></td></tr>
+<tr><th id="633">633</th><td><i class="doc">    grpc_completion_queue_pluck() are called on the completion queue (unless the</i></td></tr>
+<tr><th id="634">634</th><td><i class="doc">    grpc_cq_polling_type is GRPC_CQ_NON_POLLING) and hence it is very important</i></td></tr>
+<tr><th id="635">635</th><td><i class="doc">    to actively call these APIs */</i></td></tr>
+<tr><th id="636">636</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="637">637</th><td>  <i class="doc">/** The completion queue will have an associated pollset and there is no</i></td></tr>
+<tr><th id="638">638</th><td><i class="doc">      restriction on the type of file descriptors the pollset may contain */</i></td></tr>
+<tr><th id="639">639</th><td>  <dfn class="enum" id="GRPC_CQ_DEFAULT_POLLING" title='GRPC_CQ_DEFAULT_POLLING' data-ref="GRPC_CQ_DEFAULT_POLLING" data-ref-filename="GRPC_CQ_DEFAULT_POLLING">GRPC_CQ_DEFAULT_POLLING</dfn>,</td></tr>
+<tr><th id="640">640</th><td></td></tr>
+<tr><th id="641">641</th><td>  <i class="doc">/** Similar to GRPC_CQ_DEFAULT_POLLING except that the completion queues will</i></td></tr>
+<tr><th id="642">642</th><td><i class="doc">      not contain any 'listening file descriptors' (i.e file descriptors used to</i></td></tr>
+<tr><th id="643">643</th><td><i class="doc">      listen to incoming channels) */</i></td></tr>
+<tr><th id="644">644</th><td>  <dfn class="enum" id="GRPC_CQ_NON_LISTENING" title='GRPC_CQ_NON_LISTENING' data-ref="GRPC_CQ_NON_LISTENING" data-ref-filename="GRPC_CQ_NON_LISTENING">GRPC_CQ_NON_LISTENING</dfn>,</td></tr>
+<tr><th id="645">645</th><td></td></tr>
+<tr><th id="646">646</th><td>  <i class="doc">/** The completion queue will not have an associated pollset. Note that</i></td></tr>
+<tr><th id="647">647</th><td><i class="doc">      grpc_completion_queue_next() or grpc_completion_queue_pluck() MUST still</i></td></tr>
+<tr><th id="648">648</th><td><i class="doc">      be called to pop events from the completion queue; it is not required to</i></td></tr>
+<tr><th id="649">649</th><td><i class="doc">      call them actively to make I/O progress */</i></td></tr>
+<tr><th id="650">650</th><td>  <dfn class="enum" id="GRPC_CQ_NON_POLLING" title='GRPC_CQ_NON_POLLING' data-ref="GRPC_CQ_NON_POLLING" data-ref-filename="GRPC_CQ_NON_POLLING">GRPC_CQ_NON_POLLING</dfn></td></tr>
+<tr><th id="651">651</th><td>} <dfn class="typedef" id="grpc_cq_polling_type" title='grpc_cq_polling_type' data-type='enum grpc_cq_polling_type' data-ref="grpc_cq_polling_type" data-ref-filename="grpc_cq_polling_type">grpc_cq_polling_type</dfn>;</td></tr>
+<tr><th id="652">652</th><td></td></tr>
+<tr><th id="653">653</th><td><i class="doc">/** Specifies the type of APIs to use to pop events from the completion queue */</i></td></tr>
+<tr><th id="654">654</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="655">655</th><td>  <i class="doc">/** Events are popped out by calling grpc_completion_queue_next() API ONLY */</i></td></tr>
+<tr><th id="656">656</th><td>  <dfn class="enum" id="GRPC_CQ_NEXT" title='GRPC_CQ_NEXT' data-ref="GRPC_CQ_NEXT" data-ref-filename="GRPC_CQ_NEXT">GRPC_CQ_NEXT</dfn>,</td></tr>
+<tr><th id="657">657</th><td></td></tr>
+<tr><th id="658">658</th><td>  <i class="doc">/** Events are popped out by calling grpc_completion_queue_pluck() API ONLY*/</i></td></tr>
+<tr><th id="659">659</th><td>  <dfn class="enum" id="GRPC_CQ_PLUCK" title='GRPC_CQ_PLUCK' data-ref="GRPC_CQ_PLUCK" data-ref-filename="GRPC_CQ_PLUCK">GRPC_CQ_PLUCK</dfn>,</td></tr>
+<tr><th id="660">660</th><td></td></tr>
+<tr><th id="661">661</th><td>  <i class="doc">/** EXPERIMENTAL: Events trigger a callback specified as the tag */</i></td></tr>
+<tr><th id="662">662</th><td>  <dfn class="enum" id="GRPC_CQ_CALLBACK" title='GRPC_CQ_CALLBACK' data-ref="GRPC_CQ_CALLBACK" data-ref-filename="GRPC_CQ_CALLBACK">GRPC_CQ_CALLBACK</dfn></td></tr>
+<tr><th id="663">663</th><td>} <dfn class="typedef" id="grpc_cq_completion_type" title='grpc_cq_completion_type' data-type='enum grpc_cq_completion_type' data-ref="grpc_cq_completion_type" data-ref-filename="grpc_cq_completion_type">grpc_cq_completion_type</dfn>;</td></tr>
+<tr><th id="664">664</th><td></td></tr>
+<tr><th id="665">665</th><td><i class="doc">/** EXPERIMENTAL: Specifies an interface class to be used as a tag</i></td></tr>
+<tr><th id="666">666</th><td><i class="doc">    for callback-based completion queues. This can be used directly,</i></td></tr>
+<tr><th id="667">667</th><td><i class="doc">    as the first element of a struct in C, or as a base class in C++.</i></td></tr>
+<tr><th id="668">668</th><td><i class="doc">    Its "run" value should be assigned to some non-member function, such as</i></td></tr>
+<tr><th id="669">669</th><td><i class="doc">    a static method. */</i></td></tr>
+<tr><th id="670">670</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_experimental_completion_queue_functor" title='grpc_experimental_completion_queue_functor' data-ref="grpc_experimental_completion_queue_functor" data-ref-filename="grpc_experimental_completion_queue_functor"><a class="type" href="#grpc_experimental_completion_queue_functor" title='grpc_experimental_completion_queue_functor' data-ref="grpc_experimental_completion_queue_functor" data-ref-filename="grpc_experimental_completion_queue_functor">grpc_experimental_completion_queue_functor</a></dfn> {</td></tr>
+<tr><th id="671">671</th><td>  <i class="doc">/** The run member specifies a function that will be called when this</i></td></tr>
+<tr><th id="672">672</th><td><i class="doc">      tag is extracted from the completion queue. Its arguments will be a</i></td></tr>
+<tr><th id="673">673</th><td><i class="doc">      pointer to this functor and a boolean that indicates whether the</i></td></tr>
+<tr><th id="674">674</th><td><i class="doc">      operation succeeded (non-zero) or failed (zero) */</i></td></tr>
+<tr><th id="675">675</th><td>  <em>void</em> (*<dfn class="decl field" id="grpc_experimental_completion_queue_functor::functor_run" title='grpc_experimental_completion_queue_functor::functor_run' data-ref="grpc_experimental_completion_queue_functor::functor_run" data-ref-filename="grpc_experimental_completion_queue_functor..functor_run">functor_run</dfn>)(<b>struct</b> <a class="type" href="#grpc_experimental_completion_queue_functor" title='grpc_experimental_completion_queue_functor' data-ref="grpc_experimental_completion_queue_functor" data-ref-filename="grpc_experimental_completion_queue_functor">grpc_experimental_completion_queue_functor</a>*, <em>int</em>);</td></tr>
+<tr><th id="676">676</th><td>} <dfn class="typedef" id="grpc_experimental_completion_queue_functor" title='grpc_experimental_completion_queue_functor' data-type='struct grpc_experimental_completion_queue_functor' data-ref="grpc_experimental_completion_queue_functor" data-ref-filename="grpc_experimental_completion_queue_functor">grpc_experimental_completion_queue_functor</dfn>;</td></tr>
+<tr><th id="677">677</th><td></td></tr>
+<tr><th id="678">678</th><td><i>/* The upgrade to version 2 is currently experimental. */</i></td></tr>
+<tr><th id="679">679</th><td></td></tr>
+<tr><th id="680">680</th><td><u>#define <dfn class="macro" id="_M/GRPC_CQ_CURRENT_VERSION" data-ref="_M/GRPC_CQ_CURRENT_VERSION">GRPC_CQ_CURRENT_VERSION</dfn> 2</u></td></tr>
+<tr><th id="681">681</th><td><u>#define <dfn class="macro" id="_M/GRPC_CQ_VERSION_MINIMUM_FOR_CALLBACKABLE" data-ref="_M/GRPC_CQ_VERSION_MINIMUM_FOR_CALLBACKABLE">GRPC_CQ_VERSION_MINIMUM_FOR_CALLBACKABLE</dfn> 2</u></td></tr>
+<tr><th id="682">682</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="grpc_completion_queue_attributes" title='grpc_completion_queue_attributes' data-ref="grpc_completion_queue_attributes" data-ref-filename="grpc_completion_queue_attributes"><a class="type" href="#grpc_completion_queue_attributes" title='grpc_completion_queue_attributes' data-ref="grpc_completion_queue_attributes" data-ref-filename="grpc_completion_queue_attributes">grpc_completion_queue_attributes</a></dfn> {</td></tr>
+<tr><th id="683">683</th><td>  <i class="doc">/** The version number of this structure. More fields might be added to this</i></td></tr>
+<tr><th id="684">684</th><td><i class="doc">     structure in future. */</i></td></tr>
+<tr><th id="685">685</th><td>  <em>int</em> <dfn class="decl field" id="grpc_completion_queue_attributes::version" title='grpc_completion_queue_attributes::version' data-ref="grpc_completion_queue_attributes::version" data-ref-filename="grpc_completion_queue_attributes..version">version</dfn>; <i class="doc">/** Set to GRPC_CQ_CURRENT_VERSION */</i></td></tr>
+<tr><th id="686">686</th><td></td></tr>
+<tr><th id="687">687</th><td>  <a class="typedef" href="#grpc_cq_completion_type" title='grpc_cq_completion_type' data-type='enum grpc_cq_completion_type' data-ref="grpc_cq_completion_type" data-ref-filename="grpc_cq_completion_type">grpc_cq_completion_type</a> <dfn class="decl field" id="grpc_completion_queue_attributes::cq_completion_type" title='grpc_completion_queue_attributes::cq_completion_type' data-ref="grpc_completion_queue_attributes::cq_completion_type" data-ref-filename="grpc_completion_queue_attributes..cq_completion_type">cq_completion_type</dfn>;</td></tr>
+<tr><th id="688">688</th><td></td></tr>
+<tr><th id="689">689</th><td>  <a class="typedef" href="#grpc_cq_polling_type" title='grpc_cq_polling_type' data-type='enum grpc_cq_polling_type' data-ref="grpc_cq_polling_type" data-ref-filename="grpc_cq_polling_type">grpc_cq_polling_type</a> <dfn class="decl field" id="grpc_completion_queue_attributes::cq_polling_type" title='grpc_completion_queue_attributes::cq_polling_type' data-ref="grpc_completion_queue_attributes::cq_polling_type" data-ref-filename="grpc_completion_queue_attributes..cq_polling_type">cq_polling_type</dfn>;</td></tr>
+<tr><th id="690">690</th><td></td></tr>
+<tr><th id="691">691</th><td>  <i>/* END OF VERSION 1 CQ ATTRIBUTES */</i></td></tr>
+<tr><th id="692">692</th><td></td></tr>
+<tr><th id="693">693</th><td>  <i>/* EXPERIMENTAL: START OF VERSION 2 CQ ATTRIBUTES */</i></td></tr>
+<tr><th id="694">694</th><td>  <i class="doc">/** When creating a callbackable CQ, pass in a functor to get invoked when</i></td></tr>
+<tr><th id="695">695</th><td><i class="doc">   * shutdown is complete */</i></td></tr>
+<tr><th id="696">696</th><td>  <a class="typedef" href="#grpc_experimental_completion_queue_functor" title='grpc_experimental_completion_queue_functor' data-type='struct grpc_experimental_completion_queue_functor' data-ref="grpc_experimental_completion_queue_functor" data-ref-filename="grpc_experimental_completion_queue_functor">grpc_experimental_completion_queue_functor</a>* <dfn class="decl field" id="grpc_completion_queue_attributes::cq_shutdown_cb" title='grpc_completion_queue_attributes::cq_shutdown_cb' data-ref="grpc_completion_queue_attributes::cq_shutdown_cb" data-ref-filename="grpc_completion_queue_attributes..cq_shutdown_cb">cq_shutdown_cb</dfn>;</td></tr>
+<tr><th id="697">697</th><td></td></tr>
+<tr><th id="698">698</th><td>  <i>/* END OF VERSION 2 CQ ATTRIBUTES */</i></td></tr>
+<tr><th id="699">699</th><td>} <dfn class="typedef" id="grpc_completion_queue_attributes" title='grpc_completion_queue_attributes' data-type='struct grpc_completion_queue_attributes' data-ref="grpc_completion_queue_attributes" data-ref-filename="grpc_completion_queue_attributes">grpc_completion_queue_attributes</dfn>;</td></tr>
+<tr><th id="700">700</th><td></td></tr>
+<tr><th id="701">701</th><td><i class="doc">/** The completion queue factory structure is opaque to the callers of grpc */</i></td></tr>
+<tr><th id="702">702</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="grpc_completion_queue_factory" title='grpc_completion_queue_factory' data-ref="grpc_completion_queue_factory" data-ref-filename="grpc_completion_queue_factory"><a class="type" href="#grpc_completion_queue_factory" title='grpc_completion_queue_factory' data-ref="grpc_completion_queue_factory" data-ref-filename="grpc_completion_queue_factory">grpc_completion_queue_factory</a></dfn> <dfn class="typedef" id="grpc_completion_queue_factory" title='grpc_completion_queue_factory' data-type='struct grpc_completion_queue_factory' data-ref="grpc_completion_queue_factory" data-ref-filename="grpc_completion_queue_factory">grpc_completion_queue_factory</dfn>;</td></tr>
+<tr><th id="703">703</th><td></td></tr>
+<tr><th id="704">704</th><td><u>#<span data-ppcond="704">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="705">705</th><td>}</td></tr>
+<tr><th id="706">706</th><td><u>#<span data-ppcond="704">endif</span></u></td></tr>
+<tr><th id="707">707</th><td></td></tr>
+<tr><th id="708">708</th><td><u>#<span data-ppcond="19">endif</span> /* GRPC_IMPL_CODEGEN_GRPC_TYPES_H */</u></td></tr>
+<tr><th id="709">709</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

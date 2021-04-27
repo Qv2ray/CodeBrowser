@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='575' type='grpc_slice *'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='489' u='w' c='_ZN4grpc8internal22CallOpServerSendStatus5AddOpEP7grpc_opPm'/>
+<offset>192</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='572'>/** optional: set to NULL if no details need sending, non-NULL if they do
+       * pointer will not be retained past the start_batch call
+       */</doc>

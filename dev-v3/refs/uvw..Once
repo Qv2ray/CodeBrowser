@@ -1,0 +1,13 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='20' c='uvw::UnderlyingType'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='151' ll='173'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='151'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='145'>/**
+ * @brief The Once wrapper.
+ *
+ * Runs a function once and only once. Concurrent calls to `once` will block all
+ * callers except one (it’s unspecified which one).
+ */</doc>
+<fun r='_ZN3uvw4Once5guardEv'/>
+<fun r='_ZN3uvw4Once4onceEOT_'/>
+<fun r='_ZN3uvw4Once5guardEv'/>

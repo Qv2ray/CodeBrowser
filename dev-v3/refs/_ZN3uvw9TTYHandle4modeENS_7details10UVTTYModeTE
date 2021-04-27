@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='88' type='bool uvw::TTYHandle::mode(uvw::TTYHandle::Mode m)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='39' ll='41' type='bool uvw::TTYHandle::mode(TTYHandle::Mode m)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='72'>/**
+     * @brief Sets the TTY using the specified terminal mode.
+     *
+     * Available modes are:
+     *
+     * * `TTY::Mode::NORMAL`
+     * * `TTY::Mode::RAW`
+     * * `TTY::Mode::IO`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_mode_t)
+     * for further details.
+     *
+     * @param m The mode to be set.
+     * @return True in case of success, false otherwise.
+     */</doc>

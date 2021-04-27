@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/descriptor.h' l='1051' type='const std::string &amp; google::protobuf::EnumValueDescriptor::full_name() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1913' macro='1' type='const std::string &amp; google::protobuf::EnumValueDescriptor::full_name() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1046'>// The full_name of an enum value is a sibling symbol of the enum type.
+  // e.g. the full name of FieldDescriptorProto::TYPE_INT32 is actually
+  // &quot;google.protobuf.FieldDescriptorProto.TYPE_INT32&quot;, NOT
+  // &quot;google.protobuf.FieldDescriptorProto.Type.TYPE_INT32&quot;.  This is to conform
+  // with C++ scoping rules for enums.</doc>

@@ -1,0 +1,6 @@
+<dec f='include/grpc/grpc.h' l='180' type='int grpc_completion_queue_thread_local_cache_flush(grpc_completion_queue * cq, void ** tag, int * ok)'/>
+<doc f='include/grpc/grpc.h' l='175'>/** Flushes the thread local cache for \a cq.
+ * Returns 1 if there was contents in the cache.  If there was an event
+ * in \a cq tls cache, its tag is placed in tag, and ok is set to the
+ * event success.
+ */</doc>

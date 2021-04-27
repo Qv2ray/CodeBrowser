@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/repeated_field.h' l='171' type='void google::protobuf::RepeatedField::Resize(int new_size, const Element &amp; value)'/>
+<def f='include/google/protobuf/repeated_field.h' l='1153' ll='1162' type='void google::protobuf::RepeatedField::Resize(int new_size, const Element &amp; value)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='168'>// Like STL resize.  Uses value to fill appended elements.
+  // Like Truncate() if new_size &lt;= size(), otherwise this is
+  // O(new_size - size()).</doc>

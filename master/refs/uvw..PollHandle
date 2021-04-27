@@ -1,0 +1,42 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='67' ll='135'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='67'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='29' c='_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='29' c='_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii'/>
+<size>280</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='51'>/**
+ * @brief The PollHandle handle.
+ *
+ * Poll handles are used to watch file descriptors for readability, writability
+ * and disconnection.
+ *
+ * To create a `PollHandle` through a `Loop`, arguments follow:
+ *
+ * * A descriptor that can be:
+ *     * either an `int` file descriptor
+ *     * or a `OSSocketHandle` socket descriptor
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/poll.html)
+ * for further details.
+ */</doc>
+<fun r='_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii'/>
+<fun r='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi'/>
+<fun r='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw10PollHandle4initEv'/>
+<fun r='_ZN3uvw10PollHandle5startENS_5FlagsINS_7details11UVPollEventEEE'/>
+<fun r='_ZN3uvw10PollHandle5startENS_7details11UVPollEventE'/>
+<fun r='_ZN3uvw10PollHandle4stopEv'/>
+<mbr r='uvw::PollHandle::tag' o='2176' t='enum (anonymous enum at /home/runner/work/CodeBrowser/CodeBrowser/source/master/3rdparty/uvw/src/uvw/poll.h:130:5)'/>
+<fun r='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi'/>
+<fun r='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii'/>
+<fun r='_ZN3uvw10PollHandle4initEv'/>
+<fun r='_ZN3uvw10PollHandle5startENS_5FlagsINS_7details11UVPollEventEEE'/>
+<fun r='_ZN3uvw10PollHandle5startENS_7details11UVPollEventE'/>
+<fun r='_ZN3uvw10PollHandle4stopEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='29'/>
+<size>280</size>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='115' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='133' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>280</size>

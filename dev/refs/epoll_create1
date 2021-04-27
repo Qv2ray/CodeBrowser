@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/epoll.h' l='100' type='int epoll_create1(int __flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='88' u='c' c='uv__platform_loop_init'/>
+<doc f='include/x86_64-linux-gnu/sys/epoll.h' l='98'>/* Same as epoll_create but with an FLAGS parameter.  The unused SIZE
+   parameter has been dropped.  */</doc>

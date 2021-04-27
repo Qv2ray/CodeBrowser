@@ -1,0 +1,34 @@
+<def f='include/grpcpp/impl/codegen/slice.h' l='35' ll='118'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='73' c='_ZN4grpc5SliceC1ERKS0_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='77' c='_ZN4grpc5SliceaSES0_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='77' c='_ZN4grpc5SliceaSES0_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='93' c='_ZN4grpc5SliceC1EPvmPFvS1_E'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='61' c='_ZN4grpc10ByteBufferC1EPKNS_5SliceEm'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='67' c='_ZN4grpc10ByteBufferC1EPKNS_5SliceEm'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='83' c='_ZN4grpc10ByteBufferC1EPKNS_5SliceEm'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='99' c='_ZNK4grpc10ByteBuffer4DumpEPSt6vectorINS_5SliceESaIS2_EE'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='54' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<size>32</size>
+<doc f='include/grpcpp/impl/codegen/slice.h' l='30'>/// A wrapper around \a grpc_slice.
+///
+/// A slice represents a contiguous reference counted array of bytes.
+/// It is cheap to take references to a slice, and it is cheap to create a
+/// slice pointing to a subset of another slice.</doc>
+<fun r='_ZN4grpc5SliceC1Ev'/>
+<fun r='_ZN4grpc5SliceD1Ev'/>
+<fun r='_ZN4grpc5SliceC1E10grpc_sliceNS0_6AddRefE'/>
+<fun r='_ZN4grpc5SliceC1E10grpc_sliceNS0_8StealRefE'/>
+<fun r='_ZN4grpc5SliceC1Em'/>
+<fun r='_ZN4grpc5SliceC1EPKvm'/>
+<fun r='_ZN4grpc5SliceC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN4grpc5SliceC1EPKvmNS0_11StaticSliceE'/>
+<fun r='_ZN4grpc5SliceC1ERKS0_'/>
+<fun r='_ZN4grpc5SliceaSES0_'/>
+<fun r='_ZN4grpc5SliceC1EPvmPFvS1_ES1_'/>
+<fun r='_ZN4grpc5SliceC1EPvmPFvS1_E'/>
+<fun r='_ZN4grpc5SliceC1EPvmPFvS1_mE'/>
+<fun r='_ZNK4grpc5Slice4sizeEv'/>
+<fun r='_ZNK4grpc5Slice5beginEv'/>
+<fun r='_ZNK4grpc5Slice3endEv'/>
+<fun r='_ZNK4grpc5Slice7c_sliceEv'/>
+<mbr r='grpc::Slice::slice_' o='0' t='grpc_slice'/>

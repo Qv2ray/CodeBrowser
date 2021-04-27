@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='328' type='QRinput_Struct * QRinput_splitQRinputToStruct(QRinput * input)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='316'>/**
+ * Split a QRinput to QRinput_Struct. It calculates a parity, set it, then
+ * insert structured-append headers. QRinput created by QRinput_newMQR() will
+ * be rejected.
+ * @param input input object. Version number and error correction level must be
+ *        set.
+ * @return a set of input data. On error, NULL is returned, and errno is set
+ *         to indicate the error. See Exceptions for the details.
+ * @throw ERANGE input data is too large.
+ * @throw EINVAL invalid input data.
+ * @throw ENOMEM unable to allocate memory.
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='797' u='c' c='QRcode_encodeInputToStructured'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1474' ll='1577' type='QRinput_Struct * QRinput_splitQRinputToStruct(QRinput * input)'/>

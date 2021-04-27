@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='363' type='int google::protobuf::io::CodedInputStream::BytesUntilLimit() const'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='332' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='364' u='c' c='_ZN6google8protobuf8internal14WireFormatLite28ReadPackedFixedSizePrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='368' u='c' c='_ZN6google8protobuf8internal14WireFormatLite28ReadPackedFixedSizePrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='361'>// Returns the number of bytes left until the nearest limit on the
+  // stack is hit, or -1 if no limits are in place.</doc>

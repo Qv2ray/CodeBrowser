@@ -1,0 +1,4 @@
+<dec f='qv2ray/test/catch.hpp' l='2212' type='void Catch::ITransientExpression::~ITransientExpression()'/>
+<def f='qv2ray/test/catch.hpp' l='10501' type='void Catch::ITransientExpression::~ITransientExpression()'/>
+<doc f='qv2ray/test/catch.hpp' l='2210'>// We don&apos;t actually need a virtual destructor, but many static analysers
+        // complain if it&apos;s not here :-(</doc>

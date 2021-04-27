@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='288' type='QRinput_Struct * QRinput_Struct_new()'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='282'>/**
+ * Instantiate a set of input data object.
+ * @return an instance of QRinput_Struct. On error, NULL is returned and errno
+ *         is set to indicate the error.
+ * @throw ENOMEM unable to allocate memory.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1362' ll='1375' type='QRinput_Struct * QRinput_Struct_new()'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1487' u='c' c='QRinput_splitQRinputToStruct'/>

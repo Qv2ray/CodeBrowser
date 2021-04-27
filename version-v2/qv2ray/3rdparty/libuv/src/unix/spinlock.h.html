@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>spinlock.h source code [qv2ray/3rdparty/libuv/src/unix/spinlock.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/src/unix/spinlock.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>libuv</a>/<a href='..'>src</a>/<a href='./'>unix</a>/<a href='spinlock.h.html'>spinlock.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright (c) 2013, Ben Noordhuis &lt;info@bnoordhuis.nl&gt;</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission to use, copy, modify, and/or distribute this software for any</i></td></tr>
+<tr><th id="4">4</th><td><i> * purpose with or without fee is hereby granted, provided that the above</i></td></tr>
+<tr><th id="5">5</th><td><i> * copyright notice and this permission notice appear in all copies.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES</i></td></tr>
+<tr><th id="8">8</th><td><i> * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF</i></td></tr>
+<tr><th id="9">9</th><td><i> * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR</i></td></tr>
+<tr><th id="10">10</th><td><i> * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES</i></td></tr>
+<tr><th id="11">11</th><td><i> * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN</i></td></tr>
+<tr><th id="12">12</th><td><i> * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF</i></td></tr>
+<tr><th id="13">13</th><td><i> * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</i></td></tr>
+<tr><th id="14">14</th><td><i> */</i></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="16">ifndef</span> <span class="macro" data-ref="_M/UV_SPINLOCK_H_">UV_SPINLOCK_H_</span></u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/UV_SPINLOCK_H_" data-ref="_M/UV_SPINLOCK_H_">UV_SPINLOCK_H_</dfn></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="internal.h.html">"internal.h"</a>  /* ACCESS_ONCE, UV_UNUSED */</u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="atomic-ops.h.html">"atomic-ops.h"</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/UV_SPINLOCK_INITIALIZER" data-ref="_M/UV_SPINLOCK_INITIALIZER">UV_SPINLOCK_INITIALIZER</dfn> { 0 }</u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="25">25</th><td>  <em>int</em> <dfn class="decl field" id="(anonymous)::lock" title='(anonymous struct)::lock' data-ref="(anonymous)::lock" data-ref-filename="(anonymous)..lock">lock</dfn>;</td></tr>
+<tr><th id="26">26</th><td>} <dfn class="typedef" id="uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</dfn>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static void uv_spinlock_init(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>void</em> <a class="decl fn" href="#33" title='uv_spinlock_init' data-ref="uv_spinlock_init" data-ref-filename="uv_spinlock_init">uv_spinlock_init</a>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col1 decl" id="1spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="1spinlock" data-ref-filename="1spinlock">spinlock</dfn>));</td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static void uv_spinlock_lock(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>void</em> <a class="decl fn" href="#37" title='uv_spinlock_lock' data-ref="uv_spinlock_lock" data-ref-filename="uv_spinlock_lock">uv_spinlock_lock</a>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col2 decl" id="2spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="2spinlock" data-ref-filename="2spinlock">spinlock</dfn>));</td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static void uv_spinlock_unlock(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>void</em> <a class="decl fn" href="#41" title='uv_spinlock_unlock' data-ref="uv_spinlock_unlock" data-ref-filename="uv_spinlock_unlock">uv_spinlock_unlock</a>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col3 decl" id="3spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="3spinlock" data-ref-filename="3spinlock">spinlock</dfn>));</td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static int uv_spinlock_trylock(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>int</em> <a class="decl fn" href="#45" title='uv_spinlock_trylock' data-ref="uv_spinlock_trylock" data-ref-filename="uv_spinlock_trylock">uv_spinlock_trylock</a>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col4 decl" id="4spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="4spinlock" data-ref-filename="4spinlock">spinlock</dfn>));</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static void uv_spinlock_init(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>void</em> <dfn class="decl def fn" id="uv_spinlock_init" title='uv_spinlock_init' data-ref="uv_spinlock_init" data-ref-filename="uv_spinlock_init">uv_spinlock_init</dfn>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col5 decl" id="5spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="5spinlock" data-ref-filename="5spinlock">spinlock</dfn>)) {</td></tr>
+<tr><th id="34">34</th><td>  <a class="macro" href="internal.h.html#81" title="(*(volatile int*) &amp;(spinlock-&gt;lock))" data-ref="_M/ACCESS_ONCE">ACCESS_ONCE</a>(<em>int</em>, <a class="local col5 ref" href="#33" title='spinlock' data-ref="5spinlock" data-ref-filename="5spinlock">spinlock</a>-&gt;<a class="ref field" href="#(anonymous)::lock" title='(anonymous struct)::lock' data-ref="(anonymous)::lock" data-ref-filename="(anonymous)..lock">lock</a>) = <var>0</var>;</td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static void uv_spinlock_lock(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>void</em> <dfn class="decl def fn" id="uv_spinlock_lock" title='uv_spinlock_lock' data-ref="uv_spinlock_lock" data-ref-filename="uv_spinlock_lock">uv_spinlock_lock</dfn>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col6 decl" id="6spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="6spinlock" data-ref-filename="6spinlock">spinlock</dfn>)) {</td></tr>
+<tr><th id="38">38</th><td>  <b>while</b> (!<a class="ref fn" href="#45" title='uv_spinlock_trylock' data-ref="uv_spinlock_trylock" data-ref-filename="uv_spinlock_trylock">uv_spinlock_trylock</a>(<a class="local col6 ref" href="#37" title='spinlock' data-ref="6spinlock" data-ref-filename="6spinlock">spinlock</a>)) <a class="ref fn" href="atomic-ops.h.html#26" title='cpu_relax' data-ref="cpu_relax" data-ref-filename="cpu_relax">cpu_relax</a>();</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static void uv_spinlock_unlock(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>void</em> <dfn class="decl def fn" id="uv_spinlock_unlock" title='uv_spinlock_unlock' data-ref="uv_spinlock_unlock" data-ref-filename="uv_spinlock_unlock">uv_spinlock_unlock</dfn>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col7 decl" id="7spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="7spinlock" data-ref-filename="7spinlock">spinlock</dfn>)) {</td></tr>
+<tr><th id="42">42</th><td>  <a class="macro" href="internal.h.html#81" title="(*(volatile int*) &amp;(spinlock-&gt;lock))" data-ref="_M/ACCESS_ONCE">ACCESS_ONCE</a>(<em>int</em>, <a class="local col7 ref" href="#41" title='spinlock' data-ref="7spinlock" data-ref-filename="7spinlock">spinlock</a>-&gt;<a class="ref field" href="#(anonymous)::lock" title='(anonymous struct)::lock' data-ref="(anonymous)::lock" data-ref-filename="(anonymous)..lock">lock</a>) = <var>0</var>;</td></tr>
+<tr><th id="43">43</th><td>}</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><a class="macro" href="internal.h.html#109" title="__attribute__((unused)) static int uv_spinlock_trylock(uv_spinlock_t* spinlock)" data-ref="_M/UV_UNUSED">UV_UNUSED</a>(<em>static</em> <em>int</em> <dfn class="decl def fn" id="uv_spinlock_trylock" title='uv_spinlock_trylock' data-ref="uv_spinlock_trylock" data-ref-filename="uv_spinlock_trylock">uv_spinlock_trylock</dfn>(<a class="typedef" href="#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a>* <dfn class="local col8 decl" id="8spinlock" title='spinlock' data-type='uv_spinlock_t *' data-ref="8spinlock" data-ref-filename="8spinlock">spinlock</dfn>)) {</td></tr>
+<tr><th id="46">46</th><td>  <i>/* TODO(bnoordhuis) Maybe change to a ticket lock to guarantee fair queueing.</i></td></tr>
+<tr><th id="47">47</th><td><i>   * Not really critical until we have locks that are (frequently) contended</i></td></tr>
+<tr><th id="48">48</th><td><i>   * for by several threads.</i></td></tr>
+<tr><th id="49">49</th><td><i>   */</i></td></tr>
+<tr><th id="50">50</th><td>  <b>return</b> <var>0</var> == <a class="ref fn" href="atomic-ops.h.html#25" title='cmpxchgi' data-ref="cmpxchgi" data-ref-filename="cmpxchgi">cmpxchgi</a>(&amp;<a class="local col8 ref" href="#45" title='spinlock' data-ref="8spinlock" data-ref-filename="8spinlock">spinlock</a>-&gt;<a class="ref field" href="#(anonymous)::lock" title='(anonymous struct)::lock' data-ref="(anonymous)::lock" data-ref-filename="(anonymous)..lock">lock</a>, <var>0</var>, <var>1</var>);</td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="16">endif</span>  /* UV_SPINLOCK_H_ */</u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='tty.c.html'>qv2ray/3rdparty/libuv/src/unix/tty.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

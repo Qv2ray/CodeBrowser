@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='304' type='std::pair&lt;bool, Time&gt; uvw::Loop::timeout() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='298'>/**
+     * @brief Gets the poll timeout.
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of valid timeout, false otherwise.
+     * * Milliseconds (`std::chrono::duration&lt;uint64_t, std::milli&gt;`).
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='94' ll='97' type='std::pair&lt;bool, Loop::Time&gt; uvw::Loop::timeout() const'/>

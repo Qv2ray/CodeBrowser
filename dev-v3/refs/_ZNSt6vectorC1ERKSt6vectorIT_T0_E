@@ -1,0 +1,30 @@
+<def f='include/c++/10/bits/stl_vector.h' l='553' ll='561' type='void std::vector::vector&lt;_Tp, _Alloc&gt;(const vector&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<use f='include/c++/10/bits/random.h' l='5307' u='c' c='_ZNKSt21discrete_distribution10param_type13probabilitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5553' u='c' c='_ZNKSt31piecewise_constant_distribution10param_type9densitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5824' u='c' c='_ZNKSt29piecewise_linear_distribution10param_type9densitiesEv'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='542'>/**
+       *  @brief  %Vector copy constructor.
+       *  @param  __x  A %vector of identical element and allocator types.
+       *
+       *  All the elements of @a __x are copied, but any unused capacity in
+       *  @a __x  will not be copied
+       *  (i.e. capacity() == size() in the new %vector).
+       *
+       *  The newly-created %vector uses a copy of the allocator object used
+       *  by @a __x (unless the allocator traits dictate a different object).
+       */</doc>
+<use f='include/c++/10/bits/regex.h' l='2803' u='c' c='_ZNSt7__cxx1120regex_token_iteratorC1ET_S1_RKNS_11basic_regexIT0_T1_EERKSt6vectorIiSaIiEENSt15regex_constants15match_flag_typeE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='212' u='c' c='_ZNK6semver7version4bumpEj'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='226' u='c' c='_ZNK6semver7version4bumpEj'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='231' u='c' c='_ZNK6semver7version11get_versionEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='246' u='c' c='_ZNK6semver7version16strip_prereleaseEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='251' u='c' c='_ZNK6semver7version14strip_metadataEv'/>
+<use f='include/grpcpp/server_builder.h' l='234' u='c' c='_ZN4grpc13ServerBuilder5portsEv'/>
+<use f='qv2ray/test/catch.hpp' l='10997' u='c' c='_ZN5Catch14AssertionStatsC1ERKNS_15AssertionResultERKSt6vectorINS_11MessageInfoESaIS5_EERKNS_6TotalsE'/>
+<use f='qv2ray/test/catch.hpp' l='13208' u='c' c='_ZN5Catch12_GLOBAL__N_120applyFilenamesAsTagsERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='13223' u='c' c='_ZN5Catch12_GLOBAL__N_120applyFilenamesAsTagsERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='13944' u='c' c='_ZN5Catch12TestCaseInfoC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_S8_RKSt6vectorIS6_SaIS6_EERKNS_14SourceLineInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='14043' u='c' c='_ZN5Catch9sortTestsERKNS_7IConfigERKSt6vectorINS_8TestCaseESaIS4_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14078' u='c' c='_ZN5Catch9sortTestsERKNS_7IConfigERKSt6vectorINS_8TestCaseESaIS4_EE'/>
+<use f='qv2ray/test/catch.hpp' l='15664' u='c' c='_ZN5Catch12_GLOBAL__N_116AssertionPrinterC1ERSoRKNS_14AssertionStatsEb'/>
+<use f='qv2ray/test/catch.hpp' l='15909' u='c' c='_ZN5Catch12_GLOBAL__N_123ConsoleAssertionPrinterC1ERSoRKNS_14AssertionStatsEb'/>

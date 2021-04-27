@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/curl/urlapi.h' l='117' type='CURLUcode curl_url_set(CURLU * handle, CURLUPart what, const char * part, unsigned int flags)'/>
+<doc f='include/x86_64-linux-gnu/curl/urlapi.h' l='112'>/*
+ * curl_url_set() sets a specific part of the URL in a CURLU handle. Returns
+ * error code. The passed in string will be copied. Passing a NULL instead of
+ * a part string, clears that part.
+ */</doc>

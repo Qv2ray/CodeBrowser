@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/server_builder.h' l='141' type='grpc::ServerBuilder &amp; grpc::ServerBuilder::RegisterAsyncGenericService(grpc::AsyncGenericService * service)'/>
+<doc f='include/grpcpp/server_builder.h' l='137'>/// Register a generic service.
+  /// Matches requests with any :authority
+  /// This is mostly useful for writing generic gRPC Proxies where the exact
+  /// serialization format is unknown</doc>

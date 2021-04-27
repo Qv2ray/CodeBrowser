@@ -1,0 +1,8 @@
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='243' u='c' c='_ZN4grpc15CompletionQueueC1ERK32grpc_completion_queue_attributes'/>
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='354' ll='356' type='void grpc::CompletionQueue::InitialAvalanching()'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='348'>/// Manage state of avalanching operations : completion queue tags that
+  /// trigger other completion queue operations. The underlying core completion
+  /// queue should not really shutdown until all avalanching operations have
+  /// been finalized. Note that we maintain the requirement that an avalanche
+  /// registration must take place before CQ shutdown (which must be maintained
+  /// elsehwere)</doc>

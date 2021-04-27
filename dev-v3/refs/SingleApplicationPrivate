@@ -1,0 +1,62 @@
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='147'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='148' macro='1' c='_ZN17SingleApplication6d_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='148' macro='1' c='_ZN17SingleApplication6d_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='148' macro='1' c='_ZNK17SingleApplication6d_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='148' macro='1' c='_ZNK17SingleApplication6d_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='148' macro='1'/>
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='54' ll='102'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='40' c='_ZN17SingleApplicationC1ERiPPcb6QFlagsINS_4ModeEEiRK7QString'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='42' macro='1' c='_ZN17SingleApplicationC1ERiPPcb6QFlagsINS_4ModeEEiRK7QString'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='167' macro='1' c='_ZN17SingleApplicationD1Ev'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='177' macro='1' c='_ZN17SingleApplication9isPrimaryEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='187' macro='1' c='_ZN17SingleApplication11isSecondaryEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='199' macro='1' c='_ZN17SingleApplication10instanceIdEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='211' macro='1' c='_ZN17SingleApplication10primaryPidEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='221' macro='1' c='_ZN17SingleApplication11primaryUserEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='242' macro='1' c='_ZN17SingleApplication11sendMessageERK10QByteArrayi'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='263' macro='1' c='_ZN17SingleApplication11abortSafelyEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='272' macro='1' c='_ZN17SingleApplication8userDataEv'/>
+<size>120</size>
+<smbr r='SingleApplicationPrivate::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK24SingleApplicationPrivate10metaObjectEv'/>
+<fun r='_ZN24SingleApplicationPrivate11qt_metacastEPKc'/>
+<fun r='_ZN24SingleApplicationPrivate11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN24SingleApplicationPrivate2trEPKcS1_i'/>
+<fun r='_ZN24SingleApplicationPrivate18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN24SingleApplicationPrivate6q_funcEv'/>
+<fun r='_ZNK24SingleApplicationPrivate6q_funcEv'/>
+<fun r='_ZN24SingleApplicationPrivateC1EP17SingleApplication'/>
+<fun r='_ZN24SingleApplicationPrivateD1Ev'/>
+<fun r='_ZN24SingleApplicationPrivate11getUsernameEv'/>
+<fun r='_ZN24SingleApplicationPrivate18genBlockServerNameEv'/>
+<fun r='_ZNK24SingleApplicationPrivate21initializeMemoryBlockEv'/>
+<fun r='_ZN24SingleApplicationPrivate12startPrimaryEv'/>
+<fun r='_ZN24SingleApplicationPrivate14startSecondaryEv'/>
+<fun r='_ZN24SingleApplicationPrivate16connectToPrimaryEiNS_14ConnectionTypeE'/>
+<fun r='_ZNK24SingleApplicationPrivate13blockChecksumEv'/>
+<fun r='_ZNK24SingleApplicationPrivate10primaryPidEv'/>
+<fun r='_ZNK24SingleApplicationPrivate11primaryUserEv'/>
+<fun r='_ZN24SingleApplicationPrivate21readInitMessageHeaderEP12QLocalSocket'/>
+<fun r='_ZN24SingleApplicationPrivate19readInitMessageBodyEP12QLocalSocket'/>
+<fun r='_ZN24SingleApplicationPrivate11randomSleepEv'/>
+<fun r='_ZN24SingleApplicationPrivate10addAppDataERK7QString'/>
+<fun r='_ZNK24SingleApplicationPrivate7appDataEv'/>
+<mbr r='SingleApplicationPrivate::q_ptr' o='128' t='SingleApplication *'/>
+<mbr r='SingleApplicationPrivate::memory' o='192' t='QSharedMemory *'/>
+<mbr r='SingleApplicationPrivate::socket' o='256' t='QLocalSocket *'/>
+<mbr r='SingleApplicationPrivate::server' o='320' t='QLocalServer *'/>
+<mbr r='SingleApplicationPrivate::instanceNumber' o='384' t='quint32'/>
+<mbr r='SingleApplicationPrivate::blockServerName' o='448' t='QString'/>
+<mbr r='SingleApplicationPrivate::options' o='640' t='SingleApplication::Options'/>
+<mbr r='SingleApplicationPrivate::connectionMap' o='704' t='QMap&lt;QLocalSocket *, ConnectionInfo&gt;'/>
+<mbr r='SingleApplicationPrivate::appDataList' o='768' t='QStringList'/>
+<fun r='_ZN24SingleApplicationPrivate25slotConnectionEstablishedEv'/>
+<fun r='_ZN24SingleApplicationPrivate17slotDataAvailableEP12QLocalSocketj'/>
+<fun r='_ZN24SingleApplicationPrivate26slotClientConnectionClosedEP12QLocalSocketj'/>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication_p.cpp' l='75' c='_ZN24SingleApplicationPrivate18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>120</size>
+<fun r='_ZN24SingleApplicationPrivate18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='SingleApplicationPrivate::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK24SingleApplicationPrivate10metaObjectEv'/>
+<fun r='_ZN24SingleApplicationPrivate11qt_metacastEPKc'/>
+<fun r='_ZN24SingleApplicationPrivate11qt_metacallEN11QMetaObject4CallEiPPv'/>

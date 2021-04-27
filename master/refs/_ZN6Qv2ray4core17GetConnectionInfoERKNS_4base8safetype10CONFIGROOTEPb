@@ -1,0 +1,6 @@
+<dec f='qv2ray/src/core/CoreUtils.hpp' l='39' type='const std::tuple&lt;QString, QString, int&gt; Qv2ray::core::GetConnectionInfo(const Qv2ray::base::safetype::CONFIGROOT &amp; out, bool * status = nullptr)'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='79' u='c' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base6IDTypeINS1_14__QvConnectionEEEPb'/>
+<def f='qv2ray/src/core/CoreUtils.cpp' l='82' ll='113' type='const std::tuple&lt;QString, QString, int&gt; Qv2ray::core::GetConnectionInfo(const Qv2ray::base::safetype::CONFIGROOT &amp; out, bool * status = nullptr)'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='628' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler22CHUpdateSubscription_pERKNS_4base6IDTypeINS3_9__QvGroupEEERK10QByteArray'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='89' u='c' c='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='104' u='c' c='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>

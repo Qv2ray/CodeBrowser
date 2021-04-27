@@ -1,0 +1,73 @@
+<def f='include/google/protobuf/generated_message_reflection.h' l='128' ll='254'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='303' c='_ZN6google8protobuf8internal26GeneratedMessageReflectionC1EPKNS0_10DescriptorERKNS1_16ReflectionSchemaEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='536'/>
+<size>48</size>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='85'>// This struct describes the internal layout of the message, hence this is
+// used to act on the message reflectively.
+//   default_instance:  The default instance of the message.  This is only
+//                  used to obtain pointers to default instances of embedded
+//                  messages, which GetMessage() will return if the particular
+//                  sub-message has not been initialized yet.  (Thus, all
+//                  embedded message fields *must* have non-NULL pointers
+//                  in the default instance.)
+//   offsets:       An array of ints giving the byte offsets.
+//                  For each oneof or weak field, the offset is relative to the
+//                  default_instance. These can be computed at compile time
+//                  using the
+//                  PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET()
+//                  macro. For each none oneof field, the offset is related to
+//                  the start of the message object.  These can be computed at
+//                  compile time using the
+//                  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET() macro.
+//                  Besides offsets for all fields, this array also contains
+//                  offsets for oneof unions. The offset of the i-th oneof union
+//                  is offsets[descriptor-&gt;field_count() + i].
+//   has_bit_indices:  Mapping from field indexes to their index in the has
+//                  bit array.
+//   has_bits_offset:  Offset in the message of an array of uint32s of size
+//                  descriptor-&gt;field_count()/32, rounded up.  This is a
+//                  bitfield where each bit indicates whether or not the
+//                  corresponding field of the message has been initialized.
+//                  The bit for field index i is obtained by the expression:
+//                    has_bits[i / 32] &amp; (1 &lt;&lt; (i % 32))
+//   unknown_fields_offset:  Offset in the message of the UnknownFieldSet for
+//                  the message.
+//   extensions_offset:  Offset in the message of the ExtensionSet for the
+//                  message, or -1 if the message type has no extension
+//                  ranges.
+//   oneof_case_offset:  Offset in the message of an array of uint32s of
+//                  size descriptor-&gt;oneof_decl_count().  Each uint32
+//                  indicates what field is set for each oneof.
+//   object_size:   The size of a message object of this type, as measured
+//                  by sizeof().
+//   arena_offset:  If a message doesn&apos;t have a unknown_field_set that stores
+//                  the arena, it must have a direct pointer to the arena.
+//   weak_field_map_offset: If the message proto has weak fields, this is the
+//                  offset of _weak_field_map_ in the generated proto. Otherwise
+//                  -1.</doc>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema13GetObjectSizeEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema22GetFieldOffsetNonOneofEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema14GetFieldOffsetEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema14IsFieldInlinedEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema18GetOneofCaseOffsetEPKNS0_15OneofDescriptorE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema10HasHasbitsEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema11HasBitIndexEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema13HasBitsOffsetEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema17GetMetadataOffsetEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema15HasExtensionSetEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema21GetExtensionSetOffsetEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema21GetWeakFieldMapOffsetEv'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema17IsDefaultInstanceERKNS0_7MessageE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema15GetFieldDefaultEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf8internal16ReflectionSchema13HasWeakFieldsEv'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::default_instance_' o='0' t='const google::protobuf::Message *'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::offsets_' o='64' t='const google::protobuf::uint32 *'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::has_bit_indices_' o='128' t='const google::protobuf::uint32 *'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::has_bits_offset_' o='192' t='int'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::metadata_offset_' o='224' t='int'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::extensions_offset_' o='256' t='int'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::oneof_case_offset_' o='288' t='int'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::object_size_' o='320' t='int'/>
+<mbr r='google::protobuf::internal::ReflectionSchema::weak_field_map_offset_' o='352' t='int'/>
+<fun r='_ZN6google8protobuf8internal16ReflectionSchema11OffsetValueEjNS0_15FieldDescriptor4TypeE'/>
+<fun r='_ZN6google8protobuf8internal16ReflectionSchema7InlinedEjNS0_15FieldDescriptor4TypeE'/>

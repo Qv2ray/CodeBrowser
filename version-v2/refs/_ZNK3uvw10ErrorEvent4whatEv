@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='51' type='const char * uvw::ErrorEvent::what() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='44'>/**
+     * @brief Returns the error message for the given error code.
+     *
+     * Leaks a few bytes of memory when you call it with an unknown error code.
+     *
+     * @return The error message for the given error code.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/emitter.cpp' l='17' ll='19' type='const char * uvw::ErrorEvent::what() const'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='74' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='76' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/generated_message_util.h' l='366' type='google::protobuf::internal::SCCInfoBase *[N ? N : 1]'/>
+<doc f='include/google/protobuf/generated_message_util.h' l='362'>// Semantically this is const SCCInfo&lt;T&gt;* which is is a templated type.
+  // The obvious inheriting from SCCInfoBase mucks with struct initialization.
+  // Attempts showed the compiler was generating dynamic initialization code.
+  // Zero length arrays produce warnings with MSVC.</doc>

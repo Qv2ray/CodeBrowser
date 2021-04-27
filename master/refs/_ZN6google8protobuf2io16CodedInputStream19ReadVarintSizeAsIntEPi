@@ -1,0 +1,14 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='250' type='bool google::protobuf::io::CodedInputStream::ReadVarintSizeAsInt(int * value)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='928' ll='939' type='bool google::protobuf::io::CodedInputStream::ReadVarintSizeAsInt(int * value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='330' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='345' u='c' c='_ZN6google8protobuf8internal14WireFormatLite28ReadPackedFixedSizePrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='446' u='c' c='_ZN6google8protobuf8internal14WireFormatLite11ReadMessageEPNS0_2io16CodedInputStreamEPT_'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='241'>// Reads a varint off the wire into an &quot;int&quot;. This should be used for reading
+  // sizes off the wire (sizes of strings, submessages, bytes fields, etc).
+  //
+  // The value from the wire is interpreted as unsigned.  If its value exceeds
+  // the representable value of an integer on this platform, instead of
+  // truncating we return false. Truncating (as performed by ReadVarint32()
+  // above) is an acceptable approach for fields representing an integer, but
+  // when we are parsing a size from the wire, truncating the value would result
+  // in us misparsing the payload.</doc>

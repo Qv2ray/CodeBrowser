@@ -1,0 +1,20 @@
+<def f='qv2ray/src/plugins/common/CommonTypes.hpp' l='14' ll='21'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='19' c='_ZNK19HTTPSOCKSUserObjecteqERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='20' c='_ZN19HTTPSOCKSUserObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='20' c='_ZNK19HTTPSOCKSUserObject6toJsonEv'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='20' c='_ZN19HTTPSOCKSUserObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='28'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='39'/>
+<size>24</size>
+<mbr r='HTTPSOCKSUserObject::user' o='0' t='QString'/>
+<mbr r='HTTPSOCKSUserObject::pass' o='64' t='QString'/>
+<mbr r='HTTPSOCKSUserObject::level' o='128' t='int'/>
+<fun r='_ZN19HTTPSOCKSUserObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK19HTTPSOCKSUserObject6toJsonEv'/>
+<fun r='_ZN19HTTPSOCKSUserObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/httpout.cpp' l='23' c='_ZN18HttpOutboundEditor30on_http_UserNameTxt_textEditedERK7QString'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/httpout.cpp' l='30' c='_ZN18HttpOutboundEditor30on_http_PasswordTxt_textEditedERK7QString'/>
+<size>24</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/socksout.cpp' l='23' c='_ZN19SocksOutboundEditor31on_socks_UserNameTxt_textEditedERK7QString'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/socksout.cpp' l='30' c='_ZN19SocksOutboundEditor31on_socks_PasswordTxt_textEditedERK7QString'/>
+<size>24</size>

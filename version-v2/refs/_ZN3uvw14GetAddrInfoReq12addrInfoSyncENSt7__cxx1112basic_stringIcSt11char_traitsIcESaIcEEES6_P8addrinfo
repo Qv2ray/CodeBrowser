@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='144' type='std::pair&lt;bool, std::unique_ptr&lt;addrinfo, Deleter&gt;&gt; uvw::GetAddrInfoReq::addrInfoSync(std::string node, std::string service, addrinfo * hints = nullptr)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='77' ll='79' type='std::pair&lt;bool, std::unique_ptr&lt;addrinfo, GetAddrInfoReq::Deleter&gt;&gt; uvw::GetAddrInfoReq::addrInfoSync(std::string node, std::string service, addrinfo * hints = nullptr)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='132'>/**
+     * @brief Sync [getaddrinfo](http://linux.die.net/man/3/getaddrinfo).
+     *
+     * @param node Either a numerical network address or a network hostname.
+     * @param service Either a service name or a port number as a string.
+     * @param hints Optional `addrinfo` data structure with additional address
+     * type constraints.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * A `std::unique_ptr&lt;addrinfo, Deleter&gt;` containing the data requested.
+     */</doc>

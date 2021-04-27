@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='934' type='bool google::protobuf::EnumDescriptor::is_placeholder() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1906' macro='1' type='bool google::protobuf::EnumDescriptor::is_placeholder() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='931'>// Returns true if this is a placeholder for an unknown enum. This will
+  // only be the case if this descriptor comes from a DescriptorPool
+  // with AllowUnknownDependencies() set.</doc>

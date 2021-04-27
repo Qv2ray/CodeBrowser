@@ -1,0 +1,9 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='120' ll='122' type='int ZXing::GenericGFPoly::coefficient(int degree) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='117'>/**
+	* @return coefficient of x^degree term in this polynomial
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='33' u='c' c='_ZNK5ZXing13GenericGFPoly10evaluateAtEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='153' u='c' c='_ZN5ZXing13GenericGFPoly6divideERKS0_RS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='160' u='c' c='_ZN5ZXing13GenericGFPoly6divideERKS0_RS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='69' u='c' c='_ZN5ZXingL21RunEuclideanAlgorithmERKNS_9GenericGFEOSt6vectorIiSaIiEEiRNS_13GenericGFPolyES8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='91' u='c' c='_ZN5ZXingL18FindErrorLocationsERKNS_9GenericGFERKNS_13GenericGFPolyE'/>

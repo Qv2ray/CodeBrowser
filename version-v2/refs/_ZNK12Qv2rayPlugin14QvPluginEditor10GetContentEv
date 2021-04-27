@@ -1,0 +1,15 @@
+<dec f='qv2ray/src/plugin-interface/QvGUIPluginInterface.hpp' l='55' type='const QJsonObject Qv2rayPlugin::QvPluginEditor::GetContent() const'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/inbound/httpin.hpp' l='24' c='_ZNK17HTTPInboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/inbound/socksin.hpp' l='24' c='_ZNK18SocksInboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/blackhole.hpp' l='22' c='_ZNK23BlackholeOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/dns.hpp' l='40' c='_ZNK17DnsOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/freedom.hpp' l='29' c='_ZNK21FreedomOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/httpout.hpp' l='42' c='_ZNK18HttpOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/loopback.hpp' l='26' c='_ZNK22LoopbackSettingsEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.hpp' l='37' c='_ZNK25ShadowsocksOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/socksout.hpp' l='42' c='_ZNK19SocksOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/vless.hpp' l='42' c='_ZNK19VlessOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/outbound/vmess.hpp' l='28' c='_ZNK19VmessOutboundEditor10GetContentEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/inbound/dokodemo-door.cpp' l='32' c='_ZNK25DokodemoDoorInboundEditor10GetContentEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.cpp' l='91' u='c' c='_ZN13InboundEditor9getResultEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.cpp' l='93' u='c' c='_ZN14OutboundEditor22generateConnectionJsonEv'/>

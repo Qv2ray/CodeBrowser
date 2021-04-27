@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/impl/codegen/call.h' l='601' type='void grpc::internal::CallOpSetInterface::FillOps(grpc_call * call, grpc_op * ops, size_t * nops)'/>
+<ovr f='include/grpcpp/impl/codegen/call.h' l='627' c='_ZN4grpc8internal9CallOpSet7FillOpsEP9grpc_callP7grpc_opPm'/>
+<doc f='include/grpcpp/impl/codegen/call.h' l='599'>/// Fills in grpc_op, starting from ops[*nops] and moving
+  /// upwards.</doc>

@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='689' type='int uv_udp_try_send(uv_udp_t * handle, const uv_buf_t * bufs, unsigned int nbufs, const struct sockaddr * addr)'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='454' ll='465' type='int uv_udp_try_send(uv_udp_t * handle, const uv_buf_t * bufs, unsigned int nbufs, const struct sockaddr * addr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='192' u='c' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='220' u='c' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>

@@ -1,0 +1,32 @@
+<inh f='include/c++/10/stdexcept' l='113' c='std::logic_error'/>
+<def f='include/c++/10/stdexcept' l='200' ll='212'/>
+<use f='include/c++/10/stdexcept' l='206' c='_ZNSt12out_of_rangeC1ERKS_'/>
+<use f='include/c++/10/stdexcept' l='207' c='_ZNSt12out_of_rangeaSERKS_'/>
+<use f='include/c++/10/stdexcept' l='207' c='_ZNSt12out_of_rangeaSERKS_'/>
+<use f='include/c++/10/stdexcept' l='208' c='_ZNSt12out_of_rangeC1EOS_'/>
+<use f='include/c++/10/stdexcept' l='209' c='_ZNSt12out_of_rangeaSEOS_'/>
+<use f='include/c++/10/stdexcept' l='209' c='_ZNSt12out_of_rangeaSEOS_'/>
+<size>16</size>
+<doc f='include/c++/10/stdexcept' l='198'>/** This represents an argument whose value is not within the expected
+   *  range (e.g., boundary checks in basic_string).  */</doc>
+<fun r='_ZNSt12out_of_rangeC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNSt12out_of_rangeC1EPKc'/>
+<fun r='_ZNSt12out_of_rangeC1ERKS_'/>
+<fun r='_ZNSt12out_of_rangeaSERKS_'/>
+<fun r='_ZNSt12out_of_rangeC1EOS_'/>
+<fun r='_ZNSt12out_of_rangeaSEOS_'/>
+<fun r='_ZNSt12out_of_rangeD1Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='36' c='_ZNK5ZXing9BitMatrix6getRowEiRNS_8BitArrayE'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.cpp' l='36' c='_ZN5ZXing9BitSource8readBitsEi'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='71' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='99' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiSt10shared_ptrIKNS_9ByteArrayEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='122' c='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='163' c='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='143' c='_ZNK5ZXing10DataMatrix10SymbolInfo21horizontalDataRegionsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMSymbolInfo.cpp' l='161' c='_ZNK5ZXing10DataMatrix10SymbolInfo19verticalDataRegionsEv'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='186' c='_ZN5ZXing6QRCodeL18ToAlphaNumericCharEi'/>
+<size>16</size>

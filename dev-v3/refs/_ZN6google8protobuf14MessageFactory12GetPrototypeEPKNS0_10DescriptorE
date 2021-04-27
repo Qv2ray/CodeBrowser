@@ -1,0 +1,19 @@
+<dec f='include/google/protobuf/message.h' l='1055' type='const google::protobuf::Message * google::protobuf::MessageFactory::GetPrototype(const google::protobuf::Descriptor * type)'/>
+<doc f='include/google/protobuf/message.h' l='1037'>// Given a Descriptor, gets or constructs the default (prototype) Message
+  // of that type.  You can then call that message&apos;s New() method to construct
+  // a mutable message of that type.
+  //
+  // Calling this method twice with the same Descriptor returns the same
+  // object.  The returned object remains property of the factory.  Also, any
+  // objects created by calling the prototype&apos;s New() method share some data
+  // with the prototype, so these must be destroyed before the MessageFactory
+  // is destroyed.
+  //
+  // The given descriptor must outlive the returned message, and hence must
+  // outlive the MessageFactory.
+  //
+  // Some implementations do not support all types.  GetPrototype() will
+  // return NULL if the descriptor passed in is not supported.
+  //
+  // This method may or may not be thread-safe depending on the implementation.
+  // Each implementation should document its own degree thread-safety.</doc>

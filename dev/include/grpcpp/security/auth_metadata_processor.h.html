@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>auth_metadata_processor.h source code [include/grpcpp/security/auth_metadata_processor.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="grpc::AuthMetadataProcessor "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpcpp/security/auth_metadata_processor.h'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>grpcpp</a>/<a href='./'>security</a>/<a href='auth_metadata_processor.h.html'>auth_metadata_processor.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2015 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPCPP_SECURITY_AUTH_METADATA_PROCESSOR_H">GRPCPP_SECURITY_AUTH_METADATA_PROCESSOR_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPCPP_SECURITY_AUTH_METADATA_PROCESSOR_H" data-ref="_M/GRPCPP_SECURITY_AUTH_METADATA_PROCESSOR_H">GRPCPP_SECURITY_AUTH_METADATA_PROCESSOR_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../c++/10/map.html">&lt;map&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="auth_context.h.html">&lt;grpcpp/security/auth_context.h&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../support/status.h.html">&lt;grpcpp/support/status.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../support/string_ref.h.html">&lt;grpcpp/support/string_ref.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>namespace</b> <span class="namespace">grpc</span> {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/// Interface allowing custom server-side authorization based on credentials</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc">/// encoded in metadata.  Objects of this type can be passed to</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc">///<span class="command"> \a</span> <span class="arg">ServerCredentials::SetAuthMetadataProcessor().</span></i></td></tr>
+<tr><th id="33">33</th><td><b>class</b> <dfn class="type def" id="grpc::AuthMetadataProcessor" title='grpc::AuthMetadataProcessor' data-ref="grpc::AuthMetadataProcessor" data-ref-filename="grpc..AuthMetadataProcessor">AuthMetadataProcessor</dfn> {</td></tr>
+<tr><th id="34">34</th><td> <b>public</b>:</td></tr>
+<tr><th id="35">35</th><td>  <b>typedef</b> <span class="namespace">std::</span><a class="type" href="../../c++/10/bits/stl_map.h.html#std::multimap" title='std::multimap' data-ref="std::multimap" data-ref-filename="std..multimap">multimap</a>&lt;<span class="namespace">grpc::</span><a class="type" href="../impl/codegen/string_ref.h.html#grpc::string_ref" title='grpc::string_ref' data-ref="grpc::string_ref" data-ref-filename="grpc..string_ref">string_ref</a>, <span class="namespace">grpc::</span><a class="type" href="../impl/codegen/string_ref.h.html#grpc::string_ref" title='grpc::string_ref' data-ref="grpc::string_ref" data-ref-filename="grpc..string_ref">string_ref</a>&gt; <dfn class="typedef" id="grpc::AuthMetadataProcessor::InputMetadata" title='grpc::AuthMetadataProcessor::InputMetadata' data-type='std::multimap&lt;grpc::string_ref, grpc::string_ref&gt;' data-ref="grpc::AuthMetadataProcessor::InputMetadata" data-ref-filename="grpc..AuthMetadataProcessor..InputMetadata">InputMetadata</dfn>;</td></tr>
+<tr><th id="36">36</th><td>  <b>typedef</b> <span class="namespace">std::</span><a class="type" href="../../c++/10/bits/stl_map.h.html#std::multimap" title='std::multimap' data-ref="std::multimap" data-ref-filename="std..multimap">multimap</a>&lt;<span class="namespace">grpc::</span><a class="typedef" href="../impl/codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>, <span class="namespace">grpc::</span><a class="typedef" href="../impl/codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&gt; <dfn class="typedef" id="grpc::AuthMetadataProcessor::OutputMetadata" title='grpc::AuthMetadataProcessor::OutputMetadata' data-type='std::multimap&lt;grpc::string, grpc::string&gt;' data-ref="grpc::AuthMetadataProcessor::OutputMetadata" data-ref-filename="grpc..AuthMetadataProcessor..OutputMetadata">OutputMetadata</dfn>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>  <b>virtual</b> <dfn class="virtual decl def fn" id="_ZN4grpc21AuthMetadataProcessorD1Ev" title='grpc::AuthMetadataProcessor::~AuthMetadataProcessor' data-ref="_ZN4grpc21AuthMetadataProcessorD1Ev" data-ref-filename="_ZN4grpc21AuthMetadataProcessorD1Ev">~AuthMetadataProcessor</dfn>() {}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>  <i class="doc">/// If this method returns true, the<span class="command"> \a</span> <span class="arg">Process</span> function will be scheduled in</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">  /// a different thread from the one processing the call.</i></td></tr>
+<tr><th id="42">42</th><td>  <b>virtual</b> <em>bool</em> <dfn class="virtual decl def fn" id="_ZNK4grpc21AuthMetadataProcessor10IsBlockingEv" title='grpc::AuthMetadataProcessor::IsBlocking' data-ref="_ZNK4grpc21AuthMetadataProcessor10IsBlockingEv" data-ref-filename="_ZNK4grpc21AuthMetadataProcessor10IsBlockingEv">IsBlocking</dfn>() <em>const</em> { <b>return</b> <b>true</b>; }</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>  <i class="doc">/// context is read/write: it contains the properties of the channel peer and</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">  /// it is the job of the Process method to augment it with properties derived</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">  /// from the passed-in auth_metadata.</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc">  /// consumed_auth_metadata needs to be filled with metadata that has been</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">  /// consumed by the processor and will be removed from the call.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc">  /// response_metadata is the metadata that will be sent as part of the</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc">  /// response.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">  /// If the return value is not Status::OK, the rpc call will be aborted with</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">  /// the error code and error message sent back to the client.</i></td></tr>
+<tr><th id="53">53</th><td>  <b>virtual</b> <a class="type" href="../impl/codegen/status.h.html#grpc::Status" title='grpc::Status' data-ref="grpc::Status" data-ref-filename="grpc..Status">Status</a> <dfn class="virtual decl fn" id="_ZN4grpc21AuthMetadataProcessor7ProcessERKSt8multimapINS_10string_refES2_St4lessIS2_ESaISt4pairIKS2_S2_EEEPNS_11AuthContextEPS1_INSt7__cxx1112basic_st10988925" title='grpc::AuthMetadataProcessor::Process' data-ref="_ZN4grpc21AuthMetadataProcessor7ProcessERKSt8multimapINS_10string_refES2_St4lessIS2_ESaISt4pairIKS2_S2_EEEPNS_11AuthContextEPS1_INSt7__cxx1112basic_st10988925" data-ref-filename="_ZN4grpc21AuthMetadataProcessor7ProcessERKSt8multimapINS_10string_refES2_St4lessIS2_ESaISt4pairIKS2_S2_EEEPNS_11AuthContextEPS1_INSt7__cxx1112basic_st10988925">Process</dfn>(<em>const</em> <a class="typedef" href="#grpc::AuthMetadataProcessor::InputMetadata" title='grpc::AuthMetadataProcessor::InputMetadata' data-type='std::multimap&lt;grpc::string_ref, grpc::string_ref&gt;' data-ref="grpc::AuthMetadataProcessor::InputMetadata" data-ref-filename="grpc..AuthMetadataProcessor..InputMetadata">InputMetadata</a>&amp; <dfn class="local col5 decl" id="8695auth_metadata" title='auth_metadata' data-type='const grpc::AuthMetadataProcessor::InputMetadata &amp;' data-ref="8695auth_metadata" data-ref-filename="8695auth_metadata">auth_metadata</dfn>,</td></tr>
+<tr><th id="54">54</th><td>                         <a class="type" href="../impl/codegen/security/auth_context.h.html#grpc::AuthContext" title='grpc::AuthContext' data-ref="grpc::AuthContext" data-ref-filename="grpc..AuthContext">AuthContext</a>* <dfn class="local col6 decl" id="8696context" title='context' data-type='grpc::AuthContext *' data-ref="8696context" data-ref-filename="8696context">context</dfn>,</td></tr>
+<tr><th id="55">55</th><td>                         <a class="typedef" href="#grpc::AuthMetadataProcessor::OutputMetadata" title='grpc::AuthMetadataProcessor::OutputMetadata' data-type='std::multimap&lt;grpc::string, grpc::string&gt;' data-ref="grpc::AuthMetadataProcessor::OutputMetadata" data-ref-filename="grpc..AuthMetadataProcessor..OutputMetadata">OutputMetadata</a>* <dfn class="local col7 decl" id="8697consumed_auth_metadata" title='consumed_auth_metadata' data-type='grpc::AuthMetadataProcessor::OutputMetadata *' data-ref="8697consumed_auth_metadata" data-ref-filename="8697consumed_auth_metadata">consumed_auth_metadata</dfn>,</td></tr>
+<tr><th id="56">56</th><td>                         <a class="typedef" href="#grpc::AuthMetadataProcessor::OutputMetadata" title='grpc::AuthMetadataProcessor::OutputMetadata' data-type='std::multimap&lt;grpc::string, grpc::string&gt;' data-ref="grpc::AuthMetadataProcessor::OutputMetadata" data-ref-filename="grpc..AuthMetadataProcessor..OutputMetadata">OutputMetadata</a>* <dfn class="local col8 decl" id="8698response_metadata" title='response_metadata' data-type='grpc::AuthMetadataProcessor::OutputMetadata *' data-ref="8698response_metadata" data-ref-filename="8698response_metadata">response_metadata</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>}  <i>// namespace grpc</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="19">endif</span>  // GRPCPP_SECURITY_AUTH_METADATA_PROCESSOR_H</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

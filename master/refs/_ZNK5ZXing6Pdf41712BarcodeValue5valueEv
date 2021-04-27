@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeValue.h' l='42' type='std::vector&lt;int&gt; ZXing::Pdf417::BarcodeValue::value() const'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeValue.cpp' l='36' ll='52' type='std::vector&lt;int&gt; ZXing::Pdf417::BarcodeValue::value() const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeValue.cpp' l='32'>/**
+* Determines the maximum occurrence of a set value and returns all values which were set with this occurrence.
+* @return an array of int, containing the values with the highest occurrence, or null, if no value was set
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeValue.h' l='38'>/**
+	* Determines the maximum occurrence of a set value and returns all values which were set with this occurrence.
+	* @return an array of int, containing the values with the highest occurrence, or null, if no value was set
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='314' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn18getBarcodeMetadataERNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='315' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn18getBarcodeMetadataERNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='316' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn18getBarcodeMetadataERNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='317' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn18getBarcodeMetadataERNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='359' u='c' c='_ZN5ZXing6Pdf417L19AdjustCodewordCountERKNS0_15DetectionResultERSt6vectorIS4_INS0_12BarcodeValueESaIS5_EESaIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='667' u='c' c='_ZN5ZXing6Pdf417L19CreateDecoderResultERNS0_15DetectionResultE'/>

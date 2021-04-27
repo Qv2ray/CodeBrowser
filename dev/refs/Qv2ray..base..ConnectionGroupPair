@@ -1,0 +1,202 @@
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='56' ll='88'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='79' c='_ZNK6Qv2ray4base19ConnectionGroupPaireqERKS1_'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='83' c='_ZNK6Qv2ray4base19ConnectionGroupPairneERKS1_'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='87' c='_ZN6Qv2ray4base19ConnectionGroupPair8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='87' c='_ZNK6Qv2ray4base19ConnectionGroupPair6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='87' c='_ZN6Qv2ray4base19ConnectionGroupPair8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='257' c='_ZN6Qv2ray4base5qHashERKNS0_19ConnectionGroupPairE'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='264'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='264' c='_ZN11QMetaTypeIdIN6Qv2ray4base19ConnectionGroupPairEE14qt_metatype_idEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='264' c='_ZN11QMetaTypeIdIN6Qv2ray4base19ConnectionGroupPairEE14qt_metatype_idEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='54'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='186'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='187'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='18' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='20' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler17CurrentConnectionEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='43' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='44' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='45' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9OnCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='46' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnStatsDataAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='47' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='90'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='53' c='_ZNK6Qv2ray4core7handler15QvConfigHandler9IsValidIdERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='68' c='_ZNK6Qv2ray4core7handler15QvConfigHandler11IsConnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='85' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='91' c='_ZN6Qv2ray4core7handler15QvConfigHandler20ClearConnectionUsageERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='93' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERK7QStringRKNS4_6IDTypeINS4_9__GroupIdEEEb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='133' c='_ZN6Qv2ray4core7handler15QvConfigHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='134' c='_ZN6Qv2ray4core7handler15QvConfigHandler16OnStatsAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIS9_IllES9_IyyEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='136' c='_ZN6Qv2ray4core7handler15QvConfigHandler19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='140' c='_ZN6Qv2ray4core7handler15QvConfigHandler27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='141' c='_ZN6Qv2ray4core7handler15QvConfigHandler28OnConnectionRemovedFromGroupERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='151' c='_ZN6Qv2ray4core7handler15QvConfigHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='152' c='_ZN6Qv2ray4core7handler15QvConfigHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='153' c='_ZN6Qv2ray4core7handler15QvConfigHandler15OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='156' c='_ZN6Qv2ray4core7handler15QvConfigHandler17p_OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='158' c='_ZN6Qv2ray4core7handler15QvConfigHandler20p_OnStatsDataArrivedERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='30' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigERKNS_4base19ConnectionGroupPairEb'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='29' c='_ZNK6Qv2ray2ui7widgets6models20ConnectionListHelper22GetConnectionPairIndexERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='40' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper17addConnectionItemERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='44' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='45' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper19OnConnectionDeletedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='46' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='53'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='17' c='_ZN20ConnectionInfoWidget11ShowDetailsERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='34' c='_ZN20ConnectionInfoWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='35' c='_ZN20ConnectionInfoWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='37' c='_ZN20ConnectionInfoWidget25OnConnectionModified_PairERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='130' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='131' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='133' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='165' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='172' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='186' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='14' c='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base19ConnectionGroupPairEP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='23' c='_ZNK20ConnectionItemWidget10IdentifierEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='38' c='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='39' c='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='40' c='_ZN20ConnectionItemWidget24OnConnectionStatsArrivedERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='127' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='128' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='129' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='146' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='153' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='160' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='87' c='_ZN10MainWindow11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='88' c='_ZN10MainWindow14OnDisconnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='90' c='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='91' c='_ZN10MainWindow19OnVCoreLogAvailableERKN6Qv2ray4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='170'/>
+<size>16</size>
+<fun r='_ZN6Qv2ray4base19ConnectionGroupPairC1Ev'/>
+<fun r='_ZN6Qv2ray4base19ConnectionGroupPairC1ERKNS0_6IDTypeINS0_14__ConnectionIdEEERKNS2_INS0_9__GroupIdEEE'/>
+<mbr r='Qv2ray::base::ConnectionGroupPair::connectionId' o='0' t='Qv2ray::base::ConnectionId'/>
+<mbr r='Qv2ray::base::ConnectionGroupPair::groupId' o='64' t='Qv2ray::base::GroupId'/>
+<fun r='_ZN6Qv2ray4base19ConnectionGroupPair5clearEv'/>
+<fun r='_ZNK6Qv2ray4base19ConnectionGroupPair7isEmptyEv'/>
+<fun r='_ZNK6Qv2ray4base19ConnectionGroupPaireqERKS1_'/>
+<fun r='_ZNK6Qv2ray4base19ConnectionGroupPairneERKS1_'/>
+<fun r='_ZN6Qv2ray4base19ConnectionGroupPair8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base19ConnectionGroupPair6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base19ConnectionGroupPair8fromJsonERK10QJsonValue'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='355' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='356' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='357' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='360' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='361' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='368' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='369' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='370' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='381' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='387' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='395' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='400' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='401' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='402' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='403' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='404' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='405' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='406' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='454' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='456' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='466' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='473' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='480' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='501' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='508' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='559' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='566' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='573' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='601' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='622' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='643' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='657' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='853' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='869' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='876' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='883' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='890' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='911' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='918' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='967' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='974' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='981' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1031' c='_ZN6Qv2ray4core7handler15QvConfigHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1038' c='_ZN6Qv2ray4core7handler15QvConfigHandler16OnStatsAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIS9_IllES9_IyyEEE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1045' c='_ZN6Qv2ray4core7handler15QvConfigHandler19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1066' c='_ZN6Qv2ray4core7handler15QvConfigHandler27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1073' c='_ZN6Qv2ray4core7handler15QvConfigHandler28OnConnectionRemovedFromGroupERKNS_4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1122' c='_ZN6Qv2ray4core7handler15QvConfigHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1129' c='_ZN6Qv2ray4core7handler15QvConfigHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1136' c='_ZN6Qv2ray4core7handler15QvConfigHandler15OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='121' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='122' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='123' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='124' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='125' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='140' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='147' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='154' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='161' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='168' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='175' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='182' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='189' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='196' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='203' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='253' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='260' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='267' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9OnCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='274' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnStatsDataAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='281' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='17' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERKNS_4base19ConnectionGroupPairEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='73' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERKNS_4base19ConnectionGroupPairEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='168' c='_ZN6Qv2ray4core7handler15QvConfigHandler20ClearConnectionUsageERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='214' c='_ZN6Qv2ray4core7handler15QvConfigHandler25RemoveConnectionFromGroupERKNS_4base6IDTypeINS3_14__ConnectionIdEEERKNS4_INS3_9__GroupIdEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='309' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='339' c='_ZN6Qv2ray4core7handler15QvConfigHandler17p_OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='715' c='_ZN6Qv2ray4core7handler15QvConfigHandler20p_OnStatsDataArrivedERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='737' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERK7QStringRKNS4_6IDTypeINS4_9__GroupIdEEEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='75' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='199' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigERKNS_4base19ConnectionGroupPairEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='219' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='24' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelperC1EP9QTreeViewP7QObject'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='33' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelperC1EP9QTreeViewP7QObject'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='39' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelperC1EP9QTreeViewP7QObject'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='87' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper17addConnectionItemERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='127' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='132' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper19OnConnectionDeletedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='142' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='156' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper14OnGroupDeletedERKNS_4base6IDTypeINS4_9__GroupIdEEERK5QListINS5_INS4_14__ConnectionIdEEEE'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='62' c='_ZN20ConnectionInfoWidget11ShowDetailsERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='130' c='_ZN20ConnectionInfoWidget25OnConnectionModified_PairERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='203' c='_ZN20ConnectionInfoWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='205' c='_ZN20ConnectionInfoWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='211' c='_ZN20ConnectionInfoWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='213' c='_ZN20ConnectionInfoWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='21' c='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base19ConnectionGroupPairEP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='116' c='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='118' c='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='126' c='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='128' c='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='134' c='_ZN20ConnectionItemWidget24OnConnectionStatsArrivedERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='59' c='_ZN10MainWindow26ReloadRecentConnectionListEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='126' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='573' c='_ZN10MainWindow24Action_DeleteConnectionsEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='592' c='_ZN10MainWindow24Action_DeleteConnectionsEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='651' c='_ZN10MainWindow14OnDisconnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='676' c='_ZN10MainWindow11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='718' c='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='775' c='_ZN10MainWindow19OnVCoreLogAvailableERKN6Qv2ray4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='869' c='_ZN10MainWindow26Action_DuplicateConnectionEv'/>
+<size>16</size>

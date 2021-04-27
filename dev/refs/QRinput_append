@@ -1,0 +1,23 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='200' type='int QRinput_append(QRinput * input, QRencodeMode mode, int size, const unsigned char * data)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='186'>/**
+ * Append data to an input object.
+ * The data is copied and appended to the input object.
+ * @param input input object.
+ * @param mode encoding mode.
+ * @param size size of data (byte).
+ * @param data a pointer to the memory area of the input data.
+ * @retval 0 success.
+ * @retval -1 an error occurred and errno is set to indeicate the error.
+ *            See Execptions for the details.
+ * @throw ENOMEM unable to allocate memory.
+ * @throw EINVAL input data is invalid.
+ *
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='657' u='c' c='QRcode_encodeDataReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='828' u='c' c='QRcode_encodeDataStructuredReal'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='223' ll='235' type='int QRinput_append(QRinput * input, QRencodeMode mode, int size, const unsigned char * data)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='291' u='c' c='QRinput_appendECIheader'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='117' u='c' c='Split_eatNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='166' u='c' c='Split_eatAn'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='183' u='c' c='Split_eatKanji'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='253' u='c' c='Split_eat8'/>

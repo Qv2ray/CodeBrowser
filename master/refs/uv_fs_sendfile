@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1430' type='int uv_fs_sendfile(uv_loop_t * loop, uv_fs_t * req, uv_file out_fd, uv_file in_fd, int64_t in_offset, size_t length, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1218' u='c' c='uv__fs_copyfile'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1942' ll='1955' type='int uv_fs_sendfile(uv_loop_t * loop, uv_fs_t * req, uv_file out_fd, uv_file in_fd, int64_t off, size_t len, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='178' u='a' c='_ZN3uvw7FileReq8sendfileENS_7details13UVTypeWrapperIiEElm'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='184' u='a' c='_ZN3uvw7FileReq12sendfileSyncENS_7details13UVTypeWrapperIiEElm'/>

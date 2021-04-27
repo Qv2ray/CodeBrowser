@@ -1,0 +1,12 @@
+<def f='include/grpc/impl/codegen/slice.h' l='55' ll='62'/>
+<use f='include/grpc/impl/codegen/slice.h' l='61'/>
+<use f='include/grpc/impl/codegen/slice.h' l='55'/>
+<use f='include/grpc/impl/codegen/slice.h' l='81'/>
+<size>16</size>
+<doc f='include/grpc/impl/codegen/slice.h' l='50'>/** Reference count container for grpc_slice. Contains function pointers to
+   increment and decrement reference counts. Implementations should cleanup
+   when the reference count drops to zero.
+   Typically client code should not touch this, and use grpc_slice_malloc,
+   grpc_slice_new, or grpc_slice_new_with_len instead. */</doc>
+<mbr r='grpc_slice_refcount::vtable' o='0' t='const grpc_slice_refcount_vtable *'/>
+<mbr r='grpc_slice_refcount::sub_refcount' o='64' t='struct grpc_slice_refcount *'/>

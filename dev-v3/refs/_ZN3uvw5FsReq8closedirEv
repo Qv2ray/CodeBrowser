@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1363' type='void uvw::FsReq::closedir()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='550' ll='554' type='void uvw::FsReq::closedir()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1354'>/**
+     * @brief Closes asynchronously a directory stream.
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::CLOSEDIR&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * It frees also the memory allocated internally when a path has been opened
+     * as a directory stream.
+     */</doc>

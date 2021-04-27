@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='360' type='int utimensat(int __fd, const char * __path, const struct timespec * __times, int __flags)'/>
+<doc f='include/x86_64-linux-gnu/sys/stat.h' l='358'>/* Set file access and modification times relative to directory file
+   descriptor.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='987' u='c' c='uv__fs_utime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1027' u='c' c='uv__fs_lutime'/>

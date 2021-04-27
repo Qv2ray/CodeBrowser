@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='161' type='void uvw::UDPHandle::bind(const sockaddr &amp; addr, Flags&lt;uvw::UDPHandle::Bind&gt; opts = Flags&lt;uvw::UDPHandle::Bind&gt;{})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='43' ll='45' type='void uvw::UDPHandle::bind(const sockaddr &amp; addr, Flags&lt;UDPHandle::Bind&gt; opts = Flags&lt;uvw::UDPHandle::Bind&gt;{})'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='82' u='c' c='_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='144'>/**
+     * @brief Binds the UDP handle to an IP address and port.
+     *
+     * Available flags are:
+     *
+     * * `UDPHandle::Bind::IPV6ONLY`
+     * * `UDPHandle::Bind::UDP_PARTIAL`
+     * * `UDPHandle::Bind::REUSEADDR`
+     * * `UDPHandle::Bind::UDP_RECVMMSG`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_flags)
+     * for further details.
+     *
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     * @param opts Optional additional flags.
+     */</doc>

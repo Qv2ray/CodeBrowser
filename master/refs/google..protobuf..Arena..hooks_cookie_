@@ -1,0 +1,9 @@
+<use f='include/google/protobuf/arena.h' l='266' u='r' c='_ZN6google8protobuf5ArenaD1Ev'/>
+<use f='include/google/protobuf/arena.h' l='277' u='w' c='_ZN6google8protobuf5Arena4InitERKNS0_12ArenaOptionsE'/>
+<use f='include/google/protobuf/arena.h' l='279' u='w' c='_ZN6google8protobuf5Arena4InitERKNS0_12ArenaOptionsE'/>
+<use f='include/google/protobuf/arena.h' l='375' u='r' c='_ZN6google8protobuf5Arena5ResetEv'/>
+<use f='include/google/protobuf/arena.h' l='514' u='r' c='_ZNK6google8protobuf5Arena9AllocHookEPKSt9type_infom'/>
+<dec f='include/google/protobuf/arena.h' l='686' type='void *'/>
+<offset>896</offset>
+<doc f='include/google/protobuf/arena.h' l='684'>// The arena may save a cookie it receives from the external on_init hook
+  // and then use it when calling the on_reset and on_destruction hooks.</doc>

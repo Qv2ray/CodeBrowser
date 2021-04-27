@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='8' type='0'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='18' u='r' c='_ZN7QtNodes4PortC1Ev'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='30' u='r' c='_ZN7QtNodes4Port15portTypeIsValidEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='36' u='r' c='_ZN7QtNodes12oppositePortENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='14' c='_ZN7QtNodes15ConnectionStateC1ENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='32' u='r' c='_ZNK7QtNodes15ConnectionState12requiresPortEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionState.hpp' l='36' u='r' c='_ZN7QtNodes15ConnectionState17setNoRequiredPortEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='40' c='_ZN7QtNodes9NodeState11setReactionENS0_22ReactToConnectionStateENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='117' u='r' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGeometry.cpp' l='17' u='r' c='_ZNK7QtNodes18ConnectionGeometry11getEndPointENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='106' u='r' c='_ZN7QtNodes24ConnectionGraphicsObject14mouseMoveEventEP24QGraphicsSceneMouseEvent'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='24' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='152' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction15nodePortIsEmptyENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='142' u='r' c='_ZNK7QtNodes12NodeGeometry18checkHitScenePointENS_8PortTypeE7QPointFRK10QTransform'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='13' u='r' c='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>

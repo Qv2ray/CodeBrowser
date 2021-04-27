@@ -1,0 +1,16 @@
+<def f='include/c++/10/bits/ios_base.h' l='652' ll='658' type='std::ios_base::fmtflags std::ios_base::setf(std::ios_base::fmtflags __fmtfl)'/>
+<use f='include/c++/10/bits/ios_base.h' l='887' u='c' c='_ZSt9boolalphaRSt8ios_base'/>
+<use f='include/c++/10/bits/ios_base.h' l='903' u='c' c='_ZSt8showbaseRSt8ios_base'/>
+<use f='include/c++/10/bits/ios_base.h' l='919' u='c' c='_ZSt9showpointRSt8ios_base'/>
+<use f='include/c++/10/bits/ios_base.h' l='935' u='c' c='_ZSt7showposRSt8ios_base'/>
+<use f='include/c++/10/bits/ios_base.h' l='951' u='c' c='_ZSt6skipwsRSt8ios_base'/>
+<use f='include/c++/10/bits/ios_base.h' l='967' u='c' c='_ZSt9uppercaseRSt8ios_base'/>
+<use f='include/c++/10/bits/ios_base.h' l='983' u='c' c='_ZSt7unitbufRSt8ios_base'/>
+<doc f='include/c++/10/bits/ios_base.h' l='644'>/**
+     *  @brief  Setting new format flags.
+     *  @param  __fmtfl  Additional flags to set.
+     *  @return  The previous format control flags.
+     *
+     *  This function sets additional flags in format control.  Flags that
+     *  were previously set remain set.
+    */</doc>

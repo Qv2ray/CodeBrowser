@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1221' type='char *'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1281' u='w' c='uv_os_environ'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1293' u='r' c='uv_os_environ'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='839' u='r' c='uv_os_free_environ'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='548' u='r' c='_ZN3uvw9Utilities2OS3envET_'/>

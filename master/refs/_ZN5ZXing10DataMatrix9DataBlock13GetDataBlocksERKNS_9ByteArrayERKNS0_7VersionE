@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='60' type='static std::vector&lt;DataBlock&gt; ZXing::DataMatrix::DataBlock::GetDataBlocks(const ZXing::ByteArray &amp; rawCodewords, const ZXing::DataMatrix::Version &amp; version)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.cpp' l='27' ll='80' type='static std::vector&lt;DataBlock&gt; ZXing::DataMatrix::DataBlock::GetDataBlocks(const ZXing::ByteArray &amp; rawCodewords, const ZXing::DataMatrix::Version &amp; version)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='50'>/**
+	* &lt;p&gt;When Data Matrix Codes use multiple data blocks, they actually interleave the bytes of each of them.
+	* That is, the first byte of data block 1 to n is written, then the second bytes, and so on. This
+	* method will separate the data into original blocks.&lt;/p&gt;
+	*
+	* @param rawCodewords bytes as read directly from the Data Matrix Code
+	* @param version version of the Data Matrix Code
+	* @return DataBlocks containing original bytes, &quot;de-interleaved&quot; from representation in the
+	*         Data Matrix Code
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='599' u='c' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>

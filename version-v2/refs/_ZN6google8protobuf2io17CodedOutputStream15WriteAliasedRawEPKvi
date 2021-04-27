@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='878' type='void google::protobuf::io::CodedOutputStream::WriteAliasedRaw(const void * buffer, int size)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1272' u='c' c='_ZN6google8protobuf2io17CodedOutputStream20WriteRawMaybeAliasedEPKvi'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='876'>// Like WriteRaw() but may avoid copying if the underlying
+  // ZeroCopyOutputStream supports it.</doc>

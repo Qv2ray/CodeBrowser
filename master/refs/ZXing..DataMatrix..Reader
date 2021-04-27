@@ -1,0 +1,15 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='38' c='ZXing::Reader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='32' ll='38'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='59' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='81' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='27'>/**
+* This implementation can detect and decode Data Matrix codes in an image.
+*
+* @author bbrown@google.com (Brian Brown)
+*/</doc>
+<mbr r='ZXing::DataMatrix::Reader::_tryRotate' o='64' t='bool'/>
+<mbr r='ZXing::DataMatrix::Reader::_tryHarder' o='72' t='bool'/>
+<mbr r='ZXing::DataMatrix::Reader::_isPure' o='80' t='bool'/>
+<fun r='_ZN5ZXing10DataMatrix6ReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>

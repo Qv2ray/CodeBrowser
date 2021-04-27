@@ -1,0 +1,38 @@
+<def f='include/x86_64-linux-gnu/bits/stat.h' l='46' ll='115'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='214' c='stat64'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='216' c='fstat64'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='240' c='fstatat64'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='265' c='lstat64'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='407' c='__fxstat'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='410' c='__xstat'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='413' c='__lxstat'/>
+<use f='include/x86_64-linux-gnu/sys/stat.h' l='417' c='__fxstatat'/>
+<size>144</size>
+<mbr r='stat::st_dev' o='0' t='__dev_t'/>
+<mbr r='stat::st_ino' o='64' t='__ino_t'/>
+<mbr r='stat::st_nlink' o='128' t='__nlink_t'/>
+<mbr r='stat::st_mode' o='192' t='__mode_t'/>
+<mbr r='stat::st_uid' o='224' t='__uid_t'/>
+<mbr r='stat::st_gid' o='256' t='__gid_t'/>
+<mbr r='stat::__pad0' o='288' t='int'/>
+<mbr r='stat::st_rdev' o='320' t='__dev_t'/>
+<mbr r='stat::st_size' o='384' t='__off_t'/>
+<mbr r='stat::st_blksize' o='448' t='__blksize_t'/>
+<mbr r='stat::st_blocks' o='512' t='__blkcnt_t'/>
+<mbr r='stat::st_atim' o='576' t='struct timespec'/>
+<mbr r='stat::st_mtim' o='704' t='struct timespec'/>
+<mbr r='stat::st_ctim' o='832' t='struct timespec'/>
+<mbr r='stat::__glibc_reserved' o='960' t='__syscall_slong_t [3]'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1108' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1109' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1267' c='uv__to_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1424' c='uv__fs_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1440' c='uv__fs_lstat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1456' c='uv__fs_fstat'/>
+<size>144</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='328' c='uv_pipe_chmod'/>
+<size>144</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='33' c='uv__random_readpath'/>
+<size>144</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='317' c='uv_guess_handle'/>
+<size>144</size>

@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/arena.h' l='357' type='google::protobuf::uint64 google::protobuf::Arena::SpaceUsed() const'/>
+<use f='include/google/protobuf/arena.h' l='364' u='c' c='_ZNK6google8protobuf5Arena21SpaceAllocatedAndUsedEv'/>
+<doc f='include/google/protobuf/arena.h' l='353'>// Returns the total space used by the arena. Similar to SpaceAllocated but
+  // does not include free space and block overhead. The total space returned
+  // may not include space used by other threads executing concurrently with
+  // the call to this method.</doc>

@@ -1,0 +1,32 @@
+<def f='include/google/protobuf/stubs/hash.h' l='337' ll='338'/>
+<def f='include/google/protobuf/stubs/hash.h' l='340' ll='345'/>
+<def f='include/google/protobuf/stubs/hash.h' l='349' ll='358'/>
+<use f='include/google/protobuf/stubs/hash.h' l='350'/>
+<def f='include/google/protobuf/stubs/hash.h' l='360' ll='365'/>
+<use f='include/google/protobuf/stubs/hash.h' l='361'/>
+<use f='include/google/protobuf/stubs/hash.h' l='368'/>
+<use f='include/google/protobuf/stubs/hash.h' l='385'/>
+<def f='include/google/protobuf/stubs/hash.h' l='398' ll='409'/>
+<use f='include/google/protobuf/stubs/hash.h' l='399'/>
+<use f='include/google/protobuf/stubs/hash.h' l='401' c='_ZNK6google8protobuf4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS7_'/>
+<def f='include/google/protobuf/stubs/hash.h' l='411' ll='428'/>
+<use f='include/google/protobuf/stubs/hash.h' l='414' c='_ZNK6google8protobuf4hashISt4pairIT_T0_EEclERKS5_'/>
+<use f='include/google/protobuf/stubs/hash.h' l='415' c='_ZNK6google8protobuf4hashISt4pairIT_T0_EEclERKS5_'/>
+<use f='include/google/protobuf/map.h' l='135'/>
+<def f='include/google/protobuf/stubs/stringpiece.h' l='476' ll='484'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='476'/>
+<size>1</size>
+<doc f='include/google/protobuf/stubs/hash.h' l='347'>// Unlike the old SGI version, the TR1 &quot;hash&quot; does not special-case char*.  So,
+// we go ahead and provide our own implementation.</doc>
+<fun r='_ZNK6google8protobuf4hashIPKT_EclES4_'/>
+<fun r='_ZNK6google8protobuf4hashIPKcEclES3_'/>
+<fun r='_ZNK6google8protobuf4hashIbEclEb'/>
+<fun r='_ZNK6google8protobuf4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS7_'/>
+<smbr r='google::protobuf::hash{std::__cxx11::basic_string{char}}::bucket_size' t='const size_t'/>
+<smbr r='google::protobuf::hash{std::__cxx11::basic_string{char}}::min_buckets' t='const size_t'/>
+<fun r='_ZNK6google8protobuf4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS7_SA_'/>
+<fun r='_ZNK6google8protobuf4hashISt4pairIT_T0_EEclERKS5_'/>
+<smbr r='google::protobuf::hash{pair{type-parameter-0-0,type-parameter-0-1}}::bucket_size' t='const size_t'/>
+<smbr r='google::protobuf::hash{pair{type-parameter-0-0,type-parameter-0-1}}::min_buckets' t='const size_t'/>
+<fun r='_ZNK6google8protobuf4hashISt4pairIT_T0_EEclERKS5_S8_'/>
+<fun r='_ZNK6google8protobuf4hashINS0_11StringPieceEEclERKS2_'/>

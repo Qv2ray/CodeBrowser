@@ -1,0 +1,38 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/ResultPoint.h' l='29' c='ZXing::ResultPoint'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPattern.h' l='31' ll='64'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPattern.h' l='63' c='_ZNK5ZXing6QRCode13FinderPattern15combineEstimateEfff'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternInfo.h' l='33'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternInfo.h' l='34'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternInfo.h' l='35'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPattern.h' l='24'>/**
+* &lt;p&gt;Encapsulates a finder pattern, which are the three square patterns found in
+* the corners of QR Codes. It also encapsulates a count of similar finder patterns,
+* as a convenience to the finder&apos;s bookkeeping.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::QRCode::FinderPattern::_estimatedModuleSize' o='128' t='float'/>
+<mbr r='ZXing::QRCode::FinderPattern::_count' o='160' t='int'/>
+<fun r='_ZN5ZXing6QRCode13FinderPatternC1Ev'/>
+<fun r='_ZN5ZXing6QRCode13FinderPatternC1Efffi'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern19estimatedModuleSizeEv'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern5countEv'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern7isValidEv'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern11aboutEqualsEfff'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern15combineEstimateEfff'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPattern.cpp' l='51' c='_ZNK5ZXing6QRCode13FinderPattern15combineEstimateEfff'/>
+<size>24</size>
+<fun r='_ZN5ZXing6QRCode13FinderPatternC1Efffi'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern11aboutEqualsEfff'/>
+<fun r='_ZNK5ZXing6QRCode13FinderPattern15combineEstimateEfff'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='299' c='_ZN5ZXing6QRCodeL11FindRowSkipERKSt6vectorINS0_13FinderPatternESaIS2_EERb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='306' c='_ZN5ZXing6QRCodeL11FindRowSkipERKSt6vectorINS0_13FinderPatternESaIS2_EERb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='344' c='_ZN5ZXing6QRCodeL20HandlePossibleCenterERKNS_9BitMatrixERKSt5arrayIiLm5EEiiRSt6vectorINS0_13FinderPatternESaIS9_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='359' c='_ZN5ZXing6QRCodeL20HandlePossibleCenterERKNS_9BitMatrixERKSt5arrayIiLm5EEiiRSt6vectorINS0_13FinderPatternESaIS9_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='375' c='_ZN5ZXing6QRCodeL28HaveMultiplyConfirmedCentersERKSt6vectorINS0_13FinderPatternESaIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='379' c='_ZN5ZXing6QRCodeL28HaveMultiplyConfirmedCentersERKSt6vectorINS0_13FinderPatternESaIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='405' c='_ZN5ZXing6QRCodeL18SelectBestPatternsESt6vectorINS0_13FinderPatternESaIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='418' c='_ZN5ZXing6QRCodeL18SelectBestPatternsESt6vectorINS0_13FinderPatternESaIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='507' c='_ZN5ZXing6QRCode19FinderPatternFinder4FindERKNS_9BitMatrixEb'/>
+<size>24</size>

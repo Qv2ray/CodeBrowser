@@ -1,0 +1,63 @@
+<def f='include/netdb.h' l='565' ll='575'/>
+<use f='include/netdb.h' l='574'/>
+<use f='include/netdb.h' l='583'/>
+<use f='include/netdb.h' l='584'/>
+<use f='include/netdb.h' l='662' c='getaddrinfo'/>
+<use f='include/netdb.h' l='663' c='getaddrinfo'/>
+<use f='include/netdb.h' l='666' c='freeaddrinfo'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='332'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='878' macro='1'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='878' macro='1'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='887' c='uv_getaddrinfo'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='888' c='uv_freeaddrinfo'/>
+<size>48</size>
+<doc f='include/netdb.h' l='564'>/* Structure to contain information about address of a service provider.  */</doc>
+<mbr r='addrinfo::ai_flags' o='0' t='int'/>
+<mbr r='addrinfo::ai_family' o='32' t='int'/>
+<mbr r='addrinfo::ai_socktype' o='64' t='int'/>
+<mbr r='addrinfo::ai_protocol' o='96' t='int'/>
+<mbr r='addrinfo::ai_addrlen' o='128' t='socklen_t'/>
+<mbr r='addrinfo::ai_addr' o='192' t='struct sockaddr *'/>
+<mbr r='addrinfo::ai_canonname' o='256' t='char *'/>
+<mbr r='addrinfo::ai_next' o='320' t='struct addrinfo *'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='146' c='uv_getaddrinfo'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='223' c='uv_freeaddrinfo'/>
+<size>48</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='23'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='25' c='_ZN3uvw13AddrInfoEventC1ESt10unique_ptrI8addrinfoPFvPS2_EE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='33'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='72' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='73' c='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='74' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='77'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='87' c='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='100' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='100' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='108' c='_ZN3uvw14GetAddrInfoReq15serviceAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='121' c='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='121' c='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='130' c='_ZN3uvw14GetAddrInfoReq8addrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='144' c='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='144' c='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='11' c='_ZN3uvw13AddrInfoEventC1ESt10unique_ptrI8addrinfoPFvPS2_EE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='21' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='27' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='27' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='27' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='36' c='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='41' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='44' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='44' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='44' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='52' c='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='57' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='57' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='62' c='_ZN3uvw14GetAddrInfoReq15serviceAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='67' c='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='67' c='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='72' c='_ZN3uvw14GetAddrInfoReq8addrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='77' c='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='77' c='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<size>48</size>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='75' c='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>
+<size>48</size>

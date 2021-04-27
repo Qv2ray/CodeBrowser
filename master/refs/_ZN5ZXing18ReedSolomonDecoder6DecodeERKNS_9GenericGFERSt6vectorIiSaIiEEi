@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.h' l='59' type='static bool ZXing::ReedSolomonDecoder::Decode(const ZXing::GenericGF &amp; field, std::vector&lt;int&gt; &amp; received, int twoS)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='136' ll='173' type='static bool ZXing::ReedSolomonDecoder::Decode(const ZXing::GenericGF &amp; field, std::vector&lt;int&gt; &amp; received, int twoS)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.h' l='50'>/**
+	* &lt;p&gt;Decodes given set of received codewords, which include both data and error-correction
+	* codewords. Really, this means it uses Reed-Solomon to detect and correct errors, in-place,
+	* in the input.&lt;/p&gt;
+	*
+	* @param received data and error-correction codewords
+	* @param twoS number of error-correction codewords available
+	* @throws ReedSolomonException if decoding fails for any reason
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='187' u='c' c='_ZN5ZXing5AztecL11CorrectBitsERKNS0_14DetectorResultERKSt6vectorIbSaIbEERS6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='137' u='c' c='_ZN5ZXing5AztecL25GetCorrectedParameterDataElbRi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='575' u='c' c='_ZN5ZXing10DataMatrixL13CorrectErrorsERNS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='59' u='c' c='_ZN5ZXing8MaxiCodeL13CorrectErrorsERNS_9ByteArrayEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='61' u='c' c='_ZN5ZXing6QRCodeL13CorrectErrorsERNS_9ByteArrayEi'/>

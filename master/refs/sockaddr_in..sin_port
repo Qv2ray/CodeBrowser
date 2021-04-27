@@ -1,0 +1,6 @@
+<dec f='include/netinet/in.h' l='241' type='in_port_t'/>
+<offset>16</offset>
+<doc f='include/netinet/in.h' l='241'>/* Port number.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='95' u='r' c='maybe_new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='224' u='w' c='uv_ip4_addr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='375' u='r' c='_ZN3uvw7details8IpTraitsINS_4IPv4EE7sinPortEPK11sockaddr_in'/>

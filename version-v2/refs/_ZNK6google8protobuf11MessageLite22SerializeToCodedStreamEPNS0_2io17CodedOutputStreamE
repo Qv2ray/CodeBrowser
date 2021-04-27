@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/message_lite.h' l='291' type='bool google::protobuf::MessageLite::SerializeToCodedStream(io::CodedOutputStream * output) const'/>
+<doc f='include/google/protobuf/message_lite.h' l='284'>// Serialization ---------------------------------------------------
+  // Methods for serializing in protocol buffer format.  Most of these
+  // are just simple wrappers around ByteSize() and SerializeWithCachedSizes().
+
+  // Write a protocol buffer of this message to the given output.  Returns
+  // false on a write error.  If the message is missing required fields,
+  // this may GOOGLE_CHECK-fail.</doc>

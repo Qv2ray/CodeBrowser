@@ -1,0 +1,64 @@
+<def f='include/google/protobuf/message.h' l='174' ll='177'/>
+<use f='include/google/protobuf/message.h' l='353' c='_ZNK6google8protobuf7Message11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='183' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='301' c='_ZNK5v2ray4core3app5stats7command4Stat11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='419' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='528' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='646' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='755' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='851' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse11GetMetadataEv'/>
+<use f='/v2ray_api.pb.h' l='1017' c='_ZNK5v2ray4core3app5stats7command6Config11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='405' c='_ZNK6google8protobuf17FileDescriptorSet11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='537' c='_ZNK6google8protobuf19FileDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='874' c='_ZNK6google8protobuf30DescriptorProto_ExtensionRange11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1031' c='_ZNK6google8protobuf29DescriptorProto_ReservedRange11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1170' c='_ZNK6google8protobuf15DescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1451' c='_ZNK6google8protobuf21ExtensionRangeOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1586' c='_ZNK6google8protobuf20FieldDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1984' c='_ZNK6google8protobuf20OneofDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2148' c='_ZNK6google8protobuf37EnumDescriptorProto_EnumReservedRange11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2287' c='_ZNK6google8protobuf19EnumDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2502' c='_ZNK6google8protobuf24EnumValueDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2676' c='_ZNK6google8protobuf22ServiceDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2853' c='_ZNK6google8protobuf21MethodDescriptorProto11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3091' c='_ZNK6google8protobuf11FileOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3624' c='_ZNK6google8protobuf14MessageOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3799' c='_ZNK6google8protobuf12FieldOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4050' c='_ZNK6google8protobuf12OneofOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4185' c='_ZNK6google8protobuf11EnumOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4340' c='_ZNK6google8protobuf16EnumValueOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4485' c='_ZNK6google8protobuf14ServiceOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4630' c='_ZNK6google8protobuf13MethodOptions11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4813' c='_ZNK6google8protobuf28UninterpretedOption_NamePart11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4972' c='_ZNK6google8protobuf19UninterpretedOption11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5217' c='_ZNK6google8protobuf23SourceCodeInfo_Location11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5441' c='_ZNK6google8protobuf14SourceCodeInfo11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5575' c='_ZNK6google8protobuf28GeneratedCodeInfo_Annotation11GetMetadataEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5755' c='_ZNK6google8protobuf17GeneratedCodeInfo11GetMetadataEv'/>
+<size>16</size>
+<doc f='include/google/protobuf/message.h' l='173'>// A container to hold message metadata.</doc>
+<mbr r='google::protobuf::Metadata::descriptor' o='0' t='const google::protobuf::Descriptor *'/>
+<mbr r='google::protobuf::Metadata::reflection' o='64' t='const google::protobuf::Reflection *'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='668' c='_ZN6google8protobuf8internal24RegisterAllTypesInternalEPKNS0_8MetadataEi'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='742' c='_ZN6google8protobuf8internal17AssignDescriptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS1_15MigrationSchemaEPKPKNS0_7MessageEPKjPNS04100132'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='746' c='_ZN6google8protobuf8internal16RegisterAllTypesEPKNS0_8MetadataEi'/>
+<use f='/v2ray_api.pb.cc' l='201'/>
+<use f='/v2ray_api.pb.cc' l='628' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='909' c='_ZNK5v2ray4core3app5stats7command4Stat11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='1143' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='1422' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='1651' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='1830' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='2383' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse11GetMetadataEv'/>
+<use f='/v2ray_api.pb.cc' l='2562' c='_ZNK5v2ray4core3app5stats7command6Config11GetMetadataEv'/>
+<size>16</size>
+<use f='/v2ray_geosite.pb.h' l='182' c='_ZNK22DomainObject_Attribute11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.h' l='325' c='_ZNK12DomainObject11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.h' l='488' c='_ZNK7GeoSite11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.h' l='612' c='_ZNK11GeoSiteList11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.cc' l='116'/>
+<use f='/v2ray_geosite.pb.cc' l='600' c='_ZNK22DomainObject_Attribute11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.cc' l='928' c='_ZNK12DomainObject11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1215' c='_ZNK7GeoSite11GetMetadataEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1444' c='_ZNK11GeoSiteList11GetMetadataEv'/>
+<size>16</size>

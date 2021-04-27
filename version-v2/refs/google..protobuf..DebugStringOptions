@@ -1,0 +1,23 @@
+<def f='include/google/protobuf/descriptor.h' l='153' ll='167'/>
+<use f='include/google/protobuf/descriptor.h' l='264' c='_ZNK6google8protobuf10Descriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='436' c='_ZNK6google8protobuf10Descriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsEb'/>
+<use f='include/google/protobuf/descriptor.h' l='698' c='_ZNK6google8protobuf15FieldDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='731' c='_ZNK6google8protobuf15FieldDescriptor11DebugStringEiNS1_14PrintLabelFlagEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='840' c='_ZNK6google8protobuf15OneofDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='857' c='_ZNK6google8protobuf15OneofDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='929' c='_ZNK6google8protobuf14EnumDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='994' c='_ZNK6google8protobuf14EnumDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1072' c='_ZNK6google8protobuf19EnumValueDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1090' c='_ZNK6google8protobuf19EnumValueDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1152' c='_ZNK6google8protobuf17ServiceDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1169' c='_ZNK6google8protobuf17ServiceDescriptor11DebugStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1236' c='_ZNK6google8protobuf16MethodDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1254' c='_ZNK6google8protobuf16MethodDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<use f='include/google/protobuf/descriptor.h' l='1395' c='_ZNK6google8protobuf14FileDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<size>3</size>
+<doc f='include/google/protobuf/descriptor.h' l='151'>// Options when generating machine-parsable output from a descriptor with
+// DebugString().</doc>
+<mbr r='google::protobuf::DebugStringOptions::include_comments' o='0' t='bool'/>
+<mbr r='google::protobuf::DebugStringOptions::elide_group_body' o='8' t='bool'/>
+<mbr r='google::protobuf::DebugStringOptions::elide_oneof_body' o='16' t='bool'/>
+<fun r='_ZN6google8protobuf18DebugStringOptionsC1Ev'/>

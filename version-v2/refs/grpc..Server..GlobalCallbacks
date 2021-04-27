@@ -1,0 +1,16 @@
+<def f='include/grpcpp/server.h' l='69' ll='83'/>
+<use f='include/grpcpp/server.h' l='89' c='_ZN4grpc6Server18SetGlobalCallbacksEPNS0_15GlobalCallbacksE'/>
+<use f='include/grpcpp/server.h' l='239'/>
+<size>8</size>
+<doc f='include/grpcpp/server.h' l='63'>/// Global callbacks are a set of hooks that are called when server
+  /// events occur.  \a SetGlobalCallbacks method is used to register
+  /// the hooks with gRPC.  Note that
+  /// the \a GlobalCallbacks instance will be shared among all
+  /// \a Server instances in an application and can be set exactly
+  /// once per application.</doc>
+<fun r='_ZN4grpc6Server15GlobalCallbacksD1Ev'/>
+<fun r='_ZN4grpc6Server15GlobalCallbacks15UpdateArgumentsEPNS_16ChannelArgumentsE'/>
+<fun r='_ZN4grpc6Server15GlobalCallbacks21PreSynchronousRequestEPNS_13ServerContextE'/>
+<fun r='_ZN4grpc6Server15GlobalCallbacks22PostSynchronousRequestEPNS_13ServerContextE'/>
+<fun r='_ZN4grpc6Server15GlobalCallbacks14PreServerStartEPS0_'/>
+<fun r='_ZN4grpc6Server15GlobalCallbacks7AddPortEPS0_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_17ServerCredentialsEi'/>

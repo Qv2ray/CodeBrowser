@@ -1,0 +1,84 @@
+<inh f='qv2ray/src/ui/common/QvDialog.hpp' l='4' c='QvDialog'/>
+<inh f='/qv2ray_autogen/include/ui_w_RoutesEditor.h' l='751' c='Ui::RouteEditor'/>
+<def f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='26' ll='139'/>
+<use f='/qv2ray_autogen/652BKGHVKB/moc_w_RoutesEditor.cpp' l='199' c='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>960</size>
+<smbr r='RouteEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK11RouteEditor10metaObjectEv'/>
+<fun r='_ZN11RouteEditor11qt_metacastEPKc'/>
+<fun r='_ZN11RouteEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN11RouteEditor2trEPKcS1_i'/>
+<fun r='_ZN11RouteEditor6trUtf8EPKcS1_i'/>
+<fun r='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<fun r='_ZN11RouteEditorD1Ev'/>
+<fun r='_ZN11RouteEditor10OpenEditorEv'/>
+<fun r='_ZN11RouteEditor15processCommandsE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZN11RouteEditor17updateColorSchemeEv'/>
+<fun r='_ZN11RouteEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN11RouteEditor21on_buttonBox_acceptedEv'/>
+<fun r='_ZN11RouteEditor26on_insertDirectBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor35on_routeProtocolHTTPCB_stateChangedEi'/>
+<fun r='_ZN11RouteEditor34on_routeProtocolTLSCB_stateChangedEi'/>
+<fun r='_ZN11RouteEditor33on_routeProtocolBTCB_stateChangedEi'/>
+<fun r='_ZN11RouteEditor25on_balancerAddBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor25on_balancerDelBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor23on_hostList_textChangedEv'/>
+<fun r='_ZN11RouteEditor21on_ipList_textChangedEv'/>
+<fun r='_ZN11RouteEditor26on_routePortTxt_textEditedERK7QString'/>
+<fun r='_ZN11RouteEditor26on_routeUserTxt_textEditedERK7QString'/>
+<fun r='_ZN11RouteEditor22on_addRouteBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor20on_netBothRB_clickedEv'/>
+<fun r='_ZN11RouteEditor19on_netUDPRB_clickedEv'/>
+<fun r='_ZN11RouteEditor19on_netTCPRB_clickedEv'/>
+<fun r='_ZN11RouteEditor27on_routeUserTxt_textChangedEv'/>
+<fun r='_ZN11RouteEditor27on_sourceIPList_textChangedEv'/>
+<fun r='_ZN11RouteEditor32on_enableBalancerCB_stateChangedEi'/>
+<fun r='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor25on_insertBlackBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor24on_addInboundBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor25on_addOutboundBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor28on_ruleEnableCB_stateChangedEi'/>
+<fun r='_ZN11RouteEditor17on_delBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor18on_editBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor42on_domainStrategyCombo_currentIndexChangedERK7QString'/>
+<fun r='_ZN11RouteEditor24on_ruleRenameBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor42on_defaultOutboundCombo_currentTextChangedERK7QString'/>
+<fun r='_ZN11RouteEditor28on_importExistingBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor37on_importGroupBtn_currentIndexChangedEi'/>
+<fun r='_ZN11RouteEditor13onNodeClickedERN7QtNodes4NodeE'/>
+<fun r='_ZN11RouteEditor19onConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZN11RouteEditor19onConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<mbr r='RouteEditor::isLoading' o='6592' t='bool'/>
+<fun r='_ZN11RouteEditor13RenameItemTagE15ROUTE_EDIT_MODE7QStringPS1_'/>
+<fun r='_ZN11RouteEditor21ShowCurrentRuleDetailEv'/>
+<mbr r='RouteEditor::currentRuleTag' o='6656' t='QString'/>
+<mbr r='RouteEditor::currentInboundOutboundTag' o='6720' t='QString'/>
+<mbr r='RouteEditor::balancers' o='6784' t='QMap&lt;QString, QStringList&gt;'/>
+<mbr r='RouteEditor::domainStrategy' o='6848' t='QString'/>
+<mbr r='RouteEditor::defaultOutbound' o='6912' t='QString'/>
+<mbr r='RouteEditor::inbounds' o='6976' t='QMap&lt;QString, Qv2ray::base::safetype::INBOUND&gt;'/>
+<mbr r='RouteEditor::outbounds' o='7040' t='QMap&lt;QString, Qv2ray::base::safetype::OUTBOUND&gt;'/>
+<mbr r='RouteEditor::rules' o='7104' t='QMap&lt;QString, Qv2ray::base::objects::RuleObject&gt;'/>
+<mbr r='RouteEditor::root' o='7168' t='Qv2ray::base::safetype::CONFIGROOT'/>
+<mbr r='RouteEditor::original' o='7296' t='Qv2ray::base::safetype::CONFIGROOT'/>
+<fun r='_ZN11RouteEditor15SetupNodeWidgetEv'/>
+<mbr r='RouteEditor::inboundNodes' o='7424' t='QHash&lt;QString, QUuid&gt;'/>
+<mbr r='RouteEditor::outboundNodes' o='7488' t='QHash&lt;QString, QUuid&gt;'/>
+<mbr r='RouteEditor::ruleNodes' o='7552' t='QHash&lt;QString, QUuid&gt;'/>
+<mbr r='RouteEditor::nodeScene' o='7616' t='QtNodes::FlowScene *'/>
+<fun r='_ZN11RouteEditor10AddInboundEN6Qv2ray4base8safetype7INBOUNDE'/>
+<fun r='_ZN11RouteEditor11AddOutboundEN6Qv2ray4base8safetype8OUTBOUNDE'/>
+<fun r='_ZN11RouteEditor7AddRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<fun r='_ZN11RouteEditor10AddNewRuleEv'/>
+<fun r='_ZN11RouteEditor25ResolveDefaultOutboundTagE7QStringS0_'/>
+<fun r='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='RouteEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK11RouteEditor10metaObjectEv'/>
+<fun r='_ZN11RouteEditor11qt_metacastEPKc'/>
+<fun r='_ZN11RouteEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='341' c='_ZN18ImportConfigWindow23on_routeEditBtn_clickedEv'/>
+<size>960</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='630' c='_ZN10MainWindow37on_action_RCM_EditAsComplex_triggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='873' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<size>960</size>

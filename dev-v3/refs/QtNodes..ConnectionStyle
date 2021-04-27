@@ -1,0 +1,57 @@
+<inh f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Style.hpp' l='5' c='QtNodes::Style'/>
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/ConnectionStyle.hpp' l='8' ll='46'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='11' c='_ZN7QtNodes15StyleCollection15connectionStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='16' c='_ZN7QtNodes15StyleCollection18setConnectionStyleENS_15ConnectionStyleE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='27'/>
+<size>104</size>
+<fun r='_ZN7QtNodes15ConnectionStyleC1Ev'/>
+<fun r='_ZN7QtNodes15ConnectionStyleC1E7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle18setConnectionStyleE7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle5resetEv'/>
+<fun r='_ZN7QtNodes15ConnectionStyle10resetStyleEv'/>
+<fun r='_ZN7QtNodes15ConnectionStyle12loadJsonTextE7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle12loadJsonFileE7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle17constructionColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle11normalColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle11normalColorE7QString'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle13selectedColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle17selectedHaloColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle12hoveredColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle9lineWidthEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle21constructionLineWidthEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle13pointDiameterEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle20useDataDefinedColorsEv'/>
+<mbr r='QtNodes::ConnectionStyle::ConstructionColor' o='64' t='QColor'/>
+<mbr r='QtNodes::ConnectionStyle::NormalColor' o='192' t='QColor'/>
+<mbr r='QtNodes::ConnectionStyle::SelectedColor' o='320' t='QColor'/>
+<mbr r='QtNodes::ConnectionStyle::SelectedHaloColor' o='448' t='QColor'/>
+<mbr r='QtNodes::ConnectionStyle::HoveredColor' o='576' t='QColor'/>
+<mbr r='QtNodes::ConnectionStyle::LineWidth' o='704' t='float'/>
+<mbr r='QtNodes::ConnectionStyle::ConstructionLineWidth' o='736' t='float'/>
+<mbr r='QtNodes::ConnectionStyle::PointDiameter' o='768' t='float'/>
+<mbr r='QtNodes::ConnectionStyle::UseDataDefinedColors' o='800' t='bool'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='37' c='_ZN7QtNodes15ConnectionStyle5resetEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='41' c='_ZN7QtNodes15ConnectionStyle18setConnectionStyleE7QString'/>
+<size>104</size>
+<fun r='_ZN7QtNodes15ConnectionStyleC1Ev'/>
+<fun r='_ZN7QtNodes15ConnectionStyleC1E7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle10resetStyleEv'/>
+<fun r='_ZN7QtNodes15ConnectionStyle5resetEv'/>
+<fun r='_ZN7QtNodes15ConnectionStyle18setConnectionStyleE7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle12loadJsonFileE7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle12loadJsonTextE7QString'/>
+<fun r='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle17constructionColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle11normalColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle11normalColorE7QString'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle13selectedColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle17selectedHaloColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle12hoveredColorEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle9lineWidthEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle21constructionLineWidthEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle13pointDiameterEv'/>
+<fun r='_ZNK7QtNodes15ConnectionStyle20useDataDefinedColorsEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.cpp' l='10' c='_ZN7QtNodes15StyleCollection15connectionStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.cpp' l='22' c='_ZN7QtNodes15StyleCollection18setConnectionStyleENS_15ConnectionStyleE'/>
+<size>104</size>

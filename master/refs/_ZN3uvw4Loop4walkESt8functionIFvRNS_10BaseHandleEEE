@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='338' type='void uvw::Loop::walk(std::function&lt;void (BaseHandle &amp;)&gt; callback)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='331'>/**
+     * @brief Walks the list of handles.
+     *
+     * The callback will be executed once for each handle that is still active.
+     *
+     * @param callback A function to be invoked once for each active handle.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='110' ll='117' type='void uvw::Loop::walk(std::function&lt;void (BaseHandle &amp;)&gt; callback)'/>

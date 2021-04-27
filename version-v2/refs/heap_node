@@ -1,0 +1,32 @@
+<def f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='27' ll='31'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='28'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='29'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='30'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='41'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='46'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='47'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='51' c='heap_min'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='53' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='56' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='67' c='heap_min'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='73' c='heap_node_swap'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='74' c='heap_node_swap'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='75' c='heap_node_swap'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='76' c='heap_node_swap'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='107' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='109' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='110' c='heap_insert'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='151' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='153' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='154' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/heap-inl.h' l='155' c='heap_remove'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='38' c='timer_less_than'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='39' c='timer_less_than'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='89' c='uv_timer_start'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='102' c='uv_timer_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='134' c='uv__next_timeout'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='155' c='uv__run_timers'/>
+<size>24</size>
+<mbr r='heap_node::left' o='0' t='struct heap_node *'/>
+<mbr r='heap_node::right' o='64' t='struct heap_node *'/>
+<mbr r='heap_node::parent' o='128' t='struct heap_node *'/>

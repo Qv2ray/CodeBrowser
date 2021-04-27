@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='101' type='bool uvw::BaseHandle::closing() const'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='126' c='_ZNK3uvw6Handle7closingEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='93'>/**
+     * @brief Checks if a handle is closing or closed.
+     *
+     * This function should only be used between the initialization of the
+     * handle and the arrival of the close callback.
+     *
+     * @return True if the handle is closing or closed, false otherwise.
+     */</doc>

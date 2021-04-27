@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='uint64_t'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='305' u='w' c='uv__update_time'/>
+<offset>4352</offset>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='78' u='r' c='uv_timer_start'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='143' u='r' c='uv__next_timeout'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='146' u='r' c='uv__next_timeout'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='164' u='r' c='uv__run_timers'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='280' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='464' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='568' u='r' c='uv_now'/>

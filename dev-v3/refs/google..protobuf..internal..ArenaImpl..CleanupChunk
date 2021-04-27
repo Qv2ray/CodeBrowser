@@ -1,0 +1,10 @@
+<def f='include/google/protobuf/arena_impl.h' l='128' ll='135'/>
+<use f='include/google/protobuf/arena_impl.h' l='130' c='_ZN6google8protobuf8internal9ArenaImpl12CleanupChunk6SizeOfEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='133'/>
+<use f='include/google/protobuf/arena_impl.h' l='199'/>
+<size>32</size>
+<doc f='include/google/protobuf/arena_impl.h' l='127'>// Cleanup uses a chunked linked list, to reduce pointer chasing.</doc>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl12CleanupChunk6SizeOfEm'/>
+<mbr r='google::protobuf::internal::ArenaImpl::CleanupChunk::size' o='0' t='size_t'/>
+<mbr r='google::protobuf::internal::ArenaImpl::CleanupChunk::next' o='64' t='google::protobuf::internal::ArenaImpl::CleanupChunk *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::CleanupChunk::nodes' o='128' t='google::protobuf::internal::ArenaImpl::CleanupNode [1]'/>

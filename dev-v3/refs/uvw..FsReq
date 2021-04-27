@@ -1,0 +1,121 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='374' c='uvw::FsRequest'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='787' ll='1424'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='787'/>
+<size>560</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='775'>/**
+ * @brief The FsReq request.
+ *
+ * Cross-platform sync and async filesystem operations.&lt;br/&gt;
+ * All file operations are run on the threadpool.
+ *
+ * To create a `FsReq` through a `Loop`, no arguments are required.
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/fs.html)
+ * for further details.
+ */</doc>
+<fun r='_ZN3uvw5FsReq18fsReadlinkCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw5FsReqD1Ev'/>
+<fun r='_ZN3uvw5FsReq6unlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq10unlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq5mkdirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq9mkdirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq7mkdtempENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq11mkdtempSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq7mkstempENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq11mkstempSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq6lutimeENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq10lutimeSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq5rmdirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq9rmdirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq7scandirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq11scandirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq11scandirNextEv'/>
+<fun r='_ZN3uvw5FsReq4statENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq8statSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq5lstatENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq9lstatSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq6statfsENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq10statfsSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq6renameENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq10renameSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq8copyfileENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details15UVCopyFileFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq12copyfileSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details15UVCopyFileFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq6accessENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq10accessSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq5chmodENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq9chmodSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq5utimeENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq9utimeSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq4linkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq8linkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq7symlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details14UVSymLinkFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq11symlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details14UVSymLinkFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq8readlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq12readlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq8realpathENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq12realpathSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq5chownENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq9chownSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq6lchownENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq10lchownSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq7opendirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq11opendirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq8closedirEv'/>
+<fun r='_ZN3uvw5FsReq12closedirSyncEv'/>
+<fun r='_ZN3uvw5FsReq7readdirEv'/>
+<fun r='_ZN3uvw5FsReq11readdirSyncEv'/>
+<mbr r='uvw::FsReq::dirents' o='4352' t='uv_dirent_t [1]'/>
+<fun r='_ZN3uvw5FsReq18fsReadlinkCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw5FsReqD1Ev'/>
+<fun r='_ZN3uvw5FsReq6unlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq10unlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq5mkdirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq9mkdirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq7mkdtempENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq11mkdtempSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq7mkstempENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq11mkstempSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq6lutimeENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq10lutimeSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq5rmdirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq9rmdirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq7scandirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq11scandirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq11scandirNextEv'/>
+<fun r='_ZN3uvw5FsReq4statENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq8statSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq5lstatENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq9lstatSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq6statfsENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq10statfsSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq6renameENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq10renameSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq8copyfileENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details15UVCopyFileFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq12copyfileSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details15UVCopyFileFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq6accessENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq10accessSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq5chmodENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq9chmodSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN3uvw5FsReq5utimeENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq9utimeSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIdSt5ratioILl1ELl1EEEESB_'/>
+<fun r='_ZN3uvw5FsReq4linkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq8linkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_'/>
+<fun r='_ZN3uvw5FsReq7symlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details14UVSymLinkFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq11symlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details14UVSymLinkFlagsEEE'/>
+<fun r='_ZN3uvw5FsReq8readlinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq12readlinkSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq8realpathENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq12realpathSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq5chownENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq9chownSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq6lchownENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq10lchownSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<fun r='_ZN3uvw5FsReq7opendirENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq11opendirSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw5FsReq8closedirEv'/>
+<fun r='_ZN3uvw5FsReq12closedirSyncEv'/>
+<fun r='_ZN3uvw5FsReq7readdirEv'/>
+<fun r='_ZN3uvw5FsReq11readdirSyncEv'/>

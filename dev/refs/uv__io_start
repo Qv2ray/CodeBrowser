@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='201' type='void uv__io_start(uv_loop_t * loop, uv__io_t * w, unsigned int events)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='223' u='c' c='uv__async_start'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='874' ll='899' type='void uv__io_start(uv_loop_t * loop, uv__io_t * w, unsigned int events)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='80' u='c' c='init_inotify'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='115' u='c' c='uv_pipe_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='222' u='c' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='140' u='c' c='uv_poll_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='273' u='c' c='uv__signal_loop_once_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='537' u='c' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='650' u='c' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='910' u='c' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1180' u='c' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1280' u='c' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1481' u='c' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1582' u='c' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='258' u='c' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='367' u='c' c='uv_tcp_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='710' u='c' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='712' u='c' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1299' u='c' c='uv__udp_recv_start'/>

@@ -1,0 +1,3 @@
+<dec f='include/grpc/grpc.h' l='273' type='void grpc_census_call_set_context(grpc_call * call, struct census_context * context)'/>
+<doc f='include/grpc/grpc.h' l='271'>/** Set census context for a call; Must be called before first call to
+   grpc_call_start_batch(). */</doc>

@@ -1,0 +1,4 @@
+<dec f='qv2ray/test/catch.hpp' l='731'/>
+<doc f='qv2ray/test/catch.hpp' l='728'>// Applies the function macro `f` to each of the remaining parameters, inserts commas between the results,
+// and passes userdata as the first parameter to each invocation,
+// e.g. CATCH_REC_LIST_UD(f, x, a, b, c) evaluates to f(x, a), f(x, b), f(x, c)</doc>

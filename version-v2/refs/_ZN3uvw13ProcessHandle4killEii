@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='96' type='static bool uvw::ProcessHandle::kill(int pid, int signum)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='33' ll='35' type='static bool uvw::ProcessHandle::kill(int pid, int signum)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='90'>/**
+     * @brief kill Sends the specified signal to the given PID.
+     * @param pid A valid process id.
+     * @param signum A valid signal identifier.
+     * @return True in case of success, false otherwise.
+     */</doc>

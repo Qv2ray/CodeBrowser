@@ -1,0 +1,12 @@
+<def f='include/c++/10/bits/stl_list.h' l='735' ll='738' type='void std::__cxx11::list::list&lt;_Tp, _Alloc&gt;(const list&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_list.h' l='728'>/**
+       *  @brief  %List copy constructor.
+       *  @param  __x  A %list of identical element and allocator types.
+       *
+       *  The newly-created %list uses a copy of the allocation object used
+       *  by @a __x (unless the allocator traits dictate a different object).
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='68' u='c' c='_ZNK5ZXing14ResultMetadata18ByteArrayListValue15toByteArrayListB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='355' u='c' c='_ZN5ZXing5AztecL22UpdateStateListForCharERKNSt7__cxx114listINS0_13EncodingStateESaIS3_EEERKNS1_12basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='573' u='c' c='_ZN5ZXing4OneDL9CheckRowsET_S1_RKNSt7__cxx114listINS0_3RSS11ExpandedRowESaIS5_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='585' u='c' c='_ZN5ZXing4OneDL9CheckRowsET_S1_RKNSt7__cxx114listINS0_3RSS11ExpandedRowESaIS5_EEE'/>

@@ -1,0 +1,47 @@
+<def f='include/google/protobuf/generated_message_util.h' l='325' ll='331'/>
+<use f='/v2ray_api.pb.h' l='215'/>
+<use f='/v2ray_api.pb.h' l='333'/>
+<use f='/v2ray_api.pb.h' l='442'/>
+<use f='/v2ray_api.pb.h' l='560'/>
+<use f='/v2ray_api.pb.h' l='669'/>
+<use f='/v2ray_api.pb.h' l='765'/>
+<use f='/v2ray_api.pb.h' l='931'/>
+<use f='/v2ray_api.pb.h' l='1027'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='431'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='757'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='923'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1063'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1336'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1480'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1869'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2041'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2180'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2392'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2568'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2745'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2980'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3498'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3689'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3938'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4079'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4232'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4378'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4523'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4705'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4865'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5105'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5329'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5469'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5645'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5783'/>
+<size>4</size>
+<doc f='include/google/protobuf/generated_message_util.h' l='323'>// Hide atomic from the public header and allow easy change to regular int
+// on platforms where the atomic might have a perf impact.</doc>
+<fun r='_ZNK6google8protobuf8internal10CachedSize3GetEv'/>
+<fun r='_ZN6google8protobuf8internal10CachedSize3SetEi'/>
+<mbr r='google::protobuf::internal::CachedSize::size_' o='0' t='std::atomic&lt;int&gt;'/>
+<use f='/v2ray_geosite.pb.h' l='237'/>
+<use f='/v2ray_geosite.pb.h' l='402'/>
+<use f='/v2ray_geosite.pb.h' l='526'/>
+<use f='/v2ray_geosite.pb.h' l='635'/>
+<size>4</size>

@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='725' type='void google::protobuf::io::CodedOutputStream::WriteRawMaybeAliased(const void * data, int size)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1269' ll='1276' type='void google::protobuf::io::CodedOutputStream::WriteRawMaybeAliased(const void * data, int size)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='723'>// Like WriteRaw()  but will try to write aliased data if aliasing is
+  // turned on.</doc>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='155' type='unsigned char * QRspec_newFrame(int version)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='150'>/**
+ * Return a copy of initialized frame.
+ * @param version
+ * @return Array of unsigned char. You can free it by free().
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='460' u='c' c='QRcode_encodeMask'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='509' ll='514' type='unsigned char * QRspec_newFrame(int version)'/>

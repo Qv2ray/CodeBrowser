@@ -1,0 +1,8 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='566' type='struct grpc_byte_buffer *'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='286' u='w' c='_ZN4grpc8internal17CallOpSendMessage5AddOpEP7grpc_opPm'/>
+<offset>0</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='561'>/** This op takes ownership of the slices in send_message.  After
+       * a call completes, the contents of send_message are not guaranteed
+       * and likely empty.  The original owner should still call
+       * grpc_byte_buffer_destroy() on this object however.
+       */</doc>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>macros.h source code [include/google/protobuf/stubs/macros.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="google::protobuf::internal::CompileAssert "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/google/protobuf/stubs/macros.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>google</a>/<a href='..'>protobuf</a>/<a href='./'>stubs</a>/<a href='macros.h.html'>macros.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Protocol Buffers - Google's data interchange format</i></td></tr>
+<tr><th id="2">2</th><td><i>// Copyright 2008 Google Inc.  All rights reserved.</i></td></tr>
+<tr><th id="3">3</th><td><i>// <a href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a></i></td></tr>
+<tr><th id="4">4</th><td><i>//</i></td></tr>
+<tr><th id="5">5</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="7">7</th><td><i>// met:</i></td></tr>
+<tr><th id="8">8</th><td><i>//</i></td></tr>
+<tr><th id="9">9</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="10">10</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="12">12</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="13">13</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="14">14</th><td><i>// distribution.</i></td></tr>
+<tr><th id="15">15</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="16">16</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="17">17</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="18">18</th><td><i>//</i></td></tr>
+<tr><th id="19">19</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="20">20</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="21">21</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="22">22</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="23">23</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="24">24</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="25">25</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="26">26</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="27">27</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="28">28</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="29">29</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">ifndef</span> <span class="macro" data-ref="_M/GOOGLE_PROTOBUF_MACROS_H__">GOOGLE_PROTOBUF_MACROS_H__</span></u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_MACROS_H__" data-ref="_M/GOOGLE_PROTOBUF_MACROS_H__">GOOGLE_PROTOBUF_MACROS_H__</dfn></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="port.h.html">&lt;google/protobuf/stubs/port.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><b>namespace</b> <span class="namespace">google</span> {</td></tr>
+<tr><th id="37">37</th><td><b>namespace</b> <span class="namespace">protobuf</span> {</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS">GOOGLE_DISALLOW_EVIL_CONSTRUCTORS</span></u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS" data-ref="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS">GOOGLE_DISALLOW_EVIL_CONSTRUCTORS</dfn>(TypeName)    \</u></td></tr>
+<tr><th id="41">41</th><td><u>  TypeName(const TypeName&amp;);                           \</u></td></tr>
+<tr><th id="42">42</th><td><u>  void operator=(const TypeName&amp;)</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DISALLOW_IMPLICIT_CONSTRUCTORS">GOOGLE_DISALLOW_IMPLICIT_CONSTRUCTORS</span></u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DISALLOW_IMPLICIT_CONSTRUCTORS" data-ref="_M/GOOGLE_DISALLOW_IMPLICIT_CONSTRUCTORS">GOOGLE_DISALLOW_IMPLICIT_CONSTRUCTORS</dfn>(TypeName) \</u></td></tr>
+<tr><th id="46">46</th><td><u>  TypeName();                                           \</u></td></tr>
+<tr><th id="47">47</th><td><u>  TypeName(const TypeName&amp;);                            \</u></td></tr>
+<tr><th id="48">48</th><td><u>  void operator=(const TypeName&amp;)</u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i>// ===================================================================</i></td></tr>
+<tr><th id="51">51</th><td><i>// from google3/base/basictypes.h</i></td></tr>
+<tr><th id="52">52</th><td><i></i></td></tr>
+<tr><th id="53">53</th><td><i>// The GOOGLE_ARRAYSIZE(arr) macro returns the # of elements in an array arr.</i></td></tr>
+<tr><th id="54">54</th><td><i>// The expression is a compile-time constant, and therefore can be</i></td></tr>
+<tr><th id="55">55</th><td><i>// used in defining new arrays, for example.</i></td></tr>
+<tr><th id="56">56</th><td><i>//</i></td></tr>
+<tr><th id="57">57</th><td><i>// GOOGLE_ARRAYSIZE catches a few type errors.  If you see a compiler error</i></td></tr>
+<tr><th id="58">58</th><td><i>//</i></td></tr>
+<tr><th id="59">59</th><td><i>//   "warning: division by zero in ..."</i></td></tr>
+<tr><th id="60">60</th><td><i>//</i></td></tr>
+<tr><th id="61">61</th><td><i>// when using GOOGLE_ARRAYSIZE, you are (wrongfully) giving it a pointer.</i></td></tr>
+<tr><th id="62">62</th><td><i>// You should only use GOOGLE_ARRAYSIZE on statically allocated arrays.</i></td></tr>
+<tr><th id="63">63</th><td><i>//</i></td></tr>
+<tr><th id="64">64</th><td><i>// The following comments are on the implementation details, and can</i></td></tr>
+<tr><th id="65">65</th><td><i>// be ignored by the users.</i></td></tr>
+<tr><th id="66">66</th><td><i>//</i></td></tr>
+<tr><th id="67">67</th><td><i>// ARRAYSIZE(arr) works by inspecting sizeof(arr) (the # of bytes in</i></td></tr>
+<tr><th id="68">68</th><td><i>// the array) and sizeof(*(arr)) (the # of bytes in one array</i></td></tr>
+<tr><th id="69">69</th><td><i>// element).  If the former is divisible by the latter, perhaps arr is</i></td></tr>
+<tr><th id="70">70</th><td><i>// indeed an array, in which case the division result is the # of</i></td></tr>
+<tr><th id="71">71</th><td><i>// elements in the array.  Otherwise, arr cannot possibly be an array,</i></td></tr>
+<tr><th id="72">72</th><td><i>// and we generate a compiler error to prevent the code from</i></td></tr>
+<tr><th id="73">73</th><td><i>// compiling.</i></td></tr>
+<tr><th id="74">74</th><td><i>//</i></td></tr>
+<tr><th id="75">75</th><td><i>// Since the size of bool is implementation-defined, we need to cast</i></td></tr>
+<tr><th id="76">76</th><td><i>// !(sizeof(a) &amp; sizeof(*(a))) to size_t in order to ensure the final</i></td></tr>
+<tr><th id="77">77</th><td><i>// result has type size_t.</i></td></tr>
+<tr><th id="78">78</th><td><i>//</i></td></tr>
+<tr><th id="79">79</th><td><i>// This macro is not perfect as it wrongfully accepts certain</i></td></tr>
+<tr><th id="80">80</th><td><i>// pointers, namely where the pointer size is divisible by the pointee</i></td></tr>
+<tr><th id="81">81</th><td><i>// size.  Since all our code has to go through a 32-bit compiler,</i></td></tr>
+<tr><th id="82">82</th><td><i>// where a pointer is 4 bytes, this means all pointers to a type whose</i></td></tr>
+<tr><th id="83">83</th><td><i>// size is 3 or greater than 4 will be (righteously) rejected.</i></td></tr>
+<tr><th id="84">84</th><td><i>//</i></td></tr>
+<tr><th id="85">85</th><td><i>// Kudos to Jorg Brown for this simple and elegant implementation.</i></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_ARRAYSIZE">GOOGLE_ARRAYSIZE</span></u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_ARRAYSIZE" data-ref="_M/GOOGLE_ARRAYSIZE">GOOGLE_ARRAYSIZE</dfn>(a) \</u></td></tr>
+<tr><th id="89">89</th><td><u>  ((sizeof(a) / sizeof(*(a))) / \</u></td></tr>
+<tr><th id="90">90</th><td><u>   static_cast&lt;size_t&gt;(!(sizeof(a) % sizeof(*(a)))))</u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><i>// The COMPILE_ASSERT macro can be used to verify that a compile time</i></td></tr>
+<tr><th id="93">93</th><td><i>// expression is true. For example, you could use it to verify the</i></td></tr>
+<tr><th id="94">94</th><td><i>// size of a static array:</i></td></tr>
+<tr><th id="95">95</th><td><i>//</i></td></tr>
+<tr><th id="96">96</th><td><i>//   COMPILE_ASSERT(ARRAYSIZE(content_type_names) == CONTENT_NUM_TYPES,</i></td></tr>
+<tr><th id="97">97</th><td><i>//                  content_type_names_incorrect_size);</i></td></tr>
+<tr><th id="98">98</th><td><i>//</i></td></tr>
+<tr><th id="99">99</th><td><i>// or to make sure a struct is smaller than a certain size:</i></td></tr>
+<tr><th id="100">100</th><td><i>//</i></td></tr>
+<tr><th id="101">101</th><td><i>//   COMPILE_ASSERT(sizeof(foo) &lt; 128, foo_too_large);</i></td></tr>
+<tr><th id="102">102</th><td><i>//</i></td></tr>
+<tr><th id="103">103</th><td><i>// The second argument to the macro is the name of the variable. If</i></td></tr>
+<tr><th id="104">104</th><td><i>// the expression is false, most compilers will issue a warning/error</i></td></tr>
+<tr><th id="105">105</th><td><i>// containing the name of the variable.</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><b>template</b> &lt;<em>bool</em>&gt;</td></tr>
+<tr><th id="110">110</th><td><b>struct</b> <dfn class="type def" id="google::protobuf::internal::CompileAssert" title='google::protobuf::internal::CompileAssert' data-ref="google::protobuf::internal::CompileAssert" data-ref-filename="google..protobuf..internal..CompileAssert">CompileAssert</dfn> {</td></tr>
+<tr><th id="111">111</th><td>};</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_COMPILE_ASSERT">GOOGLE_COMPILE_ASSERT</span></u></td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="116">if</span> <span class="macro" title="201703L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 201103L</u></td></tr>
+<tr><th id="117">117</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_COMPILE_ASSERT" data-ref="_M/GOOGLE_COMPILE_ASSERT">GOOGLE_COMPILE_ASSERT</dfn>(expr, msg) static_assert(expr, #msg)</u></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="116">else</span></u></td></tr>
+<tr><th id="119">119</th><td><u>#define GOOGLE_COMPILE_ASSERT(expr, msg) \</u></td></tr>
+<tr><th id="120">120</th><td><u>  ::google::protobuf::internal::CompileAssert&lt;(bool(expr))&gt; \</u></td></tr>
+<tr><th id="121">121</th><td><u>          msg[bool(expr) ? 1 : -1]; \</u></td></tr>
+<tr><th id="122">122</th><td><u>  (void)msg</u></td></tr>
+<tr><th id="123">123</th><td><i>// Implementation details of COMPILE_ASSERT:</i></td></tr>
+<tr><th id="124">124</th><td><i>//</i></td></tr>
+<tr><th id="125">125</th><td><i>// - COMPILE_ASSERT works by defining an array type that has -1</i></td></tr>
+<tr><th id="126">126</th><td><i>//   elements (and thus is invalid) when the expression is false.</i></td></tr>
+<tr><th id="127">127</th><td><i>//</i></td></tr>
+<tr><th id="128">128</th><td><i>// - The simpler definition</i></td></tr>
+<tr><th id="129">129</th><td><i>//</i></td></tr>
+<tr><th id="130">130</th><td><i>//     #define COMPILE_ASSERT(expr, msg) typedef char msg[(expr) ? 1 : -1]</i></td></tr>
+<tr><th id="131">131</th><td><i>//</i></td></tr>
+<tr><th id="132">132</th><td><i>//   does not work, as gcc supports variable-length arrays whose sizes</i></td></tr>
+<tr><th id="133">133</th><td><i>//   are determined at run-time (this is gcc's extension and not part</i></td></tr>
+<tr><th id="134">134</th><td><i>//   of the C++ standard).  As a result, gcc fails to reject the</i></td></tr>
+<tr><th id="135">135</th><td><i>//   following code with the simple definition:</i></td></tr>
+<tr><th id="136">136</th><td><i>//</i></td></tr>
+<tr><th id="137">137</th><td><i>//     int foo;</i></td></tr>
+<tr><th id="138">138</th><td><i>//     COMPILE_ASSERT(foo, msg); // not supposed to compile as foo is</i></td></tr>
+<tr><th id="139">139</th><td><i>//                               // not a compile-time constant.</i></td></tr>
+<tr><th id="140">140</th><td><i>//</i></td></tr>
+<tr><th id="141">141</th><td><i>// - By using the type CompileAssert&lt;(bool(expr))&gt;, we ensures that</i></td></tr>
+<tr><th id="142">142</th><td><i>//   expr is a compile-time constant.  (Template arguments must be</i></td></tr>
+<tr><th id="143">143</th><td><i>//   determined at compile-time.)</i></td></tr>
+<tr><th id="144">144</th><td><i>//</i></td></tr>
+<tr><th id="145">145</th><td><i>// - The outter parentheses in CompileAssert&lt;(bool(expr))&gt; are necessary</i></td></tr>
+<tr><th id="146">146</th><td><i>//   to work around a bug in gcc 3.4.4 and 4.0.1.  If we had written</i></td></tr>
+<tr><th id="147">147</th><td><i>//</i></td></tr>
+<tr><th id="148">148</th><td><i>//     CompileAssert&lt;bool(expr)&gt;</i></td></tr>
+<tr><th id="149">149</th><td><i>//</i></td></tr>
+<tr><th id="150">150</th><td><i>//   instead, these compilers will refuse to compile</i></td></tr>
+<tr><th id="151">151</th><td><i>//</i></td></tr>
+<tr><th id="152">152</th><td><i>//     COMPILE_ASSERT(5 &gt; 0, some_message);</i></td></tr>
+<tr><th id="153">153</th><td><i>//</i></td></tr>
+<tr><th id="154">154</th><td><i>//   (They seem to think the "&gt;" in "5 &gt; 0" marks the end of the</i></td></tr>
+<tr><th id="155">155</th><td><i>//   template argument list.)</i></td></tr>
+<tr><th id="156">156</th><td><i>//</i></td></tr>
+<tr><th id="157">157</th><td><i>// - The array size is (bool(expr) ? 1 : -1), instead of simply</i></td></tr>
+<tr><th id="158">158</th><td><i>//</i></td></tr>
+<tr><th id="159">159</th><td><i>//     ((expr) ? 1 : -1).</i></td></tr>
+<tr><th id="160">160</th><td><i>//</i></td></tr>
+<tr><th id="161">161</th><td><i>//   This is to avoid running into a bug in MS VC 7.1, which</i></td></tr>
+<tr><th id="162">162</th><td><i>//   causes ((0.0) ? 1 : -1) to incorrectly evaluate to 1.</i></td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="116">endif</span>  // __cplusplus &gt;= 201103L</u></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>}  <i>// namespace protobuf</i></td></tr>
+<tr><th id="166">166</th><td>}  <i>// namespace google</i></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><u>#<span data-ppcond="31">endif</span>  // GOOGLE_PROTOBUF_MACROS_H__</u></td></tr>
+<tr><th id="169">169</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

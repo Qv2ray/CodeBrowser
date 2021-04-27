@@ -1,0 +1,16 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='429' ll='431' type='bool uvw::StreamHandle::blocking(bool enable = false)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='414'>/**
+     * @brief Enables or disables blocking mode for a stream.
+     *
+     * When blocking mode is enabled all writes complete synchronously. The
+     * interface remains unchanged otherwise, e.g. completion or failure of the
+     * operation will still be reported through events which are emitted
+     * asynchronously.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/stream.html#c.uv_stream_set_blocking)
+     * for further details.
+     *
+     * @param enable True to enable blocking mode, false otherwise.
+     * @return True in case of success, false otherwise.
+     */</doc>

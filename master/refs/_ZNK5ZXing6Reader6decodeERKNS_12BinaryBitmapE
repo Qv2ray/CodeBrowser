@@ -1,0 +1,23 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='57' type='ZXing::Result ZXing::Reader::decode(const ZXing::BinaryBitmap &amp; image) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='99' u='c' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='102' u='c' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='43'>/**
+	* Locates and decodes a barcode in some format within an image. This method also accepts
+	* hints, each possibly associated to some data, which may help the implementation decode.
+	*
+	* @param image image of barcode to decode
+	* @param hints passed as a {@link java.util.Map} from {@link DecodeHintType}
+	* to arbitrary data. The
+	* meaning of the data depends upon the hint type. The implementation may or may not do
+	* anything with these hints.
+	* @return string which the barcode encodes
+	* @throws NotFoundException if no potential barcode is found
+	* @throws ChecksumException if a potential barcode is found but does not pass its checksum
+	* @throws FormatException if a potential barcode is found but format is invalid
+	*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='34' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='48' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='61' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='201' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='99' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='42' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>

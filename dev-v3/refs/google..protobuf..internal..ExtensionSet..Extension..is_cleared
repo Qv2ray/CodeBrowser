@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/extension_set.h' l='532' type='bool'/>
+<offset>80</offset>
+<doc f='include/google/protobuf/extension_set.h' l='526'>// For singular types, indicates if the extension is &quot;cleared&quot;.  This
+    // happens when an extension is set and then later cleared by the caller.
+    // We want to keep the Extension object around for reuse, so instead of
+    // removing it from the map, we just set is_cleared = true.  This has no
+    // meaning for repeated types; for those, the size of the RepeatedField
+    // simply becomes zero when cleared.</doc>

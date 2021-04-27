@@ -1,0 +1,24 @@
+<def f='include/grpcpp/impl/codegen/server_context.h' l='191' type='bool grpc::ServerContext::compression_level_set() const'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='715' u='c' c='_ZN4grpc17ServerAsyncReader19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='744' u='c' c='_ZN4grpc17ServerAsyncReader6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='774' u='c' c='_ZN4grpc17ServerAsyncReader15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='864' u='c' c='_ZN4grpc17ServerAsyncWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='937' u='c' c='_ZN4grpc17ServerAsyncWriter25EnsureInitialMetadataSentEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1030' u='c' c='_ZN4grpc23ServerAsyncReaderWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1111' u='c' c='_ZN4grpc23ServerAsyncReaderWriter25EnsureInitialMetadataSentEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='219' u='c' c='_ZN4grpc25ServerAsyncResponseWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='246' u='c' c='_ZN4grpc25ServerAsyncResponseWriter6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='279' u='c' c='_ZN4grpc25ServerAsyncResponseWriter15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='588' u='c' c='_ZN4grpc12ServerReader19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='640' u='c' c='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='665' u='c' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='713' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='743' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='78' u='c' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='122' u='c' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='168' u='c' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='211' u='c' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='286' u='c' c='_ZN4grpc8internal18ErrorMethodHandler7FillOpsEPNS_13ServerContextEPTL0__'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='188'>/// Return a bool indicating whether the compression level for this call
+  /// has been set (either implicitly or through a previous call to
+  /// \a set_compression_level.</doc>

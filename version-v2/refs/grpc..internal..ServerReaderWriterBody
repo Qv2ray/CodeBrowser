@@ -1,0 +1,11 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='702' ll='763'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='796'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='862'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='923'/>
+<fun r='_ZN4grpc8internal22ServerReaderWriterBodyC1EPNS0_4CallEPNS_13ServerContextE'/>
+<fun r='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<fun r='_ZN4grpc8internal22ServerReaderWriterBody15NextMessageSizeEPj'/>
+<fun r='_ZN4grpc8internal22ServerReaderWriterBody4ReadEPT0_'/>
+<fun r='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<mbr r='grpc::internal::ServerReaderWriterBody::call_' t='grpc::internal::Call *const'/>
+<mbr r='grpc::internal::ServerReaderWriterBody::ctx_' t='grpc::ServerContext *const'/>

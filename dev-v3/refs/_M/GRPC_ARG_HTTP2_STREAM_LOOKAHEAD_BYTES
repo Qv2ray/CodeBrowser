@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='182'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='178'>/** Amount to read ahead on individual streams. Defaults to 64kb, larger
+    values can help throughput on high-latency connections.
+    NOTE: at some point we&apos;d like to auto-tune this, and this parameter
+    will become a no-op. Int valued, bytes. */</doc>

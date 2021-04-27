@@ -1,0 +1,32 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='299' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='38' ll='79'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='38'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/signal.cpp' l='17' c='_ZN3uvw12SignalHandle13startCallbackEP11uv_signal_si'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/signal.cpp' l='17' c='_ZN3uvw12SignalHandle13startCallbackEP11uv_signal_si'/>
+<size>256</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='25'>/**
+ * @brief The SignalHandle handle.
+ *
+ * Signal handles implement Unix style signal handling on a per-event loop
+ * bases.&lt;br/&gt;
+ * Reception of some signals is emulated on Windows.
+ *
+ * To create a `SignalHandle` through a `Loop`, no arguments are required.
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/signal.html)
+ * for further details.
+ */</doc>
+<fun r='_ZN3uvw12SignalHandle13startCallbackEP11uv_signal_si'/>
+<fun r='_ZN3uvw12SignalHandle4initEv'/>
+<fun r='_ZN3uvw12SignalHandle5startEi'/>
+<fun r='_ZN3uvw12SignalHandle7oneShotEi'/>
+<fun r='_ZN3uvw12SignalHandle4stopEv'/>
+<fun r='_ZNK3uvw12SignalHandle6signalEv'/>
+<fun r='_ZN3uvw12SignalHandle13startCallbackEP11uv_signal_si'/>
+<fun r='_ZN3uvw12SignalHandle4initEv'/>
+<fun r='_ZN3uvw12SignalHandle5startEi'/>
+<fun r='_ZN3uvw12SignalHandle7oneShotEi'/>
+<fun r='_ZN3uvw12SignalHandle4stopEv'/>
+<fun r='_ZNK3uvw12SignalHandle6signalEv'/>

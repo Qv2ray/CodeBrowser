@@ -1,0 +1,9 @@
+<use f='include/google/protobuf/map.h' l='570' u='c' c='_ZN6google8protobuf3Map8InnerMap6insertERKNS1_12KeyValuePairE'/>
+<use f='include/google/protobuf/map.h' l='590' u='c' c='_ZN6google8protobuf3Map8InnerMap6insertERKT_'/>
+<def f='include/google/protobuf/map.h' l='670' ll='700' type='google::protobuf::Map::InnerMap::iterator google::protobuf::Map::InnerMap::InsertUnique(google::protobuf::Map::size_type b, google::protobuf::Map::InnerMap::Node * node)'/>
+<use f='include/google/protobuf/map.h' l='786' u='c' c='_ZN6google8protobuf3Map8InnerMap12TransferListEPKPvm'/>
+<use f='include/google/protobuf/map.h' l='796' u='c' c='_ZN6google8protobuf3Map8InnerMap12TransferTreeEPKPvm'/>
+<doc f='include/google/protobuf/map.h' l='666'>// Insert the given Node in bucket b.  If that would make bucket b too big,
+    // and bucket b is not a tree, create a tree for buckets b and b^1 to share.
+    // Requires count(*KeyPtrFromNodePtr(node)) == 0 and that b is the correct
+    // bucket.  num_elements_ is not modified.</doc>

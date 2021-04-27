@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='272' type='ZXing::BitMatrix ZXing::Inflate(ZXing::BitMatrix &amp;&amp; input, int width, int height, int quietZone)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='204' ll='230' type='ZXing::BitMatrix ZXing::Inflate(ZXing::BitMatrix &amp;&amp; input, int width, int height, int quietZone)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='264'>/**
+ * @brief Inflate scales a BitMatrix up and adds a quite Zone plus padding
+ * @param matrix input to be expanded
+ * @param width new width in bits (pixel)
+ * @param height new height in bits (pixel)
+ * @param quietZone size of quite zone to add in modules
+ * @return expanded BitMatrix, maybe move(input) if size did not change
+ */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZWriter.cpp' l='40' u='c' c='_ZNK5ZXing5Aztec6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='122' u='c' c='_ZNK5ZXing10DataMatrix6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.cpp' l='55' u='c' c='_ZNK5ZXing6QRCode6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

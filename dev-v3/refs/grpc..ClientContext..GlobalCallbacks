@@ -1,0 +1,10 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='350' ll='355'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='356' c='_ZN4grpc13ClientContext18SetGlobalCallbacksEPNS0_15GlobalCallbacksE'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='346'>/// Global Callbacks
+  ///
+  /// Can be set exactly once per application to install hooks whenever
+  /// a client context is constructed and destructed.</doc>
+<fun r='_ZN4grpc13ClientContext15GlobalCallbacksD1Ev'/>
+<fun r='_ZN4grpc13ClientContext15GlobalCallbacks18DefaultConstructorEPS0_'/>
+<fun r='_ZN4grpc13ClientContext15GlobalCallbacks10DestructorEPS0_'/>

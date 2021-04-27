@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ByteMatrix.h source code [qv2ray/3rdparty/zxing-cpp/core/src/ByteMatrix.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::ByteMatrix "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/ByteMatrix.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='ByteMatrix.h.html'>ByteMatrix.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Huy Cuong Nguyen</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="Matrix.h.html">"Matrix.h"</a></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../../../include/c++/10/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i>// TODO: If kept at all, this should be replaced by `using ByteMatrix = Matrix&lt;uint8_t&gt;;` to be consistent with ByteArray</i></td></tr>
+<tr><th id="25">25</th><td><i>// This non-template class is kept for now to stay source-compatible with oder versions of the library.</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>class</b> <dfn class="type def" id="ZXing::ByteMatrix" title='ZXing::ByteMatrix' data-ref="ZXing::ByteMatrix" data-ref-filename="ZXing..ByteMatrix">ByteMatrix</dfn> : <b>public</b> <a class="type" href="Matrix.h.html#ZXing::Matrix" title='ZXing::Matrix' data-ref="ZXing::Matrix" data-ref-filename="ZXing..Matrix">Matrix</a>&lt;<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int8_t" title='int8_t' data-type='__int8_t' data-ref="int8_t" data-ref-filename="int8_t">int8_t</a>&gt;</td></tr>
+<tr><th id="28">28</th><td>{</td></tr>
+<tr><th id="29">29</th><td><b>public</b>:</td></tr>
+<tr><th id="30">30</th><td>	<dfn class="decl def fn" id="_ZN5ZXing10ByteMatrixC1Eiia" title='ZXing::ByteMatrix::ByteMatrix' data-ref="_ZN5ZXing10ByteMatrixC1Eiia" data-ref-filename="_ZN5ZXing10ByteMatrixC1Eiia">ByteMatrix</dfn>(<em>int</em> <dfn class="local col5 decl" id="75width" title='width' data-type='int' data-ref="75width" data-ref-filename="75width">width</dfn>, <em>int</em> <dfn class="local col6 decl" id="76height" title='height' data-type='int' data-ref="76height" data-ref-filename="76height">height</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int8_t" title='int8_t' data-type='__int8_t' data-ref="int8_t" data-ref-filename="int8_t">int8_t</a> <dfn class="local col7 decl" id="77val" title='val' data-type='int8_t' data-ref="77val" data-ref-filename="77val">val</dfn> = <var>0</var>) : <a class="type" href="Matrix.h.html#ZXing::Matrix" title='ZXing::Matrix' data-ref="ZXing::Matrix" data-ref-filename="ZXing..Matrix">Matrix</a>&lt;<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int8_t" title='int8_t' data-type='__int8_t' data-ref="int8_t" data-ref-filename="int8_t">int8_t</a>&gt;<a class="ref fn" href="Matrix.h.html#_ZN5ZXing6MatrixC1EiiT_" title='ZXing::Matrix::Matrix&lt;T&gt;' data-ref="_ZN5ZXing6MatrixC1EiiT_" data-ref-filename="_ZN5ZXing6MatrixC1EiiT_">(</a><a class="local col5 ref" href="#75width" title='width' data-ref="75width" data-ref-filename="75width">width</a>, <a class="local col6 ref" href="#76height" title='height' data-ref="76height" data-ref-filename="76height">height</a>, <a class="local col7 ref" href="#77val" title='val' data-ref="77val" data-ref-filename="77val">val</a>) {}</td></tr>
+<tr><th id="31">31</th><td>	<dfn class="decl def fn" id="_ZN5ZXing10ByteMatrixC1EOS0_" title='ZXing::ByteMatrix::ByteMatrix' data-ref="_ZN5ZXing10ByteMatrixC1EOS0_" data-ref-filename="_ZN5ZXing10ByteMatrixC1EOS0_">ByteMatrix</dfn>(<a class="type" href="#ZXing::ByteMatrix" title='ZXing::ByteMatrix' data-ref="ZXing::ByteMatrix" data-ref-filename="ZXing..ByteMatrix">ByteMatrix</a>&amp;&amp;) = <b>default</b>;</td></tr>
+<tr><th id="32">32</th><td>	<a class="type" href="#ZXing::ByteMatrix" title='ZXing::ByteMatrix' data-ref="ZXing::ByteMatrix" data-ref-filename="ZXing..ByteMatrix">ByteMatrix</a>&amp; <dfn class="decl def fn" id="_ZN5ZXing10ByteMatrixaSEOS0_" title='ZXing::ByteMatrix::operator=' data-ref="_ZN5ZXing10ByteMatrixaSEOS0_" data-ref-filename="_ZN5ZXing10ByteMatrixaSEOS0_"><b>operator</b>=</dfn>(<a class="type" href="#ZXing::ByteMatrix" title='ZXing::ByteMatrix' data-ref="ZXing::ByteMatrix" data-ref-filename="ZXing..ByteMatrix">ByteMatrix</a>&amp;&amp;) = <b>default</b>;</td></tr>
+<tr><th id="33">33</th><td>};</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='BitMatrix.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

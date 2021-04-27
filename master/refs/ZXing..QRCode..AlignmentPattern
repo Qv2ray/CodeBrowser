@@ -1,0 +1,32 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/ResultPoint.h' l='29' c='ZXing::ResultPoint'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.h' l='30' ll='55'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.h' l='54' c='_ZNK5ZXing6QRCode16AlignmentPattern15combineEstimateEfff'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.cpp' l='45' c='_ZNK5ZXing6QRCode16AlignmentPattern15combineEstimateEfff'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPattern.h' l='24'>/**
+* &lt;p&gt;Encapsulates an alignment pattern, which are the smaller square patterns found in
+* all but the simplest QR Codes.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::QRCode::AlignmentPattern::_estimatedModuleSize' o='128' t='float'/>
+<fun r='_ZN5ZXing6QRCode16AlignmentPatternC1Ev'/>
+<fun r='_ZN5ZXing6QRCode16AlignmentPatternC1Efff'/>
+<fun r='_ZNK5ZXing6QRCode16AlignmentPattern19estimatedModuleSizeEv'/>
+<fun r='_ZNK5ZXing6QRCode16AlignmentPattern7isValidEv'/>
+<fun r='_ZNK5ZXing6QRCode16AlignmentPattern11aboutEqualsEfff'/>
+<fun r='_ZNK5ZXing6QRCode16AlignmentPattern15combineEstimateEfff'/>
+<fun r='_ZN5ZXing6QRCode16AlignmentPatternC1Efff'/>
+<fun r='_ZNK5ZXing6QRCode16AlignmentPattern11aboutEqualsEfff'/>
+<fun r='_ZNK5ZXing6QRCode16AlignmentPattern15combineEstimateEfff'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.h' l='57' c='_ZN5ZXing6QRCode22AlignmentPatternFinder4FindERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='129' c='_ZN5ZXing6QRCodeL20HandlePossibleCenterERKNS_9BitMatrixERKSt5arrayIiLm3EEiifRSt6vectorINS0_16AlignmentPatternESaIS9_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='130' c='_ZN5ZXing6QRCodeL20HandlePossibleCenterERKNS_9BitMatrixERKSt5arrayIiLm3EEiifRSt6vectorINS0_16AlignmentPatternESaIS9_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='137' c='_ZN5ZXing6QRCodeL20HandlePossibleCenterERKNS_9BitMatrixERKSt5arrayIiLm3EEiifRSt6vectorINS0_16AlignmentPatternESaIS9_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='149' c='_ZN5ZXing6QRCode22AlignmentPatternFinder4FindERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='154' c='_ZN5ZXing6QRCode22AlignmentPatternFinder4FindERKNS_9BitMatrixEiiiif'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='195' c='_ZN5ZXing6QRCode21FindAlignmentInRegionERKNS_9BitMatrixEfiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='215' c='_ZN5ZXing6QRCodeL15CreateTransformERKNS_11ResultPointES3_S3_RKNS0_16AlignmentPatternEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='268' c='_ZN5ZXing6QRCodeL24ProcessFinderPatternInfoERKNS_9BitMatrixERKNS0_17FinderPatternInfoE'/>
+<size>24</size>

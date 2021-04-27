@@ -1,0 +1,17 @@
+<def f='include/grpcpp/impl/server_builder_plugin.h' l='35' ll='62'/>
+<use f='include/grpcpp/impl/server_builder_option.h' l='38' c='_ZN4grpc19ServerBuilderOption13UpdatePluginsEPSt6vectorISt10unique_ptrINS_19ServerBuilderPluginESt14default_deleteIS3_EESaIS6_EE'/>
+<use f='include/grpcpp/server_builder.h' l='208' c='_ZN4grpc13ServerBuilder24InternalAddPluginFactoryEPFSt10unique_ptrINS_19ServerBuilderPluginESt14default_deleteIS2_EEvE'/>
+<use f='include/grpcpp/server_builder.h' l='288'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/server_builder_plugin.h' l='32'>/// This interface is meant for internal usage only. Implementations of this
+/// interface should add themselves to a \a ServerBuilder instance through the
+/// \a InternalAddPluginFactory method.</doc>
+<fun r='_ZN4grpc19ServerBuilderPluginD1Ev'/>
+<fun r='_ZN4grpc19ServerBuilderPlugin4nameB5cxx11Ev'/>
+<fun r='_ZN4grpc19ServerBuilderPlugin19UpdateServerBuilderEPNS_13ServerBuilderE'/>
+<fun r='_ZN4grpc19ServerBuilderPlugin10InitServerEPNS_17ServerInitializerE'/>
+<fun r='_ZN4grpc19ServerBuilderPlugin6FinishEPNS_17ServerInitializerE'/>
+<fun r='_ZN4grpc19ServerBuilderPlugin15ChangeArgumentsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPv'/>
+<fun r='_ZN4grpc19ServerBuilderPlugin22UpdateChannelArgumentsEPNS_16ChannelArgumentsE'/>
+<fun r='_ZNK4grpc19ServerBuilderPlugin16has_sync_methodsEv'/>
+<fun r='_ZNK4grpc19ServerBuilderPlugin17has_async_methodsEv'/>

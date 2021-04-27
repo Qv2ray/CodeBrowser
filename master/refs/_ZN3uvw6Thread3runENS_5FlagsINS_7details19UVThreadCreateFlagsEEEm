@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='96' type='bool uvw::Thread::run(Flags&lt;uvw::Thread::Options&gt; opts, std::size_t stack = {})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='42' ll='45' type='bool uvw::Thread::run(Flags&lt;uvw::Thread::Options&gt; opts, std::size_t stack = {})'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='83'>/**
+     * @brief Creates a new thread.
+     *
+     * Available flags are:
+     *
+     * * `Thread::Options::THREAD_NO_FLAGS`: no flags set.
+     * * `Thread::Options::THREAD_HAS_STACK_SIZE`: if set, `stack` specifies a
+     * stack size for the new thread. 0 indicates that the default value should
+     * be used (it behaves as if the flag was not set). Other values will be
+     * rounded up to the nearest page boundary.
+     *
+     * @return True in case of success, false otherwise.
+     */</doc>

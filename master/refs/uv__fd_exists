@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='209' type='int uv__fd_exists(uv_loop_t * loop, int fd)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='953' ll='955' type='int uv__fd_exists(uv_loop_t * loop, int fd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='143' u='c' c='uv_pipe_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='71' u='c' c='uv_poll_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='270' u='c' c='uv_tcp_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='986' u='c' c='uv_udp_open'/>

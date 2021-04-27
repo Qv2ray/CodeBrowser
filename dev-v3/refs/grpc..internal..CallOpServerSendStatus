@@ -1,0 +1,24 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='464' ll='509'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='793'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='950'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='953'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1125'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1128'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='297'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='74' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='117' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='164' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='207' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='295' c='_ZN4grpc8internal18ErrorMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<size>120</size>
+<fun r='_ZN4grpc8internal22CallOpServerSendStatusC1Ev'/>
+<fun r='_ZN4grpc8internal22CallOpServerSendStatus16ServerSendStatusERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pai13417773'/>
+<fun r='_ZN4grpc8internal22CallOpServerSendStatus5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal22CallOpServerSendStatus8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::send_status_available_' o='0' t='bool'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::send_status_code_' o='32' t='grpc_status_code'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::send_error_details_' o='64' t='grpc::string'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::send_error_message_' o='320' t='grpc::string'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::trailing_metadata_count_' o='576' t='size_t'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::trailing_metadata_' o='640' t='grpc_metadata *'/>
+<mbr r='grpc::internal::CallOpServerSendStatus::error_message_slice_' o='704' t='grpc_slice'/>

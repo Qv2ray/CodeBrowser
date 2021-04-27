@@ -1,0 +1,7 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='525' type='6'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='555' u='r' c='_ZN4grpc8internal22CallOpClientRecvStatus5AddOpEP7grpc_opPm'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='520'>/** Receive status on the client: one and only one must be made on the client.
+      This operation always succeeds, meaning ops paired with this operation
+      will also appear to succeed, even though they may not have. In that case
+      the status will indicate some failure.
+      This op completes after all activity on the call has completed. */</doc>

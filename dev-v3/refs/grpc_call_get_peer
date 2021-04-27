@@ -1,0 +1,9 @@
+<dec f='include/grpc/grpc.h' l='267' type='char * grpc_call_get_peer(grpc_call * call)'/>
+<doc f='include/grpc/grpc.h' l='259'>/** Returns a newly allocated string representing the endpoint to which this
+    call is communicating with. The string is in the uri format accepted by
+    grpc_channel_create.
+    The returned string should be disposed of with gpr_free().
+
+    WARNING: this value is never authenticated or subject to any security
+    related code. It must not be used for any authentication related
+    functionality. Instead, use grpc_auth_context. */</doc>

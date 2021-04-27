@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='858' type='int uv_timer_start(uv_timer_t * handle, uv_timer_cb cb, uint64_t timeout, uint64_t repeat)'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='229' u='c' c='poll_cb'/>
+<def f='qv2ray/3rdparty/libuv/src/timer.c' l='66' ll='94' type='int uv_timer_start(uv_timer_t * handle, uv_timer_cb cb, uint64_t timeout, uint64_t repeat)'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='116' u='c' c='uv_timer_again'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='23' u='a' c='_ZN3uvw11TimerHandle5startENSt6chrono8durationImSt5ratioILl1ELl1000EEEES5_'/>

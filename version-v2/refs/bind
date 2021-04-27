@@ -1,0 +1,7 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='112' type='int bind(int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='111'>/* Give the socket FD the local address ADDR (which is LEN bytes long).  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='72' u='c' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='57' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='102' u='c' c='maybe_new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='187' u='c' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='555' u='c' c='uv__udp_bind'/>

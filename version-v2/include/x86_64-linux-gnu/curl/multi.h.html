@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>multi.h source code [include/x86_64-linux-gnu/curl/multi.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/curl/multi.h'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>x86_64-linux-gnu</a>/<a href='./'>curl</a>/<a href='multi.h.html'>multi.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/CURLINC_MULTI_H">CURLINC_MULTI_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/CURLINC_MULTI_H" data-ref="_M/CURLINC_MULTI_H">CURLINC_MULTI_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td><i>/***************************************************************************</i></td></tr>
+<tr><th id="4">4</th><td><i> *                                  _   _ ____  _</i></td></tr>
+<tr><th id="5">5</th><td><i> *  Project                     ___| | | |  _ \| |</i></td></tr>
+<tr><th id="6">6</th><td><i> *                             / __| | | | |_) | |</i></td></tr>
+<tr><th id="7">7</th><td><i> *                            | (__| |_| |  _ &lt;| |___</i></td></tr>
+<tr><th id="8">8</th><td><i> *                             \___|\___/|_| \_\_____|</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * Copyright (C) 1998 - 2020, Daniel Stenberg, &lt;daniel@haxx.se&gt;, et al.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This software is licensed as described in the file COPYING, which</i></td></tr>
+<tr><th id="13">13</th><td><i> * you should have received as part of this distribution. The terms</i></td></tr>
+<tr><th id="14">14</th><td><i> * are also available at <a href="https://curl.haxx.se/docs/copyright.html">https://curl.haxx.se/docs/copyright.html</a>.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</i></td></tr>
+<tr><th id="17">17</th><td><i> * copies of the Software, and permit persons to whom the Software is</i></td></tr>
+<tr><th id="18">18</th><td><i> * furnished to do so, under the terms of the COPYING file.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY</i></td></tr>
+<tr><th id="21">21</th><td><i> * KIND, either express or implied.</i></td></tr>
+<tr><th id="22">22</th><td><i> *</i></td></tr>
+<tr><th id="23">23</th><td><i> ***************************************************************************/</i></td></tr>
+<tr><th id="24">24</th><td><i>/*</i></td></tr>
+<tr><th id="25">25</th><td><i>  This is an "external" header file. Don't give away any internals here!</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i>  GOALS</i></td></tr>
+<tr><th id="28">28</th><td><i></i></td></tr>
+<tr><th id="29">29</th><td><i>  o Enable a "pull" interface. The application that uses libcurl decides where</i></td></tr>
+<tr><th id="30">30</th><td><i>    and when to ask libcurl to get/send data.</i></td></tr>
+<tr><th id="31">31</th><td><i></i></td></tr>
+<tr><th id="32">32</th><td><i>  o Enable multiple simultaneous transfers in the same thread without making it</i></td></tr>
+<tr><th id="33">33</th><td><i>    complicated for the application.</i></td></tr>
+<tr><th id="34">34</th><td><i></i></td></tr>
+<tr><th id="35">35</th><td><i>  o Enable the application to select() on its own file descriptors and curl's</i></td></tr>
+<tr><th id="36">36</th><td><i>    file descriptors simultaneous easily.</i></td></tr>
+<tr><th id="37">37</th><td><i></i></td></tr>
+<tr><th id="38">38</th><td><i>*/</i></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i>/*</i></td></tr>
+<tr><th id="41">41</th><td><i> * This header file should not really need to include "curl.h" since curl.h</i></td></tr>
+<tr><th id="42">42</th><td><i> * itself includes this file and we expect user applications to do #include</i></td></tr>
+<tr><th id="43">43</th><td><i> * &lt;curl/curl.h&gt; without the need for especially including multi.h.</i></td></tr>
+<tr><th id="44">44</th><td><i> *</i></td></tr>
+<tr><th id="45">45</th><td><i> * For some reason we added this include here at one point, and rather than to</i></td></tr>
+<tr><th id="46">46</th><td><i> * break existing (wrongly written) libcurl applications, we leave it as-is</i></td></tr>
+<tr><th id="47">47</th><td><i> * but with this warning attached.</i></td></tr>
+<tr><th id="48">48</th><td><i> */</i></td></tr>
+<tr><th id="49">49</th><td><u>#include <a href="curl.h.html">"curl.h"</a></u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="51">ifdef</span>  <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="52">52</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="51">endif</span></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="55">if</span> defined(<span class="macro" data-ref="_M/BUILDING_LIBCURL">BUILDING_LIBCURL</span>) || defined(<span class="macro" data-ref="_M/CURL_STRICTER">CURL_STRICTER</span>)</u></td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> Curl_multi CURLM;</td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="55">else</span></u></td></tr>
+<tr><th id="58">58</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</dfn>;</td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="55">endif</span></u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="62">62</th><td>  <dfn class="enum" id="CURLM_CALL_MULTI_PERFORM" title='CURLM_CALL_MULTI_PERFORM' data-ref="CURLM_CALL_MULTI_PERFORM" data-ref-filename="CURLM_CALL_MULTI_PERFORM">CURLM_CALL_MULTI_PERFORM</dfn> = -<var>1</var>, <i>/* please call curl_multi_perform() or</i></td></tr>
+<tr><th id="63">63</th><td><i>                                    curl_multi_socket*() soon */</i></td></tr>
+<tr><th id="64">64</th><td>  <dfn class="enum" id="CURLM_OK" title='CURLM_OK' data-ref="CURLM_OK" data-ref-filename="CURLM_OK">CURLM_OK</dfn>,</td></tr>
+<tr><th id="65">65</th><td>  <dfn class="enum" id="CURLM_BAD_HANDLE" title='CURLM_BAD_HANDLE' data-ref="CURLM_BAD_HANDLE" data-ref-filename="CURLM_BAD_HANDLE">CURLM_BAD_HANDLE</dfn>,      <i>/* the passed-in handle is not a valid CURLM handle */</i></td></tr>
+<tr><th id="66">66</th><td>  <dfn class="enum" id="CURLM_BAD_EASY_HANDLE" title='CURLM_BAD_EASY_HANDLE' data-ref="CURLM_BAD_EASY_HANDLE" data-ref-filename="CURLM_BAD_EASY_HANDLE">CURLM_BAD_EASY_HANDLE</dfn>, <i>/* an easy handle was not good/valid */</i></td></tr>
+<tr><th id="67">67</th><td>  <dfn class="enum" id="CURLM_OUT_OF_MEMORY" title='CURLM_OUT_OF_MEMORY' data-ref="CURLM_OUT_OF_MEMORY" data-ref-filename="CURLM_OUT_OF_MEMORY">CURLM_OUT_OF_MEMORY</dfn>,   <i>/* if you ever get this, you're in deep sh*t */</i></td></tr>
+<tr><th id="68">68</th><td>  <dfn class="enum" id="CURLM_INTERNAL_ERROR" title='CURLM_INTERNAL_ERROR' data-ref="CURLM_INTERNAL_ERROR" data-ref-filename="CURLM_INTERNAL_ERROR">CURLM_INTERNAL_ERROR</dfn>,  <i>/* this is a libcurl bug */</i></td></tr>
+<tr><th id="69">69</th><td>  <dfn class="enum" id="CURLM_BAD_SOCKET" title='CURLM_BAD_SOCKET' data-ref="CURLM_BAD_SOCKET" data-ref-filename="CURLM_BAD_SOCKET">CURLM_BAD_SOCKET</dfn>,      <i>/* the passed in socket argument did not match */</i></td></tr>
+<tr><th id="70">70</th><td>  <dfn class="enum" id="CURLM_UNKNOWN_OPTION" title='CURLM_UNKNOWN_OPTION' data-ref="CURLM_UNKNOWN_OPTION" data-ref-filename="CURLM_UNKNOWN_OPTION">CURLM_UNKNOWN_OPTION</dfn>,  <i>/* curl_multi_setopt() with unsupported option */</i></td></tr>
+<tr><th id="71">71</th><td>  <dfn class="enum" id="CURLM_ADDED_ALREADY" title='CURLM_ADDED_ALREADY' data-ref="CURLM_ADDED_ALREADY" data-ref-filename="CURLM_ADDED_ALREADY">CURLM_ADDED_ALREADY</dfn>,   <i>/* an easy handle already added to a multi handle was</i></td></tr>
+<tr><th id="72">72</th><td><i>                            attempted to get added - again */</i></td></tr>
+<tr><th id="73">73</th><td>  <dfn class="enum" id="CURLM_RECURSIVE_API_CALL" title='CURLM_RECURSIVE_API_CALL' data-ref="CURLM_RECURSIVE_API_CALL" data-ref-filename="CURLM_RECURSIVE_API_CALL">CURLM_RECURSIVE_API_CALL</dfn>, <i>/* an api function was called from inside a</i></td></tr>
+<tr><th id="74">74</th><td><i>                               callback */</i></td></tr>
+<tr><th id="75">75</th><td>  <dfn class="enum" id="CURLM_WAKEUP_FAILURE" title='CURLM_WAKEUP_FAILURE' data-ref="CURLM_WAKEUP_FAILURE" data-ref-filename="CURLM_WAKEUP_FAILURE">CURLM_WAKEUP_FAILURE</dfn>, <i>/* wakeup is unavailable or failed */</i></td></tr>
+<tr><th id="76">76</th><td>  <dfn class="enum" id="CURLM_LAST" title='CURLM_LAST' data-ref="CURLM_LAST" data-ref-filename="CURLM_LAST">CURLM_LAST</dfn></td></tr>
+<tr><th id="77">77</th><td>} <dfn class="typedef" id="CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</dfn>;</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><i>/* just to make code nicer when using curl_multi_socket() you can now check</i></td></tr>
+<tr><th id="80">80</th><td><i>   for CURLM_CALL_MULTI_SOCKET too in the same style it works for</i></td></tr>
+<tr><th id="81">81</th><td><i>   curl_multi_perform() and CURLM_CALL_MULTI_PERFORM */</i></td></tr>
+<tr><th id="82">82</th><td><u>#define <dfn class="macro" id="_M/CURLM_CALL_MULTI_SOCKET" data-ref="_M/CURLM_CALL_MULTI_SOCKET">CURLM_CALL_MULTI_SOCKET</dfn> CURLM_CALL_MULTI_PERFORM</u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><i>/* bitmask bits for CURLMOPT_PIPELINING */</i></td></tr>
+<tr><th id="85">85</th><td><u>#define <dfn class="macro" id="_M/CURLPIPE_NOTHING" data-ref="_M/CURLPIPE_NOTHING">CURLPIPE_NOTHING</dfn>   0L</u></td></tr>
+<tr><th id="86">86</th><td><u>#define <dfn class="macro" id="_M/CURLPIPE_HTTP1" data-ref="_M/CURLPIPE_HTTP1">CURLPIPE_HTTP1</dfn>     1L</u></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/CURLPIPE_MULTIPLEX" data-ref="_M/CURLPIPE_MULTIPLEX">CURLPIPE_MULTIPLEX</dfn> 2L</u></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="90">90</th><td>  <dfn class="enum" id="CURLMSG_NONE" title='CURLMSG_NONE' data-ref="CURLMSG_NONE" data-ref-filename="CURLMSG_NONE">CURLMSG_NONE</dfn>, <i>/* first, not used */</i></td></tr>
+<tr><th id="91">91</th><td>  <dfn class="enum" id="CURLMSG_DONE" title='CURLMSG_DONE' data-ref="CURLMSG_DONE" data-ref-filename="CURLMSG_DONE">CURLMSG_DONE</dfn>, <i>/* This easy handle has completed. 'result' contains</i></td></tr>
+<tr><th id="92">92</th><td><i>                   the CURLcode of the transfer */</i></td></tr>
+<tr><th id="93">93</th><td>  <dfn class="enum" id="CURLMSG_LAST" title='CURLMSG_LAST' data-ref="CURLMSG_LAST" data-ref-filename="CURLMSG_LAST">CURLMSG_LAST</dfn> <i>/* last, not used */</i></td></tr>
+<tr><th id="94">94</th><td>} <dfn class="typedef" id="CURLMSG" title='CURLMSG' data-type='enum CURLMSG' data-ref="CURLMSG" data-ref-filename="CURLMSG">CURLMSG</dfn>;</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><b>struct</b> <dfn class="type def" id="CURLMsg" title='CURLMsg' data-ref="CURLMsg" data-ref-filename="CURLMsg">CURLMsg</dfn> {</td></tr>
+<tr><th id="97">97</th><td>  <a class="typedef" href="#CURLMSG" title='CURLMSG' data-type='enum CURLMSG' data-ref="CURLMSG" data-ref-filename="CURLMSG">CURLMSG</a> <dfn class="decl field" id="CURLMsg::msg" title='CURLMsg::msg' data-ref="CURLMsg::msg" data-ref-filename="CURLMsg..msg">msg</dfn>;       <i>/* what this message means */</i></td></tr>
+<tr><th id="98">98</th><td>  <a class="typedef" href="curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL" data-ref-filename="CURL">CURL</a> *<dfn class="decl field" id="CURLMsg::easy_handle" title='CURLMsg::easy_handle' data-ref="CURLMsg::easy_handle" data-ref-filename="CURLMsg..easy_handle">easy_handle</dfn>; <i>/* the handle it concerns */</i></td></tr>
+<tr><th id="99">99</th><td>  <b>union</b> {</td></tr>
+<tr><th id="100">100</th><td>    <em>void</em> *<dfn class="decl field" id="CURLMsg::(anonymous)::whatever" title='CURLMsg::(anonymous union)::whatever' data-ref="CURLMsg::(anonymous)::whatever" data-ref-filename="CURLMsg..(anonymous)..whatever">whatever</dfn>;    <i>/* message-specific data */</i></td></tr>
+<tr><th id="101">101</th><td>    <a class="typedef" href="curl.h.html#CURLcode" title='CURLcode' data-type='enum CURLcode' data-ref="CURLcode" data-ref-filename="CURLcode">CURLcode</a> <dfn class="decl field" id="CURLMsg::(anonymous)::result" title='CURLMsg::(anonymous union)::result' data-ref="CURLMsg::(anonymous)::result" data-ref-filename="CURLMsg..(anonymous)..result">result</dfn>;   <i>/* return code for transfer */</i></td></tr>
+<tr><th id="102">102</th><td>  } <dfn class="decl field" id="CURLMsg::data" title='CURLMsg::data' data-ref="CURLMsg::data" data-ref-filename="CURLMsg..data">data</dfn>;</td></tr>
+<tr><th id="103">103</th><td>};</td></tr>
+<tr><th id="104">104</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#CURLMsg" title='CURLMsg' data-ref="CURLMsg" data-ref-filename="CURLMsg">CURLMsg</a> <dfn class="typedef" id="CURLMsg" title='CURLMsg' data-type='struct CURLMsg' data-ref="CURLMsg" data-ref-filename="CURLMsg">CURLMsg</dfn>;</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i>/* Based on poll(2) structure and values.</i></td></tr>
+<tr><th id="107">107</th><td><i> * We don't use pollfd and POLL* constants explicitly</i></td></tr>
+<tr><th id="108">108</th><td><i> * to cover platforms without poll(). */</i></td></tr>
+<tr><th id="109">109</th><td><u>#define <dfn class="macro" id="_M/CURL_WAIT_POLLIN" data-ref="_M/CURL_WAIT_POLLIN">CURL_WAIT_POLLIN</dfn>    0x0001</u></td></tr>
+<tr><th id="110">110</th><td><u>#define <dfn class="macro" id="_M/CURL_WAIT_POLLPRI" data-ref="_M/CURL_WAIT_POLLPRI">CURL_WAIT_POLLPRI</dfn>   0x0002</u></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/CURL_WAIT_POLLOUT" data-ref="_M/CURL_WAIT_POLLOUT">CURL_WAIT_POLLOUT</dfn>   0x0004</u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><b>struct</b> <dfn class="type def" id="curl_waitfd" title='curl_waitfd' data-ref="curl_waitfd" data-ref-filename="curl_waitfd">curl_waitfd</dfn> {</td></tr>
+<tr><th id="114">114</th><td>  <a class="typedef" href="curl.h.html#curl_socket_t" title='curl_socket_t' data-type='int' data-ref="curl_socket_t" data-ref-filename="curl_socket_t">curl_socket_t</a> <dfn class="decl field" id="curl_waitfd::fd" title='curl_waitfd::fd' data-ref="curl_waitfd::fd" data-ref-filename="curl_waitfd..fd">fd</dfn>;</td></tr>
+<tr><th id="115">115</th><td>  <em>short</em> <dfn class="decl field" id="curl_waitfd::events" title='curl_waitfd::events' data-ref="curl_waitfd::events" data-ref-filename="curl_waitfd..events">events</dfn>;</td></tr>
+<tr><th id="116">116</th><td>  <em>short</em> <dfn class="decl field" id="curl_waitfd::revents" title='curl_waitfd::revents' data-ref="curl_waitfd::revents" data-ref-filename="curl_waitfd..revents">revents</dfn>; <i>/* not supported yet */</i></td></tr>
+<tr><th id="117">117</th><td>};</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><i>/*</i></td></tr>
+<tr><th id="120">120</th><td><i> * Name:    curl_multi_init()</i></td></tr>
+<tr><th id="121">121</th><td><i> *</i></td></tr>
+<tr><th id="122">122</th><td><i> * Desc:    inititalize multi-style curl usage</i></td></tr>
+<tr><th id="123">123</th><td><i> *</i></td></tr>
+<tr><th id="124">124</th><td><i> * Returns: a new CURLM handle to use in all 'curl_multi' functions.</i></td></tr>
+<tr><th id="125">125</th><td><i> */</i></td></tr>
+<tr><th id="126">126</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="decl fn" id="curl_multi_init" title='curl_multi_init' data-ref="curl_multi_init" data-ref-filename="curl_multi_init">curl_multi_init</dfn>(<em>void</em>);</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><i>/*</i></td></tr>
+<tr><th id="129">129</th><td><i> * Name:    curl_multi_add_handle()</i></td></tr>
+<tr><th id="130">130</th><td><i> *</i></td></tr>
+<tr><th id="131">131</th><td><i> * Desc:    add a standard curl handle to the multi stack</i></td></tr>
+<tr><th id="132">132</th><td><i> *</i></td></tr>
+<tr><th id="133">133</th><td><i> * Returns: CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="134">134</th><td><i> */</i></td></tr>
+<tr><th id="135">135</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_add_handle" title='curl_multi_add_handle' data-ref="curl_multi_add_handle" data-ref-filename="curl_multi_add_handle">curl_multi_add_handle</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col7 decl" id="197multi_handle" title='multi_handle' data-type='CURLM *' data-ref="197multi_handle" data-ref-filename="197multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="136">136</th><td>                                            <a class="typedef" href="curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL" data-ref-filename="CURL">CURL</a> *<dfn class="local col8 decl" id="198curl_handle" title='curl_handle' data-type='CURL *' data-ref="198curl_handle" data-ref-filename="198curl_handle">curl_handle</dfn>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td> <i>/*</i></td></tr>
+<tr><th id="139">139</th><td><i>  * Name:    curl_multi_remove_handle()</i></td></tr>
+<tr><th id="140">140</th><td><i>  *</i></td></tr>
+<tr><th id="141">141</th><td><i>  * Desc:    removes a curl handle from the multi stack again</i></td></tr>
+<tr><th id="142">142</th><td><i>  *</i></td></tr>
+<tr><th id="143">143</th><td><i>  * Returns: CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="144">144</th><td><i>  */</i></td></tr>
+<tr><th id="145">145</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_remove_handle" title='curl_multi_remove_handle' data-ref="curl_multi_remove_handle" data-ref-filename="curl_multi_remove_handle">curl_multi_remove_handle</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col9 decl" id="199multi_handle" title='multi_handle' data-type='CURLM *' data-ref="199multi_handle" data-ref-filename="199multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="146">146</th><td>                                               <a class="typedef" href="curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL" data-ref-filename="CURL">CURL</a> *<dfn class="local col0 decl" id="200curl_handle" title='curl_handle' data-type='CURL *' data-ref="200curl_handle" data-ref-filename="200curl_handle">curl_handle</dfn>);</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td> <i>/*</i></td></tr>
+<tr><th id="149">149</th><td><i>  * Name:    curl_multi_fdset()</i></td></tr>
+<tr><th id="150">150</th><td><i>  *</i></td></tr>
+<tr><th id="151">151</th><td><i>  * Desc:    Ask curl for its fd_set sets. The app can use these to select() or</i></td></tr>
+<tr><th id="152">152</th><td><i>  *          poll() on. We want curl_multi_perform() called as soon as one of</i></td></tr>
+<tr><th id="153">153</th><td><i>  *          them are ready.</i></td></tr>
+<tr><th id="154">154</th><td><i>  *</i></td></tr>
+<tr><th id="155">155</th><td><i>  * Returns: CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="156">156</th><td><i>  */</i></td></tr>
+<tr><th id="157">157</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_fdset" title='curl_multi_fdset' data-ref="curl_multi_fdset" data-ref-filename="curl_multi_fdset">curl_multi_fdset</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col1 decl" id="201multi_handle" title='multi_handle' data-type='CURLM *' data-ref="201multi_handle" data-ref-filename="201multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="158">158</th><td>                                       <a class="typedef" href="../sys/select.h.html#fd_set" title='fd_set' data-type='struct fd_set' data-ref="fd_set" data-ref-filename="fd_set">fd_set</a> *<dfn class="local col2 decl" id="202read_fd_set" title='read_fd_set' data-type='fd_set *' data-ref="202read_fd_set" data-ref-filename="202read_fd_set">read_fd_set</dfn>,</td></tr>
+<tr><th id="159">159</th><td>                                       <a class="typedef" href="../sys/select.h.html#fd_set" title='fd_set' data-type='struct fd_set' data-ref="fd_set" data-ref-filename="fd_set">fd_set</a> *<dfn class="local col3 decl" id="203write_fd_set" title='write_fd_set' data-type='fd_set *' data-ref="203write_fd_set" data-ref-filename="203write_fd_set">write_fd_set</dfn>,</td></tr>
+<tr><th id="160">160</th><td>                                       <a class="typedef" href="../sys/select.h.html#fd_set" title='fd_set' data-type='struct fd_set' data-ref="fd_set" data-ref-filename="fd_set">fd_set</a> *<dfn class="local col4 decl" id="204exc_fd_set" title='exc_fd_set' data-type='fd_set *' data-ref="204exc_fd_set" data-ref-filename="204exc_fd_set">exc_fd_set</dfn>,</td></tr>
+<tr><th id="161">161</th><td>                                       <em>int</em> *<dfn class="local col5 decl" id="205max_fd" title='max_fd' data-type='int *' data-ref="205max_fd" data-ref-filename="205max_fd">max_fd</dfn>);</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i>/*</i></td></tr>
+<tr><th id="164">164</th><td><i> * Name:     curl_multi_wait()</i></td></tr>
+<tr><th id="165">165</th><td><i> *</i></td></tr>
+<tr><th id="166">166</th><td><i> * Desc:     Poll on all fds within a CURLM set as well as any</i></td></tr>
+<tr><th id="167">167</th><td><i> *           additional fds passed to the function.</i></td></tr>
+<tr><th id="168">168</th><td><i> *</i></td></tr>
+<tr><th id="169">169</th><td><i> * Returns:  CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="170">170</th><td><i> */</i></td></tr>
+<tr><th id="171">171</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_wait" title='curl_multi_wait' data-ref="curl_multi_wait" data-ref-filename="curl_multi_wait">curl_multi_wait</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col6 decl" id="206multi_handle" title='multi_handle' data-type='CURLM *' data-ref="206multi_handle" data-ref-filename="206multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="172">172</th><td>                                      <b>struct</b> <a class="type" href="#curl_waitfd" title='curl_waitfd' data-ref="curl_waitfd" data-ref-filename="curl_waitfd">curl_waitfd</a> <dfn class="local col7 decl" id="207extra_fds" title='extra_fds' data-type='struct curl_waitfd *' data-ref="207extra_fds" data-ref-filename="207extra_fds">extra_fds</dfn>[],</td></tr>
+<tr><th id="173">173</th><td>                                      <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="208extra_nfds" title='extra_nfds' data-type='unsigned int' data-ref="208extra_nfds" data-ref-filename="208extra_nfds">extra_nfds</dfn>,</td></tr>
+<tr><th id="174">174</th><td>                                      <em>int</em> <dfn class="local col9 decl" id="209timeout_ms" title='timeout_ms' data-type='int' data-ref="209timeout_ms" data-ref-filename="209timeout_ms">timeout_ms</dfn>,</td></tr>
+<tr><th id="175">175</th><td>                                      <em>int</em> *<dfn class="local col0 decl" id="210ret" title='ret' data-type='int *' data-ref="210ret" data-ref-filename="210ret">ret</dfn>);</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><i>/*</i></td></tr>
+<tr><th id="178">178</th><td><i> * Name:     curl_multi_poll()</i></td></tr>
+<tr><th id="179">179</th><td><i> *</i></td></tr>
+<tr><th id="180">180</th><td><i> * Desc:     Poll on all fds within a CURLM set as well as any</i></td></tr>
+<tr><th id="181">181</th><td><i> *           additional fds passed to the function.</i></td></tr>
+<tr><th id="182">182</th><td><i> *</i></td></tr>
+<tr><th id="183">183</th><td><i> * Returns:  CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="184">184</th><td><i> */</i></td></tr>
+<tr><th id="185">185</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_poll" title='curl_multi_poll' data-ref="curl_multi_poll" data-ref-filename="curl_multi_poll">curl_multi_poll</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col1 decl" id="211multi_handle" title='multi_handle' data-type='CURLM *' data-ref="211multi_handle" data-ref-filename="211multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="186">186</th><td>                                      <b>struct</b> <a class="type" href="#curl_waitfd" title='curl_waitfd' data-ref="curl_waitfd" data-ref-filename="curl_waitfd">curl_waitfd</a> <dfn class="local col2 decl" id="212extra_fds" title='extra_fds' data-type='struct curl_waitfd *' data-ref="212extra_fds" data-ref-filename="212extra_fds">extra_fds</dfn>[],</td></tr>
+<tr><th id="187">187</th><td>                                      <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="213extra_nfds" title='extra_nfds' data-type='unsigned int' data-ref="213extra_nfds" data-ref-filename="213extra_nfds">extra_nfds</dfn>,</td></tr>
+<tr><th id="188">188</th><td>                                      <em>int</em> <dfn class="local col4 decl" id="214timeout_ms" title='timeout_ms' data-type='int' data-ref="214timeout_ms" data-ref-filename="214timeout_ms">timeout_ms</dfn>,</td></tr>
+<tr><th id="189">189</th><td>                                      <em>int</em> *<dfn class="local col5 decl" id="215ret" title='ret' data-type='int *' data-ref="215ret" data-ref-filename="215ret">ret</dfn>);</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><i>/*</i></td></tr>
+<tr><th id="192">192</th><td><i> * Name:     curl_multi_wakeup()</i></td></tr>
+<tr><th id="193">193</th><td><i> *</i></td></tr>
+<tr><th id="194">194</th><td><i> * Desc:     wakes up a sleeping curl_multi_poll call.</i></td></tr>
+<tr><th id="195">195</th><td><i> *</i></td></tr>
+<tr><th id="196">196</th><td><i> * Returns:  CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="197">197</th><td><i> */</i></td></tr>
+<tr><th id="198">198</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_wakeup" title='curl_multi_wakeup' data-ref="curl_multi_wakeup" data-ref-filename="curl_multi_wakeup">curl_multi_wakeup</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col6 decl" id="216multi_handle" title='multi_handle' data-type='CURLM *' data-ref="216multi_handle" data-ref-filename="216multi_handle">multi_handle</dfn>);</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td> <i>/*</i></td></tr>
+<tr><th id="201">201</th><td><i>  * Name:    curl_multi_perform()</i></td></tr>
+<tr><th id="202">202</th><td><i>  *</i></td></tr>
+<tr><th id="203">203</th><td><i>  * Desc:    When the app thinks there's data available for curl it calls this</i></td></tr>
+<tr><th id="204">204</th><td><i>  *          function to read/write whatever there is right now. This returns</i></td></tr>
+<tr><th id="205">205</th><td><i>  *          as soon as the reads and writes are done. This function does not</i></td></tr>
+<tr><th id="206">206</th><td><i>  *          require that there actually is data available for reading or that</i></td></tr>
+<tr><th id="207">207</th><td><i>  *          data can be written, it can be called just in case. It returns</i></td></tr>
+<tr><th id="208">208</th><td><i>  *          the number of handles that still transfer data in the second</i></td></tr>
+<tr><th id="209">209</th><td><i>  *          argument's integer-pointer.</i></td></tr>
+<tr><th id="210">210</th><td><i>  *</i></td></tr>
+<tr><th id="211">211</th><td><i>  * Returns: CURLMcode type, general multi error code. *NOTE* that this only</i></td></tr>
+<tr><th id="212">212</th><td><i>  *          returns errors etc regarding the whole multi stack. There might</i></td></tr>
+<tr><th id="213">213</th><td><i>  *          still have occurred problems on individual transfers even when</i></td></tr>
+<tr><th id="214">214</th><td><i>  *          this returns OK.</i></td></tr>
+<tr><th id="215">215</th><td><i>  */</i></td></tr>
+<tr><th id="216">216</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_perform" title='curl_multi_perform' data-ref="curl_multi_perform" data-ref-filename="curl_multi_perform">curl_multi_perform</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col7 decl" id="217multi_handle" title='multi_handle' data-type='CURLM *' data-ref="217multi_handle" data-ref-filename="217multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="217">217</th><td>                                         <em>int</em> *<dfn class="local col8 decl" id="218running_handles" title='running_handles' data-type='int *' data-ref="218running_handles" data-ref-filename="218running_handles">running_handles</dfn>);</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td> <i>/*</i></td></tr>
+<tr><th id="220">220</th><td><i>  * Name:    curl_multi_cleanup()</i></td></tr>
+<tr><th id="221">221</th><td><i>  *</i></td></tr>
+<tr><th id="222">222</th><td><i>  * Desc:    Cleans up and removes a whole multi stack. It does not free or</i></td></tr>
+<tr><th id="223">223</th><td><i>  *          touch any individual easy handles in any way. We need to define</i></td></tr>
+<tr><th id="224">224</th><td><i>  *          in what state those handles will be if this function is called</i></td></tr>
+<tr><th id="225">225</th><td><i>  *          in the middle of a transfer.</i></td></tr>
+<tr><th id="226">226</th><td><i>  *</i></td></tr>
+<tr><th id="227">227</th><td><i>  * Returns: CURLMcode type, general multi error code.</i></td></tr>
+<tr><th id="228">228</th><td><i>  */</i></td></tr>
+<tr><th id="229">229</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_cleanup" title='curl_multi_cleanup' data-ref="curl_multi_cleanup" data-ref-filename="curl_multi_cleanup">curl_multi_cleanup</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col9 decl" id="219multi_handle" title='multi_handle' data-type='CURLM *' data-ref="219multi_handle" data-ref-filename="219multi_handle">multi_handle</dfn>);</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><i>/*</i></td></tr>
+<tr><th id="232">232</th><td><i> * Name:    curl_multi_info_read()</i></td></tr>
+<tr><th id="233">233</th><td><i> *</i></td></tr>
+<tr><th id="234">234</th><td><i> * Desc:    Ask the multi handle if there's any messages/informationals from</i></td></tr>
+<tr><th id="235">235</th><td><i> *          the individual transfers. Messages include informationals such as</i></td></tr>
+<tr><th id="236">236</th><td><i> *          error code from the transfer or just the fact that a transfer is</i></td></tr>
+<tr><th id="237">237</th><td><i> *          completed. More details on these should be written down as well.</i></td></tr>
+<tr><th id="238">238</th><td><i> *</i></td></tr>
+<tr><th id="239">239</th><td><i> *          Repeated calls to this function will return a new struct each</i></td></tr>
+<tr><th id="240">240</th><td><i> *          time, until a special "end of msgs" struct is returned as a signal</i></td></tr>
+<tr><th id="241">241</th><td><i> *          that there is no more to get at this point.</i></td></tr>
+<tr><th id="242">242</th><td><i> *</i></td></tr>
+<tr><th id="243">243</th><td><i> *          The data the returned pointer points to will not survive calling</i></td></tr>
+<tr><th id="244">244</th><td><i> *          curl_multi_cleanup().</i></td></tr>
+<tr><th id="245">245</th><td><i> *</i></td></tr>
+<tr><th id="246">246</th><td><i> *          The 'CURLMsg' struct is meant to be very simple and only contain</i></td></tr>
+<tr><th id="247">247</th><td><i> *          very basic information. If more involved information is wanted,</i></td></tr>
+<tr><th id="248">248</th><td><i> *          we will provide the particular "transfer handle" in that struct</i></td></tr>
+<tr><th id="249">249</th><td><i> *          and that should/could/would be used in subsequent</i></td></tr>
+<tr><th id="250">250</th><td><i> *          curl_easy_getinfo() calls (or similar). The point being that we</i></td></tr>
+<tr><th id="251">251</th><td><i> *          must never expose complex structs to applications, as then we'll</i></td></tr>
+<tr><th id="252">252</th><td><i> *          undoubtably get backwards compatibility problems in the future.</i></td></tr>
+<tr><th id="253">253</th><td><i> *</i></td></tr>
+<tr><th id="254">254</th><td><i> * Returns: A pointer to a filled-in struct, or NULL if it failed or ran out</i></td></tr>
+<tr><th id="255">255</th><td><i> *          of structs. It also writes the number of messages left in the</i></td></tr>
+<tr><th id="256">256</th><td><i> *          queue (after this read) in the integer the second argument points</i></td></tr>
+<tr><th id="257">257</th><td><i> *          to.</i></td></tr>
+<tr><th id="258">258</th><td><i> */</i></td></tr>
+<tr><th id="259">259</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMsg" title='CURLMsg' data-type='struct CURLMsg' data-ref="CURLMsg" data-ref-filename="CURLMsg">CURLMsg</a> *<dfn class="decl fn" id="curl_multi_info_read" title='curl_multi_info_read' data-ref="curl_multi_info_read" data-ref-filename="curl_multi_info_read">curl_multi_info_read</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col0 decl" id="220multi_handle" title='multi_handle' data-type='CURLM *' data-ref="220multi_handle" data-ref-filename="220multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="260">260</th><td>                                          <em>int</em> *<dfn class="local col1 decl" id="221msgs_in_queue" title='msgs_in_queue' data-type='int *' data-ref="221msgs_in_queue" data-ref-filename="221msgs_in_queue">msgs_in_queue</dfn>);</td></tr>
+<tr><th id="261">261</th><td></td></tr>
+<tr><th id="262">262</th><td><i>/*</i></td></tr>
+<tr><th id="263">263</th><td><i> * Name:    curl_multi_strerror()</i></td></tr>
+<tr><th id="264">264</th><td><i> *</i></td></tr>
+<tr><th id="265">265</th><td><i> * Desc:    The curl_multi_strerror function may be used to turn a CURLMcode</i></td></tr>
+<tr><th id="266">266</th><td><i> *          value into the equivalent human readable error string.  This is</i></td></tr>
+<tr><th id="267">267</th><td><i> *          useful for printing meaningful error messages.</i></td></tr>
+<tr><th id="268">268</th><td><i> *</i></td></tr>
+<tr><th id="269">269</th><td><i> * Returns: A pointer to a zero-terminated error message.</i></td></tr>
+<tr><th id="270">270</th><td><i> */</i></td></tr>
+<tr><th id="271">271</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <em>const</em> <em>char</em> *<dfn class="decl fn" id="curl_multi_strerror" title='curl_multi_strerror' data-ref="curl_multi_strerror" data-ref-filename="curl_multi_strerror">curl_multi_strerror</dfn>(<a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a>);</td></tr>
+<tr><th id="272">272</th><td></td></tr>
+<tr><th id="273">273</th><td><i>/*</i></td></tr>
+<tr><th id="274">274</th><td><i> * Name:    curl_multi_socket() and</i></td></tr>
+<tr><th id="275">275</th><td><i> *          curl_multi_socket_all()</i></td></tr>
+<tr><th id="276">276</th><td><i> *</i></td></tr>
+<tr><th id="277">277</th><td><i> * Desc:    An alternative version of curl_multi_perform() that allows the</i></td></tr>
+<tr><th id="278">278</th><td><i> *          application to pass in one of the file descriptors that have been</i></td></tr>
+<tr><th id="279">279</th><td><i> *          detected to have "action" on them and let libcurl perform.</i></td></tr>
+<tr><th id="280">280</th><td><i> *          See man page for details.</i></td></tr>
+<tr><th id="281">281</th><td><i> */</i></td></tr>
+<tr><th id="282">282</th><td><u>#define <dfn class="macro" id="_M/CURL_POLL_NONE" data-ref="_M/CURL_POLL_NONE">CURL_POLL_NONE</dfn>   0</u></td></tr>
+<tr><th id="283">283</th><td><u>#define <dfn class="macro" id="_M/CURL_POLL_IN" data-ref="_M/CURL_POLL_IN">CURL_POLL_IN</dfn>     1</u></td></tr>
+<tr><th id="284">284</th><td><u>#define <dfn class="macro" id="_M/CURL_POLL_OUT" data-ref="_M/CURL_POLL_OUT">CURL_POLL_OUT</dfn>    2</u></td></tr>
+<tr><th id="285">285</th><td><u>#define <dfn class="macro" id="_M/CURL_POLL_INOUT" data-ref="_M/CURL_POLL_INOUT">CURL_POLL_INOUT</dfn>  3</u></td></tr>
+<tr><th id="286">286</th><td><u>#define <dfn class="macro" id="_M/CURL_POLL_REMOVE" data-ref="_M/CURL_POLL_REMOVE">CURL_POLL_REMOVE</dfn> 4</u></td></tr>
+<tr><th id="287">287</th><td></td></tr>
+<tr><th id="288">288</th><td><u>#define <dfn class="macro" id="_M/CURL_SOCKET_TIMEOUT" data-ref="_M/CURL_SOCKET_TIMEOUT">CURL_SOCKET_TIMEOUT</dfn> CURL_SOCKET_BAD</u></td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td><u>#define <dfn class="macro" id="_M/CURL_CSELECT_IN" data-ref="_M/CURL_CSELECT_IN">CURL_CSELECT_IN</dfn>   0x01</u></td></tr>
+<tr><th id="291">291</th><td><u>#define <dfn class="macro" id="_M/CURL_CSELECT_OUT" data-ref="_M/CURL_CSELECT_OUT">CURL_CSELECT_OUT</dfn>  0x02</u></td></tr>
+<tr><th id="292">292</th><td><u>#define <dfn class="macro" id="_M/CURL_CSELECT_ERR" data-ref="_M/CURL_CSELECT_ERR">CURL_CSELECT_ERR</dfn>  0x04</u></td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="curl_socket_callback" title='curl_socket_callback' data-type='int (*)(CURL *, curl_socket_t, int, void *, void *)' data-ref="curl_socket_callback" data-ref-filename="curl_socket_callback">curl_socket_callback</dfn>)(<a class="typedef" href="curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL" data-ref-filename="CURL">CURL</a> *<dfn class="local col2 decl" id="222easy" title='easy' data-type='CURL *' data-ref="222easy" data-ref-filename="222easy">easy</dfn>,      <i>/* easy handle */</i></td></tr>
+<tr><th id="295">295</th><td>                                    <a class="typedef" href="curl.h.html#curl_socket_t" title='curl_socket_t' data-type='int' data-ref="curl_socket_t" data-ref-filename="curl_socket_t">curl_socket_t</a> <dfn class="local col3 decl" id="223s" title='s' data-type='curl_socket_t' data-ref="223s" data-ref-filename="223s">s</dfn>, <i>/* socket */</i></td></tr>
+<tr><th id="296">296</th><td>                                    <em>int</em> <dfn class="local col4 decl" id="224what" title='what' data-type='int' data-ref="224what" data-ref-filename="224what">what</dfn>,        <i>/* see above */</i></td></tr>
+<tr><th id="297">297</th><td>                                    <em>void</em> *<dfn class="local col5 decl" id="225userp" title='userp' data-type='void *' data-ref="225userp" data-ref-filename="225userp">userp</dfn>,     <i>/* private callback</i></td></tr>
+<tr><th id="298">298</th><td><i>                                                        pointer */</i></td></tr>
+<tr><th id="299">299</th><td>                                    <em>void</em> *<dfn class="local col6 decl" id="226socketp" title='socketp' data-type='void *' data-ref="226socketp" data-ref-filename="226socketp">socketp</dfn>);  <i>/* private socket</i></td></tr>
+<tr><th id="300">300</th><td><i>                                                        pointer */</i></td></tr>
+<tr><th id="301">301</th><td><i>/*</i></td></tr>
+<tr><th id="302">302</th><td><i> * Name:    curl_multi_timer_callback</i></td></tr>
+<tr><th id="303">303</th><td><i> *</i></td></tr>
+<tr><th id="304">304</th><td><i> * Desc:    Called by libcurl whenever the library detects a change in the</i></td></tr>
+<tr><th id="305">305</th><td><i> *          maximum number of milliseconds the app is allowed to wait before</i></td></tr>
+<tr><th id="306">306</th><td><i> *          curl_multi_socket() or curl_multi_perform() must be called</i></td></tr>
+<tr><th id="307">307</th><td><i> *          (to allow libcurl's timed events to take place).</i></td></tr>
+<tr><th id="308">308</th><td><i> *</i></td></tr>
+<tr><th id="309">309</th><td><i> * Returns: The callback should return zero.</i></td></tr>
+<tr><th id="310">310</th><td><i> */</i></td></tr>
+<tr><th id="311">311</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="curl_multi_timer_callback" title='curl_multi_timer_callback' data-type='int (*)(CURLM *, long, void *)' data-ref="curl_multi_timer_callback" data-ref-filename="curl_multi_timer_callback">curl_multi_timer_callback</dfn>)(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col7 decl" id="227multi" title='multi' data-type='CURLM *' data-ref="227multi" data-ref-filename="227multi">multi</dfn>,    <i>/* multi handle */</i></td></tr>
+<tr><th id="312">312</th><td>                                         <em>long</em> <dfn class="local col8 decl" id="228timeout_ms" title='timeout_ms' data-type='long' data-ref="228timeout_ms" data-ref-filename="228timeout_ms">timeout_ms</dfn>, <i>/* see above */</i></td></tr>
+<tr><th id="313">313</th><td>                                         <em>void</em> *<dfn class="local col9 decl" id="229userp" title='userp' data-type='void *' data-ref="229userp" data-ref-filename="229userp">userp</dfn>);    <i>/* private callback</i></td></tr>
+<tr><th id="314">314</th><td><i>                                                             pointer */</i></td></tr>
+<tr><th id="315">315</th><td></td></tr>
+<tr><th id="316">316</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_socket" title='curl_multi_socket' data-ref="curl_multi_socket" data-ref-filename="curl_multi_socket">curl_multi_socket</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col0 decl" id="230multi_handle" title='multi_handle' data-type='CURLM *' data-ref="230multi_handle" data-ref-filename="230multi_handle">multi_handle</dfn>, <a class="typedef" href="curl.h.html#curl_socket_t" title='curl_socket_t' data-type='int' data-ref="curl_socket_t" data-ref-filename="curl_socket_t">curl_socket_t</a> <dfn class="local col1 decl" id="231s" title='s' data-type='curl_socket_t' data-ref="231s" data-ref-filename="231s">s</dfn>,</td></tr>
+<tr><th id="317">317</th><td>                                        <em>int</em> *<dfn class="local col2 decl" id="232running_handles" title='running_handles' data-type='int *' data-ref="232running_handles" data-ref-filename="232running_handles">running_handles</dfn>);</td></tr>
+<tr><th id="318">318</th><td></td></tr>
+<tr><th id="319">319</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_socket_action" title='curl_multi_socket_action' data-ref="curl_multi_socket_action" data-ref-filename="curl_multi_socket_action">curl_multi_socket_action</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col3 decl" id="233multi_handle" title='multi_handle' data-type='CURLM *' data-ref="233multi_handle" data-ref-filename="233multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="320">320</th><td>                                               <a class="typedef" href="curl.h.html#curl_socket_t" title='curl_socket_t' data-type='int' data-ref="curl_socket_t" data-ref-filename="curl_socket_t">curl_socket_t</a> <dfn class="local col4 decl" id="234s" title='s' data-type='curl_socket_t' data-ref="234s" data-ref-filename="234s">s</dfn>,</td></tr>
+<tr><th id="321">321</th><td>                                               <em>int</em> <dfn class="local col5 decl" id="235ev_bitmask" title='ev_bitmask' data-type='int' data-ref="235ev_bitmask" data-ref-filename="235ev_bitmask">ev_bitmask</dfn>,</td></tr>
+<tr><th id="322">322</th><td>                                               <em>int</em> *<dfn class="local col6 decl" id="236running_handles" title='running_handles' data-type='int *' data-ref="236running_handles" data-ref-filename="236running_handles">running_handles</dfn>);</td></tr>
+<tr><th id="323">323</th><td></td></tr>
+<tr><th id="324">324</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_socket_all" title='curl_multi_socket_all' data-ref="curl_multi_socket_all" data-ref-filename="curl_multi_socket_all">curl_multi_socket_all</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col7 decl" id="237multi_handle" title='multi_handle' data-type='CURLM *' data-ref="237multi_handle" data-ref-filename="237multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="325">325</th><td>                                            <em>int</em> *<dfn class="local col8 decl" id="238running_handles" title='running_handles' data-type='int *' data-ref="238running_handles" data-ref-filename="238running_handles">running_handles</dfn>);</td></tr>
+<tr><th id="326">326</th><td></td></tr>
+<tr><th id="327">327</th><td><u>#<span data-ppcond="327">ifndef</span> <span class="macro" data-ref="_M/CURL_ALLOW_OLD_MULTI_SOCKET">CURL_ALLOW_OLD_MULTI_SOCKET</span></u></td></tr>
+<tr><th id="328">328</th><td><i>/* This macro below was added in 7.16.3 to push users who recompile to use</i></td></tr>
+<tr><th id="329">329</th><td><i>   the new curl_multi_socket_action() instead of the old curl_multi_socket()</i></td></tr>
+<tr><th id="330">330</th><td><i>*/</i></td></tr>
+<tr><th id="331">331</th><td><u>#define <dfn class="macro" id="_M/curl_multi_socket" data-ref="_M/curl_multi_socket">curl_multi_socket</dfn>(x,y,z) curl_multi_socket_action(x,y,0,z)</u></td></tr>
+<tr><th id="332">332</th><td><u>#<span data-ppcond="327">endif</span></u></td></tr>
+<tr><th id="333">333</th><td></td></tr>
+<tr><th id="334">334</th><td><i>/*</i></td></tr>
+<tr><th id="335">335</th><td><i> * Name:    curl_multi_timeout()</i></td></tr>
+<tr><th id="336">336</th><td><i> *</i></td></tr>
+<tr><th id="337">337</th><td><i> * Desc:    Returns the maximum number of milliseconds the app is allowed to</i></td></tr>
+<tr><th id="338">338</th><td><i> *          wait before curl_multi_socket() or curl_multi_perform() must be</i></td></tr>
+<tr><th id="339">339</th><td><i> *          called (to allow libcurl's timed events to take place).</i></td></tr>
+<tr><th id="340">340</th><td><i> *</i></td></tr>
+<tr><th id="341">341</th><td><i> * Returns: CURLM error code.</i></td></tr>
+<tr><th id="342">342</th><td><i> */</i></td></tr>
+<tr><th id="343">343</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_timeout" title='curl_multi_timeout' data-ref="curl_multi_timeout" data-ref-filename="curl_multi_timeout">curl_multi_timeout</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col9 decl" id="239multi_handle" title='multi_handle' data-type='CURLM *' data-ref="239multi_handle" data-ref-filename="239multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="344">344</th><td>                                         <em>long</em> *<dfn class="local col0 decl" id="240milliseconds" title='milliseconds' data-type='long *' data-ref="240milliseconds" data-ref-filename="240milliseconds">milliseconds</dfn>);</td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td><u>#undef <a class="macro" href="curl.h.html#954" data-ref="_M/CINIT">CINIT</a> /* re-using the same name as in curl.h */</u></td></tr>
+<tr><th id="347">347</th><td></td></tr>
+<tr><th id="348">348</th><td><u>#<span data-ppcond="348">ifdef</span> <a class="macro" href="system.h.html#476" data-ref="_M/CURL_ISOCPP">CURL_ISOCPP</a></u></td></tr>
+<tr><th id="349">349</th><td><u>#define <dfn class="macro" id="_M/CINIT" data-ref="_M/CINIT">CINIT</dfn>(name,type,num) CURLMOPT_ ## name = CURLOPTTYPE_ ## type + num</u></td></tr>
+<tr><th id="350">350</th><td><u>#<span data-ppcond="348">else</span></u></td></tr>
+<tr><th id="351">351</th><td><i>/* The macro "##" is ISO C, we assume pre-ISO C doesn't support it. */</i></td></tr>
+<tr><th id="352">352</th><td><u>#define LONG          CURLOPTTYPE_LONG</u></td></tr>
+<tr><th id="353">353</th><td><u>#define OBJECTPOINT   CURLOPTTYPE_OBJECTPOINT</u></td></tr>
+<tr><th id="354">354</th><td><u>#define FUNCTIONPOINT CURLOPTTYPE_FUNCTIONPOINT</u></td></tr>
+<tr><th id="355">355</th><td><u>#define OFF_T         CURLOPTTYPE_OFF_T</u></td></tr>
+<tr><th id="356">356</th><td><u>#define CINIT(name,type,number) CURLMOPT_/**/name = type + number</u></td></tr>
+<tr><th id="357">357</th><td><u>#<span data-ppcond="348">endif</span></u></td></tr>
+<tr><th id="358">358</th><td></td></tr>
+<tr><th id="359">359</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="360">360</th><td>  <i>/* This is the socket callback function pointer */</i></td></tr>
+<tr><th id="361">361</th><td>  <a class="macro" href="#349" title="CURLMOPT_SOCKETFUNCTION = 20000 + 1" data-ref="_M/CINIT">CINIT</a>(SOCKETFUNCTION, FUNCTIONPOINT, <var>1</var>),</td></tr>
+<tr><th id="362">362</th><td></td></tr>
+<tr><th id="363">363</th><td>  <i>/* This is the argument passed to the socket callback */</i></td></tr>
+<tr><th id="364">364</th><td>  <a class="macro" href="#349" title="CURLMOPT_SOCKETDATA = 10000 + 2" data-ref="_M/CINIT">CINIT</a>(SOCKETDATA, OBJECTPOINT, <var>2</var>),</td></tr>
+<tr><th id="365">365</th><td></td></tr>
+<tr><th id="366">366</th><td>    <i>/* set to 1 to enable pipelining for this multi handle */</i></td></tr>
+<tr><th id="367">367</th><td>  <a class="macro" href="#349" title="CURLMOPT_PIPELINING = 0 + 3" data-ref="_M/CINIT">CINIT</a>(PIPELINING, LONG, <var>3</var>),</td></tr>
+<tr><th id="368">368</th><td></td></tr>
+<tr><th id="369">369</th><td>   <i>/* This is the timer callback function pointer */</i></td></tr>
+<tr><th id="370">370</th><td>  <a class="macro" href="#349" title="CURLMOPT_TIMERFUNCTION = 20000 + 4" data-ref="_M/CINIT">CINIT</a>(TIMERFUNCTION, FUNCTIONPOINT, <var>4</var>),</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td>  <i>/* This is the argument passed to the timer callback */</i></td></tr>
+<tr><th id="373">373</th><td>  <a class="macro" href="#349" title="CURLMOPT_TIMERDATA = 10000 + 5" data-ref="_M/CINIT">CINIT</a>(TIMERDATA, OBJECTPOINT, <var>5</var>),</td></tr>
+<tr><th id="374">374</th><td></td></tr>
+<tr><th id="375">375</th><td>  <i>/* maximum number of entries in the connection cache */</i></td></tr>
+<tr><th id="376">376</th><td>  <a class="macro" href="#349" title="CURLMOPT_MAXCONNECTS = 0 + 6" data-ref="_M/CINIT">CINIT</a>(MAXCONNECTS, LONG, <var>6</var>),</td></tr>
+<tr><th id="377">377</th><td></td></tr>
+<tr><th id="378">378</th><td>  <i>/* maximum number of (pipelining) connections to one host */</i></td></tr>
+<tr><th id="379">379</th><td>  <a class="macro" href="#349" title="CURLMOPT_MAX_HOST_CONNECTIONS = 0 + 7" data-ref="_M/CINIT">CINIT</a>(MAX_HOST_CONNECTIONS, LONG, <var>7</var>),</td></tr>
+<tr><th id="380">380</th><td></td></tr>
+<tr><th id="381">381</th><td>  <i>/* maximum number of requests in a pipeline */</i></td></tr>
+<tr><th id="382">382</th><td>  <a class="macro" href="#349" title="CURLMOPT_MAX_PIPELINE_LENGTH = 0 + 8" data-ref="_M/CINIT">CINIT</a>(MAX_PIPELINE_LENGTH, LONG, <var>8</var>),</td></tr>
+<tr><th id="383">383</th><td></td></tr>
+<tr><th id="384">384</th><td>  <i>/* a connection with a content-length longer than this</i></td></tr>
+<tr><th id="385">385</th><td><i>     will not be considered for pipelining */</i></td></tr>
+<tr><th id="386">386</th><td>  <a class="macro" href="#349" title="CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE = 30000 + 9" data-ref="_M/CINIT">CINIT</a>(CONTENT_LENGTH_PENALTY_SIZE, OFF_T, <var>9</var>),</td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td>  <i>/* a connection with a chunk length longer than this</i></td></tr>
+<tr><th id="389">389</th><td><i>     will not be considered for pipelining */</i></td></tr>
+<tr><th id="390">390</th><td>  <a class="macro" href="#349" title="CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE = 30000 + 10" data-ref="_M/CINIT">CINIT</a>(CHUNK_LENGTH_PENALTY_SIZE, OFF_T, <var>10</var>),</td></tr>
+<tr><th id="391">391</th><td></td></tr>
+<tr><th id="392">392</th><td>  <i>/* a list of site names(+port) that are blacklisted from</i></td></tr>
+<tr><th id="393">393</th><td><i>     pipelining */</i></td></tr>
+<tr><th id="394">394</th><td>  <a class="macro" href="#349" title="CURLMOPT_PIPELINING_SITE_BL = 10000 + 11" data-ref="_M/CINIT">CINIT</a>(PIPELINING_SITE_BL, OBJECTPOINT, <var>11</var>),</td></tr>
+<tr><th id="395">395</th><td></td></tr>
+<tr><th id="396">396</th><td>  <i>/* a list of server types that are blacklisted from</i></td></tr>
+<tr><th id="397">397</th><td><i>     pipelining */</i></td></tr>
+<tr><th id="398">398</th><td>  <a class="macro" href="#349" title="CURLMOPT_PIPELINING_SERVER_BL = 10000 + 12" data-ref="_M/CINIT">CINIT</a>(PIPELINING_SERVER_BL, OBJECTPOINT, <var>12</var>),</td></tr>
+<tr><th id="399">399</th><td></td></tr>
+<tr><th id="400">400</th><td>  <i>/* maximum number of open connections in total */</i></td></tr>
+<tr><th id="401">401</th><td>  <a class="macro" href="#349" title="CURLMOPT_MAX_TOTAL_CONNECTIONS = 0 + 13" data-ref="_M/CINIT">CINIT</a>(MAX_TOTAL_CONNECTIONS, LONG, <var>13</var>),</td></tr>
+<tr><th id="402">402</th><td></td></tr>
+<tr><th id="403">403</th><td>   <i>/* This is the server push callback function pointer */</i></td></tr>
+<tr><th id="404">404</th><td>  <a class="macro" href="#349" title="CURLMOPT_PUSHFUNCTION = 20000 + 14" data-ref="_M/CINIT">CINIT</a>(PUSHFUNCTION, FUNCTIONPOINT, <var>14</var>),</td></tr>
+<tr><th id="405">405</th><td></td></tr>
+<tr><th id="406">406</th><td>  <i>/* This is the argument passed to the server push callback */</i></td></tr>
+<tr><th id="407">407</th><td>  <a class="macro" href="#349" title="CURLMOPT_PUSHDATA = 10000 + 15" data-ref="_M/CINIT">CINIT</a>(PUSHDATA, OBJECTPOINT, <var>15</var>),</td></tr>
+<tr><th id="408">408</th><td></td></tr>
+<tr><th id="409">409</th><td>  <i>/* maximum number of concurrent streams to support on a connection */</i></td></tr>
+<tr><th id="410">410</th><td>  <a class="macro" href="#349" title="CURLMOPT_MAX_CONCURRENT_STREAMS = 0 + 16" data-ref="_M/CINIT">CINIT</a>(MAX_CONCURRENT_STREAMS, LONG, <var>16</var>),</td></tr>
+<tr><th id="411">411</th><td></td></tr>
+<tr><th id="412">412</th><td>  <dfn class="enum" id="CURLMOPT_LASTENTRY" title='CURLMOPT_LASTENTRY' data-ref="CURLMOPT_LASTENTRY" data-ref-filename="CURLMOPT_LASTENTRY">CURLMOPT_LASTENTRY</dfn> <i>/* the last unused */</i></td></tr>
+<tr><th id="413">413</th><td>} <dfn class="typedef" id="CURLMoption" title='CURLMoption' data-type='enum CURLMoption' data-ref="CURLMoption" data-ref-filename="CURLMoption">CURLMoption</dfn>;</td></tr>
+<tr><th id="414">414</th><td></td></tr>
+<tr><th id="415">415</th><td></td></tr>
+<tr><th id="416">416</th><td><i>/*</i></td></tr>
+<tr><th id="417">417</th><td><i> * Name:    curl_multi_setopt()</i></td></tr>
+<tr><th id="418">418</th><td><i> *</i></td></tr>
+<tr><th id="419">419</th><td><i> * Desc:    Sets options for the multi handle.</i></td></tr>
+<tr><th id="420">420</th><td><i> *</i></td></tr>
+<tr><th id="421">421</th><td><i> * Returns: CURLM error code.</i></td></tr>
+<tr><th id="422">422</th><td><i> */</i></td></tr>
+<tr><th id="423">423</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_setopt" title='curl_multi_setopt' data-ref="curl_multi_setopt" data-ref-filename="curl_multi_setopt">curl_multi_setopt</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col1 decl" id="241multi_handle" title='multi_handle' data-type='CURLM *' data-ref="241multi_handle" data-ref-filename="241multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="424">424</th><td>                                        <a class="typedef" href="#CURLMoption" title='CURLMoption' data-type='enum CURLMoption' data-ref="CURLMoption" data-ref-filename="CURLMoption">CURLMoption</a> <dfn class="local col2 decl" id="242option" title='option' data-type='CURLMoption' data-ref="242option" data-ref-filename="242option">option</dfn>, ...);</td></tr>
+<tr><th id="425">425</th><td></td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td><i>/*</i></td></tr>
+<tr><th id="428">428</th><td><i> * Name:    curl_multi_assign()</i></td></tr>
+<tr><th id="429">429</th><td><i> *</i></td></tr>
+<tr><th id="430">430</th><td><i> * Desc:    This function sets an association in the multi handle between the</i></td></tr>
+<tr><th id="431">431</th><td><i> *          given socket and a private pointer of the application. This is</i></td></tr>
+<tr><th id="432">432</th><td><i> *          (only) useful for curl_multi_socket uses.</i></td></tr>
+<tr><th id="433">433</th><td><i> *</i></td></tr>
+<tr><th id="434">434</th><td><i> * Returns: CURLM error code.</i></td></tr>
+<tr><th id="435">435</th><td><i> */</i></td></tr>
+<tr><th id="436">436</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <a class="typedef" href="#CURLMcode" title='CURLMcode' data-type='enum CURLMcode' data-ref="CURLMcode" data-ref-filename="CURLMcode">CURLMcode</a> <dfn class="decl fn" id="curl_multi_assign" title='curl_multi_assign' data-ref="curl_multi_assign" data-ref-filename="curl_multi_assign">curl_multi_assign</dfn>(<a class="typedef" href="#CURLM" title='CURLM' data-type='void' data-ref="CURLM" data-ref-filename="CURLM">CURLM</a> *<dfn class="local col3 decl" id="243multi_handle" title='multi_handle' data-type='CURLM *' data-ref="243multi_handle" data-ref-filename="243multi_handle">multi_handle</dfn>,</td></tr>
+<tr><th id="437">437</th><td>                                        <a class="typedef" href="curl.h.html#curl_socket_t" title='curl_socket_t' data-type='int' data-ref="curl_socket_t" data-ref-filename="curl_socket_t">curl_socket_t</a> <dfn class="local col4 decl" id="244sockfd" title='sockfd' data-type='curl_socket_t' data-ref="244sockfd" data-ref-filename="244sockfd">sockfd</dfn>, <em>void</em> *<dfn class="local col5 decl" id="245sockp" title='sockp' data-type='void *' data-ref="245sockp" data-ref-filename="245sockp">sockp</dfn>);</td></tr>
+<tr><th id="438">438</th><td></td></tr>
+<tr><th id="439">439</th><td></td></tr>
+<tr><th id="440">440</th><td><i>/*</i></td></tr>
+<tr><th id="441">441</th><td><i> * Name: curl_push_callback</i></td></tr>
+<tr><th id="442">442</th><td><i> *</i></td></tr>
+<tr><th id="443">443</th><td><i> * Desc: This callback gets called when a new stream is being pushed by the</i></td></tr>
+<tr><th id="444">444</th><td><i> *       server. It approves or denies the new stream.</i></td></tr>
+<tr><th id="445">445</th><td><i> *</i></td></tr>
+<tr><th id="446">446</th><td><i> * Returns: CURL_PUSH_OK or CURL_PUSH_DENY.</i></td></tr>
+<tr><th id="447">447</th><td><i> */</i></td></tr>
+<tr><th id="448">448</th><td><u>#define <dfn class="macro" id="_M/CURL_PUSH_OK" data-ref="_M/CURL_PUSH_OK">CURL_PUSH_OK</dfn>   0</u></td></tr>
+<tr><th id="449">449</th><td><u>#define <dfn class="macro" id="_M/CURL_PUSH_DENY" data-ref="_M/CURL_PUSH_DENY">CURL_PUSH_DENY</dfn> 1</u></td></tr>
+<tr><th id="450">450</th><td></td></tr>
+<tr><th id="451">451</th><td><b>struct</b> <dfn class="type" id="curl_pushheaders" title='curl_pushheaders' data-ref="curl_pushheaders" data-ref-filename="curl_pushheaders">curl_pushheaders</dfn>;  <i>/* forward declaration only */</i></td></tr>
+<tr><th id="452">452</th><td></td></tr>
+<tr><th id="453">453</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <em>char</em> *<dfn class="decl fn" id="curl_pushheader_bynum" title='curl_pushheader_bynum' data-ref="curl_pushheader_bynum" data-ref-filename="curl_pushheader_bynum">curl_pushheader_bynum</dfn>(<b>struct</b> <a class="type" href="#curl_pushheaders" title='curl_pushheaders' data-ref="curl_pushheaders" data-ref-filename="curl_pushheaders">curl_pushheaders</a> *<dfn class="local col6 decl" id="246h" title='h' data-type='struct curl_pushheaders *' data-ref="246h" data-ref-filename="246h">h</dfn>,</td></tr>
+<tr><th id="454">454</th><td>                                        <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col7 decl" id="247num" title='num' data-type='size_t' data-ref="247num" data-ref-filename="247num">num</dfn>);</td></tr>
+<tr><th id="455">455</th><td><a class="macro" href="curl.h.html#128" title="" data-ref="_M/CURL_EXTERN">CURL_EXTERN</a> <em>char</em> *<dfn class="decl fn" id="curl_pushheader_byname" title='curl_pushheader_byname' data-ref="curl_pushheader_byname" data-ref-filename="curl_pushheader_byname">curl_pushheader_byname</dfn>(<b>struct</b> <a class="type" href="#curl_pushheaders" title='curl_pushheaders' data-ref="curl_pushheaders" data-ref-filename="curl_pushheaders">curl_pushheaders</a> *<dfn class="local col8 decl" id="248h" title='h' data-type='struct curl_pushheaders *' data-ref="248h" data-ref-filename="248h">h</dfn>,</td></tr>
+<tr><th id="456">456</th><td>                                         <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="249name" title='name' data-type='const char *' data-ref="249name" data-ref-filename="249name">name</dfn>);</td></tr>
+<tr><th id="457">457</th><td></td></tr>
+<tr><th id="458">458</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="curl_push_callback" title='curl_push_callback' data-type='int (*)(CURL *, CURL *, size_t, struct curl_pushheaders *, void *)' data-ref="curl_push_callback" data-ref-filename="curl_push_callback">curl_push_callback</dfn>)(<a class="typedef" href="curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL" data-ref-filename="CURL">CURL</a> *<dfn class="local col0 decl" id="250parent" title='parent' data-type='CURL *' data-ref="250parent" data-ref-filename="250parent">parent</dfn>,</td></tr>
+<tr><th id="459">459</th><td>                                  <a class="typedef" href="curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL" data-ref-filename="CURL">CURL</a> *<dfn class="local col1 decl" id="251easy" title='easy' data-type='CURL *' data-ref="251easy" data-ref-filename="251easy">easy</dfn>,</td></tr>
+<tr><th id="460">460</th><td>                                  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col2 decl" id="252num_headers" title='num_headers' data-type='size_t' data-ref="252num_headers" data-ref-filename="252num_headers">num_headers</dfn>,</td></tr>
+<tr><th id="461">461</th><td>                                  <b>struct</b> <a class="type" href="#curl_pushheaders" title='curl_pushheaders' data-ref="curl_pushheaders" data-ref-filename="curl_pushheaders">curl_pushheaders</a> *<dfn class="local col3 decl" id="253headers" title='headers' data-type='struct curl_pushheaders *' data-ref="253headers" data-ref-filename="253headers">headers</dfn>,</td></tr>
+<tr><th id="462">462</th><td>                                  <em>void</em> *<dfn class="local col4 decl" id="254userp" title='userp' data-type='void *' data-ref="254userp" data-ref-filename="254userp">userp</dfn>);</td></tr>
+<tr><th id="463">463</th><td></td></tr>
+<tr><th id="464">464</th><td><u>#<span data-ppcond="464">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="465">465</th><td>} <i>/* end of extern "C" */</i></td></tr>
+<tr><th id="466">466</th><td><u>#<span data-ppcond="464">endif</span></u></td></tr>
+<tr><th id="467">467</th><td></td></tr>
+<tr><th id="468">468</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="469">469</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

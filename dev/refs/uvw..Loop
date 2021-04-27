@@ -1,0 +1,139 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='86' c='uvw::Emitter'/>
+<inh f='include/c++/10/bits/shared_ptr.h' l='791' c='std::enable_shared_from_this'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='64' ll='405'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='64'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='64'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='93' c='_ZN3uvw4Loop6createEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='105' c='_ZN3uvw4Loop6createEP9uv_loop_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='119' c='_ZN3uvw4Loop10getDefaultEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='121' c='_ZN3uvw4LoopC1ERKS0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='122' c='_ZN3uvw4LoopC1EOS0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='123' c='_ZN3uvw4LoopaSERKS0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='123' c='_ZN3uvw4LoopaSERKS0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='124' c='_ZN3uvw4LoopaSEOS0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='124' c='_ZN3uvw4LoopaSEOS0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='43' c='_ZN3uvw14UnderlyingTypeC1ENS0_17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='71' c='_ZNK3uvw14UnderlyingType4loopEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='112'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/resource.hpp' l='41' c='_ZN3uvw8ResourceC1ENS_14UnderlyingTypeIT_T0_E17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<size>80</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='56'>/**
+ * @brief The Loop class.
+ *
+ * The event loop is the central part of `uvw`&apos;s functionalities, as well as
+ * `libuv`&apos;s ones.&lt;br/&gt;
+ * It takes care of polling for I/O and scheduling callbacks to be run based on
+ * different sources of events.
+ */</doc>
+<fun r='_ZN3uvw4Loop15create_resourceEiDpOT0_'/>
+<fun r='_ZN3uvw4Loop15create_resourceEcDpOT0_'/>
+<fun r='_ZN3uvw4LoopC1ESt10unique_ptrI9uv_loop_sPFvPS2_EE'/>
+<fun r='_ZN3uvw4Loop6createEv'/>
+<fun r='_ZN3uvw4Loop6createEP9uv_loop_s'/>
+<fun r='_ZN3uvw4Loop10getDefaultEv'/>
+<fun r='_ZN3uvw4LoopC1ERKS0_'/>
+<fun r='_ZN3uvw4LoopC1EOS0_'/>
+<fun r='_ZN3uvw4LoopaSERKS0_'/>
+<fun r='_ZN3uvw4LoopaSEOS0_'/>
+<fun r='_ZN3uvw4LoopD1Ev'/>
+<fun r='_ZN3uvw4Loop9configureENS_7details12UVLoopOptionEDpOT_'/>
+<fun r='_ZN3uvw4Loop8resourceEDpOT0_'/>
+<fun r='_ZN3uvw4Loop5closeEv'/>
+<fun r='_ZN3uvw4Loop3runEv'/>
+<fun r='_ZNK3uvw4Loop5aliveEv'/>
+<fun r='_ZN3uvw4Loop4stopEv'/>
+<fun r='_ZNK3uvw4Loop10descriptorEv'/>
+<fun r='_ZNK3uvw4Loop7timeoutEv'/>
+<fun r='_ZNK3uvw4Loop3nowEv'/>
+<fun r='_ZNK3uvw4Loop6updateEv'/>
+<fun r='_ZN3uvw4Loop4walkET_'/>
+<fun r='_ZN3uvw4Loop4forkEv'/>
+<fun r='_ZNK3uvw4Loop4dataEv'/>
+<fun r='_ZN3uvw4Loop4dataESt10shared_ptrIvE'/>
+<fun r='_ZNK3uvw4Loop3rawEv'/>
+<fun r='_ZN3uvw4Loop3rawEv'/>
+<mbr r='uvw::Loop::loop' o='384' t='std::unique_ptr&lt;uv_loop_t, Deleter&gt;'/>
+<mbr r='uvw::Loop::userData' o='512' t='std::shared_ptr&lt;void&gt;'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/lib.h' l='24' c='_ZN3uvw9SharedLibC1ENS_14UnderlyingTypeIS0_8uv_lib_tE17ConstructorAccessESt10shared_ptrINS_4LoopEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/lib.cpp' l='13' c='_ZN3uvw9SharedLibC1ENS_14UnderlyingTypeIS0_8uv_lib_tE17ConstructorAccessESt10shared_ptrINS_4LoopEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='16' c='_ZN3uvw4Loop6createEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='21' c='_ZN3uvw4Loop6createEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='21' c='_ZN3uvw4Loop6createEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='31' c='_ZN3uvw4Loop6createEP9uv_loop_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='33' c='_ZN3uvw4Loop6createEP9uv_loop_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='33' c='_ZN3uvw4Loop6createEP9uv_loop_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='37' c='_ZN3uvw4Loop10getDefaultEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='38' c='_ZN3uvw4Loop10getDefaultEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='39' c='_ZN3uvw4Loop10getDefaultEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='46' c='_ZN3uvw4Loop10getDefaultEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='46' c='_ZN3uvw4Loop10getDefaultEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='130' c='_ZN3uvw4Loop3rawEv'/>
+<size>80</size>
+<fun r='_ZN3uvw4LoopC1ESt10unique_ptrI9uv_loop_sPFvPS2_EE'/>
+<fun r='_ZN3uvw4Loop6createEv'/>
+<fun r='_ZN3uvw4Loop6createEP9uv_loop_s'/>
+<fun r='_ZN3uvw4Loop10getDefaultEv'/>
+<fun r='_ZN3uvw4LoopD1Ev'/>
+<fun r='_ZN3uvw4Loop5closeEv'/>
+<fun r='_ZN3uvw4Loop3runEv'/>
+<fun r='_ZNK3uvw4Loop5aliveEv'/>
+<fun r='_ZN3uvw4Loop4stopEv'/>
+<fun r='_ZNK3uvw4Loop10descriptorEv'/>
+<fun r='_ZNK3uvw4Loop7timeoutEv'/>
+<fun r='_ZNK3uvw4Loop3nowEv'/>
+<fun r='_ZNK3uvw4Loop6updateEv'/>
+<fun r='_ZN3uvw4Loop4forkEv'/>
+<fun r='_ZN3uvw4Loop4dataESt10shared_ptrIvE'/>
+<fun r='_ZNK3uvw4Loop3rawEv'/>
+<fun r='_ZN3uvw4Loop3rawEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='97' c='_ZN3uvw7details8WriteReqC1ENS_7RequestINS0_8WriteReqIT_EE10uv_write_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cS4_Ej'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='45' c='_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='13' c='_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='73' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='74' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='18' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='23' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='72' c='_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='23' c='_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='53' c='_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='11' c='_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='59' c='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='119' c='_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='188' c='_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='215' c='_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='262' c='_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='289' c='_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='349' c='_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='11' c='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='53' c='_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='71' c='_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='102' c='_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='144' c='_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='171' c='_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='203' c='_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='64' c='_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='18' c='_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='64' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='122' c='_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='16' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='28' c='_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/work.h' l='45' c='_ZN3uvw7WorkReqC1ENS_14UnderlyingTypeIS0_9uv_work_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvvEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/work.cpp' l='13' c='_ZN3uvw7WorkReqC1ENS_14UnderlyingTypeIS0_9uv_work_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvvEE'/>
+<size>80</size>
+<use f='qv2ray/src/components/latency/LatencyTestThread.hpp' l='43'/>
+<use f='qv2ray/src/components/latency/RealPing.hpp' l='18' c='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<use f='qv2ray/src/components/latency/RealPing.hpp' l='31'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='14' c='_ZN6Qv2ray10components7latency7DNSBaseC1ERKSt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='123'/>
+<size>80</size>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='13' c='_ZN15RealPingContextC1EiRN3uvw4LoopE'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='154' c='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<size>80</size>

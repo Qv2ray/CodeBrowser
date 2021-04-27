@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='262' type='struct iovec *'/>
+<offset>128</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='262'>/* Vector of data to send/receive into.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='863' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1161' u='w' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='206' u='w' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='288' u='w' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='357' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='447' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='745' u='w' c='uv__udp_try_send'/>

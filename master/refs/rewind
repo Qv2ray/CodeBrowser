@@ -1,0 +1,6 @@
+<dec f='include/stdio.h' l='694' type='void rewind(FILE * __stream)'/>
+<doc f='include/stdio.h' l='690'>/* Rewind to the beginning of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='788' u='c' c='read_times'/>

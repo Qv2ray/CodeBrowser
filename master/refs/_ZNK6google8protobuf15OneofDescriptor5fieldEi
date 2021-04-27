@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='829' type='const google::protobuf::FieldDescriptor * google::protobuf::OneofDescriptor::field(int index) const'/>
+<def f='include/google/protobuf/descriptor.h' l='2131' ll='2133' type='const google::protobuf::FieldDescriptor * google::protobuf::OneofDescriptor::field(int index) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='827'>// Get a member of this oneof, in the order in which they were declared in the
+  // .proto file.  Does not include extensions.</doc>
+<doc f='include/google/protobuf/descriptor.h' l='2129'>// Can&apos;t use PROTOBUF_DEFINE_ARRAY_ACCESSOR because fields_ is actually an array
+// of pointers rather than the usual array of objects.</doc>

@@ -1,0 +1,31 @@
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.h' l='40' ll='62'/>
+<dec f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.h' l='67' type='int uv__statx(int dirfd, const char * path, int flags, unsigned int mask, struct uv__statx * statxbuf)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.h' l='71' c='uv__statx'/>
+<size>256</size>
+<mbr r='uv__statx::stx_mask' o='0' t='uint32_t'/>
+<mbr r='uv__statx::stx_blksize' o='32' t='uint32_t'/>
+<mbr r='uv__statx::stx_attributes' o='64' t='uint64_t'/>
+<mbr r='uv__statx::stx_nlink' o='128' t='uint32_t'/>
+<mbr r='uv__statx::stx_uid' o='160' t='uint32_t'/>
+<mbr r='uv__statx::stx_gid' o='192' t='uint32_t'/>
+<mbr r='uv__statx::stx_mode' o='224' t='uint16_t'/>
+<mbr r='uv__statx::unused0' o='240' t='uint16_t'/>
+<mbr r='uv__statx::stx_ino' o='256' t='uint64_t'/>
+<mbr r='uv__statx::stx_size' o='320' t='uint64_t'/>
+<mbr r='uv__statx::stx_blocks' o='384' t='uint64_t'/>
+<mbr r='uv__statx::stx_attributes_mask' o='448' t='uint64_t'/>
+<mbr r='uv__statx::stx_atime' o='512' t='struct uv__statx_timestamp'/>
+<mbr r='uv__statx::stx_btime' o='640' t='struct uv__statx_timestamp'/>
+<mbr r='uv__statx::stx_ctime' o='768' t='struct uv__statx_timestamp'/>
+<mbr r='uv__statx::stx_mtime' o='896' t='struct uv__statx_timestamp'/>
+<mbr r='uv__statx::stx_rdev_major' o='1024' t='uint32_t'/>
+<mbr r='uv__statx::stx_rdev_minor' o='1056' t='uint32_t'/>
+<mbr r='uv__statx::stx_dev_major' o='1088' t='uint32_t'/>
+<mbr r='uv__statx::stx_dev_minor' o='1120' t='uint32_t'/>
+<mbr r='uv__statx::unused1' o='1152' t='uint64_t [14]'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1348' c='uv__fs_statx'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1369' u='c' c='uv__fs_statx'/>
+<size>256</size>
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='183' ll='196' type='int uv__statx(int dirfd, const char * path, int flags, unsigned int mask, struct uv__statx * statxbuf)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='187' c='uv__statx'/>
+<size>256</size>

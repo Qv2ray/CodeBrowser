@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='161' type='static std::shared_ptr&lt;Loop&gt; uvw::Loop::create()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='157'>/**
+     * @brief Initializes a new Loop instance.
+     * @return A pointer to the newly created loop.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='16' ll='28' type='static std::shared_ptr&lt;Loop&gt; uvw::Loop::create()'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='31' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>

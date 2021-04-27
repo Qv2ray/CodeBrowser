@@ -1,0 +1,5 @@
+<dec f='include/signal.h' l='321' type='int sigaltstack(const stack_t *__restrict __ss, stack_t *__restrict __oss)'/>
+<doc f='include/signal.h' l='319'>/* Alternate signal handler stack interface.
+   This interface should always be preferred over `sigstack&apos;.  */</doc>
+<use f='qv2ray/test/catch.hpp' l='10821' u='c' c='_ZN5Catch21FatalConditionHandlerC1Ev'/>
+<use f='qv2ray/test/catch.hpp' l='10842' u='c' c='_ZN5Catch21FatalConditionHandler5resetEv'/>

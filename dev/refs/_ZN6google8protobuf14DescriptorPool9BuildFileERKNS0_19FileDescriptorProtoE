@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='1631' type='const google::protobuf::FileDescriptor * google::protobuf::DescriptorPool::BuildFile(const google::protobuf::FileDescriptorProto &amp; proto)'/>
+<doc f='include/google/protobuf/descriptor.h' l='1626'>// Convert the FileDescriptorProto to real descriptors and place them in
+  // this DescriptorPool.  All dependencies of the file must already be in
+  // the pool.  Returns the resulting FileDescriptor, or NULL if there were
+  // problems with the input (e.g. the message was invalid, or dependencies
+  // were missing).  Details about the errors are written to GOOGLE_LOG(ERROR).</doc>

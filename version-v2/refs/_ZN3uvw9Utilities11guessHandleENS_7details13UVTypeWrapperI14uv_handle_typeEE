@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='626' type='static uvw::HandleType uvw::Utilities::guessHandle(uvw::HandleCategory category)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='270' u='c' c='_ZN3uvw4Loop4walkET_'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='621'>/**
+     * @brief Gets the type of the handle given a category.
+     * @param category A properly initialized handle category.
+     * @return The actual type of the handle as defined by HandleType
+     */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='67' u='c' c='_ZN3uvw10PipeHandle7receiveEv'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='143' ll='182' type='static uvw::HandleType uvw::Utilities::guessHandle(uvw::HandleCategory category)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='187' u='c' c='_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperIiEE'/>

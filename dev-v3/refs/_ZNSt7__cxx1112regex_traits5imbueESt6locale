@@ -1,0 +1,12 @@
+<def f='include/c++/10/bits/regex.h' l='360' ll='365' type='std::__cxx11::regex_traits::locale_type std::__cxx11::regex_traits::imbue(std::__cxx11::regex_traits::locale_type __loc)'/>
+<doc f='include/c++/10/bits/regex.h' l='349'>/**
+       * @brief Imbues the regex_traits object with a copy of a new locale.
+       *
+       * @param __loc A locale.
+       *
+       * @returns a copy of the previous locale in use by the regex_traits
+       *          object.
+       *
+       * @note Calling imbue with a different locale than the one currently in
+       *       use invalidates all cached data held by *this.
+       */</doc>

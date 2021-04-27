@@ -1,0 +1,51 @@
+<def f='include/google/protobuf/descriptor.h' l='1118' ll='1191'/>
+<use f='include/google/protobuf/descriptor.h' l='1190' c='_ZN6google8protobuf17ServiceDescriptorC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1190' c='_ZN6google8protobuf17ServiceDescriptoraSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1210' c='_ZNK6google8protobuf16MethodDescriptor7serviceEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1262'/>
+<use f='include/google/protobuf/descriptor.h' l='1275'/>
+<use f='include/google/protobuf/descriptor.h' l='1336' c='_ZNK6google8protobuf14FileDescriptor7serviceEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1369' c='_ZNK6google8protobuf14FileDescriptor17FindServiceByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1446'/>
+<use f='include/google/protobuf/descriptor.h' l='1467'/>
+<use f='include/google/protobuf/descriptor.h' l='1560' c='_ZNK6google8protobuf14DescriptorPool17FindServiceByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1745'/>
+<use f='include/google/protobuf/descriptor.h' l='1928' c='_ZNK6google8protobuf16MethodDescriptor7serviceEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1949' c='_ZNK6google8protobuf14FileDescriptor7serviceEi'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='48'/>
+<size>48</size>
+<doc f='include/google/protobuf/descriptor.h' l='1114'>// Describes an RPC service.  To get the ServiceDescriptor for a service,
+// call Service::GetDescriptor().  Generated service classes also have a
+// static method called descriptor() which returns the type&apos;s
+// ServiceDescriptor.  Use DescriptorPool to construct your own descriptors.</doc>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor5indexEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor12method_countEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor6methodEi'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor16FindMethodByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor6CopyToEPNS0_22ServiceDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor11DebugStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor11DebugStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor15GetLocationPathEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::ServiceDescriptor::name_' o='0' t='const std::string *'/>
+<mbr r='google::protobuf::ServiceDescriptor::full_name_' o='64' t='const std::string *'/>
+<mbr r='google::protobuf::ServiceDescriptor::file_' o='128' t='const google::protobuf::FileDescriptor *'/>
+<mbr r='google::protobuf::ServiceDescriptor::options_' o='192' t='const google::protobuf::ServiceOptions *'/>
+<mbr r='google::protobuf::ServiceDescriptor::methods_' o='256' t='google::protobuf::MethodDescriptor *'/>
+<mbr r='google::protobuf::ServiceDescriptor::method_count_' o='320' t='int'/>
+<fun r='_ZN6google8protobuf17ServiceDescriptorC1Ev'/>
+<fun r='_ZN6google8protobuf17ServiceDescriptorC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor12method_countEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor6methodEi'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf17ServiceDescriptor5indexEv'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='744' c='_ZN6google8protobuf8internal17AssignDescriptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS1_15MigrationSchemaEPKPKNS0_7MessageEPKjPNS04100132'/>
+<size>48</size>

@@ -1,0 +1,14 @@
+<def f='include/google/protobuf/descriptor.h' l='338' ll='348'/>
+<use f='include/google/protobuf/descriptor.h' l='355' c='_ZNK6google8protobuf10Descriptor15extension_rangeEi'/>
+<use f='include/google/protobuf/descriptor.h' l='361' c='_ZNK6google8protobuf10Descriptor34FindExtensionRangeContainingNumberEi'/>
+<use f='include/google/protobuf/descriptor.h' l='454'/>
+<use f='include/google/protobuf/descriptor.h' l='1854' c='_ZNK6google8protobuf10Descriptor15extension_rangeEi'/>
+<size>16</size>
+<doc f='include/google/protobuf/descriptor.h' l='334'>// Extensions ------------------------------------------------------
+
+  // A range of field numbers which are designated for third-party
+  // extensions.</doc>
+<fun r='_ZNK6google8protobuf10Descriptor14ExtensionRange6CopyToEPNS0_30DescriptorProto_ExtensionRangeE'/>
+<mbr r='google::protobuf::Descriptor::ExtensionRange::start' o='0' t='int'/>
+<mbr r='google::protobuf::Descriptor::ExtensionRange::end' o='32' t='int'/>
+<mbr r='google::protobuf::Descriptor::ExtensionRange::options_' o='64' t='const google::protobuf::ExtensionRangeOptions *'/>

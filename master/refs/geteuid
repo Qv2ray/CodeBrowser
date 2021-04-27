@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='678' type='__uid_t geteuid()'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='105' u='c' c='_ZN24SingleApplicationPrivate11getUsernameEv'/>
+<doc f='include/unistd.h' l='677'>/* Get the effective user ID of the calling process.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1163' u='c' c='uv__getpwuid_r'/>

@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/message.h' l='236' type='std::string google::protobuf::Message::InitializationErrorString() const'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='88' u='c' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<doc f='include/google/protobuf/message.h' l='234'>// Like FindInitializationErrors, but joins all the strings, delimited by
+  // commas, and returns them.</doc>

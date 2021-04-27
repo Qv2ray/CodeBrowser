@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.h' l='38' type='static ZXing::CharacterSet ZXing::CharacterSetECI::CharsetFromValue(int value)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.cpp' l='129' ll='138' type='static ZXing::CharacterSet ZXing::CharacterSetECI::CharsetFromValue(int value)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.h' l='32'>/**
+	* @param value character set ECI value
+	* @return {@code CharacterSetECI} representing ECI of given value, or null if it is legal but
+	*   unsupported
+	* @throws FormatException if ECI value is invalid
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='705' u='c' c='_ZN5ZXing6Pdf41722DecodedBitStreamParser6DecodeERKSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='359' u='c' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

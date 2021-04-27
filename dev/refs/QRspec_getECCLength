@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='50' type='int QRspec_getECCLength(int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='44'>/**
+ * Return maximum error correction code length (bytes) for the version.
+ * @param version
+ * @param level
+ * @return ECC size (bytes)
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='103' ll='106' type='int QRspec_getECCLength(int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='242' u='c' c='QRspec_getEccSpec'/>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QRErrorCorrectionLevel.h source code [qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRErrorCorrectionLevel.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::QRCode::ErrorCorrectionLevel "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRErrorCorrectionLevel.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>qrcode</a>/<a href='QRErrorCorrectionLevel.h.html'>QRErrorCorrectionLevel.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">QRCode</span> {</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc">* <span class="tag">&lt;p&gt;</span>See ISO 18004:2006, 6.5.1. This enum encapsulates the four error correction levels</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc">* defined by the QR code standard.<span class="tag">&lt;/p&gt;</span></i></td></tr>
+<tr><th id="25">25</th><td><i class="doc">*</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc">* <span class="command">@author</span> Sean Owen</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="28">28</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="ZXing::QRCode::ErrorCorrectionLevel" title='ZXing::QRCode::ErrorCorrectionLevel' data-ref="ZXing::QRCode::ErrorCorrectionLevel" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel">ErrorCorrectionLevel</dfn></td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>	<dfn class="enum" id="ZXing::QRCode::ErrorCorrectionLevel::Low" title='ZXing::QRCode::ErrorCorrectionLevel::Low' data-ref="ZXing::QRCode::ErrorCorrectionLevel::Low" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel..Low">Low</dfn>,			<i>// L = ~7 % correction</i></td></tr>
+<tr><th id="31">31</th><td>	<dfn class="enum" id="ZXing::QRCode::ErrorCorrectionLevel::Medium" title='ZXing::QRCode::ErrorCorrectionLevel::Medium' data-ref="ZXing::QRCode::ErrorCorrectionLevel::Medium" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel..Medium">Medium</dfn>,			<i>// M = ~15% correction</i></td></tr>
+<tr><th id="32">32</th><td>	<dfn class="enum" id="ZXing::QRCode::ErrorCorrectionLevel::Quality" title='ZXing::QRCode::ErrorCorrectionLevel::Quality' data-ref="ZXing::QRCode::ErrorCorrectionLevel::Quality" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel..Quality">Quality</dfn>,		<i>// Q = ~25% correction</i></td></tr>
+<tr><th id="33">33</th><td>	<dfn class="enum" id="ZXing::QRCode::ErrorCorrectionLevel::High" title='ZXing::QRCode::ErrorCorrectionLevel::High' data-ref="ZXing::QRCode::ErrorCorrectionLevel::High" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel..High">High</dfn>,			<i>// H = ~30% correction</i></td></tr>
+<tr><th id="34">34</th><td>	<dfn class="enum" id="ZXing::QRCode::ErrorCorrectionLevel::Invalid" title='ZXing::QRCode::ErrorCorrectionLevel::Invalid' data-ref="ZXing::QRCode::ErrorCorrectionLevel::Invalid" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel..Invalid">Invalid</dfn>,		<i>// denotes in invalid/unknown value</i></td></tr>
+<tr><th id="35">35</th><td>};</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><em>const</em> <em>wchar_t</em>* <dfn class="decl fn" id="_ZN5ZXing6QRCode8ToStringENS0_20ErrorCorrectionLevelE" title='ZXing::QRCode::ToString' data-ref="_ZN5ZXing6QRCode8ToStringENS0_20ErrorCorrectionLevelE" data-ref-filename="_ZN5ZXing6QRCode8ToStringENS0_20ErrorCorrectionLevelE">ToString</dfn>(<a class="type" href="QRWriter.h.html#ZXing::QRCode::ErrorCorrectionLevel" title='ZXing::QRCode::ErrorCorrectionLevel' data-ref="ZXing::QRCode::ErrorCorrectionLevel" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel">ErrorCorrectionLevel</a> <dfn class="local col4 decl" id="44l" title='l' data-type='ZXing::QRCode::ErrorCorrectionLevel' data-ref="44l" data-ref-filename="44l">l</dfn>);</td></tr>
+<tr><th id="38">38</th><td><a class="type" href="QRWriter.h.html#ZXing::QRCode::ErrorCorrectionLevel" title='ZXing::QRCode::ErrorCorrectionLevel' data-ref="ZXing::QRCode::ErrorCorrectionLevel" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel">ErrorCorrectionLevel</a> <dfn class="decl fn" id="_ZN5ZXing6QRCode17ECLevelFromStringEPKc" title='ZXing::QRCode::ECLevelFromString' data-ref="_ZN5ZXing6QRCode17ECLevelFromStringEPKc" data-ref-filename="_ZN5ZXing6QRCode17ECLevelFromStringEPKc">ECLevelFromString</dfn>(<em>const</em> <em>char</em>* <dfn class="local col5 decl" id="45str" title='str' data-type='const char *' data-ref="45str" data-ref-filename="45str">str</dfn>);</td></tr>
+<tr><th id="39">39</th><td><a class="type" href="QRWriter.h.html#ZXing::QRCode::ErrorCorrectionLevel" title='ZXing::QRCode::ErrorCorrectionLevel' data-ref="ZXing::QRCode::ErrorCorrectionLevel" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel">ErrorCorrectionLevel</a> <dfn class="decl fn" id="_ZN5ZXing6QRCode15ECLevelFromBitsEi" title='ZXing::QRCode::ECLevelFromBits' data-ref="_ZN5ZXing6QRCode15ECLevelFromBitsEi" data-ref-filename="_ZN5ZXing6QRCode15ECLevelFromBitsEi">ECLevelFromBits</dfn>(<em>int</em> <dfn class="local col6 decl" id="46bits" title='bits' data-type='int' data-ref="46bits" data-ref-filename="46bits">bits</dfn>);</td></tr>
+<tr><th id="40">40</th><td><em>int</em> <dfn class="decl fn" id="_ZN5ZXing6QRCode15BitsFromECLevelENS0_20ErrorCorrectionLevelE" title='ZXing::QRCode::BitsFromECLevel' data-ref="_ZN5ZXing6QRCode15BitsFromECLevelENS0_20ErrorCorrectionLevelE" data-ref-filename="_ZN5ZXing6QRCode15BitsFromECLevelENS0_20ErrorCorrectionLevelE">BitsFromECLevel</dfn>(<a class="type" href="QRWriter.h.html#ZXing::QRCode::ErrorCorrectionLevel" title='ZXing::QRCode::ErrorCorrectionLevel' data-ref="ZXing::QRCode::ErrorCorrectionLevel" data-ref-filename="ZXing..QRCode..ErrorCorrectionLevel">ErrorCorrectionLevel</a> <dfn class="local col7 decl" id="47l" title='l' data-type='ZXing::QRCode::ErrorCorrectionLevel' data-ref="47l" data-ref-filename="47l">l</dfn>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>} <i>// QRCode</i></td></tr>
+<tr><th id="43">43</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../MultiFormatWriter.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

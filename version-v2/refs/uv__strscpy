@@ -1,0 +1,96 @@
+<dec f='qv2ray/3rdparty/libuv/src/strscpy.h' l='16' type='ssize_t uv__strscpy(char * d, const char * s, size_t n)'/>
+<doc f='qv2ray/3rdparty/libuv/src/strscpy.h' l='10'>/* Copies up to |n-1| bytes from |d| to |s| and always zero-terminates
+ * the result, except when |n==0|. Returns the number of bytes copied
+ * or UV_E2BIG if |d| is too small.
+ *
+ * See https://www.kernel.org/doc/htmldocs/kernel-api/API-strscpy.html
+ */</doc>
+<use f='qv2ray/3rdparty/libuv/src/inet.c' l='62' u='c' c='inet_ntop4'/>
+<use f='qv2ray/3rdparty/libuv/src/inet.c' l='144' u='c' c='inet_ntop6'/>
+<def f='qv2ray/3rdparty/libuv/src/strscpy.c' l='4' ll='17' type='ssize_t uv__strscpy(char * d, const char * s, size_t n)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1439' u='c' c='uv_os_uname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1454' u='c' c='uv_os_uname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1459' u='c' c='uv_os_uname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1466' u='c' c='uv_os_uname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='69' u='c' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='192' u='c' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='177' u='c' c='uv_err_name_r'/>

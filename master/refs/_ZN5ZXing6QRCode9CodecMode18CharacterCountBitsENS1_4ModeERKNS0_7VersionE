@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRCodecMode.h' l='60' type='static int ZXing::QRCode::CodecMode::CharacterCountBits(ZXing::QRCode::CodecMode::Mode mode, const ZXing::QRCode::Version &amp; version)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRCodecMode.cpp' l='57' ll='72' type='static int ZXing::QRCode::CodecMode::CharacterCountBits(ZXing::QRCode::CodecMode::Mode mode, const ZXing::QRCode::Version &amp; version)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRCodecMode.h' l='55'>/**
+	* @param version version in question
+	* @return number of bits used, in this QR Code symbol {@link Version}, to encode the
+	*         count of characters that will follow encoded in this Mode
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='369' u='c' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='381' u='c' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='137' u='c' c='_ZN5ZXing6QRCodeL16AppendLengthInfoEiRKNS0_7VersionENS0_9CodecMode4ModeERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='476' u='c' c='_ZN5ZXing6QRCodeL19CalculateBitsNeededENS0_9CodecMode4ModeERKNS_8BitArrayES5_RKNS0_7VersionE'/>

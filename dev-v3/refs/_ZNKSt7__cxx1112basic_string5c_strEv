@@ -1,0 +1,57 @@
+<def f='include/c++/10/bits/basic_string.h' l='2298' ll='2300' type='const _CharT * std::__cxx11::basic_string::c_str() const'/>
+<use f='include/c++/10/bits/basic_string.h' l='6547' u='c' c='_ZNSt7__cxx114stoiERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6552' u='c' c='_ZNSt7__cxx114stolERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6557' u='c' c='_ZNSt7__cxx115stoulERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6562' u='c' c='_ZNSt7__cxx115stollERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6567' u='c' c='_ZNSt7__cxx116stoullERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6573' u='c' c='_ZNSt7__cxx114stofERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6577' u='c' c='_ZNSt7__cxx114stodERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6581' u='c' c='_ZNSt7__cxx115stoldERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6678' u='c' c='_ZNSt7__cxx114stoiERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6683' u='c' c='_ZNSt7__cxx114stolERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6688' u='c' c='_ZNSt7__cxx115stoulERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6693' u='c' c='_ZNSt7__cxx115stollERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6698' u='c' c='_ZNSt7__cxx116stoullERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPmi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6704' u='c' c='_ZNSt7__cxx114stofERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6708' u='c' c='_ZNSt7__cxx114stodERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6712' u='c' c='_ZNSt7__cxx115stoldERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPm'/>
+<use f='include/c++/10/bits/locale_classes.h' l='163' u='c' c='_ZNSt6localeC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/10/bits/locale_classes.h' l='178' u='c' c='_ZNSt6localeC1ERKS_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='include/c++/10/bits/locale_classes.h' l='842' u='c' c='_ZNSt7__cxx1114collate_bynameC1ERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets.h' l='1489' u='c' c='_ZNSt12ctype_bynameC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets.h' l='1926' u='c' c='_ZNSt7__cxx1115numpunct_bynameC1ERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='697' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='712' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='744' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
+<doc f='include/c++/10/bits/basic_string.h' l='2292'>/**
+       *  @brief  Return const pointer to null-terminated contents.
+       *
+       *  This is a handle to internal data.  Do not modify or dire things may
+       *  happen.
+      */</doc>
+<use f='include/c++/10/bits/locale_facets_nonio.h' l='774' u='c' c='_ZNSt7__cxx1115time_get_bynameC1ERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets_nonio.h' l='908' u='c' c='_ZNSt15time_put_bynameC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets_nonio.h' l='1439' u='c' c='_ZNSt7__cxx1117moneypunct_bynameC1ERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets_nonio.h' l='1995' u='c' c='_ZNSt7__cxx1115messages_bynameC1ERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/messages_members.h' l='73' u='c' c='_ZNKSt7__cxx118messages4openERKNS_12basic_stringIcSt11char_traitsIcESaIcEEERKSt6localePKc'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/messages_members.h' l='93' u='c' c='_ZNKSt7__cxx118messages7do_openERKNS_12basic_stringIcSt11char_traitsIcESaIcEEERKSt6locale'/>
+<use f='include/c++/10/bits/codecvt.h' l='714' u='c' c='_ZNSt14codecvt_bynameC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/codecvt.h' l='734' u='c' c='_ZNSt14codecvt_bynameIDsc11__mbstate_tEC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/codecvt.h' l='752' u='c' c='_ZNSt14codecvt_bynameIDic11__mbstate_tEC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEm'/>
+<use f='include/c++/10/bits/locale_facets_nonio.tcc' l='377' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRe'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='144' u='c' c='_ZN8QtQrCode12encodeStringEv'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='148' u='c' c='_ZN8QtQrCode12encodeStringEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='94' u='c' c='_ZN3uvw9Utilities2OS3envERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='99' u='c' c='_ZN3uvw9Utilities2OS3envERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='99' u='c' c='_ZN3uvw9Utilities2OS3envERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='99' u='c' c='_ZN3uvw9Utilities2OS3envERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='282' u='c' c='_ZN3uvw9Utilities12processTitleENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/stubs/hash.h' l='401' u='c' c='_ZNK6google8protobuf4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS7_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='63' u='c' c='_ZN4grpc5SliceC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='165' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing15getProxyAddressB5cxx11Ev'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='169' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing15getProxyAddressB5cxx11Ev'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='238' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='239' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>
+<use f='qv2ray/test/catch.hpp' l='632' u='c' c='_ZN5Catch9StringRefC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/10/fstream' l='332' u='c' c='_ZNSt13basic_filebuf4openERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt13_Ios_Openmode'/>
+<use f='qv2ray/test/catch.hpp' l='9709' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>

@@ -1,0 +1,13 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRECB.h' l='31' ll='35'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRECB.h' l='48'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRECB.h' l='63' c='_ZNK5ZXing6QRCode8ECBlocks10blockArrayEv'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRECB.h' l='24'>/**
+* &lt;p&gt;Encapsualtes the parameters for one error-correction block in one symbol version.
+* This includes the number of data codewords, and the number of times a block with these
+* parameters is used consecutively in the QR code version&apos;s format.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::QRCode::ECB::count' o='0' t='int'/>
+<mbr r='ZXing::QRCode::ECB::dataCodewords' o='32' t='int'/>

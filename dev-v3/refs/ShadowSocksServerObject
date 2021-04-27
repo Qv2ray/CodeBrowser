@@ -1,0 +1,47 @@
+<def f='qv2ray/src/plugins/common/CommonTypes.hpp' l='46' ll='54'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='53' c='_ZN23ShadowSocksServerObjectC1ERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='53' c='_ZN23ShadowSocksServerObjectaSERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='53' c='_ZN23ShadowSocksServerObjectaSERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='53' c='_ZNK23ShadowSocksServerObjecteqERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='53' c='_ZNK23ShadowSocksServerObjectneERKS_'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='703' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='715' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='722' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='729' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='736' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='745' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/AH6EPSMY5U/moc_CommonTypes.cpp' l='756' c='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.hpp' l='48'/>
+<size>440</size>
+<doc f='qv2ray/src/plugins/common/CommonTypes.hpp' l='44'>//
+// ShadowSocks Server</doc>
+<smbr r='ShadowSocksServerObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK23ShadowSocksServerObject10metaObjectEv'/>
+<fun r='_ZN23ShadowSocksServerObject11qt_metacastEPKc'/>
+<fun r='_ZN23ShadowSocksServerObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN23ShadowSocksServerObject2trEPKcS1_i'/>
+<fun r='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN23ShadowSocksServerObject18on_address_changedEv'/>
+<mbr r='ShadowSocksServerObject::address' o='128' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN23ShadowSocksServerObject15on_port_changedEv'/>
+<mbr r='ShadowSocksServerObject::port' o='1088' t='QJS_Prop&lt;int&gt;'/>
+<fun r='_ZN23ShadowSocksServerObject17on_method_changedEv'/>
+<mbr r='ShadowSocksServerObject::method' o='1600' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN23ShadowSocksServerObject19on_password_changedEv'/>
+<mbr r='ShadowSocksServerObject::password' o='2560' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN23ShadowSocksServerObjectC1Ev'/>
+<fun r='_ZN23ShadowSocksServerObjectC1ERKS_'/>
+<fun r='_ZNK23ShadowSocksServerObject6toJsonEv'/>
+<fun r='_ZN23ShadowSocksServerObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN23ShadowSocksServerObjectC1ERK11QJsonObject'/>
+<fun r='_ZN23ShadowSocksServerObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='ShadowSocksServerObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK23ShadowSocksServerObject10metaObjectEv'/>
+<fun r='_ZN23ShadowSocksServerObject11qt_metacastEPKc'/>
+<fun r='_ZN23ShadowSocksServerObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN23ShadowSocksServerObject18on_address_changedEv'/>
+<fun r='_ZN23ShadowSocksServerObject15on_port_changedEv'/>
+<fun r='_ZN23ShadowSocksServerObject17on_method_changedEv'/>
+<fun r='_ZN23ShadowSocksServerObject19on_password_changedEv'/>
+<use f='qv2ray/src/plugins/protocols/core/OutboundHandler.cpp' l='44' c='_ZNK17BuiltinSerializer15GetOutboundInfoERK7QStringRK11QJsonObject'/>
+<size>440</size>

@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='73' type='int ZXing::Pdf417::ModulusPoly::evaluateAt(int a) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='70'>/**
+	* @return evaluation of this polynomial at a given point
+	*/</doc>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='53' ll='74' type='int ZXing::Pdf417::ModulusPoly::evaluateAt(int a) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='50'>/**
+* @return evaluation of this polynomial at a given point
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='440' u='c' c='_ZN5ZXing6Pdf417L18FindErrorLocationsERKNS0_11ModulusPolyERSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='462' u='c' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='463' u='c' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='484' u='c' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>

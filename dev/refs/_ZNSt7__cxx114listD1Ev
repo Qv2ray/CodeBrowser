@@ -1,0 +1,8 @@
+<def f='include/c++/10/bits/stl_list.h' l='827' type='void std::__cxx11::list::~list&lt;_Tp, _Alloc&gt;()'/>
+<doc f='include/c++/10/bits/stl_list.h' l='820'>/**
+       *  No explicit dtor needed as the _Base dtor takes care of
+       *  things.  The _Base dtor only erases the elements, and note
+       *  that if the elements themselves are pointers, the pointed-to
+       *  memory is not touched in any way.  Managing the pointer is
+       *  the user&apos;s responsibility.
+       */</doc>

@@ -1,0 +1,9 @@
+<def f='include/google/protobuf/descriptor.h' l='1717' ll='1722' type='void google::protobuf::DescriptorPool::InternalSetLazilyBuildDependencies()'/>
+<doc f='include/google/protobuf/descriptor.h' l='1709'>// For internal use only: Enables lazy building of dependencies of a file.
+  // Delay the building of dependencies of a file descriptor until absolutely
+  // necessary, like when message_type() is called on a field that is defined
+  // in that dependency&apos;s file. This will cause functional issues if a proto
+  // or one of it&apos;s dependencies has errors. Should only be enabled for the
+  // generated_pool_ (because no descriptor build errors are guaranteed by
+  // the compilation generation process), testing, or if a lack of descriptor
+  // build errors can be guaranteed for a pool.</doc>

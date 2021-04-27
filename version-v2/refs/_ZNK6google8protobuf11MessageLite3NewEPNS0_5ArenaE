@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/message_lite.h' l='180' type='google::protobuf::MessageLite * google::protobuf::MessageLite::New(::google::protobuf::Arena * arena) const'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='58' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='105' u='c' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler16NewFromPrototypeEPKNS0_11MessageLiteEPNS0_5ArenaE'/>
+<ovr f='include/google/protobuf/message.h' l='204' c='_ZNK6google8protobuf7Message3NewEPNS0_5ArenaE'/>
+<doc f='include/google/protobuf/message_lite.h' l='178'>// Construct a new instance on the arena. Ownership is passed to the caller
+  // if arena is a NULL. Default implementation for backwards compatibility.</doc>

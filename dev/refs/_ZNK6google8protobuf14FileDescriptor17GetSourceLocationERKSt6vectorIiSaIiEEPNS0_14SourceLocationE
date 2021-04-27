@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='1411' type='bool google::protobuf::FileDescriptor::GetSourceLocation(const std::vector&lt;int&gt; &amp; path, google::protobuf::SourceLocation * out_location) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1406'>// Updates |*out_location| to the source location of the complete
+  // extent of the declaration or declaration-part denoted by |path|.
+  // Returns false and leaves |*out_location| unchanged iff location
+  // information was not available.  (See SourceCodeInfo for
+  // description of path encoding.)</doc>

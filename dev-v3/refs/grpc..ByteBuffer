@@ -1,0 +1,63 @@
+<use f='include/grpcpp/impl/codegen/slice.h' l='115'/>
+<def f='include/grpcpp/impl/codegen/byte_buffer.h' l='55' ll='182'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='75' c='_ZN4grpc10ByteBufferC1EPKNS_5SliceEm'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='88' c='_ZN4grpc10ByteBufferC1ERKS0_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='96' c='_ZN4grpc10ByteBufferaSERKS0_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='96' c='_ZN4grpc10ByteBufferaSERKS0_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='128' c='_ZN4grpc10ByteBuffer4SwapEPS0_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='138'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='172' c='_ZN4grpc10ByteBuffer17ByteBufferPointerC1EPKS0_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='173' c='_ZN4grpc10ByteBuffer17ByteBufferPointerC1EPKS0_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='174' c='_ZN4grpc10ByteBuffer17ByteBufferPointercvPS0_Ev'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='179'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='185'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='187' c='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE11DeserializeEPS1_S3_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='187' c='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE11DeserializeEPS1_S3_'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='191' c='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE9SerializeERKS1_PS1_Pb'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='191' c='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE9SerializeERKS1_PS1_Pb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='293'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='366'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='372' c='_ZN4grpc8internal15DeserializeFunc11DeserializeEPNS_10ByteBufferE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='380' c='_ZN4grpc8internal19DeserializeFuncType11DeserializeEPNS_10ByteBufferE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='440'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='51'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='250'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='29'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='29'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='31'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='32'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='32'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='33'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='300' c='_ZN4grpc8internal18ErrorMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='50' c='_ZN4grpc17ProtoBufferReaderC1EPNS_10ByteBufferE'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='60' c='_ZN4grpc17ProtoBufferWriterC1EPNS_10ByteBufferEii'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='45' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='58' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='71' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='108' c='_ZN4grpc19SerializationTraitsIT_NSt9enable_ifIXsr3std10is_base_ofIN6google8protobuf7MessageES1_EE5valueEvE4typeEE9SerializeERKS5_PNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='113' c='_ZN4grpc19SerializationTraitsIT_NSt9enable_ifIXsr3std10is_base_ofIN6google8protobuf7MessageES1_EE5valueEvE4typeEE11DeserializeEPNS_10ByteBufferEPS5_'/>
+<use f='/v2ray_api.grpc.pb.h' l='268' c='_ZN5v2ray4core3app5stats7command12StatsService22WithRawMethod_GetStats15RequestGetStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyncRes16641939'/>
+<use f='/v2ray_api.grpc.pb.h' l='268' c='_ZN5v2ray4core3app5stats7command12StatsService22WithRawMethod_GetStats15RequestGetStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyncRes16641939'/>
+<use f='/v2ray_api.grpc.pb.h' l='288' c='_ZN5v2ray4core3app5stats7command12StatsService24WithRawMethod_QueryStats17RequestQueryStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyn3994814'/>
+<use f='/v2ray_api.grpc.pb.h' l='288' c='_ZN5v2ray4core3app5stats7command12StatsService24WithRawMethod_QueryStats17RequestQueryStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyn3994814'/>
+<use f='/v2ray_api.grpc.pb.h' l='308' c='_ZN5v2ray4core3app5stats7command12StatsService25WithRawMethod_GetSysStats18RequestGetSysStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAs15482467'/>
+<use f='/v2ray_api.grpc.pb.h' l='308' c='_ZN5v2ray4core3app5stats7command12StatsService25WithRawMethod_GetSysStats18RequestGetSysStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAs15482467'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/byte_buffer.h' l='54'>/// A sequence of bytes.</doc>
+<fun r='_ZN4grpc10ByteBufferC1Ev'/>
+<fun r='_ZN4grpc10ByteBufferC1EPKNS_5SliceEm'/>
+<fun r='_ZN4grpc10ByteBufferC1ERKS0_'/>
+<fun r='_ZN4grpc10ByteBufferD1Ev'/>
+<fun r='_ZN4grpc10ByteBufferaSERKS0_'/>
+<fun r='_ZNK4grpc10ByteBuffer4DumpEPSt6vectorINS_5SliceESaIS2_EE'/>
+<fun r='_ZN4grpc10ByteBuffer5ClearEv'/>
+<fun r='_ZN4grpc10ByteBuffer9DuplicateEv'/>
+<fun r='_ZN4grpc10ByteBuffer7ReleaseEv'/>
+<fun r='_ZNK4grpc10ByteBuffer6LengthEv'/>
+<fun r='_ZN4grpc10ByteBuffer4SwapEPS0_'/>
+<fun r='_ZNK4grpc10ByteBuffer5ValidEv'/>
+<mbr r='grpc::ByteBuffer::buffer_' o='0' t='grpc_byte_buffer *'/>
+<fun r='_ZN4grpc10ByteBuffer10set_bufferEP16grpc_byte_buffer'/>
+<fun r='_ZN4grpc10ByteBuffer8c_bufferEv'/>
+<fun r='_ZN4grpc10ByteBuffer12c_buffer_ptrEv'/>
+<fun r='_ZNK4grpc10ByteBuffer8bbuf_ptrEv'/>

@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/message.h' l='281' type='bool google::protobuf::Message::ParseFromFileDescriptor(int file_descriptor)'/>
+<doc f='include/google/protobuf/message.h' l='275'>// Heavy I/O -------------------------------------------------------
+  // Additional parsing and serialization methods not implemented by
+  // MessageLite because they are not supported by the lite library.
+
+  // Parse a protocol buffer from a file descriptor.  If successful, the entire
+  // input will be consumed.</doc>

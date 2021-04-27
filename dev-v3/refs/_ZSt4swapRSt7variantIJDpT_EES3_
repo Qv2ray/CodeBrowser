@@ -1,0 +1,2 @@
+<def f='include/c++/10/variant' l='1236' ll='1240' type='enable_if_t&lt;(is_move_constructible_v&lt;_Types&gt; &amp;&amp; ...) &amp;&amp; (is_swappable_v&lt;_Types&gt; &amp;&amp; ...)&gt; std::swap(variant&lt;_Types...&gt; &amp; __lhs, variant&lt;_Types...&gt; &amp; __rhs)'/>
+<def f='include/c++/10/variant' l='1243' ll='1245' type='enable_if_t&lt;!((is_move_constructible_v&lt;_Types&gt; &amp;&amp; ...) &amp;&amp; (is_swappable_v&lt;_Types&gt; &amp;&amp; ...))&gt; std::swap(variant&lt;_Types...&gt; &amp; , variant&lt;_Types...&gt; &amp; )'/>

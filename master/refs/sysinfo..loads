@@ -1,0 +1,6 @@
+<dec f='include/linux/sysinfo.h' l='10' type='__kernel_ulong_t [3]'/>
+<offset>64</offset>
+<doc f='include/linux/sysinfo.h' l='10'>/* 1, 5, and 15 minute load averages */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/sysinfo-loadavg.c' l='33' u='r' c='uv_loadavg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/sysinfo-loadavg.c' l='34' u='r' c='uv_loadavg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/sysinfo-loadavg.c' l='35' u='r' c='uv_loadavg'/>

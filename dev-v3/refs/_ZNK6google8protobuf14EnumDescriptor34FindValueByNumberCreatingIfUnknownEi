@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/descriptor.h' l='989' type='const google::protobuf::EnumValueDescriptor * google::protobuf::EnumDescriptor::FindValueByNumberCreatingIfUnknown(int number) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='980'>// Looks up a value by number.  If the value does not exist, dynamically
+  // creates a new EnumValueDescriptor for that value, assuming that it was
+  // unknown. If a new descriptor is created, this is done in a thread-safe way,
+  // and future calls will return the same value descriptor pointer.
+  //
+  // This is private but is used by GeneratedMessageReflection (which is
+  // friended below) to return a valid EnumValueDescriptor from GetEnum() when
+  // this feature is enabled.</doc>

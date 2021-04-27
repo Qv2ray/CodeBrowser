@@ -1,0 +1,16 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='813' ll='870'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='867'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='252'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='256' c='_ZN4grpc8internal20StreamedUnaryHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPNS_19ServerUnaryStreamerIT_T0_EEEE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='259' c='_ZN4grpc8internal20StreamedUnaryHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPNS_19ServerUnaryStreamerIT_T0_EEEE'/>
+<use f='/v2ray_api.grpc.pb.h' l='330' c='_ZN5v2ray4core3app5stats7command12StatsService32WithStreamedUnaryMethod_GetStats16StreamedGetStatsEPN4grpc13ServerContextEPNS6_19ServerUnaryStreamerIN15841968'/>
+<use f='/v2ray_api.grpc.pb.h' l='350' c='_ZN5v2ray4core3app5stats7command12StatsService34WithStreamedUnaryMethod_QueryStats18StreamedQueryStatsEPN4grpc13ServerContextEPNS6_19ServerUnaryStream7123147'/>
+<use f='/v2ray_api.grpc.pb.h' l='370' c='_ZN5v2ray4core3app5stats7command12StatsService35WithStreamedUnaryMethod_GetSysStats19StreamedGetSysStatsEPN4grpc13ServerContextEPNS6_19ServerUnaryStre2396315'/>
+<fun r='_ZN4grpc19ServerUnaryStreamer19SendInitialMetadataEv'/>
+<fun r='_ZN4grpc19ServerUnaryStreamer15NextMessageSizeEPj'/>
+<fun r='_ZN4grpc19ServerUnaryStreamer4ReadEPT_'/>
+<fun r='_ZN4grpc19ServerUnaryStreamer5WriteERKT0_NS_12WriteOptionsE'/>
+<mbr r='grpc::ServerUnaryStreamer::body_' t='internal::ServerReaderWriterBody&lt;ResponseType, RequestType&gt;'/>
+<mbr r='grpc::ServerUnaryStreamer::read_done_' t='bool'/>
+<mbr r='grpc::ServerUnaryStreamer::write_done_' t='bool'/>
+<fun r='_ZN4grpc19ServerUnaryStreamerC1EPNS_8internal4CallEPNS_13ServerContextE'/>

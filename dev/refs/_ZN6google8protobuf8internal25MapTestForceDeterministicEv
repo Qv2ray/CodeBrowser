@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='146' type='void google::protobuf::internal::MapTestForceDeterministic()'/>
+<dec f='include/google/protobuf/io/coded_stream.h' l='892' type='void google::protobuf::internal::MapTestForceDeterministic()'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='885'>// See above.  Other projects may use &quot;friend&quot; to allow them to call this.
+  // After SetDefaultSerializationDeterministic() completes, all protocol
+  // buffer serializations will be deterministic by default.  Thread safe.
+  // However, the meaning of &quot;after&quot; is subtle here: to be safe, each thread
+  // that wants deterministic serialization by default needs to call
+  // SetDefaultSerializationDeterministic() or ensure on its own that another
+  // thread has done so.</doc>

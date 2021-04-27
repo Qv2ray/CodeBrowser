@@ -1,0 +1,8 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.h' l='44' type='void ZXing::BitSource::BitSource(const ZXing::ByteArray &amp; bytes)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.h' l='39'>/**
+	* @param bytes bytes from which this will read bits. Bits will be read from the first byte first.
+	* Bits are read within a byte from most-significant to least-significant bit.
+	* IMPORTANT: Bit source DOES NOT copy data byte, thus make sure that the bytes outlive the bit source object.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='500' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL6DecodeEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='312' u='c' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

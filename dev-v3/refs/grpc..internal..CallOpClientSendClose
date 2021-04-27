@@ -1,0 +1,19 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='444' ll='462'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='290'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='461'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='635'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='187'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='251' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='322' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='343' c='_ZN4grpc12ClientWriter10WritesDoneEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='493' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='514' c='_ZN4grpc18ClientReaderWriter10WritesDoneEv'/>
+<size>1</size>
+<fun r='_ZN4grpc8internal21CallOpClientSendCloseC1Ev'/>
+<fun r='_ZN4grpc8internal21CallOpClientSendClose15ClientSendCloseEv'/>
+<fun r='_ZN4grpc8internal21CallOpClientSendClose5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal21CallOpClientSendClose8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpClientSendClose::send_' o='0' t='bool'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='58' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='65' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<size>1</size>

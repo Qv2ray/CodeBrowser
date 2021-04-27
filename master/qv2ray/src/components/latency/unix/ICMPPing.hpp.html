@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ICMPPing.hpp source code [qv2ray/src/components/latency/unix/ICMPPing.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Qv2ray::components::latency::icmping::ICMPPing "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/latency/unix/ICMPPing.hpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>components</a>/<a href='..'>latency</a>/<a href='./'>unix</a>/<a href='ICMPPing.hpp.html'>ICMPPing.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include &lt;QtGlobal&gt;</u></td></tr>
+<tr><th id="3">3</th><td><u>#<span data-ppcond="3">ifdef</span> <span class="macro" data-ref="_M/Q_OS_UNIX">Q_OS_UNIX</span></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td>    <u>#include <a href="../DNSBase.hpp.html">"../DNSBase.hpp"</a></u></td></tr>
+<tr><th id="6">6</th><td>    <u>#include <a href="../../../../3rdparty/uvw/src/uvw.hpp.html">"uvw.hpp"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td>    <u>#include &lt;QString&gt;</u></td></tr>
+<tr><th id="9">9</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">components</span>::<span class="namespace">latency</span>::<span class="namespace">icmping</span></td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td>    <b>class</b> <dfn class="type def" id="Qv2ray::components::latency::icmping::ICMPPing" title='Qv2ray::components::latency::icmping::ICMPPing' data-ref="Qv2ray::components::latency::icmping::ICMPPing" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing">ICMPPing</dfn> : <b>public</b> <a class="type" href="../DNSBase.hpp.html#Qv2ray::components::latency::DNSBase" title='Qv2ray::components::latency::DNSBase' data-ref="Qv2ray::components::latency::DNSBase" data-ref-filename="Qv2ray..components..latency..DNSBase">DNSBase</a>&lt;<a class="type" href="#Qv2ray::components::latency::icmping::ICMPPing" title='Qv2ray::components::latency::icmping::ICMPPing' data-ref="Qv2ray::components::latency::icmping::ICMPPing" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing">ICMPPing</a>&gt;</td></tr>
+<tr><th id="12">12</th><td>    {</td></tr>
+<tr><th id="13">13</th><td>      <b>public</b>:</td></tr>
+<tr><th id="14">14</th><td>        <b>using</b> <a class="type" href="../DNSBase.hpp.html#Qv2ray::components::latency::DNSBase" title='Qv2ray::components::latency::DNSBase' data-ref="Qv2ray::components::latency::DNSBase" data-ref-filename="Qv2ray..components..latency..DNSBase">DNSBase</a>&lt;<a class="type" href="#Qv2ray::components::latency::icmping::ICMPPing" title='Qv2ray::components::latency::icmping::ICMPPing' data-ref="Qv2ray::components::latency::icmping::ICMPPing" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing">ICMPPing</a>&gt;::DNSBase;</td></tr>
+<tr><th id="15">15</th><td>        <dfn class="virtual decl fn" id="_ZN6Qv2ray10components7latency7icmping8ICMPPingD1Ev" title='Qv2ray::components::latency::icmping::ICMPPing::~ICMPPing' data-ref="_ZN6Qv2ray10components7latency7icmping8ICMPPingD1Ev" data-ref-filename="_ZN6Qv2ray10components7latency7icmping8ICMPPingD1Ev">~ICMPPing</dfn>() override;</td></tr>
+<tr><th id="16">16</th><td>        <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi" title='Qv2ray::components::latency::icmping::ICMPPing::start' data-ref="_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi" data-ref-filename="_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi">start</dfn>(<em>int</em> <dfn class="local col1 decl" id="11ttl" title='ttl' data-type='int' data-ref="11ttl" data-ref-filename="11ttl">ttl</dfn> = <var>30</var>);</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>      <b>private</b>:</td></tr>
+<tr><th id="19">19</th><td>        <em>void</em> <dfn class="virtual decl fn" id="_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv" title='Qv2ray::components::latency::icmping::ICMPPing::ping' data-ref="_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv" data-ref-filename="_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv">ping</dfn>() override;</td></tr>
+<tr><th id="20">20</th><td>        <em>bool</em> <dfn class="decl fn" id="_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv" title='Qv2ray::components::latency::icmping::ICMPPing::notifyTestHost' data-ref="_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv" data-ref-filename="_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv">notifyTestHost</dfn>();</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>      <b>private</b>:</td></tr>
+<tr><th id="23">23</th><td>        <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray10components7latency7icmping8ICMPPing6deinitEv" title='Qv2ray::components::latency::icmping::ICMPPing::deinit' data-ref="_ZN6Qv2ray10components7latency7icmping8ICMPPing6deinitEv" data-ref-filename="_ZN6Qv2ray10components7latency7icmping8ICMPPing6deinitEv">deinit</dfn>();</td></tr>
+<tr><th id="24">24</th><td>        <i>// number incremented with every echo request packet send</i></td></tr>
+<tr><th id="25">25</th><td>        <em>unsigned</em> <em>short</em> <dfn class="decl field" id="Qv2ray::components::latency::icmping::ICMPPing::seq" title='Qv2ray::components::latency::icmping::ICMPPing::seq' data-ref="Qv2ray::components::latency::icmping::ICMPPing::seq" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing..seq">seq</dfn> = <var>1</var>;</td></tr>
+<tr><th id="26">26</th><td>        <i>// socket</i></td></tr>
+<tr><th id="27">27</th><td>        <em>int</em> <dfn class="decl field" id="Qv2ray::components::latency::icmping::ICMPPing::socketId" title='Qv2ray::components::latency::icmping::ICMPPing::socketId' data-ref="Qv2ray::components::latency::icmping::ICMPPing::socketId" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing..socketId">socketId</dfn> = -<var>1</var>;</td></tr>
+<tr><th id="28">28</th><td>        <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<span class="namespace">uvw::</span><a class="type" href="../../../../3rdparty/uvw/src/uvw/timer.h.html#uvw::TimerHandle" title='uvw::TimerHandle' data-ref="uvw::TimerHandle" data-ref-filename="uvw..TimerHandle">TimerHandle</a>&gt; <dfn class="decl field" id="Qv2ray::components::latency::icmping::ICMPPing::timeoutTimer" title='Qv2ray::components::latency::icmping::ICMPPing::timeoutTimer' data-ref="Qv2ray::components::latency::icmping::ICMPPing::timeoutTimer" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing..timeoutTimer">timeoutTimer</dfn>;</td></tr>
+<tr><th id="29">29</th><td>        <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<span class="namespace">uvw::</span><a class="type" href="../../../../3rdparty/uvw/src/uvw/poll.h.html#uvw::PollHandle" title='uvw::PollHandle' data-ref="uvw::PollHandle" data-ref-filename="uvw..PollHandle">PollHandle</a>&gt; <dfn class="decl field" id="Qv2ray::components::latency::icmping::ICMPPing::pollHandle" title='Qv2ray::components::latency::icmping::ICMPPing::pollHandle' data-ref="Qv2ray::components::latency::icmping::ICMPPing::pollHandle" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing..pollHandle">pollHandle</dfn>;</td></tr>
+<tr><th id="30">30</th><td>        <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="type" href="../../../../../include/x86_64-linux-gnu/bits/types/struct_timeval.h.html#timeval" title='timeval' data-ref="timeval" data-ref-filename="timeval">timeval</a>&gt; <dfn class="decl field" id="Qv2ray::components::latency::icmping::ICMPPing::startTimevals" title='Qv2ray::components::latency::icmping::ICMPPing::startTimevals' data-ref="Qv2ray::components::latency::icmping::ICMPPing::startTimevals" data-ref-filename="Qv2ray..components..latency..icmping..ICMPPing..startTimevals">startTimevals</dfn>;</td></tr>
+<tr><th id="31">31</th><td>    };</td></tr>
+<tr><th id="32">32</th><td>} <i>// namespace Qv2ray::components::latency::icmping</i></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="3">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../LatencyTestThread.cpp.html'>qv2ray/src/components/latency/LatencyTestThread.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

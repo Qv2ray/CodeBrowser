@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='807' type='void uvw::FsReq::unlink(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='259' ll='261' type='void uvw::FsReq::unlink(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='799'>/**
+     * @brief Async [unlink](http://linux.die.net/man/2/unlink).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::UNLINK&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     */</doc>

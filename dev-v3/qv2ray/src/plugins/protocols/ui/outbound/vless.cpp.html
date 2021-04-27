@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>vless.cpp source code [qv2ray/src/plugins/protocols/ui/outbound/vless.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/plugins/protocols/ui/outbound/vless.cpp'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>src</a>/<a href='../../..'>plugins</a>/<a href='../..'>protocols</a>/<a href='..'>ui</a>/<a href='./'>outbound</a>/<a href='vless.cpp.html'>vless.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="vless.hpp.html">"vless.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><a class="type" href="vless.hpp.html#VlessOutboundEditor" title='VlessOutboundEditor' data-ref="VlessOutboundEditor" data-ref-filename="VlessOutboundEditor">VlessOutboundEditor</a>::<dfn class="decl def fn" id="_ZN19VlessOutboundEditorC1EP7QWidget" title='VlessOutboundEditor::VlessOutboundEditor' data-ref="_ZN19VlessOutboundEditorC1EP7QWidget" data-ref-filename="_ZN19VlessOutboundEditorC1EP7QWidget">VlessOutboundEditor</dfn>(<span class='type' title='QWidget' data-ref="QWidget" data-ref-filename="QWidget">QWidget</span> *<dfn class="local col1 decl" id="1parent" title='parent' data-type='QWidget *' data-ref="1parent" data-ref-filename="1parent">parent</dfn>) : <span class="namespace">Qv2rayPlugin::</span><a class="type" href="../../../../plugin-interface/gui/QvGUIPluginInterface.hpp.html#Qv2rayPlugin::QvPluginEditor" title='Qv2rayPlugin::QvPluginEditor' data-ref="Qv2rayPlugin::QvPluginEditor" data-ref-filename="Qv2rayPlugin..QvPluginEditor">QvPluginEditor</a><a class="ref fn" href="../../../../plugin-interface/gui/QvGUIPluginInterface.hpp.html#_ZN12Qv2rayPlugin14QvPluginEditorC1EP7QWidget" title='Qv2rayPlugin::QvPluginEditor::QvPluginEditor' data-ref="_ZN12Qv2rayPlugin14QvPluginEditorC1EP7QWidget" data-ref-filename="_ZN12Qv2rayPlugin14QvPluginEditorC1EP7QWidget">(</a><a class="local col1 ref" href="#1parent" title='parent' data-ref="1parent" data-ref-filename="1parent">parent</a>)</td></tr>
+<tr><th id="4">4</th><td>{</td></tr>
+<tr><th id="5">5</th><td>    <a class="member fn" href="/QvPlugin-BuiltinProtocolSupport_autogen/include/ui_vless.h.html#_ZN17Ui_vlessOutEditor7setupUiEP7QWidget" title='Ui_vlessOutEditor::setupUi' data-ref="_ZN17Ui_vlessOutEditor7setupUiEP7QWidget" data-ref-filename="_ZN17Ui_vlessOutEditor7setupUiEP7QWidget">setupUi</a>(<b>this</b>);</td></tr>
+<tr><th id="6">6</th><td>    <span class='member fn' title='QObject::setProperty' data-ref="_ZN7QObject11setPropertyEPKcRK8QVariant" data-ref-filename="_ZN7QObject11setPropertyEPKcRK8QVariant">setProperty</span>(<q>"QV2RAY_INTERNAL_HAS_STREAMSETTINGS"</q>, <span class='ref fn fake' title='QVariant::QVariant' data-ref="_ZN8QVariantC1Eb" data-ref-filename="_ZN8QVariantC1Eb"></span><b>true</b>);</td></tr>
+<tr><th id="7">7</th><td>    <span class='member fn' title='QObject::setProperty' data-ref="_ZN7QObject11setPropertyEPKcRK8QVariant" data-ref-filename="_ZN7QObject11setPropertyEPKcRK8QVariant">setProperty</span>(<q>"QV2RAY_INTERNAL_HAS_FORWARD_PROXY"</q>, <span class='ref fn fake' title='QVariant::QVariant' data-ref="_ZN8QVariantC1Eb" data-ref-filename="_ZN8QVariantC1Eb"></span><b>true</b>);</td></tr>
+<tr><th id="8">8</th><td>}</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><em>void</em> <a class="type" href="vless.hpp.html#VlessOutboundEditor" title='VlessOutboundEditor' data-ref="VlessOutboundEditor" data-ref-filename="VlessOutboundEditor">VlessOutboundEditor</a>::<dfn class="virtual decl def fn" id="_ZN19VlessOutboundEditor11changeEventEP6QEvent" title='VlessOutboundEditor::changeEvent' data-ref="_ZN19VlessOutboundEditor11changeEventEP6QEvent" data-ref-filename="_ZN19VlessOutboundEditor11changeEventEP6QEvent">changeEvent</dfn>(<span class='type' title='QEvent' data-ref="QEvent" data-ref-filename="QEvent">QEvent</span> *<dfn class="local col2 decl" id="2e" title='e' data-type='QEvent *' data-ref="2e" data-ref-filename="2e">e</dfn>)</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    <span class='type' title='QWidget' data-ref="QWidget" data-ref-filename="QWidget">QWidget</span>::<span class='virtual member fn' title='QWidget::changeEvent' data-ref="_ZN7QWidget11changeEventEP6QEvent" data-ref-filename="_ZN7QWidget11changeEventEP6QEvent">changeEvent</span>(<a class="local col2 ref" href="#2e" title='e' data-ref="2e" data-ref-filename="2e">e</a>);</td></tr>
+<tr><th id="13">13</th><td>    <b>switch</b> (<a class="local col2 ref" href="#2e" title='e' data-ref="2e" data-ref-filename="2e">e</a>-&gt;<span class='ref fn' title='QEvent::type' data-ref="_ZNK6QEvent4typeEv" data-ref-filename="_ZNK6QEvent4typeEv">type</span>())</td></tr>
+<tr><th id="14">14</th><td>    {</td></tr>
+<tr><th id="15">15</th><td>        <b>case</b> <span class='type' title='QEvent' data-ref="QEvent" data-ref-filename="QEvent">QEvent</span>::<span class='enum' title='QEvent::LanguageChange' data-ref="QEvent::LanguageChange" data-ref-filename="QEvent..LanguageChange">LanguageChange</span>: <a class="member fn" href="/QvPlugin-BuiltinProtocolSupport_autogen/include/ui_vless.h.html#_ZN17Ui_vlessOutEditor13retranslateUiEP7QWidget" title='Ui_vlessOutEditor::retranslateUi' data-ref="_ZN17Ui_vlessOutEditor13retranslateUiEP7QWidget" data-ref-filename="_ZN17Ui_vlessOutEditor13retranslateUiEP7QWidget">retranslateUi</a>(<b>this</b>); <b>break</b>;</td></tr>
+<tr><th id="16">16</th><td>        <b>default</b>: <b>break</b>;</td></tr>
+<tr><th id="17">17</th><td>    }</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

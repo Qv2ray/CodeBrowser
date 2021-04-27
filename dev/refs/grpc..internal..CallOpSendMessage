@@ -1,0 +1,29 @@
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='140'/>
+<def f='include/grpcpp/impl/codegen/call.h' l='266' ll='295'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='306'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='289'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='460'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='634'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='792'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='949'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1124'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='186'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='296'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='250' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='321' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='492' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='73' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='116' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<size>16</size>
+<fun r='_ZN4grpc8internal17CallOpSendMessageC1Ev'/>
+<fun r='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_NS_12WriteOptionsE'/>
+<fun r='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_'/>
+<fun r='_ZN4grpc8internal17CallOpSendMessage5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal17CallOpSendMessage8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpSendMessage::send_buf_' o='0' t='grpc::ByteBuffer'/>
+<mbr r='grpc::internal::CallOpSendMessage::write_options_' o='64' t='grpc::WriteOptions'/>
+<fun r='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_NS_12WriteOptionsE'/>
+<fun r='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='56' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='63' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<size>16</size>

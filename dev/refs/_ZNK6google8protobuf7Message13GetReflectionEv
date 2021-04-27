@@ -1,0 +1,8 @@
+<def f='include/google/protobuf/message.h' l='345' ll='347' type='const google::protobuf::Message::Reflection * google::protobuf::Message::GetReflection() const'/>
+<doc f='include/google/protobuf/message.h' l='338'>// Get a non-owning pointer to the Reflection interface for this Message,
+  // which can be used to read and modify the fields of the Message dynamically
+  // (in other words, without knowing the message type at compile time).  This
+  // object remains property of the Message.
+  //
+  // This method remains virtual in case a subclass does not implement
+  // reflection and wants to override the default behavior.</doc>

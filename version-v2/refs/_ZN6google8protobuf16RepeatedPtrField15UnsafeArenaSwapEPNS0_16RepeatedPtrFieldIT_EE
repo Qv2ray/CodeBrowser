@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/repeated_field.h' l='825' type='void google::protobuf::RepeatedPtrField::UnsafeArenaSwap(RepeatedPtrField&lt;T&gt; * other)'/>
+<def f='include/google/protobuf/repeated_field.h' l='2124' ll='2130' type='void google::protobuf::RepeatedPtrField::UnsafeArenaSwap(RepeatedPtrField&lt;T&gt; * other)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='821'>// Swap entire contents with &quot;other&quot;. Caller should guarantee that either both
+  // fields are on the same arena or both are on the heap. Swapping between
+  // different arenas with this function is disallowed and is caught via
+  // GOOGLE_DCHECK.</doc>

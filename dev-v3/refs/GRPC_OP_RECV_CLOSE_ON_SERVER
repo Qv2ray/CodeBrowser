@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='531' type='7'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='526'>/** Receive close on the server: one and only one must be made on the
+      server. This op completes after the close has been received by the
+      server. This operation always succeeds, meaning ops paired with
+      this operation will also appear to succeed, even though they may not
+      have. */</doc>

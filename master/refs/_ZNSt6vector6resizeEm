@@ -1,0 +1,34 @@
+<def f='include/c++/10/bits/stl_vector.h' l='936' ll='943' type='void std::vector::resize(std::vector::size_type __new_size)'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='927'>/**
+       *  @brief  Resizes the %vector to the specified number of elements.
+       *  @param  __new_size  Number of elements the %vector should contain.
+       *
+       *  This function will %resize the %vector to the specified
+       *  number of elements.  If the number is smaller than the
+       *  %vector&apos;s current size the %vector is truncated, otherwise
+       *  default constructed elements are appended.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='52' u='c' c='_ZN5ZXing13GenericGFPoly12Coefficients6resizeEm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='46' u='c' c='_ZN5ZXingL8MakeCopyEPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='130' u='c' c='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='145' u='c' c='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='42' u='c' c='_ZN5ZXingL6AddMagERKSt6vectorImSaImEES4_RS2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='82' u='c' c='_ZN5ZXingL6SubMagERKSt6vectorImSaImEES4_RS2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='281' u='c' c='_ZN5ZXingL19DivideWithRemainderERKSt6vectorImSaImEES4_RS2_S5_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.cpp' l='38' u='c' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='41' u='c' c='_ZN5ZXing6Pdf41715DetectionResult4initERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='38' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumnC1ERKNS0_11BoundingBoxENS1_12RowIndicatorE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='261' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn13getRowHeightsERSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='96' u='c' c='_ZN5ZXing6Pdf41713BarcodeMatrix4initEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='122' u='c' c='_ZN5ZXing6Pdf41713BarcodeMatrix15getScaledMatrixEiiRSt6vectorIS2_IbSaIbEESaIS4_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='41' u='c' c='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='328' u='c' c='_ZN5ZXing6Pdf417L19CreateBarcodeMatrixERNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='437' u='c' c='_ZN5ZXing6Pdf417L18FindErrorLocationsERKNS0_11ModulusPolyERSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='44' u='c' c='_ZN5ZXing6Pdf417L11RotateArrayERKSt6vectorIS1_IbSaIbEESaIS3_EERS5_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='46' u='c' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='389' u='c' c='_ZN5ZXing6QRCodeL15GenerateECBytesERKNS_9ByteArrayEiRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextDecoder.cpp' l='3438' u='c' c='_ZN13GBTextDecoder13AppendGB18030ERSt6vectorItSaItEEPKhm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextDecoder.cpp' l='3520' u='c' c='_ZN13GBTextDecoder13AppendGB18030ERSt6vectorItSaItEEPKhm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextDecoder.cpp' l='3530' u='c' c='_ZN13GBTextDecoder12AppendGB2312ERSt6vectorItSaItEEPKhm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextDecoder.cpp' l='3575' u='c' c='_ZN13GBTextDecoder12AppendGB2312ERSt6vectorItSaItEEPKhm'/>
+<use f='qv2ray/test/catch.hpp' l='8856' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>

@@ -1,0 +1,20 @@
+<def f='include/google/protobuf/descriptor.h' l='138' ll='149'/>
+<use f='include/google/protobuf/descriptor.h' l='417' c='_ZNK6google8protobuf10Descriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='717' c='_ZNK6google8protobuf15FieldDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='847' c='_ZNK6google8protobuf15OneofDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='972' c='_ZNK6google8protobuf14EnumDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='1080' c='_ZNK6google8protobuf19EnumValueDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='1160' c='_ZNK6google8protobuf17ServiceDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='1244' c='_ZNK6google8protobuf16MethodDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='1404' c='_ZNK6google8protobuf14FileDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<use f='include/google/protobuf/descriptor.h' l='1412' c='_ZNK6google8protobuf14FileDescriptor17GetSourceLocationERKSt6vectorIiSaIiEEPNS0_14SourceLocationE'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='49'/>
+<size>104</size>
+<doc f='include/google/protobuf/descriptor.h' l='137'>// NB, all indices are zero-based.</doc>
+<mbr r='google::protobuf::SourceLocation::start_line' o='0' t='int'/>
+<mbr r='google::protobuf::SourceLocation::end_line' o='32' t='int'/>
+<mbr r='google::protobuf::SourceLocation::start_column' o='64' t='int'/>
+<mbr r='google::protobuf::SourceLocation::end_column' o='96' t='int'/>
+<mbr r='google::protobuf::SourceLocation::leading_comments' o='128' t='std::string'/>
+<mbr r='google::protobuf::SourceLocation::trailing_comments' o='384' t='std::string'/>
+<mbr r='google::protobuf::SourceLocation::leading_detached_comments' o='640' t='std::vector&lt;string&gt;'/>

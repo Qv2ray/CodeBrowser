@@ -1,0 +1,15 @@
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='798'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='866'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='926'/>
+<inh f='include/grpcpp/impl/codegen/rpc_service_method.h' l='39' c='grpc::internal::MethodHandler'/>
+<def f='include/grpcpp/impl/codegen/method_handler_impl.h' l='195' ll='232'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='236'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='244' c='_ZN4grpc8internal20BidiStreamingHandlerC1ESt8functionIFNS_6StatusEPT_PNS_13ServerContextEPNS_18ServerReaderWriterIT1_T0_EEEES5_'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='251'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='258' c='_ZN4grpc8internal20StreamedUnaryHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPNS_19ServerUnaryStreamerIT_T0_EEEE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='264'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='271' c='_ZN4grpc8internal27SplitServerStreamingHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPNS_19ServerSplitStreamerIT_T0_EEEE'/>
+<fun r='_ZN4grpc8internal29TemplatedBidiStreamingHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPT_EE'/>
+<fun r='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<mbr r='grpc::internal::TemplatedBidiStreamingHandler::func_' t='std::function&lt;Status (ServerContext *, Streamer *)&gt;'/>
+<mbr r='grpc::internal::TemplatedBidiStreamingHandler::write_needed_' t='const bool'/>

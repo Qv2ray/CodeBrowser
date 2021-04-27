@@ -1,0 +1,53 @@
+<inh f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Style.hpp' l='5' c='QtNodes::Style'/>
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeStyle.hpp' l='8' ll='40'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='73' c='_ZNK7QtNodes13NodeDataModel9nodeStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='74' c='_ZN7QtNodes13NodeDataModel12setNodeStyleERKNS_9NodeStyleE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='124'/>
+<size>232</size>
+<fun r='_ZN7QtNodes9NodeStyleC1Ev'/>
+<fun r='_ZN7QtNodes9NodeStyleC1E7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle12setNodeStyleE7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle12loadJsonTextE7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle12loadJsonFileE7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<mbr r='QtNodes::NodeStyle::NormalBoundaryColor' o='64' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::SelectedBoundaryColor' o='192' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::GradientColor0' o='320' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::GradientColor1' o='448' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::GradientColor2' o='576' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::GradientColor3' o='704' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::ShadowColor' o='832' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::FontColor' o='960' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::FontColorFaded' o='1088' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::ConnectionPointColor' o='1216' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::FilledConnectionPointColor' o='1344' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::WarningColor' o='1472' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::ErrorColor' o='1600' t='QColor'/>
+<mbr r='QtNodes::NodeStyle::PenWidth' o='1728' t='float'/>
+<mbr r='QtNodes::NodeStyle::HoveredPenWidth' o='1760' t='float'/>
+<mbr r='QtNodes::NodeStyle::ConnectionPointDiameter' o='1792' t='float'/>
+<mbr r='QtNodes::NodeStyle::Opacity' o='1824' t='float'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='10' c='_ZN7QtNodes15StyleCollection9nodeStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='15' c='_ZN7QtNodes15StyleCollection12setNodeStyleENS_9NodeStyleE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='26'/>
+<size>232</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='30' c='_ZNK7QtNodes13NodeDataModel9nodeStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='34' c='_ZN7QtNodes13NodeDataModel12setNodeStyleERKNS_9NodeStyleE'/>
+<size>232</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='44' c='_ZN7QtNodes11NodePainter12drawNodeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='70' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='124' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='154' c='_ZN7QtNodes11NodePainter13drawModelNameEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='220' c='_ZN7QtNodes11NodePainter18drawValidationRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<size>232</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='32' c='_ZN7QtNodes9NodeStyle12setNodeStyleE7QString'/>
+<size>232</size>
+<fun r='_ZN7QtNodes9NodeStyleC1Ev'/>
+<fun r='_ZN7QtNodes9NodeStyleC1E7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle12setNodeStyleE7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle12loadJsonFileE7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle12loadJsonTextE7QString'/>
+<fun r='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.cpp' l='6' c='_ZN7QtNodes15StyleCollection9nodeStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.cpp' l='18' c='_ZN7QtNodes15StyleCollection12setNodeStyleENS_9NodeStyleE'/>
+<size>232</size>

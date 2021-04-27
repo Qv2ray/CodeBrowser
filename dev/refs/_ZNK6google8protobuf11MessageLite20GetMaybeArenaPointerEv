@@ -1,0 +1,38 @@
+<def f='include/google/protobuf/message_lite.h' l='198' type='void * google::protobuf::MessageLite::GetMaybeArenaPointer() const'/>
+<use f='include/google/protobuf/repeated_field.h' l='692' u='c' c='_ZN6google8protobuf8internal18GenericTypeHandler20GetMaybeArenaPointerEPT_'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='341' c='_ZNK6google8protobuf17FileDescriptorSet20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='473' c='_ZNK6google8protobuf19FileDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='810' c='_ZNK6google8protobuf30DescriptorProto_ExtensionRange20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='967' c='_ZNK6google8protobuf29DescriptorProto_ReservedRange20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1106' c='_ZNK6google8protobuf15DescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1387' c='_ZNK6google8protobuf21ExtensionRangeOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1522' c='_ZNK6google8protobuf20FieldDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1920' c='_ZNK6google8protobuf20OneofDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2084' c='_ZNK6google8protobuf37EnumDescriptorProto_EnumReservedRange20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2223' c='_ZNK6google8protobuf19EnumDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2438' c='_ZNK6google8protobuf24EnumValueDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2612' c='_ZNK6google8protobuf22ServiceDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2789' c='_ZNK6google8protobuf21MethodDescriptorProto20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3027' c='_ZNK6google8protobuf11FileOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3560' c='_ZNK6google8protobuf14MessageOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3735' c='_ZNK6google8protobuf12FieldOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3986' c='_ZNK6google8protobuf12OneofOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4121' c='_ZNK6google8protobuf11EnumOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4276' c='_ZNK6google8protobuf16EnumValueOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4421' c='_ZNK6google8protobuf14ServiceOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4566' c='_ZNK6google8protobuf13MethodOptions20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4749' c='_ZNK6google8protobuf28UninterpretedOption_NamePart20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4908' c='_ZNK6google8protobuf19UninterpretedOption20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5153' c='_ZNK6google8protobuf23SourceCodeInfo_Location20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5377' c='_ZNK6google8protobuf14SourceCodeInfo20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5511' c='_ZNK6google8protobuf28GeneratedCodeInfo_Annotation20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5691' c='_ZNK6google8protobuf17GeneratedCodeInfo20GetMaybeArenaPointerEv'/>
+<doc f='include/google/protobuf/message_lite.h' l='189'>// Get a pointer that may be equal to this message&apos;s arena, or may not be.
+  // If the value returned by this method is equal to some arena pointer, then
+  // this message is on that arena; however, if this message is on some arena,
+  // this method may or may not return that arena&apos;s pointer. As a tradeoff,
+  // this method may be more efficient than GetArena(). The intent is to allow
+  // underlying representations that use e.g. tagged pointers to sometimes
+  // store the arena pointer directly, and sometimes in a more indirect way,
+  // and allow a fastpath comparison against the arena pointer when it&apos;s easy
+  // to obtain.</doc>

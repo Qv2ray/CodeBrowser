@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='81' type='bool ZXing::Pdf417::DetectionResultColumn::getBarcodeMetadata(ZXing::Pdf417::BarcodeMetadata &amp; result)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='81'>// not const, since it modifies object&apos;s state</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='256' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn13getRowHeightsERSt6vectorIiSaIiEE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='277' ll='324' type='bool ZXing::Pdf417::DetectionResultColumn::getBarcodeMetadata(ZXing::Pdf417::BarcodeMetadata &amp; result)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='276'>// This is example of bad design, a getter should not modify object&apos;s state</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='200' u='c' c='_ZN5ZXing6Pdf417L18GetBarcodeMetadataERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='201' u='c' c='_ZN5ZXing6Pdf417L18GetBarcodeMetadataERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='205' u='c' c='_ZN5ZXing6Pdf417L18GetBarcodeMetadataERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15BarcodeMetadataE'/>

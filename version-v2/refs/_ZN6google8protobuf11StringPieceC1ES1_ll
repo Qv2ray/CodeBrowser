@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/stubs/stringpiece.h' l='237' type='void google::protobuf::StringPiece::StringPiece(google::protobuf::StringPiece x, google::protobuf::stringpiece_ssize_type pos, google::protobuf::stringpiece_ssize_type len)'/>
+<doc f='include/google/protobuf/stubs/stringpiece.h' l='234'>// Substring of another StringPiece.
+  // pos must be non-negative and &lt;= x.length().
+  // len must be non-negative and will be pinned to at most x.length() - pos.</doc>

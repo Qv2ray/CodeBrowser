@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.h' l='34' type='0'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.h' l='53'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.cpp' l='70' u='r' c='_ZN5ZXingL17ParseFormatStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.cpp' l='89' u='r' c='_ZN5ZXing24BarcodeFormatsFromStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.h' l='31'>// The values are an implementation detail. The c++ use-case (ZXing::Flags) could have been designed such that it
+	// would not have been necessary to explicitly set the values to single bit constants. This has been done to ease
+	// the interoperability with C-like interfaces, the python and the Qt wrapper.</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.h' l='34'>///&lt; Used as a return value if no valid barcode has been detected</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='52' u='r'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='120' u='r' c='_ZNK5ZXing11DecodeHints11hasNoFormatEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='105'/>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='void *'/>
+<offset>6656</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='112' u='w' c='uv__platform_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='125' u='r' c='uv__io_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='101' u='w' c='uv__inotify_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='154' u='a' c='find_watcher'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='161' u='a' c='maybe_free_watcher_list'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='292' u='a' c='uv_fs_event_start'/>

@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/message.h' l='428' type='google::protobuf::UnknownFieldSet * google::protobuf::Reflection::MutableUnknownFields(google::protobuf::Message * message) const'/>
+<doc f='include/google/protobuf/message.h' l='423'>// Get a mutable pointer to the UnknownFieldSet for the message.  This
+  // contains fields which were seen when the Message was parsed but were not
+  // recognized according to the Message&apos;s definition. For proto3 protos, this
+  // method will return a valid mutable UnknownFieldSet pointer but modifying
+  // it won&apos;t affect the serialized bytes of the message.</doc>

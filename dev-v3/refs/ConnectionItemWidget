@@ -1,0 +1,94 @@
+<inh f='/qv2ray_autogen/include/ui_ConnectionItemWidget.h' l='153' c='Ui::ConnectionWidget'/>
+<def f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='8' ll='54'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='36' c='_ZN20ConnectionItemWidget18RequestWidgetFocusEPKS_'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='120' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='123' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='199' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='199' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='215'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='255' c='_ZN20ConnectionItemWidget18RequestWidgetFocusEPKS_'/>
+<size>232</size>
+<smbr r='ConnectionItemWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK20ConnectionItemWidget10metaObjectEv'/>
+<fun r='_ZN20ConnectionItemWidget11qt_metacastEPKc'/>
+<fun r='_ZN20ConnectionItemWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20ConnectionItemWidget2trEPKcS1_i'/>
+<fun r='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base19ConnectionGroupPairEP7QWidget'/>
+<fun r='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEEP7QWidget'/>
+<fun r='_ZN20ConnectionItemWidget15BeginConnectionEv'/>
+<fun r='_ZN20ConnectionItemWidgetD1Ev'/>
+<fun r='_ZN20ConnectionItemWidget11BeginRenameEv'/>
+<fun r='_ZN20ConnectionItemWidget12CancelRenameEv'/>
+<fun r='_ZNK20ConnectionItemWidget11NameMatchedERK7QString'/>
+<fun r='_ZNK20ConnectionItemWidget10IdentifierEv'/>
+<fun r='_ZNK20ConnectionItemWidget10IsRenamingEv'/>
+<fun r='_ZNK20ConnectionItemWidget12IsConnectionEv'/>
+<fun r='_ZN20ConnectionItemWidget18RequestWidgetFocusEPKS_'/>
+<fun r='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionItemWidget24OnConnectionStatsArrivedERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<fun r='_ZN20ConnectionItemWidget18OnLatencyTestStartERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionItemWidget20OnConnectionModifiedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionItemWidget21OnLatencyTestFinishedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEEi'/>
+<fun r='_ZN20ConnectionItemWidget27RecalculateConnectionsCountEv'/>
+<fun r='_ZN20ConnectionItemWidget23OnConnectionItemRenamedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEERK7QStringS9_'/>
+<fun r='_ZN20ConnectionItemWidget18OnGroupItemRenamedERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEERK7QStringS9_'/>
+<fun r='_ZN20ConnectionItemWidget22on_doRenameBtn_clickedEv'/>
+<fun r='_ZN20ConnectionItemWidgetC1EP7QWidget'/>
+<mbr r='ConnectionItemWidget::originalItemName' o='1280' t='QString'/>
+<mbr r='ConnectionItemWidget::connectionId' o='1472' t='Qv2ray::base::ConnectionId'/>
+<mbr r='ConnectionItemWidget::groupId' o='1664' t='Qv2ray::base::GroupId'/>
+<fun r='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='ConnectionItemWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK20ConnectionItemWidget10metaObjectEv'/>
+<fun r='_ZN20ConnectionItemWidget11qt_metacastEPKc'/>
+<fun r='_ZN20ConnectionItemWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20ConnectionItemWidget18RequestWidgetFocusEPKS_'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='77' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper6FilterERK7QString'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='101' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper17addConnectionItemERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='122' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper12addGroupItemERKNS_4base6IDTypeINS4_9__GroupIdEEE'/>
+<size>232</size>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='21' c='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base19ConnectionGroupPairEP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='54' c='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEEP7QWidget'/>
+<size>232</size>
+<fun r='_ZN20ConnectionItemWidgetC1EP7QWidget'/>
+<fun r='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base19ConnectionGroupPairEP7QWidget'/>
+<fun r='_ZN20ConnectionItemWidgetC1ERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEEP7QWidget'/>
+<fun r='_ZN20ConnectionItemWidget15BeginConnectionEv'/>
+<fun r='_ZNK20ConnectionItemWidget11NameMatchedERK7QString'/>
+<fun r='_ZN20ConnectionItemWidget27RecalculateConnectionsCountEv'/>
+<fun r='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionItemWidget24OnConnectionStatsArrivedERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<fun r='_ZN20ConnectionItemWidget20OnConnectionModifiedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionItemWidget18OnLatencyTestStartERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionItemWidget21OnLatencyTestFinishedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEEi'/>
+<fun r='_ZN20ConnectionItemWidget12CancelRenameEv'/>
+<fun r='_ZN20ConnectionItemWidget11BeginRenameEv'/>
+<fun r='_ZN20ConnectionItemWidgetD1Ev'/>
+<fun r='_ZN20ConnectionItemWidget22on_doRenameBtn_clickedEv'/>
+<fun r='_ZN20ConnectionItemWidget23OnConnectionItemRenamedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEERK7QStringS9_'/>
+<fun r='_ZN20ConnectionItemWidget18OnGroupItemRenamedERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEERK7QStringS9_'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow15keyReleaseEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow12Action_StartEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow48on_connectionTreeView_customContextMenuRequestedERK6QPoint'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow48on_connectionTreeView_customContextMenuRequestedERK6QPoint'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow24Action_DeleteConnectionsEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow18Action_EditComplexEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow23Action_RenameConnectionEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow26Action_DuplicateConnectionEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow11Action_EditEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow15Action_EditJsonEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow24Action_SetAutoConnectionEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow17Action_ResetStatsEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow25Action_UpdateSubscriptionEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow18Action_TestLatencyEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow22Action_TestRealLatencyEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow27on_newConnectionBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow34on_newComplexConnectionBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow35on_connectionTreeView_doubleClickedERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='30' c='_ZN10MainWindow29on_connectionTreeView_clickedERK11QModelIndex'/>
+<size>232</size>

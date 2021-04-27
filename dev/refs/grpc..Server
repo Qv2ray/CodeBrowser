@@ -1,0 +1,55 @@
+<use f='include/grpcpp/impl/codegen/server_context.h' l='245'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='183'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1102'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='41'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='75'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='76'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='271'/>
+<use f='include/grpcpp/security/server_credentials.h' l='45'/>
+<inh f='include/grpcpp/impl/codegen/server_interface.h' l='48' c='grpc::ServerInterface'/>
+<inh f='include/grpcpp/impl/codegen/grpc_library.h' l='38' c='grpc::GrpcLibraryCodegen'/>
+<def f='include/grpcpp/server.h' l='53' ll='254'/>
+<use f='include/grpcpp/server.h' l='79' c='_ZN4grpc6Server15GlobalCallbacks14PreServerStartEPS0_'/>
+<use f='include/grpcpp/server.h' l='81' c='_ZN4grpc6Server15GlobalCallbacks7AddPortEPS0_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_17ServerCredentialsEi'/>
+<use f='include/grpcpp/server.h' l='108' c='_ZN4grpc6Server17experimental_typeC1EPS0_'/>
+<use f='include/grpcpp/server.h' l='119'/>
+<use f='include/grpcpp/server_builder.h' l='68' c='_ZN4grpc13ServerBuilder13BuildAndStartEv'/>
+<use f='include/grpcpp/server_posix.h' l='36' c='_ZN4grpc24AddInsecureChannelFromFdEPNS_6ServerEi'/>
+<size>248</size>
+<doc f='include/grpcpp/server.h' l='49'>/// Represents a gRPC server.
+///
+/// Use a \a grpc::ServerBuilder to create, configure, and start
+/// \a Server instances.</doc>
+<fun r='_ZN4grpc6ServerD1Ev'/>
+<fun r='_ZN4grpc6Server4WaitEv'/>
+<fun r='_ZN4grpc6Server18SetGlobalCallbacksEPNS0_15GlobalCallbacksE'/>
+<fun r='_ZN4grpc6Server8c_serverEv'/>
+<fun r='_ZNK4grpc6Server21GetHealthCheckServiceEv'/>
+<fun r='_ZN4grpc6Server16InProcessChannelERKNS_16ChannelArgumentsE'/>
+<fun r='_ZN4grpc6Server12experimentalEv'/>
+<fun r='_ZN4grpc6Server15RegisterServiceEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<fun r='_ZN4grpc6Server16AddListeningPortERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_17ServerCredentialsE'/>
+<fun r='_ZN4grpc6ServerC1EiPNS_16ChannelArgumentsESt10shared_ptrISt6vectorISt10unique_ptrINS_21ServerCompletionQueueESt14default_deleteIS6_EESaIS9_EEEiiiP19grpc_resource_quota'/>
+<fun r='_ZN4grpc6Server5StartEPPNS_21ServerCompletionQueueEm'/>
+<fun r='_ZN4grpc6Server6serverEv'/>
+<fun r='_ZN4grpc6Server27RegisterAsyncGenericServiceEPNS_19AsyncGenericServiceE'/>
+<fun r='_ZN4grpc6Server16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<fun r='_ZN4grpc6Server16ShutdownInternalE12gpr_timespec'/>
+<fun r='_ZNK4grpc6Server24max_receive_message_sizeEv'/>
+<fun r='_ZN4grpc6Server11initializerEv'/>
+<mbr r='grpc::Server::max_receive_message_size_' o='160' t='const int'/>
+<mbr r='grpc::Server::sync_server_cqs_' o='192' t='std::shared_ptr&lt;std::vector&lt;std::unique_ptr&lt;ServerCompletionQueue&gt;&gt;&gt;'/>
+<mbr r='grpc::Server::sync_req_mgrs_' o='320' t='std::vector&lt;std::unique_ptr&lt;SyncRequestThreadManager&gt;&gt;'/>
+<mbr r='grpc::Server::mu_' o='512' t='std::mutex'/>
+<mbr r='grpc::Server::started_' o='832' t='bool'/>
+<mbr r='grpc::Server::shutdown_' o='840' t='bool'/>
+<mbr r='grpc::Server::shutdown_notified_' o='848' t='bool'/>
+<mbr r='grpc::Server::shutdown_cv_' o='896' t='std::condition_variable'/>
+<mbr r='grpc::Server::global_callbacks_' o='1280' t='std::shared_ptr&lt;GlobalCallbacks&gt;'/>
+<mbr r='grpc::Server::services_' o='1408' t='std::vector&lt;grpc::string&gt;'/>
+<mbr r='grpc::Server::has_generic_service_' o='1600' t='bool'/>
+<mbr r='grpc::Server::server_' o='1664' t='grpc_server *'/>
+<mbr r='grpc::Server::server_initializer_' o='1728' t='std::unique_ptr&lt;ServerInitializer&gt;'/>
+<mbr r='grpc::Server::health_check_service_' o='1792' t='std::unique_ptr&lt;HealthCheckServiceInterface&gt;'/>
+<mbr r='grpc::Server::health_check_service_disabled_' o='1856' t='bool'/>
+<mbr r='grpc::Server::resource_exhausted_handler_' o='1920' t='std::unique_ptr&lt;internal::MethodHandler&gt;'/>

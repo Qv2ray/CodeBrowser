@@ -1,0 +1,28 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='79' type='void grpc::internal::ClientAsyncStreamingInterface::Finish(grpc::Status * status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='52'>/// Indicate that the stream is to be finished and request notification for
+  /// when the call has been ended.
+  /// Should not be used concurrently with other operations.
+  ///
+  /// It is appropriate to call this method when both:
+  ///   * the client side has no more message to send
+  ///     (this can be declared implicitly by calling this method, or
+  ///     explicitly through an earlier call to the &lt;i&gt;WritesDone&lt;/i&gt; method
+  ///     of the class in use, e.g. \a ClientAsyncWriterInterface::WritesDone or
+  ///     \a ClientAsyncReaderWriterInterface::WritesDone).
+  ///   * there are no more messages to be received from the server (this can
+  ///     be known implicitly by the calling code, or explicitly from an
+  ///     earlier call to \a AsyncReaderInterface::Read that yielded a failed
+  ///     result, e.g. cq-&gt;Next(&amp;read_tag, &amp;ok) filled in &apos;ok&apos; with &apos;false&apos;).
+  ///
+  /// The tag will be returned when either:
+  /// - all incoming messages have been read and the server has returned
+  ///   a status.
+  /// - the server has returned a non-OK status.
+  /// - the call failed for some reason and the library generated a
+  ///   status.
+  ///
+  /// Note that implementations of this method attempt to receive initial
+  /// metadata from the server if initial metadata hasn&apos;t yet been received.
+  ///
+  /// \param[in] tag Tag identifying this request.
+  /// \param[out] status To be updated with the operation status.</doc>

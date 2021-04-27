@@ -1,0 +1,27 @@
+<def f='include/c++/10/bits/stl_vector.h' l='625' ll='631' type='void std::vector::vector&lt;_Tp, _Alloc&gt;(initializer_list&lt;std::vector::value_type&gt; __l, const std::vector::allocator_type &amp; __a = std::vector::allocator_type())'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='614'>/**
+       *  @brief  Builds a %vector from an initializer list.
+       *  @param  __l  An initializer_list.
+       *  @param  __a  An allocator.
+       *
+       *  Create a %vector consisting of copies of the elements in the
+       *  initializer_list @a __l.
+       *
+       *  This will call the element type&apos;s copy constructor N times
+       *  (where N is @a __l.size()) and do no memory reallocation.
+       */</doc>
+<use f='include/c++/10/bits/regex.h' l='2820' u='c' c='_ZNSt7__cxx1120regex_token_iteratorC1ET_S1_RKNS_11basic_regexIT0_T1_EESt16initializer_listIiENSt15regex_constants15match_flag_typeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ByteArray.h' l='30' u='c' c='_ZN5ZXing9ByteArrayC1ESt16initializer_listIhE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='30' u='c' c='_ZN5ZXing18ReedSolomonEncoderC1ERKNS_9GenericGFE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='40' u='c' c='_ZN5ZXing18ReedSolomonEncoder14buildGeneratorEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='390' u='c' c='_ZN5ZXingL15ParseFromStringERKT_RSt6vectorImSaImEERb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='391' u='c' c='_ZN5ZXingL15ParseFromStringERKT_RSt6vectorImSaImEERb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='541' u='c' c='_ZN5ZXing10BigInteger6DivideERKS0_S2_RS0_S3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='606' u='c' c='_ZNK5ZXing10BigInteger8toStringB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='41' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='43' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='26' u='c' c='_ZN5ZXing6Pdf4179ModulusGFC1Eii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='27' u='c' c='_ZN5ZXing6Pdf4179ModulusGFC1Eii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='500' u='c' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='300' u='c' c='_ZN5ZXing6QRCode7VersionC1EiSt16initializer_listIiERKSt5arrayINS0_8ECBlocksELm4EE'/>
+<use f='qv2ray/test/catch.hpp' l='9393' u='c' c='_ZNK5Catch5clara6detail3Opt14getHelpColumnsEv'/>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message.h' l='232' type='void google::protobuf::Message::FindInitializationErrors(std::vector&lt;string&gt; * errors) const'/>
+<doc f='include/google/protobuf/message.h' l='228'>// Slowly build a list of all required fields that are not set.
+  // This is much, much slower than IsInitialized() as it is implemented
+  // purely via reflection.  Generally, you should not call this unless you
+  // have already determined that an error exists by calling IsInitialized().</doc>

@@ -1,0 +1,3 @@
+<dec f='include/grpc/slice_buffer.h' l='51' type='uint8_t * grpc_slice_buffer_tiny_add(grpc_slice_buffer * sb, size_t len)'/>
+<doc f='include/grpc/slice_buffer.h' l='49'>/** add a very small (less than 8 bytes) amount of data to the end of a slice
+   buffer: returns a pointer into which to add the data */</doc>

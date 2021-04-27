@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JsonHighlighter.hpp source code [qv2ray/src/ui/common/JsonHighlighter.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Qv2ray::ui::JsonHighlightingRule,Qv2ray::ui::vCoreConfigJsonHighlighter "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/common/JsonHighlighter.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>ui</a>/<a href='./'>common</a>/<a href='JsonHighlighter.hpp.html'>JsonHighlighter.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include &lt;QObject&gt;</u></td></tr>
+<tr><th id="4">4</th><td><u>#include &lt;QRegularExpression&gt;</u></td></tr>
+<tr><th id="5">5</th><td><u>#include &lt;QStringList&gt;</u></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QSyntaxHighlighter&gt;</u></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;QVector&gt;</u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">ui</span></td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td>    <b>struct</b> <dfn class="type def" id="Qv2ray::ui::JsonHighlightingRule" title='Qv2ray::ui::JsonHighlightingRule' data-ref="Qv2ray::ui::JsonHighlightingRule" data-ref-filename="Qv2ray..ui..JsonHighlightingRule">JsonHighlightingRule</dfn></td></tr>
+<tr><th id="12">12</th><td>    {</td></tr>
+<tr><th id="13">13</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::ui::JsonHighlightingRule::name" title='Qv2ray::ui::JsonHighlightingRule::name' data-ref="Qv2ray::ui::JsonHighlightingRule::name" data-ref-filename="Qv2ray..ui..JsonHighlightingRule..name">name</dfn>;</td></tr>
+<tr><th id="14">14</th><td>        <span class='type' title='QRegularExpression' data-ref="QRegularExpression" data-ref-filename="QRegularExpression">QRegularExpression</span> <dfn class="decl field" id="Qv2ray::ui::JsonHighlightingRule::pattern" title='Qv2ray::ui::JsonHighlightingRule::pattern' data-ref="Qv2ray::ui::JsonHighlightingRule::pattern" data-ref-filename="Qv2ray..ui..JsonHighlightingRule..pattern">pattern</dfn>;</td></tr>
+<tr><th id="15">15</th><td>        <span class='type' title='QTextCharFormat' data-ref="QTextCharFormat" data-ref-filename="QTextCharFormat">QTextCharFormat</span> <dfn class="decl field" id="Qv2ray::ui::JsonHighlightingRule::format" title='Qv2ray::ui::JsonHighlightingRule::format' data-ref="Qv2ray::ui::JsonHighlightingRule::format" data-ref-filename="Qv2ray..ui..JsonHighlightingRule..format">format</dfn>;</td></tr>
+<tr><th id="16">16</th><td>    };</td></tr>
+<tr><th id="17">17</th><td>    <b>class</b> <dfn class="type def" id="Qv2ray::ui::vCoreConfigJsonHighlighter" title='Qv2ray::ui::vCoreConfigJsonHighlighter' data-ref="Qv2ray::ui::vCoreConfigJsonHighlighter" data-ref-filename="Qv2ray..ui..vCoreConfigJsonHighlighter">vCoreConfigJsonHighlighter</dfn> : <b>public</b> <span class='type' title='QSyntaxHighlighter' data-ref="QSyntaxHighlighter" data-ref-filename="QSyntaxHighlighter">QSyntaxHighlighter</span></td></tr>
+<tr><th id="18">18</th><td>    {</td></tr>
+<tr><th id="19">19</th><td>        <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } __attribute__ ((__deprecated__)) static inline QString trUtf8(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="20">20</th><td>      <b>public</b>:</td></tr>
+<tr><th id="21">21</th><td>        <dfn class="decl fn" id="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighterC1EP13QTextDocument" title='Qv2ray::ui::vCoreConfigJsonHighlighter::vCoreConfigJsonHighlighter' data-ref="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighterC1EP13QTextDocument" data-ref-filename="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighterC1EP13QTextDocument">vCoreConfigJsonHighlighter</dfn>(<span class='type' title='QTextDocument' data-ref="QTextDocument" data-ref-filename="QTextDocument">QTextDocument</span> *<dfn class="local col9 decl" id="49parent" title='parent' data-type='QTextDocument *' data-ref="49parent" data-ref-filename="49parent">parent</dfn> = <b>nullptr</b>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td>      <b>private</b>:</td></tr>
+<tr><th id="24">24</th><td>        <span class='type' title='QVector' data-ref="QVector" data-ref-filename="QVector">QVector</span>&lt;<a class="type" href="#Qv2ray::ui::JsonHighlightingRule" title='Qv2ray::ui::JsonHighlightingRule' data-ref="Qv2ray::ui::JsonHighlightingRule" data-ref-filename="Qv2ray..ui..JsonHighlightingRule">JsonHighlightingRule</a>&gt; <dfn class="decl field" id="Qv2ray::ui::vCoreConfigJsonHighlighter::highlightingRules" title='Qv2ray::ui::vCoreConfigJsonHighlighter::highlightingRules' data-ref="Qv2ray::ui::vCoreConfigJsonHighlighter::highlightingRules" data-ref-filename="Qv2ray..ui..vCoreConfigJsonHighlighter..highlightingRules">highlightingRules</dfn>;</td></tr>
+<tr><th id="25">25</th><td>        <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighter7SetRuleERK7QStringS4_15QTextCharFormat" title='Qv2ray::ui::vCoreConfigJsonHighlighter::SetRule' data-ref="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighter7SetRuleERK7QStringS4_15QTextCharFormat" data-ref-filename="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighter7SetRuleERK7QStringS4_15QTextCharFormat">SetRule</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col0 decl" id="50kind" title='kind' data-type='const QString &amp;' data-ref="50kind" data-ref-filename="50kind">kind</dfn>, <em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col1 decl" id="51pattern" title='pattern' data-type='const QString &amp;' data-ref="51pattern" data-ref-filename="51pattern">pattern</dfn>, <span class='type' title='QTextCharFormat' data-ref="QTextCharFormat" data-ref-filename="QTextCharFormat">QTextCharFormat</span> <dfn class="local col2 decl" id="52format" title='format' data-type='QTextCharFormat' data-ref="52format" data-ref-filename="52format">format</dfn>);</td></tr>
+<tr><th id="26">26</th><td>        <em>void</em> <dfn class="virtual decl fn" id="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighter14highlightBlockERK7QString" title='Qv2ray::ui::vCoreConfigJsonHighlighter::highlightBlock' data-ref="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighter14highlightBlockERK7QString" data-ref-filename="_ZN6Qv2ray2ui26vCoreConfigJsonHighlighter14highlightBlockERK7QString">highlightBlock</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col3 decl" id="53text" title='text' data-type='const QString &amp;' data-ref="53text" data-ref-filename="53text">text</dfn>) override;</td></tr>
+<tr><th id="27">27</th><td>    };</td></tr>
+<tr><th id="28">28</th><td>} <i>// namespace Qv2ray::ui</i></td></tr>
+<tr><th id="29">29</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2ray::ui</span>;</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

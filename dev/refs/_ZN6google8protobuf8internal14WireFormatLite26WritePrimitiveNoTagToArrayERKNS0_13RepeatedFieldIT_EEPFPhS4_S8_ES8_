@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='498' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WritePrimitiveNoTagToArray(const RepeatedField&lt;T&gt; &amp; value, google::protobuf::uint8 *(*)(T, google::protobuf::uint8 *) Writer, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='613' ll='626' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WritePrimitiveNoTagToArray(const RepeatedField&lt;T&gt; &amp; value, google::protobuf::uint8 *(*)(T, google::protobuf::uint8 *) Writer, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='649' u='c' c='_ZN6google8protobuf8internal14WireFormatLite22WriteInt32NoTagToArrayERKNS0_13RepeatedFieldIiEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='653' u='c' c='_ZN6google8protobuf8internal14WireFormatLite22WriteInt64NoTagToArrayERKNS0_13RepeatedFieldIlEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='657' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteUInt32NoTagToArrayERKNS0_13RepeatedFieldIjEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='661' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteUInt64NoTagToArrayERKNS0_13RepeatedFieldImEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='665' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteSInt32NoTagToArrayERKNS0_13RepeatedFieldIiEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='669' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteSInt64NoTagToArrayERKNS0_13RepeatedFieldIlEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='697' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21WriteBoolNoTagToArrayERKNS0_13RepeatedFieldIbEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='701' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21WriteEnumNoTagToArrayERKNS0_13RepeatedFieldIiEEPh'/>

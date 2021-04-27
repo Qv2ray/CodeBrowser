@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.h' l='63' type='QRinput_InputList *'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='783' u='r' c='QRcode_encodeInputStructured'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1349' u='w' c='QRinput_InputList_newEntry'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1399' u='w' c='QRinput_Struct_appendInput'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1413' u='r' c='QRinput_Struct_free'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1429' u='r' c='QRinput_Struct_calcParity'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1597' u='r' c='QRinput_Struct_insertStructuredAppendHeaders'/>

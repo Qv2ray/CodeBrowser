@@ -1,0 +1,29 @@
+<inh f='qv2ray/test/catch.hpp' l='3278' c='Catch::Matchers::Impl::MatcherBase'/>
+<def f='qv2ray/test/catch.hpp' l='3452' ll='3459'/>
+<use f='qv2ray/test/catch.hpp' l='3468' c='_ZN5Catch8Matchers9WithinRelEdd'/>
+<use f='qv2ray/test/catch.hpp' l='3470' c='_ZN5Catch8Matchers9WithinRelEd'/>
+<use f='qv2ray/test/catch.hpp' l='3471' c='_ZN5Catch8Matchers9WithinRelEff'/>
+<use f='qv2ray/test/catch.hpp' l='3473' c='_ZN5Catch8Matchers9WithinRelEf'/>
+<use f='qv2ray/test/catch.hpp' l='11664' c='_ZN5Catch8Matchers9WithinRelEdd'/>
+<use f='qv2ray/test/catch.hpp' l='11665' c='_ZN5Catch8Matchers9WithinRelEdd'/>
+<use f='qv2ray/test/catch.hpp' l='11668' c='_ZN5Catch8Matchers9WithinRelEd'/>
+<use f='qv2ray/test/catch.hpp' l='11669' c='_ZN5Catch8Matchers9WithinRelEd'/>
+<use f='qv2ray/test/catch.hpp' l='11672' c='_ZN5Catch8Matchers9WithinRelEff'/>
+<use f='qv2ray/test/catch.hpp' l='11673' c='_ZN5Catch8Matchers9WithinRelEff'/>
+<use f='qv2ray/test/catch.hpp' l='11676' c='_ZN5Catch8Matchers9WithinRelEf'/>
+<use f='qv2ray/test/catch.hpp' l='11677' c='_ZN5Catch8Matchers9WithinRelEf'/>
+<size>64</size>
+<doc f='qv2ray/test/catch.hpp' l='3446'>// Given IEEE-754 format for floats and doubles, we can assume
+        // that float -&gt; double promotion is lossless. Given this, we can
+        // assume that if we do the standard relative comparison of
+        // |lhs - rhs| &lt;= epsilon * max(fabs(lhs), fabs(rhs)), then we get
+        // the same result if we do this for floats, as if we do this for
+        // doubles that were promoted from floats.</doc>
+<fun r='_ZN5Catch8Matchers8Floating16WithinRelMatcherC1Edd'/>
+<fun r='_ZNK5Catch8Matchers8Floating16WithinRelMatcher5matchERKd'/>
+<fun r='_ZNK5Catch8Matchers8Floating16WithinRelMatcher8describeB5cxx11Ev'/>
+<mbr r='Catch::Matchers::Floating::WithinRelMatcher::m_target' o='384' t='double'/>
+<mbr r='Catch::Matchers::Floating::WithinRelMatcher::m_epsilon' o='448' t='double'/>
+<fun r='_ZN5Catch8Matchers8Floating16WithinRelMatcherC1Edd'/>
+<fun r='_ZNK5Catch8Matchers8Floating16WithinRelMatcher5matchERKd'/>
+<fun r='_ZNK5Catch8Matchers8Floating16WithinRelMatcher8describeB5cxx11Ev'/>

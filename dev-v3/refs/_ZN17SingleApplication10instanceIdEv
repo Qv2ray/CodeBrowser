@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='107' type='quint32 SingleApplication::instanceId()'/>
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='197' ll='201' type='quint32 SingleApplication::instanceId()'/>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='191'>/**
+ * Allows you to identify an instance by returning unique consecutive instance
+ * ids. It is reset when the first (primary) instance of your app starts and
+ * only incremented afterwards.
+ * @return Returns a unique instance id.
+ */</doc>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='103'>/**
+     * @brief Returns a unique identifier for the current instance
+     * @returns {qint32}
+     */</doc>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='45' u='c' c='_ZN6Qv2ray23Qv2rayWidgetApplication17onMessageReceivedEj10QByteArray'/>

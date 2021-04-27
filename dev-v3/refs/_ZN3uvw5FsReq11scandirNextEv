@@ -1,0 +1,31 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='982' type='std::pair&lt;bool, std::pair&lt;EntryType, const char *&gt;&gt; uvw::FsReq::scandirNext()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='352' ll='366' type='std::pair&lt;bool, std::pair&lt;FsReq::EntryType, const char *&gt;&gt; uvw::FsReq::scandirNext()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='953'>/**
+     * @brief Gets entries populated with the next directory entry data.
+     *
+     * Returns a composed value where:
+     *
+     * * The first parameter indicates the entry type (see below).
+     * * The second parameter is a string that contains the actual value.
+     *
+     * Available entry types are:
+     *
+     * * `FsReq::EntryType::UNKNOWN`
+     * * `FsReq::EntryType::FILE`
+     * * `FsReq::EntryType::DIR`
+     * * `FsReq::EntryType::LINK`
+     * * `FsReq::EntryType::FIFO`
+     * * `FsReq::EntryType::SOCKET`
+     * * `FsReq::EntryType::CHAR`
+     * * `FsReq::EntryType::BLOCK`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/fs.html#c.uv_dirent_t)
+     * for further details.
+     *
+     * @return A pair where:
+     *
+     * * The first parameter is a boolean value that indicates if the current
+     * entry is still valid.
+     * * The second parameter is a composed value (see above).
+     */</doc>

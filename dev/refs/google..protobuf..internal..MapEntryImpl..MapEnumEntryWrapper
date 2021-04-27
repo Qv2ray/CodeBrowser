@@ -1,0 +1,13 @@
+<use f='include/google/protobuf/map_entry_lite.h' l='324' c='_ZN6google8protobuf8internal12MapEntryImpl8EnumWrapERKT1_T2_PNS0_5ArenaE'/>
+<def f='include/google/protobuf/map_entry_lite.h' l='487' ll='508'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='481'>// Like above, but for enum value only, which stores value instead of
+  // reference of value field inside. This is needed because the type of value
+  // field in constructor is an enum, while we need to store it as an int. If we
+  // initialize a reference to int with a reference to enum, compiler will
+  // generate a temporary int from enum and initialize the reference to int with
+  // the temporary.</doc>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl19MapEnumEntryWrapperC1EPNS0_5ArenaERKT1_RKT2_'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl19MapEnumEntryWrapper3keyEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl19MapEnumEntryWrapper5valueEv'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::MapEnumEntryWrapper::key_' t='const google::protobuf::internal::MapEntryImpl::MapEnumEntryWrapper::KeyMapEntryAccessorType &amp;'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::MapEnumEntryWrapper::value_' t='const google::protobuf::internal::MapEntryImpl::MapEnumEntryWrapper::ValueMapEntryAccessorType'/>

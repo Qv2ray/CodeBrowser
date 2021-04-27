@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/extension_set.h' l='446' type='int google::protobuf::internal::ExtensionSet::SpaceUsedExcludingSelf() const'/>
+<doc f='include/google/protobuf/extension_set.h' l='441'>// This method just calls SpaceUsedExcludingSelfLong() but it can not be
+  // inlined because the definition of SpaceUsedExcludingSelfLong() is not
+  // included in lite runtime and when an inline method refers to it MSVC
+  // will complain about unresolved symbols when building the lite runtime
+  // as .dll.</doc>

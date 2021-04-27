@@ -1,0 +1,47 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='36' c='ZXing::BinaryBitmap'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='38' ll='62'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='278' c='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='27'>/**
+* This Binarizer implementation uses the old ZXing global histogram approach. It is suitable
+* for low-end mobile devices which don&apos;t have enough CPU or memory to use a local thresholding
+* algorithm. However, because it picks a global black point, it cannot handle difficult shadows
+* and gradients.
+*
+* Faster mobile devices and all desktop applications should probably use HybridBinarizer instead.
+*
+* @author dswitkin@google.com (Daniel Switkin)
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::GlobalHistogramBinarizer::_source' o='64' t='std::shared_ptr&lt;const LuminanceSource&gt;'/>
+<fun r='_ZN5ZXing24GlobalHistogramBinarizerC1ESt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<fun r='_ZN5ZXing24GlobalHistogramBinarizerD1Ev'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer5widthEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer6heightEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer11getBlackRowEiRNS_8BitArrayE'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer13getPatternRowEiRSt6vectorItSaItEE'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer14getBlackMatrixEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer7canCropEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer7croppedEiiii'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer9canRotateEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer7rotatedEi'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<mbr r='ZXing::GlobalHistogramBinarizer::_cache' o='192' t='std::unique_ptr&lt;DataCache&gt;'/>
+<fun r='_ZN5ZXing24GlobalHistogramBinarizerC1ESt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<fun r='_ZN5ZXing24GlobalHistogramBinarizerD1Ev'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer5widthEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer6heightEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer11getBlackRowEiRNS_8BitArrayE'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer13getPatternRowEiRSt6vectorItSaItEE'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer14getBlackMatrixEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer7canCropEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer7croppedEiiii'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer9canRotateEv'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer7rotatedEi'/>
+<fun r='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='42' c='ZXing::HybridBinarizer'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='42'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='49' c='_ZN5ZXing15HybridBinarizerC1ERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='89' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<size>32</size>

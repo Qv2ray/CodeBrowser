@@ -1,0 +1,6 @@
+<use f='include/google/protobuf/map.h' l='447' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseppEv'/>
+<def f='include/google/protobuf/map.h' l='475' ll='499' type='bool google::protobuf::Map::InnerMap::iterator_base::revalidate_if_necessary(google::protobuf::Map::InnerMap::TreeIterator * it)'/>
+<doc f='include/google/protobuf/map.h' l='471'>// Assumes node_ and m_ are correct and non-NULL, but other fields may be
+      // stale.  Fix them as needed.  Then return true iff node_ points to a
+      // Node in a list.  If false is returned then *it is modified to be
+      // a valid iterator for node_.</doc>

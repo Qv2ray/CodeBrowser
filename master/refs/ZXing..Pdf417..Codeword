@@ -1,0 +1,43 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodeword.h' l='25' ll='78'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='53' c='_ZNK5ZXing6Pdf41721DetectionResultColumn14codewordNearbyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='59' c='_ZN5ZXing6Pdf41721DetectionResultColumn11setCodewordEiNS0_8CodewordE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='63' c='_ZNK5ZXing6Pdf41721DetectionResultColumn8codewordEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='71' c='_ZNK5ZXing6Pdf41721DetectionResultColumn12allCodewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='75' c='_ZN5ZXing6Pdf41721DetectionResultColumn12allCodewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='85'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='79' c='_ZN5ZXing6Pdf417L22AdjustRowNumberIfValidEiiRNS0_8CodewordE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='165' c='_ZN5ZXing6Pdf417L15AdjustRowNumberERNS_8NullableINS0_8CodewordEEERKS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='165' c='_ZN5ZXing6Pdf417L15AdjustRowNumberERNS_8NullableINS0_8CodewordEEERKS3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='174' c='_ZN5ZXing6Pdf417L16AdjustRowNumbersERKSt6vectorINS_8NullableINS0_21DetectionResultColumnEEESaIS4_EEiiRS1_INS2_INS0_8CodewordEEESaISA_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='179' c='_ZN5ZXing6Pdf417L16AdjustRowNumbersERKSt6vectorINS_8NullableINS0_21DetectionResultColumnEEESaIS4_EEiiRS1_INS2_INS0_8CodewordEEESaISA_EE'/>
+<size>20</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodeword.h' l='22'>/**
+* @author Guenther Grau
+*/</doc>
+<smbr r='ZXing::Pdf417::Codeword::BARCODE_ROW_UNKNOWN' t='const int'/>
+<mbr r='ZXing::Pdf417::Codeword::_startX' o='0' t='int'/>
+<mbr r='ZXing::Pdf417::Codeword::_endX' o='32' t='int'/>
+<mbr r='ZXing::Pdf417::Codeword::_bucket' o='64' t='int'/>
+<mbr r='ZXing::Pdf417::Codeword::_value' o='96' t='int'/>
+<mbr r='ZXing::Pdf417::Codeword::_rowNumber' o='128' t='int'/>
+<fun r='_ZN5ZXing6Pdf4178CodewordC1Ev'/>
+<fun r='_ZN5ZXing6Pdf4178CodewordC1Eiiii'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword17hasValidRowNumberEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword16isValidRowNumberEi'/>
+<fun r='_ZN5ZXing6Pdf4178Codeword32setRowNumberAsRowIndicatorColumnEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword5widthEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword6startXEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword4endXEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword6bucketEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword5valueEv'/>
+<fun r='_ZNK5ZXing6Pdf4178Codeword9rowNumberEv'/>
+<fun r='_ZN5ZXing6Pdf4178Codeword12setRowNumberEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='41' c='_ZNK5ZXing6Pdf41721DetectionResultColumn14codewordNearbyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='76' c='_ZN5ZXing6Pdf417L24RemoveIncorrectCodewordsEbRSt6vectorINS_8NullableINS0_8CodewordEEESaIS4_EERKNS0_15BarcodeMetadataE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='146' c='_ZN5ZXing6Pdf41721DetectionResultColumn39adjustCompleteIndicatorColumnRowNumbersERKNS0_15BarcodeMetadataE'/>
+<size>20</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='124' c='_ZN5ZXing6Pdf417L14DetectCodewordERKNS_9BitMatrixEiibiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='169' c='_ZN5ZXing6Pdf417L14DetectCodewordERKNS_9BitMatrixEiibiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='290' c='_ZN5ZXing6Pdf417L14GetStartColumnERKNS0_15DetectionResultEiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='744' c='_ZN5ZXing6Pdf41715ScanningDecoder6DecodeERKNS_9BitMatrixERKNS_8NullableINS_11ResultPointEEES9_S9_S9_ii'/>
+<size>20</size>

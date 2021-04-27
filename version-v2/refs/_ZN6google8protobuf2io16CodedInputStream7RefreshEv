@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='597' type='bool google::protobuf::io::CodedInputStream::Refresh()'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1350' u='c' c='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='595'>// Called when the buffer runs out to request more data.  Implies an
+  // Advance(BufferSize()).</doc>

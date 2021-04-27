@@ -1,0 +1,595 @@
+<use f='include/google/protobuf/descriptor.h' l='1350' c='_ZNK6google8protobuf14FileDescriptor7optionsEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1415'/>
+<use f='include/google/protobuf/descriptor.h' l='1448'/>
+<use f='include/google/protobuf/descriptor.h' l='1943' c='_ZNK6google8protobuf14FileDescriptor7optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='149' c='_ZN6google8protobuf5Arena18CreateMaybeMessageEPS1_DpOT0_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='149' c='_ZN6google8protobuf5Arena18CreateMaybeMessageEPS1_DpOT0_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='714' c='_ZNK6google8protobuf19FileDescriptorProto17_internal_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='716' c='_ZNK6google8protobuf19FileDescriptorProto7optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='717' c='_ZN6google8protobuf19FileDescriptorProto15release_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='718' c='_ZN6google8protobuf19FileDescriptorProto15mutable_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='719' c='_ZN6google8protobuf19FileDescriptorProto21set_allocated_optionsEPNS0_11FileOptionsE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='721' c='_ZN6google8protobuf19FileDescriptorProto34unsafe_arena_set_allocated_optionsEPNS0_11FileOptionsE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='722' c='_ZN6google8protobuf19FileDescriptorProto28unsafe_arena_release_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='768'/>
+<inh f='include/google/protobuf/message.h' l='189' c='google::protobuf::Message'/>
+<def f='include/google/protobuf/descriptor.pb.h' l='2991' ll='3521'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2996' c='_ZN6google8protobuf11FileOptionsC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2998' c='_ZN6google8protobuf11FileOptionsaSERKS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2998' c='_ZN6google8protobuf11FileOptionsaSERKS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3003' c='_ZN6google8protobuf11FileOptionsC1EOS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3004' c='_ZN6google8protobuf11FileOptionsC1EOS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3008' c='_ZN6google8protobuf11FileOptionsaSEOS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3008' c='_ZN6google8protobuf11FileOptionsaSEOS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3031' c='_ZN6google8protobuf11FileOptions16default_instanceEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3034' c='_ZN6google8protobuf11FileOptions25internal_default_instanceEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3035' c='_ZN6google8protobuf11FileOptions25internal_default_instanceEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3041' c='_ZN6google8protobuf11FileOptions15UnsafeArenaSwapEPS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3042' c='_ZN6google8protobuf11FileOptions4SwapEPS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3043' c='_ZN6google8protobuf4swapERNS0_11FileOptionsES2_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3043' c='_ZN6google8protobuf4swapERNS0_11FileOptionsES2_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3049' c='_ZNK6google8protobuf11FileOptions3NewEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3050' c='_ZNK6google8protobuf11FileOptions3NewEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3053' c='_ZNK6google8protobuf11FileOptions3NewEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3054' c='_ZNK6google8protobuf11FileOptions3NewEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3058' c='_ZN6google8protobuf11FileOptions8CopyFromERKS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3059' c='_ZN6google8protobuf11FileOptions9MergeFromERKS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3076' c='_ZN6google8protobuf11FileOptions12InternalSwapEPS1_'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZNK6google8protobuf11FileOptions12HasExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions14ClearExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZNK6google8protobuf11FileOptions13ExtensionSizeERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZNK6google8protobuf11FileOptions12GetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions16MutableExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions12SetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Singular9ConstTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions21SetAllocatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Singular11MutableTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions32UnsafeArenaSetAllocatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Singular11MutableTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions16ReleaseExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions27UnsafeArenaReleaseExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZNK6google8protobuf11FileOptions12GetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEEi'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions16MutableExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEEi'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions12SetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEEiNS4_8Repeated9ConstTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions12AddExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions12AddExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Repeated9ConstTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZNK6google8protobuf11FileOptions20GetRepeatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3447' c='_ZN6google8protobuf11FileOptions24MutableRepeatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6271' c='_ZNK6google8protobuf19FileDescriptorProto17_internal_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6274' c='_ZNK6google8protobuf19FileDescriptorProto7optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6275' c='_ZNK6google8protobuf19FileDescriptorProto7optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6277' c='_ZNK6google8protobuf19FileDescriptorProto7optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6280' c='_ZN6google8protobuf19FileDescriptorProto15release_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6283' c='_ZN6google8protobuf19FileDescriptorProto15release_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6290' c='_ZN6google8protobuf19FileDescriptorProto28unsafe_arena_release_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6293' c='_ZN6google8protobuf19FileDescriptorProto28unsafe_arena_release_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6297' c='_ZN6google8protobuf19FileDescriptorProto15mutable_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6300' c='_ZN6google8protobuf19FileDescriptorProto15mutable_optionsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6306' c='_ZN6google8protobuf19FileDescriptorProto21set_allocated_optionsEPNS0_11FileOptionsE'/>
+<size>168</size>
+<doc f='include/google/protobuf/descriptor.pb.h' l='2989'>// -------------------------------------------------------------------</doc>
+<doc f='include/google/protobuf/descriptor.pb.h' l='2991'>/* @@protoc_insertion_point(class_definition:google.protobuf.FileOptions) */</doc>
+<fun r='_ZN6google8protobuf11FileOptionsC1Ev'/>
+<fun r='_ZN6google8protobuf11FileOptionsD1Ev'/>
+<fun r='_ZN6google8protobuf11FileOptionsC1ERKS1_'/>
+<fun r='_ZN6google8protobuf11FileOptionsaSERKS1_'/>
+<fun r='_ZN6google8protobuf11FileOptionsC1EOS1_'/>
+<fun r='_ZN6google8protobuf11FileOptionsaSEOS1_'/>
+<fun r='_ZNK6google8protobuf11FileOptions14unknown_fieldsEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22mutable_unknown_fieldsEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions8GetArenaEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20GetMaybeArenaPointerEv'/>
+<fun r='_ZN6google8protobuf11FileOptions10descriptorEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16default_instanceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions21InitAsDefaultInstanceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25internal_default_instanceEv'/>
+<smbr r='google::protobuf::FileOptions::kIndexInFileMessages' t='const int'/>
+<fun r='_ZN6google8protobuf11FileOptions15UnsafeArenaSwapEPS1_'/>
+<fun r='_ZN6google8protobuf11FileOptions4SwapEPS1_'/>
+<fun r='_ZNK6google8protobuf11FileOptions3NewEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions3NewEPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf11FileOptions8CopyFromERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf11FileOptions9MergeFromERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf11FileOptions8CopyFromERKS1_'/>
+<fun r='_ZN6google8protobuf11FileOptions9MergeFromERKS1_'/>
+<fun r='_ZN6google8protobuf11FileOptions5ClearEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions13IsInitializedEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions12ByteSizeLongEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZNK6google8protobuf11FileOptions24SerializeWithCachedSizesEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf11FileOptions39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<fun r='_ZNK6google8protobuf11FileOptions13GetCachedSizeEv'/>
+<fun r='_ZN6google8protobuf11FileOptions10SharedCtorEv'/>
+<fun r='_ZN6google8protobuf11FileOptions10SharedDtorEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions13SetCachedSizeEi'/>
+<fun r='_ZN6google8protobuf11FileOptions12InternalSwapEPS1_'/>
+<fun r='_ZN6google8protobuf11FileOptionsC1EPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf11FileOptions9ArenaDtorEPv'/>
+<fun r='_ZN6google8protobuf11FileOptions17RegisterArenaDtorEPNS0_5ArenaE'/>
+<fun r='_ZNK6google8protobuf11FileOptions17GetArenaNoVirtualEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions13MaybeArenaPtrEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions11GetMetadataEv'/>
+<smbr r='google::protobuf::FileOptions::SPEED' t='const google::protobuf::FileOptions::OptimizeMode'/>
+<smbr r='google::protobuf::FileOptions::CODE_SIZE' t='const google::protobuf::FileOptions::OptimizeMode'/>
+<smbr r='google::protobuf::FileOptions::LITE_RUNTIME' t='const google::protobuf::FileOptions::OptimizeMode'/>
+<fun r='_ZN6google8protobuf11FileOptions20OptimizeMode_IsValidEi'/>
+<smbr r='google::protobuf::FileOptions::OptimizeMode_MIN' t='const google::protobuf::FileOptions::OptimizeMode'/>
+<smbr r='google::protobuf::FileOptions::OptimizeMode_MAX' t='const google::protobuf::FileOptions::OptimizeMode'/>
+<smbr r='google::protobuf::FileOptions::OptimizeMode_ARRAYSIZE' t='const int'/>
+<fun r='_ZN6google8protobuf11FileOptions23OptimizeMode_descriptorEv'/>
+<fun r='_ZN6google8protobuf11FileOptions17OptimizeMode_NameB5cxx11ENS0_24FileOptions_OptimizeModeE'/>
+<fun r='_ZN6google8protobuf11FileOptions18OptimizeMode_ParseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_24FileOptions_OptimizeModeE'/>
+<fun r='_ZNK6google8protobuf11FileOptions25uninterpreted_option_sizeEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_uninterpreted_optionEv'/>
+<smbr r='google::protobuf::FileOptions::kUninterpretedOptionFieldNumber' t='const int'/>
+<fun r='_ZN6google8protobuf11FileOptions28mutable_uninterpreted_optionEi'/>
+<fun r='_ZN6google8protobuf11FileOptions28mutable_uninterpreted_optionEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20uninterpreted_optionEi'/>
+<fun r='_ZN6google8protobuf11FileOptions24add_uninterpreted_optionEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20uninterpreted_optionEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_java_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_java_packageEv'/>
+<smbr r='google::protobuf::FileOptions::kJavaPackageFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions12java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions20mutable_java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20release_java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_allocated_java_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions33unsafe_arena_release_java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions39unsafe_arena_set_allocated_java_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions24has_java_outer_classnameEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_java_outer_classnameEv'/>
+<smbr r='google::protobuf::FileOptions::kJavaOuterClassnameFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions20java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions28mutable_java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions28release_java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions34set_allocated_java_outer_classnameEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions41unsafe_arena_release_java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions47unsafe_arena_set_allocated_java_outer_classnameEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions14has_go_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16clear_go_packageEv'/>
+<smbr r='google::protobuf::FileOptions::kGoPackageFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions10go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions18mutable_go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions18release_go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_allocated_go_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions31unsafe_arena_release_go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions37unsafe_arena_set_allocated_go_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions21has_objc_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23clear_objc_class_prefixEv'/>
+<smbr r='google::protobuf::FileOptions::kObjcClassPrefixFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions17objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions25mutable_objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions25release_objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions31set_allocated_objc_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions38unsafe_arena_release_objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions44unsafe_arena_set_allocated_objc_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions20has_csharp_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_csharp_namespaceEv'/>
+<smbr r='google::protobuf::FileOptions::kCsharpNamespaceFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions16csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions24mutable_csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24release_csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_allocated_csharp_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions37unsafe_arena_release_csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions43unsafe_arena_set_allocated_csharp_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_swift_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_swift_prefixEv'/>
+<smbr r='google::protobuf::FileOptions::kSwiftPrefixFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions12swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions20mutable_swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20release_swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_allocated_swift_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions33unsafe_arena_release_swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions39unsafe_arena_set_allocated_swift_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions20has_php_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_php_class_prefixEv'/>
+<smbr r='google::protobuf::FileOptions::kPhpClassPrefixFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions16php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions24mutable_php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24release_php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_allocated_php_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions37unsafe_arena_release_php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions43unsafe_arena_set_allocated_php_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions17has_php_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions19clear_php_namespaceEv'/>
+<smbr r='google::protobuf::FileOptions::kPhpNamespaceFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions13php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions21mutable_php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions21release_php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_allocated_php_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions34unsafe_arena_release_php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions40unsafe_arena_set_allocated_php_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions26has_php_metadata_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28clear_php_metadata_namespaceEv'/>
+<smbr r='google::protobuf::FileOptions::kPhpMetadataNamespaceFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions22php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions30mutable_php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30release_php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions36set_allocated_php_metadata_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions43unsafe_arena_release_php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions49unsafe_arena_set_allocated_php_metadata_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_ruby_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_ruby_packageEv'/>
+<smbr r='google::protobuf::FileOptions::kRubyPackageFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions12ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions20mutable_ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20release_ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_allocated_ruby_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions33unsafe_arena_release_ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions39unsafe_arena_set_allocated_ruby_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions23has_java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25clear_java_multiple_filesEv'/>
+<smbr r='google::protobuf::FileOptions::kJavaMultipleFilesFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions19java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23set_java_multiple_filesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions33has_java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions35clear_java_generate_equals_and_hashEv'/>
+<smbr r='google::protobuf::FileOptions::kJavaGenerateEqualsAndHashFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions29java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions33set_java_generate_equals_and_hashEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions26has_java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions28clear_java_string_check_utf8Ev'/>
+<smbr r='google::protobuf::FileOptions::kJavaStringCheckUtf8FieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions22java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_java_string_check_utf8Eb'/>
+<fun r='_ZNK6google8protobuf11FileOptions23has_cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25clear_cc_generic_servicesEv'/>
+<smbr r='google::protobuf::FileOptions::kCcGenericServicesFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions19cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23set_cc_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions25has_java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27clear_java_generic_servicesEv'/>
+<smbr r='google::protobuf::FileOptions::kJavaGenericServicesFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions21java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25set_java_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions23has_py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25clear_py_generic_servicesEv'/>
+<smbr r='google::protobuf::FileOptions::kPyGenericServicesFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions19py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23set_py_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions24has_php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_php_generic_servicesEv'/>
+<smbr r='google::protobuf::FileOptions::kPhpGenericServicesFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions20php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_php_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions14has_deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16clear_deprecatedEv'/>
+<smbr r='google::protobuf::FileOptions::kDeprecatedFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions10deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_deprecatedEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions20has_cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_cc_enable_arenasEv'/>
+<smbr r='google::protobuf::FileOptions::kCcEnableArenasFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions16cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_cc_enable_arenasEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_optimize_forEv'/>
+<smbr r='google::protobuf::FileOptions::kOptimizeForFieldNumber' t='const int'/>
+<fun r='_ZNK6google8protobuf11FileOptions12optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_optimize_forENS0_24FileOptions_OptimizeModeE'/>
+<fun r='_ZNK6google8protobuf11FileOptions12HasExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions14ClearExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions13ExtensionSizeERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions12GetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16MutableExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions12SetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Singular9ConstTypeE'/>
+<fun r='_ZN6google8protobuf11FileOptions21SetAllocatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Singular11MutableTypeE'/>
+<fun r='_ZN6google8protobuf11FileOptions32UnsafeArenaSetAllocatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Singular11MutableTypeE'/>
+<fun r='_ZN6google8protobuf11FileOptions16ReleaseExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions27UnsafeArenaReleaseExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions12GetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEEi'/>
+<fun r='_ZN6google8protobuf11FileOptions16MutableExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEEi'/>
+<fun r='_ZN6google8protobuf11FileOptions12SetExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEEiNS4_8Repeated9ConstTypeE'/>
+<fun r='_ZN6google8protobuf11FileOptions12AddExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions12AddExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEENS4_8Repeated9ConstTypeE'/>
+<fun r='_ZNK6google8protobuf11FileOptions20GetRepeatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions24MutableRepeatedExtensionERKNS0_8internal19ExtensionIdentifierIS1_T_XT0_EXT1_EEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_java_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_java_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28set_has_java_outer_classnameEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30clear_has_java_outer_classnameEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_has_java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29clear_has_java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions37set_has_java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions39clear_has_java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_has_java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions32clear_has_java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18set_has_go_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20clear_has_go_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_has_cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29clear_has_cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29set_has_java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions31clear_has_java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_has_py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29clear_has_py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28set_has_php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30clear_has_php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18set_has_deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20clear_has_deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_has_cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_has_cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25set_has_objc_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27clear_has_objc_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_has_csharp_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_has_csharp_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_swift_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_swift_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_has_php_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_has_php_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_has_php_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23clear_has_php_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_has_php_metadata_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions32clear_has_php_metadata_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_ruby_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_ruby_packageEv'/>
+<mbr r='google::protobuf::FileOptions::_extensions_' o='64' t='::google::protobuf::internal::ExtensionSet'/>
+<mbr r='google::protobuf::FileOptions::_internal_metadata_' o='256' t='::google::protobuf::internal::InternalMetadataWithArena'/>
+<mbr r='google::protobuf::FileOptions::_has_bits_' o='320' t='::google::protobuf::internal::HasBits&lt;1&gt;'/>
+<mbr r='google::protobuf::FileOptions::_cached_size_' o='352' t='::google::protobuf::internal::CachedSize'/>
+<mbr r='google::protobuf::FileOptions::uninterpreted_option_' o='384' t='::google::protobuf::RepeatedPtrField&lt; ::google::protobuf::UninterpretedOption&gt;'/>
+<mbr r='google::protobuf::FileOptions::java_package_' o='576' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::java_outer_classname_' o='640' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::go_package_' o='704' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::objc_class_prefix_' o='768' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::csharp_namespace_' o='832' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::swift_prefix_' o='896' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::php_class_prefix_' o='960' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::php_namespace_' o='1024' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::php_metadata_namespace_' o='1088' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::ruby_package_' o='1152' t='::google::protobuf::internal::ArenaStringPtr'/>
+<mbr r='google::protobuf::FileOptions::java_multiple_files_' o='1216' t='bool'/>
+<mbr r='google::protobuf::FileOptions::java_generate_equals_and_hash_' o='1224' t='bool'/>
+<mbr r='google::protobuf::FileOptions::java_string_check_utf8_' o='1232' t='bool'/>
+<mbr r='google::protobuf::FileOptions::cc_generic_services_' o='1240' t='bool'/>
+<mbr r='google::protobuf::FileOptions::java_generic_services_' o='1248' t='bool'/>
+<mbr r='google::protobuf::FileOptions::py_generic_services_' o='1256' t='bool'/>
+<mbr r='google::protobuf::FileOptions::php_generic_services_' o='1264' t='bool'/>
+<mbr r='google::protobuf::FileOptions::deprecated_' o='1272' t='bool'/>
+<mbr r='google::protobuf::FileOptions::cc_enable_arenas_' o='1280' t='bool'/>
+<mbr r='google::protobuf::FileOptions::optimize_for_' o='1312' t='int'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_java_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_java_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_java_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_java_packageEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions12java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_java_packageEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions20mutable_java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20release_java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_allocated_java_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions33unsafe_arena_release_java_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions39unsafe_arena_set_allocated_java_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions24has_java_outer_classnameEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28set_has_java_outer_classnameEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30clear_has_java_outer_classnameEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_java_outer_classnameEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions28mutable_java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions28release_java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions34set_allocated_java_outer_classnameEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions41unsafe_arena_release_java_outer_classnameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions47unsafe_arena_set_allocated_java_outer_classnameEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions23has_java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_has_java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29clear_has_java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25clear_java_multiple_filesEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions19java_multiple_filesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23set_java_multiple_filesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions33has_java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions37set_has_java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions39clear_has_java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions35clear_java_generate_equals_and_hashEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions29java_generate_equals_and_hashEv'/>
+<fun r='_ZN6google8protobuf11FileOptions33set_java_generate_equals_and_hashEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions26has_java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_has_java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions32clear_has_java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions28clear_java_string_check_utf8Ev'/>
+<fun r='_ZNK6google8protobuf11FileOptions22java_string_check_utf8Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_java_string_check_utf8Eb'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_optimize_forEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions12optimize_forEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_optimize_forENS0_24FileOptions_OptimizeModeE'/>
+<fun r='_ZNK6google8protobuf11FileOptions14has_go_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18set_has_go_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20clear_has_go_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16clear_go_packageEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions10go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_go_packageEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions18mutable_go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions18release_go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_allocated_go_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions31unsafe_arena_release_go_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions37unsafe_arena_set_allocated_go_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions23has_cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_has_cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29clear_has_cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25clear_cc_generic_servicesEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions19cc_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23set_cc_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions25has_java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29set_has_java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions31clear_has_java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27clear_java_generic_servicesEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions21java_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25set_java_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions23has_py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_has_py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions29clear_has_py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25clear_py_generic_servicesEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions19py_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23set_py_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions24has_php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28set_has_php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30clear_has_php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_php_generic_servicesEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20php_generic_servicesEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_php_generic_servicesEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions14has_deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18set_has_deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20clear_has_deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions16clear_deprecatedEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions10deprecatedEv'/>
+<fun r='_ZN6google8protobuf11FileOptions14set_deprecatedEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions20has_cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_has_cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_has_cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_cc_enable_arenasEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions16cc_enable_arenasEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_cc_enable_arenasEb'/>
+<fun r='_ZNK6google8protobuf11FileOptions21has_objc_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions25set_has_objc_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions27clear_has_objc_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23clear_objc_class_prefixEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions17objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions25mutable_objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions25release_objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions31set_allocated_objc_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions38unsafe_arena_release_objc_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions44unsafe_arena_set_allocated_objc_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions20has_csharp_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_has_csharp_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_has_csharp_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_csharp_namespaceEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions16csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions24mutable_csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24release_csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_allocated_csharp_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions37unsafe_arena_release_csharp_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions43unsafe_arena_set_allocated_csharp_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_swift_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_swift_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_swift_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_swift_prefixEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions12swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_swift_prefixEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions20mutable_swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20release_swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_allocated_swift_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions33unsafe_arena_release_swift_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions39unsafe_arena_set_allocated_swift_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions20has_php_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions24set_has_php_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_has_php_class_prefixEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_php_class_prefixEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions16php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_php_class_prefixEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions24mutable_php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions24release_php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_allocated_php_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions37unsafe_arena_release_php_class_prefixB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions43unsafe_arena_set_allocated_php_class_prefixEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions17has_php_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions21set_has_php_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions23clear_has_php_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions19clear_php_namespaceEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions13php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions17set_php_namespaceEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions21mutable_php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions21release_php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions27set_allocated_php_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions34unsafe_arena_release_php_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions40unsafe_arena_set_allocated_php_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions26has_php_metadata_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions30set_has_php_metadata_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions32clear_has_php_metadata_namespaceEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28clear_php_metadata_namespaceEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions22php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions30mutable_php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions30release_php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions36set_allocated_php_metadata_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions43unsafe_arena_release_php_metadata_namespaceB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions49unsafe_arena_set_allocated_php_metadata_namespaceEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions16has_ruby_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions20set_has_ruby_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions22clear_has_ruby_packageEv'/>
+<fun r='_ZN6google8protobuf11FileOptions18clear_ruby_packageEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions12ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageEONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageEPKc'/>
+<fun r='_ZN6google8protobuf11FileOptions16set_ruby_packageEPKcm'/>
+<fun r='_ZN6google8protobuf11FileOptions20mutable_ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions20release_ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions26set_allocated_ruby_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11FileOptions33unsafe_arena_release_ruby_packageB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11FileOptions39unsafe_arena_set_allocated_ruby_packageEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11FileOptions25uninterpreted_option_sizeEv'/>
+<fun r='_ZN6google8protobuf11FileOptions26clear_uninterpreted_optionEv'/>
+<fun r='_ZN6google8protobuf11FileOptions28mutable_uninterpreted_optionEi'/>
+<fun r='_ZN6google8protobuf11FileOptions28mutable_uninterpreted_optionEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20uninterpreted_optionEi'/>
+<fun r='_ZN6google8protobuf11FileOptions24add_uninterpreted_optionEv'/>
+<fun r='_ZNK6google8protobuf11FileOptions20uninterpreted_optionEv'/>

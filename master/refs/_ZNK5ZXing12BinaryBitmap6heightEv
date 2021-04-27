@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='55' type='int ZXing::BinaryBitmap::height() const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='59' c='_ZNK5ZXing24GlobalHistogramBinarizer6heightEv'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='52'>/**
+	* @return The height of the bitmap.
+	*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='42' c='_ZNK5ZXing18ThresholdBinarizer6heightEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='107' u='c' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='217' u='c' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>

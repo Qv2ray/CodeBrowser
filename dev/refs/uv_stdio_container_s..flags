@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='934' type='uv_stdio_flags'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='186' u='r' c='uv__process_init_stdio'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='199' u='r' c='uv__process_init_stdio'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='222' u='r' c='uv__process_open_stream'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='233' u='r' c='uv__process_open_stream'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='235' u='r' c='uv__process_open_stream'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='243' u='r' c='uv__process_close_stream'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='560' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='189' u='w' c='_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='108' u='w' c='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='112' u='w' c='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>

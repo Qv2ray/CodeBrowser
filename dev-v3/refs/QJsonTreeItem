@@ -1,0 +1,75 @@
+<def f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='37' ll='63'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='40' c='_ZN13QJsonTreeItemC1EPS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='42' c='_ZN13QJsonTreeItem11appendChildEPS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='43' c='_ZN13QJsonTreeItem5childEi'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='44' c='_ZN13QJsonTreeItem6parentEv'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='54' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='54' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='61'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='62'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='90' c='_ZNK10QJsonModel7genJsonEP13QJsonTreeItem'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.hpp' l='92'/>
+<size>88</size>
+<fun r='_ZN13QJsonTreeItemC1EPS_'/>
+<fun r='_ZN13QJsonTreeItemD1Ev'/>
+<fun r='_ZN13QJsonTreeItem11appendChildEPS_'/>
+<fun r='_ZN13QJsonTreeItem5childEi'/>
+<fun r='_ZN13QJsonTreeItem6parentEv'/>
+<fun r='_ZNK13QJsonTreeItem10childCountEv'/>
+<fun r='_ZNK13QJsonTreeItem3rowEv'/>
+<fun r='_ZN13QJsonTreeItem6setKeyERK7QString'/>
+<fun r='_ZN13QJsonTreeItem8setValueERK7QString'/>
+<fun r='_ZN13QJsonTreeItem7setTypeERKN10QJsonValue4TypeE'/>
+<fun r='_ZNK13QJsonTreeItem3keyEv'/>
+<fun r='_ZNK13QJsonTreeItem5valueEv'/>
+<fun r='_ZNK13QJsonTreeItem4typeEv'/>
+<fun r='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<mbr r='QJsonTreeItem::mKey' o='0' t='QString'/>
+<mbr r='QJsonTreeItem::mValue' o='192' t='QString'/>
+<mbr r='QJsonTreeItem::mType' o='384' t='QJsonValue::Type'/>
+<mbr r='QJsonTreeItem::mChilds' o='448' t='QList&lt;QJsonTreeItem *&gt;'/>
+<mbr r='QJsonTreeItem::mParent' o='640' t='QJsonTreeItem *'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='30' c='_ZN13QJsonTreeItemC1EPS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='40' c='_ZN13QJsonTreeItem11appendChildEPS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='45' c='_ZN13QJsonTreeItem5childEi'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='50' c='_ZN13QJsonTreeItem6parentEv'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='63' c='_ZNK13QJsonTreeItem3rowEv'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='98' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='98' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='100' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='100' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='109' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='122' c='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='140' c='_ZN10QJsonModelC1EP7QObject'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='146' c='_ZN10QJsonModelC1ERK7QStringP7QObject'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='153' c='_ZN10QJsonModelC1EP9QIODeviceP7QObject'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='160' c='_ZN10QJsonModelC1ERK10QByteArrayP7QObject'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='226' c='_ZNK10QJsonModel4dataERK11QModelIndexi'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='226' c='_ZNK10QJsonModel4dataERK11QModelIndexi'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='255' c='_ZN10QJsonModel7setDataERK11QModelIndexRK8QVarianti'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='255' c='_ZN10QJsonModel7setDataERK11QModelIndexRK8QVarianti'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='283' c='_ZNK10QJsonModel5indexEiiRK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='288' c='_ZNK10QJsonModel5indexEiiRK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='290' c='_ZNK10QJsonModel5indexEiiRK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='303' c='_ZNK10QJsonModel6parentERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='303' c='_ZNK10QJsonModel6parentERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='304' c='_ZNK10QJsonModel6parentERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='314' c='_ZNK10QJsonModel8rowCountERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='322' c='_ZNK10QJsonModel8rowCountERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='336' c='_ZNK10QJsonModel5flagsERK11QModelIndex'/>
+<use f='qv2ray/src/ui/widgets/common/QJsonModel.cpp' l='367' c='_ZNK10QJsonModel7genJsonEP13QJsonTreeItem'/>
+<size>88</size>
+<fun r='_ZN13QJsonTreeItemC1EPS_'/>
+<fun r='_ZN13QJsonTreeItemD1Ev'/>
+<fun r='_ZN13QJsonTreeItem11appendChildEPS_'/>
+<fun r='_ZN13QJsonTreeItem5childEi'/>
+<fun r='_ZN13QJsonTreeItem6parentEv'/>
+<fun r='_ZNK13QJsonTreeItem10childCountEv'/>
+<fun r='_ZNK13QJsonTreeItem3rowEv'/>
+<fun r='_ZN13QJsonTreeItem6setKeyERK7QString'/>
+<fun r='_ZN13QJsonTreeItem8setValueERK7QString'/>
+<fun r='_ZN13QJsonTreeItem7setTypeERKN10QJsonValue4TypeE'/>
+<fun r='_ZNK13QJsonTreeItem3keyEv'/>
+<fun r='_ZNK13QJsonTreeItem5valueEv'/>
+<fun r='_ZNK13QJsonTreeItem4typeEv'/>
+<fun r='_ZN13QJsonTreeItem4loadERK10QJsonValuePS_'/>

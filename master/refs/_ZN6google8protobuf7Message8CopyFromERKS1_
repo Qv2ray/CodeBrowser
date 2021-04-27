@@ -1,0 +1,16 @@
+<dec f='include/google/protobuf/message.h' l='215' type='void google::protobuf::Message::CopyFrom(const google::protobuf::Message &amp; from)'/>
+<doc f='include/google/protobuf/message.h' l='212'>// Make this message into a copy of the given message.  The given message
+  // must have the same descriptor, but need not necessarily be the same class.
+  // By default this is just implemented as &quot;Clear(); MergeFrom(from);&quot;.</doc>
+<ovr f='/v2ray_api.pb.cc' l='598' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='879' c='_ZN5v2ray4core3app5stats7command4Stat8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1115' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1392' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1623' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='1803' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='2346' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_api.pb.cc' l='2535' c='_ZN5v2ray4core3app5stats7command6Config8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='569' c='_ZN22DomainObject_Attribute8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='897' c='_ZN12DomainObject8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1185' c='_ZN7GeoSite8CopyFromERKN6google8protobuf7MessageE'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1416' c='_ZN11GeoSiteList8CopyFromERKN6google8protobuf7MessageE'/>

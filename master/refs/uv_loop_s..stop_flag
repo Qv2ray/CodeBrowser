@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1781' type='unsigned int'/>
+<offset>384</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1780'>/* Internal flag to signal loop stop. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='330' u='r' c='uv_backend_timeout'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='370' u='r' c='uv_run'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='406' u='r' c='uv_run'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='407' u='w' c='uv_run'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='65' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='563' u='w' c='uv_stop'/>

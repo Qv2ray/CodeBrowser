@@ -1,0 +1,7 @@
+<def f='include/netinet/in.h' l='310' ll='320'/>
+<size>264</size>
+<mbr r='group_source_req::gsr_interface' o='0' t='uint32_t'/>
+<mbr r='group_source_req::gsr_group' o='64' t='struct sockaddr_storage'/>
+<mbr r='group_source_req::gsr_source' o='1088' t='struct sockaddr_storage'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='908' c='uv__udp_set_source_membership6'/>
+<size>264</size>

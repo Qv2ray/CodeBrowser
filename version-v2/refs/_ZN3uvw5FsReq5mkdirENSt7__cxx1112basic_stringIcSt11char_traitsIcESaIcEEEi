@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='825' type='void uvw::FsReq::mkdir(std::string path, int mode)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='271' ll='273' type='void uvw::FsReq::mkdir(std::string path, int mode)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='816'>/**
+     * @brief Async [mkdir](http://linux.die.net/man/2/mkdir).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::MKDIR&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     * @param mode Mode, as described in the official documentation.
+     */</doc>

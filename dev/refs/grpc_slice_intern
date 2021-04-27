@@ -1,0 +1,5 @@
+<dec f='include/grpc/slice.h' l='76' type='grpc_slice grpc_slice_intern(grpc_slice slice)'/>
+<doc f='include/grpc/slice.h' l='72'>/** Intern a slice:
+
+   The return value for two invocations of this function with  the same sequence
+   of bytes is a slice which points to the same memory. */</doc>

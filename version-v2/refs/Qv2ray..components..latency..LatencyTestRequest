@@ -1,0 +1,20 @@
+<def f='qv2ray/src/components/latency/LatencyTest.hpp' l='21' ll='28'/>
+<size>32</size>
+<mbr r='Qv2ray::components::latency::LatencyTestRequest::id' o='0' t='Qv2ray::base::ConnectionId'/>
+<mbr r='Qv2ray::components::latency::LatencyTestRequest::host' o='64' t='QString'/>
+<mbr r='Qv2ray::components::latency::LatencyTestRequest::port' o='128' t='int'/>
+<mbr r='Qv2ray::components::latency::LatencyTestRequest::totalCount' o='160' t='int'/>
+<mbr r='Qv2ray::components::latency::LatencyTestRequest::method' o='192' t='Qv2ray::base::config::Qv2rayLatencyTestingMethod'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.hpp' l='47'/>
+<size>32</size>
+<use f='qv2ray/src/components/latency/RealPing.hpp' l='18' c='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<use f='qv2ray/src/components/latency/RealPing.hpp' l='28'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='14' c='_ZN6Qv2ray10components7latency7DNSBaseC1ERKSt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='118'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='27' c='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERKNS_4base6IDTypeINS3_14__ConnectionIdEEEiNS3_6config26Qv2rayLatencyTestingMethodE'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='102' c='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERK5QListINS_4base6IDTypeINS4_14__ConnectionIdEEEEiNS4_6config26Qv2rayLatencyTestingMethodE'/>
+<size>32</size>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='154' c='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<size>32</size>
+<use f='qv2ray/test/src/components/latency/TestRealPing.cpp' l='14' c='____C_A_T_C_H____T_E_S_T____2'/>
+<size>32</size>

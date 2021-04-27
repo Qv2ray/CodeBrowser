@@ -1,0 +1,22 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='122' type='char *'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='95' u='a' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='403' u='r' c='uv__fs_preadv'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='446' u='r' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='451' u='r' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1059' u='r' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1064' u='r' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1074' u='r' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1474' u='w' c='uv__fs_buf_offset'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='750' u='w' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1144' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1150' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1150' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1155' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='204' u='r' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='266' u='r' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='270' u='r' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='270' u='r' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='159' u='w' c='uv_buf_init'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='134' u='r' c='_ZN3uvw12StreamHandle12readCallbackEP11uv_stream_slPK8uv_buf_t'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='100' u='r' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>

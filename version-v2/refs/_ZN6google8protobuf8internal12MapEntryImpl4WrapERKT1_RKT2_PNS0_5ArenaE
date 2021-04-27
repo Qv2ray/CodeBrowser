@@ -1,0 +1,3 @@
+<def f='include/google/protobuf/map_entry_lite.h' l='329' ll='331' type='static Derived * google::protobuf::internal::MapEntryImpl::Wrap(const Key &amp; key, const Value &amp; value, google::protobuf::Arena * arena)'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='327'>// Like above, but for all the other types. This avoids value copy to create
+  // MapEntryImpl from google::protobuf::Map in serialization.</doc>

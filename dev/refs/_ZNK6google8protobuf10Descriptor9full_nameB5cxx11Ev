@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/descriptor.h' l='233' type='const std::string &amp; google::protobuf::Descriptor::full_name() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1837' macro='1' type='const std::string &amp; google::protobuf::Descriptor::full_name() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='228'>// The fully-qualified name of the message type, scope delimited by
+  // periods.  For example, message type &quot;Foo&quot; which is declared in package
+  // &quot;bar&quot; has full name &quot;bar.Foo&quot;.  If a type &quot;Baz&quot; is nested within
+  // Foo, Baz&apos;s full_name is &quot;bar.Foo.Baz&quot;.  To get only the part that
+  // comes after the last &apos;.&apos;, use name().</doc>

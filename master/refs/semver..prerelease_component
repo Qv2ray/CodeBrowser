@@ -1,0 +1,26 @@
+<def f='qv2ray/3rdparty/libsemver/version.hpp' l='48' ll='73'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='70' c='_ZNK6semver20prerelease_componentltERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='71' c='_ZNK6semver20prerelease_componentgtERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='72' c='_ZNK6semver20prerelease_componenteqERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='89'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='93' c='_ZNK6semver20prerelease_componenteqERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='98' c='_ZNK6semver20prerelease_componentltERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='107' c='_ZNK6semver20prerelease_componentgtERKS0_'/>
+<size>48</size>
+<doc f='qv2ray/3rdparty/libsemver/version.hpp' l='42'>/**
+   * @brief Class that represents a prerelease identifier.
+   *
+   * This class represents a prerelease identifier complying with _Semantic
+   * Versioning_ 2.0.0 (http://semver.org/).
+   */</doc>
+<mbr r='semver::prerelease_component::is_number' o='0' t='bool'/>
+<mbr r='semver::prerelease_component::identifier' o='64' t='std::string'/>
+<mbr r='semver::prerelease_component::value_as_number' o='320' t='unsigned long'/>
+<fun r='_ZN6semver20prerelease_componentC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6semver20prerelease_componentltERKS0_'/>
+<fun r='_ZNK6semver20prerelease_componentgtERKS0_'/>
+<fun r='_ZNK6semver20prerelease_componenteqERKS0_'/>
+<fun r='_ZN6semver20prerelease_componentC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6semver20prerelease_componenteqERKS0_'/>
+<fun r='_ZNK6semver20prerelease_componentltERKS0_'/>
+<fun r='_ZNK6semver20prerelease_componentgtERKS0_'/>

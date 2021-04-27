@@ -1,0 +1,25 @@
+<use f='include/google/protobuf/arena_impl.h' l='87' c='_ZN6google8protobuf8internal9ArenaImplC1ERKT_'/>
+<use f='include/google/protobuf/arena_impl.h' l='89' c='_ZN6google8protobuf8internal9ArenaImplC1ERKT_'/>
+<use f='include/google/protobuf/arena_impl.h' l='147' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena3NewEPNS2_5BlockEPvPS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='151' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena4FreeEPS3_PNS2_5BlockEPFvPvmE'/>
+<use f='include/google/protobuf/arena_impl.h' l='198'/>
+<def f='include/google/protobuf/arena_impl.h' l='215' ll='234'/>
+<use f='include/google/protobuf/arena_impl.h' l='217' c='_ZN6google8protobuf8internal9ArenaImpl5BlockC1EmPS3_'/>
+<use f='include/google/protobuf/arena_impl.h' l='224' c='_ZNK6google8protobuf8internal9ArenaImpl5Block4nextEv'/>
+<use f='include/google/protobuf/arena_impl.h' l='230'/>
+<use f='include/google/protobuf/arena_impl.h' l='288'/>
+<use f='include/google/protobuf/arena_impl.h' l='291' c='_ZN6google8protobuf8internal9ArenaImpl8NewBlockEPNS2_5BlockEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='291' c='_ZN6google8protobuf8internal9ArenaImpl8NewBlockEPNS2_5BlockEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='309'/>
+<size>24</size>
+<doc f='include/google/protobuf/arena_impl.h' l='213'>// Blocks are variable length malloc-ed objects.  The following structure
+  // describes the common header for all blocks.</doc>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl5BlockC1EmPS3_'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl5Block7PointerEm'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl5Block4nextEv'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl5Block3posEv'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl5Block4sizeEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl5Block7set_posEm'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Block::next_' o='0' t='google::protobuf::internal::ArenaImpl::Block *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Block::pos_' o='64' t='size_t'/>
+<mbr r='google::protobuf::internal::ArenaImpl::Block::size_' o='128' t='size_t'/>

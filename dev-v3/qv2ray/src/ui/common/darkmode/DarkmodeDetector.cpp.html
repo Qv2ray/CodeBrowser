@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DarkmodeDetector.cpp source code [qv2ray/src/ui/common/darkmode/DarkmodeDetector.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/common/darkmode/DarkmodeDetector.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>ui</a>/<a href='..'>common</a>/<a href='./'>darkmode</a>/<a href='DarkmodeDetector.cpp.html'>DarkmodeDetector.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="DarkmodeDetector.hpp.html">"DarkmodeDetector.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../../base/Qv2rayBase.hpp.html">"base/Qv2rayBase.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include &lt;QApplication&gt;</u></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QStyle&gt;</u></td></tr>
+<tr><th id="7">7</th><td><u>#<span data-ppcond="7">ifdef</span> <span class="macro" data-ref="_M/Q_OS_LINUX">Q_OS_LINUX</span></u></td></tr>
+<tr><th id="8">8</th><td><u>#<span data-ppcond="7">elif</span> defined(Q_OS_WIN32)</u></td></tr>
+<tr><th id="9">9</th><td><u>#include &lt;QSettings&gt;</u></td></tr>
+<tr><th id="10">10</th><td><u>#elif defined(Q_OS_MAC)</u></td></tr>
+<tr><th id="11">11</th><td><u>#include &lt;CoreFoundation/CoreFoundation.h&gt;</u></td></tr>
+<tr><th id="12">12</th><td><u>#include &lt;CoreServices/CoreServices.h&gt;</u></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="7">endif</span></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">components</span>::<span class="namespace">darkmode</span></td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td>    <i>// Referenced from github.com/keepassxreboot/keepassxc. Licensed under GPL2/3.</i></td></tr>
+<tr><th id="18">18</th><td><i>    // Copyright (C) 2020 KeePassXC Team &lt;team@keepassxc.org&gt;</i></td></tr>
+<tr><th id="19">19</th><td>    <em>bool</em> <dfn class="decl def fn" id="_ZN6Qv2ray10components8darkmode10isDarkModeEv" title='Qv2ray::components::darkmode::isDarkMode' data-ref="_ZN6Qv2ray10components8darkmode10isDarkModeEv" data-ref-filename="_ZN6Qv2ray10components8darkmode10isDarkModeEv">isDarkMode</dfn>()</td></tr>
+<tr><th id="20">20</th><td>    {</td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="21">if</span> defined(<span class="macro" data-ref="_M/Q_OS_WIN32">Q_OS_WIN32</span>)</u></td></tr>
+<tr><th id="22">22</th><td>        QSettings settings(<q>R"(HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize)"</q>, QSettings::NativeFormat);</td></tr>
+<tr><th id="23">23</th><td>        <b>return</b> settings.value(<q>"AppsUseLightTheme"</q>, <var>1</var>).toInt() == <var>0</var>;</td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="21">elif</span> defined(<span class="macro" data-ref="_M/Q_OS_MAC">Q_OS_MAC</span>)</u></td></tr>
+<tr><th id="25">25</th><td>        <em>bool</em> isDark = <b>false</b>;</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>        CFStringRef uiStyleKey = CFSTR(<q>"AppleInterfaceStyle"</q>);</td></tr>
+<tr><th id="28">28</th><td>        CFStringRef uiStyle = <b>nullptr</b>;</td></tr>
+<tr><th id="29">29</th><td>        CFStringRef darkUiStyle = CFSTR(<q>"Dark"</q>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>        <b>if</b> (uiStyle = (CFStringRef) CFPreferencesCopyAppValue(uiStyleKey, kCFPreferencesCurrentApplication); uiStyle)</td></tr>
+<tr><th id="32">32</th><td>        {</td></tr>
+<tr><th id="33">33</th><td>            isDark = (kCFCompareEqualTo == CFStringCompare(uiStyle, darkUiStyle, <var>0</var>));</td></tr>
+<tr><th id="34">34</th><td>            CFRelease(uiStyle);</td></tr>
+<tr><th id="35">35</th><td>        }</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>        <b>return</b> isDark;</td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="21">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>        <b>if</b> (!<span class="macro" title="(static_cast&lt;QApplication *&gt;(QCoreApplication::instance()))" data-ref="_M/qApp">qApp</span> || !<span class="macro" title="(static_cast&lt;QApplication *&gt;(QCoreApplication::instance()))" data-ref="_M/qApp">qApp</span>-&gt;<span class='ref fn' title='QApplication::style' data-ref="_ZN12QApplication5styleEv" data-ref-filename="_ZN12QApplication5styleEv">style</span>())</td></tr>
+<tr><th id="41">41</th><td>        {</td></tr>
+<tr><th id="42">42</th><td>            <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="43">43</th><td>        }</td></tr>
+<tr><th id="44">44</th><td>        <b>return</b> <span class="macro" title="(static_cast&lt;QApplication *&gt;(QCoreApplication::instance()))" data-ref="_M/qApp">qApp</span>-&gt;<span class='ref fn' title='QApplication::style' data-ref="_ZN12QApplication5styleEv" data-ref-filename="_ZN12QApplication5styleEv">style</span>()-&gt;<span class='virtual ref fn' title='QStyle::standardPalette' data-ref="_ZNK6QStyle15standardPaletteEv" data-ref-filename="_ZNK6QStyle15standardPaletteEv">standardPalette</span>().<span class='ref fn' title='QPalette::color' data-ref="_ZNK8QPalette5colorENS_9ColorRoleE" data-ref-filename="_ZNK8QPalette5colorENS_9ColorRoleE">color</span>(<span class='type' title='QPalette' data-ref="QPalette" data-ref-filename="QPalette">QPalette</span>::<span class='enum' title='QPalette::Window' data-ref="QPalette::Window" data-ref-filename="QPalette..Window">Window</span>).<span class='ref fn' title='QColor::toHsl' data-ref="_ZNK6QColor5toHslEv" data-ref-filename="_ZNK6QColor5toHslEv">toHsl</span>().<span class='ref fn' title='QColor::lightness' data-ref="_ZNK6QColor9lightnessEv" data-ref-filename="_ZNK6QColor9lightnessEv">lightness</span>() &lt; <var>110</var>;</td></tr>
+<tr><th id="45">45</th><td>    }</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>} <i>// namespace Qv2ray::components::darkmode</i></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

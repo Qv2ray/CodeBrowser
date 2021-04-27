@@ -1,0 +1,45 @@
+<inh f='/qv2ray_autogen/include/ui_ConnectionInfoWidget.h' l='370' c='Ui::ConnectionInfoWidget'/>
+<def f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='9' ll='49'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='117' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='190' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionInfoWidget.cpp' l='197' c='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='114'/>
+<size>440</size>
+<smbr r='ConnectionInfoWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK20ConnectionInfoWidget10metaObjectEv'/>
+<fun r='_ZN20ConnectionInfoWidget11qt_metacastEPKc'/>
+<fun r='_ZN20ConnectionInfoWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20ConnectionInfoWidget2trEPKcS1_i'/>
+<fun r='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20ConnectionInfoWidgetC1EP7QWidget'/>
+<fun r='_ZN20ConnectionInfoWidget11ShowDetailsERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionInfoWidgetD1Ev'/>
+<fun r='_ZN20ConnectionInfoWidget15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionInfoWidget19OnJsonEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionInfoWidget11eventFilterEP7QObjectP6QEvent'/>
+<fun r='_ZN20ConnectionInfoWidget21on_connectBtn_clickedEv'/>
+<fun r='_ZN20ConnectionInfoWidget18on_editBtn_clickedEv'/>
+<fun r='_ZN20ConnectionInfoWidget22on_editJsonBtn_clickedEv'/>
+<fun r='_ZN20ConnectionInfoWidget20on_deleteBtn_clickedEv'/>
+<fun r='_ZN20ConnectionInfoWidget14OnGroupRenamedERKN6Qv2ray4base6IDTypeINS1_9__GroupIdEEERK7QStringS9_'/>
+<fun r='_ZN20ConnectionInfoWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionInfoWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionInfoWidget20OnConnectionModifiedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionInfoWidget25OnConnectionModified_PairERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN20ConnectionInfoWidget21on_latencyBtn_clickedEv'/>
+<fun r='_ZN20ConnectionInfoWidget17updateColorSchemeEv'/>
+<fun r='_ZN20ConnectionInfoWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<mbr r='ConnectionInfoWidget::connectionId' o='2688' t='Qv2ray::base::ConnectionId'/>
+<mbr r='ConnectionInfoWidget::groupId' o='2880' t='Qv2ray::base::GroupId'/>
+<mbr r='ConnectionInfoWidget::isRealPixmapShown' o='3072' t='bool'/>
+<mbr r='ConnectionInfoWidget::qrPixmap' o='3136' t='QPixmap'/>
+<mbr r='ConnectionInfoWidget::qrPixmapBlured' o='3328' t='QPixmap'/>
+<fun r='_ZN20ConnectionInfoWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='ConnectionInfoWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK20ConnectionInfoWidget10metaObjectEv'/>
+<fun r='_ZN20ConnectionInfoWidget11qt_metacastEPKc'/>
+<fun r='_ZN20ConnectionInfoWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20ConnectionInfoWidget15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<fun r='_ZN20ConnectionInfoWidget19OnJsonEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='110' c='_ZN10MainWindowC1EP7QWidget'/>
+<size>440</size>

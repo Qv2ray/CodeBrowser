@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.h' l='74' type='ZXing::BarcodeFormats ZXing::BarcodeFormatsFromString(const std::string &amp; str)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.cpp' l='79' ll='95' type='ZXing::BarcodeFormats ZXing::BarcodeFormatsFromString(const std::string &amp; str)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.h' l='67'>/**
+ * @brief Parse a string into a set of BarcodeFormats.
+ * Separators can be (any combination of) &apos;|&apos;, &apos;,&apos; or &apos; &apos;.
+ * Underscors are optional and input can be lower case.
+ * e.g. &quot;EAN_8 qrcode, Itf&quot; would be parsed into [EAN_8, QR_CODE, ITF].
+ * @throws std::invalid_parameter Throws if the string can not be fully parsed.
+ */</doc>

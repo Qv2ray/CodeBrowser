@@ -1,0 +1,39 @@
+<inh f='/qv2ray_autogen/include/ui_RouteSettingsMatrix.h' l='284' c='Ui::RouteSettingsMatrix'/>
+<def f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.hpp' l='10' ll='46'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_RouteSettingsMatrix.cpp' l='72' c='_ZN25RouteSettingsMatrixWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='74'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='143'/>
+<size>352</size>
+<smbr r='RouteSettingsMatrixWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK25RouteSettingsMatrixWidget10metaObjectEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget11qt_metacastEPKc'/>
+<fun r='_ZN25RouteSettingsMatrixWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget2trEPKcS1_i'/>
+<fun r='_ZN25RouteSettingsMatrixWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN25RouteSettingsMatrixWidgetC1ERK7QStringP7QWidget'/>
+<fun r='_ZN25RouteSettingsMatrixWidget14SetRouteConfigERKN6Qv2ray4base6config14QvConfig_RouteE'/>
+<fun r='_ZNK25RouteSettingsMatrixWidget14GetRouteConfigEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidgetD1Ev'/>
+<fun r='_ZN25RouteSettingsMatrixWidget14openFileDialogEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget14saveFileDialogEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget17getBuiltInSchemesEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget14schemeToActionERK7QStringRKN6Qv2ray4base6config14QvConfig_RouteE'/>
+<mbr r='RouteSettingsMatrixWidget::builtInSchemesMenu' o='2304' t='QMenu *'/>
+<fun r='_ZN25RouteSettingsMatrixWidget26on_importSchemeBtn_clickedEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget26on_exportSchemeBtn_clickedEv'/>
+<mbr r='RouteSettingsMatrixWidget::assetsDirPath' o='2368' t='const QString &amp;'/>
+<mbr r='RouteSettingsMatrixWidget::directDomainTxt' o='2432' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<mbr r='RouteSettingsMatrixWidget::proxyDomainTxt' o='2496' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<mbr r='RouteSettingsMatrixWidget::blockDomainTxt' o='2560' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<mbr r='RouteSettingsMatrixWidget::directIPTxt' o='2624' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<mbr r='RouteSettingsMatrixWidget::blockIPTxt' o='2688' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<mbr r='RouteSettingsMatrixWidget::proxyIPTxt' o='2752' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<fun r='_ZN25RouteSettingsMatrixWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='RouteSettingsMatrixWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK25RouteSettingsMatrixWidget10metaObjectEv'/>
+<fun r='_ZN25RouteSettingsMatrixWidget11qt_metacastEPKc'/>
+<fun r='_ZN25RouteSettingsMatrixWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.cpp' l='61' c='_ZN12GroupManagerC1EP7QWidget'/>
+<size>352</size>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='225' c='_ZN17PreferencesWindowC1EP7QWidget'/>
+<size>352</size>

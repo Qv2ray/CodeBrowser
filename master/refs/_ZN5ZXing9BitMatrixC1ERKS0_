@@ -1,0 +1,4 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='60' type='void ZXing::BitMatrix::BitMatrix(const ZXing::BitMatrix &amp; )'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='94' u='c' c='_ZNK5ZXing9BitMatrix4copyEv'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='58'>// There is nothing wrong to support this but disable to make it explicit since we may copy something very big here.
+	// Use copy() below.</doc>

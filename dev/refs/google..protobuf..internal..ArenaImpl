@@ -1,0 +1,49 @@
+<def f='include/google/protobuf/arena_impl.h' l='64' ll='315'/>
+<use f='include/google/protobuf/arena_impl.h' l='147' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena3NewEPNS2_5BlockEPvPS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='196'/>
+<use f='include/google/protobuf/arena_impl.h' l='300' c='_ZN6google8protobuf8internal9ArenaImplC1ERKS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='300' c='_ZN6google8protobuf8internal9ArenaImplaSERKS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='303' c='_ZN6google8protobuf8internal9ArenaImplC1EOS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='304' c='_ZN6google8protobuf8internal9ArenaImplaSEOS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='304' c='_ZN6google8protobuf8internal9ArenaImplaSEOS2_'/>
+<use f='include/google/protobuf/arena.h' l='677'/>
+<size>88</size>
+<doc f='include/google/protobuf/arena_impl.h' l='58'>// This class provides the core Arena memory allocation library. Different
+// implementations only need to implement the public interface below.
+// Arena is not a template type as that would only be useful if all protos
+// in turn would be templates, which will/cannot happen. However separating
+// the memory allocation part from the cruft of the API users expect we can
+// use #ifdef the select the best implementation based on hardware / OS.</doc>
+<fun r='_ZN6google8protobuf8internal9ArenaImplC1ERKT_'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImplD1Ev'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl5ResetEv'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl14SpaceAllocatedEv'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl9SpaceUsedEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl15AllocateAlignedEm'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl28AllocateAlignedAndAddCleanupEmPFvPvE'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl10AddCleanupEPvPFvS3_E'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl23AllocateAlignedFallbackEm'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl36AllocateAlignedAndAddCleanupFallbackEmPFvPvE'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl18AddCleanupFallbackEPvPFvS3_E'/>
+<smbr r='google::protobuf::internal::ArenaImpl::lifecycle_id_generator_' t='std::atomic&lt;int64&gt;'/>
+<smbr r='google::protobuf::internal::ArenaImpl::thread_cache_' t='google::protobuf::internal::ArenaImpl::ThreadCache'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl12thread_cacheEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl4InitEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl10FreeBlocksEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11CleanupListEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl16CacheSerialArenaEPNS2_11SerialArenaE'/>
+<mbr r='google::protobuf::internal::ArenaImpl::threads_' o='0' t='std::atomic&lt;SerialArena *&gt;'/>
+<mbr r='google::protobuf::internal::ArenaImpl::hint_' o='64' t='std::atomic&lt;SerialArena *&gt;'/>
+<mbr r='google::protobuf::internal::ArenaImpl::space_allocated_' o='128' t='std::atomic&lt;size_t&gt;'/>
+<mbr r='google::protobuf::internal::ArenaImpl::initial_block_' o='192' t='google::protobuf::internal::ArenaImpl::Block *'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl8NewBlockEPNS2_5BlockEm'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl14GetSerialArenaEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl18GetSerialArenaFastEPPNS2_11SerialArenaE'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl22GetSerialArenaFallbackEPv'/>
+<mbr r='google::protobuf::internal::ArenaImpl::lifecycle_id_' o='256' t='google::protobuf::int64'/>
+<mbr r='google::protobuf::internal::ArenaImpl::options_' o='320' t='google::protobuf::internal::ArenaImpl::Options'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImplC1ERKS2_'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImplC1EOS2_'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImplaSEOS2_'/>
+<smbr r='google::protobuf::internal::ArenaImpl::kBlockHeaderSize' t='const size_t'/>
+<smbr r='google::protobuf::internal::ArenaImpl::kSerialArenaSize' t='const size_t'/>

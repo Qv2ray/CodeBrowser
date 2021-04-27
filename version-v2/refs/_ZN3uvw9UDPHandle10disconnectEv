@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='218' type='void uvw::UDPHandle::disconnect()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='67' ll='69' type='void uvw::UDPHandle::disconnect()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='211'>/**
+     * @brief Disconnects the handle.
+     *
+     * Trying to disconnect a handle that is not connected isn&apos;t allowed.
+     *
+     * An ErrorEvent event is emitted in case of errors.
+     */</doc>

@@ -1,0 +1,11 @@
+<def f='include/c++/10/bits/stl_list.h' l='1210' ll='1212' type='void std::__cxx11::list::push_back(const std::__cxx11::list::value_type &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_list.h' l='1200'>/**
+       *  @brief  Add data to the end of the %list.
+       *  @param  __x  Data to be added.
+       *
+       *  This is a typical stack operation.  The function creates an
+       *  element at the end of the %list and assigns the given data to
+       *  it.  Due to the nature of a %list this operation can be done
+       *  in constant time, and does not invalidate iterators and
+       *  references.
+       */</doc>

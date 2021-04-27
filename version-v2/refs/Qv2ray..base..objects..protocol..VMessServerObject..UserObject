@@ -1,0 +1,18 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='366' ll='374'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='372' c='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject10UserObjecteqERKS4_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='373' c='_ZN6Qv2ray4base7objects8protocol17VMessServerObject10UserObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='373' c='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='373' c='_ZN6Qv2ray4base7objects8protocol17VMessServerObject10UserObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='378'/>
+<size>32</size>
+<mbr r='Qv2ray::base::objects::protocol::VMessServerObject::UserObject::id' o='0' t='QString'/>
+<mbr r='Qv2ray::base::objects::protocol::VMessServerObject::UserObject::alterId' o='64' t='int'/>
+<mbr r='Qv2ray::base::objects::protocol::VMessServerObject::UserObject::security' o='128' t='QString'/>
+<mbr r='Qv2ray::base::objects::protocol::VMessServerObject::UserObject::level' o='192' t='int'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol17VMessServerObject10UserObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject10UserObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol17VMessServerObject10UserObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='237' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<size>32</size>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='35' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<size>32</size>

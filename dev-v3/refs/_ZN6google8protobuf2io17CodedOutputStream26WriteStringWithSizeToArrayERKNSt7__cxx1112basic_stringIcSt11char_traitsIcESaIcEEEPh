@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='738' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteStringWithSizeToArray(const std::string &amp; str, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='876' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteStringToArrayEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='882' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteBytesToArrayEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPh'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='737'>// Write the varint-encoded size of str followed by str.</doc>

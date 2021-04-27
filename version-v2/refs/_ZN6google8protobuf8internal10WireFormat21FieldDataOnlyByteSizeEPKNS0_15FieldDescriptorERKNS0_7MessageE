@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/wire_format.h' l='223' type='static size_t google::protobuf::internal::WireFormat::FieldDataOnlyByteSize(const google::protobuf::FieldDescriptor * field, const google::protobuf::Message &amp; message)'/>
+<doc f='include/google/protobuf/wire_format.h' l='219'>// Computes the byte size of a field, excluding tags. For packed fields, it
+  // only includes the size of the raw data, and not the size of the total
+  // length, but for other length-delimited types, the size of the length is
+  // included.</doc>

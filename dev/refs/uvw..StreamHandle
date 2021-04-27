@@ -1,0 +1,32 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='128' ll='440'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='41' c='uvw::PipeHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='41'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='14' c='_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<size>368</size>
+<smbr r='uvw::StreamHandle::DEFAULT_BACKLOG' t='const unsigned int'/>
+<fun r='_ZN3uvw12StreamHandle12readCallbackEP11uv_stream_slPK8uv_buf_t'/>
+<fun r='_ZN3uvw12StreamHandle14listenCallbackEP11uv_stream_si'/>
+<fun r='_ZN3uvw12StreamHandle8shutdownEv'/>
+<fun r='_ZN3uvw12StreamHandle6listenEi'/>
+<fun r='_ZN3uvw12StreamHandle6acceptERTL0__'/>
+<fun r='_ZN3uvw12StreamHandle4readEv'/>
+<fun r='_ZN3uvw12StreamHandle4stopEv'/>
+<fun r='_ZN3uvw12StreamHandle5writeESt10unique_ptrIA_cTL0__Ej'/>
+<fun r='_ZN3uvw12StreamHandle5writeEPcj'/>
+<fun r='_ZN3uvw12StreamHandle5writeERTL0__St10unique_ptrIA_cTL0_0_Ej'/>
+<fun r='_ZN3uvw12StreamHandle5writeERTL0__Pcj'/>
+<fun r='_ZN3uvw12StreamHandle8tryWriteESt10unique_ptrIA_cSt14default_deleteIS2_EEj'/>
+<fun r='_ZN3uvw12StreamHandle8tryWriteEPcj'/>
+<fun r='_ZNK3uvw12StreamHandle8readableEv'/>
+<fun r='_ZNK3uvw12StreamHandle8writableEv'/>
+<fun r='_ZN3uvw12StreamHandle8blockingEb'/>
+<fun r='_ZNK3uvw12StreamHandle14writeQueueSizeEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='186' c='_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='46' c='uvw::TCPHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='46'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='12' c='_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<size>352</size>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='57' c='uvw::TTYHandle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='57'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='19' c='_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb'/>
+<size>416</size>

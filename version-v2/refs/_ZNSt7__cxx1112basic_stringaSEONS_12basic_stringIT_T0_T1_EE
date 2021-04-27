@@ -1,0 +1,45 @@
+<def f='include/c++/10/bits/basic_string.h' l='702' ll='759' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::operator=(basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp;&amp; __str)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='693'>/**
+       *  @brief  Move assign the value of @a str to this string.
+       *  @param  __str  Source string.
+       *
+       *  The contents of @a str are moved into this string (without copying).
+       *  @a str is a valid, but unspecified string.
+       **/
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // 2063. Contradictory requirements for string move assignment</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='399' u='c' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/QJsonStruct/QJsonStruct.hpp' l='86' u='c' c='_ZN16JsonStructHelper11DeserializeERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERK10QJsonValue'/>
+<use f='qv2ray/3rdparty/QJsonStruct/QJsonStruct.hpp' l='86' u='c' c='_ZN16JsonStructHelper11DeserializeERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERK10QJsonValue'/>
+<use f='include/google/protobuf/arenastring.h' l='275' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr10SetNoArenaEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEOS8_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='471' u='c' c='_ZN4grpc8internal22CallOpServerSendStatus16ServerSendStatusERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pai13417773'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='476' u='c' c='_ZN4grpc8internal22CallOpServerSendStatus16ServerSendStatusERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pai13417773'/>
+<use f='qv2ray/test/catch.hpp' l='8293' u='c' c='_ZNK5Catch19AssertionResultData21reconstructExpressionB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8342' u='c' c='_ZNK5Catch15AssertionResult20getExpressionInMacroB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8712' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='9720' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9723' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9951' u='c' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9954' u='c' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='11095' u='c' c='_ZN5Catch14AssertionStatsC1ERKNS_15AssertionResultERKSt6vectorINS_11MessageInfoESaIS5_EERKNS_6TotalsE'/>
+<use f='qv2ray/test/catch.hpp' l='11399' u='c' c='_ZNK5Catch8Matchers4Impl18MatcherUntypedBase8toStringB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='11841' u='c' c='_ZN5Catch13ScopedMessageC1ERKNS_14MessageBuilderE'/>
+<use f='qv2ray/test/catch.hpp' l='11903' u='c' c='_ZN5Catch8CapturerC1ENS_9StringRefERKNS_14SourceLineInfoENS_9ResultWas6OfTypeES1_'/>
+<use f='qv2ray/test/catch.hpp' l='11911' u='c' c='_ZN5Catch8CapturerC1ENS_9StringRefERKNS_14SourceLineInfoENS_9ResultWas6OfTypeES1_'/>
+<use f='qv2ray/test/catch.hpp' l='12917' u='c' c='_ZN5Catch10RunContext25handleFatalErrorConditionENS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='13079' u='c' c='_ZN5Catch10RunContext13handleMessageERKNS_13AssertionInfoENS_9ResultWas6OfTypeERKNS_9StringRefERNS_17AssertionReactionE'/>
+<use f='qv2ray/test/catch.hpp' l='13854' u='c' c='_ZN5Catch14replaceInPlaceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS5_S8_'/>
+<use f='qv2ray/test/catch.hpp' l='13977' u='c' c='_ZNK5Catch16TagAliasRegistry13expandAliasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14328' u='c' c='_ZN5Catch16extractClassNameB5cxx11ERKNS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='14699' u='c' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14863' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14867' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='15059' u='c' c='_ZN5Catch10fpToStringB5cxx11ET_i'/>
+<use f='qv2ray/test/catch.hpp' l='15395' u='c' c='_ZN5Catch15WildcardPatternC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13CaseSensitive6ChoiceE'/>
+<use f='qv2ray/test/catch.hpp' l='15399' u='c' c='_ZN5Catch15WildcardPatternC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13CaseSensitive6ChoiceE'/>
+<use f='qv2ray/test/catch.hpp' l='15662' u='c' c='_ZN5Catch9XmlWriter10endElementENS_13XmlFormattingE'/>
+<use f='qv2ray/test/catch.hpp' l='16681' u='c' c='_ZN5Catch13SummaryColumn6addRowEm'/>
+<use f='qv2ray/test/catch.hpp' l='16683' u='c' c='_ZN5Catch13SummaryColumn6addRowEm'/>
+<use f='qv2ray/test/catch.hpp' l='16936' u='c' c='_ZN5Catch13JunitReporter13writeTestCaseERKNS_22CumulativeReporterBaseIS0_E4NodeINS_13TestCaseStatsENS2_11SectionNodeEEE'/>
+<use f='qv2ray/test/catch.hpp' l='16942' u='c' c='_ZN5Catch13JunitReporter13writeTestCaseERKNS_22CumulativeReporterBaseIS0_E4NodeINS_13TestCaseStatsENS2_11SectionNodeEEE'/>
+<use f='qv2ray/test/catch.hpp' l='16952' u='c' c='_ZN5Catch13JunitReporter12writeSectionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RKNS_22CumulativeReporterBaseIS0_E11SectionNodeE'/>

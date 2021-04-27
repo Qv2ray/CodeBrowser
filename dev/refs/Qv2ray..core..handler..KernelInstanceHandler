@@ -1,0 +1,58 @@
+<def f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='11' ll='91'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='92'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='176'/>
+<size>88</size>
+<smbr r='Qv2ray::core::handler::KernelInstanceHandler::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler6trUtf8EPKcS4_i'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandlerC1EP7QObject'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandlerD1Ev'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler14StopConnectionEv'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler17CurrentConnectionEv'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler24ActivePluginKernelsCountEv'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler31GetCurrentConnectionInboundInfoEv'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler24GetActiveKernelProtocolsEv'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler9OnCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnStatsDataAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler17OnKernelCrashed_pERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler19OnPluginKernelLog_pERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler18OnV2RayKernelLog_pERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler22OnV2RayStatsDataRcvd_pERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler23OnPluginStatsDataRcvd_pEll'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler14emitLogMessageERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS_4base26ProtocolSettingsInfoObjectEEi'/>
+<mbr r='Qv2ray::core::handler::KernelInstanceHandler::pluginLogPrefixPadding' o='128' t='int'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler15GetInboundPortsEv'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler15GetInboundHostsEv'/>
+<mbr r='Qv2ray::core::handler::KernelInstanceHandler::kernelMap' o='192' t='QMap&lt;QString, QString&gt;'/>
+<mbr r='Qv2ray::core::handler::KernelInstanceHandler::activeKernels' o='256' t='std::list&lt;std::pair&lt;QString, std::unique_ptr&lt;PluginKernel&gt;&gt;&gt;'/>
+<mbr r='Qv2ray::core::handler::KernelInstanceHandler::inboundInfo' o='448' t='QMap&lt;QString, Qv2ray::base::ProtocolSettingsInfoObject&gt;'/>
+<mbr r='Qv2ray::core::handler::KernelInstanceHandler::vCoreInstance' o='512' t='Qv2ray::core::kernel::V2RayKernelInstance *'/>
+<mbr r='Qv2ray::core::handler::KernelInstanceHandler::currentId' o='576' t='Qv2ray::base::ConnectionGroupPair'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='118' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='175' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='182' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='189' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='196' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='203' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>88</size>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::core::handler::KernelInstanceHandler::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4core7handler21KernelInstanceHandler10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler9OnCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnStatsDataAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<fun r='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='69' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<size>88</size>

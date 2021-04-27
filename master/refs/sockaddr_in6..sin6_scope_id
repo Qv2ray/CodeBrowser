@@ -1,0 +1,9 @@
+<dec f='include/netinet/in.h' l='259' type='uint32_t'/>
+<offset>192</offset>
+<doc f='include/netinet/in.h' l='259'>/* IPv6 scope-id */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='823' u='r' c='uv__udp_set_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='923' u='r' c='uv__udp_set_source_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1223' u='w' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1248' u='a' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1249' u='r' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='259' u='w' c='uv_ip6_addr'/>

@@ -1,0 +1,11 @@
+<inh f='include/grpcpp/impl/codegen/server_interface.h' l='147' c='grpc::ServerInterface::BaseAsyncRequest'/>
+<def f='include/grpcpp/impl/codegen/server_interface.h' l='167' ll='178'/>
+<ovr f='include/grpcpp/impl/codegen/server_interface.h' l='180' c='grpc::ServerInterface::NoPayloadAsyncRequest'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='180'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='187' c='_ZN4grpc15ServerInterface21NoPayloadAsyncRequestC1EPvPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_2113460025'/>
+<ovr f='include/grpcpp/impl/codegen/server_interface.h' l='195' c='grpc::ServerInterface::PayloadAsyncRequest'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='195'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='203' c='_ZN4grpc15ServerInterface19PayloadAsyncRequestC1EPvPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21Se4045928'/>
+<size>64</size>
+<fun r='_ZN4grpc15ServerInterface22RegisteredAsyncRequestC1EPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPv'/>
+<fun r='_ZN4grpc15ServerInterface22RegisteredAsyncRequest12IssueRequestEPvPP16grpc_byte_bufferPNS_21ServerCompletionQueueE'/>

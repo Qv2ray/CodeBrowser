@@ -1,0 +1,3 @@
+<dec f='include/grpc/support/sync.h' l='43' type='void gpr_mu_destroy(gpr_mu * mu)'/>
+<doc f='include/grpc/support/sync.h' l='41'>/** Cause *mu no longer to be initialized, freeing any memory in use.  Requires:
+ *mu initialized; no other concurrent operation on *mu.  */</doc>

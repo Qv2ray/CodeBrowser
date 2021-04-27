@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1704' type='int uv_sem_init(uv_sem_t * sem, unsigned int value)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='221' u='c' c='init_threads'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='650' ll='659' type='int uv_sem_init(uv_sem_t * sem, unsigned int value)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='147' u='c' c='_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>

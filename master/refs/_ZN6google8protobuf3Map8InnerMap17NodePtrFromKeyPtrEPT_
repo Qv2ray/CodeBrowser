@@ -1,0 +1,8 @@
+<def f='include/google/protobuf/map.h' l='362' ll='364' type='static google::protobuf::Map::InnerMap::Node * google::protobuf::Map::InnerMap::NodePtrFromKeyPtr(Key * k)'/>
+<use f='include/google/protobuf/map.h' l='408' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseC1ENSt3setIPT_NS2_10KeyCompareENS1_12MapAllocatorINS1_12KeyValuePairEE6rebindIS6_E5otherEE8iteratorEPKS2_m'/>
+<use f='include/google/protobuf/map.h' l='428' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_base10SearchFromEm'/>
+<use f='include/google/protobuf/map.h' l='456' u='c' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseppEv'/>
+<use f='include/google/protobuf/map.h' l='531' u='c' c='_ZN6google8protobuf3Map8InnerMap5clearEv'/>
+<use f='include/google/protobuf/map.h' l='795' u='c' c='_ZN6google8protobuf3Map8InnerMap12TransferTreeEPKPvm'/>
+<doc f='include/google/protobuf/map.h' l='360'>// This is safe only if the given pointer is known to point to a Key that is
+    // part of a Node.</doc>

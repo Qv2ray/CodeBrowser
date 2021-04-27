@@ -1,0 +1,25 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='717' type='static bool uvw::Utilities::replaceAllocator(uvw::Utilities::MallocFuncType mallocFunc, uvw::Utilities::ReallocFuncType reallocFunc, uvw::Utilities::CallocFuncType callocFunc, uvw::Utilities::FreeFuncType freeFunc)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='694'>/**
+     * @brief Override the use of some standard library’s functions.
+     *
+     * Override the use of the standard library’s memory allocation
+     * functions.&lt;br/&gt;
+     * This method must be invoked before any other `uvw` function is called or
+     * after all resources have been freed and thus the underlying library
+     * doesn’t reference any allocated memory chunk.
+     *
+     * If any of the function pointers is _null_, the invokation will fail.
+     *
+     * @note
+     * There is no protection against changing the allocator multiple times. If
+     * the user changes it they are responsible for making sure the allocator is
+     * changed while no memory was allocated with the previous allocator, or
+     * that they are compatible.
+     *
+     * @param mallocFunc Replacement function for _malloc_.
+     * @param reallocFunc Replacement function for _realloc_.
+     * @param callocFunc Replacement function for _calloc_.
+     * @param freeFunc Replacement function for _free_.
+     * @return True in case of success, false otherwise.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='251' ll='253' type='static bool uvw::Utilities::replaceAllocator(uvw::Utilities::MallocFuncType mallocFunc, uvw::Utilities::ReallocFuncType reallocFunc, uvw::Utilities::CallocFuncType callocFunc, uvw::Utilities::FreeFuncType freeFunc)'/>

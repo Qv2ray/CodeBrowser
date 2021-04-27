@@ -1,0 +1,52 @@
+<use f='include/google/protobuf/descriptor.h' l='484'/>
+<use f='include/google/protobuf/descriptor.h' l='1141' c='_ZNK6google8protobuf17ServiceDescriptor6methodEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1144' c='_ZNK6google8protobuf17ServiceDescriptor16FindMethodByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1179'/>
+<use f='include/google/protobuf/descriptor.h' l='1189'/>
+<def f='include/google/protobuf/descriptor.h' l='1198' ll='1277'/>
+<use f='include/google/protobuf/descriptor.h' l='1276' c='_ZN6google8protobuf16MethodDescriptorC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1276' c='_ZN6google8protobuf16MethodDescriptoraSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1466'/>
+<use f='include/google/protobuf/descriptor.h' l='1561' c='_ZNK6google8protobuf14DescriptorPool16FindMethodByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1746'/>
+<use f='include/google/protobuf/descriptor.h' l='1923' c='_ZNK6google8protobuf17ServiceDescriptor6methodEi'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='47'/>
+<size>104</size>
+<doc f='include/google/protobuf/descriptor.h' l='1194'>// Describes an individual service method.  To obtain a MethodDescriptor given
+// a service, first get its ServiceDescriptor, then call
+// ServiceDescriptor::FindMethodByName().  Use DescriptorPool to construct your
+// own descriptors.</doc>
+<fun r='_ZNK6google8protobuf16MethodDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor5indexEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor7serviceEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor10input_typeEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor11output_typeEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor16client_streamingEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor16server_streamingEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor6CopyToEPNS0_21MethodDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor11DebugStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor15GetLocationPathEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::MethodDescriptor::name_' o='0' t='const std::string *'/>
+<mbr r='google::protobuf::MethodDescriptor::full_name_' o='64' t='const std::string *'/>
+<mbr r='google::protobuf::MethodDescriptor::service_' o='128' t='const google::protobuf::ServiceDescriptor *'/>
+<mbr r='google::protobuf::MethodDescriptor::input_type_' o='192' t='internal::LazyDescriptor'/>
+<mbr r='google::protobuf::MethodDescriptor::output_type_' o='448' t='internal::LazyDescriptor'/>
+<mbr r='google::protobuf::MethodDescriptor::options_' o='704' t='const google::protobuf::MethodOptions *'/>
+<mbr r='google::protobuf::MethodDescriptor::client_streaming_' o='768' t='bool'/>
+<mbr r='google::protobuf::MethodDescriptor::server_streaming_' o='776' t='bool'/>
+<fun r='_ZN6google8protobuf16MethodDescriptorC1Ev'/>
+<fun r='_ZN6google8protobuf16MethodDescriptorC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor7serviceEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor16client_streamingEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor16server_streamingEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf16MethodDescriptor5indexEv'/>

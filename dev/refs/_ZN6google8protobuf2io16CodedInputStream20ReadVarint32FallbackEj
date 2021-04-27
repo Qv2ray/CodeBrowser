@@ -1,0 +1,13 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='610' type='google::protobuf::int64 google::protobuf::io::CodedInputStream::ReadVarint32Fallback(google::protobuf::uint32 first_byte_or_zero)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='912' u='c' c='_ZN6google8protobuf2io16CodedInputStream12ReadVarint32EPj'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='599'>// When parsing varints, we optimize for the common case of small values, and
+  // then optimize for the case when the varint fits within the current buffer
+  // piece. The Fallback method is used when we can&apos;t use the one-byte
+  // optimization. The Slow method is yet another fallback when the buffer is
+  // not large enough. Making the slow path out-of-line speeds up the common
+  // case by 10-15%. The slow path is fairly uncommon: it only triggers when a
+  // message crosses multiple buffers.  Note: ReadVarint32Fallback() and
+  // ReadVarint64Fallback() are called frequently and generally not inlined, so
+  // they have been optimized to avoid &quot;out&quot; parameters.  The former returns -1
+  // if it fails and the uint32 it read otherwise.  The latter has a bool
+  // indicating success or failure as part of its return type.</doc>

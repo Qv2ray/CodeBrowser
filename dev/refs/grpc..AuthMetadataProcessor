@@ -1,0 +1,9 @@
+<def f='include/grpcpp/security/auth_metadata_processor.h' l='33' ll='57'/>
+<use f='include/grpcpp/security/server_credentials.h' l='42' c='_ZN4grpc17ServerCredentials24SetAuthMetadataProcessorERKSt10shared_ptrINS_21AuthMetadataProcessorEE'/>
+<size>8</size>
+<doc f='include/grpcpp/security/auth_metadata_processor.h' l='30'>/// Interface allowing custom server-side authorization based on credentials
+/// encoded in metadata.  Objects of this type can be passed to
+/// \a ServerCredentials::SetAuthMetadataProcessor().</doc>
+<fun r='_ZN4grpc21AuthMetadataProcessorD1Ev'/>
+<fun r='_ZNK4grpc21AuthMetadataProcessor10IsBlockingEv'/>
+<fun r='_ZN4grpc21AuthMetadataProcessor7ProcessERKSt8multimapINS_10string_refES2_St4lessIS2_ESaISt4pairIKS2_S2_EEEPNS_11AuthContextEPS1_INSt7__cxx1112basic_st10988925'/>

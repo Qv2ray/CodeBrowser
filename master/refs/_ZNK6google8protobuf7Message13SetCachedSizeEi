@@ -1,0 +1,20 @@
+<dec f='include/google/protobuf/message.h' l='324' type='void google::protobuf::Message::SetCachedSize(int size) const'/>
+<doc f='include/google/protobuf/message.h' l='317'>// This is called only by the default implementation of ByteSize(), to
+  // update the cached size.  If you override ByteSize(), you do not need
+  // to override this.  If you do not override ByteSize(), you MUST override
+  // this; the default implementation will crash.
+  //
+  // The method is private because subclasses should never call it; only
+  // override it.  Yes, C++ lets you do that.  Crazy, huh?</doc>
+<ovr f='/v2ray_api.pb.cc' l='397' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='676' c='_ZNK5v2ray4core3app5stats7command4Stat13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='957' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1191' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1462' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1689' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1884' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='2421' c='_ZNK5v2ray4core3app5stats7command6Config13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='301' c='_ZNK22DomainObject_Attribute13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='650' c='_ZNK12DomainObject13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='975' c='_ZNK7GeoSite13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1255' c='_ZNK11GeoSiteList13SetCachedSizeEi'/>

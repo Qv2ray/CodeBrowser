@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='671' ll='675' type='void grpc::internal::Call::Call(grpc_call * call, grpc::internal::CallHook * call_hook, grpc::CompletionQueue * cq)'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='702' u='c' c='_ZN4grpc17ServerAsyncReaderC1EPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='849' u='c' c='_ZN4grpc17ServerAsyncWriterC1EPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1015' u='c' c='_ZN4grpc23ServerAsyncReaderWriterC1EPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='204' u='c' c='_ZN4grpc25ServerAsyncResponseWriterC1EPNS_13ServerContextE'/>
+<doc f='include/grpcpp/impl/codegen/call.h' l='670'>/** call is owned by the caller */</doc>

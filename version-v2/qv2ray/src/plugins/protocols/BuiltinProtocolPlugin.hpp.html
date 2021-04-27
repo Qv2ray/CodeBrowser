@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BuiltinProtocolPlugin.hpp source code [qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="InternalProtocolSupportPlugin "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>plugins</a>/<a href='./'>protocols</a>/<a href='BuiltinProtocolPlugin.hpp.html'>BuiltinProtocolPlugin.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../plugin-interface/QvPluginInterface.hpp.html">"QvPluginInterface.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include &lt;QObject&gt;</u></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QtPlugin&gt;</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2rayPlugin</span>;</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>class</b> <dfn class="type def" id="InternalProtocolSupportPlugin" title='InternalProtocolSupportPlugin' data-ref="InternalProtocolSupportPlugin" data-ref-filename="InternalProtocolSupportPlugin">InternalProtocolSupportPlugin</dfn></td></tr>
+<tr><th id="11">11</th><td>    : <b>public</b> <span class='type' title='QObject' data-ref="QObject" data-ref-filename="QObject">QObject</span></td></tr>
+<tr><th id="12">12</th><td>    , <b>public</b> <a class="type" href="../../plugin-interface/QvPluginInterface.hpp.html#Qv2rayPlugin::Qv2rayInterface" title='Qv2rayPlugin::Qv2rayInterface' data-ref="Qv2rayPlugin::Qv2rayInterface" data-ref-filename="Qv2rayPlugin..Qv2rayInterface">Qv2rayInterface</a></td></tr>
+<tr><th id="13">13</th><td>{</td></tr>
+<tr><th id="14">14</th><td>    <span class="macro" title="" data-ref="_M/Q_INTERFACES">Q_INTERFACES</span>(Qv2rayPlugin::Qv2rayInterface)</td></tr>
+<tr><th id="15">15</th><td>    <span class="macro" title="" data-ref="_M/Q_PLUGIN_METADATA">Q_PLUGIN_METADATA</span>(IID <a class="macro" href="../../plugin-interface/QvPluginInterface.hpp.html#75" title="&quot;com.github.Qv2ray.Qv2rayPluginInterface&quot;" data-ref="_M/Qv2rayInterface_IID">Qv2rayInterface_IID</a>)</td></tr>
+<tr><th id="16">16</th><td>    <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } __attribute__ ((__deprecated__)) static inline QString trUtf8(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="17">17</th><td>  <b>public</b>:</td></tr>
+<tr><th id="18">18</th><td>    <i>//</i></td></tr>
+<tr><th id="19">19</th><td><i>    // Basic metainfo of this plugin</i></td></tr>
+<tr><th id="20">20</th><td>    <em>const</em> <a class="type" href="../../plugin-interface/QvPluginBase.hpp.html#Qv2rayPlugin::QvPluginMetadata" title='Qv2rayPlugin::QvPluginMetadata' data-ref="Qv2rayPlugin::QvPluginMetadata" data-ref-filename="Qv2rayPlugin..QvPluginMetadata">QvPluginMetadata</a> <dfn class="virtual decl def fn" id="_ZNK29InternalProtocolSupportPlugin11GetMetadataEv" title='InternalProtocolSupportPlugin::GetMetadata' data-ref="_ZNK29InternalProtocolSupportPlugin11GetMetadataEv" data-ref-filename="_ZNK29InternalProtocolSupportPlugin11GetMetadataEv">GetMetadata</dfn>() <em>const</em> override</td></tr>
+<tr><th id="21">21</th><td>    {</td></tr>
+<tr><th id="22">22</th><td>        <b>return</b> <a class="ref fn" href="../../plugin-interface/QvPluginBase.hpp.html#_ZN12Qv2rayPlugin16QvPluginMetadataC1ERK7QStringS3_S3_S3_S3_S3_RK5QListINS_19PluginComponentTypeEENS_16PluginUpdateTypeE" title='Qv2rayPlugin::QvPluginMetadata::QvPluginMetadata' data-ref="_ZN12Qv2rayPlugin16QvPluginMetadataC1ERK7QStringS3_S3_S3_S3_S3_RK5QListINS_19PluginComponentTypeEENS_16PluginUpdateTypeE" data-ref-filename="_ZN12Qv2rayPlugin16QvPluginMetadataC1ERK7QStringS3_S3_S3_S3_S3_RK5QListINS_19PluginComponentTypeEENS_16PluginUpdateTypeE">{</a> <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"Builtin Protocol Support"</q>,                                                  <i>//</i></td></tr>
+<tr><th id="23">23</th><td>                 <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"Qv2ray Core Workgroup"</q>,                                                     <i>//</i></td></tr>
+<tr><th id="24">24</th><td>                 <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"qvplugin_builtin_protocol"</q>,                                                 <i>//</i></td></tr>
+<tr><th id="25">25</th><td>                 <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"VMess, VLESS, SOCKS, HTTP, Shadowsocks, DNS, Dokodemo-door editor support"</q>, <i>//</i></td></tr>
+<tr><th id="26">26</th><td>                 <span class="macro" title="&quot;2.7.0-pre2&quot;" data-ref="_M/QV2RAY_VERSION_STRING">QV2RAY_VERSION_STRING</span>,                                                       <i>//</i></td></tr>
+<tr><th id="27">27</th><td>                 <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"Qv2ray/Qv2ray"</q>,                                                             <i>//</i></td></tr>
+<tr><th id="28">28</th><td>                 <span class='ref fn fake' title='QList::QList&lt;T&gt;' data-ref="_ZN5QListC1ESt16initializer_listIT_E" data-ref-filename="_ZN5QListC1ESt16initializer_listIT_E"></span>{</td></tr>
+<tr><th id="29">29</th><td>                     <a class="enum" href="../../plugin-interface/QvPluginBase.hpp.html#Qv2rayPlugin::COMPONENT_OUTBOUND_HANDLER" title='Qv2rayPlugin::COMPONENT_OUTBOUND_HANDLER' data-ref="Qv2rayPlugin::COMPONENT_OUTBOUND_HANDLER" data-ref-filename="Qv2rayPlugin..COMPONENT_OUTBOUND_HANDLER">COMPONENT_OUTBOUND_HANDLER</a>, <i>//</i></td></tr>
+<tr><th id="30">30</th><td>                     <a class="enum" href="../../plugin-interface/QvPluginBase.hpp.html#Qv2rayPlugin::COMPONENT_GUI" title='Qv2rayPlugin::COMPONENT_GUI' data-ref="Qv2rayPlugin::COMPONENT_GUI" data-ref-filename="Qv2rayPlugin..COMPONENT_GUI">COMPONENT_GUI</a>               <i>//</i></td></tr>
+<tr><th id="31">31</th><td>                 },</td></tr>
+<tr><th id="32">32</th><td>                 <a class="enum" href="../../plugin-interface/QvPluginBase.hpp.html#Qv2rayPlugin::UPDATE_NONE" title='Qv2rayPlugin::UPDATE_NONE' data-ref="Qv2rayPlugin::UPDATE_NONE" data-ref-filename="Qv2rayPlugin..UPDATE_NONE">UPDATE_NONE</a> };</td></tr>
+<tr><th id="33">33</th><td>    }</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>    <em>bool</em> <dfn class="virtual decl fn" id="_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject" title='InternalProtocolSupportPlugin::InitializePlugin' data-ref="_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject" data-ref-filename="_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject">InitializePlugin</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;, <em>const</em> <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> &amp;) override;</td></tr>
+<tr><th id="36">36</th><td>    <i>//</i></td></tr>
+<tr><th id="37">37</th><td>  <span class="macro" title="public" data-ref="_M/signals">signals</span>:</td></tr>
+<tr><th id="38">38</th><td>    <em>void</em> <a class="virtual decl fn" href="/QvPlugin-BuiltinProtocolSupport_autogen/U2GGPN3CF7/moc_BuiltinProtocolPlugin.cpp.html#_ZNK29InternalProtocolSupportPlugin9PluginLogERK7QString" title='InternalProtocolSupportPlugin::PluginLog' data-ref="_ZNK29InternalProtocolSupportPlugin9PluginLogERK7QString" data-ref-filename="_ZNK29InternalProtocolSupportPlugin9PluginLogERK7QString" id="_ZNK29InternalProtocolSupportPlugin9PluginLogERK7QString">PluginLog</a>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;) <em>const</em> override;</td></tr>
+<tr><th id="39">39</th><td>    <em>void</em> <a class="virtual decl fn" href="/QvPlugin-BuiltinProtocolSupport_autogen/U2GGPN3CF7/moc_BuiltinProtocolPlugin.cpp.html#_ZNK29InternalProtocolSupportPlugin21PluginErrorMessageBoxERK7QStringS2_" title='InternalProtocolSupportPlugin::PluginErrorMessageBox' data-ref="_ZNK29InternalProtocolSupportPlugin21PluginErrorMessageBoxERK7QStringS2_" data-ref-filename="_ZNK29InternalProtocolSupportPlugin21PluginErrorMessageBoxERK7QStringS2_" id="_ZNK29InternalProtocolSupportPlugin21PluginErrorMessageBoxERK7QStringS2_">PluginErrorMessageBox</a>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;, <em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;) <em>const</em> override;</td></tr>
+<tr><th id="40">40</th><td>};</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><a class="macro" href="../../plugin-interface/QvPluginInterface.hpp.html#72" title="inline InternalProtocolSupportPlugin *InternalProtocolSupportPluginInstance" data-ref="_M/DECLARE_PLUGIN_INSTANCE">DECLARE_PLUGIN_INSTANCE</a>(<a class="type" href="#InternalProtocolSupportPlugin" title='InternalProtocolSupportPlugin' data-ref="InternalProtocolSupportPlugin" data-ref-filename="InternalProtocolSupportPlugin">InternalProtocolSupportPlugin</a>);</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/QvPlugin-BuiltinProtocolSupport_autogen/mocs_compilation.cpp.html'>/QvPlugin-BuiltinProtocolSupport_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

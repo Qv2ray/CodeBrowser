@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='98' type='unsigned int'/>
+<offset>320</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='98'>/* Pending event mask i.e. mask at next tick. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='861' u='w' c='uv__io_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='876' u='w' c='uv__io_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='884' u='r' c='uv__io_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='911' u='w' c='uv__io_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='913' u='r' c='uv__io_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='949' u='r' c='uv__io_active'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='243' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='243' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='247' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='269' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='403' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='422' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='138' u='r' c='uv_loop_fork'/>

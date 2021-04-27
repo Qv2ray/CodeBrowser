@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='710' type='bool google::protobuf::io::CodedOutputStream::GetDirectBufferPointer(void ** data, int * size)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='702'>// Sets *data to point directly at the unwritten part of the
+  // CodedOutputStream&apos;s underlying buffer, and *size to the size of that
+  // buffer, but does not advance the stream&apos;s current position.  This will
+  // always either produce a non-empty buffer or return false.  If the caller
+  // writes any data to this buffer, it should then call Skip() to skip over
+  // the consumed bytes.  This may be useful for implementing external fast
+  // serialization routines for types of data not covered by the
+  // CodedOutputStream interface.</doc>

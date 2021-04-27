@@ -1,0 +1,38 @@
+<def f='include/c++/10/bits/stl_vector.h' l='819' ll='821' type='std::vector::const_iterator std::vector::begin() const'/>
+<use f='include/c++/10/bits/random.h' l='6083' u='c' c='_ZNKSt8seed_seq5paramET_'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='814'>/**
+       *  Returns a read-only (constant) iterator that points to the
+       *  first element in the %vector.  Iteration is done in ordinary
+       *  element order.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='40' u='c' c='_ZNK5ZXing9BitMatrix6getRowEiRNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='174' u='c' c='_ZNK5ZXing9BitMatrix15getTopLeftOnBitERiS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='174' u='c' c='_ZNK5ZXing9BitMatrix15getTopLeftOnBitERiS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='65' u='c' c='_ZN5ZXing18ReedSolomonEncoder6encodeERSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='31' u='c' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='433' u='c' c='_ZN5ZXing10DataMatrix14RegressionLine8evaluateERKSt6vectorINS_6PointTIiEESaIS4_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='266' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='225' u='c' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedRow.h' l='59' u='c' c='_ZNK5ZXing4OneD3RSS11ExpandedRow12isEquivalentERKT_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='552' u='c' c='_ZN5ZXing4OneDL15IsValidSequenceERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='568' u='c' c='_ZN5ZXing4OneDL9CheckRowsET_S1_RKNSt7__cxx114listINS0_3RSS11ExpandedRowESaIS5_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='664' u='c' c='_ZN5ZXing6Pdf417L16DecodeMacroBlockERKSt6vectorIiSaIiEEiRNS0_18DecoderResultExtraERi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='664' u='c' c='_ZN5ZXing6Pdf417L16DecodeMacroBlockERKSt6vectorIiSaIiEEiRNS0_18DecoderResultExtraERi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='42' u='c' c='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='98' u='c' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='386' u='c' c='_ZN5ZXing6QRCodeL15GenerateECBytesERKNS_9ByteArrayEiRS1_'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='64' u='c' c='_ZNK4grpc7Service17has_async_methodsEv'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='73' u='c' c='_ZNK4grpc7Service23has_synchronous_methodsEv'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='82' u='c' c='_ZNK4grpc7Service19has_generic_methodsEv'/>
+<use f='qv2ray/test/catch.hpp' l='8887' u='c' c='_ZN5Catch5clara6detail11TokenStreamC1ERKNS1_4ArgsE'/>
+<use f='qv2ray/test/catch.hpp' l='9497' u='c' c='_ZN5Catch5clara6detail6ParseroRERKS2_'/>
+<use f='qv2ray/test/catch.hpp' l='9498' u='c' c='_ZN5Catch5clara6detail6ParseroRERKS2_'/>
+<use f='qv2ray/test/catch.hpp' l='10689' u='c' c='_ZNK5Catch27ExceptionTranslatorRegistry14tryTranslatorsB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='13165' u='c' c='_ZN5Catch12_GLOBAL__N_19TestGroupC1ERKSt10shared_ptrINS_6ConfigEE'/>
+<use f='qv2ray/test/catch.hpp' l='14340' u='c' c='_ZNK5Catch16TestCaseTracking14SectionTracker10isCompleteEv'/>
+<use f='qv2ray/test/catch.hpp' l='14376' u='c' c='_ZN5Catch16TestCaseTracking14SectionTracker17addInitialFiltersERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14381' u='c' c='_ZN5Catch16TestCaseTracking14SectionTracker14addNextFiltersERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14473' u='c' c='_ZNK5Catch8TestSpec6Filter7matchesERKNS_12TestCaseInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='14488' u='c' c='_ZNK5Catch8TestSpec7matchesERKNS_12TestCaseInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='14494' u='c' c='_ZNK5Catch8TestSpec15matchesByFilterERKSt6vectorINS_8TestCaseESaIS2_EERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='15665' u='c' c='_ZN5Catch12_GLOBAL__N_116AssertionPrinterC1ERSoRKNS_14AssertionStatsEb'/>

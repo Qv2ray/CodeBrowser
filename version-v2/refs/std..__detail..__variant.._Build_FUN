@@ -1,0 +1,10 @@
+<def f='include/c++/10/variant' l='735' ll='740'/>
+<def f='include/c++/10/variant' l='743' ll='749'/>
+<def f='include/c++/10/variant' l='752' ll='758'/>
+<use f='include/c++/10/variant' l='766'/>
+<use f='include/c++/10/variant' l='768'/>
+<doc f='include/c++/10/variant' l='742'>// ... for which Ti x[] = {std::forward&lt;T&gt;(t)}; is well-formed,</doc>
+<doc f='include/c++/10/variant' l='751'>// ... and if Ti is cv bool, remove_cvref_t&lt;T&gt; is bool.</doc>
+<fun r='_ZNSt8__detail9__variant10_Build_FUN6_S_funEv'/>
+<fun r='_ZNSt8__detail9__variant10_Build_FUNIXT_ET0_T1_Lb0EvE6_S_funES3_'/>
+<fun r='_ZNSt8__detail9__variant10_Build_FUNIXT_ET0_T1_Lb1ENSt9enable_ifIX9is_same_vINSt9remove_cvINSt16remove_referenceIS2_E4typeEE4typeEbEEvE4typeEE6_S_funES3_'/>

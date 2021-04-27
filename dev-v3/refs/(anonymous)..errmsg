@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='218' type='char *'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='35' u='w' c='uv_dlopen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='42' u='r' c='uv_dlclose'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='43' u='w' c='uv_dlclose'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='61' u='r' c='uv_dlerror'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='61' u='r' c='uv_dlerror'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='68' u='r' c='uv__dlerror'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='73' u='w' c='uv__dlerror'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='77' u='w' c='uv__dlerror'/>

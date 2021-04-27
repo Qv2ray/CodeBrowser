@@ -1,0 +1,106 @@
+<use f='include/google/protobuf/io/coded_stream.h' l='515' c='_ZN6google8protobuf2io16CodedInputStream20SetExtensionRegistryEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='520' c='_ZN6google8protobuf2io16CodedInputStream16GetExtensionPoolEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='574'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1315' c='_ZN6google8protobuf2io16CodedInputStream20SetExtensionRegistryEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1321' c='_ZN6google8protobuf2io16CodedInputStream16GetExtensionPoolEv'/>
+<use f='include/google/protobuf/descriptor.h' l='480'/>
+<use f='include/google/protobuf/descriptor.h' l='1030'/>
+<use f='include/google/protobuf/descriptor.h' l='1109'/>
+<use f='include/google/protobuf/descriptor.h' l='1294' c='_ZNK6google8protobuf14FileDescriptor4poolEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1419'/>
+<use f='include/google/protobuf/descriptor.h' l='1459'/>
+<def f='include/google/protobuf/descriptor.h' l='1498' ll='1816'/>
+<use f='include/google/protobuf/descriptor.h' l='1535' c='_ZN6google8protobuf14DescriptorPool14generated_poolEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1686' c='_ZN6google8protobuf14DescriptorPoolC1EPKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1702' c='_ZN6google8protobuf14DescriptorPool23internal_generated_poolEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1725' c='_ZN6google8protobuf14DescriptorPool21internal_set_underlayEPKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1801'/>
+<use f='include/google/protobuf/descriptor.h' l='1815' c='_ZN6google8protobuf14DescriptorPoolC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1815' c='_ZN6google8protobuf14DescriptorPoolaSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1935' c='_ZNK6google8protobuf14FileDescriptor4poolEv'/>
+<use f='include/google/protobuf/extension_set.h' l='188' c='_ZNK6google8protobuf8internal12ExtensionSet12AppendToListEPKNS0_10DescriptorEPKNS0_14DescriptorPoolEPSt6vectorIPKNS0_15FieldDescriptorESaISC_EE'/>
+<use f='include/google/protobuf/descriptor_database.h' l='328' c='_ZN6google8protobuf22DescriptorPoolDatabaseC1ERKNS0_14DescriptorPoolE'/>
+<use f='include/google/protobuf/descriptor_database.h' l='343'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='43'/>
+<size>96</size>
+<doc f='include/google/protobuf/descriptor.h' l='1472'>// ===================================================================
+
+// Used to construct descriptors.
+//
+// Normally you won&apos;t want to build your own descriptors.  Message classes
+// constructed by the protocol compiler will provide them for you.  However,
+// if you are implementing Message on your own, or if you are writing a
+// program which can operate on totally arbitrary types and needs to load
+// them from some sort of database, you might need to.
+//
+// Since Descriptors are composed of a whole lot of cross-linked bits of
+// data that would be a pain to put together manually, the
+// DescriptorPool class is provided to make the process easier.  It can
+// take a FileDescriptorProto (defined in descriptor.proto), validate it,
+// and convert it to a set of nicely cross-linked Descriptors.
+//
+// DescriptorPool also helps with memory management.  Descriptors are
+// composed of many objects containing static data and pointers to each
+// other.  In all likelihood, when it comes time to delete this data,
+// you&apos;ll want to delete it all at once.  In fact, it is not uncommon to
+// have a whole pool of descriptors all cross-linked with each other which
+// you wish to delete all at once.  This class represents such a pool, and
+// handles the memory management for you.
+//
+// You can also search for descriptors within a DescriptorPool by name, and
+// extensions by number.</doc>
+<fun r='_ZN6google8protobuf14DescriptorPoolC1Ev'/>
+<fun r='_ZN6google8protobuf14DescriptorPoolC1EPNS0_18DescriptorDatabaseEPNS1_14ErrorCollectorE'/>
+<fun r='_ZN6google8protobuf14DescriptorPoolD1Ev'/>
+<fun r='_ZN6google8protobuf14DescriptorPool14generated_poolEv'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool21FindMessageTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool15FindFieldByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool19FindExtensionByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool15FindOneofByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool18FindEnumTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool19FindEnumValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool17FindServiceByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool16FindMethodByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool21FindExtensionByNumberEPKNS0_10DescriptorEi'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool17FindAllExtensionsEPKNS0_10DescriptorEPSt6vectorIPKNS0_15FieldDescriptorESaIS8_EE'/>
+<fun r='_ZN6google8protobuf14DescriptorPool9BuildFileERKNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf14DescriptorPool25BuildFileCollectingErrorsERKNS0_19FileDescriptorProtoEPNS1_14ErrorCollectorE'/>
+<fun r='_ZN6google8protobuf14DescriptorPool24AllowUnknownDependenciesEv'/>
+<fun r='_ZN6google8protobuf14DescriptorPool23EnforceWeakDependenciesEb'/>
+<fun r='_ZN6google8protobuf14DescriptorPoolC1EPKS1_'/>
+<fun r='_ZN6google8protobuf14DescriptorPool24InternalAddGeneratedFileEPKvi'/>
+<fun r='_ZN6google8protobuf14DescriptorPool19DisallowEnforceUtf8Ev'/>
+<fun r='_ZN6google8protobuf14DescriptorPool23internal_generated_poolEv'/>
+<fun r='_ZN6google8protobuf14DescriptorPool31InternalDontEnforceDependenciesEv'/>
+<fun r='_ZN6google8protobuf14DescriptorPool34InternalSetLazilyBuildDependenciesEv'/>
+<fun r='_ZN6google8protobuf14DescriptorPool21internal_set_underlayEPKS1_'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool20InternalIsFileLoadedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf14DescriptorPool24AddUnusedImportTrackFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf14DescriptorPool27ClearUnusedImportTrackFilesEv'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool22IsSubSymbolOfBuiltTypeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool29TryFindFileInFallbackDatabaseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool31TryFindSymbolInFallbackDatabaseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool34TryFindExtensionInFallbackDatabaseEPKNS0_10DescriptorEi'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool21BuildFileFromDatabaseERKNS0_19FileDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool23CrossLinkOnDemandHelperERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool18NewPlaceholderFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool31NewPlaceholderFileWithMutexHeldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool14NewPlaceholderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS1_15PlaceholderTypeE'/>
+<fun r='_ZNK6google8protobuf14DescriptorPool27NewPlaceholderWithMutexHeldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS1_15PlaceholderTypeE'/>
+<mbr r='google::protobuf::DescriptorPool::mutex_' o='0' t='google::protobuf::internal::Mutex *'/>
+<mbr r='google::protobuf::DescriptorPool::fallback_database_' o='64' t='google::protobuf::DescriptorDatabase *'/>
+<mbr r='google::protobuf::DescriptorPool::default_error_collector_' o='128' t='google::protobuf::DescriptorPool::ErrorCollector *'/>
+<mbr r='google::protobuf::DescriptorPool::underlay_' o='192' t='const google::protobuf::DescriptorPool *'/>
+<mbr r='google::protobuf::DescriptorPool::tables_' o='256' t='std::unique_ptr&lt;Tables&gt;'/>
+<mbr r='google::protobuf::DescriptorPool::enforce_dependencies_' o='320' t='bool'/>
+<mbr r='google::protobuf::DescriptorPool::lazily_build_dependencies_' o='328' t='bool'/>
+<mbr r='google::protobuf::DescriptorPool::allow_unknown_' o='336' t='bool'/>
+<mbr r='google::protobuf::DescriptorPool::enforce_weak_' o='344' t='bool'/>
+<mbr r='google::protobuf::DescriptorPool::disallow_enforce_utf8_' o='352' t='bool'/>
+<mbr r='google::protobuf::DescriptorPool::unused_import_track_files_' o='384' t='std::set&lt;string&gt;'/>
+<fun r='_ZN6google8protobuf14DescriptorPoolC1ERKS1_'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='304' c='_ZN6google8protobuf8internal26GeneratedMessageReflectionC1EPKNS0_10DescriptorERKNS1_16ReflectionSchemaEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='537'/>
+<size>96</size>

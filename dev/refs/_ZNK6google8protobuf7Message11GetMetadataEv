@@ -1,0 +1,21 @@
+<use f='include/google/protobuf/message.h' l='336' u='c' c='_ZNK6google8protobuf7Message13GetDescriptorEv'/>
+<use f='include/google/protobuf/message.h' l='346' u='c' c='_ZNK6google8protobuf7Message13GetReflectionEv'/>
+<dec f='include/google/protobuf/message.h' l='353' type='google::protobuf::Metadata google::protobuf::Message::GetMetadata() const'/>
+<doc f='include/google/protobuf/message.h' l='350'>// Get a struct containing the metadata for the Message. Most subclasses only
+  // need to implement this method, rather than the GetDescriptor() and
+  // GetReflection() wrappers.</doc>
+<ovr f='/v2ray_api.pb.cc' l='629' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='910' c='_ZNK5v2ray4core3app5stats7command4Stat11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1144' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1423' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1652' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='1831' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='2384' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse11GetMetadataEv'/>
+<ovr f='/v2ray_api.pb.cc' l='2563' c='_ZNK5v2ray4core3app5stats7command6Config11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='711' c='_ZNK5v2ray4core3app6router22DomainObject_Attribute11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1039' c='_ZNK5v2ray4core3app6router12DomainObject11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1308' c='_ZNK5v2ray4core3app6router4CIDR11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1595' c='_ZNK5v2ray4core3app6router5GeoIP11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1824' c='_ZNK5v2ray4core3app6router9GeoIPList11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='2111' c='_ZNK5v2ray4core3app6router7GeoSite11GetMetadataEv'/>
+<ovr f='/v2ray_geosite.pb.cc' l='2340' c='_ZNK5v2ray4core3app6router11GeoSiteList11GetMetadataEv'/>

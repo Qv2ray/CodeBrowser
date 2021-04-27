@@ -1,0 +1,14 @@
+<def f='include/c++/10/bits/regex.h' l='438' ll='441' type='void std::__cxx11::basic_regex::basic_regex&lt;type-parameter-0-0, type-parameter-0-1&gt;(const _Ch_type * __p, std::__cxx11::basic_regex::flag_type __f = ECMAScript)'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='298' u='c' c='_ZN6semverL13parse_versionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='310' u='c' c='_ZN6semver7version16parse_prereleaseEv'/>
+<doc f='include/c++/10/bits/regex.h' l='427'>/**
+       * @brief Constructs a basic regular expression from the
+       * sequence [__p, __p + char_traits&lt;_Ch_type&gt;::length(__p))
+       * interpreted according to the flags in @p __f.
+       *
+       * @param __p A pointer to the start of a C-style null-terminated string
+       *          containing a regular expression.
+       * @param __f Flags indicating the syntax rules and options.
+       *
+       * @throws regex_error if @p __p is not a valid regular expression.
+       */</doc>

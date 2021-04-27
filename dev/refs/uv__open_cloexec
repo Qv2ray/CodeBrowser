@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='232' type='int uv__open_cloexec(const char * path, int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='469' u='c' c='uv__open_file'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='995' ll='1020' type='int uv__open_cloexec(const char * path, int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='991' u='c' c='uv__slurp'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='38' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='105' u='c' c='uv__stream_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='110' u='c' c='uv__stream_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='513' u='c' c='uv__emfile_trick'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='170' u='c' c='uv_tty_init'/>

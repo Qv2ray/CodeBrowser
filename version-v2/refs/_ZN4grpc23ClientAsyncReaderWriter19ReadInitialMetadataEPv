@@ -1,0 +1,8 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='542' ll='549' type='void grpc::ClientAsyncReaderWriter::ReadInitialMetadata(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='535'>/// See the \a ClientAsyncStreamingInterface.ReadInitialMetadata method
+  /// for semantics of this method.
+  ///
+  /// Side effect:
+  ///   - upon receiving initial metadata from the server, the \a ClientContext
+  ///     is updated with it, and then the receiving initial metadata can
+  ///     be accessed through this \a ClientContext.</doc>

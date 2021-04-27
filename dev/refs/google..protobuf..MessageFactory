@@ -1,0 +1,37 @@
+<use f='include/google/protobuf/io/coded_stream.h' l='516' c='_ZN6google8protobuf2io16CodedInputStream20SetExtensionRegistryEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='524' c='_ZN6google8protobuf2io16CodedInputStream19GetExtensionFactoryEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='575'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1316' c='_ZN6google8protobuf2io16CodedInputStream20SetExtensionRegistryEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1325' c='_ZN6google8protobuf2io16CodedInputStream19GetExtensionFactoryEv'/>
+<use f='include/google/protobuf/message.h' l='546' c='_ZNK6google8protobuf10Reflection10GetMessageERKNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/message.h' l='611' c='_ZNK6google8protobuf10Reflection14MutableMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/message.h' l='628' c='_ZNK6google8protobuf10Reflection14ReleaseMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/message.h' l='755' c='_ZNK6google8protobuf10Reflection10AddMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/message.h' l='901' c='_ZNK6google8protobuf10Reflection17GetMessageFactoryEv'/>
+<def f='include/google/protobuf/message.h' l='1032' ll='1093'/>
+<use f='include/google/protobuf/message.h' l='1071' c='_ZN6google8protobuf14MessageFactory17generated_factoryEv'/>
+<use f='include/google/protobuf/message.h' l='1092' c='_ZN6google8protobuf14MessageFactoryC1ERKS1_'/>
+<use f='include/google/protobuf/message.h' l='1092' c='_ZN6google8protobuf14MessageFactoryaSERKS1_'/>
+<use f='include/google/protobuf/extension_set.h' l='241' c='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiPKNS0_10DescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='260' c='_ZN6google8protobuf8internal12ExtensionSet14MutableMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='275' c='_ZN6google8protobuf8internal12ExtensionSet14ReleaseMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='277' c='_ZN6google8protobuf8internal12ExtensionSet25UnsafeArenaReleaseMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='336' c='_ZN6google8protobuf8internal12ExtensionSet10AddMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<size>8</size>
+<doc f='include/google/protobuf/message.h' l='1031'>// Abstract interface for a factory for message objects.</doc>
+<fun r='_ZN6google8protobuf14MessageFactoryC1Ev'/>
+<fun r='_ZN6google8protobuf14MessageFactoryD1Ev'/>
+<fun r='_ZN6google8protobuf14MessageFactory12GetPrototypeEPKNS0_10DescriptorE'/>
+<fun r='_ZN6google8protobuf14MessageFactory17generated_factoryEv'/>
+<fun r='_ZN6google8protobuf14MessageFactory29InternalRegisterGeneratedFileEPKcPFvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE'/>
+<fun r='_ZN6google8protobuf14MessageFactory32InternalRegisterGeneratedMessageEPKNS0_10DescriptorEPKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf14MessageFactoryC1ERKS1_'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='305' c='_ZN6google8protobuf8internal26GeneratedMessageReflectionC1EPKNS0_10DescriptorERKNS1_16ReflectionSchemaEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='357' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection10GetMessageERKNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='405' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection14MutableMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='410' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection14ReleaseMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='491' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection10AddMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='524' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection17GetMessageFactoryEv'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='538'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='657' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection25UnsafeArenaReleaseMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<size>8</size>

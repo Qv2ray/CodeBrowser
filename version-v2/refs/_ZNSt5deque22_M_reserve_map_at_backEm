@@ -1,0 +1,10 @@
+<def f='include/c++/10/bits/stl_deque.h' l='2122' ll='2128' type='void std::deque::_M_reserve_map_at_back(std::deque::size_type __nodes_to_add = 1)'/>
+<use f='include/c++/10/bits/deque.tcc' l='493' u='c' c='_ZNSt5deque16_M_push_back_auxEDpOTL0__'/>
+<use f='include/c++/10/bits/deque.tcc' l='911' u='c' c='_ZNSt5deque23_M_new_elements_at_backEm'/>
+<doc f='include/c++/10/bits/stl_deque.h' l='2115'>/**
+       *  @brief Memory-handling helpers for the major %map.
+       *
+       *  Makes sure the _M_map has space for new nodes.  Does not
+       *  actually add the nodes.  Can invalidate _M_map pointers.
+       *  (And consequently, %deque iterators.)
+       */</doc>

@@ -1,0 +1,374 @@
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Serializable.hpp' l='9' c='_ZNK7QtNodes12Serializable4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Serializable.hpp' l='10' c='_ZN7QtNodes12Serializable7restoreERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='38' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='51' c='_ZNK7QtNodes13NodeDataModel4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='35' c='_ZN7QtNodes9FlowScene17restoreConnectionERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='38' c='_ZN7QtNodes9FlowScene11restoreNodeERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='32' c='_ZNK7QtNodes4Node4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='33' c='_ZN7QtNodes4Node7restoreERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='54' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='56' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='66' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='72' c='_ZNK7QtNodes10Connection4saveEv'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='100' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='102' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='77' c='_ZN7QtNodes9FlowScene17restoreConnectionERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='89' c='_ZN7QtNodes9FlowScene17restoreConnectionERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='122' c='_ZN7QtNodes9FlowScene11restoreNodeERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='320' c='_ZNK7QtNodes9FlowScene12saveToMemoryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='332' c='_ZNK7QtNodes9FlowScene12saveToMemoryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='342' c='_ZN7QtNodes9FlowScene14loadFromMemoryERK10QByteArray'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='80' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='82' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='31' c='_ZNK7QtNodes4Node4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='33' c='_ZNK7QtNodes4Node4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='36' c='_ZNK7QtNodes4Node4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='42' c='_ZN7QtNodes4Node7restoreERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='45' c='_ZN7QtNodes4Node7restoreERK11QJsonObject'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='13' c='_ZNK7QtNodes13NodeDataModel4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='15' c='_ZNK7QtNodes13NodeDataModel4saveEv'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='87' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='89' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<size>16</size>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='15' c='_ZN15has_tojson_func13testSignatureEMTL0__KF11QJsonObjectvE'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='79' c='_ZN16JsonStructHelper24__json_struct_merge_jsonER11QJsonObjectRKS0_'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='79' c='_ZN16JsonStructHelper24__json_struct_merge_jsonER11QJsonObjectRKS0_'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='151' c='_ZN16JsonStructHelper25___json_struct_store_dataERK11QJsonObject'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='168' c='_ZN16JsonStructHelper25___json_struct_store_dataERK4QMapI7QStringT_E'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='187' c='_ZN16JsonStructHelper16____extract_jsonER11QJsonObject'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='189' c='_ZN16JsonStructHelper16____extract_jsonER11QJsonObjectRK7QStringRKT_DpRKT0_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='34' macro='1' c='_ZNK6Qv2ray4base7objects9DNSObject15DNSServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='34' macro='1' c='_ZNK6Qv2ray4base7objects9DNSObject15DNSServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='44' macro='1' c='_ZNK6Qv2ray4base7objects9DNSObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='44' macro='1' c='_ZNK6Qv2ray4base7objects9DNSObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='53' macro='1' c='_ZNK6Qv2ray4base7objects13AccountObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='53' macro='1' c='_ZNK6Qv2ray4base7objects13AccountObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='62' macro='1' c='_ZNK6Qv2ray4base7objects9ApiObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='62' macro='1' c='_ZNK6Qv2ray4base7objects9ApiObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='71' macro='1' c='_ZNK6Qv2ray4base7objects18SystemPolicyObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='71' macro='1' c='_ZNK6Qv2ray4base7objects18SystemPolicyObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='85' macro='1' c='_ZNK6Qv2ray4base7objects17LevelPolicyObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='85' macro='1' c='_ZNK6Qv2ray4base7objects17LevelPolicyObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='94' macro='1' c='_ZNK6Qv2ray4base7objects12PolicyObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='94' macro='1' c='_ZNK6Qv2ray4base7objects12PolicyObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='120' macro='1' c='_ZNK6Qv2ray4base7objects10RuleObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='120' macro='1' c='_ZNK6Qv2ray4base7objects10RuleObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='130' macro='1' c='_ZNK6Qv2ray4base7objects14BalancerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='130' macro='1' c='_ZNK6Qv2ray4base7objects14BalancerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='143' macro='1' c='_ZNK6Qv2ray4base7objects8transfer17HTTPRequestObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='143' macro='1' c='_ZNK6Qv2ray4base7objects8transfer17HTTPRequestObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='154' macro='1' c='_ZNK6Qv2ray4base7objects8transfer18HTTPResponseObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='154' macro='1' c='_ZNK6Qv2ray4base7objects8transfer18HTTPResponseObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='164' macro='1' c='_ZNK6Qv2ray4base7objects8transfer18TCPHeader_M_Object6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='164' macro='1' c='_ZNK6Qv2ray4base7objects8transfer18TCPHeader_M_Object6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='172' macro='1' c='_ZNK6Qv2ray4base7objects8transfer12HeaderObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='172' macro='1' c='_ZNK6Qv2ray4base7objects8transfer12HeaderObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='180' macro='1' c='_ZNK6Qv2ray4base7objects8transfer9TCPObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='180' macro='1' c='_ZNK6Qv2ray4base7objects8transfer9TCPObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='196' macro='1' c='_ZNK6Qv2ray4base7objects8transfer9KCPObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='196' macro='1' c='_ZNK6Qv2ray4base7objects8transfer9KCPObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='206' macro='1' c='_ZNK6Qv2ray4base7objects8transfer15WebSocketObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='206' macro='1' c='_ZNK6Qv2ray4base7objects8transfer15WebSocketObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='215' macro='1' c='_ZNK6Qv2ray4base7objects8transfer10HttpObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='215' macro='1' c='_ZNK6Qv2ray4base7objects8transfer10HttpObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='223' macro='1' c='_ZNK6Qv2ray4base7objects8transfer18DomainSocketObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='223' macro='1' c='_ZNK6Qv2ray4base7objects8transfer18DomainSocketObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='233' macro='1' c='_ZNK6Qv2ray4base7objects8transfer10QuicObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='233' macro='1' c='_ZNK6Qv2ray4base7objects8transfer10QuicObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='243' macro='1' c='_ZNK6Qv2ray4base7objects8transfer13SockoptObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='243' macro='1' c='_ZNK6Qv2ray4base7objects8transfer13SockoptObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='255' macro='1' c='_ZNK6Qv2ray4base7objects8transfer17CertificateObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='255' macro='1' c='_ZNK6Qv2ray4base7objects8transfer17CertificateObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='270' macro='1' c='_ZNK6Qv2ray4base7objects8transfer9TLSObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='270' macro='1' c='_ZNK6Qv2ray4base7objects8transfer9TLSObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='281' macro='1' c='_ZNK6Qv2ray4base7objects14SniffingObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='281' macro='1' c='_ZNK6Qv2ray4base7objects14SniffingObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='300' macro='1' c='_ZNK6Qv2ray4base7objects20StreamSettingsObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='300' macro='1' c='_ZNK6Qv2ray4base7objects20StreamSettingsObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='310' macro='1' c='_ZNK6Qv2ray4base7objects9MuxObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='310' macro='1' c='_ZNK6Qv2ray4base7objects9MuxObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='323' macro='1' c='_ZNK6Qv2ray4base7objects8protocol6DNSOut6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='323' macro='1' c='_ZNK6Qv2ray4base7objects8protocol6DNSOut6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='335' macro='1' c='_ZNK6Qv2ray4base7objects8protocol9MTProtoIn10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='335' macro='1' c='_ZNK6Qv2ray4base7objects8protocol9MTProtoIn10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='338' macro='1' c='_ZNK6Qv2ray4base7objects8protocol9MTProtoIn6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='338' macro='1' c='_ZNK6Qv2ray4base7objects8protocol9MTProtoIn6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='350' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17SocksServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='350' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17SocksServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='356' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17SocksServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='356' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17SocksServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='368' macro='1' c='_ZNK6Qv2ray4base7objects8protocol16HttpServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='368' macro='1' c='_ZNK6Qv2ray4base7objects8protocol16HttpServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='374' macro='1' c='_ZNK6Qv2ray4base7objects8protocol16HttpServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='374' macro='1' c='_ZNK6Qv2ray4base7objects8protocol16HttpServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='389' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='389' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='396' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='396' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VMessServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='407' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VLessServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='407' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VLessServerObject10UserObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='414' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VLessServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='414' macro='1' c='_ZNK6Qv2ray4base7objects8protocol17VLessServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='428' macro='1' c='_ZNK6Qv2ray4base7objects8protocol23ShadowSocksServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='428' macro='1' c='_ZNK6Qv2ray4base7objects8protocol23ShadowSocksServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='22' macro='1' c='_ZNK6Qv2ray4base6config14QvConfig_Route18QvRouteConfig_Impl6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='22' macro='1' c='_ZNK6Qv2ray4base6config14QvConfig_Route18QvRouteConfig_Impl6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='36' macro='1' c='_ZNK6Qv2ray4base6config14QvConfig_Route6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='36' macro='1' c='_ZNK6Qv2ray4base6config14QvConfig_Route6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='45' macro='1' c='_ZNK6Qv2ray4base6config18QvConfig_Outbounds6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='45' macro='1' c='_ZNK6Qv2ray4base6config18QvConfig_Outbounds6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='59' macro='1' c='_ZNK6Qv2ray4base6config21QvConfig_ForwardProxy6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='59' macro='1' c='_ZNK6Qv2ray4base6config21QvConfig_ForwardProxy6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='72' macro='1' c='_ZNK6Qv2ray4base6config19QvConfig_Connection6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='72' macro='1' c='_ZNK6Qv2ray4base6config19QvConfig_Connection6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='79' macro='1' c='_ZNK6Qv2ray4base6config20QvConfig_SystemProxy6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='79' macro='1' c='_ZNK6Qv2ray4base6config20QvConfig_SystemProxy6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='89' macro='1' c='_ZNK6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBase6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='89' macro='1' c='_ZNK6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBase6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='97' macro='1' c='_ZNK6Qv2ray4base6config21QvConfig_SocksInbound6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='97' macro='1' c='_ZNK6Qv2ray4base6config21QvConfig_SocksInbound6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='103' macro='1' c='_ZNK6Qv2ray4base6config20QvConfig_HttpInbound6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='103' macro='1' c='_ZNK6Qv2ray4base6config20QvConfig_HttpInbound6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='122' macro='1' c='_ZNK6Qv2ray4base6config15QvConfig_TProxy6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='122' macro='1' c='_ZNK6Qv2ray4base6config15QvConfig_TProxy6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='138' macro='1' c='_ZNK6Qv2ray4base6config17QvConfig_Inbounds6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='138' macro='1' c='_ZNK6Qv2ray4base6config17QvConfig_Inbounds6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='75' macro='1' c='_ZNK6Qv2ray4base19ConnectionGroupPair6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='75' macro='1' c='_ZNK6Qv2ray4base19ConnectionGroupPair6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='90' macro='1' c='_ZNK6Qv2ray4base24__Qv2rayConfigObjectBase6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='90' macro='1' c='_ZNK6Qv2ray4base24__Qv2rayConfigObjectBase6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='113' macro='1' c='_ZNK6Qv2ray4base18GroupRoutingConfig6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='113' macro='1' c='_ZNK6Qv2ray4base18GroupRoutingConfig6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='138' macro='1' c='_ZNK6Qv2ray4base24SubscriptionConfigObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='138' macro='1' c='_ZNK6Qv2ray4base24SubscriptionConfigObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='149' macro='1' c='_ZNK6Qv2ray4base11GroupObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='149' macro='1' c='_ZNK6Qv2ray4base11GroupObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='181' macro='1' c='_ZNK6Qv2ray4base26ConnectionStatsEntryObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='181' macro='1' c='_ZNK6Qv2ray4base26ConnectionStatsEntryObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='234' macro='1' c='_ZNK6Qv2ray4base16ConnectionObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='234' macro='1' c='_ZNK6Qv2ray4base16ConnectionObject6toJsonEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='29' c='Qv2ray::base::safetype::INBOUNDSETTING'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='29'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='29' c='_ZN6Qv2ray4base8safetype14INBOUNDSETTINGC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='29' c='_ZNK6Qv2ray4base8safetype14INBOUNDSETTING3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='30' c='Qv2ray::base::safetype::OUTBOUNDSETTING'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='30'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='30' c='_ZN6Qv2ray4base8safetype15OUTBOUNDSETTINGC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='30' c='_ZNK6Qv2ray4base8safetype15OUTBOUNDSETTING3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='31' c='Qv2ray::base::safetype::INBOUND'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='31'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='31' c='_ZN6Qv2ray4base8safetype7INBOUNDC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='31' c='_ZNK6Qv2ray4base8safetype7INBOUND3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='32' c='Qv2ray::base::safetype::OUTBOUND'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='32'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='32' c='_ZN6Qv2ray4base8safetype8OUTBOUNDC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='32' c='_ZNK6Qv2ray4base8safetype8OUTBOUND3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='33' c='Qv2ray::base::safetype::CONFIGROOT'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='33'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='33' c='_ZN6Qv2ray4base8safetype10CONFIGROOTC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='33' c='_ZNK6Qv2ray4base8safetype10CONFIGROOT3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='34' c='Qv2ray::base::safetype::PROXYSETTING'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='34'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='34' c='_ZN6Qv2ray4base8safetype12PROXYSETTINGC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='34' c='_ZNK6Qv2ray4base8safetype12PROXYSETTING3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='38' c='Qv2ray::base::safetype::ROUTING'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='38'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='38' c='_ZN6Qv2ray4base8safetype7ROUTINGC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='38' c='_ZNK6Qv2ray4base8safetype7ROUTING3rawEv'/>
+<ovr f='qv2ray/src/base/models/QvSafeType.hpp' l='39' c='Qv2ray::base::safetype::ROUTERULE'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='39'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='39' c='_ZN6Qv2ray4base8safetype9ROUTERULEC1EDpT_'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='39' c='_ZNK6Qv2ray4base8safetype9ROUTERULE3rawEv'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='48' macro='1' c='_ZNK6Qv2ray4base8safetype6QvPair6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='48' macro='1' c='_ZNK6Qv2ray4base8safetype6QvPair6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='71' c='_ZNK6Qv2ray4base8safetype9QvEnumMap6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='26' macro='1' c='_ZNK6Qv2ray4base6config16QvGraphPenConfig6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='26' macro='1' c='_ZNK6Qv2ray4base6config16QvGraphPenConfig6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='35' macro='1' c='_ZNK6Qv2ray4base6config18Qv2rayConfig_Graph6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='35' macro='1' c='_ZNK6Qv2ray4base6config18Qv2rayConfig_Graph6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='59' macro='1' c='_ZNK6Qv2ray4base6config15Qv2rayConfig_UI6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='59' macro='1' c='_ZNK6Qv2ray4base6config15Qv2rayConfig_UI6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='69' macro='1' c='_ZNK6Qv2ray4base6config19Qv2rayConfig_Plugin6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='69' macro='1' c='_ZNK6Qv2ray4base6config19Qv2rayConfig_Plugin6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='113' macro='1' c='_ZNK6Qv2ray4base6config19Qv2rayConfig_Kernel6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='113' macro='1' c='_ZNK6Qv2ray4base6config19Qv2rayConfig_Kernel6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='128' macro='1' c='_ZNK6Qv2ray4base6config19Qv2rayConfig_Update6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='128' macro='1' c='_ZNK6Qv2ray4base6config19Qv2rayConfig_Update6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='136' macro='1' c='_ZNK6Qv2ray4base6config21Qv2rayConfig_Advanced6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='136' macro='1' c='_ZNK6Qv2ray4base6config21Qv2rayConfig_Advanced6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='165' macro='1' c='_ZNK6Qv2ray4base6config20Qv2rayConfig_Network6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='165' macro='1' c='_ZNK6Qv2ray4base6config20Qv2rayConfig_Network6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='211' macro='1' c='_ZNK6Qv2ray4base6config18Qv2rayConfigObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='211' macro='1' c='_ZNK6Qv2ray4base6config18Qv2rayConfigObject6toJsonEv'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='25' c='_ZNK12Qv2rayPlugin18QvPluginSerializer17SerializeOutboundERK7QStringS3_S3_RK11QJsonObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='26' c='_ZNK12Qv2rayPlugin18QvPluginSerializer19DeserializeOutboundERK7QStringPS1_S4_'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='27' c='_ZNK12Qv2rayPlugin18QvPluginSerializer15GetOutboundInfoERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='41' c='_ZN12Qv2rayPlugin14QvPluginEditor10SetContentERK11QJsonObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='42' c='_ZNK12Qv2rayPlugin14QvPluginEditor10GetContentEv'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='75' c='_ZN12Qv2rayPlugin14QvPluginKernel21SetConnectionSettingsERK4QMapINS0_13KernelSettingE8QVariantERK11QJsonObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='25' c='_ZN12Qv2rayPlugin15Qv2rayInterface10InitializeERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='27' c='_ZN12Qv2rayPlugin15Qv2rayInterface14UpdateSettingsERK11QJsonObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='29' c='_ZN12Qv2rayPlugin15Qv2rayInterface10GetSettngsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='49' c='_ZNK6Qv2ray10components7plugins12QvPluginHost17GetPluginSettingsERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='53' c='_ZNK6Qv2ray10components7plugins12QvPluginHost17SetPluginSettingsERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='64' c='_ZNK6Qv2ray10components7plugins12QvPluginHost23TryDeserializeShareLinkERK7QStringPS3_S6_S6_Pb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='71' c='_ZNK6Qv2ray10components7plugins12QvPluginHost21TrySerializeShareLinkERK7QStringRK11QJsonObjectS5_S5_Pb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='75' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18TryGetOutboundInfoERK7QStringRK11QJsonObjectPb'/>
+<size>16</size>
+<use f='qv2ray/src/Qv2rayApplication.hpp' l='58' macro='1' c='_ZNK6Qv2ray22Qv2rayProcessArguments6toJsonEv'/>
+<use f='qv2ray/src/Qv2rayApplication.hpp' l='58' macro='1' c='_ZNK6Qv2ray22Qv2rayProcessArguments6toJsonEv'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.hpp' l='95'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.hpp' l='96'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.hpp' l='97'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.hpp' l='98'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.hpp' l='101'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.hpp' l='102'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.hpp' l='18' c='_ZN10JsonEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.hpp' l='20' c='_ZN10JsonEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.hpp' l='34'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.hpp' l='35'/>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.hpp' l='61'/>
+<use f='qv2ray/src/common/QvHelpers.hpp' l='36' c='_ZN6Qv2ray6common14JsonFromStringERK7QString'/>
+<use f='qv2ray/src/common/QvHelpers.hpp' l='37' c='_ZN6Qv2ray6common12JsonToStringERK11QJsonObjectN13QJsonDocument10JsonFormatE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='33' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<size>16</size>
+<use f='qv2ray/src/core/settings/SettingsBackend.hpp' l='15' c='_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.hpp' l='15' c='_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject'/>
+<size>16</size>
+<use f='qv2ray/src/common/QJsonModel.cpp' l='374' c='_ZNK10QJsonModel7genJsonEP13QJsonTreeItem'/>
+<size>16</size>
+<use f='qv2ray/src/common/QvHelpers.cpp' l='64' c='_ZN6Qv2ray6common12JsonToStringERK11QJsonObjectN13QJsonDocument10JsonFormatE'/>
+<use f='qv2ray/src/common/QvHelpers.cpp' l='95' c='_ZN6Qv2ray6common14JsonFromStringERK7QString'/>
+<size>16</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='250' c='_ZNK6Qv2ray10components7plugins12QvPluginHost23TryDeserializeShareLinkERK7QStringPS3_S6_S6_Pb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='257' c='_ZNK6Qv2ray10components7plugins12QvPluginHost23TryDeserializeShareLinkERK7QStringPS3_S6_S6_Pb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='283' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18TryGetOutboundInfoERK7QStringRK11QJsonObjectPb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='302' c='_ZNK6Qv2ray10components7plugins12QvPluginHost21TrySerializeShareLinkERK7QStringRK11QJsonObjectS5_S5_Pb'/>
+<size>16</size>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='29' macro='1' c='_ZNK6Qv2ray10components5route17Qv2rayRouteScheme6toJsonEv'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='29' macro='1' c='_ZNK6Qv2ray10components5route17Qv2rayRouteScheme6toJsonEv'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='12' c='_ZN6Qv2ray4core10connection10generation7routing11GenerateDNSEbRKNS_4base7objects9DNSObjectE'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='17' c='_ZN6Qv2ray4core10connection10generation4misc16GenerateAPIEntryERK7QStringbbb'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='28' c='_ZN6Qv2ray4core10connection10generation8inbounds20GenerateInboundEntryERK7QStringiS6_RKNS_4base8safetype14INBOUNDSETTINGES6_RK11QJsonObjectSE_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='28' c='_ZN6Qv2ray4core10connection10generation8inbounds20GenerateInboundEntryERK7QStringiS6_RKNS_4base8safetype14INBOUNDSETTINGES6_RK11QJsonObjectSE_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='29' c='_ZN6Qv2ray4core10connection10generation8inbounds20GenerateInboundEntryERK7QStringiS6_RKNS_4base8safetype14INBOUNDSETTINGES6_RK11QJsonObjectSE_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='29' c='_ZN6Qv2ray4core10connection10generation8inbounds20GenerateInboundEntryERK7QStringiS6_RKNS_4base8safetype14INBOUNDSETTINGES6_RK11QJsonObjectSE_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='40' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='41' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='41' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='16' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='28' c='_ZN6Qv2ray4core10connection10generation7filters18DNSInterceptFilterERNS_4base8safetype10CONFIGROOTEbbb'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='43' c='_ZN6Qv2ray4core10connection10generation7filters18DNSInterceptFilterERNS_4base8safetype10CONFIGROOTEbbb'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='58' c='_ZN6Qv2ray4core10connection10generation7filters14BypassBTFilterERNS_4base8safetype10CONFIGROOTE'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='57' c='_ZN6Qv2ray4core10connection10generation8inbounds20GenerateInboundEntryERK7QStringiS6_RKNS_4base8safetype14INBOUNDSETTINGES6_RK11QJsonObjectSE_'/>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='57' c='_ZN6Qv2ray4core10connection10generation8inbounds20GenerateInboundEntryERK7QStringiS6_RKNS_4base8safetype14INBOUNDSETTINGES6_RK11QJsonObjectSE_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/misc.cpp' l='5' c='_ZN6Qv2ray4core10connection10generation4misc16GenerateAPIEntryERK7QStringbbb'/>
+<use f='qv2ray/src/core/connection/generation/misc.cpp' l='7' c='_ZN6Qv2ray4core10connection10generation4misc16GenerateAPIEntryERK7QStringbbb'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='14' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateBlackHoleOUTEb'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='56' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='57' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/routing.cpp' l='4' c='_ZN6Qv2ray4core10connection10generation7routing11GenerateDNSEbRKNS_4base7objects9DNSObjectE'/>
+<use f='qv2ray/src/core/connection/generation/routing.cpp' l='6' c='_ZN6Qv2ray4core10connection10generation7routing11GenerateDNSEbRKNS_4base7objects9DNSObjectE'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='113' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='146' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='14' c='_ZN6Qv2ray4core10connection13serialization5vmess9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='86' c='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='93' c='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='25' c='_ZNK6Qv2ray4core7handler12RouteHandler10SaveRoutesEv'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='159' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='160' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='217' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='217' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='232' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='232' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='389' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='392' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='394' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='409' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='14' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='14' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='23' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='44' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='56' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='90' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='98' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='99' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='108' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='134' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='159' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='172' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='229' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='254' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='265' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='266' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='271' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='367' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='368' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='369' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='370' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='405' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='437' c='_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='437' c='_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='279' c='_ZN13InboundEditor25on_httpAddUserBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='338' c='_ZN13InboundEditor26on_socksAddUserBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='477' c='_ZN13InboundEditor24on_mtEMailTxt_textEditedERK7QString'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='477' c='_ZN13InboundEditor24on_mtEMailTxt_textEditedERK7QString'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='491' c='_ZN13InboundEditor25on_mtSecretTxt_textEditedERK7QString'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='491' c='_ZN13InboundEditor25on_mtSecretTxt_textEditedERK7QString'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='505' c='_ZN13InboundEditor29on_mtUserLevelSB_valueChangedEi'/>
+<use f='qv2ray/src/ui/editors/w_InboundEditor.cpp' l='505' c='_ZN13InboundEditor29on_mtUserLevelSB_valueChangedEi'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.cpp' l='6' c='_ZN10JsonEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.cpp' l='44' c='_ZN10JsonEditor10OpenEditorEv'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.cpp' l='166' c='_ZN14OutboundEditor22GenerateConnectionJsonEv'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='79' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='179' c='_ZN11RouteEditor13onNodeClickedERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='187' c='_ZN11RouteEditor13onNodeClickedERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='350' c='_ZN11RouteEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='371' c='_ZN11RouteEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='511' c='_ZN11RouteEditor26on_insertDirectBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='511' c='_ZN11RouteEditor26on_insertDirectBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='689' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='690' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='745' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='746' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='746' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='770' c='_ZN11RouteEditor25on_insertBlackBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='770' c='_ZN11RouteEditor25on_insertBlackBtn_clickedEv'/>
+<size>16</size>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='341' c='_ZN18ImportConfigWindow23on_routeEditBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='361' c='_ZN18ImportConfigWindow22on_jsonEditBtn_clickedEv'/>
+<size>16</size>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='10' c='____C_A_T_C_H____T_E_S_T____2'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='55' c='____C_A_T_C_H____T_E_S_T____16'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='100' c='____C_A_T_C_H____T_E_S_T____30'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='140' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='147' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='149' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='152' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='152' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='161' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='164' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='164' c='____C_A_T_C_H____T_E_S_T____42'/>
+<use f='qv2ray/test/libs/QJsonStruct/QJsonIO.cpp' l='164' c='____C_A_T_C_H____T_E_S_T____42'/>
+<size>16</size>

@@ -1,0 +1,19 @@
+<def f='include/grpcpp/impl/codegen/status.h' l='118' type='bool grpc::Status::ok() const'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='423' u='c' c='_ZN4grpc8internal24CallOpGenericRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='750' u='c' c='_ZN4grpc17ServerAsyncReader6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='769' u='c' c='_ZN4grpc17ServerAsyncReader15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='252' u='c' c='_ZN4grpc25ServerAsyncResponseWriter6FinishERKT_RKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='274' u='c' c='_ZN4grpc25ServerAsyncResponseWriter15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='66' u='c' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='81' u='c' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='126' u='c' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='157' u='c' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='214' u='c' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='63' u='c' c='_ZN4grpc17ProtoBufferReaderD1Ev'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='71' u='c' c='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<doc f='include/grpcpp/impl/codegen/status.h' l='117'>/// Is the status OK?</doc>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='61' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='73' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='78' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='76' u='c' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='133' u='c' c='_ZN6Qv2ray4core6kernel9APIWorker18CallStatsAPIByNameERK7QString'/>

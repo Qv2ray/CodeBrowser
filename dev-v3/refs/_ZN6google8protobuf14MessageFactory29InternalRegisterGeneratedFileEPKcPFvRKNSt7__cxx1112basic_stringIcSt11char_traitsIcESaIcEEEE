@@ -1,0 +1,11 @@
+<dec f='include/google/protobuf/message.h' l='1081' type='static void google::protobuf::MessageFactory::InternalRegisterGeneratedFile(const char * filename, void (*)(const std::string &amp;) register_messages)'/>
+<doc f='include/google/protobuf/message.h' l='1073'>// For internal use only:  Registers a .proto file at static initialization
+  // time, to be placed in generated_factory.  The first time GetPrototype()
+  // is called with a descriptor from this file, |register_messages| will be
+  // called, with the file name as the parameter.  It must call
+  // InternalRegisterGeneratedMessage() (below) to register each message type
+  // in the file.  This strange mechanism is necessary because descriptors are
+  // built lazily, so we can&apos;t register types by their descriptor until we
+  // know that the descriptor exists.  |filename| must be a permanent string.</doc>
+<use f='/v2ray_api.pb.cc' l='335' u='c' c='_ZN28protobuf_v2ray_5fapi_2eproto18AddDescriptorsImplEv'/>
+<use f='/v2ray_geosite.pb.cc' l='306' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eproto18AddDescriptorsImplEv'/>

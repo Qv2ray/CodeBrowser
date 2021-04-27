@@ -1,0 +1,10 @@
+<dec f='include/grpcpp/impl/codegen/client_context.h' l='344' type='void grpc::ClientContext::TryCancel()'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='335'>/// Send a best-effort out-of-band cancel on the call associated with
+  /// this client context.  The call could be in any stage; e.g., if it is
+  /// already finished, it may still return success.
+  ///
+  /// There is no guarantee the call will be cancelled.
+  ///
+  /// Note that TryCancel() does not change any of the tags that are pending
+  /// on the completion queue. All pending tags will still be delivered
+  /// (though their ok result may reflect the effect of cancellation).</doc>

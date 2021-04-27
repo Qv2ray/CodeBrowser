@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='642' type='size_t'/>
+<offset>832</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='639'>/*
+   * Number of send requests currently in the queue awaiting to be processed.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='120' u='r' c='uv__udp_finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='120' u='r' c='uv__udp_finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='144' u='w' c='uv__udp_run_completed'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='675' u='r' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='698' u='w' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='731' u='r' c='uv__udp_try_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='970' u='w' c='uv__udp_init_ex'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='65' u='r' c='uv_udp_get_send_queue_count'/>

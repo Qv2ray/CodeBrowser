@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='39' type='static const ZXing::QRCode::Version * ZXing::QRCode::BitMatrixParser::ReadVersion(const ZXing::BitMatrix &amp; bitMatrix, bool mirrored)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='46' ll='85' type='static const ZXing::QRCode::Version * ZXing::QRCode::BitMatrixParser::ReadVersion(const ZXing::BitMatrix &amp; bitMatrix, bool mirrored)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='39'>/**
+* &lt;p&gt;Reads version information from one of its two locations within the QR Code.&lt;/p&gt;
+*
+* @return {@link Version} encapsulating the QR Code&apos;s version
+* @throws FormatException if both version information locations cannot be parsed as
+* the valid encoding of version information
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='35'>/**
+	* @param bitMatrix {@link BitMatrix} to parse
+	* return false if dimension is not &gt;= 21 and 1 mod 4
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='474' u='c' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='490' u='c' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

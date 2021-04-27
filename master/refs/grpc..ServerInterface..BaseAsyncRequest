@@ -1,0 +1,17 @@
+<inh f='include/grpcpp/impl/codegen/completion_queue_tag.h' l='26' c='grpc::internal::CompletionQueueTag'/>
+<def f='include/grpcpp/impl/codegen/server_interface.h' l='147' ll='165'/>
+<ovr f='include/grpcpp/impl/codegen/server_interface.h' l='167' c='grpc::ServerInterface::RegisteredAsyncRequest'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='167'/>
+<ovr f='include/grpcpp/impl/codegen/server_interface.h' l='253' c='grpc::ServerInterface::GenericAsyncRequest'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='253'/>
+<size>64</size>
+<fun r='_ZN4grpc15ServerInterface16BaseAsyncRequestC1EPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPvb'/>
+<fun r='_ZN4grpc15ServerInterface16BaseAsyncRequestD1Ev'/>
+<fun r='_ZN4grpc15ServerInterface16BaseAsyncRequest14FinalizeResultEPPvPb'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::server_' o='64' t='grpc::ServerInterface *const'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::context_' o='128' t='grpc::ServerContext *const'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::stream_' o='192' t='internal::ServerAsyncStreamingInterface *const'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::call_cq_' o='256' t='grpc::CompletionQueue *const'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::tag_' o='320' t='void *const'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::delete_on_finalize_' o='384' t='const bool'/>
+<mbr r='grpc::ServerInterface::BaseAsyncRequest::call_' o='448' t='grpc_call *'/>

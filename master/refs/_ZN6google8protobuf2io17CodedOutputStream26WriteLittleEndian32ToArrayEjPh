@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='755' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteLittleEndian32ToArray(google::protobuf::uint32 value, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1169' ll='1180' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteLittleEndian32ToArray(google::protobuf::uint32 value, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='577' u='c' c='_ZN6google8protobuf8internal14WireFormatLite24WriteFixed32NoTagToArrayEjPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='585' u='c' c='_ZN6google8protobuf8internal14WireFormatLite25WriteSFixed32NoTagToArrayEiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='595' u='c' c='_ZN6google8protobuf8internal14WireFormatLite22WriteFloatNoTagToArrayEfPh'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='754'>// Like WriteLittleEndian32()  but writing directly to the target array.</doc>

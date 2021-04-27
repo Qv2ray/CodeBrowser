@@ -1,0 +1,30 @@
+<def f='include/c++/10/bits/stl_tree.h' l='435'/>
+<use f='include/c++/10/bits/stl_tree.h' l='1570' c='_ZNSt8_Rb_tree15_M_merge_uniqueERSt8_Rb_treeIT_T0_T1_TL0__T3_E'/>
+<use f='include/c++/10/bits/stl_tree.h' l='1592' c='_ZNSt8_Rb_tree14_M_merge_equalERSt8_Rb_treeIT_T0_T1_TL0__T3_E'/>
+<def f='include/c++/10/bits/stl_tree.h' l='2627' ll='2638'/>
+<use f='include/c++/10/bits/stl_map.h' l='644' c='_ZNSt3map5mergeERSt3mapIT_T0_TL0__T2_E'/>
+<use f='include/c++/10/bits/stl_map.h' l='657' c='_ZNSt3map5mergeERSt8multimapIT_T0_TL0__T2_E'/>
+<def f='include/c++/10/bits/stl_map.h' l='1546' ll='1562'/>
+<use f='include/c++/10/bits/stl_multimap.h' l='660' c='_ZNSt8multimap5mergeERSt8multimapIT_T0_TL0__T2_E'/>
+<use f='include/c++/10/bits/stl_multimap.h' l='673' c='_ZNSt8multimap5mergeERSt3mapIT_T0_TL0__T2_E'/>
+<def f='include/c++/10/bits/stl_multimap.h' l='1211' ll='1227'/>
+<use f='include/c++/10/bits/stl_set.h' l='613' c='_ZNSt3set5mergeERSt3setIT_TL0__T1_E'/>
+<use f='include/c++/10/bits/stl_set.h' l='626' c='_ZNSt3set5mergeERSt8multisetIT_TL0__T1_E'/>
+<def f='include/c++/10/bits/stl_set.h' l='1067' ll='1081'/>
+<use f='include/c++/10/bits/stl_multiset.h' l='598' c='_ZNSt8multiset5mergeERSt8multisetIT_TL0__T1_E'/>
+<use f='include/c++/10/bits/stl_multiset.h' l='611' c='_ZNSt8multiset5mergeERSt3setIT_TL0__T1_E'/>
+<def f='include/c++/10/bits/stl_multiset.h' l='1054' ll='1069'/>
+<doc f='include/c++/10/bits/stl_tree.h' l='2626'>// Allow access to internals of compatible _Rb_tree specializations.</doc>
+<doc f='include/c++/10/bits/stl_map.h' l='1545'>// Allow std::map access to internals of compatible maps.</doc>
+<doc f='include/c++/10/bits/stl_multimap.h' l='1210'>// Allow std::multimap access to internals of compatible maps.</doc>
+<doc f='include/c++/10/bits/stl_set.h' l='1066'>// Allow std::set access to internals of compatible sets.</doc>
+<doc f='include/c++/10/bits/stl_multiset.h' l='1053'>// Allow std::multiset access to internals of compatible sets.</doc>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt8_Rb_treeIT_T0_T1_T2_T3_ET4_E11_S_get_implERS0_IS1_S2_S3_S7_S5_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt3mapIT_T0_T1_T2_ET3_E11_S_get_treeERS0_IS1_S2_S6_S4_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt3mapIT_T0_T1_T2_ET3_E11_S_get_treeERSt8multimapIS1_S2_S6_S4_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt8multimapIT_T0_T1_T2_ET3_E11_S_get_treeERSt3mapIS1_S2_S6_S4_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt8multimapIT_T0_T1_T2_ET3_E11_S_get_treeERS0_IS1_S2_S6_S4_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt3setIT_T0_T1_ET2_E11_S_get_treeERS0_IS1_S5_S3_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt3setIT_T0_T1_ET2_E11_S_get_treeERSt8multisetIS1_S5_S3_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt8multisetIT_T0_T1_ET2_E11_S_get_treeERSt3setIS1_S5_S3_E'/>
+<fun r='_ZNSt21_Rb_tree_merge_helperISt8multisetIT_T0_T1_ET2_E11_S_get_treeERS0_IS1_S5_S3_E'/>

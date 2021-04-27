@@ -1,0 +1,4 @@
+<use f='include/google/protobuf/map.h' l='339' u='c' c='_ZN6google8protobuf3Map8InnerMapC1EmNS0_4hashIT_EENS1_12MapAllocatorINS1_12KeyValuePairEEE'/>
+<def f='include/google/protobuf/map.h' l='894' ll='898' type='google::protobuf::Map::size_type google::protobuf::Map::InnerMap::TableSize(google::protobuf::Map::size_type n)'/>
+<doc f='include/google/protobuf/map.h' l='892'>// Return a power of two no less than max(kMinTableSize, n).
+    // Assumes either n &lt; kMinTableSize or n is a power of two.</doc>

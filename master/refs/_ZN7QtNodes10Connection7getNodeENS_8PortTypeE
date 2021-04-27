@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='60' type='QtNodes::Node *&amp; QtNodes::Connection::getNode(QtNodes::PortType portType)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='121' u='c' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='142' u='c' c='_ZN7QtNodes10Connection13setNodeToPortERNS_4NodeENS_8PortTypeEi'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='194' ll='205' type='QtNodes::Node *&amp; QtNodes::Connection::getNode(QtNodes::PortType portType)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='212' u='c' c='_ZN7QtNodes10Connection9clearNodeENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='62' u='c' c='_ZN7QtNodes24ConnectionGraphicsObject4moveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='208' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='109' u='c' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='29' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='86' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='230' u='c' c='_ZN11RouteEditor19onConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='231' u='c' c='_ZN11RouteEditor19onConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='670' u='c' c='_ZN11RouteEditor32on_enableBalancerCB_stateChangedEi'/>

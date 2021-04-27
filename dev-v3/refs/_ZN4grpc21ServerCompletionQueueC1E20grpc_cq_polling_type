@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='383' ll='386' type='void grpc::ServerCompletionQueue::ServerCompletionQueue(grpc_cq_polling_type polling_type)'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='379'>/// \param is_frequently_polled Informs the GRPC library about whether the
+  /// server completion queue would be actively polled (by calling Next() or
+  /// AsyncNext()). By default all server completion queues are assumed to be
+  /// frequently polled.</doc>

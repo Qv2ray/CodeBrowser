@@ -1,0 +1,5 @@
+<dec f='include/netinet/in.h' l='319' type='struct sockaddr_storage'/>
+<offset>1088</offset>
+<doc f='include/netinet/in.h' l='318'>/* Source address.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='929' u='r' c='uv__static_assert'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='931' u='a' c='uv__udp_set_source_membership6'/>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>rsecc.c source code [qv2ray/3rdparty/qt-qrcode/lib/libqrencode/rsecc.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/qt-qrcode/lib/libqrencode/rsecc.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>qt-qrcode</a>/<a href='..'>lib</a>/<a href='./'>libqrencode</a>/<a href='rsecc.c.html'>rsecc.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * qrencode - QR Code encoder</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Reed solomon error correction code encoder specialized for QR code.</i></td></tr>
+<tr><th id="5">5</th><td><i> * This code is based on Phil Karn's libfec and rewriten by Kentaro Fukuchi.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * Copyright (C) 2002, 2003, 2004, 2006 Phil Karn, KA9Q</i></td></tr>
+<tr><th id="8">8</th><td><i> * Copyright (C) 2014 Kentaro Fukuchi &lt;kentaro@fukuchi.org&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="11">11</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="12">12</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="13">13</th><td><i> * version 2.1 of the License, or any later version.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="16">16</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="17">17</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</i></td></tr>
+<tr><th id="18">18</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="21">21</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="22">22</th><td><i> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</i></td></tr>
+<tr><th id="23">23</th><td><i> */</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">if</span> HAVE_CONFIG_H</u></td></tr>
+<tr><th id="26">26</th><td><u># include "config.h"</u></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="25">endif</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../../../../include/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="../../../../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">ifdef</span> <span class="macro" data-ref="_M/HAVE_LIBPTHREAD">HAVE_LIBPTHREAD</span></u></td></tr>
+<tr><th id="31">31</th><td><u>#include &lt;pthread.h&gt;</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="rsecc.h.html">"rsecc.h"</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifdef</span> <span class="macro" data-ref="_M/HAVE_LIBPTHREAD">HAVE_LIBPTHREAD</span></u></td></tr>
+<tr><th id="37">37</th><td><em>static</em> pthread_mutex_t RSECC_mutex = PTHREAD_MUTEX_INITIALIZER;</td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="initialized" title='initialized' data-type='int' data-ref="initialized" data-ref-filename="initialized">initialized</dfn> = <var>0</var>;</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/SYMBOL_SIZE" data-ref="_M/SYMBOL_SIZE">SYMBOL_SIZE</dfn> (8)</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/symbols" data-ref="_M/symbols">symbols</dfn> ((1 &lt;&lt; SYMBOL_SIZE) - 1)</u></td></tr>
+<tr><th id="44">44</th><td><em>static</em> <em>const</em> <em>int</em> <dfn class="tu decl def" id="proot" title='proot' data-type='const int' data-ref="proot" data-ref-filename="proot">proot</dfn> = <var>0x11d</var>; <i  data-doc="proot">/* stands for x^8+x^4+x^3+x^2+1 (see pp.37 of JIS X0510:2004) */</i></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><i>/* min/max codeword length of ECC, calculated from the specification. */</i></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/min_length" data-ref="_M/min_length">min_length</dfn> (2)</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/max_length" data-ref="_M/max_length">max_length</dfn> (30)</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/max_generatorSize" data-ref="_M/max_generatorSize">max_generatorSize</dfn> (max_length)</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>static</em> <em>unsigned</em> <em>char</em> <dfn class="tu decl def" id="alpha" title='alpha' data-type='unsigned char [256]' data-ref="alpha" data-ref-filename="alpha">alpha</dfn>[<a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a> + <var>1</var>];</td></tr>
+<tr><th id="52">52</th><td><em>static</em> <em>unsigned</em> <em>char</em> <dfn class="tu decl def" id="aindex" title='aindex' data-type='unsigned char [256]' data-ref="aindex" data-ref-filename="aindex">aindex</dfn>[<a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a> + <var>1</var>];</td></tr>
+<tr><th id="53">53</th><td><em>static</em> <em>unsigned</em> <em>char</em> <dfn class="tu decl def" id="generator" title='generator' data-type='unsigned char [29][31]' data-ref="generator" data-ref-filename="generator">generator</dfn>[<a class="macro" href="#48" title="(30)" data-ref="_M/max_length">max_length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a> + <var>1</var>][<a class="macro" href="#49" title="((30))" data-ref="_M/max_generatorSize">max_generatorSize</a> + <var>1</var>];</td></tr>
+<tr><th id="54">54</th><td><em>static</em> <em>unsigned</em> <em>char</em> <dfn class="tu decl def" id="generatorInitialized" title='generatorInitialized' data-type='unsigned char [29]' data-ref="generatorInitialized" data-ref-filename="generatorInitialized">generatorInitialized</dfn>[<a class="macro" href="#48" title="(30)" data-ref="_M/max_length">max_length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a> + <var>1</var>];</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><em>static</em> <em>void</em> <dfn class="tu decl def fn" id="RSECC_initLookupTable" title='RSECC_initLookupTable' data-type='void RSECC_initLookupTable()' data-ref="RSECC_initLookupTable" data-ref-filename="RSECC_initLookupTable">RSECC_initLookupTable</dfn>(<em>void</em>)</td></tr>
+<tr><th id="57">57</th><td>{</td></tr>
+<tr><th id="58">58</th><td>	<em>int</em> <dfn class="local col1 decl" id="1i" title='i' data-type='int' data-ref="1i" data-ref-filename="1i">i</dfn>, <dfn class="local col2 decl" id="2b" title='b' data-type='int' data-ref="2b" data-ref-filename="2b">b</dfn>;</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>	<a class="tu ref" href="#alpha" title='alpha' data-use='w' data-ref="alpha" data-ref-filename="alpha">alpha</a>[<a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>] = <var>0</var>;</td></tr>
+<tr><th id="61">61</th><td>	<a class="tu ref" href="#aindex" title='aindex' data-use='w' data-ref="aindex" data-ref-filename="aindex">aindex</a>[<var>0</var>] = <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>	<a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a> = <var>1</var>;</td></tr>
+<tr><th id="64">64</th><td>	<b>for</b>(<a class="local col1 ref" href="#1i" title='i' data-ref="1i" data-ref-filename="1i">i</a> = <var>0</var>; <a class="local col1 ref" href="#1i" title='i' data-ref="1i" data-ref-filename="1i">i</a> &lt; <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>; <a class="local col1 ref" href="#1i" title='i' data-ref="1i" data-ref-filename="1i">i</a>++) {</td></tr>
+<tr><th id="65">65</th><td>		<a class="tu ref" href="#alpha" title='alpha' data-use='w' data-ref="alpha" data-ref-filename="alpha">alpha</a>[<a class="local col1 ref" href="#1i" title='i' data-ref="1i" data-ref-filename="1i">i</a>] = <a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a>;</td></tr>
+<tr><th id="66">66</th><td>		<a class="tu ref" href="#aindex" title='aindex' data-use='w' data-ref="aindex" data-ref-filename="aindex">aindex</a>[<a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a>] = <a class="local col1 ref" href="#1i" title='i' data-ref="1i" data-ref-filename="1i">i</a>;</td></tr>
+<tr><th id="67">67</th><td>		<a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a> &lt;&lt;= <var>1</var>;</td></tr>
+<tr><th id="68">68</th><td>		<b>if</b>(<a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a> &amp; (<a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a> + <var>1</var>)) {</td></tr>
+<tr><th id="69">69</th><td>			<a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a> ^= <a class="tu ref" href="#proot" title='proot' data-use='r' data-ref="proot" data-ref-filename="proot">proot</a>;</td></tr>
+<tr><th id="70">70</th><td>		}</td></tr>
+<tr><th id="71">71</th><td>		<a class="local col2 ref" href="#2b" title='b' data-ref="2b" data-ref-filename="2b">b</a> &amp;= <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>;</td></tr>
+<tr><th id="72">72</th><td>	}</td></tr>
+<tr><th id="73">73</th><td>}</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><em>void</em> <dfn class="decl def fn" id="RSECC_init" title='RSECC_init' data-ref="RSECC_init" data-ref-filename="RSECC_init">RSECC_init</dfn>(<em>void</em>)</td></tr>
+<tr><th id="76">76</th><td>{</td></tr>
+<tr><th id="77">77</th><td>	<a class="tu ref fn" href="#RSECC_initLookupTable" title='RSECC_initLookupTable' data-use='c' data-ref="RSECC_initLookupTable" data-ref-filename="RSECC_initLookupTable">RSECC_initLookupTable</a>();</td></tr>
+<tr><th id="78">78</th><td>	<a class="ref fn" href="../../../../../include/string.h.html#memset" title='memset' data-ref="memset" data-ref-filename="memset">memset</a>(<a class="tu ref" href="#generatorInitialized" title='generatorInitialized' data-use='r' data-ref="generatorInitialized" data-ref-filename="generatorInitialized">generatorInitialized</a>, <var>0</var>, (<a class="macro" href="#48" title="(30)" data-ref="_M/max_length">max_length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a> + <var>1</var>));</td></tr>
+<tr><th id="79">79</th><td>	<a class="tu ref" href="#initialized" title='initialized' data-use='w' data-ref="initialized" data-ref-filename="initialized">initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="80">80</th><td>}</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><em>static</em> <em>void</em> <dfn class="tu decl def fn" id="generator_init" title='generator_init' data-type='void generator_init(int length)' data-ref="generator_init" data-ref-filename="generator_init">generator_init</dfn>(<em>int</em> <dfn class="local col3 decl" id="3length" title='length' data-type='int' data-ref="3length" data-ref-filename="3length">length</dfn>)</td></tr>
+<tr><th id="83">83</th><td>{</td></tr>
+<tr><th id="84">84</th><td>	<em>int</em> <dfn class="local col4 decl" id="4i" title='i' data-type='int' data-ref="4i" data-ref-filename="4i">i</dfn>, <dfn class="local col5 decl" id="5j" title='j' data-type='int' data-ref="5j" data-ref-filename="5j">j</dfn>;</td></tr>
+<tr><th id="85">85</th><td>	<em>int</em> <dfn class="local col6 decl" id="6g" title='g' data-type='int [31]' data-ref="6g" data-ref-filename="6g">g</dfn>[<a class="macro" href="#49" title="((30))" data-ref="_M/max_generatorSize">max_generatorSize</a> + <var>1</var>];</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>	<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<var>0</var>] = <var>1</var>;</td></tr>
+<tr><th id="88">88</th><td>	<b>for</b>(<a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a> = <var>0</var>; <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a> &lt; <a class="local col3 ref" href="#3length" title='length' data-ref="3length" data-ref-filename="3length">length</a>; <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>++) {</td></tr>
+<tr><th id="89">89</th><td>		<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a> + <var>1</var>] = <var>1</var>;</td></tr>
+<tr><th id="90">90</th><td>		<i>/* Because g[0] never be zero, skipped some conditional checks. */</i></td></tr>
+<tr><th id="91">91</th><td>		<b>for</b>(<a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a> = <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>; <a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a> &gt; <var>0</var>; <a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a>--) {</td></tr>
+<tr><th id="92">92</th><td>			<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a>] = <a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a> - <var>1</var>] ^  <a class="tu ref" href="#alpha" title='alpha' data-use='r' data-ref="alpha" data-ref-filename="alpha">alpha</a>[(<a class="tu ref" href="#aindex" title='aindex' data-use='r' data-ref="aindex" data-ref-filename="aindex">aindex</a>[<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a>]] + <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>) % <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>];</td></tr>
+<tr><th id="93">93</th><td>		}</td></tr>
+<tr><th id="94">94</th><td>		<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<var>0</var>] = <a class="tu ref" href="#alpha" title='alpha' data-use='r' data-ref="alpha" data-ref-filename="alpha">alpha</a>[(<a class="tu ref" href="#aindex" title='aindex' data-use='r' data-ref="aindex" data-ref-filename="aindex">aindex</a>[<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<var>0</var>]] + <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>) % <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>];</td></tr>
+<tr><th id="95">95</th><td>	}</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>	<b>for</b>(<a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a> = <var>0</var>; <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a> &lt;= <a class="local col3 ref" href="#3length" title='length' data-ref="3length" data-ref-filename="3length">length</a>; <a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>++) {</td></tr>
+<tr><th id="98">98</th><td>		<a class="tu ref" href="#generator" title='generator' data-use='w' data-ref="generator" data-ref-filename="generator">generator</a>[<a class="local col3 ref" href="#3length" title='length' data-ref="3length" data-ref-filename="3length">length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a>][<a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>] = <a class="tu ref" href="#aindex" title='aindex' data-use='r' data-ref="aindex" data-ref-filename="aindex">aindex</a>[<a class="local col6 ref" href="#6g" title='g' data-ref="6g" data-ref-filename="6g">g</a>[<a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a>]];</td></tr>
+<tr><th id="99">99</th><td>	}</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>	<a class="tu ref" href="#generatorInitialized" title='generatorInitialized' data-use='w' data-ref="generatorInitialized" data-ref-filename="generatorInitialized">generatorInitialized</a>[<a class="local col3 ref" href="#3length" title='length' data-ref="3length" data-ref-filename="3length">length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a>] = <var>1</var>;</td></tr>
+<tr><th id="102">102</th><td>}</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><em>int</em> <dfn class="decl def fn" id="RSECC_encode" title='RSECC_encode' data-ref="RSECC_encode" data-ref-filename="RSECC_encode">RSECC_encode</dfn>(<em>int</em> <dfn class="local col7 decl" id="7data_length" title='data_length' data-type='int' data-ref="7data_length" data-ref-filename="7data_length">data_length</dfn>, <em>int</em> <dfn class="local col8 decl" id="8ecc_length" title='ecc_length' data-type='int' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="9data" title='data' data-type='const unsigned char *' data-ref="9data" data-ref-filename="9data">data</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col0 decl" id="10ecc" title='ecc' data-type='unsigned char *' data-ref="10ecc" data-ref-filename="10ecc">ecc</dfn>)</td></tr>
+<tr><th id="105">105</th><td>{</td></tr>
+<tr><th id="106">106</th><td>	<em>int</em> <dfn class="local col1 decl" id="11i" title='i' data-type='int' data-ref="11i" data-ref-filename="11i">i</dfn>, <dfn class="local col2 decl" id="12j" title='j' data-type='int' data-ref="12j" data-ref-filename="12j">j</dfn>;</td></tr>
+<tr><th id="107">107</th><td>	<em>unsigned</em> <em>char</em> <dfn class="local col3 decl" id="13feedback" title='feedback' data-type='unsigned char' data-ref="13feedback" data-ref-filename="13feedback">feedback</dfn>;</td></tr>
+<tr><th id="108">108</th><td>	<em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="14gen" title='gen' data-type='unsigned char *' data-ref="14gen" data-ref-filename="14gen">gen</dfn>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#<span data-ppcond="110">ifdef</span> <span class="macro" data-ref="_M/HAVE_LIBPTHREAD">HAVE_LIBPTHREAD</span></u></td></tr>
+<tr><th id="111">111</th><td>	pthread_mutex_lock(&amp;RSECC_mutex);</td></tr>
+<tr><th id="112">112</th><td><u>#<span data-ppcond="110">endif</span></u></td></tr>
+<tr><th id="113">113</th><td>	<b>if</b>(!<a class="tu ref" href="#initialized" title='initialized' data-use='r' data-ref="initialized" data-ref-filename="initialized">initialized</a>) {</td></tr>
+<tr><th id="114">114</th><td>		<a class="ref fn" href="#RSECC_init" title='RSECC_init' data-ref="RSECC_init" data-ref-filename="RSECC_init">RSECC_init</a>();</td></tr>
+<tr><th id="115">115</th><td>	}</td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="116">ifdef</span> <span class="macro" data-ref="_M/HAVE_LIBPTHREAD">HAVE_LIBPTHREAD</span></u></td></tr>
+<tr><th id="117">117</th><td>	pthread_mutex_unlock(&amp;RSECC_mutex);</td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="116">endif</span></u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td>	<b>if</b>(<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> &gt; <a class="macro" href="#48" title="(30)" data-ref="_M/max_length">max_length</a>) <b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>	<a class="ref fn" href="../../../../../include/string.h.html#memset" title='memset' data-ref="memset" data-ref-filename="memset">memset</a>(<a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>, <var>0</var>, <a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a>);</td></tr>
+<tr><th id="123">123</th><td><u>#<span data-ppcond="123">ifdef</span> <span class="macro" data-ref="_M/HAVE_LIBPTHREAD">HAVE_LIBPTHREAD</span></u></td></tr>
+<tr><th id="124">124</th><td>	pthread_mutex_lock(&amp;RSECC_mutex);</td></tr>
+<tr><th id="125">125</th><td><u>#<span data-ppcond="123">endif</span></u></td></tr>
+<tr><th id="126">126</th><td>	<b>if</b>(!<a class="tu ref" href="#generatorInitialized" title='generatorInitialized' data-use='r' data-ref="generatorInitialized" data-ref-filename="generatorInitialized">generatorInitialized</a>[<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a>]) <a class="tu ref fn" href="#generator_init" title='generator_init' data-use='c' data-ref="generator_init" data-ref-filename="generator_init">generator_init</a>(<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a>);</td></tr>
+<tr><th id="127">127</th><td><u>#<span data-ppcond="127">ifdef</span> <span class="macro" data-ref="_M/HAVE_LIBPTHREAD">HAVE_LIBPTHREAD</span></u></td></tr>
+<tr><th id="128">128</th><td>	pthread_mutex_unlock(&amp;RSECC_mutex);</td></tr>
+<tr><th id="129">129</th><td><u>#<span data-ppcond="127">endif</span></u></td></tr>
+<tr><th id="130">130</th><td>	<a class="local col4 ref" href="#14gen" title='gen' data-ref="14gen" data-ref-filename="14gen">gen</a> = <a class="tu ref" href="#generator" title='generator' data-use='r' data-ref="generator" data-ref-filename="generator">generator</a>[<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> - <a class="macro" href="#47" title="(2)" data-ref="_M/min_length">min_length</a>];</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td>	<b>for</b>(<a class="local col1 ref" href="#11i" title='i' data-ref="11i" data-ref-filename="11i">i</a> = <var>0</var>; <a class="local col1 ref" href="#11i" title='i' data-ref="11i" data-ref-filename="11i">i</a> &lt; <a class="local col7 ref" href="#7data_length" title='data_length' data-ref="7data_length" data-ref-filename="7data_length">data_length</a>; <a class="local col1 ref" href="#11i" title='i' data-ref="11i" data-ref-filename="11i">i</a>++) {</td></tr>
+<tr><th id="133">133</th><td>		<a class="local col3 ref" href="#13feedback" title='feedback' data-ref="13feedback" data-ref-filename="13feedback">feedback</a> = <a class="tu ref" href="#aindex" title='aindex' data-use='r' data-ref="aindex" data-ref-filename="aindex">aindex</a>[<a class="local col9 ref" href="#9data" title='data' data-ref="9data" data-ref-filename="9data">data</a>[<a class="local col1 ref" href="#11i" title='i' data-ref="11i" data-ref-filename="11i">i</a>] ^ <a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>[<var>0</var>]];</td></tr>
+<tr><th id="134">134</th><td>		<b>if</b>(<a class="local col3 ref" href="#13feedback" title='feedback' data-ref="13feedback" data-ref-filename="13feedback">feedback</a> != <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>) {</td></tr>
+<tr><th id="135">135</th><td>			<b>for</b>(<a class="local col2 ref" href="#12j" title='j' data-ref="12j" data-ref-filename="12j">j</a> = <var>1</var>; <a class="local col2 ref" href="#12j" title='j' data-ref="12j" data-ref-filename="12j">j</a> &lt; <a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a>; <a class="local col2 ref" href="#12j" title='j' data-ref="12j" data-ref-filename="12j">j</a>++) {</td></tr>
+<tr><th id="136">136</th><td>				<a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>[<a class="local col2 ref" href="#12j" title='j' data-ref="12j" data-ref-filename="12j">j</a>] ^= <a class="tu ref" href="#alpha" title='alpha' data-use='r' data-ref="alpha" data-ref-filename="alpha">alpha</a>[(<a class="local col3 ref" href="#13feedback" title='feedback' data-ref="13feedback" data-ref-filename="13feedback">feedback</a> + <a class="local col4 ref" href="#14gen" title='gen' data-ref="14gen" data-ref-filename="14gen">gen</a>[<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> - <a class="local col2 ref" href="#12j" title='j' data-ref="12j" data-ref-filename="12j">j</a>]) % <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>];</td></tr>
+<tr><th id="137">137</th><td>			}</td></tr>
+<tr><th id="138">138</th><td>		}</td></tr>
+<tr><th id="139">139</th><td>		<a class="ref fn" href="../../../../../include/string.h.html#memmove" title='memmove' data-ref="memmove" data-ref-filename="memmove">memmove</a>(&amp;<a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>[<var>0</var>], &amp;<a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>[<var>1</var>], <a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> - <var>1</var>);</td></tr>
+<tr><th id="140">140</th><td>		<b>if</b>(<a class="local col3 ref" href="#13feedback" title='feedback' data-ref="13feedback" data-ref-filename="13feedback">feedback</a> != <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>) {</td></tr>
+<tr><th id="141">141</th><td>			<a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>[<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> - <var>1</var>] = <a class="tu ref" href="#alpha" title='alpha' data-use='r' data-ref="alpha" data-ref-filename="alpha">alpha</a>[(<a class="local col3 ref" href="#13feedback" title='feedback' data-ref="13feedback" data-ref-filename="13feedback">feedback</a> + <a class="local col4 ref" href="#14gen" title='gen' data-ref="14gen" data-ref-filename="14gen">gen</a>[<var>0</var>]) % <a class="macro" href="#43" title="((1 &lt;&lt; (8)) - 1)" data-ref="_M/symbols">symbols</a>];</td></tr>
+<tr><th id="142">142</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="143">143</th><td>			<a class="local col0 ref" href="#10ecc" title='ecc' data-ref="10ecc" data-ref-filename="10ecc">ecc</a>[<a class="local col8 ref" href="#8ecc_length" title='ecc_length' data-ref="8ecc_length" data-ref-filename="8ecc_length">ecc_length</a> - <var>1</var>] = <var>0</var>;</td></tr>
+<tr><th id="144">144</th><td>		}</td></tr>
+<tr><th id="145">145</th><td>	}</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="148">148</th><td>}</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

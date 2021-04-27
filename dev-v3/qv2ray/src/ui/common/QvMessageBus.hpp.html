@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QvMessageBus.hpp source code [qv2ray/src/ui/common/QvMessageBus.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Qv2ray::ui::messaging::QvMBMessage,Qv2ray::ui::messaging::QvMessageBusObject "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/common/QvMessageBus.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>ui</a>/<a href='./'>common</a>/<a href='QvMessageBus.hpp.html'>QvMessageBus.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include &lt;QObject&gt;</u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/QvMessageBusConnect" data-ref="_M/QvMessageBusConnect">QvMessageBusConnect</dfn>(CLASSNAME) connect(&amp;UIMessageBus, &amp;QvMessageBusObject::QvSendMessage, this, &amp;CLASSNAME::on_QvMessageReceived)</u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/QvMessageBusSlotSig" data-ref="_M/QvMessageBusSlotSig">QvMessageBusSlotSig</dfn> const QvMBMessage &amp;msg</u></td></tr>
+<tr><th id="7">7</th><td><u>#define <dfn class="macro" id="_M/QvMessageBusSlotIdentifier" data-ref="_M/QvMessageBusSlotIdentifier">QvMessageBusSlotIdentifier</dfn> on_QvMessageReceived</u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/QvMessageBusSlotDecl" data-ref="_M/QvMessageBusSlotDecl">QvMessageBusSlotDecl</dfn> void QvMessageBusSlotIdentifier(QvMessageBusSlotSig)</u></td></tr>
+<tr><th id="10">10</th><td><u>#define <dfn class="macro" id="_M/QvMessageBusSlotImpl" data-ref="_M/QvMessageBusSlotImpl">QvMessageBusSlotImpl</dfn>(CLASSNAME) void CLASSNAME::QvMessageBusSlotIdentifier(QvMessageBusSlotSig)</u></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/MBShowDefaultImpl" data-ref="_M/MBShowDefaultImpl">MBShowDefaultImpl</dfn>                                                                                                                            \</u></td></tr>
+<tr><th id="13">13</th><td><u>    case SHOW_WINDOWS:                                                                                                                               \</u></td></tr>
+<tr><th id="14">14</th><td><u>        this-&gt;setWindowOpacity(1);                                                                                                                   \</u></td></tr>
+<tr><th id="15">15</th><td><u>        break;</u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/MBHideDefaultImpl" data-ref="_M/MBHideDefaultImpl">MBHideDefaultImpl</dfn>                                                                                                                            \</u></td></tr>
+<tr><th id="18">18</th><td><u>    case HIDE_WINDOWS:                                                                                                                               \</u></td></tr>
+<tr><th id="19">19</th><td><u>        this-&gt;setWindowOpacity(0);                                                                                                                   \</u></td></tr>
+<tr><th id="20">20</th><td><u>        break;</u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/MBRetranslateDefaultImpl" data-ref="_M/MBRetranslateDefaultImpl">MBRetranslateDefaultImpl</dfn>                                                                                                                     \</u></td></tr>
+<tr><th id="23">23</th><td><u>    case RETRANSLATE:                                                                                                                                \</u></td></tr>
+<tr><th id="24">24</th><td><u>        this-&gt;retranslateUi(this);                                                                                                                   \</u></td></tr>
+<tr><th id="25">25</th><td><u>        break;</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/MBUpdateColorSchemeDefaultImpl" data-ref="_M/MBUpdateColorSchemeDefaultImpl">MBUpdateColorSchemeDefaultImpl</dfn>                                                                                                               \</u></td></tr>
+<tr><th id="28">28</th><td><u>    case UPDATE_COLORSCHEME: this-&gt;updateColorScheme(); break;</u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">ui</span>::<span class="namespace">messaging</span></td></tr>
+<tr><th id="31">31</th><td>{</td></tr>
+<tr><th id="32">32</th><td>    <span class="macro" title="extern const QMetaObject staticMetaObject;" data-ref="_M/Q_NAMESPACE">Q_NAMESPACE</span></td></tr>
+<tr><th id="33">33</th><td>    <b>enum</b> <dfn class="type def" id="Qv2ray::ui::messaging::QvMBMessage" title='Qv2ray::ui::messaging::QvMBMessage' data-ref="Qv2ray::ui::messaging::QvMBMessage" data-ref-filename="Qv2ray..ui..messaging..QvMBMessage">QvMBMessage</dfn></td></tr>
+<tr><th id="34">34</th><td>    {</td></tr>
+<tr><th id="35">35</th><td>        <i class="doc">/// Show all windows.</i></td></tr>
+<tr><th id="36">36</th><td>        <dfn class="enum" id="Qv2ray::ui::messaging::SHOW_WINDOWS" title='Qv2ray::ui::messaging::SHOW_WINDOWS' data-ref="Qv2ray::ui::messaging::SHOW_WINDOWS" data-ref-filename="Qv2ray..ui..messaging..SHOW_WINDOWS">SHOW_WINDOWS</dfn>,</td></tr>
+<tr><th id="37">37</th><td>        <i class="doc">/// Hide all windows.</i></td></tr>
+<tr><th id="38">38</th><td>        <dfn class="enum" id="Qv2ray::ui::messaging::HIDE_WINDOWS" title='Qv2ray::ui::messaging::HIDE_WINDOWS' data-ref="Qv2ray::ui::messaging::HIDE_WINDOWS" data-ref-filename="Qv2ray..ui..messaging..HIDE_WINDOWS">HIDE_WINDOWS</dfn>,</td></tr>
+<tr><th id="39">39</th><td>        <i class="doc">/// Retranslate User Interface.</i></td></tr>
+<tr><th id="40">40</th><td>        <dfn class="enum" id="Qv2ray::ui::messaging::RETRANSLATE" title='Qv2ray::ui::messaging::RETRANSLATE' data-ref="Qv2ray::ui::messaging::RETRANSLATE" data-ref-filename="Qv2ray..ui..messaging..RETRANSLATE">RETRANSLATE</dfn>,</td></tr>
+<tr><th id="41">41</th><td>        <i class="doc">/// Change Color Scheme</i></td></tr>
+<tr><th id="42">42</th><td>        <dfn class="enum" id="Qv2ray::ui::messaging::UPDATE_COLORSCHEME" title='Qv2ray::ui::messaging::UPDATE_COLORSCHEME' data-ref="Qv2ray::ui::messaging::UPDATE_COLORSCHEME" data-ref-filename="Qv2ray..ui..messaging..UPDATE_COLORSCHEME">UPDATE_COLORSCHEME</dfn></td></tr>
+<tr><th id="43">43</th><td>    };</td></tr>
+<tr><th id="44">44</th><td>    <span class="macro" title=" inline constexpr const QMetaObject *qt_getEnumMetaObject(QvMBMessage) noexcept { return &amp;staticMetaObject; } inline constexpr const char *qt_getEnumName(QvMBMessage) noexcept { return &quot;QvMBMessage&quot;; }" data-ref="_M/Q_ENUM_NS">Q_ENUM_NS</span>(<a class="type" href="#Qv2ray::ui::messaging::QvMBMessage" title='Qv2ray::ui::messaging::QvMBMessage' data-ref="Qv2ray::ui::messaging::QvMBMessage" data-ref-filename="Qv2ray..ui..messaging..QvMBMessage">QvMBMessage</a>)</td></tr>
+<tr><th id="45">45</th><td>    <i>//</i></td></tr>
+<tr><th id="46">46</th><td>    <b>class</b> <dfn class="type def" id="Qv2ray::ui::messaging::QvMessageBusObject" title='Qv2ray::ui::messaging::QvMessageBusObject' data-ref="Qv2ray::ui::messaging::QvMessageBusObject" data-ref-filename="Qv2ray..ui..messaging..QvMessageBusObject">QvMessageBusObject</dfn> : <b>public</b> <span class='type' title='QObject' data-ref="QObject" data-ref-filename="QObject">QObject</span></td></tr>
+<tr><th id="47">47</th><td>    {</td></tr>
+<tr><th id="48">48</th><td>        <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="49">49</th><td>      <b>public</b>:</td></tr>
+<tr><th id="50">50</th><td>        <b>explicit</b> <dfn class="decl def fn" id="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev" title='Qv2ray::ui::messaging::QvMessageBusObject::QvMessageBusObject' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev">QvMessageBusObject</dfn>(){};</td></tr>
+<tr><th id="51">51</th><td>        <em>void</em> <dfn class="decl def fn" id="_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE" title='Qv2ray::ui::messaging::QvMessageBusObject::EmitGlobalSignal' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE">EmitGlobalSignal</dfn>(<em>const</em> <a class="type" href="#Qv2ray::ui::messaging::QvMBMessage" title='Qv2ray::ui::messaging::QvMBMessage' data-ref="Qv2ray::ui::messaging::QvMBMessage" data-ref-filename="Qv2ray..ui..messaging..QvMBMessage">QvMBMessage</a> &amp;<dfn class="local col2 decl" id="12msg" title='msg' data-type='const Qv2ray::ui::messaging::QvMBMessage &amp;' data-ref="12msg" data-ref-filename="12msg">msg</dfn>)</td></tr>
+<tr><th id="52">52</th><td>        {</td></tr>
+<tr><th id="53">53</th><td>            <span class="macro" title="" data-ref="_M/emit">emit</span> <a class="member fn" href="/qv2ray_autogen/B6WHKBFDXJ/moc_QvMessageBus.cpp.html#_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" title='Qv2ray::ui::messaging::QvMessageBusObject::QvSendMessage' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE">QvSendMessage</a>(<a class="local col2 ref" href="#12msg" title='msg' data-ref="12msg" data-ref-filename="12msg">msg</a>);</td></tr>
+<tr><th id="54">54</th><td>        }</td></tr>
+<tr><th id="55">55</th><td>      <span class="macro" title="public" data-ref="_M/signals">signals</span>:</td></tr>
+<tr><th id="56">56</th><td>        <em>void</em> <a class="decl fn" href="/qv2ray_autogen/B6WHKBFDXJ/moc_QvMessageBus.cpp.html#_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" title='Qv2ray::ui::messaging::QvMessageBusObject::QvSendMessage' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" id="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE">QvSendMessage</a>(<em>const</em> <a class="type" href="#Qv2ray::ui::messaging::QvMBMessage" title='Qv2ray::ui::messaging::QvMBMessage' data-ref="Qv2ray::ui::messaging::QvMBMessage" data-ref-filename="Qv2ray..ui..messaging..QvMBMessage">QvMBMessage</a> &amp;<dfn class="local col3 decl" id="13msg" title='msg' data-type='const Qv2ray::ui::messaging::QvMBMessage &amp;' data-ref="13msg" data-ref-filename="13msg">msg</dfn>);</td></tr>
+<tr><th id="57">57</th><td>        <i>// private slots:</i></td></tr>
+<tr><th id="58">58</th><td><i>        //    void on_QvMessageReceived(QvMessage msg);</i></td></tr>
+<tr><th id="59">59</th><td>    };</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <b>inline</b> <a class="type" href="#Qv2ray::ui::messaging::QvMessageBusObject" title='Qv2ray::ui::messaging::QvMessageBusObject' data-ref="Qv2ray::ui::messaging::QvMessageBusObject" data-ref-filename="Qv2ray..ui..messaging..QvMessageBusObject">QvMessageBusObject</a> <dfn class="decl def" id="Qv2ray::ui::messaging::UIMessageBus" title='Qv2ray::ui::messaging::UIMessageBus' data-ref="Qv2ray::ui::messaging::UIMessageBus" data-ref-filename="Qv2ray..ui..messaging..UIMessageBus">UIMessageBus</dfn> = <a class="type" href="#Qv2ray::ui::messaging::QvMessageBusObject" title='Qv2ray::ui::messaging::QvMessageBusObject' data-ref="Qv2ray::ui::messaging::QvMessageBusObject" data-ref-filename="Qv2ray..ui..messaging..QvMessageBusObject">QvMessageBusObject</a><a class="ref fn" href="#_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev" title='Qv2ray::ui::messaging::QvMessageBusObject::QvMessageBusObject' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev">(</a>);</td></tr>
+<tr><th id="62">62</th><td>} <i>// namespace Qv2ray::ui::messaging</i></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2ray::ui::messaging</span>;</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

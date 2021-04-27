@@ -1,0 +1,22 @@
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='496' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='504' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='503' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='514' ll='640'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriterdlEPvm'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriterdlEPvS1_'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter9StartCallEPv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter19ReadInitialMetadataEPv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter4ReadEPT0_Pv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_Pv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter10WritesDoneEPv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter6FinishEPNS_6StatusEPv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriterC1ENS_8internal4CallEPNS_13ClientContextEbPv'/>
+<fun r='_ZN4grpc23ClientAsyncReaderWriter17StartCallInternalEPv'/>
+<mbr r='grpc::ClientAsyncReaderWriter::context_' t='grpc::ClientContext *'/>
+<mbr r='grpc::ClientAsyncReaderWriter::call_' t='::grpc::internal::Call'/>
+<mbr r='grpc::ClientAsyncReaderWriter::started_' t='bool'/>
+<mbr r='grpc::ClientAsyncReaderWriter::meta_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpRecvInitialMetadata&gt;'/>
+<mbr r='grpc::ClientAsyncReaderWriter::read_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpRecvInitialMetadata, ::grpc::internal::CallOpRecvMessage&lt;R&gt;&gt;'/>
+<mbr r='grpc::ClientAsyncReaderWriter::write_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata, ::grpc::internal::CallOpSendMessage, ::grpc::internal::CallOpClientSendClose&gt;'/>
+<mbr r='grpc::ClientAsyncReaderWriter::finish_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpRecvInitialMetadata, ::grpc::internal::CallOpClientRecvStatus&gt;'/>

@@ -1,0 +1,6 @@
+<dec f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='38' type='std::unique_ptr&lt;QvPluginEditor&gt; Qv2rayPlugin::Qv2rayInterface::GetEditorWidget(Qv2rayPlugin::UI_TYPE )'/>
+<doc f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='34'>/// \brief Get editor widget of this plugin, if any, according to the UI_TYPE
+        /// \arg UI_TYPE type of the desired ui
+        /// \warning The owner of this widget is the caller, the widget will be deleted after use each time.
+        /// \returns A unique pointer to the QvPluginEditor instance.</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='241' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost24GetOutboundEditorWidgetsEv'/>

@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='222' type='bool ZXing::BitMatrix::findBoundingBox(int &amp; left, int &amp; top, int &amp; width, int &amp; height, int minSize = 1) const'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='115' ll='169' type='bool ZXing::BitMatrix::findBoundingBox(int &amp; left, int &amp; top, int &amp; width, int &amp; height, int minSize = 1) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='217'>/**
+	* Find the rectangle that contains all non-white pixels. Useful for detection of &apos;pure&apos; barcodes.
+	*
+	* @return True iff this rectangle is at least minWidth x minHeight pixels big
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='1022' u='c' c='_ZN5ZXing10DataMatrixL10DetectPureERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='40' u='c' c='_ZN5ZXing8MaxiCodeL15ExtractPureBitsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='307' u='c' c='_ZN5ZXing6QRCodeL10DetectPureERKNS_9BitMatrixE'/>

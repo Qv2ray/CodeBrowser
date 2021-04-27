@@ -1,0 +1,22 @@
+<def f='include/c++/10/bits/stl_list.h' l='1210' ll='1212' type='void std::__cxx11::list::push_back(const std::__cxx11::list::value_type &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_list.h' l='1200'>/**
+       *  @brief  Add data to the end of the %list.
+       *  @param  __x  Data to be added.
+       *
+       *  This is a typical stack operation.  The function creates an
+       *  element at the end of the %list and assigns the given data to
+       *  it.  Due to the nature of a %list this operation can be done
+       *  in constant time, and does not invalidate iterators and
+       *  references.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='41' u='c' c='_ZN5ZXing18ReedSolomonEncoder14buildGeneratorEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='288' u='c' c='_ZN5ZXing5AztecL14SimplifyStatesERKNSt7__cxx114listINS0_13EncodingStateESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='490' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeBase256SegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS4_4listINS4118670'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='247' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='258' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='261' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='373' u='c' c='_ZN5ZXing4OneDL10AddOrTallyERNSt7__cxx114listINS0_3RSS4PairESaIS4_EEERKS4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='618' u='c' c='_ZN5ZXing4OneDL15DecodeRow2PairsEiRKNS_8BitArrayEbRNSt7__cxx114listINS0_3RSS11ExpandedRowESaIS7_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='292' u='c' c='_ZN5ZXing6Pdf417L13DetectBarcodeB5cxx11ERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='86' u='c' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='168' u='c' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>

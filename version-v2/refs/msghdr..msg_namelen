@@ -1,0 +1,16 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='260' type='socklen_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='260'>/* Length of address data.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='862' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1164' u='w' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='209' u='w' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='287' u='w' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='343' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='347' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='349' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='351' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='433' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='437' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='439' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='441' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='744' u='w' c='uv__udp_try_send'/>

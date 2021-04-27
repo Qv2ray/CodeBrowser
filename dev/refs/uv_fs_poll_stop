@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1558' type='int uv_fs_poll_stop(uv_fs_poll_t * handle)'/>
+<def f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='116' ll='135' type='int uv_fs_poll_stop(uv_fs_poll_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='165' u='c' c='uv__fs_poll_close'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.cpp' l='40' u='a' c='_ZN3uvw12FsPollHandle4stopEv'/>

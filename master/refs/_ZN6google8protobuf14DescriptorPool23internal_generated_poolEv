@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1702' type='static google::protobuf::DescriptorPool * google::protobuf::DescriptorPool::internal_generated_pool()'/>
+<doc f='include/google/protobuf/descriptor.h' l='1698'>// For internal use only:  Gets a non-const pointer to the generated pool.
+  // This is called at static-initialization time only, so thread-safety is
+  // not a concern.  If both an underlay and a fallback database are present,
+  // the underlay takes precedence.</doc>

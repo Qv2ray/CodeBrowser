@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='85' type='bool uvw::TCPHandle::keepAlive(bool enable = false, uvw::TCPHandle::Time time = uvw::TCPHandle::Time{0})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='31' ll='33' type='bool uvw::TCPHandle::keepAlive(bool enable = false, TCPHandle::Time time = uvw::TCPHandle::Time{0})'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='78'>/**
+     * @brief Enables/Disables TCP keep-alive.
+     * @param enable True to enable it, false otherwise.
+     * @param time Initial delay in seconds (use
+     * `std::chrono::duration&lt;unsigned int&gt;`).
+     * @return True in case of success, false otherwise.
+     */</doc>

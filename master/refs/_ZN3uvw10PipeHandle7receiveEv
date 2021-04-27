@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='134' type='uvw::HandleType uvw::PipeHandle::receive()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='65' ll='68' type='uvw::HandleType uvw::PipeHandle::receive()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='118'>/**
+     * @brief Used to receive handles over IPC pipes.
+     *
+     * Steps to be done:
+     *
+     * * Call `pending()`, if it’s greater than zero then proceed.
+     * * Initialize a handle of the given type, as returned by `receive()`.
+     * * Call `accept(pipe, handle)`.
+     *
+     * @return The type of the pending handle. Possible values are:
+     *
+     * * `HandleType::PIPE`
+     * * `HandleType::TCP`
+     * * `HandleType::UDP`
+     * * `HandleType::UNKNOWN`
+     */</doc>

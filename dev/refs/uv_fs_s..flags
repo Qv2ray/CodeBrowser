@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1305' macro='1' type='int'/>
+<offset>2272</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='356' u='r' c='uv__fs_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='774' u='r' c='uv__fs_sendfile_emul'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='877' u='r' c='uv__fs_sendfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1132' u='r' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1188' u='r' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1189' u='r' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1196' u='r' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1544' u='r' c='uv__fs_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1620' u='w' c='uv_fs_access'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1820' u='w' c='uv_fs_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1861' u='w' c='uv_fs_scandir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1946' u='w' c='uv_fs_sendfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1969' u='w' c='uv_fs_symlink'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2072' u='w' c='uv_fs_copyfile'/>

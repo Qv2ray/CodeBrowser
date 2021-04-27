@@ -1,0 +1,137 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='169' ll='173'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='182' ll='191'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='183'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='200' ll='208'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='201'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='217' ll='225'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='218'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='234' ll='242'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='235'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='251' ll='259'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='252'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='268' ll='276'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='269'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='285' ll='293'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='286'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='302' ll='310'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='303'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='319' ll='327'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='320'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='336' ll='345'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='337'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='354' ll='365'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='355'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='380' c='_ZN3uvw9FsRequest17fsGenericCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='387' c='_ZN3uvw9FsRequest16fsResultCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='394' c='_ZN3uvw9FsRequest14fsStatCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='400' c='_ZN3uvw9FsRequest16fsStatfsCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='18' c='_ZN3uvw7FileReq14fsOpenCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='30' c='_ZN3uvw7FileReq15fsCloseCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='41' c='_ZN3uvw7FileReq14fsReadCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='237' c='_ZN3uvw5FsReq18fsReadlinkCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='249' c='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='176'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::READ`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='194'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::WRITE`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='211'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::SENDFILE`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='228'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::STAT`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='245'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::FSTAT`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='262'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::LSTAT`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='279'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::STATFS`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='296'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::MKSTEMP`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='313'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::SCANDIR`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='330'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::READLINK`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='348'>/**
+ * @brief FsEvent event specialization for `FsRequest::Type::READDIR`.
+ *
+ * It will be emitted by FsReq and/or FileReq according with their
+ * functionalities.
+ */</doc>
+<fun r='_ZN3uvw7FsEventC1EPKc'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE3EEC1EPKcSt10unique_ptrIA_S4_St14default_deleteIS7_EEm'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::data' o='64' t='std::unique_ptr&lt;const char []&gt;'/>
+<mbr r='uvw::FsEvent::size' o='128' t='std::size_t'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE4EEC1EPKcm'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::size' o='128' t='std::size_t'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE5EEC1EPKcm'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::size' o='128' t='std::size_t'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE6EEC1EPKc9uv_stat_t'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::stat' o='64' t='uvw::Stat'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE8EEC1EPKc9uv_stat_t'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::stat' o='64' t='uvw::Stat'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE7EEC1EPKc9uv_stat_t'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::stat' o='64' t='uvw::Stat'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE34EEC1EPKc11uv_statfs_s'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::statfs' o='64' t='uvw::Statfs'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE35EEC1EPKcm'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::descriptor' o='64' t='std::size_t'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE22EEC1EPKcm'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::size' o='128' t='std::size_t'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE25EEC1EPKcS5_m'/>
+<mbr r='uvw::FsEvent::path' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::data' o='64' t='const char *'/>
+<mbr r='uvw::FsEvent::size' o='128' t='std::size_t'/>
+<fun r='_ZN3uvw7FsEventILNS_7details8UVFsTypeE32EEC1EPKcNS1_13UVDirentTypeTEb'/>
+<mbr r='uvw::FsEvent::name' o='0' t='const char *'/>
+<mbr r='uvw::FsEvent::type' o='64' t='uvw::FsEvent&lt;uvw::details::UVFsType::READDIR&gt;::EntryType'/>
+<mbr r='uvw::FsEvent::eos' o='96' t='bool'/>

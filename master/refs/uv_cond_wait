@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1719' type='void uv_cond_wait(uv_cond_t * cond, uv_mutex_t * mutex)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='76' u='c' c='worker'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='579' u='c' c='uv__custom_sem_wait'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='781' ll='784' type='void uv_cond_wait(uv_cond_t * cond, uv_mutex_t * mutex)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='194' u='c' c='_ZN3uvw9Condition4waitERNS_5MutexE'/>

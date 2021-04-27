@@ -1,0 +1,14 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='321' type='bool google::protobuf::io::CodedInputStream::LastTagWas(google::protobuf::uint32 expected)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1057' ll='1059' type='bool google::protobuf::io::CodedInputStream::LastTagWas(google::protobuf::uint32 expected)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='437' u='c' c='_ZN6google8protobuf8internal14WireFormatLite9ReadGroupEiPNS0_2io16CodedInputStreamEPT_'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='310'>// If the last call to ReadTag() or ReadTagWithCutoff() returned the given
+  // value, returns true.  Otherwise, returns false.
+  // ReadTagNoLastTag/ReadTagWithCutoffNoLastTag do not preserve the last
+  // returned value.
+  //
+  // This is needed because parsers for some types of embedded messages
+  // (with field type TYPE_GROUP) don&apos;t actually know that they&apos;ve reached the
+  // end of a message until they see an ENDGROUP tag, which was actually part
+  // of the enclosing message.  The enclosing message would like to check that
+  // tag to make sure it had the right number, so it calls LastTagWas() on
+  // return from the embedded parser to check.</doc>

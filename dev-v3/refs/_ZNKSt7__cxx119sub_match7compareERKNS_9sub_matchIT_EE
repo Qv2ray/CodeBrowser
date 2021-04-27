@@ -1,0 +1,10 @@
+<def f='include/c++/10/bits/regex.h' l='922' ll='924' type='int std::__cxx11::sub_match::compare(const sub_match&lt;_BiIter&gt; &amp; __s) const'/>
+<doc f='include/c++/10/bits/regex.h' l='913'>/**
+       * @brief Compares this and another matched sequence.
+       *
+       * @param __s Another matched sequence to compare to this one.
+       *
+       * @retval &lt;0 this matched sequence will collate before @p __s.
+       * @retval =0 this matched sequence is equivalent to @p __s.
+       * @retval &lt;0 this matched sequence will collate after @p __s.
+       */</doc>

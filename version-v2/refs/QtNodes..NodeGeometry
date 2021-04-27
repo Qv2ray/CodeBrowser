@@ -1,0 +1,79 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='15' ll='127'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodePainterDelegate.hpp' l='13' c='_ZN7QtNodes19NodePainterDelegate5paintEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='44' c='_ZN7QtNodes4Node12nodeGeometryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='45' c='_ZNK7QtNodes4Node12nodeGeometryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='65'/>
+<size>80</size>
+<fun r='_ZN7QtNodes12NodeGeometryC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<fun r='_ZNK7QtNodes12NodeGeometry6heightEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry9setHeightEj'/>
+<fun r='_ZNK7QtNodes12NodeGeometry5widthEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry8setWidthEj'/>
+<fun r='_ZN7QtNodes12NodeGeometry14setEntryHeightEj'/>
+<fun r='_ZNK7QtNodes12NodeGeometry10entryWidthEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry13setEntryWidthEj'/>
+<fun r='_ZNK7QtNodes12NodeGeometry11entryHeightEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry7spacingEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry10setSpacingEj'/>
+<fun r='_ZNK7QtNodes12NodeGeometry7hoveredEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry10setHoveredEj'/>
+<fun r='_ZNK7QtNodes12NodeGeometry8nSourcesEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry6nSinksEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry11draggingPosEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry19setDraggingPositionERK7QPointF'/>
+<fun r='_ZNK7QtNodes12NodeGeometry17entryBoundingRectEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry12boundingRectEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry15recalculateSizeERK5QFont'/>
+<fun r='_ZNK7QtNodes12NodeGeometry19minimumEmbeddedSizeEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry19maximumEmbeddedSizeEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry17portScenePositionEiNS_8PortTypeERK10QTransform'/>
+<fun r='_ZNK7QtNodes12NodeGeometry18checkHitScenePointENS_8PortTypeE7QPointFRK10QTransform'/>
+<fun r='_ZNK7QtNodes12NodeGeometry10resizeRectEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry14widgetPositionEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry22equivalentWidgetHeightEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry16validationHeightEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry15validationWidthEv'/>
+<fun r='_ZN7QtNodes12NodeGeometry37calculateNodePositionBetweenNodePortsEiNS_8PortTypeEPNS_4NodeEiS1_S3_RS2_'/>
+<fun r='_ZNK7QtNodes12NodeGeometry13captionHeightEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry12captionWidthEv'/>
+<fun r='_ZNK7QtNodes12NodeGeometry9portWidthENS_8PortTypeE'/>
+<mbr r='QtNodes::NodeGeometry::_width' o='0' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_height' o='32' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_entryWidth' o='64' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_inputPortWidth' o='96' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_outputPortWidth' o='128' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_entryHeight' o='160' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_spacing' o='192' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_hovered' o='224' t='bool'/>
+<mbr r='QtNodes::NodeGeometry::_nSources' o='256' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_nSinks' o='288' t='unsigned int'/>
+<mbr r='QtNodes::NodeGeometry::_draggingPos' o='320' t='QPointF'/>
+<mbr r='QtNodes::NodeGeometry::_dataModel' o='448' t='const std::unique_ptr&lt;NodeDataModel&gt; &amp;'/>
+<mbr r='QtNodes::NodeGeometry::_fontMetrics' o='512' t='QFontMetrics'/>
+<mbr r='QtNodes::NodeGeometry::_boldFontMetrics' o='576' t='QFontMetrics'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='80' c='_ZN7QtNodes4Node12nodeGeometryEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='84' c='_ZNK7QtNodes4Node12nodeGeometryEv'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='138' c='_ZNK7QtNodes25NodeConnectionInteraction21nodePortScenePositionENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='145' c='_ZNK7QtNodes25NodeConnectionInteraction28nodePortIndexUnderScenePointENS_8PortTypeERK7QPointF'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='19' c='_ZN7QtNodes11NodePainter12drawNodeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='21' c='_ZN7QtNodes11NodePainter13drawModelNameEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='22' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='23' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='25' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='26' c='_ZN7QtNodes11NodePainter14drawResizeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='27' c='_ZN7QtNodes11NodePainter18drawValidationRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='61' c='_ZN7QtNodes18NodeGraphicsObject12embedQWidgetEb'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='159' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='23' c='_ZN7QtNodes11NodePainter5paintEP8QPainterRNS_4NodeERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='42' c='_ZN7QtNodes11NodePainter12drawNodeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='67' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='122' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='152' c='_ZN7QtNodes11NodePainter13drawModelNameEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='170' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='206' c='_ZN7QtNodes11NodePainter14drawResizeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='214' c='_ZN7QtNodes11NodePainter18drawValidationRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<size>80</size>

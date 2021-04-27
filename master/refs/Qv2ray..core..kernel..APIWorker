@@ -1,0 +1,36 @@
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.hpp' l='31'/>
+<def f='qv2ray/src/core/kernel/APIBackend.hpp' l='23' ll='51'/>
+<use f='/qv2ray-baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='84' c='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='95' c='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='102' c='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>104</size>
+<smbr r='Qv2ray::core::kernel::APIWorker::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4core6kernel9APIWorker10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker6trUtf8EPKcS4_i'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorkerC1Ev'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorkerD1Ev'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker8StartAPIERK4QMapIbS3_I7QStringS4_EE'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker7StopAPIEv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker14onAPIDataReadyERK4QMapINS_4base14StatisticsTypeE5QPairIllEE'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker12OnAPIErroredERK7QString'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker7processEv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker18CallStatsAPIByNameERK7QString'/>
+<mbr r='Qv2ray::core::kernel::APIWorker::tagProtocolConfig' o='128' t='Qv2ray::core::kernel::QvAPITagProtocolConfig'/>
+<mbr r='Qv2ray::core::kernel::APIWorker::workThread' o='512' t='QThread *'/>
+<mbr r='Qv2ray::core::kernel::APIWorker::started' o='576' t='bool'/>
+<mbr r='Qv2ray::core::kernel::APIWorker::running' o='584' t='bool'/>
+<mbr r='Qv2ray::core::kernel::APIWorker::grpc_channel' o='640' t='std::shared_ptr&lt; ::grpc::Channel&gt;'/>
+<mbr r='Qv2ray::core::kernel::APIWorker::stats_service_stub' o='768' t='std::unique_ptr&lt; ::v2ray::core::app::stats::command::StatsService::Stub&gt;'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::core::kernel::APIWorker::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4core6kernel9APIWorker10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker14onAPIDataReadyERK4QMapINS_4base14StatisticsTypeE5QPairIllEE'/>
+<fun r='_ZN6Qv2ray4core6kernel9APIWorker12OnAPIErroredERK7QString'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='263' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstanceC1EP7QObject'/>
+<size>104</size>

@@ -1,0 +1,43 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='10' ll='42'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='18' c='_ZNK7QtNodes12NodeDataTypeeqERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='22' c='_ZNK7QtNodes12NodeDataTypeneERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='26' c='_ZNK7QtNodes12NodeDataTypeltERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='55' c='_ZNK7QtNodes8NodeData4typeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='63' c='_ZNK7QtNodes10Connection8dataTypeENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='56' c='_ZNK7QtNodes13NodeDataModel8dataTypeENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='39' c='_ZNK7QtNodes9NodeState16reactingDataTypeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='41' c='_ZN7QtNodes9NodeState11setReactionENS0_22ReactToConnectionStateENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='41' c='_ZN7QtNodes9NodeState11setReactionENS0_22ReactToConnectionStateENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='51'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='37' c='_ZN7QtNodes4Node25reactToPossibleConnectionENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEERK7QPointF'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='218' c='_ZNK7QtNodes10Connection8dataTypeENS_8PortTypeE'/>
+<size>24</size>
+<fun r='_ZN7QtNodes12NodeDataTypeC1Ev'/>
+<fun r='_ZN7QtNodes12NodeDataTypeD1Ev'/>
+<fun r='_ZN7QtNodes12NodeDataTypeC1ERK7QStringS3_'/>
+<fun r='_ZNK7QtNodes12NodeDataTypeeqERKS0_'/>
+<fun r='_ZNK7QtNodes12NodeDataTypeneERKS0_'/>
+<fun r='_ZNK7QtNodes12NodeDataTypeltERKS0_'/>
+<fun r='_ZNK7QtNodes12NodeDataType2idEv'/>
+<fun r='_ZNK7QtNodes12NodeDataType4nameEv'/>
+<mbr r='QtNodes::NodeDataType::_id' o='64' t='QtNodes::NodeDataTypeId'/>
+<mbr r='QtNodes::NodeDataType::_name' o='128' t='QString'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='90' c='_ZN7QtNodes9FlowScene17restoreConnectionERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='91' c='_ZN7QtNodes9FlowScene17restoreConnectionERK11QJsonObject'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='54' c='_ZN7QtNodes4Node25reactToPossibleConnectionENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEERK7QPointF'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='52' c='_ZNK7QtNodes9NodeState16reactingDataTypeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='56' c='_ZN7QtNodes9NodeState11setReactionENS0_22ReactToConnectionStateENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEE'/>
+<size>24</size>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='24'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='24'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='25'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='25'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='35' c='_ZNK6Qv2ray2ui10nodemodels15InboundNodeData4typeEv'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='58' c='_ZNK6Qv2ray2ui10nodemodels16OutboundNodeData4typeEv'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='81' c='_ZNK6Qv2ray2ui10nodemodels12RuleNodeData4typeEv'/>
+<use f='qv2ray/src/ui/models/InboundNodeModel.hpp' l='39' c='_ZNK18QvInboundNodeModel8dataTypeEN7QtNodes8PortTypeEi'/>
+<use f='qv2ray/src/ui/models/OutboundNodeModel.hpp' l='38' c='_ZNK19QvOutboundNodeModel8dataTypeEN7QtNodes8PortTypeEi'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='50' c='_ZNK15QvRuleNodeModel8dataTypeEN7QtNodes8PortTypeEi'/>
+<size>24</size>

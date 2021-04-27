@@ -1,0 +1,4 @@
+<dec f='include/pthread.h' l='251' type='pthread_t pthread_self()'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/gthr-default.h' l='109' c='__gthrw_pthread_self'/>
+<doc f='include/pthread.h' l='250'>/* Obtain the identifier of the current thread.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='269' u='c' c='uv_thread_self'/>

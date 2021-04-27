@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1016' type='8'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1009'>/*
+   * Spawn the child process in a detached state - this will make it a process
+   * group leader, and will effectively enable the child to keep running after
+   * the parent exits.  Note that the child process will still keep the
+   * parent&apos;s event loop alive unless the parent process calls uv_unref() on
+   * the child&apos;s process handle.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='278' u='r' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='427' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='427' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='26'/>

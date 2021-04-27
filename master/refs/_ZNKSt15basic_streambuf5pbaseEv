@@ -1,0 +1,16 @@
+<def f='include/c++/10/streambuf' l='535' ll='536' type='std::basic_streambuf::char_type * std::basic_streambuf::pbase() const'/>
+<doc f='include/c++/10/streambuf' l='525'>/**
+       *  @brief  Access to the put area.
+       *
+       *  These functions are only available to other protected functions,
+       *  including derived classes.
+       *
+       *  - pbase() returns the beginning pointer for the output sequence
+       *  - pptr() returns the next pointer for the output sequence
+       *  - epptr() returns the end pointer for the output sequence
+      */</doc>
+<use f='qv2ray/test/catch.hpp' l='13482' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImpl8overflowEi'/>
+<use f='qv2ray/test/catch.hpp' l='13491' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImpl4syncEv'/>
+<use f='qv2ray/test/catch.hpp' l='13492' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImpl4syncEv'/>
+<use f='qv2ray/test/catch.hpp' l='13492' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImpl4syncEv'/>
+<use f='qv2ray/test/catch.hpp' l='13493' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImpl4syncEv'/>

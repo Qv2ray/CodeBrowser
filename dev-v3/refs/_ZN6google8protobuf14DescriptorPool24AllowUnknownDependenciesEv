@@ -1,0 +1,16 @@
+<def f='include/google/protobuf/descriptor.h' l='1653' type='void google::protobuf::DescriptorPool::AllowUnknownDependencies()'/>
+<doc f='include/google/protobuf/descriptor.h' l='1638'>// By default, it is an error if a FileDescriptorProto contains references
+  // to types or other files that are not found in the DescriptorPool (or its
+  // backing DescriptorDatabase, if any).  If you call
+  // AllowUnknownDependencies(), however, then unknown types and files
+  // will be replaced by placeholder descriptors (which can be identified by
+  // the is_placeholder() method).  This can allow you to
+  // perform some useful operations with a .proto file even if you do not
+  // have access to other .proto files on which it depends.  However, some
+  // heuristics must be used to fill in the gaps in information, and these
+  // can lead to descriptors which are inaccurate.  For example, the
+  // DescriptorPool may be forced to guess whether an unknown type is a message
+  // or an enum, as well as what package it resides in.  Furthermore,
+  // placeholder types will not be discoverable via FindMessageTypeByName()
+  // and similar methods, which could confuse some descriptor-based algorithms.
+  // Generally, the results of this option should be handled with extreme care.</doc>

@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='42' ll='60'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='88' c='_ZN3uvw14GetNameInfoReq16nameInfoCallbackEP16uv_getnameinfo_siPKcS4_'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='37'>/**
+ * @brief NameInfoEvent event.
+ *
+ * It will be emitted by GetNameInfoReq according with its functionalities.
+ */</doc>
+<fun r='_ZN3uvw13NameInfoEventC1EPKcS2_'/>
+<mbr r='uvw::NameInfoEvent::hostname' o='0' t='const char *'/>
+<mbr r='uvw::NameInfoEvent::service' o='64' t='const char *'/>
+<fun r='_ZN3uvw13NameInfoEventC1EPKcS2_'/>

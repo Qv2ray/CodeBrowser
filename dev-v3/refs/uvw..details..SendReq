@@ -1,0 +1,13 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='21' c='uvw::Request'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='60' ll='71'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='60'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='17' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='131' c='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='161' c='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<size>456</size>
+<fun r='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<fun r='_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr'/>
+<mbr r='uvw::details::SendReq::data' o='3392' t='std::unique_ptr&lt;char [], Deleter&gt;'/>
+<mbr r='uvw::details::SendReq::buf' o='3520' t='uv_buf_t'/>
+<fun r='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<fun r='_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr'/>

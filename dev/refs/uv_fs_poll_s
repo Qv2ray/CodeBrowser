@@ -1,0 +1,15 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='225'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='1547' ll='1551'/>
+<size>104</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1544'>/*
+ * uv_fs_stat() based polling file watcher.
+ */</doc>
+<mbr r='uv_fs_poll_s::data' o='0' t='void *'/>
+<mbr r='uv_fs_poll_s::loop' o='64' t='uv_loop_t *'/>
+<mbr r='uv_fs_poll_s::type' o='128' t='uv_handle_type'/>
+<mbr r='uv_fs_poll_s::close_cb' o='192' t='uv_close_cb'/>
+<mbr r='uv_fs_poll_s::handle_queue' o='256' t='void *[2]'/>
+<mbr r='uv_fs_poll_s::u' o='384' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/dev/code_build/../3rdparty/libuv/include/uv.h:1548:3)'/>
+<mbr r='uv_fs_poll_s::next_closing' o='640' t='uv_handle_t *'/>
+<mbr r='uv_fs_poll_s::flags' o='704' t='unsigned int'/>
+<mbr r='uv_fs_poll_s::poll_ctx' o='768' t='void *'/>

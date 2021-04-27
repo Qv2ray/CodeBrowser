@@ -1,0 +1,5 @@
+<dec f='include/grpc/support/cpu.h' l='38' type='unsigned int gpr_cpu_current_cpu()'/>
+<doc f='include/grpc/support/cpu.h' l='34'>/** Return the CPU on which the current thread is executing; N.B. This should
+   be considered advisory only - it is possible that the thread is switched
+   to a different CPU at any time. Returns a value in range
+   [0, gpr_cpu_num_cores() - 1] */</doc>

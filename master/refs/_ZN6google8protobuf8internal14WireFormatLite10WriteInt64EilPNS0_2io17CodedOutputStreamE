@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='416' type='static void google::protobuf::internal::WireFormatLite::WriteInt64(int field_number, google::protobuf::int64 value, io::CodedOutputStream * output)'/>
+<use f='include/google/protobuf/map_type_handler.h' l='398' macro='1' u='c' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE3ET_E5WriteEiRKNS1_22MapWireFieldTypeTraitsILS4_3ES5_E20MapEntryAccessorT11237012'/>
+<use f='/v2ray_api.pb.cc' l='779' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='444' u='c' c='_ZNK22DomainObject_Attribute24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>

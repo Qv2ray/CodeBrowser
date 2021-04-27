@@ -1,0 +1,17 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='38' c='ZXing::Reader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='35' ll='47'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='53' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='72' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='78' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='86' c='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<size>40</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='31'>/**
+* @author dswitkin@google.com (Daniel Switkin)
+* @author Sean Owen
+*/</doc>
+<fun r='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZN5ZXing4OneD6ReaderD1Ev'/>
+<fun r='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<mbr r='ZXing::OneD::Reader::_readers' o='64' t='std::vector&lt;std::unique_ptr&lt;RowReader&gt;&gt;'/>
+<mbr r='ZXing::OneD::Reader::_tryHarder' o='256' t='bool'/>
+<mbr r='ZXing::OneD::Reader::_tryRotate' o='264' t='bool'/>

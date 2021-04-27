@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.h' l='27' type='unsigned char *'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='41' u='w' c='BitStream_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='42' u='r' c='BitStream_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='55' u='r' c='BitStream_expand'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='60' u='w' c='BitStream_expand'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='122' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='122' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='138' u='r' c='BitStream_appendNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='154' u='r' c='BitStream_appendBytes'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='177' u='r' c='BitStream_toByte'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='203' u='r' c='BitStream_free'/>
+<offset>64</offset>
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='378' type='unsigned char *'/>
+<offset>64</offset>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='378'>///&lt; symbol data</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='420' u='w' c='QRcode_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='428' u='r' c='QRcode_free'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='120' u='r' c='_ZN8QtQrCode17setBaseQrCodeDataEP6QRcode'/>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1141' type='bool uvw::FsReq::accessSync(std::string path, int mode)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='434' ll='438' type='bool uvw::FsReq::accessSync(std::string path, int mode)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1135'>/**
+     * @brief Sync [access](http://linux.die.net/man/2/access).
+     * @param path Path, as described in the official documentation.
+     * @param mode Mode, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

@@ -1,0 +1,32 @@
+<def f='include/c++/10/bits/stl_vector.h' l='1060' ll='1065' type='std::vector::const_reference std::vector::operator[](std::vector::size_type __n) const'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='1049'>/**
+       *  @brief  Subscript access to the data contained in the %vector.
+       *  @param __n The index of the element for which data should be
+       *  accessed.
+       *  @return  Read-only (constant) reference to data.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='158' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction15nodePortIsEmptyENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='82' u='c' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='133' u='c' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='181' u='c' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='33' u='c' c='_ZNK7QtNodes9NodeState11connectionsENS_8PortTypeEi'/>
+<use f='include/c++/10/bits/regex.h' l='2930' u='c' c='_ZNKSt7__cxx1120regex_token_iterator16_M_current_matchEv'/>
+<use f='include/c++/10/bits/regex.h' l='2933' u='c' c='_ZNKSt7__cxx1120regex_token_iterator16_M_current_matchEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='172' u='c' c='_ZNK6semver7version3strB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='177' u='c' c='_ZNK6semver7version3strB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='293' u='c' c='_ZNK6semver7version11get_versionEj'/>
+<use f='include/grpcpp/support/channel_arguments.h' l='120' u='c' c='_ZNK4grpc16ChannelArguments14c_channel_argsEv'/>
+<use f='qv2ray/test/catch.hpp' l='8499' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator4lineB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8702' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8703' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8703' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8704' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8718' u='c' c='_ZN5Catch5clara8TextFlow7Columns8iteratorppEv'/>
+<use f='qv2ray/test/catch.hpp' l='10583' u='c' c='_ZN5Catch6Detail12makeEnumInfoENS_9StringRefES1_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/test/catch.hpp' l='10689' u='c' c='_ZNK5Catch27ExceptionTranslatorRegistry14tryTranslatorsB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14339' u='c' c='_ZNK5Catch16TestCaseTracking14SectionTracker10isCompleteEv'/>

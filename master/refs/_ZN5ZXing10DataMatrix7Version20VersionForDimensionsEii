@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.h' l='69' type='static const ZXing::DataMatrix::Version * ZXing::DataMatrix::Version::VersionForDimensions(int numRows, int numColumns)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='37' u='c' c='_ZN5ZXing10DataMatrix15BitMatrixParser11ReadVersionERKNS_9BitMatrixE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.h' l='61'>/**
+	* &lt;p&gt;Deduces version information from Data Matrix dimensions.&lt;/p&gt;
+	*
+	* @param numRows Number of rows in modules
+	* @param numColumns Number of columns in modules
+	* @return Version for a Data Matrix Code of those dimensions
+	* @throws FormatException if dimensions do correspond to a valid Data Matrix size
+	*/</doc>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.cpp' l='41' ll='90' type='static const ZXing::DataMatrix::Version * ZXing::DataMatrix::Version::VersionForDimensions(int numRows, int numColumns)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.cpp' l='33'>/**
+* &lt;p&gt;Deduces version information from Data Matrix dimensions.&lt;/p&gt;
+*
+* @param numRows Number of rows in modules
+* @param numColumns Number of columns in modules
+* @return Version for a Data Matrix Code of those dimensions
+* @throws FormatException if dimensions do correspond to a valid Data Matrix size
+*/</doc>

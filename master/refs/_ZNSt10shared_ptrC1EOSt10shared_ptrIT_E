@@ -1,0 +1,32 @@
+<def f='include/c++/10/bits/shared_ptr.h' l='303' ll='304' type='void std::shared_ptr::shared_ptr&lt;_Tp&gt;(shared_ptr&lt;_Tp&gt; &amp;&amp; __r)'/>
+<use f='include/c++/10/future' l='1265' u='c' c='_ZNSt7promiseIvEC1EOS0_'/>
+<use f='include/c++/10/future' l='1279' u='c' c='_ZNSt7promiseIvEC1ESt15allocator_arg_tRKT_OS0_'/>
+<doc f='include/c++/10/bits/shared_ptr.h' l='298'>/**
+       *  @brief  Move-constructs a %shared_ptr instance from @a __r.
+       *  @param  __r  A %shared_ptr rvalue.
+       *  @post   *this contains the old value of @a __r, @a __r is empty.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='33' u='c' c='_ZN7QtNodes9FlowSceneC1ESt10shared_ptrINS_17DataModelRegistryEEP7QObject'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='44' u='c' c='_ZN3uvw14UnderlyingTypeC1ENS0_17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/lib.cpp' l='14' u='c' c='_ZN3uvw9SharedLibC1ENS_14UnderlyingTypeIS0_8uv_lib_tE17ConstructorAccessESt10shared_ptrINS_4LoopEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='14' u='c' c='_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='19' u='c' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='24' u='c' c='_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='24' u='c' c='_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='12' u='c' c='_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='12' u='c' c='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='12' u='c' c='_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='54' u='c' c='_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='72' u='c' c='_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='103' u='c' c='_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='145' u='c' c='_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='172' u='c' c='_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='204' u='c' c='_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='19' u='c' c='_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='17' u='c' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='29' u='c' c='_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/work.cpp' l='14' u='c' c='_ZN3uvw7WorkReqC1ENS_14UnderlyingTypeIS0_9uv_work_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvvEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='91' u='c' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiSt10shared_ptrIKNS_9ByteArrayEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='45' u='c' c='_ZN5ZXing24GlobalHistogramBinarizerC1ESt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='40' u='c' c='_ZN5ZXing12_GLOBAL__N_123InvertedLuminanceSourceC1ESt10shared_ptrINS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='75' u='c' c='_ZN5ZXing14ResultMetadata15CustomDataValueC1ESt10shared_ptrINS_10CustomDataEE'/>

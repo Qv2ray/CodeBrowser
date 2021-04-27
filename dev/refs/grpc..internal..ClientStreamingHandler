@@ -1,0 +1,6 @@
+<inh f='include/grpcpp/impl/codegen/rpc_service_method.h' l='39' c='grpc::internal::MethodHandler'/>
+<def f='include/grpcpp/impl/codegen/method_handler_impl.h' l='100' ll='139'/>
+<fun r='_ZN4grpc8internal22ClientStreamingHandlerC1ESt8functionIFNS_6StatusEPT_PNS_13ServerContextEPNS_12ServerReaderIT0_EEPT1_EES5_'/>
+<fun r='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<mbr r='grpc::internal::ClientStreamingHandler::func_' t='std::function&lt;Status (ServiceType *, ServerContext *, ServerReader&lt;RequestType&gt; *, ResponseType *)&gt;'/>
+<mbr r='grpc::internal::ClientStreamingHandler::service_' t='ServiceType *'/>

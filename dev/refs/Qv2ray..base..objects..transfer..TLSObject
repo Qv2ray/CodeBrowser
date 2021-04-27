@@ -1,0 +1,18 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='302' ll='312'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='310' c='_ZNK6Qv2ray4base7objects8transfer9TLSObjecteqERKS3_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='311' c='_ZN6Qv2ray4base7objects8transfer9TLSObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='311' c='_ZNK6Qv2ray4base7objects8transfer9TLSObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='311' c='_ZN6Qv2ray4base7objects8transfer9TLSObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='334'/>
+<size>32</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='300'>//
+        //</doc>
+<mbr r='Qv2ray::base::objects::transfer::TLSObject::serverName' o='0' t='QString'/>
+<mbr r='Qv2ray::base::objects::transfer::TLSObject::allowInsecure' o='64' t='bool'/>
+<mbr r='Qv2ray::base::objects::transfer::TLSObject::enableSessionResumption' o='72' t='bool'/>
+<mbr r='Qv2ray::base::objects::transfer::TLSObject::disableSystemRoot' o='80' t='bool'/>
+<mbr r='Qv2ray::base::objects::transfer::TLSObject::alpn' o='128' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::transfer::TLSObject::certificates' o='192' t='QList&lt;Qv2ray::base::objects::transfer::CertificateObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects8transfer9TLSObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects8transfer9TLSObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base7objects8transfer9TLSObject8fromJsonERK10QJsonValue'/>

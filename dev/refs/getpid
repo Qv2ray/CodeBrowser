@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='628' type='__pid_t getpid()'/>
+<doc f='include/unistd.h' l='627'>/* Get the process ID of the calling process.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1390' u='c' c='uv_os_getpid'/>
+<use f='qv2ray/src/main.cpp' l='177' u='c' c='_Z13signalHandleri'/>

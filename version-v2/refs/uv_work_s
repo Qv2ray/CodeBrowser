@@ -1,0 +1,13 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='237'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='1057' ll='1063'/>
+<size>128</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1054'>/*
+ * uv_work_t is a subclass of uv_req_t.
+ */</doc>
+<mbr r='uv_work_s::data' o='0' t='void *'/>
+<mbr r='uv_work_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_work_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_work_s::loop' o='512' t='uv_loop_t *'/>
+<mbr r='uv_work_s::work_cb' o='576' t='uv_work_cb'/>
+<mbr r='uv_work_s::after_work_cb' o='640' t='uv_after_work_cb'/>
+<mbr r='uv_work_s::work_req' o='704' t='struct uv__work'/>

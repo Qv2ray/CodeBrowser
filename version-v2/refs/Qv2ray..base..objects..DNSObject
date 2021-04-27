@@ -1,0 +1,26 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='11' ll='87'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='72' c='_ZN6Qv2ray4base7objectseqERKNS1_9DNSObjectES4_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='72' c='_ZN6Qv2ray4base7objectseqERKNS1_9DNSObjectES4_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='82' c='_ZN6Qv2ray4base7objectsneERKNS1_9DNSObjectES4_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='82' c='_ZN6Qv2ray4base7objectsneERKNS1_9DNSObjectES4_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='86' c='_ZN6Qv2ray4base7objects9DNSObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='86' c='_ZNK6Qv2ray4base7objects9DNSObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='86' c='_ZN6Qv2ray4base7objects9DNSObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='32'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.hpp' l='20' c='_ZN17DnsSettingsWidget12SetDNSObjectERKN6Qv2ray4base7objects9DNSObjectERKNS2_13FakeDNSObjectE'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.hpp' l='21' c='_ZN17DnsSettingsWidget12GetDNSObjectEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.hpp' l='54'/>
+<size>48</size>
+<mbr r='Qv2ray::base::objects::DNSObject::hosts' o='0' t='QMap&lt;QString, QString&gt;'/>
+<mbr r='Qv2ray::base::objects::DNSObject::servers' o='64' t='QList&lt;Qv2ray::base::objects::DNSObject::DNSServerObject&gt;'/>
+<mbr r='Qv2ray::base::objects::DNSObject::clientIp' o='128' t='QString'/>
+<mbr r='Qv2ray::base::objects::DNSObject::tag' o='192' t='QString'/>
+<mbr r='Qv2ray::base::objects::DNSObject::disableCache' o='256' t='bool'/>
+<mbr r='Qv2ray::base::objects::DNSObject::disableFallback' o='264' t='bool'/>
+<mbr r='Qv2ray::base::objects::DNSObject::queryStrategy' o='320' t='QString'/>
+<fun r='_ZN6Qv2ray4base7objects9DNSObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects9DNSObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base7objects9DNSObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.cpp' l='77' c='_ZN17DnsSettingsWidget12SetDNSObjectERKN6Qv2ray4base7objects9DNSObjectERKNS2_13FakeDNSObjectE'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.cpp' l='155' c='_ZN17DnsSettingsWidget12GetDNSObjectEv'/>
+<size>48</size>

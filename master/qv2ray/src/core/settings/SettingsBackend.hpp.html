@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SettingsBackend.hpp source code [qv2ray/src/core/settings/SettingsBackend.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/core/settings/SettingsBackend.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>core</a>/<a href='./'>settings</a>/<a href='SettingsBackend.hpp.html'>SettingsBackend.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../../base/Qv2rayBase.hpp.html">"base/Qv2rayBase.hpp"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">core</span>::<span class="namespace">config</span></td></tr>
+<tr><th id="5">5</th><td>{</td></tr>
+<tr><th id="6">6</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray4core6config18SaveGlobalSettingsEv" title='Qv2ray::core::config::SaveGlobalSettings' data-ref="_ZN6Qv2ray4core6config18SaveGlobalSettingsEv" data-ref-filename="_ZN6Qv2ray4core6config18SaveGlobalSettingsEv">SaveGlobalSettings</dfn>();</td></tr>
+<tr><th id="7">7</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray4core6config18SaveGlobalSettingsERKNS_4base6config18Qv2rayConfigObjectE" title='Qv2ray::core::config::SaveGlobalSettings' data-ref="_ZN6Qv2ray4core6config18SaveGlobalSettingsERKNS_4base6config18Qv2rayConfigObjectE" data-ref-filename="_ZN6Qv2ray4core6config18SaveGlobalSettingsERKNS_4base6config18Qv2rayConfigObjectE">SaveGlobalSettings</dfn>(<em>const</em> <a class="type" href="../../base/models/QvSettingsObject.hpp.html#Qv2ray::base::config::Qv2rayConfigObject" title='Qv2ray::base::config::Qv2rayConfigObject' data-ref="Qv2ray::base::config::Qv2rayConfigObject" data-ref-filename="Qv2ray..base..config..Qv2rayConfigObject">Qv2rayConfigObject</a> &amp;<dfn class="local col1 decl" id="1conf" title='conf' data-type='const Qv2ray::base::config::Qv2rayConfigObject &amp;' data-ref="1conf" data-ref-filename="1conf">conf</dfn>);</td></tr>
+<tr><th id="8">8</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray4core6config16SetConfigDirPathERK7QString" title='Qv2ray::core::config::SetConfigDirPath' data-ref="_ZN6Qv2ray4core6config16SetConfigDirPathERK7QString" data-ref-filename="_ZN6Qv2ray4core6config16SetConfigDirPathERK7QString">SetConfigDirPath</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col2 decl" id="2path" title='path' data-type='const QString &amp;' data-ref="2path" data-ref-filename="2path">path</dfn>);</td></tr>
+<tr><th id="9">9</th><td>    <em>bool</em> <dfn class="decl fn" id="_ZN6Qv2ray4core6config29CheckSettingsPathAvailabilityERK7QStringb" title='Qv2ray::core::config::CheckSettingsPathAvailability' data-ref="_ZN6Qv2ray4core6config29CheckSettingsPathAvailabilityERK7QStringb" data-ref-filename="_ZN6Qv2ray4core6config29CheckSettingsPathAvailabilityERK7QStringb">CheckSettingsPathAvailability</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col3 decl" id="3_path" title='_path' data-type='const QString &amp;' data-ref="3_path" data-ref-filename="3_path">_path</dfn>, <em>bool</em> <dfn class="local col4 decl" id="4checkExistingConfig" title='checkExistingConfig' data-type='bool' data-ref="4checkExistingConfig" data-ref-filename="4checkExistingConfig">checkExistingConfig</dfn>);</td></tr>
+<tr><th id="10">10</th><td>} <i>// namespace Qv2ray::core::config</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><b>namespace</b> <span class="namespace">Qv2ray</span></td></tr>
+<tr><th id="13">13</th><td>{</td></tr>
+<tr><th id="14">14</th><td>    <i>// Extra header for QvConfigUpgrade.cpp</i></td></tr>
+<tr><th id="15">15</th><td>    <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <dfn class="decl fn" id="_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject" title='Qv2ray::UpgradeSettingsVersion' data-ref="_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject" data-ref-filename="_ZN6Qv2ray22UpgradeSettingsVersionEiiRK11QJsonObject">UpgradeSettingsVersion</dfn>(<em>int</em> <dfn class="local col5 decl" id="5fromVersion" title='fromVersion' data-type='int' data-ref="5fromVersion" data-ref-filename="5fromVersion">fromVersion</dfn>, <em>int</em> <dfn class="local col6 decl" id="6toVersion" title='toVersion' data-type='int' data-ref="6toVersion" data-ref-filename="6toVersion">toVersion</dfn>, <em>const</em> <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> &amp;<dfn class="local col7 decl" id="7root" title='root' data-type='const QJsonObject &amp;' data-ref="7root" data-ref-filename="7root">root</dfn>);</td></tr>
+<tr><th id="16">16</th><td>} <i>// namespace Qv2ray</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2ray::core</span>;</td></tr>
+<tr><th id="19">19</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2ray::core::config</span>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../Qv2rayApplication.cpp.html'>qv2ray/src/Qv2rayApplication.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

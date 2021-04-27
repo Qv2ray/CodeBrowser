@@ -1,0 +1,16 @@
+<def f='include/grpcpp/impl/codegen/grpc_library.h' l='38' ll='60'/>
+<ovr f='include/grpcpp/impl/codegen/completion_queue.h' l='95' c='grpc::CompletionQueue'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='95'/>
+<ovr f='include/grpcpp/channel.h' l='43' c='grpc::Channel'/>
+<use f='include/grpcpp/channel.h' l='46'/>
+<ovr f='include/grpcpp/security/credentials.h' l='60' c='grpc::ChannelCredentials'/>
+<use f='include/grpcpp/security/credentials.h' l='60'/>
+<ovr f='include/grpcpp/security/credentials.h' l='105' c='grpc::CallCredentials'/>
+<use f='include/grpcpp/security/credentials.h' l='105'/>
+<ovr f='include/grpcpp/server.h' l='53' c='grpc::Server'/>
+<use f='include/grpcpp/server.h' l='53'/>
+<size>16</size>
+<doc f='include/grpcpp/impl/codegen/grpc_library.h' l='37'>/// Classes that require gRPC to be initialized should inherit from this class.</doc>
+<fun r='_ZN4grpc18GrpcLibraryCodegenC1Eb'/>
+<fun r='_ZN4grpc18GrpcLibraryCodegenD1Ev'/>
+<mbr r='grpc::GrpcLibraryCodegen::grpc_init_called_' o='64' t='bool'/>

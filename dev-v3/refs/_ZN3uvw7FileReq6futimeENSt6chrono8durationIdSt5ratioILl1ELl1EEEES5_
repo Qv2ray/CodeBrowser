@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='727' type='void uvw::FileReq::futime(uvw::FsRequest&lt;uvw::FileReq&gt;::Time atime, uvw::FsRequest&lt;uvw::FileReq&gt;::Time mtime)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='202' ll='204' type='void uvw::FileReq::futime(FsRequest&lt;FileReq&gt;::Time atime, FsRequest&lt;FileReq&gt;::Time mtime)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='716'>/**
+     * @brief Async [futime](http://linux.die.net/man/3/futimes).
+     *
+     * Emit a `FsEvent&lt;FileReq::Type::FUTIME&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param atime `std::chrono::duration&lt;double&gt;`, having the same meaning as
+     * described in the official documentation.
+     * @param mtime `std::chrono::duration&lt;double&gt;`, having the same meaning as
+     * described in the official documentation.
+     */</doc>

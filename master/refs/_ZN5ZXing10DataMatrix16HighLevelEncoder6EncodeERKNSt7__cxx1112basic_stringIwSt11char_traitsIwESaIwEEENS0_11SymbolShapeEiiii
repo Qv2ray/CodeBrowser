@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.h' l='36' type='static ZXing::ByteArray ZXing::DataMatrix::HighLevelEncoder::Encode(const std::wstring &amp; msg, ZXing::DataMatrix::SymbolShape shape, int minWdith, int minHeight, int maxWidth, int maxHeight)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='880' u='c' c='_ZN5ZXing10DataMatrix16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='894' ll='950' type='static ZXing::ByteArray ZXing::DataMatrix::HighLevelEncoder::Encode(const std::wstring &amp; msg, ZXing::DataMatrix::SymbolShape shape, int minWdith, int minHeight, int maxWidth, int maxHeight)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='883'>/**
+* Performs message encoding of a DataMatrix message using the algorithm described in annex P
+* of ISO/IEC 16022:2000(E).
+*
+* @param msg     the message
+* @param shape   requested shape. May be {@code SymbolShapeHint.FORCE_NONE},
+*                {@code SymbolShapeHint.FORCE_SQUARE} or {@code SymbolShapeHint.FORCE_RECTANGLE}.
+* @param minSize the minimum symbol size constraint or null for no constraint
+* @param maxSize the maximum symbol size constraint or null for no constraint
+* @return the encoded message (the char values range from 0 to 255)
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='106' u='c' c='_ZNK5ZXing10DataMatrix6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

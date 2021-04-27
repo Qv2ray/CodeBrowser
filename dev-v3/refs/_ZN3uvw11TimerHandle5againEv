@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='69' type='void uvw::TimerHandle::again()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='32' ll='34' type='void uvw::TimerHandle::again()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='62'>/**
+     * @brief Stops the timer and restarts it if it was repeating.
+     *
+     * Stop the timer, and if it is repeating restart it using the repeat value
+     * as the timeout.&lt;br/&gt;
+     * If the timer has never been started before it emits an ErrorEvent event.
+     */</doc>

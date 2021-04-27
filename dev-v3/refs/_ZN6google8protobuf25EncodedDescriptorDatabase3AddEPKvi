@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/descriptor_database.h' l='291' type='bool google::protobuf::EncodedDescriptorDatabase::Add(const void * encoded_file_descriptor, int size)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='285'>// Adds the FileDescriptorProto to the database.  The descriptor is provided
+  // in encoded form.  The database does not make a copy of the bytes, nor
+  // does it take ownership; it&apos;s up to the caller to make sure the bytes
+  // remain valid for the life of the database.  Returns false and logs an error
+  // if the bytes are not a valid FileDescriptorProto or if the file conflicted
+  // with a file already in the database.</doc>

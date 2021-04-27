@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1315' type='void uv_fs_req_cleanup(uv_fs_t * req)'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='218' u='c' c='poll_cb'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1123' u='c' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1146' u='c' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1220' u='c' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1256' u='c' c='uv__fs_copyfile'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2028' ll='2058' type='void uv_fs_req_cleanup(uv_fs_t * req)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='47' u='c' c='_ZN3uvw7FileReqD1Ev'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='255' u='c' c='_ZN3uvw5FsReqD1Ev'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='356' u='c' c='_ZN3uvw5FsReq11scandirNextEv'/>

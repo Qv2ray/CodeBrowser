@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='74' type='std::pair&lt;bool, std::unique_ptr&lt;addrinfo, void (*)(addrinfo *)&gt;&gt; uvw::GetAddrInfoReq::nodeAddrInfoSync(const char * node, const char * service, addrinfo * hints = nullptr)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='41' ll='49' type='std::pair&lt;bool, std::unique_ptr&lt;addrinfo, void (*)(addrinfo *)&gt;&gt; uvw::GetAddrInfoReq::nodeAddrInfoSync(const char * node, const char * service, addrinfo * hints = nullptr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='58' u='c' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='68' u='c' c='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='78' u='c' c='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>

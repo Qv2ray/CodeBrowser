@@ -1,0 +1,13 @@
+<def f='include/c++/10/bits/unique_ptr.h' l='371' type='unique_ptr&lt;_Tp, _Dp&gt; &amp; std::unique_ptr::operator=(unique_ptr&lt;_Tp, _Dp&gt; &amp;&amp; )'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='110' u='c' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<doc f='include/c++/10/bits/unique_ptr.h' l='367'>/** @brief Move assignment operator.
+       *
+       * Invokes the deleter if this object owns a pointer.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='118' u='c' c='_ZN7QtNodes9FlowScene10createNodeEOSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='133' u='c' c='_ZN7QtNodes9FlowScene11restoreNodeERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='77' u='c' c='_ZN7QtNodes4Node17setGraphicsObjectEOSt10unique_ptrINS_18NodeGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='85' u='c' c='_ZN6Qv2ray4core6kernel9APIWorker7processEv'/>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.cpp' l='111' u='c' c='_ZN25Qv2rayPlatformApplication10InitializeEv'/>
+<use f='qv2ray/test/catch.hpp' l='12700' u='c' c='_ZN5Catch10Generators16GeneratorTracker12setGeneratorEOSt10unique_ptrINS0_20GeneratorUntypedBaseESt14default_deleteIS3_EE'/>
+<use f='qv2ray/test/catch.hpp' l='17071' u='c' c='_ZN5Catch17ListeningReporter11addReporterEOSt10unique_ptrINS_18IStreamingReporterESt14default_deleteIS2_EE'/>

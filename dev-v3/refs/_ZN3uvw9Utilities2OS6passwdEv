@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='586' type='static uvw::Passwd uvw::Utilities::OS::passwd()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='574'>/**
+         * @brief Gets a subset of the password file entry.
+         *
+         * This function can be used to get the subset of the password file
+         * entry for the current effective uid (not the real uid).
+         *
+         * See the official
+         * [documentation](http://docs.libuv.org/en/v1.x/misc.html#c.uv_os_get_passwd)
+         * for further details.
+         *
+         * @return The accessible subset of the password file entry.
+         */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='115' ll='124' type='static uvw::Passwd uvw::Utilities::OS::passwd()'/>

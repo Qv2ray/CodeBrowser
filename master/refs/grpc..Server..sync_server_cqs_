@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/server.h' l='225' type='std::shared_ptr&lt;std::vector&lt;std::unique_ptr&lt;ServerCompletionQueue&gt;&gt;&gt;'/>
+<offset>192</offset>
+<doc f='include/grpcpp/server.h' l='221'>/// The following completion queues are ONLY used in case of Sync API
+  /// i.e. if the server has any services with sync methods. The server uses
+  /// these completion queues to poll for new RPCs</doc>

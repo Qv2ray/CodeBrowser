@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/resource.h' l='87' type='int getrusage(__rusage_who_t __who, struct rusage * __usage)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='961' u='c' c='uv_getrusage'/>
+<doc f='include/x86_64-linux-gnu/sys/resource.h' l='85'>/* Return resource usage information on process indicated by WHO
+   and put it in *USAGE.  Returns 0 for success, -1 for failure.  */</doc>

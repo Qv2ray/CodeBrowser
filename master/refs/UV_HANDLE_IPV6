@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='94' type='4194304'/>
+<doc f='qv2ray/3rdparty/libuv/src/uv-common.h' l='93'>/* Used by uv_tcp_t and uv_udp_t handles */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='198' u='r' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='565' u='r' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1075' u='r' c='uv__setsockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1221' u='r' c='uv_udp_set_multicast_interface'/>

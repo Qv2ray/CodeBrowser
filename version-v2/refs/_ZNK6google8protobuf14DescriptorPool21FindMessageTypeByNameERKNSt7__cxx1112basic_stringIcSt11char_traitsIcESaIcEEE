@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1554' type='const google::protobuf::Descriptor * google::protobuf::DescriptorPool::FindMessageTypeByName(const std::string &amp; name) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1549'>// Looking up descriptors ------------------------------------------
+  // These find descriptors by fully-qualified name.  These will find both
+  // top-level descriptors and nested descriptors.  They return NULL if not
+  // found.</doc>

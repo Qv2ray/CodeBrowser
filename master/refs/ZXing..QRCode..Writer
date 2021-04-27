@@ -1,0 +1,29 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='34' ll='78'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='39' c='_ZN5ZXing6QRCode6Writer9setMarginEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='44' c='_ZN5ZXing6QRCode6Writer23setErrorCorrectionLevelENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='49' c='_ZN5ZXing6QRCode6Writer11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='54' c='_ZN5ZXing6QRCode6Writer10setVersionEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='59' c='_ZN5ZXing6QRCode6Writer12useGS1FormatEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='64' c='_ZN5ZXing6QRCode6Writer14setMaskPatternEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.cpp' l='49' c='_ZNK5ZXing17MultiFormatWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.cpp' l='65' c='_ZNK5ZXing17MultiFormatWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='29'>/**
+* This object renders a QR Code as a BitMatrix 2D array of greyscale values.
+*
+* @author dswitkin@google.com (Daniel Switkin)
+*/</doc>
+<fun r='_ZN5ZXing6QRCode6WriterC1Ev'/>
+<fun r='_ZN5ZXing6QRCode6Writer9setMarginEi'/>
+<fun r='_ZN5ZXing6QRCode6Writer23setErrorCorrectionLevelENS0_20ErrorCorrectionLevelE'/>
+<fun r='_ZN5ZXing6QRCode6Writer11setEncodingENS_12CharacterSetE'/>
+<fun r='_ZN5ZXing6QRCode6Writer10setVersionEi'/>
+<fun r='_ZN5ZXing6QRCode6Writer12useGS1FormatEv'/>
+<fun r='_ZN5ZXing6QRCode6Writer14setMaskPatternEi'/>
+<fun r='_ZNK5ZXing6QRCode6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<mbr r='ZXing::QRCode::Writer::_margin' o='0' t='int'/>
+<mbr r='ZXing::QRCode::Writer::_ecLevel' o='32' t='ZXing::QRCode::ErrorCorrectionLevel'/>
+<mbr r='ZXing::QRCode::Writer::_encoding' o='64' t='ZXing::CharacterSet'/>
+<mbr r='ZXing::QRCode::Writer::_version' o='96' t='int'/>
+<mbr r='ZXing::QRCode::Writer::_useGs1Format' o='128' t='bool'/>
+<mbr r='ZXing::QRCode::Writer::_maskPattern' o='160' t='int'/>

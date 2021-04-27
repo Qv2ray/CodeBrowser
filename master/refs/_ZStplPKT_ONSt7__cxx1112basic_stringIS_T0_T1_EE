@@ -1,0 +1,26 @@
+<def f='include/c++/10/bits/basic_string.h' l='6120' ll='6123' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const _CharT * __lhs, basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp;&amp; __rhs)'/>
+<use f='include/c++/10/system_error' l='441' u='c' c='_ZNSt12system_errorC1ESt10error_codePKc'/>
+<use f='include/c++/10/system_error' l='441' u='c' c='_ZNSt12system_errorC1ESt10error_codePKc'/>
+<use f='include/c++/10/future' l='115' u='c' c='_ZNSt12future_errorC1ESt10error_code'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='74' u='c' c='_ZN5ZXing5AztecL17GetGFFromWordSizeEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='223' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='117' u='c' c='_ZN5ZXing10DataMatrixL14CreateECCBlockERNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='125' u='c' c='_ZN5ZXing10DataMatrix14EncoderContext16updateSymbolInfoEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='631' u='c' c='_ZN5ZXing10DataMatrix10X12EncoderL10EncodeCharEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='688' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL10EncodeCharEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='857' u='c' c='_ZN5ZXing10DataMatrix14Base256EncoderL13EncodeBase256ERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='109' u='c' c='_ZNK5ZXing10DataMatrix6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='125' u='c' c='_ZN5ZXing4OneDL26TryToConvertToExtendedModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='152' u='c' c='_ZNK5ZXing4OneD12Code39Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='395' u='c' c='_ZN5ZXing6Pdf417L13EncodeNumericERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='255' u='c' c='_ZN5ZXing6QRCodeL11AppendBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_9CodecMode4ModeENS_12CharacterSetERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='295' u='c' c='_ZN5ZXing6QRCodeL13TerminateBitsEiRNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='452' u='c' c='_ZN5ZXing6QRCodeL21InterleaveWithECBytesERKNS_8BitArrayEiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='301' u='c' c='_ZN5ZXing6QRCodeL16MakeTypeInfoBitsENS0_20ErrorCorrectionLevelEiRNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='345' u='c' c='_ZN5ZXing6QRCodeL19MakeVersionInfoBitsERKNS0_7VersionERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='411' u='c' c='_ZN5ZXing6QRCodeL14GetDataMaskBitEiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='456' u='c' c='_ZN5ZXing6QRCodeL13EmbedDataBitsERKNS_8BitArrayEiRNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/src/main.cpp' l='117' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/test/catch.hpp' l='11483' u='c' c='_ZNK5Catch8Matchers8Floating16WithinAbsMatcher8describeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='11682' u='c' c='_ZNK5Catch8Matchers9StdString12RegexMatcher8describeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='15685' u='c' c='_ZN5Catch12_GLOBAL__N_116AssertionPrinter5printEv'/>

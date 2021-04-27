@@ -1,0 +1,5 @@
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='224' c='_ZN6google8protobuf2io20ZeroCopyOutputStream6BackUpEi'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='118' ll='138' type='void grpc::ProtoBufferWriter::BackUp(int count)'/>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='115'>/// Backup by \a count bytes because Next returned more bytes than needed
+  /// (only used in the last buffer). \a count must be less than or equal too
+  /// the last buffer returned from next.</doc>

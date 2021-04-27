@@ -1,0 +1,9 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='33' ll='36' type='bool QtNodes::NodeDataModel::captionVisible() const'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='32'>/// It is possible to hide caption in GUI</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='196' u='c' c='_ZNK7QtNodes12NodeGeometry13captionHeightEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='203' u='c' c='_ZNK7QtNodes12NodeGeometry12captionWidthEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='156' u='c' c='_ZN7QtNodes11NodePainter13drawModelNameEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='136' c='_ZNK6Qv2ray2ui10nodemodels16InboundNodeModel14captionVisibleEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='137' c='_ZNK6Qv2ray2ui10nodemodels17OutboundNodeModel14captionVisibleEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='138' c='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel14captionVisibleEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='139' c='_ZNK6Qv2ray2ui10nodemodels22ChainOutboundNodeModel14captionVisibleEv'/>

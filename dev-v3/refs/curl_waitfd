@@ -1,0 +1,7 @@
+<def f='include/x86_64-linux-gnu/curl/multi.h' l='113' ll='117'/>
+<use f='include/x86_64-linux-gnu/curl/multi.h' l='172' c='curl_multi_wait'/>
+<use f='include/x86_64-linux-gnu/curl/multi.h' l='186' c='curl_multi_poll'/>
+<size>8</size>
+<mbr r='curl_waitfd::fd' o='0' t='curl_socket_t'/>
+<mbr r='curl_waitfd::events' o='32' t='short'/>
+<mbr r='curl_waitfd::revents' o='48' t='short'/>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='277' type='size_t'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='277'>/* Length of data in cmsg_data plus length
+				   of cmsghdr structure.
+				   !! The type should be socklen_t but the
+				   definition of the kernel is incompatible
+				   with this.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='688' u='r' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='873' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1084' u='r' c='uv__stream_recv_cmsg'/>

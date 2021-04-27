@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>create_channel_posix.h source code [include/grpcpp/create_channel_posix.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpcpp/create_channel_posix.h'; var root_path = '../..'; var data_path = '../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>grpcpp</a>/<a href='create_channel_posix.h.html'>create_channel_posix.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2016 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPCPP_CREATE_CHANNEL_POSIX_H">GRPCPP_CREATE_CHANNEL_POSIX_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPCPP_CREATE_CHANNEL_POSIX_H" data-ref="_M/GRPCPP_CREATE_CHANNEL_POSIX_H">GRPCPP_CREATE_CHANNEL_POSIX_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../grpc/support/port_platform.h.html">&lt;grpc/support/port_platform.h&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="channel.h.html">&lt;grpcpp/channel.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="support/channel_arguments.h.html">&lt;grpcpp/support/channel_arguments.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>namespace</b> <span class="namespace">grpc</span> {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">ifdef</span> <a class="macro" href="../grpc/impl/codegen/port_platform.h.html#161" data-ref="_M/GPR_SUPPORT_CHANNELS_FROM_FD">GPR_SUPPORT_CHANNELS_FROM_FD</a></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><i class="doc">/// Create a new<span class="command"> \a</span> <span class="arg">Channel</span> communicating over the given file descriptor.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc">///</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">target</span> The name of the target.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">fd</span> The file descriptor representing a socket.</i></td></tr>
+<tr><th id="36">36</th><td><span class="namespace">std::</span><a class="type" href="../c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="channel.h.html#grpc::Channel" title='grpc::Channel' data-ref="grpc::Channel" data-ref-filename="grpc..Channel">Channel</a>&gt; <dfn class="decl fn" id="_ZN4grpc27CreateInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi" title='grpc::CreateInsecureChannelFromFd' data-ref="_ZN4grpc27CreateInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi" data-ref-filename="_ZN4grpc27CreateInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi">CreateInsecureChannelFromFd</dfn>(<em>const</em> <span class="namespace">grpc::</span><a class="typedef" href="impl/codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&amp; <dfn class="local col9 decl" id="8939target" title='target' data-type='const grpc::string &amp;' data-ref="8939target" data-ref-filename="8939target">target</dfn>,</td></tr>
+<tr><th id="37">37</th><td>                                                     <em>int</em> <dfn class="local col0 decl" id="8940fd" title='fd' data-type='int' data-ref="8940fd" data-ref-filename="8940fd">fd</dfn>);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/// Create a new<span class="command"> \a</span> <span class="arg">Channel</span> communicating over given file descriptor with custom</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc">/// channel arguments.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">///</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">target</span> The name of the target.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">fd</span> The file descriptor representing a socket.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">args</span> Options for channel creation.</i></td></tr>
+<tr><th id="45">45</th><td><span class="namespace">std::</span><a class="type" href="../c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="channel.h.html#grpc::Channel" title='grpc::Channel' data-ref="grpc::Channel" data-ref-filename="grpc..Channel">Channel</a>&gt; <dfn class="decl fn" id="_ZN4grpc33CreateCustomInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumentsE" title='grpc::CreateCustomInsecureChannelFromFd' data-ref="_ZN4grpc33CreateCustomInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumentsE" data-ref-filename="_ZN4grpc33CreateCustomInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumentsE">CreateCustomInsecureChannelFromFd</dfn>(</td></tr>
+<tr><th id="46">46</th><td>    <em>const</em> <span class="namespace">grpc::</span><a class="typedef" href="impl/codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&amp; <dfn class="local col1 decl" id="8941target" title='target' data-type='const grpc::string &amp;' data-ref="8941target" data-ref-filename="8941target">target</dfn>, <em>int</em> <dfn class="local col2 decl" id="8942fd" title='fd' data-type='int' data-ref="8942fd" data-ref-filename="8942fd">fd</dfn>, <em>const</em> <a class="type" href="support/channel_arguments.h.html#grpc::ChannelArguments" title='grpc::ChannelArguments' data-ref="grpc::ChannelArguments" data-ref-filename="grpc..ChannelArguments">ChannelArguments</a>&amp; <dfn class="local col3 decl" id="8943args" title='args' data-type='const grpc::ChannelArguments &amp;' data-ref="8943args" data-ref-filename="8943args">args</dfn>);</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><b>namespace</b> <span class="namespace">experimental</span> {</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i class="doc">/// Create a new<span class="command"> \a</span> <span class="arg">Channel</span> communicating over given file descriptor with custom</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">/// channel arguments.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">///</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">target</span> The name of the target.</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">fd</span> The file descriptor representing a socket.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">args</span> Options for channel creation.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">/// <span class="command">\param</span> <span class="arg">interceptor_creators</span> Vector of interceptor factory objects.</i></td></tr>
+<tr><th id="57">57</th><td><span class="namespace">std::</span><a class="type" href="../c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="channel.h.html#grpc::Channel" title='grpc::Channel' data-ref="grpc::Channel" data-ref-filename="grpc..Channel">Channel</a>&gt; <dfn class="decl fn" id="_ZN4grpc12experimental49CreateCustomInsecureChannelWithInterceptorsFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumen7356499" title='grpc::experimental::CreateCustomInsecureChannelWithInterceptorsFromFd' data-ref="_ZN4grpc12experimental49CreateCustomInsecureChannelWithInterceptorsFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumen7356499" data-ref-filename="_ZN4grpc12experimental49CreateCustomInsecureChannelWithInterceptorsFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumen7356499">CreateCustomInsecureChannelWithInterceptorsFromFd</dfn>(</td></tr>
+<tr><th id="58">58</th><td>    <em>const</em> <span class="namespace">grpc::</span><a class="typedef" href="impl/codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&amp; <dfn class="local col4 decl" id="8944target" title='target' data-type='const grpc::string &amp;' data-ref="8944target" data-ref-filename="8944target">target</dfn>, <em>int</em> <dfn class="local col5 decl" id="8945fd" title='fd' data-type='int' data-ref="8945fd" data-ref-filename="8945fd">fd</dfn>, <em>const</em> <a class="type" href="support/channel_arguments.h.html#grpc::ChannelArguments" title='grpc::ChannelArguments' data-ref="grpc::ChannelArguments" data-ref-filename="grpc..ChannelArguments">ChannelArguments</a>&amp; <dfn class="local col6 decl" id="8946args" title='args' data-type='const grpc::ChannelArguments &amp;' data-ref="8946args" data-ref-filename="8946args">args</dfn>,</td></tr>
+<tr><th id="59">59</th><td>    <span class="namespace">std::</span><a class="type" href="../c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<span class="namespace">std::</span><a class="type" href="../c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;</td></tr>
+<tr><th id="60">60</th><td>        <span class="namespace">std::</span><a class="type" href="../c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<span class="namespace">experimental::</span><a class="type" href="impl/codegen/client_interceptor.h.html#grpc::experimental::ClientInterceptorFactoryInterface" title='grpc::experimental::ClientInterceptorFactoryInterface' data-ref="grpc::experimental::ClientInterceptorFactoryInterface" data-ref-filename="grpc..experimental..ClientInterceptorFactoryInterface">ClientInterceptorFactoryInterface</a>&gt;&gt;&gt;</td></tr>
+<tr><th id="61">61</th><td>        <dfn class="local col7 decl" id="8947interceptor_creators" title='interceptor_creators' data-type='std::unique_ptr&lt;std::vector&lt;std::unique_ptr&lt;experimental::ClientInterceptorFactoryInterface&gt;&gt;&gt;' data-ref="8947interceptor_creators" data-ref-filename="8947interceptor_creators">interceptor_creators</dfn>);</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>}  <i>// namespace experimental</i></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="30">endif</span>  // GPR_SUPPORT_CHANNELS_FROM_FD</u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>}  <i>// namespace grpc</i></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="19">endif</span>  // GRPCPP_CREATE_CHANNEL_POSIX_H</u></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

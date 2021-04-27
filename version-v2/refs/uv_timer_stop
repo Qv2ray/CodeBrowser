@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='862' type='int uv_timer_stop(uv_timer_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='76' u='c' c='uv_timer_start'/>
+<def f='qv2ray/3rdparty/libuv/src/timer.c' l='97' ll='107' type='int uv_timer_stop(uv_timer_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='115' u='c' c='uv_timer_again'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='167' u='c' c='uv__run_timers'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='175' u='c' c='uv__timer_close'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='28' u='a' c='_ZN3uvw11TimerHandle4stopEv'/>

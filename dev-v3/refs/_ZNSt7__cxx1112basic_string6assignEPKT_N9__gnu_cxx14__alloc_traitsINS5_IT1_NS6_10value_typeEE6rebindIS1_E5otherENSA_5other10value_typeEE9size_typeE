@@ -1,0 +1,22 @@
+<def f='include/c++/10/bits/basic_string.h' l='1418' ll='1423' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::assign(const _CharT * __s, std::__cxx11::basic_string::size_type __n)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1408'>/**
+       *  @brief  Set value to a C substring.
+       *  @param __s  The C string to use.
+       *  @param __n  Number of characters to use.
+       *  @return  Reference to this string.
+       *
+       *  This function sets the value of this string to the first @a __n
+       *  characters of @a __s.  If @a __n is is larger than the number of
+       *  available characters in @a __s, the remainder of @a __s is used.
+       */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='438' u='c' c='_ZN3uvw7details7tryReadB5cxx11EOT_DpOT0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='274' u='c' c='_ZN3uvw9Utilities12processTitleB5cxx11Ev'/>
+<use f='include/google/protobuf/inlined_string_field.h' l='225' u='c' c='_ZN6google8protobuf8internal18InlinedStringField10SetNoArenaEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_11StringPieceE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6039' u='c' c='_ZN6google8protobuf19FileDescriptorProto14set_dependencyEiPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6063' u='c' c='_ZN6google8protobuf19FileDescriptorProto14add_dependencyEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7058' u='c' c='_ZN6google8protobuf15DescriptorProto17set_reserved_nameEiPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7082' u='c' c='_ZN6google8protobuf15DescriptorProto17add_reserved_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8206' u='c' c='_ZN6google8protobuf19EnumDescriptorProto17set_reserved_nameEiPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8230' u='c' c='_ZN6google8protobuf19EnumDescriptorProto17add_reserved_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11542' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location29set_leading_detached_commentsEiPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11566' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location29add_leading_detached_commentsEPKcm'/>

@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1439' type='static uvw::OSFileDescriptor uvw::FsHelper::handle(uvw::FileHandle file)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='584' ll='586' type='static uvw::OSFileDescriptor uvw::FsHelper::handle(uvw::FileHandle file)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1429'>/**
+     * @brief Gets the OS dependent handle.
+     *
+     * For a file descriptor in the C runtime, get the OS-dependent handle. On
+     * UNIX, returns the file descriptor as-is. On Windows, this calls a system
+     * function.&lt;br/&gt;
+     * Note that the return value is still owned by the C runtime, any attempts
+     * to close it or to use it after closing the file descriptor may lead to
+     * malfunction.
+     */</doc>

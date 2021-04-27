@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1506' type='int uv_fs_chown(uv_loop_t * loop, uv_fs_t * req, const char * path, uv_uid_t uid, uv_gid_t gid, uv_fs_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1637' ll='1648' type='int uv_fs_chown(uv_loop_t * loop, uv_fs_t * req, const char * path, uv_uid_t uid, uv_gid_t gid, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='515' u='a' c='_ZN3uvw5FsReq5chownENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='521' u='a' c='_ZN3uvw5FsReq9chownSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjj'/>

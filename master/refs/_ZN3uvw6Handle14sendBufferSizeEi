@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='209' ll='211' type='bool uvw::Handle::sendBufferSize(int value)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='198'>/**
+     * @brief Sets the size of the send buffer used for the socket.
+     *
+     * Sets the size of the send buffer that the operating system uses for the
+     * socket.&lt;br/&gt;
+     * This function works for TCPHandle, PipeHandle and UDPHandle handles on
+     * Unix and for TCPHandle and UDPHandle handles on Windows.&lt;br/&gt;
+     * Note that Linux will set double the size.
+     *
+     * @return True in case of success, false otherwise.
+     */</doc>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1300' type='const google::protobuf::FileDescriptor * google::protobuf::FileDescriptor::dependency(int index) const'/>
+<use f='include/google/protobuf/descriptor.h' l='2117' u='c' c='_ZNK6google8protobuf14FileDescriptor17public_dependencyEi'/>
+<use f='include/google/protobuf/descriptor.h' l='2122' u='c' c='_ZNK6google8protobuf14FileDescriptor15weak_dependencyEi'/>
+<doc f='include/google/protobuf/descriptor.h' l='1298'>// Gets an imported file by index, where 0 &lt;= index &lt; dependency_count().
+  // These are returned in the order they were defined in the .proto file.</doc>

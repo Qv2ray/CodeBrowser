@@ -1,0 +1,9 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='628' ll='691'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='147' c='_ZN4grpc8internal22ServerStreamingHandlerC1ESt8functionIFNS_6StatusEPT_PNS_13ServerContextEPKT0_PNS_12ServerWriterIT1_EEEES5_'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='158' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='182'/>
+<fun r='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<fun r='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<mbr r='grpc::ServerWriter::call_' t='internal::Call *const'/>
+<mbr r='grpc::ServerWriter::ctx_' t='grpc::ServerContext *const'/>
+<fun r='_ZN4grpc12ServerWriterC1EPNS_8internal4CallEPNS_13ServerContextE'/>

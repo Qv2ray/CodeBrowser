@@ -1,0 +1,4 @@
+<def f='include/google/protobuf/generated_message_reflection.h' l='135' ll='138' type='google::protobuf::uint32 google::protobuf::internal::ReflectionSchema::GetFieldOffsetNonOneof(const google::protobuf::FieldDescriptor * field) const'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='148' u='c' c='_ZNK6google8protobuf8internal16ReflectionSchema14GetFieldOffsetEPKNS0_15FieldDescriptorE'/>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='133'>// Offset of a non-oneof field.  Getting a field offset is slightly more
+  // efficient when we know statically that it is not a oneof field.</doc>

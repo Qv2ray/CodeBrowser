@@ -1,0 +1,6 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='356' ll='391'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='356'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='352'>/** Result of a grpc call. If the caller satisfies the prerequisites of a
+    particular operation, the grpc_call_error returned will be GRPC_CALL_OK.
+    Receiving any other value listed here is an indication of a bug in the
+    caller. */</doc>

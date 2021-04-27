@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.h' l='35' type='static void ZXing::QRCode::MatrixUtil::BuildMatrix(const ZXing::BitArray &amp; dataBits, ZXing::QRCode::ErrorCorrectionLevel ecLevel, const ZXing::QRCode::Version &amp; version, int maskPattern, ZXing::TritMatrix &amp; matrix)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='464' u='c' c='_ZN5ZXing6QRCodeL17ChooseMaskPatternERKNS_8BitArrayENS0_20ErrorCorrectionLevelERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='577' u='c' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='462' ll='473' type='static void ZXing::QRCode::MatrixUtil::BuildMatrix(const ZXing::BitArray &amp; dataBits, ZXing::QRCode::ErrorCorrectionLevel ecLevel, const ZXing::QRCode::Version &amp; version, int maskPattern, ZXing::TritMatrix &amp; matrix)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='460'>// Build 2D matrix of QR Code from &quot;dataBits&quot; with &quot;ecLevel&quot;, &quot;version&quot; and &quot;getMaskPattern&quot;. On
+// success, store the result in &quot;matrix&quot; and return true.</doc>

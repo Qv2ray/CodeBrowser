@@ -1,0 +1,256 @@
+<use f='include/google/protobuf/repeated_field.h' l='615'/>
+<def f='include/google/protobuf/extension_set.h' l='160' ll='754'/>
+<use f='include/google/protobuf/extension_set.h' l='355' c='_ZN6google8protobuf8internal12ExtensionSet9MergeFromERKS2_'/>
+<use f='include/google/protobuf/extension_set.h' l='356' c='_ZN6google8protobuf8internal12ExtensionSet4SwapEPS2_'/>
+<use f='include/google/protobuf/extension_set.h' l='357' c='_ZN6google8protobuf8internal12ExtensionSet13SwapExtensionEPS2_i'/>
+<use f='include/google/protobuf/extension_set.h' l='753' c='_ZN6google8protobuf8internal12ExtensionSetC1ERKS2_'/>
+<use f='include/google/protobuf/extension_set.h' l='753' c='_ZN6google8protobuf8internal12ExtensionSetaSERKS2_'/>
+<use f='include/google/protobuf/extension_set.h' l='842' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='845' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='862' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='863' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='865' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='868' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='871' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='898' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='902' c='_ZN6google8protobuf8internal19PrimitiveTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='907' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='911' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='916' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='926' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='935' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='960' c='_ZN6google8protobuf8internal16StringTypeTraits3GetEiRKNS1_12ExtensionSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/extension_set.h' l='965' c='_ZN6google8protobuf8internal16StringTypeTraits3SetEihRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='969' c='_ZN6google8protobuf8internal16StringTypeTraits7MutableB5cxx11EihPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='987' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits3GetB5cxx11EiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='992' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits3SetEiiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='995' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits7MutableB5cxx11EiiPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1000' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits3AddEihbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1004' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits3AddB5cxx11EihPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1008' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits11GetRepeatedB5cxx11EiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1015' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits15MutableRepeatedB5cxx11EihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1046' c='_ZN6google8protobuf8internal14EnumTypeTraits3GetEiRKNS1_12ExtensionSetET_'/>
+<use f='include/google/protobuf/extension_set.h' l='1051' c='_ZN6google8protobuf8internal14EnumTypeTraits3SetEihT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1071' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='1075' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits3SetEiiT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1080' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits3AddEihbT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1085' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1098' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1133' c='_ZN6google8protobuf8internal17MessageTypeTraits3GetEiRKNS1_12ExtensionSetERKT_'/>
+<use f='include/google/protobuf/extension_set.h' l='1139' c='_ZN6google8protobuf8internal17MessageTypeTraits7MutableEihPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1144' c='_ZN6google8protobuf8internal17MessageTypeTraits12SetAllocatedEihPT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1149' c='_ZN6google8protobuf8internal17MessageTypeTraits23UnsafeArenaSetAllocatedEihPT_PNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1153' c='_ZN6google8protobuf8internal17MessageTypeTraits7ReleaseEihPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1159' c='_ZN6google8protobuf8internal17MessageTypeTraits18UnsafeArenaReleaseEihPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1183' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits3GetEiRKNS1_12ExtensionSetEi'/>
+<use f='include/google/protobuf/extension_set.h' l='1186' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits7MutableEiiPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1190' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits3AddEihPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1195' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1208' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits15MutableRepeatedEihbPNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1473'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3491'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3682'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3931'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4072'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4225'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4371'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4516'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4698'/>
+<size>24</size>
+<doc f='include/google/protobuf/extension_set.h' l='146'>// Note:  extension_set_heavy.cc defines DescriptorPoolExtensionFinder for
+// finding extensions from a DescriptorPool.
+
+// This is an internal helper class intended for use within the protocol buffer
+// library and generated classes.  Clients should not use it directly.  Instead,
+// use the generated accessors such as GetExtension() of the class being
+// extended.
+//
+// This class manages extensions for a protocol message object.  The
+// message&apos;s HasExtension(), GetExtension(), MutableExtension(), and
+// ClearExtension() methods are just thin wrappers around the embedded
+// ExtensionSet.  When parsing, if a tag number is encountered which is
+// inside one of the message type&apos;s extension ranges, the tag is passed
+// off to the ExtensionSet for parsing.  Etc.</doc>
+<fun r='_ZN6google8protobuf8internal12ExtensionSetC1Ev'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSetC1EPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSetD1Ev'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17RegisterExtensionEPKNS0_11MessageLiteEihbb'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet21RegisterEnumExtensionEPKNS0_11MessageLiteEihbbPFbiE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet24RegisterMessageExtensionEPKNS0_11MessageLiteEihbbS5_'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet12AppendToListEPKNS0_10DescriptorEPKNS0_14DescriptorPoolEPSt6vectorIPKNS0_15FieldDescriptorESaISC_EE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet3HasEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet13ExtensionSizeEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet13NumExtensionsEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet13ExtensionTypeEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet14ClearExtensionEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet8GetInt32Eii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet8GetInt64Eil'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9GetUInt32Eij'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9GetUInt64Eim'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet8GetFloatEif'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9GetDoubleEid'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet7GetBoolEib'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet7GetEnumEii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9GetStringEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiRKNS0_11MessageLiteE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiPKNS0_10DescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8SetInt32EihiPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8SetInt64EihlPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9SetUInt32EihjPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9SetUInt64EihmPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8SetFloatEihfPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9SetDoubleEihdPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet7SetBoolEihbPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet7SetEnumEihiPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9SetStringEihRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet13MutableStringB5cxx11EihPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet14MutableMessageEihRKNS0_11MessageLiteEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet14MutableMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet19SetAllocatedMessageEihPKNS0_15FieldDescriptorEPNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet30UnsafeArenaSetAllocatedMessageEihPKNS0_15FieldDescriptorEPNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet14ReleaseMessageEiRKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet25UnsafeArenaReleaseMessageEiRKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet14ReleaseMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet25UnsafeArenaReleaseMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet17GetArenaNoVirtualEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet19GetRawRepeatedFieldEiPKv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet23MutableRawRepeatedFieldEihbPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet23MutableRawRepeatedFieldEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet16GetRepeatedInt32Eii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet16GetRepeatedInt64Eii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet17GetRepeatedUInt32Eii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet17GetRepeatedUInt64Eii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet16GetRepeatedFloatEii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet17GetRepeatedDoubleEii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet15GetRepeatedBoolEii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet15GetRepeatedEnumEii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet17GetRepeatedStringB5cxx11Eii'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet18GetRepeatedMessageEii'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet16SetRepeatedInt32Eiii'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet16SetRepeatedInt64Eiil'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17SetRepeatedUInt32Eiij'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17SetRepeatedUInt64Eiim'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet16SetRepeatedFloatEiif'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17SetRepeatedDoubleEiid'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet15SetRepeatedBoolEiib'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet15SetRepeatedEnumEiii'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17SetRepeatedStringEiiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet21MutableRepeatedStringB5cxx11Eii'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet22MutableRepeatedMessageEii'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8AddInt32EihbiPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8AddInt64EihblPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9AddUInt32EihbjPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9AddUInt64EihbmPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8AddFloatEihbfPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9AddDoubleEihbdPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet7AddBoolEihbbPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet7AddEnumEihbiPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9AddStringEihRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9AddStringB5cxx11EihPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10AddMessageEihRKNS0_11MessageLiteEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10AddMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet19AddAllocatedMessageEPKNS0_15FieldDescriptorEPNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10RemoveLastEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet11ReleaseLastEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet12SwapElementsEiii'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet5ClearEv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9MergeFromERKS2_'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet4SwapEPS2_'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet13SwapExtensionEPS2_i'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet13IsInitializedEv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_12FieldSkipperE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_7MessageEPNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteEPNS3_17CodedOutputStreamE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPKNS0_7MessageEPNS0_15UnknownFieldSetE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet24SerializeWithCachedSizesEiiPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet39InternalSerializeWithCachedSizesToArrayEiibPh'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet34SerializeMessageSetWithCachedSizesEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet49InternalSerializeMessageSetWithCachedSizesToArrayEbPh'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet31SerializeWithCachedSizesToArrayEiiPh'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet41SerializeMessageSetWithCachedSizesToArrayEPh'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet8ByteSizeEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet18MessageSetByteSizeEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet26SpaceUsedExcludingSelfLongEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet22SpaceUsedExcludingSelfEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet10FindOrNullEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10FindOrNullEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet20FindOrNullInLargeMapEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet20FindOrNullInLargeMapEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet6InsertEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet12GrowCapacityEm'/>
+<smbr r='google::protobuf::internal::ExtensionSet::kMaximumFlatCapacity' t='const google::protobuf::uint16'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet8is_largeEv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet5EraseEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet4SizeEv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet7ForEachET_S3_T0_'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet7ForEachET_'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet7ForEachET_'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet26InternalExtensionMergeFromEiRKNS2_9ExtensionE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet24FindExtensionInfoFromTagEjPNS1_15ExtensionFinderEPiPNS1_13ExtensionInfoEPb'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet32FindExtensionInfoFromFieldNumberEiiPNS1_15ExtensionFinderEPNS1_13ExtensionInfoEPb'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet27ParseFieldWithExtensionInfoEibRKNS1_13ExtensionInfoEPNS0_2io16CodedInputStreamEPNS1_12FieldSkipperE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet21ParseFieldMaybeLazilyEiiPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17MaybeNewExtensionEiPKNS0_15FieldDescriptorEPPNS2_9ExtensionE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet25MaybeNewRepeatedExtensionEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet19ParseMessageSetItemEPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet42RepeatedMessage_SpaceUsedExcludingSelfLongEPNS1_20RepeatedPtrFieldBaseE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet10flat_beginEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet10flat_beginEv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet8flat_endEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet8flat_endEv'/>
+<mbr r='google::protobuf::internal::ExtensionSet::arena_' o='0' t='::google::protobuf::Arena *'/>
+<mbr r='google::protobuf::internal::ExtensionSet::flat_capacity_' o='64' t='google::protobuf::uint16'/>
+<mbr r='google::protobuf::internal::ExtensionSet::flat_size_' o='80' t='google::protobuf::uint16'/>
+<mbr r='google::protobuf::internal::ExtensionSet::map_' o='128' t='union AllocatedData'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSetC1ERKS2_'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9SetStringEihRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet17SetRepeatedStringEiiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9AddStringEihRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='568' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection15GetExtensionSetERKNS0_7MessageE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='569' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection19MutableExtensionSetEPNS0_7MessageE'/>
+<size>24</size>

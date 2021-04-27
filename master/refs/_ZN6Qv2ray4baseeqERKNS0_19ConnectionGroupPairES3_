@@ -1,0 +1,8 @@
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='71' ll='74' type='bool Qv2ray::base::operator==(const Qv2ray::base::ConnectionGroupPair &amp; lhs, const Qv2ray::base::ConnectionGroupPair &amp; rhs)'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='70' u='c' c='_ZNK6Qv2ray4core7handler15QvConfigHandler11IsConnectedERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='218' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler25RemoveConnectionFromGroupERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS4_INS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='205' u='c' c='_ZN20ConnectionInfoWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='213' u='c' c='_ZN20ConnectionInfoWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='115' u='c' c='_ZN20ConnectionItemWidget11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='125' u='c' c='_ZN20ConnectionItemWidget14OnDisConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='607' u='c' c='_ZN10MainWindow35on_action_RCM_DeleteThese_triggeredEv'/>

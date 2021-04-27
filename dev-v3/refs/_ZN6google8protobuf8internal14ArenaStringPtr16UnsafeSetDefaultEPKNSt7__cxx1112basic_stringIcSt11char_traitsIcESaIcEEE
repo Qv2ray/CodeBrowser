@@ -1,0 +1,22 @@
+<def f='include/google/protobuf/arenastring.h' l='248' ll='252' type='void google::protobuf::internal::ArenaStringPtr::UnsafeSetDefault(const ::std::string * default_value)'/>
+<doc f='include/google/protobuf/arenastring.h' l='243'>// Called from generated code / reflection runtime only. Resets value to point
+  // to a default string pointer, with the semantics that this ArenaStringPtr
+  // does not own the pointed-to memory. Disregards initial value of ptr_ (so
+  // this is the *ONLY* safe method to call after construction or when
+  // reinitializing after becoming the active field in a oneof union).</doc>
+<use f='/v2ray_api.pb.cc' l='376' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequestC1ERKS4_'/>
+<use f='/v2ray_api.pb.cc' l='385' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest10SharedCtorEv'/>
+<use f='/v2ray_api.pb.cc' l='655' u='c' c='_ZN5v2ray4core3app5stats7command4StatC1ERKS4_'/>
+<use f='/v2ray_api.pb.cc' l='664' u='c' c='_ZN5v2ray4core3app5stats7command4Stat10SharedCtorEv'/>
+<use f='/v2ray_api.pb.cc' l='1170' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequestC1ERKS4_'/>
+<use f='/v2ray_api.pb.cc' l='1179' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest10SharedCtorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='374' u='c' c='_ZN5v2ray4core3app6router22DomainObject_AttributeC1ERKS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='396' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute10SharedCtorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='739' u='c' c='_ZN5v2ray4core3app6router12DomainObjectC1ERKS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='748' u='c' c='_ZN5v2ray4core3app6router12DomainObject10SharedCtorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1065' u='c' c='_ZN5v2ray4core3app6router4CIDRC1ERKS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='1074' u='c' c='_ZN5v2ray4core3app6router4CIDR10SharedCtorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1335' u='c' c='_ZN5v2ray4core3app6router5GeoIPC1ERKS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='1343' u='c' c='_ZN5v2ray4core3app6router5GeoIP10SharedCtorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1851' u='c' c='_ZN5v2ray4core3app6router7GeoSiteC1ERKS3_'/>
+<use f='/v2ray_geosite.pb.cc' l='1859' u='c' c='_ZN5v2ray4core3app6router7GeoSite10SharedCtorEv'/>

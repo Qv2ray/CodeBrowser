@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/curl/multi.h' l='343' type='CURLMcode curl_multi_timeout(CURLM * multi_handle, long * milliseconds)'/>
+<doc f='include/x86_64-linux-gnu/curl/multi.h' l='334'>/*
+ * Name:    curl_multi_timeout()
+ *
+ * Desc:    Returns the maximum number of milliseconds the app is allowed to
+ *          wait before curl_multi_socket() or curl_multi_perform() must be
+ *          called (to allow libcurl&apos;s timed events to take place).
+ *
+ * Returns: CURLM error code.
+ */</doc>

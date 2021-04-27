@@ -1,0 +1,18 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECB.h' l='41' ll='62'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.h' l='57' c='_ZNK5ZXing10DataMatrix7Version8ecBlocksEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.h' l='77'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.h' l='79' c='_ZN5ZXing10DataMatrix7VersionC1EiiiiiRKNS0_8ECBlocksE'/>
+<size>20</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECB.h' l='35'>/**
+* &lt;p&gt;Encapsulates a set of error-correction blocks in one symbol version. Most versions will
+* use blocks of differing sizes within one version, so, this encapsulates the parameters for
+* each set of blocks. It also holds the number of error-correction codewords per block since it
+* will be the same across all blocks within one version.&lt;/p&gt;
+*/</doc>
+<mbr r='ZXing::DataMatrix::ECBlocks::codewordsPerBlock' o='0' t='int'/>
+<mbr r='ZXing::DataMatrix::ECBlocks::blocks' o='32' t='std::array&lt;ECB, 2&gt;'/>
+<fun r='_ZNK5ZXing10DataMatrix8ECBlocks9numBlocksEv'/>
+<fun r='_ZNK5ZXing10DataMatrix8ECBlocks18totalDataCodewordsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix8ECBlocks10blockArrayEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMVersion.cpp' l='23' c='_ZN5ZXing10DataMatrix7VersionC1EiiiiiRKNS0_8ECBlocksE'/>
+<size>20</size>

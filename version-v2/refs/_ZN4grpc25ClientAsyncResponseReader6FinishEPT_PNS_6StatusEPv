@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='140' ll='156' type='void grpc::ClientAsyncResponseReader::Finish(R * msg, grpc::Status * status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_unary_call.h' l='135'>/// See \a ClientAysncResponseReaderInterface::Finish for semantics.
+  ///
+  /// Side effect:
+  ///   - the \a ClientContext associated with this call is updated with
+  ///     possible initial and trailing metadata sent from the server.</doc>

@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/repeated_field.h' l='927' type='Element * google::protobuf::RepeatedPtrField::UnsafeArenaReleaseLast()'/>
+<def f='include/google/protobuf/repeated_field.h' l='2162' ll='2165' type='Element * google::protobuf::RepeatedPtrField::UnsafeArenaReleaseLast()'/>
+<doc f='include/google/protobuf/repeated_field.h' l='923'>// Remove the last element and return it.  Works only when operating on an
+  // arena. The returned pointer is to the original object in the arena, hence
+  // has the arena&apos;s lifetime.
+  // Requires:  current_size_ &gt; 0</doc>

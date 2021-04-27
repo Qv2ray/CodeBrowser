@@ -1,0 +1,129 @@
+<inh f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='85' c='QvDialog'/>
+<inh f='/qv2ray_autogen/include/ui_w_PreferencesWindow.h' l='2096' c='Ui::PreferencesWindow'/>
+<def f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='11' ll='155'/>
+<use f='/qv2ray_autogen/ABGKN4OIHM/moc_w_PreferencesWindow.cpp' l='453' c='_ZN17PreferencesWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>2976</size>
+<smbr r='PreferencesWindow::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17PreferencesWindow10metaObjectEv'/>
+<fun r='_ZN17PreferencesWindow11qt_metacastEPKc'/>
+<fun r='_ZN17PreferencesWindow11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17PreferencesWindow2trEPKcS1_i'/>
+<fun r='_ZN17PreferencesWindow6trUtf8EPKcS1_i'/>
+<fun r='_ZN17PreferencesWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17PreferencesWindowC1EP7QWidget'/>
+<fun r='_ZN17PreferencesWindowD1Ev'/>
+<fun r='_ZN17PreferencesWindow15processCommandsE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZN17PreferencesWindow17updateColorSchemeEv'/>
+<fun r='_ZN17PreferencesWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN17PreferencesWindow21on_buttonBox_acceptedEv'/>
+<fun r='_ZN17PreferencesWindow26on_httpAuthCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow27on_socksAuthCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow38on_languageComboBox_currentTextChangedERK7QString'/>
+<fun r='_ZN17PreferencesWindow39on_logLevelComboBox_currentIndexChangedEi'/>
+<fun r='_ZN17PreferencesWindow32on_vCoreAssetsPathTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow25on_listenIPTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow27on_socksPortLE_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_httpPortLE_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow33on_httpAuthUsernameTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow33on_httpAuthPasswordTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow34on_socksAuthUsernameTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow34on_socksAuthPasswordTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow39on_latencyRealPingTestURLTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow30on_proxyDefaultCb_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_selectVAssetBtn_clickedEv'/>
+<fun r='_ZN17PreferencesWindow18on_aboutQt_clickedEv'/>
+<fun r='_ZN17PreferencesWindow33on_cancelIgnoreVersionBtn_clickedEv'/>
+<fun r='_ZN17PreferencesWindow26on_bypassCNCb_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_bypassBTCb_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow28on_statsPortBox_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_socksUDPCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow24on_socksUDPIP_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow25on_selectVCoreBtn_clickedEv'/>
+<fun r='_ZN17PreferencesWindow26on_vCorePathTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow32on_themeCombo_currentTextChangedERK7QString'/>
+<fun r='_ZN17PreferencesWindow27on_darkThemeCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_darkTrayCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow27on_glyphTrayCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow29on_setSysProxyCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow41on_autoStartSubsCombo_currentIndexChangedEi'/>
+<fun r='_ZN17PreferencesWindow41on_autoStartConnCombo_currentIndexChangedEi'/>
+<fun r='_ZN17PreferencesWindow34on_fpTypeCombo_currentIndexChangedEi'/>
+<fun r='_ZN17PreferencesWindow25on_fpAddressTx_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow27on_fpUseAuthCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_fpUsernameTx_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow26on_fpPasswordTx_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow24on_fpPortSB_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow29on_checkVCoreSettings_clickedEv'/>
+<fun r='_ZN17PreferencesWindow23on_httpGroupBox_clickedEb'/>
+<fun r='_ZN17PreferencesWindow24on_socksGroupBox_clickedEb'/>
+<fun r='_ZN17PreferencesWindow21on_fpGroupBox_clickedEb'/>
+<fun r='_ZN17PreferencesWindow29on_maxLogLinesSB_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow25on_enableAPI_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow32on_startWithLoginCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow41on_updateChannelCombo_currentIndexChangedEi'/>
+<fun r='_ZN17PreferencesWindow46on_pluginKernelV2RayIntegrationCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow42on_pluginKernelPortAllocateCB_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow31on_qvProxyAddressTxt_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow38on_qvProxyTypeCombo_currentTextChangedERK7QString'/>
+<fun r='_ZN17PreferencesWindow29on_qvProxyPortCB_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow32on_setTestlatencyCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow43on_setTestlatencyOnConnectedCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow27on_quietModeCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow25on_tproxyGroupBox_toggledEb'/>
+<fun r='_ZN17PreferencesWindow26on_tProxyPort_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_tproxyEnableTCP_toggledEb'/>
+<fun r='_ZN17PreferencesWindow26on_tproxyEnableUDP_toggledEb'/>
+<fun r='_ZN17PreferencesWindow32on_tproxyMode_currentTextChangedERK7QString'/>
+<fun r='_ZN17PreferencesWindow30on_tproxyListenAddr_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow32on_tproxyListenV6Addr_textEditedERK7QString'/>
+<fun r='_ZN17PreferencesWindow31on_jumpListCountSB_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow28on_outboundMark_valueChangedEi'/>
+<fun r='_ZN17PreferencesWindow23on_dnsIntercept_toggledEb'/>
+<fun r='_ZN17PreferencesWindow29on_qvProxyCustomProxy_clickedEv'/>
+<fun r='_ZN17PreferencesWindow29on_qvProxySystemProxy_clickedEv'/>
+<fun r='_ZN17PreferencesWindow25on_qvProxyNoProxy_clickedEv'/>
+<fun r='_ZN17PreferencesWindow28on_dnsFreedomCb_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow30on_httpSniffingCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow34on_httpOverrideHTTPCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow33on_httpOverrideTLSCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow31on_socksSniffingCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow35on_socksOverrideHTTPCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow34on_socksOverrideTLSCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow32on_tproxySniffingCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow36on_tproxyOverrideHTTPCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow35on_tproxyOverrideTLSCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow21on_pushButton_clickedEv'/>
+<fun r='_ZN17PreferencesWindow26on_noAutoConnectRB_clickedEv'/>
+<fun r='_ZN17PreferencesWindow26on_lastConnectedRB_clickedEv'/>
+<fun r='_ZN17PreferencesWindow29on_fixedAutoConnectRB_clickedEv'/>
+<fun r='_ZN17PreferencesWindow26on_latencyTCPingRB_clickedEv'/>
+<fun r='_ZN17PreferencesWindow27on_latencyICMPingRB_clickedEv'/>
+<fun r='_ZN17PreferencesWindow33on_qvNetworkUATxt_editTextChangedERK7QString'/>
+<fun r='_ZN17PreferencesWindow36on_V2RayOutboundStatsCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow37on_hasDirectStatisticsCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow39on_useOldShareLinkFormatCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_bypassPrivateCb_clickedEb'/>
+<fun r='_ZN17PreferencesWindow35on_disableSystemRootCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow26on_openConfigDirCB_clickedEv'/>
+<fun r='_ZN17PreferencesWindow32on_startMinimizedCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow40on_httpSniffingMetadataOnly_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow41on_socksSniffingMetadataOnly_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow44on_tproxySniffingMetadataOnlyCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow38on_socksOverrideFakeDNSCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow37on_httpOverrideFakeDNSCB_stateChangedEi'/>
+<fun r='_ZN17PreferencesWindow39on_tproxyOverrideFakeDNSCB_stateChangedEi'/>
+<mbr r='PreferencesWindow::dnsSettingsWidget' o='18304' t='DnsSettingsWidget *'/>
+<mbr r='PreferencesWindow::routeSettingsWidget' o='18368' t='RouteSettingsMatrixWidget *'/>
+<fun r='_ZN17PreferencesWindow24SetAutoStartButtonsStateEb'/>
+<mbr r='PreferencesWindow::NeedRestart' o='18432' t='bool'/>
+<mbr r='PreferencesWindow::finishedLoading' o='18440' t='bool'/>
+<mbr r='PreferencesWindow::CurrentConfig' o='18496' t='Qv2ray::base::config::Qv2rayConfigObject'/>
+<fun r='_ZNK17PreferencesWindow19checkTProxySettingsEv'/>
+<fun r='_ZN17PreferencesWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='PreferencesWindow::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17PreferencesWindow10metaObjectEv'/>
+<fun r='_ZN17PreferencesWindow11qt_metacastEPKc'/>
+<fun r='_ZN17PreferencesWindow11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='372' c='_ZN10MainWindow14ProcessCommandE7QString11QStringList4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='520' c='_ZN10MainWindow25on_preferencesBtn_clickedEv'/>
+<size>2976</size>

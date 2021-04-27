@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message.h' l='421' type='const google::protobuf::UnknownFieldSet &amp; google::protobuf::Reflection::GetUnknownFields(const google::protobuf::Message &amp; message) const'/>
+<doc f='include/google/protobuf/message.h' l='417'>// Get the UnknownFieldSet for the message.  This contains fields which
+  // were seen when the Message was parsed but were not recognized according
+  // to the Message&apos;s definition. For proto3 protos, this method will always
+  // return an empty UnknownFieldSet.</doc>

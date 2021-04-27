@@ -1,0 +1,15 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='76' ll='81' type='void ZXing::GenericGFPoly::GenericGFPoly(const ZXing::GenericGF &amp; field, std::vector&lt;int&gt; &amp;&amp; coefficients)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='82' u='c' c='_ZN5ZXing13GenericGFPolyC1ERKNS_9GenericGFERKSt6vectorIiSaIiEE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='67'>/**
+	* @param field the {@link GenericGF} instance representing the field to use
+	* to perform computations
+	* @param coefficients coefficients as ints representing elements of GF(size), arranged
+	* from most significant (highest-power term) coefficient to least significant
+	* @throws IllegalArgumentException if argument is null or empty,
+	* or if leading coefficient is 0 and this is not a
+	* constant polynomial (that is, it is not the monomial &quot;0&quot;).
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='32' u='c' c='_ZN5ZXingL21RunEuclideanAlgorithmERKNS_9GenericGFEOSt6vectorIiSaIiEEiRNS_13GenericGFPolyES8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='30' u='c' c='_ZN5ZXing18ReedSolomonEncoderC1ERKNS_9GenericGFE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='40' u='c' c='_ZN5ZXing18ReedSolomonEncoder14buildGeneratorEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonEncoder.cpp' l='58' u='c' c='_ZN5ZXing18ReedSolomonEncoder6encodeERSt6vectorIiSaIiEEi'/>

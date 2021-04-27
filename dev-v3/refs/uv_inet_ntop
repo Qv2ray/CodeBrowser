@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1630' type='int uv_inet_ntop(int af, const void * src, char * dst, size_t size)'/>
+<def f='qv2ray/3rdparty/libuv/src/inet.c' l='40' ll='50' type='int uv_inet_ntop(int af, const void * src, char * dst, size_t size)'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='268' u='c' c='uv_ip4_name'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='273' u='c' c='uv_ip6_name'/>

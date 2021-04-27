@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='60' ll='71' type='void grpc::ProtoBufferWriter::ProtoBufferWriter(grpc::ByteBuffer * byte_buffer, int block_size, int total_size)'/>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='55'>/// Constructor for this derived class
+  ///
+  /// \param[out] byte_buffer A pointer to the grpc::ByteBuffer created
+  /// \param block_size How big are the chunks to allocate at a time
+  /// \param total_size How many total bytes are required for this proto</doc>

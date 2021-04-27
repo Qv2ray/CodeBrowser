@@ -1,0 +1,32 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='38' c='ZXing::GlobalHistogramBinarizer'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='42' ll='54'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='209' c='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>40</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='25'>/**
+* This class implements a local thresholding algorithm, which while slower than the
+* GlobalHistogramBinarizer, is fairly efficient for what it does. It is designed for
+* high frequency images of barcodes with black data on white backgrounds. For this application,
+* it does a much better job than a global blackpoint with severe shadows and gradients.
+* However it tends to produce artifacts on lower frequency images and is therefore not
+* a good general purpose binarizer for uses outside ZXing.
+*
+* This class extends GlobalHistogramBinarizer, using the older histogram approach for 1D readers,
+* and the newer local approach for 2D readers. 1D decoding using a per-row histogram is already
+* inherently local, and only fails for horizontal gradients. We can revisit that problem later,
+* but for now it was not a win to use local blocks for 1D.
+*
+* This Binarizer is the default for the unit tests and the recommended class for library users.
+*
+* @author dswitkin@google.com (Daniel Switkin)
+*/</doc>
+<fun r='_ZN5ZXing15HybridBinarizerC1ERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<fun r='_ZN5ZXing15HybridBinarizerD1Ev'/>
+<fun r='_ZNK5ZXing15HybridBinarizer14getBlackMatrixEv'/>
+<fun r='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<mbr r='ZXing::HybridBinarizer::_cache' o='256' t='std::unique_ptr&lt;DataCache&gt;'/>
+<fun r='_ZN5ZXing15HybridBinarizerC1ERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<fun r='_ZN5ZXing15HybridBinarizerD1Ev'/>
+<fun r='_ZNK5ZXing15HybridBinarizer14getBlackMatrixEv'/>
+<fun r='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='87' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<size>40</size>

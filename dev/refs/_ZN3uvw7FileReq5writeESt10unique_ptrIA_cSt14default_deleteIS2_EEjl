@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='582' type='void uvw::FileReq::write(std::unique_ptr&lt;char []&gt; buf, unsigned int len, int64_t offset)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='106' ll='110' type='void uvw::FileReq::write(std::unique_ptr&lt;char []&gt; buf, unsigned int len, int64_t offset)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='569'>/**
+     * @brief Async [write](http://linux.die.net/man/2/pwritev).
+     *
+     * The request takes the ownership of the data and it is in charge of delete
+     * them.
+     *
+     * Emit a `FsEvent&lt;FileReq::Type::WRITE&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param buf The data to be written.
+     * @param len The lenght of the submitted data.
+     * @param offset Offset, as described in the official documentation.
+     */</doc>

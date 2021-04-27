@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/arena_impl.h' l='147' type='static google::protobuf::internal::ArenaImpl::SerialArena * google::protobuf::internal::ArenaImpl::SerialArena::New(google::protobuf::internal::ArenaImpl::Block * b, void * owner, google::protobuf::internal::ArenaImpl * arena)'/>
+<doc f='include/google/protobuf/arena_impl.h' l='142'>// The allocate/free methods here are a little strange, since SerialArena is
+    // allocated inside a Block which it also manages.  This is to avoid doing
+    // an extra allocation for the SerialArena itself.
+
+    // Creates a new SerialArena inside Block* and returns it.</doc>

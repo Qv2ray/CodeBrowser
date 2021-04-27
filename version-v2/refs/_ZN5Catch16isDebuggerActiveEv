@@ -1,0 +1,10 @@
+<dec f='qv2ray/test/catch.hpp' l='7933' type='bool Catch::isDebuggerActive()'/>
+<use f='qv2ray/test/catch.hpp' l='7977' u='c' c='_ZN5Catch16AssertionHandler8completeEv'/>
+<def f='qv2ray/test/catch.hpp' l='10459' ll='10475' type='bool Catch::isDebuggerActive()'/>
+<doc f='qv2ray/test/catch.hpp' l='10452'>// The standard POSIX way of detecting a debugger is to attempt to
+        // ptrace() the process, but this needs to be done from a child and not
+        // this process itself to still allow attaching to this process later
+        // if wanted, so is rather heavy. Under Linux we have the PID of the
+        // &quot;debugger&quot; (which doesn&apos;t need to be gdb, of course, it could also
+        // be strace, for example) in /proc/$PID/status, so just get it from
+        // there instead.</doc>

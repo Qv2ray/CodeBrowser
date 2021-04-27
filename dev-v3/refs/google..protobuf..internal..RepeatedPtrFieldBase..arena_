@@ -1,0 +1,21 @@
+<use f='include/google/protobuf/repeated_field.h' l='552' u='r' c='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase17GetArenaNoVirtualEv'/>
+<dec f='include/google/protobuf/repeated_field.h' l='568' type='google::protobuf::Arena *'/>
+<use f='include/google/protobuf/repeated_field.h' l='1438' u='w' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1Ev'/>
+<use f='include/google/protobuf/repeated_field.h' l='1445' u='w' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1EPNS0_5ArenaE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1453' u='r' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7DestroyEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='1522' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase6DeleteEi'/>
+<use f='include/google/protobuf/repeated_field.h' l='1536' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase3AddEPNT_4TypeE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1554' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase3AddEONT_4TypeEPSt9enable_ifIXsrS3_8MoveableEvE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1782' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase23UnsafeArenaAddAllocatedEPNT_4TypeE'/>
+<offset>0</offset>
+<doc f='include/google/protobuf/repeated_field.h' l='557'>// A few notes on internal representation:
+  //
+  // We use an indirected approach, with struct Rep, to keep
+  // sizeof(RepeatedPtrFieldBase) equivalent to what it was before arena support
+  // was added, namely, 3 8-byte machine words on x86-64. An instance of Rep is
+  // allocated only when the repeated field is non-empty, and it is a
+  // dynamically-sized struct (the header is directly followed by elements[]).
+  // We place arena_ and current_size_ directly in the object to avoid cache
+  // misses due to the indirection, because these fields are checked frequently.
+  // Placing all fields directly in the RepeatedPtrFieldBase instance costs
+  // significant performance for memory-sensitive workloads.</doc>

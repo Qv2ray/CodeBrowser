@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message.h' l='595' type='void google::protobuf::Reflection::SetEnumValue(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, int value) const'/>
+<doc f='include/google/protobuf/message.h' l='591'>// Set an enum field&apos;s value with an integer rather than EnumValueDescriptor.
+  // If the value does not correspond to a known enum value, either behavior is
+  // undefined (for proto2 messages), or the value is accepted silently for
+  // messages with new unknown-enum-value semantics.</doc>

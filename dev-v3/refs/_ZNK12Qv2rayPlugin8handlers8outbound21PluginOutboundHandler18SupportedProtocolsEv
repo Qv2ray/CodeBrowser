@@ -1,0 +1,5 @@
+<dec f='qv2ray/src/plugin-interface/handlers/OutboundHandler.hpp' l='31' type='const QList&lt;QString&gt; Qv2rayPlugin::handlers::outbound::PluginOutboundHandler::SupportedProtocols() const'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='275' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15GetOutboundInfoERK7QStringRK11QJsonObjectRb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='293' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15SetOutboundInfoERK7QStringRK4QMapIN12Qv2rayPlugin8handlers8outbound17OutboundInfoFlagsE8QVariantER11QJsonObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='314' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost17SerializeOutboundERK7QStringRK11QJsonObjectS8_S5_S5_Pb'/>
+<ovr f='qv2ray/src/plugins/protocols/core/OutboundHandler.hpp' l='15' c='_ZNK17BuiltinSerializer18SupportedProtocolsEv'/>

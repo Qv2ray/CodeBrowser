@@ -1,0 +1,7 @@
+<dec f='include/grpc/impl/codegen/propagation_bits.h' l='43'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='98' u='c'/>
+<doc f='include/grpc/impl/codegen/propagation_bits.h' l='38'>/** Default propagation mask: clients of the core API are encouraged to encode
+   deltas from this in their implementations... ie write:
+   GRPC_PROPAGATE_DEFAULTS &amp; ~GRPC_PROPAGATE_DEADLINE to disable deadline
+   propagation. Doing so gives flexibility in the future to define new
+   propagation types that are default inherited or not. */</doc>

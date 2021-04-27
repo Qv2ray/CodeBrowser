@@ -1,0 +1,13 @@
+<def f='include/netinet/ip.h' l='44' ll='65'/>
+<size>20</size>
+<mbr r='iphdr::ihl' o='0' t='unsigned int'/>
+<mbr r='iphdr::version' o='4' t='unsigned int'/>
+<mbr r='iphdr::tos' o='8' t='uint8_t'/>
+<mbr r='iphdr::tot_len' o='16' t='uint16_t'/>
+<mbr r='iphdr::id' o='32' t='uint16_t'/>
+<mbr r='iphdr::frag_off' o='48' t='uint16_t'/>
+<mbr r='iphdr::ttl' o='64' t='uint8_t'/>
+<mbr r='iphdr::protocol' o='72' t='uint8_t'/>
+<mbr r='iphdr::check' o='80' t='uint16_t'/>
+<mbr r='iphdr::saddr' o='96' t='uint32_t'/>
+<mbr r='iphdr::daddr' o='128' t='uint32_t'/>

@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='303' type='uint64_t uv_now(const uv_loop_t * )'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='88' u='c' c='uv_fs_poll_start'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='178' u='c' c='timer_cb'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='227' u='c' c='poll_cb'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='567' ll='569' type='uint64_t uv_now(const uv_loop_t * loop)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='101' u='c' c='_ZNK3uvw4Loop3nowEv'/>

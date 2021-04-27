@@ -1,0 +1,17 @@
+<use f='include/x86_64-linux-gnu/sys/socket.h' l='75'/>
+<use f='include/x86_64-linux-gnu/sys/socket.h' l='75'/>
+<def f='include/x86_64-linux-gnu/sys/un.h' l='29' ll='33'/>
+<size>110</size>
+<doc f='include/x86_64-linux-gnu/sys/un.h' l='28'>/* Structure describing the address of an AF_LOCAL (aka AF_UNIX) socket.  */</doc>
+<mbr r='sockaddr_un::sun_family' o='0' t='sa_family_t'/>
+<mbr r='sockaddr_un::sun_path' o='16' t='char [108]'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='44' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='177' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='244' c='uv__pipe_getsockpeername'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='262' c='uv__pipe_getsockpeername'/>
+<size>110</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='351' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='441' c='uv__udp_sendmsg'/>
+<size>110</size>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='426' c='uv__udp_check_before_send'/>
+<size>110</size>

@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='161' type='QRinput * QRinput_new()'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='154'>/**
+ * Instantiate an input data object. The version is set to 0 (auto-select)
+ * and the error correction level is set to QR_ECLEVEL_L.
+ * @return an input object (initialized). On error, NULL is returned and errno
+ *         is set to indicate the error.
+ * @throw ENOMEM unable to allocate memory.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='111' ll='114' type='QRinput * QRinput_new()'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='107'>/******************************************************************************
+ * Input Data
+ *****************************************************************************/</doc>

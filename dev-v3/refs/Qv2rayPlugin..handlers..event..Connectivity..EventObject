@@ -1,0 +1,16 @@
+<def f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='50' ll='58'/>
+<use f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='99'/>
+<size>40</size>
+<mbr r='Qv2rayPlugin::handlers::event::Connectivity::EventObject::eventType' o='0' t='Qv2rayPlugin::handlers::event::Connectivity::EventType'/>
+<mbr r='Qv2rayPlugin::handlers::event::Connectivity::EventObject::displayName' o='64' t='QString'/>
+<mbr r='Qv2rayPlugin::handlers::event::Connectivity::EventObject::inboundPorts' o='256' t='QMap&lt;QString, int&gt;'/>
+<fun r='_ZN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectC1Ev'/>
+<fun r='_ZN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectC1ERK7QStringRK4QMapIS4_iERKNS2_9EventTypeE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='72' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectE'/>
+<size>40</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='202' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectE'/>
+<size>40</size>
+<use f='qv2ray/src/plugins/utils/core/EventHandler.hpp' l='14' c='_ZN12EventHandler12ProcessEventERKN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectE'/>
+<size>40</size>
+<use f='qv2ray/src/plugins/utils/core/EventHandler.cpp' l='12' c='_ZN12EventHandler12ProcessEventERKN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectE'/>
+<size>40</size>

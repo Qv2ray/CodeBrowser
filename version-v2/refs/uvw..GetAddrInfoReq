@@ -1,0 +1,36 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='21' c='uvw::Request'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='71' ll='145'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='71'/>
+<size>264</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='63'>/**
+ * @brief The GetAddrInfoReq request.
+ *
+ * Wrapper for [getaddrinfo](http://linux.die.net/man/3/getaddrinfo).&lt;br/&gt;
+ * It offers either asynchronous and synchronous access methods.
+ *
+ * To create a `GetAddrInfoReq` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoEPKcS2_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq15serviceAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq8addrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoEPKcS2_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq12nodeAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq15serviceAddrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq19serviceAddrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq8addrInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<fun r='_ZN3uvw14GetAddrInfoReq12addrInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_P8addrinfo'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='124'/>
+<size>264</size>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='48' c='_ZN6Qv2ray10components7latency6tcping6TCPing5startEv'/>
+<size>264</size>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='78' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi'/>
+<size>264</size>

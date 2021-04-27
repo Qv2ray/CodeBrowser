@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='306' type='int uv_backend_timeout(const uv_loop_t * )'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='333' ll='350' type='int uv_backend_timeout(const uv_loop_t * loop)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='383' u='c' c='uv_run'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='95' u='c' c='_ZNK3uvw4Loop7timeoutEv'/>

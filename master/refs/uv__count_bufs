@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='197' type='size_t uv__count_bufs(const uv_buf_t * bufs, unsigned int nbufs)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='723' u='c' c='uv__write_req_size'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1459' u='c' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1527' u='c' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='143' u='c' c='uv__udp_run_completed'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='697' u='c' c='uv__udp_send'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='573' ll='582' type='size_t uv__count_bufs(const uv_buf_t * bufs, unsigned int nbufs)'/>

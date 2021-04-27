@@ -1,0 +1,25 @@
+<def f='include/linux/sysinfo.h' l='8' ll='23'/>
+<dec f='include/x86_64-linux-gnu/sys/sysinfo.h' l='29' type='int sysinfo(struct sysinfo * __info)'/>
+<use f='include/x86_64-linux-gnu/sys/sysinfo.h' l='29' c='sysinfo'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1034' c='uv_get_free_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1042' u='c' c='uv_get_free_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1050' c='uv_get_total_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1058' u='c' c='uv_get_total_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1090' c='uv_loadavg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='1097' u='c' c='uv_loadavg'/>
+<size>112</size>
+<doc f='include/x86_64-linux-gnu/sys/sysinfo.h' l='28'>/* Returns information on overall system statistics.  */</doc>
+<mbr r='sysinfo::uptime' o='0' t='__kernel_long_t'/>
+<mbr r='sysinfo::loads' o='64' t='__kernel_ulong_t [3]'/>
+<mbr r='sysinfo::totalram' o='256' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::freeram' o='320' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::sharedram' o='384' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::bufferram' o='448' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::totalswap' o='512' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::freeswap' o='576' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::procs' o='640' t='__u16'/>
+<mbr r='sysinfo::pad' o='656' t='__u16'/>
+<mbr r='sysinfo::totalhigh' o='704' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::freehigh' o='768' t='__kernel_ulong_t'/>
+<mbr r='sysinfo::mem_unit' o='832' t='__u32'/>
+<mbr r='sysinfo::_f' o='864' t='char [0]'/>

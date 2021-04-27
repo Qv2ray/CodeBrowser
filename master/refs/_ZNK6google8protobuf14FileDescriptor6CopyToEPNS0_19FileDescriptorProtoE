@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1383' type='void google::protobuf::FileDescriptor::CopyTo(google::protobuf::FileDescriptorProto * proto) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1379'>// See Descriptor::CopyTo().
+  // Notes:
+  // - This method does NOT copy source code information since it is relatively
+  //   large and rarely needed.  See CopySourceCodeInfoTo() below.</doc>

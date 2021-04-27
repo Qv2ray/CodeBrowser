@@ -1,0 +1,8 @@
+<dec f='include/grpc/grpc.h' l='426' type='void grpc_server_shutdown_and_notify(grpc_server * server, grpc_completion_queue * cq, void * tag)'/>
+<doc f='include/grpc/grpc.h' l='419'>/** Begin shutting down a server.
+    After completion, no new calls or connections will be admitted.
+    Existing calls will be allowed to complete.
+    Send a GRPC_OP_COMPLETE event when there are no more calls being serviced.
+    Shutdown is idempotent, and all tags will be notified at once if multiple
+    grpc_server_shutdown_and_notify calls are made. &apos;cq&apos; must have been
+    registered to this server via grpc_server_register_completion_queue. */</doc>

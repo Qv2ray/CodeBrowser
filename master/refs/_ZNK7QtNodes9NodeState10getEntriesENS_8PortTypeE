@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='32' type='const std::vector&lt;ConnectionPtrSet&gt; &amp; QtNodes::NodeState::getEntries(QtNodes::PortType ) const'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='30'>/// Returns vector of connections ID.
+        /// Some of them can be empty (null)</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='145' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction15nodePortIsEmptyENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='121' u='c' c='_ZNK7QtNodes18NodeGraphicsObject15moveConnectionsEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='76' u='c' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='82' u='c' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='129' u='c' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='133' u='c' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='176' u='c' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='16' ll='22' type='const std::vector&lt;NodeState::ConnectionPtrSet&gt; &amp; QtNodes::NodeState::getEntries(QtNodes::PortType portType) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='32' u='c' c='_ZNK7QtNodes9NodeState11connectionsENS_8PortTypeEi'/>

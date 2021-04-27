@@ -1,0 +1,23 @@
+<def f='qv2ray/src/base/models/QvSafeType.hpp' l='33' macro='1' type='void Qv2ray::base::safetype::CONFIGROOT::CONFIGROOT(Args... args)'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='10' u='c' c='_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='59' u='c' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='92' u='c' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='101' u='c' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='208' u='c' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='113' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='23' u='c' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='23' u='c' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='23' u='c' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='123' u='c' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='55' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='367' u='c' c='_ZNK6Qv2ray4core7handler15QvConfigHandler17GetConnectionRootERKNS_4base6IDTypeINS3_14__QvConnectionEEE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='79' u='c' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='79' u='c' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='326' u='c' c='_ZN18ImportConfigWindow28on_connectionEditBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='368' u='c' c='_ZN18ImportConfigWindow22on_jsonEditBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='867' u='c' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='897' u='c' c='_ZN10MainWindow19OnEditJsonRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>

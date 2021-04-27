@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BitSource.cpp source code [qv2ray/3rdparty/zxing-cpp/core/src/BitSource.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/BitSource.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='BitSource.cpp.html'>BitSource.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="4">4</th><td><i>*</i></td></tr>
+<tr><th id="5">5</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i>*</i></td></tr>
+<tr><th id="9">9</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i>*</i></td></tr>
+<tr><th id="11">11</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i>*/</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="BitSource.h.html">"BitSource.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="ByteArray.h.html">"ByteArray.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="ZXContainerAlgorithms.h.html">"ZXContainerAlgorithms.h"</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../../../include/c++/10/stdexcept.html">&lt;stdexcept&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>int</em></td></tr>
+<tr><th id="27">27</th><td><a class="type" href="BitSource.h.html#ZXing::BitSource" title='ZXing::BitSource' data-ref="ZXing::BitSource" data-ref-filename="ZXing..BitSource">BitSource</a>::<dfn class="decl def fn" id="_ZNK5ZXing9BitSource9availableEv" title='ZXing::BitSource::available' data-ref="_ZNK5ZXing9BitSource9availableEv" data-ref-filename="_ZNK5ZXing9BitSource9availableEv">available</dfn>() <em>const</em></td></tr>
+<tr><th id="28">28</th><td>{</td></tr>
+<tr><th id="29">29</th><td>	<b>return</b> <var>8</var> * (<a class="ref fn" href="ZXContainerAlgorithms.h.html#_ZN5ZXing4SizeERKT_" title='ZXing::Size' data-ref="_ZN5ZXing4SizeERKT_" data-ref-filename="_ZN5ZXing4SizeERKT_">Size</a>(<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bytes" title='ZXing::BitSource::_bytes' data-ref="ZXing::BitSource::_bytes" data-ref-filename="ZXing..BitSource.._bytes">_bytes</a>) - <a class="member field" href="BitSource.h.html#ZXing::BitSource::_byteOffset" title='ZXing::BitSource::_byteOffset' data-ref="ZXing::BitSource::_byteOffset" data-ref-filename="ZXing..BitSource.._byteOffset">_byteOffset</a>) - <a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a>;</td></tr>
+<tr><th id="30">30</th><td>}</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><em>int</em></td></tr>
+<tr><th id="33">33</th><td><a class="type" href="BitSource.h.html#ZXing::BitSource" title='ZXing::BitSource' data-ref="ZXing::BitSource" data-ref-filename="ZXing..BitSource">BitSource</a>::<dfn class="decl def fn" id="_ZN5ZXing9BitSource8readBitsEi" title='ZXing::BitSource::readBits' data-ref="_ZN5ZXing9BitSource8readBitsEi" data-ref-filename="_ZN5ZXing9BitSource8readBitsEi">readBits</dfn>(<em>int</em> <dfn class="local col3 decl" id="3numBits" title='numBits' data-type='int' data-ref="3numBits" data-ref-filename="3numBits">numBits</dfn>)</td></tr>
+<tr><th id="34">34</th><td>{</td></tr>
+<tr><th id="35">35</th><td>	<b>if</b> (<a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &lt; <var>1</var> || <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &gt; <var>32</var> || <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &gt; <a class="member fn" href="#_ZNK5ZXing9BitSource9availableEv" title='ZXing::BitSource::available' data-ref="_ZNK5ZXing9BitSource9availableEv" data-ref-filename="_ZNK5ZXing9BitSource9availableEv">available</a>()) {</td></tr>
+<tr><th id="36">36</th><td>		<b>throw</b> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/stdexcept.html#std::out_of_range" title='std::out_of_range' data-ref="std::out_of_range" data-ref-filename="std..out_of_range">out_of_range</a><a class="ref fn" href="../../../../../include/c++/10/stdexcept.html#_ZNSt12out_of_rangeC1EPKc" title='std::out_of_range::out_of_range' data-ref="_ZNSt12out_of_rangeC1EPKc" data-ref-filename="_ZNSt12out_of_rangeC1EPKc">(</a><q>"BitSource::readBits: out of range"</q>);</td></tr>
+<tr><th id="37">37</th><td>	}</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<em>int</em> <dfn class="local col4 decl" id="4result" title='result' data-type='int' data-ref="4result" data-ref-filename="4result">result</dfn> = <var>0</var>;</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>	<i>// First, read remainder from current byte</i></td></tr>
+<tr><th id="42">42</th><td>	<b>if</b> (<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="43">43</th><td>		<em>int</em> <dfn class="local col5 decl" id="5bitsLeft" title='bitsLeft' data-type='int' data-ref="5bitsLeft" data-ref-filename="5bitsLeft">bitsLeft</dfn> = <var>8</var> - <a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a>;</td></tr>
+<tr><th id="44">44</th><td>		<em>int</em> <dfn class="local col6 decl" id="6toRead" title='toRead' data-type='int' data-ref="6toRead" data-ref-filename="6toRead">toRead</dfn> = <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &lt; <a class="local col5 ref" href="#5bitsLeft" title='bitsLeft' data-ref="5bitsLeft" data-ref-filename="5bitsLeft">bitsLeft</a> ? <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> : <a class="local col5 ref" href="#5bitsLeft" title='bitsLeft' data-ref="5bitsLeft" data-ref-filename="5bitsLeft">bitsLeft</a>;</td></tr>
+<tr><th id="45">45</th><td>		<em>int</em> <dfn class="local col7 decl" id="7bitsToNotRead" title='bitsToNotRead' data-type='int' data-ref="7bitsToNotRead" data-ref-filename="7bitsToNotRead">bitsToNotRead</dfn> = <a class="local col5 ref" href="#5bitsLeft" title='bitsLeft' data-ref="5bitsLeft" data-ref-filename="5bitsLeft">bitsLeft</a> - <a class="local col6 ref" href="#6toRead" title='toRead' data-ref="6toRead" data-ref-filename="6toRead">toRead</a>;</td></tr>
+<tr><th id="46">46</th><td>		<em>int</em> <dfn class="local col8 decl" id="8mask" title='mask' data-type='int' data-ref="8mask" data-ref-filename="8mask">mask</dfn> = (<var>0xFF</var> &gt;&gt; (<var>8</var> - <a class="local col6 ref" href="#6toRead" title='toRead' data-ref="6toRead" data-ref-filename="6toRead">toRead</a>)) &lt;&lt; <a class="local col7 ref" href="#7bitsToNotRead" title='bitsToNotRead' data-ref="7bitsToNotRead" data-ref-filename="7bitsToNotRead">bitsToNotRead</a>;</td></tr>
+<tr><th id="47">47</th><td>		<a class="local col4 ref" href="#4result" title='result' data-ref="4result" data-ref-filename="4result">result</a> = (<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bytes" title='ZXing::BitSource::_bytes' data-ref="ZXing::BitSource::_bytes" data-ref-filename="ZXing..BitSource.._bytes">_bytes</a><a class="ref fn" href="../../../../../include/c++/10/bits/stl_vector.h.html#_ZNKSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNKSt6vectorixEm" data-ref-filename="_ZNKSt6vectorixEm">[<a class="member field" href="BitSource.h.html#ZXing::BitSource::_byteOffset" title='ZXing::BitSource::_byteOffset' data-ref="ZXing::BitSource::_byteOffset" data-ref-filename="ZXing..BitSource.._byteOffset">_byteOffset</a>]</a> &amp; <a class="local col8 ref" href="#8mask" title='mask' data-ref="8mask" data-ref-filename="8mask">mask</a>) &gt;&gt; <a class="local col7 ref" href="#7bitsToNotRead" title='bitsToNotRead' data-ref="7bitsToNotRead" data-ref-filename="7bitsToNotRead">bitsToNotRead</a>;</td></tr>
+<tr><th id="48">48</th><td>		<a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> -= <a class="local col6 ref" href="#6toRead" title='toRead' data-ref="6toRead" data-ref-filename="6toRead">toRead</a>;</td></tr>
+<tr><th id="49">49</th><td>		<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a> += <a class="local col6 ref" href="#6toRead" title='toRead' data-ref="6toRead" data-ref-filename="6toRead">toRead</a>;</td></tr>
+<tr><th id="50">50</th><td>		<b>if</b> (<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a> == <var>8</var>) {</td></tr>
+<tr><th id="51">51</th><td>			<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a> = <var>0</var>;</td></tr>
+<tr><th id="52">52</th><td>			<a class="member field" href="BitSource.h.html#ZXing::BitSource::_byteOffset" title='ZXing::BitSource::_byteOffset' data-ref="ZXing::BitSource::_byteOffset" data-ref-filename="ZXing..BitSource.._byteOffset">_byteOffset</a>++;</td></tr>
+<tr><th id="53">53</th><td>		}</td></tr>
+<tr><th id="54">54</th><td>	}</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>	<i>// Next read whole bytes</i></td></tr>
+<tr><th id="57">57</th><td>	<b>if</b> (<a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="58">58</th><td>		<b>while</b> (<a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &gt;= <var>8</var>) {</td></tr>
+<tr><th id="59">59</th><td>			<a class="local col4 ref" href="#4result" title='result' data-ref="4result" data-ref-filename="4result">result</a> = (<a class="local col4 ref" href="#4result" title='result' data-ref="4result" data-ref-filename="4result">result</a> &lt;&lt; <var>8</var>) | <a class="member field" href="BitSource.h.html#ZXing::BitSource::_bytes" title='ZXing::BitSource::_bytes' data-ref="ZXing::BitSource::_bytes" data-ref-filename="ZXing..BitSource.._bytes">_bytes</a><a class="ref fn" href="../../../../../include/c++/10/bits/stl_vector.h.html#_ZNKSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNKSt6vectorixEm" data-ref-filename="_ZNKSt6vectorixEm">[<a class="member field" href="BitSource.h.html#ZXing::BitSource::_byteOffset" title='ZXing::BitSource::_byteOffset' data-ref="ZXing::BitSource::_byteOffset" data-ref-filename="ZXing..BitSource.._byteOffset">_byteOffset</a>]</a>;</td></tr>
+<tr><th id="60">60</th><td>			<a class="member field" href="BitSource.h.html#ZXing::BitSource::_byteOffset" title='ZXing::BitSource::_byteOffset' data-ref="ZXing::BitSource::_byteOffset" data-ref-filename="ZXing..BitSource.._byteOffset">_byteOffset</a>++;</td></tr>
+<tr><th id="61">61</th><td>			<a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> -= <var>8</var>;</td></tr>
+<tr><th id="62">62</th><td>		}</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>		<i>// Finally read a partial byte</i></td></tr>
+<tr><th id="65">65</th><td>		<b>if</b> (<a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="66">66</th><td>			<em>int</em> <dfn class="local col9 decl" id="9bitsToNotRead" title='bitsToNotRead' data-type='int' data-ref="9bitsToNotRead" data-ref-filename="9bitsToNotRead">bitsToNotRead</dfn> = <var>8</var> - <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a>;</td></tr>
+<tr><th id="67">67</th><td>			<em>int</em> <dfn class="local col0 decl" id="10mask" title='mask' data-type='int' data-ref="10mask" data-ref-filename="10mask">mask</dfn> = (<var>0xFF</var> &gt;&gt; <a class="local col9 ref" href="#9bitsToNotRead" title='bitsToNotRead' data-ref="9bitsToNotRead" data-ref-filename="9bitsToNotRead">bitsToNotRead</a>) &lt;&lt; <a class="local col9 ref" href="#9bitsToNotRead" title='bitsToNotRead' data-ref="9bitsToNotRead" data-ref-filename="9bitsToNotRead">bitsToNotRead</a>;</td></tr>
+<tr><th id="68">68</th><td>			<a class="local col4 ref" href="#4result" title='result' data-ref="4result" data-ref-filename="4result">result</a> = (<a class="local col4 ref" href="#4result" title='result' data-ref="4result" data-ref-filename="4result">result</a> &lt;&lt; <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a>) | ((<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bytes" title='ZXing::BitSource::_bytes' data-ref="ZXing::BitSource::_bytes" data-ref-filename="ZXing..BitSource.._bytes">_bytes</a><a class="ref fn" href="../../../../../include/c++/10/bits/stl_vector.h.html#_ZNKSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNKSt6vectorixEm" data-ref-filename="_ZNKSt6vectorixEm">[<a class="member field" href="BitSource.h.html#ZXing::BitSource::_byteOffset" title='ZXing::BitSource::_byteOffset' data-ref="ZXing::BitSource::_byteOffset" data-ref-filename="ZXing..BitSource.._byteOffset">_byteOffset</a>]</a> &amp; <a class="local col0 ref" href="#10mask" title='mask' data-ref="10mask" data-ref-filename="10mask">mask</a>) &gt;&gt; <a class="local col9 ref" href="#9bitsToNotRead" title='bitsToNotRead' data-ref="9bitsToNotRead" data-ref-filename="9bitsToNotRead">bitsToNotRead</a>);</td></tr>
+<tr><th id="69">69</th><td>			<a class="member field" href="BitSource.h.html#ZXing::BitSource::_bitOffset" title='ZXing::BitSource::_bitOffset' data-ref="ZXing::BitSource::_bitOffset" data-ref-filename="ZXing..BitSource.._bitOffset">_bitOffset</a> += <a class="local col3 ref" href="#3numBits" title='numBits' data-ref="3numBits" data-ref-filename="3numBits">numBits</a>;</td></tr>
+<tr><th id="70">70</th><td>		}</td></tr>
+<tr><th id="71">71</th><td>	}</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>	<b>return</b> <a class="local col4 ref" href="#4result" title='result' data-ref="4result" data-ref-filename="4result">result</a>;</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

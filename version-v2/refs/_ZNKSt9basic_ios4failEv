@@ -1,0 +1,10 @@
+<def f='include/c++/10/bits/basic_ios.h' l='200' ll='202' type='bool std::basic_ios::fail() const'/>
+<doc f='include/c++/10/bits/basic_ios.h' l='193'>/**
+       *  @brief  Fast error checking.
+       *  @return  True if either the badbit or the failbit is set.
+       *
+       *  Checking the badbit in fail() is historical practice.
+       *  Note that other iostate flags may also be set.
+      */</doc>
+<use f='qv2ray/test/catch.hpp' l='9065' u='c' c='_ZN5Catch5clara6detail11convertIntoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERT_'/>
+<use f='qv2ray/test/catch.hpp' l='13685' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_110FileStreamC1ENS_9StringRefE'/>

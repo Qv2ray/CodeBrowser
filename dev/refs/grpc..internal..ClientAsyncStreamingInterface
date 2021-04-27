@@ -1,0 +1,13 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='35' ll='80'/>
+<ovr f='include/grpcpp/impl/codegen/async_stream.h' l='167' c='grpc::ClientAsyncReaderInterface'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='168'/>
+<ovr f='include/grpcpp/impl/codegen/async_stream.h' l='304' c='grpc::ClientAsyncWriterInterface'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='305'/>
+<ovr f='include/grpcpp/impl/codegen/async_stream.h' l='473' c='grpc::ClientAsyncReaderWriterInterface'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='474'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='34'>/// Common interface for all client side asynchronous streaming.</doc>
+<fun r='_ZN4grpc8internal29ClientAsyncStreamingInterfaceD1Ev'/>
+<fun r='_ZN4grpc8internal29ClientAsyncStreamingInterface9StartCallEPv'/>
+<fun r='_ZN4grpc8internal29ClientAsyncStreamingInterface19ReadInitialMetadataEPv'/>
+<fun r='_ZN4grpc8internal29ClientAsyncStreamingInterface6FinishEPNS_6StatusEPv'/>

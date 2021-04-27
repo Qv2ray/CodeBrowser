@@ -1,0 +1,19 @@
+<dec f='include/google/protobuf/stubs/common.h' l='128' type='void google::protobuf::internal::VerifyVersion(int headerVersion, int minLibraryVersion, const char * filename)'/>
+<doc f='include/google/protobuf/stubs/common.h' l='126'>// Verifies that the headers and libraries are compatible.  Use the macro
+// below to call this.</doc>
+<use f='/v2ray_api.pb.cc' l='77' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL27InitDefaultsGetStatsRequestEv'/>
+<use f='/v2ray_api.pb.cc' l='91' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL16InitDefaultsStatEv'/>
+<use f='/v2ray_api.pb.cc' l='105' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL28InitDefaultsGetStatsResponseEv'/>
+<use f='/v2ray_api.pb.cc' l='120' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL29InitDefaultsQueryStatsRequestEv'/>
+<use f='/v2ray_api.pb.cc' l='134' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL30InitDefaultsQueryStatsResponseEv'/>
+<use f='/v2ray_api.pb.cc' l='149' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL27InitDefaultsSysStatsRequestEv'/>
+<use f='/v2ray_api.pb.cc' l='163' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL28InitDefaultsSysStatsResponseEv'/>
+<use f='/v2ray_api.pb.cc' l='177' macro='1' u='c' c='_ZN28protobuf_v2ray_5fapi_2eprotoL18InitDefaultsConfigEv'/>
+<use f='/v2ray_geosite.pb.cc' l='76' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL34InitDefaultsDomainObject_AttributeEv'/>
+<use f='/v2ray_geosite.pb.cc' l='90' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL24InitDefaultsDomainObjectEv'/>
+<use f='/v2ray_geosite.pb.cc' l='105' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL16InitDefaultsCIDREv'/>
+<use f='/v2ray_geosite.pb.cc' l='119' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL17InitDefaultsGeoIPEv'/>
+<use f='/v2ray_geosite.pb.cc' l='134' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL21InitDefaultsGeoIPListEv'/>
+<use f='/v2ray_geosite.pb.cc' l='149' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL19InitDefaultsGeoSiteEv'/>
+<use f='/v2ray_geosite.pb.cc' l='164' macro='1' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eprotoL23InitDefaultsGeoSiteListEv'/>
+<use f='qv2ray/src/components/geosite/QvGeositeReader.cpp' l='24' macro='1' u='c' c='_ZN6Qv2ray10components7geosite19ReadGeoSiteFromFileERK7QString'/>

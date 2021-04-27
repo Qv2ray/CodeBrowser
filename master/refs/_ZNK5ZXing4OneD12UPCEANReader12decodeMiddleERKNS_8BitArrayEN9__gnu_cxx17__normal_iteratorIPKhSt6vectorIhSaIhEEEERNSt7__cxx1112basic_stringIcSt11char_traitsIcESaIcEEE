@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='88' type='BitArray::Range ZXing::OneD::UPCEANReader::decodeMiddle(const ZXing::BitArray &amp; row, BitArray::Iterator begin, std::string &amp; resultString) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN13Reader.cpp' l='67' c='_ZNK5ZXing4OneD11EAN13Reader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='79'>/**
+	* Subclasses override this to decode the portion of a barcode between the start
+	* and end guard patterns.
+	*
+	* @param row row of black/white values to search
+	* @param rowOffset on input, end offset of start guard pattern, and on output: horizontal offset of first pixel after the &quot;middle&quot; that was decoded
+	* @param resultString {@link StringBuilder} to append decoded chars to
+	* @throws NotFoundException if decoding could not complete successfully
+	*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN8Reader.cpp' l='35' c='_ZNK5ZXing4OneD10EAN8Reader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='58' c='_ZNK5ZXing4OneD10UPCAReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='104' u='c' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.cpp' l='37' c='_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

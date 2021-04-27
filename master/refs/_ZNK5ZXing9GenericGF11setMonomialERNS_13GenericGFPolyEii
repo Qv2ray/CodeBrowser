@@ -1,0 +1,8 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='54' ll='67' type='ZXing::GenericGFPoly &amp; ZXing::GenericGF::setMonomial(ZXing::GenericGFPoly &amp; poly, int degree, int coefficient) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='70' u='c' c='_ZNK5ZXing9GenericGF7setZeroERNS_13GenericGFPolyE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='74' u='c' c='_ZNK5ZXing9GenericGF6setOneERNS_13GenericGFPolyE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.h' l='51'>/**
+	* @return the monomial representing coefficient * x^degree
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='161' u='c' c='_ZN5ZXing13GenericGFPoly6divideERKS0_RS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='37' u='c' c='_ZN5ZXingL21RunEuclideanAlgorithmERKNS_9GenericGFEOSt6vectorIiSaIiEEiRNS_13GenericGFPolyES8_'/>

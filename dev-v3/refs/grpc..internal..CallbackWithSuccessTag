@@ -1,0 +1,15 @@
+<inh f='include/grpc/impl/codegen/grpc_types.h' l='670' c='grpc_experimental_completion_queue_functor'/>
+<def f='include/grpcpp/impl/codegen/callback_common.h' l='109' ll='159'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='114' c='_ZN4grpc8internal22CallbackWithSuccessTagdlEPvm'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='145' c='_ZN4grpc8internal22CallbackWithSuccessTag9StaticRunEP42grpc_experimental_completion_queue_functori'/>
+<size>56</size>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTagdlEPvm'/>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTagdlEPvS2_'/>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTagC1EP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagE'/>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTag3opsEv'/>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTag9force_runEb'/>
+<mbr r='grpc::internal::CallbackWithSuccessTag::call_' o='64' t='grpc_call *'/>
+<mbr r='grpc::internal::CallbackWithSuccessTag::func_' o='128' t='std::function&lt;void (bool)&gt;'/>
+<mbr r='grpc::internal::CallbackWithSuccessTag::ops_' o='384' t='grpc::internal::CompletionQueueTag *'/>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTag9StaticRunEP42grpc_experimental_completion_queue_functori'/>
+<fun r='_ZN4grpc8internal22CallbackWithSuccessTag3RunEb'/>

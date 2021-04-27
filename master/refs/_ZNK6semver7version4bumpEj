@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/libsemver/version.hpp' l='198' type='semver::version semver::version::bump(unsigned int index) const'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='197' u='c' c='_ZNK6semver7version10bump_majorEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='202' u='c' c='_ZNK6semver7version10bump_minorEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='207' u='c' c='_ZNK6semver7version10bump_patchEv'/>
+<def f='qv2ray/3rdparty/libsemver/version.cpp' l='210' ll='227' type='semver::version semver::version::bump(unsigned int index) const'/>
+<doc f='qv2ray/3rdparty/libsemver/version.hpp' l='188'>/**
+     * @brief Bumps the specified version component.
+     *
+     * The component @p index is bumped and all components whose index is grater
+     * than @p index are set to 0.  If @p index is greater than the current size
+     * `s` of the version number, then `index + 1 - s` components are added and
+     * set to 0.
+     *
+     * @return A semver::version object representing the bumped version.
+     */</doc>

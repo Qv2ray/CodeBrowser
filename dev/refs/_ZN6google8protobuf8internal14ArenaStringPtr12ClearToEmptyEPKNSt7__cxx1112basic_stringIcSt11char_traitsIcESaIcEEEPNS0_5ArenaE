@@ -1,0 +1,38 @@
+<def f='include/google/protobuf/arenastring.h' l='210' ll='217' type='void google::protobuf::internal::ArenaStringPtr::ClearToEmpty(const ::std::string * default_value, ::google::protobuf::Arena * )'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5843' u='c' c='_ZN6google8protobuf19FileDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5931' u='c' c='_ZN6google8protobuf19FileDescriptorProto13clear_packageEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6406' u='c' c='_ZN6google8protobuf19FileDescriptorProto12clear_syntaxEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6671' u='c' c='_ZN6google8protobuf15DescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7145' u='c' c='_ZN6google8protobuf20FieldDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7307' u='c' c='_ZN6google8protobuf20FieldDescriptorProto15clear_type_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7395' u='c' c='_ZN6google8protobuf20FieldDescriptorProto14clear_extendeeEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7483' u='c' c='_ZN6google8protobuf20FieldDescriptorProto19clear_default_valueEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7595' u='c' c='_ZN6google8protobuf20FieldDescriptorProto15clear_json_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7756' u='c' c='_ZN6google8protobuf20OneofDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7969' u='c' c='_ZN6google8protobuf19EnumDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8259' u='c' c='_ZN6google8protobuf24EnumValueDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8444' u='c' c='_ZN6google8protobuf22ServiceDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8635' u='c' c='_ZN6google8protobuf21MethodDescriptorProto10clear_nameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8723' u='c' c='_ZN6google8protobuf21MethodDescriptorProto16clear_input_typeEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8811' u='c' c='_ZN6google8protobuf21MethodDescriptorProto17clear_output_typeEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9020' u='c' c='_ZN6google8protobuf11FileOptions18clear_java_packageEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9108' u='c' c='_ZN6google8protobuf11FileOptions26clear_java_outer_classnameEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9293' u='c' c='_ZN6google8protobuf11FileOptions16clear_go_packageEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9525' u='c' c='_ZN6google8protobuf11FileOptions23clear_objc_class_prefixEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9613' u='c' c='_ZN6google8protobuf11FileOptions22clear_csharp_namespaceEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9701' u='c' c='_ZN6google8protobuf11FileOptions18clear_swift_prefixEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9789' u='c' c='_ZN6google8protobuf11FileOptions22clear_php_class_prefixEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9877' u='c' c='_ZN6google8protobuf11FileOptions19clear_php_namespaceEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9965' u='c' c='_ZN6google8protobuf11FileOptions28clear_php_metadata_namespaceEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='10053' u='c' c='_ZN6google8protobuf11FileOptions18clear_ruby_packageEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='10800' u='c' c='_ZN6google8protobuf28UninterpretedOption_NamePart15clear_name_partEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='10946' u='c' c='_ZN6google8protobuf19UninterpretedOption22clear_identifier_valueEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11106' u='c' c='_ZN6google8protobuf19UninterpretedOption18clear_string_valueEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11194' u='c' c='_ZN6google8protobuf19UninterpretedOption21clear_aggregate_valueEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11346' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location22clear_leading_commentsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11434' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location23clear_trailing_commentsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11659' u='c' c='_ZN6google8protobuf28GeneratedCodeInfo_Annotation17clear_source_fileEv'/>
+<doc f='include/google/protobuf/arenastring.h' l='206'>// Clears content, but keeps allocated string if arena != NULL, to avoid the
+  // overhead of heap operations. After this returns, the content (as seen by
+  // the user) will always be the empty string. Assumes that |default_value|
+  // is an empty string.</doc>

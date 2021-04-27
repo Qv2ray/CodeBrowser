@@ -1,0 +1,22 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='319' ll='368'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='295'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='631'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='790'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1122'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='189'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='192'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='207' c='_ZN4grpc12ClientReader4ReadEPT_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='474' c='_ZN4grpc18ClientReaderWriter4ReadEPT0_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='602' c='_ZN4grpc12ServerReader4ReadEPT_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='727' c='_ZN4grpc8internal22ServerReaderWriterBody4ReadEPT0_'/>
+<fun r='_ZN4grpc8internal17CallOpRecvMessageC1Ev'/>
+<fun r='_ZN4grpc8internal17CallOpRecvMessage11RecvMessageEPT_'/>
+<fun r='_ZN4grpc8internal17CallOpRecvMessage14AllowNoMessageEv'/>
+<mbr r='grpc::internal::CallOpRecvMessage::got_message' t='bool'/>
+<fun r='_ZN4grpc8internal17CallOpRecvMessage5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal17CallOpRecvMessage8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpRecvMessage::message_' t='R *'/>
+<mbr r='grpc::internal::CallOpRecvMessage::recv_buf_' t='grpc::ByteBuffer'/>
+<mbr r='grpc::internal::CallOpRecvMessage::allow_not_getting_message_' t='bool'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='57' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='64' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>

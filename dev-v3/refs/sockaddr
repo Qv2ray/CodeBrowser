@@ -1,0 +1,134 @@
+<def f='include/x86_64-linux-gnu/bits/socket.h' l='178' ll='182'/>
+<use f='include/x86_64-linux-gnu/sys/socket.h' l='64'/>
+<use f='include/x86_64-linux-gnu/sys/socket.h' l='64'/>
+<use f='include/netinet/in.h' l='245'/>
+<use f='include/netinet/in.h' l='618' c='getsourcefilter'/>
+<use f='include/netinet/in.h' l='625' c='setsourcefilter'/>
+<use f='include/netdb.h' l='572'/>
+<use f='include/netdb.h' l='675' c='getnameinfo'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='567' c='uv_tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='570' c='uv_tcp_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='573' c='uv_tcp_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='578' c='uv_tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='627'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='658' c='uv_udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='660' c='uv_udp_connect'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='663' c='uv_udp_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='666' c='uv_udp_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='687' c='uv_udp_send'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='692' c='uv_udp_try_send'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='907' c='uv_getnameinfo'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.h' l='140' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.h' l='146' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.h' l='156' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.h' l='161' c='uv__udp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.h' l='172' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.h' l='179' c='uv__udp_try_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='322'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='326' c='uv__getsockpeername'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='177'>/* Structure describing a generic socket address.  */</doc>
+<mbr r='sockaddr::sa_family' o='0' t='sa_family_t'/>
+<mbr r='sockaddr::sa_data' o='16' t='char [14]'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1484' c='uv__getsockpeername'/>
+<size>16</size>
+<use f='include/net/if.h' l='90'/>
+<use f='include/net/if.h' l='93'/>
+<use f='include/net/if.h' l='94'/>
+<use f='include/net/if.h' l='137'/>
+<use f='include/net/if.h' l='138'/>
+<use f='include/net/if.h' l='139'/>
+<use f='include/net/if.h' l='140'/>
+<use f='include/net/if.h' l='141'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/getnameinfo.c' l='45' c='uv__getnameinfo_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getnameinfo.c' l='84' c='uv_getnameinfo'/>
+<size>16</size>
+<use f='include/ifaddrs.h' l='36'/>
+<use f='include/ifaddrs.h' l='37'/>
+<use f='include/ifaddrs.h' l='44'/>
+<use f='include/ifaddrs.h' l='45'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='72' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='197' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='252' c='uv__pipe_getsockpeername'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='967' c='uv__handle_type'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='52' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='57' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='89' c='maybe_new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='102' c='maybe_new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='149' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='206' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='284' c='uv_tcp_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='298' c='uv_tcp_getpeername'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='316' c='uv_guess_handle'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='48'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='307' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='512' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='610' c='uv__udp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='634' c='uv__udp_disconnect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='657' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='722' c='uv__udp_try_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='743' c='uv__udp_try_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1261' c='uv_udp_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1271' c='uv_udp_getsockname'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='278' c='uv_tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='327' c='uv_udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='347' c='uv_tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='365' c='uv_udp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='400' c='uv__udp_is_connected'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='407' c='uv__udp_check_before_send'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='442' c='uv_udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='457' c='uv_udp_try_send'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='412' c='_ZN3uvw7details7addressEOT0_PKT1_'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='167' c='_ZN3uvw14GetNameInfoReq8nameInfoERK8sockaddri'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='198' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncERK8sockaddri'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='93' c='_ZN3uvw14GetNameInfoReq8nameInfoERK8sockaddri'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='102' c='_ZN3uvw14GetNameInfoReq8nameInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='110' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncERK8sockaddri'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='121' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='119' c='_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='187' c='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='41' c='_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='51' c='_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='77' c='_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='87' c='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='66' c='_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='95' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='161' c='_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='176' c='_ZN3uvw9UDPHandle7connectERK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='349' c='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='409' c='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='464' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='507' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='23' c='_ZN3uvw7details7SendReq4sendEP8uv_udp_sPK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='43' c='_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='48' c='_ZN3uvw9UDPHandle7connectERK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='57' c='_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='82' c='_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='130' c='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='150' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='160' c='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='179' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='190' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='207' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='218' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='235' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<size>16</size>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='411'/>
+<size>16</size>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='93' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<size>16</size>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='143' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='222' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='222' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>16</size>

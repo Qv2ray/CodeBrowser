@@ -1,0 +1,4 @@
+<dec f='include/grpc/slice.h' l='111' type='grpc_slice grpc_slice_split_tail(grpc_slice * s, size_t split)'/>
+<doc f='include/grpc/slice.h' l='108'>/** Splits s into two: modifies s to be s[0:split], and returns a new slice,
+   sharing a refcount with s, that contains s[split:s.length].
+   Requires s intialized, split &lt;= s.length */</doc>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='167' type='void uvw::GetNameInfoReq::nameInfo(const sockaddr &amp; addr, int flags = 0)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='93' ll='95' type='void uvw::GetNameInfoReq::nameInfo(const sockaddr &amp; addr, int flags = 0)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='102' u='c' c='_ZN3uvw14GetNameInfoReq8nameInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='162'>/**
+     * @brief Async [getnameinfo](http://linux.die.net/man/3/getnameinfo).
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     * @param flags Optional flags that modify the behavior of `getnameinfo`.
+     */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/unknown_field_set.h' l='100' type='static void google::protobuf::UnknownFieldSet::MergeToInternalMetdata(const google::protobuf::UnknownFieldSet &amp; other, internal::InternalMetadataWithArena * metadata)'/>
+<doc f='include/google/protobuf/unknown_field_set.h' l='97'>// Merge the contents an UnknownFieldSet with the UnknownFieldSet in
+  // *metadata, if there is one.  If *metadata doesn&apos;t have an UnknownFieldSet
+  // then add one to it and make it be a copy of the first arg.</doc>

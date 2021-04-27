@@ -1,0 +1,22 @@
+<inh f='include/grpc/impl/codegen/grpc_types.h' l='670' c='grpc_experimental_completion_queue_functor'/>
+<def f='include/grpcpp/impl/codegen/callback_common.h' l='52' ll='107'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='57' c='_ZN4grpc8internal21CallbackWithStatusTagdlEPvm'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='92' c='_ZN4grpc8internal21CallbackWithStatusTag9StaticRunEP42grpc_experimental_completion_queue_functori'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='72' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='71' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<size>128</size>
+<doc f='include/grpcpp/impl/codegen/callback_common.h' l='48'>// The contract on these tags is that they are single-shot. They must be
+// constructed and then fired at exactly one point. There is no expectation
+// that they can be reused without reconstruction.</doc>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTagdlEPvm'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTagdlEPvS2_'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTagC1EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTagD1Ev'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTag10status_ptrEv'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTag9force_runENS_6StatusE'/>
+<mbr r='grpc::internal::CallbackWithStatusTag::call_' o='64' t='grpc_call *'/>
+<mbr r='grpc::internal::CallbackWithStatusTag::func_' o='128' t='std::function&lt;void (Status)&gt;'/>
+<mbr r='grpc::internal::CallbackWithStatusTag::ops_' o='384' t='grpc::internal::CompletionQueueTag *'/>
+<mbr r='grpc::internal::CallbackWithStatusTag::status_' o='448' t='grpc::Status'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTag9StaticRunEP42grpc_experimental_completion_queue_functori'/>
+<fun r='_ZN4grpc8internal21CallbackWithStatusTag3RunEb'/>

@@ -1,0 +1,15 @@
+<inh f='qv2ray/src/base/models/QvSafeType.hpp' l='37' c='Qv2ray::base::safetype::INOUTLIST'/>
+<def f='qv2ray/src/base/models/QvSafeType.hpp' l='40' macro='1'/>
+<size>16</size>
+<fun r='_ZN6Qv2ray4base8safetype9OUTBOUNDSC1EDpT_'/>
+<fun r='_ZNK6Qv2ray4base8safetype9OUTBOUNDS3rawEv'/>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='102' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='209' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='99' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairENS3_8safetype10CONFIGROOTE'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='352' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<size>16</size>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='324' c='_ZN18ImportConfigWindow28on_connectionEditBtn_clickedEv'/>
+<size>16</size>

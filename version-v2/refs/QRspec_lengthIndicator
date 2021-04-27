@@ -1,0 +1,21 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='84' type='int QRspec_lengthIndicator(QRencodeMode mode, int version)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='78'>/**
+ * Return the size of lenght indicator for the mode and version.
+ * @param mode
+ * @param version
+ * @return the size of the appropriate length indicator (bits).
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='427' u='c' c='QRinput_encodeModeNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='534' u='c' c='QRinput_encodeModeAn'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='596' u='c' c='QRinput_encodeMode8'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='672' u='c' c='QRinput_encodeModeKanji'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='893' u='c' c='QRinput_estimateBitStreamSizeOfEntry'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='897' u='c' c='QRinput_estimateBitStreamSizeOfEntry'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='958' u='c' c='QRinput_lengthOfCode'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='142' ll='156' type='int QRspec_lengthIndicator(QRencodeMode mode, int version)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='92' u='c' c='Split_eatNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='131' u='c' c='Split_eatAn'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='132' u='c' c='Split_eatAn'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='199' u='c' c='Split_eat8'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='200' u='c' c='Split_eat8'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='201' u='c' c='Split_eat8'/>

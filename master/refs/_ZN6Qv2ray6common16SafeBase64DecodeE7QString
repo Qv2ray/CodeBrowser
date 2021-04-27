@@ -1,0 +1,7 @@
+<dec f='qv2ray/src/common/QvHelpers.hpp' l='21' type='QString Qv2ray::common::SafeBase64Decode(QString string)'/>
+<def f='qv2ray/src/common/QvHelpers.cpp' l='107' ll='111' type='QString Qv2ray::common::SafeBase64Decode(QString string)'/>
+<doc f='qv2ray/src/common/QvHelpers.cpp' l='106'>// backported from QvPlugin-SSR.</doc>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='20' u='c' c='_ZN6Qv2ray4core10connection13serialization27TryDecodeSubscriptionStringERK10QByteArray'/>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='84' u='c' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='87' u='c' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='95' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>

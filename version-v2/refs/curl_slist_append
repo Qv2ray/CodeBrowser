@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/curl/curl.h' l='2514' type='struct curl_slist * curl_slist_append(struct curl_slist * , const char * )'/>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='2506'>/*
+ * NAME curl_slist_append()
+ *
+ * DESCRIPTION
+ *
+ * Appends a string to a linked list. If no list exists, it will be created
+ * first. Returns the new list, after appending.
+ */</doc>

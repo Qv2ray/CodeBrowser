@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='113' type='qint64 SingleApplication::primaryPid()'/>
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='209' ll='213' type='qint64 SingleApplication::primaryPid()'/>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='203'>/**
+ * Returns the OS PID (Process Identifier) of the process running the primary
+ * instance. Especially useful when SingleApplication is coupled with OS.
+ * specific APIs.
+ * @return Returns the primary instance PID.
+ */</doc>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='109'>/**
+     * @brief Returns the process ID (PID) of the primary instance
+     * @returns {qint64}
+     */</doc>

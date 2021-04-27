@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='244' type='uvw::Loop::Time uvw::Loop::now() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='232'>/**
+     * @brief Returns the current timestamp in milliseconds.
+     *
+     * The timestamp is cached at the start of the event loop tick.&lt;br/&gt;
+     * The timestamp increases monotonically from some arbitrary point in
+     * time.&lt;br/&gt;
+     * Don’t make assumptions about the starting point, you will only get
+     * disappointed.
+     *
+     * @return The current timestamp in milliseconds (actual type is
+     * `std::chrono::duration&lt;uint64_t, std::milli&gt;`).
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='100' ll='102' type='Loop::Time uvw::Loop::now() const'/>

@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='460' type='static void google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(int field_number, const google::protobuf::MessageLite &amp; value, io::CodedOutputStream * output)'/>
+<use f='include/google/protobuf/map_type_handler.h' l='369' u='c' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE11ET_E5WriteEiRKNS1_22MapWireFieldTypeTraitsILS4_11ES5_E20MapEntryAccesso2953784'/>
+<use f='/v2ray_api.pb.cc' l='1035' u='c' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1538' u='c' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='885' u='c' c='_ZNK5v2ray4core3app6router12DomainObject24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1457' u='c' c='_ZNK5v2ray4core3app6router5GeoIP24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1710' u='c' c='_ZNK5v2ray4core3app6router9GeoIPList24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1973' u='c' c='_ZNK5v2ray4core3app6router7GeoSite24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='2226' u='c' c='_ZNK5v2ray4core3app6router11GeoSiteList24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>

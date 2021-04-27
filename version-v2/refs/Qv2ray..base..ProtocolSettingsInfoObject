@@ -1,0 +1,44 @@
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='238' ll='250'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='249' c='_ZN6Qv2ray4base26ProtocolSettingsInfoObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='249' c='_ZNK6Qv2ray4base26ProtocolSettingsInfoObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='249' c='_ZN6Qv2ray4base26ProtocolSettingsInfoObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='34' c='_ZN6Qv2ray4core15GetOutboundInfoERK13SAFETYPE_IMPLINS_4base8safetype12__OUTBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='36' c='_ZN6Qv2ray4core15GetOutboundInfoERK13SAFETYPE_IMPLINS_4base8safetype12__OUTBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='40' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEEPb'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='41' c='_ZN6Qv2ray4core17GetConnectionInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectEPb'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='54' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype11__INBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='56' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype11__INBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='61' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='62' c='_ZN6Qv2ray4core14GetInboundInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='28' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler31GetCurrentConnectionInboundInfoEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='58' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS_4base26ProtocolSettingsInfoObjectEEi'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='88'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='67' c='_ZN11RouteEditor34OnDispatcherInboundOutboundHoveredERK7QStringRKN6Qv2ray4base26ProtocolSettingsInfoObjectE'/>
+<use f='/qv2ray_autogen/DWD7ZFCWQR/moc_w_RoutesEditor.cpp' l='186' c='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='130' c='_ZN14NodeDispatcher28OnInboundOutboundNodeHoveredERK7QStringRKN6Qv2ray4base26ProtocolSettingsInfoObjectE'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='143' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='233' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='368' c='_ZN14NodeDispatcher28OnInboundOutboundNodeHoveredERK7QStringRKN6Qv2ray4base26ProtocolSettingsInfoObjectE'/>
+<size>24</size>
+<mbr r='Qv2ray::base::ProtocolSettingsInfoObject::protocol' o='0' t='QString'/>
+<mbr r='Qv2ray::base::ProtocolSettingsInfoObject::address' o='64' t='QString'/>
+<mbr r='Qv2ray::base::ProtocolSettingsInfoObject::port' o='128' t='int'/>
+<fun r='_ZN6Qv2ray4base26ProtocolSettingsInfoObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base26ProtocolSettingsInfoObjectC1ERK7QStringS2_i'/>
+<fun r='_ZN6Qv2ray4base26ProtocolSettingsInfoObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base26ProtocolSettingsInfoObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base26ProtocolSettingsInfoObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='49' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEEPb'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='57' c='_ZN6Qv2ray4core17GetConnectionInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectEPb'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='80' c='_ZN6Qv2ray4core17GetConnectionInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectEPb'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='152' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='154' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='166' c='_ZN6Qv2ray4core14GetInboundInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<size>24</size>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='44' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS_4base26ProtocolSettingsInfoObjectEEi'/>
+<size>24</size>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='153' c='_ZN11RouteEditor34OnDispatcherInboundOutboundHoveredERK7QStringRKN6Qv2ray4base26ProtocolSettingsInfoObjectE'/>
+<size>24</size>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow_extra.cpp' l='65' c='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow_extra.cpp' l='66' c='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<size>24</size>

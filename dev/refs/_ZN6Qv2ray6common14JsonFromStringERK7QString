@@ -1,0 +1,25 @@
+<dec f='qv2ray/src/utils/QvHelpers.hpp' l='26' type='QJsonObject Qv2ray::common::JsonFromString(const QString &amp; string)'/>
+<doc f='qv2ray/src/utils/QvHelpers.hpp' l='24'>//
+    //</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='168' u='c' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='10' u='c' c='_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb'/>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='97' u='c' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='118' u='c' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='17' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='18' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='56' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='15' u='c' c='_ZN6Qv2ray4core7handler12RouteHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='89' u='c' c='_ZN6Qv2ray4core6config29CheckSettingsPathAvailabilityERK7QStringb'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='239' u='c' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='289' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='319' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='51' u='c' c='_ZN6Qv2ray23Qv2rayWidgetApplication17onMessageReceivedEj10QByteArray'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='135' u='c' c='_ZN6Qv2ray23Qv2rayWidgetApplication17runQv2rayInternalEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_JsonEditor.cpp' l='69' u='c' c='_ZN10JsonEditor25on_jsonEditor_textChangedEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_JsonEditor.cpp' l='89' u='c' c='_ZN10JsonEditor24on_formatJsonBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_JsonEditor.cpp' l='90' u='c' c='_ZN10JsonEditor24on_formatJsonBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_JsonEditor.cpp' l='104' u='c' c='_ZN10JsonEditor28on_removeCommentsBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='112' u='c' c='_ZN25RouteSettingsMatrixWidget26on_importSchemeBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.cpp' l='258' u='c' c='_ZN20StreamSettingsWidget28on_tcpRequestEditBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.cpp' l='267' u='c' c='_ZN20StreamSettingsWidget29on_tcpResponseEditBtn_clickedEv'/>
+<def f='qv2ray/src/utils/QvHelpers.cpp' l='112' ll='121' type='QJsonObject Qv2ray::common::JsonFromString(const QString &amp; string)'/>

@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='124' type='bool grpc::internal::WriterInterface::Write(const W &amp; msg)'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='118'>/// Block to write \a msg to the stream with default write options.
+  /// This is thread-safe with respect to \a ReaderInterface::Read
+  ///
+  /// \param msg The message to be written to the stream.
+  ///
+  /// \return \a true on success, \a false when the stream has been closed.</doc>

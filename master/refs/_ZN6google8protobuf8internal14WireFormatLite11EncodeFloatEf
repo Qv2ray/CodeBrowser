@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='239' type='static google::protobuf::uint32 google::protobuf::internal::WireFormatLite::EncodeFloat(float value)'/>
+<def f='include/google/protobuf/wire_format_lite.h' l='806' ll='810' type='static google::protobuf::uint32 google::protobuf::internal::WireFormatLite::EncodeFloat(float value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='504' u='c' c='_ZN6google8protobuf8internal14WireFormatLite15WriteFloatNoTagEfPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='595' u='c' c='_ZN6google8protobuf8internal14WireFormatLite22WriteFloatNoTagToArrayEfPh'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='236'>// Helper functions for converting between floats/doubles and IEEE-754
+  // uint32s/uint64s so that they can be written.  (Assumes your platform
+  // uses IEEE-754 floats.)</doc>

@@ -1,0 +1,61 @@
+<def f='include/c++/10/bits/basic_string.h' l='702' ll='759' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::operator=(basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp;&amp; __str)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='693'>/**
+       *  @brief  Move assign the value of @a str to this string.
+       *  @param  __str  Source string.
+       *
+       *  The contents of @a str are moved into this string (without copying).
+       *  @a str is a valid, but unspecified string.
+       **/
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // 2063. Contradictory requirements for string move assignment</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='399' u='c' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='66' u='c' c='_ZN5ZXing11DecodeHints15setCharacterSetENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='72' u='c' c='_ZN5ZXing6Result7setTextEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='86' u='c' c='_ZNR5ZXing13DecoderResult10setEcLevelEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='88' u='c' c='_ZNO5ZXing13DecoderResult10setEcLevelEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='289' u='c' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='358' u='c' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarWriter.cpp' l='57' u='c' c='_ZNK5ZXing4OneD13CodabarWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarWriter.cpp' l='95' u='c' c='_ZNK5ZXing4OneD13CodabarWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='149' u='c' c='_ZNK5ZXing4OneD12Code39Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='159' u='c' c='_ZNK5ZXing4OneD12Code39Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='145' u='c' c='_ZN5ZXing4OneD22UPCEANExtensionSupport9DecodeRowEiRKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.cpp' l='57' u='c' c='_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSFieldParser.cpp' l='215' u='c' c='_ZN5ZXing4OneD3RSS11FieldParser27ParseFieldsInGeneralPurposeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSGenericAppIdDecoder.cpp' l='482' u='c' c='_ZN5ZXing4OneD3RSS19GenericAppIdDecoder14DecodeAllCodesERKNS_8BitArrayEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='494' u='c' c='_ZN5ZXing6Pdf417L21DecodeBase900toBase10ERKSt6vectorIiSaIiEEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='496' u='c' c='_ZN5ZXing6Pdf417L21DecodeBase900toBase10ERKSt6vectorIiSaIiEEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='74' u='c' c='_ZN16JsonStructHelper24___json_struct_load_dataERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERK10QJsonValue'/>
+<use f='qv2ray/libs/QJsonStruct/QJsonStruct.hpp' l='74' u='c' c='_ZN16JsonStructHelper24___json_struct_load_dataERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERK10QJsonValue'/>
+<use f='include/google/protobuf/arenastring.h' l='275' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr10SetNoArenaEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEOS8_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='471' u='c' c='_ZN4grpc8internal22CallOpServerSendStatus16ServerSendStatusERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pai13417773'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='476' u='c' c='_ZN4grpc8internal22CallOpServerSendStatus16ServerSendStatusERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pai13417773'/>
+<use f='qv2ray/test/catch.hpp' l='8288' u='c' c='_ZNK5Catch19AssertionResultData21reconstructExpressionB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8337' u='c' c='_ZNK5Catch15AssertionResult20getExpressionInMacroB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8707' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='9715' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9718' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9943' u='c' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9946' u='c' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='11007' u='c' c='_ZN5Catch14AssertionStatsC1ERKNS_15AssertionResultERKSt6vectorINS_11MessageInfoESaIS5_EERKNS_6TotalsE'/>
+<use f='qv2ray/test/catch.hpp' l='11311' u='c' c='_ZNK5Catch8Matchers4Impl18MatcherUntypedBase8toStringB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='11753' u='c' c='_ZN5Catch13ScopedMessageC1ERKNS_14MessageBuilderE'/>
+<use f='qv2ray/test/catch.hpp' l='11815' u='c' c='_ZN5Catch8CapturerC1ENS_9StringRefERKNS_14SourceLineInfoENS_9ResultWas6OfTypeES1_'/>
+<use f='qv2ray/test/catch.hpp' l='11823' u='c' c='_ZN5Catch8CapturerC1ENS_9StringRefERKNS_14SourceLineInfoENS_9ResultWas6OfTypeES1_'/>
+<use f='qv2ray/test/catch.hpp' l='12748' u='c' c='_ZN5Catch10RunContext25handleFatalErrorConditionENS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='12911' u='c' c='_ZN5Catch10RunContext13handleMessageERKNS_13AssertionInfoENS_9ResultWas6OfTypeERKNS_9StringRefERNS_17AssertionReactionE'/>
+<use f='qv2ray/test/catch.hpp' l='13684' u='c' c='_ZN5Catch14replaceInPlaceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS5_S8_'/>
+<use f='qv2ray/test/catch.hpp' l='13807' u='c' c='_ZNK5Catch16TagAliasRegistry13expandAliasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14154' u='c' c='_ZN5Catch16extractClassNameB5cxx11ERKNS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='14519' u='c' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14683' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14687' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14879' u='c' c='_ZN5Catch10fpToStringB5cxx11ET_i'/>
+<use f='qv2ray/test/catch.hpp' l='15178' u='c' c='_ZN5Catch15WildcardPatternC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13CaseSensitive6ChoiceE'/>
+<use f='qv2ray/test/catch.hpp' l='15182' u='c' c='_ZN5Catch15WildcardPatternC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13CaseSensitive6ChoiceE'/>
+<use f='qv2ray/test/catch.hpp' l='15445' u='c' c='_ZN5Catch9XmlWriter10endElementENS_13XmlFormattingE'/>
+<use f='qv2ray/test/catch.hpp' l='16455' u='c' c='_ZN5Catch13SummaryColumn6addRowEm'/>
+<use f='qv2ray/test/catch.hpp' l='16457' u='c' c='_ZN5Catch13SummaryColumn6addRowEm'/>
+<use f='qv2ray/test/catch.hpp' l='16710' u='c' c='_ZN5Catch13JunitReporter13writeTestCaseERKNS_22CumulativeReporterBaseIS0_E4NodeINS_13TestCaseStatsENS2_11SectionNodeEEE'/>
+<use f='qv2ray/test/catch.hpp' l='16716' u='c' c='_ZN5Catch13JunitReporter13writeTestCaseERKNS_22CumulativeReporterBaseIS0_E4NodeINS_13TestCaseStatsENS2_11SectionNodeEEE'/>
+<use f='qv2ray/test/catch.hpp' l='16726' u='c' c='_ZN5Catch13JunitReporter12writeSectionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RKNS_22CumulativeReporterBaseIS0_E11SectionNodeE'/>

@@ -1,0 +1,44 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.h' l='38' c='_ZN5ZXing15CharacterSetECI16CharsetFromValueEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.h' l='40' c='_ZN5ZXing15CharacterSetECI15ValueForCharsetENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.h' l='47' c='_ZN5ZXing15CharacterSetECI15CharsetFromNameEPKc'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSet.h' l='20' ll='55'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.cpp' l='29'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.cpp' l='68'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.cpp' l='129' c='_ZN5ZXing15CharacterSetECI16CharsetFromValueEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.cpp' l='141' c='_ZN5ZXing15CharacterSetECI15ValueForCharsetENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/CharacterSetECI.cpp' l='153' c='_ZN5ZXing15CharacterSetECI15CharsetFromNameEPKc'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='40' c='_ZN5ZXing17MultiFormatWriter11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='65'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZWriter.h' l='37' c='_ZN5ZXing5Aztec6Writer11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZWriter.h' l='55'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='69' c='_ZN5ZXing6Pdf4176Writer11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='49' c='_ZN5ZXing6QRCode6Writer11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.h' l='74'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='29' c='_ZN5ZXing11TextDecoder15DefaultEncodingEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='30' c='_ZN5ZXing11TextDecoder13GuessEncodingEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='30' c='_ZN5ZXing11TextDecoder13GuessEncodingEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='32' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='44' c='_ZN5ZXing11TextDecoder9ToUnicodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='229' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='338' c='_ZN5ZXing11TextDecoder13GuessEncodingEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='339' c='_ZN5ZXing11TextDecoder13GuessEncodingEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='504' c='_ZN5ZXing11TextDecoder15DefaultEncodingEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.h' l='26' c='_ZN5ZXing11TextEncoder8GetBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetERNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.h' l='28' c='_ZN5ZXing11TextEncoder11FromUnicodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.cpp' l='207' c='_ZN5ZXing11TextEncoder8GetBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetERNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='77'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='340' c='_ZN5ZXing6Pdf417L14ByteCompactionEiRKSt6vectorIiSaIiEENS_12CharacterSetEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='175' c='_ZN5ZXing6Pdf4177Encoder11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='184'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.h' l='37' c='_ZN5ZXing6Pdf41716HighLevelEncoder15EncodeHighLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_10CompactionENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='520' c='_ZN5ZXing6Pdf41716HighLevelEncoder15EncodeHighLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_10CompactionENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='169' c='_ZN5ZXing6Pdf4176Writer11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='141' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='322' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.h' l='44' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='40'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='86' c='_ZN5ZXing6QRCodeL10ChooseModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='114' c='_ZN5ZXing6QRCodeL9AppendECIENS_12CharacterSetERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='200' c='_ZN5ZXing6QRCodeL15Append8BitBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='239' c='_ZN5ZXing6QRCodeL11AppendBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_9CodecMode4ModeENS_12CharacterSetERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='497' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>

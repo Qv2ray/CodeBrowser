@@ -1,0 +1,15 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='76' type='void ZXing::BitMatrix::BitMatrix(int width, int height)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='81' u='c' c='_ZN5ZXing9BitMatrixC1Ei'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='81' u='c' c='_ZN5ZXing9BitMatrix8rotate90Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='220' u='c' c='_ZN5ZXing7InflateEONS_9BitMatrixEiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='234' u='c' c='_ZN5ZXing7DeflateERKNS_9BitMatrixEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.cpp' l='35' u='c' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='63' u='c' c='_ZNK5ZXing18ThresholdBinarizer14getBlackMatrixEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.h' l='48' u='c' c='_ZN5ZXing10DataMatrix11VisitMatrixEiiT_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='65' u='c' c='_ZN5ZXing10DataMatrixL17ExtractDataRegionERKNS0_7VersionERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='29' u='c' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='46' u='c' c='_ZN5ZXing10DataMatrixL14EncodeLowLevelERKNS_9BitMatrixERKNS0_10SymbolInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='45' u='c' c='_ZN5ZXing8MaxiCodeL15ExtractPureBitsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.cpp' l='40' u='c' c='_ZN5ZXing4OneD12WriterHelper12RenderResultERKSt6vectorIbSaIbEEiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='69' u='c' c='_ZN5ZXing6Pdf417L21BitMatrixFromBitArrayERKSt6vectorIS1_IbSaIbEESaIS3_EEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='363' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>

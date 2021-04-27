@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='756' type='bool uvw::FileReq::chownSync(uvw::Uid uid, uvw::Gid gid)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='219' ll='223' type='bool uvw::FileReq::chownSync(uvw::Uid uid, uvw::Gid gid)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='750'>/**
+     * @brief Sync [fchown](http://linux.die.net/man/2/fchown).
+     * @param uid UID, as described in the official documentation.
+     * @param gid GID, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

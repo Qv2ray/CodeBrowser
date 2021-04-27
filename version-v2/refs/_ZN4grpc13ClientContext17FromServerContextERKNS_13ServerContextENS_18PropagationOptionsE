@@ -1,0 +1,11 @@
+<dec f='include/grpcpp/impl/codegen/client_context.h' l='179' type='static std::unique_ptr&lt;ClientContext&gt; grpc::ClientContext::FromServerContext(const grpc::ServerContext &amp; server_context, grpc::PropagationOptions options = grpc::PropagationOptions())'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='169'>/// Create a new \a ClientContext as a child of an incoming server call,
+  /// according to \a options (\see PropagationOptions).
+  ///
+  /// \param server_context The source server context to use as the basis for
+  /// constructing the client context.
+  /// \param options The options controlling what to copy from the \a
+  /// server_context.
+  ///
+  /// \return A newly constructed \a ClientContext instance based on \a
+  /// server_context, with traits propagated (copied) according to \a options.</doc>

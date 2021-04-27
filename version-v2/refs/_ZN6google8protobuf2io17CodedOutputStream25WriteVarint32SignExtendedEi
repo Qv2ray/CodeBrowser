@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='774' type='void google::protobuf::io::CodedOutputStream::WriteVarint32SignExtended(google::protobuf::int32 value)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1160' ll='1162' type='void google::protobuf::io::CodedOutputStream::WriteVarint32SignExtended(google::protobuf::int32 value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='464' u='c' c='_ZN6google8protobuf8internal14WireFormatLite15WriteInt32NoTagEiPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='516' u='c' c='_ZN6google8protobuf8internal14WireFormatLite14WriteEnumNoTagEiPNS0_2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='772'>// Equivalent to WriteVarint32() except when the value is negative,
+  // in which case it must be sign-extended to a full 10 bytes.</doc>

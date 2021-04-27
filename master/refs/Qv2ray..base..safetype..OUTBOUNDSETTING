@@ -1,0 +1,31 @@
+<def f='qv2ray/src/base/models/QvSafeType.hpp' l='30' macro='1'/>
+<size>16</size>
+<fun r='_ZN6Qv2ray4base8safetype15OUTBOUNDSETTINGC1EDpT_'/>
+<fun r='_ZNK6Qv2ray4base8safetype15OUTBOUNDSETTING3rawEv'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='34' c='_ZN6Qv2ray4core10connection10generation9outbounds18GenerateFreedomOUTERK7QStringS6_i'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='35' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateBlackHoleOUTEb'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='36' c='_ZN6Qv2ray4core10connection10generation9outbounds22GenerateShadowSocksOUTERK5QListINS_4base7objects8protocol23ShadowSocksServerObjectEE'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='37' c='_ZN6Qv2ray4core10connection10generation9outbounds28GenerateShadowSocksServerOUTERK7QStringS6_iS6_S6_bi'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='39' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateHTTPSOCKSOutERK7QStringibS6_S6_'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='40' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='60' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='5' c='_ZN6Qv2ray4core10connection10generation9outbounds18GenerateFreedomOUTERK7QStringS6_i'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='7' c='_ZN6Qv2ray4core10connection10generation9outbounds18GenerateFreedomOUTERK7QStringS6_i'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='11' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateBlackHoleOUTEb'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='13' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateBlackHoleOUTEb'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='20' c='_ZN6Qv2ray4core10connection10generation9outbounds22GenerateShadowSocksOUTERK5QListINS_4base7objects8protocol23ShadowSocksServerObjectEE'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='22' c='_ZN6Qv2ray4core10connection10generation9outbounds22GenerateShadowSocksOUTERK5QListINS_4base7objects8protocol23ShadowSocksServerObjectEE'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='35' c='_ZN6Qv2ray4core10connection10generation9outbounds28GenerateShadowSocksServerOUTERK7QStringS6_iS6_S6_bi'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='38' c='_ZN6Qv2ray4core10connection10generation9outbounds28GenerateShadowSocksServerOUTERK7QStringS6_iS6_S6_bi'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='43' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateHTTPSOCKSOutERK7QStringibS6_S6_'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='45' c='_ZN6Qv2ray4core10connection10generation9outbounds20GenerateHTTPSOCKSOutERK7QStringibS6_S6_'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='56' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='284' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='124' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.cpp' l='96' c='_ZN14OutboundEditor22GenerateConnectionJsonEv'/>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.cpp' l='173' c='_ZN14OutboundEditor22GenerateConnectionJsonEv'/>
+<size>16</size>

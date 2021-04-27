@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='470' type='void QRcode_free(QRcode * qrcode)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='466'>/**
+ * Free the instance of QRcode class.
+ * @param qrcode an instance of QRcode class.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='425' ll='431' type='void QRcode_free(QRcode * qrcode)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='717' u='c' c='QRcode_List_freeEntry'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='121' u='c' c='_ZN8QtQrCode17setBaseQrCodeDataEP6QRcode'/>

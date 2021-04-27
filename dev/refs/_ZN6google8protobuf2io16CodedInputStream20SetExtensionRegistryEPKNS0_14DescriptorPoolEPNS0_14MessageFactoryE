@@ -1,0 +1,70 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='515' type='void google::protobuf::io::CodedInputStream::SetExtensionRegistry(const google::protobuf::DescriptorPool * pool, google::protobuf::MessageFactory * factory)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1315' ll='1319' type='void google::protobuf::io::CodedInputStream::SetExtensionRegistry(const google::protobuf::DescriptorPool * pool, google::protobuf::MessageFactory * factory)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='447'>// Extension Registry ----------------------------------------------
+  // ADVANCED USAGE:  99.9% of people can ignore this section.
+  //
+  // By default, when parsing extensions, the parser looks for extension
+  // definitions in the pool which owns the outer message&apos;s Descriptor.
+  // However, you may call SetExtensionRegistry() to provide an alternative
+  // pool instead.  This makes it possible, for example, to parse a message
+  // using a generated class, but represent some extensions using
+  // DynamicMessage.
+
+  // Set the pool used to look up extensions.  Most users do not need to call
+  // this as the correct pool will be chosen automatically.
+  //
+  // WARNING:  It is very easy to misuse this.  Carefully read the requirements
+  //   below.  Do not use this unless you are sure you need it.  Almost no one
+  //   does.
+  //
+  // Let&apos;s say you are parsing a message into message object m, and you want
+  // to take advantage of SetExtensionRegistry().  You must follow these
+  // requirements:
+  //
+  // The given DescriptorPool must contain m-&gt;GetDescriptor().  It is not
+  // sufficient for it to simply contain a descriptor that has the same name
+  // and content -- it must be the *exact object*.  In other words:
+  //   assert(pool-&gt;FindMessageTypeByName(m-&gt;GetDescriptor()-&gt;full_name()) ==
+  //          m-&gt;GetDescriptor());
+  // There are two ways to satisfy this requirement:
+  // 1) Use m-&gt;GetDescriptor()-&gt;pool() as the pool.  This is generally useless
+  //    because this is the pool that would be used anyway if you didn&apos;t call
+  //    SetExtensionRegistry() at all.
+  // 2) Use a DescriptorPool which has m-&gt;GetDescriptor()-&gt;pool() as an
+  //    &quot;underlay&quot;.  Read the documentation for DescriptorPool for more
+  //    information about underlays.
+  //
+  // You must also provide a MessageFactory.  This factory will be used to
+  // construct Message objects representing extensions.  The factory&apos;s
+  // GetPrototype() MUST return non-NULL for any Descriptor which can be found
+  // through the provided pool.
+  //
+  // If the provided factory might return instances of protocol-compiler-
+  // generated (i.e. compiled-in) types, or if the outer message object m is
+  // a generated type, then the given factory MUST have this property:  If
+  // GetPrototype() is given a Descriptor which resides in
+  // DescriptorPool::generated_pool(), the factory MUST return the same
+  // prototype which MessageFactory::generated_factory() would return.  That
+  // is, given a descriptor for a generated type, the factory must return an
+  // instance of the generated class (NOT DynamicMessage).  However, when
+  // given a descriptor for a type that is NOT in generated_pool, the factory
+  // is free to return any implementation.
+  //
+  // The reason for this requirement is that generated sub-objects may be
+  // accessed via the standard (non-reflection) extension accessor methods,
+  // and these methods will down-cast the object to the generated class type.
+  // If the object is not actually of that type, the results would be undefined.
+  // On the other hand, if an extension is not compiled in, then there is no
+  // way the code could end up accessing it via the standard accessors -- the
+  // only way to access the extension is via reflection.  When using reflection,
+  // DynamicMessage and generated messages are indistinguishable, so it&apos;s fine
+  // if these objects are represented using DynamicMessage.
+  //
+  // Using DynamicMessageFactory on which you have called
+  // SetDelegateToGeneratedFactory(true) should be sufficient to satisfy the
+  // above requirement.
+  //
+  // If either pool or factory is NULL, both must be NULL.
+  //
+  // Note that this feature is ignored when parsing &quot;lite&quot; messages as they do
+  // not have descriptors.</doc>

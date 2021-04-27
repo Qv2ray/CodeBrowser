@@ -1,0 +1,45 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='192' type='int uv__close(int fd)'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='192'>/* preserves errno */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='246' u='c' c='uv__async_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='251' u='c' c='uv__async_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='450' u='c' c='uv__socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='475' u='c' c='uv__open_file'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='561' ll='567' type='int uv__close(int fd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='341' u='c' c='uv__fs_mkstemp'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='117' u='c' c='uv__io_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='132' u='c' c='uv__platform_loop_delete'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='525' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='154' u='c' c='uv__loop_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='159' u='c' c='uv__loop_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='78' u='c' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='225' u='c' c='uv__process_open_stream'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='331' u='c' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='338' u='c' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='494' u='c' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='495' u='c' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='506' u='c' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='44' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='49' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='59' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='64' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='69' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='89' u='c' c='uv__signal_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='94' u='c' c='uv__signal_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='281' u='c' c='uv__signal_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='282' u='c' c='uv__signal_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='306' u='c' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='311' u='c' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='504' u='c' c='uv__emfile_trick'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='510' u='c' c='uv__emfile_trick'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='607' u='c' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='615' u='c' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1097' u='c' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1666' u='c' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1671' u='c' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1679' u='c' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='44' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='53' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='58' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='189' u='c' c='uv_tty_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='85' u='c' c='uv__udp_mmsg_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='95' u='c' c='uv__udp_close'/>

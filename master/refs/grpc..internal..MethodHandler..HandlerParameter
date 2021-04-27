@@ -1,0 +1,13 @@
+<def f='include/grpcpp/impl/codegen/rpc_service_method.h' l='42' ll='52'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='53' c='_ZN4grpc8internal13MethodHandler10RunHandlerERKNS1_16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='61' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='109' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='152' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='201' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='294' c='_ZN4grpc8internal18ErrorMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<size>24</size>
+<fun r='_ZN4grpc8internal13MethodHandler16HandlerParameterC1EPNS0_4CallEPNS_13ServerContextEP16grpc_byte_buffer'/>
+<fun r='_ZN4grpc8internal13MethodHandler16HandlerParameterD1Ev'/>
+<mbr r='grpc::internal::MethodHandler::HandlerParameter::call' o='0' t='grpc::internal::Call *'/>
+<mbr r='grpc::internal::MethodHandler::HandlerParameter::server_context' o='64' t='grpc::ServerContext *'/>
+<mbr r='grpc::internal::MethodHandler::HandlerParameter::request' o='128' t='grpc::ByteBuffer'/>

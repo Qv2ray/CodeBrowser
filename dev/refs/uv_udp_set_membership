@@ -1,0 +1,3 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='668' type='int uv_udp_set_membership(uv_udp_t * handle, const char * multicast_addr, const char * interface_addr, uv_membership membership)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1005' ll='1026' type='int uv_udp_set_membership(uv_udp_t * handle, const char * multicast_addr, const char * interface_addr, uv_membership membership)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='100' u='c' c='_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE'/>

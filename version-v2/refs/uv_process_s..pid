@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1042' type='int'/>
+<offset>832</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='71' u='r' c='uv__chld'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='548' u='w' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='578' u='r' c='uv_process_kill'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='69' u='r' c='uv_process_get_pid'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='81' u='r' c='_ZN3uvw13ProcessHandle3pidEv'/>

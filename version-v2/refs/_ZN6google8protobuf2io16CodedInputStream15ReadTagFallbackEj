@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='622' type='google::protobuf::uint32 google::protobuf::io::CodedInputStream::ReadTagFallback(google::protobuf::uint32 first_byte_or_zero)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1013' u='c' c='_ZN6google8protobuf2io16CodedInputStream16ReadTagNoLastTagEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1053' u='c' c='_ZN6google8protobuf2io16CodedInputStream26ReadTagWithCutoffNoLastTagEj'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='619'>// Fallback/slow methods for reading tags. These do not update last_tag_,
+  // but will set legitimate_message_end_ if we are at the end of the input
+  // stream.</doc>

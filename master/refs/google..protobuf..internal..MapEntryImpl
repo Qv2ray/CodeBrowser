@@ -1,0 +1,47 @@
+<def f='include/google/protobuf/map_entry_lite.h' l='99' ll='532'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='538'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='541'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kKeyFieldNumber' t='const int'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kValueFieldNumber' t='const int'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kKeyTag' t='const google::protobuf::uint8'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kValueTag' t='const google::protobuf::uint8'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kTagSize' t='const size_t'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kEntryKeyFieldType' t='const WireFormatLite::FieldType'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kEntryValueFieldType' t='const WireFormatLite::FieldType'/>
+<smbr r='google::protobuf::internal::MapEntryImpl::kEntryDefaultEnumValue' t='const int'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImplC1Ev'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImplC1EPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImplD1Ev'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl3keyEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl5valueEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl11mutable_keyEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl13mutable_valueEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl11GetTypeNameB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl12ByteSizeLongEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl24SerializeWithCachedSizesEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl13GetCachedSizeEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl13IsInitializedEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl3NewEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl3NewEPNS0_5ArenaE'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl13SpaceUsedLongEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl17MergeFromInternalERKNS1_12MapEntryImplIT_T0_T1_T2_XT3_EXT4_EXT5_EEE'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl5ClearEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl21InitAsDefaultInstanceEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl8GetArenaEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl8EnumWrapERKT1_T2_PNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl4WrapERKT1_RKT2_PNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl11set_has_keyEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl7has_keyEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl13clear_has_keyEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl13set_has_valueEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl9has_valueEv'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl15clear_has_valueEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl17GetArenaNoVirtualEv'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::key_' t='google::protobuf::internal::MapEntryImpl::KeyOnMemory'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::value_' t='google::protobuf::internal::MapEntryImpl::ValueOnMemory'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::arena_' t='google::protobuf::Arena *'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::_has_bits_' t='google::protobuf::uint32 [1]'/>
+<fun r='_ZN6google8protobuf8internal12MapEntryImplC1ERKNS1_12MapEntryImplIT_T0_T1_T2_XT3_EXT4_EXT5_EEE'/>

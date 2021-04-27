@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='31' type='ZXing::Flags::Int'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='33' u='w' c='_ZN5ZXing5FlagsC1ENSt15underlying_typeIT_E4typeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='40' u='w' c='_ZN5ZXing5FlagsC1ET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='66' u='r' c='_ZNK5ZXing5Flags5beginEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='66' u='r' c='_ZNK5ZXing5Flags5beginEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='67' u='r' c='_ZNK5ZXing5Flags3endEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='67' u='r' c='_ZNK5ZXing5Flags3endEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='69' u='r' c='_ZNK5ZXing5FlagseqENS_5FlagsIT_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='71' u='w' c='_ZN5ZXing5FlagsaNENS_5FlagsIT_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='72' u='w' c='_ZN5ZXing5FlagsaNET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='73' u='w' c='_ZN5ZXing5FlagsoRENS_5FlagsIT_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='74' u='w' c='_ZN5ZXing5FlagsoRET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='78' u='r' c='_ZNK5ZXing5FlagsanENS_5FlagsIT_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='79' u='r' c='_ZNK5ZXing5FlagsanET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='80' u='r' c='_ZNK5ZXing5FlagsorENS_5FlagsIT_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='81' u='r' c='_ZNK5ZXing5FlagsorET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='92' u='r' c='_ZNK5ZXing5Flags8testFlagET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='92' u='r' c='_ZNK5ZXing5Flags8testFlagET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='98' u='w' c='_ZN5ZXing5Flags5clearEv'/>

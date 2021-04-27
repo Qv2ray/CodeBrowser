@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='500' type='1'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='283' u='r' c='_ZN4grpc8internal17CallOpSendMessage5AddOpEP7grpc_opPm'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='497'>/** Send a message: 0 or more of these operations can occur for each call.
+      This op completes after all bytes for the message have been accepted by
+      outgoing flow control. */</doc>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1707' type='void google::protobuf::DescriptorPool::InternalDontEnforceDependencies()'/>
+<use f='include/google/protobuf/descriptor.h' l='1721' u='c' c='_ZN6google8protobuf14DescriptorPool34InternalSetLazilyBuildDependenciesEv'/>
+<doc f='include/google/protobuf/descriptor.h' l='1704'>// For internal use only:  Changes the behavior of BuildFile() such that it
+  // allows the file to make reference to message types declared in other files
+  // which it did not officially declare as dependencies.</doc>

@@ -1,0 +1,23 @@
+<dec f='include/google/protobuf/message.h' l='324' type='void google::protobuf::Message::SetCachedSize(int size) const'/>
+<doc f='include/google/protobuf/message.h' l='317'>// This is called only by the default implementation of ByteSize(), to
+  // update the cached size.  If you override ByteSize(), you do not need
+  // to override this.  If you do not override ByteSize(), you MUST override
+  // this; the default implementation will crash.
+  //
+  // The method is private because subclasses should never call it; only
+  // override it.  Yes, C++ lets you do that.  Crazy, huh?</doc>
+<ovr f='/v2ray_api.pb.cc' l='398' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='677' c='_ZNK5v2ray4core3app5stats7command4Stat13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='958' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1192' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1463' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1690' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='1885' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse13SetCachedSizeEi'/>
+<ovr f='/v2ray_api.pb.cc' l='2422' c='_ZNK5v2ray4core3app5stats7command6Config13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='412' c='_ZNK5v2ray4core3app6router22DomainObject_Attribute13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='761' c='_ZNK5v2ray4core3app6router12DomainObject13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1087' c='_ZNK5v2ray4core3app6router4CIDR13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1355' c='_ZNK5v2ray4core3app6router5GeoIP13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1635' c='_ZNK5v2ray4core3app6router9GeoIPList13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='1871' c='_ZNK5v2ray4core3app6router7GeoSite13SetCachedSizeEi'/>
+<ovr f='/v2ray_geosite.pb.cc' l='2151' c='_ZNK5v2ray4core3app6router11GeoSiteList13SetCachedSizeEi'/>

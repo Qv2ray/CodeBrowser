@@ -1,0 +1,8 @@
+<use f='include/google/protobuf/stubs/stringpiece.h' l='304' u='c' c='_ZNK6google8protobuf11StringPiece9as_stringB5cxx11Ev'/>
+<def f='include/google/protobuf/stubs/stringpiece.h' l='311' ll='314' type='std::string google::protobuf::StringPiece::ToString() const'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='317' u='c' c='_ZNK6google8protobuf11StringPiececvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEv'/>
+<doc f='include/google/protobuf/stubs/stringpiece.h' l='306'>// We also define ToString() here, since many other string-like
+  // interfaces name the routine that converts to a C++ string
+  // &quot;ToString&quot;, and it&apos;s confusing to have the method that does that
+  // for a StringPiece be called &quot;as_string()&quot;.  We also leave the
+  // &quot;as_string()&quot; method defined here for existing code.</doc>

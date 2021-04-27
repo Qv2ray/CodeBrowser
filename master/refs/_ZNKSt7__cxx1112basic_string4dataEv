@@ -1,0 +1,45 @@
+<def f='include/c++/10/bits/basic_string.h' l='2310' ll='2312' type='const _CharT * std::__cxx11::basic_string::data() const'/>
+<use f='include/c++/10/bits/basic_string.h' l='6803' u='c' c='_ZNKSt4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_'/>
+<use f='include/c++/10/bits/basic_string.h' l='6818' u='c' c='_ZNKSt4hashINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEclERKS5_'/>
+<use f='include/c++/10/bits/basic_string.h' l='6852' u='c' c='_ZNKSt4hashINSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEEEclERKS5_'/>
+<use f='include/c++/10/bits/basic_string.h' l='6867' u='c' c='_ZNKSt4hashINSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEEEEclERKS5_'/>
+<doc f='include/c++/10/bits/basic_string.h' l='2302'>/**
+       *  @brief  Return const pointer to contents.
+       *
+       *  This is a pointer to internal data.  It is undefined to modify
+       *  the contents through the returned pointer. To get a pointer that
+       *  allows modifying the contents use @c &amp;str[0] instead,
+       *  (or in C++17 the non-const @c str.data() overload).
+      */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='330' u='c' c='_ZN3uvw9Utilities5chdirERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='35' u='c' c='_ZN5ZXing11TextDecoder12AppendLatin1ERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERKNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='40' u='c' c='_ZN5ZXing11TextDecoder10FromLatin1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='46' u='c' c='_ZN5ZXing11TextDecoder9ToUnicodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextUtfEncoding.cpp' l='249' u='c' c='_ZN5ZXing15TextUtfEncoding6ToUtf8ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextUtfEncoding.cpp' l='257' u='c' c='_ZN5ZXing15TextUtfEncoding8FromUtf8ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSFieldParser.cpp' l='194' u='c' c='_ZN5ZXing4OneD3RSS11FieldParser27ParseFieldsInGeneralPurposeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS8_'/>
+<use f='include/google/protobuf/stubs/common.h' l='157' u='c' c='_ZN6google8protobuf8internal23IsStructurallyValidUTF8ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1266' u='c' c='_ZN6google8protobuf2io17CodedOutputStream11WriteStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1280' u='c' c='_ZN6google8protobuf2io17CodedOutputStream18WriteStringToArrayERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPh'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='162' u='c' c='_ZN6google8protobuf15UnknownFieldSet15ParseFromStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='62' u='c' c='_ZN4grpc10string_refC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='132' u='c' c='_ZN4grpc22SliceReferencingStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='137' u='c' c='_ZN4grpc21SliceFromCopiedStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_api.pb.cc' l='439' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='491' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='520' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_api.pb.cc' l='718' u='c' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='770' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='799' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_api.pb.cc' l='1233' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1285' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1314' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='362' u='c' c='_ZN22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='430' u='c' c='_ZNK22DomainObject_Attribute24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='464' u='c' c='_ZNK22DomainObject_Attribute39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='708' u='c' c='_ZN12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='764' u='c' c='_ZNK12DomainObject24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='803' u='c' c='_ZNK12DomainObject39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='1017' u='c' c='_ZN7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1067' u='c' c='_ZNK7GeoSite24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1100' u='c' c='_ZNK7GeoSite39InternalSerializeWithCachedSizesToArrayEbPh'/>

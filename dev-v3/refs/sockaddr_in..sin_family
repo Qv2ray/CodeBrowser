@@ -1,0 +1,4 @@
+<dec f='include/netinet/in.h' l='240' macro='1' type='sa_family_t'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='586' u='w' c='uv__udp_maybe_deferred_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='223' u='w' c='uv_ip4_addr'/>

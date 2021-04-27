@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='656' type='int uv_udp_open(uv_udp_t * handle, uv_os_sock_t sock)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='613' u='c' c='uv_accept'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='979' ll='1002' type='int uv_udp_open(uv_udp_t * handle, uv_os_sock_t sock)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='39' u='a' c='_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE'/>

@@ -1,0 +1,3 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.h' l='64' type='ssize_t uv__preadv(int fd, const struct iovec * iov, int iovcnt, int64_t offset)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='470' u='c' c='uv__fs_read'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='156' ll='162' type='ssize_t uv__preadv(int fd, const struct iovec * iov, int iovcnt, int64_t offset)'/>

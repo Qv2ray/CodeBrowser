@@ -1,0 +1,10 @@
+<dec f='qv2ray/test/catch.hpp' l='661' type='Catch::StringRef Catch::StringRef::substr(Catch::StringRef::size_type start, Catch::StringRef::size_type length) const'/>
+<use f='qv2ray/test/catch.hpp' l='10589' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_119extractInstanceNameENS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='11865' u='c' c='_ZN5Catch8CapturerC1ENS_9StringRefERKNS_14SourceLineInfoENS_9ResultWas6OfTypeES1_'/>
+<use f='qv2ray/test/catch.hpp' l='13846' u='c' c='_ZN5Catch4trimENS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='13869' u='c' c='_ZN5Catch14splitStringRefENS_9StringRefEc'/>
+<use f='qv2ray/test/catch.hpp' l='13874' u='c' c='_ZN5Catch14splitStringRefENS_9StringRefEc'/>
+<def f='qv2ray/test/catch.hpp' l='13912' ll='13918' type='Catch::StringRef Catch::StringRef::substr(Catch::StringRef::size_type start, Catch::StringRef::size_type size) const'/>
+<doc f='qv2ray/test/catch.hpp' l='658'>// Returns a substring of [start, start + length).
+        // If start + length &gt; size(), then the substring is [start, size()).
+        // If start &gt; size(), then the substring is empty.</doc>

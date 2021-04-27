@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/repeated_field.h' l='155' type='void google::protobuf::RepeatedField::Reserve(int new_size)'/>
+<use f='include/google/protobuf/repeated_field.h' l='1049' u='c' c='_ZN6google8protobuf13RepeatedFieldC1ERKNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1063' u='c' c='_ZN6google8protobuf13RepeatedFieldC1ETL0__RKS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1157' u='c' c='_ZN6google8protobuf13RepeatedField6ResizeEiRKT_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1187' u='c' c='_ZN6google8protobuf13RepeatedField3AddERKT_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1193' u='c' c='_ZN6google8protobuf13RepeatedField3AddEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='1234' u='c' c='_ZN6google8protobuf13RepeatedField9MergeFromERKNS0_13RepeatedFieldIT_EE'/>
+<def f='include/google/protobuf/repeated_field.h' l='1351' ll='1393' type='void google::protobuf::RepeatedField::Reserve(int new_size)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='153'>// Reserve space to expand the field to at least the given size.  If the
+  // array is grown, it will always be at least doubled in size.</doc>
+<doc f='include/google/protobuf/repeated_field.h' l='1349'>// Avoid inlining of Reserve(): new, copy, and delete[] lead to a significant
+// amount of code bloat.</doc>

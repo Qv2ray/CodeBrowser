@@ -1,0 +1,4 @@
+<def f='qv2ray/test/catch.hpp' l='4084' ll='4094' type='decltype(std::declval&lt;decltype(generatorExpression())&gt;().get()) Catch::Generators::generate(const Catch::SourceLineInfo &amp; lineInfo, const L &amp; generatorExpression)'/>
+<doc f='qv2ray/test/catch.hpp' l='4081'>// Note: The type after -&gt; is weird, because VS2015 cannot parse
+    //       the expression used in the typedef inside, when it is in
+    //       return type. Yeah.</doc>

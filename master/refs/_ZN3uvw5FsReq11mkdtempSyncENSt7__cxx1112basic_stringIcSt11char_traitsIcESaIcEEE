@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='854' type='std::pair&lt;bool, const char *&gt; uvw::FsReq::mkdtempSync(std::string tpl)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='288' ll='292' type='std::pair&lt;bool, const char *&gt; uvw::FsReq::mkdtempSync(std::string tpl)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='845'>/**
+     * @brief Sync [mktemp](http://linux.die.net/man/3/mkdtemp).
+     *
+     * @param tpl Template, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * The actual path of the newly created directory.
+     */</doc>

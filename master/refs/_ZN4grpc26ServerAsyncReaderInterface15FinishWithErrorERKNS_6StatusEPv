@@ -1,0 +1,22 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='692' type='void grpc::ServerAsyncReaderInterface::FinishWithError(const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='671'>/// Indicate that the stream is to be finished with a certain
+  /// non-OK status code.
+  /// Request notification for when the server has sent the appropriate
+  /// signals to the client to end the call.
+  /// Should not be used concurrently with other operations.
+  ///
+  /// This call is meant to end the call with some error, and can be called at
+  /// any point that the server would like to &quot;fail&quot; the call (though note
+  /// this shouldn&apos;t be called concurrently with any other &quot;sending&quot; call, like
+  /// \a AsyncWriterInterface::Write).
+  ///
+  /// This operation will end when the server has finished sending out initial
+  /// metadata (if not sent already), and status, or if some failure occurred
+  /// when trying to do so.
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a status, so it is safe to
+  /// to deallocate once FinishWithError returns.
+  ///
+  /// \param[in] tag Tag identifying this request.
+  /// \param[in] status To be sent to the client as the result of this call.
+  ///     - Note: \a status must have a non-OK code.</doc>

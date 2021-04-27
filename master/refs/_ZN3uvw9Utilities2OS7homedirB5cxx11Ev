@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='495' type='static std::string uvw::Utilities::OS::homedir()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='485'>/**
+         * @brief Gets the current user&apos;s home directory.
+         *
+         * See the official
+         * [documentation](http://docs.libuv.org/en/v1.x/misc.html#c.uv_os_homedir)
+         * for further details.
+         *
+         * @return The current user&apos;s home directory, an empty string in case of
+         * errors.
+         */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='83' ll='85' type='static std::string uvw::Utilities::OS::homedir()'/>

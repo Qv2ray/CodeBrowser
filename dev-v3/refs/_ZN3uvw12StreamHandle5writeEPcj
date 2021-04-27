@@ -1,0 +1,13 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='279' ll='288' type='void uvw::StreamHandle::write(char * data, unsigned int len)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='267'>/**
+     * @brief Writes data to the stream.
+     *
+     * Data are written in order. The handle doesn&apos;t take the ownership of the
+     * data. Be sure that their lifetime overcome the one of the request.
+     *
+     * A WriteEvent event will be emitted when the data have been written.&lt;br/&gt;
+     * An ErrorEvent event will be emitted in case of errors.
+     *
+     * @param data The data to be written to the stream.
+     * @param len The lenght of the submitted data.
+     */</doc>

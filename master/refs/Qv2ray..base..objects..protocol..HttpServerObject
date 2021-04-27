@@ -1,0 +1,14 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='360' ll='375'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='374' c='_ZN6Qv2ray4base7objects8protocol16HttpServerObject8fromJsonERK10QJsonValue'/>
+<size>24</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='358'>//
+        // Http, OutBound</doc>
+<mbr r='Qv2ray::base::objects::protocol::HttpServerObject::address' o='0' t='QString'/>
+<mbr r='Qv2ray::base::objects::protocol::HttpServerObject::port' o='64' t='int'/>
+<mbr r='Qv2ray::base::objects::protocol::HttpServerObject::users' o='128' t='QList&lt;Qv2ray::base::objects::protocol::HttpServerObject::UserObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol16HttpServerObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol16HttpServerObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol16HttpServerObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects8protocol16HttpServerObject6toJsonEv'/>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.hpp' l='72'/>
+<size>24</size>

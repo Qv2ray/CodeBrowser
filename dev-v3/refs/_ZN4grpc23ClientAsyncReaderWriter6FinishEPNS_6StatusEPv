@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='592' ll='600' type='void grpc::ClientAsyncReaderWriter::Finish(grpc::Status * status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='588'>/// See the \a ClientAsyncStreamingInterface.Finish method for semantics.
+  /// Side effect
+  ///   - the \a ClientContext associated with this call is updated with
+  ///     possible initial and trailing metadata sent from the server.</doc>

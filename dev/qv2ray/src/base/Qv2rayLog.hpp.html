@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Qv2rayLog.hpp source code [qv2ray/src/base/Qv2rayLog.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QvLogType "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/base/Qv2rayLog.hpp'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>qv2ray</a>/<a href='..'>src</a>/<a href='./'>base</a>/<a href='Qv2rayLog.hpp.html'>Qv2rayLog.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../3rdparty/QJsonStruct/macroexpansion.hpp.html">"3rdparty/QJsonStruct/macroexpansion.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="Qv2rayBaseApplication.hpp.html">"base/Qv2rayBaseApplication.hpp"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="models/QvStartupConfig.hpp.html">"base/models/QvStartupConfig.hpp"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;QPair&gt;</u></td></tr>
+<tr><th id="8">8</th><td><u>#include &lt;QString&gt;</u></td></tr>
+<tr><th id="9">9</th><td><u>#include &lt;QTextStream&gt;</u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../../../include/c++/10/iostream.html">&lt;iostream&gt;</a></u></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifdef</span> <span class="macro" data-ref="_M/Q_OS_ANDROID">Q_OS_ANDROID</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#include &lt;android/log.h&gt;</u></td></tr>
+<tr><th id="14">14</th><td><u>#<span data-ppcond="12">endif</span></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#define <dfn class="macro" id="_M/NEWLINE" data-ref="_M/NEWLINE">NEWLINE</dfn> "\r\n"</u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/___LOG_EXPAND" data-ref="_M/___LOG_EXPAND">___LOG_EXPAND</dfn>(___x) , QPair&lt;std::string, decltype(___x)&gt;(std::string(#___x), [&amp;] { return ___x; }())</u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/A" data-ref="_M/A">A</dfn>(...) FOREACH_CALL_FUNC(___LOG_EXPAND, __VA_ARGS__)</u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifdef</span> <span class="macro" data-ref="_M/QT_DEBUG">QT_DEBUG</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define QV2RAY_IS_DEBUG true</u></td></tr>
+<tr><th id="22">22</th><td><i>// __FILE__ ":" QT_STRINGIFY(__LINE__),</i></td></tr>
+<tr><th id="23">23</th><td><u>#define QV2RAY_LOG_PREPEND_CONTENT Q_FUNC_INFO,</u></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="20">else</span></u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/QV2RAY_IS_DEBUG" data-ref="_M/QV2RAY_IS_DEBUG">QV2RAY_IS_DEBUG</dfn> false</u></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/QV2RAY_LOG_PREPEND_CONTENT" data-ref="_M/QV2RAY_LOG_PREPEND_CONTENT">QV2RAY_LOG_PREPEND_CONTENT</dfn></u></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_LOG_ARG_" data-ref="_M/_LOG_ARG_">_LOG_ARG_</dfn>(...) QV2RAY_LOG_PREPEND_CONTENT "[" QV_MODULE_NAME "]", __VA_ARGS__</u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/LOG" data-ref="_M/LOG">LOG</dfn>(...) Qv2ray::base::log_internal&lt;QV2RAY_LOG_NORMAL&gt;(_LOG_ARG_(__VA_ARGS__))</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/DEBUG" data-ref="_M/DEBUG">DEBUG</dfn>(...) Qv2ray::base::log_internal&lt;QV2RAY_LOG_DEBUG&gt;(_LOG_ARG_(__VA_ARGS__))</u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>enum</b> <dfn class="type def" id="QvLogType" title='QvLogType' data-ref="QvLogType" data-ref-filename="QvLogType">QvLogType</dfn></td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>    <dfn class="enum" id="QV2RAY_LOG_NORMAL" title='QV2RAY_LOG_NORMAL' data-ref="QV2RAY_LOG_NORMAL" data-ref-filename="QV2RAY_LOG_NORMAL">QV2RAY_LOG_NORMAL</dfn> = <var>0</var>,</td></tr>
+<tr><th id="37">37</th><td>    <dfn class="enum" id="QV2RAY_LOG_DEBUG" title='QV2RAY_LOG_DEBUG' data-ref="QV2RAY_LOG_DEBUG" data-ref-filename="QV2RAY_LOG_DEBUG">QV2RAY_LOG_DEBUG</dfn> = <var>1</var></td></tr>
+<tr><th id="38">38</th><td>};</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><span class="macro" title=" template &lt;&gt; struct QMetaTypeId&lt; const char * &gt; { enum { Defined = 1 }; static int qt_metatype_id() { static QBasicAtomicInt metatype_id = { 0 }; if (const int id = metatype_id.loadAcquire()) return id; const int newId = qRegisterMetaType&lt; const char * &gt;(&quot;const char *&quot;, reinterpret_cast&lt; const char * *&gt;(quintptr(-1))); metatype_id.storeRelease(newId); return newId; } };" data-ref="_M/Q_DECLARE_METATYPE">Q_DECLARE_METATYPE</span>(<em>const</em> <em>char</em> *)</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">base</span></td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>    <b>inline</b> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1Ev" data-ref-filename="_ZN7QStringC1Ev"></span><dfn class="decl def" id="Qv2ray::base::logBuffer" title='Qv2ray::base::logBuffer' data-ref="Qv2ray::base::logBuffer" data-ref-filename="Qv2ray..base..logBuffer">logBuffer</dfn>;</td></tr>
+<tr><th id="45">45</th><td>    <b>inline</b> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1Ev" data-ref-filename="_ZN7QStringC1Ev"></span><dfn class="decl def" id="Qv2ray::base::tempBuffer" title='Qv2ray::base::tempBuffer' data-ref="Qv2ray::base::tempBuffer" data-ref-filename="Qv2ray..base..tempBuffer">tempBuffer</dfn>;</td></tr>
+<tr><th id="46">46</th><td>    <b>inline</b> <span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> <dfn class="decl def" id="Qv2ray::base::logStream" title='Qv2ray::base::logStream' data-ref="Qv2ray::base::logStream" data-ref-filename="Qv2ray..base..logStream">logStream</dfn><span class='ref fn' title='QTextStream::QTextStream' data-ref="_ZN11QTextStreamC1EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE" data-ref-filename="_ZN11QTextStreamC1EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE">{</span> &amp;<a class="ref" href="#Qv2ray::base::logBuffer" title='Qv2ray::base::logBuffer' data-ref="Qv2ray::base::logBuffer" data-ref-filename="Qv2ray..base..logBuffer">logBuffer</a> };</td></tr>
+<tr><th id="47">47</th><td>    <b>inline</b> <span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> <dfn class="decl def" id="Qv2ray::base::tempStream" title='Qv2ray::base::tempStream' data-ref="Qv2ray::base::tempStream" data-ref-filename="Qv2ray..base..tempStream">tempStream</dfn><span class='ref fn' title='QTextStream::QTextStream' data-ref="_ZN11QTextStreamC1EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE" data-ref-filename="_ZN11QTextStreamC1EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE">{</span> &amp;<a class="ref" href="#Qv2ray::base::tempBuffer" title='Qv2ray::base::tempBuffer' data-ref="Qv2ray::base::tempBuffer" data-ref-filename="Qv2ray..base..tempBuffer">tempBuffer</a> };</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <b>inline</b> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl def fn" id="_ZN6Qv2ray4base7ReadLogEv" title='Qv2ray::base::ReadLog' data-ref="_ZN6Qv2ray4base7ReadLogEv" data-ref-filename="_ZN6Qv2ray4base7ReadLogEv">ReadLog</dfn>()</td></tr>
+<tr><th id="50">50</th><td>    {</td></tr>
+<tr><th id="51">51</th><td>        <b>return</b> <a class="ref" href="#Qv2ray::base::logStream" title='Qv2ray::base::logStream' data-ref="Qv2ray::base::logStream" data-ref-filename="Qv2ray..base..logStream">logStream</a>.<span class='ref fn' title='QTextStream::readAll' data-ref="_ZN11QTextStream7readAllEv" data-ref-filename="_ZN11QTextStream7readAllEv">readAll</span>();</td></tr>
+<tr><th id="52">52</th><td>    }</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>    <b>template</b>&lt;<a class="type" href="#QvLogType" title='QvLogType' data-ref="QvLogType" data-ref-filename="QvLogType">QvLogType</a> t, <b>typename</b>... T&gt;</td></tr>
+<tr><th id="55">55</th><td>    <b>inline</b> <em>void</em> <dfn class="decl def fn" id="_ZN6Qv2ray4base12log_internalEDpT0_" title='Qv2ray::base::log_internal' data-ref="_ZN6Qv2ray4base12log_internalEDpT0_" data-ref-filename="_ZN6Qv2ray4base12log_internalEDpT0_">log_internal</dfn>(T... <dfn class="local col8 decl" id="188v" title='v' data-type='T...' data-ref="188v" data-ref-filename="188v">v</dfn>)</td></tr>
+<tr><th id="56">56</th><td>    {</td></tr>
+<tr><th id="57">57</th><td>        ((<a class="ref" href="#Qv2ray::base::logStream" title='Qv2ray::base::logStream' data-ref="Qv2ray::base::logStream" data-ref-filename="Qv2ray..base..logStream">logStream</a> &lt;&lt; <a class="local col8 ref" href="#188v" title='v' data-ref="188v" data-ref-filename="188v">v</a> &lt;&lt; <q>" "</q>), ...);</td></tr>
+<tr><th id="58">58</th><td>        ((<a class="ref" href="#Qv2ray::base::tempStream" title='Qv2ray::base::tempStream' data-ref="Qv2ray::base::tempStream" data-ref-filename="Qv2ray..base..tempStream">tempStream</a> &lt;&lt; <a class="local col8 ref" href="#188v" title='v' data-ref="188v" data-ref-filename="188v">v</a> &lt;&lt; <q>" "</q>), ...);</td></tr>
+<tr><th id="59">59</th><td>        <a class="ref" href="#Qv2ray::base::logStream" title='Qv2ray::base::logStream' data-ref="Qv2ray::base::logStream" data-ref-filename="Qv2ray..base..logStream">logStream</a> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>;</td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="60">ifndef</span> <span class="macro" data-ref="_M/QT_DEBUG">QT_DEBUG</span></u></td></tr>
+<tr><th id="61">61</th><td>        <i>// We only process DEBUG log in Release mode</i></td></tr>
+<tr><th id="62">62</th><td><i>        // Prevent QvCoreApplication nullptr</i></td></tr>
+<tr><th id="63">63</th><td><i>        // TODO: Move log function inside QvCoreApplication</i></td></tr>
+<tr><th id="64">64</th><td>        <b>if</b> (<a class="tu ref" href="#t" title='t' data-use='r' data-ref="t" data-ref-filename="t">t</a> == <a class="enum" href="#QV2RAY_LOG_DEBUG" title='QV2RAY_LOG_DEBUG' data-ref="QV2RAY_LOG_DEBUG" data-ref-filename="QV2RAY_LOG_DEBUG">QV2RAY_LOG_DEBUG</a> &amp;&amp; <a class="ref" href="Qv2rayBaseApplication.hpp.html#Qv2ray::QvCoreApplication" title='Qv2ray::QvCoreApplication' data-ref="Qv2ray::QvCoreApplication" data-ref-filename="Qv2ray..QvCoreApplication">QvCoreApplication</a> &amp;&amp; !<a class="ref" href="Qv2rayBaseApplication.hpp.html#Qv2ray::QvCoreApplication" title='Qv2ray::QvCoreApplication' data-ref="Qv2ray::QvCoreApplication" data-ref-filename="Qv2ray..QvCoreApplication">QvCoreApplication</a>-&gt;<a class="ref field" href="Qv2rayBaseApplication.hpp.html#Qv2ray::Qv2rayApplicationInterface::StartupArguments" title='Qv2ray::Qv2rayApplicationInterface::StartupArguments' data-ref="Qv2ray::Qv2rayApplicationInterface::StartupArguments" data-ref-filename="Qv2ray..Qv2rayApplicationInterface..StartupArguments">StartupArguments</a>.<a class="ref field" href="Qv2rayBaseApplication.hpp.html#Qv2ray::Qv2rayStartupArguments::debugLog" title='Qv2ray::Qv2rayStartupArguments::debugLog' data-ref="Qv2ray::Qv2rayStartupArguments::debugLog" data-ref-filename="Qv2ray..Qv2rayStartupArguments..debugLog">debugLog</a>)</td></tr>
+<tr><th id="65">65</th><td>        {</td></tr>
+<tr><th id="66">66</th><td>            <i>// Discard debug log in non-debug Qv2ray version with</i></td></tr>
+<tr><th id="67">67</th><td><i>            // no-debugLog mode.</i></td></tr>
+<tr><th id="68">68</th><td>            <b>return</b>;</td></tr>
+<tr><th id="69">69</th><td>        }</td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="60">endif</span></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>        <em>const</em> <em>auto</em> <dfn class="local col9 decl" id="189logString" title='logString' data-type='const QString' data-ref="189logString" data-ref-filename="189logString">logString</dfn> = <a class="ref" href="#Qv2ray::base::tempStream" title='Qv2ray::base::tempStream' data-ref="Qv2ray::base::tempStream" data-ref-filename="Qv2ray..base..tempStream">tempStream</a>.<span class='ref fn' title='QTextStream::readAll' data-ref="_ZN11QTextStream7readAllEv" data-ref-filename="_ZN11QTextStream7readAllEv">readAll</span>();</td></tr>
+<tr><th id="73">73</th><td><u>#<span data-ppcond="73">ifdef</span> <span class="macro" data-ref="_M/Q_OS_ANDROID">Q_OS_ANDROID</span></u></td></tr>
+<tr><th id="74">74</th><td>        __android_log_write(ANDROID_LOG_INFO, <q>"Qv2ray"</q>, logString.toStdString().c_str());</td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="73">else</span></u></td></tr>
+<tr><th id="76">76</th><td>        <span class="namespace">std::</span><a class="ref" href="../../../include/c++/10/iostream.html#std::cout" title='std::cout' data-ref="std::cout" data-ref-filename="std..cout">cout</a> <a class="ref fn" href="../../../include/c++/10/bits/basic_string.h.html#_ZStlsRSt13basic_ostreamIT_T0_ERKNSt7__cxx1112basic_stringIS0_S1_T1_EE" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIT_T0_ERKNSt7__cxx1112basic_stringIS0_S1_T1_EE" data-ref-filename="_ZStlsRSt13basic_ostreamIT_T0_ERKNSt7__cxx1112basic_stringIS0_S1_T1_EE">&lt;&lt;</a> <a class="local col9 ref" href="#189logString" title='logString' data-ref="189logString" data-ref-filename="189logString">logString</a>.<span class='ref fn' title='QString::toStdString' data-ref="_ZNK7QString11toStdStringB5cxx11Ev" data-ref-filename="_ZNK7QString11toStdStringB5cxx11Ev">toStdString</span>() <a class="ref fn" href="../../../include/c++/10/ostream.html#_ZNSt13basic_ostreamlsEPFRSt13basic_ostreamIT_T0_ES5_E" title='std::basic_ostream::operator&lt;&lt;' data-ref="_ZNSt13basic_ostreamlsEPFRSt13basic_ostreamIT_T0_ES5_E" data-ref-filename="_ZNSt13basic_ostreamlsEPFRSt13basic_ostreamIT_T0_ES5_E">&lt;&lt;</a> <span class="namespace">std::</span><a class="ref fn" href="../../../include/c++/10/ostream.html#_ZSt4endlRSt13basic_ostreamIT_T0_E" title='std::endl' data-ref="_ZSt4endlRSt13basic_ostreamIT_T0_E" data-ref-filename="_ZSt4endlRSt13basic_ostreamIT_T0_E">endl</a>;</td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="73">endif</span></u></td></tr>
+<tr><th id="78">78</th><td>    }</td></tr>
+<tr><th id="79">79</th><td>} <i>// namespace Qv2ray::base</i></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><b>template</b>&lt;<b>typename</b> TKey, <b>typename</b> TVal&gt;</td></tr>
+<tr><th id="82">82</th><td><span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="decl def fn" id="_ZlsR11QTextStreamRK5QPairIT_T0_E" title='operator&lt;&lt;' data-ref="_ZlsR11QTextStreamRK5QPairIT_T0_E" data-ref-filename="_ZlsR11QTextStreamRK5QPairIT_T0_E"><b>operator</b>&lt;&lt;</dfn>(<span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="local col0 decl" id="190stream" title='stream' data-type='QTextStream &amp;' data-ref="190stream" data-ref-filename="190stream">stream</dfn>, <em>const</em> <span class='type' title='QPair' data-ref="QPair" data-ref-filename="QPair">QPair</span>&lt;TKey, TVal&gt; &amp;<dfn class="local col1 decl" id="191pair" title='pair' data-type='const QPair&lt;TKey, TVal&gt; &amp;' data-ref="191pair" data-ref-filename="191pair">pair</dfn>)</td></tr>
+<tr><th id="83">83</th><td>{</td></tr>
+<tr><th id="84">84</th><td>    <b>return</b> <a class="local col0 ref" href="#190stream" title='stream' data-ref="190stream" data-ref-filename="190stream">stream</a> &lt;&lt; <a class="local col1 ref" href="#191pair" title='pair' data-ref="191pair" data-ref-filename="191pair">pair</a>.first &lt;&lt; <q>": "</q> &lt;&lt; <a class="local col1 ref" href="#191pair" title='pair' data-ref="191pair" data-ref-filename="191pair">pair</a>.second;</td></tr>
+<tr><th id="85">85</th><td>}</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><b>inline</b> <span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="decl def fn" id="_ZlsR11QTextStreamRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='operator&lt;&lt;' data-ref="_ZlsR11QTextStreamRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZlsR11QTextStreamRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"><b>operator</b>&lt;&lt;</dfn>(<span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="local col2 decl" id="192stream" title='stream' data-type='QTextStream &amp;' data-ref="192stream" data-ref-filename="192stream">stream</dfn>, <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> &amp;<dfn class="local col3 decl" id="193ss" title='ss' data-type='const std::string &amp;' data-ref="193ss" data-ref-filename="193ss">ss</dfn>)</td></tr>
+<tr><th id="88">88</th><td>{</td></tr>
+<tr><th id="89">89</th><td>    <b>return</b> <a class="local col2 ref" href="#192stream" title='stream' data-ref="192stream" data-ref-filename="192stream">stream</a> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="local col3 ref" href="#193ss" title='ss' data-ref="193ss" data-ref-filename="193ss">ss</a>.<a class="ref fn" href="../../../include/c++/10/bits/basic_string.h.html#_ZNKSt7__cxx1112basic_string4dataEv" title='std::__cxx11::basic_string::data' data-ref="_ZNKSt7__cxx1112basic_string4dataEv" data-ref-filename="_ZNKSt7__cxx1112basic_string4dataEv">data</a>();</td></tr>
+<tr><th id="90">90</th><td>}</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><b>template</b>&lt;<b>typename</b> TKey, <b>typename</b> TVal&gt;</td></tr>
+<tr><th id="93">93</th><td><span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="decl def fn" id="_ZlsR11QTextStreamRK4QMapIT_T0_E" title='operator&lt;&lt;' data-ref="_ZlsR11QTextStreamRK4QMapIT_T0_E" data-ref-filename="_ZlsR11QTextStreamRK4QMapIT_T0_E"><b>operator</b>&lt;&lt;</dfn>(<span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="local col4 decl" id="194stream" title='stream' data-type='QTextStream &amp;' data-ref="194stream" data-ref-filename="194stream">stream</dfn>, <em>const</em> <span class='type' title='QMap' data-ref="QMap" data-ref-filename="QMap">QMap</span>&lt;TKey, TVal&gt; &amp;<dfn class="local col5 decl" id="195map" title='map' data-type='const QMap&lt;TKey, TVal&gt; &amp;' data-ref="195map" data-ref-filename="195map">map</dfn>)</td></tr>
+<tr><th id="94">94</th><td>{</td></tr>
+<tr><th id="95">95</th><td>    <a class="local col4 ref" href="#194stream" title='stream' data-ref="194stream" data-ref-filename="194stream">stream</a> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"{ "</q>;</td></tr>
+<tr><th id="96">96</th><td>    <b>for</b> (<em>const</em> <em>auto</em> &amp;[k, v] : <a class="local col5 ref" href="#195map" title='map' data-ref="195map" data-ref-filename="195map">map</a>.toStdMap())</td></tr>
+<tr><th id="97">97</th><td>        <a class="local col4 ref" href="#194stream" title='stream' data-ref="194stream" data-ref-filename="194stream">stream</a> &lt;&lt; <span class='type' title='QPair' data-ref="QPair" data-ref-filename="QPair">QPair</span>&lt;TKey, TVal&gt;(<a class="local col6 ref" href="#196k" title='k' data-ref="196k" data-ref-filename="196k">k</a>, <a class="local col7 ref" href="#197v" title='v' data-ref="197v" data-ref-filename="197v">v</a>) &lt;&lt; <q>"; "</q>;</td></tr>
+<tr><th id="98">98</th><td>    <a class="local col4 ref" href="#194stream" title='stream' data-ref="194stream" data-ref-filename="194stream">stream</a> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"}"</q>;</td></tr>
+<tr><th id="99">99</th><td>    <b>return</b> <a class="local col4 ref" href="#194stream" title='stream' data-ref="194stream" data-ref-filename="194stream">stream</a>;</td></tr>
+<tr><th id="100">100</th><td>}</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><b>template</b>&lt;<b>typename</b> TVal&gt;</td></tr>
+<tr><th id="103">103</th><td><span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="decl def fn" id="_ZlsR11QTextStreamRKSt16initializer_listIT_E" title='operator&lt;&lt;' data-ref="_ZlsR11QTextStreamRKSt16initializer_listIT_E" data-ref-filename="_ZlsR11QTextStreamRKSt16initializer_listIT_E"><b>operator</b>&lt;&lt;</dfn>(<span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> &amp;<dfn class="local col8 decl" id="198stream" title='stream' data-type='QTextStream &amp;' data-ref="198stream" data-ref-filename="198stream">stream</dfn>, <em>const</em> <span class="namespace">std::</span><a class="type" href="../../../include/c++/10/initializer_list.html#std::initializer_list" title='std::initializer_list' data-ref="std::initializer_list" data-ref-filename="std..initializer_list">initializer_list</a>&lt;TVal&gt; &amp;<dfn class="local col9 decl" id="199init_list" title='init_list' data-type='const std::initializer_list&lt;TVal&gt; &amp;' data-ref="199init_list" data-ref-filename="199init_list">init_list</dfn>)</td></tr>
+<tr><th id="104">104</th><td>{</td></tr>
+<tr><th id="105">105</th><td>    <b>for</b> (<em>const</em> <em>auto</em> &amp;<dfn class="local col0 decl" id="200x" title='x' data-type='const auto &amp;' data-ref="200x" data-ref-filename="200x">x</dfn> : <a class="local col9 ref" href="#199init_list" title='init_list' data-ref="199init_list" data-ref-filename="199init_list">init_list</a>)</td></tr>
+<tr><th id="106">106</th><td>        <a class="local col8 ref" href="#198stream" title='stream' data-ref="198stream" data-ref-filename="198stream">stream</a> &lt;&lt; <a class="local col0 ref" href="#200x" title='x' data-ref="200x" data-ref-filename="200x">x</a>;</td></tr>
+<tr><th id="107">107</th><td>    <b>return</b> <a class="local col8 ref" href="#198stream" title='stream' data-ref="198stream" data-ref-filename="198stream">stream</a>;</td></tr>
+<tr><th id="108">108</th><td>}</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,44 @@
+<def f='include/c++/10/bits/basic_string.h' l='2832' ll='2835' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; std::__cxx11::basic_string::substr(std::__cxx11::basic_string::size_type __pos = 0, std::__cxx11::basic_string::size_type __n = npos) const'/>
+<doc f='include/c++/10/bits/basic_string.h' l='2820'>/**
+       *  @brief  Get a substring.
+       *  @param __pos  Index of first character (default 0).
+       *  @param __n  Number of characters in substring (default remainder).
+       *  @return  The new string.
+       *  @throw  std::out_of_range  If __pos &gt; size().
+       *
+       *  Construct and return a new string using the @a __n
+       *  characters starting at @a __pos.  If the string is too
+       *  short, use the remainder of the characters.  If @a __pos is
+       *  beyond the end of the string, out_of_range is thrown.
+      */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='289' u='c' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='358' u='c' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='157' u='c' c='_ZNK5ZXing4OneD14Raw2TxtDecoder4textB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEANManufacturerOrgSupport.cpp' l='151' u='c' c='_ZN5ZXing4OneD25EANManufacturerOrgSupport23LookupCountryIdentifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='85' u='c' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='30' u='c' c='_ZN5ZXing4OneDL17MaybeReturnResultEONS_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='88' u='c' c='_ZN5ZXing4OneD23UPCEANExtension5SupportL21ParseExtension5StringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSFieldParser.cpp' l='210' u='c' c='_ZN5ZXing4OneD3RSS11FieldParser27ParseFieldsInGeneralPurposeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSFieldParser.cpp' l='211' u='c' c='_ZN5ZXing4OneD3RSS11FieldParser27ParseFieldsInGeneralPurposeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSFieldParser.cpp' l='212' u='c' c='_ZN5ZXing4OneD3RSS11FieldParser27ParseFieldsInGeneralPurposeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='496' u='c' c='_ZN5ZXing6Pdf417L21DecodeBase900toBase10ERKSt6vectorIiSaIiEEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='395' u='c' c='_ZN5ZXing6Pdf417L13EncodeNumericERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='575' u='c' c='_ZN5ZXing6Pdf41716HighLevelEncoder15EncodeHighLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_10CompactionENS_12CharacterSetE'/>
+<use f='qv2ray/test/catch.hpp' l='8568' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iteratordeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8867' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='8868' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='9316' u='c' c='_ZN5Catch5clara6detail7ExeName3setERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='13664' u='c' c='_ZN5Catch4trimERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='13684' u='c' c='_ZN5Catch14replaceInPlaceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS5_S8_'/>
+<use f='qv2ray/test/catch.hpp' l='13684' u='c' c='_ZN5Catch14replaceInPlaceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS5_S8_'/>
+<use f='qv2ray/test/catch.hpp' l='13807' u='c' c='_ZNK5Catch16TagAliasRegistry13expandAliasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='13809' u='c' c='_ZNK5Catch16TagAliasRegistry13expandAliasesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14154' u='c' c='_ZN5Catch16extractClassNameB5cxx11ERKNS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='14683' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14683' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14687' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14879' u='c' c='_ZN5Catch10fpToStringB5cxx11ET_i'/>
+<use f='qv2ray/test/catch.hpp' l='15178' u='c' c='_ZN5Catch15WildcardPatternC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13CaseSensitive6ChoiceE'/>
+<use f='qv2ray/test/catch.hpp' l='15182' u='c' c='_ZN5Catch15WildcardPatternC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13CaseSensitive6ChoiceE'/>
+<use f='qv2ray/test/catch.hpp' l='15445' u='c' c='_ZN5Catch9XmlWriter10endElementENS_13XmlFormattingE'/>
+<use f='qv2ray/test/catch.hpp' l='16601' u='c' c='_ZN5Catch12_GLOBAL__N_111fileNameTagERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS7_EE'/>

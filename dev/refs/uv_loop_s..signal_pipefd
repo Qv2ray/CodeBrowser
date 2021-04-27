@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='int [2]'/>
+<offset>4416</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='59' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='60' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='207' u='r' c='uv__signal_handler'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='263' u='r' c='uv__signal_loop_once_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='266' u='r' c='uv__signal_loop_once_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='272' u='r' c='uv__signal_loop_once_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='281' u='r' c='uv__signal_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='282' u='r' c='uv__signal_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='283' u='w' c='uv__signal_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='284' u='w' c='uv__signal_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='305' u='r' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='306' u='r' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='307' u='w' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='310' u='r' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='311' u='r' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='312' u='w' c='uv__signal_loop_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='427' u='r' c='uv__signal_event'/>

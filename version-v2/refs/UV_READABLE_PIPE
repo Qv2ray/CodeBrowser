@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='923' type='16'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='918'>/*
+   * When UV_CREATE_PIPE is specified, UV_READABLE_PIPE and UV_WRITABLE_PIPE
+   * determine the direction of flow, from the child process&apos; perspective. Both
+   * flags may be specified to create a duplex data stream.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='235' u='r' c='uv__process_open_stream'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='38'/>

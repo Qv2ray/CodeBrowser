@@ -1,0 +1,38 @@
+<def f='include/google/protobuf/message_lite.h' l='187' type='::google::protobuf::Arena * google::protobuf::MessageLite::GetArena() const'/>
+<use f='include/google/protobuf/message_lite.h' l='198' u='c' c='_ZNK6google8protobuf11MessageLite20GetMaybeArenaPointerEv'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='62' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage8GetArenaEv'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='114' u='c' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler8GetArenaEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='117' u='c' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler20GetMaybeArenaPointerEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/repeated_field.h' l='687' u='c' c='_ZN6google8protobuf8internal18GenericTypeHandler8GetArenaEPT_'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='338' c='_ZNK6google8protobuf17FileDescriptorSet8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='470' c='_ZNK6google8protobuf19FileDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='807' c='_ZNK6google8protobuf30DescriptorProto_ExtensionRange8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='964' c='_ZNK6google8protobuf29DescriptorProto_ReservedRange8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1103' c='_ZNK6google8protobuf15DescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1384' c='_ZNK6google8protobuf21ExtensionRangeOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1519' c='_ZNK6google8protobuf20FieldDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1917' c='_ZNK6google8protobuf20OneofDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2081' c='_ZNK6google8protobuf37EnumDescriptorProto_EnumReservedRange8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2220' c='_ZNK6google8protobuf19EnumDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2435' c='_ZNK6google8protobuf24EnumValueDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2609' c='_ZNK6google8protobuf22ServiceDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2786' c='_ZNK6google8protobuf21MethodDescriptorProto8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3024' c='_ZNK6google8protobuf11FileOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3557' c='_ZNK6google8protobuf14MessageOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3732' c='_ZNK6google8protobuf12FieldOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3983' c='_ZNK6google8protobuf12OneofOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4118' c='_ZNK6google8protobuf11EnumOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4273' c='_ZNK6google8protobuf16EnumValueOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4418' c='_ZNK6google8protobuf14ServiceOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4563' c='_ZNK6google8protobuf13MethodOptions8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4746' c='_ZNK6google8protobuf28UninterpretedOption_NamePart8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4905' c='_ZNK6google8protobuf19UninterpretedOption8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5150' c='_ZNK6google8protobuf23SourceCodeInfo_Location8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5374' c='_ZNK6google8protobuf14SourceCodeInfo8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5508' c='_ZNK6google8protobuf28GeneratedCodeInfo_Annotation8GetArenaEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5688' c='_ZNK6google8protobuf17GeneratedCodeInfo8GetArenaEv'/>
+<doc f='include/google/protobuf/message_lite.h' l='182'>// Get the arena, if any, associated with this message. Virtual method
+  // required for generic operations but most arena-related operations should
+  // use the GetArenaNoVirtual() generated-code method. Default implementation
+  // to reduce code size by avoiding the need for per-type implementations
+  // when types do not implement arena support.</doc>

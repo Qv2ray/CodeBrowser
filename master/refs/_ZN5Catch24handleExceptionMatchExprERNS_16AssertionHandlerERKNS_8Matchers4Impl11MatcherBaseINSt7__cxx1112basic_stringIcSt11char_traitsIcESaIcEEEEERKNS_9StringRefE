@@ -1,0 +1,6 @@
+<dec f='qv2ray/test/catch.hpp' l='3793' type='void Catch::handleExceptionMatchExpr(Catch::AssertionHandler &amp; handler, const Catch::StringMatcher &amp; matcher, const Catch::StringRef &amp; matcherString)'/>
+<use f='qv2ray/test/catch.hpp' l='8270' u='c' c='_ZN5Catch24handleExceptionMatchExprERNS_16AssertionHandlerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_9StringRefE'/>
+<def f='qv2ray/test/catch.hpp' l='8381' ll='8385' type='void Catch::handleExceptionMatchExpr(Catch::AssertionHandler &amp; handler, const Catch::StringMatcher &amp; matcher, const Catch::StringRef &amp; matcherString)'/>
+<doc f='qv2ray/test/catch.hpp' l='8378'>// This is the general overload that takes a any string matcher
+    // There is another overload, in catch_assertionhandler.h/.cpp, that only takes a string and infers
+    // the Equals matcher (so the header does not mention matchers)</doc>

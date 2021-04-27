@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='301' type='bool uvw::UDPHandle::multicastLoop(bool enable = true)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='104' ll='106' type='bool uvw::UDPHandle::multicastLoop(bool enable = true)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='293'>/**
+     * @brief Sets IP multicast loop flag.
+     *
+     * This makes multicast packets loop back to local sockets.
+     *
+     * @param enable True to enable multicast loop, false otherwise.
+     * @return True in case of success, false otherwise.
+     */</doc>

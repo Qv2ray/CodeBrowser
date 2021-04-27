@@ -1,0 +1,10 @@
+<def f='include/c++/10/streambuf' l='561' ll='566' type='void std::basic_streambuf::setp(std::basic_streambuf::char_type * __pbeg, std::basic_streambuf::char_type * __pend)'/>
+<doc f='include/c++/10/streambuf' l='554'>/**
+       *  @brief  Setting the three write area pointers.
+       *  @param  __pbeg  A pointer.
+       *  @param  __pend  A pointer.
+       *  @post  @a __pbeg == @c pbase(), @a __pbeg == @c pptr(), and
+       *         @a __pend == @c epptr()
+      */</doc>
+<use f='qv2ray/test/catch.hpp' l='13470' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImplC1Ev'/>
+<use f='qv2ray/test/catch.hpp' l='13493' u='c' c='_ZN5Catch6Detail12_GLOBAL__N_113StreamBufImpl4syncEv'/>

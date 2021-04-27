@@ -1,0 +1,23 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='unsigned int'/>
+<offset>896</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='829' u='r' c='maybe_resize'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='834' u='r' c='maybe_resize'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='835' u='r' c='maybe_resize'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='847' u='r' c='maybe_resize'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='853' u='w' c='maybe_resize'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='912' u='r' c='uv__io_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='958' u='r' c='uv__fd_exists'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='146' u='r' c='uv__platform_invalidate_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='147' u='r' c='uv__platform_invalidate_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='237' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='237' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='371' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='372' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='384' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='384' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='440' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='441' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='51' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='110' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='133' u='r' c='uv_loop_fork'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='183' u='w' c='uv__loop_close'/>

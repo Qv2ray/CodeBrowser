@@ -1,0 +1,14 @@
+<def f='include/google/protobuf/extension_set.h' l='120' ll='126'/>
+<ovr f='include/google/protobuf/extension_set.h' l='130' c='google::protobuf::internal::GeneratedExtensionFinder'/>
+<use f='include/google/protobuf/extension_set.h' l='130'/>
+<use f='include/google/protobuf/extension_set.h' l='363' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_12FieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='384' c='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='666' c='_ZN6google8protobuf8internal12ExtensionSet24FindExtensionInfoFromTagEjPNS1_15ExtensionFinderEPiPNS1_13ExtensionInfoEPb'/>
+<use f='include/google/protobuf/extension_set.h' l='675' c='_ZN6google8protobuf8internal12ExtensionSet32FindExtensionInfoFromFieldNumberEiiPNS1_15ExtensionFinderEPNS1_13ExtensionInfoEPb'/>
+<use f='include/google/protobuf/extension_set.h' l='693' c='_ZN6google8protobuf8internal12ExtensionSet21ParseFieldMaybeLazilyEiiPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<use f='include/google/protobuf/extension_set.h' l='708' c='_ZN6google8protobuf8internal12ExtensionSet19ParseMessageSetItemEPNS0_2io16CodedInputStreamEPNS1_15ExtensionFinderEPNS1_22MessageSetFieldSkipperE'/>
+<size>8</size>
+<doc f='include/google/protobuf/extension_set.h' l='118'>// Abstract interface for an object which looks up extension definitions.  Used
+// when parsing.</doc>
+<fun r='_ZN6google8protobuf8internal15ExtensionFinderD1Ev'/>
+<fun r='_ZN6google8protobuf8internal15ExtensionFinder4FindEiPNS1_13ExtensionInfoE'/>

@@ -1,0 +1,35 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='40' c='_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.h' l='34' ll='62'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.h' l='39' c='_ZN5ZXing6QRCode17FormatInformation23DecodeFormatInformationEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.h' l='51' c='_ZNK5ZXing6QRCode17FormatInformationeqERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.h' l='61' c='_ZN5ZXing6QRCode17FormatInformation25DoDecodeFormatInformationEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='94' c='_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.h' l='26'>/**
+* &lt;p&gt;Encapsulates a QR Code&apos;s format information, including the data mask used and
+* error correction level.&lt;/p&gt;
+*
+* @author Sean Owen
+* @see DataMask
+* @see ErrorCorrectionLevel
+*/</doc>
+<fun r='_ZN5ZXing6QRCode17FormatInformationC1Ev'/>
+<fun r='_ZN5ZXing6QRCode17FormatInformation23DecodeFormatInformationEii'/>
+<fun r='_ZNK5ZXing6QRCode17FormatInformation20errorCorrectionLevelEv'/>
+<fun r='_ZNK5ZXing6QRCode17FormatInformation8dataMaskEv'/>
+<fun r='_ZNK5ZXing6QRCode17FormatInformation7isValidEv'/>
+<fun r='_ZNK5ZXing6QRCode17FormatInformationeqERKS1_'/>
+<mbr r='ZXing::QRCode::FormatInformation::_errorCorrectionLevel' o='0' t='ZXing::QRCode::ErrorCorrectionLevel'/>
+<mbr r='ZXing::QRCode::FormatInformation::_dataMask' o='32' t='uint8_t'/>
+<fun r='_ZN5ZXing6QRCode17FormatInformationC1Ei'/>
+<fun r='_ZN5ZXing6QRCode17FormatInformation25DoDecodeFormatInformationEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='422' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='461' c='_ZN5ZXing6QRCodeL6ReMaskERNS_9BitMatrixERKNS0_17FormatInformationE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='475' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.cpp' l='86' c='_ZN5ZXing6QRCode17FormatInformation23DecodeFormatInformationEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFormatInformation.cpp' l='100' c='_ZN5ZXing6QRCode17FormatInformation25DoDecodeFormatInformationEii'/>
+<size>8</size>
+<fun r='_ZN5ZXing6QRCode17FormatInformationC1Ei'/>
+<fun r='_ZN5ZXing6QRCode17FormatInformation23DecodeFormatInformationEii'/>
+<fun r='_ZN5ZXing6QRCode17FormatInformation25DoDecodeFormatInformationEii'/>

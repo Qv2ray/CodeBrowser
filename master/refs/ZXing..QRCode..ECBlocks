@@ -1,0 +1,21 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRECB.h' l='45' ll='66'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='56' c='_ZNK5ZXing6QRCode7Version16ecBlocksForLevelENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='78'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='81' c='_ZN5ZXing6QRCode7VersionC1EiSt16initializer_listIiERKSt5arrayINS0_8ECBlocksELm4EE'/>
+<size>20</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRECB.h' l='37'>/**
+* &lt;p&gt;Encapsulates a set of error-correction blocks in one symbol version. Most versions will
+* use blocks of differing sizes within one version, so, this encapsulates the parameters for
+* each set of blocks. It also holds the number of error-correction codewords per block since it
+* will be the same across all blocks within one version.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::QRCode::ECBlocks::codewordsPerBlock' o='0' t='int'/>
+<mbr r='ZXing::QRCode::ECBlocks::blocks' o='32' t='std::array&lt;ECB, 2&gt;'/>
+<fun r='_ZNK5ZXing6QRCode8ECBlocks9numBlocksEv'/>
+<fun r='_ZNK5ZXing6QRCode8ECBlocks14totalCodewordsEv'/>
+<fun r='_ZNK5ZXing6QRCode8ECBlocks18totalDataCodewordsEv'/>
+<fun r='_ZNK5ZXing6QRCode8ECBlocks10blockArrayEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='298' c='_ZN5ZXing6QRCode7VersionC1EiSt16initializer_listIiERKSt5arrayINS0_8ECBlocksELm4EE'/>
+<size>20</size>

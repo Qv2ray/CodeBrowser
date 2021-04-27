@@ -1,0 +1,46 @@
+<def f='include/c++/10/bits/shared_ptr.h' l='871' ll='877' type='shared_ptr&lt;_Tp&gt; std::make_shared(_Args &amp;&amp;... __args)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='41' u='c' c='_ZN7QtNodes9NodeState11setReactionENS0_22ReactToConnectionStateENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEE'/>
+<use f='include/c++/10/condition_variable' l='291' u='c' c='_ZNSt3_V222condition_variable_anyC1Ev'/>
+<use f='include/c++/10/future' l='1059' u='c' c='_ZNSt7promiseC1Ev'/>
+<use f='include/c++/10/future' l='1170' u='c' c='_ZNSt7promiseIRT_EC1Ev'/>
+<use f='include/c++/10/future' l='1260' u='c' c='_ZNSt7promiseIvEC1Ev'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='42' u='c' c='_ZN7QtNodes9FlowSceneC1EP7QObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='52' u='c' c='_ZN7QtNodes9FlowScene16createConnectionENS_8PortTypeERNS_4NodeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='65' u='c' c='_ZN7QtNodes9FlowScene16createConnectionERNS_4NodeEiS2_iRKSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='29' u='c' c='_ZN3uvw9TTYHandle13resetModeMemoEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='109' u='c' c='_ZN3uvw9Utilities2OS5unameEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='24' u='c'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='25' u='c'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='26' u='c'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='27' u='c'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='69' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='76' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='82' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='219' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>
+<use f='qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.cpp' l='10' u='c' c='_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.hpp' l='32' u='c' c='_ZN35BuiltinSubscriptionAdapterInterfaceC1Ev'/>
+<use f='qv2ray/src/plugins/subscription-adapters/core/SubscriptionAdapter.hpp' l='33' u='c' c='_ZN35BuiltinSubscriptionAdapterInterfaceC1Ev'/>
+<use f='qv2ray/src/plugins/subscription-adapters/BuiltinSubscriptionAdapter.cpp' l='8' u='c' c='_ZN33InternalSubscriptionSupportPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/plugins/utils/BuiltinUtils.cpp' l='9' u='c' c='_ZN19InternalUtilsPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='90' u='c' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='54' u='c' c='_ZN6Qv2ray2ui10nodemodels16InboundNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='59' u='c' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='64' u='c' c='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='68' u='c' c='_ZN6Qv2ray2ui10nodemodels22ChainOutboundNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='170' u='c' c='_ZN14NodeDispatcher13CreateInboundE13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='193' u='c' c='_ZN14NodeDispatcher14CreateOutboundEN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='229' u='c' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/test/catch.hpp' l='9294' u='c' c='_ZN5Catch5clara6detail7ExeNameC1Ev'/>
+<use f='qv2ray/test/catch.hpp' l='9297' u='c' c='_ZN5Catch5clara6detail7ExeNameC1ERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='9368' u='c' c='_ZN5Catch5clara6detail3OptC1ERb'/>
+<use f='qv2ray/test/catch.hpp' l='12501' u='c' c='_ZN5Catch10Generators16GeneratorTracker7acquireERNS_16TestCaseTracking14TrackerContextERKNS2_15NameAndLocationE'/>
+<use f='qv2ray/test/catch.hpp' l='13356' u='c' c='_ZN5Catch7Session6configEv'/>
+<use f='qv2ray/test/catch.hpp' l='14185' u='c' c='_ZN5Catch16TestCaseTracking14TrackerContext8startRunEv'/>
+<use f='qv2ray/test/catch.hpp' l='14358' u='c' c='_ZN5Catch16TestCaseTracking14SectionTracker7acquireERNS0_14TrackerContextERKNS0_15NameAndLocationE'/>
+<use f='qv2ray/test/catch.hpp' l='14700' u='c' c='_ZN5Catch14TestSpecParser14addNamePatternEv'/>
+<use f='qv2ray/test/catch.hpp' l='14702' u='c' c='_ZN5Catch14TestSpecParser14addNamePatternEv'/>
+<use f='qv2ray/test/catch.hpp' l='14718' u='c' c='_ZN5Catch14TestSpecParser13addTagPatternEv'/>
+<use f='qv2ray/test/catch.hpp' l='14720' u='c' c='_ZN5Catch14TestSpecParser13addTagPatternEv'/>
+<use f='qv2ray/test/catch.hpp' l='14725' u='c' c='_ZN5Catch14TestSpecParser13addTagPatternEv'/>
+<use f='qv2ray/test/catch.hpp' l='14728' u='c' c='_ZN5Catch14TestSpecParser13addTagPatternEv'/>
+<use f='qv2ray/test/src/components/latency/TestRealPing.cpp' l='15' u='c' c='____C_A_T_C_H____T_E_S_T____2'/>

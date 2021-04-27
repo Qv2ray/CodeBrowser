@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/byte_buffer.h' l='50' type='grpc_byte_buffer * grpc_byte_buffer_copy(grpc_byte_buffer * bb)'/>
+<doc f='include/grpc/impl/codegen/byte_buffer.h' l='46'>/** Copies input byte buffer \a bb.
+ *
+ * Increases the reference count of all the source slices. The user is
+ * responsible for calling grpc_byte_buffer_destroy over the returned copy. */</doc>

@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1735' type='int uv_thread_create(uv_thread_t * tid, uv_thread_cb entry, void * arg)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='225' u='c' c='init_threads'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='210' ll='214' type='int uv_thread_create(uv_thread_t * tid, void (*)(void *) entry, void * arg)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='38' u='c' c='_ZN3uvw6Thread3runEv'/>

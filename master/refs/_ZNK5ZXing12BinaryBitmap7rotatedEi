@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='130' ll='133' type='std::shared_ptr&lt;BinaryBitmap&gt; ZXing::BinaryBitmap::rotated(int ) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='270' c='_ZNK5ZXing24GlobalHistogramBinarizer7rotatedEi'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='123'>/**
+	* Returns a new object with rotated image data by 90 degrees clockwise.
+	* Only callable if {@link #isRotateSupported()} is true.
+	*
+	* @param degreeCW degree in clockwise direction, possible values are 90, 180 and 270
+	* @return A rotated version of this object.
+	*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='130'>/*degreeCW*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='209' u='c' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>

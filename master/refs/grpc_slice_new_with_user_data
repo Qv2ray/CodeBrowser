@@ -1,0 +1,5 @@
+<dec f='include/grpc/slice.h' l='55' type='grpc_slice grpc_slice_new_with_user_data(void * p, size_t len, void (*)(void *) destroy, void * user_data)'/>
+<doc f='include/grpc/slice.h' l='51'>/** Equivalent to grpc_slice_new, but with a separate pointer that is
+   passed to the destroy function.  This function can be useful when
+   the data is part of a larger structure that must be destroyed when
+   the data is no longer needed. */</doc>

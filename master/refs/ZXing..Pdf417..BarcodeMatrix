@@ -1,0 +1,24 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='78' ll='128'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='141' c='_ZNK5ZXing6Pdf4177Encoder20generateBarcodeLogicERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='408' c='_ZN5ZXing6Pdf417L14EncodeLowLevelERKSt6vectorIiSaIiEEiiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='410' c='_ZN5ZXing6Pdf417L14EncodeLowLevelERKSt6vectorIiSaIiEEiiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='513' c='_ZNK5ZXing6Pdf4177Encoder20generateBarcodeLogicERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='73'>/**
+* Holds all of the information for a barcode in a format where it can be easily accessable
+*
+* @author Jacob Haynes
+*/</doc>
+<mbr r='ZXing::Pdf417::BarcodeMatrix::_matrix' o='0' t='std::vector&lt;BarcodeRow&gt;'/>
+<mbr r='ZXing::Pdf417::BarcodeMatrix::_width' o='192' t='int'/>
+<mbr r='ZXing::Pdf417::BarcodeMatrix::_currentRow' o='224' t='int'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrixC1Ev'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrixC1Eii'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrix4initEii'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrix3setEiib'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrix8startRowEv'/>
+<fun r='_ZNK5ZXing6Pdf41713BarcodeMatrix10currentRowEv'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrix10currentRowEv'/>
+<fun r='_ZN5ZXing6Pdf41713BarcodeMatrix15getScaledMatrixEiiRSt6vectorIS2_IbSaIbEESaIS4_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='87' c='_ZNK5ZXing6Pdf4176Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<size>32</size>

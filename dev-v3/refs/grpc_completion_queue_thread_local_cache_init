@@ -1,0 +1,5 @@
+<dec f='include/grpc/grpc.h' l='171' type='void grpc_completion_queue_thread_local_cache_init(grpc_completion_queue * cq)'/>
+<doc f='include/grpc/grpc.h' l='167'>/** Initializes a thread local cache for \a cq.
+ * grpc_flush_cq_tls_cache() MUST be called on the same thread,
+ * with the same cq.
+ */</doc>

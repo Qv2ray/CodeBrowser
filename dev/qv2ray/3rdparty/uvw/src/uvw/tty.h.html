@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tty.h source code [qv2ray/3rdparty/uvw/src/uvw/tty.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::TTYHandle,uvw::details::ResetModeMemo,uvw::details::UVTTYModeT,uvw::details::UVTTYVTermStateT "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/tty.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='tty.h.html'>tty.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_TTY_INCLUDE_H">UVW_TTY_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_TTY_INCLUDE_H" data-ref="_M/UVW_TTY_INCLUDE_H">UVW_TTY_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="stream.h.html">"stream.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>struct</b> <dfn class="type def" id="uvw::details::ResetModeMemo" title='uvw::details::ResetModeMemo' data-ref="uvw::details::ResetModeMemo" data-ref-filename="uvw..details..ResetModeMemo">ResetModeMemo</dfn> {</td></tr>
+<tr><th id="19">19</th><td>    <a class="decl fn" href="tty.cpp.html#_ZN3uvw7details13ResetModeMemoD1Ev" title='uvw::details::ResetModeMemo::~ResetModeMemo' data-ref="_ZN3uvw7details13ResetModeMemoD1Ev" data-ref-filename="_ZN3uvw7details13ResetModeMemoD1Ev" id="_ZN3uvw7details13ResetModeMemoD1Ev">~ResetModeMemo</a>();</td></tr>
+<tr><th id="20">20</th><td>};</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVTTYModeT" title='uvw::details::UVTTYModeT' data-ref="uvw::details::UVTTYModeT" data-ref-filename="uvw..details..UVTTYModeT">UVTTYModeT</dfn>: std::underlying_type_t&lt;uv_tty_mode_t&gt; {</td></tr>
+<tr><th id="24">24</th><td>    <dfn class="enum" id="uvw::details::UVTTYModeT::NORMAL" title='uvw::details::UVTTYModeT::NORMAL' data-ref="uvw::details::UVTTYModeT::NORMAL" data-ref-filename="uvw..details..UVTTYModeT..NORMAL">NORMAL</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_TTY_MODE_NORMAL" title='UV_TTY_MODE_NORMAL' data-ref="UV_TTY_MODE_NORMAL" data-ref-filename="UV_TTY_MODE_NORMAL">UV_TTY_MODE_NORMAL</a>,</td></tr>
+<tr><th id="25">25</th><td>    <dfn class="enum" id="uvw::details::UVTTYModeT::RAW" title='uvw::details::UVTTYModeT::RAW' data-ref="uvw::details::UVTTYModeT::RAW" data-ref-filename="uvw..details..UVTTYModeT..RAW">RAW</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_TTY_MODE_RAW" title='UV_TTY_MODE_RAW' data-ref="UV_TTY_MODE_RAW" data-ref-filename="UV_TTY_MODE_RAW">UV_TTY_MODE_RAW</a>,</td></tr>
+<tr><th id="26">26</th><td>    <dfn class="enum" id="uvw::details::UVTTYModeT::IO" title='uvw::details::UVTTYModeT::IO' data-ref="uvw::details::UVTTYModeT::IO" data-ref-filename="uvw..details..UVTTYModeT..IO">IO</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_TTY_MODE_IO" title='UV_TTY_MODE_IO' data-ref="UV_TTY_MODE_IO" data-ref-filename="UV_TTY_MODE_IO">UV_TTY_MODE_IO</a></td></tr>
+<tr><th id="27">27</th><td>};</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVTTYVTermStateT" title='uvw::details::UVTTYVTermStateT' data-ref="uvw::details::UVTTYVTermStateT" data-ref-filename="uvw..details..UVTTYVTermStateT">UVTTYVTermStateT</dfn>: std::underlying_type_t&lt;uv_tty_vtermstate_t&gt; {</td></tr>
+<tr><th id="31">31</th><td>    <dfn class="enum" id="uvw::details::UVTTYVTermStateT::SUPPORTED" title='uvw::details::UVTTYVTermStateT::SUPPORTED' data-ref="uvw::details::UVTTYVTermStateT::SUPPORTED" data-ref-filename="uvw..details..UVTTYVTermStateT..SUPPORTED">SUPPORTED</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_TTY_SUPPORTED" title='UV_TTY_SUPPORTED' data-ref="UV_TTY_SUPPORTED" data-ref-filename="UV_TTY_SUPPORTED">UV_TTY_SUPPORTED</a>,</td></tr>
+<tr><th id="32">32</th><td>    <dfn class="enum" id="uvw::details::UVTTYVTermStateT::UNSUPPORTED" title='uvw::details::UVTTYVTermStateT::UNSUPPORTED' data-ref="uvw::details::UVTTYVTermStateT::UNSUPPORTED" data-ref-filename="uvw..details..UVTTYVTermStateT..UNSUPPORTED">UNSUPPORTED</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_TTY_UNSUPPORTED" title='UV_TTY_UNSUPPORTED' data-ref="UV_TTY_UNSUPPORTED" data-ref-filename="UV_TTY_UNSUPPORTED">UV_TTY_UNSUPPORTED</a></td></tr>
+<tr><th id="33">33</th><td>};</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">@brief</span> The TTYHandle handle.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * TTY handles represent a stream for the console.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * To create a `TTYHandle` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * * A valid FileHandle. Usually the file descriptor will be:</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *     * `uvw::StdIN` or `0` for `stdin`</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *     * `uvw::StdOUT` or `1` for `stdout`</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *     * `uvw::StdERR` or `2` for `stderr`</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * * A boolean value that specifies the plan on calling `read()` with this</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * stream. Remember that `stdin` is readable, `stdout` is not.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * See the official</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * [documentation](<a href="http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_init">http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_init</a>)</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * for further details.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="57">57</th><td><b>class</b> <dfn class="type def" id="uvw::TTYHandle" title='uvw::TTYHandle' data-ref="uvw::TTYHandle" data-ref-filename="uvw..TTYHandle">TTYHandle</dfn> final: <b>public</b> <a class="type" href="stream.h.html#uvw::StreamHandle" title='uvw::StreamHandle' data-ref="uvw::StreamHandle" data-ref-filename="uvw..StreamHandle">StreamHandle</a>&lt;<a class="type" href="#uvw::TTYHandle" title='uvw::TTYHandle' data-ref="uvw::TTYHandle" data-ref-filename="uvw..TTYHandle">TTYHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_tty_t" title='uv_tty_t' data-type='struct uv_tty_s' data-ref="uv_tty_t" data-ref-filename="uv_tty_t">uv_tty_t</a>&gt; {</td></tr>
+<tr><th id="58">58</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<span class="namespace">details::</span><a class="type" href="#uvw::details::ResetModeMemo" title='uvw::details::ResetModeMemo' data-ref="uvw::details::ResetModeMemo" data-ref-filename="uvw..details..ResetModeMemo">ResetModeMemo</a>&gt; <a class="decl fn" href="tty.cpp.html#_ZN3uvw9TTYHandle13resetModeMemoEv" title='uvw::TTYHandle::resetModeMemo' data-ref="_ZN3uvw9TTYHandle13resetModeMemoEv" data-ref-filename="_ZN3uvw9TTYHandle13resetModeMemoEv" id="_ZN3uvw9TTYHandle13resetModeMemoEv">resetModeMemo</a>();</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>public</b>:</td></tr>
+<tr><th id="61">61</th><td>    <b>using</b> <dfn class="typedef" id="uvw::TTYHandle::Mode" title='uvw::TTYHandle::Mode' data-type='details::UVTTYModeT' data-ref="uvw::TTYHandle::Mode" data-ref-filename="uvw..TTYHandle..Mode">Mode</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVTTYModeT" title='uvw::details::UVTTYModeT' data-ref="uvw::details::UVTTYModeT" data-ref-filename="uvw..details..UVTTYModeT">UVTTYModeT</a>;</td></tr>
+<tr><th id="62">62</th><td>    <b>using</b> <dfn class="typedef" id="uvw::TTYHandle::VTermState" title='uvw::TTYHandle::VTermState' data-type='details::UVTTYVTermStateT' data-ref="uvw::TTYHandle::VTermState" data-ref-filename="uvw..TTYHandle..VTermState">VTermState</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVTTYVTermStateT" title='uvw::details::UVTTYVTermStateT' data-ref="uvw::details::UVTTYVTermStateT" data-ref-filename="uvw..details..UVTTYVTermStateT">UVTTYVTermStateT</a>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <b>explicit</b> <a class="decl fn" href="tty.cpp.html#_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb" title='uvw::TTYHandle::TTYHandle' data-ref="_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb" data-ref-filename="_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb" id="_ZN3uvw9TTYHandleC1ENS_14UnderlyingTypeIS0_8uv_tty_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEEb">TTYHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::TTYHandle,uv_tty_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::TTYHandle, uv_tty_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;TTYHandle, uv_tty_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::TTYHandle,uv_tty_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..TTYHandle,uv_tty_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col1 decl" id="1ca" title='ca' data-type='uvw::Resource&lt;uvw::TTYHandle, uv_tty_s&gt;::ConstructorAccess' data-ref="1ca" data-ref-filename="1ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col2 decl" id="2ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="2ref" data-ref-filename="2ref">ref</dfn>, <a class="typedef" href="util.h.html#uvw::FileHandle" title='uvw::FileHandle' data-type='details::UVTypeWrapper&lt;uv_file&gt;' data-ref="uvw::FileHandle" data-ref-filename="uvw..FileHandle">FileHandle</a> <dfn class="local col3 decl" id="3desc" title='desc' data-type='uvw::FileHandle' data-ref="3desc" data-ref-filename="3desc">desc</dfn>, <em>bool</em> <dfn class="local col4 decl" id="4readable" title='readable' data-type='bool' data-ref="4readable" data-ref-filename="4readable">readable</dfn>);</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle.</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="70">70</th><td>    <em>bool</em> <a class="decl fn" href="tty.cpp.html#_ZN3uvw9TTYHandle4initEv" title='uvw::TTYHandle::init' data-ref="_ZN3uvw9TTYHandle4initEv" data-ref-filename="_ZN3uvw9TTYHandle4initEv" id="_ZN3uvw9TTYHandle4initEv">init</a>();</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc">     * <span class="command">@brief</span> Sets the TTY using the specified terminal mode.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">     * Available modes are:</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">     * * `TTY::Mode::NORMAL`</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     * * `TTY::Mode::RAW`</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     * * `TTY::Mode::IO`</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_mode_t">http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_mode_t</a>)</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">m</span> The mode to be set.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="88">88</th><td>    <em>bool</em> <a class="decl fn" href="tty.cpp.html#_ZN3uvw9TTYHandle4modeENS_7details10UVTTYModeTE" title='uvw::TTYHandle::mode' data-ref="_ZN3uvw9TTYHandle4modeENS_7details10UVTTYModeTE" data-ref-filename="_ZN3uvw9TTYHandle4modeENS_7details10UVTTYModeTE" id="_ZN3uvw9TTYHandle4modeENS_7details10UVTTYModeTE">mode</a>(<a class="typedef" href="#uvw::TTYHandle::Mode" title='uvw::TTYHandle::Mode' data-type='details::UVTTYModeT' data-ref="uvw::TTYHandle::Mode" data-ref-filename="uvw..TTYHandle..Mode">Mode</a> <dfn class="local col5 decl" id="5m" title='m' data-type='uvw::TTYHandle::Mode' data-ref="5m" data-ref-filename="5m">m</dfn>);</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     * <span class="command">@brief</span> Resets TTY settings to default values.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="94">94</th><td>    <em>bool</em> <a class="decl fn" href="tty.cpp.html#_ZN3uvw9TTYHandle5resetEv" title='uvw::TTYHandle::reset' data-ref="_ZN3uvw9TTYHandle5resetEv" data-ref-filename="_ZN3uvw9TTYHandle5resetEv" id="_ZN3uvw9TTYHandle5resetEv">reset</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     * <span class="command">@brief</span> Gets the current Window size.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     * <span class="command">@return</span> The current Window size or `{-1, -1}` in case of errors.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="100">100</th><td>    <a class="type" href="util.h.html#uvw::WinSize" title='uvw::WinSize' data-ref="uvw::WinSize" data-ref-filename="uvw..WinSize">WinSize</a> <a class="decl fn" href="tty.cpp.html#_ZN3uvw9TTYHandle10getWinSizeEv" title='uvw::TTYHandle::getWinSize' data-ref="_ZN3uvw9TTYHandle10getWinSizeEv" data-ref-filename="_ZN3uvw9TTYHandle10getWinSizeEv" id="_ZN3uvw9TTYHandle10getWinSizeEv">getWinSize</a>();</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">     * <span class="command">@brief</span> Controls whether console virtual terminal sequences are processed</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     * by the library or console.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">     * This function is only meaningful on Windows systems. On Unix it is</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">     * silently ignored.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     * Available states are:</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     * * `TTY::VTermState::SUPPORTED`</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     * * `TTY::VTermState::UNSUPPORTED`</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_vtermstate_t">http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_vtermstate_t</a>)</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">s</span> The state to be set.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="120">120</th><td>    <em>void</em> <a class="decl fn" href="tty.cpp.html#_ZNK3uvw9TTYHandle10vtermStateENS_7details16UVTTYVTermStateTE" title='uvw::TTYHandle::vtermState' data-ref="_ZNK3uvw9TTYHandle10vtermStateENS_7details16UVTTYVTermStateTE" data-ref-filename="_ZNK3uvw9TTYHandle10vtermStateENS_7details16UVTTYVTermStateTE" id="_ZNK3uvw9TTYHandle10vtermStateENS_7details16UVTTYVTermStateTE">vtermState</a>(<a class="typedef" href="#uvw::TTYHandle::VTermState" title='uvw::TTYHandle::VTermState' data-type='details::UVTTYVTermStateT' data-ref="uvw::TTYHandle::VTermState" data-ref-filename="uvw..TTYHandle..VTermState">VTermState</a> <dfn class="local col6 decl" id="6s" title='s' data-type='uvw::TTYHandle::VTermState' data-ref="6s" data-ref-filename="6s">s</dfn>) <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">     * <span class="command">@brief</span> Gets the current state of whether console virtual terminal</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">     * sequences are handled by the library or the console.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     * This function is not implemented on Unix.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">     * Available states are:</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">     * * `TTY::VTermState::SUPPORTED`</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     * * `TTY::VTermState::UNSUPPORTED`</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_vtermstate_t">http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_vtermstate_t</a>)</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     * <span class="command">@return</span> The current state.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="139">139</th><td>    <a class="typedef" href="#uvw::TTYHandle::VTermState" title='uvw::TTYHandle::VTermState' data-type='details::UVTTYVTermStateT' data-ref="uvw::TTYHandle::VTermState" data-ref-filename="uvw..TTYHandle..VTermState">VTermState</a> <a class="decl fn" href="tty.cpp.html#_ZNK3uvw9TTYHandle10vtermStateEv" title='uvw::TTYHandle::vtermState' data-ref="_ZNK3uvw9TTYHandle10vtermStateEv" data-ref-filename="_ZNK3uvw9TTYHandle10vtermStateEv" id="_ZNK3uvw9TTYHandle10vtermStateEv">vtermState</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><b>private</b>:</td></tr>
+<tr><th id="142">142</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<span class="namespace">details::</span><a class="type" href="#uvw::details::ResetModeMemo" title='uvw::details::ResetModeMemo' data-ref="uvw::details::ResetModeMemo" data-ref-filename="uvw..details..ResetModeMemo">ResetModeMemo</a>&gt; <dfn class="decl field" id="uvw::TTYHandle::memo" title='uvw::TTYHandle::memo' data-ref="uvw::TTYHandle::memo" data-ref-filename="uvw..TTYHandle..memo">memo</dfn>;</td></tr>
+<tr><th id="143">143</th><td>    <a class="typedef" href="util.h.html#uvw::FileHandle" title='uvw::FileHandle' data-type='details::UVTypeWrapper&lt;uv_file&gt;' data-ref="uvw::FileHandle" data-ref-filename="uvw..FileHandle">FileHandle</a>::<a class="typedef" href="util.h.html#uvw::details::UVTypeWrapper{int}::Type" title='uvw::details::UVTypeWrapper&lt;int&gt;::Type' data-type='int' data-ref="uvw::details::UVTypeWrapper{int}::Type" data-ref-filename="uvw..details..UVTypeWrapper{int}..Type">Type</a> <dfn class="decl field" id="uvw::TTYHandle::fd" title='uvw::TTYHandle::fd' data-ref="uvw::TTYHandle::fd" data-ref-filename="uvw..TTYHandle..fd">fd</dfn>;</td></tr>
+<tr><th id="144">144</th><td>    <em>int</em> <dfn class="decl field" id="uvw::TTYHandle::rw" title='uvw::TTYHandle::rw' data-ref="uvw::TTYHandle::rw" data-ref-filename="uvw..TTYHandle..rw">rw</dfn>;</td></tr>
+<tr><th id="145">145</th><td>};</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td>}</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="151">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="152">152</th><td><u>#include "tty.cpp"</u></td></tr>
+<tr><th id="153">153</th><td><u>#<span data-ppcond="151">endif</span></u></td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><u>#<span data-ppcond="1">endif</span> // UVW_TTY_INCLUDE_H</u></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='tty.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/tty.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

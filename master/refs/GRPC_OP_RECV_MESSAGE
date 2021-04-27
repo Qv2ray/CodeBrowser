@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='519' type='5'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='337' u='r' c='_ZN4grpc8internal17CallOpRecvMessage5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='412' u='r' c='_ZN4grpc8internal24CallOpGenericRecvMessage5AddOpEP7grpc_opPm'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='516'>/** Receive a message: 0 or more of these operations can occur for each call.
+      This op completes after all bytes of the received message have been
+      read, or after a half-close has been received on this call. */</doc>

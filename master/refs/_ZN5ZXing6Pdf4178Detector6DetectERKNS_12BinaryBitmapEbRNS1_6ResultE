@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.h' l='51' type='static ZXing::DecodeStatus ZXing::Pdf417::Detector::Detect(const ZXing::BinaryBitmap &amp; image, bool multiple, ZXing::Pdf417::Detector::Result &amp; result)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='321' ll='346' type='static ZXing::DecodeStatus ZXing::Pdf417::Detector::Detect(const ZXing::BinaryBitmap &amp; image, bool multiple, ZXing::Pdf417::Detector::Result &amp; result)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='311'>/**
+* &lt;p&gt;Detects a PDF417 Code in an image. Only checks 0 and 180 degree rotations.&lt;/p&gt;
+*
+* @param image barcode image to decode
+* @param hints optional hints to detector
+* @param multiple if true, then the image is searched for multiple codes. If false, then at most one code will
+* be found and returned
+* @return {@link PDF417DetectorResult} encapsulating results of detecting a PDF417 code
+* @throws NotFoundException if no PDF417 Code can be found
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='70' u='c' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>

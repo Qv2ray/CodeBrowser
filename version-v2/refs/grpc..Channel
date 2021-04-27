@@ -1,0 +1,45 @@
+<use f='include/grpcpp/impl/codegen/client_context.h' l='377'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='403' c='_ZN4grpc13ClientContext8set_callEP9grpc_callRKSt10shared_ptrINS_7ChannelEE'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='422'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='278'/>
+<use f='include/grpcpp/channel.h' l='39' c='_ZN4grpc12experimental29ChannelResetConnectionBackoffEPNS_7ChannelE'/>
+<inh f='include/grpcpp/impl/codegen/channel_interface.h' l='57' c='grpc::ChannelInterface'/>
+<inh f='include/grpcpp/impl/codegen/call_hook.h' l='30' c='grpc::internal::CallHook'/>
+<inh f='include/c++/10/bits/shared_ptr.h' l='791' c='std::enable_shared_from_this'/>
+<inh f='include/grpcpp/impl/codegen/grpc_library.h' l='38' c='grpc::GrpcLibraryCodegen'/>
+<def f='include/grpcpp/channel.h' l='43' ll='104'/>
+<use f='include/grpcpp/channel.h' l='45'/>
+<use f='include/grpcpp/channel.h' l='64' c='_ZN4grpc12experimental29ChannelResetConnectionBackoffEPNS_7ChannelE'/>
+<use f='include/grpcpp/channel.h' l='65' c='_ZN4grpc21CreateChannelInternalERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP12grpc_channelSt10unique_ptrISt6vectorISA_INS_12experimental33C11425818'/>
+<use f='include/grpcpp/security/credentials.h' l='45' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/security/credentials.h' l='73' c='_ZN4grpc19CreateCustomChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredentialsEERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/security/credentials.h' l='78' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/security/credentials.h' l='87' c='_ZN4grpc18ChannelCredentials13CreateChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/security/credentials.h' l='92' c='_ZN4grpc18ChannelCredentials29CreateChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_16ChannelArgumentsESt10unique_p633212'/>
+<use f='include/grpcpp/create_channel.h' l='38' c='_ZN4grpc13CreateChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredentialsEE'/>
+<use f='include/grpcpp/create_channel.h' l='52' c='_ZN4grpc19CreateCustomChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredentialsEERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/create_channel.h' l='69' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/create_channel_posix.h' l='36' c='_ZN4grpc27CreateInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='include/grpcpp/create_channel_posix.h' l='45' c='_ZN4grpc33CreateCustomInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/create_channel_posix.h' l='57' c='_ZN4grpc12experimental49CreateCustomInsecureChannelWithInterceptorsFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumen7356499'/>
+<use f='include/grpcpp/server.h' l='101' c='_ZN4grpc6Server16InProcessChannelERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/server.h' l='112' c='_ZN4grpc6Server17experimental_type32InProcessChannelWithInterceptorsERKNS_16ChannelArgumentsESt10unique_ptrISt6vectorIS5_INS_12experimental33ClientInt8051591'/>
+<use f='qv2ray/src/core/kernel/APIBackend.hpp' l='45'/>
+<size>160</size>
+<doc f='include/grpcpp/channel.h' l='42'>/// Channels represent a connection to an endpoint. Created by \a CreateChannel.</doc>
+<fun r='_ZN4grpc7ChannelD1Ev'/>
+<fun r='_ZN4grpc7Channel8GetStateEb'/>
+<fun r='_ZNK4grpc7Channel26GetLoadBalancingPolicyNameB5cxx11Ev'/>
+<fun r='_ZNK4grpc7Channel20GetServiceConfigJSONB5cxx11Ev'/>
+<fun r='_ZN4grpc7ChannelC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP12grpc_channelSt10unique_ptrISt6vectorISB_INS_12experimental33ClientIntercep1530088'/>
+<fun r='_ZN4grpc7Channel10CreateCallERKNS_8internal9RpcMethodEPNS_13ClientContextEPNS_15CompletionQueueE'/>
+<fun r='_ZN4grpc7Channel16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<fun r='_ZN4grpc7Channel14RegisterMethodEPKc'/>
+<fun r='_ZN4grpc7Channel23NotifyOnStateChangeImplE23grpc_connectivity_state12gpr_timespecPNS_15CompletionQueueEPv'/>
+<fun r='_ZN4grpc7Channel22WaitForStateChangeImplE23grpc_connectivity_state12gpr_timespec'/>
+<fun r='_ZN4grpc7Channel10CallbackCQEv'/>
+<mbr r='grpc::Channel::host_' o='384' t='const grpc::string'/>
+<mbr r='grpc::Channel::c_channel_' o='640' t='grpc_channel *const'/>
+<mbr r='grpc::Channel::mu_' o='704' t='std::mutex'/>
+<mbr r='grpc::Channel::callback_cq_' o='1024' t='grpc::CompletionQueue *'/>
+<mbr r='grpc::Channel::interceptor_creators_' o='1088' t='std::vector&lt;std::unique_ptr&lt;experimental::ClientInterceptorFactoryInterface&gt;&gt;'/>

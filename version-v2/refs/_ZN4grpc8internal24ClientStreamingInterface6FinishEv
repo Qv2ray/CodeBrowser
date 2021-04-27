@@ -1,0 +1,25 @@
+<dec f='include/grpcpp/impl/codegen/sync_stream.h' l='63' type='grpc::Status grpc::internal::ClientStreamingInterface::Finish()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='39'>/// Block waiting until the stream finishes and a final status of the call is
+  /// available.
+  ///
+  /// It is appropriate to call this method when both:
+  ///   * the calling code (client-side) has no more message to send
+  ///     (this can be declared implicitly by calling this method, or
+  ///     explicitly through an earlier call to &lt;i&gt;WritesDone&lt;/i&gt; method of the
+  ///     class in use, e.g. \a ClientWriterInterface::WritesDone or
+  ///     \a ClientReaderWriterInterface::WritesDone).
+  ///   * there are no more messages to be received from the server (which can
+  ///     be known implicitly, or explicitly from an earlier call to \a
+  ///     ReaderInterface::Read that returned &quot;false&quot;).
+  ///
+  /// This function will return either:
+  /// - when all incoming messages have been read and the server has
+  ///   returned status.
+  /// - when the server has returned a non-OK status.
+  /// - OR when the call failed for some reason and the library generated a
+  ///   status.
+  ///
+  /// Return values:
+  ///   - \a Status contains the status code, message and details for the call
+  ///   - the \a ClientContext associated with this call is updated with
+  ///     possible trailing metadata sent from the server.</doc>

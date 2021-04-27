@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/message.h' l='901' type='google::protobuf::MessageFactory * google::protobuf::Reflection::GetMessageFactory() const'/>
+<doc f='include/google/protobuf/message.h' l='892'>// Returns the MessageFactory associated with this message.  This can be
+  // useful for determining if a message is a generated message or not, for
+  // example:
+  //   if (message-&gt;GetReflection()-&gt;GetMessageFactory() ==
+  //       google::protobuf::MessageFactory::generated_factory()) {
+  //     // This is a generated message.
+  //   }
+  // It can also be used to create more messages of this type, though
+  // Message::New() is an easier way to accomplish this.</doc>

@@ -1,0 +1,21 @@
+<inh f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='46' c='QtNodes::NodeData'/>
+<def f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='74' ll='93'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='11' c='_ZN15QvRuleNodeModelC1ESt10shared_ptrIN6Qv2ray2ui10nodemodels12RuleNodeDataEE'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='78' c='_ZN15QvRuleNodeModel7setDataERK7QString'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='106'/>
+<size>16</size>
+<doc f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='72'>/// The class can potentially incapsulate any user data
+    /// need to be transferred within the Node Editor graph</doc>
+<fun r='_ZN6Qv2ray2ui10nodemodels12RuleNodeDataC1E7QString'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels12RuleNodeData4typeEv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels12RuleNodeData10GetRuleTagEv'/>
+<mbr r='Qv2ray::ui::nodemodels::RuleNodeData::_ruleTag' o='64' t='QString'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='163' macro='1' c='_ZN11RouteEditor13onNodeClickedERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='286' macro='1' c='_ZN11RouteEditor19onConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='296' macro='1' c='_ZN11RouteEditor19onConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='876' macro='1' c='_ZN11RouteEditor17on_delBtn_clickedEv'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='81' c='_ZN11RouteEditor7AddRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<size>16</size>
+<use f='qv2ray/src/ui/models/RuleNodeModel.cpp' l='3' c='_ZN15QvRuleNodeModelC1ESt10shared_ptrIN6Qv2ray2ui10nodemodels12RuleNodeDataEE'/>
+<size>16</size>

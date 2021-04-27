@@ -1,0 +1,5 @@
+<dec f='include/grpc/slice.h' l='90' type='grpc_slice grpc_slice_from_copied_buffer(const char * source, size_t len)'/>
+<doc f='include/grpc/slice.h' l='86'>/** Create a slice by copying a buffer.
+   Equivalent to:
+     grpc_slice slice = grpc_slice_malloc(len);
+     memcpy(slice-&gt;data, source, len); */</doc>

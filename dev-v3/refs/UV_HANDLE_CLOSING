@@ -1,0 +1,39 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='74' type='1'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='97' macro='1' u='r' c='uv_fs_poll_start'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='194' macro='1' u='r' c='poll_cb'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='220' macro='1' u='r' c='poll_cb'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='244' macro='1' u='r' c='timer_close_cb'/>
+<doc f='qv2ray/3rdparty/libuv/src/uv-common.h' l='73'>/* Used by all handles. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='72' macro='1' u='r' c='uv_timer_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='109' macro='1' u='r' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='109' macro='1' u='r' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='111' u='r' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='209' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='209' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='254' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='254' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='299' macro='1' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='324' macro='1' u='r' c='uv_is_closing'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='781' macro='1' u='r' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='76' macro='1' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='92' macro='1' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='112' macro='1' u='r' c='uv_poll_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='112' macro='1' u='r' c='uv_poll_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='123' macro='1' u='r' c='uv_poll_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='123' macro='1' u='r' c='uv_poll_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='358' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='358' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='458' u='r' c='uv__signal_event'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='458' u='r' c='uv__signal_event'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='512' macro='1' u='r' c='uv_signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='512' macro='1' u='r' c='uv_signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='535' u='r' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='535' u='r' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='689' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='850' macro='1' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1267' macro='1' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1295' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1295' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1561' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='548' macro='1' u='r' c='uv_ref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='553' macro='1' u='r' c='uv_unref'/>

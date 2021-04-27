@@ -1,0 +1,19 @@
+<dec f='qv2ray/src/core/handler/ConfigHandler.hpp' l='113' type='const Qv2ray::base::safetype::CONFIGROOT Qv2ray::core::handler::QvConfigHandler::GetConnectionRoot(const Qv2ray::base::ConnectionId &amp; id) const'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='412' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<doc f='qv2ray/src/core/handler/ConfigHandler.hpp' l='111'>//
+        // Get Conncetion Property</doc>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='11' u='c' c='_ZN6Qv2ray4core15IsComplexConfigERKNS_4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='78' u='c' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base6IDTypeINS1_14__QvConnectionEEEPb'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='140' u='c' c='_ZN6Qv2ray4core27GetConnectionProtocolStringERKNS_4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='185' u='c' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='82' u='c' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERKNS_4base19ConnectionGroupPairEb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='325' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<def f='qv2ray/src/core/handler/ConfigHandler.cpp' l='365' ll='369' type='const Qv2ray::base::safetype::CONFIGROOT Qv2ray::core::handler::QvConfigHandler::GetConnectionRoot(const Qv2ray::base::ConnectionId &amp; id) const'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='116' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigERKNS_4base19ConnectionGroupPairEb'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='1068' u='c' c='_ZN11RouteEditor28on_importExistingBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='208' u='c' c='_ZN12GroupManager25onRCMActionTriggered_CopyEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='258' u='c' c='_ZN12GroupManager17GetSelectedConfigEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='626' u='c' c='_ZN10MainWindow37on_action_RCM_EditAsComplex_triggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='866' u='c' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='896' u='c' c='_ZN10MainWindow19OnEditJsonRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='982' u='c' c='_ZN10MainWindow38on_action_RCM_DuplicateThese_triggeredEv'/>

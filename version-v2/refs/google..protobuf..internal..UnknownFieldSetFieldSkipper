@@ -1,0 +1,10 @@
+<inh f='include/google/protobuf/wire_format_lite.h' l='739' c='google::protobuf::internal::FieldSkipper'/>
+<def f='include/google/protobuf/wire_format.h' l='259' ll='272'/>
+<size>16</size>
+<doc f='include/google/protobuf/wire_format.h' l='258'>// Subclass of FieldSkipper which saves skipped fields to an UnknownFieldSet.</doc>
+<fun r='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipperC1EPNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipperD1Ev'/>
+<fun r='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipper9SkipFieldEPNS0_2io16CodedInputStreamEj'/>
+<fun r='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipper11SkipMessageEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipper15SkipUnknownEnumEii'/>
+<mbr r='google::protobuf::internal::UnknownFieldSetFieldSkipper::unknown_fields_' o='64' t='google::protobuf::UnknownFieldSet *'/>

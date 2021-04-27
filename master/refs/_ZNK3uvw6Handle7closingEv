@@ -1,0 +1,13 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='101' c='_ZNK3uvw10BaseHandle7closingEv'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='126' ll='128' type='bool uvw::Handle::closing() const'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='140' u='c' c='_ZN3uvw6Handle5closeEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='118'>/**
+     * @brief Checks if a handle is closing or closed.
+     *
+     * This function should only be used between the initialization of the
+     * handle and the arrival of the close callback.
+     *
+     * @return True if the handle is closing or closed, false otherwise.
+     */</doc>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='101' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='123' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>

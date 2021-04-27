@@ -1,0 +1,46 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='133' ll='139' type='void ZXing::BitMatrix::set(int x, int y)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='293' u='c' c='_ZN5ZXing11ToBitMatrixERKNS_6MatrixIT_EES1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='85' u='c' c='_ZN5ZXing9BitMatrix8rotate90Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='239' u='c' c='_ZN5ZXing7DeflateERKNS_9BitMatrixEiiiii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='127'>/**
+	* &lt;p&gt;Sets the given bit to true.&lt;/p&gt;
+	*
+	* @param x The horizontal component (i.e. which column)
+	* @param y The vertical component (i.e. which row)
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='236' u='c' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.cpp' l='40' u='c' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='137' u='c' c='_ZN5ZXingL14ThresholdBlockEPKhiiiiRNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='45' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='46' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='47' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='48' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='51' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='52' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='53' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='54' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='55' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='56' u='c' c='_ZN5ZXing5AztecL12DrawBullsEyeERNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='132' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='135' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='138' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='141' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='149' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='152' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='155' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='158' u='c' c='_ZN5ZXing5AztecL15DrawModeMessageERNS_9BitMatrixEbiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='309' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='312' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='315' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='318' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='336' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='337' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='338' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='339' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.h' l='49' u='c' c='_ZN5ZXing10DataMatrix11VisitMatrixEiiT_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='77' u='c' c='_ZN5ZXing10DataMatrixL17ExtractDataRegionERKNS0_7VersionERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='38' u='c' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='49' u='c' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='50' u='c' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='51' u='c' c='_ZN5ZXing8MaxiCodeL15ExtractPureBitsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='74' u='c' c='_ZN5ZXing6Pdf417L21BitMatrixFromBitArrayERKSt6vectorIS1_IbSaIbEESaIS3_EEi'/>

@@ -1,0 +1,13 @@
+<dec f='include/string.h' l='206' type='char * strchr(char * __s, int __c)'/>
+<dec f='include/string.h' l='208' type='const char * strchr(const char * __s, int __c)'/>
+<use f='qv2ray/3rdparty/libuv/src/inet.c' l='161' u='c' c='uv_inet_pton'/>
+<use f='qv2ray/3rdparty/libuv/src/inet.c' l='190' u='c' c='inet_pton4'/>
+<use f='qv2ray/3rdparty/libuv/src/inet.c' l='239' u='c' c='inet_pton6'/>
+<use f='qv2ray/3rdparty/libuv/src/inet.c' l='240' u='c' c='inet_pton6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1275' u='c' c='uv_os_environ'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='530' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='538' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='543' u='c' c='uv_resident_set_memory'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='244' u='c' c='uv_ip6_addr'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXContainerAlgorithms.h' l='47' u='c' c='_ZN5ZXing8ContainsEPKcc'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXContainerAlgorithms.h' l='73' u='c' c='_ZN5ZXing7IndexOfEPKcc'/>

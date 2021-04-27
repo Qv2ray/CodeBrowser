@@ -1,0 +1,4 @@
+<dec f='include/signal.h' l='199' type='int sigfillset(sigset_t * __set)'/>
+<doc f='include/signal.h' l='198'>/* Set all signals in SET.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='143' u='c' c='uv__signal_block_and_lock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='228' u='c' c='uv__signal_register_handler'/>

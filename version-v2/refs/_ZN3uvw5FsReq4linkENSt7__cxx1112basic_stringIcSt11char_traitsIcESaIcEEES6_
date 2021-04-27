@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1196' type='void uvw::FsReq::link(std::string old, std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='465' ll='467' type='void uvw::FsReq::link(std::string old, std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1187'>/**
+     * @brief Async [link](http://linux.die.net/man/2/link).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::LINK&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param old Old path, as described in the official documentation.
+     * @param path New path, as described in the official documentation.
+     */</doc>

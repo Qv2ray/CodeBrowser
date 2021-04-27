@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='36' type='QUuid QtNodes::Node::id() const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='59' u='c' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='61' u='c' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='118' u='c' c='_ZN7QtNodes9FlowScene10createNodeEOSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='133' u='c' c='_ZN7QtNodes9FlowScene11restoreNodeERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='151' u='c' c='_ZN7QtNodes9FlowScene10removeNodeERNS_4NodeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='199' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='208' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='222' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='228' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='50' ll='53' type='QUuid QtNodes::Node::id() const'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='109' u='c' c='_ZN14NodeDispatcher13OnNodeDeletedERKN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='176' u='c' c='_ZN14NodeDispatcher13CreateInboundE13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='199' u='c' c='_ZN14NodeDispatcher14CreateOutboundEN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='235' u='c' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='56' u='c' c='_ZN17ChainEditorWidget34OnDispatcherChainedOutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='140' u='c' c='_ZN17ChainEditorWidget21VerifyChainLinkedListERK5QUuid'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='141' u='c' c='_ZN17ChainEditorWidget21VerifyChainLinkedListERK5QUuid'/>

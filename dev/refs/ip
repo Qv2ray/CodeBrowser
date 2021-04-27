@@ -1,0 +1,17 @@
+<def f='include/netinet/ip.h' l='107' ll='129'/>
+<use f='include/netinet/ip_icmp.h' l='187'/>
+<size>20</size>
+<doc f='include/netinet/ip.h' l='104'>/*
+ * Structure of an internet header, naked of options.
+ */</doc>
+<mbr r='ip::ip_hl' o='0' t='unsigned int'/>
+<mbr r='ip::ip_v' o='4' t='unsigned int'/>
+<mbr r='ip::ip_tos' o='8' t='uint8_t'/>
+<mbr r='ip::ip_len' o='16' t='unsigned short'/>
+<mbr r='ip::ip_id' o='32' t='unsigned short'/>
+<mbr r='ip::ip_off' o='48' t='unsigned short'/>
+<mbr r='ip::ip_ttl' o='64' t='uint8_t'/>
+<mbr r='ip::ip_p' o='72' t='uint8_t'/>
+<mbr r='ip::ip_sum' o='80' t='unsigned short'/>
+<mbr r='ip::ip_src' o='96' t='struct in_addr'/>
+<mbr r='ip::ip_dst' o='128' t='struct in_addr'/>

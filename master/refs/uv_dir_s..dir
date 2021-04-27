@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1292' macro='1' type='DIR *'/>
+<offset>384</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='556' u='w' c='uv__fs_opendir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='557' u='r' c='uv__fs_opendir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='583' u='r' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='620' u='r' c='uv__fs_closedir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='621' u='r' c='uv__fs_closedir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='622' u='w' c='uv__fs_closedir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1884' u='r' c='uv_fs_readdir'/>

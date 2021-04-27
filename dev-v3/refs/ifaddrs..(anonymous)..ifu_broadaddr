@@ -1,0 +1,7 @@
+<dec f='include/ifaddrs.h' l='44' type='struct sockaddr *'/>
+<offset>0</offset>
+<doc f='include/ifaddrs.h' l='40'>/* At most one of the following two is valid.  If the IFF_BROADCAST
+       bit is set in `ifa_flags&apos;, then `ifa_broadaddr&apos; is valid.  If the
+       IFF_POINTOPOINT bit is set, then `ifa_dstaddr&apos; is valid.
+       It is never the case that both these bits are set at once.  */</doc>
+<doc f='include/ifaddrs.h' l='44'>/* Broadcast address of this interface. */</doc>

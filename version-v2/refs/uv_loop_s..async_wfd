@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='int'/>
+<offset>4096</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='176' u='r' c='uv__async_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='224' u='w' c='uv__async_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='244' u='r' c='uv__async_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='245' u='r' c='uv__async_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='246' u='r' c='uv__async_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='247' u='w' c='uv__async_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='58' u='w' c='uv_loop_init'/>

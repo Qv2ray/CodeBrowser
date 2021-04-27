@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/curl/multi.h' l='185' type='CURLMcode curl_multi_poll(CURLM * multi_handle, struct curl_waitfd * extra_fds, unsigned int extra_nfds, int timeout_ms, int * ret)'/>
+<doc f='include/x86_64-linux-gnu/curl/multi.h' l='177'>/*
+ * Name:     curl_multi_poll()
+ *
+ * Desc:     Poll on all fds within a CURLM set as well as any
+ *           additional fds passed to the function.
+ *
+ * Returns:  CURLMcode type, general multi error code.
+ */</doc>

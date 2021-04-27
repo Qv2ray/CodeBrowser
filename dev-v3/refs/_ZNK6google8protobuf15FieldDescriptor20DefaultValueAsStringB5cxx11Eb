@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor.h' l='736' type='std::string google::protobuf::FieldDescriptor::DefaultValueAsString(bool quote_string_type) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='733'>// formats the default value appropriately and returns it as a string.
+  // Must have a default value to call this. If quote_string_type is true, then
+  // types of CPPTYPE_STRING whill be surrounded by quotes and CEscaped.</doc>

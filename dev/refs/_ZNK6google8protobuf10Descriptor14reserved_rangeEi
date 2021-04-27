@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='395' type='const google::protobuf::Descriptor::ReservedRange * google::protobuf::Descriptor::reserved_range(int index) const'/>
+<def f='include/google/protobuf/descriptor.h' l='1859' macro='1' type='const Descriptor::ReservedRange * google::protobuf::Descriptor::reserved_range(int index) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='392'>// Gets an reserved range by index, where 0 &lt;= index &lt;
+  // reserved_range_count(). These are returned in the order they were defined
+  // in the .proto file.</doc>

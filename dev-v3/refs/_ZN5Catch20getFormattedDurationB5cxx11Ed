@@ -1,0 +1,7 @@
+<dec f='qv2ray/test/catch.hpp' l='5711' type='std::string Catch::getFormattedDuration(double duration)'/>
+<def f='qv2ray/test/catch.hpp' l='15546' ll='15562' type='std::string Catch::getFormattedDuration(double duration)'/>
+<use f='qv2ray/test/catch.hpp' l='15861' u='c' c='_ZN5Catch15CompactReporter12sectionEndedERKNS_12SectionStatsE'/>
+<use f='qv2ray/test/catch.hpp' l='16282' u='c' c='_ZN5Catch15ConsoleReporter12sectionEndedERKNS_12SectionStatsE'/>
+<doc f='qv2ray/test/catch.hpp' l='5710'>// Returns double formatted as %.3f (format expected on output)</doc>
+<doc f='qv2ray/test/catch.hpp' l='15544'>// Because formatting using c++ streams is stateful, drop down to C is required
+    // Alternatively we could use stringstream, but its performance is... not good.</doc>

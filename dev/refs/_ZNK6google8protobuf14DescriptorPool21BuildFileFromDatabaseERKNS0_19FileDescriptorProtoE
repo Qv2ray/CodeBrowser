@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor.h' l='1769' type='const google::protobuf::FileDescriptor * google::protobuf::DescriptorPool::BuildFileFromDatabase(const google::protobuf::FileDescriptorProto &amp; proto) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1766'>// Like BuildFile() but called internally when the file has been loaded from
+  // fallback_database_.  Declared const because it is called by (semantically)
+  // const methods.</doc>

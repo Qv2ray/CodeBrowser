@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.h' l='43' type='static int ZXing::Pdf417::CodewordDecoder::GetCodeword(int symbol)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.cpp' l='483' u='c' c='_ZN5ZXing6Pdf417L23GetDecodedCodewordValueERKSt5arrayIiLm8EE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.cpp' l='531' ll='540' type='static int ZXing::Pdf417::CodewordDecoder::GetCodeword(int symbol)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.cpp' l='527'>/**
+* @param symbol encoded symbol to translate to a codeword
+* @return the codeword corresponding to the symbol.
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.h' l='39'>/**
+	* @param symbol encoded symbol to translate to a codeword
+	* @return the codeword corresponding to the symbol.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='167' u='c' c='_ZN5ZXing6Pdf417L14DetectCodewordERKNS_9BitMatrixEiibiiii'/>

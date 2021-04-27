@@ -1,0 +1,25 @@
+<use f='include/google/protobuf/arena.h' l='64' c='_ZN6google18quality_webanswers21TempPrivateWorkAroundEPNS_8protobuf12ArenaOptionsE'/>
+<use f='include/google/protobuf/arena.h' l='76' c='_ZN6google8protobuf13arena_metrics18EnableArenaMetricsEPNS0_12ArenaOptionsE'/>
+<def f='include/google/protobuf/arena.h' l='110' ll='184'/>
+<use f='include/google/protobuf/arena.h' l='180' c='_ZN6google8protobuf13arena_metrics18EnableArenaMetricsEPNS0_12ArenaOptionsE'/>
+<use f='include/google/protobuf/arena.h' l='181' c='_ZN6google18quality_webanswers21TempPrivateWorkAroundEPNS_8protobuf12ArenaOptionsE'/>
+<use f='include/google/protobuf/arena.h' l='248' c='_ZN6google8protobuf5ArenaC1ERKNS0_12ArenaOptionsE'/>
+<use f='include/google/protobuf/arena.h' l='263' c='_ZN6google8protobuf5ArenaC1Ev'/>
+<use f='include/google/protobuf/arena.h' l='263' c='_ZN6google8protobuf5ArenaC1Ev'/>
+<use f='include/google/protobuf/arena.h' l='271' c='_ZN6google8protobuf5Arena4InitERKNS0_12ArenaOptionsE'/>
+<size>80</size>
+<doc f='include/google/protobuf/arena.h' l='108'>// ArenaOptions provides optional additional parameters to arena construction
+// that control its block-allocation behavior.</doc>
+<mbr r='google::protobuf::ArenaOptions::start_block_size' o='0' t='size_t'/>
+<mbr r='google::protobuf::ArenaOptions::max_block_size' o='64' t='size_t'/>
+<mbr r='google::protobuf::ArenaOptions::initial_block' o='128' t='char *'/>
+<mbr r='google::protobuf::ArenaOptions::initial_block_size' o='192' t='size_t'/>
+<mbr r='google::protobuf::ArenaOptions::block_alloc' o='256' t='void *(*)(size_t)'/>
+<mbr r='google::protobuf::ArenaOptions::block_dealloc' o='320' t='void (*)(void *, size_t)'/>
+<fun r='_ZN6google8protobuf12ArenaOptionsC1Ev'/>
+<mbr r='google::protobuf::ArenaOptions::on_arena_init' o='384' t='void *(*)(google::protobuf::Arena *)'/>
+<mbr r='google::protobuf::ArenaOptions::on_arena_reset' o='448' t='void (*)(google::protobuf::Arena *, void *, google::protobuf::uint64)'/>
+<mbr r='google::protobuf::ArenaOptions::on_arena_destruction' o='512' t='void (*)(google::protobuf::Arena *, void *, google::protobuf::uint64)'/>
+<mbr r='google::protobuf::ArenaOptions::on_arena_allocation' o='576' t='void (*)(const std::type_info *, google::protobuf::uint64, void *)'/>
+<smbr r='google::protobuf::ArenaOptions::kDefaultStartBlockSize' t='const size_t'/>
+<smbr r='google::protobuf::ArenaOptions::kDefaultMaxBlockSize' t='const size_t'/>

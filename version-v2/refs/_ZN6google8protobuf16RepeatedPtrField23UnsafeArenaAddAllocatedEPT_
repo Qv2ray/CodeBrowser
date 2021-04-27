@@ -1,0 +1,14 @@
+<dec f='include/google/protobuf/repeated_field.h' l='921' type='void google::protobuf::RepeatedPtrField::UnsafeArenaAddAllocated(Element * value)'/>
+<def f='include/google/protobuf/repeated_field.h' l='2152' ll='2155' type='void google::protobuf::RepeatedPtrField::UnsafeArenaAddAllocated(Element * value)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='909'>// Add an already-allocated object, skipping arena-ownership checks. The user
+  // must guarantee that the given object is in the same arena as this
+  // RepeatedPtrField.
+  // It is also useful in legacy code that uses temporary ownership to avoid
+  // copies. Example:
+  //   RepeatedPtrField&lt;T&gt; temp_field;
+  //   temp_field.AddAllocated(new T);
+  //   ... // Do something with temp_field
+  //   temp_field.ExtractSubrange(0, temp_field.size(), nullptr);
+  // If you put temp_field on the arena this fails, because the ownership
+  // transfers to the arena at the &quot;AddAllocated&quot; call and is not released
+  // anymore causing a double delete. UnsafeArenaAddAllocated prevents this.</doc>

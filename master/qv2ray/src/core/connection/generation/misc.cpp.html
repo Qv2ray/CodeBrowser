@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>misc.cpp source code [qv2ray/src/core/connection/generation/misc.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/core/connection/generation/misc.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>core</a>/<a href='..'>connection</a>/<a href='./'>generation</a>/<a href='misc.cpp.html'>misc.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../Generation.hpp.html">"core/connection/Generation.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">core</span>::<span class="namespace">connection</span>::<span class="namespace">generation</span>::<span class="namespace">misc</span></td></tr>
+<tr><th id="4">4</th><td>{</td></tr>
+<tr><th id="5">5</th><td>    <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <dfn class="decl def fn" id="_ZN6Qv2ray4core10connection10generation4misc16GenerateAPIEntryERK7QStringbbb" title='Qv2ray::core::connection::generation::misc::GenerateAPIEntry' data-ref="_ZN6Qv2ray4core10connection10generation4misc16GenerateAPIEntryERK7QStringbbb" data-ref-filename="_ZN6Qv2ray4core10connection10generation4misc16GenerateAPIEntryERK7QStringbbb">GenerateAPIEntry</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col1 decl" id="1tag" title='tag' data-type='const QString &amp;' data-ref="1tag" data-ref-filename="1tag">tag</dfn>, <em>bool</em> <dfn class="local col2 decl" id="2withHandler" title='withHandler' data-type='bool' data-ref="2withHandler" data-ref-filename="2withHandler">withHandler</dfn>, <em>bool</em> <dfn class="local col3 decl" id="3withLogger" title='withLogger' data-type='bool' data-ref="3withLogger" data-ref-filename="3withLogger">withLogger</dfn>, <em>bool</em> <dfn class="local col4 decl" id="4withStats" title='withStats' data-type='bool' data-ref="4withStats" data-ref-filename="4withStats">withStats</dfn>)</td></tr>
+<tr><th id="6">6</th><td>    {</td></tr>
+<tr><th id="7">7</th><td>        <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <span class='ref fn fake' title='QJsonObject::QJsonObject' data-ref="_ZN11QJsonObjectC1Ev" data-ref-filename="_ZN11QJsonObjectC1Ev"></span><dfn class="local col5 decl" id="5root" title='root' data-type='QJsonObject' data-ref="5root" data-ref-filename="5root">root</dfn>;</td></tr>
+<tr><th id="8">8</th><td>        <span class='type' title='QJsonArray' data-ref="QJsonArray" data-ref-filename="QJsonArray">QJsonArray</span> <span class='ref fn fake' title='QJsonArray::QJsonArray' data-ref="_ZN10QJsonArrayC1Ev" data-ref-filename="_ZN10QJsonArrayC1Ev"></span><dfn class="local col6 decl" id="6services" title='services' data-type='QJsonArray' data-ref="6services" data-ref-filename="6services">services</dfn>;</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td>        <b>if</b> (<a class="local col2 ref" href="#2withHandler" title='withHandler' data-ref="2withHandler" data-ref-filename="2withHandler">withHandler</a>)</td></tr>
+<tr><th id="11">11</th><td>            <a class="local col6 ref" href="#6services" title='services' data-ref="6services" data-ref-filename="6services">services</a> <span class='ref fn' title='QJsonArray::operator&lt;&lt;' data-ref="_ZN10QJsonArraylsERK10QJsonValue" data-ref-filename="_ZN10QJsonArraylsERK10QJsonValue">&lt;&lt;</span> <span class='ref fn fake' title='QJsonValue::QJsonValue' data-ref="_ZN10QJsonValueC1EPKc" data-ref-filename="_ZN10QJsonValueC1EPKc"></span><q>"HandlerService"</q>;</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td>        <b>if</b> (<a class="local col3 ref" href="#3withLogger" title='withLogger' data-ref="3withLogger" data-ref-filename="3withLogger">withLogger</a>)</td></tr>
+<tr><th id="14">14</th><td>            <a class="local col6 ref" href="#6services" title='services' data-ref="6services" data-ref-filename="6services">services</a> <span class='ref fn' title='QJsonArray::operator&lt;&lt;' data-ref="_ZN10QJsonArraylsERK10QJsonValue" data-ref-filename="_ZN10QJsonArraylsERK10QJsonValue">&lt;&lt;</span> <span class='ref fn fake' title='QJsonValue::QJsonValue' data-ref="_ZN10QJsonValueC1EPKc" data-ref-filename="_ZN10QJsonValueC1EPKc"></span><q>"LoggerService"</q>;</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td>        <b>if</b> (<a class="local col4 ref" href="#4withStats" title='withStats' data-ref="4withStats" data-ref-filename="4withStats">withStats</a>)</td></tr>
+<tr><th id="17">17</th><td>            <a class="local col6 ref" href="#6services" title='services' data-ref="6services" data-ref-filename="6services">services</a> <span class='ref fn' title='QJsonArray::operator&lt;&lt;' data-ref="_ZN10QJsonArraylsERK10QJsonValue" data-ref-filename="_ZN10QJsonArraylsERK10QJsonValue">&lt;&lt;</span> <span class='ref fn fake' title='QJsonValue::QJsonValue' data-ref="_ZN10QJsonValueC1EPKc" data-ref-filename="_ZN10QJsonValueC1EPKc"></span><q>"StatsService"</q>;</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>        <a class="macro" href="../../../base/JsonHelpers.hpp.html#12" title="root.insert(&quot;services&quot;, services); root.insert(&quot;tag&quot;, tag);" data-ref="_M/JADD">JADD</a>(<span class='ref fn fake' title='QJsonValue::QJsonValue' data-ref="_ZN10QJsonValueC1ERK10QJsonArray" data-ref-filename="_ZN10QJsonValueC1ERK10QJsonArray"></span><a class="local col6 ref" href="#6services" title='services' data-ref="6services" data-ref-filename="6services">services</a>, <span class='ref fn fake' title='QJsonValue::QJsonValue' data-ref="_ZN10QJsonValueC1ERK7QString" data-ref-filename="_ZN10QJsonValueC1ERK7QString"></span><a class="local col1 ref" href="#1tag" title='tag' data-ref="1tag" data-ref-filename="1tag">tag</a>)</td></tr>
+<tr><th id="20">20</th><td>        <b>return</b> <a class="local col5 ref" href="#5root" title='root' data-ref="5root" data-ref-filename="5root">root</a>;</td></tr>
+<tr><th id="21">21</th><td>    }</td></tr>
+<tr><th id="22">22</th><td>} <i>// namespace Qv2ray::core::connection::generation::misc</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

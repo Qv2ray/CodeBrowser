@@ -1,0 +1,19 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='230'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='873' ll='879'/>
+<size>160</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='868'>/*
+ * uv_getaddrinfo_t is a subclass of uv_req_t.
+ *
+ * Request object for uv_getaddrinfo.
+ */</doc>
+<mbr r='uv_getaddrinfo_s::data' o='0' t='void *'/>
+<mbr r='uv_getaddrinfo_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_getaddrinfo_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_getaddrinfo_s::loop' o='512' t='uv_loop_t *'/>
+<mbr r='uv_getaddrinfo_s::work_req' o='576' t='struct uv__work'/>
+<mbr r='uv_getaddrinfo_s::cb' o='896' t='uv_getaddrinfo_cb'/>
+<mbr r='uv_getaddrinfo_s::hints' o='960' t='struct addrinfo *'/>
+<mbr r='uv_getaddrinfo_s::hostname' o='1024' t='char *'/>
+<mbr r='uv_getaddrinfo_s::service' o='1088' t='char *'/>
+<mbr r='uv_getaddrinfo_s::addrinfo' o='1152' t='struct addrinfo *'/>
+<mbr r='uv_getaddrinfo_s::retcode' o='1216' t='int'/>

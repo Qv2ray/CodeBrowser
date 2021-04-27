@@ -1,0 +1,7 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='593' ll='606'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='593'/>
+<size>32</size>
+<mbr r='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::trailing_metadata' o='0' t='grpc_metadata_array *'/>
+<mbr r='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status' o='64' t='grpc_status_code *'/>
+<mbr r='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::status_details' o='128' t='grpc_slice *'/>
+<mbr r='grpc_op::grpc_op_data::grpc_op_recv_status_on_client::error_string' o='192' t='const char **'/>

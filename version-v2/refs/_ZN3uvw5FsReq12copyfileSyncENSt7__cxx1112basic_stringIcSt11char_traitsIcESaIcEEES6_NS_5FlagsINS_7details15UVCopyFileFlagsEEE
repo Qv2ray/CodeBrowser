@@ -1,0 +1,21 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1122' type='bool uvw::FsReq::copyfileSync(std::string old, std::string path, Flags&lt;uvw::FsReq::CopyFile&gt; flags = Flags&lt;uvw::FsReq::CopyFile&gt;{})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='422' ll='426' type='bool uvw::FsReq::copyfileSync(std::string old, std::string path, Flags&lt;uvw::FsReq::CopyFile&gt; flags = Flags&lt;uvw::FsReq::CopyFile&gt;{})'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1103'>/**
+     * @brief Copies a file synchronously from a path to a new one.
+     *
+     * Available flags are:
+     *
+     * * `FsReq::CopyFile::EXCL`: it fails if the destination path
+     * already exists (the default behavior is to overwrite the destination if
+     * it exists).
+     *
+     * If the destination path is created, but an error occurs while copying the
+     * data, then the destination path is removed. There is a brief window of
+     * time between closing and removing the file where another process could
+     * access the file.
+     *
+     * @param old Old path, as described in the official documentation.
+     * @param path New path, as described in the official documentation.
+     * @param flags Optional additional flags.
+     * @return True in case of success, false otherwise.
+     */</doc>

@@ -1,0 +1,14 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='764' type='void google::protobuf::io::CodedOutputStream::WriteVarint32(google::protobuf::uint32 value)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1202' ll='1213' type='void google::protobuf::io::CodedOutputStream::WriteVarint32(google::protobuf::uint32 value)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1229' u='c' c='_ZN6google8protobuf2io17CodedOutputStream8WriteTagEj'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='472' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteUInt32NoTagEjPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='480' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteSInt32NoTagEiPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='512' u='c' c='_ZN6google8protobuf8internal14WireFormatLite14WriteBoolNoTagEbPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='534' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21WriteMessageNoVirtualEiRKT_PNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='279' u='c' c='_ZN6google8protobuf8internal18MapFieldSerializerEPKhjjjPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='280' u='c' c='_ZN6google8protobuf8internal18MapFieldSerializerEPKhjjjPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='292' u='c' c='_ZN6google8protobuf8internal18MapFieldSerializerEPKhjjjPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='293' u='c' c='_ZN6google8protobuf8internal18MapFieldSerializerEPKhjjjPNS0_2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='761'>// Write an unsigned integer with Varint encoding.  Writing a 32-bit value
+  // is equivalent to casting it to uint64 and writing it as a 64-bit value,
+  // but may be more efficient.</doc>

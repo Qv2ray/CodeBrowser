@@ -1,0 +1,13 @@
+<dec f='include/grpcpp/impl/codegen/server_context.h' l='136' type='void grpc::ServerContext::AddTrailingMetadata(const grpc::string &amp; key, const grpc::string &amp; value)'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='124'>/// Add the (\a meta_key, \a meta_value) pair to the initial metadata
+  /// associated with a server call. These are made available at the client
+  /// side by the \a grpc::ClientContext::GetServerTrailingMetadata() method.
+  ///
+  /// \warning This method should only be called before sending trailing
+  /// metadata to the client (which happens when the call is finished and a
+  /// status is sent to the client).
+  ///
+  /// \param meta_key The metadata key. If \a meta_value is binary data,
+  /// it must end in &quot;-bin&quot;.
+  /// \param meta_value The metadata value. If its value is binary, the key name
+  /// must end in &quot;-bin&quot;.</doc>

@@ -1,0 +1,17 @@
+<dec f='qv2ray/src/common/QvHelpers.hpp' l='34' type='bool Qv2ray::common::StringToFile(const QString &amp; text, const QString &amp; targetpath)'/>
+<doc f='qv2ray/src/common/QvHelpers.hpp' l='33'>// bool StringToFile(const QString &amp;text, QFile &amp;target);</doc>
+<def f='qv2ray/src/common/QvHelpers.cpp' l='49' ll='63' type='bool Qv2ray::common::StringToFile(const QString &amp; text, const QString &amp; targetpath)'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='181' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18SavePluginSettingsEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='91' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='98' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='384' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler16UpdateConnectionERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS3_8safetype10CONFIGROOTEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='30' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler10SaveRoutesEv'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='280' u='c' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='16' u='c' c='_ZN6Qv2ray4core6config18SaveGlobalSettingsEv'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='258' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='324' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='339' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/main.cpp' l='116' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/ui/widgets/RouteSettingsMatrix.cpp' l='179' u='c' c='_ZN25RouteSettingsMatrixWidget26on_exportSchemeBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='117' u='c' c='_ZN12GroupManager30onRCMExportConnectionTriggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='135' u='c' c='_ZN12GroupManager30onRCMExportConnectionTriggeredEv'/>

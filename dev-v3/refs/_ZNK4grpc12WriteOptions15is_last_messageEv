@@ -1,0 +1,15 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='185' type='bool grpc::WriteOptions::is_last_message() const'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='395' u='c' c='_ZN4grpc17ClientAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='572' u='c' c='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='881' u='c' c='_ZN4grpc17ServerAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1053' u='c' c='_ZN4grpc23ServerAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='325' u='c' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='496' u='c' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='655' u='c' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='674' u='c' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='734' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='752' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<doc f='include/grpcpp/impl/codegen/call.h' l='181'>/// Get value for the flag indicating that this is the last message, and
+  /// should be coalesced with trailing metadata.
+  ///
+  /// \sa GRPC_WRITE_LAST_MESSAGE</doc>

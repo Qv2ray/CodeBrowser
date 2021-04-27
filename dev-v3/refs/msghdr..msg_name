@@ -1,0 +1,13 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='259' type='void *'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='259'>/* Address to send to/receive from.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='861' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1163' u='w' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='208' u='w' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='235' u='r' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='286' u='w' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='342' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='345' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='432' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='435' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='743' u='w' c='uv__udp_try_send'/>

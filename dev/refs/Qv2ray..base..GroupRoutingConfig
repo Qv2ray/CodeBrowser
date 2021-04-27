@@ -1,0 +1,21 @@
+<inh f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='94' c='Qv2ray::base::__Qv2rayConfigObjectBase'/>
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='102' ll='127'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='117' c='_ZNK6Qv2ray4base18GroupRoutingConfigeqERKS1_'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='122' c='_ZN6Qv2ray4base18GroupRoutingConfig8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='122' c='_ZNK6Qv2ray4base18GroupRoutingConfig6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='122' c='_ZN6Qv2ray4base18GroupRoutingConfig8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='198'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='36'/>
+<size>224</size>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideDNS' o='192' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::dnsConfig' o='256' t='config::QvConfig_DNS'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::fakeDNSConfig' o='640' t='config::QvConfig_FakeDNS'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideRoute' o='768' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::routeConfig' o='832' t='config::QvConfig_Route'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideConnectionConfig' o='1344' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::connectionConfig' o='1352' t='config::QvConfig_Connection'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::overrideForwardProxyConfig' o='1400' t='bool'/>
+<mbr r='Qv2ray::base::GroupRoutingConfig::forwardProxyConfig' o='1408' t='config::QvConfig_ForwardProxy'/>
+<fun r='_ZN6Qv2ray4base18GroupRoutingConfig8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base18GroupRoutingConfig6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base18GroupRoutingConfig8fromJsonERK10QJsonValue'/>

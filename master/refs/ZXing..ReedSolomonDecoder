@@ -1,0 +1,26 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.h' l='47' ll='60'/>
+<size>1</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.h' l='25'>/**
+* &lt;p&gt;Implements Reed-Solomon decoding, as the name implies.&lt;/p&gt;
+*
+* &lt;p&gt;The algorithm will not be explained here, but the following references were helpful
+* in creating this implementation:&lt;/p&gt;
+*
+* &lt;ul&gt;
+* &lt;li&gt;Bruce Maggs.
+* &lt;a href=&quot;http://www.cs.cmu.edu/afs/cs.cmu.edu/project/pscico-guyb/realworld/www/rs_decode.ps&quot;&gt;
+* &quot;Decoding Reed-Solomon Codes&quot;&lt;/a&gt; (see discussion of Forney&apos;s Formula)&lt;/li&gt;
+* &lt;li&gt;J.I. Hall. &lt;a href=&quot;www.mth.msu.edu/~jhall/classes/codenotes/GRS.pdf&quot;&gt;
+* &quot;Chapter 5. Generalized Reed-Solomon Codes&quot;&lt;/a&gt;
+* (see discussion of Euclidean algorithm)&lt;/li&gt;
+* &lt;/ul&gt;
+*
+* &lt;p&gt;Much credit is due to William Rucklidge since portions of this code are an indirect
+* port of his C++ Reed-Solomon implementation.&lt;/p&gt;
+*
+* @author Sean Owen
+* @author William Rucklidge
+* @author sanfordsquires
+*/</doc>
+<fun r='_ZN5ZXing18ReedSolomonDecoder6DecodeERKNS_9GenericGFERSt6vectorIiSaIiEEi'/>
+<fun r='_ZN5ZXing18ReedSolomonDecoder6DecodeERKNS_9GenericGFERSt6vectorIiSaIiEEi'/>

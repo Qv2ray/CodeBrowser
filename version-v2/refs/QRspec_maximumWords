@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='92' type='int QRspec_maximumWords(QRencodeMode mode, int version)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='86'>/**
+ * Return the maximum length for the mode and version.
+ * @param mode
+ * @param version
+ * @return the maximum length (bytes)
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='989' u='c' c='QRinput_lengthOfCode'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1014' u='c' c='QRinput_encodeBitStream'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='158' ll='180' type='int QRspec_maximumWords(QRencodeMode mode, int version)'/>

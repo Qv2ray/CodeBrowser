@@ -1,0 +1,5 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.h' l='52' ll='54' type='int ZXing::BitSource::bitOffset() const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.h' l='49'>/**
+	* @return index of next bit in current byte which would be read by the next call to {@link #readBits(int)}.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='431' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeEdifactSegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

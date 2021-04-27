@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/atomic-ops.h' l='25' type='int cmpxchgi(int * ptr, int oldval, int newval)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/atomic-ops.h' l='31' ll='51' macro='1' type='int cmpxchgi(int * ptr, int oldval, int newval)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='69' u='c' c='uv_async_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='76' u='c' c='uv_async_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='97' u='c' c='uv__async_spin'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/spinlock.h' l='50' u='c' c='uv_spinlock_trylock'/>

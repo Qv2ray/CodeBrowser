@@ -1,0 +1,7 @@
+<dec f='include/grpcpp/impl/codegen/status_code_enum.h' l='97' type='10'/>
+<use f='include/grpcpp/impl/codegen/status.h' l='70' u='r' c='_ZN4grpc6StatusC1Ev'/>
+<doc f='include/grpcpp/impl/codegen/status_code_enum.h' l='92'>/// The operation was aborted, typically due to a concurrency issue like
+  /// sequencer check failures, transaction aborts, etc.
+  ///
+  /// See litmus test above for deciding between FAILED_PRECONDITION, ABORTED,
+  /// and UNAVAILABLE.</doc>

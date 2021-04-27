@@ -1,0 +1,11 @@
+<dec f='include/google/protobuf/message.h' l='836' type='const RepeatedPtrField&lt;T&gt; &amp; google::protobuf::Reflection::GetRepeatedPtrField(const google::protobuf::Message &amp; , const google::protobuf::FieldDescriptor * ) const'/>
+<def f='include/google/protobuf/message.h' l='1123' ll='1128' type='const RepeatedPtrField&lt;std::string&gt; &amp; google::protobuf::Reflection::GetRepeatedPtrField(const google::protobuf::Message &amp; message, const google::protobuf::FieldDescriptor * field) const'/>
+<def f='include/google/protobuf/message.h' l='1140' ll='1146' type='const RepeatedPtrField&lt;google::protobuf::Message&gt; &amp; google::protobuf::Reflection::GetRepeatedPtrField(const google::protobuf::Message &amp; message, const google::protobuf::FieldDescriptor * field) const'/>
+<def f='include/google/protobuf/message.h' l='1158' ll='1163' type='const RepeatedPtrField&lt;PB&gt; &amp; google::protobuf::Reflection::GetRepeatedPtrField(const google::protobuf::Message &amp; message, const google::protobuf::FieldDescriptor * field) const'/>
+<doc f='include/google/protobuf/message.h' l='1116'>// =============================================================================
+// Implementation details for {Get,Mutable}RawRepeatedPtrField.  We provide
+// specializations for &lt;string&gt;, &lt;StringPieceField&gt; and &lt;Message&gt; and handle
+// everything else with the default template which will match any type having
+// a method with signature &quot;static const google::protobuf::Descriptor* descriptor()&quot;.
+// Such a type presumably is a descendant of google::protobuf::Message.</doc>
+<doc f='include/google/protobuf/message.h' l='1138'>// -----</doc>

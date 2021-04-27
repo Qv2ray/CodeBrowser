@@ -1,0 +1,11 @@
+<def f='qv2ray/src/plugin-interface/QvPluginInterfaceModels.hpp' l='15' ll='25'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='27' c='_ZNK12Qv2rayPlugin18QvPluginSerializer15GetOutboundInfoERK7QStringRK11QJsonObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='75' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18TryGetOutboundInfoERK7QStringRK11QJsonObjectPb'/>
+<size>24</size>
+<mbr r='Qv2rayPlugin::QvPluginOutboundInfoObject::protocol' o='0' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginOutboundInfoObject::hostName' o='64' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginOutboundInfoObject::port' o='128' t='int'/>
+<fun r='_ZN12Qv2rayPlugin26QvPluginOutboundInfoObjectC1Ev'/>
+<fun r='_ZN12Qv2rayPlugin26QvPluginOutboundInfoObjectC1ERK7QStringS3_i'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='283' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18TryGetOutboundInfoERK7QStringRK11QJsonObjectPb'/>
+<size>24</size>

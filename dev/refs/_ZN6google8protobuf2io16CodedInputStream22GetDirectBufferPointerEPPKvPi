@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='197' type='bool google::protobuf::io::CodedInputStream::GetDirectBufferPointer(const void ** data, int * size)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='190'>// Sets *data to point directly at the unread part of the CodedInputStream&apos;s
+  // underlying buffer, and *size to the size of that buffer, but does not
+  // advance the stream&apos;s current position.  This will always either produce
+  // a non-empty buffer or return false.  If the caller consumes any of
+  // this data, it should then call Skip() to skip over the consumed bytes.
+  // This may be useful for implementing external fast parsing routines for
+  // types of data not covered by the CodedInputStream interface.</doc>

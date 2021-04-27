@@ -1,0 +1,14 @@
+<def f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='126' ll='140'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='138' c='_ZN6Qv2ray4base24SubscriptionConfigObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='147'/>
+<size>40</size>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::address' o='0' t='QString'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::updateInterval' o='64' t='float'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::IncludeRelation' o='96' t='Qv2ray::base::SubscriptionFilterRelation'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::ExcludeRelation' o='128' t='Qv2ray::base::SubscriptionFilterRelation'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::IncludeKeywords' o='192' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::SubscriptionConfigObject::ExcludeKeywords' o='256' t='QList&lt;QString&gt;'/>
+<fun r='_ZN6Qv2ray4base24SubscriptionConfigObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base24SubscriptionConfigObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base24SubscriptionConfigObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base24SubscriptionConfigObject6toJsonEv'/>

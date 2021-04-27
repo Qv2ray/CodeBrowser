@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/libsemver/version.hpp' l='244' type='bool semver::version::operator&lt;(const semver::version &amp; rh) const'/>
+<def f='qv2ray/3rdparty/libsemver/version.cpp' l='264' ll='281' type='bool semver::version::operator&lt;(const semver::version &amp; v) const'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='285' u='c' c='_ZNK6semver7versiongtERKS0_'/>
+<doc f='qv2ray/3rdparty/libsemver/version.hpp' l='232'>/**
+     * @brief Compares two instances.
+     *
+     * An instance is less than another if its version number is less than the
+     * other&apos;s.  Components are compared one by one, starting from the first.
+     * If the two components are equal, then the following component is
+     * considered.  If the first component is less than the second, then `true`
+     * is returned, otherwise `false` is returned.
+     *
+     * @param v The instance to be compared with.
+     * @return `true` if this instance is less than @p rh, `false` otherwise.
+     */</doc>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1546' type='const google::protobuf::FileDescriptor * google::protobuf::DescriptorPool::FindFileContainingSymbol(const std::string &amp; symbol_name) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1542'>// Find the FileDescriptor in the pool which defines the given symbol.
+  // If any of the Find*ByName() methods below would succeed, then this is
+  // equivalent to calling that method and calling the result&apos;s file() method.
+  // Otherwise this returns NULL.</doc>

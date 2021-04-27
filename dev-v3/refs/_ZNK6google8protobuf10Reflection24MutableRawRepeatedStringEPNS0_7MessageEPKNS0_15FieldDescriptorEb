@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/message.h' l='969' type='void * google::protobuf::Reflection::MutableRawRepeatedString(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, bool is_string) const'/>
+<use f='include/google/protobuf/message.h' l='1127' u='c' c='_ZNK6google8protobuf10Reflection19GetRepeatedPtrFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='1134' u='c' c='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<doc f='include/google/protobuf/message.h' l='963'>// Special version for specialized implementations of string.  We can&apos;t call
+  // MutableRawRepeatedField directly here because we don&apos;t have access to
+  // FieldOptions::* which are defined in descriptor.pb.h.  Including that
+  // file here is not possible because it would cause a circular include cycle.
+  // We use 1 routine rather than 2 (const vs mutable) because it is private
+  // and mutable a repeated string field doesn&apos;t change the message.</doc>

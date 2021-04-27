@@ -1,0 +1,5 @@
+<dec f='include/termios.h' l='70' type='int tcsetattr(int __fd, int __optional_actions, const struct termios * __termios_p)'/>
+<doc f='include/termios.h' l='68'>/* Set the state of FD to *TERMIOS_P.
+   Values for OPTIONAL_ACTIONS (TCSA*) are in &lt;bits/termios.h&gt;.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='289' u='c' c='uv_tty_set_mode'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='388' u='c' c='uv_tty_reset_mode'/>

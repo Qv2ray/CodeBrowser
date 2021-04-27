@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.h' l='38' type='static ZXing::BitMatrix ZXing::OneD::WriterHelper::RenderResult(const std::vector&lt;bool&gt; &amp; code, int width, int height, int sidesMargin)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarWriter.cpp' l='137' u='c' c='_ZNK5ZXing4OneD13CodabarWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.h' l='35'>/**
+	* @return a byte array of horizontal pixels (0 = white, 1 = black)
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='276' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='179' u='c' c='_ZNK5ZXing4OneD12Code39Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='194' u='c' c='_ZNK5ZXing4OneD12Code93Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN13Writer.cpp' l='64' u='c' c='_ZNK5ZXing4OneD11EAN13Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN8Writer.cpp' l='53' u='c' c='_ZNK5ZXing4OneD10EAN8Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFWriter.cpp' l='79' u='c' c='_ZNK5ZXing4OneD9ITFWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEWriter.cpp' l='58' u='c' c='_ZNK5ZXing4OneD10UPCEWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.cpp' l='28' ll='47' type='static ZXing::BitMatrix ZXing::OneD::WriterHelper::RenderResult(const std::vector&lt;bool&gt; &amp; code, int width, int height, int sidesMargin)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.cpp' l='25'>/**
+* @return a byte array of horizontal pixels (0 = white, 1 = black)
+*/</doc>

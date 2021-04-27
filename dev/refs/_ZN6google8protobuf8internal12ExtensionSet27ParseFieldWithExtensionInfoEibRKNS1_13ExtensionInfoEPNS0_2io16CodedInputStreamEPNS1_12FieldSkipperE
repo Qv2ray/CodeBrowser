@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/extension_set.h' l='683' type='bool google::protobuf::internal::ExtensionSet::ParseFieldWithExtensionInfo(int field_number, bool was_packed_on_wire, const google::protobuf::internal::ExtensionInfo &amp; extension, io::CodedInputStream * input, google::protobuf::internal::FieldSkipper * field_skipper)'/>
+<doc f='include/google/protobuf/extension_set.h' l='679'>// Parses a single extension from the input. The input should start out
+  // positioned immediately after the wire tag. This method is called in
+  // ParseField() after field number and was_packed_on_wire is extracted from
+  // the wire tag and ExtensionInfo is found by the field number.</doc>

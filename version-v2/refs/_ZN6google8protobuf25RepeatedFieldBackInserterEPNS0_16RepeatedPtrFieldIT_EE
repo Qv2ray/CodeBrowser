@@ -1,0 +1,4 @@
+<def f='include/google/protobuf/repeated_field.h' l='2593' ll='2596' type='internal::RepeatedPtrFieldBackInsertIterator&lt;T&gt; google::protobuf::RepeatedFieldBackInserter(RepeatedPtrField&lt;T&gt; *const mutable_field)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='2590'>// Special back insert iterator for RepeatedPtrField instances, just in
+// case someone wants to write generic template code that can access both
+// RepeatedFields and RepeatedPtrFields using a common name.</doc>

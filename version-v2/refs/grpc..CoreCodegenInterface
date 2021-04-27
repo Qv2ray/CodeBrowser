@@ -1,0 +1,68 @@
+<def f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='37' ll='133'/>
+<use f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='135'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='47'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='39'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='33'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='89'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='38'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='37'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='41'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='30'>/// Interface between the codegen library and the minimal subset of core
+/// features required by the generated code.
+///
+/// All undocumented methods are simply forwarding the call to their namesakes.
+/// Please refer to their corresponding documentation for details.
+///
+/// \warning This interface should be considered internal and private.</doc>
+<fun r='_ZN4grpc20CoreCodegenInterfaceD1Ev'/>
+<fun r='_ZN4grpc20CoreCodegenInterface11assert_failEPKcS2_i'/>
+<fun r='_ZN4grpc20CoreCodegenInterface36grpc_completion_queue_factory_lookupEPK32grpc_completion_queue_attributes'/>
+<fun r='_ZN4grpc20CoreCodegenInterface28grpc_completion_queue_createEPK29grpc_completion_queue_factoryPK32grpc_completion_queue_attributesPv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface37grpc_completion_queue_create_for_nextEPv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface38grpc_completion_queue_create_for_pluckEPv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface29grpc_completion_queue_destroyEP21grpc_completion_queue'/>
+<fun r='_ZN4grpc20CoreCodegenInterface27grpc_completion_queue_pluckEP21grpc_completion_queuePv12gpr_timespecS3_'/>
+<fun r='_ZN4grpc20CoreCodegenInterface10gpr_mallocEm'/>
+<fun r='_ZN4grpc20CoreCodegenInterface8gpr_freeEPv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface9grpc_initEv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface13grpc_shutdownEv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface11gpr_mu_initEP15pthread_mutex_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface14gpr_mu_destroyEP15pthread_mutex_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface11gpr_mu_lockEP15pthread_mutex_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface13gpr_mu_unlockEP15pthread_mutex_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface11gpr_cv_initEP14pthread_cond_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface14gpr_cv_destroyEP14pthread_cond_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface11gpr_cv_waitEP14pthread_cond_tP15pthread_mutex_t12gpr_timespec'/>
+<fun r='_ZN4grpc20CoreCodegenInterface13gpr_cv_signalEP14pthread_cond_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface16gpr_cv_broadcastEP14pthread_cond_t'/>
+<fun r='_ZN4grpc20CoreCodegenInterface21grpc_byte_buffer_copyEP16grpc_byte_buffer'/>
+<fun r='_ZN4grpc20CoreCodegenInterface24grpc_byte_buffer_destroyEP16grpc_byte_buffer'/>
+<fun r='_ZN4grpc20CoreCodegenInterface23grpc_byte_buffer_lengthEP16grpc_byte_buffer'/>
+<fun r='_ZN4grpc20CoreCodegenInterface28grpc_byte_buffer_reader_initEP23grpc_byte_buffer_readerP16grpc_byte_buffer'/>
+<fun r='_ZN4grpc20CoreCodegenInterface31grpc_byte_buffer_reader_destroyEP23grpc_byte_buffer_reader'/>
+<fun r='_ZN4grpc20CoreCodegenInterface28grpc_byte_buffer_reader_nextEP23grpc_byte_buffer_readerP10grpc_slice'/>
+<fun r='_ZN4grpc20CoreCodegenInterface27grpc_raw_byte_buffer_createEP10grpc_slicem'/>
+<fun r='_ZN4grpc20CoreCodegenInterface29grpc_slice_new_with_user_dataEPvmPFvS1_ES1_'/>
+<fun r='_ZN4grpc20CoreCodegenInterface23grpc_slice_new_with_lenEPvmPFvS1_mE'/>
+<fun r='_ZN4grpc20CoreCodegenInterface28grpc_call_cancel_with_statusEP9grpc_call16grpc_status_codePKcPv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface13grpc_call_refEP9grpc_call'/>
+<fun r='_ZN4grpc20CoreCodegenInterface15grpc_call_unrefEP9grpc_call'/>
+<fun r='_ZN4grpc20CoreCodegenInterface21grpc_call_arena_allocEP9grpc_callm'/>
+<fun r='_ZN4grpc20CoreCodegenInterface16grpc_empty_sliceEv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface17grpc_slice_mallocEm'/>
+<fun r='_ZN4grpc20CoreCodegenInterface16grpc_slice_unrefE10grpc_slice'/>
+<fun r='_ZN4grpc20CoreCodegenInterface14grpc_slice_refE10grpc_slice'/>
+<fun r='_ZN4grpc20CoreCodegenInterface21grpc_slice_split_tailEP10grpc_slicem'/>
+<fun r='_ZN4grpc20CoreCodegenInterface21grpc_slice_split_headEP10grpc_slicem'/>
+<fun r='_ZN4grpc20CoreCodegenInterface14grpc_slice_subE10grpc_slicemm'/>
+<fun r='_ZN4grpc20CoreCodegenInterface21grpc_slice_buffer_addEP17grpc_slice_buffer10grpc_slice'/>
+<fun r='_ZN4grpc20CoreCodegenInterface21grpc_slice_buffer_popEP17grpc_slice_buffer'/>
+<fun r='_ZN4grpc20CoreCodegenInterface29grpc_slice_from_static_bufferEPKvm'/>
+<fun r='_ZN4grpc20CoreCodegenInterface29grpc_slice_from_copied_bufferEPKvm'/>
+<fun r='_ZN4grpc20CoreCodegenInterface24grpc_metadata_array_initEP19grpc_metadata_array'/>
+<fun r='_ZN4grpc20CoreCodegenInterface27grpc_metadata_array_destroyEP19grpc_metadata_array'/>
+<fun r='_ZN4grpc20CoreCodegenInterface2okEv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface9cancelledEv'/>
+<fun r='_ZN4grpc20CoreCodegenInterface14gpr_inf_futureE14gpr_clock_type'/>
+<fun r='_ZN4grpc20CoreCodegenInterface10gpr_time_0E14gpr_clock_type'/>

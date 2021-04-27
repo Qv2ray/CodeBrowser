@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/repeated_field.h' l='591' type='void google::protobuf::internal::RepeatedPtrFieldBase::MergeFromInternal(const google::protobuf::internal::RepeatedPtrFieldBase &amp; other, void (google::protobuf::internal::RepeatedPtrFieldBase::*)(void **, void **, int, int) inner_loop)'/>
+<use f='include/google/protobuf/repeated_field.h' l='1588' u='c' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase9MergeFromERKS2_'/>
+<def f='include/google/protobuf/repeated_field.h' l='1592' ll='1606' type='void google::protobuf::internal::RepeatedPtrFieldBase::MergeFromInternal(const google::protobuf::internal::RepeatedPtrFieldBase &amp; other, void (google::protobuf::internal::RepeatedPtrFieldBase::*)(void **, void **, int, int) inner_loop)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='589'>// Non-templated inner function to avoid code duplication. Takes a function
+  // pointer to the type-specific (templated) inner allocate/merge loop.</doc>

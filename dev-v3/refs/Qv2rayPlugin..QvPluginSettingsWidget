@@ -1,0 +1,31 @@
+<def f='qv2ray/src/plugin-interface/gui/QvGUIPluginInterface.hpp' l='33' ll='41'/>
+<use f='qv2ray/src/plugin-interface/gui/QvGUIPluginInterface.hpp' l='96' c='_ZNK12Qv2rayPlugin18PluginGUIInterface17GetSettingsWidgetEv'/>
+<use f='qv2ray/src/plugin-interface/gui/QvGUIPluginInterface.hpp' l='114' c='_ZNK12Qv2rayPlugin18PluginGUIInterface21createSettingsWidgetsEv'/>
+<ovr f='qv2ray/src/plugins/protocols/ui/PluginSettingsWidget.hpp' l='5' c='SimplePluginSettingsWidget'/>
+<use f='qv2ray/src/plugins/protocols/ui/PluginSettingsWidget.hpp' l='6'/>
+<size>40</size>
+<smbr r='Qv2rayPlugin::QvPluginSettingsWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK12Qv2rayPlugin22QvPluginSettingsWidget10metaObjectEv'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget11qt_metacastEPKc'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget2trEPKcS2_i'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidgetC1EP7QWidget'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidgetD1Ev'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget11SetSettingsERK11QJsonObject'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget11GetSettingsEv'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2rayPlugin::QvPluginSettingsWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK12Qv2rayPlugin22QvPluginSettingsWidget10metaObjectEv'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget11qt_metacastEPKc'/>
+<fun r='_ZN12Qv2rayPlugin22QvPluginSettingsWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.hpp' l='52'/>
+<size>40</size>
+<use f='qv2ray/src/plugins/protocols/ui/Interface.hpp' l='32' c='_ZNK20ProtocolGUIInterface21createSettingsWidgetsEv'/>
+<size>40</size>
+<use f='qv2ray/src/plugins/protocols/ui/PluginSettingsWidget.cpp' l='3' c='_ZN26SimplePluginSettingsWidgetC1EP7QWidget'/>
+<size>40</size>
+<use f='qv2ray/src/plugins/utils/core/GUIInterface.hpp' l='21' c='_ZNK12GUIInterface21createSettingsWidgetsEv'/>
+<size>40</size>
+<use f='qv2ray/src/plugins/utils/core/GUIInterface.cpp' l='19' c='_ZNK12GUIInterface21createSettingsWidgetsEv'/>
+<size>40</size>

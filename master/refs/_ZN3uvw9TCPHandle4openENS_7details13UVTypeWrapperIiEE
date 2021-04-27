@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='69' type='void uvw::TCPHandle::open(uvw::OSSocketHandle socket)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='21' ll='23' type='void uvw::TCPHandle::open(uvw::OSSocketHandle socket)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='61'>/**
+     * @brief Opens an existing file descriptor or SOCKET as a TCP handle.
+     *
+     * The passed file descriptor or SOCKET is not checked for its type, but
+     * it’s required that it represents a valid stream socket.
+     *
+     * @param socket A valid socket handle (either a file descriptor or a SOCKET).
+     */</doc>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='66' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>

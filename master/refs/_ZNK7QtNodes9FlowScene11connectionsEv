@@ -1,0 +1,5 @@
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='56' u='c' c='_ZNK7QtNodes9FlowScene10connectionERK5QUuid'/>
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='59' type='const std::unordered_map&lt;QUuid, std::shared_ptr&lt;Connection&gt;&gt; &amp; QtNodes::FlowScene::connections() const'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='250' ll='253' type='const std::unordered_map&lt;QUuid, std::shared_ptr&lt;Connection&gt;&gt; &amp; QtNodes::FlowScene::connections() const'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='228' u='c' c='_ZN11RouteEditor19onConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='668' u='c' c='_ZN11RouteEditor32on_enableBalancerCB_stateChangedEi'/>

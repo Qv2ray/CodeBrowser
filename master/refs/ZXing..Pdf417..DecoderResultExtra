@@ -1,0 +1,41 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/CustomData.h' l='21' c='ZXing::CustomData'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecoderResultExtra.h' l='30' ll='136'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='559' c='_ZN5ZXing6Pdf417L16DecodeMacroBlockERKSt6vectorIiSaIiEEiRNS0_18DecoderResultExtraERi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='679' c='_ZN5ZXing6Pdf41722DecodedBitStreamParser6DecodeERKSt6vectorIiSaIiEEi'/>
+<size>200</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecoderResultExtra.h' l='27'>/**
+* @author Guenther Grau
+*/</doc>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_segmentIndex' o='64' t='int'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_fileId' o='128' t='std::string'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_optionalData' o='384' t='std::vector&lt;int&gt;'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_lastSegment' o='576' t='bool'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_segmentCount' o='608' t='int'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_sender' o='640' t='std::string'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_addressee' o='896' t='std::string'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_fileName' o='1152' t='std::string'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_fileSize' o='1408' t='int64_t'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_timestamp' o='1472' t='int64_t'/>
+<mbr r='ZXing::Pdf417::DecoderResultExtra::_checksum' o='1536' t='int'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra12segmentIndexEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra15setSegmentIndexEi'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra6fileIdB5cxx11Ev'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra9setFileIdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra12optionalDataEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra15setOptionalDataERKSt6vectorIiSaIiEE'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra13isLastSegmentEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra14setLastSegmentEb'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra12segmentCountEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra15setSegmentCountEi'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra6senderB5cxx11Ev'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra9setSenderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra9addresseeB5cxx11Ev'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra12setAddresseeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra8fileNameB5cxx11Ev'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra11setFileNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra8fileSizeEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra11setFileSizeEl'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra8checksumEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra11setChecksumEi'/>
+<fun r='_ZNK5ZXing6Pdf41718DecoderResultExtra9timestampEv'/>
+<fun r='_ZN5ZXing6Pdf41718DecoderResultExtra12setTimestampEl'/>

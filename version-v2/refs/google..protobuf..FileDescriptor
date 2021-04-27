@@ -1,0 +1,130 @@
+<use f='include/google/protobuf/descriptor.h' l='196' c='_ZN6google8protobuf8internal14LazyDescriptor7SetLazyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS0_14FileDescriptorE'/>
+<use f='include/google/protobuf/descriptor.h' l='214'/>
+<use f='include/google/protobuf/descriptor.h' l='240' c='_ZNK6google8protobuf10Descriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='445'/>
+<use f='include/google/protobuf/descriptor.h' l='485'/>
+<use f='include/google/protobuf/descriptor.h' l='578' c='_ZNK6google8protobuf15FieldDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='755'/>
+<use f='include/google/protobuf/descriptor.h' l='804'/>
+<use f='include/google/protobuf/descriptor.h' l='821' c='_ZNK6google8protobuf15OneofDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='897' c='_ZNK6google8protobuf14EnumDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1002'/>
+<use f='include/google/protobuf/descriptor.h' l='1029'/>
+<use f='include/google/protobuf/descriptor.h' l='1054' c='_ZNK6google8protobuf19EnumValueDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1128' c='_ZNK6google8protobuf17ServiceDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1177'/>
+<use f='include/google/protobuf/descriptor.h' l='1188'/>
+<use f='include/google/protobuf/descriptor.h' l='1208' c='_ZNK6google8protobuf16MethodDescriptor4fileEv'/>
+<def f='include/google/protobuf/descriptor.h' l='1283' ll='1469'/>
+<use f='include/google/protobuf/descriptor.h' l='1300' c='_ZNK6google8protobuf14FileDescriptor10dependencyEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1308' c='_ZNK6google8protobuf14FileDescriptor17public_dependencyEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1316' c='_ZNK6google8protobuf14FileDescriptor15weak_dependencyEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1421' c='_ZN6google8protobuf14FileDescriptor20DependenciesOnceInitEPKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1440'/>
+<use f='include/google/protobuf/descriptor.h' l='1468' c='_ZN6google8protobuf14FileDescriptorC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1468' c='_ZN6google8protobuf14FileDescriptoraSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1540' c='_ZNK6google8protobuf14DescriptorPool14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1546' c='_ZNK6google8protobuf14DescriptorPool24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1631' c='_ZN6google8protobuf14DescriptorPool9BuildFileERKNS0_19FileDescriptorProtoE'/>
+<use f='include/google/protobuf/descriptor.h' l='1634' c='_ZN6google8protobuf14DescriptorPool25BuildFileCollectingErrorsERKNS0_19FileDescriptorProtoEPNS1_14ErrorCollectorE'/>
+<use f='include/google/protobuf/descriptor.h' l='1747'/>
+<use f='include/google/protobuf/descriptor.h' l='1769' c='_ZNK6google8protobuf14DescriptorPool21BuildFileFromDatabaseERKNS0_19FileDescriptorProtoE'/>
+<use f='include/google/protobuf/descriptor.h' l='1780' c='_ZNK6google8protobuf14DescriptorPool18NewPlaceholderFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1781' c='_ZNK6google8protobuf14DescriptorPool31NewPlaceholderFileWithMutexHeldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1838' c='_ZNK6google8protobuf10Descriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1871' c='_ZNK6google8protobuf15FieldDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1900' c='_ZNK6google8protobuf14EnumDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1920' c='_ZNK6google8protobuf17ServiceDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='2048' c='_ZNK6google8protobuf15OneofDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='2064' c='_ZNK6google8protobuf19EnumValueDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='2076' c='_ZNK6google8protobuf16MethodDescriptor4fileEv'/>
+<use f='include/google/protobuf/descriptor.h' l='2115' c='_ZNK6google8protobuf14FileDescriptor17public_dependencyEi'/>
+<use f='include/google/protobuf/descriptor.h' l='2120' c='_ZNK6google8protobuf14FileDescriptor15weak_dependencyEi'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='45'/>
+<size>160</size>
+<doc f='include/google/protobuf/descriptor.h' l='1280'>// Describes a whole .proto file.  To get the FileDescriptor for a compiled-in
+// file, get the descriptor for something defined in that file and call
+// descriptor-&gt;file().  Use DescriptorPool to construct your own descriptors.</doc>
+<fun r='_ZNK6google8protobuf14FileDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor7packageB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor4poolEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor16dependency_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor10dependencyEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor23public_dependency_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor17public_dependencyEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor21weak_dependency_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor15weak_dependencyEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor18message_type_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor12message_typeEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor15enum_type_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor9enum_typeEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor13service_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor7serviceEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor15extension_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor9extensionEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor6syntaxEv'/>
+<fun r='_ZN6google8protobuf14FileDescriptor10SyntaxNameENS1_6SyntaxE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor21FindMessageTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor18FindEnumTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor19FindEnumValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor17FindServiceByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor19FindExtensionByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor28FindExtensionByLowercaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor28FindExtensionByCamelcaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor6CopyToEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor20CopySourceCodeInfoToEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor14CopyJsonNameToEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor11DebugStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor14is_placeholderEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor17GetSourceLocationERKSt6vectorIiSaIiEEPNS0_14SourceLocationE'/>
+<mbr r='google::protobuf::FileDescriptor::name_' o='0' t='const std::string *'/>
+<mbr r='google::protobuf::FileDescriptor::package_' o='64' t='const std::string *'/>
+<mbr r='google::protobuf::FileDescriptor::pool_' o='128' t='const google::protobuf::DescriptorPool *'/>
+<mbr r='google::protobuf::FileDescriptor::dependencies_once_' o='192' t='google::protobuf::GoogleOnceDynamic *'/>
+<fun r='_ZN6google8protobuf14FileDescriptor20DependenciesOnceInitEPKS1_'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor28InternalDependenciesOnceInitEv'/>
+<mbr r='google::protobuf::FileDescriptor::dependency_count_' o='256' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::public_dependency_count_' o='288' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::weak_dependency_count_' o='320' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::message_type_count_' o='352' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::enum_type_count_' o='384' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::service_count_' o='416' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::extension_count_' o='448' t='int'/>
+<mbr r='google::protobuf::FileDescriptor::syntax_' o='480' t='google::protobuf::FileDescriptor::Syntax'/>
+<mbr r='google::protobuf::FileDescriptor::is_placeholder_' o='512' t='bool'/>
+<mbr r='google::protobuf::FileDescriptor::finished_building_' o='520' t='bool'/>
+<mbr r='google::protobuf::FileDescriptor::dependencies_' o='576' t='const google::protobuf::FileDescriptor **'/>
+<mbr r='google::protobuf::FileDescriptor::dependencies_names_' o='640' t='const std::string **'/>
+<mbr r='google::protobuf::FileDescriptor::public_dependencies_' o='704' t='int *'/>
+<mbr r='google::protobuf::FileDescriptor::weak_dependencies_' o='768' t='int *'/>
+<mbr r='google::protobuf::FileDescriptor::message_types_' o='832' t='google::protobuf::Descriptor *'/>
+<mbr r='google::protobuf::FileDescriptor::enum_types_' o='896' t='google::protobuf::EnumDescriptor *'/>
+<mbr r='google::protobuf::FileDescriptor::services_' o='960' t='google::protobuf::ServiceDescriptor *'/>
+<mbr r='google::protobuf::FileDescriptor::extensions_' o='1024' t='google::protobuf::FieldDescriptor *'/>
+<mbr r='google::protobuf::FileDescriptor::options_' o='1088' t='const google::protobuf::FileOptions *'/>
+<mbr r='google::protobuf::FileDescriptor::tables_' o='1152' t='const google::protobuf::FileDescriptorTables *'/>
+<mbr r='google::protobuf::FileDescriptor::source_code_info_' o='1216' t='const google::protobuf::SourceCodeInfo *'/>
+<fun r='_ZN6google8protobuf14FileDescriptorC1Ev'/>
+<fun r='_ZN6google8protobuf14FileDescriptorC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor7packageB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor4poolEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor16dependency_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor23public_dependency_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor21weak_dependency_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor18message_type_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor15enum_type_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor13service_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor15extension_countEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor14is_placeholderEv'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor12message_typeEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor9enum_typeEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor7serviceEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor9extensionEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor17public_dependencyEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor15weak_dependencyEi'/>
+<fun r='_ZNK6google8protobuf14FileDescriptor6syntaxEv'/>

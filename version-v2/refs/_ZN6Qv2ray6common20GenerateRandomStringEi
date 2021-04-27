@@ -1,0 +1,16 @@
+<dec f='qv2ray/src/utils/QvHelpers.hpp' l='33' type='const QString Qv2ray::common::GenerateRandomString(int len = 12)'/>
+<use f='qv2ray/src/utils/QvHelpers.hpp' l='36' u='c' c='_ZN6Qv2ray6common12GenerateUuidEv'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='81' u='c' c='_ZN6Qv2ray4core10connection10generation7filters16FillupTagsFilterER13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='30' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='388' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='402' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler17GetGroupRoutingIdERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='284' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigE13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERKNS4_6IDTypeINS4_16__GroupRoutingIdEEEb'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='43' u='c' c='_ZN14NodeDispatcher14LoadFullConfigERK13SAFETYPE_IMPLIN6Qv2ray4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='51' u='c' c='_ZN14NodeDispatcher14LoadFullConfigERK13SAFETYPE_IMPLIN6Qv2ray4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='167' u='c' c='_ZN14NodeDispatcher13CreateInboundE13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='188' u='c' c='_ZN14NodeDispatcher14CreateOutboundEN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='227' u='c' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.cpp' l='283' u='c' c='_ZN12GroupManager25on_addGroupButton_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.cpp' l='105' u='c' c='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.cpp' l='120' u='c' c='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>
+<def f='qv2ray/src/utils/QvHelpers.cpp' l='14' ll='28' type='const QString Qv2ray::common::GenerateRandomString(int len = 12)'/>

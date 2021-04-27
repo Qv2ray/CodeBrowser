@@ -1,0 +1,9 @@
+<def f='qv2ray/src/core/CoreUtils.hpp' l='14' ll='17' type='const QString Qv2ray::core::getTag(const Qv2ray::base::safetype::INBOUND &amp; in)'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='161' u='c' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='164' u='c' c='_ZN14NodeDispatcher13CreateInboundE13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/models/InboundNodeModel.cpp' l='26' u='c' c='_ZN6Qv2ray2ui10nodemodels16InboundNodeModel16onNodeHoverEnterEv'/>
+<use f='qv2ray/src/ui/widgets/node/models/RuleNodeModel.cpp' l='44' u='c' c='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel22inputConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/widgets/node/models/RuleNodeModel.cpp' l='69' u='c' c='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel9setInDataESt6vectorISt10shared_ptrIN7QtNodes8NodeDataEESaIS7_EEi'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='22' u='c' c='_ZN21InboundOutboundWidget8setValueESt10shared_ptrI13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectEE'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='56' u='c' c='_ZN21InboundOutboundWidget18on_editBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='101' u='c' c='_ZN21InboundOutboundWidget22on_editJsonBtn_clickedEv'/>

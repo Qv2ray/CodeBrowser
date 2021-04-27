@@ -1,0 +1,4 @@
+<dec f='include/grpc/grpc.h' l='293' type='void grpc_channel_reset_connect_backoff(grpc_channel * channel)'/>
+<doc f='include/grpc/grpc.h' l='290'>/** EXPERIMENTAL.  Resets the channel&apos;s connect backoff.
+    TODO(roth): When we see whether this proves useful, either promote
+    to non-experimental or remove it. */</doc>

@@ -1,0 +1,35 @@
+<def f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.hpp' l='20' ll='55'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='182'/>
+<size>56</size>
+<smbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray2ui7widgets6models20ConnectionListHelper10metaObjectEv'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper2trEPKcS5_i'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper6trUtf8EPKcS5_i'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelperC1EP9QTreeViewP7QObject'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelperD1Ev'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper4SortENS2_18ConnectionInfoRoleEN2Qt9SortOrderE'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper6FilterERK7QString'/>
+<fun r='_ZNK6Qv2ray2ui7widgets6models20ConnectionListHelper22GetConnectionPairIndexERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZNK6Qv2ray2ui7widgets6models20ConnectionListHelper13GetGroupIndexERKNS_4base6IDTypeINS4_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper17addConnectionItemERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper12addGroupItemERKNS_4base6IDTypeINS4_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper14OnGroupCreatedERKNS_4base6IDTypeINS4_9__GroupIdEEERK7QString'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper14OnGroupDeletedERKNS_4base6IDTypeINS4_9__GroupIdEEERK5QListINS5_INS4_14__ConnectionIdEEEE'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper19OnConnectionDeletedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<mbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::parentView' o='128' t='QTreeView *'/>
+<mbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::model' o='192' t='QStandardItemModel *'/>
+<mbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::groups' o='256' t='QHash&lt;Qv2ray::base::GroupId, QStandardItem *&gt;'/>
+<mbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::pairs' o='320' t='QHash&lt;Qv2ray::base::ConnectionGroupPair, QStandardItem *&gt;'/>
+<mbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::connections' o='384' t='QHash&lt;Qv2ray::base::ConnectionId, QList&lt;QStandardItem *&gt;&gt;'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::ui::widgets::models::ConnectionListHelper::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray2ui7widgets6models20ConnectionListHelper10metaObjectEv'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelper11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='119' c='_ZN10MainWindowC1EP7QWidget'/>
+<size>56</size>

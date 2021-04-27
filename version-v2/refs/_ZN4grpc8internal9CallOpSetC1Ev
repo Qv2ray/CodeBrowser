@@ -1,0 +1,21 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='626' type='void grpc::internal::CallOpSet::CallOpSet&lt;Op1, Op2, Op3, Op4, Op5, Op6&gt;()'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='189' u='c' c='_ZN4grpc12ClientReader22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='223' u='c' c='_ZN4grpc12ClientReader6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='252' u='c' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='306' u='c' c='_ZN4grpc12ClientWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='323' u='c' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='343' u='c' c='_ZN4grpc12ClientWriter10WritesDoneEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='388' u='c' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='457' u='c' c='_ZN4grpc18ClientReaderWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='494' u='c' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='514' u='c' c='_ZN4grpc18ClientReaderWriter10WritesDoneEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='528' u='c' c='_ZN4grpc18ClientReaderWriter6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='559' u='c' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='585' u='c' c='_ZN4grpc12ServerReader19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='637' u='c' c='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='710' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='75' u='c' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='118' u='c' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='164' u='c' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='207' u='c' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='295' u='c' c='_ZN4grpc8internal18ErrorMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>

@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='60' type='const char * uvw::ErrorEvent::name() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='53'>/**
+     * @brief Returns the error name for the given error code.
+     *
+     * Leaks a few bytes of memory when you call it with an unknown error code.
+     *
+     * @return The error name for the given error code.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/emitter.cpp' l='22' ll='24' type='const char * uvw::ErrorEvent::name() const'/>

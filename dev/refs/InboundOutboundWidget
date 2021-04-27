@@ -1,0 +1,36 @@
+<inh f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='29' c='Qv2ray::ui::nodemodels::QvNodeWidget'/>
+<inh f='/qv2ray_autogen/include/ui_InboundOutboundWidget.h' l='91' c='Ui::InboundOutboundWidget'/>
+<def f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.hpp' l='6' ll='36'/>
+<use f='/qv2ray_autogen/G3FQ764CHM/moc_InboundOutboundWidget.cpp' l='78' c='_ZN21InboundOutboundWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>176</size>
+<smbr r='InboundOutboundWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK21InboundOutboundWidget10metaObjectEv'/>
+<fun r='_ZN21InboundOutboundWidget11qt_metacastEPKc'/>
+<fun r='_ZN21InboundOutboundWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN21InboundOutboundWidget2trEPKcS1_i'/>
+<fun r='_ZN21InboundOutboundWidget6trUtf8EPKcS1_i'/>
+<fun r='_ZN21InboundOutboundWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN21InboundOutboundWidgetC1EN6Qv2ray4base7objects7complex18ComplexTagNodeModeESt10shared_ptrI14NodeDispatcherEP7QWidget'/>
+<fun r='_ZN21InboundOutboundWidget8setValueESt10shared_ptrI13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectEE'/>
+<fun r='_ZN21InboundOutboundWidget8setValueESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEE'/>
+<fun r='_ZN21InboundOutboundWidget11changeEventEP6QEvent'/>
+<fun r='_ZN21InboundOutboundWidget18on_editBtn_clickedEv'/>
+<fun r='_ZN21InboundOutboundWidget22on_editJsonBtn_clickedEv'/>
+<fun r='_ZN21InboundOutboundWidget20on_tagTxt_textEditedERK7QString'/>
+<mbr r='InboundOutboundWidget::workingMode' o='896' t='Qv2ray::base::objects::complex::ComplexTagNodeMode'/>
+<mbr r='InboundOutboundWidget::inboundObject' o='960' t='std::shared_ptr&lt;INBOUND&gt;'/>
+<mbr r='InboundOutboundWidget::outboundObject' o='1088' t='std::shared_ptr&lt;OutboundObjectMeta&gt;'/>
+<mbr r='InboundOutboundWidget::isExternalOutbound' o='1216' t='bool'/>
+<mbr r='InboundOutboundWidget::editExternalMsg' o='1280' t='const QString'/>
+<mbr r='InboundOutboundWidget::editExternalComplexMsg' o='1344' t='const QString'/>
+<fun r='_ZN21InboundOutboundWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='InboundOutboundWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK21InboundOutboundWidget10metaObjectEv'/>
+<fun r='_ZN21InboundOutboundWidget11qt_metacastEPKc'/>
+<fun r='_ZN21InboundOutboundWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/node/models/InboundNodeModel.cpp' l='10' c='_ZN6Qv2ray2ui10nodemodels16InboundNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_I13SAFETYPE_IMPLINS_4base8safetype11__INBOUND__E11QJsonObjectEE'/>
+<use f='qv2ray/src/ui/widgets/node/models/InboundNodeModel.cpp' l='12' c='_ZN6Qv2ray2ui10nodemodels16InboundNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_I13SAFETYPE_IMPLINS_4base8safetype11__INBOUND__E11QJsonObjectEE'/>
+<size>176</size>
+<use f='qv2ray/src/ui/widgets/node/models/OutboundNodeModel.cpp' l='19' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_INS_4base7objects7complex18OutboundObjectMetaEE'/>
+<use f='qv2ray/src/ui/widgets/node/models/OutboundNodeModel.cpp' l='20' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_INS_4base7objects7complex18OutboundObjectMetaEE'/>
+<size>176</size>

@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='939' type='void uvw::FsReq::scandir(std::string path, int flags)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='339' ll='341' type='void uvw::FsReq::scandir(std::string path, int flags)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='930'>/**
+     * @brief Async [scandir](http://linux.die.net/man/3/scandir).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::SCANDIR&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     * @param flags Flags, as described in the official documentation.
+     */</doc>

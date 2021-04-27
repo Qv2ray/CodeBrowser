@@ -1,0 +1,64 @@
+<use f='include/c++/10/system_error' l='133' c='_ZNKSt3_V214error_category10equivalentERKSt10error_codei'/>
+<use f='include/c++/10/system_error' l='164' c='_ZSt15make_error_codeSt4errc'/>
+<def f='include/c++/10/system_error' l='180' ll='232'/>
+<use f='include/c++/10/system_error' l='238' c='_ZSt15make_error_codeSt4errc'/>
+<use f='include/c++/10/system_error' l='240' c='_ZSt15make_error_codeSt4errc'/>
+<use f='include/c++/10/system_error' l='252' c='_ZStltRKSt10error_codeS1_'/>
+<use f='include/c++/10/system_error' l='252' c='_ZStltRKSt10error_codeS1_'/>
+<use f='include/c++/10/system_error' l='262' c='_ZStlsRSt13basic_ostreamIT_T0_ERKSt10error_code'/>
+<use f='include/c++/10/system_error' l='342' c='_ZSteqRKSt10error_codeS1_'/>
+<use f='include/c++/10/system_error' l='342' c='_ZSteqRKSt10error_codeS1_'/>
+<use f='include/c++/10/system_error' l='349' c='_ZSteqRKSt10error_codeRKSt15error_condition'/>
+<use f='include/c++/10/system_error' l='390' c='_ZSteqRKSt15error_conditionRKSt10error_code'/>
+<use f='include/c++/10/system_error' l='398' c='_ZStneRKSt10error_codeS1_'/>
+<use f='include/c++/10/system_error' l='398' c='_ZStneRKSt10error_codeS1_'/>
+<use f='include/c++/10/system_error' l='404' c='_ZStneRKSt10error_codeRKSt15error_condition'/>
+<use f='include/c++/10/system_error' l='410' c='_ZStneRKSt15error_conditionRKSt10error_code'/>
+<use f='include/c++/10/system_error' l='431'/>
+<use f='include/c++/10/system_error' l='434' c='_ZNSt12system_errorC1ESt10error_code'/>
+<use f='include/c++/10/system_error' l='434' c='_ZNSt12system_errorC1ESt10error_code'/>
+<use f='include/c++/10/system_error' l='437' c='_ZNSt12system_errorC1ESt10error_codeRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/10/system_error' l='440' c='_ZNSt12system_errorC1ESt10error_codePKc'/>
+<use f='include/c++/10/system_error' l='444' c='_ZNSt12system_errorC1EiRKNSt3_V214error_categoryEPKc'/>
+<use f='include/c++/10/system_error' l='447' c='_ZNSt12system_errorC1EiRKNSt3_V214error_categoryE'/>
+<use f='include/c++/10/system_error' l='451' c='_ZNSt12system_errorC1EiRKNSt3_V214error_categoryERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/10/system_error' l='461' c='_ZNKSt12system_error4codeEv'/>
+<use f='include/c++/10/system_error' l='479'/>
+<use f='include/c++/10/system_error' l='483' c='_ZNKSt4hashISt10error_codeEclERKS0_'/>
+<use f='include/c++/10/bits/ios_base.h' l='209' c='_ZSt15make_error_codeSt7io_errc'/>
+<use f='include/c++/10/bits/ios_base.h' l='211' c='_ZSt15make_error_codeSt7io_errc'/>
+<use f='include/c++/10/bits/ios_base.h' l='263' c='_ZNSt8ios_base7failureB5cxx11C1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10error_code'/>
+<use f='include/c++/10/bits/ios_base.h' l='266' c='_ZNSt8ios_base7failureB5cxx11C1EPKcRKSt10error_code'/>
+<use f='include/c++/10/future' l='83' c='_ZSt15make_error_codeSt11future_errc'/>
+<use f='include/c++/10/future' l='85' c='_ZSt15make_error_codeSt11future_errc'/>
+<use f='include/c++/10/future' l='109' c='_ZNKSt12future_error4codeEv'/>
+<use f='include/c++/10/future' l='114' c='_ZNSt12future_errorC1ESt10error_code'/>
+<use f='include/c++/10/future' l='120'/>
+<size>16</size>
+<doc f='include/c++/10/system_error' l='166'>/** Class error_code
+   *
+   * This class is a value type storing an integer error number and a
+   * category that gives meaning to the error number. Typically this is done
+   * close the the point where the error happens, to capture the original
+   * error value.
+   *
+   * An `error_code` object can be used to store the original error value
+   * emitted by some subsystem, with a category relevant to the subsystem.
+   * For example, errors from POSIX library functions can be represented by
+   * an `errno` value and the &quot;generic&quot; category, but errors from an HTTP
+   * library might be represented by an HTTP response status code (e.g. 404)
+   * and a custom category defined by the library.
+   */</doc>
+<fun r='_ZNSt10error_codeC1Ev'/>
+<fun r='_ZNSt10error_codeC1EiRKNSt3_V214error_categoryE'/>
+<fun r='_ZNSt10error_codeC1ET_'/>
+<fun r='_ZNSt10error_code6assignEiRKNSt3_V214error_categoryE'/>
+<fun r='_ZNSt10error_code5clearEv'/>
+<fun r='_ZNSt10error_codeaSET_'/>
+<fun r='_ZNKSt10error_code5valueEv'/>
+<fun r='_ZNKSt10error_code8categoryEv'/>
+<fun r='_ZNKSt10error_code23default_error_conditionEv'/>
+<fun r='_ZNKSt10error_code7messageB5cxx11Ev'/>
+<fun r='_ZNKSt10error_codecvbEv'/>
+<mbr r='std::error_code::_M_value' o='0' t='int'/>
+<mbr r='std::error_code::_M_cat' o='64' t='const std::_V2::error_category *'/>

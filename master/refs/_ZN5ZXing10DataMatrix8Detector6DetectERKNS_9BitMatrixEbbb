@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.h' l='41' type='static ZXing::DetectorResult ZXing::DataMatrix::Detector::Detect(const ZXing::BitMatrix &amp; image, bool tryHarder, bool tryRotate, bool isPure)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='1049' ll='1058' type='static ZXing::DetectorResult ZXing::DataMatrix::Detector::Detect(const ZXing::BitMatrix &amp; image, bool tryHarder, bool tryRotate, bool isPure)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.h' l='35'>/**
+	* &lt;p&gt;Detects a Data Matrix Code in an image.&lt;/p&gt;
+	*
+	* @return {@link DetectorResult} encapsulating results of detecting a Data Matrix Code
+	* @throws NotFoundException if no Data Matrix Code can be found
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='55' u='c' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>

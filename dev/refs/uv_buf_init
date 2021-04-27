@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='475' type='uv_buf_t uv_buf_init(char * base, unsigned int len)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1142' u='c' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='231' u='c' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='264' u='c' c='uv__udp_recvmsg'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='157' ll='162' type='uv_buf_t uv_buf_init(char * base, unsigned int len)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='42' u='c' c='_ZN3uvw6Handle13allocCallbackEP11uv_handle_smP8uv_buf_t'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='89' u='c' c='_ZN3uvw7FileReq4readElj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='97' u='c' c='_ZN3uvw7FileReq8readSyncElj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='108' u='c' c='_ZN3uvw7FileReq5writeESt10unique_ptrIA_cSt14default_deleteIS2_EEjl'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='114' u='c' c='_ZN3uvw7FileReq5writeEPcjl'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='121' u='c' c='_ZN3uvw7FileReq9writeSyncESt10unique_ptrIA_cSt14default_deleteIS2_EEjl'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='364' u='c' c='_ZN3uvw12StreamHandle8tryWriteESt10unique_ptrIA_cSt14default_deleteIS2_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='387' u='c' c='_ZN3uvw12StreamHandle8tryWriteEPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='19' u='c' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='191' u='c' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='219' u='c' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>

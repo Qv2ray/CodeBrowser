@@ -1,0 +1,16 @@
+<dec f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='145' type='bool'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='148' u='w' c='_ZN6Qv2ray4base11GroupObjectC1Ev'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='149' u='a' c='_ZN6Qv2ray4base11GroupObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='149' u='r' c='_ZNK6Qv2ray4base11GroupObject6toJsonEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='82' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler24IgnoreSubscriptionUpdateERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<offset>256</offset>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='65' u='w' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='153' u='r' c='_ZNK6Qv2ray4core7handler15QvConfigHandler13SubscriptionsEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='401' u='w' c='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='437' u='w' c='_ZN6Qv2ray4core7handler15QvConfigHandler19SetSubscriptionDataERKNS_4base6IDTypeINS3_9__QvGroupEEESt8optionalIbERKS9_I7QStringES9_IfE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='498' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler23UpdateSubscriptionAsyncERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='508' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler18UpdateSubscriptionERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='115' u='r' c='_ZN20ConnectionInfoWidget11ShowDetailsERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/widgets/ConnectionItemWidget.cpp' l='213' u='r' c='_ZN20ConnectionItemWidget18OnGroupItemRenamedERKN6Qv2ray4base6IDTypeINS1_9__QvGroupEEERK7QStringS9_'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='350' u='r' c='_ZN12GroupManager24on_groupList_itemClickedEP15QListWidgetItem'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='1085' u='r' c='_ZN10MainWindow42on_action_RCM_UpdateSubscription_triggeredEv'/>

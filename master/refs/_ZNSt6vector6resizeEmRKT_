@@ -1,0 +1,22 @@
+<def f='include/c++/10/bits/stl_vector.h' l='956' ll='963' type='void std::vector::resize(std::vector::size_type __new_size, const std::vector::value_type &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='945'>/**
+       *  @brief  Resizes the %vector to the specified number of elements.
+       *  @param  __new_size  Number of elements the %vector should contain.
+       *  @param  __x  Data with which new elements should be populated.
+       *
+       *  This function will %resize the %vector to the specified
+       *  number of elements.  If the number is smaller than the
+       *  %vector&apos;s current size the %vector is truncated, otherwise
+       *  the %vector is extended and new elements are populated with
+       *  given data.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='58' u='c' c='_ZN5ZXing13GenericGFPoly12Coefficients6resizeEmi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='94' u='c' c='_ZN5ZXing9GenericGFC1Eiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGF.cpp' l='95' u='c' c='_ZN5ZXing9GenericGFC1Eiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='142' u='c' c='_ZN5ZXingL6MulMagERKSt6vectorImSaImEES4_RS2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='144' u='c' c='_ZN5ZXing10DataMatrix9ECEncoder12EncodeECC200ERNS_9ByteArrayERKNS0_10SymbolInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='297' u='c' c='_ZN5ZXing8MaxiCode7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='305' u='c' c='_ZN5ZXing8MaxiCode7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='29' u='c' c='_ZN5ZXing6Pdf4179ModulusGFC1Eii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='30' u='c' c='_ZN5ZXing6Pdf4179ModulusGFC1Eii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='38' u='c' c='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>

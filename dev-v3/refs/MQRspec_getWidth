@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='73' type='int MQRspec_getWidth(int version)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mmask.c' l='118' u='c' c='MMask_makeMask'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mmask.c' l='156' u='c' c='MMask_mask'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='68'>/**
+ * Return the width of the symbol for the version.
+ * @param version
+ * @return width
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.c' l='80' ll='83' type='int MQRspec_getWidth(int version)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='537' u='c' c='QRcode_encodeMaskMQR'/>

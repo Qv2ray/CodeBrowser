@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='714' type='bool uvw::FileReq::chmodSync(int mode)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='195' ll='199' type='bool uvw::FileReq::chmodSync(int mode)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='709'>/**
+     * @brief Sync [fchmod](http://linux.die.net/man/2/fchmod).
+     * @param mode Mode, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

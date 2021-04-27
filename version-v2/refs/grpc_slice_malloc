@@ -1,0 +1,4 @@
+<dec f='include/grpc/slice.h' l='67' type='grpc_slice grpc_slice_malloc(size_t length)'/>
+<doc f='include/grpc/slice.h' l='64'>/** Equivalent to grpc_slice_new(malloc(len), len, free), but saves one malloc()
+   call.
+   Aborts if malloc() fails. */</doc>

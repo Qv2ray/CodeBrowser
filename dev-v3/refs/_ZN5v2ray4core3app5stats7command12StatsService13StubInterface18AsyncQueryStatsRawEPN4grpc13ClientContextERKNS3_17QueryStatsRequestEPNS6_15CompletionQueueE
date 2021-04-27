@@ -1,0 +1,3 @@
+<use f='/v2ray_api.grpc.pb.h' l='51' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface15AsyncQueryStatsEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<dec f='/v2ray_api.grpc.pb.h' l='74' type='::grpc::ClientAsyncResponseReaderInterface&lt; ::v2ray::core::app::stats::command::QueryStatsResponse&gt; * v2ray::core::app::stats::command::StatsService::StubInterface::AsyncQueryStatsRaw(::grpc::ClientContext * context, const ::v2ray::core::app::stats::command::QueryStatsRequest &amp; request, ::grpc::CompletionQueue * cq)'/>
+<ovr f='/v2ray_api.grpc.pb.cc' l='66' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18AsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>

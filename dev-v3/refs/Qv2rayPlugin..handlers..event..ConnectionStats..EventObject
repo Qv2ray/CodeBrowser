@@ -1,0 +1,16 @@
+<def f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='31' ll='38'/>
+<use f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='99'/>
+<size>56</size>
+<mbr r='Qv2rayPlugin::handlers::event::ConnectionStats::EventObject::displayName' o='0' t='QString'/>
+<mbr r='Qv2rayPlugin::handlers::event::ConnectionStats::EventObject::upLinkSpeed' o='192' t='long'/>
+<mbr r='Qv2rayPlugin::handlers::event::ConnectionStats::EventObject::downLinkSpeed' o='256' t='long'/>
+<mbr r='Qv2rayPlugin::handlers::event::ConnectionStats::EventObject::upLinkData' o='320' t='quint64'/>
+<mbr r='Qv2rayPlugin::handlers::event::ConnectionStats::EventObject::downLinkData' o='384' t='quint64'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='71' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event15ConnectionStats11EventObjectE'/>
+<size>56</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='194' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event15ConnectionStats11EventObjectE'/>
+<size>56</size>
+<use f='qv2ray/src/plugins/utils/core/EventHandler.hpp' l='13' c='_ZN12EventHandler12ProcessEventERKN12Qv2rayPlugin8handlers5event15ConnectionStats11EventObjectE'/>
+<size>56</size>
+<use f='qv2ray/src/plugins/utils/core/EventHandler.cpp' l='7' c='_ZN12EventHandler12ProcessEventERKN12Qv2rayPlugin8handlers5event15ConnectionStats11EventObjectE'/>
+<size>56</size>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='107' type='static std::shared_ptr&lt;LuminanceSource&gt; ZXing::LuminanceSource::CreateInverted(const std::shared_ptr&lt;LuminanceSource&gt; &amp; src)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='103'>/**
+	* @return a wrapper of this {@code LuminanceSource} which inverts the luminances it returns -- black becomes
+	*  white and vice versa, and each value becomes (255-value).
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='76' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='86' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7rotatedEi'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='136' ll='143' type='static std::shared_ptr&lt;LuminanceSource&gt; ZXing::LuminanceSource::CreateInverted(const std::shared_ptr&lt;LuminanceSource&gt; &amp; src)'/>

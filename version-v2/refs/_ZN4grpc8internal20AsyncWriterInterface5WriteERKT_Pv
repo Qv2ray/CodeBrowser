@@ -1,0 +1,13 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='122' type='void grpc::internal::AsyncWriterInterface::Write(const W &amp; msg, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='110'>/// Request the writing of \a msg with identifying tag \a tag.
+  ///
+  /// Only one write may be outstanding at any given time. This means that
+  /// after calling Write, one must wait to receive \a tag from the completion
+  /// queue BEFORE calling Write again.
+  /// This is thread-safe with respect to \a AsyncReaderInterface::Read
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a msg, so it is safe to
+  /// to deallocate once Write returns.
+  ///
+  /// \param[in] msg The message to be written.
+  /// \param[in] tag The tag identifying the operation.</doc>

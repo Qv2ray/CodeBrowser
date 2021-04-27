@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='194' type='static bool google::protobuf::internal::WireFormatLite::SkipMessage(io::CodedInputStream * input)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='191'>// Reads and ignores a message from the input.  Skipped values are simply
+  // discarded, not recorded anywhere.  See WireFormat::SkipMessage() for a
+  // version that records to an UnknownFieldSet.</doc>

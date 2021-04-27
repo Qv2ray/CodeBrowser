@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='80' type='void QtNodes::NodeDataModel::setInData(std::shared_ptr&lt;NodeData&gt; nodeData, QtNodes::PortIndex port)'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='79'>/// Triggers the algorithm</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='43' u='c' c='_ZN7QtNodes13NodeDataModel9setInDataESt6vectorISt10shared_ptrINS_8NodeDataEESaIS4_EEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='46' u='c' c='_ZN7QtNodes13NodeDataModel9setInDataESt6vectorISt10shared_ptrINS_8NodeDataEESaIS4_EEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='75' c='_ZN6Qv2ray2ui10nodemodels16InboundNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='79' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='83' c='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='87' c='_ZN6Qv2ray2ui10nodemodels22ChainOutboundNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>

@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/extension_set.h' l='439' type='size_t google::protobuf::internal::ExtensionSet::SpaceUsedExcludingSelfLong() const'/>
+<doc f='include/google/protobuf/extension_set.h' l='432'>// Returns (an estimate of) the total number of bytes used for storing the
+  // extensions in memory, excluding sizeof(*this).  If the ExtensionSet is
+  // for a lite message (and thus possibly contains lite messages), the results
+  // are undefined (might work, might crash, might corrupt data, might not even
+  // be linked in).  It&apos;s up to the protocol compiler to avoid calling this on
+  // such ExtensionSets (easy enough since lite messages don&apos;t implement
+  // SpaceUsed()).</doc>

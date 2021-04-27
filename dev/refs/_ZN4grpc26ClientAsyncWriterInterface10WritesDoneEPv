@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='312' type='void grpc::ClientAsyncWriterInterface::WritesDone(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='308'>/// Signal the client is done with the writes (half-close the client stream).
+  /// Thread-safe with respect to \a AsyncReaderInterface::Read
+  ///
+  /// \param[in] tag The tag identifying the operation.</doc>

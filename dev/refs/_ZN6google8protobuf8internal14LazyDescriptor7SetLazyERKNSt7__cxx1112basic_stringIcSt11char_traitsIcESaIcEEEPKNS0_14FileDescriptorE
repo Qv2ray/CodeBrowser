@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='196' type='void google::protobuf::internal::LazyDescriptor::SetLazy(const std::string &amp; name, const google::protobuf::FileDescriptor * file)'/>
+<doc f='include/google/protobuf/descriptor.h' l='191'>// Sets the information needed to lazily cross link the descriptor at a later
+  // time, SetLazy is not thread safe, should be called only once at descriptor
+  // build time if the symbol wasn&apos;t found and building of the file containing
+  // that type is delayed because lazily_build_dependencies_ is set on the pool.
+  // Should not be called after Set() has been called.</doc>

@@ -1,0 +1,12 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='739' ll='757' type='void grpc::ServerAsyncReader::Finish(const W &amp; msg, const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='728'>/// See the \a ServerAsyncReaderInterface.Read method for semantics
+  ///
+  /// Side effect:
+  ///   - also sends initial metadata if not alreay sent.
+  ///   - uses the \a ServerContext associated with this call to send possible
+  ///     initial and trailing metadata.
+  ///
+  /// Note: \a msg is not sent if \a status has a non-OK code.
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a msg and \a status, so it
+  /// is safe to to deallocate once Finish returns.</doc>

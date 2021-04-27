@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>unix.h source code [qv2ray/3rdparty/libuv/include/uv/unix.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uv__io_s,uv_buf_t "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/include/uv/unix.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>libuv</a>/<a href='..'>include</a>/<a href='./'>uv</a>/<a href='unix.h.html'>unix.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission is hereby granted, free of charge, to any person obtaining a copy</i></td></tr>
+<tr><th id="4">4</th><td><i> * of this software and associated documentation files (the "Software"), to</i></td></tr>
+<tr><th id="5">5</th><td><i> * deal in the Software without restriction, including without limitation the</i></td></tr>
+<tr><th id="6">6</th><td><i> * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * sell copies of the Software, and to permit persons to whom the Software is</i></td></tr>
+<tr><th id="8">8</th><td><i> * furnished to do so, subject to the following conditions:</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * The above copyright notice and this permission notice shall be included in</i></td></tr>
+<tr><th id="11">11</th><td><i> * all copies or substantial portions of the Software.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</i></td></tr>
+<tr><th id="14">14</th><td><i> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</i></td></tr>
+<tr><th id="15">15</th><td><i> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</i></td></tr>
+<tr><th id="16">16</th><td><i> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</i></td></tr>
+<tr><th id="17">17</th><td><i> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING</i></td></tr>
+<tr><th id="18">18</th><td><i> * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</i></td></tr>
+<tr><th id="19">19</th><td><i> * IN THE SOFTWARE.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/UV_UNIX_H">UV_UNIX_H</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/UV_UNIX_H" data-ref="_M/UV_UNIX_H">UV_UNIX_H</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/stat.h.html">&lt;sys/stat.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../../../../include/fcntl.h.html">&lt;fcntl.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../../../../include/dirent.h.html">&lt;dirent.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/socket.h.html">&lt;sys/socket.h&gt;</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../../../../include/netinet/in.h.html">&lt;netinet/in.h&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="../../../../../include/netinet/tcp.h.html">&lt;netinet/tcp.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="../../../../../include/arpa/inet.h.html">&lt;arpa/inet.h&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="../../../../../include/netdb.h.html">&lt;netdb.h&gt;</a>  /* MAXHOSTNAMELEN on Solaris */</u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="../../../../../include/termios.h.html">&lt;termios.h&gt;</a></u></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="../../../../../include/pwd.h.html">&lt;pwd.h&gt;</a></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="39">if</span> !defined(<span class="macro" data-ref="_M/__MVS__">__MVS__</span>)</u></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="../../../../../include/semaphore.h.html">&lt;semaphore.h&gt;</a></u></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/param.h.html">&lt;sys/param.h&gt;</a> /* MAXHOSTNAMELEN on Linux and the BSDs */</u></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="39">endif</span></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="../../../../../include/pthread.h.html">&lt;pthread.h&gt;</a></u></td></tr>
+<tr><th id="44">44</th><td><u>#include <a href="../../../../../include/signal.h.html">&lt;signal.h&gt;</a></u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="threadpool.h.html">"uv/threadpool.h"</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">if</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>)</u></td></tr>
+<tr><th id="49">49</th><td><u># include <a href="linux.h.html">"uv/linux.h"</a></u></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="48">elif</span> defined (__MVS__)</u></td></tr>
+<tr><th id="51">51</th><td><u># include "uv/os390.h"</u></td></tr>
+<tr><th id="52">52</th><td><u>#elif defined(__PASE__)  /* __PASE__ and _AIX are both defined on IBM i */</u></td></tr>
+<tr><th id="53">53</th><td><u># include "uv/posix.h"  /* IBM i needs uv/posix.h, not uv/aix.h */</u></td></tr>
+<tr><th id="54">54</th><td><u>#elif defined(_AIX)</u></td></tr>
+<tr><th id="55">55</th><td><u># include "uv/aix.h"</u></td></tr>
+<tr><th id="56">56</th><td><u>#elif defined(__sun)</u></td></tr>
+<tr><th id="57">57</th><td><u># include "uv/sunos.h"</u></td></tr>
+<tr><th id="58">58</th><td><u>#elif defined(__APPLE__)</u></td></tr>
+<tr><th id="59">59</th><td><u># include "uv/darwin.h"</u></td></tr>
+<tr><th id="60">60</th><td><u>#elif defined(__DragonFly__)       || \</u></td></tr>
+<tr><th id="61">61</th><td><u>      defined(__FreeBSD__)         || \</u></td></tr>
+<tr><th id="62">62</th><td><u>      defined(__FreeBSD_kernel__)  || \</u></td></tr>
+<tr><th id="63">63</th><td><u>      defined(__OpenBSD__)         || \</u></td></tr>
+<tr><th id="64">64</th><td><u>      defined(__NetBSD__)</u></td></tr>
+<tr><th id="65">65</th><td><u># include "uv/bsd.h"</u></td></tr>
+<tr><th id="66">66</th><td><u>#elif defined(__CYGWIN__) || \</u></td></tr>
+<tr><th id="67">67</th><td><u>      defined(__MSYS__)   || \</u></td></tr>
+<tr><th id="68">68</th><td><u>      defined(__GNU__)</u></td></tr>
+<tr><th id="69">69</th><td><u># include "uv/posix.h"</u></td></tr>
+<tr><th id="70">70</th><td><u>#elif defined(__HAIKU__)</u></td></tr>
+<tr><th id="71">71</th><td><u># include "uv/posix.h"</u></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="48">endif</span></u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><u>#<span data-ppcond="74">ifndef</span> <a class="macro" href="../../../../../include/netdb.h.html#638" data-ref="_M/NI_MAXHOST">NI_MAXHOST</a></u></td></tr>
+<tr><th id="75">75</th><td><u># define NI_MAXHOST 1025</u></td></tr>
+<tr><th id="76">76</th><td><u>#<span data-ppcond="74">endif</span></u></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="78">ifndef</span> <a class="macro" href="../../../../../include/netdb.h.html#639" data-ref="_M/NI_MAXSERV">NI_MAXSERV</a></u></td></tr>
+<tr><th id="79">79</th><td><u># define NI_MAXSERV 32</u></td></tr>
+<tr><th id="80">80</th><td><u>#<span data-ppcond="78">endif</span></u></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><u>#<span data-ppcond="82">ifndef</span> <span class="macro" data-ref="_M/UV_IO_PRIVATE_PLATFORM_FIELDS">UV_IO_PRIVATE_PLATFORM_FIELDS</span></u></td></tr>
+<tr><th id="83">83</th><td><u># define <dfn class="macro" id="_M/UV_IO_PRIVATE_PLATFORM_FIELDS" data-ref="_M/UV_IO_PRIVATE_PLATFORM_FIELDS">UV_IO_PRIVATE_PLATFORM_FIELDS</dfn> /* empty */</u></td></tr>
+<tr><th id="84">84</th><td><u>#<span data-ppcond="82">endif</span></u></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><b>struct</b> <a class="type" href="#uv__io_s" title='uv__io_s' data-ref="uv__io_s" data-ref-filename="uv__io_s">uv__io_s</a>;</td></tr>
+<tr><th id="87">87</th><td><b>struct</b> <a class="type" href="../uv.h.html#uv_loop_s" title='uv_loop_s' data-ref="uv_loop_s" data-ref-filename="uv_loop_s" id="uv_loop_s">uv_loop_s</a>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="uv__io_cb" title='uv__io_cb' data-type='void (*)(struct uv_loop_s *, struct uv__io_s *, unsigned int)' data-ref="uv__io_cb" data-ref-filename="uv__io_cb">uv__io_cb</dfn>)(<b>struct</b> <a class="type" href="../uv.h.html#uv_loop_s" title='uv_loop_s' data-ref="uv_loop_s" data-ref-filename="uv_loop_s">uv_loop_s</a>* <dfn class="local col9 decl" id="749loop" title='loop' data-type='struct uv_loop_s *' data-ref="749loop" data-ref-filename="749loop">loop</dfn>,</td></tr>
+<tr><th id="90">90</th><td>                          <b>struct</b> <a class="type" href="#uv__io_s" title='uv__io_s' data-ref="uv__io_s" data-ref-filename="uv__io_s">uv__io_s</a>* <dfn class="local col0 decl" id="750w" title='w' data-type='struct uv__io_s *' data-ref="750w" data-ref-filename="750w">w</dfn>,</td></tr>
+<tr><th id="91">91</th><td>                          <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="751events" title='events' data-type='unsigned int' data-ref="751events" data-ref-filename="751events">events</dfn>);</td></tr>
+<tr><th id="92">92</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#uv__io_s" title='uv__io_s' data-ref="uv__io_s" data-ref-filename="uv__io_s">uv__io_s</a> <dfn class="typedef" id="uv__io_t" title='uv__io_t' data-type='struct uv__io_s' data-ref="uv__io_t" data-ref-filename="uv__io_t">uv__io_t</dfn>;</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><b>struct</b> <dfn class="type def" id="uv__io_s" title='uv__io_s' data-ref="uv__io_s" data-ref-filename="uv__io_s">uv__io_s</dfn> {</td></tr>
+<tr><th id="95">95</th><td>  <a class="typedef" href="#uv__io_cb" title='uv__io_cb' data-type='void (*)(struct uv_loop_s *, struct uv__io_s *, unsigned int)' data-ref="uv__io_cb" data-ref-filename="uv__io_cb">uv__io_cb</a> <dfn class="decl field" id="uv__io_s::cb" title='uv__io_s::cb' data-ref="uv__io_s::cb" data-ref-filename="uv__io_s..cb">cb</dfn>;</td></tr>
+<tr><th id="96">96</th><td>  <em>void</em>* <dfn class="decl field" id="uv__io_s::pending_queue" title='uv__io_s::pending_queue' data-ref="uv__io_s::pending_queue" data-ref-filename="uv__io_s..pending_queue">pending_queue</dfn>[<var>2</var>];</td></tr>
+<tr><th id="97">97</th><td>  <em>void</em>* <dfn class="decl field" id="uv__io_s::watcher_queue" title='uv__io_s::watcher_queue' data-ref="uv__io_s::watcher_queue" data-ref-filename="uv__io_s..watcher_queue">watcher_queue</dfn>[<var>2</var>];</td></tr>
+<tr><th id="98">98</th><td>  <em>unsigned</em> <em>int</em> <dfn class="decl field" id="uv__io_s::pevents" title='uv__io_s::pevents' data-ref="uv__io_s::pevents" data-ref-filename="uv__io_s..pevents">pevents</dfn>; <i>/* Pending event mask i.e. mask at next tick. */</i></td></tr>
+<tr><th id="99">99</th><td>  <em>unsigned</em> <em>int</em> <dfn class="decl field" id="uv__io_s::events" title='uv__io_s::events' data-ref="uv__io_s::events" data-ref-filename="uv__io_s..events">events</dfn>;  <i>/* Current event mask. */</i></td></tr>
+<tr><th id="100">100</th><td>  <em>int</em> <dfn class="decl field" id="uv__io_s::fd" title='uv__io_s::fd' data-ref="uv__io_s::fd" data-ref-filename="uv__io_s..fd">fd</dfn>;</td></tr>
+<tr><th id="101">101</th><td>  <a class="macro" href="#83" title="" data-ref="_M/UV_IO_PRIVATE_PLATFORM_FIELDS">UV_IO_PRIVATE_PLATFORM_FIELDS</a></td></tr>
+<tr><th id="102">102</th><td>};</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="104">ifndef</span> <span class="macro" data-ref="_M/UV_PLATFORM_SEM_T">UV_PLATFORM_SEM_T</span></u></td></tr>
+<tr><th id="105">105</th><td><u># define <dfn class="macro" id="_M/UV_PLATFORM_SEM_T" data-ref="_M/UV_PLATFORM_SEM_T">UV_PLATFORM_SEM_T</dfn> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/semaphore.h.html#sem_t" title='sem_t' data-type='union sem_t' data-ref="sem_t" data-ref-filename="sem_t">sem_t</a></u></td></tr>
+<tr><th id="106">106</th><td><u>#<span data-ppcond="104">endif</span></u></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="108">ifndef</span> <a class="macro" href="linux.h.html#25" data-ref="_M/UV_PLATFORM_LOOP_FIELDS">UV_PLATFORM_LOOP_FIELDS</a></u></td></tr>
+<tr><th id="109">109</th><td><u># define UV_PLATFORM_LOOP_FIELDS /* empty */</u></td></tr>
+<tr><th id="110">110</th><td><u>#<span data-ppcond="108">endif</span></u></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><u>#<span data-ppcond="112">ifndef</span> <a class="macro" href="linux.h.html#30" data-ref="_M/UV_PLATFORM_FS_EVENT_FIELDS">UV_PLATFORM_FS_EVENT_FIELDS</a></u></td></tr>
+<tr><th id="113">113</th><td><u># define UV_PLATFORM_FS_EVENT_FIELDS /* empty */</u></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="112">endif</span></u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="116">ifndef</span> <span class="macro" data-ref="_M/UV_STREAM_PRIVATE_PLATFORM_FIELDS">UV_STREAM_PRIVATE_PLATFORM_FIELDS</span></u></td></tr>
+<tr><th id="117">117</th><td><u># define <dfn class="macro" id="_M/UV_STREAM_PRIVATE_PLATFORM_FIELDS" data-ref="_M/UV_STREAM_PRIVATE_PLATFORM_FIELDS">UV_STREAM_PRIVATE_PLATFORM_FIELDS</dfn> /* empty */</u></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="116">endif</span></u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><i>/* Note: May be cast to struct iovec. See writev(2). */</i></td></tr>
+<tr><th id="121">121</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="uv_buf_t" title='uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t"><a class="type" href="#uv_buf_t" title='uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</a></dfn> {</td></tr>
+<tr><th id="122">122</th><td>  <em>char</em>* <dfn class="decl field" id="uv_buf_t::base" title='uv_buf_t::base' data-ref="uv_buf_t::base" data-ref-filename="uv_buf_t..base">base</dfn>;</td></tr>
+<tr><th id="123">123</th><td>  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl field" id="uv_buf_t::len" title='uv_buf_t::len' data-ref="uv_buf_t::len" data-ref-filename="uv_buf_t..len">len</dfn>;</td></tr>
+<tr><th id="124">124</th><td>} <dfn class="typedef" id="uv_buf_t" title='uv_buf_t' data-type='struct uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</dfn>;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="uv_file" title='uv_file' data-type='int' data-ref="uv_file" data-ref-filename="uv_file">uv_file</dfn>;</td></tr>
+<tr><th id="127">127</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="uv_os_sock_t" title='uv_os_sock_t' data-type='int' data-ref="uv_os_sock_t" data-ref-filename="uv_os_sock_t">uv_os_sock_t</dfn>;</td></tr>
+<tr><th id="128">128</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="uv_os_fd_t" title='uv_os_fd_t' data-type='int' data-ref="uv_os_fd_t" data-ref-filename="uv_os_fd_t">uv_os_fd_t</dfn>;</td></tr>
+<tr><th id="129">129</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t" data-ref-filename="pid_t">pid_t</a> <dfn class="typedef" id="uv_pid_t" title='uv_pid_t' data-type='pid_t' data-ref="uv_pid_t" data-ref-filename="uv_pid_t">uv_pid_t</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><u>#define <dfn class="macro" id="_M/UV_ONCE_INIT" data-ref="_M/UV_ONCE_INIT">UV_ONCE_INIT</dfn> PTHREAD_ONCE_INIT</u></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_once_t" title='pthread_once_t' data-type='int' data-ref="pthread_once_t" data-ref-filename="pthread_once_t">pthread_once_t</a> <dfn class="typedef" id="uv_once_t" title='uv_once_t' data-type='pthread_once_t' data-ref="uv_once_t" data-ref-filename="uv_once_t">uv_once_t</dfn>;</td></tr>
+<tr><th id="134">134</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_t" title='pthread_t' data-type='unsigned long' data-ref="pthread_t" data-ref-filename="pthread_t">pthread_t</a> <dfn class="typedef" id="uv_thread_t" title='uv_thread_t' data-type='pthread_t' data-ref="uv_thread_t" data-ref-filename="uv_thread_t">uv_thread_t</dfn>;</td></tr>
+<tr><th id="135">135</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_mutex_t" title='pthread_mutex_t' data-type='union pthread_mutex_t' data-ref="pthread_mutex_t" data-ref-filename="pthread_mutex_t">pthread_mutex_t</a> <dfn class="typedef" id="uv_mutex_t" title='uv_mutex_t' data-type='pthread_mutex_t' data-ref="uv_mutex_t" data-ref-filename="uv_mutex_t">uv_mutex_t</dfn>;</td></tr>
+<tr><th id="136">136</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_rwlock_t" title='pthread_rwlock_t' data-type='union pthread_rwlock_t' data-ref="pthread_rwlock_t" data-ref-filename="pthread_rwlock_t">pthread_rwlock_t</a> <dfn class="typedef" id="uv_rwlock_t" title='uv_rwlock_t' data-type='pthread_rwlock_t' data-ref="uv_rwlock_t" data-ref-filename="uv_rwlock_t">uv_rwlock_t</dfn>;</td></tr>
+<tr><th id="137">137</th><td><b>typedef</b> <a class="macro" href="#105" title="sem_t" data-ref="_M/UV_PLATFORM_SEM_T">UV_PLATFORM_SEM_T</a> <dfn class="typedef" id="uv_sem_t" title='uv_sem_t' data-type='sem_t' data-ref="uv_sem_t" data-ref-filename="uv_sem_t">uv_sem_t</dfn>;</td></tr>
+<tr><th id="138">138</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_cond_t" title='pthread_cond_t' data-type='union pthread_cond_t' data-ref="pthread_cond_t" data-ref-filename="pthread_cond_t">pthread_cond_t</a> <dfn class="typedef" id="uv_cond_t" title='uv_cond_t' data-type='pthread_cond_t' data-ref="uv_cond_t" data-ref-filename="uv_cond_t">uv_cond_t</dfn>;</td></tr>
+<tr><th id="139">139</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_key_t" title='pthread_key_t' data-type='unsigned int' data-ref="pthread_key_t" data-ref-filename="pthread_key_t">pthread_key_t</a> <dfn class="typedef" id="uv_key_t" title='uv_key_t' data-type='pthread_key_t' data-ref="uv_key_t" data-ref-filename="uv_key_t">uv_key_t</dfn>;</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i>/* Note: guard clauses should match uv_barrier_init's in src/unix/thread.c. */</i></td></tr>
+<tr><th id="142">142</th><td><u>#<span data-ppcond="142">if</span> defined(<span class="macro" data-ref="_M/_AIX">_AIX</span>) || \</u></td></tr>
+<tr><th id="143">143</th><td><u>    defined(<span class="macro" data-ref="_M/__OpenBSD__">__OpenBSD__</span>) || \</u></td></tr>
+<tr><th id="144">144</th><td><u>    !defined(<a class="macro" href="../../../../../include/pthread.h.html#189" data-ref="_M/PTHREAD_BARRIER_SERIAL_THREAD">PTHREAD_BARRIER_SERIAL_THREAD</a>)</u></td></tr>
+<tr><th id="145">145</th><td><i>/* TODO(bnoordhuis) Merge into uv_barrier_t in v2. */</i></td></tr>
+<tr><th id="146">146</th><td><b>struct</b> _uv_barrier {</td></tr>
+<tr><th id="147">147</th><td>  uv_mutex_t mutex;</td></tr>
+<tr><th id="148">148</th><td>  uv_cond_t cond;</td></tr>
+<tr><th id="149">149</th><td>  <em>unsigned</em> threshold;</td></tr>
+<tr><th id="150">150</th><td>  <em>unsigned</em> in;</td></tr>
+<tr><th id="151">151</th><td>  <em>unsigned</em> out;</td></tr>
+<tr><th id="152">152</th><td>};</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="155">155</th><td>  <b>struct</b> _uv_barrier* b;</td></tr>
+<tr><th id="156">156</th><td><u># if defined(PTHREAD_BARRIER_SERIAL_THREAD)</u></td></tr>
+<tr><th id="157">157</th><td>  <i>/* TODO(bnoordhuis) Remove padding in v2. */</i></td></tr>
+<tr><th id="158">158</th><td>  <em>char</em> pad[<b>sizeof</b>(pthread_barrier_t) - <b>sizeof</b>(<b>struct</b> _uv_barrier*)];</td></tr>
+<tr><th id="159">159</th><td><u># endif</u></td></tr>
+<tr><th id="160">160</th><td>} uv_barrier_t;</td></tr>
+<tr><th id="161">161</th><td><u>#<span data-ppcond="142">else</span></u></td></tr>
+<tr><th id="162">162</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_barrier_t" title='pthread_barrier_t' data-type='union pthread_barrier_t' data-ref="pthread_barrier_t" data-ref-filename="pthread_barrier_t">pthread_barrier_t</a> <dfn class="typedef" id="uv_barrier_t" title='uv_barrier_t' data-type='pthread_barrier_t' data-ref="uv_barrier_t" data-ref-filename="uv_barrier_t">uv_barrier_t</dfn>;</td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="142">endif</span></u></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><i>/* Platform-specific definitions for uv_spawn support. */</i></td></tr>
+<tr><th id="166">166</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#gid_t" title='gid_t' data-type='__gid_t' data-ref="gid_t" data-ref-filename="gid_t">gid_t</a> <dfn class="typedef" id="uv_gid_t" title='uv_gid_t' data-type='gid_t' data-ref="uv_gid_t" data-ref-filename="uv_gid_t">uv_gid_t</dfn>;</td></tr>
+<tr><th id="167">167</th><td><b>typedef</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#uid_t" title='uid_t' data-type='__uid_t' data-ref="uid_t" data-ref-filename="uid_t">uid_t</a> <dfn class="typedef" id="uv_uid_t" title='uv_uid_t' data-type='uid_t' data-ref="uv_uid_t" data-ref-filename="uv_uid_t">uv_uid_t</dfn>;</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><b>typedef</b> <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/dirent.h.html#dirent" title='dirent' data-ref="dirent" data-ref-filename="dirent">dirent</a> <dfn class="typedef" id="uv__dirent_t" title='uv__dirent_t' data-type='struct dirent' data-ref="uv__dirent_t" data-ref-filename="uv__dirent_t">uv__dirent_t</dfn>;</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><u>#define <dfn class="macro" id="_M/UV_DIR_PRIVATE_FIELDS" data-ref="_M/UV_DIR_PRIVATE_FIELDS">UV_DIR_PRIVATE_FIELDS</dfn> \</u></td></tr>
+<tr><th id="172">172</th><td><u>  DIR* dir;</u></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><u>#<span data-ppcond="174">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#100" data-ref="_M/DT_UNKNOWN">DT_UNKNOWN</a>)</u></td></tr>
+<tr><th id="175">175</th><td><u># define <dfn class="macro" id="_M/HAVE_DIRENT_TYPES" data-ref="_M/HAVE_DIRENT_TYPES">HAVE_DIRENT_TYPES</dfn></u></td></tr>
+<tr><th id="176">176</th><td><u># <span data-ppcond="176">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#110" data-ref="_M/DT_REG">DT_REG</a>)</u></td></tr>
+<tr><th id="177">177</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_FILE" data-ref="_M/UV__DT_FILE">UV__DT_FILE</dfn> DT_REG</u></td></tr>
+<tr><th id="178">178</th><td><u># <span data-ppcond="176">else</span></u></td></tr>
+<tr><th id="179">179</th><td><u>#  define UV__DT_FILE -1</u></td></tr>
+<tr><th id="180">180</th><td><u># <span data-ppcond="176">endif</span></u></td></tr>
+<tr><th id="181">181</th><td><u># <span data-ppcond="181">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#106" data-ref="_M/DT_DIR">DT_DIR</a>)</u></td></tr>
+<tr><th id="182">182</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_DIR" data-ref="_M/UV__DT_DIR">UV__DT_DIR</dfn> DT_DIR</u></td></tr>
+<tr><th id="183">183</th><td><u># <span data-ppcond="181">else</span></u></td></tr>
+<tr><th id="184">184</th><td><u>#  define UV__DT_DIR -2</u></td></tr>
+<tr><th id="185">185</th><td><u># <span data-ppcond="181">endif</span></u></td></tr>
+<tr><th id="186">186</th><td><u># <span data-ppcond="186">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#112" data-ref="_M/DT_LNK">DT_LNK</a>)</u></td></tr>
+<tr><th id="187">187</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_LINK" data-ref="_M/UV__DT_LINK">UV__DT_LINK</dfn> DT_LNK</u></td></tr>
+<tr><th id="188">188</th><td><u># <span data-ppcond="186">else</span></u></td></tr>
+<tr><th id="189">189</th><td><u>#  define UV__DT_LINK -3</u></td></tr>
+<tr><th id="190">190</th><td><u># <span data-ppcond="186">endif</span></u></td></tr>
+<tr><th id="191">191</th><td><u># <span data-ppcond="191">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#102" data-ref="_M/DT_FIFO">DT_FIFO</a>)</u></td></tr>
+<tr><th id="192">192</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_FIFO" data-ref="_M/UV__DT_FIFO">UV__DT_FIFO</dfn> DT_FIFO</u></td></tr>
+<tr><th id="193">193</th><td><u># <span data-ppcond="191">else</span></u></td></tr>
+<tr><th id="194">194</th><td><u>#  define UV__DT_FIFO -4</u></td></tr>
+<tr><th id="195">195</th><td><u># <span data-ppcond="191">endif</span></u></td></tr>
+<tr><th id="196">196</th><td><u># <span data-ppcond="196">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#114" data-ref="_M/DT_SOCK">DT_SOCK</a>)</u></td></tr>
+<tr><th id="197">197</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_SOCKET" data-ref="_M/UV__DT_SOCKET">UV__DT_SOCKET</dfn> DT_SOCK</u></td></tr>
+<tr><th id="198">198</th><td><u># <span data-ppcond="196">else</span></u></td></tr>
+<tr><th id="199">199</th><td><u>#  define UV__DT_SOCKET -5</u></td></tr>
+<tr><th id="200">200</th><td><u># <span data-ppcond="196">endif</span></u></td></tr>
+<tr><th id="201">201</th><td><u># <span data-ppcond="201">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#104" data-ref="_M/DT_CHR">DT_CHR</a>)</u></td></tr>
+<tr><th id="202">202</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_CHAR" data-ref="_M/UV__DT_CHAR">UV__DT_CHAR</dfn> DT_CHR</u></td></tr>
+<tr><th id="203">203</th><td><u># <span data-ppcond="201">else</span></u></td></tr>
+<tr><th id="204">204</th><td><u>#  define UV__DT_CHAR -6</u></td></tr>
+<tr><th id="205">205</th><td><u># <span data-ppcond="201">endif</span></u></td></tr>
+<tr><th id="206">206</th><td><u># <span data-ppcond="206">if</span> defined(<a class="macro" href="../../../../../include/dirent.h.html#108" data-ref="_M/DT_BLK">DT_BLK</a>)</u></td></tr>
+<tr><th id="207">207</th><td><u>#  define <dfn class="macro" id="_M/UV__DT_BLOCK" data-ref="_M/UV__DT_BLOCK">UV__DT_BLOCK</dfn> DT_BLK</u></td></tr>
+<tr><th id="208">208</th><td><u># <span data-ppcond="206">else</span></u></td></tr>
+<tr><th id="209">209</th><td><u>#  define UV__DT_BLOCK -7</u></td></tr>
+<tr><th id="210">210</th><td><u># <span data-ppcond="206">endif</span></u></td></tr>
+<tr><th id="211">211</th><td><u>#<span data-ppcond="174">endif</span></u></td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i>/* Platform-specific definitions for uv_dlopen support. */</i></td></tr>
+<tr><th id="214">214</th><td><u>#define <dfn class="macro" id="_M/UV_DYNAMIC" data-ref="_M/UV_DYNAMIC">UV_DYNAMIC</dfn> /* empty */</u></td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="217">217</th><td>  <em>void</em>* <dfn class="decl field" id="(anonymous)::handle" title='(anonymous struct)::handle' data-ref="(anonymous)::handle" data-ref-filename="(anonymous)..handle">handle</dfn>;</td></tr>
+<tr><th id="218">218</th><td>  <em>char</em>* <dfn class="decl field" id="(anonymous)::errmsg" title='(anonymous struct)::errmsg' data-ref="(anonymous)::errmsg" data-ref-filename="(anonymous)..errmsg">errmsg</dfn>;</td></tr>
+<tr><th id="219">219</th><td>} <dfn class="typedef" id="uv_lib_t" title='uv_lib_t' data-type='struct uv_lib_t' data-ref="uv_lib_t" data-ref-filename="uv_lib_t">uv_lib_t</dfn>;</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td><u>#define <dfn class="macro" id="_M/UV_LOOP_PRIVATE_FIELDS" data-ref="_M/UV_LOOP_PRIVATE_FIELDS">UV_LOOP_PRIVATE_FIELDS</dfn>                                                \</u></td></tr>
+<tr><th id="222">222</th><td><u>  unsigned long flags;                                                        \</u></td></tr>
+<tr><th id="223">223</th><td><u>  int backend_fd;                                                             \</u></td></tr>
+<tr><th id="224">224</th><td><u>  void* pending_queue[2];                                                     \</u></td></tr>
+<tr><th id="225">225</th><td><u>  void* watcher_queue[2];                                                     \</u></td></tr>
+<tr><th id="226">226</th><td><u>  uv__io_t** watchers;                                                        \</u></td></tr>
+<tr><th id="227">227</th><td><u>  unsigned int nwatchers;                                                     \</u></td></tr>
+<tr><th id="228">228</th><td><u>  unsigned int nfds;                                                          \</u></td></tr>
+<tr><th id="229">229</th><td><u>  void* wq[2];                                                                \</u></td></tr>
+<tr><th id="230">230</th><td><u>  uv_mutex_t wq_mutex;                                                        \</u></td></tr>
+<tr><th id="231">231</th><td><u>  uv_async_t wq_async;                                                        \</u></td></tr>
+<tr><th id="232">232</th><td><u>  uv_rwlock_t cloexec_lock;                                                   \</u></td></tr>
+<tr><th id="233">233</th><td><u>  uv_handle_t* closing_handles;                                               \</u></td></tr>
+<tr><th id="234">234</th><td><u>  void* process_handles[2];                                                   \</u></td></tr>
+<tr><th id="235">235</th><td><u>  void* prepare_handles[2];                                                   \</u></td></tr>
+<tr><th id="236">236</th><td><u>  void* check_handles[2];                                                     \</u></td></tr>
+<tr><th id="237">237</th><td><u>  void* idle_handles[2];                                                      \</u></td></tr>
+<tr><th id="238">238</th><td><u>  void* async_handles[2];                                                     \</u></td></tr>
+<tr><th id="239">239</th><td><u>  void (*async_unused)(void);  /* TODO(bnoordhuis) Remove in libuv v2. */     \</u></td></tr>
+<tr><th id="240">240</th><td><u>  uv__io_t async_io_watcher;                                                  \</u></td></tr>
+<tr><th id="241">241</th><td><u>  int async_wfd;                                                              \</u></td></tr>
+<tr><th id="242">242</th><td><u>  struct {                                                                    \</u></td></tr>
+<tr><th id="243">243</th><td><u>    void* min;                                                                \</u></td></tr>
+<tr><th id="244">244</th><td><u>    unsigned int nelts;                                                       \</u></td></tr>
+<tr><th id="245">245</th><td><u>  } timer_heap;                                                               \</u></td></tr>
+<tr><th id="246">246</th><td><u>  uint64_t timer_counter;                                                     \</u></td></tr>
+<tr><th id="247">247</th><td><u>  uint64_t time;                                                              \</u></td></tr>
+<tr><th id="248">248</th><td><u>  int signal_pipefd[2];                                                       \</u></td></tr>
+<tr><th id="249">249</th><td><u>  uv__io_t signal_io_watcher;                                                 \</u></td></tr>
+<tr><th id="250">250</th><td><u>  uv_signal_t child_watcher;                                                  \</u></td></tr>
+<tr><th id="251">251</th><td><u>  int emfile_fd;                                                              \</u></td></tr>
+<tr><th id="252">252</th><td><u>  UV_PLATFORM_LOOP_FIELDS</u>                                                     \</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><u>#define <dfn class="macro" id="_M/UV_REQ_TYPE_PRIVATE" data-ref="_M/UV_REQ_TYPE_PRIVATE">UV_REQ_TYPE_PRIVATE</dfn> /* empty */</u></td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><u>#define <dfn class="macro" id="_M/UV_REQ_PRIVATE_FIELDS" data-ref="_M/UV_REQ_PRIVATE_FIELDS">UV_REQ_PRIVATE_FIELDS</dfn>  /* empty */</u></td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td><u>#define <dfn class="macro" id="_M/UV_PRIVATE_REQ_TYPES" data-ref="_M/UV_PRIVATE_REQ_TYPES">UV_PRIVATE_REQ_TYPES</dfn> /* empty */</u></td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td><u>#define <dfn class="macro" id="_M/UV_WRITE_PRIVATE_FIELDS" data-ref="_M/UV_WRITE_PRIVATE_FIELDS">UV_WRITE_PRIVATE_FIELDS</dfn>                                               \</u></td></tr>
+<tr><th id="261">261</th><td><u>  void* queue[2];                                                             \</u></td></tr>
+<tr><th id="262">262</th><td><u>  unsigned int write_index;                                                   \</u></td></tr>
+<tr><th id="263">263</th><td><u>  uv_buf_t* bufs;                                                             \</u></td></tr>
+<tr><th id="264">264</th><td><u>  unsigned int nbufs;                                                         \</u></td></tr>
+<tr><th id="265">265</th><td><u>  int error;                                                                  \</u></td></tr>
+<tr><th id="266">266</th><td><u>  uv_buf_t bufsml[4];</u>                                                         \</td></tr>
+<tr><th id="267">267</th><td></td></tr>
+<tr><th id="268">268</th><td><u>#define <dfn class="macro" id="_M/UV_CONNECT_PRIVATE_FIELDS" data-ref="_M/UV_CONNECT_PRIVATE_FIELDS">UV_CONNECT_PRIVATE_FIELDS</dfn>                                             \</u></td></tr>
+<tr><th id="269">269</th><td><u>  void* queue[2];</u>                                                             \</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td><u>#define <dfn class="macro" id="_M/UV_SHUTDOWN_PRIVATE_FIELDS" data-ref="_M/UV_SHUTDOWN_PRIVATE_FIELDS">UV_SHUTDOWN_PRIVATE_FIELDS</dfn> /* empty */</u></td></tr>
+<tr><th id="272">272</th><td></td></tr>
+<tr><th id="273">273</th><td><u>#define <dfn class="macro" id="_M/UV_UDP_SEND_PRIVATE_FIELDS" data-ref="_M/UV_UDP_SEND_PRIVATE_FIELDS">UV_UDP_SEND_PRIVATE_FIELDS</dfn>                                            \</u></td></tr>
+<tr><th id="274">274</th><td><u>  void* queue[2];                                                             \</u></td></tr>
+<tr><th id="275">275</th><td><u>  struct sockaddr_storage addr;                                               \</u></td></tr>
+<tr><th id="276">276</th><td><u>  unsigned int nbufs;                                                         \</u></td></tr>
+<tr><th id="277">277</th><td><u>  uv_buf_t* bufs;                                                             \</u></td></tr>
+<tr><th id="278">278</th><td><u>  ssize_t status;                                                             \</u></td></tr>
+<tr><th id="279">279</th><td><u>  uv_udp_send_cb send_cb;                                                     \</u></td></tr>
+<tr><th id="280">280</th><td><u>  uv_buf_t bufsml[4];</u>                                                         \</td></tr>
+<tr><th id="281">281</th><td></td></tr>
+<tr><th id="282">282</th><td><u>#define <dfn class="macro" id="_M/UV_HANDLE_PRIVATE_FIELDS" data-ref="_M/UV_HANDLE_PRIVATE_FIELDS">UV_HANDLE_PRIVATE_FIELDS</dfn>                                              \</u></td></tr>
+<tr><th id="283">283</th><td><u>  uv_handle_t* next_closing;                                                  \</u></td></tr>
+<tr><th id="284">284</th><td><u>  unsigned int flags;</u>                                                         \</td></tr>
+<tr><th id="285">285</th><td></td></tr>
+<tr><th id="286">286</th><td><u>#define <dfn class="macro" id="_M/UV_STREAM_PRIVATE_FIELDS" data-ref="_M/UV_STREAM_PRIVATE_FIELDS">UV_STREAM_PRIVATE_FIELDS</dfn>                                              \</u></td></tr>
+<tr><th id="287">287</th><td><u>  uv_connect_t *connect_req;                                                  \</u></td></tr>
+<tr><th id="288">288</th><td><u>  uv_shutdown_t *shutdown_req;                                                \</u></td></tr>
+<tr><th id="289">289</th><td><u>  uv__io_t io_watcher;                                                        \</u></td></tr>
+<tr><th id="290">290</th><td><u>  void* write_queue[2];                                                       \</u></td></tr>
+<tr><th id="291">291</th><td><u>  void* write_completed_queue[2];                                             \</u></td></tr>
+<tr><th id="292">292</th><td><u>  uv_connection_cb connection_cb;                                             \</u></td></tr>
+<tr><th id="293">293</th><td><u>  int delayed_error;                                                          \</u></td></tr>
+<tr><th id="294">294</th><td><u>  int accepted_fd;                                                            \</u></td></tr>
+<tr><th id="295">295</th><td><u>  void* queued_fds;                                                           \</u></td></tr>
+<tr><th id="296">296</th><td><u>  UV_STREAM_PRIVATE_PLATFORM_FIELDS</u>                                           \</td></tr>
+<tr><th id="297">297</th><td></td></tr>
+<tr><th id="298">298</th><td><u>#define <dfn class="macro" id="_M/UV_TCP_PRIVATE_FIELDS" data-ref="_M/UV_TCP_PRIVATE_FIELDS">UV_TCP_PRIVATE_FIELDS</dfn> /* empty */</u></td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td><u>#define <dfn class="macro" id="_M/UV_UDP_PRIVATE_FIELDS" data-ref="_M/UV_UDP_PRIVATE_FIELDS">UV_UDP_PRIVATE_FIELDS</dfn>                                                 \</u></td></tr>
+<tr><th id="301">301</th><td><u>  uv_alloc_cb alloc_cb;                                                       \</u></td></tr>
+<tr><th id="302">302</th><td><u>  uv_udp_recv_cb recv_cb;                                                     \</u></td></tr>
+<tr><th id="303">303</th><td><u>  uv__io_t io_watcher;                                                        \</u></td></tr>
+<tr><th id="304">304</th><td><u>  void* write_queue[2];                                                       \</u></td></tr>
+<tr><th id="305">305</th><td><u>  void* write_completed_queue[2];</u>                                             \</td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td><u>#define <dfn class="macro" id="_M/UV_PIPE_PRIVATE_FIELDS" data-ref="_M/UV_PIPE_PRIVATE_FIELDS">UV_PIPE_PRIVATE_FIELDS</dfn>                                                \</u></td></tr>
+<tr><th id="308">308</th><td><u>  const char* pipe_fname; /* strdup'ed */</u></td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td><u>#define <dfn class="macro" id="_M/UV_POLL_PRIVATE_FIELDS" data-ref="_M/UV_POLL_PRIVATE_FIELDS">UV_POLL_PRIVATE_FIELDS</dfn>                                                \</u></td></tr>
+<tr><th id="311">311</th><td><u>  uv__io_t io_watcher;</u></td></tr>
+<tr><th id="312">312</th><td></td></tr>
+<tr><th id="313">313</th><td><u>#define <dfn class="macro" id="_M/UV_PREPARE_PRIVATE_FIELDS" data-ref="_M/UV_PREPARE_PRIVATE_FIELDS">UV_PREPARE_PRIVATE_FIELDS</dfn>                                             \</u></td></tr>
+<tr><th id="314">314</th><td><u>  uv_prepare_cb prepare_cb;                                                   \</u></td></tr>
+<tr><th id="315">315</th><td><u>  void* queue[2];</u>                                                             \</td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td><u>#define <dfn class="macro" id="_M/UV_CHECK_PRIVATE_FIELDS" data-ref="_M/UV_CHECK_PRIVATE_FIELDS">UV_CHECK_PRIVATE_FIELDS</dfn>                                               \</u></td></tr>
+<tr><th id="318">318</th><td><u>  uv_check_cb check_cb;                                                       \</u></td></tr>
+<tr><th id="319">319</th><td><u>  void* queue[2];</u>                                                             \</td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td><u>#define <dfn class="macro" id="_M/UV_IDLE_PRIVATE_FIELDS" data-ref="_M/UV_IDLE_PRIVATE_FIELDS">UV_IDLE_PRIVATE_FIELDS</dfn>                                                \</u></td></tr>
+<tr><th id="322">322</th><td><u>  uv_idle_cb idle_cb;                                                         \</u></td></tr>
+<tr><th id="323">323</th><td><u>  void* queue[2];</u>                                                             \</td></tr>
+<tr><th id="324">324</th><td></td></tr>
+<tr><th id="325">325</th><td><u>#define <dfn class="macro" id="_M/UV_ASYNC_PRIVATE_FIELDS" data-ref="_M/UV_ASYNC_PRIVATE_FIELDS">UV_ASYNC_PRIVATE_FIELDS</dfn>                                               \</u></td></tr>
+<tr><th id="326">326</th><td><u>  uv_async_cb async_cb;                                                       \</u></td></tr>
+<tr><th id="327">327</th><td><u>  void* queue[2];                                                             \</u></td></tr>
+<tr><th id="328">328</th><td><u>  int pending;</u>                                                                \</td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td><u>#define <dfn class="macro" id="_M/UV_TIMER_PRIVATE_FIELDS" data-ref="_M/UV_TIMER_PRIVATE_FIELDS">UV_TIMER_PRIVATE_FIELDS</dfn>                                               \</u></td></tr>
+<tr><th id="331">331</th><td><u>  uv_timer_cb timer_cb;                                                       \</u></td></tr>
+<tr><th id="332">332</th><td><u>  void* heap_node[3];                                                         \</u></td></tr>
+<tr><th id="333">333</th><td><u>  uint64_t timeout;                                                           \</u></td></tr>
+<tr><th id="334">334</th><td><u>  uint64_t repeat;                                                            \</u></td></tr>
+<tr><th id="335">335</th><td><u>  uint64_t start_id;</u></td></tr>
+<tr><th id="336">336</th><td></td></tr>
+<tr><th id="337">337</th><td><u>#define <dfn class="macro" id="_M/UV_GETADDRINFO_PRIVATE_FIELDS" data-ref="_M/UV_GETADDRINFO_PRIVATE_FIELDS">UV_GETADDRINFO_PRIVATE_FIELDS</dfn>                                         \</u></td></tr>
+<tr><th id="338">338</th><td><u>  struct uv__work work_req;                                                   \</u></td></tr>
+<tr><th id="339">339</th><td><u>  uv_getaddrinfo_cb cb;                                                       \</u></td></tr>
+<tr><th id="340">340</th><td><u>  struct addrinfo* hints;                                                     \</u></td></tr>
+<tr><th id="341">341</th><td><u>  char* hostname;                                                             \</u></td></tr>
+<tr><th id="342">342</th><td><u>  char* service;                                                              \</u></td></tr>
+<tr><th id="343">343</th><td><u>  struct addrinfo* addrinfo;                                                  \</u></td></tr>
+<tr><th id="344">344</th><td><u>  int retcode;</u></td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td><u>#define <dfn class="macro" id="_M/UV_GETNAMEINFO_PRIVATE_FIELDS" data-ref="_M/UV_GETNAMEINFO_PRIVATE_FIELDS">UV_GETNAMEINFO_PRIVATE_FIELDS</dfn>                                         \</u></td></tr>
+<tr><th id="347">347</th><td><u>  struct uv__work work_req;                                                   \</u></td></tr>
+<tr><th id="348">348</th><td><u>  uv_getnameinfo_cb getnameinfo_cb;                                           \</u></td></tr>
+<tr><th id="349">349</th><td><u>  struct sockaddr_storage storage;                                            \</u></td></tr>
+<tr><th id="350">350</th><td><u>  int flags;                                                                  \</u></td></tr>
+<tr><th id="351">351</th><td><u>  char host[NI_MAXHOST];                                                      \</u></td></tr>
+<tr><th id="352">352</th><td><u>  char service[NI_MAXSERV];                                                   \</u></td></tr>
+<tr><th id="353">353</th><td><u>  int retcode;</u></td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td><u>#define <dfn class="macro" id="_M/UV_PROCESS_PRIVATE_FIELDS" data-ref="_M/UV_PROCESS_PRIVATE_FIELDS">UV_PROCESS_PRIVATE_FIELDS</dfn>                                             \</u></td></tr>
+<tr><th id="356">356</th><td><u>  void* queue[2];                                                             \</u></td></tr>
+<tr><th id="357">357</th><td><u>  int status;</u>                                                                 \</td></tr>
+<tr><th id="358">358</th><td></td></tr>
+<tr><th id="359">359</th><td><u>#define <dfn class="macro" id="_M/UV_FS_PRIVATE_FIELDS" data-ref="_M/UV_FS_PRIVATE_FIELDS">UV_FS_PRIVATE_FIELDS</dfn>                                                  \</u></td></tr>
+<tr><th id="360">360</th><td><u>  const char *new_path;                                                       \</u></td></tr>
+<tr><th id="361">361</th><td><u>  uv_file file;                                                               \</u></td></tr>
+<tr><th id="362">362</th><td><u>  int flags;                                                                  \</u></td></tr>
+<tr><th id="363">363</th><td><u>  mode_t mode;                                                                \</u></td></tr>
+<tr><th id="364">364</th><td><u>  unsigned int nbufs;                                                         \</u></td></tr>
+<tr><th id="365">365</th><td><u>  uv_buf_t* bufs;                                                             \</u></td></tr>
+<tr><th id="366">366</th><td><u>  off_t off;                                                                  \</u></td></tr>
+<tr><th id="367">367</th><td><u>  uv_uid_t uid;                                                               \</u></td></tr>
+<tr><th id="368">368</th><td><u>  uv_gid_t gid;                                                               \</u></td></tr>
+<tr><th id="369">369</th><td><u>  double atime;                                                               \</u></td></tr>
+<tr><th id="370">370</th><td><u>  double mtime;                                                               \</u></td></tr>
+<tr><th id="371">371</th><td><u>  struct uv__work work_req;                                                   \</u></td></tr>
+<tr><th id="372">372</th><td><u>  uv_buf_t bufsml[4];</u>                                                         \</td></tr>
+<tr><th id="373">373</th><td></td></tr>
+<tr><th id="374">374</th><td><u>#define <dfn class="macro" id="_M/UV_WORK_PRIVATE_FIELDS" data-ref="_M/UV_WORK_PRIVATE_FIELDS">UV_WORK_PRIVATE_FIELDS</dfn>                                                \</u></td></tr>
+<tr><th id="375">375</th><td><u>  struct uv__work work_req;</u></td></tr>
+<tr><th id="376">376</th><td></td></tr>
+<tr><th id="377">377</th><td><u>#define <dfn class="macro" id="_M/UV_TTY_PRIVATE_FIELDS" data-ref="_M/UV_TTY_PRIVATE_FIELDS">UV_TTY_PRIVATE_FIELDS</dfn>                                                 \</u></td></tr>
+<tr><th id="378">378</th><td><u>  struct termios orig_termios;                                                \</u></td></tr>
+<tr><th id="379">379</th><td><u>  int mode;</u></td></tr>
+<tr><th id="380">380</th><td></td></tr>
+<tr><th id="381">381</th><td><u>#define <dfn class="macro" id="_M/UV_SIGNAL_PRIVATE_FIELDS" data-ref="_M/UV_SIGNAL_PRIVATE_FIELDS">UV_SIGNAL_PRIVATE_FIELDS</dfn>                                              \</u></td></tr>
+<tr><th id="382">382</th><td><u>  /* RB_ENTRY(uv_signal_s) tree_entry; */                                     \</u></td></tr>
+<tr><th id="383">383</th><td><u>  struct {                                                                    \</u></td></tr>
+<tr><th id="384">384</th><td><u>    struct uv_signal_s* rbe_left;                                             \</u></td></tr>
+<tr><th id="385">385</th><td><u>    struct uv_signal_s* rbe_right;                                            \</u></td></tr>
+<tr><th id="386">386</th><td><u>    struct uv_signal_s* rbe_parent;                                           \</u></td></tr>
+<tr><th id="387">387</th><td><u>    int rbe_color;                                                            \</u></td></tr>
+<tr><th id="388">388</th><td><u>  } tree_entry;                                                               \</u></td></tr>
+<tr><th id="389">389</th><td><u>  /* Use two counters here so we don have to fiddle with atomics. */          \</u></td></tr>
+<tr><th id="390">390</th><td><u>  unsigned int caught_signals;                                                \</u></td></tr>
+<tr><th id="391">391</th><td><u>  unsigned int dispatched_signals;</u></td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td><u>#define <dfn class="macro" id="_M/UV_FS_EVENT_PRIVATE_FIELDS" data-ref="_M/UV_FS_EVENT_PRIVATE_FIELDS">UV_FS_EVENT_PRIVATE_FIELDS</dfn>                                            \</u></td></tr>
+<tr><th id="394">394</th><td><u>  uv_fs_event_cb cb;                                                          \</u></td></tr>
+<tr><th id="395">395</th><td><u>  UV_PLATFORM_FS_EVENT_FIELDS</u>                                                 \</td></tr>
+<tr><th id="396">396</th><td></td></tr>
+<tr><th id="397">397</th><td><i>/* fs open() flags supported on this platform: */</i></td></tr>
+<tr><th id="398">398</th><td><u>#<span data-ppcond="398">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#59" data-ref="_M/O_APPEND">O_APPEND</a>)</u></td></tr>
+<tr><th id="399">399</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_APPEND" data-ref="_M/UV_FS_O_APPEND">UV_FS_O_APPEND</dfn>       O_APPEND</u></td></tr>
+<tr><th id="400">400</th><td><u>#<span data-ppcond="398">else</span></u></td></tr>
+<tr><th id="401">401</th><td><u># define UV_FS_O_APPEND       0</u></td></tr>
+<tr><th id="402">402</th><td><u>#<span data-ppcond="398">endif</span></u></td></tr>
+<tr><th id="403">403</th><td><u>#<span data-ppcond="403">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" data-ref="_M/O_CREAT">O_CREAT</a>)</u></td></tr>
+<tr><th id="404">404</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_CREAT" data-ref="_M/UV_FS_O_CREAT">UV_FS_O_CREAT</dfn>        O_CREAT</u></td></tr>
+<tr><th id="405">405</th><td><u>#<span data-ppcond="403">else</span></u></td></tr>
+<tr><th id="406">406</th><td><u># define UV_FS_O_CREAT        0</u></td></tr>
+<tr><th id="407">407</th><td><u>#<span data-ppcond="403">endif</span></u></td></tr>
+<tr><th id="408">408</th><td></td></tr>
+<tr><th id="409">409</th><td><u>#<span data-ppcond="409">if</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__arm__">__arm__</span>)</u></td></tr>
+<tr><th id="410">410</th><td><u># define UV_FS_O_DIRECT       0x10000</u></td></tr>
+<tr><th id="411">411</th><td><u>#<span data-ppcond="409">elif</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__m68k__">__m68k__</span>)</u></td></tr>
+<tr><th id="412">412</th><td><u># define UV_FS_O_DIRECT       0x10000</u></td></tr>
+<tr><th id="413">413</th><td><u>#<span data-ppcond="409">elif</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__mips__">__mips__</span>)</u></td></tr>
+<tr><th id="414">414</th><td><u># define UV_FS_O_DIRECT       0x08000</u></td></tr>
+<tr><th id="415">415</th><td><u>#<span data-ppcond="409">elif</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__powerpc__">__powerpc__</span>)</u></td></tr>
+<tr><th id="416">416</th><td><u># define UV_FS_O_DIRECT       0x20000</u></td></tr>
+<tr><th id="417">417</th><td><u>#<span data-ppcond="409">elif</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__s390x__">__s390x__</span>)</u></td></tr>
+<tr><th id="418">418</th><td><u># define UV_FS_O_DIRECT       0x04000</u></td></tr>
+<tr><th id="419">419</th><td><u>#<span data-ppcond="409">elif</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>)</u></td></tr>
+<tr><th id="420">420</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_DIRECT" data-ref="_M/UV_FS_O_DIRECT">UV_FS_O_DIRECT</dfn>       0x04000</u></td></tr>
+<tr><th id="421">421</th><td><u>#<span data-ppcond="409">elif</span> defined(O_DIRECT)</u></td></tr>
+<tr><th id="422">422</th><td><u># define UV_FS_O_DIRECT       O_DIRECT</u></td></tr>
+<tr><th id="423">423</th><td><u>#else</u></td></tr>
+<tr><th id="424">424</th><td><u># define UV_FS_O_DIRECT       0</u></td></tr>
+<tr><th id="425">425</th><td><u>#<span data-ppcond="409">endif</span></u></td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td><u>#<span data-ppcond="427">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#142" data-ref="_M/O_DIRECTORY">O_DIRECTORY</a>)</u></td></tr>
+<tr><th id="428">428</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_DIRECTORY" data-ref="_M/UV_FS_O_DIRECTORY">UV_FS_O_DIRECTORY</dfn>    O_DIRECTORY</u></td></tr>
+<tr><th id="429">429</th><td><u>#<span data-ppcond="427">else</span></u></td></tr>
+<tr><th id="430">430</th><td><u># define UV_FS_O_DIRECTORY    0</u></td></tr>
+<tr><th id="431">431</th><td><u>#<span data-ppcond="427">endif</span></u></td></tr>
+<tr><th id="432">432</th><td><u>#<span data-ppcond="432">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#158" data-ref="_M/O_DSYNC">O_DSYNC</a>)</u></td></tr>
+<tr><th id="433">433</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_DSYNC" data-ref="_M/UV_FS_O_DSYNC">UV_FS_O_DSYNC</dfn>        O_DSYNC</u></td></tr>
+<tr><th id="434">434</th><td><u>#<span data-ppcond="432">else</span></u></td></tr>
+<tr><th id="435">435</th><td><u># define UV_FS_O_DSYNC        0</u></td></tr>
+<tr><th id="436">436</th><td><u>#<span data-ppcond="432">endif</span></u></td></tr>
+<tr><th id="437">437</th><td><u>#<span data-ppcond="437">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#50" data-ref="_M/O_EXCL">O_EXCL</a>)</u></td></tr>
+<tr><th id="438">438</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_EXCL" data-ref="_M/UV_FS_O_EXCL">UV_FS_O_EXCL</dfn>         O_EXCL</u></td></tr>
+<tr><th id="439">439</th><td><u>#<span data-ppcond="437">else</span></u></td></tr>
+<tr><th id="440">440</th><td><u># define UV_FS_O_EXCL         0</u></td></tr>
+<tr><th id="441">441</th><td><u>#<span data-ppcond="437">endif</span></u></td></tr>
+<tr><th id="442">442</th><td><u>#<span data-ppcond="442">if</span> defined(<span class="macro" data-ref="_M/O_EXLOCK">O_EXLOCK</span>)</u></td></tr>
+<tr><th id="443">443</th><td><u># define UV_FS_O_EXLOCK       O_EXLOCK</u></td></tr>
+<tr><th id="444">444</th><td><u>#<span data-ppcond="442">else</span></u></td></tr>
+<tr><th id="445">445</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_EXLOCK" data-ref="_M/UV_FS_O_EXLOCK">UV_FS_O_EXLOCK</dfn>       0</u></td></tr>
+<tr><th id="446">446</th><td><u>#<span data-ppcond="442">endif</span></u></td></tr>
+<tr><th id="447">447</th><td><u>#<span data-ppcond="447">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#149" data-ref="_M/O_NOATIME">O_NOATIME</a>)</u></td></tr>
+<tr><th id="448">448</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_NOATIME" data-ref="_M/UV_FS_O_NOATIME">UV_FS_O_NOATIME</dfn>      O_NOATIME</u></td></tr>
+<tr><th id="449">449</th><td><u>#<span data-ppcond="447">else</span></u></td></tr>
+<tr><th id="450">450</th><td><u># define UV_FS_O_NOATIME      0</u></td></tr>
+<tr><th id="451">451</th><td><u>#<span data-ppcond="447">endif</span></u></td></tr>
+<tr><th id="452">452</th><td><u>#<span data-ppcond="452">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#53" data-ref="_M/O_NOCTTY">O_NOCTTY</a>)</u></td></tr>
+<tr><th id="453">453</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_NOCTTY" data-ref="_M/UV_FS_O_NOCTTY">UV_FS_O_NOCTTY</dfn>       O_NOCTTY</u></td></tr>
+<tr><th id="454">454</th><td><u>#<span data-ppcond="452">else</span></u></td></tr>
+<tr><th id="455">455</th><td><u># define UV_FS_O_NOCTTY       0</u></td></tr>
+<tr><th id="456">456</th><td><u>#<span data-ppcond="452">endif</span></u></td></tr>
+<tr><th id="457">457</th><td><u>#<span data-ppcond="457">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#143" data-ref="_M/O_NOFOLLOW">O_NOFOLLOW</a>)</u></td></tr>
+<tr><th id="458">458</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_NOFOLLOW" data-ref="_M/UV_FS_O_NOFOLLOW">UV_FS_O_NOFOLLOW</dfn>     O_NOFOLLOW</u></td></tr>
+<tr><th id="459">459</th><td><u>#<span data-ppcond="457">else</span></u></td></tr>
+<tr><th id="460">460</th><td><u># define UV_FS_O_NOFOLLOW     0</u></td></tr>
+<tr><th id="461">461</th><td><u>#<span data-ppcond="457">endif</span></u></td></tr>
+<tr><th id="462">462</th><td><u>#<span data-ppcond="462">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#62" data-ref="_M/O_NONBLOCK">O_NONBLOCK</a>)</u></td></tr>
+<tr><th id="463">463</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_NONBLOCK" data-ref="_M/UV_FS_O_NONBLOCK">UV_FS_O_NONBLOCK</dfn>     O_NONBLOCK</u></td></tr>
+<tr><th id="464">464</th><td><u>#<span data-ppcond="462">else</span></u></td></tr>
+<tr><th id="465">465</th><td><u># define UV_FS_O_NONBLOCK     0</u></td></tr>
+<tr><th id="466">466</th><td><u>#<span data-ppcond="462">endif</span></u></td></tr>
+<tr><th id="467">467</th><td><u>#<span data-ppcond="467">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#43" data-ref="_M/O_RDONLY">O_RDONLY</a>)</u></td></tr>
+<tr><th id="468">468</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_RDONLY" data-ref="_M/UV_FS_O_RDONLY">UV_FS_O_RDONLY</dfn>       O_RDONLY</u></td></tr>
+<tr><th id="469">469</th><td><u>#<span data-ppcond="467">else</span></u></td></tr>
+<tr><th id="470">470</th><td><u># define UV_FS_O_RDONLY       0</u></td></tr>
+<tr><th id="471">471</th><td><u>#<span data-ppcond="467">endif</span></u></td></tr>
+<tr><th id="472">472</th><td><u>#<span data-ppcond="472">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" data-ref="_M/O_RDWR">O_RDWR</a>)</u></td></tr>
+<tr><th id="473">473</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_RDWR" data-ref="_M/UV_FS_O_RDWR">UV_FS_O_RDWR</dfn>         O_RDWR</u></td></tr>
+<tr><th id="474">474</th><td><u>#<span data-ppcond="472">else</span></u></td></tr>
+<tr><th id="475">475</th><td><u># define UV_FS_O_RDWR         0</u></td></tr>
+<tr><th id="476">476</th><td><u>#<span data-ppcond="472">endif</span></u></td></tr>
+<tr><th id="477">477</th><td><u>#<span data-ppcond="477">if</span> defined(<span class="macro" data-ref="_M/O_SYMLINK">O_SYMLINK</span>)</u></td></tr>
+<tr><th id="478">478</th><td><u># define UV_FS_O_SYMLINK      O_SYMLINK</u></td></tr>
+<tr><th id="479">479</th><td><u>#<span data-ppcond="477">else</span></u></td></tr>
+<tr><th id="480">480</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_SYMLINK" data-ref="_M/UV_FS_O_SYMLINK">UV_FS_O_SYMLINK</dfn>      0</u></td></tr>
+<tr><th id="481">481</th><td><u>#<span data-ppcond="477">endif</span></u></td></tr>
+<tr><th id="482">482</th><td><u>#<span data-ppcond="482">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#68" data-ref="_M/O_SYNC">O_SYNC</a>)</u></td></tr>
+<tr><th id="483">483</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_SYNC" data-ref="_M/UV_FS_O_SYNC">UV_FS_O_SYNC</dfn>         O_SYNC</u></td></tr>
+<tr><th id="484">484</th><td><u>#<span data-ppcond="482">else</span></u></td></tr>
+<tr><th id="485">485</th><td><u># define UV_FS_O_SYNC         0</u></td></tr>
+<tr><th id="486">486</th><td><u>#<span data-ppcond="482">endif</span></u></td></tr>
+<tr><th id="487">487</th><td><u>#<span data-ppcond="487">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#56" data-ref="_M/O_TRUNC">O_TRUNC</a>)</u></td></tr>
+<tr><th id="488">488</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_TRUNC" data-ref="_M/UV_FS_O_TRUNC">UV_FS_O_TRUNC</dfn>        O_TRUNC</u></td></tr>
+<tr><th id="489">489</th><td><u>#<span data-ppcond="487">else</span></u></td></tr>
+<tr><th id="490">490</th><td><u># define UV_FS_O_TRUNC        0</u></td></tr>
+<tr><th id="491">491</th><td><u>#<span data-ppcond="487">endif</span></u></td></tr>
+<tr><th id="492">492</th><td><u>#<span data-ppcond="492">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" data-ref="_M/O_WRONLY">O_WRONLY</a>)</u></td></tr>
+<tr><th id="493">493</th><td><u># define <dfn class="macro" id="_M/UV_FS_O_WRONLY" data-ref="_M/UV_FS_O_WRONLY">UV_FS_O_WRONLY</dfn>       O_WRONLY</u></td></tr>
+<tr><th id="494">494</th><td><u>#<span data-ppcond="492">else</span></u></td></tr>
+<tr><th id="495">495</th><td><u># define UV_FS_O_WRONLY       0</u></td></tr>
+<tr><th id="496">496</th><td><u>#<span data-ppcond="492">endif</span></u></td></tr>
+<tr><th id="497">497</th><td></td></tr>
+<tr><th id="498">498</th><td><i>/* fs open() flags supported on other platforms: */</i></td></tr>
+<tr><th id="499">499</th><td><u>#define <dfn class="macro" id="_M/UV_FS_O_FILEMAP" data-ref="_M/UV_FS_O_FILEMAP">UV_FS_O_FILEMAP</dfn>       0</u></td></tr>
+<tr><th id="500">500</th><td><u>#define <dfn class="macro" id="_M/UV_FS_O_RANDOM" data-ref="_M/UV_FS_O_RANDOM">UV_FS_O_RANDOM</dfn>        0</u></td></tr>
+<tr><th id="501">501</th><td><u>#define <dfn class="macro" id="_M/UV_FS_O_SHORT_LIVED" data-ref="_M/UV_FS_O_SHORT_LIVED">UV_FS_O_SHORT_LIVED</dfn>   0</u></td></tr>
+<tr><th id="502">502</th><td><u>#define <dfn class="macro" id="_M/UV_FS_O_SEQUENTIAL" data-ref="_M/UV_FS_O_SEQUENTIAL">UV_FS_O_SEQUENTIAL</dfn>    0</u></td></tr>
+<tr><th id="503">503</th><td><u>#define <dfn class="macro" id="_M/UV_FS_O_TEMPORARY" data-ref="_M/UV_FS_O_TEMPORARY">UV_FS_O_TEMPORARY</dfn>     0</u></td></tr>
+<tr><th id="504">504</th><td></td></tr>
+<tr><th id="505">505</th><td><u>#<span data-ppcond="22">endif</span> /* UV_UNIX_H */</u></td></tr>
+<tr><th id="506">506</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../src/fs-poll.c.html'>qv2ray/3rdparty/libuv/src/fs-poll.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

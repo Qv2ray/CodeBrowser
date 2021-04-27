@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/repeated_field.h' l='645' type='static GenericType * google::protobuf::internal::GenericTypeHandler::NewFromPrototype(const GenericType * prototype, ::google::protobuf::Arena * arena = __null)'/>
+<def f='include/google/protobuf/repeated_field.h' l='667' ll='671' type='static GenericType * google::protobuf::internal::GenericTypeHandler::NewFromPrototype(const GenericType * , ::google::protobuf::Arena * arena = __null)'/>
+<dec f='include/google/protobuf/repeated_field.h' l='682' type='static google::protobuf::MessageLite * google::protobuf::internal::GenericTypeHandler&lt;google::protobuf::MessageLite&gt;::NewFromPrototype(const google::protobuf::MessageLite * prototype, google::protobuf::Arena * arena)'/>
+<dec f='include/google/protobuf/repeated_field.h' l='709' type='static google::protobuf::Message * google::protobuf::internal::GenericTypeHandler&lt;google::protobuf::Message&gt;::NewFromPrototype(const google::protobuf::Message * prototype, google::protobuf::Arena * arena)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='678'>// NewFromPrototype() and Merge() are not defined inline here, as we will need
+// to do a virtual function dispatch anyways to go from Message* to call
+// New/Merge.</doc>

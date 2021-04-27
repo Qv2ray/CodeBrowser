@@ -1,0 +1,16 @@
+<def f='include/c++/10/chrono' l='1005' ll='1010' type='static std::time_t std::chrono::_V2::system_clock::to_time_t(const std::chrono::_V2::system_clock::time_point &amp; __t)'/>
+<doc f='include/c++/10/chrono' l='1004'>// Map to C API</doc>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='97' u='c'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='98' u='c'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='77' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler24IgnoreSubscriptionUpdateERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='312' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='391' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='711' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler22p_CHUpdateSubscriptionERKNS_4base6IDTypeINS3_9__GroupIdEEERK10QByteArray'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='743' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERK7QStringRKNS4_6IDTypeINS4_9__GroupIdEEEb'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='252' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='276' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='277' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='308' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='309' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/main.cpp' l='165' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/test/catch.hpp' l='2146' u='c' c='_ZN5Catch11StringMakerINSt6chrono10time_pointINS1_3_V212system_clockET_EEvE7convertB5cxx11ERKS6_'/>

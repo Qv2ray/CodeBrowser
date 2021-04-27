@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/generated_enum_reflection.h' l='64' type='bool google::protobuf::internal::ParseNamedEnum(const google::protobuf::EnumDescriptor * descriptor, const std::string &amp; name, int * value)'/>
+<use f='include/google/protobuf/generated_enum_reflection.h' l='73' u='c' c='_ZN6google8protobuf8internal14ParseNamedEnumEPKNS0_14EnumDescriptorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPT_'/>
+<doc f='include/google/protobuf/generated_enum_reflection.h' l='61'>// Helper for EnumType_Parse functions: try to parse the string &apos;name&apos; as an
+// enum name of the given type, returning true and filling in value on success,
+// or returning false and leaving value unchanged on failure.</doc>

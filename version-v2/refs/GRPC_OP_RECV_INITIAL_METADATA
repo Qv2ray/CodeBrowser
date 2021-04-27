@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='515' type='4'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='524' u='r' c='_ZN4grpc8internal25CallOpRecvInitialMetadata5AddOpEP7grpc_opPm'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='511'>/** Receive initial metadata: one and only one MUST be made on the client,
+      must not be made on the server.
+      This op completes after all initial metadata has been read from the
+      peer. */</doc>

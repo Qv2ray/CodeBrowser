@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='134' type='bool SingleApplication::sendMessage(const QByteArray &amp; message, int timeout = 100)'/>
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='187' ll='201' type='bool SingleApplication::sendMessage(const QByteArray &amp; message, int timeout = 100)'/>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='127'>/**
+     * @brief Sends a message to the primary instance. Returns true on success.
+     * @param {int} timeout - Timeout for connecting
+     * @returns {bool}
+     * @note sendMessage() will return false if invoked from the primary
+     * instance.
+     */</doc>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='67' u='c' c='_ZN6Qv2ray17Qv2rayApplication11SetupQv2rayEv'/>

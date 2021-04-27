@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='833' type='bool uvw::FsReq::mkdirSync(std::string path, int mode)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='276' ll='280' type='bool uvw::FsReq::mkdirSync(std::string path, int mode)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='827'>/**
+     * @brief Sync [mkdir](http://linux.die.net/man/2/mkdir).
+     * @param path Path, as described in the official documentation.
+     * @param mode Mode, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

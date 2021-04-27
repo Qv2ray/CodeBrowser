@@ -1,0 +1,13 @@
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='208' c='_ZN4grpc15CompletionQueue15DoThenAsyncNextEOT0_PPvPbRKT_'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='208' c='_ZN4grpc15CompletionQueue15DoThenAsyncNextEOT0_PPvPbRKT_'/>
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='284' ll='293'/>
+<size>16</size>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='280'>/// EXPERIMENTAL
+  /// Creates a Thread Local cache to store the first event
+  /// On this completion queue queued from this thread.  Once
+  /// initialized, it must be flushed on the same thread.</doc>
+<fun r='_ZN4grpc15CompletionQueue23CompletionQueueTLSCacheC1EPS0_'/>
+<fun r='_ZN4grpc15CompletionQueue23CompletionQueueTLSCacheD1Ev'/>
+<fun r='_ZN4grpc15CompletionQueue23CompletionQueueTLSCache5FlushEPPvPb'/>
+<mbr r='grpc::CompletionQueue::CompletionQueueTLSCache::cq_' o='0' t='grpc::CompletionQueue *'/>
+<mbr r='grpc::CompletionQueue::CompletionQueueTLSCache::flushed_' o='64' t='bool'/>

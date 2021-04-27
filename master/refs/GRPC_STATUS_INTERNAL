@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/status.h' l='127' type='13'/>
+<use f='include/grpcpp/impl/codegen/status.h' l='79' u='r' c='_ZN4grpc6StatusC1Ev'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='229' u='r' c='_ZN4grpc15ServerInterface19PayloadAsyncRequest14FinalizeResultEPPvPb'/>
+<doc f='include/grpc/impl/codegen/status.h' l='124'>/** Internal errors.  Means some invariants expected by underlying
+     system has been broken.  If you see one of these errors,
+     something is very broken. */</doc>

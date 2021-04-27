@@ -1,0 +1,13 @@
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.h' l='91'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='38' ll='49'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='51' c='_ZN8QtQrCodeC1Ei'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='56' c='_ZN8QtQrCodeC1ENS_10EncodeModeE'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='64' c='_ZN8QtQrCodeC1ERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE'/>
+<size>56</size>
+<mbr r='QtQrCodeData::width' o='32' t='int'/>
+<mbr r='QtQrCodeData::version' o='64' t='int'/>
+<mbr r='QtQrCodeData::data' o='128' t='QByteArray'/>
+<mbr r='QtQrCodeData::encodeMode' o='320' t='QtQrCode::EncodeMode'/>
+<mbr r='QtQrCodeData::proportion' o='352' t='QtQrCode::Proportion'/>
+<mbr r='QtQrCodeData::caseSensitivity' o='384' t='Qt::CaseSensitivity'/>
+<mbr r='QtQrCodeData::errorCorrectionLevel' o='416' t='QtQrCode::ErrorCorrectionLevel'/>

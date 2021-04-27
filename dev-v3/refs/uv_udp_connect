@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='660' type='int uv_udp_connect(uv_udp_t * handle, const struct sockaddr * addr)'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='365' ll='390' type='int uv_udp_connect(uv_udp_t * handle, const struct sockaddr * addr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='49' u='a' c='_ZN3uvw9UDPHandle7connectERK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='68' u='a' c='_ZN3uvw9UDPHandle10disconnectEv'/>

@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/message.h' l='1010' type='google::protobuf::MapIterator google::protobuf::Reflection::MapEnd(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field) const'/>
+<doc f='include/google/protobuf/message.h' l='1007'>// Returns a MapIterator referring to the theoretical element that would
+  // follow the last element in the map field. It does not point to any
+  // real element. Mutation to the field may invalidate the iterator.</doc>

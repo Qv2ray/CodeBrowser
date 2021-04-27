@@ -1,0 +1,23 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='13' ll='63'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='21' c='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObjectC1ERK7QString'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='26' c='_ZN6Qv2ray4base7objectseqERKNS1_9DNSObject15DNSServerObjectES5_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='26' c='_ZN6Qv2ray4base7objectseqERKNS1_9DNSObject15DNSServerObjectES5_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='34' c='_ZN6Qv2ray4base7objectsneERKNS1_9DNSObject15DNSServerObjectES5_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='34' c='_ZN6Qv2ray4base7objectsneERKNS1_9DNSObject15DNSServerObjectES5_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='40' c='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='52' c='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='59' c='_ZNK6Qv2ray4base7objects9DNSObject15DNSServerObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='66'/>
+<size>40</size>
+<mbr r='Qv2ray::base::objects::DNSObject::DNSServerObject::QV2RAY_DNS_IS_COMPLEX_DNS' o='0' t='bool'/>
+<mbr r='Qv2ray::base::objects::DNSObject::DNSServerObject::address' o='64' t='QString'/>
+<mbr r='Qv2ray::base::objects::DNSObject::DNSServerObject::port' o='128' t='int'/>
+<mbr r='Qv2ray::base::objects::DNSObject::DNSServerObject::domains' o='192' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::DNSObject::DNSServerObject::expectIPs' o='256' t='QList&lt;QString&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObjectC1ERK7QString'/>
+<fun r='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects9DNSObject15DNSServerObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects9DNSObject15DNSServerObject6toJsonEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.cpp' l='179' c='_ZN17DnsSettingsWidget23on_addServerBtn_clickedEv'/>
+<size>40</size>

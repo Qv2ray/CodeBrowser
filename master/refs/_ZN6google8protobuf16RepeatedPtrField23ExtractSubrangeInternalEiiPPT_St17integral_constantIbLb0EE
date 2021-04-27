@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/repeated_field.h' l='1017' type='void google::protobuf::RepeatedPtrField::ExtractSubrangeInternal(int start, int num, Element ** elements, std::false_type )'/>
+<def f='include/google/protobuf/repeated_field.h' l='2044' ll='2055' type='void google::protobuf::RepeatedPtrField::ExtractSubrangeInternal(int start, int num, Element ** elements, std::false_type )'/>
+<doc f='include/google/protobuf/repeated_field.h' l='2042'>// ExtractSubrange() implementation for types that do not implement merge/copy
+// behavior.</doc>

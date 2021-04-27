@@ -1,0 +1,13 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='560' type='int'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1114' u='r' c='_ZN6google8protobuf2io16CodedInputStream11ExpectAtEndEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1125' u='r' c='_ZNK6google8protobuf2io16CodedInputStream15CurrentPositionEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1343' u='w' c='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1363' u='w' c='_ZN6google8protobuf2io16CodedInputStreamC1EPKhi'/>
+<offset>352</offset>
+<doc f='include/google/protobuf/io/coded_stream.h' l='553'>// For simplicity, if the current buffer crosses a limit (either a normal
+  // limit created by PushLimit() or the total bytes limit), buffer_size_
+  // only tracks the number of bytes before that limit.  This field
+  // contains the number of bytes after it.  Note that this implies that if
+  // buffer_size_ == 0 and buffer_size_after_limit_ &gt; 0, we know we&apos;ve
+  // hit a limit.  However, if both are zero, it doesn&apos;t necessarily mean
+  // we aren&apos;t at a limit -- the buffer may have ended exactly at the limit.</doc>

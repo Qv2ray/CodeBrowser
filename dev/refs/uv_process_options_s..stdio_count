@@ -1,0 +1,17 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='976' type='int'/>
+<offset>352</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='967'>/*
+   * The `stdio` field points to an array of uv_stdio_container_t structs that
+   * describe the file descriptors that will be made available to the child
+   * process. The convention is that stdio[0] points to stdin, fd 1 is used for
+   * stdout, and fd 2 is stderr.
+   *
+   * Note that on windows file descriptors greater than 2 are available to the
+   * child process only if the child processes uses the MSVCRT runtime.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='438' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='455' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='531' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='559' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='62' u='w' c='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='62' u='r' c='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>

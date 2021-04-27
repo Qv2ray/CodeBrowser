@@ -1,0 +1,18 @@
+<def f='include/c++/10/bits/stl_vector.h' l='1428' ll='1431' type='std::vector::iterator std::vector::erase(std::vector::const_iterator __position)'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='1413'>/**
+       *  @brief  Remove element at given position.
+       *  @param  __position  Iterator pointing to element to be erased.
+       *  @return  An iterator pointing to the next element (or end()).
+       *
+       *  This function will erase the element at the given position and thus
+       *  shorten the %vector by one.
+       *
+       *  Note This operation could be expensive and if it is
+       *  frequently used the user should consider using std::list.
+       *  The user is also cautioned that this function only erases
+       *  the element, and that if the element is itself a pointer,
+       *  the pointed-to memory is not touched in any way.  Managing
+       *  the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='qv2ray/test/catch.hpp' l='8911' u='c' c='_ZN5Catch5clara6detail11TokenStreamppEv'/>
+<use f='qv2ray/test/catch.hpp' l='9725' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>

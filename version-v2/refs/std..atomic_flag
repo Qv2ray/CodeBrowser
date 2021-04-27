@@ -1,0 +1,29 @@
+<inh f='include/c++/10/bits/atomic_base.h' l='176' c='std::__atomic_flag_base'/>
+<def f='include/c++/10/bits/atomic_base.h' l='186' ll='237'/>
+<use f='include/c++/10/bits/atomic_base.h' l='190' c='_ZNSt11atomic_flagC1ERKS_'/>
+<use f='include/c++/10/bits/atomic_base.h' l='191' c='_ZNSt11atomic_flagaSERKS_'/>
+<use f='include/c++/10/bits/atomic_base.h' l='191' c='_ZNSt11atomic_flagaSERKS_'/>
+<use f='include/c++/10/bits/atomic_base.h' l='192' c='_ZNVSt11atomic_flagaSERKS_'/>
+<use f='include/c++/10/bits/atomic_base.h' l='192' c='_ZNVSt11atomic_flagaSERKS_'/>
+<use f='include/c++/10/atomic' l='1135' c='_ZSt33atomic_flag_test_and_set_explicitPSt11atomic_flagSt12memory_order'/>
+<use f='include/c++/10/atomic' l='1140' c='_ZSt33atomic_flag_test_and_set_explicitPVSt11atomic_flagSt12memory_order'/>
+<use f='include/c++/10/atomic' l='1145' c='_ZSt26atomic_flag_clear_explicitPSt11atomic_flagSt12memory_order'/>
+<use f='include/c++/10/atomic' l='1149' c='_ZSt26atomic_flag_clear_explicitPVSt11atomic_flagSt12memory_order'/>
+<use f='include/c++/10/atomic' l='1154' c='_ZSt24atomic_flag_test_and_setPSt11atomic_flag'/>
+<use f='include/c++/10/atomic' l='1158' c='_ZSt24atomic_flag_test_and_setPVSt11atomic_flag'/>
+<use f='include/c++/10/atomic' l='1162' c='_ZSt17atomic_flag_clearPSt11atomic_flag'/>
+<use f='include/c++/10/atomic' l='1166' c='_ZSt17atomic_flag_clearPVSt11atomic_flag'/>
+<use f='include/c++/10/future' l='320'/>
+<size>1</size>
+<doc f='include/c++/10/bits/atomic_base.h' l='185'>/// atomic_flag</doc>
+<fun r='_ZNSt11atomic_flagC1Ev'/>
+<fun r='_ZNSt11atomic_flagD1Ev'/>
+<fun r='_ZNSt11atomic_flagC1ERKS_'/>
+<fun r='_ZNSt11atomic_flagaSERKS_'/>
+<fun r='_ZNVSt11atomic_flagaSERKS_'/>
+<fun r='_ZNSt11atomic_flagC1Eb'/>
+<fun r='_ZNSt11atomic_flag12test_and_setESt12memory_order'/>
+<fun r='_ZNVSt11atomic_flag12test_and_setESt12memory_order'/>
+<fun r='_ZNSt11atomic_flag5clearESt12memory_order'/>
+<fun r='_ZNVSt11atomic_flag5clearESt12memory_order'/>
+<fun r='_ZNSt11atomic_flag7_S_initEb'/>

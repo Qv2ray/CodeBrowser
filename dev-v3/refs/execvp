@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='578' type='int execvp(const char * __file, char *const * __argv)'/>
+<doc f='include/unistd.h' l='576'>/* Execute FILE, searching in the `PATH&apos; environment variable if it contains
+   no slashes, with arguments ARGV and environment from `environ&apos;.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='401' u='c' c='uv__process_child_init'/>

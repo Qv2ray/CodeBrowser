@@ -1,0 +1,46 @@
+<inh f='include/c++/10/bits/std_mutex.h' l='57' c='std::__mutex_base'/>
+<def f='include/c++/10/bits/std_mutex.h' l='83' ll='124'/>
+<use f='include/c++/10/bits/std_mutex.h' l='94' c='_ZNSt5mutexC1ERKS_'/>
+<use f='include/c++/10/bits/std_mutex.h' l='95' c='_ZNSt5mutexaSERKS_'/>
+<use f='include/c++/10/bits/std_mutex.h' l='95' c='_ZNSt5mutexaSERKS_'/>
+<use f='include/c++/10/condition_variable' l='104' c='_ZNSt18condition_variable4waitERSt11unique_lockISt5mutexE'/>
+<use f='include/c++/10/condition_variable' l='108' c='_ZNSt18condition_variable4waitERSt11unique_lockISt5mutexET_'/>
+<use f='include/c++/10/condition_variable' l='117' c='_ZNSt18condition_variable10wait_untilERSt11unique_lockISt5mutexERKNSt6chrono10time_pointINS4_3_V212steady_clockET_EE'/>
+<use f='include/c++/10/condition_variable' l='124' c='_ZNSt18condition_variable10wait_untilERSt11unique_lockISt5mutexERKNSt6chrono10time_pointINS4_3_V212system_clockET_EE'/>
+<use f='include/c++/10/condition_variable' l='130' c='_ZNSt18condition_variable10wait_untilERSt11unique_lockISt5mutexERKNSt6chrono10time_pointIT_T0_EE'/>
+<use f='include/c++/10/condition_variable' l='153' c='_ZNSt18condition_variable10wait_untilERSt11unique_lockISt5mutexERKNSt6chrono10time_pointIT_T0_EET1_'/>
+<use f='include/c++/10/condition_variable' l='165' c='_ZNSt18condition_variable8wait_forERSt11unique_lockISt5mutexERKNSt6chrono8durationIT_T0_EE'/>
+<use f='include/c++/10/condition_variable' l='177' c='_ZNSt18condition_variable8wait_forERSt11unique_lockISt5mutexERKNSt6chrono8durationIT_T0_EET1_'/>
+<use f='include/c++/10/condition_variable' l='197' c='_ZNSt18condition_variable17__wait_until_implERSt11unique_lockISt5mutexERKNSt6chrono10time_pointINS4_3_V212steady_clockET_EE'/>
+<use f='include/c++/10/condition_variable' l='220' c='_ZNSt18condition_variable17__wait_until_implERSt11unique_lockISt5mutexERKNSt6chrono10time_pointINS4_3_V212system_clockET_EE'/>
+<use f='include/c++/10/condition_variable' l='241' c='_ZSt25notify_all_at_thread_exitRSt18condition_variableSt11unique_lockISt5mutexE'/>
+<use f='include/c++/10/condition_variable' l='261'/>
+<use f='include/c++/10/condition_variable' l='291' c='_ZNSt3_V222condition_variable_anyC1Ev'/>
+<use f='include/c++/10/condition_variable' l='300' c='_ZNSt3_V222condition_variable_any10notify_oneEv'/>
+<use f='include/c++/10/condition_variable' l='307' c='_ZNSt3_V222condition_variable_any10notify_allEv'/>
+<use f='include/c++/10/condition_variable' l='315' c='_ZNSt3_V222condition_variable_any4waitERT_'/>
+<use f='include/c++/10/condition_variable' l='316' c='_ZNSt3_V222condition_variable_any4waitERT_'/>
+<use f='include/c++/10/condition_variable' l='320' c='_ZNSt3_V222condition_variable_any4waitERT_'/>
+<use f='include/c++/10/condition_variable' l='338' c='_ZNSt3_V222condition_variable_any10wait_untilERT_RKNSt6chrono10time_pointIT0_T1_EE'/>
+<use f='include/c++/10/condition_variable' l='339' c='_ZNSt3_V222condition_variable_any10wait_untilERT_RKNSt6chrono10time_pointIT0_T1_EE'/>
+<use f='include/c++/10/condition_variable' l='343' c='_ZNSt3_V222condition_variable_any10wait_untilERT_RKNSt6chrono10time_pointIT0_T1_EE'/>
+<size>40</size>
+<doc f='include/c++/10/bits/std_mutex.h' l='82'>/// The standard mutex type.</doc>
+<fun r='_ZNSt5mutexC1Ev'/>
+<fun r='_ZNSt5mutexD1Ev'/>
+<fun r='_ZNSt5mutexC1ERKS_'/>
+<fun r='_ZNSt5mutexaSERKS_'/>
+<fun r='_ZNSt5mutex4lockEv'/>
+<fun r='_ZNSt5mutex8try_lockEv'/>
+<fun r='_ZNSt5mutex6unlockEv'/>
+<fun r='_ZNSt5mutex13native_handleEv'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.hpp' l='34'/>
+<use f='include/google/protobuf/stubs/mutex.h' l='58'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='423'/>
+<use f='include/grpcpp/channel.h' l='94'/>
+<use f='include/grpcpp/server.h' l='232'/>
+<size>40</size>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='24' c='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERKNS_4base6IDTypeINS3_14__QvConnectionEEEiNS3_6config26Qv2rayLatencyTestingMethodE'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='60' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='91' c='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERK5QListINS_4base6IDTypeINS4_14__QvConnectionEEEEiNS4_6config26Qv2rayLatencyTestingMethodE'/>
+<size>40</size>

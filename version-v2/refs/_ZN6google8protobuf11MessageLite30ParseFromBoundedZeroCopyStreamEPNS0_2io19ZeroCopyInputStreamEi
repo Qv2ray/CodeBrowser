@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/message_lite.h' l='242' type='bool google::protobuf::MessageLite::ParseFromBoundedZeroCopyStream(io::ZeroCopyInputStream * input, int size)'/>
+<doc f='include/google/protobuf/message_lite.h' l='239'>// Read a protocol buffer from the given zero-copy input stream, expecting
+  // the message to be exactly &quot;size&quot; bytes long.  If successful, exactly
+  // this many bytes will have been consumed from the input.</doc>

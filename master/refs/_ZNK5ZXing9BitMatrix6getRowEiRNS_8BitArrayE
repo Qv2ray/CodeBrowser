@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='203' type='void ZXing::BitMatrix::getRow(int y, ZXing::BitArray &amp; row) const'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='32' ll='41' type='void ZXing::BitMatrix::getRow(int y, ZXing::BitArray &amp; row) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='195'>/**
+	* A fast method to retrieve one row of data from the matrix as a BitArray.
+	*
+	* @param y The row to retrieve
+	* @param row An optional caller-allocated BitArray, will be allocated if null or too small
+	* @return The resulting BitArray - this reference should always be used even when passing
+	*         your own row
+	*/</doc>

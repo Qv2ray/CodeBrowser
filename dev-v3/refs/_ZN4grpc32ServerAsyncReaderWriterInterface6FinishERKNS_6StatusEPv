@@ -1,0 +1,23 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='986' type='void grpc::ServerAsyncReaderWriterInterface::Finish(const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='964'>/// Indicate that the stream is to be finished with a certain status code.
+  /// Request notification for when the server has sent the appropriate
+  /// signals to the client to end the call.
+  /// Should not be used concurrently with other operations.
+  ///
+  /// It is appropriate to call this method when either:
+  ///   * all messages from the client have been received (either known
+  ///     implictly, or explicitly because a previous \a
+  ///     AsyncReaderInterface::Read operation
+  ///     with a non-ok result (e.g., cq-&gt;Next(&amp;read_tag, &amp;ok) filled in &apos;ok&apos;
+  ///     with &apos;false&apos;.
+  ///   * it is desired to end the call early with some non-OK status code.
+  ///
+  /// This operation will end when the server has finished sending out initial
+  /// metadata (if not sent already), response message, and status, or if some
+  /// failure occurred when trying to do so.
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a status, so it is safe to
+  /// to deallocate once Finish returns.
+  ///
+  /// \param[in] tag Tag identifying this request.
+  /// \param[in] status To be sent to the client as the result of this call.</doc>

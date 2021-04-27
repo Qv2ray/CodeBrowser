@@ -1,0 +1,13 @@
+<def f='include/c++/10/bits/stl_map.h' l='1168' ll='1170' type='std::map::iterator std::map::find(const std::map::key_type &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_map.h' l='1156'>/**
+       *  @brief Tries to locate an element in a %map.
+       *  @param  __x  Key of (key, value) %pair to be located.
+       *  @return  Iterator pointing to sought-after element, or end() if not
+       *           found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns an iterator
+       *  pointing to the sought after %pair.  If unsuccessful it returns the
+       *  past-the-end ( @c end() ) iterator.
+       */</doc>
+<use f='qv2ray/test/catch.hpp' l='11244' u='c' c='_ZN5Catch8listTagsERKNS_6ConfigE'/>

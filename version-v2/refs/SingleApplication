@@ -1,0 +1,67 @@
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='42' ll='150'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='68' c='_ZN24SingleApplicationPrivate6q_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='68' c='_ZN24SingleApplicationPrivate6q_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='68' c='_ZNK24SingleApplicationPrivate6q_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='68' c='_ZNK24SingleApplicationPrivate6q_funcEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='68'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='70' c='_ZN24SingleApplicationPrivateC1EP17SingleApplication'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='88'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='37'>/**
+ * @brief The SingleApplication class handles multiple instances of the same
+ * Application
+ * @see QCoreApplication
+ */</doc>
+<smbr r='SingleApplication::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17SingleApplication10metaObjectEv'/>
+<fun r='_ZN17SingleApplication11qt_metacastEPKc'/>
+<fun r='_ZN17SingleApplication11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17SingleApplication2trEPKcS1_i'/>
+<fun r='_ZN17SingleApplication6trUtf8EPKcS1_i'/>
+<fun r='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17SingleApplicationC1ERiPPcb6QFlagsINS_4ModeEEiRK7QString'/>
+<fun r='_ZN17SingleApplicationD1Ev'/>
+<fun r='_ZN17SingleApplication9isPrimaryEv'/>
+<fun r='_ZN17SingleApplication11isSecondaryEv'/>
+<fun r='_ZN17SingleApplication10instanceIdEv'/>
+<fun r='_ZN17SingleApplication10primaryPidEv'/>
+<fun r='_ZN17SingleApplication11primaryUserEv'/>
+<fun r='_ZN17SingleApplication11currentUserEv'/>
+<fun r='_ZN17SingleApplication11sendMessageERK10QByteArrayi'/>
+<fun r='_ZN17SingleApplication8userDataEv'/>
+<fun r='_ZN17SingleApplication15instanceStartedEv'/>
+<fun r='_ZN17SingleApplication15receivedMessageEj10QByteArray'/>
+<mbr r='SingleApplication::d_ptr' o='128' t='SingleApplicationPrivate *'/>
+<fun r='_ZN17SingleApplication6d_funcEv'/>
+<fun r='_ZNK17SingleApplication6d_funcEv'/>
+<fun r='_ZN17SingleApplication11abortSafelyEv'/>
+<fun r='_ZN17SingleApplicationC1ERiPPcb6QFlagsINS_4ModeEEiRK7QString'/>
+<fun r='_ZN17SingleApplicationD1Ev'/>
+<fun r='_ZN17SingleApplication9isPrimaryEv'/>
+<fun r='_ZN17SingleApplication11isSecondaryEv'/>
+<fun r='_ZN17SingleApplication10instanceIdEv'/>
+<fun r='_ZN17SingleApplication10primaryPidEv'/>
+<fun r='_ZN17SingleApplication11primaryUserEv'/>
+<fun r='_ZN17SingleApplication11currentUserEv'/>
+<fun r='_ZN17SingleApplication11sendMessageERK10QByteArrayi'/>
+<fun r='_ZN17SingleApplication11abortSafelyEv'/>
+<fun r='_ZN17SingleApplication8userDataEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='67' c='_ZN24SingleApplicationPrivateC1EP17SingleApplication'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='389' c='_ZN24SingleApplicationPrivate19readInitMessageBodyEP12QLocalSocket'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='458' c='_ZN24SingleApplicationPrivate17slotDataAvailableEP12QLocalSocketj'/>
+<size>24</size>
+<ovr f='qv2ray/src/ui/Qv2rayPlatformApplication.hpp' l='46' c='Qv2rayPlatformApplication'/>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.hpp' l='39'/>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.hpp' l='39' c='_ZN25Qv2rayPlatformApplicationC1ERiPPc'/>
+<size>24</size>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='75' c='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='85' c='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/W64JVUQPZG/moc_singleapplication.cpp' l='92' c='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>24</size>
+<fun r='_ZN17SingleApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='SingleApplication::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17SingleApplication10metaObjectEv'/>
+<fun r='_ZN17SingleApplication11qt_metacastEPKc'/>
+<fun r='_ZN17SingleApplication11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17SingleApplication15instanceStartedEv'/>
+<fun r='_ZN17SingleApplication15receivedMessageEj10QByteArray'/>

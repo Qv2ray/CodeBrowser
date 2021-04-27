@@ -1,0 +1,14 @@
+<use f='include/grpc/impl/codegen/slice.h' l='28'/>
+<def f='include/grpc/impl/codegen/slice.h' l='80' ll='92'/>
+<size>32</size>
+<doc f='include/grpc/impl/codegen/slice.h' l='71'>/** A grpc_slice s, if initialized, represents the byte range
+   s.bytes[0..s.length-1].
+
+   It can have an associated ref count which has a destruction routine to be run
+   when the ref count reaches zero (see grpc_slice_new() and grp_slice_unref()).
+   Multiple grpc_slice values may share a ref count.
+
+   If the slice does not have a refcount, it represents an inlined small piece
+   of data that is copied by value. */</doc>
+<mbr r='grpc_slice::refcount' o='0' t='struct grpc_slice_refcount *'/>
+<mbr r='grpc_slice::data' o='64' t='union grpc_slice_data'/>

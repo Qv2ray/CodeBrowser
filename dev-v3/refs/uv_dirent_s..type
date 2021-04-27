@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1143' type='uv_dirent_type_t'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='596' u='w' c='uv__fs_readdir'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='683' u='w' c='uv_fs_scandir_next'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='249' u='r' c='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='360' u='r' c='_ZN3uvw5FsReq11scandirNextEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='580' u='r' c='_ZN3uvw5FsReq11readdirSyncEv'/>

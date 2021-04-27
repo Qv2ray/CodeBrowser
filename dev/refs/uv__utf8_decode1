@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/libuv/src/idna.h' l='23' type='unsigned int uv__utf8_decode1(const char ** p, const char * pe)'/>
+<def f='qv2ray/3rdparty/libuv/src/idna.c' l='88' ll='97' type='unsigned int uv__utf8_decode1(const char ** p, const char * pe)'/>
+<use f='qv2ray/3rdparty/libuv/src/idna.c' l='100' u='c' c='uv__idna_toascii_label'/>
+<use f='qv2ray/3rdparty/libuv/src/idna.c' l='100' u='c' c='uv__idna_toascii_label'/>
+<use f='qv2ray/3rdparty/libuv/src/idna.c' l='100' u='c' c='uv__idna_toascii_label'/>
+<use f='qv2ray/3rdparty/libuv/src/idna.c' l='100' u='c' c='uv__idna_toascii_label'/>
+<use f='qv2ray/3rdparty/libuv/src/idna.c' l='261' u='c' c='uv__idna_toascii'/>
+<doc f='qv2ray/3rdparty/libuv/src/idna.h' l='19'>/* Decode a single codepoint. Returns the codepoint or UINT32_MAX on error.
+ * |p| is updated on success _and_ error, i.e., bad multi-byte sequences are
+ * skipped in their entirety, not just the first bad byte.
+ */</doc>

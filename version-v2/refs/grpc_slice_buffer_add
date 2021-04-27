@@ -1,0 +1,4 @@
+<dec f='include/grpc/slice_buffer.h' l='37' type='void grpc_slice_buffer_add(grpc_slice_buffer * sb, grpc_slice slice)'/>
+<doc f='include/grpc/slice_buffer.h' l='34'>/** Add an element to a slice buffer - takes ownership of the slice.
+   This function is allowed to concatenate the passed in slice to the end of
+   some other slice if desired by the slice buffer. */</doc>

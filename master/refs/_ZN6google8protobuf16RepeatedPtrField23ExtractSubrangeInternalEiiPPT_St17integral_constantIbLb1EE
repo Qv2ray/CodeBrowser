@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/repeated_field.h' l='1015' type='void google::protobuf::RepeatedPtrField::ExtractSubrangeInternal(int start, int num, Element ** elements, std::true_type )'/>
+<def f='include/google/protobuf/repeated_field.h' l='2011' ll='2040' type='void google::protobuf::RepeatedPtrField::ExtractSubrangeInternal(int start, int num, Element ** elements, std::true_type )'/>
+<doc f='include/google/protobuf/repeated_field.h' l='1011'>// Implementations for ExtractSubrange(). The copying behavior must be
+  // included only if the type supports the necessary operations (e.g.,
+  // MergeFrom()), so we must resolve this at compile time. ExtractSubrange()
+  // uses SFINAE to choose one of the below implementations.</doc>
+<doc f='include/google/protobuf/repeated_field.h' l='2009'>// ExtractSubrange() implementation for types that implement merge/copy
+// behavior.</doc>

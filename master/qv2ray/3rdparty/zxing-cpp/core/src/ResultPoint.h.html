@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ResultPoint.h source code [qv2ray/3rdparty/zxing-cpp/core/src/ResultPoint.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::ResultPoint "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/ResultPoint.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='ResultPoint.h.html'>ResultPoint.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="Point.h.html">"Point.h"</a></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc">* <span class="tag">&lt;p&gt;</span>Encapsulates a point of interest in an image containing a barcode. Typically, this</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc">* would be the location of a finder pattern or the corner of the barcode, for example.<span class="tag">&lt;/p&gt;</span></i></td></tr>
+<tr><th id="26">26</th><td><i class="doc">*</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc">* <span class="command">@author</span> Sean Owen</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="29">29</th><td><b>class</b> <dfn class="type def" id="ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</dfn> : <b>public</b> <a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a></td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td><b>public</b>:</td></tr>
+<tr><th id="32">32</th><td>	<dfn class="decl def fn" id="_ZN5ZXing11ResultPointC1Ev" title='ZXing::ResultPoint::ResultPoint' data-ref="_ZN5ZXing11ResultPointC1Ev" data-ref-filename="_ZN5ZXing11ResultPointC1Ev">ResultPoint</dfn>() = <b>default</b>;</td></tr>
+<tr><th id="33">33</th><td>	<dfn class="decl def fn" id="_ZN5ZXing11ResultPointC1Eff" title='ZXing::ResultPoint::ResultPoint' data-ref="_ZN5ZXing11ResultPointC1Eff" data-ref-filename="_ZN5ZXing11ResultPointC1Eff">ResultPoint</dfn>(<em>float</em> <dfn class="local col3 decl" id="3x" title='x' data-type='float' data-ref="3x" data-ref-filename="3x">x</dfn>, <em>float</em> <dfn class="local col4 decl" id="4y" title='y' data-type='float' data-ref="4y" data-ref-filename="4y">y</dfn>) : <a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a><a class="ref fn" href="Point.h.html#_ZN5ZXing6PointTC1ET_S1_" title='ZXing::PointT::PointT&lt;T&gt;' data-ref="_ZN5ZXing6PointTC1ET_S1_" data-ref-filename="_ZN5ZXing6PointTC1ET_S1_">(</a><a class="local col3 ref" href="#3x" title='x' data-ref="3x" data-ref-filename="3x">x</a>, <a class="local col4 ref" href="#4y" title='y' data-ref="4y" data-ref-filename="4y">y</a>) {}</td></tr>
+<tr><th id="34">34</th><td>	<dfn class="decl def fn" id="_ZN5ZXing11ResultPointC1Eii" title='ZXing::ResultPoint::ResultPoint' data-ref="_ZN5ZXing11ResultPointC1Eii" data-ref-filename="_ZN5ZXing11ResultPointC1Eii">ResultPoint</dfn>(<em>int</em> <dfn class="local col5 decl" id="5x" title='x' data-type='int' data-ref="5x" data-ref-filename="5x">x</dfn>, <em>int</em> <dfn class="local col6 decl" id="6y" title='y' data-type='int' data-ref="6y" data-ref-filename="6y">y</dfn>) : <a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a><a class="ref fn" href="Point.h.html#_ZN5ZXing6PointTC1ET_S1_" title='ZXing::PointT::PointT&lt;T&gt;' data-ref="_ZN5ZXing6PointTC1ET_S1_" data-ref-filename="_ZN5ZXing6PointTC1ET_S1_">(</a><a class="local col5 ref" href="#5x" title='x' data-ref="5x" data-ref-filename="5x">x</a>, <a class="local col6 ref" href="#6y" title='y' data-ref="6y" data-ref-filename="6y">y</a>) {}</td></tr>
+<tr><th id="35">35</th><td>	<b>template</b> &lt;<b>typename</b> T&gt; <dfn class="decl def fn" id="_ZN5ZXing11ResultPointC1ENS_6PointTIT_EE" title='ZXing::ResultPoint::ResultPoint' data-ref="_ZN5ZXing11ResultPointC1ENS_6PointTIT_EE" data-ref-filename="_ZN5ZXing11ResultPointC1ENS_6PointTIT_EE">ResultPoint</dfn>(<a class="type" href="Point.h.html#ZXing::PointT" title='ZXing::PointT' data-ref="ZXing::PointT" data-ref-filename="ZXing..PointT">PointT</a>&lt;T&gt; <dfn class="local col7 decl" id="7p" title='p' data-type='PointT&lt;T&gt;' data-ref="7p" data-ref-filename="7p">p</dfn>) : <a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a>(<a class="local col7 ref" href="#7p" title='p' data-ref="7p" data-ref-filename="7p">p</a>) {}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>	<em>float</em> <dfn class="decl def fn" id="_ZNK5ZXing11ResultPoint1xEv" title='ZXing::ResultPoint::x' data-ref="_ZNK5ZXing11ResultPoint1xEv" data-ref-filename="_ZNK5ZXing11ResultPoint1xEv">x</dfn>() <em>const</em> { <b>return</b> <b>static_cast</b>&lt;<em>float</em>&gt;(<a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a>::<a class="member field" href="Point.h.html#ZXing::PointT::x" title='ZXing::PointT&lt;double&gt;::x' data-ref="ZXing::PointT::x" data-ref-filename="ZXing..PointT..x">x</a>); }</td></tr>
+<tr><th id="38">38</th><td>	<em>float</em> <dfn class="decl def fn" id="_ZNK5ZXing11ResultPoint1yEv" title='ZXing::ResultPoint::y' data-ref="_ZNK5ZXing11ResultPoint1yEv" data-ref-filename="_ZNK5ZXing11ResultPoint1yEv">y</dfn>() <em>const</em> { <b>return</b> <b>static_cast</b>&lt;<em>float</em>&gt;(<a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a>::<a class="member field" href="Point.h.html#ZXing::PointT::y" title='ZXing::PointT&lt;double&gt;::y' data-ref="ZXing::PointT::y" data-ref-filename="ZXing..PointT..y">y</a>); }</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>	<em>void</em> <dfn class="decl def fn" id="_ZN5ZXing11ResultPoint3setEff" title='ZXing::ResultPoint::set' data-ref="_ZN5ZXing11ResultPoint3setEff" data-ref-filename="_ZN5ZXing11ResultPoint3setEff">set</dfn>(<em>float</em> <dfn class="local col8 decl" id="8x" title='x' data-type='float' data-ref="8x" data-ref-filename="8x">x</dfn>, <em>float</em> <dfn class="local col9 decl" id="9y" title='y' data-type='float' data-ref="9y" data-ref-filename="9y">y</dfn>) { *<b>this</b> <a class="member fn" href="#29" title='ZXing::ResultPoint::operator=' data-ref="_ZN5ZXing11ResultPointaSEOS0_" data-ref-filename="_ZN5ZXing11ResultPointaSEOS0_">=</a> <a class="ref fn fake" href="#_ZN5ZXing11ResultPointC1ENS_6PointTIT_EE" title='ZXing::ResultPoint::ResultPoint' data-ref="_ZN5ZXing11ResultPointC1ENS_6PointTIT_EE" data-ref-filename="_ZN5ZXing11ResultPointC1ENS_6PointTIT_EE"></a><a class="typedef" href="Point.h.html#ZXing::PointF" title='ZXing::PointF' data-type='PointT&lt;double&gt;' data-ref="ZXing::PointF" data-ref-filename="ZXing..PointF">PointF</a><a class="ref fn" href="Point.h.html#_ZN5ZXing6PointTC1ET_S1_" title='ZXing::PointT::PointT&lt;T&gt;' data-ref="_ZN5ZXing6PointTC1ET_S1_" data-ref-filename="_ZN5ZXing6PointTC1ET_S1_">(</a><a class="local col8 ref" href="#8x" title='x' data-ref="8x" data-ref-filename="8x">x</a>, <a class="local col9 ref" href="#9y" title='y' data-ref="9y" data-ref-filename="9y">y</a>); }</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<em>static</em> <em>float</em> <dfn class="decl fn" id="_ZN5ZXing11ResultPoint8DistanceEiiii" title='ZXing::ResultPoint::Distance' data-ref="_ZN5ZXing11ResultPoint8DistanceEiiii" data-ref-filename="_ZN5ZXing11ResultPoint8DistanceEiiii">Distance</dfn>(<em>int</em> <dfn class="local col0 decl" id="10aX" title='aX' data-type='int' data-ref="10aX" data-ref-filename="10aX">aX</dfn>, <em>int</em> <dfn class="local col1 decl" id="11aY" title='aY' data-type='int' data-ref="11aY" data-ref-filename="11aY">aY</dfn>, <em>int</em> <dfn class="local col2 decl" id="12bX" title='bX' data-type='int' data-ref="12bX" data-ref-filename="12bX">bX</dfn>, <em>int</em> <dfn class="local col3 decl" id="13bY" title='bY' data-type='int' data-ref="13bY" data-ref-filename="13bY">bY</dfn>);</td></tr>
+<tr><th id="43">43</th><td>};</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='MultiFormatReader.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

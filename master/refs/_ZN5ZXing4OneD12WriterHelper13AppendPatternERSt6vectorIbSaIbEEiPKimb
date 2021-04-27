@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.h' l='33' type='static int ZXing::OneD::WriterHelper::AppendPattern(std::vector&lt;bool&gt; &amp; target, int pos, const int * pattern, size_t patternCount, bool startColor)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.cpp' l='56' ll='70' type='static int ZXing::OneD::WriterHelper::AppendPattern(std::vector&lt;bool&gt; &amp; target, int pos, const int * pattern, size_t patternCount, bool startColor)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.cpp' l='49'>/**
+* @param target encode black/white pattern into this array
+* @param pos position to start encoding at in {@code target}
+* @param pattern lengths of black/white runs to encode
+* @param startColor starting color - false for white, true for black
+* @return the number of elements added to target.
+*/</doc>

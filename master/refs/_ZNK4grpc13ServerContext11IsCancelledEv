@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/impl/codegen/server_context.h' l='141' type='bool grpc::ServerContext::IsCancelled() const'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='138'>/// IsCancelled is always safe to call when using sync API.
+  /// When using async API, it is only safe to call IsCancelled after
+  /// the AsyncNotifyWhenDone tag has been delivered.</doc>

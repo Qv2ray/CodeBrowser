@@ -1,0 +1,3 @@
+<dec f='include/grpc/support/sync.h' l='52' type='void gpr_mu_unlock(gpr_mu * mu)'/>
+<doc f='include/grpc/support/sync.h' l='50'>/** Release an exclusive lock on *mu held by the calling thread.  Requires:  *mu
+   initialized; the calling thread holds an exclusive lock on *mu.  */</doc>

@@ -1,0 +1,59 @@
+<inh f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='85' c='QvDialog'/>
+<inh f='/qv2ray_autogen/include/ui_w_RoutesEditor.h' l='579' c='Ui::RouteEditor'/>
+<def f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='29' ll='82'/>
+<use f='/qv2ray_autogen/DWD7ZFCWQR/moc_w_RoutesEditor.cpp' l='164' c='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>800</size>
+<smbr r='RouteEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK11RouteEditor10metaObjectEv'/>
+<fun r='_ZN11RouteEditor11qt_metacastEPKc'/>
+<fun r='_ZN11RouteEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN11RouteEditor2trEPKcS1_i'/>
+<fun r='_ZN11RouteEditor6trUtf8EPKcS1_i'/>
+<fun r='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<fun r='_ZN11RouteEditorD1Ev'/>
+<fun r='_ZN11RouteEditor10OpenEditorEv'/>
+<fun r='_ZN11RouteEditor15processCommandsE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZN11RouteEditor17updateColorSchemeEv'/>
+<fun r='_ZN11RouteEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN11RouteEditor25on_addBalancerBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor22on_addChainBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor24on_addInboundBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor25on_addOutboundBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor25on_debugPainterCB_clickedEb'/>
+<fun r='_ZN11RouteEditor42on_defaultOutboundCombo_currentTextChangedERK7QString'/>
+<fun r='_ZN11RouteEditor42on_domainStrategyCombo_currentIndexChangedEi'/>
+<fun r='_ZN11RouteEditor28on_importExistingBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor37on_importGroupBtn_currentIndexChangedEi'/>
+<fun r='_ZN11RouteEditor25on_insertBlackBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor26on_insertDirectBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor26on_linkExistingBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor28on_importOutboundBtn_clickedEv'/>
+<fun r='_ZN11RouteEditor30OnDispatcherEditChainRequestedERK7QString'/>
+<fun r='_ZN11RouteEditor27OnDispatcherOutboundDeletedERKN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<fun r='_ZN11RouteEditor27OnDispatcherOutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<fun r='_ZN11RouteEditor23OnDispatcherRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<fun r='_ZN11RouteEditor23OnDispatcherRuleDeletedERKN6Qv2ray4base7objects10RuleObjectE'/>
+<fun r='_ZN11RouteEditor34OnDispatcherInboundOutboundHoveredERK7QStringRKN6Qv2ray4base26ProtocolSettingsInfoObjectE'/>
+<fun r='_ZN11RouteEditor28OnDispatcherObjectTagChangedEN6Qv2ray4base7objects7complex18ComplexTagNodeModeE7QStringS5_'/>
+<mbr r='RouteEditor::defaultOutboundTag' o='5632' t='QString'/>
+<mbr r='RouteEditor::nodeDispatcher' o='5696' t='std::shared_ptr&lt;NodeDispatcher&gt;'/>
+<mbr r='RouteEditor::chainWidget' o='5824' t='ChainEditorWidget *'/>
+<mbr r='RouteEditor::ruleWidget' o='5888' t='RoutingEditorWidget *'/>
+<mbr r='RouteEditor::dnsWidget' o='5952' t='DnsSettingsWidget *'/>
+<mbr r='RouteEditor::isLoading' o='6016' t='bool'/>
+<mbr r='RouteEditor::domainStrategy' o='6080' t='QString'/>
+<mbr r='RouteEditor::root' o='6144' t='Qv2ray::base::safetype::CONFIGROOT'/>
+<mbr r='RouteEditor::original' o='6272' t='Qv2ray::base::safetype::CONFIGROOT'/>
+<fun r='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='RouteEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK11RouteEditor10metaObjectEv'/>
+<fun r='_ZN11RouteEditor11qt_metacastEPKc'/>
+<fun r='_ZN11RouteEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.cpp' l='339' c='_ZN18ImportConfigWindow23on_routeEditBtn_clickedEv'/>
+<size>800</size>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='636' c='_ZN10MainWindow18Action_EditComplexEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='809' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='1044' c='_ZN10MainWindow34on_newComplexConnectionBtn_clickedEv'/>
+<size>800</size>

@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/curl/curl.h' l='2398' type='char * curl_easy_unescape(CURL * handle, const char * string, int length, int * outlength)'/>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='2387'>/*
+ * NAME curl_easy_unescape()
+ *
+ * DESCRIPTION
+ *
+ * Unescapes URL encoding in strings (converts all %XX codes to their 8bit
+ * versions). This function returns a new allocated string or NULL if an error
+ * occurred.
+ * Conversion Note: On non-ASCII platforms the ASCII %XX codes are
+ * converted into the host encoding.
+ */</doc>

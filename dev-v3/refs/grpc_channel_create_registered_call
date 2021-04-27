@@ -1,0 +1,3 @@
+<dec f='include/grpc/grpc.h' l='229' type='grpc_call * grpc_channel_create_registered_call(grpc_channel * channel, grpc_call * parent_call, uint32_t propagation_mask, grpc_completion_queue * completion_queue, void * registered_call_handle, gpr_timespec deadline, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='227'>/** Create a call given a handle returned from grpc_channel_register_call.
+    \sa grpc_channel_create_call. */</doc>

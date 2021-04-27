@@ -1,0 +1,21 @@
+<dec f='include/c++/10/chrono' l='1002' type='static std::chrono::_V2::system_clock::time_point std::chrono::_V2::system_clock::now()'/>
+<use f='include/c++/10/chrono' l='1216' u='c' c='_ZNSt10filesystem12__file_clock3nowEv'/>
+<use f='include/c++/10/condition_variable' l='235' u='c' c='_ZNSt18condition_variable17__wait_until_implERSt11unique_lockISt5mutexERKNSt6chrono10time_pointINS4_3_V212system_clockET_EE'/>
+<use f='include/c++/10/bits/atomic_futex.h' l='172' u='c' c='_ZNSt23__atomic_futex_unsigned22_M_load_when_equal_forEjSt12memory_orderRKNSt6chrono8durationITL0__TL0_0_EE'/>
+<use f='include/c++/10/bits/atomic_futex.h' l='183' u='c' c='_ZNSt23__atomic_futex_unsigned24_M_load_when_equal_untilEjSt12memory_orderRKNSt6chrono10time_pointITL0__TL0_0_EE'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='88' u='c' c='_ZN6Qv2ray4base24__Qv2rayConfigObjectBaseC1Ev'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='89' u='c' c='_ZN6Qv2ray4base24__Qv2rayConfigObjectBaseC1Ev'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='84' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler24IgnoreSubscriptionUpdateERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='75' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='77' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='323' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='402' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='684' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler22CHUpdateSubscription_pERKNS_4base6IDTypeINS3_9__QvGroupEEERK10QByteArray'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='716' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERKNS_4base8safetype10CONFIGROOTERK7QStringRKNS3_6IDTypeINS3_9__QvGroupEEEb'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='250' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='274' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='275' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='306' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='307' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/main.cpp' l='112' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/test/catch.hpp' l='14752' u='c' c='_ZN5Catch31getCurrentNanosecondsSinceEpochEv'/>

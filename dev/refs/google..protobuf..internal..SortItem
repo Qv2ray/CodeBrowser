@@ -1,0 +1,11 @@
+<def f='include/google/protobuf/map_entry_lite.h' l='573' ll='579'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='567'>// Helpers for deterministic serialization =============================
+
+// This struct can be used with any generic sorting algorithm.  If the Key
+// type is relatively small and easy to copy then copying Keys into an
+// array of SortItems can be beneficial.  Then all the data the sorting
+// algorithm needs to touch is in that one array.</doc>
+<fun r='_ZN6google8protobuf8internal8SortItemC1Ev'/>
+<fun r='_ZN6google8protobuf8internal8SortItemC1ET0_'/>
+<mbr r='google::protobuf::internal::SortItem::first' t='Key'/>
+<mbr r='google::protobuf::internal::SortItem::second' t='PtrToKeyValuePair'/>

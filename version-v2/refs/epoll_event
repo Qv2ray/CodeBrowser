@@ -1,0 +1,15 @@
+<def f='include/x86_64-linux-gnu/sys/epoll.h' l='83' ll='87'/>
+<use f='include/x86_64-linux-gnu/sys/epoll.h' l='110' c='epoll_ctl'/>
+<use f='include/x86_64-linux-gnu/sys/epoll.h' l='123' c='epoll_wait'/>
+<use f='include/x86_64-linux-gnu/sys/epoll.h' l='132' c='epoll_pwait'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='138' c='uv__platform_invalidate_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='139' c='uv__platform_invalidate_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='146' c='uv__platform_invalidate_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='171' c='uv__io_check_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='205' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='206' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='207' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='365' c='uv__io_poll'/>
+<size>12</size>
+<mbr r='epoll_event::events' o='0' t='uint32_t'/>
+<mbr r='epoll_event::data' o='32' t='epoll_data_t'/>

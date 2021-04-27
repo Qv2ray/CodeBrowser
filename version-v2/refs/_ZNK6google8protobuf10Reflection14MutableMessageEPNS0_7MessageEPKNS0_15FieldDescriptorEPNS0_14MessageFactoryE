@@ -1,0 +1,11 @@
+<dec f='include/google/protobuf/message.h' l='609' type='google::protobuf::Message * google::protobuf::Reflection::MutableMessage(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, google::protobuf::MessageFactory * factory = __null) const'/>
+<doc f='include/google/protobuf/message.h' l='599'>// Get a mutable pointer to a field with a message type.  If a MessageFactory
+  // is provided, it will be used to construct instances of the sub-message;
+  // otherwise, the default factory is used.  If the field is an extension that
+  // does not live in the same pool as the containing message&apos;s descriptor (e.g.
+  // it lives in an overlay pool), then a MessageFactory must be provided.
+  // If you have no idea what that meant, then you probably don&apos;t need to worry
+  // about it (don&apos;t provide a MessageFactory).  WARNING:  If the
+  // FieldDescriptor is for a compiled-in extension, then
+  // factory-&gt;GetPrototype(field-&gt;message_type()) MUST return an instance of
+  // the compiled-in class for this type, NOT DynamicMessage.</doc>

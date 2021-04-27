@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1706' type='void uv_sem_post(uv_sem_t * sem)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='62' u='c' c='worker'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='670' ll='675' type='void uv_sem_post(uv_sem_t * sem)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='157' u='c' c='_ZN3uvw9Semaphore4postEv'/>

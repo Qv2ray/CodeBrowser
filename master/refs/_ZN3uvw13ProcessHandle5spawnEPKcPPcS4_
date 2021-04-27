@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='118' type='void uvw::ProcessHandle::spawn(const char * file, char ** args, char ** env = nullptr)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='45' ll='72' type='void uvw::ProcessHandle::spawn(const char * file, char ** args, char ** env = nullptr)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='104'>/**
+     * @brief spawn Starts the process.
+     *
+     * If the process isn&apos;t successfully spawned, an ErrorEvent event will be
+     * emitted by the handle.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/process.html)
+     * for further details.
+     *
+     * @param file Path pointing to the program to be executed.
+     * @param args Command line arguments.
+     * @param env Optional environment for the new process.
+     */</doc>

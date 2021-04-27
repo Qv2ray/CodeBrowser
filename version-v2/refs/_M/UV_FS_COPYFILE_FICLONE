@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1354'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1350'>/*
+ * This flag can be used with uv_fs_copyfile() to attempt to create a reflink.
+ * If copy-on-write is not supported, a fallback copy mechanism is used.
+ */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1188' u='c'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2066' u='c'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='103' u='c'/>

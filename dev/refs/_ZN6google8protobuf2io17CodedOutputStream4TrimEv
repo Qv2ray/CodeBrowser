@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='695' type='void google::protobuf::io::CodedOutputStream::Trim()'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='690'>// Trims any unused space in the underlying buffer so that its size matches
+  // the number of bytes written by this stream. The underlying buffer will
+  // automatically be trimmed when this stream is destroyed; this call is only
+  // necessary if the underlying buffer is accessed *before* the stream is
+  // destroyed.</doc>

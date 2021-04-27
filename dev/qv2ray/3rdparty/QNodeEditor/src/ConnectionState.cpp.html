@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ConnectionState.cpp source code [qv2ray/3rdparty/QNodeEditor/src/ConnectionState.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/QNodeEditor/src/ConnectionState.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>3rdparty</a>/<a href='..'>QNodeEditor</a>/<a href='./'>src</a>/<a href='ConnectionState.cpp.html'>ConnectionState.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../include/nodes/internal/ConnectionState.hpp.html">"ConnectionState.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../include/nodes/internal/FlowScene.hpp.html">"FlowScene.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../include/nodes/internal/Node.hpp.html">"Node.hpp"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QtCore/QPointF&gt;</u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../../include/c++/10/iostream.html">&lt;iostream&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><b>using</b> <span class="namespace">QtNodes::</span>ConnectionState;</td></tr>
+<tr><th id="9">9</th><td><b>using</b> <span class="namespace">QtNodes::</span>Node;</td></tr>
+<tr><th id="10">10</th><td><a class="type" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState" title='QtNodes::ConnectionState' data-ref="QtNodes::ConnectionState" data-ref-filename="QtNodes..ConnectionState">ConnectionState</a>::<dfn class="decl def fn" id="_ZN7QtNodes15ConnectionStateD1Ev" title='QtNodes::ConnectionState::~ConnectionState' data-ref="_ZN7QtNodes15ConnectionStateD1Ev" data-ref-filename="_ZN7QtNodes15ConnectionStateD1Ev">~ConnectionState</dfn>()</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    <a class="member fn" href="#_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv" title='QtNodes::ConnectionState::resetLastHoveredNode' data-ref="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv" data-ref-filename="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv">resetLastHoveredNode</a>();</td></tr>
+<tr><th id="13">13</th><td>}</td></tr>
+<tr><th id="14">14</th><td><em>void</em> <a class="type" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState" title='QtNodes::ConnectionState' data-ref="QtNodes::ConnectionState" data-ref-filename="QtNodes..ConnectionState">ConnectionState</a>::<dfn class="decl def fn" id="_ZN7QtNodes15ConnectionState16interactWithNodeEPNS_4NodeE" title='QtNodes::ConnectionState::interactWithNode' data-ref="_ZN7QtNodes15ConnectionState16interactWithNodeEPNS_4NodeE" data-ref-filename="_ZN7QtNodes15ConnectionState16interactWithNodeEPNS_4NodeE">interactWithNode</dfn>(<a class="type" href="../include/nodes/internal/Node.hpp.html#QtNodes::Node" title='QtNodes::Node' data-ref="QtNodes::Node" data-ref-filename="QtNodes..Node">Node</a> *<dfn class="local col1 decl" id="1node" title='node' data-type='QtNodes::Node *' data-ref="1node" data-ref-filename="1node">node</dfn>)</td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>    <b>if</b> (<a class="local col1 ref" href="#1node" title='node' data-ref="1node" data-ref-filename="1node">node</a>)</td></tr>
+<tr><th id="17">17</th><td>    {</td></tr>
+<tr><th id="18">18</th><td>        <a class="member field" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState::_lastHoveredNode" title='QtNodes::ConnectionState::_lastHoveredNode' data-ref="QtNodes::ConnectionState::_lastHoveredNode" data-ref-filename="QtNodes..ConnectionState.._lastHoveredNode">_lastHoveredNode</a> = <a class="local col1 ref" href="#1node" title='node' data-ref="1node" data-ref-filename="1node">node</a>;</td></tr>
+<tr><th id="19">19</th><td>    }</td></tr>
+<tr><th id="20">20</th><td>    <b>else</b></td></tr>
+<tr><th id="21">21</th><td>    {</td></tr>
+<tr><th id="22">22</th><td>        <a class="member fn" href="#_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv" title='QtNodes::ConnectionState::resetLastHoveredNode' data-ref="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv" data-ref-filename="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv">resetLastHoveredNode</a>();</td></tr>
+<tr><th id="23">23</th><td>    }</td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td><em>void</em> <a class="type" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState" title='QtNodes::ConnectionState' data-ref="QtNodes::ConnectionState" data-ref-filename="QtNodes..ConnectionState">ConnectionState</a>::<dfn class="decl def fn" id="_ZN7QtNodes15ConnectionState18setLastHoveredNodeEPNS_4NodeE" title='QtNodes::ConnectionState::setLastHoveredNode' data-ref="_ZN7QtNodes15ConnectionState18setLastHoveredNodeEPNS_4NodeE" data-ref-filename="_ZN7QtNodes15ConnectionState18setLastHoveredNodeEPNS_4NodeE">setLastHoveredNode</dfn>(<a class="type" href="../include/nodes/internal/Node.hpp.html#QtNodes::Node" title='QtNodes::Node' data-ref="QtNodes::Node" data-ref-filename="QtNodes..Node">Node</a> *<dfn class="local col2 decl" id="2node" title='node' data-type='QtNodes::Node *' data-ref="2node" data-ref-filename="2node">node</dfn>)</td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>    <a class="member field" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState::_lastHoveredNode" title='QtNodes::ConnectionState::_lastHoveredNode' data-ref="QtNodes::ConnectionState::_lastHoveredNode" data-ref-filename="QtNodes..ConnectionState.._lastHoveredNode">_lastHoveredNode</a> = <a class="local col2 ref" href="#2node" title='node' data-ref="2node" data-ref-filename="2node">node</a>;</td></tr>
+<tr><th id="28">28</th><td>}</td></tr>
+<tr><th id="29">29</th><td><em>void</em> <a class="type" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState" title='QtNodes::ConnectionState' data-ref="QtNodes::ConnectionState" data-ref-filename="QtNodes..ConnectionState">ConnectionState</a>::<dfn class="decl def fn" id="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv" title='QtNodes::ConnectionState::resetLastHoveredNode' data-ref="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv" data-ref-filename="_ZN7QtNodes15ConnectionState20resetLastHoveredNodeEv">resetLastHoveredNode</dfn>()</td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td>    <b>if</b> (<a class="member field" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState::_lastHoveredNode" title='QtNodes::ConnectionState::_lastHoveredNode' data-ref="QtNodes::ConnectionState::_lastHoveredNode" data-ref-filename="QtNodes..ConnectionState.._lastHoveredNode">_lastHoveredNode</a>)</td></tr>
+<tr><th id="32">32</th><td>        <a class="member field" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState::_lastHoveredNode" title='QtNodes::ConnectionState::_lastHoveredNode' data-ref="QtNodes::ConnectionState::_lastHoveredNode" data-ref-filename="QtNodes..ConnectionState.._lastHoveredNode">_lastHoveredNode</a>-&gt;<a class="ref fn" href="../include/nodes/internal/Node.hpp.html#_ZN7QtNodes4Node25resetReactionToConnectionEv" title='QtNodes::Node::resetReactionToConnection' data-ref="_ZN7QtNodes4Node25resetReactionToConnectionEv" data-ref-filename="_ZN7QtNodes4Node25resetReactionToConnectionEv">resetReactionToConnection</a>();</td></tr>
+<tr><th id="33">33</th><td>    <a class="member field" href="../include/nodes/internal/ConnectionState.hpp.html#QtNodes::ConnectionState::_lastHoveredNode" title='QtNodes::ConnectionState::_lastHoveredNode' data-ref="QtNodes::ConnectionState::_lastHoveredNode" data-ref-filename="QtNodes..ConnectionState.._lastHoveredNode">_lastHoveredNode</a> = <b>nullptr</b>;</td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,3 @@
+<dec f='include/grpc/support/time.h' l='69' type='gpr_timespec gpr_time_from_micros(int64_t x, gpr_clock_type clock_type)'/>
+<doc f='include/grpc/support/time.h' l='67'>/** Return a timespec representing a given number of time units. INT64_MIN is
+   interpreted as gpr_inf_past, and INT64_MAX as gpr_inf_future.  */</doc>

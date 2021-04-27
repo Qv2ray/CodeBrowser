@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='438' type='static void google::protobuf::internal::WireFormatLite::WriteBool(int field_number, bool value, io::CodedOutputStream * output)'/>
+<use f='include/google/protobuf/map_type_handler.h' l='411' macro='1' u='c' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE8ET_E5WriteEiRKNS1_22MapWireFieldTypeTraitsILS4_8ES5_E20MapEntryAccessorT12146045'/>
+<use f='/v2ray_api.pb.cc' l='501' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1295' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='550' u='c' c='_ZNK5v2ray4core3app6router22DomainObject_Attribute24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>

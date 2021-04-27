@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='96' type='std::shared_ptr&lt;const BitMatrix&gt; ZXing::BinaryBitmap::getBlackMatrix() const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='245' c='_ZNK5ZXing24GlobalHistogramBinarizer14getBlackMatrixEv'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='88'>/**
+	* Converts a 2D array of luminance data to 1 bit. This method is intended for decoding 2D
+	* barcodes and may or may not apply sharpening. Therefore, a row from this matrix may not be
+	* identical to one fetched using getBlackRow(), so don&apos;t mix and match between them.
+	*
+	* @return The 2D array of bits for the image (true means black).
+	* @return null if image can&apos;t be binarized to make a matrix
+	*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='60' c='_ZNK5ZXing18ThresholdBinarizer14getBlackMatrixEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='36' u='c' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='50' u='c' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='63' u='c' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='328' u='c' c='_ZN5ZXing6Pdf4178Detector6DetectERKNS_12BinaryBitmapEbRNS1_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='44' u='c' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>

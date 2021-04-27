@@ -1,0 +1,11 @@
+<dec f='include/grpcpp/impl/codegen/completion_queue.h' l='227' type='void grpc::CompletionQueue::Shutdown()'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='217'>/// Request the shutdown of the queue.
+  ///
+  /// \warning This method must be called at some point if this completion queue
+  /// is accessed with Next or AsyncNext. \a Next will not return false
+  /// until this method has been called and all pending tags have been drained.
+  /// (Likewise for \a AsyncNext returning \a NextStatus::SHUTDOWN .)
+  /// Only once either one of these methods does that (that is, once the queue
+  /// has been \em drained) can an instance of this class be destroyed.
+  /// Also note that applications must ensure that no work is enqueued on this
+  /// completion queue after this method is called.</doc>

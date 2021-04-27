@@ -1,0 +1,6 @@
+<dec f='include/grpc/grpc_security_constants.h' l='64' type='0'/>
+<use f='include/grpcpp/security/server_credentials.h' l='61' u='r' c='_ZN4grpc27SslServerCredentialsOptionsC1Ev'/>
+<doc f='include/grpc/grpc_security_constants.h' l='60'>/** Server does not request client certificate.
+     The certificate presented by the client is not checked by the server at
+     all. (A client may present a self signed or signed certificate or not
+     present a certificate at all and any of those option would be accepted) */</doc>

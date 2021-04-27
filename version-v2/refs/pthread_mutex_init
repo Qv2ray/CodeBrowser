@@ -1,0 +1,5 @@
+<dec f='include/pthread.h' l='725' type='int pthread_mutex_init(pthread_mutex_t * __mutex, const pthread_mutexattr_t * __mutexattr)'/>
+<use f='include/x86_64-linux-gnu/c++/10/bits/gthr-default.h' l='122' c='__gthrw_pthread_mutex_init'/>
+<doc f='include/pthread.h' l='724'>/* Initialize a mutex.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='284' u='c' c='uv_mutex_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='315' u='c' c='uv_mutex_init_recursive'/>

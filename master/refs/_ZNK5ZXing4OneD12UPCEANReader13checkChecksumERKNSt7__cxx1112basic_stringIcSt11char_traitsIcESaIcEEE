@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='95' type='bool ZXing::OneD::UPCEANReader::checkChecksum(const std::string &amp; s) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='90'>/**
+	* @param s string of digits to check
+	* @return {@link #checkStandardUPCEANChecksum(CharSequence)}
+	* @throws FormatException if the string does not contain only digits
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='117' u='c' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='156' ll='160' type='bool ZXing::OneD::UPCEANReader::checkChecksum(const std::string &amp; s) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='148'>/**
+* Computes the UPC/EAN checksum on a string of digits, and reports
+* whether the checksum is correct or not.
+*
+* @param s string of digits to check
+* @return true iff string of digits passes the UPC/EAN checksum algorithm
+* @throws FormatException if the string does not contain only digits
+*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.cpp' l='61' c='_ZNK5ZXing4OneD10UPCEReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.cpp' l='63' u='c' c='_ZNK5ZXing4OneD10UPCEReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

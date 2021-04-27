@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='50' type='void QtNodes::Connection::setNodeToPort(QtNodes::Node &amp; node, QtNodes::PortType portType, QtNodes::PortIndex portIndex)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='30' u='c' c='_ZN7QtNodes10ConnectionC1ENS_8PortTypeERNS_4NodeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='37' u='c' c='_ZN7QtNodes10ConnectionC1ERNS_4NodeEiS2_iSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='38' u='c' c='_ZN7QtNodes10ConnectionC1ERNS_4NodeEiS2_iSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='139' ll='154' type='void QtNodes::Connection::setNodeToPort(QtNodes::Node &amp; node, QtNodes::PortType portType, QtNodes::PortIndex portIndex)'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Connection.hpp' l='48'>/// Assigns a node to the required port.
+        /// It is assumed that there is a required port, no extra checks</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='94' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>

@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>system.h source code [include/x86_64-linux-gnu/curl/system.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/curl/system.h'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>x86_64-linux-gnu</a>/<a href='./'>curl</a>/<a href='system.h.html'>system.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/CURLINC_SYSTEM_H">CURLINC_SYSTEM_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/CURLINC_SYSTEM_H" data-ref="_M/CURLINC_SYSTEM_H">CURLINC_SYSTEM_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td><i>/***************************************************************************</i></td></tr>
+<tr><th id="4">4</th><td><i> *                                  _   _ ____  _</i></td></tr>
+<tr><th id="5">5</th><td><i> *  Project                     ___| | | |  _ \| |</i></td></tr>
+<tr><th id="6">6</th><td><i> *                             / __| | | | |_) | |</i></td></tr>
+<tr><th id="7">7</th><td><i> *                            | (__| |_| |  _ &lt;| |___</i></td></tr>
+<tr><th id="8">8</th><td><i> *                             \___|\___/|_| \_\_____|</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * Copyright (C) 1998 - 2019, Daniel Stenberg, &lt;daniel@haxx.se&gt;, et al.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This software is licensed as described in the file COPYING, which</i></td></tr>
+<tr><th id="13">13</th><td><i> * you should have received as part of this distribution. The terms</i></td></tr>
+<tr><th id="14">14</th><td><i> * are also available at <a href="https://curl.haxx.se/docs/copyright.html">https://curl.haxx.se/docs/copyright.html</a>.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</i></td></tr>
+<tr><th id="17">17</th><td><i> * copies of the Software, and permit persons to whom the Software is</i></td></tr>
+<tr><th id="18">18</th><td><i> * furnished to do so, under the terms of the COPYING file.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY</i></td></tr>
+<tr><th id="21">21</th><td><i> * KIND, either express or implied.</i></td></tr>
+<tr><th id="22">22</th><td><i> *</i></td></tr>
+<tr><th id="23">23</th><td><i> ***************************************************************************/</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i>/*</i></td></tr>
+<tr><th id="26">26</th><td><i> * Try to keep one section per platform, compiler and architecture, otherwise,</i></td></tr>
+<tr><th id="27">27</th><td><i> * if an existing section is reused for a different one and later on the</i></td></tr>
+<tr><th id="28">28</th><td><i> * original is adjusted, probably the piggybacking one can be adversely</i></td></tr>
+<tr><th id="29">29</th><td><i> * changed.</i></td></tr>
+<tr><th id="30">30</th><td><i> *</i></td></tr>
+<tr><th id="31">31</th><td><i> * In order to differentiate between platforms/compilers/architectures use</i></td></tr>
+<tr><th id="32">32</th><td><i> * only compiler built in predefined preprocessor symbols.</i></td></tr>
+<tr><th id="33">33</th><td><i> *</i></td></tr>
+<tr><th id="34">34</th><td><i> * curl_off_t</i></td></tr>
+<tr><th id="35">35</th><td><i> * ----------</i></td></tr>
+<tr><th id="36">36</th><td><i> *</i></td></tr>
+<tr><th id="37">37</th><td><i> * For any given platform/compiler curl_off_t must be typedef'ed to a 64-bit</i></td></tr>
+<tr><th id="38">38</th><td><i> * wide signed integral data type. The width of this data type must remain</i></td></tr>
+<tr><th id="39">39</th><td><i> * constant and independent of any possible large file support settings.</i></td></tr>
+<tr><th id="40">40</th><td><i> *</i></td></tr>
+<tr><th id="41">41</th><td><i> * As an exception to the above, curl_off_t shall be typedef'ed to a 32-bit</i></td></tr>
+<tr><th id="42">42</th><td><i> * wide signed integral data type if there is no 64-bit type.</i></td></tr>
+<tr><th id="43">43</th><td><i> *</i></td></tr>
+<tr><th id="44">44</th><td><i> * As a general rule, curl_off_t shall not be mapped to off_t. This rule shall</i></td></tr>
+<tr><th id="45">45</th><td><i> * only be violated if off_t is the only 64-bit data type available and the</i></td></tr>
+<tr><th id="46">46</th><td><i> * size of off_t is independent of large file support settings. Keep your</i></td></tr>
+<tr><th id="47">47</th><td><i> * build on the safe side avoiding an off_t gating.  If you have a 64-bit</i></td></tr>
+<tr><th id="48">48</th><td><i> * off_t then take for sure that another 64-bit data type exists, dig deeper</i></td></tr>
+<tr><th id="49">49</th><td><i> * and you will find it.</i></td></tr>
+<tr><th id="50">50</th><td><i> *</i></td></tr>
+<tr><th id="51">51</th><td><i> */</i></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="53">if</span> defined(<span class="macro" data-ref="_M/__DJGPP__">__DJGPP__</span>) || defined(<span class="macro" data-ref="_M/__GO32__">__GO32__</span>)</u></td></tr>
+<tr><th id="54">54</th><td><u>#  if defined(__DJGPP__) &amp;&amp; (__DJGPP__ &gt; 1)</u></td></tr>
+<tr><th id="55">55</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="56">56</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="57">57</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="58">58</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="59">59</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="60">60</th><td><u>#  else</u></td></tr>
+<tr><th id="61">61</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="62">62</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="63">63</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="64">64</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="65">65</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="66">66</th><td><u>#  endif</u></td></tr>
+<tr><th id="67">67</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__SALFORDC__">__SALFORDC__</span>)</u></td></tr>
+<tr><th id="70">70</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="71">71</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="72">72</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="73">73</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="74">74</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="75">75</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__BORLANDC__">__BORLANDC__</span>)</u></td></tr>
+<tr><th id="78">78</th><td><u>#  if (__BORLANDC__ &lt; 0x520)</u></td></tr>
+<tr><th id="79">79</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="80">80</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="81">81</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="82">82</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="83">83</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="84">84</th><td><u>#  else</u></td></tr>
+<tr><th id="85">85</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     __int64</u></td></tr>
+<tr><th id="86">86</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "I64d"</u></td></tr>
+<tr><th id="87">87</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "I64u"</u></td></tr>
+<tr><th id="88">88</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     i64</u></td></tr>
+<tr><th id="89">89</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ui64</u></td></tr>
+<tr><th id="90">90</th><td><u>#  endif</u></td></tr>
+<tr><th id="91">91</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__TURBOC__">__TURBOC__</span>)</u></td></tr>
+<tr><th id="94">94</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="95">95</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="96">96</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="97">97</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="98">98</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="99">99</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__WATCOMC__">__WATCOMC__</span>)</u></td></tr>
+<tr><th id="102">102</th><td><u>#  if defined(__386__)</u></td></tr>
+<tr><th id="103">103</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     __int64</u></td></tr>
+<tr><th id="104">104</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "I64d"</u></td></tr>
+<tr><th id="105">105</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "I64u"</u></td></tr>
+<tr><th id="106">106</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     i64</u></td></tr>
+<tr><th id="107">107</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ui64</u></td></tr>
+<tr><th id="108">108</th><td><u>#  else</u></td></tr>
+<tr><th id="109">109</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="110">110</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="111">111</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="112">112</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="113">113</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="114">114</th><td><u>#  endif</u></td></tr>
+<tr><th id="115">115</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__POCC__">__POCC__</span>)</u></td></tr>
+<tr><th id="118">118</th><td><u>#  if (__POCC__ &lt; 280)</u></td></tr>
+<tr><th id="119">119</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="120">120</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="121">121</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="122">122</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="123">123</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="124">124</th><td><u>#  elif defined(_MSC_VER)</u></td></tr>
+<tr><th id="125">125</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     __int64</u></td></tr>
+<tr><th id="126">126</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "I64d"</u></td></tr>
+<tr><th id="127">127</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "I64u"</u></td></tr>
+<tr><th id="128">128</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     i64</u></td></tr>
+<tr><th id="129">129</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ui64</u></td></tr>
+<tr><th id="130">130</th><td><u>#  else</u></td></tr>
+<tr><th id="131">131</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="132">132</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="133">133</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="134">134</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="135">135</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="136">136</th><td><u>#  endif</u></td></tr>
+<tr><th id="137">137</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__LCC__">__LCC__</span>)</u></td></tr>
+<tr><th id="140">140</th><td><u>#  if defined(__e2k__) /* MCST eLbrus C Compiler */</u></td></tr>
+<tr><th id="141">141</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="142">142</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="143">143</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="144">144</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="145">145</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="146">146</th><td><u>#    define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="147">147</th><td><u>#    define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="148">148</th><td><u>#    define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="149">149</th><td><u>#  else                /* Local (or Little) C Compiler */</u></td></tr>
+<tr><th id="150">150</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="151">151</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="152">152</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="153">153</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="154">154</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="155">155</th><td><u>#    define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="156">156</th><td><u>#  endif</u></td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__SYMBIAN32__">__SYMBIAN32__</span>)</u></td></tr>
+<tr><th id="159">159</th><td><u>#  if defined(__EABI__) /* Treat all ARM compilers equally */</u></td></tr>
+<tr><th id="160">160</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="161">161</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="162">162</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="163">163</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="164">164</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="165">165</th><td><u>#  elif defined(__CW32__)</u></td></tr>
+<tr><th id="166">166</th><td><u>#    pragma longlong on</u></td></tr>
+<tr><th id="167">167</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="168">168</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="169">169</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="170">170</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="171">171</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="172">172</th><td><u>#  elif defined(__VC32__)</u></td></tr>
+<tr><th id="173">173</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     __int64</u></td></tr>
+<tr><th id="174">174</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="175">175</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="176">176</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="177">177</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="178">178</th><td><u>#  endif</u></td></tr>
+<tr><th id="179">179</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T unsigned int</u></td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__MWERKS__">__MWERKS__</span>)</u></td></tr>
+<tr><th id="182">182</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="183">183</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="184">184</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="185">185</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="186">186</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="187">187</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/_WIN32_WCE">_WIN32_WCE</span>)</u></td></tr>
+<tr><th id="190">190</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     __int64</u></td></tr>
+<tr><th id="191">191</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "I64d"</u></td></tr>
+<tr><th id="192">192</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "I64u"</u></td></tr>
+<tr><th id="193">193</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     i64</u></td></tr>
+<tr><th id="194">194</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    ui64</u></td></tr>
+<tr><th id="195">195</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span>)</u></td></tr>
+<tr><th id="198">198</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="199">199</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "I64d"</u></td></tr>
+<tr><th id="200">200</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "I64u"</u></td></tr>
+<tr><th id="201">201</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="202">202</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="203">203</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="204">204</th><td><u>#  define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="205">205</th><td><u>#  define CURL_PULL_WS2TCPIP_H       1</u></td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__VMS">__VMS</span>)</u></td></tr>
+<tr><th id="208">208</th><td><u>#  if defined(__VAX)</u></td></tr>
+<tr><th id="209">209</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="210">210</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="211">211</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="212">212</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="213">213</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="214">214</th><td><u>#  else</u></td></tr>
+<tr><th id="215">215</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="216">216</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="217">217</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="218">218</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="219">219</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="220">220</th><td><u>#  endif</u></td></tr>
+<tr><th id="221">221</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T unsigned int</u></td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__OS400__">__OS400__</span>)</u></td></tr>
+<tr><th id="224">224</th><td><u>#  if defined(__ILEC400__)</u></td></tr>
+<tr><th id="225">225</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="226">226</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="227">227</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="228">228</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="229">229</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="230">230</th><td><u>#    define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="231">231</th><td><u>#    define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="232">232</th><td><u>#    define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="233">233</th><td><u>#  endif</u></td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__MVS__">__MVS__</span>)</u></td></tr>
+<tr><th id="236">236</th><td><u>#  if defined(__IBMC__) || defined(__IBMCPP__)</u></td></tr>
+<tr><th id="237">237</th><td><u>#    if defined(_ILP32)</u></td></tr>
+<tr><th id="238">238</th><td><u>#    elif defined(_LP64)</u></td></tr>
+<tr><th id="239">239</th><td><u>#    endif</u></td></tr>
+<tr><th id="240">240</th><td><u>#    if defined(_LONG_LONG)</u></td></tr>
+<tr><th id="241">241</th><td><u>#      define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="242">242</th><td><u>#      define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="243">243</th><td><u>#      define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="244">244</th><td><u>#      define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="245">245</th><td><u>#      define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="246">246</th><td><u>#    elif defined(_LP64)</u></td></tr>
+<tr><th id="247">247</th><td><u>#      define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="248">248</th><td><u>#      define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="249">249</th><td><u>#      define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="250">250</th><td><u>#      define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="251">251</th><td><u>#      define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="252">252</th><td><u>#    else</u></td></tr>
+<tr><th id="253">253</th><td><u>#      define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="254">254</th><td><u>#      define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="255">255</th><td><u>#      define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="256">256</th><td><u>#      define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="257">257</th><td><u>#      define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="258">258</th><td><u>#    endif</u></td></tr>
+<tr><th id="259">259</th><td><u>#    define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="260">260</th><td><u>#    define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="261">261</th><td><u>#    define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="262">262</th><td><u>#  endif</u></td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__370__">__370__</span>)</u></td></tr>
+<tr><th id="265">265</th><td><u>#  if defined(__IBMC__) || defined(__IBMCPP__)</u></td></tr>
+<tr><th id="266">266</th><td><u>#    if defined(_ILP32)</u></td></tr>
+<tr><th id="267">267</th><td><u>#    elif defined(_LP64)</u></td></tr>
+<tr><th id="268">268</th><td><u>#    endif</u></td></tr>
+<tr><th id="269">269</th><td><u>#    if defined(_LONG_LONG)</u></td></tr>
+<tr><th id="270">270</th><td><u>#      define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="271">271</th><td><u>#      define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="272">272</th><td><u>#      define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="273">273</th><td><u>#      define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="274">274</th><td><u>#      define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="275">275</th><td><u>#    elif defined(_LP64)</u></td></tr>
+<tr><th id="276">276</th><td><u>#      define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="277">277</th><td><u>#      define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="278">278</th><td><u>#      define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="279">279</th><td><u>#      define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="280">280</th><td><u>#      define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="281">281</th><td><u>#    else</u></td></tr>
+<tr><th id="282">282</th><td><u>#      define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="283">283</th><td><u>#      define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="284">284</th><td><u>#      define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="285">285</th><td><u>#      define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="286">286</th><td><u>#      define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="287">287</th><td><u>#    endif</u></td></tr>
+<tr><th id="288">288</th><td><u>#    define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="289">289</th><td><u>#    define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="290">290</th><td><u>#    define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="291">291</th><td><u>#  endif</u></td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/TPF">TPF</span>)</u></td></tr>
+<tr><th id="294">294</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="295">295</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="296">296</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="297">297</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="298">298</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="299">299</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="300">300</th><td></td></tr>
+<tr><th id="301">301</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__TINYC__">__TINYC__</span>) /* also known as tcc */</u></td></tr>
+<tr><th id="302">302</th><td><u>#  define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="303">303</th><td><u>#  define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="304">304</th><td><u>#  define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="305">305</th><td><u>#  define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="306">306</th><td><u>#  define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="307">307</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="308">308</th><td><u>#  define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="309">309</th><td><u>#  define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="310">310</th><td></td></tr>
+<tr><th id="311">311</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__SUNPRO_C">__SUNPRO_C</span>) || defined(<span class="macro" data-ref="_M/__SUNPRO_CC">__SUNPRO_CC</span>) /* Oracle Solaris Studio */</u></td></tr>
+<tr><th id="312">312</th><td><u>#  if !defined(__LP64) &amp;&amp; (defined(__ILP32) ||                          \</u></td></tr>
+<tr><th id="313">313</th><td><u>                           defined(__i386) ||                           \</u></td></tr>
+<tr><th id="314">314</th><td><u>                           defined(__sparcv8) ||                        \</u></td></tr>
+<tr><th id="315">315</th><td><u>                           defined(__sparcv8plus))</u></td></tr>
+<tr><th id="316">316</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="317">317</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="318">318</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="319">319</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="320">320</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="321">321</th><td><u>#  elif defined(__LP64) || \</u></td></tr>
+<tr><th id="322">322</th><td><u>        defined(__amd64) || defined(__sparcv9)</u></td></tr>
+<tr><th id="323">323</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="324">324</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="325">325</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="326">326</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="327">327</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="328">328</th><td><u>#  endif</u></td></tr>
+<tr><th id="329">329</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="330">330</th><td><u>#  define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="331">331</th><td><u>#  define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="332">332</th><td></td></tr>
+<tr><th id="333">333</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__xlc__">__xlc__</span>) /* IBM xlc compiler */</u></td></tr>
+<tr><th id="334">334</th><td><u>#  if !defined(_LP64)</u></td></tr>
+<tr><th id="335">335</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="336">336</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="337">337</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="338">338</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="339">339</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="340">340</th><td><u>#  else</u></td></tr>
+<tr><th id="341">341</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="342">342</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="343">343</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="344">344</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="345">345</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="346">346</th><td><u>#  endif</u></td></tr>
+<tr><th id="347">347</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t</u></td></tr>
+<tr><th id="348">348</th><td><u>#  define CURL_PULL_SYS_TYPES_H      1</u></td></tr>
+<tr><th id="349">349</th><td><u>#  define CURL_PULL_SYS_SOCKET_H     1</u></td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td><i>/* ===================================== */</i></td></tr>
+<tr><th id="352">352</th><td><i>/*    KEEP MSVC THE PENULTIMATE ENTRY    */</i></td></tr>
+<tr><th id="353">353</th><td><i>/* ===================================== */</i></td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>)</u></td></tr>
+<tr><th id="356">356</th><td><u>#  if (_MSC_VER &gt;= 900) &amp;&amp; (_INTEGRAL_MAX_BITS &gt;= 64)</u></td></tr>
+<tr><th id="357">357</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     __int64</u></td></tr>
+<tr><th id="358">358</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "I64d"</u></td></tr>
+<tr><th id="359">359</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "I64u"</u></td></tr>
+<tr><th id="360">360</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     i64</u></td></tr>
+<tr><th id="361">361</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ui64</u></td></tr>
+<tr><th id="362">362</th><td><u>#  else</u></td></tr>
+<tr><th id="363">363</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="364">364</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="365">365</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="366">366</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="367">367</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="368">368</th><td><u>#  endif</u></td></tr>
+<tr><th id="369">369</th><td><u>#  define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="370">370</th><td></td></tr>
+<tr><th id="371">371</th><td><i>/* ===================================== */</i></td></tr>
+<tr><th id="372">372</th><td><i>/*    KEEP GENERIC GCC THE LAST ENTRY    */</i></td></tr>
+<tr><th id="373">373</th><td><i>/* ===================================== */</i></td></tr>
+<tr><th id="374">374</th><td></td></tr>
+<tr><th id="375">375</th><td><u>#<span data-ppcond="53">elif</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/_SCO_DS">_SCO_DS</span>)</u></td></tr>
+<tr><th id="376">376</th><td><u>#  <span data-ppcond="376">if</span> !defined(<span class="macro" data-ref="_M/__LP64__">__LP64__</span>) &amp;&amp;                                             \</u></td></tr>
+<tr><th id="377">377</th><td><u>  (defined(<span class="macro" data-ref="_M/__ILP32__">__ILP32__</span>) || defined(<span class="macro" data-ref="_M/__i386__">__i386__</span>) || defined(<span class="macro" data-ref="_M/__hppa__">__hppa__</span>) ||      \</u></td></tr>
+<tr><th id="378">378</th><td><u>   defined(<span class="macro" data-ref="_M/__ppc__">__ppc__</span>) || defined(<span class="macro" data-ref="_M/__powerpc__">__powerpc__</span>) || defined(<span class="macro" data-ref="_M/__arm__">__arm__</span>) ||      \</u></td></tr>
+<tr><th id="379">379</th><td><u>   defined(<span class="macro" data-ref="_M/__sparc__">__sparc__</span>) || defined(<span class="macro" data-ref="_M/__mips__">__mips__</span>) || defined(<span class="macro" data-ref="_M/__sh__">__sh__</span>) ||        \</u></td></tr>
+<tr><th id="380">380</th><td><u>   defined(<span class="macro" data-ref="_M/__XTENSA__">__XTENSA__</span>) ||                                               \</u></td></tr>
+<tr><th id="381">381</th><td><u>   (defined(<span class="macro" data-ref="_M/__SIZEOF_LONG__">__SIZEOF_LONG__</span>) &amp;&amp; <span class="macro" title="8" data-ref="_M/__SIZEOF_LONG__">__SIZEOF_LONG__</span> == 4)  ||               \</u></td></tr>
+<tr><th id="382">382</th><td><u>   (defined(<span class="macro" data-ref="_M/__LONG_MAX__">__LONG_MAX__</span>) &amp;&amp; <span class="macro" title="9223372036854775807L" data-ref="_M/__LONG_MAX__">__LONG_MAX__</span> == 2147483647L))</u></td></tr>
+<tr><th id="383">383</th><td><u>#    define CURL_TYPEOF_CURL_OFF_T     long long</u></td></tr>
+<tr><th id="384">384</th><td><u>#    define CURL_FORMAT_CURL_OFF_T     "lld"</u></td></tr>
+<tr><th id="385">385</th><td><u>#    define CURL_FORMAT_CURL_OFF_TU    "llu"</u></td></tr>
+<tr><th id="386">386</th><td><u>#    define CURL_SUFFIX_CURL_OFF_T     LL</u></td></tr>
+<tr><th id="387">387</th><td><u>#    define CURL_SUFFIX_CURL_OFF_TU    ULL</u></td></tr>
+<tr><th id="388">388</th><td><u>#  <span data-ppcond="376">elif</span> defined(<span class="macro" data-ref="_M/__LP64__">__LP64__</span>) || \</u></td></tr>
+<tr><th id="389">389</th><td><u>        defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>) || defined(<span class="macro" data-ref="_M/__ppc64__">__ppc64__</span>) || defined(<span class="macro" data-ref="_M/__sparc64__">__sparc64__</span>) || \</u></td></tr>
+<tr><th id="390">390</th><td><u>        defined(<span class="macro" data-ref="_M/__e2k__">__e2k__</span>) || \</u></td></tr>
+<tr><th id="391">391</th><td><u>        (defined(<span class="macro" data-ref="_M/__SIZEOF_LONG__">__SIZEOF_LONG__</span>) &amp;&amp; <span class="macro" title="8" data-ref="_M/__SIZEOF_LONG__">__SIZEOF_LONG__</span> == 8) || \</u></td></tr>
+<tr><th id="392">392</th><td><u>        (defined(<span class="macro" data-ref="_M/__LONG_MAX__">__LONG_MAX__</span>) &amp;&amp; <span class="macro" title="9223372036854775807L" data-ref="_M/__LONG_MAX__">__LONG_MAX__</span> == 9223372036854775807L)</u></td></tr>
+<tr><th id="393">393</th><td><u>#    define <dfn class="macro" id="_M/CURL_TYPEOF_CURL_OFF_T" data-ref="_M/CURL_TYPEOF_CURL_OFF_T">CURL_TYPEOF_CURL_OFF_T</dfn>     long</u></td></tr>
+<tr><th id="394">394</th><td><u>#    define <dfn class="macro" id="_M/CURL_FORMAT_CURL_OFF_T" data-ref="_M/CURL_FORMAT_CURL_OFF_T">CURL_FORMAT_CURL_OFF_T</dfn>     "ld"</u></td></tr>
+<tr><th id="395">395</th><td><u>#    define <dfn class="macro" id="_M/CURL_FORMAT_CURL_OFF_TU" data-ref="_M/CURL_FORMAT_CURL_OFF_TU">CURL_FORMAT_CURL_OFF_TU</dfn>    "lu"</u></td></tr>
+<tr><th id="396">396</th><td><u>#    define <dfn class="macro" id="_M/CURL_SUFFIX_CURL_OFF_T" data-ref="_M/CURL_SUFFIX_CURL_OFF_T">CURL_SUFFIX_CURL_OFF_T</dfn>     L</u></td></tr>
+<tr><th id="397">397</th><td><u>#    define <dfn class="macro" id="_M/CURL_SUFFIX_CURL_OFF_TU" data-ref="_M/CURL_SUFFIX_CURL_OFF_TU">CURL_SUFFIX_CURL_OFF_TU</dfn>    UL</u></td></tr>
+<tr><th id="398">398</th><td><u>#  <span data-ppcond="376">endif</span></u></td></tr>
+<tr><th id="399">399</th><td><u>#  define <dfn class="macro" id="_M/CURL_TYPEOF_CURL_SOCKLEN_T" data-ref="_M/CURL_TYPEOF_CURL_SOCKLEN_T">CURL_TYPEOF_CURL_SOCKLEN_T</dfn> <a class="typedef" href="../bits/socket.h.html#socklen_t" title='socklen_t' data-type='__socklen_t' data-ref="socklen_t" data-ref-filename="socklen_t">socklen_t</a></u></td></tr>
+<tr><th id="400">400</th><td><u>#  define <dfn class="macro" id="_M/CURL_PULL_SYS_TYPES_H" data-ref="_M/CURL_PULL_SYS_TYPES_H">CURL_PULL_SYS_TYPES_H</dfn>      1</u></td></tr>
+<tr><th id="401">401</th><td><u>#  define <dfn class="macro" id="_M/CURL_PULL_SYS_SOCKET_H" data-ref="_M/CURL_PULL_SYS_SOCKET_H">CURL_PULL_SYS_SOCKET_H</dfn>     1</u></td></tr>
+<tr><th id="402">402</th><td></td></tr>
+<tr><th id="403">403</th><td><u>#<span data-ppcond="53">else</span></u></td></tr>
+<tr><th id="404">404</th><td><i>/* generic "safe guess" on old 32 bit style */</i></td></tr>
+<tr><th id="405">405</th><td><u># define CURL_TYPEOF_CURL_OFF_T     long</u></td></tr>
+<tr><th id="406">406</th><td><u># define CURL_FORMAT_CURL_OFF_T     "ld"</u></td></tr>
+<tr><th id="407">407</th><td><u># define CURL_FORMAT_CURL_OFF_TU    "lu"</u></td></tr>
+<tr><th id="408">408</th><td><u># define CURL_SUFFIX_CURL_OFF_T     L</u></td></tr>
+<tr><th id="409">409</th><td><u># define CURL_SUFFIX_CURL_OFF_TU    UL</u></td></tr>
+<tr><th id="410">410</th><td><u># define CURL_TYPEOF_CURL_SOCKLEN_T int</u></td></tr>
+<tr><th id="411">411</th><td><u>#<span data-ppcond="53">endif</span></u></td></tr>
+<tr><th id="412">412</th><td></td></tr>
+<tr><th id="413">413</th><td><u>#<span data-ppcond="413">ifdef</span> <span class="macro" data-ref="_M/_AIX">_AIX</span></u></td></tr>
+<tr><th id="414">414</th><td><i>/* AIX needs &lt;sys/poll.h&gt; */</i></td></tr>
+<tr><th id="415">415</th><td><u>#define CURL_PULL_SYS_POLL_H</u></td></tr>
+<tr><th id="416">416</th><td><u>#<span data-ppcond="413">endif</span></u></td></tr>
+<tr><th id="417">417</th><td></td></tr>
+<tr><th id="418">418</th><td></td></tr>
+<tr><th id="419">419</th><td><i>/* CURL_PULL_WS2TCPIP_H is defined above when inclusion of header file  */</i></td></tr>
+<tr><th id="420">420</th><td><i>/* ws2tcpip.h is required here to properly make type definitions below. */</i></td></tr>
+<tr><th id="421">421</th><td><u>#<span data-ppcond="421">ifdef</span> <span class="macro" data-ref="_M/CURL_PULL_WS2TCPIP_H">CURL_PULL_WS2TCPIP_H</span></u></td></tr>
+<tr><th id="422">422</th><td><u>#  include &lt;winsock2.h&gt;</u></td></tr>
+<tr><th id="423">423</th><td><u>#  include &lt;windows.h&gt;</u></td></tr>
+<tr><th id="424">424</th><td><u>#  include &lt;ws2tcpip.h&gt;</u></td></tr>
+<tr><th id="425">425</th><td><u>#<span data-ppcond="421">endif</span></u></td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td><i>/* CURL_PULL_SYS_TYPES_H is defined above when inclusion of header file  */</i></td></tr>
+<tr><th id="428">428</th><td><i>/* sys/types.h is required here to properly make type definitions below. */</i></td></tr>
+<tr><th id="429">429</th><td><u>#<span data-ppcond="429">ifdef</span> <a class="macro" href="#400" data-ref="_M/CURL_PULL_SYS_TYPES_H">CURL_PULL_SYS_TYPES_H</a></u></td></tr>
+<tr><th id="430">430</th><td><u>#  include <a href="../sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="431">431</th><td><u>#<span data-ppcond="429">endif</span></u></td></tr>
+<tr><th id="432">432</th><td></td></tr>
+<tr><th id="433">433</th><td><i>/* CURL_PULL_SYS_SOCKET_H is defined above when inclusion of header file  */</i></td></tr>
+<tr><th id="434">434</th><td><i>/* sys/socket.h is required here to properly make type definitions below. */</i></td></tr>
+<tr><th id="435">435</th><td><u>#<span data-ppcond="435">ifdef</span> <a class="macro" href="#401" data-ref="_M/CURL_PULL_SYS_SOCKET_H">CURL_PULL_SYS_SOCKET_H</a></u></td></tr>
+<tr><th id="436">436</th><td><u>#  include <a href="../sys/socket.h.html">&lt;sys/socket.h&gt;</a></u></td></tr>
+<tr><th id="437">437</th><td><u>#<span data-ppcond="435">endif</span></u></td></tr>
+<tr><th id="438">438</th><td></td></tr>
+<tr><th id="439">439</th><td><i>/* CURL_PULL_SYS_POLL_H is defined above when inclusion of header file    */</i></td></tr>
+<tr><th id="440">440</th><td><i>/* sys/poll.h is required here to properly make type definitions below.   */</i></td></tr>
+<tr><th id="441">441</th><td><u>#<span data-ppcond="441">ifdef</span> <span class="macro" data-ref="_M/CURL_PULL_SYS_POLL_H">CURL_PULL_SYS_POLL_H</span></u></td></tr>
+<tr><th id="442">442</th><td><u>#  include &lt;sys/poll.h&gt;</u></td></tr>
+<tr><th id="443">443</th><td><u>#<span data-ppcond="441">endif</span></u></td></tr>
+<tr><th id="444">444</th><td></td></tr>
+<tr><th id="445">445</th><td><i>/* Data type definition of curl_socklen_t. */</i></td></tr>
+<tr><th id="446">446</th><td><u>#<span data-ppcond="446">ifdef</span> <a class="macro" href="#399" data-ref="_M/CURL_TYPEOF_CURL_SOCKLEN_T">CURL_TYPEOF_CURL_SOCKLEN_T</a></u></td></tr>
+<tr><th id="447">447</th><td>  <b>typedef</b> <a class="macro" href="#399" title="socklen_t" data-ref="_M/CURL_TYPEOF_CURL_SOCKLEN_T">CURL_TYPEOF_CURL_SOCKLEN_T</a> <dfn class="typedef" id="curl_socklen_t" title='curl_socklen_t' data-type='socklen_t' data-ref="curl_socklen_t" data-ref-filename="curl_socklen_t">curl_socklen_t</dfn>;</td></tr>
+<tr><th id="448">448</th><td><u>#<span data-ppcond="446">endif</span></u></td></tr>
+<tr><th id="449">449</th><td></td></tr>
+<tr><th id="450">450</th><td><i>/* Data type definition of curl_off_t. */</i></td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td><u>#<span data-ppcond="452">ifdef</span> <a class="macro" href="#393" data-ref="_M/CURL_TYPEOF_CURL_OFF_T">CURL_TYPEOF_CURL_OFF_T</a></u></td></tr>
+<tr><th id="453">453</th><td>  <b>typedef</b> <a class="macro" href="#393" title="long" data-ref="_M/CURL_TYPEOF_CURL_OFF_T">CURL_TYPEOF_CURL_OFF_T</a> <dfn class="typedef" id="curl_off_t" title='curl_off_t' data-type='long' data-ref="curl_off_t" data-ref-filename="curl_off_t">curl_off_t</dfn>;</td></tr>
+<tr><th id="454">454</th><td><u>#<span data-ppcond="452">endif</span></u></td></tr>
+<tr><th id="455">455</th><td></td></tr>
+<tr><th id="456">456</th><td><i>/*</i></td></tr>
+<tr><th id="457">457</th><td><i> * CURL_ISOCPP and CURL_OFF_T_C definitions are done here in order to allow</i></td></tr>
+<tr><th id="458">458</th><td><i> * these to be visible and exported by the external libcurl interface API,</i></td></tr>
+<tr><th id="459">459</th><td><i> * while also making them visible to the library internals, simply including</i></td></tr>
+<tr><th id="460">460</th><td><i> * curl_setup.h, without actually needing to include curl.h internally.</i></td></tr>
+<tr><th id="461">461</th><td><i> * If some day this section would grow big enough, all this should be moved</i></td></tr>
+<tr><th id="462">462</th><td><i> * to its own header file.</i></td></tr>
+<tr><th id="463">463</th><td><i> */</i></td></tr>
+<tr><th id="464">464</th><td></td></tr>
+<tr><th id="465">465</th><td><i>/*</i></td></tr>
+<tr><th id="466">466</th><td><i> * Figure out if we can use the ## preprocessor operator, which is supported</i></td></tr>
+<tr><th id="467">467</th><td><i> * by ISO/ANSI C and C++. Some compilers support it without setting __STDC__</i></td></tr>
+<tr><th id="468">468</th><td><i> * or  __cplusplus so we need to carefully check for them too.</i></td></tr>
+<tr><th id="469">469</th><td><i> */</i></td></tr>
+<tr><th id="470">470</th><td></td></tr>
+<tr><th id="471">471</th><td><u>#<span data-ppcond="471">if</span> defined(<span class="macro" data-ref="_M/__STDC__">__STDC__</span>) || defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) || defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>) || \</u></td></tr>
+<tr><th id="472">472</th><td><u>  defined(<span class="macro" data-ref="_M/__HP_aCC">__HP_aCC</span>) || defined(<span class="macro" data-ref="_M/__BORLANDC__">__BORLANDC__</span>) || defined(<span class="macro" data-ref="_M/__LCC__">__LCC__</span>) || \</u></td></tr>
+<tr><th id="473">473</th><td><u>  defined(<span class="macro" data-ref="_M/__POCC__">__POCC__</span>) || defined(<span class="macro" data-ref="_M/__SALFORDC__">__SALFORDC__</span>) || defined(<span class="macro" data-ref="_M/__HIGHC__">__HIGHC__</span>) || \</u></td></tr>
+<tr><th id="474">474</th><td><u>  defined(<span class="macro" data-ref="_M/__ILEC400__">__ILEC400__</span>)</u></td></tr>
+<tr><th id="475">475</th><td>  <i>/* This compiler is believed to have an ISO compatible preprocessor */</i></td></tr>
+<tr><th id="476">476</th><td><u>#define <dfn class="macro" id="_M/CURL_ISOCPP" data-ref="_M/CURL_ISOCPP">CURL_ISOCPP</dfn></u></td></tr>
+<tr><th id="477">477</th><td><u>#<span data-ppcond="471">else</span></u></td></tr>
+<tr><th id="478">478</th><td>  <i>/* This compiler is believed NOT to have an ISO compatible preprocessor */</i></td></tr>
+<tr><th id="479">479</th><td><u>#undef CURL_ISOCPP</u></td></tr>
+<tr><th id="480">480</th><td><u>#<span data-ppcond="471">endif</span></u></td></tr>
+<tr><th id="481">481</th><td></td></tr>
+<tr><th id="482">482</th><td><i>/*</i></td></tr>
+<tr><th id="483">483</th><td><i> * Macros for minimum-width signed and unsigned curl_off_t integer constants.</i></td></tr>
+<tr><th id="484">484</th><td><i> */</i></td></tr>
+<tr><th id="485">485</th><td></td></tr>
+<tr><th id="486">486</th><td><u>#<span data-ppcond="486">if</span> defined(<span class="macro" data-ref="_M/__BORLANDC__">__BORLANDC__</span>) &amp;&amp; (__BORLANDC__ == 0x0551)</u></td></tr>
+<tr><th id="487">487</th><td><u>#  define CURLINC_OFF_T_C_HLPR2(x) x</u></td></tr>
+<tr><th id="488">488</th><td><u>#  define CURLINC_OFF_T_C_HLPR1(x) CURLINC_OFF_T_C_HLPR2(x)</u></td></tr>
+<tr><th id="489">489</th><td><u>#  define CURL_OFF_T_C(Val)  CURLINC_OFF_T_C_HLPR1(Val) ## \</u></td></tr>
+<tr><th id="490">490</th><td><u>                             CURLINC_OFF_T_C_HLPR1(CURL_SUFFIX_CURL_OFF_T)</u></td></tr>
+<tr><th id="491">491</th><td><u>#  define CURL_OFF_TU_C(Val) CURLINC_OFF_T_C_HLPR1(Val) ## \</u></td></tr>
+<tr><th id="492">492</th><td><u>                             CURLINC_OFF_T_C_HLPR1(CURL_SUFFIX_CURL_OFF_TU)</u></td></tr>
+<tr><th id="493">493</th><td><u>#<span data-ppcond="486">else</span></u></td></tr>
+<tr><th id="494">494</th><td><u>#  <span data-ppcond="494">ifdef</span> <a class="macro" href="#476" data-ref="_M/CURL_ISOCPP">CURL_ISOCPP</a></u></td></tr>
+<tr><th id="495">495</th><td><u>#    define <dfn class="macro" id="_M/CURLINC_OFF_T_C_HLPR2" data-ref="_M/CURLINC_OFF_T_C_HLPR2">CURLINC_OFF_T_C_HLPR2</dfn>(Val,Suffix) Val ## Suffix</u></td></tr>
+<tr><th id="496">496</th><td><u>#  <span data-ppcond="494">else</span></u></td></tr>
+<tr><th id="497">497</th><td><u>#    define CURLINC_OFF_T_C_HLPR2(Val,Suffix) Val/**/Suffix</u></td></tr>
+<tr><th id="498">498</th><td><u>#  <span data-ppcond="494">endif</span></u></td></tr>
+<tr><th id="499">499</th><td><u>#  define <dfn class="macro" id="_M/CURLINC_OFF_T_C_HLPR1" data-ref="_M/CURLINC_OFF_T_C_HLPR1">CURLINC_OFF_T_C_HLPR1</dfn>(Val,Suffix) CURLINC_OFF_T_C_HLPR2(Val,Suffix)</u></td></tr>
+<tr><th id="500">500</th><td><u>#  define <dfn class="macro" id="_M/CURL_OFF_T_C" data-ref="_M/CURL_OFF_T_C">CURL_OFF_T_C</dfn>(Val)  CURLINC_OFF_T_C_HLPR1(Val,CURL_SUFFIX_CURL_OFF_T)</u></td></tr>
+<tr><th id="501">501</th><td><u>#  define <dfn class="macro" id="_M/CURL_OFF_TU_C" data-ref="_M/CURL_OFF_TU_C">CURL_OFF_TU_C</dfn>(Val) CURLINC_OFF_T_C_HLPR1(Val,CURL_SUFFIX_CURL_OFF_TU)</u></td></tr>
+<tr><th id="502">502</th><td><u>#<span data-ppcond="486">endif</span></u></td></tr>
+<tr><th id="503">503</th><td></td></tr>
+<tr><th id="504">504</th><td><u>#<span data-ppcond="1">endif</span> /* CURLINC_SYSTEM_H */</u></td></tr>
+<tr><th id="505">505</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

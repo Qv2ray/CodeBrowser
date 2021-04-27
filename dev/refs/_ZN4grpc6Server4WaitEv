@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/server.h' l='61' type='void grpc::Server::Wait()'/>
+<doc f='include/grpcpp/server.h' l='57'>/// Block until the server shuts down.
+  ///
+  /// \warning The server must be either shutting down or some other thread must
+  /// call \a Shutdown for this function to ever return.</doc>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='141' type='ZXing::Pdf417::BarcodeMatrix ZXing::Pdf417::Encoder::generateBarcodeLogic(const std::wstring &amp; msg, int errorCorrectionLevel) const'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='513' ll='549' type='ZXing::Pdf417::BarcodeMatrix ZXing::Pdf417::Encoder::generateBarcodeLogic(const std::wstring &amp; msg, int errorCorrectionLevel) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='508'>/**
+* @param msg message to encode
+* @param errorCorrectionLevel PDF417 error correction level to use
+* @throws WriterException if the contents cannot be encoded in this format
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='87' u='c' c='_ZNK5ZXing6Pdf4176Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

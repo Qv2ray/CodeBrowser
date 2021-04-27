@@ -1,0 +1,5 @@
+<dec f='include/pthread.h' l='924' type='int pthread_rwlock_unlock(pthread_rwlock_t * __rwlock)'/>
+<doc f='include/pthread.h' l='923'>/* Unlock RWLOCK.  */</doc>
+<use f='include/c++/10/shared_mutex' l='77' macro='1' c='_ZStL29__gthrw_pthread_rwlock_unlockP16pthread_rwlock_t'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='388' u='c' c='uv_rwlock_rdunlock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='414' u='c' c='uv_rwlock_wrunlock'/>

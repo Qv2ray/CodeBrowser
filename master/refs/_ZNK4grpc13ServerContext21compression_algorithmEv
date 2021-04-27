@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/server_context.h' l='197' ll='199' type='grpc_compression_algorithm grpc::ServerContext::compression_algorithm() const'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='193'>/// Return the compression algorithm the server call will request be used.
+  /// Note that the gRPC runtime may decide to ignore this request, for example,
+  /// due to resource constraints, or if the server is aware the client doesn&apos;t
+  /// support the requested algorithm.</doc>

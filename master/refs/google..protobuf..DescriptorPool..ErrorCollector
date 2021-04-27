@@ -1,0 +1,17 @@
+<use f='include/google/protobuf/descriptor.h' l='1528' c='_ZN6google8protobuf14DescriptorPoolC1EPNS0_18DescriptorDatabaseEPNS1_14ErrorCollectorE'/>
+<def f='include/google/protobuf/descriptor.h' l='1581' ll='1624'/>
+<use f='include/google/protobuf/descriptor.h' l='1623' c='_ZN6google8protobuf14DescriptorPool14ErrorCollectorC1ERKS2_'/>
+<use f='include/google/protobuf/descriptor.h' l='1623' c='_ZN6google8protobuf14DescriptorPool14ErrorCollectoraSERKS2_'/>
+<use f='include/google/protobuf/descriptor.h' l='1636' c='_ZN6google8protobuf14DescriptorPool25BuildFileCollectingErrorsERKNS0_19FileDescriptorProtoEPNS1_14ErrorCollectorE'/>
+<use f='include/google/protobuf/descriptor.h' l='1800'/>
+<size>8</size>
+<doc f='include/google/protobuf/descriptor.h' l='1576'>// Building descriptors --------------------------------------------
+
+  // When converting a FileDescriptorProto to a FileDescriptor, various
+  // errors might be detected in the input.  The caller may handle these
+  // programmatically by implementing an ErrorCollector.</doc>
+<fun r='_ZN6google8protobuf14DescriptorPool14ErrorCollectorC1Ev'/>
+<fun r='_ZN6google8protobuf14DescriptorPool14ErrorCollectorD1Ev'/>
+<fun r='_ZN6google8protobuf14DescriptorPool14ErrorCollector8AddErrorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_PKNS0_7MessageENS2_13ErrorLocationESA_'/>
+<fun r='_ZN6google8protobuf14DescriptorPool14ErrorCollector10AddWarningERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_PKNS0_7MessageENS2_13ErrorLocationESA_'/>
+<fun r='_ZN6google8protobuf14DescriptorPool14ErrorCollectorC1ERKS2_'/>

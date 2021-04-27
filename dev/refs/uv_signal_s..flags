@@ -1,0 +1,27 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1565' macro='1' type='unsigned int'/>
+<offset>704</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='76' macro='1' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='76' macro='1' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='76' macro='1' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='76' macro='1' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='77' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='169' u='w' c='uv__signal_first_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='358' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='358' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='390' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='401' u='w' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='408' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='408' macro='1' u='w' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='408' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='458' u='r' c='uv__signal_event'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='458' u='r' c='uv__signal_event'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='464' u='r' c='uv__signal_event'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='493' u='r' c='uv__signal_compare'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='494' u='r' c='uv__signal_compare'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='512' macro='1' u='r' c='uv_signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='512' macro='1' u='r' c='uv_signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='543' u='r' c='uv__signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='544' u='r' c='uv__signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='555' macro='1' u='r' c='uv__signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='555' macro='1' u='w' c='uv__signal_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='555' macro='1' u='r' c='uv__signal_stop'/>

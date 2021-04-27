@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/arena_impl.h' l='113' type='void google::protobuf::internal::ArenaImpl::AddCleanup(void * elem, void (*)(void *) cleanup)'/>
+<use f='include/google/protobuf/arena.h' l='395' u='c' c='_ZN6google8protobuf5Arena13OwnDestructorEPT_'/>
+<use f='include/google/protobuf/arena.h' l='405' u='c' c='_ZN6google8protobuf5Arena19OwnCustomDestructorEPvPFvS2_E'/>
+<use f='include/google/protobuf/arena.h' l='645' u='c' c='_ZN6google8protobuf5Arena11OwnInternalEPT_St17integral_constantIbLb1EE'/>
+<use f='include/google/protobuf/arena.h' l='652' u='c' c='_ZN6google8protobuf5Arena11OwnInternalEPT_St17integral_constantIbLb0EE'/>
+<doc f='include/google/protobuf/arena_impl.h' l='112'>// Add object pointer and cleanup function pointer to the list.</doc>

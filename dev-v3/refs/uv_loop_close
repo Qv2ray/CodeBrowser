@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='277' type='int uv_loop_close(uv_loop_t * loop)'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='791' ll='818' type='int uv_loop_close(uv_loop_t * loop)'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='827' u='c' c='uv_loop_delete'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='66' u='c' c='_ZN3uvw4Loop5closeEv'/>

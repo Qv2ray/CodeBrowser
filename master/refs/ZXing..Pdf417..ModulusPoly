@@ -1,0 +1,94 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='33' ll='88'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='75' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='75' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='76' c='_ZNK5ZXing6Pdf41711ModulusPoly8subtractERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='76' c='_ZNK5ZXing6Pdf41711ModulusPoly8subtractERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='77' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='77' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='78' c='_ZNK5ZXing6Pdf41711ModulusPoly8negativeEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='79' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='80' c='_ZNK5ZXing6Pdf41711ModulusPoly18multiplyByMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='81' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='81' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='81' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='83' c='_ZN5ZXing6Pdf4174swapERNS0_11ModulusPolyES2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='83' c='_ZN5ZXing6Pdf4174swapERNS0_11ModulusPolyES2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='37'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='38'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='43' c='_ZNK5ZXing6Pdf4179ModulusGF4zeroEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='47' c='_ZNK5ZXing6Pdf4179ModulusGF3oneEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='51' c='_ZNK5ZXing6Pdf4179ModulusGF13buildMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='42' c='_ZNK5ZXing6Pdf4179ModulusGF13buildMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='53' c='_ZNK5ZXing6Pdf4179ModulusGF13buildMonomialEii'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='29'>/**
+* @author Sean Owen
+* @see com.google.zxing.common.reedsolomon.GenericGFPoly
+*/</doc>
+<mbr r='ZXing::Pdf417::ModulusPoly::_field' o='0' t='const ZXing::Pdf417::ModulusGF *'/>
+<mbr r='ZXing::Pdf417::ModulusPoly::_coefficients' o='64' t='std::vector&lt;int&gt;'/>
+<fun r='_ZN5ZXing6Pdf41711ModulusPolyC1Ev'/>
+<fun r='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly12coefficientsEv'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly6degreeEv'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly6isZeroEv'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly11coefficientEi'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly10evaluateAtEi'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8subtractERKS1_'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8negativeEv'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyEi'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly18multiplyByMonomialEii'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='76' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='77' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='102' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='105' c='_ZNK5ZXing6Pdf41711ModulusPoly8subtractERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='106' c='_ZNK5ZXing6Pdf41711ModulusPoly8subtractERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='117' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='118' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='137' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='140' c='_ZNK5ZXing6Pdf41711ModulusPoly8negativeEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='148' c='_ZNK5ZXing6Pdf41711ModulusPoly8negativeEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='151' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='165' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='168' c='_ZNK5ZXing6Pdf41711ModulusPoly18multiplyByMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='182' c='_ZNK5ZXing6Pdf41711ModulusPoly18multiplyByMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='186' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='186' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='186' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='204' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='205' c='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<size>32</size>
+<fun r='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly10evaluateAtEi'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8subtractERKS1_'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8negativeEv'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyEi'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly18multiplyByMonomialEii'/>
+<fun r='_ZNK5ZXing6Pdf41711ModulusPoly6divideERKS1_RS1_S4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='381' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='381' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='381' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='381' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='390' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='391' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='392' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='393' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='397' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='398' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='408' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='432' c='_ZN5ZXing6Pdf417L18FindErrorLocationsERKNS0_11ModulusPolyERSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='448' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='448' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='457' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='480' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='496' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='500' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='504' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='507' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='507' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<size>32</size>

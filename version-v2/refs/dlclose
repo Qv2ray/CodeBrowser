@@ -1,0 +1,4 @@
+<dec f='include/dlfcn.h' l='60' type='int dlclose(void * __handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/dl.c' l='47' u='c' c='uv_dlclose'/>
+<doc f='include/dlfcn.h' l='58'>/* Unmap and close a shared object opened by `dlopen&apos;.
+   The handle cannot be used again after calling `dlclose&apos;.  */</doc>

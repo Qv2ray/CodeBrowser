@@ -1,0 +1,21 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.h' l='37' ll='47'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.h' l='29'>/**
+* MultiFormatReader is a convenience class and the main entry point into the library for most uses.
+* By default it attempts to decode all barcode formats that the library supports. Optionally, you
+* can provide a hints object to request different behavior, for example only decoding QR codes.
+*
+* @author Sean Owen
+* @author dswitkin@google.com (Daniel Switkin)
+*/</doc>
+<fun r='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZN5ZXing17MultiFormatReaderD1Ev'/>
+<fun r='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<mbr r='ZXing::MultiFormatReader::_readers' o='0' t='std::vector&lt;std::unique_ptr&lt;Reader&gt;&gt;'/>
+<fun r='_ZN5ZXing17MultiFormatReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZN5ZXing17MultiFormatReaderD1Ev'/>
+<fun r='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='83' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='95' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='96' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<size>24</size>

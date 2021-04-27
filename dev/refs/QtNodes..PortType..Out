@@ -1,0 +1,50 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='10' type='2'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='39' u='r' c='_ZN7QtNodes12oppositePortENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/PortType.hpp' l='40' c='_ZN7QtNodes12oppositePortENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='38' u='r' c='_ZN7QtNodes10ConnectionC1ERNS_4NodeEiS2_iSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='74' u='r' c='_ZNK7QtNodes10Connection4saveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='93' c='_ZN7QtNodes10Connection15setRequiredPortENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='134' c='_ZNK7QtNodes10Connection12getPortIndexENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='144' u='r' c='_ZN7QtNodes10Connection13setNodeToPortERNS_4NodeENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='160' u='r' c='_ZNK7QtNodes10Connection15removeFromNodesEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='187' c='_ZNK7QtNodes10Connection7getNodeENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='199' c='_ZN7QtNodes10Connection7getNodeENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='238' u='r' c='_ZNK7QtNodes10Connection8dataTypeENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGeometry.cpp' l='18' u='r' c='_ZNK7QtNodes18ConnectionGeometry11getEndPointENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGeometry.cpp' l='24' c='_ZN7QtNodes18ConnectionGeometry11setEndPointENS_8PortTypeERK7QPointF'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGeometry.cpp' l='33' c='_ZN7QtNodes18ConnectionGeometry12moveEndPointENS_8PortTypeERK7QPointF'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='60' c='_ZN7QtNodes24ConnectionGraphicsObject4moveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionPainter.cpp' l='125' u='r' c='_ZL14drawNormalLineP8QPainterRKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='68' u='r' c='_ZN7QtNodes9FlowScene16createConnectionERNS_4NodeEiS2_iRKSt8functionIFSt10shared_ptrINS_8NodeDataEES6_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='142' c='_ZN7QtNodes9FlowScene10removeNodeERNS_4NodeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='208' u='r' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='360' u='r' c='_ZN7QtNodes9FlowScene28sendConnectionCreatedToNodesERKNS_10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='369' u='r' c='_ZN7QtNodes9FlowScene28sendConnectionDeletedToNodesERKNS_10ConnectionE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='109' u='r' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='110' u='r' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='130' u='r' c='_ZN7QtNodes4Node13onDataUpdatedEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='140' c='_ZN7QtNodes4Node17onNodeSizeUpdatedEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='54' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='63' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='63' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='67' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='98' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='101' u='r' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='25' c='_ZNK7QtNodes13NodeDataModel20portConnectionPolicyENS_8PortTypeEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='19' u='r' c='_ZN7QtNodes12NodeGeometryC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='28' u='r' c='_ZNK7QtNodes12NodeGeometry8nSourcesEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='61' u='r' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='122' c='_ZNK7QtNodes12NodeGeometry17portScenePositionEiNS_8PortTypeERK10QTransform'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='119' c='_ZNK7QtNodes18NodeGraphicsObject15moveConnectionsEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='157' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='175' u='r' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='74' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='127' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='173' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='199' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='12' u='r' c='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='17' c='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel8dataTypeEN7QtNodes8PortTypeEi'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='32' u='r' c='_ZNK6Qv2ray2ui10nodemodels16InboundNodeModel6nPortsEN7QtNodes8PortTypeE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.cpp' l='37' u='r' c='_ZNK6Qv2ray2ui10nodemodels17OutboundNodeModel6nPortsEN7QtNodes8PortTypeE'/>
+<use f='qv2ray/src/ui/widgets/node/models/RuleNodeModel.cpp' l='43' u='r' c='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel22inputConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='141' u='r' c='_ZN17ChainEditorWidget21VerifyChainLinkedListERK5QUuid'/>

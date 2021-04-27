@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/message.h' l='911' type='void * google::protobuf::Reflection::MutableRawRepeatedField(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, FieldDescriptor::CppType , int ctype, const google::protobuf::Descriptor * message_type) const'/>
+<use f='include/google/protobuf/message.h' l='920' u='c' c='_ZNK6google8protobuf10Reflection19GetRawRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='1152' u='c' c='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='1169' u='c' c='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<doc f='include/google/protobuf/message.h' l='906'>// Obtain a pointer to a Repeated Field Structure and do some type checking:
+  //   on field-&gt;cpp_type(),
+  //   on field-&gt;field_option().ctype() (if ctype &gt;= 0)
+  //   of field-&gt;message_type() (if message_type != NULL).
+  // We use 2 routine rather than 4 (const vs mutable) x (scalar vs pointer).</doc>

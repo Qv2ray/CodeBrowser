@@ -1,0 +1,24 @@
+<def f='include/c++/10/bits/stl_vector.h' l='1497' ll='1499' type='void std::vector::clear()'/>
+<use f='include/c++/10/bits/stl_vector.h' l='1569' u='c' c='_ZNSt6vector19_M_range_initializeETL0__S0_St18input_iterator_tag'/>
+<use f='include/c++/10/bits/random.tcc' l='2627' u='c' c='_ZNSt21discrete_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2791' u='c' c='_ZNSt31piecewise_constant_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='3005' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='1491'>/**
+       *  Erases all the elements.  Note that this function only erases the
+       *  elements, and that if the elements themselves are pointers, the
+       *  pointed-to memory is not touched in any way.  Managing the pointer is
+       *  the user&apos;s responsibility.
+       */</doc>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='38' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='88' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/test/catch.hpp' l='12521' u='c' c='_ZN5Catch10Generators16GeneratorTracker5closeEv'/>
+<use f='qv2ray/test/catch.hpp' l='12631' u='c' c='_ZN5Catch10RunContext14assertionEndedERKNS_15AssertionResultE'/>
+<use f='qv2ray/test/catch.hpp' l='12686' u='c' c='_ZN5Catch10RunContext12sectionEndedERKNS_14SectionEndInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='12687' u='c' c='_ZN5Catch10RunContext12sectionEndedERKNS_14SectionEndInfoE'/>
+<use f='qv2ray/test/catch.hpp' l='12787' u='c' c='_ZN5Catch10RunContext15assertionPassedEv'/>
+<use f='qv2ray/test/catch.hpp' l='12838' u='c' c='_ZN5Catch10RunContext14runCurrentTestERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'/>
+<use f='qv2ray/test/catch.hpp' l='12839' u='c' c='_ZN5Catch10RunContext14runCurrentTestERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'/>
+<use f='qv2ray/test/catch.hpp' l='12859' u='c' c='_ZN5Catch10RunContext24handleUnfinishedSectionsEv'/>
+<use f='qv2ray/test/catch.hpp' l='13923' u='c' c='_ZN5Catch7setTagsERNS_12TestCaseInfoESt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14520' u='c' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14684' u='c' c='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>

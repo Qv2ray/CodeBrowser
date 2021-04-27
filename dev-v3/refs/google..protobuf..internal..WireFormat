@@ -1,0 +1,48 @@
+<use f='include/google/protobuf/message.h' l='960'/>
+<def f='include/google/protobuf/wire_format.h' l='69' ll='256'/>
+<use f='include/google/protobuf/wire_format.h' l='255' c='_ZN6google8protobuf8internal10WireFormatC1ERKS2_'/>
+<use f='include/google/protobuf/wire_format.h' l='255' c='_ZN6google8protobuf8internal10WireFormataSERKS2_'/>
+<size>1</size>
+<doc f='include/google/protobuf/wire_format.h' l='60'>// This class is for internal use by the protocol buffer library and by
+// protocol-complier-generated message classes.  It must not be called
+// directly by clients.
+//
+// This class contains code for implementing the binary protocol buffer
+// wire format via reflection.  The WireFormatLite class implements the
+// non-reflection based routines.
+//
+// This class is really a namespace that contains only static methods</doc>
+<fun r='_ZN6google8protobuf8internal10WireFormat16WireTypeForFieldEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat20WireTypeForFieldTypeENS0_15FieldDescriptor4TypeE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat7TagSizeEiNS0_15FieldDescriptor4TypeE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat20ParseAndMergePartialEPNS0_2io16CodedInputStreamEPNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat24SerializeWithCachedSizesERKNS0_7MessageEiPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat8ByteSizeERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat9SkipFieldEPNS0_2io16CodedInputStreamEjPNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat11SkipMessageEPNS0_2io16CodedInputStreamEPNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat30ReadPackedEnumPreserveUnknownsEPNS0_2io16CodedInputStreamEjPFbiEPNS0_15UnknownFieldSetEPNS0_13RepeatedFieldIiEE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat22SerializeUnknownFieldsERKNS0_15UnknownFieldSetEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat29SerializeUnknownFieldsToArrayERKNS0_15UnknownFieldSetEPh'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat31SerializeUnknownMessageSetItemsERKNS0_15UnknownFieldSetEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat38SerializeUnknownMessageSetItemsToArrayERKNS0_15UnknownFieldSetEPh'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat24ComputeUnknownFieldsSizeERKNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat33ComputeUnknownMessageSetItemsSizeERKNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat7MakeTagEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat18ParseAndMergeFieldEjPKNS0_15FieldDescriptorEPNS0_7MessageEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat29SerializeFieldWithCachedSizesEPKNS0_15FieldDescriptorERKNS0_7MessageEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat13FieldByteSizeEPKNS0_15FieldDescriptorERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat27ParseAndMergeMessageSetItemEPNS0_2io16CodedInputStreamEPNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat38SerializeMessageSetItemWithCachedSizesEPKNS0_15FieldDescriptorERKNS0_7MessageEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat22MessageSetItemByteSizeEPKNS0_15FieldDescriptorERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat21FieldDataOnlyByteSizeEPKNS0_15FieldDescriptorERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat16VerifyUTF8StringEPKciNS2_9OperationE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat26VerifyUTF8StringNamedFieldEPKciNS2_9OperationES4_'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat19SkipMessageSetFieldEPNS0_2io16CodedInputStreamEjPNS0_15UnknownFieldSetE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat28ParseAndMergeMessageSetFieldEjPKNS0_15FieldDescriptorEPNS0_7MessageEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormatC1ERKS2_'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat16WireTypeForFieldEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat20WireTypeForFieldTypeENS0_15FieldDescriptor4TypeE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat7MakeTagEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat7TagSizeEiNS0_15FieldDescriptor4TypeE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat16VerifyUTF8StringEPKciNS2_9OperationE'/>
+<fun r='_ZN6google8protobuf8internal10WireFormat26VerifyUTF8StringNamedFieldEPKciNS2_9OperationES4_'/>

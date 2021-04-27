@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/curl/curl.h' l='254'/>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='251'>/* The only reason to have a max limit for this is to avoid the risk of a bad
+   server feeding libcurl with a never-ending header that will cause reallocs
+   infinitely */</doc>

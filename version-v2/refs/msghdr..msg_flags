@@ -1,0 +1,8 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='271' type='int'/>
+<offset>384</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='271'>/* Flags on received message.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='865' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1160' u='w' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='212' u='w' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='228' u='r' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='304' u='r' c='uv__udp_recvmsg'/>

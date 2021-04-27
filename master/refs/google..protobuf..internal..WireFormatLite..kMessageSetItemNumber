@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='217' type='const int'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='221' u='r'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='224' u='r'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='210'>// These are the tags for the old MessageSet format, which was defined as:
+  //   message MessageSet {
+  //     repeated group Item = 1 {
+  //       required int32 type_id = 2;
+  //       required string message = 3;
+  //     }
+  //   }</doc>

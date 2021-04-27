@@ -1,0 +1,10 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='163' ll='170' type='void ZXing::BitMatrix::flip(int x, int y)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='108' u='c' c='_ZN5ZXing9BitMatrix6mirrorEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='109' u='c' c='_ZN5ZXing9BitMatrix6mirrorEv'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='157'>/**
+	* &lt;p&gt;Flips the given bit.&lt;/p&gt;
+	*
+	* @param x The horizontal component (i.e. which column)
+	* @param y The vertical component (i.e. which row)
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataMask.cpp' l='128' u='c' c='_ZNK5ZXing6QRCode8DataMask15unmaskBitMatrixERNS_9BitMatrixEi'/>

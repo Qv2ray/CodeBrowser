@@ -1,0 +1,103 @@
+<inh f='/qv2ray_autogen/include/ui_w_OutboundEditor.h' l='552' c='Ui::OutboundEditor'/>
+<def f='qv2ray/src/ui/editors/w_OutboundEditor.hpp' l='11' ll='79'/>
+<use f='/qv2ray_autogen/652BKGHVKB/moc_w_OutboundEditor.cpp' l='163' c='_ZN14OutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/652BKGHVKB/moc_w_OutboundEditor.cpp' l='194' c='_ZN14OutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>840</size>
+<smbr r='OutboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK14OutboundEditor10metaObjectEv'/>
+<fun r='_ZN14OutboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN14OutboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN14OutboundEditor2trEPKcS1_i'/>
+<fun r='_ZN14OutboundEditor6trUtf8EPKcS1_i'/>
+<fun r='_ZN14OutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN14OutboundEditorC1ERKN6Qv2ray4base8safetype8OUTBOUNDEP7QWidget'/>
+<fun r='_ZN14OutboundEditorD1Ev'/>
+<fun r='_ZN14OutboundEditor10OpenEditorEv'/>
+<fun r='_ZN14OutboundEditor15GetFriendlyNameEv'/>
+<fun r='_ZN14OutboundEditorC1EP7QWidget'/>
+<fun r='_ZN14OutboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN14OutboundEditor15s_reload_configEb'/>
+<fun r='_ZN14OutboundEditor21on_buttonBox_acceptedEv'/>
+<fun r='_ZN14OutboundEditor24on_ipLineEdit_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor26on_portLineEdit_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor24on_idLineEdit_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor20on_tagTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor28on_muxEnabledCB_stateChangedEi'/>
+<fun r='_ZN14OutboundEditor33on_muxConcurrencyTxt_valueChangedEi'/>
+<fun r='_ZN14OutboundEditor29on_alterLineEdit_valueChangedEi'/>
+<fun r='_ZN14OutboundEditor23on_useFPCB_stateChangedEi'/>
+<fun r='_ZN14OutboundEditor40on_outBoundTypeCombo_currentIndexChangedEi'/>
+<fun r='_ZN14OutboundEditor25on_ss_emailTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor28on_ss_passwordTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor42on_ss_encryptionMethod_currentIndexChangedERK7QString'/>
+<fun r='_ZN14OutboundEditor30on_ss_otaCheckBox_stateChangedEi'/>
+<fun r='_ZN14OutboundEditor31on_socks_UserNameTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor31on_socks_PasswordTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor30on_http_UserNameTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor30on_http_PasswordTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor36on_securityCombo_currentIndexChangedERK7QString'/>
+<fun r='_ZN14OutboundEditor40on_testsEnabledCombo_currentIndexChangedERK7QString'/>
+<fun r='_ZN14OutboundEditor24on_vLessIDTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor40on_vLessSecurityCombo_currentTextChangedERK7QString'/>
+<mbr r='OutboundEditor::tag' o='4672' t='QString'/>
+<fun r='_ZN14OutboundEditor9ReloadGUIEv'/>
+<mbr r='OutboundEditor::useForwardProxy' o='4736' t='bool'/>
+<fun r='_ZN14OutboundEditor22GenerateConnectionJsonEv'/>
+<mbr r='OutboundEditor::originalConfig' o='4800' t='Qv2ray::base::safetype::OUTBOUND'/>
+<mbr r='OutboundEditor::resultConfig' o='4928' t='Qv2ray::base::safetype::OUTBOUND'/>
+<mbr r='OutboundEditor::muxConfig' o='5056' t='QJsonObject'/>
+<mbr r='OutboundEditor::outboundType' o='5184' t='QString'/>
+<mbr r='OutboundEditor::serverAddress' o='5248' t='QString'/>
+<mbr r='OutboundEditor::serverPort' o='5312' t='int'/>
+<mbr r='OutboundEditor::vmess' o='5376' t='Qv2ray::base::objects::protocol::VMessServerObject'/>
+<mbr r='OutboundEditor::vless' o='5568' t='Qv2ray::base::objects::protocol::VLessServerObject'/>
+<mbr r='OutboundEditor::shadowsocks' o='5760' t='Qv2ray::base::objects::protocol::ShadowSocksServerObject'/>
+<mbr r='OutboundEditor::socks' o='6144' t='Qv2ray::base::objects::protocol::SocksServerObject'/>
+<mbr r='OutboundEditor::http' o='6336' t='Qv2ray::base::objects::protocol::HttpServerObject'/>
+<mbr r='OutboundEditor::streamSettingsWidget' o='6528' t='StreamSettingsWidget *'/>
+<mbr r='OutboundEditor::builtInOutboundTypes' o='6592' t='int'/>
+<mbr r='OutboundEditor::pluginWidgets' o='6656' t='QMap&lt;int, QPair&lt;Qv2rayPlugin::QvPluginOutboundProtocolObject, Qv2rayPlugin::QvPluginEditor *&gt;&gt;'/>
+<fun r='_ZN14OutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='OutboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK14OutboundEditor10metaObjectEv'/>
+<fun r='_ZN14OutboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN14OutboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN14OutboundEditor15s_reload_configEb'/>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.cpp' l='69' c='_ZN14OutboundEditorC1ERKN6Qv2ray4base8safetype8OUTBOUNDEP7QWidget'/>
+<size>840</size>
+<fun r='_ZN14OutboundEditorC1EP7QWidget'/>
+<fun r='_ZN14OutboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN14OutboundEditorC1ERKN6Qv2ray4base8safetype8OUTBOUNDEP7QWidget'/>
+<fun r='_ZN14OutboundEditorD1Ev'/>
+<fun r='_ZN14OutboundEditor10OpenEditorEv'/>
+<fun r='_ZN14OutboundEditor15GetFriendlyNameEv'/>
+<fun r='_ZN14OutboundEditor22GenerateConnectionJsonEv'/>
+<fun r='_ZN14OutboundEditor9ReloadGUIEv'/>
+<fun r='_ZN14OutboundEditor21on_buttonBox_acceptedEv'/>
+<fun r='_ZN14OutboundEditor24on_ipLineEdit_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor26on_portLineEdit_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor24on_idLineEdit_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor36on_securityCombo_currentIndexChangedERK7QString'/>
+<fun r='_ZN14OutboundEditor20on_tagTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor28on_muxEnabledCB_stateChangedEi'/>
+<fun r='_ZN14OutboundEditor33on_muxConcurrencyTxt_valueChangedEi'/>
+<fun r='_ZN14OutboundEditor29on_alterLineEdit_valueChangedEi'/>
+<fun r='_ZN14OutboundEditor23on_useFPCB_stateChangedEi'/>
+<fun r='_ZN14OutboundEditor40on_outBoundTypeCombo_currentIndexChangedEi'/>
+<fun r='_ZN14OutboundEditor25on_ss_emailTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor28on_ss_passwordTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor42on_ss_encryptionMethod_currentIndexChangedERK7QString'/>
+<fun r='_ZN14OutboundEditor30on_ss_otaCheckBox_stateChangedEi'/>
+<fun r='_ZN14OutboundEditor31on_socks_UserNameTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor31on_socks_PasswordTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor30on_http_UserNameTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor30on_http_PasswordTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor40on_testsEnabledCombo_currentIndexChangedERK7QString'/>
+<fun r='_ZN14OutboundEditor24on_vLessIDTxt_textEditedERK7QString'/>
+<fun r='_ZN14OutboundEditor40on_vLessSecurityCombo_currentTextChangedERK7QString'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='1000' c='_ZN11RouteEditor18on_editBtn_clickedEv'/>
+<size>840</size>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='317' c='_ZN18ImportConfigWindow28on_connectionEditBtn_clickedEv'/>
+<size>840</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='881' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<size>840</size>

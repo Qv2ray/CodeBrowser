@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message.h' l='761' type='void google::protobuf::Reflection::AddAllocatedMessage(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, google::protobuf::Message * new_entry) const'/>
+<doc f='include/google/protobuf/message.h' l='757'>// Appends an already-allocated object &apos;new_entry&apos; to the repeated field
+  // specifyed by &apos;field&apos; passing ownership to the message.
+  // TODO(tmarek): Make virtual after all subclasses have been
+  // updated.</doc>

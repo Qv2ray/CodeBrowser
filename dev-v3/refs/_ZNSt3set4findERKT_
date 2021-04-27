@@ -1,0 +1,14 @@
+<def f='include/c++/10/bits/stl_set.h' l='793' ll='795' type='std::set::iterator std::set::find(const std::set::key_type &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_set.h' l='782'>/**
+       *  @brief Tries to locate an element in a %set.
+       *  @param  __x  Element to be located.
+       *  @return  Iterator pointing to sought-after element, or end() if not
+       *           found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns an iterator
+       *  pointing to the sought after element.  If unsuccessful it returns the
+       *  past-the-end ( @c end() ) iterator.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='208' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='222' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>

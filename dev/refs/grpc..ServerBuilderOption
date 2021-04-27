@@ -1,0 +1,12 @@
+<def f='include/grpcpp/impl/server_builder_option.h' l='31' ll='39'/>
+<use f='include/grpcpp/impl/channel_argument_option.h' l='30' c='_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'/>
+<use f='include/grpcpp/impl/channel_argument_option.h' l='32' c='_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='include/grpcpp/server_builder.h' l='186' c='_ZN4grpc13ServerBuilder9SetOptionESt10unique_ptrINS_19ServerBuilderOptionESt14default_deleteIS2_EE'/>
+<use f='include/grpcpp/server_builder.h' l='246' c='_ZN4grpc13ServerBuilder7optionsEv'/>
+<use f='include/grpcpp/server_builder.h' l='247' c='_ZN4grpc13ServerBuilder7optionsEv'/>
+<use f='include/grpcpp/server_builder.h' l='278'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/server_builder_option.h' l='30'>/// Interface to pass an option to a \a ServerBuilder.</doc>
+<fun r='_ZN4grpc19ServerBuilderOptionD1Ev'/>
+<fun r='_ZN4grpc19ServerBuilderOption15UpdateArgumentsEPNS_16ChannelArgumentsE'/>
+<fun r='_ZN4grpc19ServerBuilderOption13UpdatePluginsEPSt6vectorISt10unique_ptrINS_19ServerBuilderPluginESt14default_deleteIS3_EESaIS6_EE'/>

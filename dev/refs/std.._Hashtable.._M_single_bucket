@@ -1,0 +1,21 @@
+<use f='include/c++/10/bits/hashtable.h' l='364'/>
+<dec f='include/c++/10/bits/hashtable.h' l='376' type='std::_Hashtable::__bucket_type'/>
+<use f='include/c++/10/bits/hashtable.h' l='380' c='_ZNKSt10_Hashtable21_M_uses_single_bucketEPNSt8__detail16_Hashtable_allocINSt23__allocator_traits_base8__rebindIT1_NS0_10_Hash_nodeIT0_XsrNT8_13__hash5763232'/>
+<use f='include/c++/10/bits/hashtable.h' l='394' u='w' c='_ZNSt10_Hashtable19_M_allocate_bucketsENSt8__detail15_Hashtable_baseIT_T0_T2_T3_T4_T5_T6_T8_E9size_typeE'/>
+<use f='include/c++/10/bits/hashtable.h' l='395' c='_ZNSt10_Hashtable19_M_allocate_bucketsENSt8__detail15_Hashtable_baseIT_T0_T2_T3_T4_T5_T6_T8_E9size_typeE'/>
+<use f='include/c++/10/bits/hashtable.h' l='1204' u='w' c='_ZNSt10_Hashtable8_M_resetEv'/>
+<use f='include/c++/10/bits/hashtable.h' l='1205' c='_ZNSt10_Hashtable8_M_resetEv'/>
+<use f='include/c++/10/bits/hashtable.h' l='1227' c='_ZNSt10_Hashtable14_M_move_assignEOSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_ESt17integral_constantIbLb1EE'/>
+<use f='include/c++/10/bits/hashtable.h' l='1228' u='w' c='_ZNSt10_Hashtable14_M_move_assignEOSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_ESt17integral_constantIbLb1EE'/>
+<use f='include/c++/10/bits/hashtable.h' l='1302' c='_ZNSt10_HashtableC1EOSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_E'/>
+<use f='include/c++/10/bits/hashtable.h' l='1303' u='w' c='_ZNSt10_HashtableC1EOSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_E'/>
+<use f='include/c++/10/bits/hashtable.h' l='1354' c='_ZNSt10_HashtableC1EOSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_ERKS3_'/>
+<use f='include/c++/10/bits/hashtable.h' l='1355' u='w' c='_ZNSt10_HashtableC1EOSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_ERKS3_'/>
+<use f='include/c++/10/bits/hashtable.h' l='1422' c='_ZNSt10_Hashtable4swapERSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_E'/>
+<use f='include/c++/10/bits/hashtable.h' l='1430' c='_ZNSt10_Hashtable4swapERSt10_HashtableIT_T0_T1_T2_T3_T4_T5_T6_T7_T8_E'/>
+<doc f='include/c++/10/bits/hashtable.h' l='370'>// A single bucket used when only need for 1 bucket. Especially
+      // interesting in move semantic to leave hashtable with only 1 bucket
+      // which is not allocated so that we can have those operations noexcept
+      // qualified.
+      // Note that we can&apos;t leave hashtable with 0 bucket without adding
+      // numerous checks in the code to avoid 0 modulus.</doc>

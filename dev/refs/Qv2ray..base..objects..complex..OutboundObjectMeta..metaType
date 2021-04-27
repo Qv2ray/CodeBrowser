@@ -1,0 +1,34 @@
+<dec f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='60' type='Qv2ray::base::objects::complex::MetaOutboundObjectType'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='71' u='r' c='_ZNK6Qv2ray4base7objects7complex18OutboundObjectMeta14getDisplayNameEv'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='83' u='w' c='_ZN6Qv2ray4base7objects7complex18OutboundObjectMetaC1Ev'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='84' u='a' c='_ZN6Qv2ray4base7objects7complex18OutboundObjectMeta8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='84' u='w' c='_ZN6Qv2ray4base7objects7complex18OutboundObjectMeta8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='84' u='r' c='_ZN6Qv2ray4base7objects7complex18OutboundObjectMeta8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='84' u='r' c='_ZNK6Qv2ray4base7objects7complex18OutboundObjectMeta6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='84' u='r' c='_ZNK6Qv2ray4base7objects7complex18OutboundObjectMeta6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='84' u='r' c='_ZNK6Qv2ray4base7objects7complex18OutboundObjectMeta6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='90' u='w' c='_ZN6Qv2ray4base7objects7complex21make_chained_outboundERK5QListI7QStringERKS4_'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='99' u='w' c='_ZN6Qv2ray4base7objects7complex22make_balancer_outboundERK5QListI7QStringERKS4_'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='108' u='w' c='_ZN6Qv2ray4base7objects7complex22make_external_outboundERKNS0_6IDTypeINS0_14__ConnectionIdEEERK7QString'/>
+<use f='qv2ray/src/base/models/QvComplexConfigModels.hpp' l='117' u='w' c='_ZN6Qv2ray4base7objects7complex20make_normal_outboundERK13SAFETYPE_IMPLINS0_8safetype12__OUTBOUND__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='56' u='r' c='_ZNK14NodeDispatcher19GetRealOutboundTagsEv'/>
+<offset>0</offset>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='67' u='r' c='_ZNK6Qv2ray4core7handler12RouteHandler22ExpandChainedOutboundsER13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='76' u='r' c='_ZNK6Qv2ray4core7handler12RouteHandler22ExpandChainedOutboundsER13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='189' u='r' c='_ZNK6Qv2ray4core7handler12RouteHandler24ExpandExternalConnectionERK13SAFETYPE_IMPLINS_4base8safetype13__OUTBOUNDS__E10QJsonArrayE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='163' u='r' c='_ZN11RouteEditor27OnDispatcherOutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='260' u='r' c='_ZN11RouteEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='281' u='r' c='_ZN11RouteEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='283' u='r' c='_ZN11RouteEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='50' u='r' c='_ZN14NodeDispatcher14LoadFullConfigERK13SAFETYPE_IMPLIN6Qv2ray4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='144' u='r' c='_ZN14NodeDispatcher13OnNodeDeletedERKN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='204' u='r' c='_ZN14NodeDispatcher14CreateOutboundEN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='204' u='r' c='_ZN14NodeDispatcher14CreateOutboundEN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='210' u='r' c='_ZN14NodeDispatcher14CreateOutboundEN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/models/OutboundNodeModel.cpp' l='14' u='r' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_INS_4base7objects7complex18OutboundObjectMetaEE'/>
+<use f='qv2ray/src/ui/widgets/node/models/OutboundNodeModel.cpp' l='64' u='r' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModel9setInDataESt6vectorISt10shared_ptrIN7QtNodes8NodeDataEESaIS7_EEi'/>
+<use f='qv2ray/src/ui/widgets/node/models/OutboundNodeModel.cpp' l='76' u='r' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModel16onNodeHoverEnterEv'/>
+<use f='qv2ray/src/ui/widgets/node/models/OutboundNodeModel.cpp' l='80' u='r' c='_ZN6Qv2ray2ui10nodemodels17OutboundNodeModel16onNodeHoverEnterEv'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/BalancerWidget.cpp' l='49' u='r' c='_ZN14BalancerWidget15OutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/BalancerWidget.cpp' l='55' u='r' c='_ZN14BalancerWidget15OutboundDeletedERKN6Qv2ray4base7objects7complex18OutboundObjectMetaE'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='30' u='r' c='_ZN21InboundOutboundWidget8setValueESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEE'/>

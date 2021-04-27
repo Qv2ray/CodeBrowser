@@ -1,0 +1,17 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.h' l='39' type='static void ZXing::DataMatrix::ECEncoder::EncodeECC200(ZXing::ByteArray &amp; codewords, const ZXing::DataMatrix::SymbolInfo &amp; symbolInfo)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='138' ll='154' type='static void ZXing::DataMatrix::ECEncoder::EncodeECC200(ZXing::ByteArray &amp; codewords, const ZXing::DataMatrix::SymbolInfo &amp; symbolInfo)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='131'>/**
+* Creates the ECC200 error correction for an encoded message.
+*
+* @param codewords  the codewords
+* @param symbolInfo information about the symbol to be encoded
+* @return the codewords with interleaved error correction.
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.h' l='32'>/**
+	* Creates the ECC200 error correction for an encoded message.
+	*
+	* @param codewords  the codewords
+	* @param symbolInfo information about the symbol to be encoded
+	* @return the codewords with interleaved error correction.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='113' u='c' c='_ZNK5ZXing10DataMatrix6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

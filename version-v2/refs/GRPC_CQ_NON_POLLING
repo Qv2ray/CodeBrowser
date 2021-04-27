@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='650' type='2'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='646'>/** The completion queue will not have an associated pollset. Note that
+      grpc_completion_queue_next() or grpc_completion_queue_pluck() MUST still
+      be called to pop events from the completion queue; it is not required to
+      call them actively to make I/O progress */</doc>

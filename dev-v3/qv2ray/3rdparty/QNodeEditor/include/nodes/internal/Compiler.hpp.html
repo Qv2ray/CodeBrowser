@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Compiler.hpp source code [qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Compiler.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Compiler.hpp'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>QNodeEditor</a>/<a href='../..'>include</a>/<a href='..'>nodes</a>/<a href='./'>internal</a>/<a href='Compiler.hpp.html'>Compiler.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#<span data-ppcond="2">if</span> defined(<span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span>) || defined(<span class="macro" data-ref="_M/__MINGW64__">__MINGW64__</span>)</u></td></tr>
+<tr><th id="3">3</th><td>    <u>#define NODE_EDITOR_COMPILER "MinGW"</u></td></tr>
+<tr><th id="4">4</th><td>    <u>#define NODE_EDITOR_COMPILER_MINGW</u></td></tr>
+<tr><th id="5">5</th><td><u>#<span data-ppcond="2">elif</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="6">6</th><td>    <u>#define <dfn class="macro" id="_M/NODE_EDITOR_COMPILER" data-ref="_M/NODE_EDITOR_COMPILER">NODE_EDITOR_COMPILER</dfn> "GNU"</u></td></tr>
+<tr><th id="7">7</th><td>    <u>#define <dfn class="macro" id="_M/NODE_EDITOR_COMPILER_GNU" data-ref="_M/NODE_EDITOR_COMPILER_GNU">NODE_EDITOR_COMPILER_GNU</dfn></u></td></tr>
+<tr><th id="8">8</th><td>    <u>#define <dfn class="macro" id="_M/NODE_EDITOR_COMPILER_GNU_VERSION_MAJOR" data-ref="_M/NODE_EDITOR_COMPILER_GNU_VERSION_MAJOR">NODE_EDITOR_COMPILER_GNU_VERSION_MAJOR</dfn> __GNUC__</u></td></tr>
+<tr><th id="9">9</th><td>    <u>#define <dfn class="macro" id="_M/NODE_EDITOR_COMPILER_GNU_VERSION_MINOR" data-ref="_M/NODE_EDITOR_COMPILER_GNU_VERSION_MINOR">NODE_EDITOR_COMPILER_GNU_VERSION_MINOR</dfn> __GNUC_MINOR__</u></td></tr>
+<tr><th id="10">10</th><td>    <u>#define <dfn class="macro" id="_M/NODE_EDITOR_COMPILER_GNU_VERSION_PATCH" data-ref="_M/NODE_EDITOR_COMPILER_GNU_VERSION_PATCH">NODE_EDITOR_COMPILER_GNU_VERSION_PATCH</dfn> __GNUC_PATCHLEVEL__</u></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="2">elif</span> defined(__clang__)</u></td></tr>
+<tr><th id="12">12</th><td>    <u>#define NODE_EDITOR_COMPILER "Clang"</u></td></tr>
+<tr><th id="13">13</th><td>    <u>#define NODE_EDITOR_COMPILER_CLANG</u></td></tr>
+<tr><th id="14">14</th><td><u>#elif defined(_MSC_VER)</u></td></tr>
+<tr><th id="15">15</th><td>    <u>#define NODE_EDITOR_COMPILER "Microsoft Visual C++"</u></td></tr>
+<tr><th id="16">16</th><td>    <u>#define NODE_EDITOR_COMPILER_MICROSOFT</u></td></tr>
+<tr><th id="17">17</th><td><u>#elif defined(__BORLANDC__)</u></td></tr>
+<tr><th id="18">18</th><td>    <u>#define NODE_EDITOR_COMPILER "Borland C++ Builder"</u></td></tr>
+<tr><th id="19">19</th><td>    <u>#define NODE_EDITOR_COMPILER_BORLAND</u></td></tr>
+<tr><th id="20">20</th><td><u>#elif defined(__CODEGEARC__)</u></td></tr>
+<tr><th id="21">21</th><td>    <u>#define NODE_EDITOR_COMPILER "CodeGear C++ Builder"</u></td></tr>
+<tr><th id="22">22</th><td>    <u>#define NODE_EDITOR_COMPILER_CODEGEAR</u></td></tr>
+<tr><th id="23">23</th><td><u>#elif defined(__INTEL_COMPILER) || defined(__ICL)</u></td></tr>
+<tr><th id="24">24</th><td>    <u>#define NODE_EDITOR_COMPILER "Intel C++"</u></td></tr>
+<tr><th id="25">25</th><td>    <u>#define NODE_EDITOR_COMPILER_INTEL</u></td></tr>
+<tr><th id="26">26</th><td><u>#elif defined(__xlC__) || defined(__IBMCPP__)</u></td></tr>
+<tr><th id="27">27</th><td>    <u>#define NODE_EDITOR_COMPILER "IBM XL C++"</u></td></tr>
+<tr><th id="28">28</th><td>    <u>#define NODE_EDITOR_COMPILER_IBM</u></td></tr>
+<tr><th id="29">29</th><td><u>#elif defined(__HP_aCC)</u></td></tr>
+<tr><th id="30">30</th><td>    <u>#define NODE_EDITOR_COMPILER "HP aC++"</u></td></tr>
+<tr><th id="31">31</th><td>    <u>#define NODE_EDITOR_COMPILER_HP</u></td></tr>
+<tr><th id="32">32</th><td><u>#elif defined(__WATCOMC__)</u></td></tr>
+<tr><th id="33">33</th><td>    <u>#define NODE_EDITOR_COMPILER "Watcom C++"</u></td></tr>
+<tr><th id="34">34</th><td>    <u>#define NODE_EDITOR_COMPILER_WATCOM</u></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="2">endif</span></u></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifndef</span> <a class="macro" href="#6" data-ref="_M/NODE_EDITOR_COMPILER">NODE_EDITOR_COMPILER</a></u></td></tr>
+<tr><th id="37">37</th><td>    <u>#error "Current compiler is not supported."</u></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/Connection.cpp.html'>qv2ray/3rdparty/QNodeEditor/src/Connection.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

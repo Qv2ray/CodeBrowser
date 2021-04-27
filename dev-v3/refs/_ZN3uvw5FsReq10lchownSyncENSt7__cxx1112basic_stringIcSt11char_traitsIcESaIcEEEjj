@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1326' type='bool uvw::FsReq::lchownSync(std::string path, uvw::Uid uid, uvw::Gid gid)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='531' ll='535' type='bool uvw::FsReq::lchownSync(std::string path, uvw::Uid uid, uvw::Gid gid)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1319'>/**
+     * @brief Sync [lchown](https://linux.die.net/man/2/lchown).
+     * @param path Path, as described in the official documentation.
+     * @param uid UID, as described in the official documentation.
+     * @param gid GID, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

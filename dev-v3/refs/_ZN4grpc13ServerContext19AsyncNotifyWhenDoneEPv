@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/server_context.h' l='232' ll='235' type='void grpc::ServerContext::AsyncNotifyWhenDone(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='227'>/// Async only. Has to be called before the rpc starts.
+  /// Returns the tag in completion queue when the rpc finishes.
+  /// IsCancelled() can then be called to check whether the rpc was cancelled.
+  /// TODO(vjpai): Fix this so that the tag is returned even if the call never
+  /// starts (https://github.com/grpc/grpc/issues/10136).</doc>

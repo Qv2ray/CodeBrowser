@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='798' type='int uv_poll_init(uv_loop_t * loop, uv_poll_t * handle, int fd)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='68' ll='93' type='int uv_poll_init(uv_loop_t * loop, uv_poll_t * handle, int fd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='98' u='c' c='uv_poll_init_socket'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='40' u='a' c='_ZN3uvw10PollHandle4initEv'/>

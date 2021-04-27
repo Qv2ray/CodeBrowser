@@ -1,0 +1,6 @@
+<dec f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='110' type='void RouteEditor::RenameItemTag(ROUTE_EDIT_MODE mode, const QString originalTag, QString * newTag)'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='950' u='c' c='_ZN11RouteEditor18on_editBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='1014' u='c' c='_ZN11RouteEditor18on_editBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='1055' u='c' c='_ZN11RouteEditor24on_ruleRenameBtn_clickedEv'/>
+<def f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='123' ll='266' type='void RouteEditor::RenameItemTag(ROUTE_EDIT_MODE mode, const QString originalTag, QString * newTag)'/>
+<doc f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='122'>// Do not use reference here, we need deep copy of EVERY QString.</doc>

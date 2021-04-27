@@ -1,0 +1,32 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='192' macro='1' type='12'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='123' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='188' u='r' c='uv__socket_sockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='285' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='763' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='417' u='r' c='uv__stream_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='578' u='r' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='601' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='660' c='uv_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='791' c='uv__handle_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='989' u='r' c='uv__handle_type'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1260' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1260' u='r' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1292' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1292' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1349' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1349' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1402' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1402' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1558' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1558' u='r' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='125' u='r' c='uv_tcp_init_ex'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='212' u='r' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='212' u='r' c='uv__tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='365' u='r' c='uv_guess_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='135' macro='1' c='uv_handle_size'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='282' u='r' c='uv_tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='351' u='r' c='uv_tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='521' macro='1' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='6' macro='1' c='uv_handle_type_name'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='35'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='167' c='_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperI14uv_handle_typeEE'/>

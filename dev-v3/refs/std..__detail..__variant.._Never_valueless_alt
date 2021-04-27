@@ -1,0 +1,26 @@
+<inh f='include/c++/10/type_traits' l='57' c='std::integral_constant'/>
+<def f='include/c++/10/bits/std_function.h' l='730' ll='733'/>
+<def f='include/c++/10/bits/stl_vector.h' l='1975' ll='1978'/>
+<def f='include/c++/10/variant' l='354' ll='356'/>
+<use f='include/c++/10/variant' l='372' c='_ZNSt8__detail9__variant17__never_valuelessEv'/>
+<use f='include/c++/10/variant' l='1476' c='_ZNSt7variant7emplaceEDpOTL0_0_'/>
+<use f='include/c++/10/variant' l='1523' c='_ZNSt7variant7emplaceESt16initializer_listITL0_0_EDpOTL0_1_'/>
+<def f='include/c++/10/bits/basic_string.h' l='6925' ll='6931'/>
+<inh f='include/c++/10/type_traits' l='57' c='std::integral_constant'/>
+<def f='include/c++/10/bits/unique_ptr.h' l='1001' ll='1004'/>
+<inh f='include/c++/10/type_traits' l='57' c='std::integral_constant'/>
+<def f='include/c++/10/bits/shared_ptr.h' l='901' ll='904'/>
+<inh f='include/c++/10/type_traits' l='57' c='std::integral_constant'/>
+<def f='include/c++/10/bits/shared_ptr.h' l='908' ll='911'/>
+<doc f='include/c++/10/bits/std_function.h' l='728'>// Provide the strong exception-safety guarantee when emplacing a
+    // function into a variant.</doc>
+<doc f='include/c++/10/bits/stl_vector.h' l='1973'>// Provide the strong exception-safety guarantee when emplacing a
+    // vector into a variant, but only if move assignment cannot throw.</doc>
+<doc f='include/c++/10/bits/basic_string.h' l='6923'>// Provide the strong exception-safety guarantee when emplacing a
+    // basic_string into a variant, but only if moving the string cannot throw.</doc>
+<doc f='include/c++/10/bits/unique_ptr.h' l='999'>// Provide the strong exception-safety guarantee when emplacing a
+    // unique_ptr into a variant.</doc>
+<doc f='include/c++/10/bits/shared_ptr.h' l='899'>// Provide the strong exception-safety guarantee when emplacing a
+    // shared_ptr into a variant.</doc>
+<doc f='include/c++/10/bits/shared_ptr.h' l='906'>// Provide the strong exception-safety guarantee when emplacing a
+    // weak_ptr into a variant.</doc>

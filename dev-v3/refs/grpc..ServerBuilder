@@ -1,0 +1,58 @@
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='389'/>
+<use f='include/grpcpp/server.h' l='191'/>
+<use f='include/grpcpp/impl/server_builder_plugin.h' l='43' c='_ZN4grpc19ServerBuilderPlugin19UpdateServerBuilderEPNS_13ServerBuilderE'/>
+<def f='include/grpcpp/server_builder.h' l='52' ll='300'/>
+<use f='include/grpcpp/server_builder.h' l='74' c='_ZN4grpc13ServerBuilder15RegisterServiceEPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='91' c='_ZN4grpc13ServerBuilder16AddListeningPortERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrINS_17ServerCredentialsEEPi'/>
+<use f='include/grpcpp/server_builder.h' l='135' c='_ZN4grpc13ServerBuilder15RegisterServiceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='141' c='_ZN4grpc13ServerBuilder27RegisterAsyncGenericServiceEPNS_19AsyncGenericServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='148' c='_ZN4grpc13ServerBuilder24SetMaxReceiveMessageSizeEi'/>
+<use f='include/grpcpp/server_builder.h' l='155' c='_ZN4grpc13ServerBuilder21SetMaxSendMessageSizeEi'/>
+<use f='include/grpcpp/server_builder.h' l='161' c='_ZN4grpc13ServerBuilder17SetMaxMessageSizeEi'/>
+<use f='include/grpcpp/server_builder.h' l='170' c='_ZN4grpc13ServerBuilder36SetCompressionAlgorithmSupportStatusE26grpc_compression_algorithmb'/>
+<use f='include/grpcpp/server_builder.h' l='175' c='_ZN4grpc13ServerBuilder26SetDefaultCompressionLevelE22grpc_compression_level'/>
+<use f='include/grpcpp/server_builder.h' l='180' c='_ZN4grpc13ServerBuilder30SetDefaultCompressionAlgorithmE26grpc_compression_algorithm'/>
+<use f='include/grpcpp/server_builder.h' l='184' c='_ZN4grpc13ServerBuilder16SetResourceQuotaERKNS_13ResourceQuotaE'/>
+<use f='include/grpcpp/server_builder.h' l='186' c='_ZN4grpc13ServerBuilder9SetOptionESt10unique_ptrINS_19ServerBuilderOptionESt14default_deleteIS2_EE'/>
+<use f='include/grpcpp/server_builder.h' l='197' c='_ZN4grpc13ServerBuilder19SetSyncServerOptionENS0_16SyncServerOptionEi'/>
+<use f='include/grpcpp/server_builder.h' l='202' c='_ZN4grpc13ServerBuilder18AddChannelArgumentERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_'/>
+<use f='include/grpcpp/server_builder.h' l='213' c='_ZN4grpc13ServerBuilder16EnableWorkaroundE20grpc_workaround_list'/>
+<size>208</size>
+<doc f='include/grpcpp/server_builder.h' l='51'>/// A builder class for the creation and startup of \a grpc::Server instances.</doc>
+<fun r='_ZN4grpc13ServerBuilderC1Ev'/>
+<fun r='_ZN4grpc13ServerBuilderD1Ev'/>
+<fun r='_ZN4grpc13ServerBuilder13BuildAndStartEv'/>
+<fun r='_ZN4grpc13ServerBuilder15RegisterServiceEPNS_7ServiceE'/>
+<fun r='_ZN4grpc13ServerBuilder16AddListeningPortERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrINS_17ServerCredentialsEEPi'/>
+<fun r='_ZN4grpc13ServerBuilder18AddCompletionQueueEb'/>
+<fun r='_ZN4grpc13ServerBuilder15RegisterServiceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<fun r='_ZN4grpc13ServerBuilder27RegisterAsyncGenericServiceEPNS_19AsyncGenericServiceE'/>
+<fun r='_ZN4grpc13ServerBuilder24SetMaxReceiveMessageSizeEi'/>
+<fun r='_ZN4grpc13ServerBuilder21SetMaxSendMessageSizeEi'/>
+<fun r='_ZN4grpc13ServerBuilder17SetMaxMessageSizeEi'/>
+<fun r='_ZN4grpc13ServerBuilder36SetCompressionAlgorithmSupportStatusE26grpc_compression_algorithmb'/>
+<fun r='_ZN4grpc13ServerBuilder26SetDefaultCompressionLevelE22grpc_compression_level'/>
+<fun r='_ZN4grpc13ServerBuilder30SetDefaultCompressionAlgorithmE26grpc_compression_algorithm'/>
+<fun r='_ZN4grpc13ServerBuilder16SetResourceQuotaERKNS_13ResourceQuotaE'/>
+<fun r='_ZN4grpc13ServerBuilder9SetOptionESt10unique_ptrINS_19ServerBuilderOptionESt14default_deleteIS2_EE'/>
+<fun r='_ZN4grpc13ServerBuilder19SetSyncServerOptionENS0_16SyncServerOptionEi'/>
+<fun r='_ZN4grpc13ServerBuilder18AddChannelArgumentERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_'/>
+<fun r='_ZN4grpc13ServerBuilder24InternalAddPluginFactoryEPFSt10unique_ptrINS_19ServerBuilderPluginESt14default_deleteIS2_EEvE'/>
+<fun r='_ZN4grpc13ServerBuilder16EnableWorkaroundE20grpc_workaround_list'/>
+<fun r='_ZN4grpc13ServerBuilder5portsEv'/>
+<fun r='_ZN4grpc13ServerBuilder8servicesEv'/>
+<fun r='_ZN4grpc13ServerBuilder7optionsEv'/>
+<mbr r='grpc::ServerBuilder::max_receive_message_size_' o='64' t='int'/>
+<mbr r='grpc::ServerBuilder::max_send_message_size_' o='96' t='int'/>
+<mbr r='grpc::ServerBuilder::options_' o='128' t='std::vector&lt;std::unique_ptr&lt;ServerBuilderOption&gt;&gt;'/>
+<mbr r='grpc::ServerBuilder::services_' o='320' t='std::vector&lt;std::unique_ptr&lt;NamedService&gt;&gt;'/>
+<mbr r='grpc::ServerBuilder::ports_' o='512' t='std::vector&lt;Port&gt;'/>
+<mbr r='grpc::ServerBuilder::sync_server_settings_' o='704' t='grpc::ServerBuilder::SyncServerSettings'/>
+<mbr r='grpc::ServerBuilder::cqs_' o='832' t='std::vector&lt;ServerCompletionQueue *&gt;'/>
+<mbr r='grpc::ServerBuilder::creds_' o='1024' t='std::shared_ptr&lt;ServerCredentials&gt;'/>
+<mbr r='grpc::ServerBuilder::plugins_' o='1152' t='std::vector&lt;std::unique_ptr&lt;ServerBuilderPlugin&gt;&gt;'/>
+<mbr r='grpc::ServerBuilder::resource_quota_' o='1344' t='grpc_resource_quota *'/>
+<mbr r='grpc::ServerBuilder::generic_service_' o='1408' t='grpc::AsyncGenericService *'/>
+<mbr r='grpc::ServerBuilder::maybe_default_compression_level_' o='1472' t='struct (anonymous struct at /usr/include/grpcpp/server_builder.h:291:3)'/>
+<mbr r='grpc::ServerBuilder::maybe_default_compression_algorithm_' o='1536' t='struct (anonymous struct at /usr/include/grpcpp/server_builder.h:295:3)'/>
+<mbr r='grpc::ServerBuilder::enabled_compression_algorithms_bitset_' o='1600' t='uint32_t'/>

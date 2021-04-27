@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QvMessageBus.cpp source code [qv2ray/src/ui/messaging/QvMessageBus.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/messaging/QvMessageBus.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>ui</a>/<a href='./'>messaging</a>/<a href='QvMessageBus.cpp.html'>QvMessageBus.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="QvMessageBus.hpp.html">"QvMessageBus.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../base/Qv2rayBase.hpp.html">"base/Qv2rayBase.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include &lt;QMetaEnum&gt;</u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">ui</span>::<span class="namespace">messaging</span></td></tr>
+<tr><th id="8">8</th><td>{</td></tr>
+<tr><th id="9">9</th><td>    <a class="type" href="QvMessageBus.hpp.html#Qv2ray::ui::messaging::QvMessageBusObject" title='Qv2ray::ui::messaging::QvMessageBusObject' data-ref="Qv2ray::ui::messaging::QvMessageBusObject" data-ref-filename="Qv2ray..ui..messaging..QvMessageBusObject">QvMessageBusObject</a>::<dfn class="decl def fn" id="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev" title='Qv2ray::ui::messaging::QvMessageBusObject::QvMessageBusObject' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObjectC1Ev">QvMessageBusObject</dfn>()</td></tr>
+<tr><th id="10">10</th><td>    {</td></tr>
+<tr><th id="11">11</th><td>    }</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td>    <em>void</em> <a class="type" href="QvMessageBus.hpp.html#Qv2ray::ui::messaging::QvMessageBusObject" title='Qv2ray::ui::messaging::QvMessageBusObject' data-ref="Qv2ray::ui::messaging::QvMessageBusObject" data-ref-filename="Qv2ray..ui..messaging..QvMessageBusObject">QvMessageBusObject</a>::<dfn class="decl def fn" id="_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE" title='Qv2ray::ui::messaging::QvMessageBusObject::EmitGlobalSignal' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE">EmitGlobalSignal</dfn>(<em>const</em> <a class="type" href="QvMessageBus.hpp.html#Qv2ray::ui::messaging::QvMBMessage" title='Qv2ray::ui::messaging::QvMBMessage' data-ref="Qv2ray::ui::messaging::QvMBMessage" data-ref-filename="Qv2ray..ui..messaging..QvMBMessage">QvMBMessage</a> &amp;<dfn class="local col1 decl" id="1msg" title='msg' data-type='const Qv2ray::ui::messaging::QvMBMessage &amp;' data-ref="1msg" data-ref-filename="1msg">msg</dfn>)</td></tr>
+<tr><th id="14">14</th><td>    {</td></tr>
+<tr><th id="15">15</th><td>        <span class='type' title='QMetaEnum' data-ref="QMetaEnum" data-ref-filename="QMetaEnum">QMetaEnum</span> <dfn class="local col2 decl" id="2metaEnum" title='metaEnum' data-type='QMetaEnum' data-ref="2metaEnum" data-ref-filename="2metaEnum">metaEnum</dfn> = <span class='type' title='QMetaEnum' data-ref="QMetaEnum" data-ref-filename="QMetaEnum">QMetaEnum</span>::<span class='ref fn' title='QMetaEnum::fromType' data-ref="_ZN9QMetaEnum8fromTypeEv" data-ref-filename="_ZN9QMetaEnum8fromTypeEv">fromType</span>&lt;<a class="type" href="QvMessageBus.hpp.html#Qv2ray::ui::messaging::QvMBMessage" title='Qv2ray::ui::messaging::QvMBMessage' data-ref="Qv2ray::ui::messaging::QvMBMessage" data-ref-filename="Qv2ray..ui..messaging..QvMBMessage">QvMBMessage</a>&gt;();</td></tr>
+<tr><th id="16">16</th><td>        <a class="macro" href="../../base/Qv2rayLog.hpp.html#22" title="::Qv2ray::base::__QV2RAY_LOG_FUNC__(0, __PRETTY_FUNCTION__, 16, (MODULE_MESSAGING), (&quot;Emitting signal: &quot; + QString(metaEnum.valueToKey(msg))));;" data-ref="_M/LOG">LOG</a>(<a class="ref" href="../../base/Qv2rayLog.hpp.html#MODULE_MESSAGING" title='MODULE_MESSAGING' data-ref="MODULE_MESSAGING" data-ref-filename="MODULE_MESSAGING">MODULE_MESSAGING</a>, <q>"Emitting signal: "</q> <span class='ref fn' title='operator+' data-ref="_ZplPKcRK7QString" data-ref-filename="_ZplPKcRK7QString">+</span> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span><span class='ref fn' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc">(</span><a class="local col2 ref" href="#2metaEnum" title='metaEnum' data-ref="2metaEnum" data-ref-filename="2metaEnum">metaEnum</a>.<span class='ref fn' title='QMetaEnum::valueToKey' data-ref="_ZNK9QMetaEnum10valueToKeyEi" data-ref-filename="_ZNK9QMetaEnum10valueToKeyEi">valueToKey</span>(<a class="local col1 ref" href="#1msg" title='msg' data-ref="1msg" data-ref-filename="1msg">msg</a>)));</td></tr>
+<tr><th id="17">17</th><td>        <span class="macro" title="" data-ref="_M/emit">emit</span> <a class="member fn" href="QvMessageBus.hpp.html#_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" title='Qv2ray::ui::messaging::QvMessageBusObject::QvSendMessage' data-ref="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE" data-ref-filename="_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE">QvSendMessage</a>(<a class="local col1 ref" href="#1msg" title='msg' data-ref="1msg" data-ref-filename="1msg">msg</a>);</td></tr>
+<tr><th id="18">18</th><td>    }</td></tr>
+<tr><th id="19">19</th><td>} <i>// namespace Qv2ray::ui::messaging</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

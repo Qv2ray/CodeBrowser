@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ResultMetadata.h source code [qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::ResultMetadata "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='ResultMetadata.h.html'>ResultMetadata.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../../../include/c++/10/map.html">&lt;map&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../../../include/c++/10/list.html">&lt;list&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>class</b> <a class="type" href="ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray" id="ZXing::ByteArray">ByteArray</a>;</td></tr>
+<tr><th id="27">27</th><td><b>class</b> <dfn class="type" id="ZXing::CustomData" title='ZXing::CustomData' data-ref="ZXing::CustomData" data-ref-filename="ZXing..CustomData">CustomData</dfn>;</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc">* <span class="command">@author</span> Sean Owen</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="32">32</th><td><b>class</b> <dfn class="type def" id="ZXing::ResultMetadata" title='ZXing::ResultMetadata' data-ref="ZXing::ResultMetadata" data-ref-filename="ZXing..ResultMetadata">ResultMetadata</dfn></td></tr>
+<tr><th id="33">33</th><td>{</td></tr>
+<tr><th id="34">34</th><td><b>public</b>:</td></tr>
+<tr><th id="35">35</th><td>	</td></tr>
+<tr><th id="36">36</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc">	* Represents some type of metadata about the result of the decoding that the decoder</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc">	* wishes to communicate back to the caller.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc">	*/</i></td></tr>
+<tr><th id="40">40</th><td>	<b>enum</b> <dfn class="type def" id="ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</dfn> {</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">		* Unspecified, application-specific metadata. Maps to an unspecified {<span class="command">@link</span><span class="verb"> CustomData}.</span></i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"><span class="verb"></span><span class="verb">		*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="45">45</th><td><span class="verb"></span>		<dfn class="enum" id="ZXing::ResultMetadata::OTHER" title='ZXing::ResultMetadata::OTHER' data-ref="ZXing::ResultMetadata::OTHER" data-ref-filename="ZXing..ResultMetadata..OTHER">OTHER</dfn>,</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">		* Denotes the likely approximate orientation of the barcode in the image. This value</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc">		* is given as degrees rotated clockwise from the normal, upright orientation.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc">		* For example a 1D barcode which was found by reading top-to-bottom would be</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">		* said to have orientation "90". This key maps to an {<span class="command">@link</span><span class="verb"> Integer} whose</span></i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"> value is in the range [0,360).</span></i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"><span class="verb"></span><span class="verb">		*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="54">54</th><td><span class="verb"></span>		<dfn class="enum" id="ZXing::ResultMetadata::ORIENTATION" title='ZXing::ResultMetadata::ORIENTATION' data-ref="ZXing::ResultMetadata::ORIENTATION" data-ref-filename="ZXing..ResultMetadata..ORIENTATION">ORIENTATION</dfn>,</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">		* <span class="tag">&lt;p&gt;</span>2D barcode formats typically encode text, but allow for a sort of 'byte mode'</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">		* which is sometimes used to encode binary data. While {<span class="command">@link</span><span class="verb"> Result} makes available</span></i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"> the complete raw bytes in the barcode for these formats, it does not offer the bytes</span></i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"> from the byte segments alone.&lt;/p&gt;</span></i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"></span></i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"> &lt;p&gt;This maps to a {@link java.util.List} of byte arrays corresponding to the</span></i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"> raw bytes in the byte segments in the barcode, in order.&lt;/p&gt;</span></i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"><span class="verb"></span><span class="verb">		*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="65">65</th><td><span class="verb"></span>		<dfn class="enum" id="ZXing::ResultMetadata::BYTE_SEGMENTS" title='ZXing::ResultMetadata::BYTE_SEGMENTS' data-ref="ZXing::ResultMetadata::BYTE_SEGMENTS" data-ref-filename="ZXing..ResultMetadata..BYTE_SEGMENTS">BYTE_SEGMENTS</dfn>,</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">		* Error correction level used, if applicable. The value type depends on the</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">		* format, but is typically a String.</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">		*/</i></td></tr>
+<tr><th id="71">71</th><td>		<dfn class="enum" id="ZXing::ResultMetadata::ERROR_CORRECTION_LEVEL" title='ZXing::ResultMetadata::ERROR_CORRECTION_LEVEL' data-ref="ZXing::ResultMetadata::ERROR_CORRECTION_LEVEL" data-ref-filename="ZXing..ResultMetadata..ERROR_CORRECTION_LEVEL">ERROR_CORRECTION_LEVEL</dfn>,</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">		* For some periodicals, indicates the issue number as an {<span class="command">@link</span><span class="verb"> Integer}.</span></i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"><span class="verb"></span><span class="verb">		*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="76">76</th><td><span class="verb"></span>		<dfn class="enum" id="ZXing::ResultMetadata::ISSUE_NUMBER" title='ZXing::ResultMetadata::ISSUE_NUMBER' data-ref="ZXing::ResultMetadata::ISSUE_NUMBER" data-ref-filename="ZXing..ResultMetadata..ISSUE_NUMBER">ISSUE_NUMBER</dfn>,</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">		* For some products, indicates the suggested retail price in the barcode as a</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">		* formatted {<span class="command">@link</span><span class="verb"> String}.</span></i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"><span class="verb"></span><span class="verb">		*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="82">82</th><td><span class="verb"></span>		<dfn class="enum" id="ZXing::ResultMetadata::SUGGESTED_PRICE" title='ZXing::ResultMetadata::SUGGESTED_PRICE' data-ref="ZXing::ResultMetadata::SUGGESTED_PRICE" data-ref-filename="ZXing..ResultMetadata..SUGGESTED_PRICE">SUGGESTED_PRICE</dfn>,</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">		* For some products, the possible country of manufacture as a {<span class="command">@link</span><span class="verb"> String} denoting the</span></i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"><span class="verb"></span>		*<span class="verb"> ISO country code. Some map to multiple possible countries, like "US/CA".</span></i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"><span class="verb"></span><span class="verb">		*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="88">88</th><td><span class="verb"></span>		<dfn class="enum" id="ZXing::ResultMetadata::POSSIBLE_COUNTRY" title='ZXing::ResultMetadata::POSSIBLE_COUNTRY' data-ref="ZXing::ResultMetadata::POSSIBLE_COUNTRY" data-ref-filename="ZXing..ResultMetadata..POSSIBLE_COUNTRY">POSSIBLE_COUNTRY</dfn>,</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">		* For some products, the extension text</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">		*/</i></td></tr>
+<tr><th id="93">93</th><td>		<dfn class="enum" id="ZXing::ResultMetadata::UPC_EAN_EXTENSION" title='ZXing::ResultMetadata::UPC_EAN_EXTENSION' data-ref="ZXing::ResultMetadata::UPC_EAN_EXTENSION" data-ref-filename="ZXing..ResultMetadata..UPC_EAN_EXTENSION">UPC_EAN_EXTENSION</dfn>,</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">		* PDF417-specific metadata</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">		*/</i></td></tr>
+<tr><th id="98">98</th><td>		<dfn class="enum" id="ZXing::ResultMetadata::PDF417_EXTRA_METADATA" title='ZXing::ResultMetadata::PDF417_EXTRA_METADATA' data-ref="ZXing::ResultMetadata::PDF417_EXTRA_METADATA" data-ref-filename="ZXing..ResultMetadata..PDF417_EXTRA_METADATA">PDF417_EXTRA_METADATA</dfn>,</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">		* If the code format supports structured append and the current scanned code is part of one then the</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">		* sequence number is given with it.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">		*/</i></td></tr>
+<tr><th id="104">104</th><td>		<dfn class="enum" id="ZXing::ResultMetadata::STRUCTURED_APPEND_SEQUENCE" title='ZXing::ResultMetadata::STRUCTURED_APPEND_SEQUENCE' data-ref="ZXing::ResultMetadata::STRUCTURED_APPEND_SEQUENCE" data-ref-filename="ZXing..ResultMetadata..STRUCTURED_APPEND_SEQUENCE">STRUCTURED_APPEND_SEQUENCE</dfn>,</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">		* If the code format supports structured append and the current scanned code is part of one then the</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">		* total code count is given with it.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">		*/</i></td></tr>
+<tr><th id="110">110</th><td>		<dfn class="enum" id="ZXing::ResultMetadata::STRUCTURED_APPEND_CODE_COUNT" title='ZXing::ResultMetadata::STRUCTURED_APPEND_CODE_COUNT' data-ref="ZXing::ResultMetadata::STRUCTURED_APPEND_CODE_COUNT" data-ref-filename="ZXing..ResultMetadata..STRUCTURED_APPEND_CODE_COUNT">STRUCTURED_APPEND_CODE_COUNT</dfn>,</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>		<i class="doc">/**</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">		* If the code format supports structured append and the current scanned code is part of one then the</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">		* parity is given with it.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">		*/</i></td></tr>
+<tr><th id="116">116</th><td>		<dfn class="enum" id="ZXing::ResultMetadata::STRUCTURED_APPEND_PARITY" title='ZXing::ResultMetadata::STRUCTURED_APPEND_PARITY' data-ref="ZXing::ResultMetadata::STRUCTURED_APPEND_PARITY" data-ref-filename="ZXing..ResultMetadata..STRUCTURED_APPEND_PARITY">STRUCTURED_APPEND_PARITY</dfn>,</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td>	};</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td>	<em>int</em> <dfn class="decl fn" id="_ZNK5ZXing14ResultMetadata6getIntENS0_3KeyEi" title='ZXing::ResultMetadata::getInt' data-ref="_ZNK5ZXing14ResultMetadata6getIntENS0_3KeyEi" data-ref-filename="_ZNK5ZXing14ResultMetadata6getIntENS0_3KeyEi">getInt</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col4 decl" id="14key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="14key" data-ref-filename="14key">key</dfn>, <em>int</em> <dfn class="local col5 decl" id="15fallbackValue" title='fallbackValue' data-type='int' data-ref="15fallbackValue" data-ref-filename="15fallbackValue">fallbackValue</dfn> = <var>0</var>) <em>const</em>;</td></tr>
+<tr><th id="121">121</th><td>	<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::wstring" title='std::wstring' data-type='basic_string&lt;wchar_t&gt;' data-ref="std::wstring" data-ref-filename="std..wstring">wstring</a> <dfn class="decl fn" id="_ZNK5ZXing14ResultMetadata9getStringB5cxx11ENS0_3KeyE" title='ZXing::ResultMetadata::getString' data-ref="_ZNK5ZXing14ResultMetadata9getStringB5cxx11ENS0_3KeyE" data-ref-filename="_ZNK5ZXing14ResultMetadata9getStringB5cxx11ENS0_3KeyE">getString</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col6 decl" id="16key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="16key" data-ref-filename="16key">key</dfn>) <em>const</em>;</td></tr>
+<tr><th id="122">122</th><td>	<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_list.h.html#std::__cxx11::list" title='std::__cxx11::list' data-ref="std::__cxx11::list" data-ref-filename="std..__cxx11..list">list</a>&lt;<a class="type" href="ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray">ByteArray</a>&gt; <dfn class="decl fn" id="_ZNK5ZXing14ResultMetadata16getByteArrayListB5cxx11ENS0_3KeyE" title='ZXing::ResultMetadata::getByteArrayList' data-ref="_ZNK5ZXing14ResultMetadata16getByteArrayListB5cxx11ENS0_3KeyE" data-ref-filename="_ZNK5ZXing14ResultMetadata16getByteArrayListB5cxx11ENS0_3KeyE">getByteArrayList</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col7 decl" id="17key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="17key" data-ref-filename="17key">key</dfn>) <em>const</em>;</td></tr>
+<tr><th id="123">123</th><td>	<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::CustomData" title='ZXing::CustomData' data-ref="ZXing::CustomData" data-ref-filename="ZXing..CustomData">CustomData</a>&gt; <dfn class="decl fn" id="_ZNK5ZXing14ResultMetadata13getCustomDataENS0_3KeyE" title='ZXing::ResultMetadata::getCustomData' data-ref="_ZNK5ZXing14ResultMetadata13getCustomDataENS0_3KeyE" data-ref-filename="_ZNK5ZXing14ResultMetadata13getCustomDataENS0_3KeyE">getCustomData</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col8 decl" id="18key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="18key" data-ref-filename="18key">key</dfn>) <em>const</em>;</td></tr>
+<tr><th id="124">124</th><td>	</td></tr>
+<tr><th id="125">125</th><td>	<em>void</em> <dfn class="decl fn" id="_ZN5ZXing14ResultMetadata3putENS0_3KeyEi" title='ZXing::ResultMetadata::put' data-ref="_ZN5ZXing14ResultMetadata3putENS0_3KeyEi" data-ref-filename="_ZN5ZXing14ResultMetadata3putENS0_3KeyEi">put</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col9 decl" id="19key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="19key" data-ref-filename="19key">key</dfn>, <em>int</em> <dfn class="local col0 decl" id="20value" title='value' data-type='int' data-ref="20value" data-ref-filename="20value">value</dfn>);</td></tr>
+<tr><th id="126">126</th><td>	<em>void</em> <dfn class="decl fn" id="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE" title='ZXing::ResultMetadata::put' data-ref="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE" data-ref-filename="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE">put</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col1 decl" id="21key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="21key" data-ref-filename="21key">key</dfn>, <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::wstring" title='std::wstring' data-type='basic_string&lt;wchar_t&gt;' data-ref="std::wstring" data-ref-filename="std..wstring">wstring</a>&amp; <dfn class="local col2 decl" id="22value" title='value' data-type='const std::wstring &amp;' data-ref="22value" data-ref-filename="22value">value</dfn>);</td></tr>
+<tr><th id="127">127</th><td>	<em>void</em> <dfn class="decl fn" id="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx114listINS_9ByteArrayESaIS4_EEE" title='ZXing::ResultMetadata::put' data-ref="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx114listINS_9ByteArrayESaIS4_EEE" data-ref-filename="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx114listINS_9ByteArrayESaIS4_EEE">put</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col3 decl" id="23key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="23key" data-ref-filename="23key">key</dfn>, <em>const</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_list.h.html#std::__cxx11::list" title='std::__cxx11::list' data-ref="std::__cxx11::list" data-ref-filename="std..__cxx11..list">list</a>&lt;<a class="type" href="ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray">ByteArray</a>&gt;&amp; <dfn class="local col4 decl" id="24value" title='value' data-type='const std::list&lt;ByteArray&gt; &amp;' data-ref="24value" data-ref-filename="24value">value</dfn>);</td></tr>
+<tr><th id="128">128</th><td>	<em>void</em> <dfn class="decl fn" id="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKSt10shared_ptrINS_10CustomDataEE" title='ZXing::ResultMetadata::put' data-ref="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKSt10shared_ptrINS_10CustomDataEE" data-ref-filename="_ZN5ZXing14ResultMetadata3putENS0_3KeyERKSt10shared_ptrINS_10CustomDataEE">put</dfn>(<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a> <dfn class="local col5 decl" id="25key" title='key' data-type='ZXing::ResultMetadata::Key' data-ref="25key" data-ref-filename="25key">key</dfn>, <em>const</em> <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::CustomData" title='ZXing::CustomData' data-ref="ZXing::CustomData" data-ref-filename="ZXing..CustomData">CustomData</a>&gt;&amp; <dfn class="local col6 decl" id="26value" title='value' data-type='const std::shared_ptr&lt;CustomData&gt; &amp;' data-ref="26value" data-ref-filename="26value">value</dfn>);</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td>	<em>void</em> <dfn class="decl fn" id="_ZN5ZXing14ResultMetadata6putAllERKS0_" title='ZXing::ResultMetadata::putAll' data-ref="_ZN5ZXing14ResultMetadata6putAllERKS0_" data-ref-filename="_ZN5ZXing14ResultMetadata6putAllERKS0_">putAll</dfn>(<em>const</em> <a class="type" href="#ZXing::ResultMetadata" title='ZXing::ResultMetadata' data-ref="ZXing::ResultMetadata" data-ref-filename="ZXing..ResultMetadata">ResultMetadata</a>&amp; <dfn class="local col7 decl" id="27other" title='other' data-type='const ZXing::ResultMetadata &amp;' data-ref="27other" data-ref-filename="27other">other</dfn>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><b>private</b>:</td></tr>
+<tr><th id="133">133</th><td>	<b>struct</b> <dfn class="type" id="ZXing::ResultMetadata::Value" title='ZXing::ResultMetadata::Value' data-ref="ZXing::ResultMetadata::Value" data-ref-filename="ZXing..ResultMetadata..Value">Value</dfn>;</td></tr>
+<tr><th id="134">134</th><td>	<b>struct</b> <dfn class="type" id="ZXing::ResultMetadata::IntegerValue" title='ZXing::ResultMetadata::IntegerValue' data-ref="ZXing::ResultMetadata::IntegerValue" data-ref-filename="ZXing..ResultMetadata..IntegerValue">IntegerValue</dfn>;</td></tr>
+<tr><th id="135">135</th><td>	<b>struct</b> <dfn class="type" id="ZXing::ResultMetadata::StringValue" title='ZXing::ResultMetadata::StringValue' data-ref="ZXing::ResultMetadata::StringValue" data-ref-filename="ZXing..ResultMetadata..StringValue">StringValue</dfn>;</td></tr>
+<tr><th id="136">136</th><td>	<b>struct</b> <dfn class="type" id="ZXing::ResultMetadata::ByteArrayListValue" title='ZXing::ResultMetadata::ByteArrayListValue' data-ref="ZXing::ResultMetadata::ByteArrayListValue" data-ref-filename="ZXing..ResultMetadata..ByteArrayListValue">ByteArrayListValue</dfn>;</td></tr>
+<tr><th id="137">137</th><td>	<b>struct</b> <dfn class="type" id="ZXing::ResultMetadata::CustomDataValue" title='ZXing::ResultMetadata::CustomDataValue' data-ref="ZXing::ResultMetadata::CustomDataValue" data-ref-filename="ZXing..ResultMetadata..CustomDataValue">CustomDataValue</dfn>;</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>	<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_map.h.html#std::map" title='std::map' data-ref="std::map" data-ref-filename="std..map">map</a>&lt;<a class="type" href="#ZXing::ResultMetadata::Key" title='ZXing::ResultMetadata::Key' data-ref="ZXing::ResultMetadata::Key" data-ref-filename="ZXing..ResultMetadata..Key">Key</a>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="#ZXing::ResultMetadata::Value" title='ZXing::ResultMetadata::Value' data-ref="ZXing::ResultMetadata::Value" data-ref-filename="ZXing..ResultMetadata..Value">Value</a>&gt;&gt; <dfn class="decl field" id="ZXing::ResultMetadata::_contents" title='ZXing::ResultMetadata::_contents' data-ref="ZXing::ResultMetadata::_contents" data-ref-filename="ZXing..ResultMetadata.._contents">_contents</dfn>;</td></tr>
+<tr><th id="140">140</th><td>};</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="143">143</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='MultiFormatReader.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

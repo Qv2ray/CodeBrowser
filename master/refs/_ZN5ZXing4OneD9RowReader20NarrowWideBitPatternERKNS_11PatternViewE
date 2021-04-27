@@ -1,0 +1,7 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='268' ll='282' type='static int ZXing::OneD::RowReader::NarrowWideBitPattern(const ZXing::PatternView &amp; view)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='328' u='c' c='_ZN5ZXing4OneD9RowReader23DecodeNarrowWidePatternERKNS_11PatternViewERKT_RKT0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='315' u='c' c='_ZN5ZXing4OneD20IsStartOrStopPatternERKNS_11PatternViewE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='264'>/**
+	 * @brief ToNarrowWidePattern takes a PatternView, calculates a NarrowWideThreshold and returns int where a &apos;0&apos; bit
+	 * means narrow and a &apos;1&apos; bit means &apos;wide&apos;.
+	 */</doc>

@@ -1,0 +1,94 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='311' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='93' ll='574'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='93'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='98' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='98' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<size>328</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='77'>/**
+ * @brief The UDPHandle handle.
+ *
+ * UDP handles encapsulate UDP communication for both clients and servers.&lt;br/&gt;
+ * By default, _IPv4_ is used as a template parameter. The handle already
+ * supports _IPv6_ out-of-the-box by using `uvw::IPv6`.
+ *
+ * To create an `UDPHandle` through a `Loop`, arguments follow:
+ *
+ * * An optional integer value that indicates optional flags used to initialize
+ * the socket.
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_init_ex)
+ * for further details.
+ */</doc>
+<fun r='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<fun r='_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<fun r='_ZN3uvw9UDPHandle4initEv'/>
+<fun r='_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<fun r='_ZN3uvw9UDPHandle7connectERK8sockaddr'/>
+<fun r='_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<fun r='_ZN3uvw9UDPHandle7connectENS_4AddrE'/>
+<fun r='_ZN3uvw9UDPHandle10disconnectEv'/>
+<fun r='_ZNK3uvw9UDPHandle4peerEv'/>
+<fun r='_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<fun r='_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<fun r='_ZNK3uvw9UDPHandle4sockEv'/>
+<fun r='_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE'/>
+<fun r='_ZN3uvw9UDPHandle13multicastLoopEb'/>
+<fun r='_ZN3uvw9UDPHandle12multicastTtlEi'/>
+<fun r='_ZN3uvw9UDPHandle18multicastInterfaceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw9UDPHandle9broadcastEb'/>
+<fun r='_ZN3uvw9UDPHandle3ttlEi'/>
+<fun r='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<fun r='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENS_4AddrEPcj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj'/>
+<fun r='_ZN3uvw9UDPHandle4recvEv'/>
+<fun r='_ZN3uvw9UDPHandle4stopEv'/>
+<fun r='_ZNK3uvw9UDPHandle13sendQueueSizeEv'/>
+<fun r='_ZNK3uvw9UDPHandle14sendQueueCountEv'/>
+<mbr r='uvw::UDPHandle::tag' o='2560' t='enum (anonymous enum at /home/runner/work/CodeBrowser/CodeBrowser/source/dev-v3/3rdparty/uvw/src/uvw/udp.h:572:5)'/>
+<mbr r='uvw::UDPHandle::flags' o='2592' t='unsigned int'/>
+<fun r='_ZN3uvw9UDPHandleC1ENS_14UnderlyingTypeIS0_8uv_udp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<fun r='_ZN3uvw9UDPHandle4initEv'/>
+<fun r='_ZN3uvw9UDPHandle4openENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw9UDPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<fun r='_ZN3uvw9UDPHandle7connectERK8sockaddr'/>
+<fun r='_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<fun r='_ZN3uvw9UDPHandle7connectENS_4AddrE'/>
+<fun r='_ZN3uvw9UDPHandle10disconnectEv'/>
+<fun r='_ZNK3uvw9UDPHandle4peerEv'/>
+<fun r='_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<fun r='_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<fun r='_ZNK3uvw9UDPHandle4sockEv'/>
+<fun r='_ZN3uvw9UDPHandle19multicastMembershipENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_7details12UVMembershipE'/>
+<fun r='_ZN3uvw9UDPHandle13multicastLoopEb'/>
+<fun r='_ZN3uvw9UDPHandle12multicastTtlEi'/>
+<fun r='_ZN3uvw9UDPHandle18multicastInterfaceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw9UDPHandle9broadcastEb'/>
+<fun r='_ZN3uvw9UDPHandle3ttlEi'/>
+<fun r='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<fun r='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<fun r='_ZN3uvw9UDPHandle4sendENS_4AddrEPcj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<fun r='_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj'/>
+<fun r='_ZN3uvw9UDPHandle4recvEv'/>
+<fun r='_ZN3uvw9UDPHandle4stopEv'/>
+<fun r='_ZNK3uvw9UDPHandle13sendQueueSizeEv'/>
+<fun r='_ZNK3uvw9UDPHandle14sendQueueCountEv'/>

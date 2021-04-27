@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1223' type='void uvw::FsReq::symlink(std::string old, std::string path, Flags&lt;uvw::FsReq::SymLink&gt; flags = Flags&lt;uvw::FsReq::SymLink&gt;{})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='477' ll='479' type='void uvw::FsReq::symlink(std::string old, std::string path, Flags&lt;uvw::FsReq::SymLink&gt; flags = Flags&lt;uvw::FsReq::SymLink&gt;{})'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1206'>/**
+     * @brief Async [symlink](http://linux.die.net/man/2/symlink).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::SYMLINK&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * Available flags are:
+     *
+     * * `FsReq::SymLink::DIR`: it indicates that the old path points to a
+     * directory.
+     * * `FsReq::SymLink::JUNCTION`: it requests that the symlink is created
+     * using junction points.
+     *
+     * @param old Old path, as described in the official documentation.
+     * @param path New path, as described in the official documentation.
+     * @param flags Optional additional flags.
+     */</doc>

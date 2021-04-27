@@ -1,0 +1,16 @@
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='241' ll='259' type='void grpc::ServerAsyncResponseWriter::Finish(const W &amp; msg, const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_unary_call.h' l='226'>/// Indicate that the stream is to be finished and request notification
+  /// when the server has sent the appropriate signals to the client to
+  /// end the call. Should not be used concurrently with other operations.
+  ///
+  /// \param[in] tag Tag identifying this request.
+  /// \param[in] status To be sent to the client as the result of the call.
+  /// \param[in] msg Message to be sent to the client.
+  ///
+  /// Side effect:
+  ///   - also sends initial metadata if not already sent (using the
+  ///     \a ServerContext associated with this call).
+  ///
+  /// Note: if \a status has a non-OK code, then \a msg will not be sent,
+  /// and the client will receive only the status with possible trailing
+  /// metadata.</doc>

@@ -1,0 +1,7 @@
+<dec f='include/grpcpp/impl/codegen/sync_stream.h' l='77' type='void grpc::internal::ServerStreamingInterface::SendInitialMetadata()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='71'>/// Block to send initial metadata to client.
+  /// This call is optional, but if it is used, it cannot be used concurrently
+  /// with or after the \a Finish method.
+  ///
+  /// The initial metadata that will be sent to the client will be
+  /// taken from the \a ServerContext associated with the call.</doc>

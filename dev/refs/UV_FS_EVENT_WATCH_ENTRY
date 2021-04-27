@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1594' type='1'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1587'>/*
+   * By default, if the fs event watcher is given a directory name, we will
+   * watch for all events in that directory. This flags overrides this behavior
+   * and makes fs_event report only changes to the directory entry itself. This
+   * flag does not affect individual files watched.
+   * This flag is currently not implemented yet on any backend.
+   */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='20'/>

@@ -1,0 +1,32 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='31' ll='81'/>
+<size>168</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.h' l='28'>/**
+* @author Guenther Grau
+*/</doc>
+<mbr r='ZXing::Pdf417::DetectionResult::_barcodeMetadata' o='0' t='ZXing::Pdf417::BarcodeMetadata'/>
+<mbr r='ZXing::Pdf417::DetectionResult::_detectionResultColumns' o='128' t='std::vector&lt;Nullable&lt;DetectionResultColumn&gt;&gt;'/>
+<mbr r='ZXing::Pdf417::DetectionResult::_boundingBox' o='320' t='Nullable&lt;ZXing::Pdf417::BoundingBox&gt;'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResultC1Ev'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResultC1ERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult4initERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult10allColumnsEv'/>
+<fun r='_ZNK5ZXing6Pdf41715DetectionResult18barcodeColumnCountEv'/>
+<fun r='_ZNK5ZXing6Pdf41715DetectionResult15barcodeRowCountEv'/>
+<fun r='_ZNK5ZXing6Pdf41715DetectionResult14barcodeECLevelEv'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult14setBoundingBoxERKNS0_11BoundingBoxE'/>
+<fun r='_ZNK5ZXing6Pdf41715DetectionResult14getBoundingBoxEv'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult14setBoundingBoxERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult9setColumnEiRKNS_8NullableINS0_21DetectionResultColumnEEE'/>
+<fun r='_ZNK5ZXing6Pdf41715DetectionResult6columnEi'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult6columnEi'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResultC1ERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult4initERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<fun r='_ZN5ZXing6Pdf41715DetectionResult10allColumnsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='267' c='_ZN5ZXing6Pdf417L5MergeERNS_8NullableINS0_21DetectionResultColumnEEES4_RNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='282' c='_ZN5ZXing6Pdf417L20IsValidBarcodeColumnERKNS0_15DetectionResultEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='287' c='_ZN5ZXing6Pdf417L14GetStartColumnERKNS0_15DetectionResultEiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='324' c='_ZN5ZXing6Pdf417L19CreateBarcodeMatrixERNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='357' c='_ZN5ZXing6Pdf417L19AdjustCodewordCountERKNS0_15DetectionResultERSt6vectorIS4_INS0_12BarcodeValueESaIS5_EESaIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='655' c='_ZN5ZXing6Pdf417L19CreateDecoderResultERNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='700' c='_ZN5ZXing6Pdf41715ScanningDecoder6DecodeERKNS_9BitMatrixERKNS_8NullableINS_11ResultPointEEES9_S9_S9_ii'/>
+<size>168</size>

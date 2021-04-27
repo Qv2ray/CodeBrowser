@@ -1,0 +1,21 @@
+<def f='include/c++/10/shared_mutex' l='404' ll='435'/>
+<use f='include/c++/10/shared_mutex' l='410' c='_ZNSt12shared_mutexC1ERKS_'/>
+<use f='include/c++/10/shared_mutex' l='411' c='_ZNSt12shared_mutexaSERKS_'/>
+<use f='include/c++/10/shared_mutex' l='411' c='_ZNSt12shared_mutexaSERKS_'/>
+<use f='include/c++/10/memory_resource' l='490' c='_ZNSt3pmr26synchronized_pool_resource15_M_alloc_tpoolsERSt10lock_guardISt12shared_mutexE'/>
+<use f='include/c++/10/memory_resource' l='491' c='_ZNSt3pmr26synchronized_pool_resource22_M_alloc_shared_tpoolsERSt10lock_guardISt12shared_mutexE'/>
+<use f='include/c++/10/memory_resource' l='498'/>
+<size>56</size>
+<doc f='include/c++/10/shared_mutex' l='403'>/// The standard shared mutex type.</doc>
+<fun r='_ZNSt12shared_mutexC1Ev'/>
+<fun r='_ZNSt12shared_mutexD1Ev'/>
+<fun r='_ZNSt12shared_mutexC1ERKS_'/>
+<fun r='_ZNSt12shared_mutexaSERKS_'/>
+<fun r='_ZNSt12shared_mutex4lockEv'/>
+<fun r='_ZNSt12shared_mutex8try_lockEv'/>
+<fun r='_ZNSt12shared_mutex6unlockEv'/>
+<fun r='_ZNSt12shared_mutex11lock_sharedEv'/>
+<fun r='_ZNSt12shared_mutex15try_lock_sharedEv'/>
+<fun r='_ZNSt12shared_mutex13unlock_sharedEv'/>
+<fun r='_ZNSt12shared_mutex13native_handleEv'/>
+<mbr r='std::shared_mutex::_M_impl' o='0' t='std::__shared_mutex_pthread'/>

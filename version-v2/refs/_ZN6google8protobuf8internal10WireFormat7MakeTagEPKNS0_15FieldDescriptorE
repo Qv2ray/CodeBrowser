@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/wire_format.h' l='183' type='static google::protobuf::uint32 google::protobuf::internal::WireFormat::MakeTag(const google::protobuf::FieldDescriptor * field)'/>
+<def f='include/google/protobuf/wire_format.h' l='294' ll='296' type='static google::protobuf::uint32 google::protobuf::internal::WireFormat::MakeTag(const google::protobuf::FieldDescriptor * field)'/>
+<doc f='include/google/protobuf/wire_format.h' l='178'>// Helper functions for encoding and decoding tags.  (Inlined below and in
+  // _inl.h)
+  //
+  // This is different from MakeTag(field-&gt;number(), field-&gt;type()) in the case
+  // of packed repeated fields.</doc>

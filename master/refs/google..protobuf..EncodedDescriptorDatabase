@@ -1,0 +1,24 @@
+<use f='include/google/protobuf/descriptor_database.h' l='169'/>
+<inh f='include/google/protobuf/descriptor_database.h' l='65' c='google::protobuf::DescriptorDatabase'/>
+<def f='include/google/protobuf/descriptor_database.h' l='280' ll='323'/>
+<use f='include/google/protobuf/descriptor_database.h' l='322' c='_ZN6google8protobuf25EncodedDescriptorDatabaseC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='322' c='_ZN6google8protobuf25EncodedDescriptorDatabaseaSERKS1_'/>
+<size>176</size>
+<doc f='include/google/protobuf/descriptor_database.h' l='275'>// Very similar to SimpleDescriptorDatabase, but stores all the descriptors
+// as raw bytes and generally tries to use as little memory as possible.
+//
+// The same caveats regarding FindFileContainingExtension() apply as with
+// SimpleDescriptorDatabase.</doc>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabaseC1Ev'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabaseD1Ev'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase3AddEPKvi'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase7AddCopyEPKvi'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase30FindNameOfFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS7_'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase27FindFileContainingExtensionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase23FindAllExtensionNumbersERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::EncodedDescriptorDatabase::index_' o='64' t='SimpleDescriptorDatabase::DescriptorIndex&lt;std::pair&lt;const void *, int&gt;&gt;'/>
+<mbr r='google::protobuf::EncodedDescriptorDatabase::files_to_delete_' o='1216' t='std::vector&lt;void *&gt;'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabase10MaybeParseESt4pairIPKviEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf25EncodedDescriptorDatabaseC1ERKS1_'/>

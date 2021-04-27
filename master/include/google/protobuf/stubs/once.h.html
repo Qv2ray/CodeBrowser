@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>once.h source code [include/google/protobuf/stubs/once.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="google::protobuf::GoogleOnceDynamic "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/google/protobuf/stubs/once.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>google</a>/<a href='..'>protobuf</a>/<a href='./'>stubs</a>/<a href='once.h.html'>once.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Protocol Buffers - Google's data interchange format</i></td></tr>
+<tr><th id="2">2</th><td><i>// Copyright 2008 Google Inc.  All rights reserved.</i></td></tr>
+<tr><th id="3">3</th><td><i>// <a href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a></i></td></tr>
+<tr><th id="4">4</th><td><i>//</i></td></tr>
+<tr><th id="5">5</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="7">7</th><td><i>// met:</i></td></tr>
+<tr><th id="8">8</th><td><i>//</i></td></tr>
+<tr><th id="9">9</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="10">10</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="12">12</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="13">13</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="14">14</th><td><i>// distribution.</i></td></tr>
+<tr><th id="15">15</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="16">16</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="17">17</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="18">18</th><td><i>//</i></td></tr>
+<tr><th id="19">19</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="20">20</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="21">21</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="22">22</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="23">23</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="24">24</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="25">25</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="26">26</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="27">27</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="28">28</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="29">29</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="30">30</th><td><i></i></td></tr>
+<tr><th id="31">31</th><td><i>// Author: kenton@google.com (Kenton Varda)</i></td></tr>
+<tr><th id="32">32</th><td><i>//</i></td></tr>
+<tr><th id="33">33</th><td><i>// emulates google3/base/once.h</i></td></tr>
+<tr><th id="34">34</th><td><i>//</i></td></tr>
+<tr><th id="35">35</th><td><i>// This header is intended to be included only by internal .cc files and</i></td></tr>
+<tr><th id="36">36</th><td><i>// generated .pb.cc files.  Users should not use this directly.</i></td></tr>
+<tr><th id="37">37</th><td><i>//</i></td></tr>
+<tr><th id="38">38</th><td><i>// This is basically a portable version of pthread_once().</i></td></tr>
+<tr><th id="39">39</th><td><i>//</i></td></tr>
+<tr><th id="40">40</th><td><i>// This header declares:</i></td></tr>
+<tr><th id="41">41</th><td><i>// * A type called ProtobufOnceType.</i></td></tr>
+<tr><th id="42">42</th><td><i>// * A macro GOOGLE_PROTOBUF_DECLARE_ONCE() which declares a variable of type</i></td></tr>
+<tr><th id="43">43</th><td><i>//   ProtobufOnceType.  This is the only legal way to declare such a variable.</i></td></tr>
+<tr><th id="44">44</th><td><i>//   The macro may only be used at the global scope (you cannot create local or</i></td></tr>
+<tr><th id="45">45</th><td><i>//   class member variables of this type).</i></td></tr>
+<tr><th id="46">46</th><td><i>// * A function GoogleOnceInit(ProtobufOnceType* once, void (*init_func)()).</i></td></tr>
+<tr><th id="47">47</th><td><i>//   This function, when invoked multiple times given the same ProtobufOnceType</i></td></tr>
+<tr><th id="48">48</th><td><i>//   object, will invoke init_func on the first call only, and will make sure</i></td></tr>
+<tr><th id="49">49</th><td><i>//   none of the calls return before that first call to init_func has finished.</i></td></tr>
+<tr><th id="50">50</th><td><i>// * The user can provide a parameter which GoogleOnceInit() forwards to the</i></td></tr>
+<tr><th id="51">51</th><td><i>//   user-provided function when it is called. Usage example:</i></td></tr>
+<tr><th id="52">52</th><td><i>//     int a = 10;</i></td></tr>
+<tr><th id="53">53</th><td><i>//     GoogleOnceInit(&amp;my_once, &amp;MyFunctionExpectingIntArgument, &amp;a);</i></td></tr>
+<tr><th id="54">54</th><td><i>// * This implementation guarantees that ProtobufOnceType is a POD (i.e. no</i></td></tr>
+<tr><th id="55">55</th><td><i>//   static initializer generated).</i></td></tr>
+<tr><th id="56">56</th><td><i>//</i></td></tr>
+<tr><th id="57">57</th><td><i>// This implements a way to perform lazy initialization.  It's more efficient</i></td></tr>
+<tr><th id="58">58</th><td><i>// than using mutexes as no lock is needed if initialization has already</i></td></tr>
+<tr><th id="59">59</th><td><i>// happened.</i></td></tr>
+<tr><th id="60">60</th><td><i>//</i></td></tr>
+<tr><th id="61">61</th><td><i>// Example usage:</i></td></tr>
+<tr><th id="62">62</th><td><i>//   void Init();</i></td></tr>
+<tr><th id="63">63</th><td><i>//   GOOGLE_PROTOBUF_DECLARE_ONCE(once_init);</i></td></tr>
+<tr><th id="64">64</th><td><i>//</i></td></tr>
+<tr><th id="65">65</th><td><i>//   // Calls Init() exactly once.</i></td></tr>
+<tr><th id="66">66</th><td><i>//   void InitOnce() {</i></td></tr>
+<tr><th id="67">67</th><td><i>//     GoogleOnceInit(&amp;once_init, &amp;Init);</i></td></tr>
+<tr><th id="68">68</th><td><i>//   }</i></td></tr>
+<tr><th id="69">69</th><td><i>//</i></td></tr>
+<tr><th id="70">70</th><td><i>// Note that if GoogleOnceInit() is called before main() has begun, it must</i></td></tr>
+<tr><th id="71">71</th><td><i>// only be called by the thread that will eventually call main() -- that is,</i></td></tr>
+<tr><th id="72">72</th><td><i>// the thread that performs dynamic initialization.  In general this is a safe</i></td></tr>
+<tr><th id="73">73</th><td><i>// assumption since people don't usually construct threads before main() starts,</i></td></tr>
+<tr><th id="74">74</th><td><i>// but it is technically not guaranteed.  Unfortunately, Win32 provides no way</i></td></tr>
+<tr><th id="75">75</th><td><i>// whatsoever to statically-initialize its synchronization primitives, so our</i></td></tr>
+<tr><th id="76">76</th><td><i>// only choice is to assume that dynamic initialization is single-threaded.</i></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="78">ifndef</span> <span class="macro" data-ref="_M/GOOGLE_PROTOBUF_STUBS_ONCE_H__">GOOGLE_PROTOBUF_STUBS_ONCE_H__</span></u></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_STUBS_ONCE_H__" data-ref="_M/GOOGLE_PROTOBUF_STUBS_ONCE_H__">GOOGLE_PROTOBUF_STUBS_ONCE_H__</dfn></u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#include <a href="../../../c++/10/mutex.html">&lt;mutex&gt;</a></u></td></tr>
+<tr><th id="82">82</th><td><u>#include <a href="../../../c++/10/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><b>namespace</b> <span class="namespace">google</span> {</td></tr>
+<tr><th id="85">85</th><td><b>namespace</b> <span class="namespace">protobuf</span> {</td></tr>
+<tr><th id="86">86</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><b>using</b> <dfn class="typedef" id="google::protobuf::internal::once_flag" title='google::protobuf::internal::once_flag' data-type='std::once_flag' data-ref="google::protobuf::internal::once_flag" data-ref-filename="google..protobuf..internal..once_flag">once_flag</dfn> = <span class="namespace">std::</span><a class="type" href="../../../c++/10/mutex.html#std::once_flag" title='std::once_flag' data-ref="std::once_flag" data-ref-filename="std..once_flag">once_flag</a>;</td></tr>
+<tr><th id="89">89</th><td><b>template</b> &lt;<b>typename</b>... Args&gt;</td></tr>
+<tr><th id="90">90</th><td><em>void</em> <dfn class="decl def fn" id="_ZN6google8protobuf8internal9call_onceEDpOT_" title='google::protobuf::internal::call_once' data-ref="_ZN6google8protobuf8internal9call_onceEDpOT_" data-ref-filename="_ZN6google8protobuf8internal9call_onceEDpOT_">call_once</dfn>(Args&amp;&amp;... <dfn class="local col9 decl" id="1449args" title='args' data-type='Args &amp;&amp;...' data-ref="1449args" data-ref-filename="1449args">args</dfn> ) {</td></tr>
+<tr><th id="91">91</th><td>  <span class="namespace">std::</span>call_once(<span class="namespace">std::</span>forward&lt;Args&gt;(<a class="local col9 ref" href="#1449args" title='args' data-ref="1449args" data-ref-filename="1449args">args</a>)...);</td></tr>
+<tr><th id="92">92</th><td>}</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><i>// TODO(gerbens) remove this once third_party is fully extracted</i></td></tr>
+<tr><th id="97">97</th><td><b>using</b> <dfn class="typedef" id="google::protobuf::ProtobufOnceType" title='google::protobuf::ProtobufOnceType' data-type='internal::once_flag' data-ref="google::protobuf::ProtobufOnceType" data-ref-filename="google..protobuf..ProtobufOnceType">ProtobufOnceType</dfn> = <span class="namespace">internal::</span><a class="typedef" href="#google::protobuf::internal::once_flag" title='google::protobuf::internal::once_flag' data-type='std::once_flag' data-ref="google::protobuf::internal::once_flag" data-ref-filename="google..protobuf..internal..once_flag">once_flag</a>;</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><b>inline</b> <em>void</em> <dfn class="decl def fn" id="_ZN6google8protobuf14GoogleOnceInitEPSt9once_flagPFvvE" title='google::protobuf::GoogleOnceInit' data-ref="_ZN6google8protobuf14GoogleOnceInitEPSt9once_flagPFvvE" data-ref-filename="_ZN6google8protobuf14GoogleOnceInitEPSt9once_flagPFvvE">GoogleOnceInit</dfn>(<a class="typedef" href="#google::protobuf::ProtobufOnceType" title='google::protobuf::ProtobufOnceType' data-type='internal::once_flag' data-ref="google::protobuf::ProtobufOnceType" data-ref-filename="google..protobuf..ProtobufOnceType">ProtobufOnceType</a>* <dfn class="local col0 decl" id="1450once" title='once' data-type='google::protobuf::ProtobufOnceType *' data-ref="1450once" data-ref-filename="1450once">once</dfn>, <em>void</em> (*<dfn class="local col1 decl" id="1451init_func" title='init_func' data-type='void (*)()' data-ref="1451init_func" data-ref-filename="1451init_func">init_func</dfn>)()) {</td></tr>
+<tr><th id="100">100</th><td>  <span class="namespace">std::</span><a class="ref fn" href="../../../c++/10/mutex.html#_ZSt9call_onceRSt9once_flagOT_DpOT0_" title='std::call_once' data-ref="_ZSt9call_onceRSt9once_flagOT_DpOT0_" data-ref-filename="_ZSt9call_onceRSt9once_flagOT_DpOT0_">call_once</a>(<span class='refarg'>*<a class="local col0 ref" href="#1450once" title='once' data-ref="1450once" data-ref-filename="1450once">once</a></span>, <span class='refarg'><a class="local col1 ref" href="#1451init_func" title='init_func' data-ref="1451init_func" data-ref-filename="1451init_func">init_func</a></span>);</td></tr>
+<tr><th id="101">101</th><td>}</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><b>template</b> &lt;<b>typename</b> Arg&gt;</td></tr>
+<tr><th id="104">104</th><td><b>inline</b> <em>void</em> <dfn class="decl def fn" id="_ZN6google8protobuf17GoogleOnceInitArgEPSt9once_flagPFvPT_ES4_" title='google::protobuf::GoogleOnceInitArg' data-ref="_ZN6google8protobuf17GoogleOnceInitArgEPSt9once_flagPFvPT_ES4_" data-ref-filename="_ZN6google8protobuf17GoogleOnceInitArgEPSt9once_flagPFvPT_ES4_">GoogleOnceInitArg</dfn>(<a class="typedef" href="#google::protobuf::ProtobufOnceType" title='google::protobuf::ProtobufOnceType' data-type='internal::once_flag' data-ref="google::protobuf::ProtobufOnceType" data-ref-filename="google..protobuf..ProtobufOnceType">ProtobufOnceType</a>* <dfn class="local col2 decl" id="1452once" title='once' data-type='google::protobuf::ProtobufOnceType *' data-ref="1452once" data-ref-filename="1452once">once</dfn>, <em>void</em> (*<dfn class="local col3 decl" id="1453init_func" title='init_func' data-type='void (*)(Arg *)' data-ref="1453init_func" data-ref-filename="1453init_func">init_func</dfn>)(Arg*),</td></tr>
+<tr><th id="105">105</th><td>                              Arg* <dfn class="local col4 decl" id="1454arg" title='arg' data-type='Arg *' data-ref="1454arg" data-ref-filename="1454arg">arg</dfn>) {</td></tr>
+<tr><th id="106">106</th><td>  <span class="namespace">std::</span>call_once(*<a class="local col2 ref" href="#1452once" title='once' data-ref="1452once" data-ref-filename="1452once">once</a>, <a class="local col3 ref" href="#1453init_func" title='init_func' data-ref="1453init_func" data-ref-filename="1453init_func">init_func</a>, <a class="local col4 ref" href="#1454arg" title='arg' data-ref="1454arg" data-ref-filename="1454arg">arg</a>);</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><b>class</b> <dfn class="type def" id="google::protobuf::GoogleOnceDynamic" title='google::protobuf::GoogleOnceDynamic' data-ref="google::protobuf::GoogleOnceDynamic" data-ref-filename="google..protobuf..GoogleOnceDynamic">GoogleOnceDynamic</dfn> {</td></tr>
+<tr><th id="110">110</th><td> <b>public</b>:</td></tr>
+<tr><th id="111">111</th><td>  <i>// If this-&gt;Init() has not been called before by any thread,</i></td></tr>
+<tr><th id="112">112</th><td><i>  // execute (*func_with_arg)(arg) then return.</i></td></tr>
+<tr><th id="113">113</th><td><i>  // Otherwise, wait until that prior invocation has finished</i></td></tr>
+<tr><th id="114">114</th><td><i>  // executing its function, then return.</i></td></tr>
+<tr><th id="115">115</th><td>  <b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="116">116</th><td>  <em>void</em> <dfn class="decl def fn" id="_ZN6google8protobuf17GoogleOnceDynamic4InitEPFvPT_ES3_" title='google::protobuf::GoogleOnceDynamic::Init' data-ref="_ZN6google8protobuf17GoogleOnceDynamic4InitEPFvPT_ES3_" data-ref-filename="_ZN6google8protobuf17GoogleOnceDynamic4InitEPFvPT_ES3_">Init</dfn>(<em>void</em> (*<dfn class="local col5 decl" id="1455func_with_arg" title='func_with_arg' data-type='void (*)(T *)' data-ref="1455func_with_arg" data-ref-filename="1455func_with_arg">func_with_arg</dfn>)(T*), T* <dfn class="local col6 decl" id="1456arg" title='arg' data-type='T *' data-ref="1456arg" data-ref-filename="1456arg">arg</dfn>) {</td></tr>
+<tr><th id="117">117</th><td>    GoogleOnceInitArg&lt;T&gt;(&amp;<b>this</b>-&gt;<a class="member field" href="#google::protobuf::GoogleOnceDynamic::state_" title='google::protobuf::GoogleOnceDynamic::state_' data-ref="google::protobuf::GoogleOnceDynamic::state_" data-ref-filename="google..protobuf..GoogleOnceDynamic..state_">state_</a>, <a class="local col5 ref" href="#1455func_with_arg" title='func_with_arg' data-ref="1455func_with_arg" data-ref-filename="1455func_with_arg">func_with_arg</a>, <a class="local col6 ref" href="#1456arg" title='arg' data-ref="1456arg" data-ref-filename="1456arg">arg</a>);</td></tr>
+<tr><th id="118">118</th><td>  }</td></tr>
+<tr><th id="119">119</th><td> <b>private</b>:</td></tr>
+<tr><th id="120">120</th><td>  <a class="typedef" href="#google::protobuf::ProtobufOnceType" title='google::protobuf::ProtobufOnceType' data-type='internal::once_flag' data-ref="google::protobuf::ProtobufOnceType" data-ref-filename="google..protobuf..ProtobufOnceType">ProtobufOnceType</a> <dfn class="decl field" id="google::protobuf::GoogleOnceDynamic::state_" title='google::protobuf::GoogleOnceDynamic::state_' data-ref="google::protobuf::GoogleOnceDynamic::state_" data-ref-filename="google..protobuf..GoogleOnceDynamic..state_">state_</dfn>;</td></tr>
+<tr><th id="121">121</th><td>};</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_ONCE_TYPE" data-ref="_M/GOOGLE_PROTOBUF_ONCE_TYPE">GOOGLE_PROTOBUF_ONCE_TYPE</dfn> ::google::protobuf::ProtobufOnceType</u></td></tr>
+<tr><th id="124">124</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_DECLARE_ONCE" data-ref="_M/GOOGLE_PROTOBUF_DECLARE_ONCE">GOOGLE_PROTOBUF_DECLARE_ONCE</dfn>(NAME) \</u></td></tr>
+<tr><th id="125">125</th><td><u>  ::google::protobuf::ProtobufOnceType NAME</u></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>}  <i>// namespace protobuf</i></td></tr>
+<tr><th id="128">128</th><td>}  <i>// namespace google</i></td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="78">endif</span>  // GOOGLE_PROTOBUF_STUBS_ONCE_H__</u></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

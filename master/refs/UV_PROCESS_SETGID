@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1002' type='2'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='997'>/*
+   * Set the child process&apos; group id. The user id is supplied in the `gid`
+   * field of the options struct. This does not work on windows; setting this
+   * flag will cause uv_spawn() to fail.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='346' u='r' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='357' u='r' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='428' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='428' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='24'/>

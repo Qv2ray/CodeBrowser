@@ -1,0 +1,9 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='538' ll='613'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='538'/>
+<size>80</size>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='536'>/** Operation data: one field for each op type (except SEND_CLOSE_FROM_CLIENT
+   which has no arguments) */</doc>
+<mbr r='grpc_op::op' o='0' t='grpc_op_type'/>
+<mbr r='grpc_op::flags' o='32' t='uint32_t'/>
+<mbr r='grpc_op::reserved' o='64' t='void *'/>
+<mbr r='grpc_op::data' o='128' t='union grpc_op_data'/>

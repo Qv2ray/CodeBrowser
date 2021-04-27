@@ -1,0 +1,12 @@
+<dec f='include/unistd.h' l='366' type='ssize_t write(int __fd, const void * __buf, size_t __n)'/>
+<doc f='include/unistd.h' l='362'>/* Write N bytes of BUF to FD.  Return the number written, or -1.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='188' u='c' c='uv__async_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='837' u='c' c='uv__fs_sendfile_emul'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1063' u='c' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='252' u='c' c='uv__write_int'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='133' u='c' c='uv__signal_unlock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='207' u='c' c='uv__signal_handler'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='713' u='c' c='uv__writev'/>

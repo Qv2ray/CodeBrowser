@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/bits/socket_type.h' l='29' type='2'/>
+<doc f='include/x86_64-linux-gnu/bits/socket_type.h' l='29'>/* Connectionless, unreliable datagrams
+				   of fixed maximum length.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='993' macro='1' u='r' c='uv__handle_type'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='350' macro='1' u='r' c='uv_guess_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='73' macro='1' u='r' c='uv__udp_mmsg_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='529' macro='1' u='r' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='961' macro='1' u='r' c='uv__udp_init_ex'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='57' macro='1' u='r' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi'/>

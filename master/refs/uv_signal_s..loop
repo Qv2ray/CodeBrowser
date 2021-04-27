@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='431' type='uv_loop_t *'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='76' macro='1' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='62' u='r' c='uv__chld'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='170' u='w' c='uv__signal_first_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='207' u='r' c='uv__signal_handler'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='408' macro='1' u='r' c='uv__signal_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='501' u='r' c='uv__signal_compare'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='501' u='r' c='uv__signal_compare'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='502' u='r' c='uv__signal_compare'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='502' u='r' c='uv__signal_compare'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='555' macro='1' u='r' c='uv__signal_stop'/>

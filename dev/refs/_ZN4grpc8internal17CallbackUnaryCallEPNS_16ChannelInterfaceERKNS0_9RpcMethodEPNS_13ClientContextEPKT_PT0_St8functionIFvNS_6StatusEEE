@@ -1,0 +1,4 @@
+<def f='include/grpcpp/impl/codegen/client_callback.h' l='43' ll='49' type='void grpc::internal::CallbackUnaryCall(grpc::ChannelInterface * channel, const grpc::internal::RpcMethod &amp; method, grpc::ClientContext * context, const InputMessage * request, OutputMessage * result, std::function&lt;void (Status)&gt; on_completion)'/>
+<use f='/v2ray_api.grpc.pb.cc' l='47' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async8GetStatsEPN4grpc13ClientContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsRespons8593868'/>
+<use f='/v2ray_api.grpc.pb.cc' l='63' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async10QueryStatsEPN4grpc13ClientContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStats2892321'/>
+<use f='/v2ray_api.grpc.pb.cc' l='79' u='c' c='_ZN5v2ray4core3app5stats7command12StatsService4Stub18experimental_async11GetSysStatsEPN4grpc13ClientContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsRes15940938'/>

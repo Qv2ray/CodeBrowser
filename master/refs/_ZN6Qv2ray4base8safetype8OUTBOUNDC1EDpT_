@@ -1,0 +1,14 @@
+<def f='qv2ray/src/base/models/QvSafeType.hpp' l='32' macro='1' type='void Qv2ray::base::safetype::OUTBOUND::OUTBOUND(Args... args)'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='90' u='c' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base8safetype10CONFIGROOTEPb'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='88' u='c' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERK7QStringS5_RKNS_4base8safetype10CONFIGROOTEb'/>
+<use f='qv2ray/src/core/connection/generation/outbounds.cpp' l='59' u='c' c='_ZN6Qv2ray4core10connection10generation9outbounds21GenerateOutboundEntryERK7QStringRKNS_4base8safetype15OUTBOUNDSETTINGERK11QJsonObjectSE_S6_S6_'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='300' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='108' u='c' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='117' u='c' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='181' u='c' c='_ZN11RouteEditor13onNodeClickedERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='806' u='c' c='_ZN11RouteEditor25on_addOutboundBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='969' u='c' c='_ZN11RouteEditor18on_editBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='995' u='c' c='_ZN11RouteEditor18on_editBtn_clickedEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='1071' u='c' c='_ZN11RouteEditor28on_importExistingBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='317' u='c' c='_ZN18ImportConfigWindow28on_connectionEditBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='880' u='c' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>

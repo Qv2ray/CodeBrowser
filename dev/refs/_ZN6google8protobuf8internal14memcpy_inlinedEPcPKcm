@@ -1,0 +1,5 @@
+<def f='include/google/protobuf/stubs/fastmem.h' l='125' ll='147' type='void google::protobuf::internal::memcpy_inlined(char * dst, const char * src, size_t size)'/>
+<doc f='include/google/protobuf/stubs/fastmem.h' l='121'>// The standard memcpy operation is slow for variable small sizes.
+// This implementation inlines the optimal realization for sizes 1 to 16.
+// To avoid code bloat don&apos;t use it in case of not performance-critical spots,
+// nor when you don&apos;t expect very frequent values of size &lt;= 16.</doc>

@@ -1,0 +1,15 @@
+<def f='qv2ray/src/plugins/common/CommonTypes.hpp' l='58' ll='74'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='72' c='_ZNK17VLESSServerObjecteqERKS_'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='73' c='_ZN17VLESSServerObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='73' c='_ZNK17VLESSServerObject6toJsonEv'/>
+<use f='qv2ray/src/plugins/common/CommonTypes.hpp' l='73' c='_ZN17VLESSServerObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vless.hpp' l='55'/>
+<size>24</size>
+<doc f='qv2ray/src/plugins/common/CommonTypes.hpp' l='56'>//
+// VLESS Server</doc>
+<mbr r='VLESSServerObject::address' o='0' t='QString'/>
+<mbr r='VLESSServerObject::port' o='64' t='int'/>
+<mbr r='VLESSServerObject::users' o='128' t='QList&lt;VLESSServerObject::UserObject&gt;'/>
+<fun r='_ZN17VLESSServerObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK17VLESSServerObject6toJsonEv'/>
+<fun r='_ZN17VLESSServerObject8fromJsonERK10QJsonValue'/>

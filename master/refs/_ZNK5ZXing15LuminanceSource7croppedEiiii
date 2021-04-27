@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='88' type='std::shared_ptr&lt;LuminanceSource&gt; ZXing::LuminanceSource::cropped(int left, int top, int width, int height) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='160' c='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='78'>/**
+	* Returns a new object with cropped image data. Implementations may keep a reference to the
+	* original data rather than a copy. Only callable if isCropSupported() is true.
+	*
+	* @param left The left coordinate, which must be in [0,getWidth())
+	* @param top The top coordinate, which must be in [0,getHeight())
+	* @param width The width of the rectangle to crop.
+	* @param height The height of the rectangle to crop.
+	* @return A cropped version of this object.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='260' u='c' c='_ZNK5ZXing24GlobalHistogramBinarizer7croppedEiiii'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='74' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='76' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7croppedEiiii'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='106' ll='110' type='std::shared_ptr&lt;LuminanceSource&gt; ZXing::LuminanceSource::cropped(int , int , int , int ) const'/>

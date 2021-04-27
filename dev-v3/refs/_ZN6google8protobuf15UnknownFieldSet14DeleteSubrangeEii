@@ -1,0 +1,3 @@
+<dec f='include/google/protobuf/unknown_field_set.h' l='147' type='void google::protobuf::UnknownFieldSet::DeleteSubrange(int start, int num)'/>
+<doc f='include/google/protobuf/unknown_field_set.h' l='145'>// Delete fields with indices in the range [start .. start+num-1].
+  // Caution: implementation moves all fields with indices [start+num .. ].</doc>

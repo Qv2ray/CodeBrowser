@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1106' type='char *'/>
+<offset>256</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1067' u='r' c='uv_os_homedir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1075' u='r' c='uv_os_homedir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1206' u='w' c='uv__getpwuid_r'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1207' u='r' c='uv__getpwuid_r'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1210' u='r' c='uv__getpwuid_r'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1235' u='w' c='uv_os_free_passwd'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='39' u='r' c='_ZNK3uvw6Passwd7homedirB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='39' u='r' c='_ZNK3uvw6Passwd7homedirB5cxx11Ev'/>

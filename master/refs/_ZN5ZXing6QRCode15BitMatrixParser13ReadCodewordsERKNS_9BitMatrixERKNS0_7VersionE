@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='50' type='static ZXing::ByteArray ZXing::QRCode::BitMatrixParser::ReadCodewords(const ZXing::BitMatrix &amp; bitMatrix, const ZXing::QRCode::Version &amp; version)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='136' ll='182' type='static ZXing::ByteArray ZXing::QRCode::BitMatrixParser::ReadCodewords(const ZXing::BitMatrix &amp; bitMatrix, const ZXing::QRCode::Version &amp; version)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='128'>/**
+* &lt;p&gt;Reads the bits in the {@link BitMatrix} representing the finder pattern in the
+* correct order in order to reconstruct the codewords bytes contained within the
+* QR Code.&lt;/p&gt;
+*
+* @return bytes encoded within the QR Code
+* @throws FormatException if the exact number of bytes expected is not read
+*/</doc>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='42'>/**
+	* &lt;p&gt;Reads the bits in the {@link BitMatrix} representing the finder pattern in the
+	* correct order in order to reconstruct the codewords bytes contained within the
+	* QR Code.&lt;/p&gt;
+	*
+	* @return bytes encoded within the QR Code
+	* or empty array if the exact number of bytes expected is not read
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='427' u='c' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

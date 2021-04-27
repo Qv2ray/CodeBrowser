@@ -1,0 +1,3 @@
+<dec f='include/grpc/slice.h' l='166' type='char * grpc_slice_to_c_string(grpc_slice s)'/>
+<doc f='include/grpc/slice.h' l='164'>/** Return a copy of slice as a C string. Offers no protection against embedded
+   NULL&apos;s. Returned string must be freed with gpr_free. */</doc>

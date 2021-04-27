@@ -1,0 +1,26 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='20' c='uvw::UnderlyingType'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='184' ll='207'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='184'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='317' c='_ZN3uvw9Condition4waitERNS_5MutexE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='334' c='_ZN3uvw9Condition9timedWaitERNS_5MutexEm'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='193' c='_ZN3uvw9Condition4waitERNS_5MutexE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='198' c='_ZN3uvw9Condition9timedWaitERNS_5MutexEm'/>
+<size>64</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='176'>/**
+ * @brief The Mutex wrapper.
+ *
+ * To create a `Mutex` through a `Loop`, arguments follow:
+ *
+ * * An option boolean that specifies if the mutex is a recursive one. The
+ * default value is false, the mutex isn&apos;t recursive.
+ */</doc>
+<fun r='_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<fun r='_ZN3uvw5MutexD1Ev'/>
+<fun r='_ZN3uvw5Mutex4lockEv'/>
+<fun r='_ZN3uvw5Mutex7tryLockEv'/>
+<fun r='_ZN3uvw5Mutex6unlockEv'/>
+<fun r='_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<fun r='_ZN3uvw5MutexD1Ev'/>
+<fun r='_ZN3uvw5Mutex4lockEv'/>
+<fun r='_ZN3uvw5Mutex7tryLockEv'/>
+<fun r='_ZN3uvw5Mutex6unlockEv'/>

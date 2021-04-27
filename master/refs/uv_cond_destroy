@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1711' type='void uv_cond_destroy(uv_cond_t * cond)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='180' u='c' c='uv__threadpool_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='555' u='c' c='uv__custom_sem_destroy'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='737' ll='769' type='void uv_cond_destroy(uv_cond_t * cond)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='179' u='c' c='_ZN3uvw9ConditionD1Ev'/>

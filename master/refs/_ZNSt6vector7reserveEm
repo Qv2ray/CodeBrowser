@@ -1,0 +1,82 @@
+<dec f='include/c++/10/bits/stl_vector.h' l='1028' type='void std::vector::reserve(std::vector::size_type __n)'/>
+<def f='include/c++/10/bits/vector.tcc' l='64' ll='99' type='void std::vector::reserve(std::vector::size_type __n)'/>
+<use f='include/c++/10/bits/random.tcc' l='2637' u='c' c='_ZNSt21discrete_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2653' u='c' c='_ZNSt21discrete_distribution10param_typeC1EmddTL0__'/>
+<use f='include/c++/10/bits/random.tcc' l='2801' u='c' c='_ZNSt31piecewise_constant_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='2847' u='c' c='_ZNSt31piecewise_constant_distribution10param_typeC1ESt16initializer_listIT_ETL0__'/>
+<use f='include/c++/10/bits/random.tcc' l='2867' u='c' c='_ZNSt31piecewise_constant_distribution10param_typeC1EmT_S1_TL0__'/>
+<use f='include/c++/10/bits/random.tcc' l='3010' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='3011' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/10/bits/random.tcc' l='3056' u='c' c='_ZNSt29piecewise_linear_distribution10param_typeC1ESt16initializer_listIT_ETL0__'/>
+<use f='include/c++/10/bits/random.tcc' l='3076' u='c' c='_ZNSt29piecewise_linear_distribution10param_typeC1EmT_S1_TL0__'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='1010'>/**
+       *  @brief  Attempt to preallocate enough memory for specified number of
+       *          elements.
+       *  @param  __n  Number of elements required.
+       *  @throw  std::length_error  If @a n exceeds @c max_size().
+       *
+       *  This function attempts to reserve enough memory for the
+       *  %vector to hold the specified number of elements.  If the
+       *  number requested is more than max_size(), length_error is
+       *  thrown.
+       *
+       *  The advantage of this function is that if optimal code is a
+       *  necessity and the user can determine the number of elements
+       *  that will be required, the user can reserve the memory in
+       *  %advance, and thus prevent a possible reallocation of memory
+       *  and copying of %vector data.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='56' u='c' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='56' u='c' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='56' u='c' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='56' u='c' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionStyle.cpp' l='56' u='c' c='_ZN7QtNodes15ConnectionStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='265' u='c' c='_ZNK7QtNodes9FlowScene13selectedNodesEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='51' u='c' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='51' u='c' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='51' u='c' c='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='105' u='c' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeStyle.cpp' l='52' u='c' c='_ZN7QtNodes9NodeStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='58' u='c' c='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.h' l='46' u='c' c='_ZN5ZXing13GenericGFPoly12Coefficients7reserveEm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='273' u='c' c='_ZN5ZXingL19DivideWithRemainderERKSt6vectorImSaImEES4_RS2_S5_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='603' u='c' c='_ZNK5ZXing10BigInteger8toStringB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='608' u='c' c='_ZNK5ZXing10BigInteger8toStringB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='515' u='c' c='_ZNK5ZXing10DataMatrix14RegressionLine7modulesENS_6PointTIdEES3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='46' u='c' c='_ZN5ZXing10DataMatrix14EncoderContextC1EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='708' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='222' u='c' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='233' u='c' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='210' u='c' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='315' u='c' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedRow.h' l='41' u='c' c='_ZN5ZXing4OneD3RSS11ExpandedRowC1ERKT_ib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='42' u='c' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='537' u='c' c='_ZNK5ZXing6Pdf4177Encoder20generateBarcodeLogicERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='229' u='c' c='_ZN5ZXing6Pdf417L10EncodeTextERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='390' u='c' c='_ZN5ZXing6Pdf417L13EncodeNumericERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='523' u='c' c='_ZN5ZXing6Pdf41716HighLevelEncoder15EncodeHighLevelERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_10CompactionENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='155' u='c' c='_ZN5ZXing6QRCode22AlignmentPatternFinder4FindERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='85' u='c' c='_ZN5ZXing6QRCodeL18DecodeHanziSegmentERNS_9BitSourceEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='118' u='c' c='_ZN5ZXing6QRCodeL18DecodeKanjiSegmentERNS_9BitSourceEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/Big5TextDecoder.cpp' l='1751' u='c' c='_ZN15Big5TextDecoder10AppendBig5ERSt6vectorItSaItEEPKhm'/>
+<use f='qv2ray/test/catch.hpp' l='1489' u='c' c='_ZN5Catch26IMutableEnumValuesRegistry12registerEnumENS_9StringRefES1_St16initializer_listIT_E'/>
+<use f='qv2ray/test/catch.hpp' l='8670' u='c' c='_ZN5Catch5clara8TextFlow7Columns8iteratorC1ERKS2_NS3_6EndTagE'/>
+<use f='qv2ray/test/catch.hpp' l='8686' u='c' c='_ZN5Catch5clara8TextFlow7Columns8iteratorC1ERKS2_'/>
+<use f='qv2ray/test/catch.hpp' l='10557' u='c' c='_ZN5Catch6Detail10parseEnumsENS_9StringRefE'/>
+<use f='qv2ray/test/catch.hpp' l='10577' u='c' c='_ZN5Catch6Detail12makeEnumInfoENS_9StringRefES1_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/test/catch.hpp' l='14054' u='c' c='_ZN5Catch9sortTestsERKNS_7IConfigERKSt6vectorINS_8TestCaseESaIS4_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14069' u='c' c='_ZN5Catch9sortTestsERKNS_7IConfigERKSt6vectorINS_8TestCaseESaIS4_EE'/>
+<use f='qv2ray/test/catch.hpp' l='14102' u='c' c='_ZN5Catch11filterTestsERKSt6vectorINS_8TestCaseESaIS1_EERKNS_8TestSpecERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='14373' u='c' c='_ZN5Catch16TestCaseTracking14SectionTracker17addInitialFiltersERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE'/>

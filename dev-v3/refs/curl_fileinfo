@@ -1,0 +1,16 @@
+<def f='include/x86_64-linux-gnu/curl/curl.h' l='294' ll='319'/>
+<size>128</size>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='293'>/* Information about a single file, used when doing FTP wildcard matching */</doc>
+<mbr r='curl_fileinfo::filename' o='0' t='char *'/>
+<mbr r='curl_fileinfo::filetype' o='64' t='curlfiletype'/>
+<mbr r='curl_fileinfo::time' o='128' t='time_t'/>
+<mbr r='curl_fileinfo::perm' o='192' t='unsigned int'/>
+<mbr r='curl_fileinfo::uid' o='224' t='int'/>
+<mbr r='curl_fileinfo::gid' o='256' t='int'/>
+<mbr r='curl_fileinfo::size' o='320' t='curl_off_t'/>
+<mbr r='curl_fileinfo::hardlinks' o='384' t='long'/>
+<mbr r='curl_fileinfo::strings' o='448' t='struct (anonymous struct at /usr/include/x86_64-linux-gnu/curl/curl.h:304:3)'/>
+<mbr r='curl_fileinfo::flags' o='768' t='unsigned int'/>
+<mbr r='curl_fileinfo::b_data' o='832' t='char *'/>
+<mbr r='curl_fileinfo::b_size' o='896' t='size_t'/>
+<mbr r='curl_fileinfo::b_used' o='960' t='size_t'/>

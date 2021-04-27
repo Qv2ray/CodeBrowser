@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='601' type='2'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='597'>/*
+   * Indicates message was truncated because read buffer was too small. The
+   * remainder was discarded by the OS. Used in uv_udp_recv_cb.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='229' u='r' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='305' u='r' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='47'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='104' u='r' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>

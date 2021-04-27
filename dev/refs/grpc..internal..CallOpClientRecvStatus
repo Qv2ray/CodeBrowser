@@ -1,0 +1,24 @@
+<use f='include/grpcpp/impl/codegen/client_context.h' l='375'/>
+<def f='include/grpcpp/impl/codegen/call.h' l='539' ll='590'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='298'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='465'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='638'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='190'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='193'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='223' c='_ZN4grpc12ClientReader6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='399'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='527' c='_ZN4grpc18ClientReaderWriter6FinishEv'/>
+<size>72</size>
+<fun r='_ZN4grpc8internal22CallOpClientRecvStatusC1Ev'/>
+<fun r='_ZN4grpc8internal22CallOpClientRecvStatus16ClientRecvStatusEPNS_13ClientContextEPNS_6StatusE'/>
+<fun r='_ZN4grpc8internal22CallOpClientRecvStatus5AddOpEP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb'/>
+<mbr r='grpc::internal::CallOpClientRecvStatus::client_context_' o='0' t='grpc::ClientContext *'/>
+<mbr r='grpc::internal::CallOpClientRecvStatus::metadata_map_' o='64' t='grpc::internal::MetadataMap *'/>
+<mbr r='grpc::internal::CallOpClientRecvStatus::recv_status_' o='128' t='grpc::Status *'/>
+<mbr r='grpc::internal::CallOpClientRecvStatus::debug_error_string_' o='192' t='const char *'/>
+<mbr r='grpc::internal::CallOpClientRecvStatus::status_code_' o='256' t='grpc_status_code'/>
+<mbr r='grpc::internal::CallOpClientRecvStatus::error_message_' o='320' t='grpc_slice'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='58' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='65' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<size>72</size>

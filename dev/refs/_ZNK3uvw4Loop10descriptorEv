@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='222' type='int uvw::Loop::descriptor() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='213'>/**
+     * @brief Get backend file descriptor.
+     *
+     * Only kqueue, epoll and event ports are supported.&lt;br/&gt;
+     * This can be used in conjunction with `run&lt;Loop::Mode::NOWAIT&gt;()` to poll
+     * in one thread and run the event loop’s callbacks in another.
+     *
+     * @return The backend file descriptor.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='89' ll='91' type='int uvw::Loop::descriptor() const'/>

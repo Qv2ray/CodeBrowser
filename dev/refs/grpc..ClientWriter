@@ -1,0 +1,12 @@
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='282' c='_ZN4grpc8internal19ClientWriterFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='285' c='_ZN4grpc8internal19ClientWriterFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='294' ll='403'/>
+<fun r='_ZN4grpc12ClientWriter22WaitForInitialMetadataEv'/>
+<fun r='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<fun r='_ZN4grpc12ClientWriter10WritesDoneEv'/>
+<fun r='_ZN4grpc12ClientWriter6FinishEv'/>
+<fun r='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<mbr r='grpc::ClientWriter::context_' t='grpc::ClientContext *'/>
+<mbr r='grpc::ClientWriter::finish_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpRecvInitialMetadata, ::grpc::internal::CallOpGenericRecvMessage, ::grpc::internal::CallOpClientRecvStatus&gt;'/>
+<mbr r='grpc::ClientWriter::cq_' t='grpc::CompletionQueue'/>
+<mbr r='grpc::ClientWriter::call_' t='::grpc::internal::Call'/>

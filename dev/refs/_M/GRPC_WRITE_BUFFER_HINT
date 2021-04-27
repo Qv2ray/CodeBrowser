@@ -1,0 +1,10 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='402'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='122' u='c'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='131' u='c'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='139' u='c'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='144' u='c'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='149' u='c'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='153' u='c'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='399'>/** Hint that the write may be buffered and need not go out on the wire
+    immediately. GRPC is free to buffer the message until the next non-buffered
+    write, or until writes_done, but it need not buffer completely or at all. */</doc>

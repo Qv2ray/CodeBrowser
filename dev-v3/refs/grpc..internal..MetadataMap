@@ -1,0 +1,16 @@
+<def f='include/grpcpp/impl/codegen/metadata_map.h' l='31' ll='87'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='432'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='433'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='536'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='585'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='297'/>
+<size>80</size>
+<fun r='_ZN4grpc8internal11MetadataMapC1Ev'/>
+<fun r='_ZN4grpc8internal11MetadataMapD1Ev'/>
+<fun r='_ZN4grpc8internal11MetadataMap21GetBinaryErrorDetailsB5cxx11Ev'/>
+<fun r='_ZN4grpc8internal11MetadataMap3mapEv'/>
+<fun r='_ZN4grpc8internal11MetadataMap3arrEv'/>
+<mbr r='grpc::internal::MetadataMap::filled_' o='0' t='bool'/>
+<mbr r='grpc::internal::MetadataMap::arr_' o='64' t='grpc_metadata_array'/>
+<mbr r='grpc::internal::MetadataMap::map_' o='256' t='std::multimap&lt;grpc::string_ref, grpc::string_ref&gt;'/>
+<fun r='_ZN4grpc8internal11MetadataMap7FillMapEv'/>

@@ -1,0 +1,8 @@
+<dec f='include/grpcpp/create_channel_posix.h' l='57' type='std::shared_ptr&lt;Channel&gt; grpc::experimental::CreateCustomInsecureChannelWithInterceptorsFromFd(const grpc::string &amp; target, int fd, const grpc::ChannelArguments &amp; args, std::unique_ptr&lt;std::vector&lt;std::unique_ptr&lt;experimental::ClientInterceptorFactoryInterface&gt;&gt;&gt; interceptor_creators)'/>
+<doc f='include/grpcpp/create_channel_posix.h' l='50'>/// Create a new \a Channel communicating over given file descriptor with custom
+/// channel arguments.
+///
+/// \param target The name of the target.
+/// \param fd The file descriptor representing a socket.
+/// \param args Options for channel creation.
+/// \param interceptor_creators Vector of interceptor factory objects.</doc>

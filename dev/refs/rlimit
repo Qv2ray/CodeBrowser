@@ -1,0 +1,10 @@
+<def f='include/x86_64-linux-gnu/bits/resource.h' l='139' ll='145'/>
+<use f='include/x86_64-linux-gnu/bits/resource.h' l='210' c='prlimit64'/>
+<use f='include/x86_64-linux-gnu/bits/resource.h' l='211' c='prlimit64'/>
+<use f='include/x86_64-linux-gnu/sys/resource.h' l='55' c='getrlimit64'/>
+<use f='include/x86_64-linux-gnu/sys/resource.h' l='74' c='setrlimit64'/>
+<size>16</size>
+<mbr r='rlimit::rlim_cur' o='0' t='rlim_t'/>
+<mbr r='rlimit::rlim_max' o='64' t='rlim_t'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='173' c='thread_stack_size'/>
+<size>16</size>

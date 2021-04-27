@@ -1,0 +1,10 @@
+<use f='include/google/protobuf/generated_message_reflection.h' l='205' u='r' c='_ZNK6google8protobuf8internal16ReflectionSchema17IsDefaultInstanceERKNS0_7MessageE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='211' u='r' c='_ZNK6google8protobuf8internal16ReflectionSchema15GetFieldDefaultEPKNS0_15FieldDescriptorE'/>
+<dec f='include/google/protobuf/generated_message_reflection.h' l='224' type='const google::protobuf::Message *'/>
+<offset>0</offset>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='218'>// These members are intended to be private, but we cannot actually make them
+  // private because this prevents us from using aggregate initialization of
+  // them, ie.
+  //
+  //   ReflectionSchema schema = {a, b, c, d, e, ...};
+ // private:</doc>

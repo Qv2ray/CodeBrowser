@@ -1,0 +1,12 @@
+<dec f='include/c++/10/bits/std_function.h' l='524' type='const std::type_info &amp; std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::target_type() const'/>
+<def f='include/c++/10/bits/std_function.h' l='626' ll='639' type='const std::type_info &amp; std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::target_type() const'/>
+<use f='include/c++/10/bits/std_function.h' l='658' u='c' c='_ZNKSt8functionIFT_DpT0_EE6targetEv'/>
+<doc f='include/c++/10/bits/std_function.h' l='515'>/**
+       *  @brief Determine the type of the target of this function object
+       *  wrapper.
+       *
+       *  @returns the type identifier of the target function object, or
+       *  @c typeid(void) if @c !(bool)*this.
+       *
+       *  This function will not throw an %exception.
+       */</doc>

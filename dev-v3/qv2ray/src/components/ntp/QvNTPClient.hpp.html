@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QvNTPClient.hpp source code [qv2ray/src/components/ntp/QvNTPClient.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/ntp/QvNTPClient.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>components</a>/<a href='./'>ntp</a>/<a href='QvNTPClient.hpp.html'>QvNTPClient.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* This file from part of QNtp, a library that implements NTP protocol.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2011 Alexander Fokin &lt;apfokin@gmail.com&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * QNtp is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 3 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * QNtp is distributed in the hope that it will be useful, but WITHOUT ANY</i></td></tr>
+<tr><th id="11">11</th><td><i> * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS</i></td></tr>
+<tr><th id="12">12</th><td><i> * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License</i></td></tr>
+<tr><th id="13">13</th><td><i> * for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with QNtp. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;. */</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#pragma once</u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../base/Qv2rayFeatures.hpp.html">"base/Qv2rayFeatures.hpp"</a></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="21">if</span> <a class="macro" href="../../base/Qv2rayFeatures.hpp.html#22" title="((1 / -1) == 1)" data-ref="_M/QV2RAY_FEATURE">QV2RAY_FEATURE</a>(util_has_ntp)</u></td></tr>
+<tr><th id="22">22</th><td><u>#include &lt;QDateTime&gt;</u></td></tr>
+<tr><th id="23">23</th><td><u>#include &lt;QHostAddress&gt;</u></td></tr>
+<tr><th id="24">24</th><td><u>#include &lt;QObject&gt;</u></td></tr>
+<tr><th id="25">25</th><td><u>#include &lt;QUdpSocket&gt;</u></td></tr>
+<tr><th id="26">26</th><td><u>#include &lt;QtEndian&gt;</u></td></tr>
+<tr><th id="27">27</th><td><u>#include &lt;QtGlobal&gt;</u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>namespace</b> Qv2ray::components::ntp</td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td>    <em>const</em> qint64 january_1_1900 = -<var>2208988800000ll</var>;</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>    <b>enum</b> NtpLeapIndicator</td></tr>
+<tr><th id="34">34</th><td>    {</td></tr>
+<tr><th id="35">35</th><td>        NoWarning = <var>0</var>,             <i class="doc">/**&lt; No warning. */</i></td></tr>
+<tr><th id="36">36</th><td>        LastMinute61Warning = <var>1</var>,   <i class="doc">/**&lt; Last minute has 61 seconds. */</i></td></tr>
+<tr><th id="37">37</th><td>        LastMinute59Warning = <var>2</var>,   <i class="doc">/**&lt; Last minute has 59 seconds. */</i></td></tr>
+<tr><th id="38">38</th><td>        UnsynchronizedWarning = <var>3</var>, <i class="doc">/**&lt; Alarm condition (clock not synchronized). */</i></td></tr>
+<tr><th id="39">39</th><td>    };</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>    <b>enum</b> NtpMode</td></tr>
+<tr><th id="42">42</th><td>    {</td></tr>
+<tr><th id="43">43</th><td>        ReservedMode = <var>0</var>,         <i class="doc">/**&lt; Reserved. */</i></td></tr>
+<tr><th id="44">44</th><td>        SymmetricActiveMode = <var>1</var>,  <i class="doc">/**&lt; Symmetric active. */</i></td></tr>
+<tr><th id="45">45</th><td>        SymmetricPassiveMode = <var>2</var>, <i class="doc">/**&lt; Symmetric passive. */</i></td></tr>
+<tr><th id="46">46</th><td>        ClientMode = <var>3</var>,           <i class="doc">/**&lt; Client. */</i></td></tr>
+<tr><th id="47">47</th><td>        ServerMode = <var>4</var>,           <i class="doc">/**&lt; Server. */</i></td></tr>
+<tr><th id="48">48</th><td>        BroadcastMode = <var>5</var>,        <i class="doc">/**&lt; Broadcast. */</i></td></tr>
+<tr><th id="49">49</th><td>        ControlMode = <var>6</var>,          <i class="doc">/**&lt; NTP control message. */</i></td></tr>
+<tr><th id="50">50</th><td>        PrivateMode = <var>7</var>,          <i class="doc">/**&lt; Reserved for private use. */</i></td></tr>
+<tr><th id="51">51</th><td>    };</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>    <b>enum</b> NtpStratum</td></tr>
+<tr><th id="54">54</th><td>    {</td></tr>
+<tr><th id="55">55</th><td>        UnspecifiedStratum = <var>0</var>,    <i class="doc">/**&lt; Unspecified or unavailable. */</i></td></tr>
+<tr><th id="56">56</th><td>        PrimaryStratum = <var>1</var>,        <i class="doc">/**&lt; Primary reference (e.g. radio-clock). */</i></td></tr>
+<tr><th id="57">57</th><td>        SecondaryStratumFirst = <var>2</var>, <i class="doc">/**&lt; Secondary reference (via NTP or SNTP). */</i></td></tr>
+<tr><th id="58">58</th><td>        SecondaryStratumLast = <var>15</var>,</td></tr>
+<tr><th id="59">59</th><td>        UnsynchronizedStratum = <var>16</var>, <i class="doc">/**&lt; Unsynchronized. */</i></td></tr>
+<tr><th id="60">60</th><td>                                    <i>/* 17-255 are reserved. */</i></td></tr>
+<tr><th id="61">61</th><td>    };</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>    <b>struct</b> NtpPacketFlags</td></tr>
+<tr><th id="64">64</th><td>    {</td></tr>
+<tr><th id="65">65</th><td>        <em>unsigned</em> <em>char</em> mode : <var>3</var>;</td></tr>
+<tr><th id="66">66</th><td>        <em>unsigned</em> <em>char</em> versionNumber : <var>3</var>;</td></tr>
+<tr><th id="67">67</th><td>        <em>unsigned</em> <em>char</em> leapIndicator : <var>2</var>;</td></tr>
+<tr><th id="68">68</th><td>    };</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#pragma pack(push, 1)</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>    <b>struct</b> NtpTimestamp</td></tr>
+<tr><th id="73">73</th><td>    {</td></tr>
+<tr><th id="74">74</th><td>        quint32 seconds;</td></tr>
+<tr><th id="75">75</th><td>        quint32 fraction;</td></tr>
+<tr><th id="76">76</th><td>        <em>static</em> <b>inline</b> NtpTimestamp fromDateTime(<em>const</em> QDateTime &amp;dateTime);</td></tr>
+<tr><th id="77">77</th><td>        <em>static</em> <b>inline</b> QDateTime toDateTime(<em>const</em> NtpTimestamp &amp;ntpTime);</td></tr>
+<tr><th id="78">78</th><td>    };</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>    <b>struct</b> NtpPacket</td></tr>
+<tr><th id="81">81</th><td>    {</td></tr>
+<tr><th id="82">82</th><td>        NtpPacketFlags flags;</td></tr>
+<tr><th id="83">83</th><td>        quint8 stratum;</td></tr>
+<tr><th id="84">84</th><td>        qint8 poll;</td></tr>
+<tr><th id="85">85</th><td>        qint8 precision;</td></tr>
+<tr><th id="86">86</th><td>        qint32 rootDelay;</td></tr>
+<tr><th id="87">87</th><td>        qint32 rootDispersion;</td></tr>
+<tr><th id="88">88</th><td>        qint8 referenceID[<var>4</var>];</td></tr>
+<tr><th id="89">89</th><td>        NtpTimestamp referenceTimestamp;</td></tr>
+<tr><th id="90">90</th><td>        NtpTimestamp originateTimestamp;</td></tr>
+<tr><th id="91">91</th><td>        NtpTimestamp receiveTimestamp;</td></tr>
+<tr><th id="92">92</th><td>        NtpTimestamp transmitTimestamp;</td></tr>
+<tr><th id="93">93</th><td>    };</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>    <b>struct</b> NtpAuthenticationInfo</td></tr>
+<tr><th id="96">96</th><td>    {</td></tr>
+<tr><th id="97">97</th><td>        quint32 keyId;</td></tr>
+<tr><th id="98">98</th><td>        quint8 messageDigest[<var>16</var>];</td></tr>
+<tr><th id="99">99</th><td>    };</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>    <b>struct</b> NtpFullPacket</td></tr>
+<tr><th id="102">102</th><td>    {</td></tr>
+<tr><th id="103">103</th><td>        NtpPacket basic;</td></tr>
+<tr><th id="104">104</th><td>        NtpAuthenticationInfo auth;</td></tr>
+<tr><th id="105">105</th><td>    };</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><u>#pragma pack(pop)</u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>    <b>class</b> NtpReplyPrivate : <b>public</b> QSharedData</td></tr>
+<tr><th id="110">110</th><td>    {</td></tr>
+<tr><th id="111">111</th><td>      <b>public</b>:</td></tr>
+<tr><th id="112">112</th><td>        NtpFullPacket packet;</td></tr>
+<tr><th id="113">113</th><td>        QDateTime destinationTime;</td></tr>
+<tr><th id="114">114</th><td>    };</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>    <b>class</b> NtpReply</td></tr>
+<tr><th id="117">117</th><td>    {</td></tr>
+<tr><th id="118">118</th><td>      <b>public</b>:</td></tr>
+<tr><th id="119">119</th><td>        NtpReply();</td></tr>
+<tr><th id="120">120</th><td>        NtpReply(<em>const</em> NtpReply &amp;other);</td></tr>
+<tr><th id="121">121</th><td>        ~NtpReply();</td></tr>
+<tr><th id="122">122</th><td>        NtpReply &amp;<b>operator</b>=(<em>const</em> NtpReply &amp;other);</td></tr>
+<tr><th id="123">123</th><td>        NtpLeapIndicator leapIndicator() <em>const</em>;</td></tr>
+<tr><th id="124">124</th><td>        quint8 versionNumber() <em>const</em>;</td></tr>
+<tr><th id="125">125</th><td>        NtpMode mode() <em>const</em>;</td></tr>
+<tr><th id="126">126</th><td>        quint8 stratum() <em>const</em>;</td></tr>
+<tr><th id="127">127</th><td>        qreal pollInterval() <em>const</em>;</td></tr>
+<tr><th id="128">128</th><td>        qreal precision() <em>const</em>;</td></tr>
+<tr><th id="129">129</th><td>        QDateTime referenceTime() <em>const</em>;</td></tr>
+<tr><th id="130">130</th><td>        QDateTime originTime() <em>const</em>;</td></tr>
+<tr><th id="131">131</th><td>        QDateTime receiveTime() <em>const</em>;</td></tr>
+<tr><th id="132">132</th><td>        QDateTime transmitTime() <em>const</em>;</td></tr>
+<tr><th id="133">133</th><td>        QDateTime destinationTime() <em>const</em>;</td></tr>
+<tr><th id="134">134</th><td>        qint64 roundTripDelay() <em>const</em>;</td></tr>
+<tr><th id="135">135</th><td>        qint64 localClockOffset() <em>const</em>;</td></tr>
+<tr><th id="136">136</th><td>        <em>bool</em> isNull() <em>const</em>;</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>      <b>protected</b>:</td></tr>
+<tr><th id="139">139</th><td>        <b>friend</b> <b>class</b> NtpClient;</td></tr>
+<tr><th id="140">140</th><td>        NtpReply(NtpReplyPrivate *dd);</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td>      <b>private</b>:</td></tr>
+<tr><th id="143">143</th><td>        QSharedDataPointer&lt;NtpReplyPrivate&gt; d;</td></tr>
+<tr><th id="144">144</th><td>    };</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td>    <b>class</b> NtpClient : <b>public</b> QObject</td></tr>
+<tr><th id="147">147</th><td>    {</td></tr>
+<tr><th id="148">148</th><td>        Q_OBJECT</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>      <b>public</b>:</td></tr>
+<tr><th id="151">151</th><td>        NtpClient(QObject *parent = NULL);</td></tr>
+<tr><th id="152">152</th><td>        NtpClient(<em>const</em> QHostAddress &amp;bindAddress, quint16 bindPort, QObject *parent = NULL);</td></tr>
+<tr><th id="153">153</th><td>        <b>virtual</b> ~NtpClient();</td></tr>
+<tr><th id="154">154</th><td>        <em>bool</em> sendRequest(<em>const</em> QHostAddress &amp;address, quint16 port);</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>      Q_SIGNALS:</td></tr>
+<tr><th id="157">157</th><td>        <em>void</em> replyReceived(<em>const</em> QHostAddress &amp;address, quint16 port, <em>const</em> NtpReply &amp;reply);</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td>      <b>private</b> Q_SLOTS:</td></tr>
+<tr><th id="160">160</th><td>        <em>void</em> readPendingDatagrams();</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>      <b>private</b>:</td></tr>
+<tr><th id="163">163</th><td>        <em>void</em> init(<em>const</em> QHostAddress &amp;bindAddress, quint16 bindPort);</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>        QUdpSocket *mSocket;</td></tr>
+<tr><th id="166">166</th><td>    };</td></tr>
+<tr><th id="167">167</th><td>} <i>// namespace Qv2ray::components::ntp</i></td></tr>
+<tr><th id="168">168</th><td><u>#<span data-ppcond="21">endif</span></u></td></tr>
+<tr><th id="169">169</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='QvNTPClient.cpp.html'>qv2ray/src/components/ntp/QvNTPClient.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,25 @@
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='38' ll='70'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='99'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='310'/>
+<use f='/v2ray_api.grpc.pb.h' l='43' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface13AsyncGetStatsEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='44' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface13AsyncGetStatsEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='46' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface20PrepareAsyncGetStatsEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='47' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface20PrepareAsyncGetStatsEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='50' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface15AsyncQueryStatsEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='51' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface15AsyncQueryStatsEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='53' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface22PrepareAsyncQueryStatsEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='54' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface22PrepareAsyncQueryStatsEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='57' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface16AsyncGetSysStatsEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='58' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface16AsyncGetSysStatsEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='60' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface23PrepareAsyncGetSysStatsEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='61' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface23PrepareAsyncGetSysStatsEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='72' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface16AsyncGetStatsRawEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='73' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface23PrepareAsyncGetStatsRawEPN4grpc13ClientContextERKNS3_15GetStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='74' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface18AsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='75' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface25PrepareAsyncQueryStatsRawEPN4grpc13ClientContextERKNS3_17QueryStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='76' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface19AsyncGetSysStatsRawEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<use f='/v2ray_api.grpc.pb.h' l='77' c='_ZN5v2ray4core3app5stats7command12StatsService13StubInterface26PrepareAsyncGetSysStatsRawEPN4grpc13ClientContextERKNS3_15SysStatsRequestEPNS6_15CompletionQueueE'/>
+<fun r='_ZN4grpc34ClientAsyncResponseReaderInterfaceD1Ev'/>
+<fun r='_ZN4grpc34ClientAsyncResponseReaderInterface9StartCallEv'/>
+<fun r='_ZN4grpc34ClientAsyncResponseReaderInterface19ReadInitialMetadataEPv'/>
+<fun r='_ZN4grpc34ClientAsyncResponseReaderInterface6FinishEPT_PNS_6StatusEPv'/>

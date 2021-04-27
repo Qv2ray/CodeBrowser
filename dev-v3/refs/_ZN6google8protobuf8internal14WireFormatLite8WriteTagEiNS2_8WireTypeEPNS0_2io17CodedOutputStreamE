@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='374' type='static void google::protobuf::internal::WireFormatLite::WriteTag(int field_number, google::protobuf::internal::WireFormatLite::WireType type, io::CodedOutputStream * output)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='457' ll='460' type='static void google::protobuf::internal::WireFormatLite::WriteTag(int field_number, google::protobuf::internal::WireFormatLite::WireType type, io::CodedOutputStream * output)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='525' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19WriteGroupNoVirtualEiRKT_PNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='527' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19WriteGroupNoVirtualEiRKT_PNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='533' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21WriteMessageNoVirtualEiRKT_PNS0_2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/wire_format_lite_inl.h' l='455'>// ===================================================================</doc>
+<doc f='include/google/protobuf/wire_format_lite.h' l='371'>// Write a tag.  The Write*() functions typically include the tag, so
+  // normally there&apos;s no need to call this unless using the Write*NoTag()
+  // variants.</doc>

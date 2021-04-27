@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='68' type='void grpc::CoreCodegenInterface::grpc_init()'/>
+<doc f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='64'>// These are only to be used to fix edge cases involving grpc_init and
+  // grpc_shutdown. Calling grpc_init from the codegen interface before
+  // the real grpc_init is called will cause a crash, so if you use this
+  // function, ensure that it is not the first call to grpc_init.</doc>

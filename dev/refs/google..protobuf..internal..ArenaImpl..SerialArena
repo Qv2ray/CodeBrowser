@@ -1,0 +1,38 @@
+<def f='include/google/protobuf/arena_impl.h' l='140' ll='211'/>
+<use f='include/google/protobuf/arena_impl.h' l='147' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena3NewEPNS2_5BlockEPvPS2_'/>
+<use f='include/google/protobuf/arena_impl.h' l='151' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena4FreeEPS3_PNS2_5BlockEPFvPvmE'/>
+<use f='include/google/protobuf/arena_impl.h' l='188' c='_ZNK6google8protobuf8internal9ArenaImpl11SerialArena4nextEv'/>
+<use f='include/google/protobuf/arena_impl.h' l='189' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena8set_nextEPS3_'/>
+<use f='include/google/protobuf/arena_impl.h' l='200'/>
+<use f='include/google/protobuf/arena_impl.h' l='247'/>
+<use f='include/google/protobuf/arena_impl.h' l='272' c='_ZN6google8protobuf8internal9ArenaImpl16CacheSerialArenaEPNS2_11SerialArenaE'/>
+<use f='include/google/protobuf/arena_impl.h' l='283'/>
+<use f='include/google/protobuf/arena_impl.h' l='285'/>
+<use f='include/google/protobuf/arena_impl.h' l='293' c='_ZN6google8protobuf8internal9ArenaImpl14GetSerialArenaEv'/>
+<use f='include/google/protobuf/arena_impl.h' l='294' c='_ZN6google8protobuf8internal9ArenaImpl18GetSerialArenaFastEPPNS2_11SerialArenaE'/>
+<use f='include/google/protobuf/arena_impl.h' l='295' c='_ZN6google8protobuf8internal9ArenaImpl22GetSerialArenaFallbackEPv'/>
+<use f='include/google/protobuf/arena_impl.h' l='310'/>
+<size>72</size>
+<doc f='include/google/protobuf/arena_impl.h' l='139'>// A thread-unsafe Arena that can only be used within its owning thread.</doc>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena3NewEPNS2_5BlockEPvPS2_'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena4FreeEPS3_PNS2_5BlockEPFvPvmE'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena11CleanupListEv'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl11SerialArena9SpaceUsedEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena15AllocateAlignedEm'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena10AddCleanupEPvPFvS4_E'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena28AllocateAlignedAndAddCleanupEmPFvPvE'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl11SerialArena5ownerEv'/>
+<fun r='_ZNK6google8protobuf8internal9ArenaImpl11SerialArena4nextEv'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena8set_nextEPS3_'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena23AllocateAlignedFallbackEm'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena18AddCleanupFallbackEPvPFvS4_E'/>
+<fun r='_ZN6google8protobuf8internal9ArenaImpl11SerialArena19CleanupListFallbackEv'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::arena_' o='0' t='google::protobuf::internal::ArenaImpl *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::owner_' o='64' t='void *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::head_' o='128' t='google::protobuf::internal::ArenaImpl::Block *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::cleanup_' o='192' t='google::protobuf::internal::ArenaImpl::CleanupChunk *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::next_' o='256' t='google::protobuf::internal::ArenaImpl::SerialArena *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::ptr_' o='320' t='char *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::limit_' o='384' t='char *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::cleanup_ptr_' o='448' t='google::protobuf::internal::ArenaImpl::CleanupNode *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::SerialArena::cleanup_limit_' o='512' t='google::protobuf::internal::ArenaImpl::CleanupNode *'/>

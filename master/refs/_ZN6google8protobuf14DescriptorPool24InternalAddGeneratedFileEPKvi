@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='1691' type='static void google::protobuf::DescriptorPool::InternalAddGeneratedFile(const void * encoded_file_descriptor, int size)'/>
+<doc f='include/google/protobuf/descriptor.h' l='1688'>// Called by generated classes at init time to add their descriptors to
+  // generated_pool.  Do NOT call this in your own code!  filename must be a
+  // permanent string (e.g. a string literal).</doc>
+<use f='/v2ray_api.pb.cc' l='332' u='c' c='_ZN28protobuf_v2ray_5fapi_2eproto18AddDescriptorsImplEv'/>
+<use f='/v2ray_geosite.pb.cc' l='197' u='c' c='_ZN32protobuf_v2ray_5fgeosite_2eproto18AddDescriptorsImplEv'/>

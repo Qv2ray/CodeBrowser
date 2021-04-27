@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.h' l='78' type='unsigned char * QRinput_getByteStream(QRinput * input)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='115' u='c' c='QRraw_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='217' u='c' c='MQRraw_new'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.h' l='73'>/**
+ * Pack all bit streams padding bits into a byte array.
+ * @param input input data.
+ * @return padded merged byte stream
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1315' ll='1335' type='unsigned char * QRinput_getByteStream(QRinput * input)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1309'>/**
+ * Pack all bit streams padding bits into a byte array.
+ * @param input input data.
+ * @return padded merged byte stream
+ */</doc>

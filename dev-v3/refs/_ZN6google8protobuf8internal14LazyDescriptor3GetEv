@@ -1,0 +1,4 @@
+<def f='include/google/protobuf/descriptor.h' l='201' ll='204' type='const google::protobuf::Descriptor * google::protobuf::internal::LazyDescriptor::Get()'/>
+<doc f='include/google/protobuf/descriptor.h' l='198'>// Returns the current value of the descriptor, thread-safe. If SetLazy(...)
+  // has been called, will do a one-time cross link of the type specified,
+  // building the descriptor file that contains the type if necessary.</doc>

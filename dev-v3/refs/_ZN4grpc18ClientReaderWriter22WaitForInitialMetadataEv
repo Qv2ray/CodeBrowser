@@ -1,0 +1,7 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='453' ll='461' type='void grpc::ClientReaderWriter::WaitForInitialMetadata()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='447'>/// Block waiting to read initial metadata from the server.
+  /// This call is optional, but if it is used, it cannot be used concurrently
+  /// with or after the \a Finish method.
+  ///
+  /// Once complete, the initial metadata read from the server will be
+  /// accessable through the \a ClientContext used to construct this object.</doc>

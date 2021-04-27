@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='337' type='ZXing::ByteArray ZXing::BitArray::toBytes(int bitOffset, int numBytes) const'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.cpp' l='123' ll='130' type='ZXing::ByteArray ZXing::BitArray::toBytes(int bitOffset, int numBytes) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='330'>/**
+	*
+	* @param bitOffset first bit to start writing
+	* @param numBytes how many bytes to write
+	* @return Bytes are written most-significant bit first. This is the opposite
+	*  of the internal representation, which is exposed by {@link #getBitArray()}
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='423' u='c' c='_ZN5ZXing6QRCodeL21InterleaveWithECBytesERKNS_8BitArrayEiii'/>

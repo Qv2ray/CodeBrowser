@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='142' type='void uvw::UDPHandle::open(uvw::OSSocketHandle socket)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='38' ll='40' type='void uvw::UDPHandle::open(uvw::OSSocketHandle socket)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='130'>/**
+     * @brief Opens an existing file descriptor or SOCKET as a UDP handle.
+     *
+     * The passed file descriptor or SOCKET is not checked for its type, but
+     * it’s required that it represents a valid datagram socket.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/udp.html#c.uv_udp_open)
+     * for further details.
+     *
+     * @param socket A valid socket handle (either a file descriptor or a SOCKET).
+     */</doc>

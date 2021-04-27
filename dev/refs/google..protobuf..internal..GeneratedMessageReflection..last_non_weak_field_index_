@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/generated_message_reflection.h' l='543' type='int'/>
+<offset>640</offset>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='540'>// Last non weak field index. This is an optimization when most weak fields
+  // are at the end of the containing message. If a message proto doesn&apos;t
+  // contain weak fields, then this field equals descriptor_-&gt;field_count().</doc>

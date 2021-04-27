@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='29' type='bool QtNodes::NodeConnectionInteraction::tryConnect() const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='122' u='c' c='_ZN7QtNodes24ConnectionGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='23'>/// 1)   Check conditions from &apos;canConnect&apos;
+        /// 1.5) If the connection is possible but a type conversion is needed, add a
+        /// converter node to the scene, and connect it properly 2)   Assign node to
+        /// required port in Connection 3)   Assign Connection to empty port in
+        /// NodeState 4)   Adjust Connection geometry 5)   Poke model to initiate data
+        /// transfer</doc>
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='74' ll='105' type='bool QtNodes::NodeConnectionInteraction::tryConnect() const'/>

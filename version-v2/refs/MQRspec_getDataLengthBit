@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='42' type='int MQRspec_getDataLengthBit(int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='36'>/**
+ * Return maximum data code length (bits) for the version.
+ * @param version
+ * @param level
+ * @return maximum size (bits)
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.c' l='59' ll='68' type='int MQRspec_getDataLengthBit(int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.c' l='72' u='c' c='MQRspec_getDataLength'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='216' u='c' c='MQRraw_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1191' u='c' c='QRinput_appendPaddingBitMQR'/>

@@ -1,0 +1,23 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='32' ll='68'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='40' c='_ZN5ZXing17MultiFormatWriter11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='48' c='_ZN5ZXing17MultiFormatWriter11setEccLevelEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='56' c='_ZN5ZXing17MultiFormatWriter9setMarginEi'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.h' l='26'>/**
+* This class is here just for convenience as it offers single-point service
+* to generate barcodes for all supported formats. As a result, this class
+* offer very limited customization compared to what are available in each
+* individual encoder.
+*/</doc>
+<fun r='_ZN5ZXing17MultiFormatWriterC1ENS_13BarcodeFormatE'/>
+<fun r='_ZN5ZXing17MultiFormatWriter11setEncodingENS_12CharacterSetE'/>
+<fun r='_ZN5ZXing17MultiFormatWriter11setEccLevelEi'/>
+<fun r='_ZN5ZXing17MultiFormatWriter9setMarginEi'/>
+<fun r='_ZNK5ZXing17MultiFormatWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<mbr r='ZXing::MultiFormatWriter::_format' o='0' t='ZXing::BarcodeFormat'/>
+<mbr r='ZXing::MultiFormatWriter::_encoding' o='32' t='ZXing::CharacterSet'/>
+<mbr r='ZXing::MultiFormatWriter::_margin' o='64' t='int'/>
+<mbr r='ZXing::MultiFormatWriter::_eccLevel' o='96' t='int'/>
+<fun r='_ZNK5ZXing17MultiFormatWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/src/ui/common/QRCodeHelper.cpp' l='49' c='_ZN6Qv2ray2ui12EncodeQRCodeERK7QStringRK5QSize'/>
+<size>16</size>

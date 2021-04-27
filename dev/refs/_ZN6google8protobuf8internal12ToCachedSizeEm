@@ -1,0 +1,23 @@
+<def f='include/google/protobuf/message_lite.h' l='73' type='int google::protobuf::internal::ToCachedSize(size_t size)'/>
+<doc f='include/google/protobuf/message_lite.h' l='66'>// We compute sizes as size_t but cache them as int.  This function converts a
+// computed size to a cached size.  Since we don&apos;t proceed with serialization
+// if the total size was &gt; INT_MAX, it is not important what this function
+// returns for inputs &gt; INT_MAX.  However this case should not error or
+// GOOGLE_CHECK-fail, because the full size_t resolution is still returned from
+// ByteSizeLong() and checked against INT_MAX; we can catch the overflow
+// there.</doc>
+<use f='/v2ray_api.pb.cc' l='563' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='844' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1084' u='c' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1357' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1594' u='c' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1775' u='c' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='2288' u='c' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='2507' u='c' c='_ZNK5v2ray4core3app5stats7command6Config12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='634' u='c' c='_ZNK5v2ray4core3app6router22DomainObject_Attribute12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='971' u='c' c='_ZNK5v2ray4core3app6router12DomainObject12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1242' u='c' c='_ZNK5v2ray4core3app6router4CIDR12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1531' u='c' c='_ZNK5v2ray4core3app6router5GeoIP12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1766' u='c' c='_ZNK5v2ray4core3app6router9GeoIPList12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='2047' u='c' c='_ZNK5v2ray4core3app6router7GeoSite12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='2282' u='c' c='_ZNK5v2ray4core3app6router11GeoSiteList12ByteSizeLongEv'/>

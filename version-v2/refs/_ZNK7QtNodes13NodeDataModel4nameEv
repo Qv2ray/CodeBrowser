@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='48' type='QString QtNodes::NodeDataModel::name() const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='100' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='47'>/// Name makes this model unique</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='16' u='c' c='_ZNK7QtNodes13NodeDataModel4saveEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='136' c='_ZNK6Qv2ray2ui10nodemodels16InboundNodeModel4nameEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='137' c='_ZNK6Qv2ray2ui10nodemodels17OutboundNodeModel4nameEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='138' c='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel4nameEv'/>
+<ovr f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='139' c='_ZNK6Qv2ray2ui10nodemodels22ChainOutboundNodeModel4nameEv'/>

@@ -1,0 +1,20 @@
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='12' ll='47'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='121' c='_ZN7QtNodes24ConnectionGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='9'>/// Class performs various operations on the Node and Connection pair.
+    /// An instance should be created on the stack and destroyed when
+    /// the operation is completed</doc>
+<fun r='_ZN7QtNodes25NodeConnectionInteractionC1ERNS_4NodeERNS_10ConnectionERNS_9FlowSceneE'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction10disconnectENS_8PortTypeE'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction22connectionRequiredPortEv'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction26connectionEndScenePositionENS_8PortTypeE'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction21nodePortScenePositionENS_8PortTypeEi'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction28nodePortIndexUnderScenePointENS_8PortTypeERK7QPointF'/>
+<fun r='_ZNK7QtNodes25NodeConnectionInteraction15nodePortIsEmptyENS_8PortTypeEi'/>
+<mbr r='QtNodes::NodeConnectionInteraction::_node' o='0' t='QtNodes::Node *'/>
+<mbr r='QtNodes::NodeConnectionInteraction::_connection' o='64' t='QtNodes::Connection *'/>
+<mbr r='QtNodes::NodeConnectionInteraction::_scene' o='128' t='QtNodes::FlowScene *'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='170' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<size>24</size>

@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='187' type='static std::shared_ptr&lt;Loop&gt; uvw::Loop::getDefault()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='175'>/**
+     * @brief Gets the initialized default loop.
+     *
+     * It may return an empty pointer in case of failure.&lt;br&gt;
+     * This function is just a convenient way for having a global loop
+     * throughout an application, the default loop is in no way different than
+     * the ones initialized with `create()`.&lt;br&gt;
+     * As such, the default loop can be closed with `close()` so the resources
+     * associated with it are freed (even if it is not strictly necessary).
+     *
+     * @return The initialized default loop.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='37' ll='55' type='static std::shared_ptr&lt;Loop&gt; uvw::Loop::getDefault()'/>

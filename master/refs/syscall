@@ -1,0 +1,20 @@
+<dec f='include/unistd.h' l='1056' type='long syscall(long __sysno)'/>
+<doc f='include/unistd.h' l='1046'>/* Invoke `system call&apos; number SYSNO, passing it the remaining arguments.
+   This is completely system-dependent, and not often useful.
+
+   In Unix, `syscall&apos; sets `errno&apos; for all errors and most calls return -1
+   for errors; in many systems you cannot pass arguments or get return
+   values for all system calls (`pipe&apos;, `fork&apos;, and `getppid&apos; typically
+   among them).
+
+   In Mach, all system calls take normal arguments and always return an
+   error code (zero for success).  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='531' u='c' c='uv__close_nocancel'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='136' u='c' c='uv__sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='149' u='c' c='uv__recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='158' u='c' c='uv__preadv'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='167' u='c' c='uv__pwritev'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='176' u='c' c='uv__dup3'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='192' u='c' c='uv__statx'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='201' u='c' c='uv__getrandom'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-sysctl-linux.c' l='71' u='c' c='uv__random_sysctl'/>

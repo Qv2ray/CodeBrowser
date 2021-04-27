@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1296' type='void uvw::FsReq::chown(std::string path, uvw::Uid uid, uvw::Gid gid)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='514' ll='516' type='void uvw::FsReq::chown(std::string path, uvw::Uid uid, uvw::Gid gid)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1286'>/**
+     * @brief Async [chown](http://linux.die.net/man/2/chown).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::CHOWN&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     * @param uid UID, as described in the official documentation.
+     * @param gid GID, as described in the official documentation.
+     */</doc>

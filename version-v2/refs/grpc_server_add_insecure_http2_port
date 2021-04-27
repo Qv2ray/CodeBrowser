@@ -1,0 +1,4 @@
+<dec f='include/grpc/grpc.h' l='413' type='int grpc_server_add_insecure_http2_port(grpc_server * server, const char * addr)'/>
+<doc f='include/grpc/grpc.h' l='410'>/** Add a HTTP2 over plaintext over tcp listener.
+    Returns bound port number on success, 0 on failure.
+    REQUIRES: server not started */</doc>

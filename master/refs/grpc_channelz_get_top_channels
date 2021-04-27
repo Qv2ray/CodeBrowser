@@ -1,0 +1,4 @@
+<dec f='include/grpc/grpc.h' l='501' type='char * grpc_channelz_get_top_channels(intptr_t start_channel_id)'/>
+<doc f='include/grpc/grpc.h' l='498'>/* Gets all root channels (i.e. channels the application has directly
+   created). This does not include subchannels nor non-top level channels.
+   The returned string is allocated and must be freed by the application. */</doc>

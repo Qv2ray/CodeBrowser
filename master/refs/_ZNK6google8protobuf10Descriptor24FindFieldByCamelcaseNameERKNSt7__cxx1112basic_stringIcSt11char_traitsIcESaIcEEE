@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='295' type='const google::protobuf::FieldDescriptor * google::protobuf::Descriptor::FindFieldByCamelcaseName(const std::string &amp; camelcase_name) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='291'>// Looks up a field by camel-case name (as returned by camelcase_name()).
+  // This lookup may be ambiguous if multiple field names differ in a way that
+  // leads them to have identical camel-case names, in which case the field
+  // returned is chosen arbitrarily from the matches.</doc>

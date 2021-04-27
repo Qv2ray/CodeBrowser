@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='101' type='bool SingleApplication::isSecondary()'/>
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='185' ll='189' type='bool SingleApplication::isSecondary()'/>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.cpp' l='181'>/**
+ * Checks if the current application instance is secondary.
+ * @return Returns true if the instance is secondary, false otherwise.
+ */</doc>
+<doc f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='97'>/**
+     * @brief Returns if the instance is a secondary instance
+     * @returns {bool}
+     */</doc>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.cpp' l='72' u='c' c='_ZN25Qv2rayPlatformApplication10InitializeEv'/>

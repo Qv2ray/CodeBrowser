@@ -1,0 +1,9 @@
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='320' ll='329' type='void grpc::CompletionQueue::TryPluck(internal::CompletionQueueTag * tag)'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='312'>/// Performs a single polling pluck on \a tag.
+  /// \warning Must not be mixed with calls to \a Next.
+  ///
+  /// TODO: sreek - This calls tag-&gt;FinalizeResult() even if the cq_ is already
+  /// shutdown. This is most likely a bug and if it is a bug, then change this
+  /// implementation to simple call the other TryPluck function with a zero
+  /// timeout. i.e:
+  ///      TryPluck(tag, gpr_time_0(GPR_CLOCK_REALTIME))</doc>

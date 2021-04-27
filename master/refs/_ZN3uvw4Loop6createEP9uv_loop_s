@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='173' type='static std::shared_ptr&lt;Loop&gt; uvw::Loop::create(uv_loop_t * loop)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='163'>/**
+     * @brief Initializes a new Loop instance from an existing resource.
+     *
+     * The lifetime of the resource must exceed that of the instance to which
+     * it&apos;s associated. Management of the memory associated with the resource is
+     * in charge of the user.
+     *
+     * @param loop A valid pointer to a correctly initialized resource.
+     * @return A pointer to the newly created loop.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='31' ll='34' type='static std::shared_ptr&lt;Loop&gt; uvw::Loop::create(uv_loop_t * loop)'/>

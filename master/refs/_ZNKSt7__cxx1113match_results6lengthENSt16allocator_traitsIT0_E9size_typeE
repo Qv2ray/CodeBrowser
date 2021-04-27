@@ -1,0 +1,9 @@
+<def f='include/c++/10/bits/regex.h' l='1822' ll='1824' type='std::__cxx11::match_results::difference_type std::__cxx11::match_results::length(std::__cxx11::match_results::size_type __sub = 0) const'/>
+<doc f='include/c++/10/bits/regex.h' l='1814'>/**
+       * @brief Gets the length of the indicated submatch.
+       * @param __sub indicates the submatch.
+       * @pre   ready() == true
+       *
+       * This function returns the length of the indicated submatch, or the
+       * length of the entire match if @p __sub is zero (the default).
+       */</doc>

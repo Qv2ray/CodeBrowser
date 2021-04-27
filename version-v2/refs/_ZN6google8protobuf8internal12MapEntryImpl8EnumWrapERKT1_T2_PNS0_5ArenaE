@@ -1,0 +1,5 @@
+<def f='include/google/protobuf/map_entry_lite.h' l='323' ll='325' type='static Derived * google::protobuf::internal::MapEntryImpl::EnumWrap(const Key &amp; key, const Value value, google::protobuf::Arena * arena)'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='319'>// Create a MapEntryImpl for given key and value from google::protobuf::Map in
+  // serialization. This function is only called when value is enum. Enum is
+  // treated differently because its type in MapEntry is int and its type in
+  // google::protobuf::Map is enum. We cannot create a reference to int from an enum.</doc>

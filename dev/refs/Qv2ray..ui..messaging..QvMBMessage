@@ -1,0 +1,39 @@
+<def f='qv2ray/src/ui/common/QvMessageBus.hpp' l='33' ll='43'/>
+<use f='qv2ray/src/ui/common/QvMessageBus.hpp' l='44' c='_ZN6Qv2ray2ui9messaging20qt_getEnumMetaObjectENS1_11QvMBMessageE'/>
+<use f='qv2ray/src/ui/common/QvMessageBus.hpp' l='44' c='_ZN6Qv2ray2ui9messaging14qt_getEnumNameENS1_11QvMBMessageE'/>
+<use f='qv2ray/src/ui/common/QvMessageBus.hpp' l='51' c='_ZN6Qv2ray2ui9messaging18QvMessageBusObject16EmitGlobalSignalERKNS1_11QvMBMessageE'/>
+<use f='qv2ray/src/ui/common/QvMessageBus.hpp' l='56' c='_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE'/>
+<use f='/qv2ray_autogen/B6WHKBFDXJ/moc_QvMessageBus.cpp' l='75' c='_ZN6Qv2ray2ui9messaging18QvMessageBusObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/B6WHKBFDXJ/moc_QvMessageBus.cpp' l='81' c='_ZN6Qv2ray2ui9messaging18QvMessageBusObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/B6WHKBFDXJ/moc_QvMessageBus.cpp' l='131' c='_ZN6Qv2ray2ui9messaging18QvMessageBusObject13QvSendMessageERKNS1_11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='101' macro='1' c='_ZN8QvDialog20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.hpp' l='24' macro='1' c='_ZN13InboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_JsonEditor.hpp' l='22' macro='1' c='_ZN10JsonEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.hpp' l='77' macro='1' c='_ZN20StreamSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.hpp' l='24' macro='1' c='_ZN14OutboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='43' macro='1' c='_ZN11RouteEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='42' macro='1' c='_ZN20ConnectionInfoWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.hpp' l='53' macro='1' c='_ZN17DnsSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/InboundSettingsWidget.hpp' l='11' macro='1' c='_ZN21InboundSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='52' macro='1' c='_ZN17ChainEditorWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.hpp' l='38' macro='1' c='_ZN19RoutingEditorWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='38' macro='1' c='_ZN12GroupManager20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='35' macro='1' c='_ZN18ImportConfigWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='36' macro='1' c='_ZN10MainWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.hpp' l='38' macro='1' c='_ZN18PluginManageWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='43' macro='1' c='_ZN17PreferencesWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.cpp' l='67' macro='1' c='_ZN13InboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_JsonEditor.cpp' l='30' macro='1' c='_ZN10JsonEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.cpp' l='49' macro='1' c='_ZN14OutboundEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='142' macro='1' c='_ZN11RouteEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='12' macro='1' c='_ZN20ConnectionInfoWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.cpp' l='62' macro='1' c='_ZN17DnsSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/InboundSettingsWidget.cpp' l='7' macro='1' c='_ZN21InboundSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.cpp' l='15' macro='1' c='_ZN20StreamSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='44' macro='1' c='_ZN17ChainEditorWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='39' macro='1' c='_ZN19RoutingEditorWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.cpp' l='269' macro='1' c='_ZN12GroupManager20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.cpp' l='56' macro='1' c='_ZN18ImportConfigWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='35' macro='1' c='_ZN10MainWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.cpp' l='33' macro='1' c='_ZN18PluginManageWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='297' macro='1' c='_ZN17PreferencesWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>

@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='709' ll='720' type='void grpc::ServerAsyncReader::SendInitialMetadata(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='704'>/// See \a ServerAsyncStreamingInterface::SendInitialMetadata for semantics.
+  ///
+  /// Implicit input parameter:
+  ///   - The initial metadata that will be sent to the client from this op will
+  ///     be taken from the \a ServerContext associated with the call.</doc>

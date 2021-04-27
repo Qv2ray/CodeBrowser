@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/repeated_field.h' l='315' ll='331' type='void google::protobuf::RepeatedField::InternalDeallocate(google::protobuf::RepeatedField::Rep * rep, int size)'/>
+<use f='include/google/protobuf/repeated_field.h' l='1077' u='c' c='_ZN6google8protobuf13RepeatedFieldD1Ev'/>
+<use f='include/google/protobuf/repeated_field.h' l='1391' u='c' c='_ZN6google8protobuf13RepeatedField7ReserveEi'/>
+<doc f='include/google/protobuf/repeated_field.h' l='312'>// Internal helper to delete all elements and deallocate the storage.
+  // If Element has a trivial destructor (for example, if it&apos;s a fundamental
+  // type, like int32), the loop will be removed by the optimizer.</doc>

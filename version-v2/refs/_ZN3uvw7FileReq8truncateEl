@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='665' type='void uvw::FileReq::truncate(int64_t offset)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='165' ll='167' type='void uvw::FileReq::truncate(int64_t offset)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='657'>/**
+     * @brief Async [ftruncate](http://linux.die.net/man/2/ftruncate).
+     *
+     * Emit a `FsEvent&lt;FileReq::Type::FTRUNCATE&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param offset Offset, as described in the official documentation.
+     */</doc>

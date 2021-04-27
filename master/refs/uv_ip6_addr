@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1625' type='int uv_ip6_addr(const char * ip, int port, struct sockaddr_in6 * addr)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='821' u='c' c='uv__udp_set_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='920' u='c' c='uv__udp_set_source_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1018' u='c' c='uv_udp_set_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1041' u='c' c='uv_udp_set_source_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1044' u='c' c='uv_udp_set_source_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1230' u='c' c='uv_udp_set_multicast_interface'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='232' ll='264' type='int uv_ip6_addr(const char * ip, int port, struct sockaddr_in6 * addr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='384' u='a'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='28' u='c' c='_ZN6Qv2ray10components7latency7DNSBase6isAddrEv'/>

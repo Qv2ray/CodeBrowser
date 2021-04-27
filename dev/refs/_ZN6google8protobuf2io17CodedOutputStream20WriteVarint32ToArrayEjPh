@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='766' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(google::protobuf::uint32 value, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1138' ll='1147' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(google::protobuf::uint32 value, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1207' u='c' c='_ZN6google8protobuf2io17CodedOutputStream13WriteVarint32Ej'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1234' u='c' c='_ZN6google8protobuf2io17CodedOutputStream15WriteTagToArrayEjPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='559' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteUInt32NoTagToArrayEjPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='567' u='c' c='_ZN6google8protobuf8internal14WireFormatLite23WriteSInt32NoTagToArrayEiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='605' u='c' c='_ZN6google8protobuf8internal14WireFormatLite21WriteBoolNoTagToArrayEbPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='899' u='c' c='_ZN6google8protobuf8internal14WireFormatLite27InternalWriteMessageToArrayEiRKT_bPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='920' u='c' c='_ZN6google8protobuf8internal14WireFormatLite36InternalWriteMessageNoVirtualToArrayEiRKT_bPh'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='765'>// Like WriteVarint32()  but writing directly to the target array.</doc>

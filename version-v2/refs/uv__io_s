@@ -1,0 +1,10 @@
+<use f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='90'/>
+<use f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='92'/>
+<def f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='94' ll='102'/>
+<size>56</size>
+<mbr r='uv__io_s::cb' o='0' t='uv__io_cb'/>
+<mbr r='uv__io_s::pending_queue' o='64' t='void *[2]'/>
+<mbr r='uv__io_s::watcher_queue' o='192' t='void *[2]'/>
+<mbr r='uv__io_s::pevents' o='320' t='unsigned int'/>
+<mbr r='uv__io_s::events' o='352' t='unsigned int'/>
+<mbr r='uv__io_s::fd' o='384' t='int'/>

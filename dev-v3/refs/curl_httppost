@@ -1,0 +1,22 @@
+<def f='include/x86_64-linux-gnu/curl/curl.h' l='169' ll='211'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='170'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='180'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2314' c='curl_formadd'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2315' c='curl_formadd'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2339' c='curl_formget'/>
+<use f='include/x86_64-linux-gnu/curl/curl.h' l='2348' c='curl_formfree'/>
+<size>112</size>
+<mbr r='curl_httppost::next' o='0' t='struct curl_httppost *'/>
+<mbr r='curl_httppost::name' o='64' t='char *'/>
+<mbr r='curl_httppost::namelength' o='128' t='long'/>
+<mbr r='curl_httppost::contents' o='192' t='char *'/>
+<mbr r='curl_httppost::contentslength' o='256' t='long'/>
+<mbr r='curl_httppost::buffer' o='320' t='char *'/>
+<mbr r='curl_httppost::bufferlength' o='384' t='long'/>
+<mbr r='curl_httppost::contenttype' o='448' t='char *'/>
+<mbr r='curl_httppost::contentheader' o='512' t='struct curl_slist *'/>
+<mbr r='curl_httppost::more' o='576' t='struct curl_httppost *'/>
+<mbr r='curl_httppost::flags' o='640' t='long'/>
+<mbr r='curl_httppost::showfilename' o='704' t='char *'/>
+<mbr r='curl_httppost::userp' o='768' t='void *'/>
+<mbr r='curl_httppost::contentlen' o='832' t='curl_off_t'/>

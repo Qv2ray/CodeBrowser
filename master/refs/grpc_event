@@ -1,0 +1,9 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='463' ll='475'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='463'/>
+<size>16</size>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='460'>/** The result of an operation.
+
+    Returned by a completion queue when the operation started with tag. */</doc>
+<mbr r='grpc_event::type' o='0' t='grpc_completion_type'/>
+<mbr r='grpc_event::success' o='32' t='int'/>
+<mbr r='grpc_event::tag' o='64' t='void *'/>

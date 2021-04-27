@@ -1,0 +1,5 @@
+<dec f='include/grpc/grpc.h' l='406' type='void grpc_server_register_completion_queue(grpc_server * server, grpc_completion_queue * cq, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='402'>/** Register a completion queue with the server. Must be done for any
+    notification completion queue that is passed to grpc_server_request_*_call
+    and to grpc_server_shutdown_and_notify. Must be performed prior to
+    grpc_server_start. */</doc>

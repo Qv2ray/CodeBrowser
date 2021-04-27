@@ -1,0 +1,7 @@
+<def f='include/google/protobuf/map.h' l='371' ll='373'/>
+<use f='include/google/protobuf/map.h' l='375'/>
+<use f='include/google/protobuf/map.h' l='845' c='_ZN6google8protobuf3Map8InnerMap11TreeConvertEm'/>
+<doc f='include/google/protobuf/map.h' l='368'>// Trees.  The payload type is pointer to Key, so that we can query the tree
+    // with Keys that are not in any particular data structure.  When we insert,
+    // though, the pointer is always pointing to a Key that is inside a Node.</doc>
+<fun r='_ZNK6google8protobuf3Map8InnerMap10KeyCompareclEPKT_S6_'/>

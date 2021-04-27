@@ -1,0 +1,12 @@
+<def f='include/c++/10/bits/unordered_map.h' l='936' ll='938' type='std::unordered_map::size_type std::unordered_map::count(const std::unordered_map::key_type &amp; __x) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='89' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='101' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<doc f='include/c++/10/bits/unordered_map.h' l='927'>/**
+       *  @brief  Finds the number of elements.
+       *  @param  __x  Key to count.
+       *  @return  Number of elements with specified key.
+       *
+       *  This function only makes sense for %unordered_multimap; for
+       *  %unordered_map the result will either be 0 (not present) or 1
+       *  (present).
+       */</doc>

@@ -1,0 +1,18 @@
+<dec f='include/google/protobuf/unknown_field_set.h' l='180' type='std::vector&lt;UnknownField&gt; *'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='259' u='w' c='_ZN6google8protobuf15UnknownFieldSetC1Ev'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='266' u='r' c='_ZN6google8protobuf15UnknownFieldSet5ClearEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='273' u='r' c='_ZNK6google8protobuf15UnknownFieldSet5emptyEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='277' u='a' c='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='277' u='a' c='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='281' u='r' c='_ZNK6google8protobuf15UnknownFieldSet11field_countEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='281' u='r' c='_ZNK6google8protobuf15UnknownFieldSet11field_countEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='284' u='r' c='_ZNK6google8protobuf15UnknownFieldSet5fieldEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='285' u='r' c='_ZNK6google8protobuf15UnknownFieldSet5fieldEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='288' u='r' c='_ZN6google8protobuf15UnknownFieldSet13mutable_fieldEi'/>
+<offset>0</offset>
+<doc f='include/google/protobuf/unknown_field_set.h' l='174'>// fields_ is either NULL, or a pointer to a vector that is *non-empty*. We
+  // never hold the empty vector because we want the &apos;do we have any unknown
+  // fields&apos; check to be fast, and avoid a cache miss: the UFS instance gets
+  // embedded in the message object, so &apos;fields_ != NULL&apos; tests a member
+  // variable hot in the cache, without the need to go touch a vector somewhere
+  // else in memory.</doc>

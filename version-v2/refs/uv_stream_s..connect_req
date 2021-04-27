@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='495' macro='1' type='uv_connect_t *'/>
+<offset>960</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='95' u='w' c='uv__stream_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='462' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='464' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='464' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='465' u='w' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1297' u='r' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1346' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1373' u='w' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1468' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1517' u='r' c='uv_try_write'/>

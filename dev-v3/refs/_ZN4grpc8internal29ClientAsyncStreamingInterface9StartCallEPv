@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/impl/codegen/async_stream.h' l='42' type='void grpc::internal::ClientAsyncStreamingInterface::StartCall(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='39'>/// Start the call that was set up by the constructor, but only if the
+  /// constructor was invoked through the &quot;Prepare&quot; API which doesn&apos;t actually
+  /// start the call</doc>

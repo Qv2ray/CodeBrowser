@@ -1,0 +1,13 @@
+<def f='include/grpcpp/impl/codegen/call_hook.h' l='30' ll='34'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='671' c='_ZN4grpc8internal4CallC1EP9grpc_callPNS0_8CallHookEPNS_15CompletionQueueE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='677' c='_ZN4grpc8internal4CallC1EP9grpc_callPNS0_8CallHookEPNS_15CompletionQueueEi'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='694'/>
+<ovr f='include/grpcpp/impl/codegen/server_interface.h' l='48' c='grpc::ServerInterface'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='48'/>
+<ovr f='include/grpcpp/channel.h' l='43' c='grpc::Channel'/>
+<use f='include/grpcpp/channel.h' l='44'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/call_hook.h' l='28'>/// This is an interface that Channel and Server implement to allow them to hook
+/// performing ops.</doc>
+<fun r='_ZN4grpc8internal8CallHookD1Ev'/>
+<fun r='_ZN4grpc8internal8CallHook16PerformOpsOnCallEPNS0_18CallOpSetInterfaceEPNS0_4CallE'/>

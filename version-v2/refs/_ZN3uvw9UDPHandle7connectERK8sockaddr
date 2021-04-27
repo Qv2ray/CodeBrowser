@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='176' type='void uvw::UDPHandle::connect(const sockaddr &amp; addr)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='48' ll='50' type='void uvw::UDPHandle::connect(const sockaddr &amp; addr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='57' u='c' c='_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='163'>/**
+     * @brief Associates the handle to a remote address and port (either IPv4 or
+     * IPv6).
+     *
+     * Every message sent by this handle is automatically sent to the given
+     * destination.&lt;br/&gt;
+     * Trying to call this function on an already connected handle isn&apos;t
+     * allowed.
+     *
+     * An ErrorEvent event is emitted in case of errors during the connection.
+     *
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     */</doc>

@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='224' type='int uv__stream_open(uv_stream_t * , int fd, int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='169' u='c' c='uv_pipe_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='216' u='c' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='238' u='c' c='uv__process_open_stream'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='406' ll='440' type='int uv__stream_open(uv_stream_t * stream, int fd, int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='602' u='c' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='42' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='277' u='c' c='uv_tcp_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='225' u='c' c='uv_tty_init'/>

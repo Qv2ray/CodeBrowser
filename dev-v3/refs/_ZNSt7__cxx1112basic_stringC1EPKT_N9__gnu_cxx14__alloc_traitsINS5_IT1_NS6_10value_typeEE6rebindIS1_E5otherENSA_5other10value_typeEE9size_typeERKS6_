@@ -1,0 +1,61 @@
+<def f='include/c++/10/bits/basic_string.h' l='510' ll='513' type='void std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;(const _CharT * __s, std::__cxx11::basic_string::size_type __n, const _Alloc &amp; __a = _Alloc())'/>
+<use f='include/c++/10/bits/basic_string.h' l='6888' u='c' c='_ZNSt8literals15string_literalsli1sB5cxx11EPKcm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6894' u='c' c='_ZNSt8literals15string_literalsli1sB5cxx11EPKwm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6907' u='c' c='_ZNSt8literals15string_literalsli1sB5cxx11EPKDsm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6912' u='c' c='_ZNSt8literals15string_literalsli1sB5cxx11EPKDim'/>
+<doc f='include/c++/10/bits/basic_string.h' l='501'>/**
+       *  @brief  Construct string initialized by a character %array.
+       *  @param  __s  Source character %array.
+       *  @param  __n  Number of characters to copy.
+       *  @param  __a  Allocator to use (default is default allocator).
+       *
+       *  NB: @a __s must have at least @a __n characters, &amp;apos;\\0&amp;apos;
+       *  has no special meaning.
+       */</doc>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='313' u='c' c='_ZNK6google8protobuf11StringPiece8ToStringB5cxx11Ev'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='464' u='c' c='_ZNK6google8protobuf8internal14StringPiecePod8ToStringB5cxx11Ev'/>
+<use f='/v2ray_api.pb.h' l='1071' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest8set_nameEPKcm'/>
+<use f='/v2ray_api.pb.h' l='1142' u='c' c='_ZN5v2ray4core3app5stats7command4Stat8set_nameEPKcm'/>
+<use f='/v2ray_api.pb.h' l='1271' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest11set_patternEPKcm'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='127' u='c' c='_ZN4grpc21StringFromCopiedSliceB5cxx11E10grpc_slice'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='44' u='c' c='_ZN4grpc8internal11MetadataMap21GetBinaryErrorDetailsB5cxx11Ev'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='57' u='c' c='_ZN4grpc8internal11MetadataMap21GetBinaryErrorDetailsB5cxx11Ev'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5873' u='c' c='_ZN6google8protobuf19FileDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5961' u='c' c='_ZN6google8protobuf19FileDescriptorProto11set_packageEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6436' u='c' c='_ZN6google8protobuf19FileDescriptorProto10set_syntaxEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6701' u='c' c='_ZN6google8protobuf15DescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7175' u='c' c='_ZN6google8protobuf20FieldDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7337' u='c' c='_ZN6google8protobuf20FieldDescriptorProto13set_type_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7425' u='c' c='_ZN6google8protobuf20FieldDescriptorProto12set_extendeeEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7513' u='c' c='_ZN6google8protobuf20FieldDescriptorProto17set_default_valueEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7625' u='c' c='_ZN6google8protobuf20FieldDescriptorProto13set_json_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7786' u='c' c='_ZN6google8protobuf20OneofDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7999' u='c' c='_ZN6google8protobuf19EnumDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8289' u='c' c='_ZN6google8protobuf24EnumValueDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8474' u='c' c='_ZN6google8protobuf22ServiceDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8665' u='c' c='_ZN6google8protobuf21MethodDescriptorProto8set_nameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8753' u='c' c='_ZN6google8protobuf21MethodDescriptorProto14set_input_typeEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8841' u='c' c='_ZN6google8protobuf21MethodDescriptorProto15set_output_typeEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9050' u='c' c='_ZN6google8protobuf11FileOptions16set_java_packageEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9138' u='c' c='_ZN6google8protobuf11FileOptions24set_java_outer_classnameEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9323' u='c' c='_ZN6google8protobuf11FileOptions14set_go_packageEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9555' u='c' c='_ZN6google8protobuf11FileOptions21set_objc_class_prefixEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9643' u='c' c='_ZN6google8protobuf11FileOptions20set_csharp_namespaceEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9731' u='c' c='_ZN6google8protobuf11FileOptions16set_swift_prefixEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9819' u='c' c='_ZN6google8protobuf11FileOptions20set_php_class_prefixEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9907' u='c' c='_ZN6google8protobuf11FileOptions17set_php_namespaceEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='9995' u='c' c='_ZN6google8protobuf11FileOptions26set_php_metadata_namespaceEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='10083' u='c' c='_ZN6google8protobuf11FileOptions16set_ruby_packageEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='10830' u='c' c='_ZN6google8protobuf28UninterpretedOption_NamePart13set_name_partEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='10976' u='c' c='_ZN6google8protobuf19UninterpretedOption20set_identifier_valueEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11136' u='c' c='_ZN6google8protobuf19UninterpretedOption16set_string_valueEPKvm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11224' u='c' c='_ZN6google8protobuf19UninterpretedOption19set_aggregate_valueEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11376' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location20set_leading_commentsEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11464' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location21set_trailing_commentsEPKcm'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11689' u='c' c='_ZN6google8protobuf28GeneratedCodeInfo_Annotation15set_source_fileEPKcm'/>
+<use f='/v2ray_geosite.pb.h' l='1054' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute7set_keyEPKcm'/>
+<use f='/v2ray_geosite.pb.h' l='1192' u='c' c='_ZN5v2ray4core3app6router12DomainObject9set_valueEPKcm'/>
+<use f='/v2ray_geosite.pb.h' l='1279' u='c' c='_ZN5v2ray4core3app6router4CIDR6set_ipEPKvm'/>
+<use f='/v2ray_geosite.pb.h' l='1350' u='c' c='_ZN5v2ray4core3app6router5GeoIP16set_country_codeEPKcm'/>
+<use f='/v2ray_geosite.pb.h' l='1471' u='c' c='_ZN5v2ray4core3app6router7GeoSite16set_country_codeEPKcm'/>
+<use f='qv2ray/test/catch.hpp' l='637' u='c' c='_ZNK5Catch9StringRefcvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEv'/>

@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='195' type='int uv__socket(int domain, int type, int protocol)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='428' ll='462' type='int uv__socket(int domain, int type, int protocol)'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/core.c' l='427'>/* Open a socket in non-blocking close-on-exec mode, atomically if possible. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='63' u='c' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='185' u='c' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='37' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='73' u='c' c='uv__udp_mmsg_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='529' u='c' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='961' u='c' c='uv__udp_init_ex'/>

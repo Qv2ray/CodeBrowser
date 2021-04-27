@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='60' type='void uvw::FsPollHandle::start(std::string file, uvw::FsPollHandle::Time interval)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.cpp' l='34' ll='36' type='void uvw::FsPollHandle::start(std::string file, FsPollHandle::Time interval)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='52'>/**
+     * @brief Starts the handle.
+     *
+     * The handle will start emitting FsPollEvent when needed.
+     *
+     * @param file The path to the file to be checked.
+     * @param interval Milliseconds between successive checks.
+     */</doc>

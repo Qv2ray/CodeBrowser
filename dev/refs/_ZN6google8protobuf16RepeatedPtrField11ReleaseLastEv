@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/repeated_field.h' l='907' type='Element * google::protobuf::RepeatedPtrField::ReleaseLast()'/>
+<def f='include/google/protobuf/repeated_field.h' l='2157' ll='2160' type='Element * google::protobuf::RepeatedPtrField::ReleaseLast()'/>
+<doc f='include/google/protobuf/repeated_field.h' l='901'>// Remove the last element and return it, passing ownership to the caller.
+  // Requires:  size() &gt; 0
+  //
+  // If this RepeatedPtrField is on an arena, an object copy is required to pass
+  // ownership back to the user (for compatible semantics). Use
+  // UnsafeArenaReleaseLast() if this behavior is undesired.</doc>

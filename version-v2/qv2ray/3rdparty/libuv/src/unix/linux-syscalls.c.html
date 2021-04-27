@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>linux-syscalls.c source code [qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>libuv</a>/<a href='..'>src</a>/<a href='./'>unix</a>/<a href='linux-syscalls.c.html'>linux-syscalls.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission is hereby granted, free of charge, to any person obtaining a copy</i></td></tr>
+<tr><th id="4">4</th><td><i> * of this software and associated documentation files (the "Software"), to</i></td></tr>
+<tr><th id="5">5</th><td><i> * deal in the Software without restriction, including without limitation the</i></td></tr>
+<tr><th id="6">6</th><td><i> * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * sell copies of the Software, and to permit persons to whom the Software is</i></td></tr>
+<tr><th id="8">8</th><td><i> * furnished to do so, subject to the following conditions:</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * The above copyright notice and this permission notice shall be included in</i></td></tr>
+<tr><th id="11">11</th><td><i> * all copies or substantial portions of the Software.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</i></td></tr>
+<tr><th id="14">14</th><td><i> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</i></td></tr>
+<tr><th id="15">15</th><td><i> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</i></td></tr>
+<tr><th id="16">16</th><td><i> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</i></td></tr>
+<tr><th id="17">17</th><td><i> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING</i></td></tr>
+<tr><th id="18">18</th><td><i> * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</i></td></tr>
+<tr><th id="19">19</th><td><i> * IN THE SOFTWARE.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="linux-syscalls.h.html">"linux-syscalls.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../../include/unistd.h.html">&lt;unistd.h&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../../../include/signal.h.html">&lt;signal.h&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/syscall.h.html">&lt;sys/syscall.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../../../../include/errno.h.html">&lt;errno.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="29">if</span> defined(<span class="macro" data-ref="_M/__arm__">__arm__</span>)</u></td></tr>
+<tr><th id="30">30</th><td><u># if defined(__thumb__) || defined(__ARM_EABI__)</u></td></tr>
+<tr><th id="31">31</th><td><u>#  define UV_SYSCALL_BASE 0</u></td></tr>
+<tr><th id="32">32</th><td><u># else</u></td></tr>
+<tr><th id="33">33</th><td><u>#  define UV_SYSCALL_BASE 0x900000</u></td></tr>
+<tr><th id="34">34</th><td><u># endif</u></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="29">endif</span> /* __arm__ */</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#303" data-ref="_M/__NR_recvmmsg">__NR_recvmmsg</a></u></td></tr>
+<tr><th id="38">38</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="39">39</th><td><u>#  define __NR_recvmmsg 299</u></td></tr>
+<tr><th id="40">40</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="41">41</th><td><u>#  define __NR_recvmmsg 337</u></td></tr>
+<tr><th id="42">42</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="43">43</th><td><u>#  define __NR_recvmmsg (UV_SYSCALL_BASE + 365)</u></td></tr>
+<tr><th id="44">44</th><td><u># endif</u></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="37">endif</span> /* __NR_recvmsg */</u></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="47">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#311" data-ref="_M/__NR_sendmmsg">__NR_sendmmsg</a></u></td></tr>
+<tr><th id="48">48</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="49">49</th><td><u>#  define __NR_sendmmsg 307</u></td></tr>
+<tr><th id="50">50</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="51">51</th><td><u>#  define __NR_sendmmsg 345</u></td></tr>
+<tr><th id="52">52</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="53">53</th><td><u>#  define __NR_sendmmsg (UV_SYSCALL_BASE + 374)</u></td></tr>
+<tr><th id="54">54</th><td><u># endif</u></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="47">endif</span> /* __NR_sendmmsg */</u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="57">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#284" data-ref="_M/__NR_utimensat">__NR_utimensat</a></u></td></tr>
+<tr><th id="58">58</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="59">59</th><td><u>#  define __NR_utimensat 280</u></td></tr>
+<tr><th id="60">60</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="61">61</th><td><u>#  define __NR_utimensat 320</u></td></tr>
+<tr><th id="62">62</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="63">63</th><td><u>#  define __NR_utimensat (UV_SYSCALL_BASE + 348)</u></td></tr>
+<tr><th id="64">64</th><td><u># endif</u></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="57">endif</span> /* __NR_utimensat */</u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><u>#<span data-ppcond="67">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#299" data-ref="_M/__NR_preadv">__NR_preadv</a></u></td></tr>
+<tr><th id="68">68</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="69">69</th><td><u>#  define __NR_preadv 295</u></td></tr>
+<tr><th id="70">70</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="71">71</th><td><u>#  define __NR_preadv 333</u></td></tr>
+<tr><th id="72">72</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="73">73</th><td><u>#  define __NR_preadv (UV_SYSCALL_BASE + 361)</u></td></tr>
+<tr><th id="74">74</th><td><u># endif</u></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="67">endif</span> /* __NR_preadv */</u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="77">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#300" data-ref="_M/__NR_pwritev">__NR_pwritev</a></u></td></tr>
+<tr><th id="78">78</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="79">79</th><td><u>#  define __NR_pwritev 296</u></td></tr>
+<tr><th id="80">80</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="81">81</th><td><u>#  define __NR_pwritev 334</u></td></tr>
+<tr><th id="82">82</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="83">83</th><td><u>#  define __NR_pwritev (UV_SYSCALL_BASE + 362)</u></td></tr>
+<tr><th id="84">84</th><td><u># endif</u></td></tr>
+<tr><th id="85">85</th><td><u>#<span data-ppcond="77">endif</span> /* __NR_pwritev */</u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="87">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#296" data-ref="_M/__NR_dup3">__NR_dup3</a></u></td></tr>
+<tr><th id="88">88</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="89">89</th><td><u>#  define __NR_dup3 292</u></td></tr>
+<tr><th id="90">90</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="91">91</th><td><u>#  define __NR_dup3 330</u></td></tr>
+<tr><th id="92">92</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="93">93</th><td><u>#  define __NR_dup3 (UV_SYSCALL_BASE + 358)</u></td></tr>
+<tr><th id="94">94</th><td><u># endif</u></td></tr>
+<tr><th id="95">95</th><td><u>#<span data-ppcond="87">endif</span> /* __NR_pwritev */</u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><u>#<span data-ppcond="97">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#336" data-ref="_M/__NR_statx">__NR_statx</a></u></td></tr>
+<tr><th id="98">98</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="99">99</th><td><u>#  define __NR_statx 332</u></td></tr>
+<tr><th id="100">100</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="101">101</th><td><u>#  define __NR_statx 383</u></td></tr>
+<tr><th id="102">102</th><td><u># elif defined(__aarch64__)</u></td></tr>
+<tr><th id="103">103</th><td><u>#  define __NR_statx 397</u></td></tr>
+<tr><th id="104">104</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="105">105</th><td><u>#  define __NR_statx (UV_SYSCALL_BASE + 397)</u></td></tr>
+<tr><th id="106">106</th><td><u># elif defined(__ppc__)</u></td></tr>
+<tr><th id="107">107</th><td><u>#  define __NR_statx 383</u></td></tr>
+<tr><th id="108">108</th><td><u># elif defined(__s390__)</u></td></tr>
+<tr><th id="109">109</th><td><u>#  define __NR_statx 379</u></td></tr>
+<tr><th id="110">110</th><td><u># endif</u></td></tr>
+<tr><th id="111">111</th><td><u>#<span data-ppcond="97">endif</span> /* __NR_statx */</u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><u>#<span data-ppcond="113">ifndef</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#322" data-ref="_M/__NR_getrandom">__NR_getrandom</a></u></td></tr>
+<tr><th id="114">114</th><td><u># if defined(__x86_64__)</u></td></tr>
+<tr><th id="115">115</th><td><u>#  define __NR_getrandom 318</u></td></tr>
+<tr><th id="116">116</th><td><u># elif defined(__i386__)</u></td></tr>
+<tr><th id="117">117</th><td><u>#  define __NR_getrandom 355</u></td></tr>
+<tr><th id="118">118</th><td><u># elif defined(__aarch64__)</u></td></tr>
+<tr><th id="119">119</th><td><u>#  define __NR_getrandom 384</u></td></tr>
+<tr><th id="120">120</th><td><u># elif defined(__arm__)</u></td></tr>
+<tr><th id="121">121</th><td><u>#  define __NR_getrandom (UV_SYSCALL_BASE + 384)</u></td></tr>
+<tr><th id="122">122</th><td><u># elif defined(__ppc__)</u></td></tr>
+<tr><th id="123">123</th><td><u>#  define __NR_getrandom 359</u></td></tr>
+<tr><th id="124">124</th><td><u># elif defined(__s390__)</u></td></tr>
+<tr><th id="125">125</th><td><u>#  define __NR_getrandom 349</u></td></tr>
+<tr><th id="126">126</th><td><u># endif</u></td></tr>
+<tr><th id="127">127</th><td><u>#<span data-ppcond="113">endif</span> /* __NR_getrandom */</u></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><b>struct</b> <dfn class="type" id="uv__mmsghdr" title='uv__mmsghdr' data-ref="uv__mmsghdr" data-ref-filename="uv__mmsghdr">uv__mmsghdr</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><em>int</em> <dfn class="decl def fn" id="uv__sendmmsg" title='uv__sendmmsg' data-ref="uv__sendmmsg" data-ref-filename="uv__sendmmsg">uv__sendmmsg</dfn>(<em>int</em> <dfn class="local col1 decl" id="1fd" title='fd' data-type='int' data-ref="1fd" data-ref-filename="1fd">fd</dfn>,</td></tr>
+<tr><th id="132">132</th><td>                 <b>struct</b> <a class="type" href="#uv__mmsghdr" title='uv__mmsghdr' data-ref="uv__mmsghdr" data-ref-filename="uv__mmsghdr">uv__mmsghdr</a>* <dfn class="local col2 decl" id="2mmsg" title='mmsg' data-type='struct uv__mmsghdr *' data-ref="2mmsg" data-ref-filename="2mmsg">mmsg</dfn>,</td></tr>
+<tr><th id="133">133</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="3vlen" title='vlen' data-type='unsigned int' data-ref="3vlen" data-ref-filename="3vlen">vlen</dfn>,</td></tr>
+<tr><th id="134">134</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="4flags" title='flags' data-type='unsigned int' data-ref="4flags" data-ref-filename="4flags">flags</dfn>) {</td></tr>
+<tr><th id="135">135</th><td><u>#<span data-ppcond="135">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#311" data-ref="_M/__NR_sendmmsg">__NR_sendmmsg</a>)</u></td></tr>
+<tr><th id="136">136</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#311" title="307" data-ref="_M/__NR_sendmmsg">__NR_sendmmsg</a>, <a class="local col1 ref" href="#1fd" title='fd' data-ref="1fd" data-ref-filename="1fd">fd</a>, <a class="local col2 ref" href="#2mmsg" title='mmsg' data-ref="2mmsg" data-ref-filename="2mmsg">mmsg</a>, <a class="local col3 ref" href="#3vlen" title='vlen' data-ref="3vlen" data-ref-filename="3vlen">vlen</a>, <a class="local col4 ref" href="#4flags" title='flags' data-ref="4flags" data-ref-filename="4flags">flags</a>);</td></tr>
+<tr><th id="137">137</th><td><u>#<span data-ppcond="135">else</span></u></td></tr>
+<tr><th id="138">138</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="135">endif</span></u></td></tr>
+<tr><th id="140">140</th><td>}</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><em>int</em> <dfn class="decl def fn" id="uv__recvmmsg" title='uv__recvmmsg' data-ref="uv__recvmmsg" data-ref-filename="uv__recvmmsg">uv__recvmmsg</dfn>(<em>int</em> <dfn class="local col5 decl" id="5fd" title='fd' data-type='int' data-ref="5fd" data-ref-filename="5fd">fd</dfn>,</td></tr>
+<tr><th id="144">144</th><td>                 <b>struct</b> <a class="type" href="#uv__mmsghdr" title='uv__mmsghdr' data-ref="uv__mmsghdr" data-ref-filename="uv__mmsghdr">uv__mmsghdr</a>* <dfn class="local col6 decl" id="6mmsg" title='mmsg' data-type='struct uv__mmsghdr *' data-ref="6mmsg" data-ref-filename="6mmsg">mmsg</dfn>,</td></tr>
+<tr><th id="145">145</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="7vlen" title='vlen' data-type='unsigned int' data-ref="7vlen" data-ref-filename="7vlen">vlen</dfn>,</td></tr>
+<tr><th id="146">146</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="8flags" title='flags' data-type='unsigned int' data-ref="8flags" data-ref-filename="8flags">flags</dfn>,</td></tr>
+<tr><th id="147">147</th><td>                 <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/types/struct_timespec.h.html#timespec" title='timespec' data-ref="timespec" data-ref-filename="timespec">timespec</a>* <dfn class="local col9 decl" id="9timeout" title='timeout' data-type='struct timespec *' data-ref="9timeout" data-ref-filename="9timeout">timeout</dfn>) {</td></tr>
+<tr><th id="148">148</th><td><u>#<span data-ppcond="148">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#303" data-ref="_M/__NR_recvmmsg">__NR_recvmmsg</a>)</u></td></tr>
+<tr><th id="149">149</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#303" title="299" data-ref="_M/__NR_recvmmsg">__NR_recvmmsg</a>, <a class="local col5 ref" href="#5fd" title='fd' data-ref="5fd" data-ref-filename="5fd">fd</a>, <a class="local col6 ref" href="#6mmsg" title='mmsg' data-ref="6mmsg" data-ref-filename="6mmsg">mmsg</a>, <a class="local col7 ref" href="#7vlen" title='vlen' data-ref="7vlen" data-ref-filename="7vlen">vlen</a>, <a class="local col8 ref" href="#8flags" title='flags' data-ref="8flags" data-ref-filename="8flags">flags</a>, <a class="local col9 ref" href="#9timeout" title='timeout' data-ref="9timeout" data-ref-filename="9timeout">timeout</a>);</td></tr>
+<tr><th id="150">150</th><td><u>#<span data-ppcond="148">else</span></u></td></tr>
+<tr><th id="151">151</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="148">endif</span></u></td></tr>
+<tr><th id="153">153</th><td>}</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t" data-ref-filename="ssize_t">ssize_t</a> <dfn class="decl def fn" id="uv__preadv" title='uv__preadv' data-ref="uv__preadv" data-ref-filename="uv__preadv">uv__preadv</dfn>(<em>int</em> <dfn class="local col0 decl" id="10fd" title='fd' data-type='int' data-ref="10fd" data-ref-filename="10fd">fd</dfn>, <em>const</em> <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/types/struct_iovec.h.html#iovec" title='iovec' data-ref="iovec" data-ref-filename="iovec">iovec</a> *<dfn class="local col1 decl" id="11iov" title='iov' data-type='const struct iovec *' data-ref="11iov" data-ref-filename="11iov">iov</dfn>, <em>int</em> <dfn class="local col2 decl" id="12iovcnt" title='iovcnt' data-type='int' data-ref="12iovcnt" data-ref-filename="12iovcnt">iovcnt</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int64_t" title='int64_t' data-type='__int64_t' data-ref="int64_t" data-ref-filename="int64_t">int64_t</a> <dfn class="local col3 decl" id="13offset" title='offset' data-type='int64_t' data-ref="13offset" data-ref-filename="13offset">offset</dfn>) {</td></tr>
+<tr><th id="157">157</th><td><u>#<span data-ppcond="157">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#299" data-ref="_M/__NR_preadv">__NR_preadv</a>)</u></td></tr>
+<tr><th id="158">158</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#299" title="295" data-ref="_M/__NR_preadv">__NR_preadv</a>, <a class="local col0 ref" href="#10fd" title='fd' data-ref="10fd" data-ref-filename="10fd">fd</a>, <a class="local col1 ref" href="#11iov" title='iov' data-ref="11iov" data-ref-filename="11iov">iov</a>, <a class="local col2 ref" href="#12iovcnt" title='iovcnt' data-ref="12iovcnt" data-ref-filename="12iovcnt">iovcnt</a>, (<em>long</em>)<a class="local col3 ref" href="#13offset" title='offset' data-ref="13offset" data-ref-filename="13offset">offset</a>, (<em>long</em>)(<a class="local col3 ref" href="#13offset" title='offset' data-ref="13offset" data-ref-filename="13offset">offset</a> &gt;&gt; <var>32</var>));</td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="157">else</span></u></td></tr>
+<tr><th id="160">160</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="161">161</th><td><u>#<span data-ppcond="157">endif</span></u></td></tr>
+<tr><th id="162">162</th><td>}</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t" data-ref-filename="ssize_t">ssize_t</a> <dfn class="decl def fn" id="uv__pwritev" title='uv__pwritev' data-ref="uv__pwritev" data-ref-filename="uv__pwritev">uv__pwritev</dfn>(<em>int</em> <dfn class="local col4 decl" id="14fd" title='fd' data-type='int' data-ref="14fd" data-ref-filename="14fd">fd</dfn>, <em>const</em> <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/types/struct_iovec.h.html#iovec" title='iovec' data-ref="iovec" data-ref-filename="iovec">iovec</a> *<dfn class="local col5 decl" id="15iov" title='iov' data-type='const struct iovec *' data-ref="15iov" data-ref-filename="15iov">iov</dfn>, <em>int</em> <dfn class="local col6 decl" id="16iovcnt" title='iovcnt' data-type='int' data-ref="16iovcnt" data-ref-filename="16iovcnt">iovcnt</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int64_t" title='int64_t' data-type='__int64_t' data-ref="int64_t" data-ref-filename="int64_t">int64_t</a> <dfn class="local col7 decl" id="17offset" title='offset' data-type='int64_t' data-ref="17offset" data-ref-filename="17offset">offset</dfn>) {</td></tr>
+<tr><th id="166">166</th><td><u>#<span data-ppcond="166">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#300" data-ref="_M/__NR_pwritev">__NR_pwritev</a>)</u></td></tr>
+<tr><th id="167">167</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#300" title="296" data-ref="_M/__NR_pwritev">__NR_pwritev</a>, <a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>, <a class="local col5 ref" href="#15iov" title='iov' data-ref="15iov" data-ref-filename="15iov">iov</a>, <a class="local col6 ref" href="#16iovcnt" title='iovcnt' data-ref="16iovcnt" data-ref-filename="16iovcnt">iovcnt</a>, (<em>long</em>)<a class="local col7 ref" href="#17offset" title='offset' data-ref="17offset" data-ref-filename="17offset">offset</a>, (<em>long</em>)(<a class="local col7 ref" href="#17offset" title='offset' data-ref="17offset" data-ref-filename="17offset">offset</a> &gt;&gt; <var>32</var>));</td></tr>
+<tr><th id="168">168</th><td><u>#<span data-ppcond="166">else</span></u></td></tr>
+<tr><th id="169">169</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="170">170</th><td><u>#<span data-ppcond="166">endif</span></u></td></tr>
+<tr><th id="171">171</th><td>}</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><em>int</em> <dfn class="decl def fn" id="uv__dup3" title='uv__dup3' data-ref="uv__dup3" data-ref-filename="uv__dup3">uv__dup3</dfn>(<em>int</em> <dfn class="local col8 decl" id="18oldfd" title='oldfd' data-type='int' data-ref="18oldfd" data-ref-filename="18oldfd">oldfd</dfn>, <em>int</em> <dfn class="local col9 decl" id="19newfd" title='newfd' data-type='int' data-ref="19newfd" data-ref-filename="19newfd">newfd</dfn>, <em>int</em> <dfn class="local col0 decl" id="20flags" title='flags' data-type='int' data-ref="20flags" data-ref-filename="20flags">flags</dfn>) {</td></tr>
+<tr><th id="175">175</th><td><u>#<span data-ppcond="175">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#296" data-ref="_M/__NR_dup3">__NR_dup3</a>)</u></td></tr>
+<tr><th id="176">176</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#296" title="292" data-ref="_M/__NR_dup3">__NR_dup3</a>, <a class="local col8 ref" href="#18oldfd" title='oldfd' data-ref="18oldfd" data-ref-filename="18oldfd">oldfd</a>, <a class="local col9 ref" href="#19newfd" title='newfd' data-ref="19newfd" data-ref-filename="19newfd">newfd</a>, <a class="local col0 ref" href="#20flags" title='flags' data-ref="20flags" data-ref-filename="20flags">flags</a>);</td></tr>
+<tr><th id="177">177</th><td><u>#<span data-ppcond="175">else</span></u></td></tr>
+<tr><th id="178">178</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="179">179</th><td><u>#<span data-ppcond="175">endif</span></u></td></tr>
+<tr><th id="180">180</th><td>}</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><em>int</em> <dfn class="decl def fn" id="uv__statx" title='uv__statx' data-ref="uv__statx" data-ref-filename="uv__statx">uv__statx</dfn>(<em>int</em> <dfn class="local col1 decl" id="21dirfd" title='dirfd' data-type='int' data-ref="21dirfd" data-ref-filename="21dirfd">dirfd</dfn>,</td></tr>
+<tr><th id="184">184</th><td>              <em>const</em> <em>char</em>* <dfn class="local col2 decl" id="22path" title='path' data-type='const char *' data-ref="22path" data-ref-filename="22path">path</dfn>,</td></tr>
+<tr><th id="185">185</th><td>              <em>int</em> <dfn class="local col3 decl" id="23flags" title='flags' data-type='int' data-ref="23flags" data-ref-filename="23flags">flags</dfn>,</td></tr>
+<tr><th id="186">186</th><td>              <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="24mask" title='mask' data-type='unsigned int' data-ref="24mask" data-ref-filename="24mask">mask</dfn>,</td></tr>
+<tr><th id="187">187</th><td>              <b>struct</b> <a class="type" href="linux-syscalls.h.html#uv__statx" title='uv__statx' data-ref="uv__statx" data-ref-filename="uv__statx">uv__statx</a>* <dfn class="local col5 decl" id="25statxbuf" title='statxbuf' data-type='struct uv__statx *' data-ref="25statxbuf" data-ref-filename="25statxbuf">statxbuf</dfn>) {</td></tr>
+<tr><th id="188">188</th><td>  <i>/* __NR_statx make Android box killed by SIGSYS.</i></td></tr>
+<tr><th id="189">189</th><td><i>   * That looks like a seccomp2 sandbox filter rejecting the system call.</i></td></tr>
+<tr><th id="190">190</th><td><i>   */</i></td></tr>
+<tr><th id="191">191</th><td><u>#<span data-ppcond="191">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#336" data-ref="_M/__NR_statx">__NR_statx</a>) &amp;&amp; !defined(<span class="macro" data-ref="_M/__ANDROID__">__ANDROID__</span>)</u></td></tr>
+<tr><th id="192">192</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#336" title="332" data-ref="_M/__NR_statx">__NR_statx</a>, <a class="local col1 ref" href="#21dirfd" title='dirfd' data-ref="21dirfd" data-ref-filename="21dirfd">dirfd</a>, <a class="local col2 ref" href="#22path" title='path' data-ref="22path" data-ref-filename="22path">path</a>, <a class="local col3 ref" href="#23flags" title='flags' data-ref="23flags" data-ref-filename="23flags">flags</a>, <a class="local col4 ref" href="#24mask" title='mask' data-ref="24mask" data-ref-filename="24mask">mask</a>, <a class="local col5 ref" href="#25statxbuf" title='statxbuf' data-ref="25statxbuf" data-ref-filename="25statxbuf">statxbuf</a>);</td></tr>
+<tr><th id="193">193</th><td><u>#<span data-ppcond="191">else</span></u></td></tr>
+<tr><th id="194">194</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="195">195</th><td><u>#<span data-ppcond="191">endif</span></u></td></tr>
+<tr><th id="196">196</th><td>}</td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t" data-ref-filename="ssize_t">ssize_t</a> <dfn class="decl def fn" id="uv__getrandom" title='uv__getrandom' data-ref="uv__getrandom" data-ref-filename="uv__getrandom">uv__getrandom</dfn>(<em>void</em>* <dfn class="local col6 decl" id="26buf" title='buf' data-type='void *' data-ref="26buf" data-ref-filename="26buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col7 decl" id="27buflen" title='buflen' data-type='size_t' data-ref="27buflen" data-ref-filename="27buflen">buflen</dfn>, <em>unsigned</em> <dfn class="local col8 decl" id="28flags" title='flags' data-type='unsigned int' data-ref="28flags" data-ref-filename="28flags">flags</dfn>) {</td></tr>
+<tr><th id="200">200</th><td><u>#<span data-ppcond="200">if</span> defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#322" data-ref="_M/__NR_getrandom">__NR_getrandom</a>)</u></td></tr>
+<tr><th id="201">201</th><td>  <b>return</b> <a class="ref fn" href="../../../../../include/unistd.h.html#syscall" title='syscall' data-ref="syscall" data-ref-filename="syscall">syscall</a>(<a class="macro" href="../../../../../include/x86_64-linux-gnu/asm/unistd_64.h.html#322" title="318" data-ref="_M/__NR_getrandom">__NR_getrandom</a>, <a class="local col6 ref" href="#26buf" title='buf' data-ref="26buf" data-ref-filename="26buf">buf</a>, <a class="local col7 ref" href="#27buflen" title='buflen' data-ref="27buflen" data-ref-filename="27buflen">buflen</a>, <a class="local col8 ref" href="#28flags" title='flags' data-ref="28flags" data-ref-filename="28flags">flags</a>);</td></tr>
+<tr><th id="202">202</th><td><u>#<span data-ppcond="200">else</span></u></td></tr>
+<tr><th id="203">203</th><td>  <b>return</b> errno = ENOSYS, -<var>1</var>;</td></tr>
+<tr><th id="204">204</th><td><u>#<span data-ppcond="200">endif</span></u></td></tr>
+<tr><th id="205">205</th><td>}</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

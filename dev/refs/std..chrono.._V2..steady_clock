@@ -1,0 +1,19 @@
+<def f='include/c++/10/chrono' l='1028' ll='1039'/>
+<use f='include/c++/10/chrono' l='1033'/>
+<use f='include/c++/10/mutex' l='142' c='_ZNSt18__timed_mutex_impl15_M_try_lock_forERKNSt6chrono8durationITL0__TL0_0_EE'/>
+<use f='include/c++/10/mutex' l='172' c='_ZNSt18__timed_mutex_impl17_M_try_lock_untilERKNSt6chrono10time_pointINS0_3_V212steady_clockETL0__EE'/>
+<use f='include/c++/10/condition_variable' l='73'/>
+<use f='include/c++/10/condition_variable' l='256'/>
+<size>1</size>
+<doc f='include/c++/10/chrono' l='1022'>/**
+     *  @brief Monotonic clock
+     *
+     *  Time returned has the property of only increasing at a uniform rate.
+     *  @ingroup chrono
+    */</doc>
+<smbr r='std::chrono::_V2::steady_clock::is_steady' t='const bool'/>
+<fun r='_ZNSt6chrono3_V212steady_clock3nowEv'/>
+<use f='include/c++/10/shared_mutex' l='454'/>
+<use f='include/c++/10/shared_mutex' l='529' c='_ZNSt18shared_timed_mutex14try_lock_untilERKNSt6chrono10time_pointINS0_3_V212steady_clockET_EE'/>
+<use f='include/c++/10/shared_mutex' l='616' c='_ZNSt18shared_timed_mutex21try_lock_shared_untilERKNSt6chrono10time_pointINS0_3_V212steady_clockET_EE'/>
+<size>1</size>

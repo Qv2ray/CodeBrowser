@@ -1,0 +1,16 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='233'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='524' ll='530'/>
+<size>192</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='523'>/* uv_write_t is a subclass of uv_req_t. */</doc>
+<mbr r='uv_write_s::data' o='0' t='void *'/>
+<mbr r='uv_write_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_write_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_write_s::cb' o='512' t='uv_write_cb'/>
+<mbr r='uv_write_s::send_handle' o='576' t='uv_stream_t *'/>
+<mbr r='uv_write_s::handle' o='640' t='uv_stream_t *'/>
+<mbr r='uv_write_s::queue' o='704' t='void *[2]'/>
+<mbr r='uv_write_s::write_index' o='832' t='unsigned int'/>
+<mbr r='uv_write_s::bufs' o='896' t='uv_buf_t *'/>
+<mbr r='uv_write_s::nbufs' o='960' t='unsigned int'/>
+<mbr r='uv_write_s::error' o='992' t='int'/>
+<mbr r='uv_write_s::bufsml' o='1024' t='uv_buf_t [4]'/>

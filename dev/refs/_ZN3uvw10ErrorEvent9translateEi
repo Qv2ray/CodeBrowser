@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='42' type='static int uvw::ErrorEvent::translate(int sys)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='30'>/**
+     * @brief Returns the `libuv` error code equivalent to the given platform dependent error code.
+     *
+     * It returns:
+     * * POSIX error codes on Unix (the ones stored in errno).
+     * * Win32 error codes on Windows (those returned by GetLastError() or WSAGetLastError()).
+     *
+     * If `sys` is already a `libuv` error code, it is simply returned.
+     *
+     * @param sys A platform dependent error code.
+     * @return The `libuv` error code equivalent to the given platform dependent error code.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/emitter.cpp' l='11' ll='13' type='static int uvw::ErrorEvent::translate(int sys)'/>

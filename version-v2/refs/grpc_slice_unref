@@ -1,0 +1,7 @@
+<dec f='include/grpc/slice.h' l='41' type='void grpc_slice_unref(grpc_slice s)'/>
+<doc f='include/grpc/slice.h' l='35'>/** Decrement the ref count of s.  If the ref count of s reaches zero, all
+   slices sharing the ref count are destroyed, and considered no longer
+   initialized.  If s is ultimately derived from a call to grpc_slice_new(start,
+   len, dest) where dest!=NULL , then (*dest)(start) is called, else if s is
+   ultimately derived from a call to grpc_slice_new_with_len(start, len, dest)
+   where dest!=NULL , then (*dest)(start, len).  Requires s initialized.  */</doc>

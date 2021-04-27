@@ -1,0 +1,35 @@
+<use f='qv2ray/test/catch.hpp' l='4385' c='_ZN5Catch3rngEv'/>
+<def f='qv2ray/test/catch.hpp' l='4545' ll='4579'/>
+<use f='qv2ray/test/catch.hpp' l='4557' c='_ZN5Catch11SimplePcg32C1Ev'/>
+<use f='qv2ray/test/catch.hpp' l='4567' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4567' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4568' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4568' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4591'/>
+<use f='qv2ray/test/catch.hpp' l='4613'/>
+<use f='qv2ray/test/catch.hpp' l='10301' c='_ZN5Catch3rngEv'/>
+<use f='qv2ray/test/catch.hpp' l='10302' c='_ZN5Catch3rngEv'/>
+<use f='qv2ray/test/catch.hpp' l='12166' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='12166' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='12170' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='12170' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='14015' c='_ZN5Catch12_GLOBAL__N_110TestHasherC1ERNS_11SimplePcg32E'/>
+<size>8</size>
+<doc f='qv2ray/test/catch.hpp' l='4540'>// This is a simple implementation of C++11 Uniform Random Number
+    // Generator. It does not provide all operators, because Catch2
+    // does not use it, but it should behave as expected inside stdlib&apos;s
+    // distributions.
+    // The implementation is based on the PCG family (http://pcg-random.org)</doc>
+<fun r='_ZN5Catch11SimplePcg323minEv'/>
+<fun r='_ZN5Catch11SimplePcg323maxEv'/>
+<fun r='_ZN5Catch11SimplePcg32C1Ev'/>
+<fun r='_ZN5Catch11SimplePcg32C1Ej'/>
+<fun r='_ZN5Catch11SimplePcg324seedEj'/>
+<fun r='_ZN5Catch11SimplePcg327discardEm'/>
+<fun r='_ZN5Catch11SimplePcg32clEv'/>
+<mbr r='Catch::SimplePcg32::m_state' o='0' t='std::uint64_t'/>
+<smbr r='Catch::SimplePcg32::s_inc' t='const std::uint64_t'/>
+<fun r='_ZN5Catch11SimplePcg32C1Ej'/>
+<fun r='_ZN5Catch11SimplePcg324seedEj'/>
+<fun r='_ZN5Catch11SimplePcg327discardEm'/>
+<fun r='_ZN5Catch11SimplePcg32clEv'/>

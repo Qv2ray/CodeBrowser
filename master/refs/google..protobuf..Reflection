@@ -1,0 +1,168 @@
+<use f='include/google/protobuf/message.h' l='176'/>
+<use f='include/google/protobuf/message.h' l='331'/>
+<def f='include/google/protobuf/message.h' l='412' ll='1029'/>
+<use f='include/google/protobuf/message.h' l='1028' c='_ZN6google8protobuf10ReflectionC1ERKS1_'/>
+<use f='include/google/protobuf/message.h' l='1028' c='_ZN6google8protobuf10ReflectionaSERKS1_'/>
+<size>8</size>
+<doc f='include/google/protobuf/message.h' l='374'>// This interface contains methods that can be used to dynamically access
+// and modify the fields of a protocol message.  Their semantics are
+// similar to the accessors the protocol compiler generates.
+//
+// To get the Reflection for a given Message, call Message::GetReflection().
+//
+// This interface is separate from Message only for efficiency reasons;
+// the vast majority of implementations of Message will share the same
+// implementation of Reflection (GeneratedMessageReflection,
+// defined in generated_message.h), and all Messages of a particular class
+// should share the same Reflection object (though you should not rely on
+// the latter fact).
+//
+// There are several ways that these methods can be used incorrectly.  For
+// example, any of the following conditions will lead to undefined
+// results (probably assertion failures):
+// - The FieldDescriptor is not a field of this message type.
+// - The method called is not appropriate for the field&apos;s type.  For
+//   each field type in FieldDescriptor::TYPE_*, there is only one
+//   Get*() method, one Set*() method, and one Add*() method that is
+//   valid for that type.  It should be obvious which (except maybe
+//   for TYPE_BYTES, which are represented using strings in C++).
+// - A Get*() or Set*() method for singular fields is called on a repeated
+//   field.
+// - GetRepeated*(), SetRepeated*(), or Add*() is called on a non-repeated
+//   field.
+// - The Message object passed to any method is not of the right type for
+//   this Reflection object (i.e. message.GetReflection() != reflection).
+//
+// You might wonder why there is not any abstract representation for a field
+// of arbitrary type.  E.g., why isn&apos;t there just a &quot;GetField()&quot; method that
+// returns &quot;const Field&amp;&quot;, where &quot;Field&quot; is some class with accessors like
+// &quot;GetInt32Value()&quot;.  The problem is that someone would have to deal with
+// allocating these Field objects.  For generated message classes, having to
+// allocate space for an additional object to wrap every field would at least
+// double the message&apos;s memory footprint, probably worse.  Allocating the
+// objects on-demand, on the other hand, would be expensive and prone to
+// memory leaks.  So, instead we ended up with this flat interface.</doc>
+<fun r='_ZN6google8protobuf10ReflectionC1Ev'/>
+<fun r='_ZN6google8protobuf10ReflectionD1Ev'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetUnknownFieldsERKNS0_7MessageE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableUnknownFieldsEPNS0_7MessageE'/>
+<fun r='_ZNK6google8protobuf10Reflection13SpaceUsedLongERKNS0_7MessageE'/>
+<fun r='_ZNK6google8protobuf10Reflection9SpaceUsedERKNS0_7MessageE'/>
+<fun r='_ZNK6google8protobuf10Reflection8HasFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection9FieldSizeERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection10ClearFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection8HasOneofERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection10ClearOneofEPNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection23GetOneofFieldDescriptorERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection10RemoveLastEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection11ReleaseLastEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection4SwapEPNS0_7MessageES3_'/>
+<fun r='_ZNK6google8protobuf10Reflection10SwapFieldsEPNS0_7MessageES3_RKSt6vectorIPKNS0_15FieldDescriptorESaIS7_EE'/>
+<fun r='_ZNK6google8protobuf10Reflection12SwapElementsEPNS0_7MessageEPKNS0_15FieldDescriptorEii'/>
+<fun r='_ZNK6google8protobuf10Reflection10ListFieldsERKNS0_7MessageEPSt6vectorIPKNS0_15FieldDescriptorESaIS8_EE'/>
+<fun r='_ZNK6google8protobuf10Reflection8GetInt32ERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection8GetInt64ERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection9GetUInt32ERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection9GetUInt64ERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection8GetFloatERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection9GetDoubleERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection7GetBoolERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection9GetStringB5cxx11ERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection7GetEnumERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection12GetEnumValueERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection10GetMessageERKNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZNK6google8protobuf10Reflection18GetStringReferenceERKNS0_7MessageEPKNS0_15FieldDescriptorEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Reflection8SetInt32EPNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection8SetInt64EPNS0_7MessageEPKNS0_15FieldDescriptorEl'/>
+<fun r='_ZNK6google8protobuf10Reflection9SetUInt32EPNS0_7MessageEPKNS0_15FieldDescriptorEj'/>
+<fun r='_ZNK6google8protobuf10Reflection9SetUInt64EPNS0_7MessageEPKNS0_15FieldDescriptorEm'/>
+<fun r='_ZNK6google8protobuf10Reflection8SetFloatEPNS0_7MessageEPKNS0_15FieldDescriptorEf'/>
+<fun r='_ZNK6google8protobuf10Reflection9SetDoubleEPNS0_7MessageEPKNS0_15FieldDescriptorEd'/>
+<fun r='_ZNK6google8protobuf10Reflection7SetBoolEPNS0_7MessageEPKNS0_15FieldDescriptorEb'/>
+<fun r='_ZNK6google8protobuf10Reflection9SetStringEPNS0_7MessageEPKNS0_15FieldDescriptorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Reflection7SetEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEPKNS0_19EnumValueDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection12SetEnumValueEPNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection14MutableMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZNK6google8protobuf10Reflection19SetAllocatedMessageEPNS0_7MessageES3_PKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection14ReleaseMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedInt32ERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedInt64ERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection17GetRepeatedUInt32ERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection17GetRepeatedUInt64ERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFloatERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection17GetRepeatedDoubleERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection15GetRepeatedBoolERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection17GetRepeatedStringB5cxx11ERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection15GetRepeatedEnumERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection20GetRepeatedEnumValueERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection18GetRepeatedMessageERKNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection26GetRepeatedStringReferenceERKNS0_7MessageEPKNS0_15FieldDescriptorEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Reflection16SetRepeatedInt32EPNS0_7MessageEPKNS0_15FieldDescriptorEii'/>
+<fun r='_ZNK6google8protobuf10Reflection16SetRepeatedInt64EPNS0_7MessageEPKNS0_15FieldDescriptorEil'/>
+<fun r='_ZNK6google8protobuf10Reflection17SetRepeatedUInt32EPNS0_7MessageEPKNS0_15FieldDescriptorEij'/>
+<fun r='_ZNK6google8protobuf10Reflection17SetRepeatedUInt64EPNS0_7MessageEPKNS0_15FieldDescriptorEim'/>
+<fun r='_ZNK6google8protobuf10Reflection16SetRepeatedFloatEPNS0_7MessageEPKNS0_15FieldDescriptorEif'/>
+<fun r='_ZNK6google8protobuf10Reflection17SetRepeatedDoubleEPNS0_7MessageEPKNS0_15FieldDescriptorEid'/>
+<fun r='_ZNK6google8protobuf10Reflection15SetRepeatedBoolEPNS0_7MessageEPKNS0_15FieldDescriptorEib'/>
+<fun r='_ZNK6google8protobuf10Reflection17SetRepeatedStringEPNS0_7MessageEPKNS0_15FieldDescriptorEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Reflection15SetRepeatedEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEiPKNS0_19EnumValueDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20SetRepeatedEnumValueEPNS0_7MessageEPKNS0_15FieldDescriptorEii'/>
+<fun r='_ZNK6google8protobuf10Reflection22MutableRepeatedMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection8AddInt32EPNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection8AddInt64EPNS0_7MessageEPKNS0_15FieldDescriptorEl'/>
+<fun r='_ZNK6google8protobuf10Reflection9AddUInt32EPNS0_7MessageEPKNS0_15FieldDescriptorEj'/>
+<fun r='_ZNK6google8protobuf10Reflection9AddUInt64EPNS0_7MessageEPKNS0_15FieldDescriptorEm'/>
+<fun r='_ZNK6google8protobuf10Reflection8AddFloatEPNS0_7MessageEPKNS0_15FieldDescriptorEf'/>
+<fun r='_ZNK6google8protobuf10Reflection9AddDoubleEPNS0_7MessageEPKNS0_15FieldDescriptorEd'/>
+<fun r='_ZNK6google8protobuf10Reflection7AddBoolEPNS0_7MessageEPKNS0_15FieldDescriptorEb'/>
+<fun r='_ZNK6google8protobuf10Reflection9AddStringEPNS0_7MessageEPKNS0_15FieldDescriptorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Reflection7AddEnumEPNS0_7MessageEPKNS0_15FieldDescriptorEPKNS0_19EnumValueDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection12AddEnumValueEPNS0_7MessageEPKNS0_15FieldDescriptorEi'/>
+<fun r='_ZNK6google8protobuf10Reflection10AddMessageEPNS0_7MessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<fun r='_ZNK6google8protobuf10Reflection19AddAllocatedMessageEPNS0_7MessageEPKNS0_15FieldDescriptorES3_'/>
+<fun r='_ZNK6google8protobuf10Reflection19GetRepeatedFieldRefERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection26GetMutableRepeatedFieldRefEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection19GetRepeatedPtrFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection24FindKnownExtensionByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Reflection26FindKnownExtensionByNumberEi'/>
+<fun r='_ZNK6google8protobuf10Reflection25SupportsUnknownEnumValuesEv'/>
+<fun r='_ZNK6google8protobuf10Reflection17GetMessageFactoryEv'/>
+<fun r='_ZNK6google8protobuf10Reflection23MutableRawRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorENS4_7CppTypeEiPKNS0_10DescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection19GetRawRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEiPKNS0_10DescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection17RepeatedFieldDataEPNS0_7MessageEPKNS0_15FieldDescriptorENS4_7CppTypeEPKNS0_10DescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection21RepeatedFieldAccessorEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection24MutableRawRepeatedStringEPNS0_7MessageEPKNS0_15FieldDescriptorEb'/>
+<fun r='_ZNK6google8protobuf10Reflection14ContainsMapKeyERKNS0_7MessageEPKNS0_15FieldDescriptorERKNS0_6MapKeyE'/>
+<fun r='_ZNK6google8protobuf10Reflection22InsertOrLookupMapValueEPNS0_7MessageEPKNS0_15FieldDescriptorERKNS0_6MapKeyEPNS0_11MapValueRefE'/>
+<fun r='_ZNK6google8protobuf10Reflection14DeleteMapValueEPNS0_7MessageEPKNS0_15FieldDescriptorERKNS0_6MapKeyE'/>
+<fun r='_ZNK6google8protobuf10Reflection8MapBeginEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection6MapEndEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection7MapSizeERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection7MapDataEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZN6google8protobuf10ReflectionC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection16GetRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection20MutableRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection19GetRepeatedPtrFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection19GetRepeatedPtrFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection19GetRepeatedPtrFieldERKNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<fun r='_ZNK6google8protobuf10Reflection23MutableRepeatedPtrFieldEPNS0_7MessageEPKNS0_15FieldDescriptorE'/>
+<ovr f='include/google/protobuf/generated_message_reflection.h' l='292' c='google::protobuf::internal::GeneratedMessageReflection'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='292'/>
+<size>8</size>

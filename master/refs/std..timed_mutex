@@ -1,0 +1,22 @@
+<inh f='include/c++/10/bits/std_mutex.h' l='57' c='std::__mutex_base'/>
+<inh f='include/c++/10/mutex' l='134' c='std::__timed_mutex_impl'/>
+<def f='include/c++/10/mutex' l='210' ll='272'/>
+<use f='include/c++/10/mutex' l='211'/>
+<use f='include/c++/10/mutex' l='219' c='_ZNSt11timed_mutexC1ERKS_'/>
+<use f='include/c++/10/mutex' l='220' c='_ZNSt11timed_mutexaSERKS_'/>
+<use f='include/c++/10/mutex' l='220' c='_ZNSt11timed_mutexaSERKS_'/>
+<use f='include/c++/10/mutex' l='261'/>
+<size>40</size>
+<doc f='include/c++/10/mutex' l='209'>/// The standard timed mutex type.</doc>
+<fun r='_ZNSt11timed_mutexC1Ev'/>
+<fun r='_ZNSt11timed_mutexD1Ev'/>
+<fun r='_ZNSt11timed_mutexC1ERKS_'/>
+<fun r='_ZNSt11timed_mutexaSERKS_'/>
+<fun r='_ZNSt11timed_mutex4lockEv'/>
+<fun r='_ZNSt11timed_mutex8try_lockEv'/>
+<fun r='_ZNSt11timed_mutex12try_lock_forERKNSt6chrono8durationIT_T0_EE'/>
+<fun r='_ZNSt11timed_mutex14try_lock_untilERKNSt6chrono10time_pointIT_T0_EE'/>
+<fun r='_ZNSt11timed_mutex6unlockEv'/>
+<fun r='_ZNSt11timed_mutex13native_handleEv'/>
+<fun r='_ZNSt11timed_mutex12_M_timedlockERK8timespec'/>
+<fun r='_ZNSt11timed_mutex12_M_clocklockEiRK8timespec'/>

@@ -1,0 +1,11 @@
+<def f='include/netinet/ip.h' l='134' ll='148'/>
+<size>40</size>
+<doc f='include/netinet/ip.h' l='131'>/*
+ * Time stamp option structure.
+ */</doc>
+<mbr r='ip_timestamp::ipt_code' o='0' t='uint8_t'/>
+<mbr r='ip_timestamp::ipt_len' o='8' t='uint8_t'/>
+<mbr r='ip_timestamp::ipt_ptr' o='16' t='uint8_t'/>
+<mbr r='ip_timestamp::ipt_flg' o='24' t='unsigned int'/>
+<mbr r='ip_timestamp::ipt_oflw' o='28' t='unsigned int'/>
+<mbr r='ip_timestamp::data' o='32' t='uint32_t [9]'/>

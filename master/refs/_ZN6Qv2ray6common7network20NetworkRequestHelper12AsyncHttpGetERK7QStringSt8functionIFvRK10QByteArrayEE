@@ -1,0 +1,4 @@
+<dec f='qv2ray/src/common/HTTPRequestHelper.hpp' l='17' type='void Qv2ray::common::network::NetworkRequestHelper::AsyncHttpGet(const QString &amp; url, std::function&lt;void (const QByteArray &amp;)&gt; funcPtr)'/>
+<def f='qv2ray/src/common/HTTPRequestHelper.cpp' l='83' ll='105' type='void Qv2ray::common::network::NetworkRequestHelper::AsyncHttpGet(const QString &amp; url, std::function&lt;void (const QByteArray &amp;)&gt; funcPtr)'/>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='36' u='c' c='_ZN6Qv2ray10components15QvUpdateChecker11CheckUpdateEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='500' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler23UpdateSubscriptionAsyncERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>

@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/message_lite.h' l='296' type='bool google::protobuf::MessageLite::SerializeToZeroCopyStream(io::ZeroCopyOutputStream * output) const'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='64' u='c' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<doc f='include/google/protobuf/message_lite.h' l='294'>// Write the message to the given zero-copy output stream.  All required
+  // fields must be set.</doc>

@@ -1,0 +1,4 @@
+<dec f='include/grpc/slice.h' l='49' type='grpc_slice grpc_slice_new(void * p, size_t len, void (*)(void *) destroy)'/>
+<doc f='include/grpc/slice.h' l='46'>/** Create a slice pointing at some data. Calls malloc to allocate a refcount
+   for the object, and arranges that destroy will be called with the pointer
+   passed in at destruction. */</doc>

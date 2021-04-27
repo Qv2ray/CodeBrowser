@@ -1,0 +1,17 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='55' type='void uvw::TimerHandle::start(uvw::TimerHandle::Time timeout, uvw::TimerHandle::Time repeat)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='22' ll='24' type='void uvw::TimerHandle::start(TimerHandle::Time timeout, TimerHandle::Time repeat)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='43'>/**
+     * @brief Starts the timer.
+     *
+     * If timeout is zero, a TimerEvent event is emitted on the next event loop
+     * iteration. If repeat is non-zero, a TimerEvent event is emitted first
+     * after timeout milliseconds and then repeatedly after repeat milliseconds.
+     *
+     * @param timeout Milliseconds before to emit an event (use
+     * `std::chrono::duration&lt;uint64_t, std::milli&gt;`).
+     * @param repeat Milliseconds between successive events (use
+     * `std::chrono::duration&lt;uint64_t, std::milli&gt;`).
+     */</doc>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='91' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='73' u='c' c='_ZL13start_timeoutPvlS_'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='131' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>

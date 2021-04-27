@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='662' type='int uv_udp_getpeername(const uv_udp_t * handle, struct sockaddr * name, int * namelen)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1260' ll='1268' type='int uv_udp_getpeername(const uv_udp_t * handle, struct sockaddr * name, int * namelen)'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='400' u='c' c='uv__udp_is_connected'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='74' u='a' c='_ZNK3uvw9UDPHandle4peerEv'/>

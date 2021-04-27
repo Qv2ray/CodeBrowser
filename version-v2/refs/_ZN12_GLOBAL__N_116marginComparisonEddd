@@ -1,0 +1,5 @@
+<def f='qv2ray/test/catch.hpp' l='7858' ll='7860' type='bool (anonymous namespace)::marginComparison(double lhs, double rhs, double margin)'/>
+<use f='qv2ray/test/catch.hpp' l='7893' u='c' c='_ZNK5Catch6Detail6Approx22equalityComparisonImplEd'/>
+<use f='qv2ray/test/catch.hpp' l='7894' u='c' c='_ZNK5Catch6Detail6Approx22equalityComparisonImplEd'/>
+<doc f='qv2ray/test/catch.hpp' l='7856'>// Performs equivalent check of std::fabs(lhs - rhs) &lt;= margin
+// But without the subtraction to allow for INFINITY in comparison</doc>

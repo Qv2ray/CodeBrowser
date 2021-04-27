@@ -1,0 +1,15 @@
+<def f='include/c++/10/bits/stl_stack.h' l='271' ll='276' type='void std::stack::pop()'/>
+<use f='include/c++/10/bits/regex_automaton.tcc' l='203' u='c' c='_ZNSt8__detail9_StateSeq8_M_cloneEv'/>
+<use f='include/c++/10/bits/regex_compiler.tcc' l='286' u='c' c='_ZNSt8__detail9_Compiler13_M_quantifierEv'/>
+<doc f='include/c++/10/bits/stl_stack.h' l='260'>/**
+       *  @brief  Removes first element.
+       *
+       *  This is a typical %stack operation.  It shrinks the %stack
+       *  by one.  The time complexity of the operation depends on the
+       *  underlying sequence.
+       *
+       *  Note that no data is returned, and if the first element&apos;s
+       *  data is needed, it should be retrieved before pop() is
+       *  called.
+       */</doc>
+<use f='qv2ray/test/catch.hpp' l='11806' u='c' c='_ZN5Catch8CapturerC1ENS_9StringRefERKNS_14SourceLineInfoENS_9ResultWas6OfTypeES1_'/>

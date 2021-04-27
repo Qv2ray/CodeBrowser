@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='198' type='std::pair&lt;bool, std::pair&lt;const char *, const char *&gt;&gt; uvw::GetNameInfoReq::nameInfoSync(const sockaddr &amp; addr, int flags = 0)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='110' ll='114' type='std::pair&lt;bool, std::pair&lt;const char *, const char *&gt;&gt; uvw::GetNameInfoReq::nameInfoSync(const sockaddr &amp; addr, int flags = 0)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='121' u='c' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='186'>/**
+     * @brief Sync [getnameinfo](http://linux.die.net/man/3/getnameinfo).
+     *
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     * @param flags Optional flags that modify the behavior of `getnameinfo`.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * A `std::pair` composed as it follows:
+     *   * A `const char *` containing a valid hostname.
+     *   * A `const char *` containing a valid service name.
+     */</doc>

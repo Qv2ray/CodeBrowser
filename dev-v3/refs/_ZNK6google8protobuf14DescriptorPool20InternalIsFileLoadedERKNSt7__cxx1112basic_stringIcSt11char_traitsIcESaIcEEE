@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor.h' l='1732' type='bool google::protobuf::DescriptorPool::InternalIsFileLoaded(const std::string &amp; filename) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1729'>// For internal (unit test) use only:  Returns true if a FileDescriptor has
+  // been constructed for the given file, false otherwise.  Useful for testing
+  // lazy descriptor initialization behavior.</doc>

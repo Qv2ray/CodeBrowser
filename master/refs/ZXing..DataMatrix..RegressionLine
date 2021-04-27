@@ -1,0 +1,22 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='423' ll='549'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='429' c='_ZN5ZXing10DataMatrix9intersectERKNS0_14RegressionLineES3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='429' c='_ZN5ZXing10DataMatrix9intersectERKNS0_14RegressionLineES3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='551' c='_ZN5ZXing10DataMatrix9intersectERKNS0_14RegressionLineES3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='551' c='_ZN5ZXing10DataMatrix9intersectERKNS0_14RegressionLineES3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='696' c='_ZN5ZXing10DataMatrix10EdgeTracer9traceLineENS_6PointTIdEERNS0_14RegressionLineE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='714' c='_ZN5ZXing10DataMatrix10EdgeTracer9traceGapsENS_6PointTIdEERNS0_14RegressionLineEiRKS4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='714' c='_ZN5ZXing10DataMatrix10EdgeTracer9traceGapsENS_6PointTIdEERNS0_14RegressionLineEiRKS4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='870' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='870' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='870' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='870' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='916' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='945' c='_ZN5ZXing10DataMatrixL9DetectNewERKNS_9BitMatrixEb'/>
+<size>64</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='415'>/**
+* The following code is the &apos;new&apos; one implemented by Axel Waggershauser and is working completely different.
+* It is performing something like a (back) trace search along edges through the bit matrix, first looking for
+* the &apos;L&apos;-pattern, then tracing the black/white borders at the top/right. Advantages over the old code are:
+*  * works with lower resolution scans (around 2 pixel per module), due to sub-pixel precision grid placement
+*  * works with real-world codes that have just one module wide quite-zone (which is perfectly in spec)
+*/</doc>

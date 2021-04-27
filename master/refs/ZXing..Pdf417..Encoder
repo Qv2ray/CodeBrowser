@@ -1,0 +1,27 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='77'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='136' ll='189'/>
+<size>28</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.h' l='130'>/**
+* Top-level class for the logic part of the PDF417 implementation.
+* C++ port: this class was named PDF417 in Java code. Since that name
+* does say much in the context of PDF417 writer, it&apos;s renamed here Encoder
+* to follow the same naming convention with other modules.
+*/</doc>
+<fun r='_ZN5ZXing6Pdf4177EncoderC1Eb'/>
+<fun r='_ZNK5ZXing6Pdf4177Encoder20generateBarcodeLogicERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<fun r='_ZN5ZXing6Pdf4177Encoder13setDimensionsEiiii'/>
+<fun r='_ZN5ZXing6Pdf4177Encoder13setCompactionENS0_10CompactionE'/>
+<fun r='_ZN5ZXing6Pdf4177Encoder10setCompactEb'/>
+<fun r='_ZN5ZXing6Pdf4177Encoder11setEncodingENS_12CharacterSetE'/>
+<fun r='_ZN5ZXing6Pdf4177Encoder41GetRecommendedMinimumErrorCorrectionLevelEi'/>
+<mbr r='ZXing::Pdf417::Encoder::_compact' o='0' t='bool'/>
+<mbr r='ZXing::Pdf417::Encoder::_compaction' o='32' t='ZXing::Pdf417::Compaction'/>
+<mbr r='ZXing::Pdf417::Encoder::_encoding' o='64' t='ZXing::CharacterSet'/>
+<mbr r='ZXing::Pdf417::Encoder::_minCols' o='96' t='int'/>
+<mbr r='ZXing::Pdf417::Encoder::_maxCols' o='128' t='int'/>
+<mbr r='ZXing::Pdf417::Encoder::_minRows' o='160' t='int'/>
+<mbr r='ZXing::Pdf417::Encoder::_maxRows' o='192' t='int'/>
+<fun r='_ZNK5ZXing6Pdf4177Encoder20generateBarcodeLogicERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<fun r='_ZN5ZXing6Pdf4177Encoder41GetRecommendedMinimumErrorCorrectionLevelEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='127' c='_ZN5ZXing6Pdf4176WriterC1Ev'/>
+<size>28</size>

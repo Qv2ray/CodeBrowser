@@ -1,0 +1,4 @@
+<use f='include/google/protobuf/map_entry_lite.h' l='183' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<def f='include/google/protobuf/map_entry_lite.h' l='285' ll='298' type='void google::protobuf::internal::MapEntryImpl::MergeFromInternal(const MapEntryImpl&lt;Derived, Base, Key, Value, kKeyFieldType, kValueFieldType, default_enum_value&gt; &amp; from)'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='283'>// We can&apos;t declare this function directly here as it would hide the other
+  // overload (const Message&amp;).</doc>

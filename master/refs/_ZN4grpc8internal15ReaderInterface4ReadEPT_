@@ -1,0 +1,11 @@
+<dec f='include/grpcpp/impl/codegen/sync_stream.h' l='100' type='bool grpc::internal::ReaderInterface::Read(R * msg)'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='90'>/// Block to read a message and parse to \a msg. Returns \a true on success.
+  /// This is thread-safe with respect to \a Write or \WritesDone methods on
+  /// the same stream. It should not be called concurrently with another \a
+  /// Read on the same stream as the order of delivery will not be defined.
+  ///
+  /// \param[out] msg The read message.
+  ///
+  /// \return \a false when there will be no more incoming messages, either
+  /// because the other side has called \a WritesDone() or the stream has failed
+  /// (or been cancelled).</doc>

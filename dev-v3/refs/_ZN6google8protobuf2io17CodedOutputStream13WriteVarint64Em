@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='768' type='void google::protobuf::io::CodedOutputStream::WriteVarint64(google::protobuf::uint64 value)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1161' u='c' c='_ZN6google8protobuf2io17CodedOutputStream25WriteVarint32SignExtendedEi'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1215' ll='1226' type='void google::protobuf::io::CodedOutputStream::WriteVarint64(google::protobuf::uint64 value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='468' u='c' c='_ZN6google8protobuf8internal14WireFormatLite15WriteInt64NoTagElPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='476' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteUInt64NoTagEmPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='484' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteSInt64NoTagElPNS0_2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='767'>// Write an unsigned integer with Varint encoding.</doc>

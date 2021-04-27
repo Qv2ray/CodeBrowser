@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='692' type='static std::string uvw::Utilities::indexToIid(unsigned int index)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='682'>/**
+     * @brief Retrieves a network interface identifier.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/misc.html#c.uv_if_indextoiid)
+     * for further details.
+     *
+     * @param index Network interface index.
+     * @return Network interface identifier.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='246' ll='248' type='static std::string uvw::Utilities::indexToIid(unsigned int index)'/>

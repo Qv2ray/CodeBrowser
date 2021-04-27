@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='1777' type='google::protobuf::Symbol google::protobuf::DescriptorPool::CrossLinkOnDemandHelper(const std::string &amp; name, bool expecting_enum) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1772'>// Helper for when lazily_build_dependencies_ is set, can look up a symbol
+  // after the file&apos;s descriptor is built, and can build the file where that
+  // symbol is defined if necessary. Will create a placeholder if the type
+  // doesn&apos;t exist in the fallback database, or the file doesn&apos;t build
+  // successfully.</doc>

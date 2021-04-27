@@ -1,0 +1,6 @@
+<def f='include/x86_64-linux-gnu/curl/curl.h' l='2539' ll='2544'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='2537'>/* info about the certificate chain, only for OpenSSL, GnuTLS, Schannel, NSS
+   and GSKit builds. Asked for with CURLOPT_CERTINFO / CURLINFO_CERTINFO */</doc>
+<mbr r='curl_certinfo::num_of_certs' o='0' t='int'/>
+<mbr r='curl_certinfo::certinfo' o='64' t='struct curl_slist **'/>

@@ -1,0 +1,13 @@
+<dec f='include/c++/10/bits/stl_list.h' l='839' type='list&lt;_Tp, _Alloc&gt; &amp; std::__cxx11::list::operator=(const list&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<def f='include/c++/10/bits/list.tcc' l='265' ll='289' type='list&lt;_Tp, _Alloc&gt; &amp; std::__cxx11::list::operator=(const list&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_list.h' l='830'>/**
+       *  @brief  %List assignment operator.
+       *  @param  __x  A %list of identical element and allocator types.
+       *
+       *  All the elements of @a __x are copied.
+       *
+       *  Whether the allocator is copied depends on the allocator traits.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='85' u='c' c='_ZNR5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='87' u='c' c='_ZNO5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='343' u='c' c='_ZN5ZXing6Pdf4178Detector6DetectERKNS_12BinaryBitmapEbRNS1_6ResultE'/>

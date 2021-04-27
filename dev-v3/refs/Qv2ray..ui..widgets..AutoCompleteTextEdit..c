@@ -1,0 +1,23 @@
+<dec f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.hpp' l='80' type='QCompleter *'/>
+<offset>512</offset>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='70' u='w' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='71' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='71' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='72' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='73' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='74' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='75' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEditC1ERK7QStringRK5QListIS3_EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='85' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit16insertCompletionERK7QString'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='108' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit12focusInEventEP11QFocusEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='109' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit12focusInEventEP11QFocusEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='130' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='130' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='147' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='153' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='157' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='159' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='160' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='160' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='164' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='164' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/QvAutoCompleteTextEdit.cpp' l='165' u='r' c='_ZN6Qv2ray2ui7widgets20AutoCompleteTextEdit13keyPressEventEP9QKeyEvent'/>

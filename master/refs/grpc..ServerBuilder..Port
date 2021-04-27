@@ -1,0 +1,8 @@
+<def f='include/grpcpp/server_builder.h' l='217' ll='221'/>
+<use f='include/grpcpp/server_builder.h' l='234' c='_ZN4grpc13ServerBuilder5portsEv'/>
+<use f='include/grpcpp/server_builder.h' l='280'/>
+<size>56</size>
+<doc f='include/grpcpp/server_builder.h' l='216'>/// Experimental, to be deprecated</doc>
+<mbr r='grpc::ServerBuilder::Port::addr' o='0' t='grpc::string'/>
+<mbr r='grpc::ServerBuilder::Port::creds' o='256' t='std::shared_ptr&lt;ServerCredentials&gt;'/>
+<mbr r='grpc::ServerBuilder::Port::selected_port' o='384' t='int *'/>

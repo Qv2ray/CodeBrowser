@@ -1,0 +1,13 @@
+<dec f='include/google/protobuf/stubs/common.h' l='175' type='char * google::protobuf::internal::UTF8CoerceToStructurallyValid(const google::protobuf::StringPiece &amp; str, char * dst, char replace_char)'/>
+<doc f='include/google/protobuf/stubs/common.h' l='163'>// Coerce UTF-8 byte string in src_str to be
+// a structurally-valid equal-length string by selectively
+// overwriting illegal bytes with replace_char (typically &apos; &apos; or &apos;?&apos;).
+// replace_char must be legal printable 7-bit Ascii 0x20..0x7e.
+// src_str is read-only.
+//
+// Returns pointer to output buffer, src_str.data() if no changes were made,
+//  or idst if some bytes were changed. idst is allocated by the caller
+//  and must be at least as big as src_str
+//
+// Optimized for: all structurally valid and no byte copying is done.
+//</doc>

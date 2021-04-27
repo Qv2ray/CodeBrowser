@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='731' type='static google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::WriteRawToArray(const void * buffer, int size, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1280' u='c' c='_ZN6google8protobuf2io17CodedOutputStream18WriteStringToArrayERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPh'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='726'>// Like WriteRaw()  but writing directly to the target array.
+  // This is _not_ inlined, as the compiler often optimizes memcpy into inline
+  // copy loops. Since this gets called by every field with string or bytes
+  // type, inlining may lead to a significant amount of code bloat, with only a
+  // minor performance gain.</doc>

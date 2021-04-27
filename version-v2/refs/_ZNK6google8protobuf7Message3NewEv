@@ -1,0 +1,49 @@
+<dec f='include/google/protobuf/message.h' l='199' type='google::protobuf::Message * google::protobuf::Message::New() const'/>
+<use f='include/google/protobuf/message.h' l='205' u='c' c='_ZNK6google8protobuf7Message3NewEPNS0_5ArenaE'/>
+<ovr f='/v2ray_api.pb.h' l='146' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='264' c='_ZNK5v2ray4core3app5stats7command4Stat3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='382' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='491' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='609' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='718' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='814' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse3NewEv'/>
+<ovr f='/v2ray_api.pb.h' l='980' c='_ZNK5v2ray4core3app5stats7command6Config3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='363' c='_ZNK6google8protobuf17FileDescriptorSet3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='495' c='_ZNK6google8protobuf19FileDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='832' c='_ZNK6google8protobuf30DescriptorProto_ExtensionRange3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='989' c='_ZNK6google8protobuf29DescriptorProto_ReservedRange3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1128' c='_ZNK6google8protobuf15DescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1409' c='_ZNK6google8protobuf21ExtensionRangeOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1544' c='_ZNK6google8protobuf20FieldDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='1942' c='_ZNK6google8protobuf20OneofDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2106' c='_ZNK6google8protobuf37EnumDescriptorProto_EnumReservedRange3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2245' c='_ZNK6google8protobuf19EnumDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2460' c='_ZNK6google8protobuf24EnumValueDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2634' c='_ZNK6google8protobuf22ServiceDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='2811' c='_ZNK6google8protobuf21MethodDescriptorProto3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3049' c='_ZNK6google8protobuf11FileOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3582' c='_ZNK6google8protobuf14MessageOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='3757' c='_ZNK6google8protobuf12FieldOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4008' c='_ZNK6google8protobuf12OneofOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4143' c='_ZNK6google8protobuf11EnumOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4298' c='_ZNK6google8protobuf16EnumValueOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4443' c='_ZNK6google8protobuf14ServiceOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4588' c='_ZNK6google8protobuf13MethodOptions3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4771' c='_ZNK6google8protobuf28UninterpretedOption_NamePart3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='4930' c='_ZNK6google8protobuf19UninterpretedOption3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5175' c='_ZNK6google8protobuf23SourceCodeInfo_Location3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5399' c='_ZNK6google8protobuf14SourceCodeInfo3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5533' c='_ZNK6google8protobuf28GeneratedCodeInfo_Annotation3NewEv'/>
+<ovr f='include/google/protobuf/descriptor.pb.h' l='5713' c='_ZNK6google8protobuf17GeneratedCodeInfo3NewEv'/>
+<doc f='include/google/protobuf/message.h' l='194'>// Basic Operations ------------------------------------------------
+
+  // Construct a new instance of the same type.  Ownership is passed to the
+  // caller.  (This is also defined in MessageLite, but is defined again here
+  // for return-type covariance.)</doc>
+<ovr f='/v2ray_geosite.pb.h' l='169' c='_ZNK5v2ray4core3app6router22DomainObject_Attribute3NewEv'/>
+<ovr f='/v2ray_geosite.pb.h' l='312' c='_ZNK5v2ray4core3app6router12DomainObject3NewEv'/>
+<ovr f='/v2ray_geosite.pb.h' l='475' c='_ZNK5v2ray4core3app6router4CIDR3NewEv'/>
+<ovr f='/v2ray_geosite.pb.h' l='593' c='_ZNK5v2ray4core3app6router5GeoIP3NewEv'/>
+<ovr f='/v2ray_geosite.pb.h' l='717' c='_ZNK5v2ray4core3app6router9GeoIPList3NewEv'/>
+<ovr f='/v2ray_geosite.pb.h' l='826' c='_ZNK5v2ray4core3app6router7GeoSite3NewEv'/>
+<ovr f='/v2ray_geosite.pb.h' l='950' c='_ZNK5v2ray4core3app6router11GeoSiteList3NewEv'/>

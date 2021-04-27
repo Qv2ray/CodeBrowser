@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='188' type='static bool google::protobuf::internal::WireFormatLite::SkipField(io::CodedInputStream * input, google::protobuf::uint32 tag, io::CodedOutputStream * output)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='185'>// Skips a field value with the given tag.  The input should start
+  // positioned immediately after the tag. Skipped values are recorded to a
+  // CodedOutputStream.</doc>

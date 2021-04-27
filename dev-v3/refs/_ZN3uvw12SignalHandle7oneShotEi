@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='67' type='void uvw::SignalHandle::oneShot(int signum)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/signal.cpp' l='32' ll='34' type='void uvw::SignalHandle::oneShot(int signum)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/signal.h' l='59'>/**
+     * @brief Starts the handle.
+     *
+     * Same functionality as SignalHandle::start but the signal handler is reset
+     * the moment the signal is received.
+     *
+     * @param signum
+     */</doc>

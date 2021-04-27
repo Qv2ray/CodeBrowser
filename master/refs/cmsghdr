@@ -1,0 +1,35 @@
+<def f='include/x86_64-linux-gnu/bits/socket.h' l='275' ll='287'/>
+<use f='include/x86_64-linux-gnu/bits/socket.h' l='305' c='__cmsg_nxthdr'/>
+<use f='include/x86_64-linux-gnu/bits/socket.h' l='306' c='__cmsg_nxthdr'/>
+<use f='include/netinet/in.h' l='554' c='inet6_option_init'/>
+<use f='include/netinet/in.h' l='556' c='inet6_option_append'/>
+<use f='include/netinet/in.h' l='559' c='inet6_option_alloc'/>
+<use f='include/netinet/in.h' l='562' c='inet6_option_next'/>
+<use f='include/netinet/in.h' l='565' c='inet6_option_find'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='274'>/* Structure used for storage of ancillary data object information.  */</doc>
+<mbr r='cmsghdr::cmsg_len' o='0' t='size_t'/>
+<mbr r='cmsghdr::cmsg_level' o='64' t='int'/>
+<mbr r='cmsghdr::cmsg_type' o='96' t='int'/>
+<mbr r='cmsghdr::__cmsg_data' o='128' t='unsigned char []'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='659' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='685' macro='1' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='685' macro='1' c='uv__recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='685' macro='1' c='uv__recvmsg'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='844' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='847' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='868' macro='1' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='870' macro='1' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='870' macro='1' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='870' macro='1' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='873' macro='1' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1061' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1063' macro='1' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1063' macro='1' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1063' macro='1' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1086' macro='1' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1088' macro='1' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1088' macro='1' c='uv__stream_recv_cmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1120' macro='1' c='uv__read'/>
+<size>16</size>

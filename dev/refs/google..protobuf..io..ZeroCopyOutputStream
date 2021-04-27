@@ -1,0 +1,21 @@
+<use f='include/google/protobuf/io/coded_stream.h' l='683' c='_ZN6google8protobuf2io17CodedOutputStreamC1EPNS1_20ZeroCopyOutputStreamE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='684' c='_ZN6google8protobuf2io17CodedOutputStreamC1EPNS1_20ZeroCopyOutputStreamEb'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='860'/>
+<use f='include/google/protobuf/message_lite.h' l='296' c='_ZNK6google8protobuf11MessageLite25SerializeToZeroCopyStreamEPNS0_2io20ZeroCopyOutputStreamE'/>
+<use f='include/google/protobuf/message_lite.h' l='298' c='_ZNK6google8protobuf11MessageLite32SerializePartialToZeroCopyStreamEPNS0_2io20ZeroCopyOutputStreamE'/>
+<def f='include/google/protobuf/io/zero_copy_stream.h' l='181' ll='242'/>
+<use f='include/google/protobuf/io/zero_copy_stream.h' l='241' c='_ZN6google8protobuf2io20ZeroCopyOutputStreamC1ERKS2_'/>
+<use f='include/google/protobuf/io/zero_copy_stream.h' l='241' c='_ZN6google8protobuf2io20ZeroCopyOutputStreamaSERKS2_'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='63'/>
+<ovr f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='53' c='grpc::ProtoBufferWriter'/>
+<size>8</size>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='179'>// Abstract interface similar to an output stream but designed to minimize
+// copying.</doc>
+<fun r='_ZN6google8protobuf2io20ZeroCopyOutputStreamC1Ev'/>
+<fun r='_ZN6google8protobuf2io20ZeroCopyOutputStreamD1Ev'/>
+<fun r='_ZN6google8protobuf2io20ZeroCopyOutputStream4NextEPPvPi'/>
+<fun r='_ZN6google8protobuf2io20ZeroCopyOutputStream6BackUpEi'/>
+<fun r='_ZNK6google8protobuf2io20ZeroCopyOutputStream9ByteCountEv'/>
+<fun r='_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi'/>
+<fun r='_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv'/>
+<fun r='_ZN6google8protobuf2io20ZeroCopyOutputStreamC1ERKS2_'/>

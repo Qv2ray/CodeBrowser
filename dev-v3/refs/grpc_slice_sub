@@ -1,0 +1,6 @@
+<dec f='include/grpc/slice.h' l='103' type='grpc_slice grpc_slice_sub(grpc_slice s, size_t begin, size_t end)'/>
+<doc f='include/grpc/slice.h' l='98'>/** Return a result slice derived from s, which shares a ref count with \a s,
+   where result.data==s.data+begin, and result.length==end-begin. The ref count
+   of \a s is increased by one. Do not assign result back to \a s.
+   Requires s initialized, begin &lt;= end, begin &lt;= s.length, and
+   end &lt;= source-&gt;length. */</doc>

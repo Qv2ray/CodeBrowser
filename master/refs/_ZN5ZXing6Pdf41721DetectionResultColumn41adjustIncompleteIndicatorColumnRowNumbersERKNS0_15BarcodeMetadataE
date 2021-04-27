@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.h' l='89' type='void ZXing::Pdf417::DetectionResultColumn::adjustIncompleteIndicatorColumnRowNumbers(const ZXing::Pdf417::BarcodeMetadata &amp; barcodeMetadata)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='202' ll='249' type='void ZXing::Pdf417::DetectionResultColumn::adjustIncompleteIndicatorColumnRowNumbers(const ZXing::Pdf417::BarcodeMetadata &amp; barcodeMetadata)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='260' u='c' c='_ZN5ZXing6Pdf41721DetectionResultColumn13getRowHeightsERSt6vectorIiSaIiEE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp' l='199'>// TODO maybe we should add missing codewords to store the correct row number to make
+// finding row numbers for other columns easier
+// use row height count to make detection of invalid row numbers more reliable</doc>

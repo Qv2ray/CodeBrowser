@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/descriptor.h' l='674' type='const google::protobuf::Descriptor * google::protobuf::FieldDescriptor::extension_scope() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1879' macro='1' type='const google::protobuf::Descriptor * google::protobuf::FieldDescriptor::extension_scope() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='669'>// An extension may be declared within the scope of another message.  If this
+  // field is an extension (is_extension() is true), then extension_scope()
+  // returns that message, or NULL if the extension was declared at global
+  // scope.  If this is not an extension, extension_scope() is undefined (may
+  // assert-fail).</doc>

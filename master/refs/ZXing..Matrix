@@ -1,0 +1,32 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/Matrix.h' l='27' ll='100'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='287' c='_ZN5ZXing11ToBitMatrixERKNS_6MatrixIT_EES1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='298' c='_ZN5ZXing8ToMatrixERKNS_9BitMatrixET_S3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='300' c='_ZN5ZXing8ToMatrixERKNS_9BitMatrixET_S3_'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/ByteMatrix.h' l='27' c='ZXing::ByteMatrix'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ByteMatrix.h' l='27'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ByteMatrix.h' l='30' c='_ZN5ZXing10ByteMatrixC1Eiia'/>
+<mbr r='ZXing::Matrix::_width' t='int'/>
+<mbr r='ZXing::Matrix::_height' t='int'/>
+<mbr r='ZXing::Matrix::_data' t='std::vector&lt;value_t&gt;'/>
+<fun r='_ZN5ZXing6MatrixC1ERKNS_6MatrixIT_EE'/>
+<fun r='_ZN5ZXing6MatrixaSERKNS_6MatrixIT_EE'/>
+<fun r='_ZN5ZXing6MatrixC1Ev'/>
+<fun r='_ZN5ZXing6MatrixC1EiiT_'/>
+<fun r='_ZN5ZXing6MatrixC1EONS_6MatrixIT_EE'/>
+<fun r='_ZN5ZXing6MatrixaSEONS_6MatrixIT_EE'/>
+<fun r='_ZNK5ZXing6Matrix4copyEv'/>
+<fun r='_ZNK5ZXing6Matrix6heightEv'/>
+<fun r='_ZNK5ZXing6Matrix5widthEv'/>
+<fun r='_ZNK5ZXing6Matrix4sizeEv'/>
+<fun r='_ZN5ZXing6MatrixclEii'/>
+<fun r='_ZNK5ZXing6MatrixclEii'/>
+<fun r='_ZNK5ZXing6Matrix3getEii'/>
+<fun r='_ZN5ZXing6Matrix3setEiiT_'/>
+<fun r='_ZNK5ZXing6Matrix4dataEv'/>
+<fun r='_ZNK5ZXing6Matrix5beginEv'/>
+<fun r='_ZNK5ZXing6Matrix3endEv'/>
+<fun r='_ZN5ZXing6Matrix5clearET_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='61' c='_ZN5ZXingL20CalculateBlackPointsEPKhiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='63' c='_ZN5ZXingL20CalculateBlackPointsEPKhiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='149' c='_ZN5ZXingL26CalculateThresholdForBlockEPKhiiiiiRKNS_6MatrixIiEERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TritMatrix.h' l='37'/>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='653' type='const google::protobuf::EnumValueDescriptor * google::protobuf::FieldDescriptor::default_value_enum() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='649'>// Get the field default value if cpp_type() == CPPTYPE_ENUM.  If no
+  // explicit default was defined, the default is the first value defined
+  // in the enum type (all enum types are required to have at least one value).
+  // This never returns NULL.</doc>

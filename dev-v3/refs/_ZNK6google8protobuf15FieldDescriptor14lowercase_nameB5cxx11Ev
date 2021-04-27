@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/descriptor.h' l='588' type='const std::string &amp; google::protobuf::FieldDescriptor::lowercase_name() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1869' macro='1' type='const std::string &amp; google::protobuf::FieldDescriptor::lowercase_name() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='582'>// Same as name() except converted to lower-case.  This (and especially the
+  // FindFieldByLowercaseName() method) can be useful when parsing formats
+  // which prefer to use lowercase naming style.  (Although, technically
+  // field names should be lowercased anyway according to the protobuf style
+  // guide, so this only makes a difference when dealing with old .proto files
+  // which do not follow the guide.)</doc>

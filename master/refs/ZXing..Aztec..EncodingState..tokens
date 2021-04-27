@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncodingState.h' l='35' type='std::vector&lt;Token&gt;'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='144' u='r' c='_ZN5ZXing5AztecL14LatchAndAppendERKNS0_13EncodingStateEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='162' u='r' c='_ZN5ZXing5AztecL14ShiftAndAppendERKNS0_13EncodingStateEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='175' u='r' c='_ZN5ZXing5AztecL14EndBinaryShiftERKNS0_13EncodingStateEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='185' u='r' c='_ZN5ZXing5AztecL18AddBinaryShiftCharERKNS0_13EncodingStateEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='239' c='_ZN5ZXing5AztecL10ToBitArrayERKNS0_13EncodingStateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<offset>0</offset>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncodingState.h' l='33'>// The list of tokens that we output.  If we are in Binary Shift mode, this
+	// token list does *not* yet included the token for those bytes</doc>

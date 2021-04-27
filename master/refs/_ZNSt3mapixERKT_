@@ -1,0 +1,27 @@
+<def f='include/c++/10/bits/stl_map.h' l='491' ll='508' type='std::map::mapped_type &amp; std::map::operator[](const std::map::key_type &amp; __k)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='54' u='c' c='_ZN7QtNodes17DataModelRegistry21registerTypeConverterERKSt4pairI7QStringS2_ESt8functionIFSt10shared_ptrINS_8NodeDataEES9_EE'/>
+<doc f='include/c++/10/bits/stl_map.h' l='479'>/**
+       *  @brief  Subscript ( @c [] ) access to %map data.
+       *  @param  __k  The key for which data should be retrieved.
+       *  @return  A reference to the data of the (key,data) %pair.
+       *
+       *  Allows for easy lookup with the subscript ( @c [] )
+       *  operator.  Returns data associated with the key specified in
+       *  subscript.  If the key does not exist, a pair with that key
+       *  is created using default values, which is then returned.
+       *
+       *  Lookup requires logarithmic time.
+       */</doc>
+<use f='include/c++/10/bits/regex_automaton.tcc' l='207' u='c' c='_ZNSt8__detail9_StateSeq8_M_cloneEv'/>
+<use f='include/c++/10/bits/regex_automaton.tcc' l='227' u='c' c='_ZNSt8__detail9_StateSeq8_M_cloneEv'/>
+<use f='include/c++/10/bits/regex_automaton.tcc' l='227' u='c' c='_ZNSt8__detail9_StateSeq8_M_cloneEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='112' u='c' c='_ZN5ZXing14ResultMetadata3putENS0_3KeyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='118' u='c' c='_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='124' u='c' c='_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx114listINS_9ByteArrayESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='130' u='c' c='_ZN5ZXing14ResultMetadata3putENS0_3KeyERKSt10shared_ptrINS_10CustomDataEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='295' u='c' c='_ZN5ZXing10DataMatrixL9DetectOldERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='296' u='c' c='_ZN5ZXing10DataMatrixL9DetectOldERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='297' u='c' c='_ZN5ZXing10DataMatrixL9DetectOldERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='298' u='c' c='_ZN5ZXing10DataMatrixL9DetectOldERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFBarcodeValue.cpp' l='29' u='c' c='_ZN5ZXing6Pdf41712BarcodeValue8setValueEi'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='54' u='c' c='_ZN6Qv2ray4core6kernel9APIWorker8StartAPIERK4QMapIbS3_I7QStringS4_EE'/>

@@ -1,0 +1,54 @@
+<inh f='include/c++/10/bits/stl_iterator_base_types.h' l='103' c='std::bidirectional_iterator_tag'/>
+<def f='include/c++/10/bits/stl_iterator_base_types.h' l='107'/>
+<use f='include/c++/10/bits/stl_iterator_base_types.h' l='212'/>
+<use f='include/c++/10/bits/stl_iterator_base_types.h' l='223'/>
+<use f='include/c++/10/bits/stl_iterator_base_types.h' l='256'/>
+<use f='include/c++/10/bits/stl_iterator_base_types.h' l='258'/>
+<use f='include/c++/10/bits/stl_iterator_base_funcs.h' l='99' c='_ZSt10__distanceT_S_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_iterator_base_funcs.h' l='175' c='_ZSt9__advanceRT_T0_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='370'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='390'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='410'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='641'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='658'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='675'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='1055' c='_ZSt10__fill_n_aT_T0_RKT1_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='1204'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='1204'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='1458' c='_ZSt8__equal4T_S_T0_S0_'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='1485' c='_ZSt8__equal4T_S_T0_S0_T1_'/>
+<use f='include/c++/10/bits/stl_algobase.h' l='1925' c='_ZSt9__find_ifT_S_T0_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algo.h' l='229' c='_ZSt14__search_n_auxT_S_T0_T1_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algo.h' l='749' c='_ZSt8__copy_nT_T0_T1_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algo.h' l='1137' c='_ZSt9__reverseT_S_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algo.h' l='1321' c='_ZNSt3_V28__rotateET_S0_S0_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_algo.h' l='3555' c='_ZSt16__is_permutationT_S_T0_S0_T1_'/>
+<use f='include/c++/10/bits/stl_algo.h' l='3556' c='_ZSt16__is_permutationT_S_T0_S0_T1_'/>
+<use f='include/c++/10/bits/stl_algo.h' l='3862' c='_ZSt10for_each_nT_T0_T1_'/>
+<use f='include/c++/10/bits/stl_algo.h' l='5761' c='_ZSt8__sampleT_S_St18input_iterator_tagT0_St26random_access_iterator_tagT1_OT2_'/>
+<use f='include/c++/10/bits/stl_uninitialized.h' l='806' c='_ZSt22__uninitialized_copy_nT_T0_T1_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_uninitialized.h' l='834' c='_ZSt27__uninitialized_copy_n_pairT_T0_T1_St26random_access_iterator_tag'/>
+<use f='include/c++/10/bits/stl_vector.h' l='630' c='_ZNSt6vectorC1ESt16initializer_listIT_ERKT0_'/>
+<use f='include/c++/10/bits/stl_vector.h' l='733' c='_ZNSt6vectoraSESt16initializer_listIT_E'/>
+<use f='include/c++/10/bits/stl_vector.h' l='797' c='_ZNSt6vector6assignESt16initializer_listIT_E'/>
+<use f='include/c++/10/bits/stl_vector.h' l='1314' c='_ZNSt6vector6insertEN9__gnu_cxx17__normal_iteratorINS0_14__alloc_traitsINSt12_Vector_baseIT_T0_E14_Tp_alloc_typeENS6_14_Tp_alloc_type10value_typeEE13c8335942'/>
+<use f='include/c++/10/bits/stl_vector.h' l='1836' c='_ZNSt6vector14_M_move_assignEOSt6vectorIT_T0_ESt17integral_constantIbLb0EE'/>
+<use f='include/c++/10/bits/stl_bvector.h' l='143'/>
+<use f='include/c++/10/bits/stl_bvector.h' l='715' c='_ZNSt6vectorIbT_EC1ESt16initializer_listIbERKS0_'/>
+<use f='include/c++/10/bits/stl_bvector.h' l='830' c='_ZNSt6vectorIbT_E6assignESt16initializer_listIbE'/>
+<size>1</size>
+<doc f='include/c++/10/bits/stl_iterator_base_types.h' l='105'>/// Random-access iterators support a superset of bidirectional
+  /// iterator operations.</doc>
+<use f='include/c++/10/bits/stl_deque.h' l='134'/>
+<use f='include/c++/10/bits/stl_deque.h' l='957' c='_ZNSt5dequeC1ESt16initializer_listIT_ERKT0_'/>
+<use f='include/c++/10/bits/stl_deque.h' l='1050' c='_ZNSt5dequeaSESt16initializer_listIT_E'/>
+<use f='include/c++/10/bits/stl_deque.h' l='1111' c='_ZNSt5deque6assignESt16initializer_listIT_E'/>
+<use f='include/c++/10/bits/stl_deque.h' l='1634' c='_ZNSt5deque6insertENSt11_Deque_baseIT_T0_E14const_iteratorESt16initializer_listIS1_E'/>
+<use f='include/c++/10/bits/stl_deque.h' l='2212' c='_ZNSt5deque15_M_move_assign2EOSt5dequeIT_T0_ESt17integral_constantIbLb0EE'/>
+<use f='include/c++/10/bits/deque.tcc' l='126' c='_ZNSt5dequeaSERKSt5dequeIT_T0_E'/>
+<size>1</size>
+<use f='include/google/protobuf/repeated_field.h' l='2210'/>
+<use f='include/google/protobuf/repeated_field.h' l='2214'/>
+<use f='include/google/protobuf/repeated_field.h' l='2305'/>
+<use f='include/google/protobuf/repeated_field.h' l='2308'/>
+<size>1</size>

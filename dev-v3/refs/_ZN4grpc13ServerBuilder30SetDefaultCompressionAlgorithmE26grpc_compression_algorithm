@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/server_builder.h' l='180' type='grpc::ServerBuilder &amp; grpc::ServerBuilder::SetDefaultCompressionAlgorithm(grpc_compression_algorithm algorithm)'/>
+<doc f='include/grpcpp/server_builder.h' l='177'>/// The default compression algorithm to use for all channel calls in the
+  /// absence of a call-specific level. Note that it overrides any compression
+  /// level set by \a SetDefaultCompressionLevel.</doc>

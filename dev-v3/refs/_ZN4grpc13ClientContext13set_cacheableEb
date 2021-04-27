@@ -1,0 +1,4 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='244' type='void grpc::ClientContext::set_cacheable(bool cacheable)'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='241'>/// EXPERIMENTAL: Set this request to be cacheable.
+  /// If set, grpc is free to use the HTTP GET verb for sending the request,
+  /// with the possibility of receiving a cached response.</doc>

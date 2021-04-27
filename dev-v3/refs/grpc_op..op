@@ -1,0 +1,11 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='540' type='grpc_op_type'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='238' u='w' c='_ZN4grpc8internal25CallOpSendInitialMetadata5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='283' u='w' c='_ZN4grpc8internal17CallOpSendMessage5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='337' u='w' c='_ZN4grpc8internal17CallOpRecvMessage5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='412' u='w' c='_ZN4grpc8internal24CallOpGenericRecvMessage5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='454' u='w' c='_ZN4grpc8internal21CallOpClientSendClose5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='483' u='w' c='_ZN4grpc8internal22CallOpServerSendStatus5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='524' u='w' c='_ZN4grpc8internal25CallOpRecvInitialMetadata5AddOpEP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='555' u='w' c='_ZN4grpc8internal22CallOpClientRecvStatus5AddOpEP7grpc_opPm'/>
+<offset>0</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='539'>/** Operation type, as defined by grpc_op_type */</doc>

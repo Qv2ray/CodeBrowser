@@ -1,0 +1,20 @@
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='26' u='m' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler24ActivePluginKernelsCountEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='35' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler24GetActiveKernelProtocolsEv'/>
+<dec f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='87' type='std::list&lt;std::pair&lt;QString, std::unique_ptr&lt;PluginKernel&gt;&gt;&gt;'/>
+<offset>256</offset>
+<doc f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='86'>// Since QMap does not support std::unique_ptr, we use std::map&lt;&gt;</doc>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='126' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='145' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='157' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='201' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='203' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='204' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='204' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='204' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='204' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='204' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='276' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler19OnPluginKernelLog_pERK7QString'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='12' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler14StopConnectionEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='301' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler14StopConnectionEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='315' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler14StopConnectionEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='12' u='m' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler22OnV2RayStatsDataRcvd_pERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>

@@ -1,0 +1,7 @@
+<dec f='include/grpc/impl/codegen/byte_buffer.h' l='43' type='grpc_byte_buffer * grpc_raw_compressed_byte_buffer_create(grpc_slice * slices, size_t nslices, grpc_compression_algorithm compression)'/>
+<doc f='include/grpc/impl/codegen/byte_buffer.h' l='37'>/** Returns a *compressed* RAW byte buffer instance over the given slices (up to
+ * \a nslices). The \a compression argument defines the compression algorithm
+ * used to generate the data in \a slices.
+ *
+ * Increases the reference count for all \a slices processed. The user is
+ * responsible for invoking grpc_byte_buffer_destroy on the returned instance.*/</doc>

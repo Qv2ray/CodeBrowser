@@ -1,0 +1,18 @@
+<dec f='include/google/protobuf/io/zero_copy_stream.h' l='163' type='void google::protobuf::io::ZeroCopyInputStream::BackUp(int count)'/>
+<ovr f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='102' c='_ZN4grpc17ProtoBufferReader6BackUpEi'/>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='147'>// Backs up a number of bytes, so that the next call to Next() returns
+  // data again that was already returned by the last call to Next().  This
+  // is useful when writing procedures that are only supposed to read up
+  // to a certain point in the input, then return.  If Next() returns a
+  // buffer that goes beyond what you wanted to read, you can use BackUp()
+  // to return to the point where you intended to finish.
+  //
+  // Preconditions:
+  // * The last method called must have been Next().
+  // * count must be less than or equal to the size of the last buffer
+  //   returned by Next().
+  //
+  // Postconditions:
+  // * The last &quot;count&quot; bytes of the last buffer returned by Next() will be
+  //   pushed back into the stream.  Subsequent calls to Next() will return
+  //   the same data again before producing new data.</doc>

@@ -1,0 +1,16 @@
+<def f='include/c++/10/bits/unordered_map.h' l='812' ll='814' type='std::unordered_map::size_type std::unordered_map::erase(const std::unordered_map::key_type &amp; __x)'/>
+<doc f='include/c++/10/bits/unordered_map.h' l='800'>/**
+       *  @brief Erases elements according to the provided key.
+       *  @param  __x  Key of element to be erased.
+       *  @return  The number of elements erased.
+       *
+       *  This function erases all the elements located by the given key from
+       *  an %unordered_map. For an %unordered_map the result of this function
+       *  can only be 0 (not present) or 1 (present).
+       *  Note that this function only erases the element, and that if the
+       *  element is itself a pointer, the pointed-to memory is not touched in
+       *  any way.  Managing the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='151' u='c' c='_ZN7QtNodes9FlowScene10removeNodeERNS_4NodeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='102' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10disconnectENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='42' u='c' c='_ZN7QtNodes9NodeState15eraseConnectionENS_8PortTypeEi5QUuid'/>

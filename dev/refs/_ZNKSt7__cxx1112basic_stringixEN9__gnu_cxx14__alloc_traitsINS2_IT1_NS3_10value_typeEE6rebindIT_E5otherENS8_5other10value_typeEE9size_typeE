@@ -1,0 +1,34 @@
+<def f='include/c++/10/bits/basic_string.h' l='1016' ll='1021' type='std::__cxx11::basic_string::const_reference std::__cxx11::basic_string::operator[](std::__cxx11::basic_string::size_type __pos) const'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1006'>/**
+       *  @brief  Subscript access to the data contained in the %string.
+       *  @param  __pos  The index of the character to access.
+       *  @return  Read-only (constant) reference to the character.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='326' u='c' c='_ZN6semverL16check_identifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='331' u='c' c='_ZN6semverL16check_identifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='8511' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8511' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8512' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8513' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8522' u='c' c='_ZN5Catch5clara8TextFlow6Column8iterator10calcLengthEv'/>
+<use f='qv2ray/test/catch.hpp' l='8525' u='c' c='_ZN5Catch5clara8TextFlow6Column8iterator10calcLengthEv'/>
+<use f='qv2ray/test/catch.hpp' l='8534' u='c' c='_ZN5Catch5clara8TextFlow6Column8iterator10calcLengthEv'/>
+<use f='qv2ray/test/catch.hpp' l='8578' u='c' c='_ZN5Catch5clara8TextFlow6Column8iteratorppEv'/>
+<use f='qv2ray/test/catch.hpp' l='8581' u='c' c='_ZN5Catch5clara8TextFlow6Column8iteratorppEv'/>
+<use f='qv2ray/test/catch.hpp' l='8869' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='8875' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='8878' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='9458' u='c' c='_ZNK5Catch5clara6detail3Opt8validateEv'/>
+<use f='qv2ray/test/catch.hpp' l='13810' u='c' c='_ZN5Catch10startsWithERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc'/>
+<use f='qv2ray/test/catch.hpp' l='13816' u='c' c='_ZN5Catch8endsWithERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc'/>
+<use f='qv2ray/test/catch.hpp' l='14031' u='c' c='_ZN5Catch12_GLOBAL__N_113isReservedTagERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='15501' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15508' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15508' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15561' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15582' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>

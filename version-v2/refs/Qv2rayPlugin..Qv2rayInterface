@@ -1,0 +1,44 @@
+<def f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='14' ll='69'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z21qobject_interface_iidv'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z12qobject_castP7QObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z12qobject_castP7QObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z12qobject_castP7QObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z12qobject_castPK7QObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z12qobject_castPK7QObject'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='76' c='_Z12qobject_castPK7QObject'/>
+<ovr f='qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.hpp' l='10' c='InternalProtocolSupportPlugin'/>
+<use f='qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.hpp' l='12'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/U2GGPN3CF7/moc_BuiltinProtocolPlugin.cpp' l='121' c='_ZN29InternalProtocolSupportPlugin11qt_metacastEPKc'/>
+<use f='/QvPlugin-BuiltinProtocolSupport_autogen/U2GGPN3CF7/moc_BuiltinProtocolPlugin.cpp' l='123' c='_ZN29InternalProtocolSupportPlugin11qt_metacastEPKc'/>
+<size>104</size>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::QvPluginInterfaceVersion' o='64' t='const int'/>
+<fun r='_ZN12Qv2rayPlugin15Qv2rayInterfaceD1Ev'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface11GetMetadataEv'/>
+<fun r='_ZN12Qv2rayPlugin15Qv2rayInterface16InitializePluginERK7QStringRK11QJsonObject'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface18GetOutboundHandlerEv'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface15GetEventHandlerEv'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface9GetKernelEv'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface22GetSubscriptionAdapterEv'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface15GetGUIInterfaceEv'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface9PluginLogERK7QString'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface21PluginErrorMessageBoxERK7QStringS3_'/>
+<fun r='_ZN12Qv2rayPlugin15Qv2rayInterface14UpdateSettingsERK11QJsonObject'/>
+<fun r='_ZNK12Qv2rayPlugin15Qv2rayInterface10GetSettngsEv'/>
+<fun r='_ZN12Qv2rayPlugin15Qv2rayInterfaceC1Ev'/>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::settings' o='128' t='QJsonObject'/>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::outboundHandler' o='256' t='std::shared_ptr&lt;PluginOutboundHandler&gt;'/>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::eventHandler' o='384' t='std::shared_ptr&lt;PluginEventHandler&gt;'/>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::kernelInterface' o='512' t='std::shared_ptr&lt;PluginKernelInterface&gt;'/>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::subscriptionAdapter' o='640' t='std::shared_ptr&lt;SubscriptionInterface&gt;'/>
+<mbr r='Qv2rayPlugin::Qv2rayInterface::guiInterface' o='768' t='Qv2rayPlugin::PluginGUIInterface *'/>
+<ovr f='qv2ray/src/plugins/subscription-adapters/BuiltinSubscriptionAdapter.hpp' l='10' c='InternalSubscriptionSupportPlugin'/>
+<use f='qv2ray/src/plugins/subscription-adapters/BuiltinSubscriptionAdapter.hpp' l='12'/>
+<use f='/QvPlugin-BuiltinSubscriptionSupport_autogen/Q2BA74KWDD/moc_BuiltinSubscriptionAdapter.cpp' l='121' c='_ZN33InternalSubscriptionSupportPlugin11qt_metacastEPKc'/>
+<use f='/QvPlugin-BuiltinSubscriptionSupport_autogen/Q2BA74KWDD/moc_BuiltinSubscriptionAdapter.cpp' l='123' c='_ZN33InternalSubscriptionSupportPlugin11qt_metacastEPKc'/>
+<size>104</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='21'/>
+<size>104</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='54' c='_ZN6Qv2ray10components7plugins12QvPluginHost17refreshPluginListEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='92' c='_ZN6Qv2ray10components7plugins12QvPluginHost11QvPluginLogERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='105' c='_ZN6Qv2ray10components7plugins12QvPluginHost18QvPluginMessageBoxERK7QStringS5_'/>
+<size>104</size>

@@ -1,0 +1,9 @@
+<dec f='include/ifaddrs.h' l='36' type='struct sockaddr *'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='867' u='r' c='uv__ifaddr_exclude'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='873' u='r' c='uv__ifaddr_exclude'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='923' u='r' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='924' u='r' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='926' u='r' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='952' u='r' c='uv_interface_addresses'/>
+<offset>192</offset>
+<doc f='include/ifaddrs.h' l='36'>/* Network address of this interface.  */</doc>

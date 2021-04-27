@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='222' type='int listen(int __fd, int __n)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='219'>/* Prepare to accept connections on socket FD.
+   N connection requests will be queued before further requests are refused.
+   Returns 0 on success, -1 for errors.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='110' u='c' c='uv_pipe_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='356' u='c' c='uv_tcp_listen'/>

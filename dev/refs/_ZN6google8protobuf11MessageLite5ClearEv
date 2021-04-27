@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/message_lite.h' l='205' type='void google::protobuf::MessageLite::Clear()'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='64' c='_ZN6google8protobuf8internal19ImplicitWeakMessage5ClearEv'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='120' u='c' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler5ClearEPNS0_11MessageLiteE'/>
+<doc f='include/google/protobuf/message_lite.h' l='200'>// Clear all fields of the message and set them to their default values.
+  // Clear() avoids freeing memory, assuming that any memory allocated
+  // to hold parts of the message will be needed again to hold the next
+  // message.  If you actually want to free the memory used by a Message,
+  // you must delete it.</doc>

@@ -1,0 +1,9 @@
+<def f='qv2ray/src/plugin-interface/QvPluginInterfaceModels.hpp' l='93' ll='99'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='9' c='_ZN12Qv2rayPlugin20QvPluginEventHandler28ProcessEvent_ConnectionEntryERKNS_6Events15ConnectionEntry11EventObjectE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='80' c='_ZN6Qv2ray10components7plugins12QvPluginHost20Send_ConnectionEventERKN12Qv2rayPlugin6Events15ConnectionEntry11EventObjectE'/>
+<size>24</size>
+<mbr r='Qv2rayPlugin::Events::ConnectionEntry::EventObject::eventType' o='0' t='Qv2rayPlugin::Events::ConnectionEntry::EventType'/>
+<mbr r='Qv2rayPlugin::Events::ConnectionEntry::EventObject::displayName' o='64' t='QString'/>
+<mbr r='Qv2rayPlugin::Events::ConnectionEntry::EventObject::originalDisplayName' o='128' t='QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='213' c='_ZN6Qv2ray10components7plugins12QvPluginHost20Send_ConnectionEventERKN12Qv2rayPlugin6Events15ConnectionEntry11EventObjectE'/>
+<size>24</size>

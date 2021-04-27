@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='764' type='static uint64_t uvw::Utilities::constrainedMemory()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='753'>/**
+     * @brief Gets the amount of memory available to the process (in bytes).
+     *
+     * Gets the amount of memory available to the process based on limits
+     * imposed by the OS. If there is no such constraint, or the constraint is
+     * unknown, `0` is returned.&lt;br/&gt;
+     * Note that it is not unusual for this value to be less than or greater
+     * than `totalMemory`.
+     *
+     * @return Amount of memory available to the process.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='291' ll='293' type='static uint64_t uvw::Utilities::constrainedMemory()'/>

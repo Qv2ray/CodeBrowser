@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/repeated_field.h' l='985' type='google::protobuf::RepeatedPtrField::iterator google::protobuf::RepeatedPtrField::erase(google::protobuf::RepeatedPtrField::const_iterator position)'/>
+<def f='include/google/protobuf/repeated_field.h' l='2092' ll='2096' type='typename RepeatedPtrField&lt;Element&gt;::iterator google::protobuf::RepeatedPtrField::erase(google::protobuf::RepeatedPtrField::const_iterator position)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='979'>// Removes the element referenced by position.
+  //
+  // Returns an iterator to the element immediately following the removed
+  // element.
+  //
+  // Invalidates all iterators at or after the removed element, including end().</doc>

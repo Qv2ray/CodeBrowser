@@ -1,0 +1,9 @@
+<use f='include/google/protobuf/arena_impl.h' l='159' u='r' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena15AllocateAlignedEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='160' u='r' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena15AllocateAlignedEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='163' u='r' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena15AllocateAlignedEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='164' u='w' c='_ZN6google8protobuf8internal9ArenaImpl11SerialArena15AllocateAlignedEm'/>
+<dec f='include/google/protobuf/arena_impl.h' l='205' type='char *'/>
+<offset>320</offset>
+<doc f='include/google/protobuf/arena_impl.h' l='202'>// Next pointer to allocate from.  Always 8-byte aligned.  Points inside
+    // head_ (and head_-&gt;pos will always be non-canonical).  We keep these
+    // here to reduce indirection.</doc>

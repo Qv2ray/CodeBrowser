@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.h' l='43' type='static ZXing::DetectorResult ZXing::QRCode::Detector::Detect(const ZXing::BitMatrix &amp; image, bool tryHarder, bool isPure)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='334' ll='345' type='static ZXing::DetectorResult ZXing::QRCode::Detector::Detect(const ZXing::BitMatrix &amp; image, bool tryHarder, bool isPure)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.h' l='35'>/**
+	* &lt;p&gt;Detects a QR Code in an image.&lt;/p&gt;
+	*
+	* @param hints optional hints to detector
+	* @return {@link DetectorResult} encapsulating results of detecting a QR Code
+	* @throws NotFoundException if QR Code cannot be found
+	* @throws FormatException if a QR Code cannot be decoded
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='49' u='c' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>

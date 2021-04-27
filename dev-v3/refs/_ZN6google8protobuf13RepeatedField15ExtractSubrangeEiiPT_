@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/repeated_field.h' l='147' type='void google::protobuf::RepeatedField::ExtractSubrange(int start, int num, Element * elements)'/>
+<def f='include/google/protobuf/repeated_field.h' l='1203' ll='1222' type='void google::protobuf::RepeatedField::ExtractSubrange(int start, int num, Element * elements)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='143'>// Extract elements with indices in &quot;[start .. start+num-1]&quot;.
+  // Copy them into &quot;elements[0 .. num-1]&quot; if &quot;elements&quot; is not NULL.
+  // Caution: implementation also moves elements with indices [start+num ..].
+  // Calling this routine inside a loop can cause quadratic behavior.</doc>

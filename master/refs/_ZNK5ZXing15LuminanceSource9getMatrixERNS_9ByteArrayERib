@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='71' type='const uint8_t * ZXing::LuminanceSource::getMatrix(ZXing::ByteArray &amp; buffer, int &amp; outRowBytes, bool forceCopy = false) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='136' c='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='63'>/**
+	* Fetches luminance data for the underlying bitmap. Values should be fetched using:
+	* {@code int luminance = array[y * width + x] &amp; 0xff}
+	*
+	* @return A row-major 2D array of luminance values. Do not use result.length as it may be
+	*         larger than width * height bytes on some platforms. Do not modify the contents
+	*         of the result.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='231' u='c' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='181' u='c' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='49' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='51' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource9getMatrixERNS_9ByteArrayERib'/>

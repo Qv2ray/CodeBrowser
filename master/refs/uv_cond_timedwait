@@ -1,0 +1,3 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1720' type='int uv_cond_timedwait(uv_cond_t * cond, uv_mutex_t * mutex, uint64_t timeout)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='787' ll='831' type='int uv_cond_timedwait(uv_cond_t * cond, uv_mutex_t * mutex, uint64_t timeout)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='199' u='c' c='_ZN3uvw9Condition9timedWaitERNS_5MutexEm'/>

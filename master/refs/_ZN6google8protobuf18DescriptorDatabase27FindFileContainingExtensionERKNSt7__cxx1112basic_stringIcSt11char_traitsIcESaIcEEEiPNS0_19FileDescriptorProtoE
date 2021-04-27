@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor_database.h' l='85' type='bool google::protobuf::DescriptorDatabase::FindFileContainingExtension(const std::string &amp; containing_type, int field_number, google::protobuf::FileDescriptorProto * output)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='81'>// Find the file which defines an extension extending the given message type
+  // with the given field number.  If found, fills in *output and returns true,
+  // otherwise returns false and leaves *output undefined.  containing_type
+  // must be a fully-qualified type name.</doc>

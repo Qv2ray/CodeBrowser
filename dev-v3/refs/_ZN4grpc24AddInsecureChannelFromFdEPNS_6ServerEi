@@ -1,0 +1,6 @@
+<dec f='include/grpcpp/server_posix.h' l='36' type='void grpc::AddInsecureChannelFromFd(grpc::Server * server, int fd)'/>
+<doc f='include/grpcpp/server_posix.h' l='31'>/// Add a new client to a \a Server communicating over the given
+/// file descriptor.
+///
+/// \param server The server to add the client to.
+/// \param fd The file descriptor representing a socket.</doc>

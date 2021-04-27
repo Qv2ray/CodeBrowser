@@ -1,0 +1,38 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='368' ll='376'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='369'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='379' ll='387'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='380'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='391' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='395' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='398' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='415' c='_ZN3uvw7details7addressEOT0_PKT1_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='415' c='_ZN3uvw7details7addressEOT0_PKT1_'/>
+<size>1</size>
+<smbr r='uvw::details::IpTraits{uvw::IPv4}::addrFunc' t='const uvw::details::IpTraits&lt;uvw::IPv4&gt;::AddrFuncType'/>
+<smbr r='uvw::details::IpTraits{uvw::IPv4}::nameFunc' t='const uvw::details::IpTraits&lt;uvw::IPv4&gt;::NameFuncType'/>
+<fun r='_ZN3uvw7details8IpTraitsINS_4IPv4EE7sinPortEPK11sockaddr_in'/>
+<smbr r='uvw::details::IpTraits{uvw::IPv6}::addrFunc' t='const uvw::details::IpTraits&lt;uvw::IPv6&gt;::AddrFuncType'/>
+<smbr r='uvw::details::IpTraits{uvw::IPv6}::nameFunc' t='const uvw::details::IpTraits&lt;uvw::IPv6&gt;::NameFuncType'/>
+<fun r='_ZN3uvw7details8IpTraitsINS_4IPv6EE7sinPortEPK12sockaddr_in6'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='100' c='_ZN3uvw14GetNameInfoReq8nameInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='101' c='_ZN3uvw14GetNameInfoReq8nameInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='119' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='120' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='49' c='_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='50' c='_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='75' c='_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='76' c='_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='96' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='96' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='55' c='_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='56' c='_ZN3uvw9UDPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='80' c='_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='81' c='_ZN3uvw9UDPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='148' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='149' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='177' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='178' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='205' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='206' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='233' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='234' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>

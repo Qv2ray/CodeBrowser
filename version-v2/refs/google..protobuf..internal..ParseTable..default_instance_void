@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/generated_message_table_driven.h' l='155' type='const void *'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='157' u='r' c='_ZNK6google8protobuf8internal10ParseTable16default_instanceEv'/>
+<offset>448</offset>
+<doc f='include/google/protobuf/generated_message_table_driven.h' l='152'>// ExplicitlyInitialized&lt;T&gt; -&gt; T requires a reinterpret_cast, which prevents
+  // the tables from being constructed as a constexpr.  We use void to avoid
+  // the cast.</doc>

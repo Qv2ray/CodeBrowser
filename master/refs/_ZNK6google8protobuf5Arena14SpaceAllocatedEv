@@ -1,0 +1,5 @@
+<def f='include/google/protobuf/arena.h' l='352' type='google::protobuf::uint64 google::protobuf::Arena::SpaceAllocated() const'/>
+<use f='include/google/protobuf/arena.h' l='364' u='c' c='_ZNK6google8protobuf5Arena21SpaceAllocatedAndUsedEv'/>
+<doc f='include/google/protobuf/arena.h' l='349'>// Returns the total space allocated by the arena, which is the sum of the
+  // sizes of the underlying blocks. This method is relatively fast; a counter
+  // is kept as blocks are allocated.</doc>

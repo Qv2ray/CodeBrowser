@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/support/channel_arguments.h' l='95' type='void grpc::ChannelArguments::SetLoadBalancingPolicyName(const grpc::string &amp; lb_policy_name)'/>
+<doc f='include/grpcpp/support/channel_arguments.h' l='92'>/// Set LB policy name.
+  /// Note that if the name resolver returns only balancer addresses, the
+  /// grpclb LB policy will be used, regardless of what is specified here.</doc>

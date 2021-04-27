@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/message_lite.h' l='342' type='void google::protobuf::MessageLite::SerializeWithCachedSizes(io::CodedOutputStream * output) const'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='76' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage24SerializeWithCachedSizesEPNS0_2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/message_lite.h' l='339'>// Serializes the message without recomputing the size.  The message must not
+  // have changed since the last call to ByteSize(), and the value returned by
+  // ByteSize must be non-negative.  Otherwise the results are undefined.</doc>

@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='400' type='uv_req_type'/>
+<offset>64</offset>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='362' u='r' c='uv_cancel'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getnameinfo.c' l='101' macro='1' u='w' c='uv_getnameinfo'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='45' u='r' c='uv_req_get_type'/>

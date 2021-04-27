@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/wire_format.h' l='119' type='static size_t google::protobuf::internal::WireFormat::ByteSize(const google::protobuf::Message &amp; message)'/>
+<doc f='include/google/protobuf/wire_format.h' l='114'>// Implements Message::ByteSize() via reflection.  WARNING:  The result
+  // of this method is *not* cached anywhere.  However, all embedded messages
+  // will have their ByteSize() methods called, so their sizes will be cached.
+  // Therefore, calling this method is sufficient to allow you to call
+  // WireFormat::SerializeWithCachedSizes() on the same object.</doc>

@@ -1,0 +1,99 @@
+<use f='qv2ray/test/catch.hpp' l='2526'/>
+<inh f='qv2ray/test/catch.hpp' l='2455' c='Catch::IResultCapture'/>
+<inh f='qv2ray/test/catch.hpp' l='4827' c='Catch::IRunner'/>
+<def f='qv2ray/test/catch.hpp' l='8046' ll='8164'/>
+<use f='qv2ray/test/catch.hpp' l='8049' c='_ZN5Catch10RunContextC1ERKS0_'/>
+<use f='qv2ray/test/catch.hpp' l='8050' c='_ZN5Catch10RunContextaSERKS0_'/>
+<use f='qv2ray/test/catch.hpp' l='8050' c='_ZN5Catch10RunContextaSERKS0_'/>
+<use f='qv2ray/test/catch.hpp' l='13200'/>
+<size>496</size>
+<doc f='qv2ray/test/catch.hpp' l='8044'>///////////////////////////////////////////////////////////////////////////</doc>
+<fun r='_ZN5Catch10RunContextC1ERKS0_'/>
+<fun r='_ZN5Catch10RunContextaSERKS0_'/>
+<fun r='_ZN5Catch10RunContextC1ERKSt10shared_ptrIKNS_7IConfigEEOSt10unique_ptrINS_18IStreamingReporterESt14default_deleteIS8_EE'/>
+<fun r='_ZN5Catch10RunContextD1Ev'/>
+<fun r='_ZN5Catch10RunContext17testGroupStartingERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmm'/>
+<fun r='_ZN5Catch10RunContext14testGroupEndedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_6TotalsEmm'/>
+<fun r='_ZN5Catch10RunContext7runTestERKNS_8TestCaseE'/>
+<fun r='_ZNK5Catch10RunContext6configEv'/>
+<fun r='_ZNK5Catch10RunContext8reporterEv'/>
+<fun r='_ZN5Catch10RunContext10handleExprERKNS_13AssertionInfoERKNS_20ITransientExpressionERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext13handleMessageERKNS_13AssertionInfoENS_9ResultWas6OfTypeERKNS_9StringRefERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext34handleUnexpectedExceptionNotThrownERKNS_13AssertionInfoERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext33handleUnexpectedInflightExceptionERKNS_13AssertionInfoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext16handleIncompleteERKNS_13AssertionInfoE'/>
+<fun r='_ZN5Catch10RunContext13handleNonExprERKNS_13AssertionInfoENS_9ResultWas6OfTypeERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext14sectionStartedERKNS_11SectionInfoERNS_6CountsE'/>
+<fun r='_ZN5Catch10RunContext12sectionEndedERKNS_14SectionEndInfoE'/>
+<fun r='_ZN5Catch10RunContext17sectionEndedEarlyERKNS_14SectionEndInfoE'/>
+<fun r='_ZN5Catch10RunContext23acquireGeneratorTrackerERKNS_14SourceLineInfoE'/>
+<fun r='_ZN5Catch10RunContext17pushScopedMessageERKNS_11MessageInfoE'/>
+<fun r='_ZN5Catch10RunContext16popScopedMessageERKNS_11MessageInfoE'/>
+<fun r='_ZN5Catch10RunContext22emplaceUnscopedMessageERKNS_14MessageBuilderE'/>
+<fun r='_ZNK5Catch10RunContext18getCurrentTestNameB5cxx11Ev'/>
+<fun r='_ZNK5Catch10RunContext13getLastResultEv'/>
+<fun r='_ZN5Catch10RunContext22exceptionEarlyReportedEv'/>
+<fun r='_ZN5Catch10RunContext25handleFatalErrorConditionENS_9StringRefE'/>
+<fun r='_ZN5Catch10RunContext19lastAssertionPassedEv'/>
+<fun r='_ZN5Catch10RunContext15assertionPassedEv'/>
+<fun r='_ZNK5Catch10RunContext8abortingEv'/>
+<fun r='_ZN5Catch10RunContext14runCurrentTestERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'/>
+<fun r='_ZN5Catch10RunContext20invokeActiveTestCaseEv'/>
+<fun r='_ZN5Catch10RunContext18resetAssertionInfoEv'/>
+<fun r='_ZN5Catch10RunContext24testForMissingAssertionsERNS_6CountsE'/>
+<fun r='_ZN5Catch10RunContext14assertionEndedERKNS_15AssertionResultE'/>
+<fun r='_ZN5Catch10RunContext10reportExprERKNS_13AssertionInfoENS_9ResultWas6OfTypeEPKNS_20ITransientExpressionEb'/>
+<fun r='_ZN5Catch10RunContext16populateReactionERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext24handleUnfinishedSectionsEv'/>
+<mbr r='Catch::RunContext::m_runInfo' o='128' t='Catch::TestRunInfo'/>
+<mbr r='Catch::RunContext::m_context' o='384' t='Catch::IMutableContext &amp;'/>
+<mbr r='Catch::RunContext::m_activeTestCase' o='448' t='const Catch::TestCase *'/>
+<mbr r='Catch::RunContext::m_testCaseTracker' o='512' t='Catch::TestCaseTracking::ITracker *'/>
+<mbr r='Catch::RunContext::m_lastResult' o='576' t='Option&lt;Catch::AssertionResult&gt;'/>
+<mbr r='Catch::RunContext::m_config' o='1792' t='Catch::IConfigPtr'/>
+<mbr r='Catch::RunContext::m_totals' o='1920' t='Catch::Totals'/>
+<mbr r='Catch::RunContext::m_reporter' o='2368' t='Catch::IStreamingReporterPtr'/>
+<mbr r='Catch::RunContext::m_messages' o='2432' t='std::vector&lt;MessageInfo&gt;'/>
+<mbr r='Catch::RunContext::m_messageScopes' o='2624' t='std::vector&lt;ScopedMessage&gt;'/>
+<mbr r='Catch::RunContext::m_lastAssertionInfo' o='2816' t='Catch::AssertionInfo'/>
+<mbr r='Catch::RunContext::m_unfinishedSections' o='3264' t='std::vector&lt;SectionEndInfo&gt;'/>
+<mbr r='Catch::RunContext::m_activeSections' o='3456' t='std::vector&lt;ITracker *&gt;'/>
+<mbr r='Catch::RunContext::m_trackerContext' o='3648' t='Catch::TestCaseTracking::TrackerContext'/>
+<mbr r='Catch::RunContext::m_lastAssertionPassed' o='3904' t='bool'/>
+<mbr r='Catch::RunContext::m_shouldReportUnexpected' o='3912' t='bool'/>
+<mbr r='Catch::RunContext::m_includeSuccessfulResults' o='3920' t='bool'/>
+<fun r='_ZN5Catch10RunContextC1ERKSt10shared_ptrIKNS_7IConfigEEOSt10unique_ptrINS_18IStreamingReporterESt14default_deleteIS8_EE'/>
+<fun r='_ZN5Catch10RunContextD1Ev'/>
+<fun r='_ZN5Catch10RunContext17testGroupStartingERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmm'/>
+<fun r='_ZN5Catch10RunContext14testGroupEndedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_6TotalsEmm'/>
+<fun r='_ZN5Catch10RunContext7runTestERKNS_8TestCaseE'/>
+<fun r='_ZNK5Catch10RunContext6configEv'/>
+<fun r='_ZNK5Catch10RunContext8reporterEv'/>
+<fun r='_ZN5Catch10RunContext14assertionEndedERKNS_15AssertionResultE'/>
+<fun r='_ZN5Catch10RunContext18resetAssertionInfoEv'/>
+<fun r='_ZN5Catch10RunContext14sectionStartedERKNS_11SectionInfoERNS_6CountsE'/>
+<fun r='_ZN5Catch10RunContext23acquireGeneratorTrackerERKNS_14SourceLineInfoE'/>
+<fun r='_ZN5Catch10RunContext24testForMissingAssertionsERNS_6CountsE'/>
+<fun r='_ZN5Catch10RunContext12sectionEndedERKNS_14SectionEndInfoE'/>
+<fun r='_ZN5Catch10RunContext17sectionEndedEarlyERKNS_14SectionEndInfoE'/>
+<fun r='_ZN5Catch10RunContext17pushScopedMessageERKNS_11MessageInfoE'/>
+<fun r='_ZN5Catch10RunContext16popScopedMessageERKNS_11MessageInfoE'/>
+<fun r='_ZN5Catch10RunContext22emplaceUnscopedMessageERKNS_14MessageBuilderE'/>
+<fun r='_ZNK5Catch10RunContext18getCurrentTestNameB5cxx11Ev'/>
+<fun r='_ZNK5Catch10RunContext13getLastResultEv'/>
+<fun r='_ZN5Catch10RunContext22exceptionEarlyReportedEv'/>
+<fun r='_ZN5Catch10RunContext25handleFatalErrorConditionENS_9StringRefE'/>
+<fun r='_ZN5Catch10RunContext19lastAssertionPassedEv'/>
+<fun r='_ZN5Catch10RunContext15assertionPassedEv'/>
+<fun r='_ZNK5Catch10RunContext8abortingEv'/>
+<fun r='_ZN5Catch10RunContext14runCurrentTestERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'/>
+<fun r='_ZN5Catch10RunContext20invokeActiveTestCaseEv'/>
+<fun r='_ZN5Catch10RunContext24handleUnfinishedSectionsEv'/>
+<fun r='_ZN5Catch10RunContext10handleExprERKNS_13AssertionInfoERKNS_20ITransientExpressionERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext10reportExprERKNS_13AssertionInfoENS_9ResultWas6OfTypeEPKNS_20ITransientExpressionEb'/>
+<fun r='_ZN5Catch10RunContext13handleMessageERKNS_13AssertionInfoENS_9ResultWas6OfTypeERKNS_9StringRefERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext34handleUnexpectedExceptionNotThrownERKNS_13AssertionInfoERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext33handleUnexpectedInflightExceptionERKNS_13AssertionInfoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext16populateReactionERNS_17AssertionReactionE'/>
+<fun r='_ZN5Catch10RunContext16handleIncompleteERKNS_13AssertionInfoE'/>
+<fun r='_ZN5Catch10RunContext13handleNonExprERKNS_13AssertionInfoENS_9ResultWas6OfTypeERNS_17AssertionReactionE'/>

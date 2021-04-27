@@ -1,0 +1,34 @@
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='136' c='_ZN4grpc15ServerInterface5StartEPPNS_21ServerCompletionQueueEm'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='177' c='_ZN4grpc15ServerInterface22RegisteredAsyncRequest12IssueRequestEPvPP16grpc_byte_bufferPNS_21ServerCompletionQueueE'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='186' c='_ZN4grpc15ServerInterface21NoPayloadAsyncRequestC1EPvPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_2113460025'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='201' c='_ZN4grpc15ServerInterface19PayloadAsyncRequestC1EPvPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21Se4045928'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='247'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='258' c='_ZN4grpc15ServerInterface19GenericAsyncRequestC1EPS0_PNS_20GenericServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS10808400'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='272' c='_ZN4grpc15ServerInterface16RequestAsyncCallEPNS_8internal16RpcServiceMethodEPNS_13ServerContextEPNS1_29ServerAsyncStreamingInterfaceEPNS_15CompletionQ12813302'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='284' c='_ZN4grpc15ServerInterface16RequestAsyncCallEPNS_8internal16RpcServiceMethodEPNS_13ServerContextEPNS1_29ServerAsyncStreamingInterfaceEPNS_15CompletionQ7871544'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='293' c='_ZN4grpc15ServerInterface23RequestAsyncGenericCallEPNS_20GenericServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_212052286'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='95' c='_ZN4grpc7Service17RequestAsyncUnaryEiPNS_13ServerContextEPT_PNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='106' c='_ZN4grpc7Service27RequestAsyncClientStreamingEiPNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='115' c='_ZN4grpc7Service27RequestAsyncServerStreamingEiPNS_13ServerContextEPT_PNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='123' c='_ZN4grpc7Service25RequestAsyncBidiStreamingEiPNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='72' c='_ZN4grpc19AsyncGenericService11RequestCallEPNS_20GenericServerContextEPNS_23ServerAsyncReaderWriterINS_10ByteBufferES4_EEPNS_15CompletionQueueEPNS_21S230995'/>
+<inh f='include/grpcpp/impl/codegen/completion_queue.h' l='95' c='grpc::CompletionQueue'/>
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='370' ll='390'/>
+<use f='/v2ray_api.grpc.pb.h' l='156' c='_ZN5v2ray4core3app5stats7command12StatsService24WithAsyncMethod_GetStats15RequestGetStatsEPN4grpc13ServerContextEPNS3_15GetStatsRequestEPNS6_25ServerA9220474'/>
+<use f='/v2ray_api.grpc.pb.h' l='176' c='_ZN5v2ray4core3app5stats7command12StatsService26WithAsyncMethod_QueryStats17RequestQueryStatsEPN4grpc13ServerContextEPNS3_17QueryStatsRequestEPNS6_25S7677346'/>
+<use f='/v2ray_api.grpc.pb.h' l='196' c='_ZN5v2ray4core3app5stats7command12StatsService27WithAsyncMethod_GetSysStats18RequestGetSysStatsEPN4grpc13ServerContextEPNS3_15SysStatsRequestEPNS6_25S12639392'/>
+<use f='/v2ray_api.grpc.pb.h' l='268' c='_ZN5v2ray4core3app5stats7command12StatsService22WithRawMethod_GetStats15RequestGetStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyncRes16641939'/>
+<use f='/v2ray_api.grpc.pb.h' l='288' c='_ZN5v2ray4core3app5stats7command12StatsService24WithRawMethod_QueryStats17RequestQueryStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyn3994814'/>
+<use f='/v2ray_api.grpc.pb.h' l='308' c='_ZN5v2ray4core3app5stats7command12StatsService25WithRawMethod_GetSysStats18RequestGetSysStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAs15482467'/>
+<use f='include/grpcpp/server.h' l='174' c='_ZN4grpc6ServerC1EiPNS_16ChannelArgumentsESt10shared_ptrISt6vectorISt10unique_ptrINS_21ServerCompletionQueueESt14default_deleteIS6_EESaIS9_EEEiiiP19grpc_resource_quota'/>
+<use f='include/grpcpp/server.h' l='185' c='_ZN4grpc6Server5StartEPPNS_21ServerCompletionQueueEm'/>
+<use f='include/grpcpp/server.h' l='224'/>
+<use f='include/grpcpp/server_builder.h' l='125' c='_ZN4grpc13ServerBuilder18AddCompletionQueueEb'/>
+<use f='include/grpcpp/server_builder.h' l='285'/>
+<size>40</size>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='368'>/// A specific type of completion queue used by the processing of notifications
+/// by servers. Instantiated by \a ServerBuilder.</doc>
+<fun r='_ZN4grpc21ServerCompletionQueue18IsFrequentlyPolledEv'/>
+<fun r='_ZN4grpc21ServerCompletionQueueC1Ev'/>
+<fun r='_ZN4grpc21ServerCompletionQueueC1E20grpc_cq_polling_type'/>
+<mbr r='grpc::ServerCompletionQueue::polling_type_' o='256' t='grpc_cq_polling_type'/>

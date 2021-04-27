@@ -1,0 +1,8 @@
+<dec f='include/grpc/grpc.h' l='377' type='void * grpc_server_register_method(grpc_server * server, const char * method, const char * host, grpc_server_register_method_payload_handling payload_handling, uint32_t flags)'/>
+<doc f='include/grpc/grpc.h' l='370'>/** Registers a method in the server.
+    Methods to this (host, method) pair will not be reported by
+    grpc_server_request_call, but instead be reported by
+    grpc_server_request_registered_call when passed the appropriate
+    registered_method (as returned by this function).
+    Must be called before grpc_server_start.
+    Returns NULL on failure. */</doc>

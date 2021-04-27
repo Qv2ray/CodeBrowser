@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='90' type='QPointF QtNodes::NodeGeometry::portScenePosition(QtNodes::PortIndex index, QtNodes::PortType portType, const QTransform &amp; t = QTransform()) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='123' u='c' c='_ZN7QtNodes10Connection17setGraphicsObjectEOSt10unique_ptrINS_24ConnectionGraphicsObjectESt14default_deleteIS2_EE'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='89'>// TODO removed default QTransform()</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='66' u='c' c='_ZN7QtNodes24ConnectionGraphicsObject4moveEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='139' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction21nodePortScenePositionENS_8PortTypeEi'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='110' ll='137' type='QPointF QtNodes::NodeGeometry::portScenePosition(QtNodes::PortIndex index, QtNodes::PortType portType, const QTransform &amp; t = QTransform()) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='148' u='c' c='_ZNK7QtNodes12NodeGeometry18checkHitScenePointENS_8PortTypeE7QPointFRK10QTransform'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='228' u='c' c='_ZN7QtNodes12NodeGeometry37calculateNodePositionBetweenNodePortsEiNS_8PortTypeEPNS_4NodeEiS1_S3_RS2_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='229' u='c' c='_ZN7QtNodes12NodeGeometry37calculateNodePositionBetweenNodePortsEiNS_8PortTypeEPNS_4NodeEiS1_S3_RS2_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='79' u='c' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='132' u='c' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='180' u='c' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>

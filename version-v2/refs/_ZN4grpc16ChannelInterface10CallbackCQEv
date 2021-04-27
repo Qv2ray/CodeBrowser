@@ -1,0 +1,10 @@
+<def f='include/grpcpp/impl/codegen/channel_interface.h' l='131' type='grpc::CompletionQueue * grpc::ChannelInterface::CallbackCQ()'/>
+<doc f='include/grpcpp/impl/codegen/channel_interface.h' l='123'>// EXPERIMENTAL
+  // A method to get the callbackable completion queue associated with this
+  // channel. If the return value is nullptr, this channel doesn&apos;t support
+  // callback operations.
+  // TODO(vjpai): Consider a better default like using a global CQ
+  // Returns nullptr (rather than being pure) since this is a new method
+  // and adding a new pure method to an interface would be a breaking change
+  // (even though this is private and non-API)</doc>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='58' u='c' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>

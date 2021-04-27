@@ -1,0 +1,78 @@
+<use f='qv2ray/src/plugins/protocols/ui/PluginSettingsWidget.hpp' l='20' c='_ZN26SimplePluginSettingsWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/inbound/dokodemo-door.hpp' l='25' c='_ZN25DokodemoDoorInboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/inbound/httpin.hpp' l='36' c='_ZN17HTTPInboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/inbound/socksin.hpp' l='42' c='_ZN18SocksInboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/blackhole.hpp' l='28' c='_ZN23BlackholeOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/dns.hpp' l='46' c='_ZN17DnsOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/freedom.hpp' l='35' c='_ZN21FreedomOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/httpout.hpp' l='53' c='_ZN18HttpOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/loopback.hpp' l='32' c='_ZN22LoopbackSettingsEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.hpp' l='45' c='_ZN25ShadowsocksOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/socksout.hpp' l='48' c='_ZN19SocksOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vless.hpp' l='50' c='_ZN19VlessOutboundEditor11changeEventEP6QEvent'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vmess.hpp' l='42' c='_ZN19VmessOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/utils/core/MainWindowWidget.hpp' l='20' c='_ZN16MainWindowWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/BalancerWidget.hpp' l='31' c='_ZN14BalancerWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/ChainOutboundWidget.hpp' l='17' c='_ZN19ChainOutboundWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/ChainWidget.hpp' l='21' c='_ZN11ChainWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.hpp' l='18' c='_ZN21InboundOutboundWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/RuleWidget.hpp' l='39' c='_ZN16QvNodeRuleWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.hpp' l='25' c='_ZN20ConnectionInfoWidget11eventFilterEP7QObjectP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionSettingsWidget.hpp' l='15' c='_ZN24ConnectionSettingsWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/InboundSettingsWidget.hpp' l='17' c='_ZN21InboundSettingsWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='31' c='_ZN17ChainEditorWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.hpp' l='27' c='_ZN19RoutingEditorWidget11changeEventEP6QEvent'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='108' c='_ZN10MainWindow11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/PluginSettingsWidget.cpp' l='8' c='_ZN26SimplePluginSettingsWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/inbound/dokodemo-door.cpp' l='9' c='_ZN25DokodemoDoorInboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/inbound/httpin.cpp' l='11' c='_ZN17HTTPInboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/inbound/socksin.cpp' l='11' c='_ZN18SocksInboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/blackhole.cpp' l='10' c='_ZN23BlackholeOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/dns.cpp' l='10' c='_ZN17DnsOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/freedom.cpp' l='11' c='_ZN21FreedomOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/httpout.cpp' l='10' c='_ZN18HttpOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/loopback.cpp' l='8' c='_ZN22LoopbackSettingsEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.cpp' l='10' c='_ZN25ShadowsocksOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/socksout.cpp' l='10' c='_ZN19SocksOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vless.cpp' l='10' c='_ZN19VlessOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vmess.cpp' l='12' c='_ZN19VmessOutboundEditor11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/plugins/utils/core/MainWindowWidget.cpp' l='10' c='_ZN16MainWindowWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/BalancerWidget.cpp' l='25' c='_ZN14BalancerWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/ChainOutboundWidget.cpp' l='16' c='_ZN19ChainOutboundWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/ChainWidget.cpp' l='17' c='_ZN11ChainWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='35' c='_ZN21InboundOutboundWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/RuleWidget.cpp' l='28' c='_ZN16QvNodeRuleWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionInfoWidget.cpp' l='182' c='_ZN20ConnectionInfoWidget11eventFilterEP7QObjectP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionSettingsWidget.cpp' l='8' c='_ZN24ConnectionSettingsWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/InboundSettingsWidget.cpp' l='18' c='_ZN21InboundSettingsWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='65' c='_ZN17ChainEditorWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='49' c='_ZN19RoutingEditorWidget11changeEventEP6QEvent'/>
+<size>16</size>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='468' c='_ZN10MainWindow11changeEventEP6QEvent'/>
+<size>16</size>

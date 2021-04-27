@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BuiltinProtocolPlugin.cpp source code [qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>plugins</a>/<a href='./'>protocols</a>/<a href='BuiltinProtocolPlugin.cpp.html'>BuiltinProtocolPlugin.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="BuiltinProtocolPlugin.hpp.html">"BuiltinProtocolPlugin.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="core/OutboundHandler.hpp.html">"core/OutboundHandler.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="ui/Interface.hpp.html">"ui/Interface.hpp"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><em>bool</em> <a class="type" href="BuiltinProtocolPlugin.hpp.html#InternalProtocolSupportPlugin" title='InternalProtocolSupportPlugin' data-ref="InternalProtocolSupportPlugin" data-ref-filename="InternalProtocolSupportPlugin">InternalProtocolSupportPlugin</a>::<dfn class="virtual decl def fn" id="_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject" title='InternalProtocolSupportPlugin::InitializePlugin' data-ref="_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject" data-ref-filename="_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject">InitializePlugin</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;, <em>const</em> <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> &amp;<dfn class="local col4 decl" id="14settings" title='settings' data-type='const QJsonObject &amp;' data-ref="14settings" data-ref-filename="14settings">settings</dfn>)</td></tr>
+<tr><th id="7">7</th><td>{</td></tr>
+<tr><th id="8">8</th><td>    <b>this</b>-&gt;<a class="member field" href="../../plugin-interface/QvPluginInterface.hpp.html#Qv2rayPlugin::Qv2rayInterface::settings" title='Qv2rayPlugin::Qv2rayInterface::settings' data-ref="Qv2rayPlugin::Qv2rayInterface::settings" data-ref-filename="Qv2rayPlugin..Qv2rayInterface..settings">settings</a> <span class='ref fn' title='QJsonObject::operator=' data-ref="_ZN11QJsonObjectaSERKS_" data-ref-filename="_ZN11QJsonObjectaSERKS_">=</span> <a class="local col4 ref" href="#14settings" title='settings' data-ref="14settings" data-ref-filename="14settings">settings</a>;</td></tr>
+<tr><th id="9">9</th><td>    <a class="ref" href="BuiltinProtocolPlugin.hpp.html#42" title='InternalProtocolSupportPluginInstance' data-ref="InternalProtocolSupportPluginInstance" data-ref-filename="InternalProtocolSupportPluginInstance">InternalProtocolSupportPluginInstance</a> = <b>this</b>;</td></tr>
+<tr><th id="10">10</th><td>    <a class="member field" href="../../plugin-interface/QvPluginInterface.hpp.html#Qv2rayPlugin::Qv2rayInterface::outboundHandler" title='Qv2rayPlugin::Qv2rayInterface::outboundHandler' data-ref="Qv2rayPlugin::Qv2rayInterface::outboundHandler" data-ref-filename="Qv2rayPlugin..Qv2rayInterface..outboundHandler">outboundHandler</a> <a class="ref fn" href="../../../../include/c++/10/bits/shared_ptr.h.html#_ZNSt10shared_ptraSEOSt10shared_ptrITL0__E" title='std::shared_ptr::operator=' data-ref="_ZNSt10shared_ptraSEOSt10shared_ptrITL0__E" data-ref-filename="_ZNSt10shared_ptraSEOSt10shared_ptrITL0__E">=</a> <span class="namespace">std::</span><a class="ref fn" href="../../../../include/c++/10/bits/shared_ptr.h.html#_ZSt11make_sharedDpOT0_" title='std::make_shared' data-ref="_ZSt11make_sharedDpOT0_" data-ref-filename="_ZSt11make_sharedDpOT0_">make_shared</a>&lt;<a class="type" href="core/OutboundHandler.hpp.html#BuiltinSerializer" title='BuiltinSerializer' data-ref="BuiltinSerializer" data-ref-filename="BuiltinSerializer">BuiltinSerializer</a>&gt;();</td></tr>
+<tr><th id="11">11</th><td>    <a class="member field" href="../../plugin-interface/QvPluginInterface.hpp.html#Qv2rayPlugin::Qv2rayInterface::guiInterface" title='Qv2rayPlugin::Qv2rayInterface::guiInterface' data-ref="Qv2rayPlugin::Qv2rayInterface::guiInterface" data-ref-filename="Qv2rayPlugin..Qv2rayInterface..guiInterface">guiInterface</a> = <b>new</b> <a class="type" href="ui/Interface.hpp.html#ProtocolGUIInterface" title='ProtocolGUIInterface' data-ref="ProtocolGUIInterface" data-ref-filename="ProtocolGUIInterface">ProtocolGUIInterface</a><a class="ref fn" href="ui/Interface.hpp.html#_ZN20ProtocolGUIInterfaceC1Ev" title='ProtocolGUIInterface::ProtocolGUIInterface' data-ref="_ZN20ProtocolGUIInterfaceC1Ev" data-ref-filename="_ZN20ProtocolGUIInterfaceC1Ev">(</a>);</td></tr>
+<tr><th id="12">12</th><td>    <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="13">13</th><td>}</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

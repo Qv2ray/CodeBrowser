@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QRBitMatrixParser.h source code [qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::QRCode::BitMatrixParser "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>qrcode</a>/<a href='QRBitMatrixParser.h.html'>QRBitMatrixParser.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>class</b> <a class="type" href="../BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix" id="ZXing::BitMatrix">BitMatrix</a>;</td></tr>
+<tr><th id="22">22</th><td><b>class</b> <a class="type" href="../ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray" id="ZXing::ByteArray">ByteArray</a>;</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">QRCode</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>class</b> <a class="type" href="QRVersion.h.html#ZXing::QRCode::Version" title='ZXing::QRCode::Version' data-ref="ZXing::QRCode::Version" data-ref-filename="ZXing..QRCode..Version" id="ZXing::QRCode::Version">Version</a>;</td></tr>
+<tr><th id="27">27</th><td><b>class</b> <a class="type" href="QRFormatInformation.h.html#ZXing::QRCode::FormatInformation" title='ZXing::QRCode::FormatInformation' data-ref="ZXing::QRCode::FormatInformation" data-ref-filename="ZXing..QRCode..FormatInformation" id="ZXing::QRCode::FormatInformation">FormatInformation</a>;</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc">* <span class="command">@author</span> Sean Owen</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="32">32</th><td><b>class</b> <dfn class="type def" id="ZXing::QRCode::BitMatrixParser" title='ZXing::QRCode::BitMatrixParser' data-ref="ZXing::QRCode::BitMatrixParser" data-ref-filename="ZXing..QRCode..BitMatrixParser">BitMatrixParser</dfn></td></tr>
+<tr><th id="33">33</th><td>{</td></tr>
+<tr><th id="34">34</th><td><b>public</b>:</td></tr>
+<tr><th id="35">35</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">bitMatrix</span> {<span class="command">@link</span><span class="verb"> BitMatrix} to parse</span></i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> return false if dimension is not &gt;= 21 and 1 mod 4</span></i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"><span class="verb"></span><span class="verb">	*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="39">39</th><td><span class="verb"></span>	<em>static</em> <em>const</em> <a class="type" href="QRVersion.h.html#ZXing::QRCode::Version" title='ZXing::QRCode::Version' data-ref="ZXing::QRCode::Version" data-ref-filename="ZXing..QRCode..Version">Version</a>* <a class="decl fn" href="QRBitMatrixParser.cpp.html#_ZN5ZXing6QRCode15BitMatrixParser11ReadVersionERKNS_9BitMatrixEb" title='ZXing::QRCode::BitMatrixParser::ReadVersion' data-ref="_ZN5ZXing6QRCode15BitMatrixParser11ReadVersionERKNS_9BitMatrixEb" data-ref-filename="_ZN5ZXing6QRCode15BitMatrixParser11ReadVersionERKNS_9BitMatrixEb" id="_ZN5ZXing6QRCode15BitMatrixParser11ReadVersionERKNS_9BitMatrixEb">ReadVersion</a>(<em>const</em> <a class="type" href="../BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix">BitMatrix</a>&amp; <dfn class="local col1 decl" id="1bitMatrix" title='bitMatrix' data-type='const ZXing::BitMatrix &amp;' data-ref="1bitMatrix" data-ref-filename="1bitMatrix">bitMatrix</dfn>, <em>bool</em> <dfn class="local col2 decl" id="2mirrored" title='mirrored' data-type='bool' data-ref="2mirrored" data-ref-filename="2mirrored">mirrored</dfn>);</td></tr>
+<tr><th id="40">40</th><td>	<em>static</em> <a class="type" href="QRFormatInformation.h.html#ZXing::QRCode::FormatInformation" title='ZXing::QRCode::FormatInformation' data-ref="ZXing::QRCode::FormatInformation" data-ref-filename="ZXing..QRCode..FormatInformation">FormatInformation</a> <a class="decl fn" href="QRBitMatrixParser.cpp.html#_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb" title='ZXing::QRCode::BitMatrixParser::ReadFormatInformation' data-ref="_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb" data-ref-filename="_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb" id="_ZN5ZXing6QRCode15BitMatrixParser21ReadFormatInformationERKNS_9BitMatrixEb">ReadFormatInformation</a>(<em>const</em> <a class="type" href="../BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix">BitMatrix</a>&amp; <dfn class="local col3 decl" id="3bitMatrix" title='bitMatrix' data-type='const ZXing::BitMatrix &amp;' data-ref="3bitMatrix" data-ref-filename="3bitMatrix">bitMatrix</dfn>, <em>bool</em> <dfn class="local col4 decl" id="4mirrored" title='mirrored' data-type='bool' data-ref="4mirrored" data-ref-filename="4mirrored">mirrored</dfn>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">	* <span class="tag">&lt;p&gt;</span>Reads the bits in the {<span class="command">@link</span><span class="verb"> BitMatrix} representing the finder pattern in the</span></i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> correct order in order to reconstruct the codewords bytes contained within the</span></i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> QR Code.&lt;/p&gt;</span></i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"></span></i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> @return bytes encoded within the QR Code</span></i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> or empty array if the exact number of bytes expected is not read</span></i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"><span class="verb"></span><span class="verb">	*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="50">50</th><td><span class="verb"></span>	<em>static</em> <a class="type" href="../ByteArray.h.html#ZXing::ByteArray" title='ZXing::ByteArray' data-ref="ZXing::ByteArray" data-ref-filename="ZXing..ByteArray">ByteArray</a> <a class="decl fn" href="QRBitMatrixParser.cpp.html#_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE" title='ZXing::QRCode::BitMatrixParser::ReadCodewords' data-ref="_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE" data-ref-filename="_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE" id="_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE">ReadCodewords</a>(<em>const</em> <a class="type" href="../BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix">BitMatrix</a>&amp; <dfn class="local col5 decl" id="5bitMatrix" title='bitMatrix' data-type='const ZXing::BitMatrix &amp;' data-ref="5bitMatrix" data-ref-filename="5bitMatrix">bitMatrix</dfn>, <em>const</em> <a class="type" href="QRVersion.h.html#ZXing::QRCode::Version" title='ZXing::QRCode::Version' data-ref="ZXing::QRCode::Version" data-ref-filename="ZXing..QRCode..Version">Version</a>&amp; <dfn class="local col6 decl" id="6version" title='version' data-type='const ZXing::QRCode::Version &amp;' data-ref="6version" data-ref-filename="6version">version</dfn>);</td></tr>
+<tr><th id="51">51</th><td>};</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>} <i>// QRCode</i></td></tr>
+<tr><th id="54">54</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='QRBitMatrixParser.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

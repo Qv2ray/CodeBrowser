@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='220' type='int QRinput_getVersion(QRinput * input)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='215'>/**
+ * Get current version.
+ * @param input input object.
+ * @return current version.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='157' ll='160' type='int QRinput_getVersion(QRinput * input)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1107' u='c' c='QRinput_convertData'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1116' u='c' c='QRinput_convertData'/>

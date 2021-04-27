@@ -1,0 +1,56 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='302' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='128' c='uvw::StreamHandle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='46' ll='230'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='46'/>
+<size>360</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='30'>/**
+ * @brief The TCPHandle handle.
+ *
+ * TCP handles are used to represent both TCP streams and servers.&lt;br/&gt;
+ * By default, _IPv4_ is used as a template parameter. The handle already
+ * supports _IPv6_ out-of-the-box by using `uvw::IPv6`.
+ *
+ * To create a `TCPHandle` through a `Loop`, arguments follow:
+ *
+ * * An optional integer value that indicates the flags used to initialize
+ * the socket.
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/tcp.html#c.uv_tcp_init_ex)
+ * for further details.
+ */</doc>
+<fun r='_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<fun r='_ZN3uvw9TCPHandle4initEv'/>
+<fun r='_ZN3uvw9TCPHandle4openENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw9TCPHandle7noDelayEb'/>
+<fun r='_ZN3uvw9TCPHandle9keepAliveEbNSt6chrono8durationIjSt5ratioILl1ELl1EEEE'/>
+<fun r='_ZN3uvw9TCPHandle19simultaneousAcceptsEb'/>
+<fun r='_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<fun r='_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<fun r='_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<fun r='_ZNK3uvw9TCPHandle4sockEv'/>
+<fun r='_ZNK3uvw9TCPHandle4peerEv'/>
+<fun r='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<fun r='_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<fun r='_ZN3uvw9TCPHandle7connectENS_4AddrE'/>
+<fun r='_ZN3uvw9TCPHandle10closeResetEv'/>
+<mbr r='uvw::TCPHandle::tag' o='2816' t='enum (anonymous enum at /home/runner/work/CodeBrowser/CodeBrowser/source/dev-v3/3rdparty/uvw/src/uvw/tcp.h:228:5)'/>
+<mbr r='uvw::TCPHandle::flags' o='2848' t='unsigned int'/>
+<fun r='_ZN3uvw9TCPHandleC1ENS_14UnderlyingTypeIS0_8uv_tcp_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<fun r='_ZN3uvw9TCPHandle4initEv'/>
+<fun r='_ZN3uvw9TCPHandle4openENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw9TCPHandle7noDelayEb'/>
+<fun r='_ZN3uvw9TCPHandle9keepAliveEbNSt6chrono8durationIjSt5ratioILl1ELl1EEEE'/>
+<fun r='_ZN3uvw9TCPHandle19simultaneousAcceptsEb'/>
+<fun r='_ZN3uvw9TCPHandle4bindERK8sockaddrNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<fun r='_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<fun r='_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<fun r='_ZNK3uvw9TCPHandle4sockEv'/>
+<fun r='_ZNK3uvw9TCPHandle4peerEv'/>
+<fun r='_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<fun r='_ZN3uvw9TCPHandle7connectENS_4AddrE'/>
+<fun r='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<fun r='_ZN3uvw9TCPHandle10closeResetEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='71' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='73' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<size>360</size>

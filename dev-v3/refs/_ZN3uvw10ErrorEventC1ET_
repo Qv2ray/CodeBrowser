@@ -1,0 +1,23 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='26' ll='28' type='void uvw::ErrorEvent::ErrorEvent(U val)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='32' u='c' c='_ZN3uvw7Request15defaultCallbackEPT0_i'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='25' u='c' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='86' u='c' c='_ZN3uvw14GetNameInfoReq16nameInfoCallbackEP16uv_getnameinfo_siPKcS4_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='379' u='c' c='_ZN3uvw9FsRequest17fsGenericCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='386' u='c' c='_ZN3uvw9FsRequest16fsResultCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='393' u='c' c='_ZN3uvw9FsRequest14fsStatCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='399' u='c' c='_ZN3uvw9FsRequest16fsStatfsCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='15' u='c' c='_ZN3uvw7FileReq14fsOpenCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='27' u='c' c='_ZN3uvw7FileReq15fsCloseCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='39' u='c' c='_ZN3uvw7FileReq14fsReadCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='235' u='c' c='_ZN3uvw5FsReq18fsReadlinkCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='246' u='c' c='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='22' u='c' c='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.cpp' l='22' u='c' c='_ZN3uvw12FsPollHandle13startCallbackEP12uv_fs_poll_siPK9uv_stat_tS5_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='67' u='c' c='_ZN3uvw4Loop5closeEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='114' u='c' c='_ZN3uvw4Loop4forkEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='148' u='c' c='_ZN3uvw12StreamHandle12readCallbackEP11uv_stream_slPK8uv_buf_t'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='154' u='c' c='_ZN3uvw12StreamHandle14listenCallbackEP11uv_stream_si'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='32' u='c' c='_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='112' u='c' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='195' u='c' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='223' u='c' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>

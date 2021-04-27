@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='672' type='bool uvw::FileReq::truncateSync(int64_t offset)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='170' ll='174' type='bool uvw::FileReq::truncateSync(int64_t offset)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='667'>/**
+     * @brief Sync [ftruncate](http://linux.die.net/man/2/ftruncate).
+     * @param offset Offset, as described in the official documentation.
+     * @return True in case of success, false otherwise.
+     */</doc>

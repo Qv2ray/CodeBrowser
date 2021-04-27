@@ -1,0 +1,15 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='22' ll='34'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='31' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='17'>/**
+ * @brief AddrInfoEvent event.
+ *
+ * It will be emitted by GetAddrInfoReq according with its functionalities.
+ */</doc>
+<fun r='_ZN3uvw13AddrInfoEventC1ESt10unique_ptrI8addrinfoPFvPS2_EE'/>
+<mbr r='uvw::AddrInfoEvent::data' o='0' t='std::unique_ptr&lt;addrinfo, Deleter&gt;'/>
+<fun r='_ZN3uvw13AddrInfoEventC1ESt10unique_ptrI8addrinfoPFvPS2_EE'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='43' c='_ZN6Qv2ray10components7latency7DNSBase16async_DNS_lookupEOTL0__OTL0_0_'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='45' c='_ZN6Qv2ray10components7latency7DNSBase16async_DNS_lookupEOTL0__OTL0_0_'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='73' c='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>
+<size>16</size>

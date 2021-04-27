@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1624' type='int uv_ip4_addr(const char * ip, int port, struct sockaddr_in * addr)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1013' u='c' c='uv_udp_set_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1039' u='c' c='uv_udp_set_source_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1054' u='c' c='uv_udp_set_source_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1228' u='c' c='uv_udp_set_multicast_interface'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='221' ll='229' type='int uv_ip4_addr(const char * ip, int port, struct sockaddr_in * addr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='373' u='a'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='24' u='c' c='_ZN6Qv2ray10components7latency7DNSBase6isAddrEv'/>

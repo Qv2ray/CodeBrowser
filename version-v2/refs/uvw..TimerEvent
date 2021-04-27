@@ -1,0 +1,14 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='19'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='13' c='_ZN3uvw11TimerHandle13startCallbackEP10uv_timer_s'/>
+<size>1</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='14'>/**
+ * @brief TimerEvent event.
+ *
+ * It will be emitted by TimerHandle according with its functionalities.
+ */</doc>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='34' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<size>1</size>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='225' c='_ZN6Qv2ray10components7latency8realping8RealPing5startEv'/>
+<size>1</size>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='116' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>1</size>

@@ -1,0 +1,5 @@
+<dec f='include/unistd.h' l='408' type='ssize_t pwrite64(int __fd, const void * __buf, size_t __n, __off64_t __offset)'/>
+<doc f='include/unistd.h' l='406'>/* Write N bytes of BUF to FD at the given position OFFSET without
+   changing the file pointer.  Return the number written, or -1.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1064' u='c' c='uv__fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1074' u='c' c='uv__fs_write'/>

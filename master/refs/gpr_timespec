@@ -1,0 +1,8 @@
+<def f='include/grpc/impl/codegen/gpr_types.h' l='47' ll='53'/>
+<use f='include/grpc/impl/codegen/gpr_types.h' l='47'/>
+<size>16</size>
+<doc f='include/grpc/impl/codegen/gpr_types.h' l='45'>/** Analogous to struct timespec. On some machines, absolute times may be in
+ * local time. */</doc>
+<mbr r='gpr_timespec::tv_sec' o='0' t='int64_t'/>
+<mbr r='gpr_timespec::tv_nsec' o='64' t='int32_t'/>
+<mbr r='gpr_timespec::clock_type' o='96' t='gpr_clock_type'/>

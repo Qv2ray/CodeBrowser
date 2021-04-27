@@ -1,0 +1,3 @@
+<def f='qv2ray/test/catch.hpp' l='1584' ll='1588' type='typename std::enable_if&lt;!std::is_enum&lt;T&gt;::value &amp;&amp; !std::is_base_of&lt;std::exception, T&gt;::value, std::string&gt;::type Catch::Detail::convertUnstreamable(const T &amp; )'/>
+<def f='qv2ray/test/catch.hpp' l='1590' ll='1594' type='typename std::enable_if&lt;!std::is_enum&lt;T&gt;::value &amp;&amp; std::is_base_of&lt;std::exception, T&gt;::value, std::string&gt;::type Catch::Detail::convertUnstreamable(const T &amp; ex)'/>
+<def f='qv2ray/test/catch.hpp' l='1597' ll='1601' type='typename std::enable_if&lt;std::is_enum&lt;T&gt;::value, std::string&gt;::type Catch::Detail::convertUnstreamable(const T &amp; value)'/>

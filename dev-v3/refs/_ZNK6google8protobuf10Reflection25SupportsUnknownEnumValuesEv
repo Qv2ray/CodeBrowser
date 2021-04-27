@@ -1,0 +1,31 @@
+<def f='include/google/protobuf/message.h' l='890' type='bool google::protobuf::Reflection::SupportsUnknownEnumValues() const'/>
+<doc f='include/google/protobuf/message.h' l='860'>// Feature Flags -------------------------------------------------------------
+
+  // Does this message support storing arbitrary integer values in enum fields?
+  // If |true|, GetEnumValue/SetEnumValue and associated repeated-field versions
+  // take arbitrary integer values, and the legacy GetEnum() getter will
+  // dynamically create an EnumValueDescriptor for any integer value without
+  // one. If |false|, setting an unknown enum value via the integer-based
+  // setters results in undefined behavior (in practice, GOOGLE_DCHECK-fails).
+  //
+  // Generic code that uses reflection to handle messages with enum fields
+  // should check this flag before using the integer-based setter, and either
+  // downgrade to a compatible value or use the UnknownFieldSet if not. For
+  // example:
+  //
+  //   int new_value = GetValueFromApplicationLogic();
+  //   if (reflection-&gt;SupportsUnknownEnumValues()) {
+  //     reflection-&gt;SetEnumValue(message, field, new_value);
+  //   } else {
+  //     if (field_descriptor-&gt;enum_type()-&gt;
+  //             FindValueByNumber(new_value) != NULL) {
+  //       reflection-&gt;SetEnumValue(message, field, new_value);
+  //     } else if (emit_unknown_enum_values) {
+  //       reflection-&gt;MutableUnknownFields(message)-&gt;AddVarint(
+  //           field-&gt;number(), new_value);
+  //     } else {
+  //       // convert value to a compatible/default value.
+  //       new_value = CompatibleDowngrade(new_value);
+  //       reflection-&gt;SetEnumValue(message, field, new_value);
+  //     }
+  //   }</doc>

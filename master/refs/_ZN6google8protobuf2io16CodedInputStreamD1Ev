@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='180' type='void google::protobuf::io::CodedInputStream::~CodedInputStream()'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='175'>// Destroy the CodedInputStream and position the underlying
+  // ZeroCopyInputStream at the first unread byte.  If an error occurred while
+  // reading (causing a method to return false), then the exact position of
+  // the input stream may be anywhere between the last value that was read
+  // successfully and the stream&apos;s byte limit.</doc>

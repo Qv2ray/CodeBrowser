@@ -1,0 +1,25 @@
+<inh f='qv2ray/test/catch.hpp' l='2963' c='Catch::IRegistryHub'/>
+<inh f='qv2ray/test/catch.hpp' l='2974' c='Catch::IMutableRegistryHub'/>
+<inh f='qv2ray/test/catch.hpp' l='489' c='Catch::NonCopyable'/>
+<def f='qv2ray/test/catch.hpp' l='12443' ll='12498'/>
+<use f='qv2ray/test/catch.hpp' l='12501'/>
+<size>328</size>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHubC1Ev'/>
+<fun r='_ZNK5Catch12_GLOBAL__N_111RegistryHub19getReporterRegistryEv'/>
+<fun r='_ZNK5Catch12_GLOBAL__N_111RegistryHub19getTestCaseRegistryEv'/>
+<fun r='_ZNK5Catch12_GLOBAL__N_111RegistryHub30getExceptionTranslatorRegistryEv'/>
+<fun r='_ZNK5Catch12_GLOBAL__N_111RegistryHub19getTagAliasRegistryEv'/>
+<fun r='_ZNK5Catch12_GLOBAL__N_111RegistryHub27getStartupExceptionRegistryEv'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub16registerReporterERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_16IReporterFactoryEE'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub16registerListenerERKSt10shared_ptrINS_16IReporterFactoryEE'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub12registerTestERKNS_8TestCaseE'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub18registerTranslatorEPKNS_20IExceptionTranslatorE'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub16registerTagAliasERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_RKNS_14SourceLineInfoE'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub24registerStartupExceptionEv'/>
+<fun r='_ZN5Catch12_GLOBAL__N_111RegistryHub28getMutableEnumValuesRegistryEv'/>
+<mbr r='Catch::(anonymousnamespace)::RegistryHub::m_testCaseRegistry' o='192' t='Catch::TestRegistry'/>
+<mbr r='Catch::(anonymousnamespace)::RegistryHub::m_reporterRegistry' o='832' t='Catch::ReporterRegistry'/>
+<mbr r='Catch::(anonymousnamespace)::RegistryHub::m_exceptionTranslatorRegistry' o='1472' t='Catch::ExceptionTranslatorRegistry'/>
+<mbr r='Catch::(anonymousnamespace)::RegistryHub::m_tagAliasRegistry' o='1728' t='Catch::TagAliasRegistry'/>
+<mbr r='Catch::(anonymousnamespace)::RegistryHub::m_exceptionRegistry' o='2176' t='Catch::StartupExceptionRegistry'/>
+<mbr r='Catch::(anonymousnamespace)::RegistryHub::m_enumValuesRegistry' o='2368' t='Detail::EnumValuesRegistry'/>

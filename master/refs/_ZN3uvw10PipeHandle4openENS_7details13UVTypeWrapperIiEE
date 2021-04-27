@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='62' type='void uvw::PipeHandle::open(uvw::FileHandle file)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='23' ll='25' type='void uvw::PipeHandle::open(uvw::FileHandle file)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='53'>/**
+     * @brief Opens an existing file descriptor or HANDLE as a pipe.
+     *
+     * The passed file descriptor or HANDLE is not checked for its type, but
+     * it’s required that it represents a valid pipe.&lt;br/&gt;
+     * An ErrorEvent event is emitted in case of errors.
+     *
+     * @param file A valid file handle (either a file descriptor or a HANDLE).
+     */</doc>

@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/byte_buffer.h' l='34' type='grpc_byte_buffer * grpc_raw_byte_buffer_create(grpc_slice * slices, size_t nslices)'/>
+<doc f='include/grpc/impl/codegen/byte_buffer.h' l='30'>/** Returns a RAW byte buffer instance over the given slices (up to \a nslices).
+ *
+ * Increases the reference count for all \a slices processed. The user is
+ * responsible for invoking grpc_byte_buffer_destroy on the returned instance.*/</doc>

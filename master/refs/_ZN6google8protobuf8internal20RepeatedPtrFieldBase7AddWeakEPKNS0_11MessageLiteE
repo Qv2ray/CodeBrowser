@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/repeated_field.h' l='456' type='google::protobuf::MessageLite * google::protobuf::internal::RepeatedPtrFieldBase::AddWeak(const google::protobuf::MessageLite * prototype)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='452'>// Creates and adds an element using the given prototype, without introducing
+  // a link-time dependency on the concrete message type. This method is used to
+  // implement implicit weak fields. The prototype may be NULL, in which case an
+  // ImplicitWeakMessage will be used as a placeholder.</doc>

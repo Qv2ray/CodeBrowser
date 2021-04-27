@@ -1,0 +1,28 @@
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='153'/>
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='124' c='google::protobuf::io::ZeroCopyInputStream'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='46' ll='147'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='114' c='_ZN4grpc19SerializationTraitsIT_NSt9enable_ifIXsr3std10is_base_ofIN6google8protobuf7MessageES1_EE5valueEvE4typeEE11DeserializeEPNS_10ByteBufferEPS5_'/>
+<size>152</size>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='40'>/// This is a specialization of the protobuf class ZeroCopyInputStream
+/// The principle is to get one chunk of data at a time from the proto layer,
+/// with options to backup (re-see some bytes) or skip (forward past some bytes)
+///
+/// Read more about ZeroCopyInputStream interface here:
+/// https://developers.google.com/protocol-buffers/docs/reference/cpp/google.protobuf.io.zero_copy_stream#ZeroCopyInputStream</doc>
+<fun r='_ZN4grpc17ProtoBufferReaderC1EPNS_10ByteBufferE'/>
+<fun r='_ZN4grpc17ProtoBufferReaderD1Ev'/>
+<fun r='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<fun r='_ZNK4grpc17ProtoBufferReader6statusEv'/>
+<fun r='_ZN4grpc17ProtoBufferReader6BackUpEi'/>
+<fun r='_ZN4grpc17ProtoBufferReader4SkipEi'/>
+<fun r='_ZNK4grpc17ProtoBufferReader9ByteCountEv'/>
+<fun r='_ZN4grpc17ProtoBufferReader14set_byte_countEl'/>
+<fun r='_ZN4grpc17ProtoBufferReader12backup_countEv'/>
+<fun r='_ZN4grpc17ProtoBufferReader16set_backup_countEl'/>
+<fun r='_ZN4grpc17ProtoBufferReader6readerEv'/>
+<fun r='_ZN4grpc17ProtoBufferReader5sliceEv'/>
+<mbr r='grpc::ProtoBufferReader::byte_count_' o='64' t='int64_t'/>
+<mbr r='grpc::ProtoBufferReader::backup_count_' o='128' t='int64_t'/>
+<mbr r='grpc::ProtoBufferReader::reader_' o='192' t='grpc_byte_buffer_reader'/>
+<mbr r='grpc::ProtoBufferReader::slice_' o='384' t='grpc_slice'/>
+<mbr r='grpc::ProtoBufferReader::status_' o='640' t='grpc::Status'/>

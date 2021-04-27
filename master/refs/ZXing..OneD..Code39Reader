@@ -1,0 +1,20 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='60' c='ZXing::OneD::RowReader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='33' ll='54'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='27'>/**
+* &lt;p&gt;Decodes Code 39 barcodes. Supports &quot;Full ASCII Code 39&quot; if extendedMode is true.&lt;/p&gt;
+*
+* @author Sean Owen
+* @see Code93Reader
+*/</doc>
+<fun r='_ZN5ZXing4OneD12Code39ReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<fun r='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<mbr r='ZXing::OneD::Code39Reader::_extendedMode' o='64' t='bool'/>
+<mbr r='ZXing::OneD::Code39Reader::_usingCheckDigit' o='72' t='bool'/>
+<fun r='_ZN5ZXing4OneD12Code39ReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<fun r='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='46' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='62' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>16</size>

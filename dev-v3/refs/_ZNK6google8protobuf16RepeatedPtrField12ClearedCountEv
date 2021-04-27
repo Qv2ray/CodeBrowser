@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/repeated_field.h' l='962' type='int google::protobuf::RepeatedPtrField::ClearedCount() const'/>
+<def f='include/google/protobuf/repeated_field.h' l='2167' ll='2170' type='int google::protobuf::RepeatedPtrField::ClearedCount() const'/>
+<doc f='include/google/protobuf/repeated_field.h' l='952'>// When elements are removed by calls to RemoveLast() or Clear(), they
+  // are not actually freed.  Instead, they are cleared and kept so that
+  // they can be reused later.  This can save lots of CPU time when
+  // repeatedly reusing a protocol message for similar purposes.
+  //
+  // Hardcore programs may choose to manipulate these cleared objects
+  // to better optimize memory management using the following routines.
+
+  // Get the number of cleared objects that are currently being kept
+  // around for reuse.</doc>

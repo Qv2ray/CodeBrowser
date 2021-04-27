@@ -1,0 +1,48 @@
+<inh f='qv2ray/test/catch.hpp' l='7482' c='Catch::TestCaseTracking::ITracker'/>
+<def f='qv2ray/test/catch.hpp' l='7545' ll='7592'/>
+<ovr f='qv2ray/test/catch.hpp' l='7594' c='Catch::TestCaseTracking::SectionTracker'/>
+<use f='qv2ray/test/catch.hpp' l='7594'/>
+<ovr f='qv2ray/test/catch.hpp' l='12577' c='Catch::Generators::GeneratorTracker'/>
+<use f='qv2ray/test/catch.hpp' l='12577'/>
+<use f='qv2ray/test/catch.hpp' l='12581' c='_ZN5Catch10Generators16GeneratorTrackerC1ERKNS_16TestCaseTracking15NameAndLocationERNS2_14TrackerContextEPNS2_8ITrackerE'/>
+<use f='qv2ray/test/catch.hpp' l='14495' c='_ZN5Catch16TestCaseTracking14SectionTrackerC1ERKNS0_15NameAndLocationERNS0_14TrackerContextEPNS0_8ITrackerE'/>
+<size>104</size>
+<mbr r='Catch::TestCaseTracking::TrackerBase::m_ctx' o='448' t='Catch::TestCaseTracking::TrackerContext &amp;'/>
+<mbr r='Catch::TestCaseTracking::TrackerBase::m_parent' o='512' t='Catch::TestCaseTracking::ITracker *'/>
+<mbr r='Catch::TestCaseTracking::TrackerBase::m_children' o='576' t='Catch::TestCaseTracking::TrackerBase::Children'/>
+<mbr r='Catch::TestCaseTracking::TrackerBase::m_runState' o='768' t='Catch::TestCaseTracking::TrackerBase::CycleState'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBaseC1ERKNS0_15NameAndLocationERNS0_14TrackerContextEPNS0_8ITrackerE'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase10isCompleteEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase23isSuccessfullyCompletedEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase6isOpenEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase11hasChildrenEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase10hasStartedEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase8addChildERKSt10shared_ptrINS0_8ITrackerEE'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase9findChildERKNS0_15NameAndLocationE'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase6parentEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase9openChildEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase16isSectionTrackerEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase18isGeneratorTrackerEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase4openEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase5closeEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase4failEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase23markAsNeedingAnotherRunEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase12moveToParentEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase10moveToThisEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBaseC1ERKNS0_15NameAndLocationERNS0_14TrackerContextEPNS0_8ITrackerE'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase10isCompleteEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase23isSuccessfullyCompletedEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase6isOpenEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase11hasChildrenEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase8addChildERKSt10shared_ptrINS0_8ITrackerEE'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase9findChildERKNS0_15NameAndLocationE'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase6parentEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase9openChildEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase16isSectionTrackerEv'/>
+<fun r='_ZNK5Catch16TestCaseTracking11TrackerBase18isGeneratorTrackerEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase4openEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase5closeEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase4failEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase23markAsNeedingAnotherRunEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase12moveToParentEv'/>
+<fun r='_ZN5Catch16TestCaseTracking11TrackerBase10moveToThisEv'/>

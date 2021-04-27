@@ -1,0 +1,33 @@
+<inh f='include/grpcpp/impl/codegen/service_type.h' l='58' c='grpc::Service'/>
+<def f='/v2ray_api.grpc.pb.h' l='132' ll='139'/>
+<use f='/v2ray_api.grpc.pb.h' l='143' c='_ZN5v2ray4core3app5stats7command12StatsService24WithAsyncMethod_GetStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='163' c='_ZN5v2ray4core3app5stats7command12StatsService26WithAsyncMethod_QueryStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='183' c='_ZN5v2ray4core3app5stats7command12StatsService27WithAsyncMethod_GetSysStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='200'/>
+<use f='/v2ray_api.grpc.pb.h' l='204' c='_ZN5v2ray4core3app5stats7command12StatsService26WithGenericMethod_GetStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='221' c='_ZN5v2ray4core3app5stats7command12StatsService28WithGenericMethod_QueryStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='238' c='_ZN5v2ray4core3app5stats7command12StatsService29WithGenericMethod_GetSysStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='255' c='_ZN5v2ray4core3app5stats7command12StatsService22WithRawMethod_GetStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='275' c='_ZN5v2ray4core3app5stats7command12StatsService24WithRawMethod_QueryStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='295' c='_ZN5v2ray4core3app5stats7command12StatsService25WithRawMethod_GetSysStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='315' c='_ZN5v2ray4core3app5stats7command12StatsService32WithStreamedUnaryMethod_GetStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='335' c='_ZN5v2ray4core3app5stats7command12StatsService34WithStreamedUnaryMethod_QueryStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='355' c='_ZN5v2ray4core3app5stats7command12StatsService35WithStreamedUnaryMethod_GetSysStats33BaseClassMustBeDerivedFromServiceEPKNS4_7ServiceE'/>
+<use f='/v2ray_api.grpc.pb.h' l='372'/>
+<use f='/v2ray_api.grpc.pb.h' l='373'/>
+<use f='/v2ray_api.grpc.pb.h' l='374'/>
+<size>40</size>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7ServiceD1Ev'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7Service8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7Service10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7Service11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='94' c='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<use f='/v2ray_api.grpc.pb.cc' l='99' c='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<use f='/v2ray_api.grpc.pb.cc' l='104' c='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<size>40</size>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7ServiceD1Ev'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7Service8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7Service10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<fun r='_ZN5v2ray4core3app5stats7command12StatsService7Service11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>

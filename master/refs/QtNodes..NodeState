@@ -1,0 +1,46 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='16' ll='53'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='46' c='_ZNK7QtNodes4Node9nodeStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='47' c='_ZN7QtNodes4Node9nodeStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='63'/>
+<size>80</size>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeState.hpp' l='14'>/// Contains vectors of connected input and output connections.
+    /// Stores bool for reacting on hovering connections</doc>
+<fun r='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<fun r='_ZNK7QtNodes9NodeState10getEntriesENS_8PortTypeE'/>
+<fun r='_ZN7QtNodes9NodeState10getEntriesENS_8PortTypeE'/>
+<fun r='_ZNK7QtNodes9NodeState11connectionsENS_8PortTypeEi'/>
+<fun r='_ZN7QtNodes9NodeState13setConnectionENS_8PortTypeEiRNS_10ConnectionE'/>
+<fun r='_ZN7QtNodes9NodeState15eraseConnectionENS_8PortTypeEi5QUuid'/>
+<fun r='_ZNK7QtNodes9NodeState8reactionEv'/>
+<fun r='_ZNK7QtNodes9NodeState16reactingPortTypeEv'/>
+<fun r='_ZNK7QtNodes9NodeState16reactingDataTypeEv'/>
+<fun r='_ZN7QtNodes9NodeState11setReactionENS0_22ReactToConnectionStateENS_8PortTypeESt10shared_ptrINS_12NodeDataTypeEE'/>
+<fun r='_ZNK7QtNodes9NodeState10isReactingEv'/>
+<fun r='_ZN7QtNodes9NodeState11setResizingEb'/>
+<fun r='_ZNK7QtNodes9NodeState8resizingEv'/>
+<mbr r='QtNodes::NodeState::_inConnections' o='0' t='std::vector&lt;ConnectionPtrSet&gt;'/>
+<mbr r='QtNodes::NodeState::_outConnections' o='192' t='std::vector&lt;ConnectionPtrSet&gt;'/>
+<mbr r='QtNodes::NodeState::_reaction' o='384' t='QtNodes::NodeState::ReactToConnectionState'/>
+<mbr r='QtNodes::NodeState::_reactingPortType' o='416' t='QtNodes::PortType'/>
+<mbr r='QtNodes::NodeState::_reactingDataType' o='448' t='std::shared_ptr&lt;NodeDataType&gt;'/>
+<mbr r='QtNodes::NodeState::_resizing' o='576' t='bool'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='88' c='_ZNK7QtNodes4Node9nodeStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='92' c='_ZN7QtNodes4Node9nodeStateEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='102' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='100' c='_ZNK7QtNodes25NodeConnectionInteraction10disconnectENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='144' c='_ZNK7QtNodes25NodeConnectionInteraction15nodePortIsEmptyENS_8PortTypeEi'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='21' c='_ZN7QtNodes11NodePainter13drawModelNameEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='22' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='23' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='25' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='118' c='_ZNK7QtNodes18NodeGraphicsObject15moveConnectionsEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='164' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<size>80</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='24' c='_ZN7QtNodes11NodePainter5paintEP8QPainterRNS_4NodeERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='67' c='_ZN7QtNodes11NodePainter20drawConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='122' c='_ZN7QtNodes11NodePainter26drawFilledConnectionPointsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='152' c='_ZN7QtNodes11NodePainter13drawModelNameEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='170' c='_ZN7QtNodes11NodePainter15drawEntryLabelsEP8QPainterRKNS_12NodeGeometryERKNS_9NodeStateEPKNS_13NodeDataModelE'/>
+<size>80</size>

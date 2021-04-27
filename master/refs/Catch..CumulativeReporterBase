@@ -1,0 +1,33 @@
+<inh f='qv2ray/test/catch.hpp' l='5634' c='Catch::IStreamingReporter'/>
+<def f='qv2ray/test/catch.hpp' l='5788' ll='5942'/>
+<ovr f='qv2ray/test/catch.hpp' l='6309' c='Catch::JunitReporter'/>
+<use f='qv2ray/test/catch.hpp' l='6309'/>
+<use f='qv2ray/test/catch.hpp' l='16607' c='_ZN5Catch13JunitReporterC1ERKNS_14ReporterConfigE'/>
+<size>216</size>
+<fun r='_ZN5Catch22CumulativeReporterBaseC1ERKNS_14ReporterConfigE'/>
+<fun r='_ZN5Catch22CumulativeReporterBaseD1Ev'/>
+<fun r='_ZNK5Catch22CumulativeReporterBase14getPreferencesEv'/>
+<fun r='_ZN5Catch22CumulativeReporterBase23getSupportedVerbositiesEv'/>
+<fun r='_ZN5Catch22CumulativeReporterBase15testRunStartingERKNS_11TestRunInfoE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase17testGroupStartingERKNS_9GroupInfoE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase16testCaseStartingERKNS_12TestCaseInfoE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase15sectionStartingERKNS_11SectionInfoE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase17assertionStartingERKNS_13AssertionInfoE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase14assertionEndedERKNS_14AssertionStatsE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase12sectionEndedERKNS_12SectionStatsE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase13testCaseEndedERKNS_13TestCaseStatsE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase14testGroupEndedERKNS_14TestGroupStatsE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase12testRunEndedERKNS_12TestRunStatsE'/>
+<fun r='_ZN5Catch22CumulativeReporterBase22testRunEndedCumulativeEv'/>
+<fun r='_ZN5Catch22CumulativeReporterBase8skipTestERKNS_12TestCaseInfoE'/>
+<mbr r='Catch::CumulativeReporterBase::m_config' t='Catch::IConfigPtr'/>
+<mbr r='Catch::CumulativeReporterBase::stream' t='std::ostream &amp;'/>
+<mbr r='Catch::CumulativeReporterBase::m_assertions' t='std::vector&lt;AssertionStats&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_sections' t='std::vector&lt;std::vector&lt;std::shared_ptr&lt;SectionNode&gt;&gt;&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_testCases' t='std::vector&lt;std::shared_ptr&lt;TestCaseNode&gt;&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_testGroups' t='std::vector&lt;std::shared_ptr&lt;TestGroupNode&gt;&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_testRuns' t='std::vector&lt;std::shared_ptr&lt;TestRunNode&gt;&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_rootSection' t='std::shared_ptr&lt;SectionNode&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_deepestSection' t='std::shared_ptr&lt;SectionNode&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_sectionStack' t='std::vector&lt;std::shared_ptr&lt;SectionNode&gt;&gt;'/>
+<mbr r='Catch::CumulativeReporterBase::m_reporterPrefs' t='Catch::ReporterPreferences'/>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>queue.h source code [qv2ray/3rdparty/libuv/src/queue.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/src/queue.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>3rdparty</a>/<a href='..'>libuv</a>/<a href='./'>src</a>/<a href='queue.h.html'>queue.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright (c) 2013, Ben Noordhuis &lt;info@bnoordhuis.nl&gt;</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission to use, copy, modify, and/or distribute this software for any</i></td></tr>
+<tr><th id="4">4</th><td><i> * purpose with or without fee is hereby granted, provided that the above</i></td></tr>
+<tr><th id="5">5</th><td><i> * copyright notice and this permission notice appear in all copies.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES</i></td></tr>
+<tr><th id="8">8</th><td><i> * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF</i></td></tr>
+<tr><th id="9">9</th><td><i> * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR</i></td></tr>
+<tr><th id="10">10</th><td><i> * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES</i></td></tr>
+<tr><th id="11">11</th><td><i> * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN</i></td></tr>
+<tr><th id="12">12</th><td><i> * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF</i></td></tr>
+<tr><th id="13">13</th><td><i> * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</i></td></tr>
+<tr><th id="14">14</th><td><i> */</i></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="16">ifndef</span> <span class="macro" data-ref="_M/QUEUE_H_">QUEUE_H_</span></u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/QUEUE_H_" data-ref="_M/QUEUE_H_">QUEUE_H_</dfn></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>typedef</b> <em>void</em> *<dfn class="typedef" id="QUEUE" title='QUEUE' data-type='void *[2]' data-ref="QUEUE" data-ref-filename="QUEUE">QUEUE</dfn>[<var>2</var>];</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><i>/* Private macros. */</i></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/QUEUE_NEXT" data-ref="_M/QUEUE_NEXT">QUEUE_NEXT</dfn>(q)       (*(QUEUE **) &amp;((*(q))[0]))</u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/QUEUE_PREV" data-ref="_M/QUEUE_PREV">QUEUE_PREV</dfn>(q)       (*(QUEUE **) &amp;((*(q))[1]))</u></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/QUEUE_PREV_NEXT" data-ref="_M/QUEUE_PREV_NEXT">QUEUE_PREV_NEXT</dfn>(q)  (QUEUE_NEXT(QUEUE_PREV(q)))</u></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/QUEUE_NEXT_PREV" data-ref="_M/QUEUE_NEXT_PREV">QUEUE_NEXT_PREV</dfn>(q)  (QUEUE_PREV(QUEUE_NEXT(q)))</u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i>/* Public macros. */</i></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/QUEUE_DATA" data-ref="_M/QUEUE_DATA">QUEUE_DATA</dfn>(ptr, type, field)                                          \</u></td></tr>
+<tr><th id="31">31</th><td><u>  ((type *) ((char *) (ptr) - offsetof(type, field)))</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i>/* Important note: mutating the list while QUEUE_FOREACH is</i></td></tr>
+<tr><th id="34">34</th><td><i> * iterating over its elements results in undefined behavior.</i></td></tr>
+<tr><th id="35">35</th><td><i> */</i></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/QUEUE_FOREACH" data-ref="_M/QUEUE_FOREACH">QUEUE_FOREACH</dfn>(q, h)                                                   \</u></td></tr>
+<tr><th id="37">37</th><td><u>  for ((q) = QUEUE_NEXT(h); (q) != (h); (q) = QUEUE_NEXT(q))</u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/QUEUE_EMPTY" data-ref="_M/QUEUE_EMPTY">QUEUE_EMPTY</dfn>(q)                                                        \</u></td></tr>
+<tr><th id="40">40</th><td><u>  ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/QUEUE_HEAD" data-ref="_M/QUEUE_HEAD">QUEUE_HEAD</dfn>(q)                                                         \</u></td></tr>
+<tr><th id="43">43</th><td><u>  (QUEUE_NEXT(q))</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/QUEUE_INIT" data-ref="_M/QUEUE_INIT">QUEUE_INIT</dfn>(q)                                                         \</u></td></tr>
+<tr><th id="46">46</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="47">47</th><td><u>    QUEUE_NEXT(q) = (q);                                                      \</u></td></tr>
+<tr><th id="48">48</th><td><u>    QUEUE_PREV(q) = (q);                                                      \</u></td></tr>
+<tr><th id="49">49</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="50">50</th><td><u>  while (0)</u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/QUEUE_ADD" data-ref="_M/QUEUE_ADD">QUEUE_ADD</dfn>(h, n)                                                       \</u></td></tr>
+<tr><th id="53">53</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="54">54</th><td><u>    QUEUE_PREV_NEXT(h) = QUEUE_NEXT(n);                                       \</u></td></tr>
+<tr><th id="55">55</th><td><u>    QUEUE_NEXT_PREV(n) = QUEUE_PREV(h);                                       \</u></td></tr>
+<tr><th id="56">56</th><td><u>    QUEUE_PREV(h) = QUEUE_PREV(n);                                            \</u></td></tr>
+<tr><th id="57">57</th><td><u>    QUEUE_PREV_NEXT(h) = (h);                                                 \</u></td></tr>
+<tr><th id="58">58</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="59">59</th><td><u>  while (0)</u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/QUEUE_SPLIT" data-ref="_M/QUEUE_SPLIT">QUEUE_SPLIT</dfn>(h, q, n)                                                  \</u></td></tr>
+<tr><th id="62">62</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="63">63</th><td><u>    QUEUE_PREV(n) = QUEUE_PREV(h);                                            \</u></td></tr>
+<tr><th id="64">64</th><td><u>    QUEUE_PREV_NEXT(n) = (n);                                                 \</u></td></tr>
+<tr><th id="65">65</th><td><u>    QUEUE_NEXT(n) = (q);                                                      \</u></td></tr>
+<tr><th id="66">66</th><td><u>    QUEUE_PREV(h) = QUEUE_PREV(q);                                            \</u></td></tr>
+<tr><th id="67">67</th><td><u>    QUEUE_PREV_NEXT(h) = (h);                                                 \</u></td></tr>
+<tr><th id="68">68</th><td><u>    QUEUE_PREV(q) = (n);                                                      \</u></td></tr>
+<tr><th id="69">69</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="70">70</th><td><u>  while (0)</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/QUEUE_MOVE" data-ref="_M/QUEUE_MOVE">QUEUE_MOVE</dfn>(h, n)                                                      \</u></td></tr>
+<tr><th id="73">73</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="74">74</th><td><u>    if (QUEUE_EMPTY(h))                                                       \</u></td></tr>
+<tr><th id="75">75</th><td><u>      QUEUE_INIT(n);                                                          \</u></td></tr>
+<tr><th id="76">76</th><td><u>    else {                                                                    \</u></td></tr>
+<tr><th id="77">77</th><td><u>      QUEUE* q = QUEUE_HEAD(h);                                               \</u></td></tr>
+<tr><th id="78">78</th><td><u>      QUEUE_SPLIT(h, q, n);                                                   \</u></td></tr>
+<tr><th id="79">79</th><td><u>    }                                                                         \</u></td></tr>
+<tr><th id="80">80</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="81">81</th><td><u>  while (0)</u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#define <dfn class="macro" id="_M/QUEUE_INSERT_HEAD" data-ref="_M/QUEUE_INSERT_HEAD">QUEUE_INSERT_HEAD</dfn>(h, q)                                               \</u></td></tr>
+<tr><th id="84">84</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="85">85</th><td><u>    QUEUE_NEXT(q) = QUEUE_NEXT(h);                                            \</u></td></tr>
+<tr><th id="86">86</th><td><u>    QUEUE_PREV(q) = (h);                                                      \</u></td></tr>
+<tr><th id="87">87</th><td><u>    QUEUE_NEXT_PREV(q) = (q);                                                 \</u></td></tr>
+<tr><th id="88">88</th><td><u>    QUEUE_NEXT(h) = (q);                                                      \</u></td></tr>
+<tr><th id="89">89</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="90">90</th><td><u>  while (0)</u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/QUEUE_INSERT_TAIL" data-ref="_M/QUEUE_INSERT_TAIL">QUEUE_INSERT_TAIL</dfn>(h, q)                                               \</u></td></tr>
+<tr><th id="93">93</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="94">94</th><td><u>    QUEUE_NEXT(q) = (h);                                                      \</u></td></tr>
+<tr><th id="95">95</th><td><u>    QUEUE_PREV(q) = QUEUE_PREV(h);                                            \</u></td></tr>
+<tr><th id="96">96</th><td><u>    QUEUE_PREV_NEXT(q) = (q);                                                 \</u></td></tr>
+<tr><th id="97">97</th><td><u>    QUEUE_PREV(h) = (q);                                                      \</u></td></tr>
+<tr><th id="98">98</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="99">99</th><td><u>  while (0)</u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><u>#define <dfn class="macro" id="_M/QUEUE_REMOVE" data-ref="_M/QUEUE_REMOVE">QUEUE_REMOVE</dfn>(q)                                                       \</u></td></tr>
+<tr><th id="102">102</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="103">103</th><td><u>    QUEUE_PREV_NEXT(q) = QUEUE_NEXT(q);                                       \</u></td></tr>
+<tr><th id="104">104</th><td><u>    QUEUE_NEXT_PREV(q) = QUEUE_PREV(q);                                       \</u></td></tr>
+<tr><th id="105">105</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="106">106</th><td><u>  while (0)</u></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="16">endif</span> /* QUEUE_H_ */</u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='fs-poll.c.html'>qv2ray/3rdparty/libuv/src/fs-poll.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/message_lite.h' l='252' type='bool google::protobuf::MessageLite::ParseFromString(const std::string &amp; data)'/>
+<doc f='include/google/protobuf/message_lite.h' l='247'>// Parses a protocol buffer contained in a string. Returns true on success.
+  // This function takes a string in the (non-human-readable) binary wire
+  // format, matching the encoding output by MessageLite::SerializeToString().
+  // If you&apos;d like to convert a human-readable string into a protocol buffer
+  // object, see google::protobuf::TextFormat::ParseFromString().</doc>

@@ -1,0 +1,6 @@
+<use f='include/grpc/impl/codegen/byte_buffer.h' l='60'/>
+<def f='include/grpc/impl/codegen/byte_buffer_reader.h' l='28' ll='36'/>
+<size>24</size>
+<mbr r='grpc_byte_buffer_reader::buffer_in' o='0' t='struct grpc_byte_buffer *'/>
+<mbr r='grpc_byte_buffer_reader::buffer_out' o='64' t='struct grpc_byte_buffer *'/>
+<mbr r='grpc_byte_buffer_reader::current' o='128' t='union grpc_byte_buffer_reader_current'/>

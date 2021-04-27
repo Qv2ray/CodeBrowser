@@ -1,0 +1,11 @@
+<def f='include/google/protobuf/stubs/mutex.h' l='64' ll='71'/>
+<use f='include/google/protobuf/stubs/mutex.h' l='70' c='_ZN6google8protobuf8internal9MutexLockC1ERKS2_'/>
+<use f='include/google/protobuf/stubs/mutex.h' l='70' c='_ZN6google8protobuf8internal9MutexLockaSERKS2_'/>
+<use f='include/google/protobuf/stubs/mutex.h' l='74'/>
+<use f='include/google/protobuf/stubs/mutex.h' l='75'/>
+<size>8</size>
+<doc f='include/google/protobuf/stubs/mutex.h' l='63'>// MutexLock(mu) acquires mu when constructed and releases it when destroyed.</doc>
+<fun r='_ZN6google8protobuf8internal9MutexLockC1EPNS1_12WrappedMutexE'/>
+<fun r='_ZN6google8protobuf8internal9MutexLockD1Ev'/>
+<mbr r='google::protobuf::internal::MutexLock::mu_' o='0' t='google::protobuf::internal::Mutex *const'/>
+<fun r='_ZN6google8protobuf8internal9MutexLockC1ERKS2_'/>

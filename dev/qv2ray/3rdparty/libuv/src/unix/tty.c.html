@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tty.c source code [qv2ray/3rdparty/libuv/src/unix/tty.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/src/unix/tty.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>libuv</a>/<a href='..'>src</a>/<a href='./'>unix</a>/<a href='tty.c.html'>tty.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission is hereby granted, free of charge, to any person obtaining a copy</i></td></tr>
+<tr><th id="4">4</th><td><i> * of this software and associated documentation files (the "Software"), to</i></td></tr>
+<tr><th id="5">5</th><td><i> * deal in the Software without restriction, including without limitation the</i></td></tr>
+<tr><th id="6">6</th><td><i> * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * sell copies of the Software, and to permit persons to whom the Software is</i></td></tr>
+<tr><th id="8">8</th><td><i> * furnished to do so, subject to the following conditions:</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * The above copyright notice and this permission notice shall be included in</i></td></tr>
+<tr><th id="11">11</th><td><i> * all copies or substantial portions of the Software.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</i></td></tr>
+<tr><th id="14">14</th><td><i> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</i></td></tr>
+<tr><th id="15">15</th><td><i> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</i></td></tr>
+<tr><th id="16">16</th><td><i> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</i></td></tr>
+<tr><th id="17">17</th><td><i> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING</i></td></tr>
+<tr><th id="18">18</th><td><i> * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</i></td></tr>
+<tr><th id="19">19</th><td><i> * IN THE SOFTWARE.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../include/uv.h.html">"uv.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="internal.h.html">"internal.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="spinlock.h.html">"spinlock.h"</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../../../../include/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../../../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../../../../include/unistd.h.html">&lt;unistd.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="../../../../../include/termios.h.html">&lt;termios.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../../../../include/errno.h.html">&lt;errno.h&gt;</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/ioctl.h.html">&lt;sys/ioctl.h&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="33">if</span> defined(<span class="macro" data-ref="_M/__MVS__">__MVS__</span>) &amp;&amp; !defined(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_iflag.h.html#38" data-ref="_M/IMAXBEL">IMAXBEL</a>)</u></td></tr>
+<tr><th id="34">34</th><td><u>#define IMAXBEL 0</u></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="33">endif</span></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">if</span> defined(<span class="macro" data-ref="_M/__PASE__">__PASE__</span>)</u></td></tr>
+<tr><th id="38">38</th><td><i>/* On IBM i PASE, for better compatibility with running interactive programs in</i></td></tr>
+<tr><th id="39">39</th><td><i> * a 5250 environment, isatty() will return true for the stdin/stdout/stderr</i></td></tr>
+<tr><th id="40">40</th><td><i> * streams created by QSH/QP2TERM.</i></td></tr>
+<tr><th id="41">41</th><td><i> *</i></td></tr>
+<tr><th id="42">42</th><td><i> * For more, see docs on PASE_STDIO_ISATTY in</i></td></tr>
+<tr><th id="43">43</th><td><i> * <a href="https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/pase_environ.htm">https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/pase_environ.htm</a></i></td></tr>
+<tr><th id="44">44</th><td><i> *</i></td></tr>
+<tr><th id="45">45</th><td><i> * This behavior causes problems for Node as it expects that if isatty() returns</i></td></tr>
+<tr><th id="46">46</th><td><i> * true that TTY ioctls will be supported by that fd (which is not an</i></td></tr>
+<tr><th id="47">47</th><td><i> * unreasonable expectation) and when they don't it crashes with assertion</i></td></tr>
+<tr><th id="48">48</th><td><i> * errors.</i></td></tr>
+<tr><th id="49">49</th><td><i> *</i></td></tr>
+<tr><th id="50">50</th><td><i> * Here, we create our own version of isatty() that uses ioctl() to identify</i></td></tr>
+<tr><th id="51">51</th><td><i> * whether the fd is *really* a TTY or not.</i></td></tr>
+<tr><th id="52">52</th><td><i> */</i></td></tr>
+<tr><th id="53">53</th><td><em>static</em> <em>int</em> isreallyatty(<em>int</em> file) {</td></tr>
+<tr><th id="54">54</th><td>  <em>int</em> rc;</td></tr>
+<tr><th id="55">55</th><td> </td></tr>
+<tr><th id="56">56</th><td>  rc = !ioctl(file, TXISATTY + <var>0x81</var>, NULL);</td></tr>
+<tr><th id="57">57</th><td>  <b>if</b> (!rc &amp;&amp; errno != EBADF)</td></tr>
+<tr><th id="58">58</th><td>      errno = ENOTTY;</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>  <b>return</b> rc;</td></tr>
+<tr><th id="61">61</th><td>}</td></tr>
+<tr><th id="62">62</th><td><u>#define isatty(fd) isreallyatty(fd)</u></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="37">endif</span></u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="orig_termios_fd" title='orig_termios_fd' data-type='int' data-ref="orig_termios_fd" data-ref-filename="orig_termios_fd">orig_termios_fd</dfn> = -<var>1</var>;</td></tr>
+<tr><th id="66">66</th><td><em>static</em> <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios" title='termios' data-ref="termios" data-ref-filename="termios">termios</a> <dfn class="tu decl def" id="orig_termios" title='orig_termios' data-type='struct termios' data-ref="orig_termios" data-ref-filename="orig_termios">orig_termios</dfn>;</td></tr>
+<tr><th id="67">67</th><td><em>static</em> <a class="typedef" href="spinlock.h.html#uv_spinlock_t" title='uv_spinlock_t' data-type='struct uv_spinlock_t' data-ref="uv_spinlock_t" data-ref-filename="uv_spinlock_t">uv_spinlock_t</a> <dfn class="tu decl def" id="termios_spinlock" title='termios_spinlock' data-type='uv_spinlock_t' data-ref="termios_spinlock" data-ref-filename="termios_spinlock">termios_spinlock</dfn> = <a class="macro" href="spinlock.h.html#22" title="{ 0 }" data-ref="_M/UV_SPINLOCK_INITIALIZER">UV_SPINLOCK_INITIALIZER</a>;</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><em>static</em> <em>int</em> <dfn class="tu decl def fn" id="uv__tty_is_slave" title='uv__tty_is_slave' data-type='int uv__tty_is_slave(const int fd)' data-ref="uv__tty_is_slave" data-ref-filename="uv__tty_is_slave">uv__tty_is_slave</dfn>(<em>const</em> <em>int</em> <dfn class="local col9 decl" id="9fd" title='fd' data-type='const int' data-ref="9fd" data-ref-filename="9fd">fd</dfn>) {</td></tr>
+<tr><th id="70">70</th><td>  <em>int</em> <dfn class="local col0 decl" id="10result" title='result' data-type='int' data-ref="10result" data-ref-filename="10result">result</dfn>;</td></tr>
+<tr><th id="71">71</th><td><u>#<span data-ppcond="71">if</span> defined(<span class="macro" data-ref="_M/__linux__">__linux__</span>) || defined(<span class="macro" data-ref="_M/__FreeBSD__">__FreeBSD__</span>) || defined(<span class="macro" data-ref="_M/__FreeBSD_kernel__">__FreeBSD_kernel__</span>)</u></td></tr>
+<tr><th id="72">72</th><td>  <em>int</em> <dfn class="local col1 decl" id="11dummy" title='dummy' data-type='int' data-ref="11dummy" data-ref-filename="11dummy">dummy</dfn>;</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>  <a class="local col0 ref" href="#10result" title='result' data-ref="10result" data-ref-filename="10result">result</a> = <a class="ref fn" href="../../../../../include/x86_64-linux-gnu/sys/ioctl.h.html#ioctl" title='ioctl' data-ref="ioctl" data-ref-filename="ioctl">ioctl</a>(<a class="local col9 ref" href="#9fd" title='fd' data-ref="9fd" data-ref-filename="9fd">fd</a>, <a class="macro" href="../../../../../include/asm-generic/ioctls.h.html#69" title="(((2U) &lt;&lt; (((0+8)+8)+14)) | (((&apos;T&apos;)) &lt;&lt; (0+8)) | (((0x30)) &lt;&lt; 0) | ((((sizeof(unsigned int)))) &lt;&lt; ((0+8)+8)))" data-ref="_M/TIOCGPTN">TIOCGPTN</a>, &amp;<a class="local col1 ref" href="#11dummy" title='dummy' data-ref="11dummy" data-ref-filename="11dummy">dummy</a>) != <var>0</var>;</td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="71">elif</span> defined(__APPLE__)</u></td></tr>
+<tr><th id="76">76</th><td>  <em>char</em> dummy[<var>256</var>];</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>  result = ioctl(fd, TIOCPTYGNAME, &amp;dummy) != <var>0</var>;</td></tr>
+<tr><th id="79">79</th><td><u>#elif defined(__NetBSD__)</u></td></tr>
+<tr><th id="80">80</th><td>  <i>/*</i></td></tr>
+<tr><th id="81">81</th><td><i>   * NetBSD as an extension returns with ptsname(3) and ptsname_r(3) the slave</i></td></tr>
+<tr><th id="82">82</th><td><i>   * device name for both descriptors, the master one and slave one.</i></td></tr>
+<tr><th id="83">83</th><td><i>   *</i></td></tr>
+<tr><th id="84">84</th><td><i>   * Implement function to compare major device number with pts devices.</i></td></tr>
+<tr><th id="85">85</th><td><i>   *</i></td></tr>
+<tr><th id="86">86</th><td><i>   * The major numbers are machine-dependent, on NetBSD/amd64 they are</i></td></tr>
+<tr><th id="87">87</th><td><i>   * respectively:</i></td></tr>
+<tr><th id="88">88</th><td><i>   *  - master tty: ptc - major 6</i></td></tr>
+<tr><th id="89">89</th><td><i>   *  - slave tty:  pts - major 5</i></td></tr>
+<tr><th id="90">90</th><td><i>   */</i></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>  <b>struct</b> stat sb;</td></tr>
+<tr><th id="93">93</th><td>  <i>/* Lookup device's major for the pts driver and cache it. */</i></td></tr>
+<tr><th id="94">94</th><td>  <em>static</em> devmajor_t pts = NODEVMAJOR;</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td>  <b>if</b> (pts == NODEVMAJOR) {</td></tr>
+<tr><th id="97">97</th><td>    pts = getdevmajor(<q>"pts"</q>, S_IFCHR);</td></tr>
+<tr><th id="98">98</th><td>    <b>if</b> (pts == NODEVMAJOR)</td></tr>
+<tr><th id="99">99</th><td>      abort();</td></tr>
+<tr><th id="100">100</th><td>  }</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>  <i>/* Lookup stat structure behind the file descriptor. */</i></td></tr>
+<tr><th id="103">103</th><td>  <b>if</b> (fstat(fd, &amp;sb) != <var>0</var>)</td></tr>
+<tr><th id="104">104</th><td>    abort();</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>  <i>/* Assert character device. */</i></td></tr>
+<tr><th id="107">107</th><td>  <b>if</b> (!S_ISCHR(sb.st_mode))</td></tr>
+<tr><th id="108">108</th><td>    abort();</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>  <i>/* Assert valid major. */</i></td></tr>
+<tr><th id="111">111</th><td>  <b>if</b> (major(sb.st_rdev) == NODEVMAJOR)</td></tr>
+<tr><th id="112">112</th><td>    abort();</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>  result = (pts == major(sb.st_rdev));</td></tr>
+<tr><th id="115">115</th><td><u>#else</u></td></tr>
+<tr><th id="116">116</th><td>  <i>/* Fallback to ptsname</i></td></tr>
+<tr><th id="117">117</th><td><i>   */</i></td></tr>
+<tr><th id="118">118</th><td>  result = ptsname(fd) == NULL;</td></tr>
+<tr><th id="119">119</th><td><u>#<span data-ppcond="71">endif</span></u></td></tr>
+<tr><th id="120">120</th><td>  <b>return</b> <a class="local col0 ref" href="#10result" title='result' data-ref="10result" data-ref-filename="10result">result</a>;</td></tr>
+<tr><th id="121">121</th><td>}</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><em>int</em> <dfn class="decl def fn" id="uv_tty_init" title='uv_tty_init' data-ref="uv_tty_init" data-ref-filename="uv_tty_init">uv_tty_init</dfn>(<a class="typedef" href="../../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col2 decl" id="12loop" title='loop' data-type='uv_loop_t *' data-ref="12loop" data-ref-filename="12loop">loop</dfn>, <a class="typedef" href="../../include/uv.h.html#uv_tty_t" title='uv_tty_t' data-type='struct uv_tty_s' data-ref="uv_tty_t" data-ref-filename="uv_tty_t">uv_tty_t</a>* <dfn class="local col3 decl" id="13tty" title='tty' data-type='uv_tty_t *' data-ref="13tty" data-ref-filename="13tty">tty</dfn>, <em>int</em> <dfn class="local col4 decl" id="14fd" title='fd' data-type='int' data-ref="14fd" data-ref-filename="14fd">fd</dfn>, <em>int</em> <dfn class="local col5 decl" id="15unused" title='unused' data-type='int' data-ref="15unused" data-ref-filename="15unused">unused</dfn>) {</td></tr>
+<tr><th id="124">124</th><td>  <a class="typedef" href="../../include/uv.h.html#uv_handle_type" title='uv_handle_type' data-type='enum uv_handle_type' data-ref="uv_handle_type" data-ref-filename="uv_handle_type">uv_handle_type</a> <dfn class="local col6 decl" id="16type" title='type' data-type='uv_handle_type' data-ref="16type" data-ref-filename="16type">type</dfn>;</td></tr>
+<tr><th id="125">125</th><td>  <em>int</em> <dfn class="local col7 decl" id="17flags" title='flags' data-type='int' data-ref="17flags" data-ref-filename="17flags">flags</dfn>;</td></tr>
+<tr><th id="126">126</th><td>  <em>int</em> <dfn class="local col8 decl" id="18newfd" title='newfd' data-type='int' data-ref="18newfd" data-ref-filename="18newfd">newfd</dfn>;</td></tr>
+<tr><th id="127">127</th><td>  <em>int</em> <dfn class="local col9 decl" id="19r" title='r' data-type='int' data-ref="19r" data-ref-filename="19r">r</dfn>;</td></tr>
+<tr><th id="128">128</th><td>  <em>int</em> <dfn class="local col0 decl" id="20saved_flags" title='saved_flags' data-type='int' data-ref="20saved_flags" data-ref-filename="20saved_flags">saved_flags</dfn>;</td></tr>
+<tr><th id="129">129</th><td>  <em>int</em> <dfn class="local col1 decl" id="21mode" title='mode' data-type='int' data-ref="21mode" data-ref-filename="21mode">mode</dfn>;</td></tr>
+<tr><th id="130">130</th><td>  <em>char</em> <dfn class="local col2 decl" id="22path" title='path' data-type='char [256]' data-ref="22path" data-ref-filename="22path">path</dfn>[<var>256</var>];</td></tr>
+<tr><th id="131">131</th><td>  (<em>void</em>)<a class="local col5 ref" href="#15unused" title='unused' data-ref="15unused" data-ref-filename="15unused">unused</a>; <i>/* deprecated parameter is no longer needed */</i></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td>  <i>/* File descriptors that refer to files cannot be monitored with epoll.</i></td></tr>
+<tr><th id="134">134</th><td><i>   * That restriction also applies to character devices like /dev/random</i></td></tr>
+<tr><th id="135">135</th><td><i>   * (but obviously not /dev/tty.)</i></td></tr>
+<tr><th id="136">136</th><td><i>   */</i></td></tr>
+<tr><th id="137">137</th><td>  <a class="local col6 ref" href="#16type" title='type' data-ref="16type" data-ref-filename="16type">type</a> = <a class="ref fn" href="#uv_guess_handle" title='uv_guess_handle' data-ref="uv_guess_handle" data-ref-filename="uv_guess_handle">uv_guess_handle</a>(<a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>);</td></tr>
+<tr><th id="138">138</th><td>  <b>if</b> (<a class="local col6 ref" href="#16type" title='type' data-ref="16type" data-ref-filename="16type">type</a> == <a class="enum" href="../../include/uv.h.html#UV_FILE" title='UV_FILE' data-ref="UV_FILE" data-ref-filename="UV_FILE">UV_FILE</a> || <a class="local col6 ref" href="#16type" title='type' data-ref="16type" data-ref-filename="16type">type</a> == <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>)</td></tr>
+<tr><th id="139">139</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#184" title='UV_EINVAL' data-ref="UV_EINVAL" data-ref-filename="UV_EINVAL">UV_EINVAL</a>;</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td>  <a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a> = <var>0</var>;</td></tr>
+<tr><th id="142">142</th><td>  <a class="local col8 ref" href="#18newfd" title='newfd' data-ref="18newfd" data-ref-filename="18newfd">newfd</a> = -<var>1</var>;</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td>  <i>/* Save the fd flags in case we need to restore them due to an error. */</i></td></tr>
+<tr><th id="145">145</th><td>  <b>do</b></td></tr>
+<tr><th id="146">146</th><td>    <a class="local col0 ref" href="#20saved_flags" title='saved_flags' data-ref="20saved_flags" data-ref-filename="20saved_flags">saved_flags</a> = <a class="ref fn" href="../../../../../include/fcntl.h.html#151" title='fcntl' data-ref="fcntl64" data-ref-filename="fcntl64">fcntl</a>(<a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>, <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#170" title="3" data-ref="_M/F_GETFL">F_GETFL</a>);</td></tr>
+<tr><th id="147">147</th><td>  <b>while</b> (<a class="local col0 ref" href="#20saved_flags" title='saved_flags' data-ref="20saved_flags" data-ref-filename="20saved_flags">saved_flags</a> == -<var>1</var> &amp;&amp; <a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../../../../../include/asm-generic/errno-base.h.html#8" title="4" data-ref="_M/EINTR">EINTR</a>);</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td>  <b>if</b> (<a class="local col0 ref" href="#20saved_flags" title='saved_flags' data-ref="20saved_flags" data-ref-filename="20saved_flags">saved_flags</a> == -<var>1</var>)</td></tr>
+<tr><th id="150">150</th><td>    <b>return</b> <a class="macro" href="../uv-common.h.html#46" title="(-((*__errno_location ())))" data-ref="_M/UV__ERR">UV__ERR</a>(<a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="151">151</th><td>  <a class="local col1 ref" href="#21mode" title='mode' data-ref="21mode" data-ref-filename="21mode">mode</a> = <a class="local col0 ref" href="#20saved_flags" title='saved_flags' data-ref="20saved_flags" data-ref-filename="20saved_flags">saved_flags</a> &amp; <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#42" title="0003" data-ref="_M/O_ACCMODE">O_ACCMODE</a>;</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td>  <i>/* Reopen the file descriptor when it refers to a tty. This lets us put the</i></td></tr>
+<tr><th id="154">154</th><td><i>   * tty in non-blocking mode without affecting other processes that share it</i></td></tr>
+<tr><th id="155">155</th><td><i>   * with us.</i></td></tr>
+<tr><th id="156">156</th><td><i>   *</i></td></tr>
+<tr><th id="157">157</th><td><i>   * Example: `node | cat` - if we put our fd 0 in non-blocking mode, it also</i></td></tr>
+<tr><th id="158">158</th><td><i>   * affects fd 1 of `cat` because both file descriptors refer to the same</i></td></tr>
+<tr><th id="159">159</th><td><i>   * struct file in the kernel. When we reopen our fd 0, it points to a</i></td></tr>
+<tr><th id="160">160</th><td><i>   * different struct file, hence changing its properties doesn't affect</i></td></tr>
+<tr><th id="161">161</th><td><i>   * other processes.</i></td></tr>
+<tr><th id="162">162</th><td><i>   */</i></td></tr>
+<tr><th id="163">163</th><td>  <b>if</b> (<a class="local col6 ref" href="#16type" title='type' data-ref="16type" data-ref-filename="16type">type</a> == <a class="enum" href="../../include/uv.h.html#192" title='UV_TTY' data-ref="UV_TTY" data-ref-filename="UV_TTY">UV_TTY</a>) {</td></tr>
+<tr><th id="164">164</th><td>    <i>/* Reopening a pty in master mode won't work either because the reopened</i></td></tr>
+<tr><th id="165">165</th><td><i>     * pty will be in slave mode (*BSD) or reopening will allocate a new</i></td></tr>
+<tr><th id="166">166</th><td><i>     * master/slave pair (Linux). Therefore check if the fd points to a</i></td></tr>
+<tr><th id="167">167</th><td><i>     * slave device.</i></td></tr>
+<tr><th id="168">168</th><td><i>     */</i></td></tr>
+<tr><th id="169">169</th><td>    <b>if</b> (<a class="tu ref fn" href="#uv__tty_is_slave" title='uv__tty_is_slave' data-use='c' data-ref="uv__tty_is_slave" data-ref-filename="uv__tty_is_slave">uv__tty_is_slave</a>(<a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>) &amp;&amp; <a class="ref fn" href="../../../../../include/unistd.h.html#ttyname_r" title='ttyname_r' data-ref="ttyname_r" data-ref-filename="ttyname_r">ttyname_r</a>(<a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>, <a class="local col2 ref" href="#22path" title='path' data-ref="22path" data-ref-filename="22path">path</a>, <b>sizeof</b>(<a class="local col2 ref" href="#22path" title='path' data-ref="22path" data-ref-filename="22path">path</a>)) == <var>0</var>)</td></tr>
+<tr><th id="170">170</th><td>      <a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a> = <a class="ref fn" href="internal.h.html#uv__open_cloexec" title='uv__open_cloexec' data-ref="uv__open_cloexec" data-ref-filename="uv__open_cloexec">uv__open_cloexec</a>(<a class="local col2 ref" href="#22path" title='path' data-ref="22path" data-ref-filename="22path">path</a>, <a class="local col1 ref" href="#21mode" title='mode' data-ref="21mode" data-ref-filename="21mode">mode</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#53" title="0400" data-ref="_M/O_NOCTTY">O_NOCTTY</a>);</td></tr>
+<tr><th id="171">171</th><td>    <b>else</b></td></tr>
+<tr><th id="172">172</th><td>      <a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a> = -<var>1</var>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>    <b>if</b> (<a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="175">175</th><td>      <i>/* fallback to using blocking writes */</i></td></tr>
+<tr><th id="176">176</th><td>      <b>if</b> (<a class="local col1 ref" href="#21mode" title='mode' data-ref="21mode" data-ref-filename="21mode">mode</a> != <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#43" title="00" data-ref="_M/O_RDONLY">O_RDONLY</a>)</td></tr>
+<tr><th id="177">177</th><td>        <a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a> |= <a class="enum" href="../uv-common.h.html#UV_HANDLE_BLOCKING_WRITES" title='UV_HANDLE_BLOCKING_WRITES' data-ref="UV_HANDLE_BLOCKING_WRITES" data-ref-filename="UV_HANDLE_BLOCKING_WRITES">UV_HANDLE_BLOCKING_WRITES</a>;</td></tr>
+<tr><th id="178">178</th><td>      <b>goto</b> <a class="lbl" href="#23skip" data-ref="23skip" data-ref-filename="23skip">skip</a>;</td></tr>
+<tr><th id="179">179</th><td>    }</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td>    <a class="local col8 ref" href="#18newfd" title='newfd' data-ref="18newfd" data-ref-filename="18newfd">newfd</a> = <a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a>;</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td>    <a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a> = <a class="ref fn" href="internal.h.html#uv__dup2_cloexec" title='uv__dup2_cloexec' data-ref="uv__dup2_cloexec" data-ref-filename="uv__dup2_cloexec">uv__dup2_cloexec</a>(<a class="local col8 ref" href="#18newfd" title='newfd' data-ref="18newfd" data-ref-filename="18newfd">newfd</a>, <a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>);</td></tr>
+<tr><th id="184">184</th><td>    <b>if</b> (<a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a> &lt; <var>0</var> &amp;&amp; <a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a> != <a class="enum" href="../../include/uv.h.html#184" title='UV_EINVAL' data-ref="UV_EINVAL" data-ref-filename="UV_EINVAL">UV_EINVAL</a>) {</td></tr>
+<tr><th id="185">185</th><td>      <i>/* EINVAL means newfd == fd which could conceivably happen if another</i></td></tr>
+<tr><th id="186">186</th><td><i>       * thread called close(fd) between our calls to isatty() and open().</i></td></tr>
+<tr><th id="187">187</th><td><i>       * That's a rather unlikely event but let's handle it anyway.</i></td></tr>
+<tr><th id="188">188</th><td><i>       */</i></td></tr>
+<tr><th id="189">189</th><td>      <a class="ref fn" href="internal.h.html#uv__close" title='uv__close' data-ref="uv__close" data-ref-filename="uv__close">uv__close</a>(<a class="local col8 ref" href="#18newfd" title='newfd' data-ref="18newfd" data-ref-filename="18newfd">newfd</a>);</td></tr>
+<tr><th id="190">190</th><td>      <b>return</b> <a class="local col9 ref" href="#19r" title='r' data-ref="19r" data-ref-filename="19r">r</a>;</td></tr>
+<tr><th id="191">191</th><td>    }</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td>    <a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a> = <a class="local col8 ref" href="#18newfd" title='newfd' data-ref="18newfd" data-ref-filename="18newfd">newfd</a>;</td></tr>
+<tr><th id="194">194</th><td>  }</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><dfn class="lbl" id="23skip" data-ref="23skip" data-ref-filename="23skip">skip</dfn>:</td></tr>
+<tr><th id="197">197</th><td>  <a class="ref fn" href="internal.h.html#uv__stream_init" title='uv__stream_init' data-ref="uv__stream_init" data-ref-filename="uv__stream_init">uv__stream_init</a>(<a class="local col2 ref" href="#12loop" title='loop' data-ref="12loop" data-ref-filename="12loop">loop</a>, (<a class="typedef" href="../../include/uv.h.html#uv_stream_t" title='uv_stream_t' data-type='struct uv_stream_s' data-ref="uv_stream_t" data-ref-filename="uv_stream_t">uv_stream_t</a>*) <a class="local col3 ref" href="#13tty" title='tty' data-ref="13tty" data-ref-filename="13tty">tty</a>, <a class="enum" href="../../include/uv.h.html#192" title='UV_TTY' data-ref="UV_TTY" data-ref-filename="UV_TTY">UV_TTY</a>);</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td>  <i>/* If anything fails beyond this point we need to remove the handle from</i></td></tr>
+<tr><th id="200">200</th><td><i>   * the handle queue, since it was added by uv__handle_init in uv_stream_init.</i></td></tr>
+<tr><th id="201">201</th><td><i>   */</i></td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td>  <b>if</b> (!(<a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a> &amp; <a class="enum" href="../uv-common.h.html#UV_HANDLE_BLOCKING_WRITES" title='UV_HANDLE_BLOCKING_WRITES' data-ref="UV_HANDLE_BLOCKING_WRITES" data-ref-filename="UV_HANDLE_BLOCKING_WRITES">UV_HANDLE_BLOCKING_WRITES</a>))</td></tr>
+<tr><th id="204">204</th><td>    <a class="macro" href="internal.h.html#169" title="uv__nonblock_ioctl" data-ref="_M/uv__nonblock">uv__nonblock</a>(<a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>, <var>1</var>);</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><u>#<span data-ppcond="206">if</span> defined(<span class="macro" data-ref="_M/__APPLE__">__APPLE__</span>)</u></td></tr>
+<tr><th id="207">207</th><td>  r = uv__stream_try_select((uv_stream_t*) tty, &amp;fd);</td></tr>
+<tr><th id="208">208</th><td>  <b>if</b> (r) {</td></tr>
+<tr><th id="209">209</th><td>    <em>int</em> rc = r;</td></tr>
+<tr><th id="210">210</th><td>    <b>if</b> (newfd != -<var>1</var>)</td></tr>
+<tr><th id="211">211</th><td>      uv__close(newfd);</td></tr>
+<tr><th id="212">212</th><td>    QUEUE_REMOVE(&amp;tty-&gt;handle_queue);</td></tr>
+<tr><th id="213">213</th><td>    <b>do</b></td></tr>
+<tr><th id="214">214</th><td>      r = fcntl(fd, F_SETFL, saved_flags);</td></tr>
+<tr><th id="215">215</th><td>    <b>while</b> (r == -<var>1</var> &amp;&amp; errno == EINTR);</td></tr>
+<tr><th id="216">216</th><td>    <b>return</b> rc;</td></tr>
+<tr><th id="217">217</th><td>  }</td></tr>
+<tr><th id="218">218</th><td><u>#<span data-ppcond="206">endif</span></u></td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td>  <b>if</b> (<a class="local col1 ref" href="#21mode" title='mode' data-ref="21mode" data-ref-filename="21mode">mode</a> != <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" title="01" data-ref="_M/O_WRONLY">O_WRONLY</a>)</td></tr>
+<tr><th id="221">221</th><td>    <a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a> |= <a class="enum" href="../uv-common.h.html#UV_HANDLE_READABLE" title='UV_HANDLE_READABLE' data-ref="UV_HANDLE_READABLE" data-ref-filename="UV_HANDLE_READABLE">UV_HANDLE_READABLE</a>;</td></tr>
+<tr><th id="222">222</th><td>  <b>if</b> (<a class="local col1 ref" href="#21mode" title='mode' data-ref="21mode" data-ref-filename="21mode">mode</a> != <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#43" title="00" data-ref="_M/O_RDONLY">O_RDONLY</a>)</td></tr>
+<tr><th id="223">223</th><td>    <a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a> |= <a class="enum" href="../uv-common.h.html#UV_HANDLE_WRITABLE" title='UV_HANDLE_WRITABLE' data-ref="UV_HANDLE_WRITABLE" data-ref-filename="UV_HANDLE_WRITABLE">UV_HANDLE_WRITABLE</a>;</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td>  <a class="ref fn" href="internal.h.html#uv__stream_open" title='uv__stream_open' data-ref="uv__stream_open" data-ref-filename="uv__stream_open">uv__stream_open</a>((<a class="typedef" href="../../include/uv.h.html#uv_stream_t" title='uv_stream_t' data-type='struct uv_stream_s' data-ref="uv_stream_t" data-ref-filename="uv_stream_t">uv_stream_t</a>*) <a class="local col3 ref" href="#13tty" title='tty' data-ref="13tty" data-ref-filename="13tty">tty</a>, <a class="local col4 ref" href="#14fd" title='fd' data-ref="14fd" data-ref-filename="14fd">fd</a>, <a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a>);</td></tr>
+<tr><th id="226">226</th><td>  <a class="local col3 ref" href="#13tty" title='tty' data-ref="13tty" data-ref-filename="13tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::mode' data-ref="uv_tty_s::mode" data-ref-filename="uv_tty_s..mode">mode</a> = <a class="enum" href="../../include/uv.h.html#UV_TTY_MODE_NORMAL" title='UV_TTY_MODE_NORMAL' data-ref="UV_TTY_MODE_NORMAL" data-ref-filename="UV_TTY_MODE_NORMAL">UV_TTY_MODE_NORMAL</a>;</td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td>  <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="229">229</th><td>}</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><em>static</em> <em>void</em> <dfn class="tu decl def fn" id="uv__tty_make_raw" title='uv__tty_make_raw' data-type='void uv__tty_make_raw(struct termios * tio)' data-ref="uv__tty_make_raw" data-ref-filename="uv__tty_make_raw">uv__tty_make_raw</dfn>(<b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios" title='termios' data-ref="termios" data-ref-filename="termios">termios</a>* <dfn class="local col4 decl" id="24tio" title='tio' data-type='struct termios *' data-ref="24tio" data-ref-filename="24tio">tio</dfn>) {</td></tr>
+<tr><th id="232">232</th><td>  <a class="macro" href="../../../../../include/assert.h.html#107" title="((void) sizeof ((tio != ((void*)0)) ? 1 : 0), __extension__ ({ if (tio != ((void*)0)) ; else __assert_fail (&quot;tio != NULL&quot;, &quot;/home/runner/work/CodeBrowser/CodeBrowser/source/dev/3rdparty/libuv/src/unix/tty.c&quot;, 232, __extension__ __PRETTY_FUNCTION__); }))" data-ref="_M/assert">assert</a>(<a class="local col4 ref" href="#24tio" title='tio' data-ref="24tio" data-ref-filename="24tio">tio</a> != <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><u>#<span data-ppcond="234">if</span> defined <span class="macro" data-ref="_M/__sun">__sun</span> || defined <span class="macro" data-ref="_M/__MVS__">__MVS__</span></u></td></tr>
+<tr><th id="235">235</th><td>  <i>/*</i></td></tr>
+<tr><th id="236">236</th><td><i>   * This implementation of cfmakeraw for Solaris and derivatives is taken from</i></td></tr>
+<tr><th id="237">237</th><td><i>   * <a href="http://www.perkin.org.uk/posts/solaris-portability-cfmakeraw.html">http://www.perkin.org.uk/posts/solaris-portability-cfmakeraw.html</a>.</i></td></tr>
+<tr><th id="238">238</th><td><i>   */</i></td></tr>
+<tr><th id="239">239</th><td>  tio-&gt;c_iflag &amp;= ~(IMAXBEL | IGNBRK | BRKINT | PARMRK | ISTRIP | INLCR |</td></tr>
+<tr><th id="240">240</th><td>                    IGNCR | ICRNL | IXON);</td></tr>
+<tr><th id="241">241</th><td>  tio-&gt;c_oflag &amp;= ~OPOST;</td></tr>
+<tr><th id="242">242</th><td>  tio-&gt;c_lflag &amp;= ~(ECHO | ECHONL | ICANON | ISIG | IEXTEN);</td></tr>
+<tr><th id="243">243</th><td>  tio-&gt;c_cflag &amp;= ~(CSIZE | PARENB);</td></tr>
+<tr><th id="244">244</th><td>  tio-&gt;c_cflag |= CS8;</td></tr>
+<tr><th id="245">245</th><td><u>#<span data-ppcond="234">else</span></u></td></tr>
+<tr><th id="246">246</th><td>  <a class="ref fn" href="../../../../../include/termios.h.html#cfmakeraw" title='cfmakeraw' data-ref="cfmakeraw" data-ref-filename="cfmakeraw">cfmakeraw</a>(<a class="local col4 ref" href="#24tio" title='tio' data-ref="24tio" data-ref-filename="24tio">tio</a>);</td></tr>
+<tr><th id="247">247</th><td><u>#<span data-ppcond="234">endif</span> /* #ifdef __sun */</u></td></tr>
+<tr><th id="248">248</th><td>}</td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><em>int</em> <dfn class="decl def fn" id="uv_tty_set_mode" title='uv_tty_set_mode' data-ref="uv_tty_set_mode" data-ref-filename="uv_tty_set_mode">uv_tty_set_mode</dfn>(<a class="typedef" href="../../include/uv.h.html#uv_tty_t" title='uv_tty_t' data-type='struct uv_tty_s' data-ref="uv_tty_t" data-ref-filename="uv_tty_t">uv_tty_t</a>* <dfn class="local col5 decl" id="25tty" title='tty' data-type='uv_tty_t *' data-ref="25tty" data-ref-filename="25tty">tty</dfn>, <a class="typedef" href="../../include/uv.h.html#uv_tty_mode_t" title='uv_tty_mode_t' data-type='enum uv_tty_mode_t' data-ref="uv_tty_mode_t" data-ref-filename="uv_tty_mode_t">uv_tty_mode_t</a> <dfn class="local col6 decl" id="26mode" title='mode' data-type='uv_tty_mode_t' data-ref="26mode" data-ref-filename="26mode">mode</dfn>) {</td></tr>
+<tr><th id="251">251</th><td>  <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios" title='termios' data-ref="termios" data-ref-filename="termios">termios</a> <dfn class="local col7 decl" id="27tmp" title='tmp' data-type='struct termios' data-ref="27tmp" data-ref-filename="27tmp">tmp</dfn>;</td></tr>
+<tr><th id="252">252</th><td>  <em>int</em> <dfn class="local col8 decl" id="28fd" title='fd' data-type='int' data-ref="28fd" data-ref-filename="28fd">fd</dfn>;</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td>  <b>if</b> (<a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::mode' data-ref="uv_tty_s::mode" data-ref-filename="uv_tty_s..mode">mode</a> == (<em>int</em>) <a class="local col6 ref" href="#26mode" title='mode' data-ref="26mode" data-ref-filename="26mode">mode</a>)</td></tr>
+<tr><th id="255">255</th><td>    <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="256">256</th><td></td></tr>
+<tr><th id="257">257</th><td>  <a class="local col8 ref" href="#28fd" title='fd' data-ref="28fd" data-ref-filename="28fd">fd</a> = <a class="macro" href="internal.h.html#283" title="((tty)-&gt;io_watcher.fd)" data-ref="_M/uv__stream_fd">uv__stream_fd</a>(<a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>);</td></tr>
+<tr><th id="258">258</th><td>  <b>if</b> (<a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::mode' data-ref="uv_tty_s::mode" data-ref-filename="uv_tty_s..mode">mode</a> == <a class="enum" href="../../include/uv.h.html#UV_TTY_MODE_NORMAL" title='UV_TTY_MODE_NORMAL' data-ref="UV_TTY_MODE_NORMAL" data-ref-filename="UV_TTY_MODE_NORMAL">UV_TTY_MODE_NORMAL</a> &amp;&amp; <a class="local col6 ref" href="#26mode" title='mode' data-ref="26mode" data-ref-filename="26mode">mode</a> != <a class="enum" href="../../include/uv.h.html#UV_TTY_MODE_NORMAL" title='UV_TTY_MODE_NORMAL' data-ref="UV_TTY_MODE_NORMAL" data-ref-filename="UV_TTY_MODE_NORMAL">UV_TTY_MODE_NORMAL</a>) {</td></tr>
+<tr><th id="259">259</th><td>    <b>if</b> (<a class="ref fn" href="../../../../../include/termios.h.html#tcgetattr" title='tcgetattr' data-ref="tcgetattr" data-ref-filename="tcgetattr">tcgetattr</a>(<a class="local col8 ref" href="#28fd" title='fd' data-ref="28fd" data-ref-filename="28fd">fd</a>, &amp;<a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::orig_termios' data-ref="uv_tty_s::orig_termios" data-ref-filename="uv_tty_s..orig_termios">orig_termios</a>))</td></tr>
+<tr><th id="260">260</th><td>      <b>return</b> <a class="macro" href="../uv-common.h.html#46" title="(-((*__errno_location ())))" data-ref="_M/UV__ERR">UV__ERR</a>(<a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="261">261</th><td></td></tr>
+<tr><th id="262">262</th><td>    <i>/* This is used for uv_tty_reset_mode() */</i></td></tr>
+<tr><th id="263">263</th><td>    <a class="ref fn" href="spinlock.h.html#37" title='uv_spinlock_lock' data-ref="uv_spinlock_lock" data-ref-filename="uv_spinlock_lock">uv_spinlock_lock</a>(&amp;<a class="tu ref" href="#termios_spinlock" title='termios_spinlock' data-use='a' data-ref="termios_spinlock" data-ref-filename="termios_spinlock">termios_spinlock</a>);</td></tr>
+<tr><th id="264">264</th><td>    <b>if</b> (<a class="tu ref" href="#orig_termios_fd" title='orig_termios_fd' data-use='r' data-ref="orig_termios_fd" data-ref-filename="orig_termios_fd">orig_termios_fd</a> == -<var>1</var>) {</td></tr>
+<tr><th id="265">265</th><td>      <a class="tu ref" href="#orig_termios" title='orig_termios' data-use='w' data-ref="orig_termios" data-ref-filename="orig_termios">orig_termios</a> = <a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::orig_termios' data-ref="uv_tty_s::orig_termios" data-ref-filename="uv_tty_s..orig_termios">orig_termios</a>;</td></tr>
+<tr><th id="266">266</th><td>      <a class="tu ref" href="#orig_termios_fd" title='orig_termios_fd' data-use='w' data-ref="orig_termios_fd" data-ref-filename="orig_termios_fd">orig_termios_fd</a> = <a class="local col8 ref" href="#28fd" title='fd' data-ref="28fd" data-ref-filename="28fd">fd</a>;</td></tr>
+<tr><th id="267">267</th><td>    }</td></tr>
+<tr><th id="268">268</th><td>    <a class="ref fn" href="spinlock.h.html#41" title='uv_spinlock_unlock' data-ref="uv_spinlock_unlock" data-ref-filename="uv_spinlock_unlock">uv_spinlock_unlock</a>(&amp;<a class="tu ref" href="#termios_spinlock" title='termios_spinlock' data-use='a' data-ref="termios_spinlock" data-ref-filename="termios_spinlock">termios_spinlock</a>);</td></tr>
+<tr><th id="269">269</th><td>  }</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td>  <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a> = <a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::orig_termios' data-ref="uv_tty_s::orig_termios" data-ref-filename="uv_tty_s..orig_termios">orig_termios</a>;</td></tr>
+<tr><th id="272">272</th><td>  <b>switch</b> (<a class="local col6 ref" href="#26mode" title='mode' data-ref="26mode" data-ref-filename="26mode">mode</a>) {</td></tr>
+<tr><th id="273">273</th><td>    <b>case</b> <a class="enum" href="../../include/uv.h.html#UV_TTY_MODE_NORMAL" title='UV_TTY_MODE_NORMAL' data-ref="UV_TTY_MODE_NORMAL" data-ref-filename="UV_TTY_MODE_NORMAL">UV_TTY_MODE_NORMAL</a>:</td></tr>
+<tr><th id="274">274</th><td>      <b>break</b>;</td></tr>
+<tr><th id="275">275</th><td>    <b>case</b> <a class="enum" href="../../include/uv.h.html#UV_TTY_MODE_RAW" title='UV_TTY_MODE_RAW' data-ref="UV_TTY_MODE_RAW" data-ref-filename="UV_TTY_MODE_RAW">UV_TTY_MODE_RAW</a>:</td></tr>
+<tr><th id="276">276</th><td>      <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios::c_iflag" title='termios::c_iflag' data-ref="termios::c_iflag" data-ref-filename="termios..c_iflag">c_iflag</a> &amp;= ~(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_iflag.h.html#25" title="0000002" data-ref="_M/BRKINT">BRKINT</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_iflag.h.html#32" title="0000400" data-ref="_M/ICRNL">ICRNL</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_iflag.h.html#28" title="0000020" data-ref="_M/INPCK">INPCK</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_iflag.h.html#29" title="0000040" data-ref="_M/ISTRIP">ISTRIP</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_iflag.h.html#35" title="0002000" data-ref="_M/IXON">IXON</a>);</td></tr>
+<tr><th id="277">277</th><td>      <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios::c_oflag" title='termios::c_oflag' data-ref="termios::c_oflag" data-ref-filename="termios..c_oflag">c_oflag</a> |= (<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_oflag.h.html#27" title="0000004" data-ref="_M/ONLCR">ONLCR</a>);</td></tr>
+<tr><th id="278">278</th><td>      <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios::c_cflag" title='termios::c_cflag' data-ref="termios::c_cflag" data-ref-filename="termios..c_cflag">c_cflag</a> |= (<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_cflag.h.html#28" title="0000060" data-ref="_M/CS8">CS8</a>);</td></tr>
+<tr><th id="279">279</th><td>      <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios::c_lflag" title='termios::c_lflag' data-ref="termios::c_lflag" data-ref-filename="termios..c_lflag">c_lflag</a> &amp;= ~(<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_lflag.h.html#29" title="0000010" data-ref="_M/ECHO">ECHO</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_lflag.h.html#25" title="0000002" data-ref="_M/ICANON">ICANON</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_lflag.h.html#54" title="0100000" data-ref="_M/IEXTEN">IEXTEN</a> | <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_lflag.h.html#24" title="0000001" data-ref="_M/ISIG">ISIG</a>);</td></tr>
+<tr><th id="280">280</th><td>      <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios::c_cc" title='termios::c_cc' data-ref="termios::c_cc" data-ref-filename="termios..c_cc">c_cc</a>[<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_cc.h.html#30" title="6" data-ref="_M/VMIN">VMIN</a>] = <var>1</var>;</td></tr>
+<tr><th id="281">281</th><td>      <a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/termios-struct.h.html#termios::c_cc" title='termios::c_cc' data-ref="termios::c_cc" data-ref-filename="termios..c_cc">c_cc</a>[<a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-c_cc.h.html#29" title="5" data-ref="_M/VTIME">VTIME</a>] = <var>0</var>;</td></tr>
+<tr><th id="282">282</th><td>      <b>break</b>;</td></tr>
+<tr><th id="283">283</th><td>    <b>case</b> <a class="enum" href="../../include/uv.h.html#UV_TTY_MODE_IO" title='UV_TTY_MODE_IO' data-ref="UV_TTY_MODE_IO" data-ref-filename="UV_TTY_MODE_IO">UV_TTY_MODE_IO</a>:</td></tr>
+<tr><th id="284">284</th><td>      <a class="tu ref fn" href="#uv__tty_make_raw" title='uv__tty_make_raw' data-use='c' data-ref="uv__tty_make_raw" data-ref-filename="uv__tty_make_raw">uv__tty_make_raw</a>(&amp;<a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>);</td></tr>
+<tr><th id="285">285</th><td>      <b>break</b>;</td></tr>
+<tr><th id="286">286</th><td>  }</td></tr>
+<tr><th id="287">287</th><td></td></tr>
+<tr><th id="288">288</th><td>  <i>/* Apply changes after draining */</i></td></tr>
+<tr><th id="289">289</th><td>  <b>if</b> (<a class="ref fn" href="../../../../../include/termios.h.html#tcsetattr" title='tcsetattr' data-ref="tcsetattr" data-ref-filename="tcsetattr">tcsetattr</a>(<a class="local col8 ref" href="#28fd" title='fd' data-ref="28fd" data-ref-filename="28fd">fd</a>, <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-tcflow.h.html#25" title="1" data-ref="_M/TCSADRAIN">TCSADRAIN</a>, &amp;<a class="local col7 ref" href="#27tmp" title='tmp' data-ref="27tmp" data-ref-filename="27tmp">tmp</a>))</td></tr>
+<tr><th id="290">290</th><td>    <b>return</b> <a class="macro" href="../uv-common.h.html#46" title="(-((*__errno_location ())))" data-ref="_M/UV__ERR">UV__ERR</a>(<a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="291">291</th><td></td></tr>
+<tr><th id="292">292</th><td>  <a class="local col5 ref" href="#25tty" title='tty' data-ref="25tty" data-ref-filename="25tty">tty</a>-&gt;<a class="ref field" href="../../include/uv.h.html#709" title='uv_tty_s::mode' data-ref="uv_tty_s::mode" data-ref-filename="uv_tty_s..mode">mode</a> = <a class="local col6 ref" href="#26mode" title='mode' data-ref="26mode" data-ref-filename="26mode">mode</a>;</td></tr>
+<tr><th id="293">293</th><td>  <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="294">294</th><td>}</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td></td></tr>
+<tr><th id="297">297</th><td><em>int</em> <dfn class="decl def fn" id="uv_tty_get_winsize" title='uv_tty_get_winsize' data-ref="uv_tty_get_winsize" data-ref-filename="uv_tty_get_winsize">uv_tty_get_winsize</dfn>(<a class="typedef" href="../../include/uv.h.html#uv_tty_t" title='uv_tty_t' data-type='struct uv_tty_s' data-ref="uv_tty_t" data-ref-filename="uv_tty_t">uv_tty_t</a>* <dfn class="local col9 decl" id="29tty" title='tty' data-type='uv_tty_t *' data-ref="29tty" data-ref-filename="29tty">tty</dfn>, <em>int</em>* <dfn class="local col0 decl" id="30width" title='width' data-type='int *' data-ref="30width" data-ref-filename="30width">width</dfn>, <em>int</em>* <dfn class="local col1 decl" id="31height" title='height' data-type='int *' data-ref="31height" data-ref-filename="31height">height</dfn>) {</td></tr>
+<tr><th id="298">298</th><td>  <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/ioctl-types.h.html#winsize" title='winsize' data-ref="winsize" data-ref-filename="winsize">winsize</a> <dfn class="local col2 decl" id="32ws" title='ws' data-type='struct winsize' data-ref="32ws" data-ref-filename="32ws">ws</dfn>;</td></tr>
+<tr><th id="299">299</th><td>  <em>int</em> <dfn class="local col3 decl" id="33err" title='err' data-type='int' data-ref="33err" data-ref-filename="33err">err</dfn>;</td></tr>
+<tr><th id="300">300</th><td></td></tr>
+<tr><th id="301">301</th><td>  <b>do</b></td></tr>
+<tr><th id="302">302</th><td>    <a class="local col3 ref" href="#33err" title='err' data-ref="33err" data-ref-filename="33err">err</a> = <a class="ref fn" href="../../../../../include/x86_64-linux-gnu/sys/ioctl.h.html#ioctl" title='ioctl' data-ref="ioctl" data-ref-filename="ioctl">ioctl</a>(<a class="macro" href="internal.h.html#283" title="((tty)-&gt;io_watcher.fd)" data-ref="_M/uv__stream_fd">uv__stream_fd</a>(<a class="local col9 ref" href="#29tty" title='tty' data-ref="29tty" data-ref-filename="29tty">tty</a>), <a class="macro" href="../../../../../include/asm-generic/ioctls.h.html#38" title="0x5413" data-ref="_M/TIOCGWINSZ">TIOCGWINSZ</a>, &amp;<a class="local col2 ref" href="#32ws" title='ws' data-ref="32ws" data-ref-filename="32ws">ws</a>);</td></tr>
+<tr><th id="303">303</th><td>  <b>while</b> (<a class="local col3 ref" href="#33err" title='err' data-ref="33err" data-ref-filename="33err">err</a> == -<var>1</var> &amp;&amp; <a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../../../../../include/asm-generic/errno-base.h.html#8" title="4" data-ref="_M/EINTR">EINTR</a>);</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td>  <b>if</b> (<a class="local col3 ref" href="#33err" title='err' data-ref="33err" data-ref-filename="33err">err</a> == -<var>1</var>)</td></tr>
+<tr><th id="306">306</th><td>    <b>return</b> <a class="macro" href="../uv-common.h.html#46" title="(-((*__errno_location ())))" data-ref="_M/UV__ERR">UV__ERR</a>(<a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="307">307</th><td></td></tr>
+<tr><th id="308">308</th><td>  *<a class="local col0 ref" href="#30width" title='width' data-ref="30width" data-ref-filename="30width">width</a> = <a class="local col2 ref" href="#32ws" title='ws' data-ref="32ws" data-ref-filename="32ws">ws</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/ioctl-types.h.html#winsize::ws_col" title='winsize::ws_col' data-ref="winsize::ws_col" data-ref-filename="winsize..ws_col">ws_col</a>;</td></tr>
+<tr><th id="309">309</th><td>  *<a class="local col1 ref" href="#31height" title='height' data-ref="31height" data-ref-filename="31height">height</a> = <a class="local col2 ref" href="#32ws" title='ws' data-ref="32ws" data-ref-filename="32ws">ws</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/ioctl-types.h.html#winsize::ws_row" title='winsize::ws_row' data-ref="winsize::ws_row" data-ref-filename="winsize..ws_row">ws_row</a>;</td></tr>
+<tr><th id="310">310</th><td></td></tr>
+<tr><th id="311">311</th><td>  <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="312">312</th><td>}</td></tr>
+<tr><th id="313">313</th><td></td></tr>
+<tr><th id="314">314</th><td></td></tr>
+<tr><th id="315">315</th><td><a class="typedef" href="../../include/uv.h.html#uv_handle_type" title='uv_handle_type' data-type='enum uv_handle_type' data-ref="uv_handle_type" data-ref-filename="uv_handle_type">uv_handle_type</a> <dfn class="decl def fn" id="uv_guess_handle" title='uv_guess_handle' data-ref="uv_guess_handle" data-ref-filename="uv_guess_handle">uv_guess_handle</dfn>(<a class="typedef" href="../../include/uv/unix.h.html#uv_file" title='uv_file' data-type='int' data-ref="uv_file" data-ref-filename="uv_file">uv_file</a> <dfn class="local col4 decl" id="34file" title='file' data-type='uv_file' data-ref="34file" data-ref-filename="34file">file</dfn>) {</td></tr>
+<tr><th id="316">316</th><td>  <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a> <dfn class="local col5 decl" id="35sa" title='sa' data-type='struct sockaddr' data-ref="35sa" data-ref-filename="35sa">sa</dfn>;</td></tr>
+<tr><th id="317">317</th><td>  <b>struct</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat" data-ref-filename="stat">stat</a> <dfn class="local col6 decl" id="36s" title='s' data-type='struct stat' data-ref="36s" data-ref-filename="36s">s</dfn>;</td></tr>
+<tr><th id="318">318</th><td>  <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#socklen_t" title='socklen_t' data-type='__socklen_t' data-ref="socklen_t" data-ref-filename="socklen_t">socklen_t</a> <dfn class="local col7 decl" id="37len" title='len' data-type='socklen_t' data-ref="37len" data-ref-filename="37len">len</dfn>;</td></tr>
+<tr><th id="319">319</th><td>  <em>int</em> <dfn class="local col8 decl" id="38type" title='type' data-type='int' data-ref="38type" data-ref-filename="38type">type</dfn>;</td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td>  <b>if</b> (<a class="local col4 ref" href="#34file" title='file' data-ref="34file" data-ref-filename="34file">file</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="322">322</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>;</td></tr>
+<tr><th id="323">323</th><td></td></tr>
+<tr><th id="324">324</th><td>  <b>if</b> (<a class="ref fn" href="../../../../../include/unistd.h.html#isatty" title='isatty' data-ref="isatty" data-ref-filename="isatty">isatty</a>(<a class="local col4 ref" href="#34file" title='file' data-ref="34file" data-ref-filename="34file">file</a>))</td></tr>
+<tr><th id="325">325</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#192" title='UV_TTY' data-ref="UV_TTY" data-ref-filename="UV_TTY">UV_TTY</a>;</td></tr>
+<tr><th id="326">326</th><td></td></tr>
+<tr><th id="327">327</th><td>  <b>if</b> (<a class="ref fn" href="../../../../../include/x86_64-linux-gnu/sys/stat.h.html#216" title='fstat' data-ref="fstat64" data-ref-filename="fstat64">fstat</a>(<a class="local col4 ref" href="#34file" title='file' data-ref="34file" data-ref-filename="34file">file</a>, &amp;<a class="local col6 ref" href="#36s" title='s' data-ref="36s" data-ref-filename="36s">s</a>))</td></tr>
+<tr><th id="328">328</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>;</td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td>  <b>if</b> (<a class="macro" href="../../../../../include/x86_64-linux-gnu/sys/stat.h.html#128" title="((((s.st_mode)) &amp; 0170000) == (0100000))" data-ref="_M/S_ISREG">S_ISREG</a>(<a class="local col6 ref" href="#36s" title='s' data-ref="36s" data-ref-filename="36s">s</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode" data-ref-filename="stat..st_mode">st_mode</a>))</td></tr>
+<tr><th id="331">331</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_FILE" title='UV_FILE' data-ref="UV_FILE" data-ref-filename="UV_FILE">UV_FILE</a>;</td></tr>
+<tr><th id="332">332</th><td></td></tr>
+<tr><th id="333">333</th><td>  <b>if</b> (<a class="macro" href="../../../../../include/x86_64-linux-gnu/sys/stat.h.html#126" title="((((s.st_mode)) &amp; 0170000) == (0020000))" data-ref="_M/S_ISCHR">S_ISCHR</a>(<a class="local col6 ref" href="#36s" title='s' data-ref="36s" data-ref-filename="36s">s</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode" data-ref-filename="stat..st_mode">st_mode</a>))</td></tr>
+<tr><th id="334">334</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_FILE" title='UV_FILE' data-ref="UV_FILE" data-ref-filename="UV_FILE">UV_FILE</a>;  <i>/* XXX UV_NAMED_PIPE? */</i></td></tr>
+<tr><th id="335">335</th><td></td></tr>
+<tr><th id="336">336</th><td>  <b>if</b> (<a class="macro" href="../../../../../include/x86_64-linux-gnu/sys/stat.h.html#130" title="((((s.st_mode)) &amp; 0170000) == (0010000))" data-ref="_M/S_ISFIFO">S_ISFIFO</a>(<a class="local col6 ref" href="#36s" title='s' data-ref="36s" data-ref-filename="36s">s</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode" data-ref-filename="stat..st_mode">st_mode</a>))</td></tr>
+<tr><th id="337">337</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#192" title='UV_NAMED_PIPE' data-ref="UV_NAMED_PIPE" data-ref-filename="UV_NAMED_PIPE">UV_NAMED_PIPE</a>;</td></tr>
+<tr><th id="338">338</th><td></td></tr>
+<tr><th id="339">339</th><td>  <b>if</b> (!<a class="macro" href="../../../../../include/x86_64-linux-gnu/sys/stat.h.html#142" title="((((s.st_mode)) &amp; 0170000) == (0140000))" data-ref="_M/S_ISSOCK">S_ISSOCK</a>(<a class="local col6 ref" href="#36s" title='s' data-ref="36s" data-ref-filename="36s">s</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode" data-ref-filename="stat..st_mode">st_mode</a>))</td></tr>
+<tr><th id="340">340</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>;</td></tr>
+<tr><th id="341">341</th><td></td></tr>
+<tr><th id="342">342</th><td>  <a class="local col7 ref" href="#37len" title='len' data-ref="37len" data-ref-filename="37len">len</a> = <b>sizeof</b>(<a class="local col8 ref" href="#38type" title='type' data-ref="38type" data-ref-filename="38type">type</a>);</td></tr>
+<tr><th id="343">343</th><td>  <b>if</b> (<a class="ref fn" href="../../../../../include/x86_64-linux-gnu/sys/socket.h.html#getsockopt" title='getsockopt' data-ref="getsockopt" data-ref-filename="getsockopt">getsockopt</a>(<a class="local col4 ref" href="#34file" title='file' data-ref="34file" data-ref-filename="34file">file</a>, <a class="macro" href="../../../../../include/asm-generic/socket.h.html#9" title="1" data-ref="_M/SOL_SOCKET">SOL_SOCKET</a>, <a class="macro" href="../../../../../include/asm-generic/socket.h.html#13" title="3" data-ref="_M/SO_TYPE">SO_TYPE</a>, &amp;<a class="local col8 ref" href="#38type" title='type' data-ref="38type" data-ref-filename="38type">type</a>, &amp;<a class="local col7 ref" href="#37len" title='len' data-ref="37len" data-ref-filename="37len">len</a>))</td></tr>
+<tr><th id="344">344</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>;</td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td>  <a class="local col7 ref" href="#37len" title='len' data-ref="37len" data-ref-filename="37len">len</a> = <b>sizeof</b>(<a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>);</td></tr>
+<tr><th id="347">347</th><td>  <b>if</b> (<a class="ref fn" href="../../../../../include/x86_64-linux-gnu/sys/socket.h.html#getsockname" title='getsockname' data-ref="getsockname" data-ref-filename="getsockname">getsockname</a>(<a class="local col4 ref" href="#34file" title='file' data-ref="34file" data-ref-filename="34file">file</a>, &amp;<a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>, &amp;<a class="local col7 ref" href="#37len" title='len' data-ref="37len" data-ref-filename="37len">len</a>))</td></tr>
+<tr><th id="348">348</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>;</td></tr>
+<tr><th id="349">349</th><td></td></tr>
+<tr><th id="350">350</th><td>  <b>if</b> (<a class="local col8 ref" href="#38type" title='type' data-ref="38type" data-ref-filename="38type">type</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket_type.h.html#31" title="SOCK_DGRAM" data-ref="_M/SOCK_DGRAM">SOCK_DGRAM</a>)</td></tr>
+<tr><th id="351">351</th><td>    <b>if</b> (<a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#180" title='sockaddr::sa_family' data-ref="sockaddr::sa_family" data-ref-filename="sockaddr..sa_family">sa_family</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#96" title="2" data-ref="_M/AF_INET">AF_INET</a> || <a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#180" title='sockaddr::sa_family' data-ref="sockaddr::sa_family" data-ref-filename="sockaddr..sa_family">sa_family</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#104" title="10" data-ref="_M/AF_INET6">AF_INET6</a>)</td></tr>
+<tr><th id="352">352</th><td>      <b>return</b> <a class="enum" href="../../include/uv.h.html#192" title='UV_UDP' data-ref="UV_UDP" data-ref-filename="UV_UDP">UV_UDP</a>;</td></tr>
+<tr><th id="353">353</th><td></td></tr>
+<tr><th id="354">354</th><td>  <b>if</b> (<a class="local col8 ref" href="#38type" title='type' data-ref="38type" data-ref-filename="38type">type</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket_type.h.html#28" title="SOCK_STREAM" data-ref="_M/SOCK_STREAM">SOCK_STREAM</a>) {</td></tr>
+<tr><th id="355">355</th><td><u>#<span data-ppcond="355">if</span> defined(<span class="macro" data-ref="_M/_AIX">_AIX</span>) || defined(<span class="macro" data-ref="_M/__DragonFly__">__DragonFly__</span>)</u></td></tr>
+<tr><th id="356">356</th><td>    <i>/* on AIX/DragonFly the getsockname call returns an empty sa structure</i></td></tr>
+<tr><th id="357">357</th><td><i>     * for sockets of type AF_UNIX.  For all other types it will</i></td></tr>
+<tr><th id="358">358</th><td><i>     * return a properly filled in structure.</i></td></tr>
+<tr><th id="359">359</th><td><i>     */</i></td></tr>
+<tr><th id="360">360</th><td>    <b>if</b> (len == <var>0</var>)</td></tr>
+<tr><th id="361">361</th><td>      <b>return</b> UV_NAMED_PIPE;</td></tr>
+<tr><th id="362">362</th><td><u>#<span data-ppcond="355">endif</span> /* defined(_AIX) || defined(__DragonFly__) */</u></td></tr>
+<tr><th id="363">363</th><td></td></tr>
+<tr><th id="364">364</th><td>    <b>if</b> (<a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#180" title='sockaddr::sa_family' data-ref="sockaddr::sa_family" data-ref-filename="sockaddr..sa_family">sa_family</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#96" title="2" data-ref="_M/AF_INET">AF_INET</a> || <a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#180" title='sockaddr::sa_family' data-ref="sockaddr::sa_family" data-ref-filename="sockaddr..sa_family">sa_family</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#104" title="10" data-ref="_M/AF_INET6">AF_INET6</a>)</td></tr>
+<tr><th id="365">365</th><td>      <b>return</b> <a class="enum" href="../../include/uv.h.html#192" title='UV_TCP' data-ref="UV_TCP" data-ref-filename="UV_TCP">UV_TCP</a>;</td></tr>
+<tr><th id="366">366</th><td>    <b>if</b> (<a class="local col5 ref" href="#35sa" title='sa' data-ref="35sa" data-ref-filename="35sa">sa</a>.<a class="ref field" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#180" title='sockaddr::sa_family' data-ref="sockaddr::sa_family" data-ref-filename="sockaddr..sa_family">sa_family</a> == <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/socket.h.html#94" title="1" data-ref="_M/AF_UNIX">AF_UNIX</a>)</td></tr>
+<tr><th id="367">367</th><td>      <b>return</b> <a class="enum" href="../../include/uv.h.html#192" title='UV_NAMED_PIPE' data-ref="UV_NAMED_PIPE" data-ref-filename="UV_NAMED_PIPE">UV_NAMED_PIPE</a>;</td></tr>
+<tr><th id="368">368</th><td>  }</td></tr>
+<tr><th id="369">369</th><td></td></tr>
+<tr><th id="370">370</th><td>  <b>return</b> <a class="enum" href="../../include/uv.h.html#UV_UNKNOWN_HANDLE" title='UV_UNKNOWN_HANDLE' data-ref="UV_UNKNOWN_HANDLE" data-ref-filename="UV_UNKNOWN_HANDLE">UV_UNKNOWN_HANDLE</a>;</td></tr>
+<tr><th id="371">371</th><td>}</td></tr>
+<tr><th id="372">372</th><td></td></tr>
+<tr><th id="373">373</th><td></td></tr>
+<tr><th id="374">374</th><td><i>/* This function is async signal-safe, meaning that it's safe to call from</i></td></tr>
+<tr><th id="375">375</th><td><i> * inside a signal handler _unless_ execution was inside uv_tty_set_mode()'s</i></td></tr>
+<tr><th id="376">376</th><td><i> * critical section when the signal was raised.</i></td></tr>
+<tr><th id="377">377</th><td><i> */</i></td></tr>
+<tr><th id="378">378</th><td><em>int</em> <dfn class="decl def fn" id="uv_tty_reset_mode" title='uv_tty_reset_mode' data-ref="uv_tty_reset_mode" data-ref-filename="uv_tty_reset_mode">uv_tty_reset_mode</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="379">379</th><td>  <em>int</em> <dfn class="local col9 decl" id="39saved_errno" title='saved_errno' data-type='int' data-ref="39saved_errno" data-ref-filename="39saved_errno">saved_errno</dfn>;</td></tr>
+<tr><th id="380">380</th><td>  <em>int</em> <dfn class="local col0 decl" id="40err" title='err' data-type='int' data-ref="40err" data-ref-filename="40err">err</dfn>;</td></tr>
+<tr><th id="381">381</th><td></td></tr>
+<tr><th id="382">382</th><td>  <a class="local col9 ref" href="#39saved_errno" title='saved_errno' data-ref="39saved_errno" data-ref-filename="39saved_errno">saved_errno</a> = <a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="383">383</th><td>  <b>if</b> (!<a class="ref fn" href="spinlock.h.html#45" title='uv_spinlock_trylock' data-ref="uv_spinlock_trylock" data-ref-filename="uv_spinlock_trylock">uv_spinlock_trylock</a>(&amp;<a class="tu ref" href="#termios_spinlock" title='termios_spinlock' data-use='a' data-ref="termios_spinlock" data-ref-filename="termios_spinlock">termios_spinlock</a>))</td></tr>
+<tr><th id="384">384</th><td>    <b>return</b> <a class="enum" href="../../include/uv.h.html#184" title='UV_EBUSY' data-ref="UV_EBUSY" data-ref-filename="UV_EBUSY">UV_EBUSY</a>;  <i>/* In uv_tty_set_mode(). */</i></td></tr>
+<tr><th id="385">385</th><td></td></tr>
+<tr><th id="386">386</th><td>  <a class="local col0 ref" href="#40err" title='err' data-ref="40err" data-ref-filename="40err">err</a> = <var>0</var>;</td></tr>
+<tr><th id="387">387</th><td>  <b>if</b> (<a class="tu ref" href="#orig_termios_fd" title='orig_termios_fd' data-use='r' data-ref="orig_termios_fd" data-ref-filename="orig_termios_fd">orig_termios_fd</a> != -<var>1</var>)</td></tr>
+<tr><th id="388">388</th><td>    <b>if</b> (<a class="ref fn" href="../../../../../include/termios.h.html#tcsetattr" title='tcsetattr' data-ref="tcsetattr" data-ref-filename="tcsetattr">tcsetattr</a>(<a class="tu ref" href="#orig_termios_fd" title='orig_termios_fd' data-use='r' data-ref="orig_termios_fd" data-ref-filename="orig_termios_fd">orig_termios_fd</a>, <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/termios-tcflow.h.html#24" title="0" data-ref="_M/TCSANOW">TCSANOW</a>, &amp;<a class="tu ref" href="#orig_termios" title='orig_termios' data-use='a' data-ref="orig_termios" data-ref-filename="orig_termios">orig_termios</a>))</td></tr>
+<tr><th id="389">389</th><td>      <a class="local col0 ref" href="#40err" title='err' data-ref="40err" data-ref-filename="40err">err</a> = <a class="macro" href="../uv-common.h.html#46" title="(-((*__errno_location ())))" data-ref="_M/UV__ERR">UV__ERR</a>(<a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="390">390</th><td></td></tr>
+<tr><th id="391">391</th><td>  <a class="ref fn" href="spinlock.h.html#41" title='uv_spinlock_unlock' data-ref="uv_spinlock_unlock" data-ref-filename="uv_spinlock_unlock">uv_spinlock_unlock</a>(&amp;<a class="tu ref" href="#termios_spinlock" title='termios_spinlock' data-use='a' data-ref="termios_spinlock" data-ref-filename="termios_spinlock">termios_spinlock</a>);</td></tr>
+<tr><th id="392">392</th><td>  <a class="macro" href="../../../../../include/errno.h.html#38" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col9 ref" href="#39saved_errno" title='saved_errno' data-ref="39saved_errno" data-ref-filename="39saved_errno">saved_errno</a>;</td></tr>
+<tr><th id="393">393</th><td></td></tr>
+<tr><th id="394">394</th><td>  <b>return</b> <a class="local col0 ref" href="#40err" title='err' data-ref="40err" data-ref-filename="40err">err</a>;</td></tr>
+<tr><th id="395">395</th><td>}</td></tr>
+<tr><th id="396">396</th><td></td></tr>
+<tr><th id="397">397</th><td><em>void</em> <dfn class="decl def fn" id="uv_tty_set_vterm_state" title='uv_tty_set_vterm_state' data-ref="uv_tty_set_vterm_state" data-ref-filename="uv_tty_set_vterm_state">uv_tty_set_vterm_state</dfn>(<a class="typedef" href="../../include/uv.h.html#uv_tty_vtermstate_t" title='uv_tty_vtermstate_t' data-type='enum uv_tty_vtermstate_t' data-ref="uv_tty_vtermstate_t" data-ref-filename="uv_tty_vtermstate_t">uv_tty_vtermstate_t</a> <dfn class="local col1 decl" id="41state" title='state' data-type='uv_tty_vtermstate_t' data-ref="41state" data-ref-filename="41state">state</dfn>) {</td></tr>
+<tr><th id="398">398</th><td>}</td></tr>
+<tr><th id="399">399</th><td></td></tr>
+<tr><th id="400">400</th><td><em>int</em> <dfn class="decl def fn" id="uv_tty_get_vterm_state" title='uv_tty_get_vterm_state' data-ref="uv_tty_get_vterm_state" data-ref-filename="uv_tty_get_vterm_state">uv_tty_get_vterm_state</dfn>(<a class="typedef" href="../../include/uv.h.html#uv_tty_vtermstate_t" title='uv_tty_vtermstate_t' data-type='enum uv_tty_vtermstate_t' data-ref="uv_tty_vtermstate_t" data-ref-filename="uv_tty_vtermstate_t">uv_tty_vtermstate_t</a>* <dfn class="local col2 decl" id="42state" title='state' data-type='uv_tty_vtermstate_t *' data-ref="42state" data-ref-filename="42state">state</dfn>) {</td></tr>
+<tr><th id="401">401</th><td>  <b>return</b> <a class="enum" href="../../include/uv.h.html#184" title='UV_ENOTSUP' data-ref="UV_ENOTSUP" data-ref-filename="UV_ENOTSUP">UV_ENOTSUP</a>;</td></tr>
+<tr><th id="402">402</th><td>}</td></tr>
+<tr><th id="403">403</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

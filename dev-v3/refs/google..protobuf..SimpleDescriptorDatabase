@@ -1,0 +1,39 @@
+<inh f='include/google/protobuf/descriptor_database.h' l='65' c='google::protobuf::DescriptorDatabase'/>
+<def f='include/google/protobuf/descriptor_database.h' l='142' ll='273'/>
+<use f='include/google/protobuf/descriptor_database.h' l='272' c='_ZN6google8protobuf24SimpleDescriptorDatabaseC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='272' c='_ZN6google8protobuf24SimpleDescriptorDatabaseaSERKS1_'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='56'/>
+<size>176</size>
+<doc f='include/google/protobuf/descriptor_database.h' l='121'>// A DescriptorDatabase into which you can insert files manually.
+//
+// FindFileContainingSymbol() is fully-implemented.  When you add a file, its
+// symbols will be indexed for this purpose.  Note that the implementation
+// may return false positives, but only if it isn&apos;t possible for the symbol
+// to be defined in any other file.  In particular, if a file defines a symbol
+// &quot;Foo&quot;, then searching for &quot;Foo.[anything]&quot; will match that file.  This way,
+// the database does not need to aggressively index all children of a symbol.
+//
+// FindFileContainingExtension() is mostly-implemented.  It works if and only
+// if the original FieldDescriptorProto defining the extension has a
+// fully-qualified type name in its &quot;extendee&quot; field (i.e. starts with a &apos;.&apos;).
+// If the extendee is a relative name, SimpleDescriptorDatabase will not
+// attempt to resolve the type, so it will not know what type the extension is
+// extending.  Therefore, calling FindFileContainingExtension() with the
+// extension&apos;s containing type will never actually find that extension.  Note
+// that this is an unlikely problem, as all FileDescriptorProtos created by the
+// protocol compiler (as well as ones created by calling
+// FileDescriptor::CopyTo()) will always use fully-qualified names for all
+// types.  You only need to worry if you are constructing FileDescriptorProtos
+// yourself, or are calling compiler::Parser directly.</doc>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabaseC1Ev'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabaseD1Ev'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase3AddERKNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase9AddAndOwnEPKNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase27FindFileContainingExtensionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase23FindAllExtensionNumbersERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::SimpleDescriptorDatabase::index_' o='64' t='DescriptorIndex&lt;const google::protobuf::FileDescriptorProto *&gt;'/>
+<mbr r='google::protobuf::SimpleDescriptorDatabase::files_to_delete_' o='1216' t='std::vector&lt;const FileDescriptorProto *&gt;'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase9MaybeCopyEPKNS0_19FileDescriptorProtoEPS2_'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabaseC1ERKS1_'/>

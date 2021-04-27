@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/stubs/stringpiece.h' l='396' ll='404' type='bool google::protobuf::operator==(google::protobuf::StringPiece x, google::protobuf::StringPiece y)'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='407' u='c' c='_ZN6google8protobufneENS0_11StringPieceES1_'/>
+<use f='include/google/protobuf/stubs/stringpiece.h' l='448' u='c' c='_ZNK6google8protobuf8internal14StringPiecePodeqEPKc'/>
+<doc f='include/google/protobuf/stubs/stringpiece.h' l='393'>// This large function is defined inline so that in a fairly common case where
+// one of the arguments is a literal, the compiler can elide a lot of the
+// following comparisons.</doc>

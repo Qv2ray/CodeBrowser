@@ -1,0 +1,14 @@
+<def f='include/c++/10/bits/stl_set.h' l='243' ll='247' type='void std::set::set&lt;_Key, _Compare, _Alloc&gt;(initializer_list&lt;std::set::value_type&gt; __l, const _Compare &amp; __comp = _Compare(), const std::set::allocator_type &amp; __a = std::set::allocator_type())'/>
+<doc f='include/c++/10/bits/stl_set.h' l='233'>/**
+       *  @brief  Builds a %set from an initializer_list.
+       *  @param  __l  An initializer_list.
+       *  @param  __comp  A comparison functor.
+       *  @param  __a  An allocator object.
+       *
+       *  Create a %set consisting of copies of the elements in the list.
+       *  This is linear in N if the list is already sorted, and NlogN
+       *  otherwise (where N is @a __l.size()).
+       */</doc>
+<use f='qv2ray/test/catch.hpp' l='5743' u='c' c='_ZN5Catch21StreamingReporterBase23getSupportedVerbositiesEv'/>
+<use f='qv2ray/test/catch.hpp' l='5861' u='c' c='_ZN5Catch22CumulativeReporterBase23getSupportedVerbositiesEv'/>
+<use f='qv2ray/test/catch.hpp' l='15811' u='c' c='_ZN5Catch21TestEventListenerBase23getSupportedVerbositiesEv'/>

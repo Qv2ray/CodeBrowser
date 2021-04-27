@@ -1,0 +1,12 @@
+<def f='include/c++/10/bits/regex.h' l='1837' ll='1839' type='std::__cxx11::match_results::difference_type std::__cxx11::match_results::position(std::__cxx11::match_results::size_type __sub = 0) const'/>
+<doc f='include/c++/10/bits/regex.h' l='1826'>/**
+       * @brief Gets the offset of the beginning of the indicated submatch.
+       * @param __sub indicates the submatch.
+       * @pre   ready() == true
+       *
+       * This function returns the offset from the beginning of the target
+       * sequence to the beginning of the submatch, unless the value of @p __sub
+       * is zero (the default), in which case this function returns the offset
+       * from the beginning of the target sequence to the beginning of the
+       * match.
+       */</doc>

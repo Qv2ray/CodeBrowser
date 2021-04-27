@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/repeated_field.h' l='603' type='void ** google::protobuf::internal::RepeatedPtrFieldBase::InternalExtend(int extend_amount)'/>
+<use f='include/google/protobuf/repeated_field.h' l='1598' u='c' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<doc f='include/google/protobuf/repeated_field.h' l='599'>// Internal helper: extend array space if necessary to contain |extend_amount|
+  // more elements, and return a pointer to the element immediately following
+  // the old list of elements.  This interface factors out common behavior from
+  // Reserve() and MergeFrom() to reduce code size. |extend_amount| must be &gt; 0.</doc>

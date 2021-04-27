@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='116' type='int getsockname(int __fd, __SOCKADDR_ARG __addr, socklen_t *__restrict __len)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='115'>/* Put the local address of FD into *ADDR and its length in *LEN.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='285' u='r' c='uv_pipe_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='967' u='c' c='uv__handle_type'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='52' u='c' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='89' u='c' c='maybe_new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='291' u='r' c='uv_tcp_getsockname'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='347' u='c' c='uv_guess_handle'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1275' u='r' c='uv_udp_getsockname'/>

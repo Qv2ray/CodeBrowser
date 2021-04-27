@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/message.h' l='626' type='google::protobuf::Message * google::protobuf::Reflection::ReleaseMessage(google::protobuf::Message * message, const google::protobuf::FieldDescriptor * field, google::protobuf::MessageFactory * factory = __null) const'/>
+<doc f='include/google/protobuf/message.h' l='619'>// Releases the message specified by &apos;field&apos; and returns the pointer,
+  // ReleaseMessage() will return the message the message object if it exists.
+  // Otherwise, it may or may not return NULL.  In any case, if the return value
+  // is non-NULL, the caller takes ownership of the pointer.
+  // If the field existed (HasField() is true), then the returned pointer will
+  // be the same as the pointer returned by MutableMessage().
+  // This function has the same effect as ClearField().</doc>

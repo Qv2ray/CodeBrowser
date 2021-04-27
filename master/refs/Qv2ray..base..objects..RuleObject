@@ -1,0 +1,31 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='98' ll='122'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='120' c='_ZN6Qv2ray4base7objects10RuleObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='29' c='_ZN6Qv2ray4core6getTagERKNS_4base7objects10RuleObjectE'/>
+<size>112</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='96'>//
+    //</doc>
+<mbr r='Qv2ray::base::objects::RuleObject::QV2RAY_RULE_ENABLED' o='0' t='bool'/>
+<mbr r='Qv2ray::base::objects::RuleObject::QV2RAY_RULE_USE_BALANCER' o='8' t='bool'/>
+<mbr r='Qv2ray::base::objects::RuleObject::QV2RAY_RULE_TAG' o='64' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::type' o='128' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::domain' o='192' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::ip' o='256' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::port' o='320' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::network' o='384' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::source' o='448' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::user' o='512' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::inboundTag' o='576' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::protocol' o='640' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::attrs' o='704' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::outboundTag' o='768' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::balancerTag' o='832' t='QString'/>
+<fun r='_ZN6Qv2ray4base7objects10RuleObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects10RuleObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects10RuleObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects10RuleObject6toJsonEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='121'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='136' c='_ZN11RouteEditor7AddRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<size>112</size>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='56' c='_ZN11RouteEditor10AddNewRuleEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor_extra.cpp' l='69' c='_ZN11RouteEditor7AddRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<size>112</size>

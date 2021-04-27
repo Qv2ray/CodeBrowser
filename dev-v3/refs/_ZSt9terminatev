@@ -1,0 +1,7 @@
+<dec f='include/c++/10/exception' l='80' type='void std::terminate()'/>
+<use f='include/c++/10/bits/nested_exception.h' l='71' u='c' c='_ZNKSt16nested_exception14rethrow_nestedEv'/>
+<use f='include/c++/10/thread' l='157' u='c' c='_ZNSt6threadD1Ev'/>
+<use f='include/c++/10/thread' l='170' u='c' c='_ZNSt6threadaSEOS_'/>
+<doc f='include/c++/10/exception' l='78'>/** The runtime will call this function if %exception handling must be
+   *  abandoned for any reason.  It can also be called by the user.  */</doc>
+<use f='qv2ray/test/catch.hpp' l='13439' u='c' c='_ZN5Catch24StartupExceptionRegistry3addERKNSt15__exception_ptr13exception_ptrE'/>

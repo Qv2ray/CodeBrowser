@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='33' type='std::unique_ptr&lt;addrinfo, Deleter&gt;'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='12' u='w' c='_ZN3uvw13AddrInfoEventC1ESt10unique_ptrI8addrinfoPFvPS2_EE'/>
+<offset>0</offset>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='27'>/**
+     * @brief An initialized instance of `addrinfo`.
+     *
+     * See [getaddrinfo](http://linux.die.net/man/3/getaddrinfo) for further
+     * details.
+     */</doc>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='76' u='m' c='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='94' u='m' c='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>

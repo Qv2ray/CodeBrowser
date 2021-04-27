@@ -1,0 +1,4 @@
+<dec f='include/grpc/support/sync.h' l='48' type='void gpr_mu_lock(gpr_mu * mu)'/>
+<doc f='include/grpc/support/sync.h' l='45'>/** Wait until no thread has a lock on *mu, cause the calling thread to own an
+   exclusive lock on *mu, then return.  May block indefinitely or crash if the
+   calling thread has a lock on *mu.  Requires:  *mu initialized.  */</doc>

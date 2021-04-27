@@ -1,0 +1,67 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='34' ll='112'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='88' c='_ZNK5ZXing15LuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='101' c='_ZNK5ZXing15LuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='107' c='_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='107' c='_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='110' c='_ZNK5ZXing15LuminanceSource11getInvertedEv'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='29' c='ZXing::GenericLuminanceSource'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='29'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='65' c='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='67' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='159' c='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='174' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='25'>/**
+* The purpose of this class hierarchy is to abstract different bitmap implementations across
+* platforms into a standard interface for requesting greyscale luminance values. The interface
+* only provides immutable methods; therefore crop and rotation create copies. This is to ensure
+* that one Reader does not modify the original luminance source and leave it in an unknown state
+* for other Readers in the chain.
+*
+* @author dswitkin@google.com (Daniel Switkin)
+*/</doc>
+<fun r='_ZN5ZXing15LuminanceSourceD1Ev'/>
+<fun r='_ZNK5ZXing15LuminanceSource5widthEv'/>
+<fun r='_ZNK5ZXing15LuminanceSource6heightEv'/>
+<fun r='_ZNK5ZXing15LuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<fun r='_ZNK5ZXing15LuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<fun r='_ZNK5ZXing15LuminanceSource7canCropEv'/>
+<fun r='_ZNK5ZXing15LuminanceSource7croppedEiiii'/>
+<fun r='_ZNK5ZXing15LuminanceSource9canRotateEv'/>
+<fun r='_ZNK5ZXing15LuminanceSource7rotatedEi'/>
+<fun r='_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E'/>
+<fun r='_ZNK5ZXing15LuminanceSource11getInvertedEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='41'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='44' c='_ZN5ZXing24GlobalHistogramBinarizerC1ESt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='57' c='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='44' c='_ZN5ZXing24GlobalHistogramBinarizerC1ESt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='201' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='276' c='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='45' c='_ZN5ZXing15HybridBinarizerC1ERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='49' c='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='48' c='_ZN5ZXing15HybridBinarizerC1ERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='175' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='207' c='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='35' c='ZXing::(anonymousnamespace)::InvertedLuminanceSource'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='35'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='37'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='40' c='_ZN5ZXing12_GLOBAL__N_123InvertedLuminanceSourceC1ESt10shared_ptrINS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='74' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='84' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='90' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource11getInvertedEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='106' c='_ZNK5ZXing15LuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='124' c='_ZNK5ZXing15LuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='130' c='_ZNK5ZXing15LuminanceSource11getInvertedEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='136' c='_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='137' c='_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E'/>
+<size>8</size>
+<fun r='_ZNK5ZXing15LuminanceSource7canCropEv'/>
+<fun r='_ZNK5ZXing15LuminanceSource7croppedEiiii'/>
+<fun r='_ZNK5ZXing15LuminanceSource9canRotateEv'/>
+<fun r='_ZNK5ZXing15LuminanceSource7rotatedEi'/>
+<fun r='_ZNK5ZXing15LuminanceSource11getInvertedEv'/>
+<fun r='_ZN5ZXing15LuminanceSource14CreateInvertedERKSt10shared_ptrIS0_E'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='84' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<size>8</size>

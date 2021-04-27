@@ -1,0 +1,3 @@
+<dec f='include/grpc/compression.h' l='43' type='int grpc_compression_algorithm_parse(grpc_slice value, grpc_compression_algorithm * algorithm)'/>
+<doc f='include/grpc/compression.h' l='41'>/** Parses the \a slice as a grpc_compression_algorithm instance and updating \a
+ * algorithm. Returns 1 upon success, 0 otherwise. */</doc>

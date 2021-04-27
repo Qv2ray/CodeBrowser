@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/message_lite.h' l='229' type='bool google::protobuf::MessageLite::ParseFromCodedStream(io::CodedInputStream * input)'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='87' u='c' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<doc f='include/google/protobuf/message_lite.h' l='219'>// Parsing ---------------------------------------------------------
+  // Methods for parsing in protocol buffer format.  Most of these are
+  // just simple wrappers around MergeFromCodedStream().  Clear() will be
+  // called before merging the input.
+
+  // Fill the message with a protocol buffer parsed from the given input
+  // stream. Returns false on a read error or if the input is in the wrong
+  // format.  A successful return does not indicate the entire input is
+  // consumed, ensure you call ConsumedEntireMessage() to check that if
+  // applicable.</doc>

@@ -1,0 +1,126 @@
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowView.cpp' l='88' c='_ZN7QtNodes8FlowView16contextMenuEventEP17QContextMenuEvent'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='95'/>
+<use f='qv2ray/src/plugin-interface/handlers/KernelHandler.hpp' l='23' c='_ZN12Qv2rayPlugin8handlers6kernel12PluginKernel21SetConnectionSettingsERK4QMapINS1_17KernelOptionFlagsE8QVariantERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QJsonStruct/JsonConvertMacros.hpp' l='148' c='_ZN16JsonStructHelper11DeserializeER4QMapIT_T0_ERK10QJsonValue'/>
+<use f='qv2ray/3rdparty/QJsonStruct/JsonConvertMacros.hpp' l='209' c='_ZN16JsonStructHelper9SerializeERK4QMapI7QStringT_E'/>
+<use f='qv2ray/src/plugin-interface/QvPluginBase.hpp' l='21'/>
+<use f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='20'/>
+<use f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='23' c='_ZN12Qv2rayPlugin8handlers5event11SystemProxy11EventObjectC1ERK4QMapINS2_15SystemProxyTypeEiERKNS2_20SystemProxyStateTypeE'/>
+<use f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='54'/>
+<use f='qv2ray/src/plugin-interface/handlers/EventHandler.hpp' l='56' c='_ZN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectC1ERK7QStringRK4QMapIS4_iERKNS2_9EventTypeE'/>
+<use f='qv2ray/src/plugin-interface/handlers/OutboundHandler.hpp' l='17'/>
+<use f='qv2ray/src/ui/common/speedchart/speedwidget.hpp' l='63' c='_ZN11SpeedWidget12AddPointDataE4QMapINS_9GraphTypeElE'/>
+<use f='qv2ray/src/ui/common/speedchart/speedwidget.hpp' l='82'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='52'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='126'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='149'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='209'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='65'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='71' c='_ZN6Qv2ray4base8safetype9QvEnumMap8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSafeType.hpp' l='82' c='_ZNK6Qv2ray4base8safetype9QvEnumMap6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='70'/>
+<use f='qv2ray/src/base/Qv2rayLog.hpp' l='93' c='_ZlsR11QTextStreamRK4QMapIT_T0_E'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='61' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='62' c='_ZN6Qv2ray4core14GetInboundInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.hpp' l='33' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance21OnNewStatsDataArrivedERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='28' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler31GetCurrentConnectionInboundInfoEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='46' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnStatsDataAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='53' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler22OnV2RayStatsDataRcvd_pERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='58' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS_4base26ProtocolSettingsInfoObjectEEi'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='66' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler15GetInboundPortsEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='68' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler15GetInboundPortsEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='75' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler15GetInboundHostsEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='77' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler15GetInboundHostsEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='85'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='88'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='134' c='_ZN6Qv2ray4core7handler15QvConfigHandler16OnStatsAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIS9_IllES9_IyyEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='158' c='_ZN6Qv2ray4core7handler15QvConfigHandler20p_OnStatsDataArrivedERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.hpp' l='27'/>
+<use f='qv2ray/src/ui/widgets/common/WidgetUIBase.hpp' l='98' c='_ZN8QvDialog15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.hpp' l='66'/>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.hpp' l='52'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='39' c='_ZN11RouteEditor15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='12'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='12'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='12'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='134'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='135'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='136'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='142'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='143'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='144'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.hpp' l='40' c='_ZN20ConnectionItemWidget24OnConnectionStatsArrivedERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='126' c='_ZN20ConnectionItemWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_ConnectionItemWidget.cpp' l='216'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='60'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.hpp' l='62'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='22' c='_ZN12GroupManager15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='24' c='_ZN12GroupManager15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='17' c='_ZN18ImportConfigWindow15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='22' c='_ZN18ImportConfigWindow15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='52'/>
+<use f='qv2ray/src/ui/widgets/windows/w_ImportConfig.hpp' l='56'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='28' c='_ZN10MainWindow14ProcessCommandE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.hpp' l='90' c='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.hpp' l='23' c='_ZN18PluginManageWindow15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='20' c='_ZN17PreferencesWindow15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='22' c='_ZN17PreferencesWindow15processCommandsE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='353' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='453' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='880' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='994'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='995'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='1041' c='_ZN6Qv2ray4core7handler15QvConfigHandler16OnStatsAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIS9_IllES9_IyyEEE'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='121' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='126' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='193' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='216'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='217'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_KernelInstanceHandler.cpp' l='277' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler20OnStatsDataAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.hpp' l='28' c='_ZN6Qv2ray4core6kernel9APIWorker8StartAPIERK4QMapIbS3_I7QStringS4_EE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.hpp' l='28' c='_ZN6Qv2ray4core6kernel9APIWorker8StartAPIERK4QMapIbS3_I7QStringS4_EE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.hpp' l='32' c='_ZN6Qv2ray4core6kernel9APIWorker14onAPIDataReadyERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='84' c='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='92' c='_ZN6Qv2ray4core6kernel9APIWorker18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='115'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_APIBackend.cpp' l='155' c='_ZN6Qv2ray4core6kernel9APIWorker14onAPIDataReadyERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_V2RayKernelInteractions.cpp' l='86' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_V2RayKernelInteractions.cpp' l='106' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_V2RayKernelInteractions.cpp' l='122'/>
+<use f='/qv2ray_baselib_autogen/WWNTGQ5PHI/moc_V2RayKernelInteractions.cpp' l='176' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance21OnNewStatsDataArrivedERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/components/geosite/QvGeositeReader.cpp' l='11'/>
+<use f='qv2ray/src/components/proxy/QvProxyConfigurator.cpp' l='405' c='_ZN6Qv2ray10components5proxy14SetSystemProxyERK7QStringii'/>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='9'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='155' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='157' c='_ZN6Qv2ray4core14GetInboundInfoERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='169' c='_ZN6Qv2ray4core14GetInboundInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='332' c='_ZN6Qv2ray4core7handler15QvConfigHandler17p_OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='704' c='_ZN6Qv2ray4core7handler15QvConfigHandler20p_OnStatsDataArrivedERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='710' c='_ZN6Qv2ray4core7handler15QvConfigHandler20p_OnStatsDataArrivedERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='45' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS_4base26ProtocolSettingsInfoObjectEEi'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='115' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='211' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairE13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='318' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler22OnV2RayStatsDataRcvd_pERK4QMapINS_4base14StatisticsTypeESt4pairIllEE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='61' c='_ZNK6Qv2ray4core7handler12RouteHandler22ExpandChainedOutboundsER13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='31' c='_ZN6Qv2ray4core6kernel9APIWorker8StartAPIERK4QMapIbS3_I7QStringS4_EE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='31' c='_ZN6Qv2ray4core6kernel9APIWorker8StartAPIERK4QMapIbS3_I7QStringS4_EE'/>
+<use f='qv2ray/src/core/kernel/APIBackend.cpp' l='103' c='_ZN6Qv2ray4core6kernel9APIWorker7processEv'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='209' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstanceC1EP7QObject'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='241' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='241' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/ui/common/speedchart/speedwidget.cpp' l='46' c='_ZN11SpeedWidget12AddPointDataE4QMapINS_9GraphTypeElE'/>
+<use f='qv2ray/src/ui/widgets/styles/StyleManager.hpp' l='32'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='112' c='_ZN6Qv2ray23Qv2rayWidgetApplication17onMessageReceivedEj10QByteArray'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='146' c='_ZN6Qv2ray23Qv2rayWidgetApplication17runQv2rayInternalEv'/>
+<use f='qv2ray/src/ui/widgets/models/ConnectionModelHelper.cpp' l='39' c='_ZN6Qv2ray2ui7widgets6models20ConnectionListHelperC1EP9QTreeViewP7QObject'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='21' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='21' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='21' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='23' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='24' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='25' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/ConnectionItemWidget.cpp' l='134' c='_ZN20ConnectionItemWidget24OnConnectionStatsArrivedERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.cpp' l='37' c='_ZN20StreamSettingsWidget15SetStreamObjectERKN6Qv2ray4base7objects20StreamSettingsObjectE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='364' c='_ZN10MainWindow14ProcessCommandE7QString5QListIS0_E4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='711' c='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='718' c='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeESt4pairIS7_IllES7_IyyEEE'/>

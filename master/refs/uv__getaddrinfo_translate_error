@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='181' type='int uv__getaddrinfo_translate_error(int sys_err)'/>
+<doc f='qv2ray/3rdparty/libuv/src/uv-common.h' l='181'>/* EAI_* error. */</doc>
+<def f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='42' ll='98' type='int uv__getaddrinfo_translate_error(int sys_err)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='107' u='c' c='uv__getaddrinfo_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getnameinfo.c' l='52' u='c' c='uv__getnameinfo_work'/>

@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='401' type='QRcode * QRcode_encodeInput(QRinput * input)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='390'>/**
+ * Create a symbol from the input data.
+ * @warning This function is THREAD UNSAFE when pthread is disabled.
+ * @param input input data.
+ * @return an instance of QRcode class. The version of the result QRcode may
+ *         be larger than the designated version. On error, NULL is returned,
+ *         and errno is set to indicate the error. See Exceptions for the
+ *         details.
+ * @throw EINVAL invalid input object.
+ * @throw ENOMEM unable to allocate memory for input objects.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='587' ll='594' type='QRcode * QRcode_encodeInput(QRinput * input)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='623' u='c' c='QRcode_encodeStringReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='662' u='c' c='QRcode_encodeDataReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='779' u='c' c='QRcode_encodeInputStructured'/>

@@ -1,0 +1,66 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='24' ll='76'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='216' c='_ZN3uvw4Loop9configureENS_7details12UVLoopOptionEDpOT_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='51' c='_ZN3uvw6Handle10initializeEOTL0__DpOTL0_0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='63' c='_ZN3uvw6Handle6invokeEOTL0__DpOTL0_0_'/>
+<size>4</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/emitter.h' l='19'>/**
+ * @brief The ErrorEvent event.
+ *
+ * Custom wrapper around error constants of `libuv`.
+ */</doc>
+<fun r='_ZN3uvw10ErrorEventC1ET_'/>
+<fun r='_ZN3uvw10ErrorEvent9translateEi'/>
+<fun r='_ZNK3uvw10ErrorEvent4whatEv'/>
+<fun r='_ZNK3uvw10ErrorEvent4nameEv'/>
+<fun r='_ZNK3uvw10ErrorEvent4codeEv'/>
+<fun r='_ZNK3uvw10ErrorEventcvbEv'/>
+<mbr r='uvw::ErrorEvent::ec' o='0' t='const int'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='32' c='_ZN3uvw7Request15defaultCallbackEPT0_i'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='43' c='_ZN3uvw7Request6invokeEOTL0__DpOTL0_0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='25' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='86' c='_ZN3uvw14GetNameInfoReq16nameInfoCallbackEP16uv_getnameinfo_siPKcS4_'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='379' c='_ZN3uvw9FsRequest17fsGenericCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='386' c='_ZN3uvw9FsRequest16fsResultCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='393' c='_ZN3uvw9FsRequest14fsStatCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='399' c='_ZN3uvw9FsRequest16fsStatfsCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='15' c='_ZN3uvw7FileReq14fsOpenCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='27' c='_ZN3uvw7FileReq15fsCloseCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='39' c='_ZN3uvw7FileReq14fsReadCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='235' c='_ZN3uvw5FsReq18fsReadlinkCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='246' c='_ZN3uvw5FsReq17fsReaddirCallbackEP7uv_fs_s'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='22' c='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.cpp' l='22' c='_ZN3uvw12FsPollHandle13startCallbackEP12uv_fs_poll_siPK9uv_stat_tS5_'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='67' c='_ZN3uvw4Loop5closeEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='124' c='_ZN3uvw4Loop4forkEv'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='148' c='_ZN3uvw12StreamHandle12readCallbackEP11uv_stream_slPK8uv_buf_t'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='154' c='_ZN3uvw12StreamHandle14listenCallbackEP11uv_stream_si'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='180' c='_ZN3uvw12StreamHandle8shutdownEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='262' c='_ZN3uvw12StreamHandle5writeESt10unique_ptrIA_cTL0__Ej'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='285' c='_ZN3uvw12StreamHandle5writeEPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='316' c='_ZN3uvw12StreamHandle5writeERTL0__St10unique_ptrIA_cTL0_0_Ej'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='347' c='_ZN3uvw12StreamHandle5writeERTL0__Pcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='368' c='_ZN3uvw12StreamHandle8tryWriteESt10unique_ptrIA_cSt14default_deleteIS2_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='391' c='_ZN3uvw12StreamHandle8tryWriteEPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='39' c='_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='32' c='_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='93' c='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<size>4</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='112' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='140' c='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='169' c='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='195' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='223' c='_ZN3uvw9UDPHandle7trySendERK8sockaddrPcj'/>
+<size>4</size>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='42' c='_ZN6Qv2ray10components7latency7DNSBase16async_DNS_lookupEOTL0__OTL0_0_'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='58' c='_ZN6Qv2ray10components7latency7DNSBase16async_DNS_lookupEOTL0__OTL0_0_'/>
+<size>4</size>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='67' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='67' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<size>4</size>

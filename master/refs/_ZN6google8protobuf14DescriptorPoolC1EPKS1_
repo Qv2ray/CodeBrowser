@@ -1,0 +1,26 @@
+<dec f='include/google/protobuf/descriptor.h' l='1686' type='void google::protobuf::DescriptorPool::DescriptorPool(const google::protobuf::DescriptorPool * underlay)'/>
+<doc f='include/google/protobuf/descriptor.h' l='1661'>// Internal stuff --------------------------------------------------
+  // These methods MUST NOT be called from outside the proto2 library.
+  // These methods may contain hidden pitfalls and may be removed in a
+  // future library version.
+
+  // Create a DescriptorPool which is overlaid on top of some other pool.
+  // If you search for a descriptor in the overlay and it is not found, the
+  // underlay will be searched as a backup.  If the underlay has its own
+  // underlay, that will be searched next, and so on.  This also means that
+  // files built in the overlay will be cross-linked with the underlay&apos;s
+  // descriptors if necessary.  The underlay remains property of the caller;
+  // it must remain valid for the lifetime of the newly-constructed pool.
+  //
+  // Example:  Say you want to parse a .proto file at runtime in order to use
+  // its type with a DynamicMessage.  Say this .proto file has dependencies,
+  // but you know that all the dependencies will be things that are already
+  // compiled into the binary.  For ease of use, you&apos;d like to load the types
+  // right out of generated_pool() rather than have to parse redundant copies
+  // of all these .protos and runtime.  But, you don&apos;t want to add the parsed
+  // types directly into generated_pool(): this is not allowed, and would be
+  // bad design anyway.  So, instead, you could use generated_pool() as an
+  // underlay for a new DescriptorPool in which you add only the new file.
+  //
+  // WARNING:  Use of underlays can lead to many subtle gotchas.  Instead,
+  //   try to formulate what you want to do in terms of DescriptorDatabases.</doc>

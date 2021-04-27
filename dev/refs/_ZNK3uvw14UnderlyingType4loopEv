@@ -1,0 +1,10 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='71' type='uvw::Loop &amp; uvw::UnderlyingType::loop() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='67'>/**
+     * @brief Gets the loop from which the resource was originated.
+     * @return A reference to a loop instance.
+     */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='38' u='c' c='_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='92' u='c' c='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='131' u='c' c='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='161' u='c' c='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='87' u='c' c='_ZL13handle_socketPviiS_S_'/>

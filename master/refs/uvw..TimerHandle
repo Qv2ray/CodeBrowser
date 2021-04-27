@@ -1,0 +1,34 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='29' ll='97'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='29'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='12' c='_ZN3uvw11TimerHandle13startCallbackEP10uv_timer_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/timer.cpp' l='12' c='_ZN3uvw11TimerHandle13startCallbackEP10uv_timer_s'/>
+<size>264</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/timer.h' l='22'>/**
+ * @brief The TimerHandle handle.
+ *
+ * Timer handles are used to schedule events to be emitted in the future.
+ *
+ * To create a `TimerHandle` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw11TimerHandle13startCallbackEP10uv_timer_s'/>
+<fun r='_ZN3uvw11TimerHandle4initEv'/>
+<fun r='_ZN3uvw11TimerHandle5startENSt6chrono8durationImSt5ratioILl1ELl1000EEEES5_'/>
+<fun r='_ZN3uvw11TimerHandle4stopEv'/>
+<fun r='_ZN3uvw11TimerHandle5againEv'/>
+<fun r='_ZN3uvw11TimerHandle6repeatENSt6chrono8durationImSt5ratioILl1ELl1000EEEE'/>
+<fun r='_ZN3uvw11TimerHandle6repeatEv'/>
+<fun r='_ZN3uvw11TimerHandle13startCallbackEP10uv_timer_s'/>
+<fun r='_ZN3uvw11TimerHandle4initEv'/>
+<fun r='_ZN3uvw11TimerHandle5startENSt6chrono8durationImSt5ratioILl1ELl1000EEEES5_'/>
+<fun r='_ZN3uvw11TimerHandle4stopEv'/>
+<fun r='_ZN3uvw11TimerHandle5againEv'/>
+<fun r='_ZN3uvw11TimerHandle6repeatENSt6chrono8durationImSt5ratioILl1ELl1000EEEE'/>
+<fun r='_ZN3uvw11TimerHandle6repeatEv'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.hpp' l='32'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='28'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='32' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<size>264</size>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='113' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='116' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>264</size>

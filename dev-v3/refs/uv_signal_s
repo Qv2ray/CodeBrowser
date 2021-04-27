@@ -1,0 +1,54 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='226'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='1564' ll='1569'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1568' macro='1'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1568' macro='1'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1568' macro='1'/>
+<size>152</size>
+<mbr r='uv_signal_s::data' o='0' t='void *'/>
+<mbr r='uv_signal_s::loop' o='64' t='uv_loop_t *'/>
+<mbr r='uv_signal_s::type' o='128' t='uv_handle_type'/>
+<mbr r='uv_signal_s::close_cb' o='192' t='uv_close_cb'/>
+<mbr r='uv_signal_s::handle_queue' o='256' t='void *[2]'/>
+<mbr r='uv_signal_s::u' o='384' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/dev-v3/code_build/../3rdparty/libuv/include/uv.h:1565:3)'/>
+<mbr r='uv_signal_s::next_closing' o='640' t='uv_handle_t *'/>
+<mbr r='uv_signal_s::flags' o='704' t='unsigned int'/>
+<mbr r='uv_signal_s::signal_cb' o='768' t='uv_signal_cb'/>
+<mbr r='uv_signal_s::signum' o='832' t='int'/>
+<mbr r='uv_signal_s::tree_entry' o='896' t='struct (anonymous struct at /home/runner/work/CodeBrowser/CodeBrowser/source/dev-v3/code_build/../3rdparty/libuv/include/uv.h:1568:3)'/>
+<mbr r='uv_signal_s::caught_signals' o='1152' t='unsigned int'/>
+<mbr r='uv_signal_s::dispatched_signals' o='1184' t='unsigned int'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='40'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE_COLOR'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_REMOVE'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_INSERT'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_FIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_FIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_FIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_NFIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_NFIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_NFIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_NFIND'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_NEXT'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_NEXT'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_PREV'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_PREV'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_MINMAX'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_MINMAX'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='60' c='uv__signal_tree_s_RB_MINMAX'/>
+<size>152</size>

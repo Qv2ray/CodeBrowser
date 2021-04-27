@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>poll.h source code [qv2ray/3rdparty/uvw/src/uvw/poll.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::PollEvent,uvw::PollHandle,uvw::details::UVPollEvent "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/poll.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='poll.h.html'>poll.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_POLL_INCLUDE_H">UVW_POLL_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_POLL_INCLUDE_H" data-ref="_M/UVW_POLL_INCLUDE_H">UVW_POLL_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="handle.hpp.html">"handle.hpp"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVPollEvent" title='uvw::details::UVPollEvent' data-ref="uvw::details::UVPollEvent" data-ref-filename="uvw..details..UVPollEvent">UVPollEvent</dfn>: std::underlying_type_t&lt;uv_poll_event&gt; {</td></tr>
+<tr><th id="19">19</th><td>    <dfn class="enum" id="uvw::details::UVPollEvent::READABLE" title='uvw::details::UVPollEvent::READABLE' data-ref="uvw::details::UVPollEvent::READABLE" data-ref-filename="uvw..details..UVPollEvent..READABLE">READABLE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_READABLE" title='UV_READABLE' data-ref="UV_READABLE" data-ref-filename="UV_READABLE">UV_READABLE</a>,</td></tr>
+<tr><th id="20">20</th><td>    <dfn class="enum" id="uvw::details::UVPollEvent::WRITABLE" title='uvw::details::UVPollEvent::WRITABLE' data-ref="uvw::details::UVPollEvent::WRITABLE" data-ref-filename="uvw..details..UVPollEvent..WRITABLE">WRITABLE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_WRITABLE" title='UV_WRITABLE' data-ref="UV_WRITABLE" data-ref-filename="UV_WRITABLE">UV_WRITABLE</a>,</td></tr>
+<tr><th id="21">21</th><td>    <dfn class="enum" id="uvw::details::UVPollEvent::DISCONNECT" title='uvw::details::UVPollEvent::DISCONNECT' data-ref="uvw::details::UVPollEvent::DISCONNECT" data-ref-filename="uvw..details..UVPollEvent..DISCONNECT">DISCONNECT</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_DISCONNECT" title='UV_DISCONNECT' data-ref="UV_DISCONNECT" data-ref-filename="UV_DISCONNECT">UV_DISCONNECT</a>,</td></tr>
+<tr><th id="22">22</th><td>    <dfn class="enum" id="uvw::details::UVPollEvent::PRIORITIZED" title='uvw::details::UVPollEvent::PRIORITIZED' data-ref="uvw::details::UVPollEvent::PRIORITIZED" data-ref-filename="uvw..details..UVPollEvent..PRIORITIZED">PRIORITIZED</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PRIORITIZED" title='UV_PRIORITIZED' data-ref="UV_PRIORITIZED" data-ref-filename="UV_PRIORITIZED">UV_PRIORITIZED</a></td></tr>
+<tr><th id="23">23</th><td>};</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>}</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * <span class="command">@brief</span> PollEvent event.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * It will be emitted by PollHandle according with its functionalities.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="34">34</th><td><b>struct</b> <dfn class="type def" id="uvw::PollEvent" title='uvw::PollEvent' data-ref="uvw::PollEvent" data-ref-filename="uvw..PollEvent">PollEvent</dfn> {</td></tr>
+<tr><th id="35">35</th><td>    <b>explicit</b> <a class="decl fn" href="poll.cpp.html#_ZN3uvw9PollEventC1ENS_5FlagsINS_7details11UVPollEventEEE" title='uvw::PollEvent::PollEvent' data-ref="_ZN3uvw9PollEventC1ENS_5FlagsINS_7details11UVPollEventEEE" data-ref-filename="_ZN3uvw9PollEventC1ENS_5FlagsINS_7details11UVPollEventEEE" id="_ZN3uvw9PollEventC1ENS_5FlagsINS_7details11UVPollEventEEE">PollEvent</a>(<a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<span class="namespace">details::</span><a class="type" href="#uvw::details::UVPollEvent" title='uvw::details::UVPollEvent' data-ref="uvw::details::UVPollEvent" data-ref-filename="uvw..details..UVPollEvent">UVPollEvent</a>&gt; <dfn class="local col1 decl" id="1events" title='events' data-type='Flags&lt;details::UVPollEvent&gt;' data-ref="1events" data-ref-filename="1events">events</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc">     * <span class="command">@brief</span> Detected events all in one.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc">     * * `PollHandle::Event::READABLE`</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">     * * `PollHandle::Event::WRITABLE`</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc">     * * `PollHandle::Event::DISCONNECT`</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">     * * `PollHandle::Event::PRIORITIZED`</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="47">47</th><td>    <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<span class="namespace">details::</span><a class="type" href="#uvw::details::UVPollEvent" title='uvw::details::UVPollEvent' data-ref="uvw::details::UVPollEvent" data-ref-filename="uvw..details..UVPollEvent">UVPollEvent</a>&gt; <dfn class="decl field" id="uvw::PollEvent::flags" title='uvw::PollEvent::flags' data-ref="uvw::PollEvent::flags" data-ref-filename="uvw..PollEvent..flags">flags</dfn>;</td></tr>
+<tr><th id="48">48</th><td>};</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * <span class="command">@brief</span> The PollHandle handle.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * Poll handles are used to watch file descriptors for readability, writability</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * and disconnection.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * To create a `PollHandle` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * * A descriptor that can be:</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *     * either an `int` file descriptor</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *     * or a `OSSocketHandle` socket descriptor</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * See the official</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * [documentation](<a href="http://docs.libuv.org/en/v1.x/poll.html">http://docs.libuv.org/en/v1.x/poll.html</a>)</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * for further details.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="67">67</th><td><b>class</b> <dfn class="type def" id="uvw::PollHandle" title='uvw::PollHandle' data-ref="uvw::PollHandle" data-ref-filename="uvw..PollHandle">PollHandle</dfn> final: <b>public</b> <a class="type" href="handle.hpp.html#uvw::Handle" title='uvw::Handle' data-ref="uvw::Handle" data-ref-filename="uvw..Handle">Handle</a>&lt;<a class="type" href="#uvw::PollHandle" title='uvw::PollHandle' data-ref="uvw::PollHandle" data-ref-filename="uvw..PollHandle">PollHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_poll_t" title='uv_poll_t' data-type='struct uv_poll_s' data-ref="uv_poll_t" data-ref-filename="uv_poll_t">uv_poll_t</a>&gt; {</td></tr>
+<tr><th id="68">68</th><td>    <em>static</em> <em>void</em> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii" title='uvw::PollHandle::startCallback' data-ref="_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii" data-ref-filename="_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii" id="_ZN3uvw10PollHandle13startCallbackEP9uv_poll_sii">startCallback</a>(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_poll_t" title='uv_poll_t' data-type='struct uv_poll_s' data-ref="uv_poll_t" data-ref-filename="uv_poll_t">uv_poll_t</a> *<dfn class="local col2 decl" id="2handle" title='handle' data-type='uv_poll_t *' data-ref="2handle" data-ref-filename="2handle">handle</dfn>, <em>int</em> <dfn class="local col3 decl" id="3status" title='status' data-type='int' data-ref="3status" data-ref-filename="3status">status</dfn>, <em>int</em> <dfn class="local col4 decl" id="4events" title='events' data-type='int' data-ref="4events" data-ref-filename="4events">events</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><b>public</b>:</td></tr>
+<tr><th id="71">71</th><td>    <b>using</b> <dfn class="typedef" id="uvw::PollHandle::Event" title='uvw::PollHandle::Event' data-type='details::UVPollEvent' data-ref="uvw::PollHandle::Event" data-ref-filename="uvw..PollHandle..Event">Event</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVPollEvent" title='uvw::details::UVPollEvent' data-ref="uvw::details::UVPollEvent" data-ref-filename="uvw..details..UVPollEvent">UVPollEvent</a>;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>    <b>explicit</b> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi" title='uvw::PollHandle::PollHandle' data-ref="_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi" data-ref-filename="_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi" id="_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEi">PollHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::PollHandle,uv_poll_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::PollHandle, uv_poll_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;PollHandle, uv_poll_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::PollHandle,uv_poll_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..PollHandle,uv_poll_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col5 decl" id="5ca" title='ca' data-type='uvw::Resource&lt;uvw::PollHandle, uv_poll_s&gt;::ConstructorAccess' data-ref="5ca" data-ref-filename="5ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col6 decl" id="6ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="6ref" data-ref-filename="6ref">ref</dfn>, <em>int</em> <dfn class="local col7 decl" id="7desc" title='desc' data-type='int' data-ref="7desc" data-ref-filename="7desc">desc</dfn>);</td></tr>
+<tr><th id="74">74</th><td>    <b>explicit</b> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE" title='uvw::PollHandle::PollHandle' data-ref="_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE" data-ref-filename="_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE" id="_ZN3uvw10PollHandleC1ENS_14UnderlyingTypeIS0_9uv_poll_sE17ConstructorAccessESt10shared_ptrINS_4LoopEENS_7details13UVTypeWrapperIiEE">PollHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::PollHandle,uv_poll_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::PollHandle, uv_poll_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;PollHandle, uv_poll_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::PollHandle,uv_poll_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..PollHandle,uv_poll_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col8 decl" id="8ca" title='ca' data-type='uvw::Resource&lt;uvw::PollHandle, uv_poll_s&gt;::ConstructorAccess' data-ref="8ca" data-ref-filename="8ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col9 decl" id="9ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="9ref" data-ref-filename="9ref">ref</dfn>, <a class="typedef" href="util.h.html#uvw::OSSocketHandle" title='uvw::OSSocketHandle' data-type='details::UVTypeWrapper&lt;uv_os_sock_t&gt;' data-ref="uvw::OSSocketHandle" data-ref-filename="uvw..OSSocketHandle">OSSocketHandle</a> <dfn class="local col0 decl" id="10sock" title='sock' data-type='uvw::OSSocketHandle' data-ref="10sock" data-ref-filename="10sock">sock</dfn>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle.</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="80">80</th><td>    <em>bool</em> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandle4initEv" title='uvw::PollHandle::init' data-ref="_ZN3uvw10PollHandle4initEv" data-ref-filename="_ZN3uvw10PollHandle4initEv" id="_ZN3uvw10PollHandle4initEv">init</a>();</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     * <span class="command">@brief</span> Starts polling the file descriptor.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     * * `PollHandle::Event::READABLE`</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">     * * `PollHandle::Event::WRITABLE`</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc">     * * `PollHandle::Event::DISCONNECT`</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     * * `PollHandle::Event::PRIORITIZED`</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     * As soon as an event is detected, a PollEvent is emitted by the</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     * handle.<span class="tag">&lt;br&gt;</span></i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * It could happen that ErrorEvent events are emitted while running.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * Calling more than once this method will update the flags to which the</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     * caller is interested.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flags</span> The events to which the caller is interested.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="101">101</th><td>    <em>void</em> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandle5startENS_5FlagsINS_7details11UVPollEventEEE" title='uvw::PollHandle::start' data-ref="_ZN3uvw10PollHandle5startENS_5FlagsINS_7details11UVPollEventEEE" data-ref-filename="_ZN3uvw10PollHandle5startENS_5FlagsINS_7details11UVPollEventEEE" id="_ZN3uvw10PollHandle5startENS_5FlagsINS_7details11UVPollEventEEE">start</a>(<a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::PollHandle::Event" title='uvw::PollHandle::Event' data-type='details::UVPollEvent' data-ref="uvw::PollHandle::Event" data-ref-filename="uvw..PollHandle..Event">Event</a>&gt; <dfn class="local col1 decl" id="11flags" title='flags' data-type='Flags&lt;uvw::PollHandle::Event&gt;' data-ref="11flags" data-ref-filename="11flags">flags</dfn>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     * <span class="command">@brief</span> Starts polling the file descriptor.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">     * * `PollHandle::Event::READABLE`</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     * * `PollHandle::Event::WRITABLE`</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     * * `PollHandle::Event::DISCONNECT`</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     * * `PollHandle::Event::PRIORITIZED`</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * As soon as an event is detected, a PollEvent is emitted by the</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * handle.<span class="tag">&lt;br&gt;</span></i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * It could happen that ErrorEvent events are emitted while running.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     * Calling more than once this method will update the flags to which the</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     * caller is interested.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">event</span> The event to which the caller is interested.</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="122">122</th><td>    <em>void</em> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandle5startENS_7details11UVPollEventE" title='uvw::PollHandle::start' data-ref="_ZN3uvw10PollHandle5startENS_7details11UVPollEventE" data-ref-filename="_ZN3uvw10PollHandle5startENS_7details11UVPollEventE" id="_ZN3uvw10PollHandle5startENS_7details11UVPollEventE">start</a>(<a class="typedef" href="#uvw::PollHandle::Event" title='uvw::PollHandle::Event' data-type='details::UVPollEvent' data-ref="uvw::PollHandle::Event" data-ref-filename="uvw..PollHandle..Event">Event</a> <dfn class="local col2 decl" id="12event" title='event' data-type='uvw::PollHandle::Event' data-ref="12event" data-ref-filename="12event">event</dfn>);</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     * <span class="command">@brief</span> Stops polling the file descriptor.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="127">127</th><td>    <em>void</em> <a class="decl fn" href="poll.cpp.html#_ZN3uvw10PollHandle4stopEv" title='uvw::PollHandle::stop' data-ref="_ZN3uvw10PollHandle4stopEv" data-ref-filename="_ZN3uvw10PollHandle4stopEv" id="_ZN3uvw10PollHandle4stopEv">stop</a>();</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><b>private</b>:</td></tr>
+<tr><th id="130">130</th><td>    <b>enum</b> { <dfn class="enum" id="uvw::PollHandle::FD" title='uvw::PollHandle::FD' data-ref="uvw::PollHandle::FD" data-ref-filename="uvw..PollHandle..FD">FD</dfn>, <dfn class="enum" id="uvw::PollHandle::SOCKET" title='uvw::PollHandle::SOCKET' data-ref="uvw::PollHandle::SOCKET" data-ref-filename="uvw..PollHandle..SOCKET">SOCKET</dfn> } <dfn class="decl field" id="uvw::PollHandle::tag" title='uvw::PollHandle::tag' data-ref="uvw::PollHandle::tag" data-ref-filename="uvw..PollHandle..tag">tag</dfn>;</td></tr>
+<tr><th id="131">131</th><td>    <b>union</b> {</td></tr>
+<tr><th id="132">132</th><td>        <em>int</em> <dfn class="decl field" id="uvw::PollHandle::(anonymous)::fd" title='uvw::PollHandle::(anonymous union)::fd' data-ref="uvw::PollHandle::(anonymous)::fd" data-ref-filename="uvw..PollHandle..(anonymous)..fd">fd</dfn>;</td></tr>
+<tr><th id="133">133</th><td>        <a class="typedef" href="util.h.html#uvw::OSSocketHandle" title='uvw::OSSocketHandle' data-type='details::UVTypeWrapper&lt;uv_os_sock_t&gt;' data-ref="uvw::OSSocketHandle" data-ref-filename="uvw..OSSocketHandle">OSSocketHandle</a>::<a class="typedef" href="util.h.html#uvw::details::UVTypeWrapper{int}::Type" title='uvw::details::UVTypeWrapper&lt;int&gt;::Type' data-type='int' data-ref="uvw::details::UVTypeWrapper{int}::Type" data-ref-filename="uvw..details..UVTypeWrapper{int}..Type">Type</a> <dfn class="decl field" id="uvw::PollHandle::(anonymous)::socket" title='uvw::PollHandle::(anonymous union)::socket' data-ref="uvw::PollHandle::(anonymous)::socket" data-ref-filename="uvw..PollHandle..(anonymous)..socket">socket</dfn>;</td></tr>
+<tr><th id="134">134</th><td>    };</td></tr>
+<tr><th id="135">135</th><td>};</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>}</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><u>#<span data-ppcond="141">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="142">142</th><td><u>#include "poll.cpp"</u></td></tr>
+<tr><th id="143">143</th><td><u>#<span data-ppcond="141">endif</span></u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><u>#<span data-ppcond="1">endif</span> // UVW_POLL_INCLUDE_H</u></td></tr>
+<tr><th id="146">146</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='poll.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/poll.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

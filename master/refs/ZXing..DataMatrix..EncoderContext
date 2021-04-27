@@ -1,0 +1,50 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='31' ll='138'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='48' c='_ZN5ZXing10DataMatrix14EncoderContextC1ERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='347' c='_ZN5ZXing10DataMatrix12ASCIIEncoderL11EncodeASCIIERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='425' c='_ZN5ZXing10DataMatrix10C40EncoderL21BacktrackOneCharacterERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_iSt8functionIFiiSA_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='435' c='_ZN5ZXing10DataMatrix10C40EncoderL17EncodeToCodewordsERNS0_14EncoderContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='444' c='_ZN5ZXing10DataMatrix10C40EncoderL16WriteNextTripletERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='456' c='_ZN5ZXing10DataMatrix10C40EncoderL9HandleEODERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='498' c='_ZN5ZXing10DataMatrix10C40EncoderL9EncodeC40ERNS0_14EncoderContextESt8functionIFiiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='535' c='_ZN5ZXing10DataMatrix10C40EncoderL9EncodeC40ERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='599' c='_ZN5ZXing10DataMatrix13DMTextEncoderL10EncodeTextERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='638' c='_ZN5ZXing10DataMatrix10X12EncoderL9HandleEODERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='652' c='_ZN5ZXing10DataMatrix10X12EncoderL9EncodeX12ERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='725' c='_ZN5ZXing10DataMatrix14EdifactEncoderL9HandleEODERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='782' c='_ZN5ZXing10DataMatrix14EdifactEncoderL13EncodeEdifactERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='826' c='_ZN5ZXing10DataMatrix14Base256EncoderL13EncodeBase256ERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='903' c='_ZN5ZXing10DataMatrix16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_11SymbolShapeEiiii'/>
+<size>104</size>
+<mbr r='ZXing::DataMatrix::EncoderContext::_msg' o='0' t='std::string'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_shape' o='256' t='ZXing::DataMatrix::SymbolShape'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_minWidth' o='288' t='int'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_minHeight' o='320' t='int'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_maxWidth' o='352' t='int'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_maxHeight' o='384' t='int'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_codewords' o='448' t='ZXing::ByteArray'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_pos' o='640' t='int'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_newEncoding' o='672' t='int'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_symbolInfo' o='704' t='const ZXing::DataMatrix::SymbolInfo *'/>
+<mbr r='ZXing::DataMatrix::EncoderContext::_skipAtEnd' o='768' t='int'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContextC1EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContextC1ERKS1_'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext14setSymbolShapeENS0_11SymbolShapeE'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext18setSizeConstraintsEiiii'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext7messageB5cxx11Ev'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext12setSkipAtEndEi'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext10currentPosEv'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext13setCurrentPosEi'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext11currentCharEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext8nextCharEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext9codewordsEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext13codewordCountEv'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext11addCodewordEh'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext14setNewEncodingEi'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext16clearNewEncodingEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext11newEncodingEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext17hasMoreCharactersEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext21totalMessageCharCountEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext19remainingCharactersEv'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext16updateSymbolInfoEi'/>
+<fun r='_ZN5ZXing10DataMatrix14EncoderContext15resetSymbolInfoEv'/>
+<fun r='_ZNK5ZXing10DataMatrix14EncoderContext10symbolInfoEv'/>

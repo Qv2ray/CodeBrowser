@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WhiteRectDetector.h source code [qv2ray/3rdparty/zxing-cpp/core/src/WhiteRectDetector.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::WhiteRectDetector "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/WhiteRectDetector.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='WhiteRectDetector.h.html'>WhiteRectDetector.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>class</b> <a class="type" href="BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix" id="ZXing::BitMatrix">BitMatrix</a>;</td></tr>
+<tr><th id="22">22</th><td><b>class</b> <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint" id="ZXing::ResultPoint">ResultPoint</a>;</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc">* <span class="tag">&lt;p&gt;</span></i></td></tr>
+<tr><th id="26">26</th><td><i class="doc">* Detects a candidate barcode-like rectangular region within an image. It</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc">* starts around the center of the image, increases the size of the candidate</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc">* region until it finds a white rectangular region. By keeping track of the</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc">* last black points it encountered, it determines the corners of the barcode.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc">* <span class="tag">&lt;/p&gt;</span></i></td></tr>
+<tr><th id="31">31</th><td><i class="doc">*</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc">* <span class="command">@author</span> David Olivier</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="34">34</th><td><b>class</b> <dfn class="type def" id="ZXing::WhiteRectDetector" title='ZXing::WhiteRectDetector' data-ref="ZXing::WhiteRectDetector" data-ref-filename="ZXing..WhiteRectDetector">WhiteRectDetector</dfn></td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td><b>public</b>:</td></tr>
+<tr><th id="37">37</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc">	* <span class="tag">&lt;p&gt;</span></i></td></tr>
+<tr><th id="39">39</th><td><i class="doc">	* Detects a candidate barcode-like rectangular region within an image. It</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc">	* starts around the center of the image, increases the size of the candidate</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">	* region until it finds a white rectangular region.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc">	* <span class="tag">&lt;/p&gt;</span></i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">	*</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">image</span> barcode image to find a rectangle in</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">initSize</span> initial size of search area around center</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">x</span> x position of search center</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc">	* <span class="command">@param</span> <span class="arg">y</span> y position of search center</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">	* <span class="command">@return</span> {<span class="command">@link</span><span class="verb"> ResultPoint}[] describing the corners of the rectangular</span></i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">         region. The first and last points are opposed on the diagonal, as</span></i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">         are the second and third. The first point will be the topmost</span></i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">         point and the last, the bottommost. The second point will be</span></i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"><span class="verb"></span>	*<span class="verb">         leftmost and the third, the rightmost</span></i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"><span class="verb"></span>	*<span class="verb"> @throws NotFoundException if no Data Matrix Code can be found</span></i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"><span class="verb"></span><span class="verb">	*</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="55">55</th><td><span class="verb"></span>	<em>static</em> <em>bool</em> <a class="decl fn" href="WhiteRectDetector.cpp.html#_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixEiiiRNS_11ResultPointES5_S5_S5_" title='ZXing::WhiteRectDetector::Detect' data-ref="_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixEiiiRNS_11ResultPointES5_S5_S5_" data-ref-filename="_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixEiiiRNS_11ResultPointES5_S5_S5_" id="_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixEiiiRNS_11ResultPointES5_S5_S5_">Detect</a>(<em>const</em> <a class="type" href="BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix">BitMatrix</a>&amp; <dfn class="local col1 decl" id="1image" title='image' data-type='const ZXing::BitMatrix &amp;' data-ref="1image" data-ref-filename="1image">image</dfn>, <em>int</em> <dfn class="local col2 decl" id="2initSize" title='initSize' data-type='int' data-ref="2initSize" data-ref-filename="2initSize">initSize</dfn>, <em>int</em> <dfn class="local col3 decl" id="3x" title='x' data-type='int' data-ref="3x" data-ref-filename="3x">x</dfn>, <em>int</em> <dfn class="local col4 decl" id="4y" title='y' data-type='int' data-ref="4y" data-ref-filename="4y">y</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col5 decl" id="5p0" title='p0' data-type='ZXing::ResultPoint &amp;' data-ref="5p0" data-ref-filename="5p0">p0</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col6 decl" id="6p1" title='p1' data-type='ZXing::ResultPoint &amp;' data-ref="6p1" data-ref-filename="6p1">p1</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col7 decl" id="7p2" title='p2' data-type='ZXing::ResultPoint &amp;' data-ref="7p2" data-ref-filename="7p2">p2</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col8 decl" id="8p3" title='p3' data-type='ZXing::ResultPoint &amp;' data-ref="8p3" data-ref-filename="8p3">p3</dfn>);</td></tr>
+<tr><th id="56">56</th><td>	<em>static</em> <em>bool</em> <a class="decl fn" href="WhiteRectDetector.cpp.html#_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixERNS_11ResultPointES5_S5_S5_" title='ZXing::WhiteRectDetector::Detect' data-ref="_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixERNS_11ResultPointES5_S5_S5_" data-ref-filename="_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixERNS_11ResultPointES5_S5_S5_" id="_ZN5ZXing17WhiteRectDetector6DetectERKNS_9BitMatrixERNS_11ResultPointES5_S5_S5_">Detect</a>(<em>const</em> <a class="type" href="BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix">BitMatrix</a>&amp; <dfn class="local col9 decl" id="9image" title='image' data-type='const ZXing::BitMatrix &amp;' data-ref="9image" data-ref-filename="9image">image</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col0 decl" id="10p0" title='p0' data-type='ZXing::ResultPoint &amp;' data-ref="10p0" data-ref-filename="10p0">p0</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col1 decl" id="11p1" title='p1' data-type='ZXing::ResultPoint &amp;' data-ref="11p1" data-ref-filename="11p1">p1</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col2 decl" id="12p2" title='p2' data-type='ZXing::ResultPoint &amp;' data-ref="12p2" data-ref-filename="12p2">p2</dfn>, <a class="type" href="ResultPoint.h.html#ZXing::ResultPoint" title='ZXing::ResultPoint' data-ref="ZXing::ResultPoint" data-ref-filename="ZXing..ResultPoint">ResultPoint</a>&amp; <dfn class="local col3 decl" id="13p3" title='p3' data-type='ZXing::ResultPoint &amp;' data-ref="13p3" data-ref-filename="13p3">p3</dfn>);</td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='WhiteRectDetector.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/WhiteRectDetector.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

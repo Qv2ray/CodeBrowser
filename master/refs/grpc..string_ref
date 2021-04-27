@@ -1,0 +1,83 @@
+<def f='include/grpcpp/impl/codegen/string_ref.h' l='41' ll='130'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='52' c='_ZN4grpc10string_refC1ERKS0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='54' c='_ZN4grpc10string_refaSERKS0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='54' c='_ZN4grpc10string_refaSERKS0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='92' c='_ZNK4grpc10string_ref7compareES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='102' c='_ZNK4grpc10string_ref11starts_withES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='106' c='_ZNK4grpc10string_ref9ends_withES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='111' c='_ZNK4grpc10string_ref4findES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='121' c='_ZNK4grpc10string_ref6substrEmm'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='124' c='_ZNK4grpc10string_ref6substrEmm'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='133' c='_ZN4grpceqENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='133' c='_ZN4grpceqENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='134' c='_ZN4grpcneENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='134' c='_ZN4grpcneENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='135' c='_ZN4grpcltENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='135' c='_ZN4grpcltENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='136' c='_ZN4grpcleENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='136' c='_ZN4grpcleENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='137' c='_ZN4grpcgtENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='137' c='_ZN4grpcgtENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='138' c='_ZN4grpcgeENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='138' c='_ZN4grpcgeENS_10string_refES0_'/>
+<use f='include/grpcpp/impl/codegen/string_ref.h' l='140' c='_ZN4grpclsERSoRKNS_10string_refE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='120' c='_ZN4grpc18StringRefFromSliceEPK10grpc_slice'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='121' c='_ZN4grpc18StringRefFromSliceEPK10grpc_slice'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='35'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='35'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='76' c='_ZNK4grpc11AuthContext15GetPeerIdentityEv'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='80' c='_ZNK4grpc11AuthContext18FindPropertyValuesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/security/auth_context.h' l='89' c='_ZN4grpc11AuthContext11AddPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_10string_refE'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='66' c='_ZN4grpc8internal11MetadataMap3mapEv'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='66' c='_ZN4grpc8internal11MetadataMap3mapEv'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='75'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='75'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='82' c='_ZN4grpc8internal11MetadataMap7FillMapEv'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='82' c='_ZN4grpc8internal11MetadataMap7FillMapEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='204' c='_ZNK4grpc13ClientContext24GetServerInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='204' c='_ZNK4grpc13ClientContext24GetServerInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='216' c='_ZNK4grpc13ClientContext25GetServerTrailingMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='216' c='_ZNK4grpc13ClientContext25GetServerTrailingMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='170' c='_ZNK4grpc13ServerContext15client_metadataEv'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='170' c='_ZNK4grpc13ServerContext15client_metadataEv'/>
+<use f='include/grpcpp/security/credentials.h' l='248' c='_ZN4grpc25MetadataCredentialsPlugin11GetMetadataENS_10string_refES1_RKNS_11AuthContextEPSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcE11651941'/>
+<use f='include/grpcpp/security/credentials.h' l='248' c='_ZN4grpc25MetadataCredentialsPlugin11GetMetadataENS_10string_refES1_RKNS_11AuthContextEPSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcE11651941'/>
+<use f='include/grpcpp/security/auth_metadata_processor.h' l='35'/>
+<use f='include/grpcpp/security/auth_metadata_processor.h' l='35'/>
+<size>16</size>
+<doc f='include/grpcpp/impl/codegen/string_ref.h' l='33'>/// This class is a non owning reference to a string.
+///
+/// It should be a strict subset of the upcoming std::string_ref.
+///
+/// \see http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3442.html
+///
+/// The constexpr is dropped or replaced with const for legacy compiler
+/// compatibility.</doc>
+<smbr r='grpc::string_ref::npos' t='const size_t'/>
+<fun r='_ZN4grpc10string_refC1Ev'/>
+<fun r='_ZN4grpc10string_refC1ERKS0_'/>
+<fun r='_ZN4grpc10string_refaSERKS0_'/>
+<fun r='_ZN4grpc10string_refC1EPKc'/>
+<fun r='_ZN4grpc10string_refC1EPKcm'/>
+<fun r='_ZN4grpc10string_refC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK4grpc10string_ref5beginEv'/>
+<fun r='_ZNK4grpc10string_ref3endEv'/>
+<fun r='_ZNK4grpc10string_ref6cbeginEv'/>
+<fun r='_ZNK4grpc10string_ref4cendEv'/>
+<fun r='_ZNK4grpc10string_ref6rbeginEv'/>
+<fun r='_ZNK4grpc10string_ref4rendEv'/>
+<fun r='_ZNK4grpc10string_ref7crbeginEv'/>
+<fun r='_ZNK4grpc10string_ref5crendEv'/>
+<fun r='_ZNK4grpc10string_ref4sizeEv'/>
+<fun r='_ZNK4grpc10string_ref6lengthEv'/>
+<fun r='_ZNK4grpc10string_ref8max_sizeEv'/>
+<fun r='_ZNK4grpc10string_ref5emptyEv'/>
+<fun r='_ZNK4grpc10string_ref4dataEv'/>
+<fun r='_ZNK4grpc10string_ref7compareES0_'/>
+<fun r='_ZNK4grpc10string_ref11starts_withES0_'/>
+<fun r='_ZNK4grpc10string_ref9ends_withES0_'/>
+<fun r='_ZNK4grpc10string_ref4findES0_'/>
+<fun r='_ZNK4grpc10string_ref4findEc'/>
+<fun r='_ZNK4grpc10string_ref6substrEmm'/>
+<mbr r='grpc::string_ref::data_' o='0' t='const char *'/>
+<mbr r='grpc::string_ref::length_' o='64' t='size_t'/>

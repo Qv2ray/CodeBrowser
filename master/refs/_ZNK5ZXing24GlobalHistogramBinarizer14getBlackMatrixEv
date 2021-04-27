@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='51' type='std::shared_ptr&lt;const BitMatrix&gt; ZXing::GlobalHistogramBinarizer::getBlackMatrix() const'/>
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='96' c='_ZNK5ZXing12BinaryBitmap14getBlackMatrixEv'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='244' ll='249' type='std::shared_ptr&lt;const BitMatrix&gt; ZXing::GlobalHistogramBinarizer::getBlackMatrix() const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='243'>// Does not sharpen the data, as this call is intended to only be used by 2D Readers.</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='192' c='_ZNK5ZXing15HybridBinarizer14getBlackMatrixEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='202' u='c' c='_ZNK5ZXing15HybridBinarizer14getBlackMatrixEv'/>

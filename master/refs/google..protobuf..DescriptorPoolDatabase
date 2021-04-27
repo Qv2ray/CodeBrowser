@@ -1,0 +1,14 @@
+<inh f='include/google/protobuf/descriptor_database.h' l='65' c='google::protobuf::DescriptorDatabase'/>
+<def f='include/google/protobuf/descriptor_database.h' l='326' ll='345'/>
+<use f='include/google/protobuf/descriptor_database.h' l='344' c='_ZN6google8protobuf22DescriptorPoolDatabaseC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor_database.h' l='344' c='_ZN6google8protobuf22DescriptorPoolDatabaseaSERKS1_'/>
+<size>16</size>
+<doc f='include/google/protobuf/descriptor_database.h' l='325'>// A DescriptorDatabase that fetches files from a given pool.</doc>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabaseC1ERKNS0_14DescriptorPoolE'/>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabaseD1Ev'/>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabase14FindFileByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabase24FindFileContainingSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabase27FindFileContainingExtensionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiPNS0_19FileDescriptorProtoE'/>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabase23FindAllExtensionNumbersERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::DescriptorPoolDatabase::pool_' o='64' t='const google::protobuf::DescriptorPool &amp;'/>
+<fun r='_ZN6google8protobuf22DescriptorPoolDatabaseC1ERKS1_'/>

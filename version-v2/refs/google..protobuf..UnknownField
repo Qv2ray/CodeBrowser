@@ -1,0 +1,49 @@
+<use f='include/google/protobuf/unknown_field_set.h' l='127' c='_ZNK6google8protobuf15UnknownFieldSet5fieldEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='131' c='_ZN6google8protobuf15UnknownFieldSet13mutable_fieldEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='143' c='_ZN6google8protobuf15UnknownFieldSet8AddFieldERKNS0_12UnknownFieldE'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='168'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='180'/>
+<def f='include/google/protobuf/unknown_field_set.h' l='185' ll='254'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='235' c='_ZN6google8protobuf12UnknownField8DeepCopyERKS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='283' c='_ZNK6google8protobuf15UnknownFieldSet5fieldEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='287' c='_ZN6google8protobuf15UnknownFieldSet13mutable_fieldEi'/>
+<size>16</size>
+<doc f='include/google/protobuf/unknown_field_set.h' l='184'>// Represents one field in an UnknownFieldSet.</doc>
+<fun r='_ZNK6google8protobuf12UnknownField6numberEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField4typeEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField6varintEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField7fixed32Ev'/>
+<fun r='_ZNK6google8protobuf12UnknownField7fixed64Ev'/>
+<fun r='_ZNK6google8protobuf12UnknownField16length_delimitedB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf12UnknownField5groupEv'/>
+<fun r='_ZN6google8protobuf12UnknownField10set_varintEm'/>
+<fun r='_ZN6google8protobuf12UnknownField11set_fixed32Ej'/>
+<fun r='_ZN6google8protobuf12UnknownField11set_fixed64Em'/>
+<fun r='_ZN6google8protobuf12UnknownField20set_length_delimitedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf12UnknownField24mutable_length_delimitedB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf12UnknownField13mutable_groupEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField29SerializeLengthDelimitedNoTagEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf12UnknownField36SerializeLengthDelimitedNoTagToArrayEPh'/>
+<fun r='_ZNK6google8protobuf12UnknownField22GetLengthDelimitedSizeEv'/>
+<fun r='_ZN6google8protobuf12UnknownField6DeleteEv'/>
+<fun r='_ZN6google8protobuf12UnknownField5ResetEv'/>
+<fun r='_ZN6google8protobuf12UnknownField8DeepCopyERKS1_'/>
+<fun r='_ZN6google8protobuf12UnknownField7SetTypeENS1_4TypeE'/>
+<mbr r='google::protobuf::UnknownField::number_' o='0' t='google::protobuf::uint32'/>
+<mbr r='google::protobuf::UnknownField::type_' o='32' t='google::protobuf::uint32'/>
+<mbr r='google::protobuf::UnknownField::data_' o='64' t='union (anonymous union at /usr/include/google/protobuf/unknown_field_set.h:247:3)'/>
+<fun r='_ZNK6google8protobuf12UnknownField6numberEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField4typeEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField6varintEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField7fixed32Ev'/>
+<fun r='_ZNK6google8protobuf12UnknownField7fixed64Ev'/>
+<fun r='_ZNK6google8protobuf12UnknownField16length_delimitedB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf12UnknownField5groupEv'/>
+<fun r='_ZN6google8protobuf12UnknownField10set_varintEm'/>
+<fun r='_ZN6google8protobuf12UnknownField11set_fixed32Ej'/>
+<fun r='_ZN6google8protobuf12UnknownField11set_fixed64Em'/>
+<fun r='_ZN6google8protobuf12UnknownField20set_length_delimitedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf12UnknownField24mutable_length_delimitedB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf12UnknownField13mutable_groupEv'/>
+<fun r='_ZNK6google8protobuf12UnknownField22GetLengthDelimitedSizeEv'/>
+<fun r='_ZN6google8protobuf12UnknownField7SetTypeENS1_4TypeE'/>

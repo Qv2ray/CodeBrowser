@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/io/zero_copy_stream.h' l='236' type='bool google::protobuf::io::ZeroCopyOutputStream::WriteAliasedRaw(const void * data, int size)'/>
+<doc f='include/google/protobuf/io/zero_copy_stream.h' l='229'>// Write a given chunk of data to the output.  Some output streams may
+  // implement this in a way that avoids copying. Check AllowsAliasing() before
+  // calling WriteAliasedRaw(). It will GOOGLE_CHECK fail if WriteAliasedRaw() is
+  // called on a stream that does not allow aliasing.
+  //
+  // NOTE: It is caller&apos;s responsibility to ensure that the chunk of memory
+  // remains live until all of the data has been consumed from the stream.</doc>

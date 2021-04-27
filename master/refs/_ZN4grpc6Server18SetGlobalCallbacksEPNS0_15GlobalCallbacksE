@@ -1,0 +1,6 @@
+<dec f='include/grpcpp/server.h' l='89' type='static void grpc::Server::SetGlobalCallbacks(grpc::Server::GlobalCallbacks * callbacks)'/>
+<doc f='include/grpcpp/server.h' l='84'>/// Set the global callback object. Can only be called once per application.
+  /// Does not take ownership of callbacks, and expects the pointed to object
+  /// to be alive until all server objects in the process have been destroyed.
+  /// The same \a GlobalCallbacks object will be used throughout the
+  /// application and is shared among all \a Server objects.</doc>

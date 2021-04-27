@@ -1,0 +1,21 @@
+<def f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='28' ll='53'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='52' c='_ZN6Qv2ray22Qv2rayStartupArguments8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='52' c='_ZNK6Qv2ray22Qv2rayStartupArguments6toJsonEv'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='52' c='_ZN6Qv2ray22Qv2rayStartupArguments8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='60'/>
+<size>64</size>
+<mbr r='Qv2ray::Qv2rayStartupArguments::arguments' o='0' t='QList&lt;Qv2ray::Qv2rayStartupArguments::Argument&gt;'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::version' o='64' t='QString'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::buildVersion' o='128' t='int'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::data' o='192' t='QString'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::links' o='256' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::fullArgs' o='320' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::noAPI' o='384' t='bool'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::noAutoConnection' o='392' t='bool'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::debugLog' o='400' t='bool'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::noPlugins' o='408' t='bool'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::exitQv2ray' o='416' t='bool'/>
+<mbr r='Qv2ray::Qv2rayStartupArguments::_qvNewVersionPath' o='448' t='QString'/>
+<fun r='_ZN6Qv2ray22Qv2rayStartupArguments8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray22Qv2rayStartupArguments6toJsonEv'/>
+<fun r='_ZN6Qv2ray22Qv2rayStartupArguments8fromJsonERK10QJsonValue'/>

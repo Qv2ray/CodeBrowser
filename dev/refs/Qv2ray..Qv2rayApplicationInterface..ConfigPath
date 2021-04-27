@@ -1,0 +1,57 @@
+<dec f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='59' type='QString'/>
+<offset>128</offset>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.cpp' l='47' macro='1' u='r' c='_ZNK6Qv2ray26Qv2rayApplicationInterface14GetAssetsPathsERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='17' macro='1' u='r' c='_ZN6Qv2ray10components7plugins12QvPluginHostC1EP7QObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='19' macro='1' u='r' c='_ZN6Qv2ray10components7plugins12QvPluginHostC1EP7QObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='168' macro='1' u='r' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='169' macro='1' u='r' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='182' macro='1' u='r' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18SavePluginSettingsEv'/>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='29' macro='1' u='r' c='_ZN6Qv2ray10components15QvUpdateChecker11CheckUpdateEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='17' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='18' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='44' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='55' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='92' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='99' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='228' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler25RemoveConnectionFromGroupERKNS_4base6IDTypeINS3_14__ConnectionIdEEERKNS4_INS3_9__GroupIdEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='371' macro='1' u='r' c='_ZN6Qv2ray4core7handler15QvConfigHandler16UpdateConnectionERKNS_4base6IDTypeINS3_14__ConnectionIdEEERK13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='15' macro='1' u='r' c='_ZN6Qv2ray4core7handler12RouteHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='34' macro='1' u='r' c='_ZNK6Qv2ray4core7handler12RouteHandler10SaveRoutesEv'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='227' macro='1' u='r' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='229' macro='1' u='r' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='14' macro='1' u='r' c='_ZN6Qv2ray4core6config18SaveGlobalSettingsEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='19' u='w' c='_ZN6Qv2ray4core6config16SetConfigDirPathERK7QString'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='23' u='w' c='_ZN6Qv2ray4core6config16SetConfigDirPathERK7QString'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='152' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='193' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='209' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='215' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='216' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='228' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='231' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='232' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsBackend.cpp' l='239' macro='1' u='r' c='_ZN6Qv2ray4core6config19LocateConfigurationEv'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='51' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='53' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='66' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='82' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='117' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='118' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='225' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='228' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='260' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='290' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='320' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='326' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='330' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='331' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='333' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='341' macro='1' u='r' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/main.cpp' l='164' macro='1' u='r' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/main.cpp' l='165' macro='1' u='r' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='38' macro='1' u='r' c='_ZN6Qv2ray23Qv2rayWidgetApplication19terminateUIInternalEv'/>
+<use f='qv2ray/src/ui/widgets/Qv2rayWidgetApplication.cpp' l='135' macro='1' u='r' c='_ZN6Qv2ray23Qv2rayWidgetApplication17runQv2rayInternalEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.cpp' l='138' macro='1' u='r' c='_ZN18PluginManageWindow27on_openPluginFolder_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PluginManager.cpp' l='141' macro='1' u='r' c='_ZN18PluginManageWindow27on_openPluginFolder_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='61' macro='1' u='r' c='_ZN17PreferencesWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='1228' macro='1' u='r' c='_ZN17PreferencesWindow26on_openConfigDirCB_clickedEv'/>

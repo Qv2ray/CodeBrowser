@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>uv-common.h source code [qv2ray/3rdparty/libuv/src/uv-common.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uv__work_kind "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/src/uv-common.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>3rdparty</a>/<a href='..'>libuv</a>/<a href='./'>src</a>/<a href='uv-common.h.html'>uv-common.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission is hereby granted, free of charge, to any person obtaining a copy</i></td></tr>
+<tr><th id="4">4</th><td><i> * of this software and associated documentation files (the "Software"), to</i></td></tr>
+<tr><th id="5">5</th><td><i> * deal in the Software without restriction, including without limitation the</i></td></tr>
+<tr><th id="6">6</th><td><i> * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * sell copies of the Software, and to permit persons to whom the Software is</i></td></tr>
+<tr><th id="8">8</th><td><i> * furnished to do so, subject to the following conditions:</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * The above copyright notice and this permission notice shall be included in</i></td></tr>
+<tr><th id="11">11</th><td><i> * all copies or substantial portions of the Software.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</i></td></tr>
+<tr><th id="14">14</th><td><i> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</i></td></tr>
+<tr><th id="15">15</th><td><i> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</i></td></tr>
+<tr><th id="16">16</th><td><i> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</i></td></tr>
+<tr><th id="17">17</th><td><i> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING</i></td></tr>
+<tr><th id="18">18</th><td><i> * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</i></td></tr>
+<tr><th id="19">19</th><td><i> * IN THE SOFTWARE.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>/*</i></td></tr>
+<tr><th id="23">23</th><td><i> * This file is private to libuv. It provides common functionality to both</i></td></tr>
+<tr><th id="24">24</th><td><i> * Windows and Unix backends.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/UV_COMMON_H_">UV_COMMON_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/UV_COMMON_H_" data-ref="_M/UV_COMMON_H_">UV_COMMON_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include &lt;stdarg.h&gt;</u></td></tr>
+<tr><th id="32">32</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="34">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; _MSC_VER &lt; 1600</u></td></tr>
+<tr><th id="35">35</th><td><u># include "uv/stdint-msvc2008.h"</u></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="34">else</span></u></td></tr>
+<tr><th id="37">37</th><td><u># include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="34">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="../include/uv.h.html">"uv.h"</a></u></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="../include/uv/tree.h.html">"uv/tree.h"</a></u></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="queue.h.html">"queue.h"</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="strscpy.h.html">"strscpy.h"</a></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="45">if</span> <a class="macro" href="../../../../include/asm-generic/errno-base.h.html#37" title="33" data-ref="_M/EDOM">EDOM</a> &gt; 0</u></td></tr>
+<tr><th id="46">46</th><td><u># define <dfn class="macro" id="_M/UV__ERR" data-ref="_M/UV__ERR">UV__ERR</dfn>(x) (-(x))</u></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="45">else</span></u></td></tr>
+<tr><th id="48">48</th><td><u># define UV__ERR(x) (x)</u></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="45">endif</span></u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="51">if</span> !defined(<span class="macro" data-ref="_M/snprintf">snprintf</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; _MSC_VER &lt; 1900</u></td></tr>
+<tr><th id="52">52</th><td><b>extern</b> <em>int</em> snprintf(<em>char</em>*, size_t, <em>const</em> <em>char</em>*, ...);</td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="51">endif</span></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/ARRAY_SIZE" data-ref="_M/ARRAY_SIZE">ARRAY_SIZE</dfn>(a) (sizeof(a) / sizeof((a)[0]))</u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/container_of" data-ref="_M/container_of">container_of</dfn>(ptr, type, member) \</u></td></tr>
+<tr><th id="58">58</th><td><u>  ((type *) ((char *) (ptr) - offsetof(type, member)))</u></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/STATIC_ASSERT" data-ref="_M/STATIC_ASSERT">STATIC_ASSERT</dfn>(expr)                                                   \</u></td></tr>
+<tr><th id="61">61</th><td><u>  void uv__static_assert(int static_assert_failed[1 - 2 * !(expr)])</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="63">if</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; (<span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &gt; 4 || <span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> == 4 &amp;&amp; <span class="macro" title="2" data-ref="_M/__GNUC_MINOR__">__GNUC_MINOR__</span> &gt;= 7)</u></td></tr>
+<tr><th id="64">64</th><td><u>#define uv__load_relaxed(p) __atomic_load_n(p, __ATOMIC_RELAXED)</u></td></tr>
+<tr><th id="65">65</th><td><u>#define uv__store_relaxed(p, v) __atomic_store_n(p, v, __ATOMIC_RELAXED)</u></td></tr>
+<tr><th id="66">66</th><td><u>#<span data-ppcond="63">else</span></u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/uv__load_relaxed" data-ref="_M/uv__load_relaxed">uv__load_relaxed</dfn>(p) (*p)</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/uv__store_relaxed" data-ref="_M/uv__store_relaxed">uv__store_relaxed</dfn>(p, v) do *p = v; while (0)</u></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="63">endif</span></u></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><i>/* Handle flags. Some flags are specific to Windows or UNIX. */</i></td></tr>
+<tr><th id="72">72</th><td><b>enum</b> {</td></tr>
+<tr><th id="73">73</th><td>  <i>/* Used by all handles. */</i></td></tr>
+<tr><th id="74">74</th><td>  <dfn class="enum" id="UV_HANDLE_CLOSING" title='UV_HANDLE_CLOSING' data-ref="UV_HANDLE_CLOSING" data-ref-filename="UV_HANDLE_CLOSING">UV_HANDLE_CLOSING</dfn>                     = <var>0x00000001</var>,</td></tr>
+<tr><th id="75">75</th><td>  <dfn class="enum" id="UV_HANDLE_CLOSED" title='UV_HANDLE_CLOSED' data-ref="UV_HANDLE_CLOSED" data-ref-filename="UV_HANDLE_CLOSED">UV_HANDLE_CLOSED</dfn>                      = <var>0x00000002</var>,</td></tr>
+<tr><th id="76">76</th><td>  <dfn class="enum" id="UV_HANDLE_ACTIVE" title='UV_HANDLE_ACTIVE' data-ref="UV_HANDLE_ACTIVE" data-ref-filename="UV_HANDLE_ACTIVE">UV_HANDLE_ACTIVE</dfn>                      = <var>0x00000004</var>,</td></tr>
+<tr><th id="77">77</th><td>  <dfn class="enum" id="UV_HANDLE_REF" title='UV_HANDLE_REF' data-ref="UV_HANDLE_REF" data-ref-filename="UV_HANDLE_REF">UV_HANDLE_REF</dfn>                         = <var>0x00000008</var>,</td></tr>
+<tr><th id="78">78</th><td>  <dfn class="enum" id="UV_HANDLE_INTERNAL" title='UV_HANDLE_INTERNAL' data-ref="UV_HANDLE_INTERNAL" data-ref-filename="UV_HANDLE_INTERNAL">UV_HANDLE_INTERNAL</dfn>                    = <var>0x00000010</var>,</td></tr>
+<tr><th id="79">79</th><td>  <dfn class="enum" id="UV_HANDLE_ENDGAME_QUEUED" title='UV_HANDLE_ENDGAME_QUEUED' data-ref="UV_HANDLE_ENDGAME_QUEUED" data-ref-filename="UV_HANDLE_ENDGAME_QUEUED">UV_HANDLE_ENDGAME_QUEUED</dfn>              = <var>0x00000020</var>,</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>  <i>/* Used by streams. */</i></td></tr>
+<tr><th id="82">82</th><td>  <dfn class="enum" id="UV_HANDLE_LISTENING" title='UV_HANDLE_LISTENING' data-ref="UV_HANDLE_LISTENING" data-ref-filename="UV_HANDLE_LISTENING">UV_HANDLE_LISTENING</dfn>                   = <var>0x00000040</var>,</td></tr>
+<tr><th id="83">83</th><td>  <dfn class="enum" id="UV_HANDLE_CONNECTION" title='UV_HANDLE_CONNECTION' data-ref="UV_HANDLE_CONNECTION" data-ref-filename="UV_HANDLE_CONNECTION">UV_HANDLE_CONNECTION</dfn>                  = <var>0x00000080</var>,</td></tr>
+<tr><th id="84">84</th><td>  <dfn class="enum" id="UV_HANDLE_SHUTTING" title='UV_HANDLE_SHUTTING' data-ref="UV_HANDLE_SHUTTING" data-ref-filename="UV_HANDLE_SHUTTING">UV_HANDLE_SHUTTING</dfn>                    = <var>0x00000100</var>,</td></tr>
+<tr><th id="85">85</th><td>  <dfn class="enum" id="UV_HANDLE_SHUT" title='UV_HANDLE_SHUT' data-ref="UV_HANDLE_SHUT" data-ref-filename="UV_HANDLE_SHUT">UV_HANDLE_SHUT</dfn>                        = <var>0x00000200</var>,</td></tr>
+<tr><th id="86">86</th><td>  <dfn class="enum" id="UV_HANDLE_READ_PARTIAL" title='UV_HANDLE_READ_PARTIAL' data-ref="UV_HANDLE_READ_PARTIAL" data-ref-filename="UV_HANDLE_READ_PARTIAL">UV_HANDLE_READ_PARTIAL</dfn>                = <var>0x00000400</var>,</td></tr>
+<tr><th id="87">87</th><td>  <dfn class="enum" id="UV_HANDLE_READ_EOF" title='UV_HANDLE_READ_EOF' data-ref="UV_HANDLE_READ_EOF" data-ref-filename="UV_HANDLE_READ_EOF">UV_HANDLE_READ_EOF</dfn>                    = <var>0x00000800</var>,</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>  <i>/* Used by streams and UDP handles. */</i></td></tr>
+<tr><th id="90">90</th><td>  <dfn class="enum" id="UV_HANDLE_READING" title='UV_HANDLE_READING' data-ref="UV_HANDLE_READING" data-ref-filename="UV_HANDLE_READING">UV_HANDLE_READING</dfn>                     = <var>0x00001000</var>,</td></tr>
+<tr><th id="91">91</th><td>  <dfn class="enum" id="UV_HANDLE_BOUND" title='UV_HANDLE_BOUND' data-ref="UV_HANDLE_BOUND" data-ref-filename="UV_HANDLE_BOUND">UV_HANDLE_BOUND</dfn>                       = <var>0x00002000</var>,</td></tr>
+<tr><th id="92">92</th><td>  <dfn class="enum" id="UV_HANDLE_READABLE" title='UV_HANDLE_READABLE' data-ref="UV_HANDLE_READABLE" data-ref-filename="UV_HANDLE_READABLE">UV_HANDLE_READABLE</dfn>                    = <var>0x00004000</var>,</td></tr>
+<tr><th id="93">93</th><td>  <dfn class="enum" id="UV_HANDLE_WRITABLE" title='UV_HANDLE_WRITABLE' data-ref="UV_HANDLE_WRITABLE" data-ref-filename="UV_HANDLE_WRITABLE">UV_HANDLE_WRITABLE</dfn>                    = <var>0x00008000</var>,</td></tr>
+<tr><th id="94">94</th><td>  <dfn class="enum" id="UV_HANDLE_READ_PENDING" title='UV_HANDLE_READ_PENDING' data-ref="UV_HANDLE_READ_PENDING" data-ref-filename="UV_HANDLE_READ_PENDING">UV_HANDLE_READ_PENDING</dfn>                = <var>0x00010000</var>,</td></tr>
+<tr><th id="95">95</th><td>  <dfn class="enum" id="UV_HANDLE_SYNC_BYPASS_IOCP" title='UV_HANDLE_SYNC_BYPASS_IOCP' data-ref="UV_HANDLE_SYNC_BYPASS_IOCP" data-ref-filename="UV_HANDLE_SYNC_BYPASS_IOCP">UV_HANDLE_SYNC_BYPASS_IOCP</dfn>            = <var>0x00020000</var>,</td></tr>
+<tr><th id="96">96</th><td>  <dfn class="enum" id="UV_HANDLE_ZERO_READ" title='UV_HANDLE_ZERO_READ' data-ref="UV_HANDLE_ZERO_READ" data-ref-filename="UV_HANDLE_ZERO_READ">UV_HANDLE_ZERO_READ</dfn>                   = <var>0x00040000</var>,</td></tr>
+<tr><th id="97">97</th><td>  <dfn class="enum" id="UV_HANDLE_EMULATE_IOCP" title='UV_HANDLE_EMULATE_IOCP' data-ref="UV_HANDLE_EMULATE_IOCP" data-ref-filename="UV_HANDLE_EMULATE_IOCP">UV_HANDLE_EMULATE_IOCP</dfn>                = <var>0x00080000</var>,</td></tr>
+<tr><th id="98">98</th><td>  <dfn class="enum" id="UV_HANDLE_BLOCKING_WRITES" title='UV_HANDLE_BLOCKING_WRITES' data-ref="UV_HANDLE_BLOCKING_WRITES" data-ref-filename="UV_HANDLE_BLOCKING_WRITES">UV_HANDLE_BLOCKING_WRITES</dfn>             = <var>0x00100000</var>,</td></tr>
+<tr><th id="99">99</th><td>  <dfn class="enum" id="UV_HANDLE_CANCELLATION_PENDING" title='UV_HANDLE_CANCELLATION_PENDING' data-ref="UV_HANDLE_CANCELLATION_PENDING" data-ref-filename="UV_HANDLE_CANCELLATION_PENDING">UV_HANDLE_CANCELLATION_PENDING</dfn>        = <var>0x00200000</var>,</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>  <i>/* Used by uv_tcp_t and uv_udp_t handles */</i></td></tr>
+<tr><th id="102">102</th><td>  <dfn class="enum" id="UV_HANDLE_IPV6" title='UV_HANDLE_IPV6' data-ref="UV_HANDLE_IPV6" data-ref-filename="UV_HANDLE_IPV6">UV_HANDLE_IPV6</dfn>                        = <var>0x00400000</var>,</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td>  <i>/* Only used by uv_tcp_t handles. */</i></td></tr>
+<tr><th id="105">105</th><td>  <dfn class="enum" id="UV_HANDLE_TCP_NODELAY" title='UV_HANDLE_TCP_NODELAY' data-ref="UV_HANDLE_TCP_NODELAY" data-ref-filename="UV_HANDLE_TCP_NODELAY">UV_HANDLE_TCP_NODELAY</dfn>                 = <var>0x01000000</var>,</td></tr>
+<tr><th id="106">106</th><td>  <dfn class="enum" id="UV_HANDLE_TCP_KEEPALIVE" title='UV_HANDLE_TCP_KEEPALIVE' data-ref="UV_HANDLE_TCP_KEEPALIVE" data-ref-filename="UV_HANDLE_TCP_KEEPALIVE">UV_HANDLE_TCP_KEEPALIVE</dfn>               = <var>0x02000000</var>,</td></tr>
+<tr><th id="107">107</th><td>  <dfn class="enum" id="UV_HANDLE_TCP_SINGLE_ACCEPT" title='UV_HANDLE_TCP_SINGLE_ACCEPT' data-ref="UV_HANDLE_TCP_SINGLE_ACCEPT" data-ref-filename="UV_HANDLE_TCP_SINGLE_ACCEPT">UV_HANDLE_TCP_SINGLE_ACCEPT</dfn>           = <var>0x04000000</var>,</td></tr>
+<tr><th id="108">108</th><td>  <dfn class="enum" id="UV_HANDLE_TCP_ACCEPT_STATE_CHANGING" title='UV_HANDLE_TCP_ACCEPT_STATE_CHANGING' data-ref="UV_HANDLE_TCP_ACCEPT_STATE_CHANGING" data-ref-filename="UV_HANDLE_TCP_ACCEPT_STATE_CHANGING">UV_HANDLE_TCP_ACCEPT_STATE_CHANGING</dfn>   = <var>0x08000000</var>,</td></tr>
+<tr><th id="109">109</th><td>  <dfn class="enum" id="UV_HANDLE_TCP_SOCKET_CLOSED" title='UV_HANDLE_TCP_SOCKET_CLOSED' data-ref="UV_HANDLE_TCP_SOCKET_CLOSED" data-ref-filename="UV_HANDLE_TCP_SOCKET_CLOSED">UV_HANDLE_TCP_SOCKET_CLOSED</dfn>           = <var>0x10000000</var>,</td></tr>
+<tr><th id="110">110</th><td>  <dfn class="enum" id="UV_HANDLE_SHARED_TCP_SOCKET" title='UV_HANDLE_SHARED_TCP_SOCKET' data-ref="UV_HANDLE_SHARED_TCP_SOCKET" data-ref-filename="UV_HANDLE_SHARED_TCP_SOCKET">UV_HANDLE_SHARED_TCP_SOCKET</dfn>           = <var>0x20000000</var>,</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>  <i>/* Only used by uv_udp_t handles. */</i></td></tr>
+<tr><th id="113">113</th><td>  <dfn class="enum" id="UV_HANDLE_UDP_PROCESSING" title='UV_HANDLE_UDP_PROCESSING' data-ref="UV_HANDLE_UDP_PROCESSING" data-ref-filename="UV_HANDLE_UDP_PROCESSING">UV_HANDLE_UDP_PROCESSING</dfn>              = <var>0x01000000</var>,</td></tr>
+<tr><th id="114">114</th><td>  <dfn class="enum" id="UV_HANDLE_UDP_CONNECTED" title='UV_HANDLE_UDP_CONNECTED' data-ref="UV_HANDLE_UDP_CONNECTED" data-ref-filename="UV_HANDLE_UDP_CONNECTED">UV_HANDLE_UDP_CONNECTED</dfn>               = <var>0x02000000</var>,</td></tr>
+<tr><th id="115">115</th><td>  <dfn class="enum" id="UV_HANDLE_UDP_RECVMMSG" title='UV_HANDLE_UDP_RECVMMSG' data-ref="UV_HANDLE_UDP_RECVMMSG" data-ref-filename="UV_HANDLE_UDP_RECVMMSG">UV_HANDLE_UDP_RECVMMSG</dfn>                = <var>0x04000000</var>,</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>  <i>/* Only used by uv_pipe_t handles. */</i></td></tr>
+<tr><th id="118">118</th><td>  <dfn class="enum" id="UV_HANDLE_NON_OVERLAPPED_PIPE" title='UV_HANDLE_NON_OVERLAPPED_PIPE' data-ref="UV_HANDLE_NON_OVERLAPPED_PIPE" data-ref-filename="UV_HANDLE_NON_OVERLAPPED_PIPE">UV_HANDLE_NON_OVERLAPPED_PIPE</dfn>         = <var>0x01000000</var>,</td></tr>
+<tr><th id="119">119</th><td>  <dfn class="enum" id="UV_HANDLE_PIPESERVER" title='UV_HANDLE_PIPESERVER' data-ref="UV_HANDLE_PIPESERVER" data-ref-filename="UV_HANDLE_PIPESERVER">UV_HANDLE_PIPESERVER</dfn>                  = <var>0x02000000</var>,</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>  <i>/* Only used by uv_tty_t handles. */</i></td></tr>
+<tr><th id="122">122</th><td>  <dfn class="enum" id="UV_HANDLE_TTY_READABLE" title='UV_HANDLE_TTY_READABLE' data-ref="UV_HANDLE_TTY_READABLE" data-ref-filename="UV_HANDLE_TTY_READABLE">UV_HANDLE_TTY_READABLE</dfn>                = <var>0x01000000</var>,</td></tr>
+<tr><th id="123">123</th><td>  <dfn class="enum" id="UV_HANDLE_TTY_RAW" title='UV_HANDLE_TTY_RAW' data-ref="UV_HANDLE_TTY_RAW" data-ref-filename="UV_HANDLE_TTY_RAW">UV_HANDLE_TTY_RAW</dfn>                     = <var>0x02000000</var>,</td></tr>
+<tr><th id="124">124</th><td>  <dfn class="enum" id="UV_HANDLE_TTY_SAVED_POSITION" title='UV_HANDLE_TTY_SAVED_POSITION' data-ref="UV_HANDLE_TTY_SAVED_POSITION" data-ref-filename="UV_HANDLE_TTY_SAVED_POSITION">UV_HANDLE_TTY_SAVED_POSITION</dfn>          = <var>0x04000000</var>,</td></tr>
+<tr><th id="125">125</th><td>  <dfn class="enum" id="UV_HANDLE_TTY_SAVED_ATTRIBUTES" title='UV_HANDLE_TTY_SAVED_ATTRIBUTES' data-ref="UV_HANDLE_TTY_SAVED_ATTRIBUTES" data-ref-filename="UV_HANDLE_TTY_SAVED_ATTRIBUTES">UV_HANDLE_TTY_SAVED_ATTRIBUTES</dfn>        = <var>0x08000000</var>,</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>  <i>/* Only used by uv_signal_t handles. */</i></td></tr>
+<tr><th id="128">128</th><td>  <dfn class="enum" id="UV_SIGNAL_ONE_SHOT_DISPATCHED" title='UV_SIGNAL_ONE_SHOT_DISPATCHED' data-ref="UV_SIGNAL_ONE_SHOT_DISPATCHED" data-ref-filename="UV_SIGNAL_ONE_SHOT_DISPATCHED">UV_SIGNAL_ONE_SHOT_DISPATCHED</dfn>         = <var>0x01000000</var>,</td></tr>
+<tr><th id="129">129</th><td>  <dfn class="enum" id="UV_SIGNAL_ONE_SHOT" title='UV_SIGNAL_ONE_SHOT' data-ref="UV_SIGNAL_ONE_SHOT" data-ref-filename="UV_SIGNAL_ONE_SHOT">UV_SIGNAL_ONE_SHOT</dfn>                    = <var>0x02000000</var>,</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>  <i>/* Only used by uv_poll_t handles. */</i></td></tr>
+<tr><th id="132">132</th><td>  <dfn class="enum" id="UV_HANDLE_POLL_SLOW" title='UV_HANDLE_POLL_SLOW' data-ref="UV_HANDLE_POLL_SLOW" data-ref-filename="UV_HANDLE_POLL_SLOW">UV_HANDLE_POLL_SLOW</dfn>                   = <var>0x01000000</var></td></tr>
+<tr><th id="133">133</th><td>};</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><em>int</em> <dfn class="decl fn" id="uv__loop_configure" title='uv__loop_configure' data-ref="uv__loop_configure" data-ref-filename="uv__loop_configure">uv__loop_configure</dfn>(<a class="typedef" href="../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col6 decl" id="1416loop" title='loop' data-type='uv_loop_t *' data-ref="1416loop" data-ref-filename="1416loop">loop</dfn>, <a class="typedef" href="../include/uv.h.html#uv_loop_option" title='uv_loop_option' data-type='enum uv_loop_option' data-ref="uv_loop_option" data-ref-filename="uv_loop_option">uv_loop_option</a> <dfn class="local col7 decl" id="1417option" title='option' data-type='uv_loop_option' data-ref="1417option" data-ref-filename="1417option">option</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list" data-ref-filename="va_list">va_list</span> <dfn class="local col8 decl" id="1418ap" title='ap' data-type='struct __va_list_tag *' data-ref="1418ap" data-ref-filename="1418ap">ap</dfn>);</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><em>void</em> <dfn class="decl fn" id="uv__loop_close" title='uv__loop_close' data-ref="uv__loop_close" data-ref-filename="uv__loop_close">uv__loop_close</dfn>(<a class="typedef" href="../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col9 decl" id="1419loop" title='loop' data-type='uv_loop_t *' data-ref="1419loop" data-ref-filename="1419loop">loop</dfn>);</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><em>int</em> <dfn class="decl fn" id="uv__tcp_bind" title='uv__tcp_bind' data-ref="uv__tcp_bind" data-ref-filename="uv__tcp_bind">uv__tcp_bind</dfn>(<a class="typedef" href="../include/uv.h.html#uv_tcp_t" title='uv_tcp_t' data-type='struct uv_tcp_s' data-ref="uv_tcp_t" data-ref-filename="uv_tcp_t">uv_tcp_t</a>* <dfn class="local col0 decl" id="1420tcp" title='tcp' data-type='uv_tcp_t *' data-ref="1420tcp" data-ref-filename="1420tcp">tcp</dfn>,</td></tr>
+<tr><th id="140">140</th><td>                 <em>const</em> <b>struct</b> <a class="type" href="../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col1 decl" id="1421addr" title='addr' data-type='const struct sockaddr *' data-ref="1421addr" data-ref-filename="1421addr">addr</dfn>,</td></tr>
+<tr><th id="141">141</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="1422addrlen" title='addrlen' data-type='unsigned int' data-ref="1422addrlen" data-ref-filename="1422addrlen">addrlen</dfn>,</td></tr>
+<tr><th id="142">142</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="1423flags" title='flags' data-type='unsigned int' data-ref="1423flags" data-ref-filename="1423flags">flags</dfn>);</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><em>int</em> <dfn class="decl fn" id="uv__tcp_connect" title='uv__tcp_connect' data-ref="uv__tcp_connect" data-ref-filename="uv__tcp_connect">uv__tcp_connect</dfn>(<a class="typedef" href="../include/uv.h.html#uv_connect_t" title='uv_connect_t' data-type='struct uv_connect_s' data-ref="uv_connect_t" data-ref-filename="uv_connect_t">uv_connect_t</a>* <dfn class="local col4 decl" id="1424req" title='req' data-type='uv_connect_t *' data-ref="1424req" data-ref-filename="1424req">req</dfn>,</td></tr>
+<tr><th id="145">145</th><td>                   <a class="typedef" href="../include/uv.h.html#uv_tcp_t" title='uv_tcp_t' data-type='struct uv_tcp_s' data-ref="uv_tcp_t" data-ref-filename="uv_tcp_t">uv_tcp_t</a>* <dfn class="local col5 decl" id="1425handle" title='handle' data-type='uv_tcp_t *' data-ref="1425handle" data-ref-filename="1425handle">handle</dfn>,</td></tr>
+<tr><th id="146">146</th><td>                   <em>const</em> <b>struct</b> <a class="type" href="../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col6 decl" id="1426addr" title='addr' data-type='const struct sockaddr *' data-ref="1426addr" data-ref-filename="1426addr">addr</dfn>,</td></tr>
+<tr><th id="147">147</th><td>                   <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="1427addrlen" title='addrlen' data-type='unsigned int' data-ref="1427addrlen" data-ref-filename="1427addrlen">addrlen</dfn>,</td></tr>
+<tr><th id="148">148</th><td>                   <a class="typedef" href="../include/uv.h.html#uv_connect_cb" title='uv_connect_cb' data-type='void (*)(uv_connect_t *, int)' data-ref="uv_connect_cb" data-ref-filename="uv_connect_cb">uv_connect_cb</a> <dfn class="local col8 decl" id="1428cb" title='cb' data-type='uv_connect_cb' data-ref="1428cb" data-ref-filename="1428cb">cb</dfn>);</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_init_ex" title='uv__udp_init_ex' data-ref="uv__udp_init_ex" data-ref-filename="uv__udp_init_ex">uv__udp_init_ex</dfn>(<a class="typedef" href="../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col9 decl" id="1429loop" title='loop' data-type='uv_loop_t *' data-ref="1429loop" data-ref-filename="1429loop">loop</dfn>,</td></tr>
+<tr><th id="151">151</th><td>                    <a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col0 decl" id="1430handle" title='handle' data-type='uv_udp_t *' data-ref="1430handle" data-ref-filename="1430handle">handle</dfn>,</td></tr>
+<tr><th id="152">152</th><td>                    <em>unsigned</em> <dfn class="local col1 decl" id="1431flags" title='flags' data-type='unsigned int' data-ref="1431flags" data-ref-filename="1431flags">flags</dfn>,</td></tr>
+<tr><th id="153">153</th><td>                    <em>int</em> <dfn class="local col2 decl" id="1432domain" title='domain' data-type='int' data-ref="1432domain" data-ref-filename="1432domain">domain</dfn>);</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_bind" title='uv__udp_bind' data-ref="uv__udp_bind" data-ref-filename="uv__udp_bind">uv__udp_bind</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col3 decl" id="1433handle" title='handle' data-type='uv_udp_t *' data-ref="1433handle" data-ref-filename="1433handle">handle</dfn>,</td></tr>
+<tr><th id="156">156</th><td>                 <em>const</em> <b>struct</b> <a class="type" href="../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col4 decl" id="1434addr" title='addr' data-type='const struct sockaddr *' data-ref="1434addr" data-ref-filename="1434addr">addr</dfn>,</td></tr>
+<tr><th id="157">157</th><td>                 <em>unsigned</em> <em>int</em>  <dfn class="local col5 decl" id="1435addrlen" title='addrlen' data-type='unsigned int' data-ref="1435addrlen" data-ref-filename="1435addrlen">addrlen</dfn>,</td></tr>
+<tr><th id="158">158</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="1436flags" title='flags' data-type='unsigned int' data-ref="1436flags" data-ref-filename="1436flags">flags</dfn>);</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_connect" title='uv__udp_connect' data-ref="uv__udp_connect" data-ref-filename="uv__udp_connect">uv__udp_connect</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col7 decl" id="1437handle" title='handle' data-type='uv_udp_t *' data-ref="1437handle" data-ref-filename="1437handle">handle</dfn>,</td></tr>
+<tr><th id="161">161</th><td>                    <em>const</em> <b>struct</b> <a class="type" href="../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col8 decl" id="1438addr" title='addr' data-type='const struct sockaddr *' data-ref="1438addr" data-ref-filename="1438addr">addr</dfn>,</td></tr>
+<tr><th id="162">162</th><td>                    <em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="1439addrlen" title='addrlen' data-type='unsigned int' data-ref="1439addrlen" data-ref-filename="1439addrlen">addrlen</dfn>);</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_disconnect" title='uv__udp_disconnect' data-ref="uv__udp_disconnect" data-ref-filename="uv__udp_disconnect">uv__udp_disconnect</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col0 decl" id="1440handle" title='handle' data-type='uv_udp_t *' data-ref="1440handle" data-ref-filename="1440handle">handle</dfn>);</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_is_connected" title='uv__udp_is_connected' data-ref="uv__udp_is_connected" data-ref-filename="uv__udp_is_connected">uv__udp_is_connected</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col1 decl" id="1441handle" title='handle' data-type='uv_udp_t *' data-ref="1441handle" data-ref-filename="1441handle">handle</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_send" title='uv__udp_send' data-ref="uv__udp_send" data-ref-filename="uv__udp_send">uv__udp_send</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_send_t" title='uv_udp_send_t' data-type='struct uv_udp_send_s' data-ref="uv_udp_send_t" data-ref-filename="uv_udp_send_t">uv_udp_send_t</a>* <dfn class="local col2 decl" id="1442req" title='req' data-type='uv_udp_send_t *' data-ref="1442req" data-ref-filename="1442req">req</dfn>,</td></tr>
+<tr><th id="169">169</th><td>                 <a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col3 decl" id="1443handle" title='handle' data-type='uv_udp_t *' data-ref="1443handle" data-ref-filename="1443handle">handle</dfn>,</td></tr>
+<tr><th id="170">170</th><td>                 <em>const</em> <a class="typedef" href="../include/uv/unix.h.html#uv_buf_t" title='uv_buf_t' data-type='struct uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</a> <dfn class="local col4 decl" id="1444bufs" title='bufs' data-type='const uv_buf_t *' data-ref="1444bufs" data-ref-filename="1444bufs">bufs</dfn>[],</td></tr>
+<tr><th id="171">171</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="1445nbufs" title='nbufs' data-type='unsigned int' data-ref="1445nbufs" data-ref-filename="1445nbufs">nbufs</dfn>,</td></tr>
+<tr><th id="172">172</th><td>                 <em>const</em> <b>struct</b> <a class="type" href="../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col6 decl" id="1446addr" title='addr' data-type='const struct sockaddr *' data-ref="1446addr" data-ref-filename="1446addr">addr</dfn>,</td></tr>
+<tr><th id="173">173</th><td>                 <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="1447addrlen" title='addrlen' data-type='unsigned int' data-ref="1447addrlen" data-ref-filename="1447addrlen">addrlen</dfn>,</td></tr>
+<tr><th id="174">174</th><td>                 <a class="typedef" href="../include/uv.h.html#uv_udp_send_cb" title='uv_udp_send_cb' data-type='void (*)(uv_udp_send_t *, int)' data-ref="uv_udp_send_cb" data-ref-filename="uv_udp_send_cb">uv_udp_send_cb</a> <dfn class="local col8 decl" id="1448send_cb" title='send_cb' data-type='uv_udp_send_cb' data-ref="1448send_cb" data-ref-filename="1448send_cb">send_cb</dfn>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_try_send" title='uv__udp_try_send' data-ref="uv__udp_try_send" data-ref-filename="uv__udp_try_send">uv__udp_try_send</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col9 decl" id="1449handle" title='handle' data-type='uv_udp_t *' data-ref="1449handle" data-ref-filename="1449handle">handle</dfn>,</td></tr>
+<tr><th id="177">177</th><td>                     <em>const</em> <a class="typedef" href="../include/uv/unix.h.html#uv_buf_t" title='uv_buf_t' data-type='struct uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</a> <dfn class="local col0 decl" id="1450bufs" title='bufs' data-type='const uv_buf_t *' data-ref="1450bufs" data-ref-filename="1450bufs">bufs</dfn>[],</td></tr>
+<tr><th id="178">178</th><td>                     <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="1451nbufs" title='nbufs' data-type='unsigned int' data-ref="1451nbufs" data-ref-filename="1451nbufs">nbufs</dfn>,</td></tr>
+<tr><th id="179">179</th><td>                     <em>const</em> <b>struct</b> <a class="type" href="../../../../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr" data-ref-filename="sockaddr">sockaddr</a>* <dfn class="local col2 decl" id="1452addr" title='addr' data-type='const struct sockaddr *' data-ref="1452addr" data-ref-filename="1452addr">addr</dfn>,</td></tr>
+<tr><th id="180">180</th><td>                     <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="1453addrlen" title='addrlen' data-type='unsigned int' data-ref="1453addrlen" data-ref-filename="1453addrlen">addrlen</dfn>);</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_recv_start" title='uv__udp_recv_start' data-ref="uv__udp_recv_start" data-ref-filename="uv__udp_recv_start">uv__udp_recv_start</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col4 decl" id="1454handle" title='handle' data-type='uv_udp_t *' data-ref="1454handle" data-ref-filename="1454handle">handle</dfn>, <a class="typedef" href="../include/uv.h.html#uv_alloc_cb" title='uv_alloc_cb' data-type='void (*)(uv_handle_t *, size_t, uv_buf_t *)' data-ref="uv_alloc_cb" data-ref-filename="uv_alloc_cb">uv_alloc_cb</a> <dfn class="local col5 decl" id="1455alloccb" title='alloccb' data-type='uv_alloc_cb' data-ref="1455alloccb" data-ref-filename="1455alloccb">alloccb</dfn>,</td></tr>
+<tr><th id="183">183</th><td>                       <a class="typedef" href="../include/uv.h.html#uv_udp_recv_cb" title='uv_udp_recv_cb' data-type='void (*)(uv_udp_t *, ssize_t, const uv_buf_t *, const struct sockaddr *, unsigned int)' data-ref="uv_udp_recv_cb" data-ref-filename="uv_udp_recv_cb">uv_udp_recv_cb</a> <dfn class="local col6 decl" id="1456recv_cb" title='recv_cb' data-type='uv_udp_recv_cb' data-ref="1456recv_cb" data-ref-filename="1456recv_cb">recv_cb</dfn>);</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><em>int</em> <dfn class="decl fn" id="uv__udp_recv_stop" title='uv__udp_recv_stop' data-ref="uv__udp_recv_stop" data-ref-filename="uv__udp_recv_stop">uv__udp_recv_stop</dfn>(<a class="typedef" href="../include/uv.h.html#uv_udp_t" title='uv_udp_t' data-type='struct uv_udp_s' data-ref="uv_udp_t" data-ref-filename="uv_udp_t">uv_udp_t</a>* <dfn class="local col7 decl" id="1457handle" title='handle' data-type='uv_udp_t *' data-ref="1457handle" data-ref-filename="1457handle">handle</dfn>);</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><em>void</em> <a class="decl fn" href="fs-poll.c.html#uv__fs_poll_close" title='uv__fs_poll_close' data-ref="uv__fs_poll_close" data-ref-filename="uv__fs_poll_close" id="uv__fs_poll_close">uv__fs_poll_close</a>(<a class="typedef" href="../include/uv.h.html#uv_fs_poll_t" title='uv_fs_poll_t' data-type='struct uv_fs_poll_s' data-ref="uv_fs_poll_t" data-ref-filename="uv_fs_poll_t">uv_fs_poll_t</a>* <dfn class="local col8 decl" id="1458handle" title='handle' data-type='uv_fs_poll_t *' data-ref="1458handle" data-ref-filename="1458handle">handle</dfn>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><em>int</em> <dfn class="decl fn" id="uv__getaddrinfo_translate_error" title='uv__getaddrinfo_translate_error' data-ref="uv__getaddrinfo_translate_error" data-ref-filename="uv__getaddrinfo_translate_error">uv__getaddrinfo_translate_error</dfn>(<em>int</em> <dfn class="local col9 decl" id="1459sys_err" title='sys_err' data-type='int' data-ref="1459sys_err" data-ref-filename="1459sys_err">sys_err</dfn>);    <i>/* EAI_* error. */</i></td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><b>enum</b> <dfn class="type def" id="uv__work_kind" title='uv__work_kind' data-ref="uv__work_kind" data-ref-filename="uv__work_kind">uv__work_kind</dfn> {</td></tr>
+<tr><th id="192">192</th><td>  <dfn class="enum" id="UV__WORK_CPU" title='UV__WORK_CPU' data-ref="UV__WORK_CPU" data-ref-filename="UV__WORK_CPU">UV__WORK_CPU</dfn>,</td></tr>
+<tr><th id="193">193</th><td>  <dfn class="enum" id="UV__WORK_FAST_IO" title='UV__WORK_FAST_IO' data-ref="UV__WORK_FAST_IO" data-ref-filename="UV__WORK_FAST_IO">UV__WORK_FAST_IO</dfn>,</td></tr>
+<tr><th id="194">194</th><td>  <dfn class="enum" id="UV__WORK_SLOW_IO" title='UV__WORK_SLOW_IO' data-ref="UV__WORK_SLOW_IO" data-ref-filename="UV__WORK_SLOW_IO">UV__WORK_SLOW_IO</dfn></td></tr>
+<tr><th id="195">195</th><td>};</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><em>void</em> <dfn class="decl fn" id="uv__work_submit" title='uv__work_submit' data-ref="uv__work_submit" data-ref-filename="uv__work_submit">uv__work_submit</dfn>(<a class="typedef" href="../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col0 decl" id="1460loop" title='loop' data-type='uv_loop_t *' data-ref="1460loop" data-ref-filename="1460loop">loop</dfn>,</td></tr>
+<tr><th id="198">198</th><td>                     <b>struct</b> <a class="type" href="../include/uv/threadpool.h.html#uv__work" title='uv__work' data-ref="uv__work" data-ref-filename="uv__work">uv__work</a> *<dfn class="local col1 decl" id="1461w" title='w' data-type='struct uv__work *' data-ref="1461w" data-ref-filename="1461w">w</dfn>,</td></tr>
+<tr><th id="199">199</th><td>                     <b>enum</b> <a class="type" href="#uv__work_kind" title='uv__work_kind' data-ref="uv__work_kind" data-ref-filename="uv__work_kind">uv__work_kind</a> <dfn class="local col2 decl" id="1462kind" title='kind' data-type='enum uv__work_kind' data-ref="1462kind" data-ref-filename="1462kind">kind</dfn>,</td></tr>
+<tr><th id="200">200</th><td>                     <em>void</em> (*<dfn class="local col3 decl" id="1463work" title='work' data-type='void (*)(struct uv__work *)' data-ref="1463work" data-ref-filename="1463work">work</dfn>)(<b>struct</b> <a class="type" href="../include/uv/threadpool.h.html#uv__work" title='uv__work' data-ref="uv__work" data-ref-filename="uv__work">uv__work</a> *<dfn class="local col4 decl" id="1464w" title='w' data-type='struct uv__work *' data-ref="1464w" data-ref-filename="1464w">w</dfn>),</td></tr>
+<tr><th id="201">201</th><td>                     <em>void</em> (*<dfn class="local col5 decl" id="1465done" title='done' data-type='void (*)(struct uv__work *, int)' data-ref="1465done" data-ref-filename="1465done">done</dfn>)(<b>struct</b> <a class="type" href="../include/uv/threadpool.h.html#uv__work" title='uv__work' data-ref="uv__work" data-ref-filename="uv__work">uv__work</a> *<dfn class="local col6 decl" id="1466w" title='w' data-type='struct uv__work *' data-ref="1466w" data-ref-filename="1466w">w</dfn>, <em>int</em> <dfn class="local col7 decl" id="1467status" title='status' data-type='int' data-ref="1467status" data-ref-filename="1467status">status</dfn>));</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><em>void</em> <dfn class="decl fn" id="uv__work_done" title='uv__work_done' data-ref="uv__work_done" data-ref-filename="uv__work_done">uv__work_done</dfn>(<a class="typedef" href="../include/uv.h.html#uv_async_t" title='uv_async_t' data-type='struct uv_async_s' data-ref="uv_async_t" data-ref-filename="uv_async_t">uv_async_t</a>* <dfn class="local col8 decl" id="1468handle" title='handle' data-type='uv_async_t *' data-ref="1468handle" data-ref-filename="1468handle">handle</dfn>);</td></tr>
+<tr><th id="204">204</th><td></td></tr>
+<tr><th id="205">205</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="decl fn" id="uv__count_bufs" title='uv__count_bufs' data-ref="uv__count_bufs" data-ref-filename="uv__count_bufs">uv__count_bufs</dfn>(<em>const</em> <a class="typedef" href="../include/uv/unix.h.html#uv_buf_t" title='uv_buf_t' data-type='struct uv_buf_t' data-ref="uv_buf_t" data-ref-filename="uv_buf_t">uv_buf_t</a> <dfn class="local col9 decl" id="1469bufs" title='bufs' data-type='const uv_buf_t *' data-ref="1469bufs" data-ref-filename="1469bufs">bufs</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="1470nbufs" title='nbufs' data-type='unsigned int' data-ref="1470nbufs" data-ref-filename="1470nbufs">nbufs</dfn>);</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><em>int</em> <dfn class="decl fn" id="uv__socket_sockopt" title='uv__socket_sockopt' data-ref="uv__socket_sockopt" data-ref-filename="uv__socket_sockopt">uv__socket_sockopt</dfn>(<a class="typedef" href="../include/uv.h.html#uv_handle_t" title='uv_handle_t' data-type='struct uv_handle_s' data-ref="uv_handle_t" data-ref-filename="uv_handle_t">uv_handle_t</a>* <dfn class="local col1 decl" id="1471handle" title='handle' data-type='uv_handle_t *' data-ref="1471handle" data-ref-filename="1471handle">handle</dfn>, <em>int</em> <dfn class="local col2 decl" id="1472optname" title='optname' data-type='int' data-ref="1472optname" data-ref-filename="1472optname">optname</dfn>, <em>int</em>* <dfn class="local col3 decl" id="1473value" title='value' data-type='int *' data-ref="1473value" data-ref-filename="1473value">value</dfn>);</td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td><em>void</em> <dfn class="decl fn" id="uv__fs_scandir_cleanup" title='uv__fs_scandir_cleanup' data-ref="uv__fs_scandir_cleanup" data-ref-filename="uv__fs_scandir_cleanup">uv__fs_scandir_cleanup</dfn>(<a class="typedef" href="../include/uv.h.html#uv_fs_t" title='uv_fs_t' data-type='struct uv_fs_s' data-ref="uv_fs_t" data-ref-filename="uv_fs_t">uv_fs_t</a>* <dfn class="local col4 decl" id="1474req" title='req' data-type='uv_fs_t *' data-ref="1474req" data-ref-filename="1474req">req</dfn>);</td></tr>
+<tr><th id="210">210</th><td><em>void</em> <dfn class="decl fn" id="uv__fs_readdir_cleanup" title='uv__fs_readdir_cleanup' data-ref="uv__fs_readdir_cleanup" data-ref-filename="uv__fs_readdir_cleanup">uv__fs_readdir_cleanup</dfn>(<a class="typedef" href="../include/uv.h.html#uv_fs_t" title='uv_fs_t' data-type='struct uv_fs_s' data-ref="uv_fs_t" data-ref-filename="uv_fs_t">uv_fs_t</a>* <dfn class="local col5 decl" id="1475req" title='req' data-type='uv_fs_t *' data-ref="1475req" data-ref-filename="1475req">req</dfn>);</td></tr>
+<tr><th id="211">211</th><td><a class="typedef" href="../include/uv.h.html#uv_dirent_type_t" title='uv_dirent_type_t' data-type='enum uv_dirent_type_t' data-ref="uv_dirent_type_t" data-ref-filename="uv_dirent_type_t">uv_dirent_type_t</a> <dfn class="decl fn" id="uv__fs_get_dirent_type" title='uv__fs_get_dirent_type' data-ref="uv__fs_get_dirent_type" data-ref-filename="uv__fs_get_dirent_type">uv__fs_get_dirent_type</dfn>(<a class="typedef" href="../include/uv/unix.h.html#uv__dirent_t" title='uv__dirent_t' data-type='struct dirent' data-ref="uv__dirent_t" data-ref-filename="uv__dirent_t">uv__dirent_t</a>* <dfn class="local col6 decl" id="1476dent" title='dent' data-type='uv__dirent_t *' data-ref="1476dent" data-ref-filename="1476dent">dent</dfn>);</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><em>int</em> <dfn class="decl fn" id="uv__next_timeout" title='uv__next_timeout' data-ref="uv__next_timeout" data-ref-filename="uv__next_timeout">uv__next_timeout</dfn>(<em>const</em> <a class="typedef" href="../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col7 decl" id="1477loop" title='loop' data-type='const uv_loop_t *' data-ref="1477loop" data-ref-filename="1477loop">loop</dfn>);</td></tr>
+<tr><th id="214">214</th><td><em>void</em> <dfn class="decl fn" id="uv__run_timers" title='uv__run_timers' data-ref="uv__run_timers" data-ref-filename="uv__run_timers">uv__run_timers</dfn>(<a class="typedef" href="../include/uv.h.html#uv_loop_t" title='uv_loop_t' data-type='struct uv_loop_s' data-ref="uv_loop_t" data-ref-filename="uv_loop_t">uv_loop_t</a>* <dfn class="local col8 decl" id="1478loop" title='loop' data-type='uv_loop_t *' data-ref="1478loop" data-ref-filename="1478loop">loop</dfn>);</td></tr>
+<tr><th id="215">215</th><td><em>void</em> <dfn class="decl fn" id="uv__timer_close" title='uv__timer_close' data-ref="uv__timer_close" data-ref-filename="uv__timer_close">uv__timer_close</dfn>(<a class="typedef" href="../include/uv.h.html#uv_timer_t" title='uv_timer_t' data-type='struct uv_timer_s' data-ref="uv_timer_t" data-ref-filename="uv_timer_t">uv_timer_t</a>* <dfn class="local col9 decl" id="1479handle" title='handle' data-type='uv_timer_t *' data-ref="1479handle" data-ref-filename="1479handle">handle</dfn>);</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td><em>void</em> <dfn class="decl fn" id="uv__process_title_cleanup" title='uv__process_title_cleanup' data-ref="uv__process_title_cleanup" data-ref-filename="uv__process_title_cleanup">uv__process_title_cleanup</dfn>(<em>void</em>);</td></tr>
+<tr><th id="218">218</th><td><em>void</em> <dfn class="decl fn" id="uv__signal_cleanup" title='uv__signal_cleanup' data-ref="uv__signal_cleanup" data-ref-filename="uv__signal_cleanup">uv__signal_cleanup</dfn>(<em>void</em>);</td></tr>
+<tr><th id="219">219</th><td><em>void</em> <dfn class="decl fn" id="uv__threadpool_cleanup" title='uv__threadpool_cleanup' data-ref="uv__threadpool_cleanup" data-ref-filename="uv__threadpool_cleanup">uv__threadpool_cleanup</dfn>(<em>void</em>);</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td><u>#define <dfn class="macro" id="_M/uv__has_active_reqs" data-ref="_M/uv__has_active_reqs">uv__has_active_reqs</dfn>(loop)                                             \</u></td></tr>
+<tr><th id="222">222</th><td><u>  ((loop)-&gt;active_reqs.count &gt; 0)</u></td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><u>#define <dfn class="macro" id="_M/uv__req_register" data-ref="_M/uv__req_register">uv__req_register</dfn>(loop, req)                                           \</u></td></tr>
+<tr><th id="225">225</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="226">226</th><td><u>    (loop)-&gt;active_reqs.count++;                                              \</u></td></tr>
+<tr><th id="227">227</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="228">228</th><td><u>  while (0)</u></td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td><u>#define <dfn class="macro" id="_M/uv__req_unregister" data-ref="_M/uv__req_unregister">uv__req_unregister</dfn>(loop, req)                                         \</u></td></tr>
+<tr><th id="231">231</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="232">232</th><td><u>    assert(uv__has_active_reqs(loop));                                        \</u></td></tr>
+<tr><th id="233">233</th><td><u>    (loop)-&gt;active_reqs.count--;                                              \</u></td></tr>
+<tr><th id="234">234</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="235">235</th><td><u>  while (0)</u></td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><u>#define <dfn class="macro" id="_M/uv__has_active_handles" data-ref="_M/uv__has_active_handles">uv__has_active_handles</dfn>(loop)                                          \</u></td></tr>
+<tr><th id="238">238</th><td><u>  ((loop)-&gt;active_handles &gt; 0)</u></td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td><u>#define <dfn class="macro" id="_M/uv__active_handle_add" data-ref="_M/uv__active_handle_add">uv__active_handle_add</dfn>(h)                                              \</u></td></tr>
+<tr><th id="241">241</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="242">242</th><td><u>    (h)-&gt;loop-&gt;active_handles++;                                              \</u></td></tr>
+<tr><th id="243">243</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="244">244</th><td><u>  while (0)</u></td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><u>#define <dfn class="macro" id="_M/uv__active_handle_rm" data-ref="_M/uv__active_handle_rm">uv__active_handle_rm</dfn>(h)                                               \</u></td></tr>
+<tr><th id="247">247</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="248">248</th><td><u>    (h)-&gt;loop-&gt;active_handles--;                                              \</u></td></tr>
+<tr><th id="249">249</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="250">250</th><td><u>  while (0)</u></td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td><u>#define <dfn class="macro" id="_M/uv__is_active" data-ref="_M/uv__is_active">uv__is_active</dfn>(h)                                                      \</u></td></tr>
+<tr><th id="253">253</th><td><u>  (((h)-&gt;flags &amp; UV_HANDLE_ACTIVE) != 0)</u></td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td><u>#define <dfn class="macro" id="_M/uv__is_closing" data-ref="_M/uv__is_closing">uv__is_closing</dfn>(h)                                                     \</u></td></tr>
+<tr><th id="256">256</th><td><u>  (((h)-&gt;flags &amp; (UV_HANDLE_CLOSING | UV_HANDLE_CLOSED)) != 0)</u></td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td><u>#define <dfn class="macro" id="_M/uv__handle_start" data-ref="_M/uv__handle_start">uv__handle_start</dfn>(h)                                                   \</u></td></tr>
+<tr><th id="259">259</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="260">260</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_ACTIVE) != 0) break;                          \</u></td></tr>
+<tr><th id="261">261</th><td><u>    (h)-&gt;flags |= UV_HANDLE_ACTIVE;                                           \</u></td></tr>
+<tr><th id="262">262</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_REF) != 0) uv__active_handle_add(h);          \</u></td></tr>
+<tr><th id="263">263</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="264">264</th><td><u>  while (0)</u></td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><u>#define <dfn class="macro" id="_M/uv__handle_stop" data-ref="_M/uv__handle_stop">uv__handle_stop</dfn>(h)                                                    \</u></td></tr>
+<tr><th id="267">267</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="268">268</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_ACTIVE) == 0) break;                          \</u></td></tr>
+<tr><th id="269">269</th><td><u>    (h)-&gt;flags &amp;= ~UV_HANDLE_ACTIVE;                                          \</u></td></tr>
+<tr><th id="270">270</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_REF) != 0) uv__active_handle_rm(h);           \</u></td></tr>
+<tr><th id="271">271</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="272">272</th><td><u>  while (0)</u></td></tr>
+<tr><th id="273">273</th><td></td></tr>
+<tr><th id="274">274</th><td><u>#define <dfn class="macro" id="_M/uv__handle_ref" data-ref="_M/uv__handle_ref">uv__handle_ref</dfn>(h)                                                     \</u></td></tr>
+<tr><th id="275">275</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="276">276</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_REF) != 0) break;                             \</u></td></tr>
+<tr><th id="277">277</th><td><u>    (h)-&gt;flags |= UV_HANDLE_REF;                                              \</u></td></tr>
+<tr><th id="278">278</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_CLOSING) != 0) break;                         \</u></td></tr>
+<tr><th id="279">279</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_ACTIVE) != 0) uv__active_handle_add(h);       \</u></td></tr>
+<tr><th id="280">280</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="281">281</th><td><u>  while (0)</u></td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td><u>#define <dfn class="macro" id="_M/uv__handle_unref" data-ref="_M/uv__handle_unref">uv__handle_unref</dfn>(h)                                                   \</u></td></tr>
+<tr><th id="284">284</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="285">285</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_REF) == 0) break;                             \</u></td></tr>
+<tr><th id="286">286</th><td><u>    (h)-&gt;flags &amp;= ~UV_HANDLE_REF;                                             \</u></td></tr>
+<tr><th id="287">287</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_CLOSING) != 0) break;                         \</u></td></tr>
+<tr><th id="288">288</th><td><u>    if (((h)-&gt;flags &amp; UV_HANDLE_ACTIVE) != 0) uv__active_handle_rm(h);        \</u></td></tr>
+<tr><th id="289">289</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="290">290</th><td><u>  while (0)</u></td></tr>
+<tr><th id="291">291</th><td></td></tr>
+<tr><th id="292">292</th><td><u>#define <dfn class="macro" id="_M/uv__has_ref" data-ref="_M/uv__has_ref">uv__has_ref</dfn>(h)                                                        \</u></td></tr>
+<tr><th id="293">293</th><td><u>  (((h)-&gt;flags &amp; UV_HANDLE_REF) != 0)</u></td></tr>
+<tr><th id="294">294</th><td></td></tr>
+<tr><th id="295">295</th><td><u>#<span data-ppcond="295">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="296">296</th><td><u># define uv__handle_platform_init(h) ((h)-&gt;u.fd = -1)</u></td></tr>
+<tr><th id="297">297</th><td><u>#<span data-ppcond="295">else</span></u></td></tr>
+<tr><th id="298">298</th><td><u># define <dfn class="macro" id="_M/uv__handle_platform_init" data-ref="_M/uv__handle_platform_init">uv__handle_platform_init</dfn>(h) ((h)-&gt;next_closing = NULL)</u></td></tr>
+<tr><th id="299">299</th><td><u>#<span data-ppcond="295">endif</span></u></td></tr>
+<tr><th id="300">300</th><td></td></tr>
+<tr><th id="301">301</th><td><u>#define <dfn class="macro" id="_M/uv__handle_init" data-ref="_M/uv__handle_init">uv__handle_init</dfn>(loop_, h, type_)                                      \</u></td></tr>
+<tr><th id="302">302</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="303">303</th><td><u>    (h)-&gt;loop = (loop_);                                                      \</u></td></tr>
+<tr><th id="304">304</th><td><u>    (h)-&gt;type = (type_);                                                      \</u></td></tr>
+<tr><th id="305">305</th><td><u>    (h)-&gt;flags = UV_HANDLE_REF;  /* Ref the loop when active. */              \</u></td></tr>
+<tr><th id="306">306</th><td><u>    QUEUE_INSERT_TAIL(&amp;(loop_)-&gt;handle_queue, &amp;(h)-&gt;handle_queue);            \</u></td></tr>
+<tr><th id="307">307</th><td><u>    uv__handle_platform_init(h);                                              \</u></td></tr>
+<tr><th id="308">308</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="309">309</th><td><u>  while (0)</u></td></tr>
+<tr><th id="310">310</th><td></td></tr>
+<tr><th id="311">311</th><td><i>/* Note: uses an open-coded version of SET_REQ_SUCCESS() because of</i></td></tr>
+<tr><th id="312">312</th><td><i> * a circular dependency between src/uv-common.h and src/win/internal.h.</i></td></tr>
+<tr><th id="313">313</th><td><i> */</i></td></tr>
+<tr><th id="314">314</th><td><u>#<span data-ppcond="314">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="315">315</th><td><u># define UV_REQ_INIT(req, typ)                                                \</u></td></tr>
+<tr><th id="316">316</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="317">317</th><td><u>    (req)-&gt;type = (typ);                                                      \</u></td></tr>
+<tr><th id="318">318</th><td><u>    (req)-&gt;u.io.overlapped.Internal = 0;  /* SET_REQ_SUCCESS() */             \</u></td></tr>
+<tr><th id="319">319</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="320">320</th><td><u>  while (0)</u></td></tr>
+<tr><th id="321">321</th><td><u>#<span data-ppcond="314">else</span></u></td></tr>
+<tr><th id="322">322</th><td><u># define <dfn class="macro" id="_M/UV_REQ_INIT" data-ref="_M/UV_REQ_INIT">UV_REQ_INIT</dfn>(req, typ)                                                \</u></td></tr>
+<tr><th id="323">323</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="324">324</th><td><u>    (req)-&gt;type = (typ);                                                      \</u></td></tr>
+<tr><th id="325">325</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="326">326</th><td><u>  while (0)</u></td></tr>
+<tr><th id="327">327</th><td><u>#<span data-ppcond="314">endif</span></u></td></tr>
+<tr><th id="328">328</th><td></td></tr>
+<tr><th id="329">329</th><td><u>#define <dfn class="macro" id="_M/uv__req_init" data-ref="_M/uv__req_init">uv__req_init</dfn>(loop, req, typ)                                          \</u></td></tr>
+<tr><th id="330">330</th><td><u>  do {                                                                        \</u></td></tr>
+<tr><th id="331">331</th><td><u>    UV_REQ_INIT(req, typ);                                                    \</u></td></tr>
+<tr><th id="332">332</th><td><u>    uv__req_register(loop, req);                                              \</u></td></tr>
+<tr><th id="333">333</th><td><u>  }                                                                           \</u></td></tr>
+<tr><th id="334">334</th><td><u>  while (0)</u></td></tr>
+<tr><th id="335">335</th><td></td></tr>
+<tr><th id="336">336</th><td><i>/* Allocator prototypes */</i></td></tr>
+<tr><th id="337">337</th><td><em>void</em> *<dfn class="decl fn" id="uv__calloc" title='uv__calloc' data-ref="uv__calloc" data-ref-filename="uv__calloc">uv__calloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col0 decl" id="1480count" title='count' data-type='size_t' data-ref="1480count" data-ref-filename="1480count">count</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col1 decl" id="1481size" title='size' data-type='size_t' data-ref="1481size" data-ref-filename="1481size">size</dfn>);</td></tr>
+<tr><th id="338">338</th><td><em>char</em> *<dfn class="decl fn" id="uv__strdup" title='uv__strdup' data-ref="uv__strdup" data-ref-filename="uv__strdup">uv__strdup</dfn>(<em>const</em> <em>char</em>* <dfn class="local col2 decl" id="1482s" title='s' data-type='const char *' data-ref="1482s" data-ref-filename="1482s">s</dfn>);</td></tr>
+<tr><th id="339">339</th><td><em>char</em> *<dfn class="decl fn" id="uv__strndup" title='uv__strndup' data-ref="uv__strndup" data-ref-filename="uv__strndup">uv__strndup</dfn>(<em>const</em> <em>char</em>* <dfn class="local col3 decl" id="1483s" title='s' data-type='const char *' data-ref="1483s" data-ref-filename="1483s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col4 decl" id="1484n" title='n' data-type='size_t' data-ref="1484n" data-ref-filename="1484n">n</dfn>);</td></tr>
+<tr><th id="340">340</th><td><em>void</em>* <dfn class="decl fn" id="uv__malloc" title='uv__malloc' data-ref="uv__malloc" data-ref-filename="uv__malloc">uv__malloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col5 decl" id="1485size" title='size' data-type='size_t' data-ref="1485size" data-ref-filename="1485size">size</dfn>);</td></tr>
+<tr><th id="341">341</th><td><em>void</em> <dfn class="decl fn" id="uv__free" title='uv__free' data-ref="uv__free" data-ref-filename="uv__free">uv__free</dfn>(<em>void</em>* <dfn class="local col6 decl" id="1486ptr" title='ptr' data-type='void *' data-ref="1486ptr" data-ref-filename="1486ptr">ptr</dfn>);</td></tr>
+<tr><th id="342">342</th><td><em>void</em>* <dfn class="decl fn" id="uv__realloc" title='uv__realloc' data-ref="uv__realloc" data-ref-filename="uv__realloc">uv__realloc</dfn>(<em>void</em>* <dfn class="local col7 decl" id="1487ptr" title='ptr' data-type='void *' data-ref="1487ptr" data-ref-filename="1487ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col8 decl" id="1488size" title='size' data-type='size_t' data-ref="1488size" data-ref-filename="1488size">size</dfn>);</td></tr>
+<tr><th id="343">343</th><td><em>void</em>* <dfn class="decl fn" id="uv__reallocf" title='uv__reallocf' data-ref="uv__reallocf" data-ref-filename="uv__reallocf">uv__reallocf</dfn>(<em>void</em>* <dfn class="local col9 decl" id="1489ptr" title='ptr' data-type='void *' data-ref="1489ptr" data-ref-filename="1489ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col0 decl" id="1490size" title='size' data-type='size_t' data-ref="1490size" data-ref-filename="1490size">size</dfn>);</td></tr>
+<tr><th id="344">344</th><td></td></tr>
+<tr><th id="345">345</th><td><u>#<span data-ppcond="27">endif</span> /* UV_COMMON_H_ */</u></td></tr>
+<tr><th id="346">346</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='fs-poll.c.html'>qv2ray/3rdparty/libuv/src/fs-poll.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,63 @@
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.hpp' l='56'/>
+<inh f='/qv2ray_autogen/include/ui_StreamSettingsWidget.h' l='784' c='Ui::StreamSettingsWidget'/>
+<def f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.hpp' l='9' ll='79'/>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.hpp' l='50'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_StreamSettingsWidget.cpp' l='211' c='_ZN20StreamSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>1128</size>
+<smbr r='StreamSettingsWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK20StreamSettingsWidget10metaObjectEv'/>
+<fun r='_ZN20StreamSettingsWidget11qt_metacastEPKc'/>
+<fun r='_ZN20StreamSettingsWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20StreamSettingsWidget2trEPKcS1_i'/>
+<fun r='_ZN20StreamSettingsWidget6trUtf8EPKcS1_i'/>
+<fun r='_ZN20StreamSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN20StreamSettingsWidgetC1EP7QWidget'/>
+<fun r='_ZN20StreamSettingsWidget15SetStreamObjectERKN6Qv2ray4base7objects20StreamSettingsObjectE'/>
+<fun r='_ZNK20StreamSettingsWidget17GetStreamSettingsEv'/>
+<fun r='_ZN20StreamSettingsWidget37on_transportCombo_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget23on_dsPathTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget26on_httpHostTxt_textChangedEv'/>
+<fun r='_ZN20StreamSettingsWidget25on_httpPathTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget31on_kcpCongestionCB_stateChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget33on_kcpDownCapacitySB_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget36on_kcpHeaderType_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget22on_kcpMTU_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget31on_kcpReadBufferSB_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget24on_kcpSeedTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget22on_kcpTTI_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget32on_kcpUploadCapacSB_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget32on_kcpWriteBufferSB_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget39on_quicHeaderTypeCB_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget24on_quicKeyTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget37on_quicSecurityCB_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget31on_allowInsecureCB_stateChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget21on_alpnTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget41on_enableSessionResumptionCB_stateChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget37on_securityTypeCB_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget27on_serverNameTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget33on_disableSystemRoot_stateChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget28on_openCertEditorBtn_clickedEv'/>
+<fun r='_ZN20StreamSettingsWidget29on_tcpFastOpenCB_stateChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget38on_tcpHeaderTypeCB_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget27on_tcpRequestDefBtn_clickedEv'/>
+<fun r='_ZN20StreamSettingsWidget28on_tcpRequestEditBtn_clickedEv'/>
+<fun r='_ZN20StreamSettingsWidget24on_tcpRespDefBtn_clickedEv'/>
+<fun r='_ZN20StreamSettingsWidget29on_tcpResponseEditBtn_clickedEv'/>
+<fun r='_ZN20StreamSettingsWidget31on_tProxyCB_currentIndexChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget29on_soMarkSpinBox_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget27on_wsHeadersTxt_textChangedEv'/>
+<fun r='_ZN20StreamSettingsWidget23on_wsPathTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget29on_wsEarlyDataSB_valueChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget34on_wsBrowserForwardCB_stateChangedEi'/>
+<fun r='_ZN20StreamSettingsWidget32on_grpcServiceNameTxt_textEditedERK7QString'/>
+<fun r='_ZN20StreamSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<mbr r='StreamSettingsWidget::stream' o='6656' t='Qv2ray::base::objects::StreamSettingsObject'/>
+<fun r='_ZN20StreamSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='StreamSettingsWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK20StreamSettingsWidget10metaObjectEv'/>
+<fun r='_ZN20StreamSettingsWidget11qt_metacastEPKc'/>
+<fun r='_ZN20StreamSettingsWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.cpp' l='21' c='_ZN13InboundEditorC1E13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectEP7QWidget'/>
+<size>1128</size>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.cpp' l='19' c='_ZN14OutboundEditorC1EP7QWidget'/>
+<size>1128</size>

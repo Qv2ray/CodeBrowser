@@ -1,0 +1,15 @@
+<def f='include/google/protobuf/generated_message_reflection.h' l='262' ll='266'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='739' c='_ZN6google8protobuf8internal17AssignDescriptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKNS1_15MigrationSchemaEPKPKNS0_7MessageEPKjPNS04100132'/>
+<use f='/v2ray_api.pb.cc' l='263'/>
+<size>12</size>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='256'>// Structs that the code generator emits directly to describe a message.
+// These should never used directly except to build a ReflectionSchema
+// object.
+//
+// EXPERIMENTAL: these are changing rapidly, and may completely disappear
+// or merge with ReflectionSchema.</doc>
+<mbr r='google::protobuf::internal::MigrationSchema::offsets_index' o='0' t='google::protobuf::int32'/>
+<mbr r='google::protobuf::internal::MigrationSchema::has_bit_indices_index' o='32' t='google::protobuf::int32'/>
+<mbr r='google::protobuf::internal::MigrationSchema::object_size' o='64' t='int'/>
+<use f='/v2ray_geosite.pb.cc' l='243'/>
+<size>12</size>

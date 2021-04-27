@@ -1,0 +1,8 @@
+<dec f='include/grpcpp/support/channel_arguments.h' l='80' type='void grpc::ChannelArguments::SetSocketMutator(grpc_socket_mutator * mutator)'/>
+<doc f='include/grpcpp/support/channel_arguments.h' l='73'>/// For client channel&apos;s, the socket mutator operates on
+  /// &quot;channel&quot; sockets. For server&apos;s, the socket mutator operates
+  /// only on &quot;listen&quot; sockets.
+  /// TODO(apolcyn): allow socket mutators to also operate
+  /// on server &quot;channel&quot; sockets, and adjust the socket mutator
+  /// object to be more speficic about which type of socket
+  /// it should operate on.</doc>

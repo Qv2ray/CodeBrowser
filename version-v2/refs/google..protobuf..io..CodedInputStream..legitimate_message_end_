@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='545' type='bool'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1062' u='r' c='_ZN6google8protobuf2io16CodedInputStream21ConsumedEntireMessageEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1117' u='w' c='_ZN6google8protobuf2io16CodedInputStream11ExpectAtEndEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1340' u='w' c='_ZN6google8protobuf2io16CodedInputStreamC1EPNS1_19ZeroCopyInputStreamE'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1360' u='w' c='_ZN6google8protobuf2io16CodedInputStreamC1EPKhi'/>
+<offset>288</offset>
+<doc f='include/google/protobuf/io/coded_stream.h' l='542'>// This is set true by ReadTag{Fallback/Slow}() if it is called when exactly
+  // at EOF, or by ExpectAtEnd() when it returns true.  This happens when we
+  // reach the end of a message and attempt to read another tag.</doc>

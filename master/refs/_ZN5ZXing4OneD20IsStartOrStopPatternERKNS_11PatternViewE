@@ -1,0 +1,5 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='313' ll='316' type='bool ZXing::OneD::IsStartOrStopPattern(const ZXing::PatternView &amp; view)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='327' u='r' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='309'>// official start and stop symbols are &quot;ABCD&quot;
+// some codabar generator allow the codabar string to be closed by every
+// character. This will cause lots of false positives!</doc>

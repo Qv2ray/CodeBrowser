@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1284' type='std::pair&lt;bool, const char *&gt; uvw::FsReq::realpathSync(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='507' ll='511' type='std::pair&lt;bool, const char *&gt; uvw::FsReq::realpathSync(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1275'>/**
+     * @brief Sync [realpath](http://linux.die.net/man/3/realpath).
+     *
+     * @param path Path, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * The canonicalized absolute pathname.
+     */</doc>

@@ -1,0 +1,42 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='35' ll='78'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='39' c='_ZN5ZXing6Pdf4176WriterC1EOS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='42' c='_ZN5ZXing6Pdf4176Writer9setMarginEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='44' c='_ZN5ZXing6Pdf4176Writer23setErrorCorrectionLevelEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='54' c='_ZN5ZXing6Pdf4176Writer13setDimensionsEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='59' c='_ZN5ZXing6Pdf4176Writer13setCompactionENS0_10CompactionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='64' c='_ZN5ZXing6Pdf4176Writer10setCompactEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='69' c='_ZN5ZXing6Pdf4176Writer11setEncodingENS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.cpp' l='48' c='_ZNK5ZXing17MultiFormatWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatWriter.cpp' l='64' c='_ZNK5ZXing17MultiFormatWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.h' l='31'>/**
+* @author Jacob Haynes
+* @author qwandor@google.com (Andrew Walbran)
+*/</doc>
+<fun r='_ZN5ZXing6Pdf4176WriterC1Ev'/>
+<fun r='_ZN5ZXing6Pdf4176WriterC1EOS1_'/>
+<fun r='_ZN5ZXing6Pdf4176WriterD1Ev'/>
+<fun r='_ZN5ZXing6Pdf4176Writer9setMarginEi'/>
+<fun r='_ZN5ZXing6Pdf4176Writer23setErrorCorrectionLevelEi'/>
+<fun r='_ZN5ZXing6Pdf4176Writer13setDimensionsEiiii'/>
+<fun r='_ZN5ZXing6Pdf4176Writer13setCompactionENS0_10CompactionE'/>
+<fun r='_ZN5ZXing6Pdf4176Writer10setCompactEb'/>
+<fun r='_ZN5ZXing6Pdf4176Writer11setEncodingENS_12CharacterSetE'/>
+<fun r='_ZNK5ZXing6Pdf4176Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<mbr r='ZXing::Pdf417::Writer::_margin' o='0' t='int'/>
+<mbr r='ZXing::Pdf417::Writer::_ecLevel' o='32' t='int'/>
+<mbr r='ZXing::Pdf417::Writer::_encoder' o='64' t='std::unique_ptr&lt;Encoder&gt;'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='130' c='_ZN5ZXing6Pdf4176WriterC1EOS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='141' c='_ZN5ZXing6Pdf4176Writer13setDimensionsEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='148' c='_ZN5ZXing6Pdf4176Writer13setCompactionENS0_10CompactionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='158' c='_ZN5ZXing6Pdf4176Writer10setCompactEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='168' c='_ZN5ZXing6Pdf4176Writer11setEncodingENS_12CharacterSetE'/>
+<size>16</size>
+<fun r='_ZNK5ZXing6Pdf4176Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<fun r='_ZN5ZXing6Pdf4176WriterC1Ev'/>
+<fun r='_ZN5ZXing6Pdf4176WriterC1EOS1_'/>
+<fun r='_ZN5ZXing6Pdf4176WriterD1Ev'/>
+<fun r='_ZN5ZXing6Pdf4176Writer13setDimensionsEiiii'/>
+<fun r='_ZN5ZXing6Pdf4176Writer13setCompactionENS0_10CompactionE'/>
+<fun r='_ZN5ZXing6Pdf4176Writer10setCompactEb'/>
+<fun r='_ZN5ZXing6Pdf4176Writer11setEncodingENS_12CharacterSetE'/>

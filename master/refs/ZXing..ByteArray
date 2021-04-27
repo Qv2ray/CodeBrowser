@@ -1,0 +1,164 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='337' c='_ZNK5ZXing8BitArray7toBytesEii'/>
+<inh f='include/c++/10/bits/stl_vector.h' l='389' c='std::vector'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ByteArray.h' l='26' ll='32'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.cpp' l='123' c='_ZNK5ZXing8BitArray7toBytesEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.cpp' l='125' c='_ZNK5ZXing8BitArray7toBytesEii'/>
+<size>24</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ByteArray.h' l='23'>/**
+	ByteArray is an extension of std::vector&lt;unsigned char&gt;.
+*/</doc>
+<fun r='_ZN5ZXing9ByteArrayC1Ev'/>
+<fun r='_ZN5ZXing9ByteArrayC1ESt16initializer_listIhE'/>
+<fun r='_ZN5ZXing9ByteArrayC1Ei'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.h' l='34'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitSource.h' l='44' c='_ZN5ZXing9BitSourceC1ERKNS_9ByteArrayE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='61' c='_ZNK5ZXing15LuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='71' c='_ZNK5ZXing15LuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='58' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiSt10shared_ptrIKNS_9ByteArrayEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='62' c='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='63' c='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='70'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='43' c='_ZN5ZXingL8MakeCopyEPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='45' c='_ZN5ZXingL8MakeCopyEPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='55' c='_ZN5ZXingL8MakeCopyERKNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='55' c='_ZN5ZXingL8MakeCopyERKNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='58' c='_ZN5ZXingL8MakeCopyERKNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='77' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='90' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiSt10shared_ptrIKNS_9ByteArrayEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='119' c='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='136' c='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='180' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='197' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='126' c='_ZNK5ZXing24GlobalHistogramBinarizer11getBlackRowEiRNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='161' c='_ZNK5ZXing24GlobalHistogramBinarizer13getPatternRowEiRSt6vectorItSaItEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='211' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='229' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='179' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='42' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='49' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.h' l='122' c='_ZNK5ZXing14ResultMetadata16getByteArrayListB5cxx11ENS0_3KeyE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.h' l='127' c='_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx114listINS_9ByteArrayESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='46' c='_ZN5ZXing6ResultC1EONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='49' c='_ZN5ZXing6ResultC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiNS_13BarcodeFormatEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='82' c='_ZNK5ZXing6Result8rawBytesEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='108'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='42'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='45'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='59' c='_ZN5ZXing13DecoderResultC1EONS_9ByteArrayEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='70' c='_ZNKR5ZXing13DecoderResult8rawBytesEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='71' c='_ZNO5ZXing13DecoderResult8rawBytesEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' c='_ZNKR5ZXing13DecoderResult12byteSegmentsB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' c='_ZNO5ZXing13DecoderResult12byteSegmentsB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' c='_ZNR5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' c='_ZNR5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' c='_ZNO5ZXing13DecoderResult15setByteSegmentsERKNSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' c='_ZNO5ZXing13DecoderResult15setByteSegmentsEONSt7__cxx114listINS_9ByteArrayESaIS3_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.cpp' l='26' c='_ZN5ZXing6ResultC1EONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.cpp' l='32' c='_ZN5ZXing6ResultC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiNS_13BarcodeFormatEONS_9ByteArrayE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='34' c='_ZNK5ZXing14ResultMetadata5Value15toByteArrayListB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='35' c='_ZNK5ZXing14ResultMetadata5Value15toByteArrayListB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='65'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='66' c='_ZN5ZXing14ResultMetadata18ByteArrayListValueC1ENSt7__cxx114listINS_9ByteArrayESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='67' c='_ZNK5ZXing14ResultMetadata18ByteArrayListValue15toByteArrayListB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='95' c='_ZNK5ZXing14ResultMetadata16getByteArrayListB5cxx11ENS0_3KeyE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='99' c='_ZNK5ZXing14ResultMetadata16getByteArrayListB5cxx11ENS0_3KeyE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.cpp' l='122' c='_ZN5ZXing14ResultMetadata3putENS0_3KeyERKNSt7__cxx114listINS_9ByteArrayESaIS4_EEE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='354' c='_ZN5ZXing5AztecL27ConvertBoolArrayToByteArrayERKSt6vectorIbSaIbEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='356' c='_ZN5ZXing5AztecL27ConvertBoolArrayToByteArrayERKSt6vectorIbSaIbEE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.h' l='31' c='_ZN5ZXing10DataMatrix15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.h' l='130' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='94' c='_ZN5ZXing10DataMatrix15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='104' c='_ZN5ZXing10DataMatrix15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='42' c='_ZNK5ZXing10DataMatrix9DataBlock9codewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='46' c='_ZN5ZXing10DataMatrix9DataBlock9codewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='60' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.h' l='64'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.cpp' l='27' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='460' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeBase256SegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS4_4listINS4118670'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='481' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeBase256SegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS4_4listINS4118670'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='498' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL6DecodeEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='504' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL6DecodeEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='570' c='_ZN5ZXing10DataMatrixL13CorrectErrorsERNS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='594' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='608' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='614' c='_ZN5ZXing10DataMatrix7Decoder6DecodeERKNS_9BitMatrixE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='27' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.h' l='39' c='_ZN5ZXing10DataMatrix9ECEncoder12EncodeECC200ERNS_9ByteArrayERKNS0_10SymbolInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='34'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='111' c='_ZN5ZXing10DataMatrixL14CreateECCBlockERNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='115' c='_ZN5ZXing10DataMatrixL14CreateECCBlockERNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='120' c='_ZN5ZXing10DataMatrixL14CreateECCBlockERNS_9ByteArrayEiiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECEncoder.cpp' l='139' c='_ZN5ZXing10DataMatrix9ECEncoder12EncodeECC200ERNS_9ByteArrayERKNS0_10SymbolInfoE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.h' l='35' c='_ZN5ZXing10DataMatrix16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.h' l='36' c='_ZN5ZXing10DataMatrix16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_11SymbolShapeEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='39'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMEncoderContext.h' l='85' c='_ZNK5ZXing10DataMatrix14EncoderContext9codewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='692' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='707' c='_ZN5ZXing10DataMatrix14EdifactEncoderL17EncodeToCodewordsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='877' c='_ZN5ZXing10DataMatrix16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='894' c='_ZN5ZXing10DataMatrix16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_11SymbolShapeEiiii'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCBitMatrixParser.h' l='33' c='_ZN5ZXing8MaxiCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCBitMatrixParser.cpp' l='63' c='_ZN5ZXing8MaxiCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCBitMatrixParser.cpp' l='65' c='_ZN5ZXing8MaxiCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='44' c='_ZN5ZXing8MaxiCodeL13CorrectErrorsERNS_9ByteArrayEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='138' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6GetBitEiRKNS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='144' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6GetIntERKNS_9ByteArrayES4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='144' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6GetIntERKNS_9ByteArrayES4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='154' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL12GetPostCode2ERKNS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='159' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL18GetPostCode2LengthERKNS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='163' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL12GetPostCode3B5cxx11ERKNS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='183' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL10GetCountryERKNS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='188' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL15GetServiceClassERKNS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='193' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL10GetMessageB5cxx11ERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='249' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6DecodeEONS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='285' c='_ZN5ZXing8MaxiCode7Decoder6DecodeERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='291' c='_ZN5ZXing8MaxiCode7Decoder6DecodeERKNS_9BitMatrixE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='209' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='314' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='342' c='_ZN5ZXing6Pdf417L14ByteCompactionEiRKSt6vectorIiSaIiEENS_12CharacterSetEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='748' c='_ZN5ZXing6Pdf41722DecodedBitStreamParser6DecodeERKSt6vectorIiSaIiEEi'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='50' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='136' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='146' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='43' c='_ZNK5ZXing6QRCode9DataBlock9codewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='47' c='_ZN5ZXing6QRCode9DataBlock9codewordsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='62' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='66'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='27' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='55' c='_ZN5ZXing6QRCodeL13CorrectErrorsERNS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='84' c='_ZN5ZXing6QRCodeL18DecodeHanziSegmentERNS_9BitSourceEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='117' c='_ZN5ZXing6QRCodeL18DecodeKanjiSegmentERNS_9BitSourceEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='141' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='148' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='310' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='314' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='427' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='441' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='447' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>24</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='320'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='321'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='382' c='_ZN5ZXing6QRCodeL15GenerateECBytesERKNS_9ByteArrayEiRS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='382' c='_ZN5ZXing6QRCodeL15GenerateECBytesERKNS_9ByteArrayEiRS1_'/>
+<size>24</size>

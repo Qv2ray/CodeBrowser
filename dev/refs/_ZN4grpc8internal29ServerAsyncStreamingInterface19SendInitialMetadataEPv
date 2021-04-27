@@ -1,0 +1,8 @@
+<dec f='include/grpcpp/impl/codegen/service_type.h' l='49' type='void grpc::internal::ServerAsyncStreamingInterface::SendInitialMetadata(void * tag)'/>
+<ovr f='include/grpcpp/impl/codegen/async_unary_call.h' l='213' c='_ZN4grpc25ServerAsyncResponseWriter19SendInitialMetadataEPv'/>
+<doc f='include/grpcpp/impl/codegen/service_type.h' l='43'>/// Request notification of the sending of initial metadata to the client.
+  /// Completion will be notified by \a tag on the associated completion
+  /// queue. This call is optional, but if it is used, it cannot be used
+  /// concurrently with or after the \a Finish method.
+  ///
+  /// \param[in] tag Tag identifying this request.</doc>

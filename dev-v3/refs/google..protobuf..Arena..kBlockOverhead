@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/arena.h' l='258' type='const size_t'/>
+<doc f='include/google/protobuf/arena.h' l='252'>// Block overhead.  Use this as a guide for how much to over-allocate the
+  // initial block if you want an allocation of size N to fit inside it.
+  //
+  // WARNING: if you allocate multiple objects, it is difficult to guarantee
+  // that a series of allocations will fit in the initial block, especially if
+  // Arena changes its alignment guarantees in the future!</doc>

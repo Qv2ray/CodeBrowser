@@ -1,0 +1,34 @@
+<def f='qv2ray/src/base/models/QvSettingsObject.hpp' l='181' ll='215'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='207' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1ERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='207' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectaSERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='207' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectaSERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='207' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1EOS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='207' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectaSEOS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='207' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectaSEOS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='209' c='_ZNK6Qv2ray4base6config18Qv2rayConfigObjecteqERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='211' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='211' c='_ZNK6Qv2ray4base6config18Qv2rayConfigObject6toJsonEv'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='58'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='151'/>
+<size>664</size>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::config_version' o='0' t='int'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::logLevel' o='32' t='int'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::autoStartId' o='64' t='Qv2ray::base::ConnectionGroupPair'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::lastConnectedId' o='192' t='Qv2ray::base::ConnectionGroupPair'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::autoStartBehavior' o='320' t='Qv2ray::base::config::Qv2rayAutoConnectionBehavior'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::uiConfig' o='384' t='Qv2ray::base::config::Qv2rayConfig_UI'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::pluginConfig' o='832' t='Qv2ray::base::config::Qv2rayConfig_Plugin'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::kernelConfig' o='960' t='Qv2ray::base::config::Qv2rayConfig_Kernel'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::updateConfig' o='1408' t='Qv2ray::base::config::Qv2rayConfig_Update'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::networkConfig' o='1536' t='Qv2ray::base::config::Qv2rayConfig_Network'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::inboundConfig' o='1984' t='Qv2ray::base::config::QvConfig_Inbounds'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::outboundConfig' o='3456' t='Qv2ray::base::config::QvConfig_Outbounds'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::advancedConfig' o='3488' t='Qv2ray::base::config::Qv2rayConfig_Advanced'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::defaultRouteConfig' o='3520' t='Qv2ray::base::GroupRoutingConfig'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1ERKS2_'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1EOS2_'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base6config18Qv2rayConfigObject6toJsonEv'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.cpp' l='15' c='_ZN6Qv2ray26Qv2rayApplicationInterfaceC1Ev'/>
+<size>664</size>

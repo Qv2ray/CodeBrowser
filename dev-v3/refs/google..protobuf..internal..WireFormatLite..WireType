@@ -1,0 +1,64 @@
+<def f='include/google/protobuf/wire_format_lite.h' l='104' ll='111'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='155' c='_ZN6google8protobuf8internal14WireFormatLite20WireTypeForFieldTypeENS2_9FieldTypeE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='170' c='_ZN6google8protobuf8internal14WireFormatLite7MakeTagEiNS2_8WireTypeE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='171' c='_ZN6google8protobuf8internal14WireFormatLite14GetTagWireTypeEj'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='374' c='_ZN6google8protobuf8internal14WireFormatLite8WriteTagEiNS2_8WireTypeEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='477' c='_ZN6google8protobuf8internal14WireFormatLite15WriteTagToArrayEiNS2_8WireTypeEPh'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='730'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='782' c='_ZN6google8protobuf8internal14WireFormatLite7MakeTagEiNS2_8WireTypeE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='786' c='_ZN6google8protobuf8internal14WireFormatLite14GetTagWireTypeEj'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='787' c='_ZN6google8protobuf8internal14WireFormatLite14GetTagWireTypeEj'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='457' c='_ZN6google8protobuf8internal14WireFormatLite8WriteTagEiNS2_8WireTypeEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='542' c='_ZN6google8protobuf8internal14WireFormatLite15WriteTagToArrayEiNS2_8WireTypeEPh'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='112'/>
+<use f='include/google/protobuf/map_type_handler.h' l='150'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<use f='include/google/protobuf/map_type_handler.h' l='210'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='89'>// -----------------------------------------------------------------
+  // Helper constants and functions related to the format.  These are
+  // mostly meant for internal and generated code to use.
+
+  // The wire format is composed of a sequence of tag/value pairs, each
+  // of which contains the value of one field (or one element of a repeated
+  // field).  Each tag is encoded as a varint.  The lower bits of the tag
+  // identify its wire type, which specifies the format of the data to follow.
+  // The rest of the bits contain the field number.  Each type of field (as
+  // declared by FieldDescriptor::Type, in descriptor.h) maps to one of
+  // these wire types.  Immediately following each tag is the field&apos;s value,
+  // encoded in the format specified by the wire type.  Because the tag
+  // identifies the encoding of this data, it is possible to skip
+  // unrecognized fields for forwards compatibility.</doc>
+<use f='include/google/protobuf/wire_format.h' l='73' c='_ZN6google8protobuf8internal10WireFormat16WireTypeForFieldEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/wire_format.h' l='77' c='_ZN6google8protobuf8internal10WireFormat20WireTypeForFieldTypeENS0_15FieldDescriptor4TypeE'/>
+<use f='include/google/protobuf/wire_format.h' l='276' c='_ZN6google8protobuf8internal10WireFormat16WireTypeForFieldEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/wire_format.h' l='285' c='_ZN6google8protobuf8internal10WireFormat20WireTypeForFieldTypeENS0_15FieldDescriptor4TypeE'/>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/socket_type.h' l='26' type='1'/>
+<doc f='include/x86_64-linux-gnu/bits/socket_type.h' l='26'>/* Sequenced, reliable, connection-based
+				   byte streams.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='63' macro='1' u='r' c='uv_pipe_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='185' macro='1' u='r' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='117' macro='1' u='r' c='uv__make_socketpair'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='975' macro='1' u='r' c='uv__handle_type'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='37' macro='1' u='r' c='new_socket'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='354' macro='1' u='r' c='uv_guess_handle'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='72' macro='1' u='r' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>

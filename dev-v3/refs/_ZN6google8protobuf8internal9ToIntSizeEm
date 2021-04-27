@@ -1,0 +1,12 @@
+<def f='include/google/protobuf/message_lite.h' l='88' ll='91' type='int google::protobuf::internal::ToIntSize(size_t size)'/>
+<use f='include/google/protobuf/message_lite.h' l='336' u='c' c='_ZNK6google8protobuf11MessageLite8ByteSizeEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='230' u='c' c='_ZNK6google8protobuf13RepeatedField22SpaceUsedExcludingSelfEv'/>
+<use f='include/google/protobuf/repeated_field.h' l='881' u='c' c='_ZNK6google8protobuf16RepeatedPtrField22SpaceUsedExcludingSelfEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='113' u='c' c='_ZNK6google8protobuf15UnknownFieldSet22SpaceUsedExcludingSelfEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='120' u='c' c='_ZNK6google8protobuf15UnknownFieldSet9SpaceUsedEv'/>
+<use f='include/google/protobuf/message.h' l='261' u='c' c='_ZNK6google8protobuf7Message9SpaceUsedEv'/>
+<use f='include/google/protobuf/message.h' l='435' u='c' c='_ZNK6google8protobuf10Reflection9SpaceUsedERKNS0_7MessageE'/>
+<use f='include/google/protobuf/extension_set.h' l='470' u='c' c='_ZNK6google8protobuf8internal12ExtensionSet20LazyMessageExtension8ByteSizeEv'/>
+<doc f='include/google/protobuf/message_lite.h' l='85'>// For cases where a legacy function returns an integer size.  We GOOGLE_DCHECK()
+// that the conversion will fit within an integer; if this is false then we
+// are losing information.</doc>

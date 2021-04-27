@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='888' type='void uv_freeaddrinfo(struct addrinfo * ai)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='223' ll='226' type='void uv_freeaddrinfo(struct addrinfo * ai)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='28' u='c' c='_ZN3uvw14GetAddrInfoReq16addrInfoCallbackEP16uv_getaddrinfo_siP8addrinfo'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='45' u='c' c='_ZN3uvw14GetAddrInfoReq16nodeAddrInfoSyncEPKcS2_P8addrinfo'/>

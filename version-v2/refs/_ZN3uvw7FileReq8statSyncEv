@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='627' type='std::pair&lt;bool, Stat&gt; uvw::FileReq::statSync()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='134' ll='138' type='std::pair&lt;bool, Stat&gt; uvw::FileReq::statSync()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='620'>/**
+     * @brief Sync [fstat](http://linux.die.net/man/2/fstat).
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * An initialized instance of Stat.
+     */</doc>

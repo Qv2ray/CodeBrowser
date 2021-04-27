@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='72' type='void uvw::PipeHandle::bind(std::string name)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='28' ll='30' type='void uvw::PipeHandle::bind(std::string name)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='64'>/**
+     * @brief bind Binds the pipe to a file path (Unix) or a name (Windows).
+     *
+     * Paths on Unix get truncated typically between 92 and 108 bytes.&lt;br/&gt;
+     * An ErrorEvent event is emitted in case of errors.
+     *
+     * @param name A valid file path.
+     */</doc>

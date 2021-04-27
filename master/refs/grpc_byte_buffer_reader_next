@@ -1,0 +1,4 @@
+<dec f='include/grpc/impl/codegen/byte_buffer.h' l='73' type='int grpc_byte_buffer_reader_next(grpc_byte_buffer_reader * reader, grpc_slice * slice)'/>
+<doc f='include/grpc/impl/codegen/byte_buffer.h' l='70'>/** Updates \a slice with the next piece of data from from \a reader and returns
+ * 1. Returns 0 at the end of the stream. Caller is responsible for calling
+ * grpc_slice_unref on the result. */</doc>

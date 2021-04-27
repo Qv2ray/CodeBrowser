@@ -1,0 +1,25 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='38' ll='73'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='38'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.cpp' l='19' c='_ZN3uvw12FsPollHandle13startCallbackEP12uv_fs_poll_siPK9uv_stat_tS5_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.cpp' l='19' c='_ZN3uvw12FsPollHandle13startCallbackEP12uv_fs_poll_siPK9uv_stat_tS5_'/>
+<size>216</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs_poll.h' l='29'>/**
+ * @brief The FsPollHandle handle.
+ *
+ * It allows the user to monitor a given path for changes. Unlike FsEventHandle
+ * handles, FsPollHandle handles use stat to detect when a file has changed so
+ * they can work on file systems where FsEventHandle handles can’t.
+ *
+ * To create a `FsPollHandle` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw12FsPollHandle13startCallbackEP12uv_fs_poll_siPK9uv_stat_tS5_'/>
+<fun r='_ZN3uvw12FsPollHandle4initEv'/>
+<fun r='_ZN3uvw12FsPollHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIjSt5ratioILl1ELl1000EEEE'/>
+<fun r='_ZN3uvw12FsPollHandle4stopEv'/>
+<fun r='_ZN3uvw12FsPollHandle4pathB5cxx11Ev'/>
+<fun r='_ZN3uvw12FsPollHandle13startCallbackEP12uv_fs_poll_siPK9uv_stat_tS5_'/>
+<fun r='_ZN3uvw12FsPollHandle4initEv'/>
+<fun r='_ZN3uvw12FsPollHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENSt6chrono8durationIjSt5ratioILl1ELl1000EEEE'/>
+<fun r='_ZN3uvw12FsPollHandle4stopEv'/>
+<fun r='_ZN3uvw12FsPollHandle4pathB5cxx11Ev'/>

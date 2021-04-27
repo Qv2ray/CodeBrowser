@@ -1,0 +1,9 @@
+<dec f='qv2ray/src/core/handler/ConfigHandler.hpp' l='108' type='bool Qv2ray::core::handler::QvConfigHandler::RemoveConnectionFromGroup(const Qv2ray::base::ConnectionId &amp; id, const Qv2ray::base::GroupId &amp; gid)'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='406' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<doc f='qv2ray/src/core/handler/ConfigHandler.hpp' l='106'>//
+        // Connection - Group binding</doc>
+<def f='qv2ray/src/core/handler/ConfigHandler.cpp' l='203' ll='243' type='bool Qv2ray::core::handler::QvConfigHandler::RemoveConnectionFromGroup(const Qv2ray::base::ConnectionId &amp; id, const Qv2ray::base::GroupId &amp; gid)'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='678' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler22CHUpdateSubscription_pERKNS_4base6IDTypeINS3_9__QvGroupEEERK10QByteArray'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='172' u='c' c='_ZN20ConnectionInfoWidget20on_deleteBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='89' u='c' c='_ZN12GroupManager30onRCMDeleteConnectionTriggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='610' u='c' c='_ZN10MainWindow35on_action_RCM_DeleteThese_triggeredEv'/>

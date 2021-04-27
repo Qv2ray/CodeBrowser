@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='666' type='static size_t google::protobuf::internal::WireFormatLite::Int32Size(google::protobuf::int32 value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='930' ll='932' type='static size_t google::protobuf::internal::WireFormatLite::Int32Size(google::protobuf::int32 value)'/>
+<doc f='include/google/protobuf/wire_format_lite_inl.h' l='928'>// ===================================================================</doc>
+<doc f='include/google/protobuf/wire_format_lite.h' l='662'>// Compute the byte size of a field.  The XxSize() functions do NOT include
+  // the tag, so you must also call TagSize().  (This is because, for repeated
+  // fields, you should only call TagSize() once and multiply it by the element
+  // count, but you may have to call XxSize() for each individual element.)</doc>

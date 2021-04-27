@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1362' type='int uv_fs_copyfile(uv_loop_t * loop, uv_fs_t * req, const char * path, const char * new_path, int flags, uv_fs_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2057' ll='2074' type='int uv_fs_copyfile(uv_loop_t * loop, uv_fs_t * req, const char * path, const char * new_path, int flags, uv_fs_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='418' u='a' c='_ZN3uvw5FsReq8copyfileENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details15UVCopyFileFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='424' u='a' c='_ZN3uvw5FsReq12copyfileSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_NS_5FlagsINS_7details15UVCopyFileFlagsEEE'/>

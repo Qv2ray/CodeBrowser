@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='882' type='void google::protobuf::io::CodedOutputStream::WriteVarint32SlowPath(google::protobuf::uint32 value)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1211' u='c' c='_ZN6google8protobuf2io17CodedOutputStream13WriteVarint32Ej'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='880'>// If this write might cross the end of the buffer, we compose the bytes first
+  // then use WriteRaw().</doc>

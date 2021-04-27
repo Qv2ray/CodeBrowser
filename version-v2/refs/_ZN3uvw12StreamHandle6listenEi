@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='195' ll='197' type='void uvw::StreamHandle::listen(int backlog = DEFAULT_BACKLOG)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='185'>/**
+     * @brief Starts listening for incoming connections.
+     *
+     * When a new incoming connection is received, a ListenEvent event is
+     * emitted.&lt;br/&gt;
+     * An ErrorEvent event will be emitted in case of errors.
+     *
+     * @param backlog Indicates the number of connections the kernel might
+     * queue, same as listen(2).
+     */</doc>

@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='190' type='int uv__nonblock_ioctl(int fd, int set)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='445' macro='1' u='c' c='uv__socket'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='570' ll='581' type='int uv__nonblock_ioctl(int fd, int set)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='153' macro='1' u='c' c='uv_pipe_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='81' macro='1' u='c' c='uv_poll_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='83' macro='1' u='r' c='uv_poll_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='83' u='r' c='uv_poll_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='230' macro='1' u='c' c='uv__process_open_stream'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1692' macro='1' u='c' c='uv_stream_set_blocking'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='273' macro='1' u='c' c='uv_tcp_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='204' macro='1' u='c' c='uv_tty_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='989' macro='1' u='c' c='uv_udp_open'/>

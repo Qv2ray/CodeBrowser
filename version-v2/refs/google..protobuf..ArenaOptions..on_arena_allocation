@@ -1,0 +1,9 @@
+<use f='include/google/protobuf/arena.h' l='151' u='w' c='_ZN6google8protobuf12ArenaOptionsC1Ev'/>
+<dec f='include/google/protobuf/arena.h' l='172' type='void (*)(const std::type_info *, google::protobuf::uint64, void *)'/>
+<use f='include/google/protobuf/arena.h' l='272' u='r' c='_ZN6google8protobuf5Arena4InitERKNS0_12ArenaOptionsE'/>
+<offset>576</offset>
+<doc f='include/google/protobuf/arena.h' l='167'>// type_info is promised to be static - its lifetime extends to
+  // match program&apos;s lifetime (It is given by typeid operator).
+  // Note: typeid(void) will be passed as allocated_type every time we
+  // intentionally want to avoid monitoring an allocation. (i.e. internal
+  // allocations for managing the arena)</doc>

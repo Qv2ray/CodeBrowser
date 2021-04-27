@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='42' type='int ZXing::LuminanceSource::width() const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='105' c='_ZNK5ZXing22GenericLuminanceSource5widthEv'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='39'>/**
+	* @return The width of the bitmap.
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='55' u='c' c='_ZNK5ZXing24GlobalHistogramBinarizer5widthEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='117' u='c' c='_ZNK5ZXing24GlobalHistogramBinarizer11getBlackRowEiRNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='155' u='c' c='_ZNK5ZXing24GlobalHistogramBinarizer13getPatternRowEiRSt6vectorItSaItEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='203' u='c' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='177' u='c' c='_ZN5ZXingL15InitBlackMatrixERKNS_15LuminanceSourceERSt10shared_ptrIKNS_9BitMatrixEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='194' u='c' c='_ZNK5ZXing15HybridBinarizer14getBlackMatrixEv'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='56' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource5widthEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='58' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource5widthEv'/>

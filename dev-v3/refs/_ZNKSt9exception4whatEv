@@ -1,0 +1,15 @@
+<dec f='include/c++/10/bits/exception.h' l='75' type='const char * std::exception::what() const'/>
+<ovr f='include/c++/10/optional' l='89' c='_ZNKSt19bad_optional_access4whatEv'/>
+<ovr f='include/c++/10/variant' l='1252' c='_ZNKSt18bad_variant_access4whatEv'/>
+<ovr f='include/c++/10/ext/concurrence.h' l='68' c='__gnu_cxx::__concurrence_lock_error::what'/>
+<ovr f='include/c++/10/ext/concurrence.h' l='76' c='__gnu_cxx::__concurrence_unlock_error::what'/>
+<ovr f='include/c++/10/ext/concurrence.h' l='84' c='__gnu_cxx::__concurrence_broadcast_error::what'/>
+<ovr f='include/c++/10/ext/concurrence.h' l='92' c='__gnu_cxx::__concurrence_wait_error::what'/>
+<doc f='include/c++/10/bits/exception.h' l='72'>/** Returns a C-style character string describing the general cause
+     *  of the current error.  */</doc>
+<use f='qv2ray/src/ui/widgets/widgets/RouteSettingsMatrix.cpp' l='132' u='c' c='_ZN25RouteSettingsMatrixWidget26on_importSchemeBtn_clickedEv'/>
+<use f='qv2ray/test/catch.hpp' l='10672' u='c' c='_ZNK5Catch27ExceptionTranslatorRegistry24translateActiveExceptionB5cxx11Ev'/>
+<ovr f='qv2ray/test/catch.hpp' l='10875' c='_ZNK5Catch18GeneratorException4whatEv'/>
+<use f='qv2ray/test/catch.hpp' l='11332' u='c' c='_ZNK5Catch8Matchers9Exception23ExceptionMessageMatcher5matchERKSt9exception'/>
+<use f='qv2ray/test/catch.hpp' l='13251' u='c' c='_ZN5Catch7SessionC1Ev'/>
+<use f='qv2ray/test/catch.hpp' l='13393' u='c' c='_ZN5Catch7Session11runInternalEv'/>

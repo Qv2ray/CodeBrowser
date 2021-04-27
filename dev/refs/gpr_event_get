@@ -1,0 +1,6 @@
+<dec f='include/grpc/support/sync.h' l='124' type='void * gpr_event_get(gpr_event * ev)'/>
+<doc f='include/grpc/support/sync.h' l='119'>/** Return the value set by gpr_event_set(ev, ...), or NULL if no such call has
+   completed.  If the result is non-NULL, all operations that occurred prior to
+   the gpr_event_set(ev, ...) set will be visible after this call returns.
+   Requires:  *ev initialized.  This operation is faster than acquiring a mutex
+   on most platforms.  */</doc>

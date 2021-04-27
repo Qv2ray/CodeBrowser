@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='709' type='static size_t google::protobuf::internal::WireFormatLite::LengthDelimitedSize(size_t length)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='953' u='c' c='_ZN6google8protobuf8internal14WireFormatLite10StringSizeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='956' u='c' c='_ZN6google8protobuf8internal14WireFormatLite9BytesSizeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='966' u='c' c='_ZN6google8protobuf8internal14WireFormatLite11MessageSizeERKT_'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='979' u='c' c='_ZN6google8protobuf8internal14WireFormatLite20MessageSizeNoVirtualERKT_'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='983' ll='990' type='static size_t google::protobuf::internal::WireFormatLite::LengthDelimitedSize(size_t length)'/>
+<use f='include/google/protobuf/map_type_handler.h' l='323' u='c' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE11ET_E13GetCachedSizeERKNS1_22MapWireFieldTypeTraitsILS4_11ES5_E20MapEntryAccessorTypeE'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='707'>// Given the length of data, calculate the byte size of the data on the
+  // wire if we encode the data as a length delimited field.</doc>

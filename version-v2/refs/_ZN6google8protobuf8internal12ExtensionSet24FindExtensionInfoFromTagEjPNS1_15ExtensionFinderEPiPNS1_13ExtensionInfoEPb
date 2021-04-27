@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/extension_set.h' l='666' type='bool google::protobuf::internal::ExtensionSet::FindExtensionInfoFromTag(google::protobuf::uint32 tag, google::protobuf::internal::ExtensionFinder * extension_finder, int * field_number, google::protobuf::internal::ExtensionInfo * extension, bool * was_packed_on_wire)'/>
+<doc f='include/google/protobuf/extension_set.h' l='662'>// Returns true and fills field_number and extension if extension is found.
+  // Note to support packed repeated field compatibility, it also fills whether
+  // the tag on wire is packed, which can be different from
+  // extension-&gt;is_packed (whether packed=true is specified).</doc>

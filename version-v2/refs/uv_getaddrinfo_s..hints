@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='878' macro='1' type='struct addrinfo *'/>
+<offset>960</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='106' u='r' c='uv__getaddrinfo_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='118' u='r' c='uv__getaddrinfo_done'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='119' u='r' c='uv__getaddrinfo_done'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='127' u='w' c='uv__getaddrinfo_done'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='187' u='w' c='uv_getaddrinfo'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='196' u='w' c='uv_getaddrinfo'/>

@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/resource.h' l='97' type='int setpriority(__priority_which_t __which, id_t __who, int __prio)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1423' u='c' c='uv_os_setpriority'/>
+<doc f='include/x86_64-linux-gnu/sys/resource.h' l='95'>/* Set the priority of all processes specified by WHICH and WHO (see above)
+   to PRIO.  Returns 0 on success, -1 on errors.  */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor.h' l='302' type='const google::protobuf::OneofDescriptor * google::protobuf::Descriptor::oneof_decl(int index) const'/>
+<def f='include/google/protobuf/descriptor.h' l='1847' macro='1' type='const google::protobuf::OneofDescriptor * google::protobuf::Descriptor::oneof_decl(int index) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='300'>// Get a oneof by index, where 0 &lt;= index &lt; oneof_decl_count().
+  // These are returned in the order they were defined in the .proto file.</doc>

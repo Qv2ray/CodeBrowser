@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1021' type='16'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1017'>/*
+   * Hide the subprocess window that would normally be created. This option is
+   * only meaningful on Windows systems. On Unix it is silently ignored.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='430' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='430' u='r' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='27'/>

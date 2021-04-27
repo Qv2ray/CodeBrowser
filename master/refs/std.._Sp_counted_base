@@ -1,0 +1,53 @@
+<def f='include/c++/10/bits/shared_ptr_base.h' l='116' ll='215'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='219' c='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='229' c='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='242' c='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='261' c='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='272' c='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='286' c='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='306' c='_ZNSt16_Sp_counted_base15_M_add_ref_copyEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='311' c='_ZNSt16_Sp_counted_base10_M_releaseEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='323' c='_ZNSt16_Sp_counted_base15_M_weak_add_refEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='328' c='_ZNSt16_Sp_counted_base15_M_weak_releaseEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='336' c='_ZNKSt16_Sp_counted_base16_M_get_use_countEv'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='371'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='441'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='527'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='746' c='_ZNSt14__shared_countaSERKSt14__shared_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='761' c='_ZNSt14__shared_count7_M_swapERSt14__shared_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='780' c='_ZNKSt14__shared_count7_M_lessERKSt14__shared_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='784' c='_ZNKSt14__shared_count7_M_lessERKSt12__weak_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='794'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='832' c='_ZNSt12__weak_countaSERKSt14__shared_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='844' c='_ZNSt12__weak_countaSERKSt12__weak_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='866' c='_ZNSt12__weak_count7_M_swapERSt12__weak_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='877' c='_ZNKSt12__weak_count7_M_lessERKSt12__weak_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='881' c='_ZNKSt12__weak_count7_M_lessERKSt14__shared_countIXT_EE'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='891'/>
+<fun r='_ZNSt16_Sp_counted_baseC1Ev'/>
+<fun r='_ZNSt16_Sp_counted_baseD1Ev'/>
+<fun r='_ZNSt16_Sp_counted_base10_M_disposeEv'/>
+<fun r='_ZNSt16_Sp_counted_base10_M_destroyEv'/>
+<fun r='_ZNSt16_Sp_counted_base14_M_get_deleterERKSt9type_info'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_add_ref_copyEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<fun r='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<fun r='_ZNSt16_Sp_counted_base10_M_releaseEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_weak_add_refEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_weak_releaseEv'/>
+<fun r='_ZNKSt16_Sp_counted_base16_M_get_use_countEv'/>
+<fun r='_ZNSt16_Sp_counted_baseC1ERKSt16_Sp_counted_baseIXT_EE'/>
+<fun r='_ZNSt16_Sp_counted_baseaSERKSt16_Sp_counted_baseIXT_EE'/>
+<mbr r='std::_Sp_counted_base::_M_use_count' t='_Atomic_word'/>
+<mbr r='std::_Sp_counted_base::_M_weak_count' t='_Atomic_word'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_add_ref_lockEv'/>
+<fun r='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<fun r='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<fun r='_ZNSt16_Sp_counted_base23_M_add_ref_lock_nothrowEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_add_ref_copyEv'/>
+<fun r='_ZNSt16_Sp_counted_base10_M_releaseEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_weak_add_refEv'/>
+<fun r='_ZNSt16_Sp_counted_base15_M_weak_releaseEv'/>
+<fun r='_ZNKSt16_Sp_counted_base16_M_get_use_countEv'/>

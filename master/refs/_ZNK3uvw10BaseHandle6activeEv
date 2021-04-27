@@ -1,0 +1,21 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='91' type='bool uvw::BaseHandle::active() const'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='114' c='_ZNK3uvw6Handle6activeEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='72'>/**
+     * @brief Checks if the handle is active.
+     *
+     * What _active_ means depends on the type of handle:
+     *
+     * * An AsyncHandle handle is always active and cannot be deactivated,
+     * except by closing it with uv_close().
+     * * A PipeHandle, TCPHandle, UDPHandle, etc. handle - basically any handle
+     * that deals with I/O - is active when it is doing something that involves
+     * I/O, like reading, writing, connecting, accepting new connections, etc.
+     * * A CheckHandle, IdleHandle, TimerHandle, etc. handle is active when it
+     * has been started with a call to `start()`.
+     *
+     * Rule of thumb: if a handle of type `FooHandle` has a `start()` member
+     * method, then it’s active from the moment that method is called. Likewise,
+     * `stop()` deactivates the handle again.
+     *
+     * @return True if the handle is active, false otherwise.
+     */</doc>

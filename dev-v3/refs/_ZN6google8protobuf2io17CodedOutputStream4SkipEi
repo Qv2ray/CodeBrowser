@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='700' type='bool google::protobuf::io::CodedOutputStream::Skip(int count)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='697'>// Skips a number of bytes, leaving the bytes unmodified in the underlying
+  // buffer.  Returns false if an underlying write error occurs.  This is
+  // mainly useful with GetDirectBufferPointer().</doc>

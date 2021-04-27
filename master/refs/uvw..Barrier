@@ -1,0 +1,19 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/underlying_type.hpp' l='20' c='uvw::UnderlyingType'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='347' ll='358'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='347'/>
+<size>56</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='338'>/**
+ * @brief The Barrier wrapper.
+ *
+ * To create a `Barrier` through a `Loop`, arguments follow:
+ *
+ * * An unsigned integer that specifies the number of threads that must call
+ * `wait` before any of them successfully return from the call. The value
+ * specified must be greater than zero.
+ */</doc>
+<fun r='_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<fun r='_ZN3uvw7BarrierD1Ev'/>
+<fun r='_ZN3uvw7Barrier4waitEv'/>
+<fun r='_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj'/>
+<fun r='_ZN3uvw7BarrierD1Ev'/>
+<fun r='_ZN3uvw7Barrier4waitEv'/>

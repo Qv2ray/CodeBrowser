@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='203' type='void uv__io_close(uv_loop_t * loop, uv__io_t * w)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='934' ll='941' type='void uv__io_close(uv_loop_t * loop, uv__io_t * w)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1658' u='c' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='91' u='c' c='uv__udp_close'/>

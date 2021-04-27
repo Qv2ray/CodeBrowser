@@ -1,0 +1,63 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='81' ll='201'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='84' c='_ZN4grpc12WriteOptionsC1ERKS0_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='96' c='_ZN4grpc12WriteOptions18set_no_compressionEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='104' c='_ZN4grpc12WriteOptions20clear_no_compressionEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='121' c='_ZN4grpc12WriteOptions15set_buffer_hintEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='130' c='_ZN4grpc12WriteOptions17clear_buffer_hintEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='143' c='_ZN4grpc12WriteOptions10set_corkedEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='148' c='_ZN4grpc12WriteOptions12clear_corkedEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='160' c='_ZN4grpc12WriteOptions16set_last_messageEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='167' c='_ZN4grpc12WriteOptions18clear_last_messageEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='174' c='_ZN4grpc12WriteOptions17set_write_throughEv'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='187' c='_ZN4grpc12WriteOptionsaSERKS0_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='187' c='_ZN4grpc12WriteOptionsaSERKS0_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='274' c='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='294'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='298' c='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='315' c='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='139' c='_ZN4grpc8internal20AsyncWriterInterface5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='159' c='_ZN4grpc8internal20AsyncWriterInterface9WriteLastERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='392' c='_ZN4grpc17ClientAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='569' c='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='839' c='_ZN4grpc26ServerAsyncWriterInterface14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='879' c='_ZN4grpc17ServerAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='901' c='_ZN4grpc17ServerAsyncWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1002' c='_ZN4grpc32ServerAsyncReaderWriterInterface14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1051' c='_ZN4grpc23ServerAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1072' c='_ZN4grpc23ServerAsyncReaderWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='116' c='_ZN4grpc8internal15WriterInterface5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='124' c='_ZN4grpc8internal15WriterInterface5WriteERKT_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='140' c='_ZN4grpc8internal15WriterInterface9WriteLastERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='319' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='490' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='654' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='733' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='791' c='_ZN4grpc18ServerReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='853' c='_ZN4grpc19ServerUnaryStreamer5WriteERKT0_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='918' c='_ZN4grpc19ServerSplitStreamer5WriteERKT0_NS_12WriteOptionsE'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/call.h' l='80'>/// Per-message write options.</doc>
+<fun r='_ZN4grpc12WriteOptionsC1Ev'/>
+<fun r='_ZN4grpc12WriteOptionsC1ERKS0_'/>
+<fun r='_ZN4grpc12WriteOptions5ClearEv'/>
+<fun r='_ZNK4grpc12WriteOptions5flagsEv'/>
+<fun r='_ZN4grpc12WriteOptions18set_no_compressionEv'/>
+<fun r='_ZN4grpc12WriteOptions20clear_no_compressionEv'/>
+<fun r='_ZNK4grpc12WriteOptions18get_no_compressionEv'/>
+<fun r='_ZN4grpc12WriteOptions15set_buffer_hintEv'/>
+<fun r='_ZN4grpc12WriteOptions17clear_buffer_hintEv'/>
+<fun r='_ZNK4grpc12WriteOptions15get_buffer_hintEv'/>
+<fun r='_ZN4grpc12WriteOptions10set_corkedEv'/>
+<fun r='_ZN4grpc12WriteOptions12clear_corkedEv'/>
+<fun r='_ZNK4grpc12WriteOptions9is_corkedEv'/>
+<fun r='_ZN4grpc12WriteOptions16set_last_messageEv'/>
+<fun r='_ZN4grpc12WriteOptions18clear_last_messageEv'/>
+<fun r='_ZN4grpc12WriteOptions17set_write_throughEv'/>
+<fun r='_ZNK4grpc12WriteOptions16is_write_throughEv'/>
+<fun r='_ZNK4grpc12WriteOptions15is_last_messageEv'/>
+<fun r='_ZN4grpc12WriteOptionsaSERKS0_'/>
+<fun r='_ZN4grpc12WriteOptions6SetBitEj'/>
+<fun r='_ZN4grpc12WriteOptions8ClearBitEj'/>
+<fun r='_ZNK4grpc12WriteOptions6GetBitEj'/>
+<mbr r='grpc::WriteOptions::flags_' o='0' t='uint32_t'/>
+<mbr r='grpc::WriteOptions::last_message_' o='32' t='bool'/>

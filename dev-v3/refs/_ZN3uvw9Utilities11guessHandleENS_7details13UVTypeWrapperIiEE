@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='646' type='static uvw::HandleType uvw::Utilities::guessHandle(uvw::FileHandle file)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='628'>/**
+     * @brief Gets the type of the stream to be used with the given descriptor.
+     *
+     * Returns the type of stream that should be used with a given file
+     * descriptor.&lt;br/&gt;
+     * Usually this will be used during initialization to guess the type of the
+     * stdio streams.
+     *
+     * @param file A valid descriptor.
+     * @return One of the following types:
+     *
+     * * `HandleType::UNKNOWN`
+     * * `HandleType::PIPE`
+     * * `HandleType::TCP`
+     * * `HandleType::TTY`
+     * * `HandleType::UDP`
+     * * `HandleType::FILE`
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='185' ll='188' type='static uvw::HandleType uvw::Utilities::guessHandle(uvw::FileHandle file)'/>

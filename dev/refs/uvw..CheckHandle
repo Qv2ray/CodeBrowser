@@ -1,0 +1,23 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='275' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/check.h' l='29' ll='53'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/check.h' l='29'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/check.cpp' l='12' c='_ZN3uvw11CheckHandle13startCallbackEP10uv_check_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/check.cpp' l='12' c='_ZN3uvw11CheckHandle13startCallbackEP10uv_check_s'/>
+<size>224</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/check.h' l='21'>/**
+ * @brief The CheckHandle handle.
+ *
+ * Check handles will emit a CheckEvent event once per loop iteration, right
+ * after polling for I/O.
+ *
+ * To create a `CheckHandle` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw11CheckHandle13startCallbackEP10uv_check_s'/>
+<fun r='_ZN3uvw11CheckHandle4initEv'/>
+<fun r='_ZN3uvw11CheckHandle5startEv'/>
+<fun r='_ZN3uvw11CheckHandle4stopEv'/>
+<fun r='_ZN3uvw11CheckHandle13startCallbackEP10uv_check_s'/>
+<fun r='_ZN3uvw11CheckHandle4initEv'/>
+<fun r='_ZN3uvw11CheckHandle5startEv'/>
+<fun r='_ZN3uvw11CheckHandle4stopEv'/>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='460' type='int uv_is_active(const uv_handle_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='75' u='c' c='uv_fs_poll_start'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='119' u='c' c='uv_fs_poll_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='129' u='c' c='uv_fs_poll_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='142' u='c' c='uv_fs_poll_getpath'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='194' u='c' c='poll_cb'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='220' u='c' c='poll_cb'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='422' ll='424' type='int uv_is_active(const uv_handle_t * handle)'/>

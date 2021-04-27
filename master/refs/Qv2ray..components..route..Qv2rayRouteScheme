@@ -1,0 +1,16 @@
+<inh f='qv2ray/src/base/models/QvCoreSettings.hpp' l='6' c='Qv2ray::base::config::QvConfig_Route'/>
+<def f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='10' ll='30'/>
+<use f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='29' c='_ZN6Qv2ray10components5route17Qv2rayRouteScheme8fromJsonERK10QJsonValue'/>
+<size>80</size>
+<doc f='qv2ray/src/components/route/RouteSchemeIO.hpp' l='6'>/**
+     * @brief The Qv2rayRouteScheme struct
+     * @author DuckSoft &lt;realducksoft@gmail.com&gt;
+     */</doc>
+<mbr r='Qv2ray::components::route::Qv2rayRouteScheme::name' o='448' t='QString'/>
+<mbr r='Qv2ray::components::route::Qv2rayRouteScheme::author' o='512' t='QString'/>
+<mbr r='Qv2ray::components::route::Qv2rayRouteScheme::description' o='576' t='QString'/>
+<fun r='_ZN6Qv2ray10components5route17Qv2rayRouteScheme8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray10components5route17Qv2rayRouteScheme8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray10components5route17Qv2rayRouteScheme6toJsonEv'/>
+<use f='qv2ray/src/ui/widgets/RouteSettingsMatrix.cpp' l='169' c='_ZN25RouteSettingsMatrixWidget26on_exportSchemeBtn_clickedEv'/>
+<size>80</size>

@@ -1,0 +1,8 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='330'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='323'>/** String defining the optimization target for a channel.
+    Can be: &quot;latency&quot;    - attempt to minimize latency at the cost of throughput
+            &quot;blend&quot;      - try to balance latency and throughput
+            &quot;throughput&quot; - attempt to maximize throughput at the expense of
+                           latency
+    Defaults to &quot;blend&quot;. In the current implementation &quot;blend&quot; is equivalent to
+    &quot;latency&quot;. */</doc>

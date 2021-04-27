@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='336'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='331'>/** If set to zero, disables retry behavior. Otherwise, transparent retries
+    are enabled for all RPCs, and configurable retries are enabled when they
+    are configured via the service config. For details, see:
+      https://github.com/grpc/proposal/blob/master/A6-client-retries.md
+ */</doc>

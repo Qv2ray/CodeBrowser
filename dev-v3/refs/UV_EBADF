@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='184' macro='1' type='-9'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='782' u='r' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='334' u='r' c='uv_pipe_chmod'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='50' c='uv__poll_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='851' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1408' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1424' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='180' macro='1' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='191' macro='1' c='uv_err_name'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='203' macro='1' c='uv_strerror_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='214' macro='1' c='uv_strerror'/>

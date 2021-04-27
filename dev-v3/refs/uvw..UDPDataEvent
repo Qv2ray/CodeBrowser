@@ -1,0 +1,15 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='32' ll='39'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='104' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='109' c='_ZN3uvw9UDPHandle12recvCallbackEP8uv_udp_slPK8uv_buf_tPK8sockaddrj'/>
+<size>64</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='27'>/**
+ * @brief UDPDataEvent event.
+ *
+ * It will be emitted by UDPHandle according with its functionalities.
+ */</doc>
+<fun r='_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb'/>
+<mbr r='uvw::UDPDataEvent::data' o='0' t='std::unique_ptr&lt;char []&gt;'/>
+<mbr r='uvw::UDPDataEvent::length' o='64' t='std::size_t'/>
+<mbr r='uvw::UDPDataEvent::sender' o='128' t='uvw::Addr'/>
+<mbr r='uvw::UDPDataEvent::partial' o='448' t='bool'/>
+<fun r='_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb'/>

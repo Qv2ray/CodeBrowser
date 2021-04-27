@@ -1,0 +1,58 @@
+<inh f='qv2ray/3rdparty/SingleApplication/singleapplication.h' l='42' c='SingleApplication'/>
+<def f='qv2ray/src/Qv2rayApplication.hpp' l='72' ll='120'/>
+<use f='/qv2ray_autogen/UVLADIE3JM/moc_Qv2rayApplication.cpp' l='70' c='_ZN6Qv2ray17Qv2rayApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>48</size>
+<smbr r='Qv2ray::Qv2rayApplication::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray17Qv2rayApplication10metaObjectEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication2trEPKcS2_i'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication6trUtf8EPKcS2_i'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication15QuitApplicationEi'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication13PreInitializeEiPPc'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplicationC1ERiPPc'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11SetupQv2rayEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication33FindAndCreateInitialConfigurationEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication17LoadConfigurationEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication25InitializeGlobalVariablesEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication9RunQv2rayEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11GetTrayIconEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11showMessageERK7QStringRK5QIconi'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11showMessageERK7QStringN15QSystemTrayIcon11MessageIconEi'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication15aboutToQuitSlotEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication17onMessageReceivedEj10QByteArray'/>
+<mbr r='Qv2ray::Qv2rayApplication::hTray' o='192' t='QSystemTrayIcon *'/>
+<mbr r='Qv2ray::Qv2rayApplication::mainWindow' o='256' t='MainWindow *'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication16ParseCommandLineEP7QStringRK11QStringList'/>
+<mbr r='Qv2ray::Qv2rayApplication::initialized' o='320' t='bool'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::Qv2rayApplication::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray17Qv2rayApplication10metaObjectEv'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray17Qv2rayApplication11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/main.cpp' l='119' macro='1' c='_Z13signalHandleri'/>
+<use f='qv2ray/src/main.cpp' l='132' c='_Z26RunQv2rayApplicationScopediPPc'/>
+<size>48</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='43' macro='1' c='_ZN10MainWindow17updateColorSchemeEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='172' macro='1' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='198' macro='1' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='199' macro='1' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='225' macro='1' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='240' macro='1' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='243' macro='1' c='_ZN10MainWindowC1EP7QWidget'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='528' macro='1' c='_ZN10MainWindow23on_actionExit_triggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='660' macro='1' c='_ZN10MainWindow14OnDisconnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='669' macro='1' c='_ZN10MainWindow14OnDisconnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='671' macro='1' c='_ZN10MainWindow14OnDisconnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='684' macro='1' c='_ZN10MainWindow11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='696' macro='1' c='_ZN10MainWindow11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='698' macro='1' c='_ZN10MainWindow11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='829' macro='1' c='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeE5QPairIS7_IllES7_IyyEEE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='1052' macro='1' c='_ZN10MainWindow41on_action_RCM_SetAutoConnection_triggeredEv'/>
+<size>48</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow_extra.cpp' l='36' macro='1' c='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow_extra.cpp' l='39' macro='1' c='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow_extra.cpp' l='52' macro='1' c='_ZN10MainWindow18MWClearSystemProxyEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow_extra.cpp' l='55' macro='1' c='_ZN10MainWindow18MWClearSystemProxyEv'/>
+<size>48</size>

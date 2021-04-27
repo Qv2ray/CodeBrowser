@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='66' ll='69' type='void ZXing::ImageView::ImageView(const uint8_t * data, int width, int height, ZXing::ImageFormat format, int rowStride = 0, int pixStride = 0)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='56'>/**
+	 * ImageView contructor
+	 *
+	 * @param data  pointer to image buffer
+	 * @param width  image width in pixels
+	 * @param height  image height in pixels
+	 * @param format  image/pixel format
+	 * @param rowStride  optional row stride in bytes, default is width * pixStride
+	 * @param pixStride  optional pixel stride in bytes, default is calculated from format
+	 */</doc>
+<use f='qv2ray/src/ui/common/QRCodeHelper.cpp' l='38' u='c' c='_ZN6Qv2ray2ui12DecodeQRCodeERK6QImage'/>

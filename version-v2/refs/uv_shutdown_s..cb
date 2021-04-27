@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='422' type='uv_shutdown_cb'/>
+<offset>576</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='478' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='705' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='706' u='r' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1276' u='w' c='uv_shutdown'/>

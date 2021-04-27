@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/descriptor.h' l='619' type='int google::protobuf::FieldDescriptor::index() const'/>
+<def f='include/google/protobuf/descriptor.h' l='2030' ll='2038' type='int google::protobuf::FieldDescriptor::index() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='615'>// message_type()-&gt;options().map_entry()
+
+  // Index of this field within the message&apos;s field array, or the file or
+  // extension scope&apos;s extensions array.</doc>
+<doc f='include/google/protobuf/descriptor.h' l='2028'>// To save space, index() is computed by looking at the descriptor&apos;s position
+// in the parent&apos;s array of children.</doc>
+<use f='include/google/protobuf/generated_message_reflection.h' l='137' u='c' c='_ZNK6google8protobuf8internal16ReflectionSchema22GetFieldOffsetNonOneofEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='159' u='c' c='_ZNK6google8protobuf8internal16ReflectionSchema14IsFieldInlinedEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='174' u='c' c='_ZNK6google8protobuf8internal16ReflectionSchema11HasBitIndexEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='212' u='c' c='_ZNK6google8protobuf8internal16ReflectionSchema15GetFieldDefaultEPKNS0_15FieldDescriptorE'/>

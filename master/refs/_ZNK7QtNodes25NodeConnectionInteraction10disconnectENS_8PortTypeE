@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='34' type='bool QtNodes::NodeConnectionInteraction::disconnect(QtNodes::PortType portToDisconnect) const'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='30'>/// 1) Node and Connection should be already connected
+        /// 2) If so, clear Connection entry in the NodeState
+        /// 3) Propagate invalid data to IN node
+        /// 4) Set Connection end to &apos;requiring a port&apos;</doc>
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='97' ll='110' type='bool QtNodes::NodeConnectionInteraction::disconnect(QtNodes::PortType portToDisconnect) const'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='94'>/// 1) Node and Connection should be already connected
+/// 2) If so, clear Connection entry in the NodeState
+/// 3) Set Connection end to &apos;requiring a port&apos;</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='171' u='c' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>

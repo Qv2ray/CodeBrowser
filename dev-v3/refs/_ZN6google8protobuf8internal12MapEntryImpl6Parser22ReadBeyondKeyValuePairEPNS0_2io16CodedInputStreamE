@@ -1,0 +1,5 @@
+<use f='include/google/protobuf/map_entry_lite.h' l='371' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<def f='include/google/protobuf/map_entry_lite.h' l='407' ll='427' type='bool google::protobuf::internal::MapEntryImpl::Parser::ReadBeyondKeyValuePair(::google::protobuf::io::CodedInputStream * input)'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='404'>// After reading a key and value successfully, and inserting that data
+    // into map_, we are not at the end of the input.  This is unusual, but
+    // allowed by the spec.</doc>

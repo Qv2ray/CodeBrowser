@@ -1,0 +1,138 @@
+<use f='qv2ray/src/Qv2rayApplication.hpp' l='117'/>
+<inh f='/qv2ray_autogen/include/ui_w_MainWindow.h' l='454' c='Ui::MainWindow'/>
+<def f='qv2ray/src/ui/windows/w_MainWindow.hpp' l='24' ll='174'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='157' c='_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='185' c='_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='192' c='_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='199' c='_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='253' c='_ZNK10MainWindow15StartConnectionEv'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='259' c='_ZNK10MainWindow14StopConnectionEv'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_MainWindow.cpp' l='265' c='_ZNK10MainWindow17RestartConnectionEv'/>
+<size>760</size>
+<smbr r='MainWindow::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10MainWindow10metaObjectEv'/>
+<fun r='_ZN10MainWindow11qt_metacastEPKc'/>
+<fun r='_ZN10MainWindow11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10MainWindow2trEPKcS1_i'/>
+<fun r='_ZN10MainWindow6trUtf8EPKcS1_i'/>
+<fun r='_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10MainWindowC1EP7QWidget'/>
+<fun r='_ZN10MainWindowD1Ev'/>
+<fun r='_ZN10MainWindow14ProcessCommandE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZNK10MainWindow15StartConnectionEv'/>
+<fun r='_ZNK10MainWindow14StopConnectionEv'/>
+<fun r='_ZNK10MainWindow17RestartConnectionEv'/>
+<fun r='_ZN10MainWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN10MainWindow16on_activatedTrayEN15QSystemTrayIcon16ActivationReasonE'/>
+<fun r='_ZN10MainWindow25on_preferencesBtn_clickedEv'/>
+<fun r='_ZN10MainWindow25on_clearlogButton_clickedEv'/>
+<fun r='_ZN10MainWindow50on_connectionListWidget_customContextMenuRequestedERK6QPoint'/>
+<fun r='_ZN10MainWindow29on_importConfigButton_clickedEv'/>
+<fun r='_ZN10MainWindow21on_subsButton_clickedEv'/>
+<fun r='_ZN10MainWindow41on_connectionListWidget_itemDoubleClickedEP15QTreeWidgetItemi'/>
+<fun r='_ZN10MainWindow33on_connectionFilterTxt_textEditedERK7QString'/>
+<fun r='_ZN10MainWindow35on_connectionListWidget_itemClickedEP15QTreeWidgetItemi'/>
+<fun r='_ZN10MainWindow20on_locateBtn_clickedEv'/>
+<fun r='_ZN10MainWindow29on_chartVisibilityBtn_clickedEv'/>
+<fun r='_ZN10MainWindow27on_logVisibilityBtn_clickedEv'/>
+<fun r='_ZN10MainWindow24on_clearChartBtn_clickedEv'/>
+<fun r='_ZN10MainWindow42on_connectionListWidget_currentItemChangedEP15QTreeWidgetItemS1_'/>
+<fun r='_ZN10MainWindow31on_masterLogBrowser_textChangedEv'/>
+<fun r='_ZN10MainWindow21on_pluginsBtn_clickedEv'/>
+<fun r='_ZN10MainWindow28on_collapseGroupsBtn_clickedEv'/>
+<fun r='_ZN10MainWindow23on_actionExit_triggeredEv'/>
+<fun r='_ZN10MainWindow29on_action_StartThis_triggeredEv'/>
+<fun r='_ZN10MainWindow41on_action_RCM_SetAutoConnection_triggeredEv'/>
+<fun r='_ZN10MainWindow32on_action_RCM_EditThis_triggeredEv'/>
+<fun r='_ZN10MainWindow34on_action_RCM_EditAsJson_triggeredEv'/>
+<fun r='_ZN10MainWindow37on_action_RCM_EditAsComplex_triggeredEv'/>
+<fun r='_ZN10MainWindow42on_action_RCM_UpdateSubscription_triggeredEv'/>
+<fun r='_ZN10MainWindow35on_action_RCM_LatencyTest_triggeredEv'/>
+<fun r='_ZN10MainWindow34on_action_RCM_RenameThis_triggeredEv'/>
+<fun r='_ZN10MainWindow35on_action_RCM_DeleteThese_triggeredEv'/>
+<fun r='_ZN10MainWindow38on_action_RCM_DuplicateThese_triggeredEv'/>
+<fun r='_ZN10MainWindow34on_action_RCM_ClearUsage_triggeredEv'/>
+<fun r='_ZN10MainWindow34on_action_RCM_tovCoreLog_triggeredEv'/>
+<fun r='_ZN10MainWindow31on_action_RCM_toQvLog_triggeredEv'/>
+<fun r='_ZN10MainWindow32OnConnectionWidgetFocusRequestedEPK20ConnectionItemWidget'/>
+<fun r='_ZN10MainWindow16ToggleVisibilityEv'/>
+<fun r='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<fun r='_ZN10MainWindow19OnEditJsonRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<fun r='_ZN10MainWindow11OnConnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN10MainWindow14OnDisconnectedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN10MainWindow16OnStatsAvailableERKN6Qv2ray4base19ConnectionGroupPairERK4QMapINS1_14StatisticsTypeE5QPairIS7_IllES7_IyyEEE'/>
+<fun r='_ZN10MainWindow19OnVCoreLogAvailableERKN6Qv2ray4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN10MainWindow19OnConnectionCreatedERKN6Qv2ray4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN10MainWindow19OnConnectionDeletedERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN10MainWindow27OnConnectionLinkedWithGroupERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN10MainWindow14OnGroupCreatedERKN6Qv2ray4base6IDTypeINS1_9__QvGroupEEERK7QString'/>
+<fun r='_ZN10MainWindow14OnGroupDeletedERKN6Qv2ray4base6IDTypeINS1_9__QvGroupEEERK5QListINS2_INS1_14__QvConnectionEEEE'/>
+<fun r='_ZN10MainWindow18SortConnectionListE11MW_ITEM_COLb'/>
+<fun r='_ZN10MainWindow26ReloadRecentConnectionListEv'/>
+<fun r='_ZN10MainWindow34OnRecentConnectionsMenuReadyToShowEv'/>
+<fun r='_ZN10MainWindow26OnLogScrollbarValueChangedEi'/>
+<fun r='_ZN10MainWindow10timerEventEP11QTimerEvent'/>
+<fun r='_ZN10MainWindow13keyPressEventEP9QKeyEvent'/>
+<fun r='_ZN10MainWindow15keyReleaseEventEP9QKeyEvent'/>
+<fun r='_ZN10MainWindow10closeEventEP11QCloseEvent'/>
+<mbr r='MainWindow::groupNodes' o='3264' t='QHash&lt;Qv2ray::base::GroupId, std::shared_ptr&lt;QTreeWidgetItem&gt;&gt;'/>
+<mbr r='MainWindow::connectionNodes' o='3328' t='QHash&lt;Qv2ray::base::ConnectionGroupPair, std::shared_ptr&lt;QTreeWidgetItem&gt;&gt;'/>
+<mbr r='MainWindow::speedChartWidget' o='3392' t='SpeedWidget *'/>
+<mbr r='MainWindow::vCoreLogHighlighter' o='3456' t='Qv2ray::ui::SyntaxHighlighter *'/>
+<mbr r='MainWindow::infoWidget' o='3520' t='ConnectionInfoWidget *'/>
+<mbr r='MainWindow::tray_RootMenu' o='3584' t='QMenu *'/>
+<mbr r='MainWindow::tray_SystemProxyMenu' o='3648' t='QMenu *'/>
+<mbr r='MainWindow::tray_RecentConnectionsMenu' o='3712' t='QMenu *'/>
+<mbr r='MainWindow::tray_ClearRecentConnectionsAction' o='3776' t='QAction *'/>
+<mbr r='MainWindow::tray_action_ToggleVisibility' o='3840' t='QAction *'/>
+<mbr r='MainWindow::tray_action_Preferences' o='3904' t='QAction *'/>
+<mbr r='MainWindow::tray_action_Quit' o='3968' t='QAction *'/>
+<mbr r='MainWindow::tray_action_Start' o='4032' t='QAction *'/>
+<mbr r='MainWindow::tray_action_Restart' o='4096' t='QAction *'/>
+<mbr r='MainWindow::tray_action_Stop' o='4160' t='QAction *'/>
+<mbr r='MainWindow::tray_action_SetSystemProxy' o='4224' t='QAction *'/>
+<mbr r='MainWindow::tray_action_ClearSystemProxy' o='4288' t='QAction *'/>
+<mbr r='MainWindow::connectionListRCM_Menu' o='4352' t='QMenu *'/>
+<mbr r='MainWindow::action_RCM_Start' o='4416' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_SetAutoConnection' o='4480' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_UpdateSubscription' o='4544' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_Edit' o='4608' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_EditJson' o='4672' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_EditComplex' o='4736' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_Rename' o='4800' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_Duplicate' o='4864' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_LatencyTest' o='4928' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_ClearUsage' o='4992' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_Delete' o='5056' t='QAction *'/>
+<mbr r='MainWindow::sortMenu' o='5120' t='QMenu *'/>
+<mbr r='MainWindow::sortAction_SortByName_Asc' o='5184' t='QAction *'/>
+<mbr r='MainWindow::sortAction_SortByName_Dsc' o='5248' t='QAction *'/>
+<mbr r='MainWindow::sortAction_SortByPing_Asc' o='5312' t='QAction *'/>
+<mbr r='MainWindow::sortAction_SortByPing_Dsc' o='5376' t='QAction *'/>
+<mbr r='MainWindow::sortAction_SortByData_Asc' o='5440' t='QAction *'/>
+<mbr r='MainWindow::sortAction_SortByData_Dsc' o='5504' t='QAction *'/>
+<mbr r='MainWindow::vCoreLogDocument' o='5568' t='QTextDocument *'/>
+<mbr r='MainWindow::qvLogDocument' o='5632' t='QTextDocument *'/>
+<mbr r='MainWindow::qvLogTimerId' o='5696' t='int'/>
+<mbr r='MainWindow::qvLogAutoScoll' o='5728' t='bool'/>
+<mbr r='MainWindow::logRCM_Menu' o='5760' t='QMenu *'/>
+<mbr r='MainWindow::action_RCM_tovCoreLog' o='5824' t='QAction *'/>
+<mbr r='MainWindow::action_RCM_toQvLog' o='5888' t='QAction *'/>
+<mbr r='MainWindow::lastConnectedIdentifier' o='5952' t='Qv2ray::base::ConnectionGroupPair'/>
+<fun r='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<fun r='_ZN10MainWindow18MWClearSystemProxyEv'/>
+<fun r='_ZN10MainWindow24CheckSubscriptionsUpdateEv'/>
+<fun r='_ZN10MainWindow24StartAutoConnectionEntryEv'/>
+<fun r='_ZN10MainWindow17updateColorSchemeEv'/>
+<fun r='_ZN10MainWindow21MWAddConnectionItem_pERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<fun r='_ZN10MainWindow16MWAddGroupItem_pERKN6Qv2ray4base6IDTypeINS1_9__QvGroupEEE'/>
+<fun r='_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='MainWindow::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10MainWindow10metaObjectEv'/>
+<fun r='_ZN10MainWindow11qt_metacastEPKc'/>
+<fun r='_ZN10MainWindow11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZNK10MainWindow15StartConnectionEv'/>
+<fun r='_ZNK10MainWindow14StopConnectionEv'/>
+<fun r='_ZNK10MainWindow17RestartConnectionEv'/>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='198' c='_ZN6Qv2ray17Qv2rayApplication9RunQv2rayEv'/>
+<size>760</size>

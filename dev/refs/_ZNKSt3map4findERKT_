@@ -1,0 +1,16 @@
+<def f='include/c++/10/bits/stl_map.h' l='1193' ll='1195' type='std::map::const_iterator std::map::find(const std::map::key_type &amp; __x) const'/>
+<doc f='include/c++/10/bits/stl_map.h' l='1181'>/**
+       *  @brief Tries to locate an element in a %map.
+       *  @param  __x  Key of (key, value) %pair to be located.
+       *  @return  Read-only (constant) iterator pointing to sought-after
+       *           element, or end() if not found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns a constant
+       *  iterator pointing to the sought after %pair. If unsuccessful it
+       *  returns the past-the-end ( @c end() ) iterator.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/DataModelRegistry.cpp' l='33' u='c' c='_ZNK7QtNodes17DataModelRegistry16getTypeConverterERK7QStringS3_'/>
+<use f='qv2ray/test/catch.hpp' l='9794' u='c' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='12526' u='c' c='_ZNK5Catch16ReporterRegistry6createERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrIKNS_7IConfigEE'/>
+<use f='qv2ray/test/catch.hpp' l='13965' u='c' c='_ZNK5Catch16TagAliasRegistry4findERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

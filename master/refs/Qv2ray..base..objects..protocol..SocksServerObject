@@ -1,0 +1,14 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='342' ll='357'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='356' c='_ZN6Qv2ray4base7objects8protocol17SocksServerObject8fromJsonERK10QJsonValue'/>
+<size>24</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='340'>//
+        // Socks, OutBound</doc>
+<mbr r='Qv2ray::base::objects::protocol::SocksServerObject::address' o='0' t='QString'/>
+<mbr r='Qv2ray::base::objects::protocol::SocksServerObject::port' o='64' t='int'/>
+<mbr r='Qv2ray::base::objects::protocol::SocksServerObject::users' o='128' t='QList&lt;Qv2ray::base::objects::protocol::SocksServerObject::UserObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol17SocksServerObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol17SocksServerObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects8protocol17SocksServerObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects8protocol17SocksServerObject6toJsonEv'/>
+<use f='qv2ray/src/ui/editors/w_OutboundEditor.hpp' l='71'/>
+<size>24</size>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mutex.h source code [include/google/protobuf/stubs/mutex.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="google::protobuf::internal::MutexLock,google::protobuf::internal::MutexLockMaybe,google::protobuf::internal::WrappedMutex "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/google/protobuf/stubs/mutex.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>google</a>/<a href='..'>protobuf</a>/<a href='./'>stubs</a>/<a href='mutex.h.html'>mutex.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Copyright (c) 2006, Google Inc.</i></td></tr>
+<tr><th id="2">2</th><td><i>// All rights reserved.</i></td></tr>
+<tr><th id="3">3</th><td><i>//</i></td></tr>
+<tr><th id="4">4</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="5">5</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="6">6</th><td><i>// met:</i></td></tr>
+<tr><th id="7">7</th><td><i>//</i></td></tr>
+<tr><th id="8">8</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="9">9</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="10">10</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="11">11</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="12">12</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="13">13</th><td><i>// distribution.</i></td></tr>
+<tr><th id="14">14</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="15">15</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="16">16</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="17">17</th><td><i>//</i></td></tr>
+<tr><th id="18">18</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="19">19</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="20">20</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="21">21</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="22">22</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="23">23</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="24">24</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="25">25</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="26">26</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="27">27</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="28">28</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">ifndef</span> <span class="macro" data-ref="_M/GOOGLE_PROTOBUF_STUBS_MUTEX_H_">GOOGLE_PROTOBUF_STUBS_MUTEX_H_</span></u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_STUBS_MUTEX_H_" data-ref="_M/GOOGLE_PROTOBUF_STUBS_MUTEX_H_">GOOGLE_PROTOBUF_STUBS_MUTEX_H_</dfn></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="../../../c++/10/mutex.html">&lt;mutex&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="macros.h.html">&lt;google/protobuf/stubs/macros.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>// ===================================================================</i></td></tr>
+<tr><th id="38">38</th><td><i>// emulates google3/base/mutex.h</i></td></tr>
+<tr><th id="39">39</th><td><b>namespace</b> <span class="namespace">google</span> {</td></tr>
+<tr><th id="40">40</th><td><b>namespace</b> <span class="namespace">protobuf</span> {</td></tr>
+<tr><th id="41">41</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_LINKER_INITIALIZED" data-ref="_M/GOOGLE_PROTOBUF_LINKER_INITIALIZED">GOOGLE_PROTOBUF_LINKER_INITIALIZED</dfn></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>// Mutex is a natural type to wrap. As both google and other organization have</i></td></tr>
+<tr><th id="46">46</th><td><i>// specialized mutexes. gRPC also provides an injection mechanism for custom</i></td></tr>
+<tr><th id="47">47</th><td><i>// mutexes.</i></td></tr>
+<tr><th id="48">48</th><td><b>class</b> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::internal::WrappedMutex" title='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::WrappedMutex" data-ref-filename="google..protobuf..internal..WrappedMutex">WrappedMutex</dfn> {</td></tr>
+<tr><th id="49">49</th><td> <b>public</b>:</td></tr>
+<tr><th id="50">50</th><td>  <dfn class="decl def fn" id="_ZN6google8protobuf8internal12WrappedMutexC1Ev" title='google::protobuf::internal::WrappedMutex::WrappedMutex' data-ref="_ZN6google8protobuf8internal12WrappedMutexC1Ev" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutexC1Ev">WrappedMutex</dfn>() = <b>default</b>;</td></tr>
+<tr><th id="51">51</th><td>  <em>void</em> <dfn class="decl def fn" id="_ZN6google8protobuf8internal12WrappedMutex4LockEv" title='google::protobuf::internal::WrappedMutex::Lock' data-ref="_ZN6google8protobuf8internal12WrappedMutex4LockEv" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutex4LockEv">Lock</dfn>() { <a class="member field" href="#google::protobuf::internal::WrappedMutex::mu_" title='google::protobuf::internal::WrappedMutex::mu_' data-ref="google::protobuf::internal::WrappedMutex::mu_" data-ref-filename="google..protobuf..internal..WrappedMutex..mu_">mu_</a>.<a class="ref fn" href="../../../c++/10/bits/std_mutex.h.html#_ZNSt5mutex4lockEv" title='std::mutex::lock' data-ref="_ZNSt5mutex4lockEv" data-ref-filename="_ZNSt5mutex4lockEv">lock</a>(); }</td></tr>
+<tr><th id="52">52</th><td>  <em>void</em> <dfn class="decl def fn" id="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv" title='google::protobuf::internal::WrappedMutex::Unlock' data-ref="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv">Unlock</dfn>() { <a class="member field" href="#google::protobuf::internal::WrappedMutex::mu_" title='google::protobuf::internal::WrappedMutex::mu_' data-ref="google::protobuf::internal::WrappedMutex::mu_" data-ref-filename="google..protobuf..internal..WrappedMutex..mu_">mu_</a>.<a class="ref fn" href="../../../c++/10/bits/std_mutex.h.html#_ZNSt5mutex6unlockEv" title='std::mutex::unlock' data-ref="_ZNSt5mutex6unlockEv" data-ref-filename="_ZNSt5mutex6unlockEv">unlock</a>(); }</td></tr>
+<tr><th id="53">53</th><td>  <i>// Crash if this Mutex is not held exclusively by this thread.</i></td></tr>
+<tr><th id="54">54</th><td><i>  // May fail to crash when it should; will never crash when it should not.</i></td></tr>
+<tr><th id="55">55</th><td>  <em>void</em> <dfn class="decl def fn" id="_ZNK6google8protobuf8internal12WrappedMutex10AssertHeldEv" title='google::protobuf::internal::WrappedMutex::AssertHeld' data-ref="_ZNK6google8protobuf8internal12WrappedMutex10AssertHeldEv" data-ref-filename="_ZNK6google8protobuf8internal12WrappedMutex10AssertHeldEv">AssertHeld</dfn>() <em>const</em> {}</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td> <b>private</b>:</td></tr>
+<tr><th id="58">58</th><td>  <span class="namespace">std::</span><a class="type" href="../../../c++/10/bits/std_mutex.h.html#std::mutex" title='std::mutex' data-ref="std::mutex" data-ref-filename="std..mutex">mutex</a> <dfn class="decl field" id="google::protobuf::internal::WrappedMutex::mu_" title='google::protobuf::internal::WrappedMutex::mu_' data-ref="google::protobuf::internal::WrappedMutex::mu_" data-ref-filename="google..protobuf..internal..WrappedMutex..mu_">mu_</dfn>;</td></tr>
+<tr><th id="59">59</th><td>};</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><b>using</b> <dfn class="typedef" id="google::protobuf::internal::Mutex" title='google::protobuf::internal::Mutex' data-type='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::Mutex" data-ref-filename="google..protobuf..internal..Mutex">Mutex</dfn> = <a class="type" href="#google::protobuf::internal::WrappedMutex" title='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::WrappedMutex" data-ref-filename="google..protobuf..internal..WrappedMutex">WrappedMutex</a>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>// MutexLock(mu) acquires mu when constructed and releases it when destroyed.</i></td></tr>
+<tr><th id="64">64</th><td><b>class</b> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::internal::MutexLock" title='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::MutexLock" data-ref-filename="google..protobuf..internal..MutexLock">MutexLock</dfn> {</td></tr>
+<tr><th id="65">65</th><td> <b>public</b>:</td></tr>
+<tr><th id="66">66</th><td>  <b>explicit</b> <dfn class="decl def fn" id="_ZN6google8protobuf8internal9MutexLockC1EPNS1_12WrappedMutexE" title='google::protobuf::internal::MutexLock::MutexLock' data-ref="_ZN6google8protobuf8internal9MutexLockC1EPNS1_12WrappedMutexE" data-ref-filename="_ZN6google8protobuf8internal9MutexLockC1EPNS1_12WrappedMutexE">MutexLock</dfn>(<a class="typedef" href="#google::protobuf::internal::Mutex" title='google::protobuf::internal::Mutex' data-type='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::Mutex" data-ref-filename="google..protobuf..internal..Mutex">Mutex</a> *<dfn class="local col3 decl" id="943mu" title='mu' data-type='google::protobuf::internal::Mutex *' data-ref="943mu" data-ref-filename="943mu">mu</dfn>) : <a class="member field" href="#google::protobuf::internal::MutexLock::mu_" title='google::protobuf::internal::MutexLock::mu_' data-ref="google::protobuf::internal::MutexLock::mu_" data-ref-filename="google..protobuf..internal..MutexLock..mu_">mu_</a>(<a class="local col3 ref" href="#943mu" title='mu' data-ref="943mu" data-ref-filename="943mu">mu</a>) { <b>this</b>-&gt;<a class="member field" href="#google::protobuf::internal::MutexLock::mu_" title='google::protobuf::internal::MutexLock::mu_' data-ref="google::protobuf::internal::MutexLock::mu_" data-ref-filename="google..protobuf..internal..MutexLock..mu_">mu_</a>-&gt;<a class="ref fn" href="#_ZN6google8protobuf8internal12WrappedMutex4LockEv" title='google::protobuf::internal::WrappedMutex::Lock' data-ref="_ZN6google8protobuf8internal12WrappedMutex4LockEv" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutex4LockEv">Lock</a>(); }</td></tr>
+<tr><th id="67">67</th><td>  <dfn class="decl def fn" id="_ZN6google8protobuf8internal9MutexLockD1Ev" title='google::protobuf::internal::MutexLock::~MutexLock' data-ref="_ZN6google8protobuf8internal9MutexLockD1Ev" data-ref-filename="_ZN6google8protobuf8internal9MutexLockD1Ev">~MutexLock</dfn>() { <b>this</b>-&gt;<a class="member field" href="#google::protobuf::internal::MutexLock::mu_" title='google::protobuf::internal::MutexLock::mu_' data-ref="google::protobuf::internal::MutexLock::mu_" data-ref-filename="google..protobuf..internal..MutexLock..mu_">mu_</a>-&gt;<a class="ref fn" href="#_ZN6google8protobuf8internal12WrappedMutex6UnlockEv" title='google::protobuf::internal::WrappedMutex::Unlock' data-ref="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv">Unlock</a>(); }</td></tr>
+<tr><th id="68">68</th><td> <b>private</b>:</td></tr>
+<tr><th id="69">69</th><td>  <a class="typedef" href="#google::protobuf::internal::Mutex" title='google::protobuf::internal::Mutex' data-type='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::Mutex" data-ref-filename="google..protobuf..internal..Mutex">Mutex</a> *<em>const</em> <dfn class="decl field" id="google::protobuf::internal::MutexLock::mu_" title='google::protobuf::internal::MutexLock::mu_' data-ref="google::protobuf::internal::MutexLock::mu_" data-ref-filename="google..protobuf..internal..MutexLock..mu_">mu_</dfn>;</td></tr>
+<tr><th id="70">70</th><td>  <a class="macro" href="macros.h.html#40" title="MutexLock(const MutexLock&amp;); void operator=(const MutexLock&amp;)" data-ref="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS">GOOGLE_DISALLOW_EVIL_CONSTRUCTORS</a>(<dfn class="decl fn" id="_ZN6google8protobuf8internal9MutexLockC1ERKS2_" title='google::protobuf::internal::MutexLock::MutexLock' data-ref="_ZN6google8protobuf8internal9MutexLockC1ERKS2_" data-ref-filename="_ZN6google8protobuf8internal9MutexLockC1ERKS2_"><a class="type" href="#google::protobuf::internal::MutexLock" title='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::MutexLock" data-ref-filename="google..protobuf..internal..MutexLock"><a class="type" href="#google::protobuf::internal::MutexLock" title='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::MutexLock" data-ref-filename="google..protobuf..internal..MutexLock">MutexLock</a></a></dfn>);</td></tr>
+<tr><th id="71">71</th><td>};</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><i>// TODO(kenton):  Implement these?  Hard to implement portably.</i></td></tr>
+<tr><th id="74">74</th><td><b>typedef</b> <a class="type" href="#google::protobuf::internal::MutexLock" title='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::MutexLock" data-ref-filename="google..protobuf..internal..MutexLock">MutexLock</a> <dfn class="typedef" id="google::protobuf::internal::ReaderMutexLock" title='google::protobuf::internal::ReaderMutexLock' data-type='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::ReaderMutexLock" data-ref-filename="google..protobuf..internal..ReaderMutexLock">ReaderMutexLock</dfn>;</td></tr>
+<tr><th id="75">75</th><td><b>typedef</b> <a class="type" href="#google::protobuf::internal::MutexLock" title='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::MutexLock" data-ref-filename="google..protobuf..internal..MutexLock">MutexLock</a> <dfn class="typedef" id="google::protobuf::internal::WriterMutexLock" title='google::protobuf::internal::WriterMutexLock' data-type='google::protobuf::internal::MutexLock' data-ref="google::protobuf::internal::WriterMutexLock" data-ref-filename="google..protobuf..internal..WriterMutexLock">WriterMutexLock</dfn>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i>// MutexLockMaybe is like MutexLock, but is a no-op when mu is NULL.</i></td></tr>
+<tr><th id="78">78</th><td><b>class</b> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::internal::MutexLockMaybe" title='google::protobuf::internal::MutexLockMaybe' data-ref="google::protobuf::internal::MutexLockMaybe" data-ref-filename="google..protobuf..internal..MutexLockMaybe">MutexLockMaybe</dfn> {</td></tr>
+<tr><th id="79">79</th><td> <b>public</b>:</td></tr>
+<tr><th id="80">80</th><td>  <b>explicit</b> <dfn class="decl def fn" id="_ZN6google8protobuf8internal14MutexLockMaybeC1EPNS1_12WrappedMutexE" title='google::protobuf::internal::MutexLockMaybe::MutexLockMaybe' data-ref="_ZN6google8protobuf8internal14MutexLockMaybeC1EPNS1_12WrappedMutexE" data-ref-filename="_ZN6google8protobuf8internal14MutexLockMaybeC1EPNS1_12WrappedMutexE">MutexLockMaybe</dfn>(<a class="typedef" href="#google::protobuf::internal::Mutex" title='google::protobuf::internal::Mutex' data-type='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::Mutex" data-ref-filename="google..protobuf..internal..Mutex">Mutex</a> *<dfn class="local col4 decl" id="944mu" title='mu' data-type='google::protobuf::internal::Mutex *' data-ref="944mu" data-ref-filename="944mu">mu</dfn>) :</td></tr>
+<tr><th id="81">81</th><td>    <a class="member field" href="#google::protobuf::internal::MutexLockMaybe::mu_" title='google::protobuf::internal::MutexLockMaybe::mu_' data-ref="google::protobuf::internal::MutexLockMaybe::mu_" data-ref-filename="google..protobuf..internal..MutexLockMaybe..mu_">mu_</a>(<a class="local col4 ref" href="#944mu" title='mu' data-ref="944mu" data-ref-filename="944mu">mu</a>) { <b>if</b> (<b>this</b>-&gt;<a class="member field" href="#google::protobuf::internal::MutexLockMaybe::mu_" title='google::protobuf::internal::MutexLockMaybe::mu_' data-ref="google::protobuf::internal::MutexLockMaybe::mu_" data-ref-filename="google..protobuf..internal..MutexLockMaybe..mu_">mu_</a> != <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) { <b>this</b>-&gt;<a class="member field" href="#google::protobuf::internal::MutexLockMaybe::mu_" title='google::protobuf::internal::MutexLockMaybe::mu_' data-ref="google::protobuf::internal::MutexLockMaybe::mu_" data-ref-filename="google..protobuf..internal..MutexLockMaybe..mu_">mu_</a>-&gt;<a class="ref fn" href="#_ZN6google8protobuf8internal12WrappedMutex4LockEv" title='google::protobuf::internal::WrappedMutex::Lock' data-ref="_ZN6google8protobuf8internal12WrappedMutex4LockEv" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutex4LockEv">Lock</a>(); } }</td></tr>
+<tr><th id="82">82</th><td>  <dfn class="decl def fn" id="_ZN6google8protobuf8internal14MutexLockMaybeD1Ev" title='google::protobuf::internal::MutexLockMaybe::~MutexLockMaybe' data-ref="_ZN6google8protobuf8internal14MutexLockMaybeD1Ev" data-ref-filename="_ZN6google8protobuf8internal14MutexLockMaybeD1Ev">~MutexLockMaybe</dfn>() { <b>if</b> (<b>this</b>-&gt;<a class="member field" href="#google::protobuf::internal::MutexLockMaybe::mu_" title='google::protobuf::internal::MutexLockMaybe::mu_' data-ref="google::protobuf::internal::MutexLockMaybe::mu_" data-ref-filename="google..protobuf..internal..MutexLockMaybe..mu_">mu_</a> != <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) { <b>this</b>-&gt;<a class="member field" href="#google::protobuf::internal::MutexLockMaybe::mu_" title='google::protobuf::internal::MutexLockMaybe::mu_' data-ref="google::protobuf::internal::MutexLockMaybe::mu_" data-ref-filename="google..protobuf..internal..MutexLockMaybe..mu_">mu_</a>-&gt;<a class="ref fn" href="#_ZN6google8protobuf8internal12WrappedMutex6UnlockEv" title='google::protobuf::internal::WrappedMutex::Unlock' data-ref="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv" data-ref-filename="_ZN6google8protobuf8internal12WrappedMutex6UnlockEv">Unlock</a>(); } }</td></tr>
+<tr><th id="83">83</th><td> <b>private</b>:</td></tr>
+<tr><th id="84">84</th><td>  <a class="typedef" href="#google::protobuf::internal::Mutex" title='google::protobuf::internal::Mutex' data-type='google::protobuf::internal::WrappedMutex' data-ref="google::protobuf::internal::Mutex" data-ref-filename="google..protobuf..internal..Mutex">Mutex</a> *<em>const</em> <dfn class="decl field" id="google::protobuf::internal::MutexLockMaybe::mu_" title='google::protobuf::internal::MutexLockMaybe::mu_' data-ref="google::protobuf::internal::MutexLockMaybe::mu_" data-ref-filename="google..protobuf..internal..MutexLockMaybe..mu_">mu_</dfn>;</td></tr>
+<tr><th id="85">85</th><td>  <a class="macro" href="macros.h.html#40" title="MutexLockMaybe(const MutexLockMaybe&amp;); void operator=(const MutexLockMaybe&amp;)" data-ref="_M/GOOGLE_DISALLOW_EVIL_CONSTRUCTORS">GOOGLE_DISALLOW_EVIL_CONSTRUCTORS</a>(<dfn class="decl fn" id="_ZN6google8protobuf8internal14MutexLockMaybeC1ERKS2_" title='google::protobuf::internal::MutexLockMaybe::MutexLockMaybe' data-ref="_ZN6google8protobuf8internal14MutexLockMaybeC1ERKS2_" data-ref-filename="_ZN6google8protobuf8internal14MutexLockMaybeC1ERKS2_"><a class="type" href="#google::protobuf::internal::MutexLockMaybe" title='google::protobuf::internal::MutexLockMaybe' data-ref="google::protobuf::internal::MutexLockMaybe" data-ref-filename="google..protobuf..internal..MutexLockMaybe"><a class="type" href="#google::protobuf::internal::MutexLockMaybe" title='google::protobuf::internal::MutexLockMaybe' data-ref="google::protobuf::internal::MutexLockMaybe" data-ref-filename="google..protobuf..internal..MutexLockMaybe">MutexLockMaybe</a></a></dfn>);</td></tr>
+<tr><th id="86">86</th><td>};</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><u>#<span data-ppcond="88">if</span> defined(<span class="macro" data-ref="_M/GOOGLE_PROTOBUF_NO_THREADLOCAL">GOOGLE_PROTOBUF_NO_THREADLOCAL</span>)</u></td></tr>
+<tr><th id="89">89</th><td><b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="90">90</th><td><b>class</b> ThreadLocalStorage {</td></tr>
+<tr><th id="91">91</th><td> <b>public</b>:</td></tr>
+<tr><th id="92">92</th><td>  ThreadLocalStorage() {</td></tr>
+<tr><th id="93">93</th><td>    pthread_key_create(&amp;key_, &amp;ThreadLocalStorage::Delete);</td></tr>
+<tr><th id="94">94</th><td>  }</td></tr>
+<tr><th id="95">95</th><td>  ~ThreadLocalStorage() {</td></tr>
+<tr><th id="96">96</th><td>    pthread_key_delete(key_);</td></tr>
+<tr><th id="97">97</th><td>  }</td></tr>
+<tr><th id="98">98</th><td>  T* Get() {</td></tr>
+<tr><th id="99">99</th><td>    T* result = <b>static_cast</b>&lt;T*&gt;(pthread_getspecific(key_));</td></tr>
+<tr><th id="100">100</th><td>    <b>if</b> (result == NULL) {</td></tr>
+<tr><th id="101">101</th><td>      result = <b>new</b> T();</td></tr>
+<tr><th id="102">102</th><td>      pthread_setspecific(key_, result);</td></tr>
+<tr><th id="103">103</th><td>    }</td></tr>
+<tr><th id="104">104</th><td>    <b>return</b> result;</td></tr>
+<tr><th id="105">105</th><td>  }</td></tr>
+<tr><th id="106">106</th><td> <b>private</b>:</td></tr>
+<tr><th id="107">107</th><td>  <em>static</em> <em>void</em> Delete(<em>void</em>* value) {</td></tr>
+<tr><th id="108">108</th><td>    <b>delete</b> <b>static_cast</b>&lt;T*&gt;(value);</td></tr>
+<tr><th id="109">109</th><td>  }</td></tr>
+<tr><th id="110">110</th><td>  pthread_key_t key_;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(ThreadLocalStorage);</td></tr>
+<tr><th id="113">113</th><td>};</td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="88">endif</span></u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i>// We made these internal so that they would show up as such in the docs,</i></td></tr>
+<tr><th id="119">119</th><td><i>// but we don't want to stick "internal::" in front of them everywhere.</i></td></tr>
+<tr><th id="120">120</th><td><b>using</b> <span class="namespace">internal::</span>Mutex;</td></tr>
+<tr><th id="121">121</th><td><b>using</b> <span class="namespace">internal::</span>MutexLock;</td></tr>
+<tr><th id="122">122</th><td><b>using</b> <span class="namespace">internal::</span>ReaderMutexLock;</td></tr>
+<tr><th id="123">123</th><td><b>using</b> <span class="namespace">internal::</span>WriterMutexLock;</td></tr>
+<tr><th id="124">124</th><td><b>using</b> <span class="namespace">internal::</span>MutexLockMaybe;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>}  <i>// namespace protobuf</i></td></tr>
+<tr><th id="128">128</th><td>}  <i>// namespace google</i></td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="30">endif</span>  // GOOGLE_PROTOBUF_STUBS_MUTEX_H_</u></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

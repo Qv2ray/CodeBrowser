@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='638' type='size_t'/>
+<offset>768</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='634'>/*
+   * Number of bytes queued for sending. This field strictly shows how much
+   * information is currently queued.
+   */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='119' u='r' c='uv__udp_finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='119' u='r' c='uv__udp_finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='143' u='w' c='uv__udp_run_completed'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='697' u='w' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='969' u='w' c='uv__udp_init_ex'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='61' u='r' c='uv_udp_get_send_queue_size'/>

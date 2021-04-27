@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BitHacks.h source code [qv2ray/3rdparty/zxing-cpp/core/src/BitHacks.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/BitHacks.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>zxing-cpp</a>/<a href='..'>core</a>/<a href='./'>src</a>/<a href='BitHacks.h.html'>BitHacks.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Huy Cuong Nguyen</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2017 Axel Waggershauser</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../../../../include/c++/10/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../../../include/c++/10/cassert.html">&lt;cassert&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../../../include/c++/10/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/__clang__">__clang__</span>) || defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/ZX_HAS_GCC_BUILTINS" data-ref="_M/ZX_HAS_GCC_BUILTINS">ZX_HAS_GCC_BUILTINS</dfn></u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="28">28</th><td><b>namespace</b> <span class="namespace">BitHacks</span> {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc">* The code below is taken from <a href="https://graphics.stanford.edu/~seander/bithacks.html">https://graphics.stanford.edu/~seander/bithacks.html</a></i></td></tr>
+<tr><th id="32">32</th><td><i class="doc">* All credits go to Sean Eron Anderson and other authors mentioned in that page.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"></i></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/// &lt;summary&gt;</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc">/// Compute the number of zero bits on the left.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/// &lt;/summary&gt;</i></td></tr>
+<tr><th id="38">38</th><td><b>inline</b> <em>int</em> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks20NumberOfLeadingZerosEj" title='ZXing::BitHacks::NumberOfLeadingZeros' data-ref="_ZN5ZXing8BitHacks20NumberOfLeadingZerosEj" data-ref-filename="_ZN5ZXing8BitHacks20NumberOfLeadingZerosEj">NumberOfLeadingZeros</dfn>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="local col1 decl" id="1x" title='x' data-type='uint32_t' data-ref="1x" data-ref-filename="1x">x</dfn>)</td></tr>
+<tr><th id="39">39</th><td>{</td></tr>
+<tr><th id="40">40</th><td>	<b>if</b> (<a class="local col1 ref" href="#1x" title='x' data-ref="1x" data-ref-filename="1x">x</a> == <var>0</var>)</td></tr>
+<tr><th id="41">41</th><td>		<b>return</b> <var>32</var>;</td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">ifdef</span> <a class="macro" href="#24" data-ref="_M/ZX_HAS_GCC_BUILTINS">ZX_HAS_GCC_BUILTINS</a></u></td></tr>
+<tr><th id="43">43</th><td>	<b>return</b> <a class="ref fn" href="../../../../../include/c++/10/bits/stl_algobase.h.html#1367" title='__builtin_clz' data-ref="__builtin_clz" data-ref-filename="__builtin_clz">__builtin_clz</a>(<a class="local col1 ref" href="#1x" title='x' data-ref="1x" data-ref-filename="1x">x</a>);</td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="42">else</span></u></td></tr>
+<tr><th id="45">45</th><td>	<em>int</em> n = <var>0</var>;</td></tr>
+<tr><th id="46">46</th><td>	<b>if</b> ((x &amp; <var>0xFFFF0000</var>) == <var>0</var>) { n = n + <var>16</var>; x = x &lt;&lt; <var>16</var>; }</td></tr>
+<tr><th id="47">47</th><td>	<b>if</b> ((x &amp; <var>0xFF000000</var>) == <var>0</var>) { n = n + <var>8</var>; x = x &lt;&lt; <var>8</var>; }</td></tr>
+<tr><th id="48">48</th><td>	<b>if</b> ((x &amp; <var>0xF0000000</var>) == <var>0</var>) { n = n + <var>4</var>; x = x &lt;&lt; <var>4</var>; }</td></tr>
+<tr><th id="49">49</th><td>	<b>if</b> ((x &amp; <var>0xC0000000</var>) == <var>0</var>) { n = n + <var>2</var>; x = x &lt;&lt; <var>2</var>; }</td></tr>
+<tr><th id="50">50</th><td>	<b>if</b> ((x &amp; <var>0x80000000</var>) == <var>0</var>) { n = n + <var>1</var>; }</td></tr>
+<tr><th id="51">51</th><td>	<b>return</b> n;</td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="42">endif</span></u></td></tr>
+<tr><th id="53">53</th><td>}</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><i class="doc">/// &lt;summary&gt;</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">/// Compute the number of zero bits on the right.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">/// &lt;/summary&gt;</i></td></tr>
+<tr><th id="58">58</th><td><b>inline</b> <em>int</em> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks21NumberOfTrailingZerosEj" title='ZXing::BitHacks::NumberOfTrailingZeros' data-ref="_ZN5ZXing8BitHacks21NumberOfTrailingZerosEj" data-ref-filename="_ZN5ZXing8BitHacks21NumberOfTrailingZerosEj">NumberOfTrailingZeros</dfn>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="local col2 decl" id="2v" title='v' data-type='uint32_t' data-ref="2v" data-ref-filename="2v">v</dfn>)</td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="60">ifdef</span> <a class="macro" href="#24" data-ref="_M/ZX_HAS_GCC_BUILTINS">ZX_HAS_GCC_BUILTINS</a></u></td></tr>
+<tr><th id="61">61</th><td>	<a class="macro" href="../../../../../include/assert.h.html#92" title="(static_cast &lt;bool&gt; (v != 0) ? void (0) : __assert_fail (&quot;v != 0&quot;, &quot;/home/runner/work/CodeBrowser/CodeBrowser/source/master/code_build/../3rdparty/zxing-cpp/core/src/BitHacks.h&quot;, 61, __extension__ __PRETTY_FUNCTION__))" data-ref="_M/assert">assert</a>(<a class="local col2 ref" href="#2v" title='v' data-ref="2v" data-ref-filename="2v">v</a> != <var>0</var>);</td></tr>
+<tr><th id="62">62</th><td>	<b>return</b> <a class="ref fn" href="#62" title='__builtin_ctz' data-ref="__builtin_ctz" data-ref-filename="__builtin_ctz">__builtin_ctz</a>(<a class="local col2 ref" href="#2v" title='v' data-ref="2v" data-ref-filename="2v">v</a>);</td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="60">else</span></u></td></tr>
+<tr><th id="64">64</th><td>	<em>int</em> c = <var>32</var>;</td></tr>
+<tr><th id="65">65</th><td>	v &amp;= -int32_t(v);</td></tr>
+<tr><th id="66">66</th><td>	<b>if</b> (v) c--;</td></tr>
+<tr><th id="67">67</th><td>	<b>if</b> (v &amp; <var>0x0000FFFF</var>) c -= <var>16</var>;</td></tr>
+<tr><th id="68">68</th><td>	<b>if</b> (v &amp; <var>0x00FF00FF</var>) c -= <var>8</var>;</td></tr>
+<tr><th id="69">69</th><td>	<b>if</b> (v &amp; <var>0x0F0F0F0F</var>) c -= <var>4</var>;</td></tr>
+<tr><th id="70">70</th><td>	<b>if</b> (v &amp; <var>0x33333333</var>) c -= <var>2</var>;</td></tr>
+<tr><th id="71">71</th><td>	<b>if</b> (v &amp; <var>0x55555555</var>) c -= <var>1</var>;</td></tr>
+<tr><th id="72">72</th><td>	<b>return</b> c;</td></tr>
+<tr><th id="73">73</th><td><u>#<span data-ppcond="60">endif</span></u></td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><b>inline</b> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks7ReverseEj" title='ZXing::BitHacks::Reverse' data-ref="_ZN5ZXing8BitHacks7ReverseEj" data-ref-filename="_ZN5ZXing8BitHacks7ReverseEj">Reverse</dfn>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="local col3 decl" id="3v" title='v' data-type='uint32_t' data-ref="3v" data-ref-filename="3v">v</dfn>)</td></tr>
+<tr><th id="77">77</th><td>{</td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="78">if</span> 0</u></td></tr>
+<tr><th id="79">79</th><td>	<b>return</b> __builtin_bitreverse32(v);</td></tr>
+<tr><th id="80">80</th><td><u>#<span data-ppcond="78">else</span></u></td></tr>
+<tr><th id="81">81</th><td>	<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> = ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &gt;&gt; <var>1</var>) &amp; <var>0x55555555</var>) | ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &amp; <var>0x55555555</var>) &lt;&lt; <var>1</var>);</td></tr>
+<tr><th id="82">82</th><td>	<i>// swap consecutive pairs</i></td></tr>
+<tr><th id="83">83</th><td>	<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> = ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &gt;&gt; <var>2</var>) &amp; <var>0x33333333</var>) | ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &amp; <var>0x33333333</var>) &lt;&lt; <var>2</var>);</td></tr>
+<tr><th id="84">84</th><td>	<i>// swap nibbles ...</i></td></tr>
+<tr><th id="85">85</th><td>	<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> = ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &gt;&gt; <var>4</var>) &amp; <var>0x0F0F0F0F</var>) | ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &amp; <var>0x0F0F0F0F</var>) &lt;&lt; <var>4</var>);</td></tr>
+<tr><th id="86">86</th><td>	<i>// swap bytes</i></td></tr>
+<tr><th id="87">87</th><td>	<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> = ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &gt;&gt; <var>8</var>) &amp; <var>0x00FF00FF</var>) | ((<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &amp; <var>0x00FF00FF</var>) &lt;&lt; <var>8</var>);</td></tr>
+<tr><th id="88">88</th><td>	<i>// swap 2-byte long pairs</i></td></tr>
+<tr><th id="89">89</th><td>	<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> = (<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &gt;&gt; <var>16</var>) | (<a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a> &lt;&lt; <var>16</var>);</td></tr>
+<tr><th id="90">90</th><td>	<b>return</b> <a class="local col3 ref" href="#3v" title='v' data-ref="3v" data-ref-filename="3v">v</a>;</td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="78">endif</span></u></td></tr>
+<tr><th id="92">92</th><td>}</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><b>inline</b> <em>int</em> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks12CountBitsSetEj" title='ZXing::BitHacks::CountBitsSet' data-ref="_ZN5ZXing8BitHacks12CountBitsSetEj" data-ref-filename="_ZN5ZXing8BitHacks12CountBitsSetEj">CountBitsSet</dfn>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="local col4 decl" id="4v" title='v' data-type='uint32_t' data-ref="4v" data-ref-filename="4v">v</dfn>)</td></tr>
+<tr><th id="95">95</th><td>{</td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="96">ifdef</span> <a class="macro" href="#24" data-ref="_M/ZX_HAS_GCC_BUILTINS">ZX_HAS_GCC_BUILTINS</a></u></td></tr>
+<tr><th id="97">97</th><td>	<b>return</b> <a class="ref fn" href="#97" title='__builtin_popcount' data-ref="__builtin_popcount" data-ref-filename="__builtin_popcount">__builtin_popcount</a>(<a class="local col4 ref" href="#4v" title='v' data-ref="4v" data-ref-filename="4v">v</a>);</td></tr>
+<tr><th id="98">98</th><td><u>#<span data-ppcond="96">else</span></u></td></tr>
+<tr><th id="99">99</th><td>	v = v - ((v &gt;&gt; <var>1</var>) &amp; <var>0x55555555</var>);							<i>// reuse input as temporary</i></td></tr>
+<tr><th id="100">100</th><td>	v = (v &amp; <var>0x33333333</var>) + ((v &gt;&gt; <var>2</var>) &amp; <var>0x33333333</var>);				<i>// temp</i></td></tr>
+<tr><th id="101">101</th><td>	<b>return</b> (((v + (v &gt;&gt; <var>4</var>)) &amp; <var>0xF0F0F0F</var>) * <var>0x1010101</var>) &gt;&gt; <var>24</var>;	<i>// count</i></td></tr>
+<tr><th id="102">102</th><td><u>#<span data-ppcond="96">endif</span></u></td></tr>
+<tr><th id="103">103</th><td>}</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><i>// this is the same as log base 2 of v</i></td></tr>
+<tr><th id="106">106</th><td><b>inline</b> <em>int</em> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks13HighestBitSetEj" title='ZXing::BitHacks::HighestBitSet' data-ref="_ZN5ZXing8BitHacks13HighestBitSetEj" data-ref-filename="_ZN5ZXing8BitHacks13HighestBitSetEj">HighestBitSet</dfn>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="5v" title='v' data-type='uint32_t' data-ref="5v" data-ref-filename="5v">v</dfn>)</td></tr>
+<tr><th id="107">107</th><td>{</td></tr>
+<tr><th id="108">108</th><td>	<b>return</b> <var>31</var> - <a class="ref fn" href="#_ZN5ZXing8BitHacks20NumberOfLeadingZerosEj" title='ZXing::BitHacks::NumberOfLeadingZeros' data-ref="_ZN5ZXing8BitHacks20NumberOfLeadingZerosEj" data-ref-filename="_ZN5ZXing8BitHacks20NumberOfLeadingZerosEj">NumberOfLeadingZeros</a>(<a class="local col5 ref" href="#5v" title='v' data-ref="5v" data-ref-filename="5v">v</a>);</td></tr>
+<tr><th id="109">109</th><td>}</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><i>// shift a whole array of bits by offset bits to the right (thinking of the array as a contiguous stream of bits</i></td></tr>
+<tr><th id="112">112</th><td><i>// starting with the LSB of the first int and ending with the MSB of the last int, this is actually a left shift)</i></td></tr>
+<tr><th id="113">113</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="114">114</th><td><em>void</em> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks10ShiftRightERSt6vectorIT_SaIS2_EEm" title='ZXing::BitHacks::ShiftRight' data-ref="_ZN5ZXing8BitHacks10ShiftRightERSt6vectorIT_SaIS2_EEm" data-ref-filename="_ZN5ZXing8BitHacks10ShiftRightERSt6vectorIT_SaIS2_EEm">ShiftRight</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;T&gt;&amp; <dfn class="local col6 decl" id="6bits" title='bits' data-type='std::vector&lt;T&gt; &amp;' data-ref="6bits" data-ref-filename="6bits">bits</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="local col7 decl" id="7offset" title='offset' data-type='std::size_t' data-ref="7offset" data-ref-filename="7offset">offset</dfn>)</td></tr>
+<tr><th id="115">115</th><td>{</td></tr>
+<tr><th id="116">116</th><td>	<a class="macro" href="../../../../../include/assert.h.html#92" title="(static_cast &lt;bool&gt; (offset &lt; sizeof(T) * 8) ? void (0) : __assert_fail (&quot;offset &lt; sizeof(T) * 8&quot;, &quot;/home/runner/work/CodeBrowser/CodeBrowser/source/master/code_build/../3rdparty/zxing-cpp/core/src/BitHacks.h&quot;, 116, __extension__ __PRETTY_FUNCTION__))" data-ref="_M/assert">assert</a>(<a class="local col7 ref" href="#7offset" title='offset' data-ref="7offset" data-ref-filename="7offset">offset</a> &lt; <b>sizeof</b>(T) * <var>8</var>);</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td>	<b>if</b> (<a class="local col7 ref" href="#7offset" title='offset' data-ref="7offset" data-ref-filename="7offset">offset</a> == <var>0</var> || <a class="local col6 ref" href="#6bits" title='bits' data-ref="6bits" data-ref-filename="6bits">bits</a>.empty())</td></tr>
+<tr><th id="119">119</th><td>		<b>return</b>;</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>	<span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="local col8 decl" id="8leftOffset" title='leftOffset' data-type='std::size_t' data-ref="8leftOffset" data-ref-filename="8leftOffset">leftOffset</dfn> = <b>sizeof</b>(T) * <var>8</var> - <a class="local col7 ref" href="#7offset" title='offset' data-ref="7offset" data-ref-filename="7offset">offset</a>;</td></tr>
+<tr><th id="122">122</th><td>	<b>for</b> (<span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="local col9 decl" id="9i" title='i' data-type='std::size_t' data-ref="9i" data-ref-filename="9i">i</dfn> = <var>0</var>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i" data-ref-filename="9i">i</a> &lt; <a class="local col6 ref" href="#6bits" title='bits' data-ref="6bits" data-ref-filename="6bits">bits</a>.size() - <var>1</var>; ++<a class="local col9 ref" href="#9i" title='i' data-ref="9i" data-ref-filename="9i">i</a>) {</td></tr>
+<tr><th id="123">123</th><td>		<a class="local col6 ref" href="#6bits" title='bits' data-ref="6bits" data-ref-filename="6bits">bits</a>[<a class="local col9 ref" href="#9i" title='i' data-ref="9i" data-ref-filename="9i">i</a>] = (<a class="local col6 ref" href="#6bits" title='bits' data-ref="6bits" data-ref-filename="6bits">bits</a>[<a class="local col9 ref" href="#9i" title='i' data-ref="9i" data-ref-filename="9i">i</a>] &gt;&gt; <a class="local col7 ref" href="#7offset" title='offset' data-ref="7offset" data-ref-filename="7offset">offset</a>) | (<a class="local col6 ref" href="#6bits" title='bits' data-ref="6bits" data-ref-filename="6bits">bits</a>[<a class="local col9 ref" href="#9i" title='i' data-ref="9i" data-ref-filename="9i">i</a> + <var>1</var>] &lt;&lt; <a class="local col8 ref" href="#8leftOffset" title='leftOffset' data-ref="8leftOffset" data-ref-filename="8leftOffset">leftOffset</a>);</td></tr>
+<tr><th id="124">124</th><td>	}</td></tr>
+<tr><th id="125">125</th><td>	<a class="local col6 ref" href="#6bits" title='bits' data-ref="6bits" data-ref-filename="6bits">bits</a>.back() &gt;&gt;= <a class="local col7 ref" href="#7offset" title='offset' data-ref="7offset" data-ref-filename="7offset">offset</a>;</td></tr>
+<tr><th id="126">126</th><td>}</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><i>// reverse a whole array of bits. padding is the number of 'dummy' bits at the end of the array</i></td></tr>
+<tr><th id="129">129</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="130">130</th><td><em>void</em> <dfn class="decl def fn" id="_ZN5ZXing8BitHacks7ReverseERSt6vectorIT_SaIS2_EEm" title='ZXing::BitHacks::Reverse' data-ref="_ZN5ZXing8BitHacks7ReverseERSt6vectorIT_SaIS2_EEm" data-ref-filename="_ZN5ZXing8BitHacks7ReverseERSt6vectorIT_SaIS2_EEm">Reverse</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;T&gt;&amp; <dfn class="local col0 decl" id="10bits" title='bits' data-type='std::vector&lt;T&gt; &amp;' data-ref="10bits" data-ref-filename="10bits">bits</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="local col1 decl" id="11padding" title='padding' data-type='std::size_t' data-ref="11padding" data-ref-filename="11padding">padding</dfn>)</td></tr>
+<tr><th id="131">131</th><td>{</td></tr>
+<tr><th id="132">132</th><td>	<b>static_assert</b>(<b>sizeof</b>(T) == <b>sizeof</b>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint32_t" title='uint32_t' data-type='__uint32_t' data-ref="uint32_t" data-ref-filename="uint32_t">uint32_t</a>), <q>"Reverse only implemented for 32 bit types"</q>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>	<i>// reverse all int's first (reversing the ints in the array and the bits in the ints at the same time)</i></td></tr>
+<tr><th id="135">135</th><td>	<em>auto</em> <dfn class="local col2 decl" id="12first" title='first' data-type='auto' data-ref="12first" data-ref-filename="12first">first</dfn> = <a class="local col0 ref" href="#10bits" title='bits' data-ref="10bits" data-ref-filename="10bits">bits</a>.begin(), <dfn class="local col3 decl" id="13last" title='last' data-type='auto' data-ref="13last" data-ref-filename="13last">last</dfn> = <a class="local col0 ref" href="#10bits" title='bits' data-ref="10bits" data-ref-filename="10bits">bits</a>.end();</td></tr>
+<tr><th id="136">136</th><td>	<b>for</b> (; <a class="local col2 ref" href="#12first" title='first' data-ref="12first" data-ref-filename="12first">first</a> &lt; --<a class="local col3 ref" href="#13last" title='last' data-ref="13last" data-ref-filename="13last">last</a>; ++<a class="local col2 ref" href="#12first" title='first' data-ref="12first" data-ref-filename="12first">first</a>) {</td></tr>
+<tr><th id="137">137</th><td>		<em>auto</em> <dfn class="local col4 decl" id="14t" title='t' data-type='auto' data-ref="14t" data-ref-filename="14t">t</dfn> = *<a class="local col2 ref" href="#12first" title='first' data-ref="12first" data-ref-filename="12first">first</a>;</td></tr>
+<tr><th id="138">138</th><td>		*<a class="local col2 ref" href="#12first" title='first' data-ref="12first" data-ref-filename="12first">first</a> = <span class="namespace">BitHacks::</span>Reverse(*<a class="local col3 ref" href="#13last" title='last' data-ref="13last" data-ref-filename="13last">last</a>);</td></tr>
+<tr><th id="139">139</th><td>		*<a class="local col3 ref" href="#13last" title='last' data-ref="13last" data-ref-filename="13last">last</a> = <span class="namespace">BitHacks::</span>Reverse(<a class="local col4 ref" href="#14t" title='t' data-ref="14t" data-ref-filename="14t">t</a>);</td></tr>
+<tr><th id="140">140</th><td>	}</td></tr>
+<tr><th id="141">141</th><td>	<b>if</b> (<a class="local col2 ref" href="#12first" title='first' data-ref="12first" data-ref-filename="12first">first</a> == <a class="local col3 ref" href="#13last" title='last' data-ref="13last" data-ref-filename="13last">last</a>)</td></tr>
+<tr><th id="142">142</th><td>		*<a class="local col3 ref" href="#13last" title='last' data-ref="13last" data-ref-filename="13last">last</a> = <span class="namespace">BitHacks::</span>Reverse(*<a class="local col3 ref" href="#13last" title='last' data-ref="13last" data-ref-filename="13last">last</a>);</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td>	<i>// now correct the int's if the bit size isn't a multiple of 32</i></td></tr>
+<tr><th id="145">145</th><td>	ShiftRight(<a class="local col0 ref" href="#10bits" title='bits' data-ref="10bits" data-ref-filename="10bits">bits</a>, <a class="local col1 ref" href="#11padding" title='padding' data-ref="11padding" data-ref-filename="11padding">padding</a>);</td></tr>
+<tr><th id="146">146</th><td>}</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td>} <i>// BitHacks</i></td></tr>
+<tr><th id="149">149</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='BarcodeFormat.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/BarcodeFormat.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

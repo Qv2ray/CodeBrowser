@@ -1,0 +1,17 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='619' type='static bool uvw::Utilities::osPriority(uvw::PidType pid, int prio)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='604'>/**
+     * @brief Sets the scheduling priority of a process.
+     *
+     * The returned value range is between -20 (high priority) and 19 (low
+     * priority).
+     *
+     * @note
+     * On Windows, the priority is mapped to a Windows priority class. When
+     * retrieving the process priority, the result won&apos;t equal necessarily the
+     * exact value of the priority.
+     *
+     * @param pid A valid process id.
+     * @param prio The scheduling priority to set to the process.
+     * @return True in case of success, false otherwise.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='138' ll='140' type='static bool uvw::Utilities::osPriority(uvw::PidType pid, int prio)'/>

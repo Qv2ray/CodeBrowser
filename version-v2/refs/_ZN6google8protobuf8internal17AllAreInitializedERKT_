@@ -1,0 +1,6 @@
+<def f='include/google/protobuf/generated_message_util.h' l='125' ll='130' type='bool google::protobuf::internal::AllAreInitialized(const Type &amp; t)'/>
+<doc f='include/google/protobuf/generated_message_util.h' l='120'>// True if IsInitialized() is true for all elements of t.  Type is expected
+// to be a RepeatedPtrField&lt;some message type&gt;.  It&apos;s useful to have this
+// helper here to keep the protobuf compiler from ever having to emit loops in
+// IsInitialized() methods.  We want the C++ compiler to inline this or not
+// as it sees fit.</doc>

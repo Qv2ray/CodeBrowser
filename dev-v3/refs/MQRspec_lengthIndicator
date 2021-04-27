@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='92' type='int MQRspec_lengthIndicator(QRencodeMode mode, int version)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='86'>/**
+ * Return the size of lenght indicator for the mode and version.
+ * @param mode
+ * @param version
+ * @return the size of the appropriate length indicator (bits).
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.c' l='99' ll='102' type='int MQRspec_lengthIndicator(QRencodeMode mode, int version)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='421' u='c' c='QRinput_encodeModeNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='529' u='c' c='QRinput_encodeModeAn'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='591' u='c' c='QRinput_encodeMode8'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='667' u='c' c='QRinput_encodeModeKanji'/>

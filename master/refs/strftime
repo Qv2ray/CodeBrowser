@@ -1,0 +1,6 @@
+<dec f='include/time.h' l='88' type='size_t strftime(char *__restrict __s, size_t __maxsize, const char *__restrict __format, const struct tm *__restrict __tp)'/>
+<doc f='include/time.h' l='85'>/* Format TP into S according to FORMAT.
+   Write no more than MAXSIZE characters and return the number
+   of characters written, or 0 if it would exceed MAXSIZE.  */</doc>
+<use f='qv2ray/test/catch.hpp' l='2161' u='c' c='_ZN5Catch11StringMakerINSt6chrono10time_pointINS1_3_V212system_clockET_EEvE7convertB5cxx11ERKS6_'/>
+<use f='qv2ray/test/catch.hpp' l='16591' u='c' c='_ZN5Catch12_GLOBAL__N_119getCurrentTimestampB5cxx11Ev'/>

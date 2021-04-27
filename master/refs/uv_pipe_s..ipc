@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='762' type='int'/>
+<offset>1984</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='762'>/* non-zero if this pipe is used for passing handles */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='38' u='w' c='uv_pipe_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='98' u='r' c='uv_pipe_listen'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='301' u='r' c='uv_pipe_pending_count'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='316' u='r' c='uv_pipe_pending_type'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1132' u='r' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1414' u='r' c='uv_write2'/>

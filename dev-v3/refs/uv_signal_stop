@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1578' type='int uv_signal_stop(uv_signal_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='594' u='c' c='uv__process_close'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='511' ll='515' type='int uv_signal_stop(uv_signal_t * handle)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/signal.cpp' l='38' u='a' c='_ZN3uvw12SignalHandle4stopEv'/>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor_database.h' l='151' type='bool google::protobuf::SimpleDescriptorDatabase::Add(const google::protobuf::FileDescriptorProto &amp; file)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='147'>// Adds the FileDescriptorProto to the database, making a copy.  The object
+  // can be deleted after Add() returns.  Returns false if the file conflicted
+  // with a file already in the database, in which case an error will have
+  // been written to GOOGLE_LOG(ERROR).</doc>

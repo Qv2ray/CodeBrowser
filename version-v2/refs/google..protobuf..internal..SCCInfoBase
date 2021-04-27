@@ -1,0 +1,11 @@
+<def f='include/google/protobuf/generated_message_util.h' l='335' ll='357'/>
+<use f='include/google/protobuf/generated_message_util.h' l='361'/>
+<use f='include/google/protobuf/generated_message_util.h' l='366'/>
+<use f='include/google/protobuf/generated_message_util.h' l='369' c='_ZN6google8protobuf8internal11InitSCCImplEPNS1_11SCCInfoBaseE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='371' c='_ZN6google8protobuf8internal7InitSCCEPNS1_11SCCInfoBaseE'/>
+<size>16</size>
+<doc f='include/google/protobuf/generated_message_util.h' l='333'>// SCCInfo represents information of a strongly connected component of
+// mutual dependent messages.</doc>
+<mbr r='google::protobuf::internal::SCCInfoBase::visit_status' o='0' t='std::atomic&lt;int&gt;'/>
+<mbr r='google::protobuf::internal::SCCInfoBase::num_deps' o='32' t='int'/>
+<mbr r='google::protobuf::internal::SCCInfoBase::init_func' o='64' t='void (*)()'/>

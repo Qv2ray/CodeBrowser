@@ -1,0 +1,22 @@
+<def f='include/c++/10/bits/basic_string.h' l='1805' ll='1814' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::erase(std::__cxx11::basic_string::size_type __pos = 0, std::__cxx11::basic_string::size_type __n = npos)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1790'>/**
+       *  @brief  Remove characters.
+       *  @param __pos  Index of first character to remove (default 0).
+       *  @param __n  Number of characters to remove (default remainder).
+       *  @return  Reference to this string.
+       *  @throw  std::out_of_range  If @a pos is beyond the end of this
+       *  string.
+       *
+       *  Removes @a __n characters from this string starting at @a
+       *  __pos.  The length of the string is reduced by @a __n.  If
+       *  there are &lt; @a __n characters to remove, the remainder of
+       *  the string is truncated.  If @a __p is beyond end of string,
+       *  out_of_range is thrown.  The value of the string doesn&apos;t
+       *  change if an error is thrown.
+      */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='447' u='c' c='_ZN5ZXing10DataMatrix10C40EncoderL16WriteNextTripletERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='796' u='c' c='_ZN5ZXing10DataMatrix14EdifactEncoderL13EncodeEdifactERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='219' u='c' c='_ZN5ZXing6QRCodeL25DecodeAlphanumericSegmentERNS_9BitSourceEibRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/test/catch.hpp' l='13213' u='c' c='_ZN5Catch12_GLOBAL__N_120applyFilenamesAsTagsERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='13219' u='c' c='_ZN5Catch12_GLOBAL__N_120applyFilenamesAsTagsERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='13901' u='c' c='_ZN5Catch12makeTestCaseEPNS_12ITestInvokerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11NameAndTagsERKNS_14SourceLineInfoE'/>

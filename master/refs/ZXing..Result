@@ -1,0 +1,245 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.h' l='43' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='41' ll='111'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='57' c='_ZNK5ZXing6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='41' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='38' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='37' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.h' l='32' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.h' l='33' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.h' l='33' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.h' l='34' c='_ZNK5ZXing6Pdf4176Reader14decodeMultipleB5cxx11ERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='93' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='102' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='106' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<size>152</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/Result.h' l='36'>/**
+* &lt;p&gt;Encapsulates the result of decoding a barcode within an image.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<fun r='_ZN5ZXing6ResultC1ENS_12DecodeStatusE'/>
+<fun r='_ZN5ZXing6ResultC1EONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatEONS_9ByteArrayE'/>
+<fun r='_ZN5ZXing6ResultC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiNS_13BarcodeFormatEONS_9ByteArrayE'/>
+<fun r='_ZN5ZXing6ResultC1EONS_13DecoderResultEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatE'/>
+<fun r='_ZNK5ZXing6Result7isValidEv'/>
+<fun r='_ZNK5ZXing6Result6statusEv'/>
+<fun r='_ZNK5ZXing6Result6formatEv'/>
+<fun r='_ZN5ZXing6Result9setFormatENS_13BarcodeFormatE'/>
+<fun r='_ZNK5ZXing6Result4textB5cxx11Ev'/>
+<fun r='_ZN5ZXing6Result7setTextEONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<fun r='_ZNK5ZXing6Result8positionEv'/>
+<fun r='_ZN5ZXing6Result11setPositionENS_13QuadrilateralINS_6PointTIiEEEE'/>
+<fun r='_ZNK5ZXing6Result8rawBytesEv'/>
+<fun r='_ZNK5ZXing6Result7numBitsEv'/>
+<fun r='_ZNK5ZXing6Result12resultPointsEv'/>
+<fun r='_ZNK5ZXing6Result8metadataEv'/>
+<fun r='_ZN5ZXing6Result8metadataEv'/>
+<mbr r='ZXing::Result::_status' o='0' t='ZXing::DecodeStatus'/>
+<mbr r='ZXing::Result::_format' o='32' t='ZXing::BarcodeFormat'/>
+<mbr r='ZXing::Result::_text' o='64' t='std::wstring'/>
+<mbr r='ZXing::Result::_position' o='320' t='ZXing::Position'/>
+<mbr r='ZXing::Result::_rawBytes' o='576' t='ZXing::ByteArray'/>
+<mbr r='ZXing::Result::_numBits' o='768' t='int'/>
+<mbr r='ZXing::Result::_metadata' o='832' t='ZXing::ResultMetadata'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='52' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='81' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='85' c='_ZN5ZXing11ReadBarcodeEiiPKhiNS_5FlagsINS_13BarcodeFormatEEEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='89' c='_ZN5ZXing11ReadBarcodeEiiPKhiiiiiNS_5FlagsINS_13BarcodeFormatEEEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='81' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='92' c='_ZN5ZXing11ReadBarcodeERKNS_9ImageViewERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='113' c='_ZN5ZXing11ReadBarcodeEiiPKhiNS_5FlagsINS_13BarcodeFormatEEEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='120' c='_ZN5ZXing11ReadBarcodeEiiPKhiiiiiNS_5FlagsINS_13BarcodeFormatEEEbb'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.cpp' l='33' c='_ZN5ZXing6ResultC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiNS_13BarcodeFormatEONS_9ByteArrayE'/>
+<size>152</size>
+<fun r='_ZN5ZXing6ResultC1EONSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatEONS_9ByteArrayE'/>
+<fun r='_ZN5ZXing6ResultC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiNS_13BarcodeFormatEONS_9ByteArrayE'/>
+<fun r='_ZN5ZXing6ResultC1EONS_13DecoderResultEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='33' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='38' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='55' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='47' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='52' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='57' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='59' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='60' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='65' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='71' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='74' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='69' c='_ZNK5ZXing4OneD9RowReader15decodeSingleRowEiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='85' c='_ZNK5ZXing4OneD9RowReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='87' c='_ZNK5ZXing4OneD9RowReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.h' l='37' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.h' l='38' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='218' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='224' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='228' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='237' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='261' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='265' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='276' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='279' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='285' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='301' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='318' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='329' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='339' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='344' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='348' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='354' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='361' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.h' l='36' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.h' l='37' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='199' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='205' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='219' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='224' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='228' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='230' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='240' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='247' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='251' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='289' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='306' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='311' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='322' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='327' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='331' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='333' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='339' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='345' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='352' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='355' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='48' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='49' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='164' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='169' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='180' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='184' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='188' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='197' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='205' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='210' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='213' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='221' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='229' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='232' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='243' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='247' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='254' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='261' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='265' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='268' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.h' l='33' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.h' l='34' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='110' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='115' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='126' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='130' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='134' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='143' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='148' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='151' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='157' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='160' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='170' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='181' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='184' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='194' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='198' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='204' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='209' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='212' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='218' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='221' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='45' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='61' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='49' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='50' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='205' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='211' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='215' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='219' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='227' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='232' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='241' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='247' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='281' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='284' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='287' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='46' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.h' l='35' c='_ZNK5ZXing4OneD10UPCAReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.h' l='36' c='_ZNK5ZXing4OneD10UPCAReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='57' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='63' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='66' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='90' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.h' l='30' c='_ZNK5ZXing4OneD11RSS14Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='396' c='_ZN5ZXing4OneDL15ConstructResultERKNS0_3RSS4PairES4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='416' c='_ZN5ZXing4OneDL15ConstructResultERKNS0_3RSS4PairES4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='419' c='_ZNK5ZXing4OneD11RSS14Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='448' c='_ZNK5ZXing4OneD11RSS14Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.h' l='31' c='_ZNK5ZXing4OneD17RSSExpandedReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='694' c='_ZN5ZXing4OneDL15ConstructResultERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='698' c='_ZN5ZXing4OneDL15ConstructResultERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='704' c='_ZN5ZXing4OneDL15ConstructResultERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='710' c='_ZN5ZXing4OneDL15ConstructResultERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS4_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='713' c='_ZNK5ZXing4OneD17RSSExpandedReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='723' c='_ZNK5ZXing4OneD17RSSExpandedReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='101' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='178' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='197' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='200' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='203' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.cpp' l='30' c='_ZNK5ZXing4OneD9RowReader15decodeSingleRowEiRKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.cpp' l='37' c='_ZNK5ZXing4OneD9RowReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.cpp' l='42' c='_ZNK5ZXing4OneD9RowReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='26' c='_ZN5ZXing4OneDL17MaybeReturnResultEONS_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='26' c='_ZN5ZXing4OneDL17MaybeReturnResultEONS_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='35' c='_ZN5ZXing4OneDL17MaybeReturnResultEONS_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='39' c='_ZNK5ZXing4OneD10UPCAReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='45' c='_ZNK5ZXing4OneD10UPCAReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.h' l='30' c='_ZN5ZXing4OneD22UPCEANExtensionSupport9DecodeRowEiRKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='133' c='_ZN5ZXing4OneD22UPCEANExtensionSupport9DecodeRowEiRKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='141' c='_ZN5ZXing4OneD22UPCEANExtensionSupport9DecodeRowEiRKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='148' c='_ZN5ZXing4OneD22UPCEANExtensionSupport9DecodeRowEiRKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='152' c='_ZN5ZXing4OneD22UPCEANExtensionSupport9DecodeRowEiRKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='81' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='86' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='99' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='106' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='110' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='115' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='118' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='124' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='125' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='135' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='67' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='81' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='98' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='101' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='106' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='109' c='_ZNK5ZXing6Pdf4176Reader14decodeMultipleB5cxx11ERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='112' c='_ZNK5ZXing6Pdf4176Reader14decodeMultipleB5cxx11ERKNS_12BinaryBitmapE'/>
+<size>152</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='41' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='46' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='51' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='62' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>152</size>

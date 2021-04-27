@@ -1,0 +1,20 @@
+<def f='include/google/protobuf/message_lite.h' l='73' type='int google::protobuf::internal::ToCachedSize(size_t size)'/>
+<doc f='include/google/protobuf/message_lite.h' l='66'>// We compute sizes as size_t but cache them as int.  This function converts a
+// computed size to a cached size.  Since we don&apos;t proceed with serialization
+// if the total size was &gt; INT_MAX, it is not important what this function
+// returns for inputs &gt; INT_MAX.  However this case should not error or
+// GOOGLE_CHECK-fail, because the full size_t resolution is still returned from
+// ByteSizeLong() and checked against INT_MAX; we can catch the overflow
+// there.</doc>
+<use f='/v2ray_api.pb.cc' l='562' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='843' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1083' u='c' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1356' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1593' u='c' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='1774' u='c' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='2287' u='c' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse12ByteSizeLongEv'/>
+<use f='/v2ray_api.pb.cc' l='2506' u='c' c='_ZNK5v2ray4core3app5stats7command6Config12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='523' u='c' c='_ZNK22DomainObject_Attribute12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='860' u='c' c='_ZNK12DomainObject12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1151' u='c' c='_ZNK7GeoSite12ByteSizeLongEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1386' u='c' c='_ZNK11GeoSiteList12ByteSizeLongEv'/>

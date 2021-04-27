@@ -1,0 +1,21 @@
+<use f='include/google/protobuf/message.h' l='961'/>
+<def f='include/google/protobuf/reflection_ops.h' l='57' ll='75'/>
+<use f='include/google/protobuf/reflection_ops.h' l='74' c='_ZN6google8protobuf8internal13ReflectionOpsC1ERKS2_'/>
+<use f='include/google/protobuf/reflection_ops.h' l='74' c='_ZN6google8protobuf8internal13ReflectionOpsaSERKS2_'/>
+<size>1</size>
+<doc f='include/google/protobuf/reflection_ops.h' l='48'>// Basic operations that can be performed using reflection.
+// These can be used as a cheap way to implement the corresponding
+// methods of the Message interface, though they are likely to be
+// slower than implementations tailored for the specific message type.
+//
+// This class should stay limited to operations needed to implement
+// the Message interface.
+//
+// This class is really a namespace that contains only static methods.</doc>
+<fun r='_ZN6google8protobuf8internal13ReflectionOps4CopyERKNS0_7MessageEPS3_'/>
+<fun r='_ZN6google8protobuf8internal13ReflectionOps5MergeERKNS0_7MessageEPS3_'/>
+<fun r='_ZN6google8protobuf8internal13ReflectionOps5ClearEPNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal13ReflectionOps13IsInitializedERKNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal13ReflectionOps20DiscardUnknownFieldsEPNS0_7MessageE'/>
+<fun r='_ZN6google8protobuf8internal13ReflectionOps24FindInitializationErrorsERKNS0_7MessageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorISB_SaISB_EE'/>
+<fun r='_ZN6google8protobuf8internal13ReflectionOpsC1ERKS2_'/>

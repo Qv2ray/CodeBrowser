@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='172' type='QRinput * QRinput_new2(int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='163'>/**
+ * Instantiate an input data object.
+ * @param version version number.
+ * @param level Error correction level.
+ * @return an input object (initialized). On error, NULL is returned and errno
+ *         is set to indicate the error.
+ * @throw ENOMEM unable to allocate memory for input objects.
+ * @throw EINVAL invalid arguments.
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='614' u='c' c='QRcode_encodeStringReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='653' u='c' c='QRcode_encodeDataReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='824' u='c' c='QRcode_encodeDataStructuredReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='113' u='c' c='QRinput_new'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='116' ll='136' type='QRinput * QRinput_new2(int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='145' u='c' c='QRinput_newMQR'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='336' u='c' c='QRinput_dup'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1518' u='c' c='QRinput_splitQRinputToStruct'/>

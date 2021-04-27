@@ -1,0 +1,6 @@
+<dec f='include/grpcpp/server_builder.h' l='170' type='grpc::ServerBuilder &amp; grpc::ServerBuilder::SetCompressionAlgorithmSupportStatus(grpc_compression_algorithm algorithm, bool enabled)'/>
+<doc f='include/grpcpp/server_builder.h' l='165'>/// Set the support status for compression algorithms. All algorithms are
+  /// enabled by default.
+  ///
+  /// Incoming calls compressed with an unsupported algorithm will fail with
+  /// \a GRPC_STATUS_UNIMPLEMENTED.</doc>

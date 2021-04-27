@@ -1,0 +1,10 @@
+<dec f='include/c++/10/bits/algorithmfwd.h' l='597' type='void std::reverse(_BIter , _BIter )'/>
+<def f='include/c++/10/bits/stl_algo.h' l='1164' ll='1172' type='void std::reverse(_BidirectionalIterator __first, _BidirectionalIterator __last)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='311' u='c' c='_ZN5ZXing8BitArray7reverseEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='96' u='c' c='_ZN5ZXing9BitMatrix9rotate180Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='193' u='c' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='476' u='c' c='_ZN5ZXing10DataMatrix14RegressionLine7reverseEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='264' u='c' c='_ZN5ZXing4OneDL19DecodeDataCharacterERKNS_8BitArrayERKNS0_3RSS13FinderPatternEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='130' u='c' c='_ZN5ZXing4OneDL12FindNextPairERKNS_8BitArrayERKNSt7__cxx114listINS0_3RSS12ExpandedPairESaIS7_EEEibRSt5arrayIiLm4EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='292' u='c' c='_ZN5ZXing4OneDL19DecodeDataCharacterERKNS_8BitArrayERKNS0_3RSS13FinderPatternEbb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='141' u='c' c='_ZN5ZXing6Pdf417L14DetectCodewordERKNS_9BitMatrixEiibiiii'/>

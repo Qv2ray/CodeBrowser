@@ -1,0 +1,26 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/request.hpp' l='21' c='uvw::Request'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='156' ll='230'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='156'/>
+<size>1424</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='148'>/**
+ * @brief The GetNameInfoReq request.
+ *
+ * Wrapper for [getnameinfo](http://linux.die.net/man/3/getnameinfo).&lt;br/&gt;
+ * It offers either asynchronous and synchronous access methods.
+ *
+ * To create a `GetNameInfoReq` through a `Loop`, no arguments are required.
+ */</doc>
+<fun r='_ZN3uvw14GetNameInfoReq16nameInfoCallbackEP16uv_getnameinfo_siPKcS4_'/>
+<fun r='_ZN3uvw14GetNameInfoReq8nameInfoERK8sockaddri'/>
+<fun r='_ZN3uvw14GetNameInfoReq8nameInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<fun r='_ZN3uvw14GetNameInfoReq8nameInfoENS_4AddrEi'/>
+<fun r='_ZN3uvw14GetNameInfoReq12nameInfoSyncERK8sockaddri'/>
+<fun r='_ZN3uvw14GetNameInfoReq12nameInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<fun r='_ZN3uvw14GetNameInfoReq12nameInfoSyncENS_4AddrEi'/>
+<fun r='_ZN3uvw14GetNameInfoReq16nameInfoCallbackEP16uv_getnameinfo_siPKcS4_'/>
+<fun r='_ZN3uvw14GetNameInfoReq8nameInfoERK8sockaddri'/>
+<fun r='_ZN3uvw14GetNameInfoReq8nameInfoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<fun r='_ZN3uvw14GetNameInfoReq8nameInfoENS_4AddrEi'/>
+<fun r='_ZN3uvw14GetNameInfoReq12nameInfoSyncERK8sockaddri'/>
+<fun r='_ZN3uvw14GetNameInfoReq12nameInfoSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji'/>
+<fun r='_ZN3uvw14GetNameInfoReq12nameInfoSyncENS_4AddrEi'/>

@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/create_channel_posix.h' l='36' type='std::shared_ptr&lt;Channel&gt; grpc::CreateInsecureChannelFromFd(const grpc::string &amp; target, int fd)'/>
+<doc f='include/grpcpp/create_channel_posix.h' l='32'>/// Create a new \a Channel communicating over the given file descriptor.
+///
+/// \param target The name of the target.
+/// \param fd The file descriptor representing a socket.</doc>

@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1710' type='int uv_cond_init(uv_cond_t * cond)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='211' u='c' c='init_threads'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='539' u='c' c='uv__custom_sem_init'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='704' ll='731' type='int uv_cond_init(uv_cond_t * cond)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='174' u='c' c='_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>

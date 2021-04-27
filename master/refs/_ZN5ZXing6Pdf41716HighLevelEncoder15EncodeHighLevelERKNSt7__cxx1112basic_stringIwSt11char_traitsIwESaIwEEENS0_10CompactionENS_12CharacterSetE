@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.h' l='37' type='static std::vector&lt;int&gt; ZXing::Pdf417::HighLevelEncoder::EncodeHighLevel(const std::wstring &amp; msg, ZXing::Pdf417::Compaction compaction, ZXing::CharacterSet encoding)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='522' u='c' c='_ZNK5ZXing6Pdf4177Encoder20generateBarcodeLogicERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='519' ll='592' type='static std::vector&lt;int&gt; ZXing::Pdf417::HighLevelEncoder::EncodeHighLevel(const std::wstring &amp; msg, ZXing::Pdf417::Compaction compaction, ZXing::CharacterSet encoding)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='508'>/**
+* Performs high-level encoding of a PDF417 message using the algorithm described in annex P
+* of ISO/IEC 15438:2001(E). If byte compaction has been selected, then only byte compaction
+* is used.
+*
+* @param msg the message
+* @param compaction compaction mode to use
+* @param encoding character encoding used to encode in default or byte compaction
+*  or {@code null} for default / not applicable
+* @return the encoded message (the char values range from 0 to 928)
+*/</doc>

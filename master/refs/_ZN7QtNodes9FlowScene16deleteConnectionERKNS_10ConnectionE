@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='36' type='void QtNodes::FlowScene::deleteConnection(const QtNodes::Connection &amp; connection)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/ConnectionGraphicsObject.cpp' l='126' u='c' c='_ZN7QtNodes24ConnectionGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='103' ll='111' type='void QtNodes::FlowScene::deleteConnection(const QtNodes::Connection &amp; connection)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='148' u='c' c='_ZN7QtNodes9FlowScene10removeNodeERNS_4NodeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='285' u='c' c='_ZN7QtNodes9FlowScene10clearSceneEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowView.cpp' l='178' u='c' c='_ZN7QtNodes8FlowView19deleteSelectedNodesEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='180' u='c' c='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='246' u='c' c='_ZN11RouteEditor19onConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='672' u='c' c='_ZN11RouteEditor32on_enableBalancerCB_stateChangedEi'/>

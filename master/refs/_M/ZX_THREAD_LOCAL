@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ZXConfig.h' l='24'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ZXConfig.h' l='20'>// Thread local or static memory may be used to reduce the number of (re-)allocations of temporary variables
+// in e.g. the ReedSolomonDecoder. It is disabled by default. It can be enabled by modifying the following define.
+// Note: The Apple clang compiler until XCode 8 does not support c++11&apos;s thread_local.
+// The alternative &apos;static&apos; makes the code thread unsafe.</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericGFPoly.cpp' l='156' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='35' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='153' u='c'/>

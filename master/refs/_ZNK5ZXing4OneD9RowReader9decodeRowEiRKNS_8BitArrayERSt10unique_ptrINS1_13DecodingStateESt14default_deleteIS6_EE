@@ -1,0 +1,24 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='85' type='ZXing::Result ZXing::OneD::RowReader::decodeRow(int rowNumber, const ZXing::BitArray &amp; row, std::unique_ptr&lt;DecodingState&gt; &amp; state) const'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='219' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='73'>/**
+	* &lt;p&gt;Attempts to decode a one-dimensional barcode format given a single row of
+	* an image.&lt;/p&gt;
+	*
+	* @param rowNumber row number from top of the row
+	* @param row the black/white pixel data of the row
+	* @param hints decode hints
+	* @return {@link Result} containing encoded string and start/end of barcode
+	* @throws NotFoundException if no potential barcode is found
+	* @throws ChecksumException if a potential barcode is found but does not pass its checksum
+	* @throws FormatException if a potential barcode is found but format is invalid
+	*/</doc>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='200' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='165' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='111' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='206' c='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='58' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='420' c='_ZNK5ZXing4OneD11RSS14Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='714' c='_ZNK5ZXing4OneD17RSSExpandedReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='178' u='c' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.cpp' l='34' u='c' c='_ZNK5ZXing4OneD9RowReader15decodeSingleRowEiRKNS_8BitArrayE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='82' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>

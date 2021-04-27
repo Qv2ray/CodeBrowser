@@ -1,0 +1,141 @@
+<use f='include/google/protobuf/message_lite.h' l='379' c='_ZN6google8protobuf11MessageLite10CastToBaseEPNS0_16RepeatedPtrFieldIT_EE'/>
+<use f='include/google/protobuf/message_lite.h' l='384' c='_ZN6google8protobuf11MessageLite10CastToBaseERKNS0_16RepeatedPtrFieldIT_EE'/>
+<def f='include/google/protobuf/repeated_field.h' l='424' ll='633'/>
+<use f='include/google/protobuf/repeated_field.h' l='462' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase9MergeFromERKS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='464' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='474' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase8CopyFromERKS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='492' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase4SwapEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='549' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapFallbackEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='592' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<use f='include/google/protobuf/repeated_field.h' l='593' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<use f='include/google/protobuf/repeated_field.h' l='632' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1ERKS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='632' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseaSERKS2_'/>
+<ovr f='include/google/protobuf/repeated_field.h' l='766' c='google::protobuf::RepeatedPtrField'/>
+<use f='include/google/protobuf/repeated_field.h' l='766'/>
+<use f='include/google/protobuf/repeated_field.h' l='1470' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase4SwapEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1479' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapFallbackEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1485' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapFallbackEPS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1585' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase9MergeFromERKS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1593' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1594' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1635' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase8CopyFromERKS2_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1887' c='_ZN6google8protobuf16RepeatedPtrFieldC1Ev'/>
+<use f='include/google/protobuf/repeated_field.h' l='1891' c='_ZN6google8protobuf16RepeatedPtrFieldC1EPNS0_5ArenaE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1896' c='_ZN6google8protobuf16RepeatedPtrFieldC1ERKNS0_16RepeatedPtrFieldIT_EE'/>
+<use f='include/google/protobuf/repeated_field.h' l='2379' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>
+<use f='include/google/protobuf/generated_message_util.h' l='138' c='_ZN6google8protobuf8internal21AllAreInitializedWeakERKNS0_16RepeatedPtrFieldIT_EE'/>
+<use f='include/google/protobuf/extension_set.h' l='719' c='_ZN6google8protobuf8internal12ExtensionSet42RepeatedMessage_SpaceUsedExcludingSelfLongEPNS1_20RepeatedPtrFieldBaseE'/>
+<size>24</size>
+<doc f='include/google/protobuf/repeated_field.h' l='403'>// This is the common base class for RepeatedPtrFields.  It deals only in void*
+// pointers.  Users should not use this interface directly.
+//
+// The methods of this interface correspond to the methods of RepeatedPtrField,
+// but may have a template argument called TypeHandler.  Its signature is:
+//   class TypeHandler {
+//    public:
+//     typedef MyType Type;
+//     // WeakType is almost always the same as MyType, but we use it in
+//     // ImplicitWeakTypeHandler.
+//     typedef MyType WeakType;
+//     static Type* New();
+//     static WeakType* NewFromPrototype(const WeakType* prototype,
+//                                       ::google::protobuf::Arena* arena);
+//     static void Delete(Type*);
+//     static void Clear(Type*);
+//     static void Merge(const Type&amp; from, Type* to);
+//
+//     // Only needs to be implemented if SpaceUsedExcludingSelf() is called.
+//     static int SpaceUsedLong(const Type&amp;);
+//   };</doc>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1Ev'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1EPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseD1Ev'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7DestroyEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase5emptyEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase4sizeEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7MutableEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase6DeleteEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase3AddEPNT_4TypeE'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase3GetEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7AddWeakEPKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase5ClearEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase9MergeFromERKS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase3AddEONT_4TypeEPSt9enable_ifIXsrS3_8MoveableEvE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase10RemoveLastEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase8CopyFromERKS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase8CloseGapEii'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7ReserveEi'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase8CapacityEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase8raw_dataEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase16raw_mutable_dataEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12mutable_dataEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase4dataEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase4SwapEPS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapElementsEii'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase26SpaceUsedExcludingSelfLongEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase14AddFromClearedEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12AddAllocatedEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase23UnsafeArenaAddAllocatedEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase11ReleaseLastEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase22UnsafeArenaReleaseLastEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase12ClearedCountEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase10AddClearedEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase14ReleaseClearedEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase20AddAllocatedInternalEPNT_4TypeESt17integral_constantIbLb1EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase20AddAllocatedInternalEPNT_4TypeESt17integral_constantIbLb0EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase24AddAllocatedSlowWithCopyEPNT_4TypeEPNS0_5ArenaES7_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase27AddAllocatedSlowWithoutCopyEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase19ReleaseLastInternalESt17integral_constantIbLb1EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase19ReleaseLastInternalESt17integral_constantIbLb0EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapFallbackEPS2_'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase17GetArenaNoVirtualEv'/>
+<smbr r='google::protobuf::internal::RepeatedPtrFieldBase::kInitialSize' t='const int'/>
+<mbr r='google::protobuf::internal::RepeatedPtrFieldBase::arena_' o='0' t='google::protobuf::Arena *'/>
+<mbr r='google::protobuf::internal::RepeatedPtrFieldBase::current_size_' o='64' t='int'/>
+<mbr r='google::protobuf::internal::RepeatedPtrFieldBase::total_size_' o='96' t='int'/>
+<smbr r='google::protobuf::internal::RepeatedPtrFieldBase::kRepHeaderSize' t='const size_t'/>
+<mbr r='google::protobuf::internal::RepeatedPtrFieldBase::rep_' o='128' t='google::protobuf::internal::RepeatedPtrFieldBase::Rep *'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase4castEPv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase4castEPKv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase18MergeFromInnerLoopEPPvS4_ii'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase14InternalExtendEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1ERKS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1Ev'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBaseC1EPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7DestroyEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase4SwapEPS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapFallbackEPS2_'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase5emptyEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase4sizeEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase3GetEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7MutableEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase6DeleteEi'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase3AddEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase3AddEONT_4TypeEPSt9enable_ifIXsrS3_8MoveableEvE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase10RemoveLastEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase5ClearEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase9MergeFromERKS2_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase17MergeFromInternalERKS2_MS2_FvPPvS6_iiE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase18MergeFromInnerLoopEPPvS4_ii'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase8CopyFromERKS2_'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase8CapacityEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase8raw_dataEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase16raw_mutable_dataEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12mutable_dataEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase4dataEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12SwapElementsEii'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase26SpaceUsedExcludingSelfLongEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase14AddFromClearedEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase20AddAllocatedInternalEPNT_4TypeESt17integral_constantIbLb1EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase24AddAllocatedSlowWithCopyEPNT_4TypeEPNS0_5ArenaES7_'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase20AddAllocatedInternalEPNT_4TypeESt17integral_constantIbLb0EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase23UnsafeArenaAddAllocatedEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase19ReleaseLastInternalESt17integral_constantIbLb1EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase19ReleaseLastInternalESt17integral_constantIbLb0EE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase22UnsafeArenaReleaseLastEv'/>
+<fun r='_ZNK6google8protobuf8internal20RepeatedPtrFieldBase12ClearedCountEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase10AddClearedEPNT_4TypeE'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase14ReleaseClearedEv'/>
+<fun r='_ZN6google8protobuf8internal20RepeatedPtrFieldBase12InternalSwapEPS2_'/>

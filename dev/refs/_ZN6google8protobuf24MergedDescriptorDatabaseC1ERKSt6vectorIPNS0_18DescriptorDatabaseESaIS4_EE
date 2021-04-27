@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor_database.h' l='357' type='void google::protobuf::MergedDescriptorDatabase::MergedDescriptorDatabase(const std::vector&lt;DescriptorDatabase *&gt; &amp; sources)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='354'>// Merge more than two databases.  The sources remain property of the caller.
+  // The vector may be deleted after the constructor returns but the
+  // DescriptorDatabases need to stick around.</doc>

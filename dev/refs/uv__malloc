@@ -1,0 +1,26 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='340' type='void * uv__malloc(size_t size)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='204' u='c' c='init_threads'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1165' u='c' c='uv__getpwuid_r'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1192' u='c' c='uv__getpwuid_r'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='548' u='c' c='uv__fs_opendir'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='639' u='c' c='uv__fs_statfs'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='698' u='c' c='uv__fs_readlink'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='131' u='c' c='uv_fs_link'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1842' u='c' c='uv_fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='131' u='c' c='uv_fs_rename'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='131' u='c' c='uv_fs_symlink'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2012' u='c' c='uv_fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='131' u='c' c='uv_fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='178' u='c' c='uv_getaddrinfo'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='284' u='c' c='uv_fs_event_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='347' u='c' c='uv_pipe_chmod'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='445' u='c' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='68' u='c' c='uv_setup_args'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1019' u='c' c='uv__stream_queue_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1451' u='c' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='530' u='c' c='uv__custom_sem_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='689' u='c' c='uv__udp_send'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='57' u='c' c='uv__strdup'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='68' u='c' c='uv__strndup'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='75' ll='79' type='void * uv__malloc(size_t size)'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='778' u='c' c='uv_loop_new'/>

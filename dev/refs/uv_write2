@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='513' type='int uv_write2(uv_write_t * req, uv_stream_t * handle, const uv_buf_t * bufs, unsigned int nbufs, uv_stream_t * send_handle, uv_write_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1393' ll='1486' type='int uv_write2(uv_write_t * req, uv_stream_t * stream, const uv_buf_t * bufs, unsigned int nbufs, uv_stream_t * send_handle, uv_write_cb cb)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1497' u='c' c='uv_write'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='108' u='a' c='_ZN3uvw7details8WriteReq5writeEP11uv_stream_sS3_'/>

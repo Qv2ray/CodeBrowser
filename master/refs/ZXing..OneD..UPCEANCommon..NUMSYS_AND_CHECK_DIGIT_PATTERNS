@@ -1,0 +1,32 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANCommon.h' l='61' type='const std::array&lt;int, 20&gt;'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANCommon.h' l='56'>/**
+	* See {@link #L_AND_G_PATTERNS}; these values similarly represent patterns of
+	* even-odd parity encodings of digits that imply both the number system (0 or 1)
+	* used (index / 10), and the check digit (index % 10).
+	*/</doc>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANCommon.cpp' l='87' ll='90' type='const std::array&lt;int, 20&gt;'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANCommon.cpp' l='64'>// For an UPC-E barcode, the final digit is represented by the parities used
+// to encode the middle six digits, according to the table below.
+//
+//                Parity of next 6 digits
+//    Digit   0     1     2     3     4     5
+//       0    Even   Even  Even Odd  Odd   Odd
+//       1    Even   Even  Odd  Even Odd   Odd
+//       2    Even   Even  Odd  Odd  Even  Odd
+//       3    Even   Even  Odd  Odd  Odd   Even
+//       4    Even   Odd   Even Even Odd   Odd
+//       5    Even   Odd   Odd  Even Even  Odd
+//       6    Even   Odd   Odd  Odd  Even  Even
+//       7    Even   Odd   Even Odd  Even  Odd
+//       8    Even   Odd   Even Odd  Odd   Even
+//       9    Even   Odd   Odd  Even Odd   Even
+//
+// The encoding is represented by the following array, which is a bit pattern
+// using Odd = 0 and Even = 1. For example, 5 is represented by:
+//
+//              Odd Even Even Odd Odd Even
+// in binary:
+//                0    1    1   0   0    1   == 0x19
+//</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.cpp' l='53' u='r' c='_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEWriter.cpp' l='43' u='m' c='_ZNK5ZXing4OneD10UPCEWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

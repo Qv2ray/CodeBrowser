@@ -1,0 +1,7 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='36' u='c' c='_ZN5ZXing22GenericLuminanceSourceC1EiiPKviiiii'/>
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='41' type='void ZXing::GenericLuminanceSource::GenericLuminanceSource(int left, int top, int width, int height, const void * bytes, int rowBytes, int pixelBytes, int redIndex, int greenIndex, int blueIndex)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='53' u='c' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKvi'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='63' ll='88' type='void ZXing::GenericLuminanceSource::GenericLuminanceSource(int left, int top, int width, int height, const void * bytes, int rowBytes, int pixelBytes, int redIndex, int greenIndex, int blueIndex)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='38'>/**
+	* Init with a RGB source, left, top, width, height specify the subregion area in orignal image; &apos;bytes&apos; points to the begining of image buffer (i.e. pixel (0,0)).
+	*/</doc>

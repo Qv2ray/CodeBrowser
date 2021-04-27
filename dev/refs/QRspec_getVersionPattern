@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='132' type='unsigned int QRspec_getVersionPattern(int version)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='126'>/**
+ * Return BCH encoded version information pattern that is used for the symbol
+ * of version 7 or greater. Use lower 18 bits.
+ * @param version
+ * @return BCH encoded version information pattern
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='364' ll='369' type='unsigned int QRspec_getVersionPattern(int version)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='482' u='c' c='QRspec_createFrame'/>

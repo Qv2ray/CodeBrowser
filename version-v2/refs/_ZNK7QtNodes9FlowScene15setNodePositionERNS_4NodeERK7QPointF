@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowScene.hpp' l='46' type='void QtNodes::FlowScene::setNodePosition(QtNodes::Node &amp; node, const QPointF &amp; pos) const'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='237' ll='241' type='void QtNodes::FlowScene::setNodePosition(QtNodes::Node &amp; node, const QPointF &amp; pos) const'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/ChainEditorWidget.cpp' l='62' u='c' c='_ZN17ChainEditorWidget34OnDispatcherChainedOutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='61' u='c' c='_ZN19RoutingEditorWidget26OnDispatcherInboundCreatedESt10shared_ptrI13SAFETYPE_IMPLIN6Qv2ray4base8safetype11__INBOUND__E11QJsonObjectEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='69' u='c' c='_ZN19RoutingEditorWidget27OnDispatcherOutboundCreatedESt10shared_ptrIN6Qv2ray4base7objects7complex18OutboundObjectMetaEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='77' u='c' c='_ZN19RoutingEditorWidget23OnDispatcherRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>

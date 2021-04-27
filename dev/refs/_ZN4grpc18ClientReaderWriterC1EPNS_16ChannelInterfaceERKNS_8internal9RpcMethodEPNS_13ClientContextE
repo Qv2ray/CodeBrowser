@@ -1,0 +1,4 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='549' ll='565' type='void grpc::ClientReaderWriter::ClientReaderWriter&lt;W, R&gt;(::grpc::ChannelInterface * channel, const ::grpc::internal::RpcMethod &amp; method, grpc::ClientContext * context)'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='546'>/// Block to create a stream and write the initial metadata and \a request
+  /// out. Note that \a context will be used to fill in custom initial metadata
+  /// used to send to the server when starting the call.</doc>

@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitHacks.h' l='38' ll='53' type='int ZXing::BitHacks::NumberOfLeadingZeros(uint32_t x)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitHacks.h' l='108' u='c' c='_ZN5ZXing8BitHacks13HighestBitSetEj'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitHacks.h' l='30'>/**
+* The code below is taken from https://graphics.stanford.edu/~seander/bithacks.html
+* All credits go to Sean Eron Anderson and other authors mentioned in that page.
+*/
+
+/// &lt;summary&gt;
+/// Compute the number of zero bits on the left.
+/// &lt;/summary&gt;</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='240' u='c' c='_ZN5ZXing6QRCodeL10FindMSBSetEj'/>

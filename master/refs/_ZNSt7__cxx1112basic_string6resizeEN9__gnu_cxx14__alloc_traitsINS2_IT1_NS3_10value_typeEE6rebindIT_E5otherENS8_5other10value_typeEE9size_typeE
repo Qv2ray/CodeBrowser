@@ -1,0 +1,28 @@
+<def f='include/c++/10/bits/basic_string.h' l='938' ll='940' type='void std::__cxx11::basic_string::resize(std::__cxx11::basic_string::size_type __n)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='928'>/**
+       *  @brief  Resizes the %string to the specified number of characters.
+       *  @param  __n  Number of characters the %string should contain.
+       *
+       *  This function will resize the %string to the specified length.  If
+       *  the new size is smaller than the %string&apos;s current size the %string
+       *  is truncated, otherwise the %string is extended and new characters
+       *  are default-constructed.  For basic types such as char, this means
+       *  setting them to 0.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='618' u='c' c='_ZNK5ZXing10BigInteger8toStringB5cxx11Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='427' u='c' c='_ZN5ZXing10DataMatrix10C40EncoderL21BacktrackOneCharacterERNS0_14EncoderContextERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_iSt8functionIFiiSA_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='244' u='c' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL10GetMessageB5cxx11ERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='154' u='c' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='215' u='c' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/Big5TextEncoder.cpp' l='4253' u='c' c='_ZN15Big5TextEncoder10EncodeBig5ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/Big5TextEncoder.cpp' l='4271' u='c' c='_ZN15Big5TextEncoder10EncodeBig5ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.cpp' l='3982' u='c' c='_ZN13GBTextEncoder13EncodeGB18030ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.cpp' l='4032' u='c' c='_ZN13GBTextEncoder13EncodeGB18030ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.cpp' l='4040' u='c' c='_ZN13GBTextEncoder12EncodeGB2312ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.cpp' l='4060' u='c' c='_ZN13GBTextEncoder12EncodeGB2312ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/JPTextEncoder.cpp' l='2143' u='c' c='_ZN13JPTextEncoder14EncodeShiftJISERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/JPTextEncoder.cpp' l='2167' u='c' c='_ZN13JPTextEncoder14EncodeShiftJISERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/JPTextEncoder.cpp' l='2179' u='c' c='_ZN13JPTextEncoder11EncodeEUCJPERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/JPTextEncoder.cpp' l='2215' u='c' c='_ZN13JPTextEncoder11EncodeEUCJPERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/KRTextEncoder.cpp' l='711' u='c' c='_ZN13KRTextDecoder11EncodeEucKrERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/KRTextEncoder.cpp' l='730' u='c' c='_ZN13KRTextDecoder11EncodeEucKrERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>

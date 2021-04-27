@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='736' type='int uv_tty_reset_mode()'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='378' ll='395' type='int uv_tty_reset_mode()'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='374'>/* This function is async signal-safe, meaning that it&apos;s safe to call from
+ * inside a signal handler _unless_ execution was inside uv_tty_set_mode()&apos;s
+ * critical section when the signal was raised.
+ */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='14' u='c' c='_ZN3uvw7details13ResetModeMemoD1Ev'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='45' u='c' c='_ZN3uvw9TTYHandle5resetEv'/>

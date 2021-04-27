@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>thread.h source code [qv2ray/3rdparty/uvw/src/uvw/thread.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::Barrier,uvw::Condition,uvw::Mutex,uvw::Once,uvw::RWLock,uvw::Semaphore,uvw::Thread,uvw::ThreadLocalStorage,uvw::details::UVThreadCreateFlags "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/thread.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='thread.h.html'>thread.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_THREAD_INCLUDE_H">UVW_THREAD_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_THREAD_INCLUDE_H" data-ref="_M/UVW_THREAD_INCLUDE_H">UVW_THREAD_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../../../include/c++/10/cstddef.html">&lt;cstddef&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../../../../../include/c++/10/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="loop.h.html">"loop.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="underlying_type.hpp.html">"underlying_type.hpp"</a></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVThreadCreateFlags" title='uvw::details::UVThreadCreateFlags' data-ref="uvw::details::UVThreadCreateFlags" data-ref-filename="uvw..details..UVThreadCreateFlags">UVThreadCreateFlags</dfn>: std::underlying_type_t&lt;uv_thread_create_flags&gt; {</td></tr>
+<tr><th id="22">22</th><td>    <dfn class="enum" id="uvw::details::UVThreadCreateFlags::THREAD_NO_FLAGS" title='uvw::details::UVThreadCreateFlags::THREAD_NO_FLAGS' data-ref="uvw::details::UVThreadCreateFlags::THREAD_NO_FLAGS" data-ref-filename="uvw..details..UVThreadCreateFlags..THREAD_NO_FLAGS">THREAD_NO_FLAGS</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_THREAD_NO_FLAGS" title='UV_THREAD_NO_FLAGS' data-ref="UV_THREAD_NO_FLAGS" data-ref-filename="UV_THREAD_NO_FLAGS">UV_THREAD_NO_FLAGS</a>,</td></tr>
+<tr><th id="23">23</th><td>    <dfn class="enum" id="uvw::details::UVThreadCreateFlags::THREAD_HAS_STACK_SIZE" title='uvw::details::UVThreadCreateFlags::THREAD_HAS_STACK_SIZE' data-ref="uvw::details::UVThreadCreateFlags::THREAD_HAS_STACK_SIZE" data-ref-filename="uvw..details..UVThreadCreateFlags..THREAD_HAS_STACK_SIZE">THREAD_HAS_STACK_SIZE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_THREAD_HAS_STACK_SIZE" title='UV_THREAD_HAS_STACK_SIZE' data-ref="UV_THREAD_HAS_STACK_SIZE" data-ref-filename="UV_THREAD_HAS_STACK_SIZE">UV_THREAD_HAS_STACK_SIZE</a></td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>class</b> <a class="type" href="#uvw::Thread" title='uvw::Thread' data-ref="uvw::Thread" data-ref-filename="uvw..Thread">Thread</a>;</td></tr>
+<tr><th id="31">31</th><td><b>class</b> <a class="type" href="#uvw::ThreadLocalStorage" title='uvw::ThreadLocalStorage' data-ref="uvw::ThreadLocalStorage" data-ref-filename="uvw..ThreadLocalStorage">ThreadLocalStorage</a>;</td></tr>
+<tr><th id="32">32</th><td><b>class</b> <a class="type" href="#uvw::Once" title='uvw::Once' data-ref="uvw::Once" data-ref-filename="uvw..Once">Once</a>;</td></tr>
+<tr><th id="33">33</th><td><b>class</b> <a class="type" href="#uvw::Mutex" title='uvw::Mutex' data-ref="uvw::Mutex" data-ref-filename="uvw..Mutex">Mutex</a>;</td></tr>
+<tr><th id="34">34</th><td><b>class</b> <a class="type" href="#uvw::RWLock" title='uvw::RWLock' data-ref="uvw::RWLock" data-ref-filename="uvw..RWLock">RWLock</a>;</td></tr>
+<tr><th id="35">35</th><td><b>class</b> <a class="type" href="#uvw::Semaphore" title='uvw::Semaphore' data-ref="uvw::Semaphore" data-ref-filename="uvw..Semaphore">Semaphore</a>;</td></tr>
+<tr><th id="36">36</th><td><b>class</b> <a class="type" href="#uvw::Condition" title='uvw::Condition' data-ref="uvw::Condition" data-ref-filename="uvw..Condition">Condition</a>;</td></tr>
+<tr><th id="37">37</th><td><b>class</b> <a class="type" href="#uvw::Barrier" title='uvw::Barrier' data-ref="uvw::Barrier" data-ref-filename="uvw..Barrier">Barrier</a>;</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">@brief</span> The Thread wrapper.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * To create a `Thread` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * * A callback invoked to initialize thread execution. The type must be such</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * that it can be assigned to an `std::function&lt;void(std::shared_ptr&lt;void&gt;)&gt;`.</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * * An optional payload the type of which is `std::shared_ptr&lt;void&gt;`.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="49">49</th><td><b>class</b> <dfn class="type def" id="uvw::Thread" title='uvw::Thread' data-ref="uvw::Thread" data-ref-filename="uvw..Thread">Thread</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::Thread" title='uvw::Thread' data-ref="uvw::Thread" data-ref-filename="uvw..Thread">Thread</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_thread_t" title='uv_thread_t' data-type='pthread_t' data-ref="uv_thread_t" data-ref-filename="uv_thread_t">uv_thread_t</a>&gt; {</td></tr>
+<tr><th id="50">50</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Thread::InternalTask" title='uvw::Thread::InternalTask' data-type='std::function&lt;void (std::shared_ptr&lt;void&gt;)&gt;' data-ref="uvw::Thread::InternalTask" data-ref-filename="uvw..Thread..InternalTask">InternalTask</dfn> = <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/std_function.h.html#std::function" title='std::function' data-ref="std::function" data-ref-filename="std..function">function</a>&lt;<em>void</em>(<span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<em>void</em>&gt;)&gt;;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>    <em>static</em> <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6Thread14createCallbackEPv" title='uvw::Thread::createCallback' data-ref="_ZN3uvw6Thread14createCallbackEPv" data-ref-filename="_ZN3uvw6Thread14createCallbackEPv" id="_ZN3uvw6Thread14createCallbackEPv">createCallback</a>(<em>void</em> *<dfn class="local col1 decl" id="1arg" title='arg' data-type='void *' data-ref="1arg" data-ref-filename="1arg">arg</dfn>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><b>public</b>:</td></tr>
+<tr><th id="55">55</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Thread::Options" title='uvw::Thread::Options' data-type='details::UVThreadCreateFlags' data-ref="uvw::Thread::Options" data-ref-filename="uvw..Thread..Options">Options</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVThreadCreateFlags" title='uvw::details::UVThreadCreateFlags' data-ref="uvw::details::UVThreadCreateFlags" data-ref-filename="uvw..details..UVThreadCreateFlags">UVThreadCreateFlags</a>;</td></tr>
+<tr><th id="56">56</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Thread::Task" title='uvw::Thread::Task' data-type='uvw::Thread::InternalTask' data-ref="uvw::Thread::Task" data-ref-filename="uvw..Thread..Task">Task</dfn> = <a class="typedef" href="#uvw::Thread::InternalTask" title='uvw::Thread::InternalTask' data-type='std::function&lt;void (std::shared_ptr&lt;void&gt;)&gt;' data-ref="uvw::Thread::InternalTask" data-ref-filename="uvw..Thread..InternalTask">InternalTask</a>;</td></tr>
+<tr><th id="57">57</th><td>    <b>using</b> <dfn class="typedef" id="uvw::Thread::Type" title='uvw::Thread::Type' data-type='uv_thread_t' data-ref="uvw::Thread::Type" data-ref-filename="uvw..Thread..Type">Type</dfn> = <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_thread_t" title='uv_thread_t' data-type='pthread_t' data-ref="uv_thread_t" data-ref-filename="uv_thread_t">uv_thread_t</a>;</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_" title='uvw::Thread::Thread' data-ref="_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_" data-ref-filename="_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_" id="_ZN3uvw6ThreadC1ENS_14UnderlyingTypeIS0_mE17ConstructorAccessESt10shared_ptrINS_4LoopEESt8functionIFvS4_IvEEES8_">Thread</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col2 decl" id="2ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::Thread, unsigned long&gt;::ConstructorAccess' data-ref="2ca" data-ref-filename="2ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col3 decl" id="3ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="3ref" data-ref-filename="3ref">ref</dfn>, <a class="typedef" href="#uvw::Thread::Task" title='uvw::Thread::Task' data-type='uvw::Thread::InternalTask' data-ref="uvw::Thread::Task" data-ref-filename="uvw..Thread..Task">Task</a> <dfn class="local col4 decl" id="4t" title='t' data-type='uvw::Thread::Task' data-ref="4t" data-ref-filename="4t">t</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<em>void</em>&gt; <dfn class="local col5 decl" id="5d" title='d' data-type='std::shared_ptr&lt;void&gt;' data-ref="5d" data-ref-filename="5d">d</dfn> = <a class="ref fn fake" href="../../../../../include/c++/10/bits/shared_ptr.h.html#_ZNSt10shared_ptrC1EDn" title='std::shared_ptr::shared_ptr&lt;_Tp&gt;' data-ref="_ZNSt10shared_ptrC1EDn" data-ref-filename="_ZNSt10shared_ptrC1EDn"></a><a class="ref fn fake" href="../../../../../include/c++/10/bits/shared_ptr.h.html#_ZNSt10shared_ptrC1EDn" title='std::shared_ptr::shared_ptr&lt;_Tp&gt;' data-ref="_ZNSt10shared_ptrC1EDn" data-ref-filename="_ZNSt10shared_ptrC1EDn"></a><b>nullptr</b>) <b>noexcept</b>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">     * <span class="command">@brief</span> Obtains the identifier of the calling thread.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">     * <span class="command">@return</span> The identifier of the calling thread.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="65">65</th><td>    <em>static</em> <a class="typedef" href="#uvw::Thread::Type" title='uvw::Thread::Type' data-type='uv_thread_t' data-ref="uvw::Thread::Type" data-ref-filename="uvw..Thread..Type">Type</a> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6Thread4selfEv" title='uvw::Thread::self' data-ref="_ZN3uvw6Thread4selfEv" data-ref-filename="_ZN3uvw6Thread4selfEv" id="_ZN3uvw6Thread4selfEv">self</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">     * <span class="command">@brief</span> Compares thread by means of their identifiers.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">tl</span> A valid instance of a thread.</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">tr</span> A valid instance of a thread.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc">     * <span class="command">@return</span> True if the two threads are the same thread, false otherwise.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="73">73</th><td>    <em>static</em> <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6Thread5equalERKS0_S2_" title='uvw::Thread::equal' data-ref="_ZN3uvw6Thread5equalERKS0_S2_" data-ref-filename="_ZN3uvw6Thread5equalERKS0_S2_" id="_ZN3uvw6Thread5equalERKS0_S2_">equal</a>(<em>const</em> <a class="type" href="#uvw::Thread" title='uvw::Thread' data-ref="uvw::Thread" data-ref-filename="uvw..Thread">Thread</a> &amp;<dfn class="local col6 decl" id="6tl" title='tl' data-type='const uvw::Thread &amp;' data-ref="6tl" data-ref-filename="6tl">tl</dfn>, <em>const</em> <a class="type" href="#uvw::Thread" title='uvw::Thread' data-ref="uvw::Thread" data-ref-filename="uvw..Thread">Thread</a> &amp;<dfn class="local col7 decl" id="7tr" title='tr' data-type='const uvw::Thread &amp;' data-ref="7tr" data-ref-filename="7tr">tr</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw6ThreadD1Ev" title='uvw::Thread::~Thread' data-ref="_ZN3uvw6ThreadD1Ev" data-ref-filename="_ZN3uvw6ThreadD1Ev" id="_ZN3uvw6ThreadD1Ev">~Thread</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     * <span class="command">@brief</span> Creates a new thread.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="81">81</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6Thread3runEv" title='uvw::Thread::run' data-ref="_ZN3uvw6Thread3runEv" data-ref-filename="_ZN3uvw6Thread3runEv" id="_ZN3uvw6Thread3runEv">run</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     * <span class="command">@brief</span> Creates a new thread.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">     * * `Thread::Options::THREAD_NO_FLAGS`: no flags set.</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc">     * * `Thread::Options::THREAD_HAS_STACK_SIZE`: if set, `stack` specifies a</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     * stack size for the new thread. 0 indicates that the default value should</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     * be used (it behaves as if the flag was not set). Other values will be</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     * rounded up to the nearest page boundary.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="96">96</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6Thread3runENS_5FlagsINS_7details19UVThreadCreateFlagsEEEm" title='uvw::Thread::run' data-ref="_ZN3uvw6Thread3runENS_5FlagsINS_7details19UVThreadCreateFlagsEEEm" data-ref-filename="_ZN3uvw6Thread3runENS_5FlagsINS_7details19UVThreadCreateFlagsEEEm" id="_ZN3uvw6Thread3runENS_5FlagsINS_7details19UVThreadCreateFlagsEEEm">run</a>(<a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::Thread::Options" title='uvw::Thread::Options' data-type='details::UVThreadCreateFlags' data-ref="uvw::Thread::Options" data-ref-filename="uvw..Thread..Options">Options</a>&gt; <dfn class="local col8 decl" id="8opts" title='opts' data-type='Flags&lt;uvw::Thread::Options&gt;' data-ref="8opts" data-ref-filename="8opts">opts</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../../../include/x86_64-linux-gnu/c++/10/bits/c++config.h.html#std::size_t" title='std::size_t' data-type='unsigned long' data-ref="std::size_t" data-ref-filename="std..size_t">size_t</a> <dfn class="local col9 decl" id="9stack" title='stack' data-type='std::size_t' data-ref="9stack" data-ref-filename="9stack">stack</dfn> = {}) <b>noexcept</b>;</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * <span class="command">@brief</span> Joins with a terminated thread.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="102">102</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6Thread4joinEv" title='uvw::Thread::join' data-ref="_ZN3uvw6Thread4joinEv" data-ref-filename="_ZN3uvw6Thread4joinEv" id="_ZN3uvw6Thread4joinEv">join</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><b>private</b>:</td></tr>
+<tr><th id="105">105</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<em>void</em>&gt; <dfn class="decl field" id="uvw::Thread::data" title='uvw::Thread::data' data-ref="uvw::Thread::data" data-ref-filename="uvw..Thread..data">data</dfn>;</td></tr>
+<tr><th id="106">106</th><td>    <a class="typedef" href="#uvw::Thread::Task" title='uvw::Thread::Task' data-type='uvw::Thread::InternalTask' data-ref="uvw::Thread::Task" data-ref-filename="uvw..Thread..Task">Task</a> <dfn class="decl field" id="uvw::Thread::task" title='uvw::Thread::task' data-ref="uvw::Thread::task" data-ref-filename="uvw..Thread..task">task</dfn>;</td></tr>
+<tr><th id="107">107</th><td>};</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * <span class="command">@brief</span> The ThreadLocalStorage wrapper.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * A storage area that can only be accessed by one thread. The variable can be</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> * seen as a global variable that is only visible to a particular thread and not</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * the whole program.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="117">117</th><td><b>class</b> <dfn class="type def" id="uvw::ThreadLocalStorage" title='uvw::ThreadLocalStorage' data-ref="uvw::ThreadLocalStorage" data-ref-filename="uvw..ThreadLocalStorage">ThreadLocalStorage</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::ThreadLocalStorage" title='uvw::ThreadLocalStorage' data-ref="uvw::ThreadLocalStorage" data-ref-filename="uvw..ThreadLocalStorage">ThreadLocalStorage</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_key_t" title='uv_key_t' data-type='pthread_key_t' data-ref="uv_key_t" data-ref-filename="uv_key_t">uv_key_t</a>&gt; {</td></tr>
+<tr><th id="118">118</th><td><b>public</b>:</td></tr>
+<tr><th id="119">119</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE" title='uvw::ThreadLocalStorage::ThreadLocalStorage' data-ref="_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE" data-ref-filename="_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE" id="_ZN3uvw18ThreadLocalStorageC1ENS_14UnderlyingTypeIS0_jE17ConstructorAccessESt10shared_ptrINS_4LoopEE">ThreadLocalStorage</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col0 decl" id="10ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::ThreadLocalStorage, unsigned int&gt;::ConstructorAccess' data-ref="10ca" data-ref-filename="10ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col1 decl" id="11ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="11ref" data-ref-filename="11ref">ref</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw18ThreadLocalStorageD1Ev" title='uvw::ThreadLocalStorage::~ThreadLocalStorage' data-ref="_ZN3uvw18ThreadLocalStorageD1Ev" data-ref-filename="_ZN3uvw18ThreadLocalStorageD1Ev" id="_ZN3uvw18ThreadLocalStorageD1Ev">~ThreadLocalStorage</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">     * <span class="command">@brief</span> Gets the value of a given variable.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     * <span class="command">@tparam</span> <span class="arg">T</span> Type to which to cast the opaque storage area.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     * <span class="command">@return</span> A pointer to the given variable.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="128">128</th><td>    <b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="129">129</th><td>    T* <dfn class="decl def fn" id="_ZN3uvw18ThreadLocalStorage3getEv" title='uvw::ThreadLocalStorage::get' data-ref="_ZN3uvw18ThreadLocalStorage3getEv" data-ref-filename="_ZN3uvw18ThreadLocalStorage3getEv">get</dfn>() <b>noexcept</b> {</td></tr>
+<tr><th id="130">130</th><td>        <b>return</b> <b>static_cast</b>&lt;T*&gt;(<a class="ref fn" href="../../../libuv/include/uv.h.html#uv_key_get" title='uv_key_get' data-ref="uv_key_get" data-ref-filename="uv_key_get">uv_key_get</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>::<a class="member fn" href="underlying_type.hpp.html#_ZN3uvw14UnderlyingType3getEv" title='uvw::UnderlyingType::get' data-ref="_ZN3uvw14UnderlyingType3getEv" data-ref-filename="_ZN3uvw14UnderlyingType3getEv">get</a>()));</td></tr>
+<tr><th id="131">131</th><td>    }</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">     * <span class="command">@brief</span> Sets the value of a given variable.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     * <span class="command">@tparam</span> <span class="arg">T</span> Type of the variable to store aside.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">value</span> A valid pointer to the variable to store</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="138">138</th><td>    <b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="139">139</th><td>    <em>void</em> <dfn class="decl def fn" id="_ZN3uvw18ThreadLocalStorage3setEPT_" title='uvw::ThreadLocalStorage::set' data-ref="_ZN3uvw18ThreadLocalStorage3setEPT_" data-ref-filename="_ZN3uvw18ThreadLocalStorage3setEPT_">set</dfn>(T *<dfn class="local col2 decl" id="12value" title='value' data-type='T *' data-ref="12value" data-ref-filename="12value">value</dfn>) <b>noexcept</b> {</td></tr>
+<tr><th id="140">140</th><td>        <b>return</b> uv_key_set(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>::<a class="member fn" href="underlying_type.hpp.html#_ZN3uvw14UnderlyingType3getEv" title='uvw::UnderlyingType::get' data-ref="_ZN3uvw14UnderlyingType3getEv" data-ref-filename="_ZN3uvw14UnderlyingType3getEv">get</a>(), <a class="local col2 ref" href="#12value" title='value' data-ref="12value" data-ref-filename="12value">value</a>);</td></tr>
+<tr><th id="141">141</th><td>    }</td></tr>
+<tr><th id="142">142</th><td>};</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> * <span class="command">@brief</span> The Once wrapper.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * Runs a function once and only once. Concurrent calls to `once` will block all</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * callers except one (it’s unspecified which one).</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="151">151</th><td><b>class</b> <dfn class="type def" id="uvw::Once" title='uvw::Once' data-ref="uvw::Once" data-ref-filename="uvw..Once">Once</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::Once" title='uvw::Once' data-ref="uvw::Once" data-ref-filename="uvw..Once">Once</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_once_t" title='uv_once_t' data-type='pthread_once_t' data-ref="uv_once_t" data-ref-filename="uv_once_t">uv_once_t</a>&gt; {</td></tr>
+<tr><th id="152">152</th><td>    <em>static</em> <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_once_t" title='uv_once_t' data-type='pthread_once_t' data-ref="uv_once_t" data-ref-filename="uv_once_t">uv_once_t</a>* <a class="decl fn" href="thread.cpp.html#_ZN3uvw4Once5guardEv" title='uvw::Once::guard' data-ref="_ZN3uvw4Once5guardEv" data-ref-filename="_ZN3uvw4Once5guardEv" id="_ZN3uvw4Once5guardEv">guard</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><b>public</b>:</td></tr>
+<tr><th id="155">155</th><td>    <b>using</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>::UnderlyingType;</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc">     * <span class="command">@brief</span> Runs a function once and only once.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc">     * The callback must be such that it's convertible to `void(*)(void)`. Free</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc">     * functions and non-capturing lambdas are both viable solutions.</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc">     * <span class="command">@tparam</span> <span class="arg">F</span> Type of the callback.</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">f</span> A valid callback function.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="166">166</th><td>    <b>template</b>&lt;<b>typename</b> F&gt;</td></tr>
+<tr><th id="167">167</th><td>    <em>static</em> <em>void</em> <dfn class="decl def fn" id="_ZN3uvw4Once4onceEOT_" title='uvw::Once::once' data-ref="_ZN3uvw4Once4onceEOT_" data-ref-filename="_ZN3uvw4Once4onceEOT_">once</dfn>(F &amp;&amp;<dfn class="local col3 decl" id="13f" title='f' data-type='F &amp;&amp;' data-ref="13f" data-ref-filename="13f">f</dfn>) <b>noexcept</b> {</td></tr>
+<tr><th id="168">168</th><td>        <b>using</b> <dfn class="local col4 typedef" id="14CallbackType" title='CallbackType' data-type='void (*)()' data-ref="14CallbackType" data-ref-filename="14CallbackType">CallbackType</dfn> = <em>void</em>(*)(<em>void</em>);</td></tr>
+<tr><th id="169">169</th><td>        <b>static_assert</b>(<span class="namespace">std::</span>is_convertible_v&lt;F, <a class="local col4 typedef" href="#14CallbackType" title='CallbackType' data-type='void (*)()' data-ref="14CallbackType" data-ref-filename="14CallbackType">CallbackType</a>&gt;);</td></tr>
+<tr><th id="170">170</th><td>        <a class="local col4 typedef" href="#14CallbackType" title='CallbackType' data-type='void (*)()' data-ref="14CallbackType" data-ref-filename="14CallbackType">CallbackType</a> <dfn class="local col5 decl" id="15cb" title='cb' data-type='CallbackType' data-ref="15cb" data-ref-filename="15cb">cb</dfn> = <a class="local col3 ref" href="#13f" title='f' data-ref="13f" data-ref-filename="13f">f</a>;</td></tr>
+<tr><th id="171">171</th><td>        <a class="ref fn" href="../../../libuv/include/uv.h.html#uv_once" title='uv_once' data-ref="uv_once" data-ref-filename="uv_once">uv_once</a>(<a class="member fn" href="thread.cpp.html#_ZN3uvw4Once5guardEv" title='uvw::Once::guard' data-ref="_ZN3uvw4Once5guardEv" data-ref-filename="_ZN3uvw4Once5guardEv">guard</a>(), <a class="local col5 ref" href="#15cb" title='cb' data-ref="15cb" data-ref-filename="15cb">cb</a>);</td></tr>
+<tr><th id="172">172</th><td>    }</td></tr>
+<tr><th id="173">173</th><td>};</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> * <span class="command">@brief</span> The Mutex wrapper.</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> * To create a `Mutex` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * * An option boolean that specifies if the mutex is a recursive one. The</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * default value is false, the mutex isn't recursive.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="184">184</th><td><b>class</b> <dfn class="type def" id="uvw::Mutex" title='uvw::Mutex' data-ref="uvw::Mutex" data-ref-filename="uvw..Mutex">Mutex</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::Mutex" title='uvw::Mutex' data-ref="uvw::Mutex" data-ref-filename="uvw..Mutex">Mutex</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_mutex_t" title='uv_mutex_t' data-type='pthread_mutex_t' data-ref="uv_mutex_t" data-ref-filename="uv_mutex_t">uv_mutex_t</a>&gt; {</td></tr>
+<tr><th id="185">185</th><td>    <b>friend</b> <b>class</b> <a class="type" href="#uvw::Condition" title='uvw::Condition' data-ref="uvw::Condition" data-ref-filename="uvw..Condition">Condition</a>;</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><b>public</b>:</td></tr>
+<tr><th id="188">188</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb" title='uvw::Mutex::Mutex' data-ref="_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb" data-ref-filename="_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb" id="_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb">Mutex</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col6 decl" id="16ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::Mutex, pthread_mutex_t&gt;::ConstructorAccess' data-ref="16ca" data-ref-filename="16ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col7 decl" id="17ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="17ref" data-ref-filename="17ref">ref</dfn>, <em>bool</em> <dfn class="local col8 decl" id="18recursive" title='recursive' data-type='bool' data-ref="18recursive" data-ref-filename="18recursive">recursive</dfn> = <b>false</b>) <b>noexcept</b>;</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw5MutexD1Ev" title='uvw::Mutex::~Mutex' data-ref="_ZN3uvw5MutexD1Ev" data-ref-filename="_ZN3uvw5MutexD1Ev" id="_ZN3uvw5MutexD1Ev">~Mutex</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc">     * <span class="command">@brief</span> Locks the mutex.</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="195">195</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw5Mutex4lockEv" title='uvw::Mutex::lock' data-ref="_ZN3uvw5Mutex4lockEv" data-ref-filename="_ZN3uvw5Mutex4lockEv" id="_ZN3uvw5Mutex4lockEv">lock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc">     * <span class="command">@brief</span> Tries to lock the mutex.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="201">201</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw5Mutex7tryLockEv" title='uvw::Mutex::tryLock' data-ref="_ZN3uvw5Mutex7tryLockEv" data-ref-filename="_ZN3uvw5Mutex7tryLockEv" id="_ZN3uvw5Mutex7tryLockEv">tryLock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">     * <span class="command">@brief</span> Unlocks the mutex.</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="206">206</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw5Mutex6unlockEv" title='uvw::Mutex::unlock' data-ref="_ZN3uvw5Mutex6unlockEv" data-ref-filename="_ZN3uvw5Mutex6unlockEv" id="_ZN3uvw5Mutex6unlockEv">unlock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="207">207</th><td>};</td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> * <span class="command">@brief</span> The RWLock wrapper.</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="213">213</th><td><b>class</b> <dfn class="type def" id="uvw::RWLock" title='uvw::RWLock' data-ref="uvw::RWLock" data-ref-filename="uvw..RWLock">RWLock</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::RWLock" title='uvw::RWLock' data-ref="uvw::RWLock" data-ref-filename="uvw..RWLock">RWLock</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_rwlock_t" title='uv_rwlock_t' data-type='pthread_rwlock_t' data-ref="uv_rwlock_t" data-ref-filename="uv_rwlock_t">uv_rwlock_t</a>&gt; {</td></tr>
+<tr><th id="214">214</th><td><b>public</b>:</td></tr>
+<tr><th id="215">215</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE" title='uvw::RWLock::RWLock' data-ref="_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE" data-ref-filename="_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE" id="_ZN3uvw6RWLockC1ENS_14UnderlyingTypeIS0_16pthread_rwlock_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE">RWLock</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col9 decl" id="19ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::RWLock, pthread_rwlock_t&gt;::ConstructorAccess' data-ref="19ca" data-ref-filename="19ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col0 decl" id="20ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="20ref" data-ref-filename="20ref">ref</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw6RWLockD1Ev" title='uvw::RWLock::~RWLock' data-ref="_ZN3uvw6RWLockD1Ev" data-ref-filename="_ZN3uvw6RWLockD1Ev" id="_ZN3uvw6RWLockD1Ev">~RWLock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc">     * <span class="command">@brief</span> Locks a read-write lock object for reading.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="222">222</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLock6rdLockEv" title='uvw::RWLock::rdLock' data-ref="_ZN3uvw6RWLock6rdLockEv" data-ref-filename="_ZN3uvw6RWLock6rdLockEv" id="_ZN3uvw6RWLock6rdLockEv">rdLock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc">     * <span class="command">@brief</span> Tries to lock a read-write lock object for reading.</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="228">228</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLock9tryRdLockEv" title='uvw::RWLock::tryRdLock' data-ref="_ZN3uvw6RWLock9tryRdLockEv" data-ref-filename="_ZN3uvw6RWLock9tryRdLockEv" id="_ZN3uvw6RWLock9tryRdLockEv">tryRdLock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc">     * <span class="command">@brief</span> Unlocks a read-write lock object previously locked for reading.</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="233">233</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLock8rdUnlockEv" title='uvw::RWLock::rdUnlock' data-ref="_ZN3uvw6RWLock8rdUnlockEv" data-ref-filename="_ZN3uvw6RWLock8rdUnlockEv" id="_ZN3uvw6RWLock8rdUnlockEv">rdUnlock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc">     * <span class="command">@brief</span> Locks a read-write lock object for writing.</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="238">238</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLock6wrLockEv" title='uvw::RWLock::wrLock' data-ref="_ZN3uvw6RWLock6wrLockEv" data-ref-filename="_ZN3uvw6RWLock6wrLockEv" id="_ZN3uvw6RWLock6wrLockEv">wrLock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc">     * <span class="command">@brief</span> Tries to lock a read-write lock object for writing.</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="244">244</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLock9tryWrLockEv" title='uvw::RWLock::tryWrLock' data-ref="_ZN3uvw6RWLock9tryWrLockEv" data-ref-filename="_ZN3uvw6RWLock9tryWrLockEv" id="_ZN3uvw6RWLock9tryWrLockEv">tryWrLock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc">     * <span class="command">@brief</span> Unlocks a read-write lock object previously locked for writing.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="249">249</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw6RWLock8wrUnlockEv" title='uvw::RWLock::wrUnlock' data-ref="_ZN3uvw6RWLock8wrUnlockEv" data-ref-filename="_ZN3uvw6RWLock8wrUnlockEv" id="_ZN3uvw6RWLock8wrUnlockEv">wrUnlock</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="250">250</th><td>};</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> * <span class="command">@brief</span> The Semaphore wrapper.</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> * To create a `Semaphore` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> * * An unsigned integer that specifies the initial value for the semaphore.</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="260">260</th><td><b>class</b> <dfn class="type def" id="uvw::Semaphore" title='uvw::Semaphore' data-ref="uvw::Semaphore" data-ref-filename="uvw..Semaphore">Semaphore</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::Semaphore" title='uvw::Semaphore' data-ref="uvw::Semaphore" data-ref-filename="uvw..Semaphore">Semaphore</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_sem_t" title='uv_sem_t' data-type='sem_t' data-ref="uv_sem_t" data-ref-filename="uv_sem_t">uv_sem_t</a>&gt; {</td></tr>
+<tr><th id="261">261</th><td><b>public</b>:</td></tr>
+<tr><th id="262">262</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" title='uvw::Semaphore::Semaphore' data-ref="_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" data-ref-filename="_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" id="_ZN3uvw9SemaphoreC1ENS_14UnderlyingTypeIS0_5sem_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj">Semaphore</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col1 decl" id="21ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::Semaphore, sem_t&gt;::ConstructorAccess' data-ref="21ca" data-ref-filename="21ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col2 decl" id="22ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="22ref" data-ref-filename="22ref">ref</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="23value" title='value' data-type='unsigned int' data-ref="23value" data-ref-filename="23value">value</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw9SemaphoreD1Ev" title='uvw::Semaphore::~Semaphore' data-ref="_ZN3uvw9SemaphoreD1Ev" data-ref-filename="_ZN3uvw9SemaphoreD1Ev" id="_ZN3uvw9SemaphoreD1Ev">~Semaphore</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc">     * <span class="command">@brief</span> Unlocks a semaphore.</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="269">269</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Semaphore4postEv" title='uvw::Semaphore::post' data-ref="_ZN3uvw9Semaphore4postEv" data-ref-filename="_ZN3uvw9Semaphore4postEv" id="_ZN3uvw9Semaphore4postEv">post</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc">     * <span class="command">@brief</span> Locks a semaphore.</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="274">274</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Semaphore4waitEv" title='uvw::Semaphore::wait' data-ref="_ZN3uvw9Semaphore4waitEv" data-ref-filename="_ZN3uvw9Semaphore4waitEv" id="_ZN3uvw9Semaphore4waitEv">wait</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc">     * <span class="command">@brief</span> Tries to lock a semaphore.</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="280">280</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Semaphore7tryWaitEv" title='uvw::Semaphore::tryWait' data-ref="_ZN3uvw9Semaphore7tryWaitEv" data-ref-filename="_ZN3uvw9Semaphore7tryWaitEv" id="_ZN3uvw9Semaphore7tryWaitEv">tryWait</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="281">281</th><td>};</td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> * <span class="command">@brief</span> The Condition wrapper.</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="287">287</th><td><b>class</b> <dfn class="type def" id="uvw::Condition" title='uvw::Condition' data-ref="uvw::Condition" data-ref-filename="uvw..Condition">Condition</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::Condition" title='uvw::Condition' data-ref="uvw::Condition" data-ref-filename="uvw..Condition">Condition</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_cond_t" title='uv_cond_t' data-type='pthread_cond_t' data-ref="uv_cond_t" data-ref-filename="uv_cond_t">uv_cond_t</a>&gt; {</td></tr>
+<tr><th id="288">288</th><td><b>public</b>:</td></tr>
+<tr><th id="289">289</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE" title='uvw::Condition::Condition' data-ref="_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE" data-ref-filename="_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE" id="_ZN3uvw9ConditionC1ENS_14UnderlyingTypeIS0_14pthread_cond_tE17ConstructorAccessESt10shared_ptrINS_4LoopEE">Condition</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col4 decl" id="24ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::Condition, pthread_cond_t&gt;::ConstructorAccess' data-ref="24ca" data-ref-filename="24ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col5 decl" id="25ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="25ref" data-ref-filename="25ref">ref</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="290">290</th><td></td></tr>
+<tr><th id="291">291</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw9ConditionD1Ev" title='uvw::Condition::~Condition' data-ref="_ZN3uvw9ConditionD1Ev" data-ref-filename="_ZN3uvw9ConditionD1Ev" id="_ZN3uvw9ConditionD1Ev">~Condition</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="294">294</th><td><i class="doc">     * <span class="command">@brief</span> Signals a condition.</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc">     * This function shall unblock at least one of the threads that are blocked</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc">     * on the specified condition variable (if any threads are blocked on it).</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="299">299</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Condition6signalEv" title='uvw::Condition::signal' data-ref="_ZN3uvw9Condition6signalEv" data-ref-filename="_ZN3uvw9Condition6signalEv" id="_ZN3uvw9Condition6signalEv">signal</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="300">300</th><td></td></tr>
+<tr><th id="301">301</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc">     * <span class="command">@brief</span> Broadcasts a condition.</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc">     * This function shall unblock threads blocked on a condition variable.</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="306">306</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Condition9broadcastEv" title='uvw::Condition::broadcast' data-ref="_ZN3uvw9Condition9broadcastEv" data-ref-filename="_ZN3uvw9Condition9broadcastEv" id="_ZN3uvw9Condition9broadcastEv">broadcast</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="307">307</th><td></td></tr>
+<tr><th id="308">308</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="309">309</th><td><i class="doc">     * <span class="command">@brief</span> Waits on a condition.</i></td></tr>
+<tr><th id="310">310</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc">     * These function atomically releases the mutex and causes the calling</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc">     * thread to block on the condition variable.</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">mutex</span> A mutex locked by the calling thread, otherwise expect</i></td></tr>
+<tr><th id="315">315</th><td><i class="doc">     * undefined behavior.</i></td></tr>
+<tr><th id="316">316</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="317">317</th><td>    <em>void</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Condition4waitERNS_5MutexE" title='uvw::Condition::wait' data-ref="_ZN3uvw9Condition4waitERNS_5MutexE" data-ref-filename="_ZN3uvw9Condition4waitERNS_5MutexE" id="_ZN3uvw9Condition4waitERNS_5MutexE">wait</a>(<a class="type" href="#uvw::Mutex" title='uvw::Mutex' data-ref="uvw::Mutex" data-ref-filename="uvw..Mutex">Mutex</a> &amp;<dfn class="local col6 decl" id="26mutex" title='mutex' data-type='uvw::Mutex &amp;' data-ref="26mutex" data-ref-filename="26mutex">mutex</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="318">318</th><td></td></tr>
+<tr><th id="319">319</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="320">320</th><td><i class="doc">     * <span class="command">@brief</span> Waits on a condition.</i></td></tr>
+<tr><th id="321">321</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="322">322</th><td><i class="doc">     * These function atomically releases the mutex and causes the calling</i></td></tr>
+<tr><th id="323">323</th><td><i class="doc">     * thread to block on the condition variable.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc">     * The functions returns with an error if the absolute time specified passes</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc">     * (that is, system time equals or exceeds it) before the condition is</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc">     * signaled or broadcasted, or if the absolute time specified has already</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc">     * been passed at the time of the call.</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">mutex</span> A mutex locked by the calling thread, otherwise expect</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc">     * undefined behavior.</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">timeout</span> The maximum time to wait before to return.</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="334">334</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw9Condition9timedWaitERNS_5MutexEm" title='uvw::Condition::timedWait' data-ref="_ZN3uvw9Condition9timedWaitERNS_5MutexEm" data-ref-filename="_ZN3uvw9Condition9timedWaitERNS_5MutexEm" id="_ZN3uvw9Condition9timedWaitERNS_5MutexEm">timedWait</a>(<a class="type" href="#uvw::Mutex" title='uvw::Mutex' data-ref="uvw::Mutex" data-ref-filename="uvw..Mutex">Mutex</a> &amp;<dfn class="local col7 decl" id="27mutex" title='mutex' data-type='uvw::Mutex &amp;' data-ref="27mutex" data-ref-filename="27mutex">mutex</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint64_t" title='uint64_t' data-type='__uint64_t' data-ref="uint64_t" data-ref-filename="uint64_t">uint64_t</a> <dfn class="local col8 decl" id="28timeout" title='timeout' data-type='uint64_t' data-ref="28timeout" data-ref-filename="28timeout">timeout</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="335">335</th><td>};</td></tr>
+<tr><th id="336">336</th><td></td></tr>
+<tr><th id="337">337</th><td></td></tr>
+<tr><th id="338">338</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> * <span class="command">@brief</span> The Barrier wrapper.</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc"> * To create a `Barrier` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc"> * * An unsigned integer that specifies the number of threads that must call</i></td></tr>
+<tr><th id="344">344</th><td><i class="doc"> * `wait` before any of them successfully return from the call. The value</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc"> * specified must be greater than zero.</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="347">347</th><td><b>class</b> <dfn class="type def" id="uvw::Barrier" title='uvw::Barrier' data-ref="uvw::Barrier" data-ref-filename="uvw..Barrier">Barrier</dfn> final: <b>public</b> <a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType" title='uvw::UnderlyingType' data-ref="uvw::UnderlyingType" data-ref-filename="uvw..UnderlyingType">UnderlyingType</a>&lt;<a class="type" href="#uvw::Barrier" title='uvw::Barrier' data-ref="uvw::Barrier" data-ref-filename="uvw..Barrier">Barrier</a>, <a class="typedef" href="../../../libuv/include/uv/unix.h.html#uv_barrier_t" title='uv_barrier_t' data-type='pthread_barrier_t' data-ref="uv_barrier_t" data-ref-filename="uv_barrier_t">uv_barrier_t</a>&gt; {</td></tr>
+<tr><th id="348">348</th><td><b>public</b>:</td></tr>
+<tr><th id="349">349</th><td>    <b>explicit</b> <a class="decl fn" href="thread.cpp.html#_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" title='uvw::Barrier::Barrier' data-ref="_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" data-ref-filename="_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj" id="_ZN3uvw7BarrierC1ENS_14UnderlyingTypeIS0_17pthread_barrier_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEj">Barrier</a>(<a class="type" href="underlying_type.hpp.html#uvw::UnderlyingType::ConstructorAccess" title='uvw::UnderlyingType::ConstructorAccess' data-ref="uvw::UnderlyingType::ConstructorAccess" data-ref-filename="uvw..UnderlyingType..ConstructorAccess">ConstructorAccess</a> <dfn class="local col9 decl" id="29ca" title='ca' data-type='uvw::UnderlyingType&lt;uvw::Barrier, pthread_barrier_t&gt;::ConstructorAccess' data-ref="29ca" data-ref-filename="29ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col0 decl" id="30ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="30ref" data-ref-filename="30ref">ref</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="31count" title='count' data-type='unsigned int' data-ref="31count" data-ref-filename="31count">count</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td>    <a class="virtual decl fn" href="thread.cpp.html#_ZN3uvw7BarrierD1Ev" title='uvw::Barrier::~Barrier' data-ref="_ZN3uvw7BarrierD1Ev" data-ref-filename="_ZN3uvw7BarrierD1Ev" id="_ZN3uvw7BarrierD1Ev">~Barrier</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="352">352</th><td></td></tr>
+<tr><th id="353">353</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="354">354</th><td><i class="doc">     * <span class="command">@brief</span> Synchronizes at a barrier.</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="357">357</th><td>    <em>bool</em> <a class="decl fn" href="thread.cpp.html#_ZN3uvw7Barrier4waitEv" title='uvw::Barrier::wait' data-ref="_ZN3uvw7Barrier4waitEv" data-ref-filename="_ZN3uvw7Barrier4waitEv" id="_ZN3uvw7Barrier4waitEv">wait</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="358">358</th><td>};</td></tr>
+<tr><th id="359">359</th><td></td></tr>
+<tr><th id="360">360</th><td></td></tr>
+<tr><th id="361">361</th><td>}</td></tr>
+<tr><th id="362">362</th><td></td></tr>
+<tr><th id="363">363</th><td></td></tr>
+<tr><th id="364">364</th><td><u>#<span data-ppcond="364">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="365">365</th><td><u>#include "thread.cpp"</u></td></tr>
+<tr><th id="366">366</th><td><u>#<span data-ppcond="364">endif</span></u></td></tr>
+<tr><th id="367">367</th><td></td></tr>
+<tr><th id="368">368</th><td><u>#<span data-ppcond="1">endif</span> // UVW_THREAD_INCLUDE_H</u></td></tr>
+<tr><th id="369">369</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='thread.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/thread.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

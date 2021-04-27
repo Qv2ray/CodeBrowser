@@ -1,0 +1,12 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='210'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='443' ll='445'/>
+<size>96</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='442'>/* The abstract base class of all handles. */</doc>
+<mbr r='uv_handle_s::data' o='0' t='void *'/>
+<mbr r='uv_handle_s::loop' o='64' t='uv_loop_t *'/>
+<mbr r='uv_handle_s::type' o='128' t='uv_handle_type'/>
+<mbr r='uv_handle_s::close_cb' o='192' t='uv_close_cb'/>
+<mbr r='uv_handle_s::handle_queue' o='256' t='void *[2]'/>
+<mbr r='uv_handle_s::u' o='384' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/version-v2/code_build/../3rdparty/libuv/include/uv.h:444:3)'/>
+<mbr r='uv_handle_s::next_closing' o='640' t='uv_handle_t *'/>
+<mbr r='uv_handle_s::flags' o='704' t='unsigned int'/>

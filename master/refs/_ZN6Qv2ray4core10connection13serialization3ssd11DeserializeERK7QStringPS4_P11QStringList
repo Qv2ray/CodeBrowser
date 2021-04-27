@@ -1,0 +1,12 @@
+<dec f='qv2ray/src/core/connection/Serialization.hpp' l='47' type='QList&lt;QPair&lt;QString, Qv2ray::base::safetype::CONFIGROOT&gt;&gt; Qv2ray::core::connection::serialization::ssd::Deserialize(const QString &amp; uri, QString * groupName, QStringList * logList)'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='47' u='c' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<def f='qv2ray/src/core/connection/serialization/ssd.cpp' l='76' ll='217' type='QList&lt;QPair&lt;QString, Qv2ray::base::safetype::CONFIGROOT&gt;&gt; Qv2ray::core::connection::serialization::ssd::Deserialize(const QString &amp; uri, QString * groupName, QStringList * logList)'/>
+<doc f='qv2ray/src/core/connection/serialization/ssd.cpp' l='67'>// std::pair&lt;std::optional&lt;std::pair&lt;QString, QList&lt;std::pair&lt;QString, ShadowSocksServerObject&gt;&gt;&gt;&gt;, QStringList&gt;
+        // AKA
+        //
+        // pair&lt;optional&lt;std::pair&lt;QString, QList&lt;pair&lt;QString, ShadowSocksServerObject&gt;&gt;&gt;&gt;, QStringList&gt;
+        // That is....
+        //
+        // A pair of an error string list, together with some optionally existed pair, which contains a QString for airport name and a List of
+        // pairs that contains a QString for connection name and finally, our ShadowSocksServerObject
+        //</doc>

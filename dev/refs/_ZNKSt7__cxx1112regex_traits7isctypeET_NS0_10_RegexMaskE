@@ -1,0 +1,14 @@
+<dec f='include/c++/10/bits/regex.h' l='334' type='bool std::__cxx11::regex_traits::isctype(_Ch_type __c, std::__cxx11::regex_traits::char_class_type __f) const'/>
+<def f='include/c++/10/bits/regex.tcc' l='322' ll='334' type='bool std::__cxx11::regex_traits::isctype(_Ch_type __c, std::__cxx11::regex_traits::char_class_type __f) const'/>
+<doc f='include/c++/10/bits/regex.h' l='321'>/**
+       * @brief Determines if @p c is a member of an identified class.
+       *
+       * @param __c a character.
+       * @param __f a class type (as returned from lookup_classname).
+       *
+       * @returns true if the character @p __c is a member of the classification
+       * represented by @p __f, false otherwise.
+       *
+       * @throws std::bad_cast if the current locale does not have a ctype
+       *         facet.
+       */</doc>

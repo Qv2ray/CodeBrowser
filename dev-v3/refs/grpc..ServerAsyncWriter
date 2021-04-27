@@ -1,0 +1,15 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='846' ll='955'/>
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='33'/>
+<fun r='_ZN4grpc17ServerAsyncWriterC1EPNS_13ServerContextE'/>
+<fun r='_ZN4grpc17ServerAsyncWriter19SendInitialMetadataEPv'/>
+<fun r='_ZN4grpc17ServerAsyncWriter5WriteERKT_Pv'/>
+<fun r='_ZN4grpc17ServerAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<fun r='_ZN4grpc17ServerAsyncWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<fun r='_ZN4grpc17ServerAsyncWriter6FinishERKNS_6StatusEPv'/>
+<fun r='_ZN4grpc17ServerAsyncWriter8BindCallEPNS_8internal4CallE'/>
+<fun r='_ZN4grpc17ServerAsyncWriter25EnsureInitialMetadataSentEPTL0__'/>
+<mbr r='grpc::ServerAsyncWriter::call_' t='::grpc::internal::Call'/>
+<mbr r='grpc::ServerAsyncWriter::ctx_' t='grpc::ServerContext *'/>
+<mbr r='grpc::ServerAsyncWriter::meta_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata&gt;'/>
+<mbr r='grpc::ServerAsyncWriter::write_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata, ::grpc::internal::CallOpSendMessage, ::grpc::internal::CallOpServerSendStatus&gt;'/>
+<mbr r='grpc::ServerAsyncWriter::finish_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata, ::grpc::internal::CallOpServerSendStatus&gt;'/>

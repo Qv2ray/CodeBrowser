@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='240' type='int accept4(int __fd, __SOCKADDR_ARG __addr, socklen_t *__restrict __addr_len, int __flags)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='236'>/* Similar to &apos;accept&apos; but takes an additional parameter to specify flags.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='92' u='c' c='uv__accept'/>

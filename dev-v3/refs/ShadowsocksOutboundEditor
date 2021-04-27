@@ -1,0 +1,25 @@
+<inh f='qv2ray/src/plugin-interface/gui/QvGUIPluginInterface.hpp' l='66' c='Qv2rayPlugin::QvPluginEditor'/>
+<inh f='/QvPlugin-BuiltinProtocolSupport_autogen/include/ui_shadowsocks.h' l='85' c='Ui::shadowsocksOutEditor'/>
+<def f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.hpp' l='7' ll='50'/>
+<size>560</size>
+<smbr r='ShadowsocksOutboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK25ShadowsocksOutboundEditor10metaObjectEv'/>
+<fun r='_ZN25ShadowsocksOutboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN25ShadowsocksOutboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN25ShadowsocksOutboundEditor2trEPKcS1_i'/>
+<fun r='_ZN25ShadowsocksOutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN25ShadowsocksOutboundEditorC1EP7QWidget'/>
+<fun r='_ZN25ShadowsocksOutboundEditor14SetHostAddressERK7QStringi'/>
+<fun r='_ZNK25ShadowsocksOutboundEditor14GetHostAddressEv'/>
+<fun r='_ZN25ShadowsocksOutboundEditor10SetContentERK11QJsonObject'/>
+<fun r='_ZNK25ShadowsocksOutboundEditor10GetContentEv'/>
+<fun r='_ZN25ShadowsocksOutboundEditor11changeEventEP6QEvent'/>
+<mbr r='ShadowsocksOutboundEditor::shadowsocks' o='768' t='ShadowSocksServerObject'/>
+<mbr r='ShadowsocksOutboundEditor::property_bindings' o='4288' t='std::list&lt;QPropertyChangeHandler&lt;std::function&lt;void ()&gt;&gt;&gt;'/>
+<fun r='_ZN25ShadowsocksOutboundEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='ShadowsocksOutboundEditor::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK25ShadowsocksOutboundEditor10metaObjectEv'/>
+<fun r='_ZN25ShadowsocksOutboundEditor11qt_metacastEPKc'/>
+<fun r='_ZN25ShadowsocksOutboundEditor11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/plugins/protocols/ui/Interface.hpp' l='49' c='_ZNK20ProtocolGUIInterface21createOutboundEditorsEv'/>
+<size>560</size>

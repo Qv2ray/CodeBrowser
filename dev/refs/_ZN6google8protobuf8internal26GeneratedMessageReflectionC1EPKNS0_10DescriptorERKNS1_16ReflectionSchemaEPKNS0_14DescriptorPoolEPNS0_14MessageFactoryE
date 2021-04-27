@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/generated_message_reflection.h' l='302' type='void google::protobuf::internal::GeneratedMessageReflection::GeneratedMessageReflection(const google::protobuf::Descriptor * descriptor, const google::protobuf::internal::ReflectionSchema &amp; schema, const google::protobuf::DescriptorPool * pool, google::protobuf::MessageFactory * factory)'/>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='294'>// Constructs a GeneratedMessageReflection.
+  // Parameters:
+  //   descriptor:    The descriptor for the message type being implemented.
+  //   schema:        The description of the internal guts of the message.
+  //   pool:          DescriptorPool to search for extension definitions.  Only
+  //                  used by FindKnownExtensionByName() and
+  //                  FindKnownExtensionByNumber().
+  //   factory:       MessageFactory to use to construct extension messages.</doc>

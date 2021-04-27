@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='234' type='grpc_completion_queue * grpc::CompletionQueue::cq()'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='229'>/// Returns a \em raw pointer to the underlying \a grpc_completion_queue
+  /// instance.
+  ///
+  /// \warning Remember that the returned instance is owned. No transfer of
+  /// owership is performed.</doc>

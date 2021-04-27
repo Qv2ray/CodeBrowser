@@ -1,0 +1,29 @@
+<inh f='include/google/protobuf/message_lite.h' l='164' c='google::protobuf::MessageLite'/>
+<def f='include/google/protobuf/implicit_weak_message.h' l='48' ll='88'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='53' c='_ZN6google8protobuf8internal19ImplicitWeakMessage16default_instanceEv'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='57' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEv'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='59' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='69' c='_ZN6google8protobuf8internal19ImplicitWeakMessage21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='87' c='_ZN6google8protobuf8internal19ImplicitWeakMessageC1ERKS2_'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='87' c='_ZN6google8protobuf8internal19ImplicitWeakMessageaSERKS2_'/>
+<size>48</size>
+<doc f='include/google/protobuf/implicit_weak_message.h' l='45'>// An implementation of MessageLite that treats all data as unknown. This type
+// acts as a placeholder for an implicit weak field in the case where the true
+// message type does not get linked into the binary.</doc>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessageC1Ev'/>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessageC1EPNS0_5ArenaE'/>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessage16default_instanceEv'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage11GetTypeNameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEv'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEPNS0_5ArenaE'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage8GetArenaEv'/>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessage5ClearEv'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage13IsInitializedEv'/>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessage21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessage27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage12ByteSizeLongEv'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage24SerializeWithCachedSizesEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal19ImplicitWeakMessage13GetCachedSizeEv'/>
+<mbr r='google::protobuf::internal::ImplicitWeakMessage::arena_' o='64' t='google::protobuf::Arena *const'/>
+<mbr r='google::protobuf::internal::ImplicitWeakMessage::data_' o='128' t='std::string'/>
+<fun r='_ZN6google8protobuf8internal19ImplicitWeakMessageC1ERKS2_'/>

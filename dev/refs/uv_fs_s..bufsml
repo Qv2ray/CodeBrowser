@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1305' macro='1' type='uv_buf_t [4]'/>
+<offset>3008</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='481' u='r' c='uv__fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='773' u='m' c='uv__fs_sendfile_emul'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='886' u='m' c='uv__fs_sendfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1516' u='r' c='uv__fs_write_all'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1840' u='r' c='uv_fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1841' u='r' c='uv_fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1841' u='r' c='uv_fs_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1949' u='m' c='uv_fs_sendfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2010' u='r' c='uv_fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2011' u='r' c='uv_fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2011' u='r' c='uv_fs_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2047' u='r' c='uv_fs_req_cleanup'/>

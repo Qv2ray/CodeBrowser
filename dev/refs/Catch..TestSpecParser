@@ -1,0 +1,56 @@
+<use f='qv2ray/test/catch.hpp' l='5163'/>
+<def f='qv2ray/test/catch.hpp' l='5194' ll='5242'/>
+<use f='qv2ray/test/catch.hpp' l='5212' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='9957' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='14696' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14918' c='_ZN5Catch13parseTestSpecERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>232</size>
+<mbr r='Catch::TestSpecParser::m_mode' o='0' t='Catch::TestSpecParser::Mode'/>
+<mbr r='Catch::TestSpecParser::lastMode' o='32' t='Catch::TestSpecParser::Mode'/>
+<mbr r='Catch::TestSpecParser::m_exclusion' o='64' t='bool'/>
+<mbr r='Catch::TestSpecParser::m_pos' o='128' t='std::size_t'/>
+<mbr r='Catch::TestSpecParser::m_realPatternPos' o='192' t='std::size_t'/>
+<mbr r='Catch::TestSpecParser::m_arg' o='256' t='std::string'/>
+<mbr r='Catch::TestSpecParser::m_substring' o='512' t='std::string'/>
+<mbr r='Catch::TestSpecParser::m_patternName' o='768' t='std::string'/>
+<mbr r='Catch::TestSpecParser::m_escapeChars' o='1024' t='std::vector&lt;std::size_t&gt;'/>
+<mbr r='Catch::TestSpecParser::m_currentFilter' o='1216' t='TestSpec::Filter'/>
+<mbr r='Catch::TestSpecParser::m_testSpec' o='1408' t='Catch::TestSpec'/>
+<mbr r='Catch::TestSpecParser::m_tagAliases' o='1792' t='const Catch::ITagAliasRegistry *'/>
+<fun r='_ZN5Catch14TestSpecParserC1ERKNS_17ITagAliasRegistryE'/>
+<fun r='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN5Catch14TestSpecParser8testSpecEv'/>
+<fun r='_ZN5Catch14TestSpecParser9visitCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser12startNewModeENS0_4ModeE'/>
+<fun r='_ZN5Catch14TestSpecParser15processNoneCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser15processNameCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser16processOtherCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser7endModeEv'/>
+<fun r='_ZN5Catch14TestSpecParser6escapeEv'/>
+<fun r='_ZNK5Catch14TestSpecParser13isControlCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser12saveLastModeEv'/>
+<fun r='_ZN5Catch14TestSpecParser20revertBackToLastModeEv'/>
+<fun r='_ZN5Catch14TestSpecParser9addFilterEv'/>
+<fun r='_ZN5Catch14TestSpecParser8separateEv'/>
+<fun r='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<fun r='_ZN5Catch14TestSpecParser14addNamePatternEv'/>
+<fun r='_ZN5Catch14TestSpecParser13addTagPatternEv'/>
+<fun r='_ZN5Catch14TestSpecParser16addCharToPatternEc'/>
+<fun r='_ZN5Catch14TestSpecParserC1ERKNS_17ITagAliasRegistryE'/>
+<fun r='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN5Catch14TestSpecParser8testSpecEv'/>
+<fun r='_ZN5Catch14TestSpecParser9visitCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser15processNoneCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser15processNameCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser16processOtherCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser12startNewModeENS0_4ModeE'/>
+<fun r='_ZN5Catch14TestSpecParser7endModeEv'/>
+<fun r='_ZN5Catch14TestSpecParser6escapeEv'/>
+<fun r='_ZNK5Catch14TestSpecParser13isControlCharEc'/>
+<fun r='_ZN5Catch14TestSpecParser9addFilterEv'/>
+<fun r='_ZN5Catch14TestSpecParser12saveLastModeEv'/>
+<fun r='_ZN5Catch14TestSpecParser20revertBackToLastModeEv'/>
+<fun r='_ZN5Catch14TestSpecParser8separateEv'/>
+<fun r='_ZN5Catch14TestSpecParser17preprocessPatternB5cxx11Ev'/>
+<fun r='_ZN5Catch14TestSpecParser14addNamePatternEv'/>
+<fun r='_ZN5Catch14TestSpecParser13addTagPatternEv'/>

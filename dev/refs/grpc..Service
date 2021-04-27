@@ -1,0 +1,29 @@
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='106'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='110' c='_ZN4grpc15ServerInterface15RegisterServiceEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<def f='include/grpcpp/impl/codegen/service_type.h' l='58' ll='187'/>
+<ovr f='/v2ray_api.grpc.pb.h' l='132' c='v2ray::core::app::stats::command::StatsService::Service'/>
+<use f='/v2ray_api.grpc.pb.h' l='132'/>
+<use f='include/grpcpp/server.h' l='130' c='_ZN4grpc6Server15RegisterServiceEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='74' c='_ZN4grpc13ServerBuilder15RegisterServiceEPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='135' c='_ZN4grpc13ServerBuilder15RegisterServiceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='226' c='_ZN4grpc13ServerBuilder12NamedServiceC1EPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='227' c='_ZN4grpc13ServerBuilder12NamedServiceC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_7ServiceE'/>
+<use f='include/grpcpp/server_builder.h' l='230'/>
+<size>40</size>
+<doc f='include/grpcpp/impl/codegen/service_type.h' l='57'>/// Desriptor of an RPC service and its various RPC methods</doc>
+<fun r='_ZN4grpc7ServiceC1Ev'/>
+<fun r='_ZN4grpc7ServiceD1Ev'/>
+<fun r='_ZNK4grpc7Service17has_async_methodsEv'/>
+<fun r='_ZNK4grpc7Service23has_synchronous_methodsEv'/>
+<fun r='_ZNK4grpc7Service19has_generic_methodsEv'/>
+<fun r='_ZN4grpc7Service17RequestAsyncUnaryEiPNS_13ServerContextEPT_PNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<fun r='_ZN4grpc7Service27RequestAsyncClientStreamingEiPNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<fun r='_ZN4grpc7Service27RequestAsyncServerStreamingEiPNS_13ServerContextEPT_PNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<fun r='_ZN4grpc7Service25RequestAsyncBidiStreamingEiPNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21ServerCompletionQueueEPv'/>
+<fun r='_ZN4grpc7Service9AddMethodEPNS_8internal16RpcServiceMethodE'/>
+<fun r='_ZN4grpc7Service15MarkMethodAsyncEi'/>
+<fun r='_ZN4grpc7Service13MarkMethodRawEi'/>
+<fun r='_ZN4grpc7Service17MarkMethodGenericEi'/>
+<fun r='_ZN4grpc7Service18MarkMethodStreamedEiPNS_8internal13MethodHandlerE'/>
+<mbr r='grpc::Service::server_' o='64' t='grpc::ServerInterface *'/>
+<mbr r='grpc::Service::methods_' o='128' t='std::vector&lt;std::unique_ptr&lt;internal::RpcServiceMethod&gt;&gt;'/>

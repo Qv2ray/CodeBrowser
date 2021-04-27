@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='55' ll='77' type='grpc_metadata * grpc::internal::FillMetadataArray(const std::multimap&lt;grpc::string, grpc::string&gt; &amp; metadata, size_t * metadata_count, const grpc::string &amp; optional_error_details)'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='226' u='c' c='_ZN4grpc8internal25CallOpSendInitialMetadata19SendInitialMetadataERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pairIKS8_S8_EEEj'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='472' u='c' c='_ZN4grpc8internal22CallOpServerSendStatus16ServerSendStatusERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pai13417773'/>
+<doc f='include/grpcpp/impl/codegen/call.h' l='53'>// TODO(yangg) if the map is changed before we send, the pointers will be a
+// mess. Make sure it does not happen.</doc>

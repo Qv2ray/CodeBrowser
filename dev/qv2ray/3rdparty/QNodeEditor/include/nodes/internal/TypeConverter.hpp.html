@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TypeConverter.hpp source code [qv2ray/3rdparty/QNodeEditor/include/nodes/internal/TypeConverter.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/QNodeEditor/include/nodes/internal/TypeConverter.hpp'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>QNodeEditor</a>/<a href='../..'>include</a>/<a href='..'>nodes</a>/<a href='./'>internal</a>/<a href='TypeConverter.hpp.html'>TypeConverter.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="NodeData.hpp.html">"NodeData.hpp"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="memory.hpp.html">"memory.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../../include/c++/10/functional.html">&lt;functional&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">QtNodes</span></td></tr>
+<tr><th id="7">7</th><td>{</td></tr>
+<tr><th id="8">8</th><td>    <b>using</b> <dfn class="typedef" id="QtNodes::SharedNodeData" title='QtNodes::SharedNodeData' data-type='std::shared_ptr&lt;NodeData&gt;' data-ref="QtNodes::SharedNodeData" data-ref-filename="QtNodes..SharedNodeData">SharedNodeData</dfn> = <span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="NodeData.hpp.html#QtNodes::NodeData" title='QtNodes::NodeData' data-ref="QtNodes::NodeData" data-ref-filename="QtNodes..NodeData">NodeData</a>&gt;;</td></tr>
+<tr><th id="9">9</th><td>    <i>// a function taking in NodeData and returning NodeData</i></td></tr>
+<tr><th id="10">10</th><td>    <b>using</b> <dfn class="typedef" id="QtNodes::TypeConverter" title='QtNodes::TypeConverter' data-type='std::function&lt;SharedNodeData (SharedNodeData)&gt;' data-ref="QtNodes::TypeConverter" data-ref-filename="QtNodes..TypeConverter">TypeConverter</dfn> = <span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/bits/std_function.h.html#std::function" title='std::function' data-ref="std::function" data-ref-filename="std..function">function</a>&lt;<a class="typedef" href="#QtNodes::SharedNodeData" title='QtNodes::SharedNodeData' data-type='std::shared_ptr&lt;NodeData&gt;' data-ref="QtNodes::SharedNodeData" data-ref-filename="QtNodes..SharedNodeData">SharedNodeData</a>(<a class="typedef" href="#QtNodes::SharedNodeData" title='QtNodes::SharedNodeData' data-type='std::shared_ptr&lt;NodeData&gt;' data-ref="QtNodes::SharedNodeData" data-ref-filename="QtNodes..SharedNodeData">SharedNodeData</a>)&gt;;</td></tr>
+<tr><th id="11">11</th><td>    <i>// data-type-in, data-type-out</i></td></tr>
+<tr><th id="12">12</th><td>    <b>using</b> <dfn class="typedef" id="QtNodes::TypeConverterId" title='QtNodes::TypeConverterId' data-type='std::pair&lt;NodeDataTypeId, NodeDataTypeId&gt;' data-ref="QtNodes::TypeConverterId" data-ref-filename="QtNodes..TypeConverterId">TypeConverterId</dfn> = <span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair" data-ref-filename="std..pair">pair</a>&lt;<a class="typedef" href="NodeData.hpp.html#QtNodes::NodeDataTypeId" title='QtNodes::NodeDataTypeId' data-type='QString' data-ref="QtNodes::NodeDataTypeId" data-ref-filename="QtNodes..NodeDataTypeId">NodeDataTypeId</a>, <a class="typedef" href="NodeData.hpp.html#QtNodes::NodeDataTypeId" title='QtNodes::NodeDataTypeId' data-type='QString' data-ref="QtNodes::NodeDataTypeId" data-ref-filename="QtNodes..NodeDataTypeId">NodeDataTypeId</a>&gt;;</td></tr>
+<tr><th id="13">13</th><td>} <i>// namespace QtNodes</i></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/Connection.cpp.html'>qv2ray/3rdparty/QNodeEditor/src/Connection.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

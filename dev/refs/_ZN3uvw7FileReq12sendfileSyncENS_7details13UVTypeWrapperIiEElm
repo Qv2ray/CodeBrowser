@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='697' type='std::pair&lt;bool, std::size_t&gt; uvw::FileReq::sendfileSync(uvw::FileHandle out, int64_t offset, std::size_t length)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='182' ll='187' type='std::pair&lt;bool, std::size_t&gt; uvw::FileReq::sendfileSync(uvw::FileHandle out, int64_t offset, std::size_t length)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='686'>/**
+     * @brief Sync [sendfile](http://linux.die.net/man/2/sendfile).
+     *
+     * @param out A valid instance of FileHandle.
+     * @param offset Offset, as described in the official documentation.
+     * @param length Length, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * The amount of data transferred.
+     */</doc>

@@ -1,0 +1,16 @@
+<def f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='16' ll='30'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='16'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='28' c='_ZNK12Qv2rayPlugin15Qv2rayInterface18GetOutboundHandlerEv'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='64'/>
+<size>8</size>
+<fun r='_ZN12Qv2rayPlugin21PluginOutboundHandlerC1Ev'/>
+<fun r='_ZNK12Qv2rayPlugin21PluginOutboundHandler17SerializeOutboundERK7QStringS3_S3_RK11QJsonObjectS6_'/>
+<fun r='_ZNK12Qv2rayPlugin21PluginOutboundHandler19DeserializeOutboundERK7QStringPS1_S4_'/>
+<fun r='_ZNK12Qv2rayPlugin21PluginOutboundHandler15GetOutboundInfoERK7QStringRK11QJsonObject'/>
+<fun r='_ZNK12Qv2rayPlugin21PluginOutboundHandler15SetOutboundInfoERK7QStringRK4QMapINS_17OutboundInfoFlagsE8QVariantER11QJsonObject'/>
+<fun r='_ZNK12Qv2rayPlugin21PluginOutboundHandler18SupportedProtocolsEv'/>
+<fun r='_ZNK12Qv2rayPlugin21PluginOutboundHandler21SupportedLinkPrefixesEv'/>
+<ovr f='qv2ray/src/plugins/protocols/core/OutboundHandler.hpp' l='5' c='BuiltinSerializer'/>
+<use f='qv2ray/src/plugins/protocols/core/OutboundHandler.hpp' l='5'/>
+<use f='qv2ray/src/plugins/protocols/core/OutboundHandler.hpp' l='8' c='_ZN17BuiltinSerializerC1Ev'/>
+<size>8</size>

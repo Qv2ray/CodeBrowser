@@ -1,0 +1,3 @@
+<dec f='include/grpc/grpc.h' l='107' type='grpc_completion_queue * grpc_completion_queue_create_for_pluck(void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='105'>/** Helper function to create a completion queue with grpc_cq_completion_type
+    of GRPC_CQ_PLUCK and grpc_cq_polling_type of GRPC_CQ_DEFAULT_POLLING */</doc>

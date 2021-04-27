@@ -1,0 +1,8 @@
+<def f='include/grpcpp/impl/codegen/call.h' l='160' ll='163' type='grpc::WriteOptions &amp; grpc::WriteOptions::set_last_message()'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='160' u='c' c='_ZN4grpc8internal20AsyncWriterInterface9WriteLastERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='141' u='c' c='_ZN4grpc8internal15WriterInterface9WriteLastERKT_NS_12WriteOptionsE'/>
+<doc f='include/grpcpp/impl/codegen/call.h' l='155'>/// last-message bit: indicates this is the last message in a stream
+  /// client-side:  makes Write the equivalent of performing Write, WritesDone
+  /// in a single step
+  /// server-side:  hold the Write until the service handler returns (sync api)
+  /// or until Finish is called (async api)</doc>

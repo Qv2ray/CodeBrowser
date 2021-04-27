@@ -1,0 +1,17 @@
+<def f='qv2ray/src/base/models/QvCoreSettings.hpp' l='82' ll='90'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='89' c='_ZN6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBase8fromJsonERK10QJsonValue'/>
+<ovr f='qv2ray/src/base/models/QvCoreSettings.hpp' l='92' c='Qv2ray::base::config::QvConfig_SocksInbound'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='92'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='96' c='_ZN6Qv2ray4base6config21QvConfig_SocksInboundC1Ev'/>
+<ovr f='qv2ray/src/base/models/QvCoreSettings.hpp' l='100' c='Qv2ray::base::config::QvConfig_HttpInbound'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='100'/>
+<use f='qv2ray/src/base/models/QvCoreSettings.hpp' l='102' c='_ZN6Qv2ray4base6config20QvConfig_HttpInboundC1Ev'/>
+<size>24</size>
+<mbr r='Qv2ray::base::config::__Qv2rayConfig_ProtocolInboundBase::port' o='0' t='int'/>
+<mbr r='Qv2ray::base::config::__Qv2rayConfig_ProtocolInboundBase::useAuth' o='32' t='bool'/>
+<mbr r='Qv2ray::base::config::__Qv2rayConfig_ProtocolInboundBase::sniffing' o='40' t='bool'/>
+<mbr r='Qv2ray::base::config::__Qv2rayConfig_ProtocolInboundBase::account' o='64' t='objects::AccountObject'/>
+<fun r='_ZN6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBaseC1Ei'/>
+<fun r='_ZN6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBase8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBase8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base6config34__Qv2rayConfig_ProtocolInboundBase6toJsonEv'/>

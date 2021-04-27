@@ -1,0 +1,8 @@
+<def f='qv2ray/test/catch.hpp' l='13573' ll='13594'/>
+<size>424</size>
+<doc f='qv2ray/test/catch.hpp' l='13572'>// This class encapsulates the idea of a pool of ostringstreams that can be reused.</doc>
+<mbr r='Catch::StringStreams::m_streams' o='0' t='std::vector&lt;std::unique_ptr&lt;std::ostringstream&gt;&gt;'/>
+<mbr r='Catch::StringStreams::m_unused' o='192' t='std::vector&lt;std::size_t&gt;'/>
+<mbr r='Catch::StringStreams::m_referenceStream' o='384' t='std::ostringstream'/>
+<fun r='_ZN5Catch13StringStreams3addEv'/>
+<fun r='_ZN5Catch13StringStreams7releaseEm'/>

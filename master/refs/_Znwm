@@ -1,0 +1,15 @@
+<dec f='include/c++/10/new' l='126' type='void * operator new(std::size_t )'/>
+<use f='include/c++/10/ext/new_allocator.h' l='115' u='c' c='__gnu_cxx::new_allocator::allocate'/>
+<doc f='include/c++/10/new' l='116'>/** These are replaceable signatures:
+ *  - normal single new and delete (no arguments, throw @c bad_alloc on error)
+ *  - normal array new and delete (same)
+ *  - @c nothrow single new and delete (take a @c nothrow argument, return
+ *    @c NULL on error)
+ *  - @c nothrow array new and delete (same)
+ *
+ *  Placement new and delete signatures (take a memory address argument,
+ *  does nothing) may not be replaced by a user&apos;s program.
+*/</doc>
+<use f='include/google/protobuf/arena.h' l='146' u='a' c='_ZN6google8protobuf12ArenaOptionsC1Ev'/>
+<use f='include/google/protobuf/repeated_field.h' l='1364' u='c' c='_ZN6google8protobuf13RepeatedField7ReserveEi'/>
+<use f='include/google/protobuf/map.h' l='207' u='c' c='_ZN6google8protobuf3Map12MapAllocator8allocateEmPKv'/>

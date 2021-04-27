@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='584' type='uv_connect_cb'/>
+<offset>512</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='230' u='w' c='uv_pipe_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='464' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1380' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1381' u='r' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='253' u='w' c='uv__tcp_connect'/>

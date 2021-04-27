@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1692' type='int uv_mutex_trylock(uv_mutex_t * handle)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='336' ll='347' type='int uv_mutex_trylock(uv_mutex_t * mutex)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='589' u='c' c='uv__custom_sem_trywait'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='93' u='c' c='_ZN3uvw5Mutex7tryLockEv'/>

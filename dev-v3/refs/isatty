@@ -1,0 +1,5 @@
+<dec f='include/unistd.h' l='779' type='int isatty(int __fd)'/>
+<doc f='include/unistd.h' l='777'>/* Return 1 if FD is a valid descriptor associated
+   with a terminal, zero if not.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='324' u='c' c='uv_guess_handle'/>
+<use f='qv2ray/test/catch.hpp' l='10176' u='c' c='_ZN5Catch12_GLOBAL__N_119useColourOnPlatformEv'/>

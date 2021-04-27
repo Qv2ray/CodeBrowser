@@ -1,0 +1,15 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='670' ll='676'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='675'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='670'/>
+<size>8</size>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='665'>/** EXPERIMENTAL: Specifies an interface class to be used as a tag
+    for callback-based completion queues. This can be used directly,
+    as the first element of a struct in C, or as a base class in C++.
+    Its &quot;run&quot; value should be assigned to some non-member function, such as
+    a static method. */</doc>
+<mbr r='grpc_experimental_completion_queue_functor::functor_run' o='0' t='void (*)(struct grpc_experimental_completion_queue_functor *, int)'/>
+<ovr f='include/grpcpp/impl/codegen/callback_common.h' l='52' c='grpc::internal::CallbackWithStatusTag'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='90' c='_ZN4grpc8internal21CallbackWithStatusTag9StaticRunEP42grpc_experimental_completion_queue_functori'/>
+<ovr f='include/grpcpp/impl/codegen/callback_common.h' l='109' c='grpc::internal::CallbackWithSuccessTag'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='143' c='_ZN4grpc8internal22CallbackWithSuccessTag9StaticRunEP42grpc_experimental_completion_queue_functori'/>
+<size>8</size>

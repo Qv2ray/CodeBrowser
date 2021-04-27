@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/wire_format.h' l='238' type='static void google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(const char * data, int size, google::protobuf::internal::WireFormat::Operation op, const char * field_name)'/>
+<def f='include/google/protobuf/wire_format.h' l='318' ll='328' type='static void google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(const char * data, int size, WireFormat::Operation op, const char * field_name)'/>
+<doc f='include/google/protobuf/wire_format.h' l='236'>// The NamedField variant takes a field name in order to produce an
+  // informative error message if verification fails.</doc>

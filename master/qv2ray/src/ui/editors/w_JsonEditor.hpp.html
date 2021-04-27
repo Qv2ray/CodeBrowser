@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>w_JsonEditor.hpp source code [qv2ray/src/ui/editors/w_JsonEditor.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="JsonEditor "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/editors/w_JsonEditor.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>ui</a>/<a href='./'>editors</a>/<a href='w_JsonEditor.hpp.html'>w_JsonEditor.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../base/Qv2rayBase.hpp.html">"base/Qv2rayBase.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../../common/QJsonModel.hpp.html">"common/QJsonModel.hpp"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../common/JsonHighlighter.hpp.html">"ui/common/JsonHighlighter.hpp"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../messaging/QvMessageBus.hpp.html">"ui/messaging/QvMessageBus.hpp"</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="/qv2ray_autogen/include/ui_w_JsonEditor.h.html">"ui_w_JsonEditor.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#include &lt;QDialog&gt;</u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>class</b> <dfn class="type def" id="JsonEditor" title='JsonEditor' data-ref="JsonEditor" data-ref-filename="JsonEditor">JsonEditor</dfn></td></tr>
+<tr><th id="12">12</th><td>    : <b>public</b> <span class='type' title='QDialog' data-ref="QDialog" data-ref-filename="QDialog">QDialog</span></td></tr>
+<tr><th id="13">13</th><td>    , <b>private</b> <span class="namespace">Ui::</span><a class="type" href="/qv2ray_autogen/include/ui_w_JsonEditor.h.html#Ui::JsonEditor" title='Ui::JsonEditor' data-ref="Ui::JsonEditor" data-ref-filename="Ui..JsonEditor">JsonEditor</a></td></tr>
+<tr><th id="14">14</th><td>{</td></tr>
+<tr><th id="15">15</th><td>    <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } __attribute__ ((__deprecated__)) static inline QString trUtf8(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>  <b>public</b>:</td></tr>
+<tr><th id="18">18</th><td>    <b>explicit</b> <dfn class="decl fn" id="_ZN10JsonEditorC1E11QJsonObjectP7QWidget" title='JsonEditor::JsonEditor' data-ref="_ZN10JsonEditorC1E11QJsonObjectP7QWidget" data-ref-filename="_ZN10JsonEditorC1E11QJsonObjectP7QWidget">JsonEditor</dfn>(<span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <dfn class="local col6 decl" id="136rootObject" title='rootObject' data-type='QJsonObject' data-ref="136rootObject" data-ref-filename="136rootObject">rootObject</dfn>, <span class='type' title='QWidget' data-ref="QWidget" data-ref-filename="QWidget">QWidget</span> *<dfn class="local col7 decl" id="137parent" title='parent' data-type='QWidget *' data-ref="137parent" data-ref-filename="137parent">parent</dfn> = <b>nullptr</b>);</td></tr>
+<tr><th id="19">19</th><td>    <dfn class="virtual decl fn" id="_ZN10JsonEditorD1Ev" title='JsonEditor::~JsonEditor' data-ref="_ZN10JsonEditorD1Ev" data-ref-filename="_ZN10JsonEditorD1Ev">~JsonEditor</dfn>();</td></tr>
+<tr><th id="20">20</th><td>    <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <dfn class="decl fn" id="_ZN10JsonEditor10OpenEditorEv" title='JsonEditor::OpenEditor' data-ref="_ZN10JsonEditor10OpenEditorEv" data-ref-filename="_ZN10JsonEditor10OpenEditorEv">OpenEditor</dfn>();</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>  <b>private</b>:</td></tr>
+<tr><th id="23">23</th><td>    <a class="macro" href="../messaging/QvMessageBus.hpp.html#9" title="void on_QvMessageReceived(const QvMBMessage &amp;msg)" data-ref="_M/QvMessageBusSlotDecl">QvMessageBusSlotDecl</a>;</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>  <b>private</b> <span class="macro" title="" data-ref="_M/slots">slots</span>:</td></tr>
+<tr><th id="26">26</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN10JsonEditor25on_jsonEditor_textChangedEv" title='JsonEditor::on_jsonEditor_textChanged' data-ref="_ZN10JsonEditor25on_jsonEditor_textChangedEv" data-ref-filename="_ZN10JsonEditor25on_jsonEditor_textChangedEv">on_jsonEditor_textChanged</dfn>();</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN10JsonEditor24on_formatJsonBtn_clickedEv" title='JsonEditor::on_formatJsonBtn_clicked' data-ref="_ZN10JsonEditor24on_formatJsonBtn_clickedEv" data-ref-filename="_ZN10JsonEditor24on_formatJsonBtn_clickedEv">on_formatJsonBtn_clicked</dfn>();</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN10JsonEditor28on_removeCommentsBtn_clickedEv" title='JsonEditor::on_removeCommentsBtn_clicked' data-ref="_ZN10JsonEditor28on_removeCommentsBtn_clickedEv" data-ref-filename="_ZN10JsonEditor28on_removeCommentsBtn_clickedEv">on_removeCommentsBtn_clicked</dfn>();</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>  <b>private</b>:</td></tr>
+<tr><th id="33">33</th><td>    <a class="type" href="../../common/QJsonModel.hpp.html#QJsonModel" title='QJsonModel' data-ref="QJsonModel" data-ref-filename="QJsonModel">QJsonModel</a> <dfn class="decl field" id="JsonEditor::model" title='JsonEditor::model' data-ref="JsonEditor::model" data-ref-filename="JsonEditor..model">model</dfn>;</td></tr>
+<tr><th id="34">34</th><td>    <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <dfn class="decl field" id="JsonEditor::original" title='JsonEditor::original' data-ref="JsonEditor::original" data-ref-filename="JsonEditor..original">original</dfn>;</td></tr>
+<tr><th id="35">35</th><td>    <span class='type' title='QJsonObject' data-ref="QJsonObject" data-ref-filename="QJsonObject">QJsonObject</span> <dfn class="decl field" id="JsonEditor::final" title='JsonEditor::final' data-ref="JsonEditor::final" data-ref-filename="JsonEditor..final">final</dfn>;</td></tr>
+<tr><th id="36">36</th><td>    <i>//</i></td></tr>
+<tr><th id="37">37</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../include/c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<a class="type" href="../common/JsonHighlighter.hpp.html#Qv2ray::ui::vCoreConfigJsonHighlighter" title='Qv2ray::ui::vCoreConfigJsonHighlighter' data-ref="Qv2ray::ui::vCoreConfigJsonHighlighter" data-ref-filename="Qv2ray..ui..vCoreConfigJsonHighlighter">vCoreConfigJsonHighlighter</a>&gt; <dfn class="decl field" id="JsonEditor::highlighter" title='JsonEditor::highlighter' data-ref="JsonEditor::highlighter" data-ref-filename="JsonEditor..highlighter">highlighter</dfn>;</td></tr>
+<tr><th id="38">38</th><td>};</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

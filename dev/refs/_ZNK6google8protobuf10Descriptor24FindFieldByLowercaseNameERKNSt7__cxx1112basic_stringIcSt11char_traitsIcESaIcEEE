@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor.h' l='288' type='const google::protobuf::FieldDescriptor * google::protobuf::Descriptor::FindFieldByLowercaseName(const std::string &amp; lowercase_name) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='285'>// Looks up a field by lowercased name (as returned by lowercase_name()).
+  // This lookup may be ambiguous if multiple field names differ only by case,
+  // in which case the field returned is chosen arbitrarily from the matches.</doc>

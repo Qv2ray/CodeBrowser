@@ -1,0 +1,31 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.h' l='46'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='38' ll='58'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='35' c='ZXing::OneD::Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='35'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='34' c='ZXing::QRCode::Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='34'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='32' c='ZXing::DataMatrix::Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='32'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.h' l='29' c='ZXing::Aztec::Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.h' l='29'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.h' l='27' c='ZXing::MaxiCode::Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.h' l='27'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.h' l='30' c='ZXing::Pdf417::Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.h' l='30'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='24'>/**
+* Implementations of this interface can decode an image of a barcode in some format into
+* the string it encodes. For example, {@link com.google.zxing.qrcode.QRCodeReader} can
+* decode a QR code. The decoder may optionally receive hints from the caller which may help
+* it decode more quickly or accurately.
+*
+* See {@link MultiFormatReader}, which attempts to determine what barcode
+* format is present within the image as well, and then decodes it accordingly.
+*
+* All readers are thread-safe with no temporary state left behind after decode().
+*
+* @author Sean Owen
+* @author dswitkin@google.com (Daniel Switkin)
+*/</doc>
+<fun r='_ZN5ZXing6ReaderD1Ev'/>
+<fun r='_ZNK5ZXing6Reader6decodeERKNS_12BinaryBitmapE'/>

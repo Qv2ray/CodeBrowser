@@ -1,0 +1,18 @@
+<def f='qv2ray/src/plugin-interface/QvPluginBase.hpp' l='82' ll='109'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='25' c='_ZNK12Qv2rayPlugin15Qv2rayInterface11GetMetadataEv'/>
+<use f='qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.hpp' l='20' c='_ZNK29InternalProtocolSupportPlugin11GetMetadataEv'/>
+<size>64</size>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Name' o='0' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Author' o='64' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::InternalName' o='128' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Description' o='192' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::VersionString' o='256' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::UpdateLocation' o='320' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::UpdateType' o='384' t='Qv2rayPlugin::PluginUpdateType'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Components' o='448' t='QList&lt;Qv2rayPlugin::PluginComponentType&gt;'/>
+<fun r='_ZN12Qv2rayPlugin16QvPluginMetadataC1ERK7QStringS3_S3_S3_S3_S3_RK5QListINS_19PluginComponentTypeEENS_16PluginUpdateTypeE'/>
+<fun r='_ZN12Qv2rayPlugin16QvPluginMetadataC1Ev'/>
+<use f='qv2ray/src/plugins/subscription-adapters/BuiltinSubscriptionAdapter.hpp' l='20' c='_ZNK33InternalSubscriptionSupportPlugin11GetMetadataEv'/>
+<size>64</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='19'/>
+<size>64</size>

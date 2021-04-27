@@ -1,0 +1,11 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECB.h' l='29' ll='33'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECB.h' l='44'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECB.h' l='59' c='_ZNK5ZXing10DataMatrix8ECBlocks10blockArrayEv'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMECB.h' l='24'>/**
+* &lt;p&gt;Encapsualtes the parameters for one error-correction block in one symbol version.
+* This includes the number of data codewords, and the number of times a block with these
+* parameters is used consecutively in the Data Matrix code version&apos;s format.&lt;/p&gt;
+*/</doc>
+<mbr r='ZXing::DataMatrix::ECB::count' o='0' t='int'/>
+<mbr r='ZXing::DataMatrix::ECB::dataCodewords' o='32' t='int'/>

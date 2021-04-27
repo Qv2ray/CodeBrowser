@@ -1,0 +1,22 @@
+<inh f='qv2ray/src/components/latency/DNSBase.hpp' l='9' c='Qv2ray::components::latency::DNSBase'/>
+<def f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='11' ll='31'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='11'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='69' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<size>376</size>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPingD1Ev'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing6deinitEv'/>
+<mbr r='Qv2ray::components::latency::icmping::ICMPPing::seq' o='2496' t='unsigned short'/>
+<mbr r='Qv2ray::components::latency::icmping::ICMPPing::socketId' o='2528' t='int'/>
+<mbr r='Qv2ray::components::latency::icmping::ICMPPing::timeoutTimer' o='2560' t='std::shared_ptr&lt;uvw::TimerHandle&gt;'/>
+<mbr r='Qv2ray::components::latency::icmping::ICMPPing::pollHandle' o='2688' t='std::shared_ptr&lt;uvw::PollHandle&gt;'/>
+<mbr r='Qv2ray::components::latency::icmping::ICMPPing::startTimevals' o='2816' t='std::vector&lt;timeval&gt;'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='116' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>376</size>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing6deinitEv'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<fun r='_ZN6Qv2ray10components7latency7icmping8ICMPPingD1Ev'/>

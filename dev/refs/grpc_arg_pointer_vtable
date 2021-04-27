@@ -1,0 +1,6 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='85' ll='89'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='85'/>
+<size>24</size>
+<mbr r='grpc_arg_pointer_vtable::copy' o='0' t='void *(*)(void *)'/>
+<mbr r='grpc_arg_pointer_vtable::destroy' o='64' t='void (*)(void *)'/>
+<mbr r='grpc_arg_pointer_vtable::cmp' o='128' t='int (*)(void *, void *)'/>

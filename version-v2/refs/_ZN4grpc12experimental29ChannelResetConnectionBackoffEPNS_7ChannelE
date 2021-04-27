@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/channel.h' l='39' type='void grpc::experimental::ChannelResetConnectionBackoff(grpc::Channel * channel)'/>
+<dec f='include/grpcpp/channel.h' l='64' type='void grpc::experimental::ChannelResetConnectionBackoff(grpc::Channel * channel)'/>
+<doc f='include/grpcpp/channel.h' l='36'>/// Resets the channel&apos;s connection backoff.
+/// TODO(roth): Once we see whether this proves useful, either create a gRFC
+/// and change this to be a method of the Channel class, or remove it.</doc>

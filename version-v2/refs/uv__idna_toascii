@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/src/idna.h' l='29' type='long uv__idna_toascii(const char * s, const char * se, char * d, char * de)'/>
+<def f='qv2ray/3rdparty/libuv/src/idna.c' l='250' ll='291' type='long uv__idna_toascii(const char * s, const char * se, char * d, char * de)'/>
+<doc f='qv2ray/3rdparty/libuv/src/idna.h' l='25'>/* Convert a UTF-8 domain name to IDNA 2008 / Punycode. A return value &gt;= 0
+ * is the number of bytes written to |d|, including the trailing nul byte.
+ * A return value &lt; 0 is a libuv error code. |s| and |d| can not overlap.
+ */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='165' u='c' c='uv_getaddrinfo'/>

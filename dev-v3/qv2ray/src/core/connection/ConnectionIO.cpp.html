@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ConnectionIO.cpp source code [qv2ray/src/core/connection/ConnectionIO.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/core/connection/ConnectionIO.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>core</a>/<a href='./'>connection</a>/<a href='ConnectionIO.cpp.html'>ConnectionIO.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="ConnectionIO.hpp.html">"ConnectionIO.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="Serialization.hpp.html">"Serialization.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../../utils/QvHelpers.hpp.html">"utils/QvHelpers.hpp"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">core</span>::<span class="namespace">connection</span>::<span class="namespace">connectionIO</span></td></tr>
+<tr><th id="7">7</th><td>{</td></tr>
+<tr><th id="8">8</th><td>    <a class="typedef" href="../../base/models/QvSafeType.hpp.html#33" title='Qv2ray::base::safetype::CONFIGROOT' data-type='SAFETYPE_IMPL&lt;Qv2ray::base::safetype::__CONFIGROOT__, QJsonObject&gt;' data-ref="Qv2ray::base::safetype::CONFIGROOT" data-ref-filename="Qv2ray..base..safetype..CONFIGROOT">CONFIGROOT</a> <dfn class="decl def fn" id="_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb" title='Qv2ray::core::connection::connectionIO::ConvertConfigFromFile' data-ref="_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb" data-ref-filename="_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb">ConvertConfigFromFile</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col1 decl" id="1sourceFilePath" title='sourceFilePath' data-type='const QString &amp;' data-ref="1sourceFilePath" data-ref-filename="1sourceFilePath">sourceFilePath</dfn>, <em>bool</em> <dfn class="local col2 decl" id="2importComplex" title='importComplex' data-type='bool' data-ref="2importComplex" data-ref-filename="2importComplex">importComplex</dfn>)</td></tr>
+<tr><th id="9">9</th><td>    {</td></tr>
+<tr><th id="10">10</th><td>        <em>auto</em> <dfn class="local col3 decl" id="3root" title='root' data-type='SAFETYPE_IMPL&lt;Qv2ray::base::safetype::__CONFIGROOT__, QJsonObject&gt;' data-ref="3root" data-ref-filename="3root">root</dfn> = <a class="typedef" href="../../base/models/QvSafeType.hpp.html#33" title='Qv2ray::base::safetype::CONFIGROOT' data-type='SAFETYPE_IMPL&lt;Qv2ray::base::safetype::__CONFIGROOT__, QJsonObject&gt;' data-ref="Qv2ray::base::safetype::CONFIGROOT" data-ref-filename="Qv2ray..base..safetype..CONFIGROOT">CONFIGROOT</a><a class="ref fn" href="../../base/models/QvSafeType.hpp.html#_ZN13SAFETYPE_IMPLC1EDpTL0__" title='SAFETYPE_IMPL::SAFETYPE_IMPL&lt;placeholder, BASETYPE_T&gt;' data-ref="_ZN13SAFETYPE_IMPLC1EDpTL0__" data-ref-filename="_ZN13SAFETYPE_IMPLC1EDpTL0__">(</a><a class="ref fn" href="../../utils/QvHelpers.hpp.html#_ZN6Qv2ray6common14JsonFromStringERK7QString" title='Qv2ray::common::JsonFromString' data-ref="_ZN6Qv2ray6common14JsonFromStringERK7QString" data-ref-filename="_ZN6Qv2ray6common14JsonFromStringERK7QString">JsonFromString</a>(<a class="ref fn" href="../../utils/QvHelpers.hpp.html#_ZN6Qv2ray6common14StringFromFileERK7QString" title='Qv2ray::common::StringFromFile' data-ref="_ZN6Qv2ray6common14StringFromFileERK7QString" data-ref-filename="_ZN6Qv2ray6common14StringFromFileERK7QString">StringFromFile</a>(<a class="local col1 ref" href="#1sourceFilePath" title='sourceFilePath' data-ref="1sourceFilePath" data-ref-filename="1sourceFilePath">sourceFilePath</a>)));</td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td>        <b>if</b> (!<a class="local col2 ref" href="#2importComplex" title='importComplex' data-ref="2importComplex" data-ref-filename="2importComplex">importComplex</a>)</td></tr>
+<tr><th id="13">13</th><td>        {</td></tr>
+<tr><th id="14">14</th><td>            <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>.<span class='ref fn' title='QJsonObject::remove' data-ref="_ZN11QJsonObject6removeERK7QString" data-ref-filename="_ZN11QJsonObject6removeERK7QString">remove</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"inbounds"</q>);</td></tr>
+<tr><th id="15">15</th><td>            <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>.<span class='ref fn' title='QJsonObject::remove' data-ref="_ZN11QJsonObject6removeERK7QString" data-ref-filename="_ZN11QJsonObject6removeERK7QString">remove</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"routing"</q>);</td></tr>
+<tr><th id="16">16</th><td>            <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>.<span class='ref fn' title='QJsonObject::remove' data-ref="_ZN11QJsonObject6removeERK7QString" data-ref-filename="_ZN11QJsonObject6removeERK7QString">remove</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"dns"</q>);</td></tr>
+<tr><th id="17">17</th><td>        }</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>        <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>.<span class='ref fn' title='QJsonObject::remove' data-ref="_ZN11QJsonObject6removeERK7QString" data-ref-filename="_ZN11QJsonObject6removeERK7QString">remove</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"log"</q>);</td></tr>
+<tr><th id="20">20</th><td>        <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>.<span class='ref fn' title='QJsonObject::remove' data-ref="_ZN11QJsonObject6removeERK7QString" data-ref-filename="_ZN11QJsonObject6removeERK7QString">remove</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"api"</q>);</td></tr>
+<tr><th id="21">21</th><td>        <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>.<span class='ref fn' title='QJsonObject::remove' data-ref="_ZN11QJsonObject6removeERK7QString" data-ref-filename="_ZN11QJsonObject6removeERK7QString">remove</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"stats"</q>);</td></tr>
+<tr><th id="22">22</th><td>        <b>return</b> <a class="local col3 ref" href="#3root" title='root' data-ref="3root" data-ref-filename="3root">root</a>;</td></tr>
+<tr><th id="23">23</th><td>    }</td></tr>
+<tr><th id="24">24</th><td>} <i>// namespace Qv2ray::core::connection::connectionIO</i></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

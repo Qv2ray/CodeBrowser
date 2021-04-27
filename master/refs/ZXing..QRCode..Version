@@ -1,0 +1,71 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='39' c='_ZN5ZXing6QRCode15BitMatrixParser11ReadVersionERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h' l='50' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='37' ll='83'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='69' c='_ZN5ZXing6QRCode7Version30ProvisionalVersionForDimensionEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='71' c='_ZN5ZXing6QRCode7Version16VersionForNumberEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='73' c='_ZN5ZXing6QRCode7Version24DecodeVersionInformationEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='82' c='_ZN5ZXing6QRCode7Version11AllVersionsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='46' c='_ZN5ZXing6QRCode15BitMatrixParser11ReadVersionERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='137' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<size>120</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='32'>/**
+* See ISO 18004:2006 Annex D
+*
+* @author Sean Owen
+*/</doc>
+<fun r='_ZNK5ZXing6QRCode7Version13versionNumberEv'/>
+<fun r='_ZNK5ZXing6QRCode7Version23alignmentPatternCentersEv'/>
+<fun r='_ZNK5ZXing6QRCode7Version14totalCodewordsEv'/>
+<fun r='_ZNK5ZXing6QRCode7Version19dimensionForVersionEv'/>
+<fun r='_ZNK5ZXing6QRCode7Version16ecBlocksForLevelENS0_20ErrorCorrectionLevelE'/>
+<fun r='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<fun r='_ZN5ZXing6QRCode7Version30ProvisionalVersionForDimensionEi'/>
+<fun r='_ZN5ZXing6QRCode7Version16VersionForNumberEi'/>
+<fun r='_ZN5ZXing6QRCode7Version24DecodeVersionInformationEi'/>
+<mbr r='ZXing::QRCode::Version::_versionNumber' o='0' t='int'/>
+<mbr r='ZXing::QRCode::Version::_alignmentPatternCenters' o='64' t='std::vector&lt;int&gt;'/>
+<mbr r='ZXing::QRCode::Version::_ecBlocks' o='256' t='std::array&lt;ECBlocks, 4&gt;'/>
+<mbr r='ZXing::QRCode::Version::_totalCodewords' o='896' t='int'/>
+<fun r='_ZN5ZXing6QRCode7VersionC1EiSt16initializer_listIiERKSt5arrayINS0_8ECBlocksELm4EE'/>
+<fun r='_ZN5ZXing6QRCode7Version11AllVersionsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRCodecMode.h' l='60' c='_ZN5ZXing6QRCode9CodecMode18CharacterCountBitsENS1_4ModeERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRCodecMode.cpp' l='58' c='_ZN5ZXing6QRCode9CodecMode18CharacterCountBitsENS1_4ModeERKNS0_7VersionE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='62' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='27' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='310' c='_ZN5ZXing6QRCodeL15DecodeBitStreamEONS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='422' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='474' c='_ZN5ZXing6QRCode7Decoder6DecodeERKNS_9BitMatrixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='262' c='_ZN5ZXing6QRCodeL24ProcessFinderPatternInfoERKNS_9BitMatrixERKNS0_17FinderPatternInfoE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.h' l='35' c='_ZN5ZXing6QRCode10MatrixUtil11BuildMatrixERKNS_8BitArrayENS0_20ErrorCorrectionLevelERKNS0_7VersionEiRNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncodeResult.h' l='38'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='135' c='_ZN5ZXing6QRCodeL16AppendLengthInfoEiRKNS0_7VersionENS0_9CodecMode4ModeERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='263' c='_ZN5ZXing6QRCodeL7WillFitEiRKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='276' c='_ZN5ZXing6QRCodeL13ChooseVersionEiNS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='279' c='_ZN5ZXing6QRCodeL13ChooseVersionEiNS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='458' c='_ZN5ZXing6QRCodeL17ChooseMaskPatternERKNS_8BitArrayENS0_20ErrorCorrectionLevelERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='474' c='_ZN5ZXing6QRCodeL19CalculateBitsNeededENS0_9CodecMode4ModeERKNS_8BitArrayES5_RKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='483' c='_ZN5ZXing6QRCodeL16RecommendVersionENS0_20ErrorCorrectionLevelENS0_9CodecMode4ModeERKNS_8BitArrayES6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='489' c='_ZN5ZXing6QRCodeL16RecommendVersionENS0_20ErrorCorrectionLevelENS0_9CodecMode4ModeERKNS_8BitArrayES6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='531' c='_ZN5ZXing6QRCode7Encoder6EncodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS0_20ErrorCorrectionLevelENS_12CharacterSetEibi'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='147' c='_ZN5ZXing6QRCodeL36MaybeEmbedPositionAdjustmentPatternsERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='219' c='_ZN5ZXing6QRCodeL18EmbedBasicPatternsERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='338' c='_ZN5ZXing6QRCodeL19MakeVersionInfoBitsERKNS0_7VersionERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='351' c='_ZN5ZXing6QRCodeL21MaybeEmbedVersionInfoERKNS0_7VersionERNS_6MatrixINS_4TritEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRMatrixUtil.cpp' l='463' c='_ZN5ZXing6QRCode10MatrixUtil11BuildMatrixERKNS_8BitArrayENS0_20ErrorCorrectionLevelERKNS0_7VersionEiRNS_6MatrixINS_4TritEEE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='47' c='_ZN5ZXing6QRCode7Version11AllVersionsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='53' c='_ZN5ZXing6QRCode7Version11AllVersionsEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='306' c='_ZN5ZXing6QRCode7Version16VersionForNumberEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='316' c='_ZN5ZXing6QRCode7Version30ProvisionalVersionForDimensionEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='327' c='_ZN5ZXing6QRCode7Version24DecodeVersionInformationEi'/>
+<size>120</size>
+<fun r='_ZN5ZXing6QRCode7Version11AllVersionsEv'/>
+<fun r='_ZN5ZXing6QRCode7VersionC1EiSt16initializer_listIiERKSt5arrayINS0_8ECBlocksELm4EE'/>
+<fun r='_ZN5ZXing6QRCode7Version16VersionForNumberEi'/>
+<fun r='_ZN5ZXing6QRCode7Version30ProvisionalVersionForDimensionEi'/>
+<fun r='_ZN5ZXing6QRCode7Version24DecodeVersionInformationEi'/>
+<fun r='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>

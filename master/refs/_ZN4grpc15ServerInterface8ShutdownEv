@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/server_interface.h' l='94' ll='97' type='void grpc::ServerInterface::Shutdown()'/>
+<doc f='include/grpcpp/impl/codegen/server_interface.h' l='89'>/// Shutdown the server without a deadline and forced cancellation.
+  ///
+  /// All completion queue associated with the server (for example, for async
+  /// serving) must be shutdown *after* this method has returned:
+  /// See \a ServerBuilder::AddCompletionQueue for details.</doc>

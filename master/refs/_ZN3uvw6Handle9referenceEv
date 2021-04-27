@@ -1,0 +1,8 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='109' c='_ZN3uvw10BaseHandle9referenceEv'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='151' ll='153' type='void uvw::Handle::reference()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='145'>/**
+     * @brief Reference the given handle.
+     *
+     * References are idempotent, that is, if a handle is already referenced
+     * calling this function again will have no effect.
+     */</doc>

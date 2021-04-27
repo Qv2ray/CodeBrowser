@@ -1,0 +1,26 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='477' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WriteTagToArray(int field_number, google::protobuf::internal::WireFormatLite::WireType type, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='541' ll='546' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WriteTagToArray(int field_number, google::protobuf::internal::WireFormatLite::WireType type, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='707' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteInt32ToArrayEiiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='713' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteInt64ToArrayEilPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='719' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteUInt32ToArrayEijPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='725' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteUInt64ToArrayEimPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='731' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteSInt32ToArrayEiiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='737' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteSInt64ToArrayEilPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='743' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19WriteFixed32ToArrayEijPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='749' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19WriteFixed64ToArrayEimPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='755' u='c' c='_ZN6google8protobuf8internal14WireFormatLite20WriteSFixed32ToArrayEiiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='761' u='c' c='_ZN6google8protobuf8internal14WireFormatLite20WriteSFixed64ToArrayEilPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='767' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteFloatToArrayEifPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='773' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteDoubleToArrayEidPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='779' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteBoolToArrayEibPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='785' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteEnumToArrayEiiPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='875' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteStringToArrayEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='881' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteBytesToArrayEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='890' u='c' c='_ZN6google8protobuf8internal14WireFormatLite25InternalWriteGroupToArrayEiRKT_bPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='892' u='c' c='_ZN6google8protobuf8internal14WireFormatLite25InternalWriteGroupToArrayEiRKT_bPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='898' u='c' c='_ZN6google8protobuf8internal14WireFormatLite27InternalWriteMessageToArrayEiRKT_bPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='910' u='c' c='_ZN6google8protobuf8internal14WireFormatLite34InternalWriteGroupNoVirtualToArrayEiRKT_bPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='913' u='c' c='_ZN6google8protobuf8internal14WireFormatLite34InternalWriteGroupNoVirtualToArrayEiRKT_bPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='919' u='c' c='_ZN6google8protobuf8internal14WireFormatLite36InternalWriteMessageNoVirtualToArrayEiRKT_bPh'/>
+<doc f='include/google/protobuf/wire_format_lite_inl.h' l='539'>// ===================================================================</doc>
+<doc f='include/google/protobuf/wire_format_lite.h' l='476'>// Like above, but use only *ToArray methods of CodedOutputStream.</doc>

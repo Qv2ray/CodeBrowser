@@ -1,0 +1,7 @@
+<def f='qv2ray/src/components/translations/QvTranslator.hpp' l='19' ll='22' type='const QStringList Qv2ray::common::QvTranslator::GetAvailableLanguages() const'/>
+<doc f='qv2ray/src/components/translations/QvTranslator.hpp' l='15'>/**
+         * @brief get the available languages.
+         * @return (if available) languages (zh_CN, en_US, ...)
+         */</doc>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.cpp' l='113' u='c' c='_ZN25Qv2rayPlatformApplication10InitializeEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='64' u='c' c='_ZN17PreferencesWindowC1EP7QWidget'/>

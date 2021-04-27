@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='263' type='size_t'/>
+<offset>192</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='263'>/* Number of elements in the vector.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='864' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1162' u='w' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='207' u='w' c='uv__udp_recvmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='289' u='w' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='358' u='w' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='448' u='w' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='746' u='w' c='uv__udp_try_send'/>

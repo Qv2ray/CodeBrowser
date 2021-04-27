@@ -1,0 +1,18 @@
+<def f='include/c++/10/bits/basic_string.h' l='1434' ll='1440' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::assign(const _CharT * __s)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1425'>/**
+       *  @brief  Set value to contents of a C string.
+       *  @param __s  The C string to use.
+       *  @return  Reference to this string.
+       *
+       *  This function sets the value of this string to the value of @a __s.
+       *  The data is copied, so there is no dependence on @a __s once the
+       *  function returns.
+       */</doc>
+<use f='include/google/protobuf/descriptor.pb.h' l='6035' u='c' c='_ZN6google8protobuf19FileDescriptorProto14set_dependencyEiPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='6059' u='c' c='_ZN6google8protobuf19FileDescriptorProto14add_dependencyEPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7054' u='c' c='_ZN6google8protobuf15DescriptorProto17set_reserved_nameEiPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='7078' u='c' c='_ZN6google8protobuf15DescriptorProto17add_reserved_nameEPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8202' u='c' c='_ZN6google8protobuf19EnumDescriptorProto17set_reserved_nameEiPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='8226' u='c' c='_ZN6google8protobuf19EnumDescriptorProto17add_reserved_nameEPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11538' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location29set_leading_detached_commentsEiPKc'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='11562' u='c' c='_ZN6google8protobuf23SourceCodeInfo_Location29add_leading_detached_commentsEPKc'/>

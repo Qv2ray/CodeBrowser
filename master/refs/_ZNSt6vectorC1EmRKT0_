@@ -1,0 +1,32 @@
+<def f='include/c++/10/bits/stl_vector.h' l='509' ll='512' type='void std::vector::vector&lt;_Tp, _Alloc&gt;(std::vector::size_type __n, const std::vector::allocator_type &amp; __a = std::vector::allocator_type())'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='501'>/**
+       *  @brief  Creates a %vector with default constructed elements.
+       *  @param  __n  The number of elements to initially create.
+       *  @param  __a  An allocator.
+       *
+       *  This constructor fills the %vector with @a __n default
+       *  constructed elements.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='12' u='c' c='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='12' u='c' c='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='89' u='c' c='_ZN5ZXingL18FindErrorLocationsERKNS_9GenericGFERKNS_13GenericGFPolyE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='112' u='c' c='_ZN5ZXingL19FindErrorMagnitudesERKNS_9GenericGFERKNS_13GenericGFPolyERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='278' u='c' c='_ZN5ZXingL19DivideWithRemainderERKSt6vectorImSaImEES4_RS2_S5_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='182' u='c' c='_ZN5ZXing5AztecL11CorrectBitsERKNS0_14DetectorResultERKSt6vectorIbSaIbEERS6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='132' u='c' c='_ZN5ZXing5AztecL25GetCorrectedParameterDataElbRi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDataBlock.cpp' l='32' u='c' c='_ZN5ZXing10DataMatrix9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='182' u='c' c='_ZN5ZXing4OneDL16FindStartPatternERKNS_8BitArrayEPi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='104' u='c' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='516' u='c' c='_ZN5ZXing6Pdf417L17NumericCompactionERKSt6vectorIiSaIiEEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='565' u='c' c='_ZN5ZXing6Pdf417L16DecodeMacroBlockERKSt6vectorIiSaIiEEiRNS0_18DecoderResultExtraERi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp' l='31' u='c' c='_ZN5ZXing6Pdf41715DetectionResultC1ERKNS0_15BarcodeMetadataERKNS_8NullableINS0_11BoundingBoxEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='94' u='c' c='_ZNK5ZXing6Pdf41711ModulusPoly3addERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='144' u='c' c='_ZNK5ZXing6Pdf41711ModulusPoly8negativeEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='161' u='c' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='326' u='c' c='_ZN5ZXing6Pdf417L19CreateBarcodeMatrixERNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='452' u='c' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='459' u='c' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='481' u='c' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='39' u='c' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='415' u='c' c='_ZN5ZXing6QRCodeL21InterleaveWithECBytesERKNS_8BitArrayEiii'/>
+<use f='qv2ray/test/catch.hpp' l='14493' u='c' c='_ZNK5Catch8TestSpec15matchesByFilterERKSt6vectorINS_8TestCaseESaIS2_EERKNS_7IConfigE'/>

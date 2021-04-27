@@ -1,0 +1,7 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='216' type='int fstat(int __fd, struct stat * __buf)'/>
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='226' type='int fstat64(int __fd, struct stat64 * __buf)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1129' u='c' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1154' u='c' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1463' u='c' c='uv__fs_fstat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='43' u='c' c='uv__random_readpath'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='327' u='c' c='uv_guess_handle'/>

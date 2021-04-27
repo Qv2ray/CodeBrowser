@@ -1,0 +1,5 @@
+<dec f='include/grpc/impl/codegen/log.h' l='61' type='void gpr_log(const char * file, int line, gpr_log_severity severity, const char * format)'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='86' u='c' c='_ZN4grpc8internal16RpcServiceMethod18SetServerAsyncTypeENS1_9AsyncTypeE'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='110' macro='1' u='c' c='_ZN4grpc8internal16RpcServiceMethod12TypeToStringENS1_9AsyncTypeE'/>
+<doc f='include/grpc/impl/codegen/log.h' l='59'>/** Log a message. It&apos;s advised to use GPR_xxx above to generate the context
+ * for each message */</doc>

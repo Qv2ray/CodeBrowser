@@ -1,0 +1,15 @@
+<dec f='include/google/protobuf/message.h' l='1071' type='static google::protobuf::MessageFactory * google::protobuf::MessageFactory::generated_factory()'/>
+<doc f='include/google/protobuf/message.h' l='1057'>// Gets a MessageFactory which supports all generated, compiled-in messages.
+  // In other words, for any compiled-in type FooMessage, the following is true:
+  //   MessageFactory::generated_factory()-&gt;GetPrototype(
+  //     FooMessage::descriptor()) == FooMessage::default_instance()
+  // This factory supports all types which are found in
+  // DescriptorPool::generated_pool().  If given a descriptor from any other
+  // pool, GetPrototype() will return NULL.  (You can also check if a
+  // descriptor is for a generated message by checking if
+  // descriptor-&gt;file()-&gt;pool() == DescriptorPool::generated_pool().)
+  //
+  // This factory is 100% thread-safe; calling GetPrototype() does not modify
+  // any shared data.
+  //
+  // This factory is a singleton.  The caller must not delete the object.</doc>

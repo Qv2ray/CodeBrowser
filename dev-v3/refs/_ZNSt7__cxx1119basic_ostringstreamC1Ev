@@ -1,0 +1,14 @@
+<def f='include/c++/10/sstream' l='583' ll='585' type='void std::__cxx11::basic_ostringstream::basic_ostringstream&lt;_CharT, _Traits, _Alloc&gt;()'/>
+<doc f='include/c++/10/sstream' l='574'>/**
+       *  @brief  Default constructor starts with an empty string buffer.
+       *
+       *  Initializes @c sb using @c mode|out, and passes @c &amp;sb to the base
+       *  class initializer.  Does not allocate any buffer.
+       *
+       *  That&apos;s a lie.  We initialize the base class with NULL, because the
+       *  string class does its own memory management.
+      */</doc>
+<use f='qv2ray/test/catch.hpp' l='8640' u='c' c='_ZNK5Catch5clara8TextFlow6Column8toStringB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8758' u='c' c='_ZNK5Catch5clara8TextFlow7Columns8toStringB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='9382' u='c' c='_ZNK5Catch5clara6detail3Opt14getHelpColumnsEv'/>
+<use f='qv2ray/test/catch.hpp' l='13580' u='c' c='_ZN5Catch13StringStreams3addEv'/>

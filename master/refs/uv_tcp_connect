@@ -1,0 +1,3 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='576' type='int uv_tcp_connect(uv_connect_t * req, uv_tcp_t * handle, const struct sockaddr * addr, uv_connect_cb cb)'/>
+<def f='qv2ray/3rdparty/libuv/src/uv-common.c' l='345' ll='362' type='int uv_tcp_connect(uv_connect_t * req, uv_tcp_t * handle, const struct sockaddr * addr, uv_connect_cb cb)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='95' u='a' c='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>

@@ -1,0 +1,98 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='300' ll='318'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='316' c='_ZN6Qv2ray4base7objects20StreamSettingsObjectC1ERKS2_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='316' c='_ZN6Qv2ray4base7objects20StreamSettingsObjectaSERKS2_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='316' c='_ZN6Qv2ray4base7objects20StreamSettingsObjectaSERKS2_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='316' c='_ZNK6Qv2ray4base7objects20StreamSettingsObjecteqERKS2_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='316' c='_ZNK6Qv2ray4base7objects20StreamSettingsObjectneERKS2_'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.hpp' l='17' c='_ZN20StreamSettingsWidget15SetStreamObjectERKN6Qv2ray4base7objects20StreamSettingsObjectE'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.hpp' l='18' c='_ZNK20StreamSettingsWidget17GetStreamSettingsEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.hpp' l='77'/>
+<size>39304</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='298'>//
+    //</doc>
+<smbr r='Qv2ray::base::objects::StreamSettingsObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4base7objects20StreamSettingsObject10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject18on_network_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::network' o='128' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject19on_security_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::security' o='1088' t='QJS_Prop&lt;QString&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject18on_sockopt_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::sockopt' o='2048' t='QJS_Prop&lt;transfer::SockoptObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject22on_tlsSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::tlsSettings' o='8768' t='QJS_Prop&lt;transfer::TLSObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_xtlsSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::xtlsSettings' o='21248' t='QJS_Prop&lt;transfer::XTLSObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject22on_tcpSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::tcpSettings' o='33728' t='QJS_Prop&lt;transfer::TCPObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject22on_kcpSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::kcpSettings' o='249344' t='QJS_Prop&lt;transfer::KCPObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject21on_wsSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::wsSettings' o='274688' t='QJS_Prop&lt;transfer::WebSocketObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_httpSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::httpSettings' o='283136' t='QJS_Prop&lt;transfer::HttpObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject21on_dsSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::dsSettings' o='289664' t='QJS_Prop&lt;transfer::DomainSocketObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_quicSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::quicSettings' o='293312' t='QJS_Prop&lt;transfer::QuicObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_grpcSettings_changedEv'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::grpcSettings' o='310784' t='QJS_Prop&lt;transfer::gRPCObject&gt;'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObjectC1ERKS2_'/>
+<fun r='_ZNK6Qv2ray4base7objects20StreamSettingsObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObjectC1ERK11QJsonObject'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5015' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5035' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5042' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5049' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5056' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5063' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5070' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5077' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5084' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5091' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5098' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5105' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5112' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5121' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_CoreObjectModels.cpp' l='5140' c='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>39304</size>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::base::objects::StreamSettingsObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4base7objects20StreamSettingsObject10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject18on_network_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject19on_security_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject18on_sockopt_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject22on_tlsSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_xtlsSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject22on_tcpSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject22on_kcpSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject21on_wsSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_httpSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject21on_dsSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_quicSettings_changedEv'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject23on_grpcSettings_changedEv'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='23' c='_ZN6Qv2ray4core10connection13serialization5vmess9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='29' c='_ZN6Qv2ray4core10connection13serialization9vmess_new9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<size>39304</size>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='93' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERK7QStringS5_RK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<size>39304</size>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='14' c='_ZN6Qv2ray4core10connection13serialization5vmess9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='223' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<size>39304</size>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='37' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='136' c='_ZN6Qv2ray4core10connection13serialization9vmess_new9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<size>39304</size>
+<use f='qv2ray/src/ui/widgets/editors/w_InboundEditor.cpp' l='108' c='_ZN13InboundEditor6loadUIEv'/>
+<size>39304</size>
+<use f='qv2ray/src/ui/widgets/editors/w_OutboundEditor.cpp' l='119' c='_ZN14OutboundEditor9reloadGUIEv'/>
+<size>39304</size>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.cpp' l='26' c='_ZNK20StreamSettingsWidget17GetStreamSettingsEv'/>
+<use f='qv2ray/src/ui/widgets/widgets/StreamSettingsWidget.cpp' l='31' c='_ZN20StreamSettingsWidget15SetStreamObjectERKN6Qv2ray4base7objects20StreamSettingsObjectE'/>
+<size>39304</size>

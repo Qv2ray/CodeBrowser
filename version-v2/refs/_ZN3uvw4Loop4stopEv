@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='211' type='void uvw::Loop::stop()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='203'>/**
+     * @brief Stops the event loop.
+     *
+     * It causes `run()` to end as soon as possible.&lt;br/&gt;
+     * This will happen not sooner than the next loop iteration.&lt;br/&gt;
+     * If this function was called before blocking for I/O, the loop won’t block
+     * for I/O on this iteration.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='84' ll='86' type='void uvw::Loop::stop()'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='54' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>

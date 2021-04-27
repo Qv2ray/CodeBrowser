@@ -1,0 +1,8 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='185' ll='193' type='void grpc::ClientReader::WaitForInitialMetadata()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='178'>/// See the \a ClientStreamingInterface.WaitForInitialMetadata method for
+  /// semantics.
+  ///
+  //  Side effect:
+  ///   Once complete, the initial metadata read from
+  ///   the server will be accessable through the \a ClientContext used to
+  ///   construct this object.</doc>

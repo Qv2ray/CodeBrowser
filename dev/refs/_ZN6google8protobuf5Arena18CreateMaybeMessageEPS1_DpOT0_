@@ -1,0 +1,58 @@
+<def f='include/google/protobuf/arena.h' l='554' ll='558' macro='1' type='static T * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena, Args &amp;&amp;... args)'/>
+<dec f='/v2ray_api.pb.h' l='84' type='static ::v2ray::core::app::stats::command::Config * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='85' type='static ::v2ray::core::app::stats::command::GetStatsRequest * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='86' type='static ::v2ray::core::app::stats::command::GetStatsResponse * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='87' type='static ::v2ray::core::app::stats::command::QueryStatsRequest * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='88' type='static ::v2ray::core::app::stats::command::QueryStatsResponse * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='89' type='static ::v2ray::core::app::stats::command::Stat * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='90' type='static ::v2ray::core::app::stats::command::SysStatsRequest * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_api.pb.h' l='91' type='static ::v2ray::core::app::stats::command::SysStatsResponse * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='136' type='static ::google::protobuf::DescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='137' type='static ::google::protobuf::DescriptorProto_ExtensionRange * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='138' type='static ::google::protobuf::DescriptorProto_ReservedRange * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='139' type='static ::google::protobuf::EnumDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='140' type='static ::google::protobuf::EnumDescriptorProto_EnumReservedRange * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='141' type='static ::google::protobuf::EnumOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='142' type='static ::google::protobuf::EnumValueDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='143' type='static ::google::protobuf::EnumValueOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='144' type='static ::google::protobuf::ExtensionRangeOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='145' type='static ::google::protobuf::FieldDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='146' type='static ::google::protobuf::FieldOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='147' type='static ::google::protobuf::FileDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='148' type='static ::google::protobuf::FileDescriptorSet * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='149' type='static ::google::protobuf::FileOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='150' type='static ::google::protobuf::GeneratedCodeInfo * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='151' type='static ::google::protobuf::GeneratedCodeInfo_Annotation * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='152' type='static ::google::protobuf::MessageOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='153' type='static ::google::protobuf::MethodDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='154' type='static ::google::protobuf::MethodOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='155' type='static ::google::protobuf::OneofDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='156' type='static ::google::protobuf::OneofOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='157' type='static ::google::protobuf::ServiceDescriptorProto * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='158' type='static ::google::protobuf::ServiceOptions * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='159' type='static ::google::protobuf::SourceCodeInfo * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='160' type='static ::google::protobuf::SourceCodeInfo_Location * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='161' type='static ::google::protobuf::UninterpretedOption * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='include/google/protobuf/descriptor.pb.h' l='162' type='static ::google::protobuf::UninterpretedOption_NamePart * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<def f='/v2ray_api.pb.cc' l='2577' ll='2579' type='static ::v2ray::core::app::stats::command::GetStatsRequest * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2580' ll='2582' type='static ::v2ray::core::app::stats::command::Stat * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2583' ll='2585' type='static ::v2ray::core::app::stats::command::GetStatsResponse * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2586' ll='2588' type='static ::v2ray::core::app::stats::command::QueryStatsRequest * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2589' ll='2591' type='static ::v2ray::core::app::stats::command::QueryStatsResponse * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2592' ll='2594' type='static ::v2ray::core::app::stats::command::SysStatsRequest * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2595' ll='2597' type='static ::v2ray::core::app::stats::command::SysStatsResponse * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_api.pb.cc' l='2598' ll='2600' type='static ::v2ray::core::app::stats::command::Config * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<dec f='/v2ray_geosite.pb.h' l='80' type='static ::v2ray::core::app::router::CIDR * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_geosite.pb.h' l='81' type='static ::v2ray::core::app::router::DomainObject * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_geosite.pb.h' l='82' type='static ::v2ray::core::app::router::DomainObject_Attribute * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_geosite.pb.h' l='83' type='static ::v2ray::core::app::router::GeoIP * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_geosite.pb.h' l='84' type='static ::v2ray::core::app::router::GeoIPList * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_geosite.pb.h' l='85' type='static ::v2ray::core::app::router::GeoSite * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<dec f='/v2ray_geosite.pb.h' l='86' type='static ::v2ray::core::app::router::GeoSiteList * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * )'/>
+<def f='/v2ray_geosite.pb.cc' l='2353' ll='2355' type='static ::v2ray::core::app::router::DomainObject_Attribute * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_geosite.pb.cc' l='2356' ll='2358' type='static ::v2ray::core::app::router::DomainObject * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_geosite.pb.cc' l='2359' ll='2361' type='static ::v2ray::core::app::router::CIDR * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_geosite.pb.cc' l='2362' ll='2364' type='static ::v2ray::core::app::router::GeoIP * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_geosite.pb.cc' l='2365' ll='2367' type='static ::v2ray::core::app::router::GeoIPList * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_geosite.pb.cc' l='2368' ll='2370' type='static ::v2ray::core::app::router::GeoSite * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>
+<def f='/v2ray_geosite.pb.cc' l='2371' ll='2373' type='static ::v2ray::core::app::router::GeoSiteList * google::protobuf::Arena::CreateMaybeMessage(google::protobuf::Arena * arena)'/>

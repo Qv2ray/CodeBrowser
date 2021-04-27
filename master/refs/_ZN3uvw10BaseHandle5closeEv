@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='132' type='void uvw::BaseHandle::close()'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='139' c='_ZN3uvw6Handle5closeEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='125'>/**
+     * @brief Request handle to be closed.
+     *
+     * This **must** be called on each handle before memory is released.&lt;br/&gt;
+     * In-progress requests are cancelled and this can result in an ErrorEvent
+     * emitted.
+     */</doc>

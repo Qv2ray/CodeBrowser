@@ -1,0 +1,8 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='496' ll='505' type='static ClientAsyncReaderWriter&lt;W, R&gt; * grpc::internal::ClientAsyncReaderWriterFactory::Create(grpc::ChannelInterface * channel, grpc::CompletionQueue * cq, const ::grpc::internal::RpcMethod &amp; method, grpc::ClientContext * context, bool start, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='489'>/// Create a stream object.
+  /// Start the RPC request if \a start is set.
+  /// \a tag will be notified on \a cq when the call has been started (i.e.
+  /// intitial metadata sent). If \a start is not set, \a tag must be
+  /// nullptr and the actual call must be initiated by StartCall
+  /// Note that \a context will be used to fill in custom initial metadata
+  /// used to send to the server when starting the call.</doc>

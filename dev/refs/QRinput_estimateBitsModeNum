@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.h' l='81' type='int QRinput_estimateBitsModeNum(int size)'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='381' ll='400' type='int QRinput_estimateBitsModeNum(int size)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='868' u='c' c='QRinput_estimateBitStreamSizeOfEntry'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='376'>/**
+ * Estimate the length of the encoded bit stream of numeric data.
+ * @param size
+ * @return number of bits
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='101' u='c' c='Split_eatNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='109' u='c' c='Split_eatNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='142' u='c' c='Split_eatAn'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='220' u='c' c='Split_eat8'/>

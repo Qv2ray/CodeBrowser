@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1690' type='void uv_mutex_destroy(uv_mutex_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='179' u='c' c='uv__threadpool_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='98' u='c' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='167' u='c' c='uv__loop_close'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='324' ll='327' type='void uv_mutex_destroy(uv_mutex_t * mutex)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='540' u='c' c='uv__custom_sem_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='556' u='c' c='uv__custom_sem_destroy'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='83' u='c' c='_ZN3uvw5MutexD1Ev'/>

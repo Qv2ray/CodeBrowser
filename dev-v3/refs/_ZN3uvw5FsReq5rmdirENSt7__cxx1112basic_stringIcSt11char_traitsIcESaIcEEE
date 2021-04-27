@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='921' type='void uvw::FsReq::rmdir(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='327' ll='329' type='void uvw::FsReq::rmdir(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='913'>/**
+     * @brief Async [rmdir](http://linux.die.net/man/2/rmdir).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::RMDIR&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param path Path, as described in the official documentation.
+     */</doc>

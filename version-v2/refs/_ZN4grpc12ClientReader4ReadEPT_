@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='205' ll='215' type='bool grpc::ClientReader::Read(R * msg)'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='200'>/// See the \a ReaderInterface.Read method for semantics.
+  /// Side effect:
+  ///   This also receives initial metadata from the server, if not
+  ///   already received (if initial metadata is received, it can be then
+  ///   accessed through the \a ClientContext associated with this call).</doc>

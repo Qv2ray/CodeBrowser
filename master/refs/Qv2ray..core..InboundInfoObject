@@ -1,0 +1,19 @@
+<def f='qv2ray/src/core/CoreUtils.hpp' l='12' ll='17'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='52' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='53' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='28' c='_ZNK6Qv2ray4core7handler21KernelInstanceHandler14GetInboundInfoEv'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='56' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS0_17InboundInfoObjectEEi'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='81'/>
+<size>24</size>
+<mbr r='Qv2ray::core::InboundInfoObject::protocol' o='0' t='QString'/>
+<mbr r='Qv2ray::core::InboundInfoObject::listenIp' o='64' t='QString'/>
+<mbr r='Qv2ray::core::InboundInfoObject::port' o='128' t='int'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='168' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='170' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='183' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base6IDTypeINS1_14__QvConnectionEEE'/>
+<size>24</size>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='39' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler9CheckPortERK4QMapI7QStringNS0_17InboundInfoObjectEEi'/>
+<size>24</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow_extra.cpp' l='10' c='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow_extra.cpp' l='11' c='_ZN10MainWindow16MWSetSystemProxyEv'/>
+<size>24</size>

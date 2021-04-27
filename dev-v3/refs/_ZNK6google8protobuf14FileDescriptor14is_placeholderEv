@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='1400' type='bool google::protobuf::FileDescriptor::is_placeholder() const'/>
+<def f='include/google/protobuf/descriptor.h' l='1944' macro='1' type='bool google::protobuf::FileDescriptor::is_placeholder() const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1397'>// Returns true if this is a placeholder for an unknown file. This will
+  // only be the case if this descriptor comes from a DescriptorPool
+  // with AllowUnknownDependencies() set.</doc>

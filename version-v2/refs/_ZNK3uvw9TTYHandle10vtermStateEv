@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='139' type='uvw::TTYHandle::VTermState uvw::TTYHandle::vtermState() const'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='73' ll='77' type='TTYHandle::VTermState uvw::TTYHandle::vtermState() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='122'>/**
+     * @brief Gets the current state of whether console virtual terminal
+     * sequences are handled by the library or the console.
+     *
+     * This function is not implemented on Unix.
+     *
+     * Available states are:
+     *
+     * * `TTY::VTermState::SUPPORTED`
+     * * `TTY::VTermState::UNSUPPORTED`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_vtermstate_t)
+     * for further details.
+     *
+     * @return The current state.
+     */</doc>

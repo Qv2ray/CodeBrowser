@@ -1,0 +1,53 @@
+<use f='include/c++/10/memory_resource' l='70' c='_ZNSt3pmr19new_delete_resourceEv'/>
+<use f='include/c++/10/memory_resource' l='71' c='_ZNSt3pmr20null_memory_resourceEv'/>
+<use f='include/c++/10/memory_resource' l='72' c='_ZNSt3pmr20set_default_resourceEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='72' c='_ZNSt3pmr20set_default_resourceEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='73' c='_ZNSt3pmr20get_default_resourceEv'/>
+<def f='include/c++/10/memory_resource' l='85' ll='120'/>
+<use f='include/c++/10/memory_resource' l='91' c='_ZNSt3pmr15memory_resourceC1ERKS0_'/>
+<use f='include/c++/10/memory_resource' l='94' c='_ZNSt3pmr15memory_resourceaSERKS0_'/>
+<use f='include/c++/10/memory_resource' l='94' c='_ZNSt3pmr15memory_resourceaSERKS0_'/>
+<use f='include/c++/10/memory_resource' l='108' c='_ZNKSt3pmr15memory_resource8is_equalERKS0_'/>
+<use f='include/c++/10/memory_resource' l='119' c='_ZNKSt3pmr15memory_resource11do_is_equalERKS0_'/>
+<use f='include/c++/10/memory_resource' l='123' c='_ZNSt3pmreqERKNS_15memory_resourceES2_'/>
+<use f='include/c++/10/memory_resource' l='123' c='_ZNSt3pmreqERKNS_15memory_resourceES2_'/>
+<use f='include/c++/10/memory_resource' l='128' c='_ZNSt3pmrneERKNS_15memory_resourceES2_'/>
+<use f='include/c++/10/memory_resource' l='128' c='_ZNSt3pmrneERKNS_15memory_resourceES2_'/>
+<use f='include/c++/10/memory_resource' l='151' c='_ZNSt3pmr21polymorphic_allocatorC1EPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='328' c='_ZNKSt3pmr21polymorphic_allocator8resourceEv'/>
+<use f='include/c++/10/memory_resource' l='358'/>
+<use f='include/c++/10/memory_resource' l='399' c='_ZNSt3pmr15__pool_resourceC1ERKNS_12pool_optionsEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='418' c='_ZNKSt3pmr15__pool_resource8resourceEv'/>
+<ovr f='include/c++/10/memory_resource' l='437' c='std::pmr::synchronized_pool_resource'/>
+<use f='include/c++/10/memory_resource' l='437'/>
+<use f='include/c++/10/memory_resource' l='441' c='_ZNSt3pmr26synchronized_pool_resourceC1ERKNS_12pool_optionsEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='449' c='_ZNSt3pmr26synchronized_pool_resourceC1EPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='467' c='_ZNKSt3pmr26synchronized_pool_resource17upstream_resourceEv'/>
+<use f='include/c++/10/memory_resource' l='482' c='_ZNKSt3pmr26synchronized_pool_resource11do_is_equalERKNS_15memory_resourceE'/>
+<ovr f='include/c++/10/memory_resource' l='503' c='std::pmr::unsynchronized_pool_resource'/>
+<use f='include/c++/10/memory_resource' l='503'/>
+<use f='include/c++/10/memory_resource' l='508' c='_ZNSt3pmr28unsynchronized_pool_resourceC1ERKNS_12pool_optionsEPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='516' c='_ZNSt3pmr28unsynchronized_pool_resourceC1EPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='534' c='_ZNKSt3pmr28unsynchronized_pool_resource17upstream_resourceEv'/>
+<use f='include/c++/10/memory_resource' l='548' c='_ZNKSt3pmr28unsynchronized_pool_resource11do_is_equalERKNS_15memory_resourceE'/>
+<ovr f='include/c++/10/memory_resource' l='560' c='std::pmr::monotonic_buffer_resource'/>
+<use f='include/c++/10/memory_resource' l='560'/>
+<use f='include/c++/10/memory_resource' l='564' c='_ZNSt3pmr25monotonic_buffer_resourceC1EPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='570' c='_ZNSt3pmr25monotonic_buffer_resourceC1EmPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='580' c='_ZNSt3pmr25monotonic_buffer_resourceC1EPvmPNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='630' c='_ZNKSt3pmr25monotonic_buffer_resource17upstream_resourceEv'/>
+<use f='include/c++/10/memory_resource' l='658' c='_ZNKSt3pmr25monotonic_buffer_resource11do_is_equalERKNS_15memory_resourceE'/>
+<use f='include/c++/10/memory_resource' l='687'/>
+<size>8</size>
+<doc f='include/c++/10/memory_resource' l='84'>/// Class memory_resource</doc>
+<smbr r='std::pmr::memory_resource::_S_max_align' t='const std::size_t'/>
+<fun r='_ZNSt3pmr15memory_resourceC1Ev'/>
+<fun r='_ZNSt3pmr15memory_resourceC1ERKS0_'/>
+<fun r='_ZNSt3pmr15memory_resourceD1Ev'/>
+<fun r='_ZNSt3pmr15memory_resourceaSERKS0_'/>
+<fun r='_ZNSt3pmr15memory_resource8allocateEmm'/>
+<fun r='_ZNSt3pmr15memory_resource10deallocateEPvmm'/>
+<fun r='_ZNKSt3pmr15memory_resource8is_equalERKS0_'/>
+<fun r='_ZNSt3pmr15memory_resource11do_allocateEmm'/>
+<fun r='_ZNSt3pmr15memory_resource13do_deallocateEPvmm'/>
+<fun r='_ZNKSt3pmr15memory_resource11do_is_equalERKS0_'/>

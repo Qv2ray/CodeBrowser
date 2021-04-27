@@ -1,0 +1,11 @@
+<dec f='include/x86_64-linux-gnu/sys/epoll.h' l='85' type='uint32_t'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='185' u='w' c='uv__io_check_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='247' u='w' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='403' u='w' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='420' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='420' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='421' u='w' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='424' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='431' u='r' c='uv__io_poll'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/sys/epoll.h' l='85'>/* Epoll events */</doc>

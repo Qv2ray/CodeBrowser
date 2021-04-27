@@ -1,0 +1,6 @@
+<dec f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='78' type='void Qv2ray::components::plugins::QvPluginHost::Send_ConnectionStatsEvent(const Events::ConnectionStats::EventObject &amp; object)'/>
+<doc f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='77'>//</doc>
+<def f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='193' ll='202' type='void Qv2ray::components::plugins::QvPluginHost::Send_ConnectionStatsEvent(const Events::ConnectionStats::EventObject &amp; object)'/>
+<doc f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='192'>// ================== BEGIN SEND EVENTS ==================</doc>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='174' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler20ClearConnectionUsageERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='704' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler20OnStatsDataArrived_pERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeE5QPairIllEE'/>

@@ -1,0 +1,10 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='90' ll='93' type='bool ZXing::Flags::testFlag(Enum flag) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ZXFlags.h' l='82'>//	constexpr inline Flags operator^(Flags other) const noexcept { return i ^ other.i; }
+//	constexpr inline Flags operator^(Enum other) const noexcept { return i ^ Int(other); }
+//	constexpr inline Flags operator~() const noexcept { return ~i; }
+
+//	constexpr inline operator Int() const noexcept { return i; }
+//	constexpr inline bool operator!() const noexcept { return !i; }
+//	constexpr inline Int asInt() const noexcept { return i; }</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='119' u='c' c='_ZNK5ZXing11DecodeHints9hasFormatENS_13BarcodeFormatE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='120' u='c' c='_ZNK5ZXing11DecodeHints11hasNoFormatEv'/>

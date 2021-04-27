@@ -1,0 +1,17 @@
+<def f='include/google/protobuf/descriptor.h' l='538' ll='552'/>
+<use f='include/google/protobuf/descriptor.h' l='603' c='_ZNK6google8protobuf15FieldDescriptor8cpp_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='701' c='_ZN6google8protobuf15FieldDescriptor13TypeToCppTypeENS1_4TypeE'/>
+<use f='include/google/protobuf/descriptor.h' l='707' c='_ZN6google8protobuf15FieldDescriptor11CppTypeNameENS1_7CppTypeE'/>
+<use f='include/google/protobuf/descriptor.h' l='793'/>
+<use f='include/google/protobuf/descriptor.h' l='2088' c='_ZNK6google8protobuf15FieldDescriptor8cpp_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='2096' c='_ZN6google8protobuf15FieldDescriptor13TypeToCppTypeENS1_4TypeE'/>
+<use f='include/google/protobuf/descriptor.h' l='2104' c='_ZN6google8protobuf15FieldDescriptor11CppTypeNameENS1_7CppTypeE'/>
+<use f='include/google/protobuf/message.h' l='912' c='_ZNK6google8protobuf10Reflection23MutableRawRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorENS4_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='918' c='_ZNK6google8protobuf10Reflection19GetRawRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='942' c='_ZNK6google8protobuf10Reflection17RepeatedFieldDataEPNS0_7MessageEPKNS0_15FieldDescriptorENS4_7CppTypeEPKNS0_10DescriptorE'/>
+<doc f='include/google/protobuf/descriptor.h' l='535'>// Specifies the C++ data type used to represent the field.  There is a
+  // fixed mapping from Type to CppType where each Type maps to exactly one
+  // CppType.  0 is reserved for errors.</doc>
+<use f='include/google/protobuf/generated_message_reflection.h' l='516' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection23MutableRawRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='521' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection19GetRawRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorENS6_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='528' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection17RepeatedFieldDataEPNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEPKNS0_10DescriptorE'/>

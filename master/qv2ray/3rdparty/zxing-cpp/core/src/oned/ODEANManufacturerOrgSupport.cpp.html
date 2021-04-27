@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ODEANManufacturerOrgSupport.cpp source code [qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEANManufacturerOrgSupport.cpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::OneD::CountryId "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEANManufacturerOrgSupport.cpp'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>oned</a>/<a href='ODEANManufacturerOrgSupport.cpp.html'>ODEANManufacturerOrgSupport.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="4">4</th><td><i>*</i></td></tr>
+<tr><th id="5">5</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i>*</i></td></tr>
+<tr><th id="9">9</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i>*</i></td></tr>
+<tr><th id="11">11</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i>*/</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="ODEANManufacturerOrgSupport.h.html">"ODEANManufacturerOrgSupport.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../ZXStrConvWorkaround.h.html">"ZXStrConvWorkaround.h"</a></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../../../../include/c++/10/algorithm.html">&lt;algorithm&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../../../../include/c++/10/iterator.html">&lt;iterator&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">OneD</span> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>struct</b> <dfn class="type def" id="ZXing::OneD::CountryId" title='ZXing::OneD::CountryId' data-ref="ZXing::OneD::CountryId" data-ref-filename="ZXing..OneD..CountryId">CountryId</dfn></td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>	<em>int</em> <dfn class="tu decl field" id="ZXing::OneD::CountryId::first" title='ZXing::OneD::CountryId::first' data-type='int' data-ref="ZXing::OneD::CountryId::first" data-ref-filename="ZXing..OneD..CountryId..first">first</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<em>int</em> <dfn class="tu decl field" id="ZXing::OneD::CountryId::last" title='ZXing::OneD::CountryId::last' data-type='int' data-ref="ZXing::OneD::CountryId::last" data-ref-filename="ZXing..OneD..CountryId..last">last</dfn>;</td></tr>
+<tr><th id="32">32</th><td>	<em>const</em> <em>char</em> *<dfn class="tu decl field" id="ZXing::OneD::CountryId::id" title='ZXing::OneD::CountryId::id' data-type='const char *' data-ref="ZXing::OneD::CountryId::id" data-ref-filename="ZXing..OneD..CountryId..id">id</dfn>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>	<em>bool</em> <dfn class="tu decl def fn" id="_ZNK5ZXing4OneD9CountryIdltERKS1_" title='ZXing::OneD::CountryId::operator&lt;' data-type='bool ZXing::OneD::CountryId::operator&lt;(const ZXing::OneD::CountryId &amp; other) const' data-ref="_ZNK5ZXing4OneD9CountryIdltERKS1_" data-ref-filename="_ZNK5ZXing4OneD9CountryIdltERKS1_"><b>operator</b>&lt;</dfn>(<em>const</em> <a class="type" href="#ZXing::OneD::CountryId" title='ZXing::OneD::CountryId' data-ref="ZXing::OneD::CountryId" data-ref-filename="ZXing..OneD..CountryId">CountryId</a> &amp;<dfn class="local col2 decl" id="2other" title='other' data-type='const ZXing::OneD::CountryId &amp;' data-ref="2other" data-ref-filename="2other">other</dfn>) <em>const</em> {</td></tr>
+<tr><th id="35">35</th><td>		<b>return</b> <a class="tu member field" href="#ZXing::OneD::CountryId::first" title='ZXing::OneD::CountryId::first' data-use='r' data-ref="ZXing::OneD::CountryId::first" data-ref-filename="ZXing..OneD..CountryId..first">first</a> &lt; <a class="local col2 ref" href="#2other" title='other' data-ref="2other" data-ref-filename="2other">other</a>.<a class="tu member field" href="#ZXing::OneD::CountryId::first" title='ZXing::OneD::CountryId::first' data-use='r' data-ref="ZXing::OneD::CountryId::first" data-ref-filename="ZXing..OneD..CountryId..first">first</a>;</td></tr>
+<tr><th id="36">36</th><td>	}</td></tr>
+<tr><th id="37">37</th><td>};</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><em>static</em> <em>const</em> <a class="type" href="#ZXing::OneD::CountryId" title='ZXing::OneD::CountryId' data-ref="ZXing::OneD::CountryId" data-ref-filename="ZXing..OneD..CountryId">CountryId</a> <dfn class="tu decl def" id="ZXing::OneD::COUNTRIES" title='ZXing::OneD::COUNTRIES' data-type='const ZXing::OneD::CountryId [106]' data-ref="ZXing::OneD::COUNTRIES" data-ref-filename="ZXing..OneD..COUNTRIES">COUNTRIES</dfn>[] = {</td></tr>
+<tr><th id="40">40</th><td>	{<var>0</var>, <var>19</var>, <q>"US/CA"</q>},</td></tr>
+<tr><th id="41">41</th><td>	{<var>30</var>, <var>39</var>, <q>"US"</q>},</td></tr>
+<tr><th id="42">42</th><td>	{<var>60</var>, <var>139</var>, <q>"US/CA"</q>},</td></tr>
+<tr><th id="43">43</th><td>	{<var>300</var>, <var>379</var>, <q>"FR"</q>},</td></tr>
+<tr><th id="44">44</th><td>	{<var>380</var>, <var>380</var>, <q>"BG"</q>},</td></tr>
+<tr><th id="45">45</th><td>	{<var>383</var>, <var>383</var>, <q>"SI"</q>},</td></tr>
+<tr><th id="46">46</th><td>	{<var>385</var>, <var>385</var>, <q>"HR"</q>},</td></tr>
+<tr><th id="47">47</th><td>	{<var>387</var>, <var>387</var>, <q>"BA"</q>},</td></tr>
+<tr><th id="48">48</th><td>	{<var>400</var>, <var>440</var>, <q>"DE"</q>},</td></tr>
+<tr><th id="49">49</th><td>	{<var>450</var>, <var>459</var>, <q>"JP"</q>},</td></tr>
+<tr><th id="50">50</th><td>	{<var>460</var>, <var>469</var>, <q>"RU"</q>},</td></tr>
+<tr><th id="51">51</th><td>	{<var>471</var>, <var>471</var>, <q>"TW"</q>},</td></tr>
+<tr><th id="52">52</th><td>	{<var>474</var>, <var>474</var>, <q>"EE"</q>},</td></tr>
+<tr><th id="53">53</th><td>	{<var>475</var>, <var>475</var>, <q>"LV"</q>},</td></tr>
+<tr><th id="54">54</th><td>	{<var>476</var>, <var>476</var>, <q>"AZ"</q>},</td></tr>
+<tr><th id="55">55</th><td>	{<var>477</var>, <var>477</var>, <q>"LT"</q>},</td></tr>
+<tr><th id="56">56</th><td>	{<var>478</var>, <var>478</var>, <q>"UZ"</q>},</td></tr>
+<tr><th id="57">57</th><td>	{<var>479</var>, <var>479</var>, <q>"LK"</q>},</td></tr>
+<tr><th id="58">58</th><td>	{<var>480</var>, <var>480</var>, <q>"PH"</q>},</td></tr>
+<tr><th id="59">59</th><td>	{<var>481</var>, <var>481</var>, <q>"BY"</q>},</td></tr>
+<tr><th id="60">60</th><td>	{<var>482</var>, <var>482</var>, <q>"UA"</q>},</td></tr>
+<tr><th id="61">61</th><td>	{<var>484</var>, <var>484</var>, <q>"MD"</q>},</td></tr>
+<tr><th id="62">62</th><td>	{<var>485</var>, <var>485</var>, <q>"AM"</q>},</td></tr>
+<tr><th id="63">63</th><td>	{<var>486</var>, <var>486</var>, <q>"GE"</q>},</td></tr>
+<tr><th id="64">64</th><td>	{<var>487</var>, <var>487</var>, <q>"KZ"</q>},</td></tr>
+<tr><th id="65">65</th><td>	{<var>489</var>, <var>489</var>, <q>"HK"</q>},</td></tr>
+<tr><th id="66">66</th><td>	{<var>490</var>, <var>499</var>, <q>"JP"</q>},</td></tr>
+<tr><th id="67">67</th><td>	{<var>500</var>, <var>509</var>, <q>"GB"</q>},</td></tr>
+<tr><th id="68">68</th><td>	{<var>520</var>, <var>520</var>, <q>"GR"</q>},</td></tr>
+<tr><th id="69">69</th><td>	{<var>528</var>, <var>528</var>, <q>"LB"</q>},</td></tr>
+<tr><th id="70">70</th><td>	{<var>529</var>, <var>529</var>, <q>"CY"</q>},</td></tr>
+<tr><th id="71">71</th><td>	{<var>531</var>, <var>531</var>, <q>"MK"</q>},</td></tr>
+<tr><th id="72">72</th><td>	{<var>535</var>, <var>535</var>, <q>"MT"</q>},</td></tr>
+<tr><th id="73">73</th><td>	{<var>539</var>, <var>539</var>, <q>"IE"</q>},</td></tr>
+<tr><th id="74">74</th><td>	{<var>540</var>, <var>549</var>, <q>"BE/LU"</q>},</td></tr>
+<tr><th id="75">75</th><td>	{<var>560</var>, <var>560</var>, <q>"PT"</q>},</td></tr>
+<tr><th id="76">76</th><td>	{<var>569</var>, <var>569</var>, <q>"IS"</q>},</td></tr>
+<tr><th id="77">77</th><td>	{<var>570</var>, <var>579</var>, <q>"DK"</q>},</td></tr>
+<tr><th id="78">78</th><td>	{<var>590</var>, <var>590</var>, <q>"PL"</q>},</td></tr>
+<tr><th id="79">79</th><td>	{<var>594</var>, <var>594</var>, <q>"RO"</q>},</td></tr>
+<tr><th id="80">80</th><td>	{<var>599</var>, <var>599</var>, <q>"HU"</q>},</td></tr>
+<tr><th id="81">81</th><td>	{<var>600</var>, <var>601</var>, <q>"ZA"</q>},</td></tr>
+<tr><th id="82">82</th><td>	{<var>603</var>, <var>603</var>, <q>"GH"</q>},</td></tr>
+<tr><th id="83">83</th><td>	{<var>608</var>, <var>608</var>, <q>"BH"</q>},</td></tr>
+<tr><th id="84">84</th><td>	{<var>609</var>, <var>609</var>, <q>"MU"</q>},</td></tr>
+<tr><th id="85">85</th><td>	{<var>611</var>, <var>611</var>, <q>"MA"</q>},</td></tr>
+<tr><th id="86">86</th><td>	{<var>613</var>, <var>613</var>, <q>"DZ"</q>},</td></tr>
+<tr><th id="87">87</th><td>	{<var>616</var>, <var>616</var>, <q>"KE"</q>},</td></tr>
+<tr><th id="88">88</th><td>	{<var>618</var>, <var>618</var>, <q>"CI"</q>},</td></tr>
+<tr><th id="89">89</th><td>	{<var>619</var>, <var>619</var>, <q>"TN"</q>},</td></tr>
+<tr><th id="90">90</th><td>	{<var>621</var>, <var>621</var>, <q>"SY"</q>},</td></tr>
+<tr><th id="91">91</th><td>	{<var>622</var>, <var>622</var>, <q>"EG"</q>},</td></tr>
+<tr><th id="92">92</th><td>	{<var>624</var>, <var>624</var>, <q>"LY"</q>},</td></tr>
+<tr><th id="93">93</th><td>	{<var>625</var>, <var>625</var>, <q>"JO"</q>},</td></tr>
+<tr><th id="94">94</th><td>	{<var>626</var>, <var>626</var>, <q>"IR"</q>},</td></tr>
+<tr><th id="95">95</th><td>	{<var>627</var>, <var>627</var>, <q>"KW"</q>},</td></tr>
+<tr><th id="96">96</th><td>	{<var>628</var>, <var>628</var>, <q>"SA"</q>},</td></tr>
+<tr><th id="97">97</th><td>	{<var>629</var>, <var>629</var>, <q>"AE"</q>},</td></tr>
+<tr><th id="98">98</th><td>	{<var>640</var>, <var>649</var>, <q>"FI"</q>},</td></tr>
+<tr><th id="99">99</th><td>	{<var>690</var>, <var>695</var>, <q>"CN"</q>},</td></tr>
+<tr><th id="100">100</th><td>	{<var>700</var>, <var>709</var>, <q>"NO"</q>},</td></tr>
+<tr><th id="101">101</th><td>	{<var>729</var>, <var>729</var>, <q>"IL"</q>},</td></tr>
+<tr><th id="102">102</th><td>	{<var>730</var>, <var>739</var>, <q>"SE"</q>},</td></tr>
+<tr><th id="103">103</th><td>	{<var>740</var>, <var>740</var>, <q>"GT"</q>},</td></tr>
+<tr><th id="104">104</th><td>	{<var>741</var>, <var>741</var>, <q>"SV"</q>},</td></tr>
+<tr><th id="105">105</th><td>	{<var>742</var>, <var>742</var>, <q>"HN"</q>},</td></tr>
+<tr><th id="106">106</th><td>	{<var>743</var>, <var>743</var>, <q>"NI"</q>},</td></tr>
+<tr><th id="107">107</th><td>	{<var>744</var>, <var>744</var>, <q>"CR"</q>},</td></tr>
+<tr><th id="108">108</th><td>	{<var>745</var>, <var>745</var>, <q>"PA"</q>},</td></tr>
+<tr><th id="109">109</th><td>	{<var>746</var>, <var>746</var>, <q>"DO"</q>},</td></tr>
+<tr><th id="110">110</th><td>	{<var>750</var>, <var>750</var>, <q>"MX"</q>},</td></tr>
+<tr><th id="111">111</th><td>	{<var>754</var>, <var>755</var>, <q>"CA"</q>},</td></tr>
+<tr><th id="112">112</th><td>	{<var>759</var>, <var>759</var>, <q>"VE"</q>},</td></tr>
+<tr><th id="113">113</th><td>	{<var>760</var>, <var>769</var>, <q>"CH"</q>},</td></tr>
+<tr><th id="114">114</th><td>	{<var>770</var>, <var>770</var>, <q>"CO"</q>},</td></tr>
+<tr><th id="115">115</th><td>	{<var>773</var>, <var>773</var>, <q>"UY"</q>},</td></tr>
+<tr><th id="116">116</th><td>	{<var>775</var>, <var>775</var>, <q>"PE"</q>},</td></tr>
+<tr><th id="117">117</th><td>	{<var>777</var>, <var>777</var>, <q>"BO"</q>},</td></tr>
+<tr><th id="118">118</th><td>	{<var>779</var>, <var>779</var>, <q>"AR"</q>},</td></tr>
+<tr><th id="119">119</th><td>	{<var>780</var>, <var>780</var>, <q>"CL"</q>},</td></tr>
+<tr><th id="120">120</th><td>	{<var>784</var>, <var>784</var>, <q>"PY"</q>},</td></tr>
+<tr><th id="121">121</th><td>	{<var>785</var>, <var>785</var>, <q>"PE"</q>},</td></tr>
+<tr><th id="122">122</th><td>	{<var>786</var>, <var>786</var>, <q>"EC"</q>},</td></tr>
+<tr><th id="123">123</th><td>	{<var>789</var>, <var>790</var>, <q>"BR"</q>},</td></tr>
+<tr><th id="124">124</th><td>	{<var>800</var>, <var>839</var>, <q>"IT"</q>},</td></tr>
+<tr><th id="125">125</th><td>	{<var>840</var>, <var>849</var>, <q>"ES"</q>},</td></tr>
+<tr><th id="126">126</th><td>	{<var>850</var>, <var>850</var>, <q>"CU"</q>},</td></tr>
+<tr><th id="127">127</th><td>	{<var>858</var>, <var>858</var>, <q>"SK"</q>},</td></tr>
+<tr><th id="128">128</th><td>	{<var>859</var>, <var>859</var>, <q>"CZ"</q>},</td></tr>
+<tr><th id="129">129</th><td>	{<var>860</var>, <var>860</var>, <q>"YU"</q>},</td></tr>
+<tr><th id="130">130</th><td>	{<var>865</var>, <var>865</var>, <q>"MN"</q>},</td></tr>
+<tr><th id="131">131</th><td>	{<var>867</var>, <var>867</var>, <q>"KP"</q>},</td></tr>
+<tr><th id="132">132</th><td>	{<var>868</var>, <var>869</var>, <q>"TR"</q>},</td></tr>
+<tr><th id="133">133</th><td>	{<var>870</var>, <var>879</var>, <q>"NL"</q>},</td></tr>
+<tr><th id="134">134</th><td>	{<var>880</var>, <var>880</var>, <q>"KR"</q>},</td></tr>
+<tr><th id="135">135</th><td>	{<var>885</var>, <var>885</var>, <q>"TH"</q>},</td></tr>
+<tr><th id="136">136</th><td>	{<var>888</var>, <var>888</var>, <q>"SG"</q>},</td></tr>
+<tr><th id="137">137</th><td>	{<var>890</var>, <var>890</var>, <q>"IN"</q>},</td></tr>
+<tr><th id="138">138</th><td>	{<var>893</var>, <var>893</var>, <q>"VN"</q>},</td></tr>
+<tr><th id="139">139</th><td>	{<var>896</var>, <var>896</var>, <q>"PK"</q>},</td></tr>
+<tr><th id="140">140</th><td>	{<var>899</var>, <var>899</var>, <q>"ID"</q>},</td></tr>
+<tr><th id="141">141</th><td>	{<var>900</var>, <var>919</var>, <q>"AT"</q>},</td></tr>
+<tr><th id="142">142</th><td>	{<var>930</var>, <var>939</var>, <q>"AU"</q>},</td></tr>
+<tr><th id="143">143</th><td>	{<var>940</var>, <var>949</var>, <q>"AZ"</q>},</td></tr>
+<tr><th id="144">144</th><td>	{<var>955</var>, <var>955</var>, <q>"MY"</q>},</td></tr>
+<tr><th id="145">145</th><td>	{<var>958</var>, <var>958</var>, <q>"MO"</q>},</td></tr>
+<tr><th id="146">146</th><td>};</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a></td></tr>
+<tr><th id="149">149</th><td><a class="type" href="ODEANManufacturerOrgSupport.h.html#ZXing::OneD::EANManufacturerOrgSupport" title='ZXing::OneD::EANManufacturerOrgSupport' data-ref="ZXing::OneD::EANManufacturerOrgSupport" data-ref-filename="ZXing..OneD..EANManufacturerOrgSupport">EANManufacturerOrgSupport</a>::<dfn class="decl def fn" id="_ZN5ZXing4OneD25EANManufacturerOrgSupport23LookupCountryIdentifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='ZXing::OneD::EANManufacturerOrgSupport::LookupCountryIdentifier' data-ref="_ZN5ZXing4OneD25EANManufacturerOrgSupport23LookupCountryIdentifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN5ZXing4OneD25EANManufacturerOrgSupport23LookupCountryIdentifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">LookupCountryIdentifier</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col3 decl" id="3productCode" title='productCode' data-type='const std::string &amp;' data-ref="3productCode" data-ref-filename="3productCode">productCode</dfn>)</td></tr>
+<tr><th id="150">150</th><td>{</td></tr>
+<tr><th id="151">151</th><td>	<em>int</em> <dfn class="local col4 decl" id="4prefix" title='prefix' data-type='int' data-ref="4prefix" data-ref-filename="4prefix">prefix</dfn> = <span class="namespace">std::</span><a class="ref fn" href="../../../../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx114stoiERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi" title='std::__cxx11::stoi' data-ref="_ZNSt7__cxx114stoiERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi" data-ref-filename="_ZNSt7__cxx114stoiERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi">stoi</a>(<a class="local col3 ref" href="#3productCode" title='productCode' data-ref="3productCode" data-ref-filename="3productCode">productCode</a>.<a class="ref fn" href="../../../../../../include/c++/10/bits/basic_string.h.html#_ZNKSt7__cxx1112basic_string6substrEN9__gnu_cxx14__alloc_traitsINS2_IT1_NS3_10value_typeEE6rebindIT_E5otherENS8_5other10value_typeEE9size_typeESC_" title='std::__cxx11::basic_string::substr' data-ref="_ZNKSt7__cxx1112basic_string6substrEN9__gnu_cxx14__alloc_traitsINS2_IT1_NS3_10value_typeEE6rebindIT_E5otherENS8_5other10value_typeEE9size_typeESC_" data-ref-filename="_ZNKSt7__cxx1112basic_string6substrEN9__gnu_cxx14__alloc_traitsINS2_IT1_NS3_10value_typeEE6rebindIT_E5otherENS8_5other10value_typeEE9size_typeESC_">substr</a>(<var>0</var>, <var>3</var>));</td></tr>
+<tr><th id="152">152</th><td>	<em>auto</em> <dfn class="local col5 decl" id="5it" title='it' data-type='const ZXing::OneD::CountryId *' data-ref="5it" data-ref-filename="5it">it</dfn> = <span class="namespace">std::</span><a class="ref fn" href="../../../../../../include/c++/10/bits/algorithmfwd.h.html#_ZSt11lower_boundT_S_RKT0_" title='std::lower_bound' data-ref="_ZSt11lower_boundT_S_RKT0_" data-ref-filename="_ZSt11lower_boundT_S_RKT0_">lower_bound</a>(<span class="namespace">std::</span><a class="ref fn" href="../../../../../../include/c++/10/bits/range_access.h.html#_ZSt5beginRAT0__T_" title='std::begin' data-ref="_ZSt5beginRAT0__T_" data-ref-filename="_ZSt5beginRAT0__T_">begin</a>(<a class="tu ref" href="#ZXing::OneD::COUNTRIES" title='ZXing::OneD::COUNTRIES' data-use='r' data-ref="ZXing::OneD::COUNTRIES" data-ref-filename="ZXing..OneD..COUNTRIES">COUNTRIES</a>), <span class="namespace">std::</span><a class="ref fn" href="../../../../../../include/c++/10/bits/range_access.h.html#_ZSt3endRAT0__T_" title='std::end' data-ref="_ZSt3endRAT0__T_" data-ref-filename="_ZSt3endRAT0__T_">end</a>(<a class="tu ref" href="#ZXing::OneD::COUNTRIES" title='ZXing::OneD::COUNTRIES' data-use='r' data-ref="ZXing::OneD::COUNTRIES" data-ref-filename="ZXing..OneD..COUNTRIES">COUNTRIES</a>), <a class="type" href="#ZXing::OneD::CountryId" title='ZXing::OneD::CountryId' data-ref="ZXing::OneD::CountryId" data-ref-filename="ZXing..OneD..CountryId">CountryId</a>{ <a class="local col4 ref" href="#4prefix" title='prefix' data-ref="4prefix" data-ref-filename="4prefix">prefix</a>, <var>0</var>, <b>nullptr</b> });</td></tr>
+<tr><th id="153">153</th><td>	<b>if</b> (<a class="local col5 ref" href="#5it" title='it' data-ref="5it" data-ref-filename="5it">it</a> != <span class="namespace">std::</span><a class="ref fn" href="../../../../../../include/c++/10/bits/range_access.h.html#_ZSt3endRAT0__T_" title='std::end' data-ref="_ZSt3endRAT0__T_" data-ref-filename="_ZSt3endRAT0__T_">end</a>(<a class="tu ref" href="#ZXing::OneD::COUNTRIES" title='ZXing::OneD::COUNTRIES' data-use='r' data-ref="ZXing::OneD::COUNTRIES" data-ref-filename="ZXing..OneD..COUNTRIES">COUNTRIES</a>))</td></tr>
+<tr><th id="154">154</th><td>	{</td></tr>
+<tr><th id="155">155</th><td>		<b>if</b> (<a class="local col4 ref" href="#4prefix" title='prefix' data-ref="4prefix" data-ref-filename="4prefix">prefix</a> &gt;= <a class="local col5 ref" href="#5it" title='it' data-ref="5it" data-ref-filename="5it">it</a>-&gt;<a class="tu ref field" href="#ZXing::OneD::CountryId::first" title='ZXing::OneD::CountryId::first' data-use='r' data-ref="ZXing::OneD::CountryId::first" data-ref-filename="ZXing..OneD..CountryId..first">first</a> &amp;&amp; <a class="local col5 ref" href="#5it" title='it' data-ref="5it" data-ref-filename="5it">it</a>-&gt;<a class="tu ref field" href="#ZXing::OneD::CountryId::last" title='ZXing::OneD::CountryId::last' data-use='r' data-ref="ZXing::OneD::CountryId::last" data-ref-filename="ZXing..OneD..CountryId..last">last</a>)</td></tr>
+<tr><th id="156">156</th><td>			<b>return</b> <a class="ref fn fake" href="../../../../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" data-ref-filename="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_"></a><a class="local col5 ref" href="#5it" title='it' data-ref="5it" data-ref-filename="5it">it</a>-&gt;<a class="tu ref field" href="#ZXing::OneD::CountryId::id" title='ZXing::OneD::CountryId::id' data-use='r' data-ref="ZXing::OneD::CountryId::id" data-ref-filename="ZXing..OneD..CountryId..id">id</a>;</td></tr>
+<tr><th id="157">157</th><td>	}</td></tr>
+<tr><th id="158">158</th><td>	<b>return</b> <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a><a class="ref fn" href="../../../../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1Ev" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1Ev" data-ref-filename="_ZNSt7__cxx1112basic_stringC1Ev">(</a>);</td></tr>
+<tr><th id="159">159</th><td>}</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td>} <i>// OneD</i></td></tr>
+<tr><th id="162">162</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

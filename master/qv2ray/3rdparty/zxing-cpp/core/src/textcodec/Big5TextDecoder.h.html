@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Big5TextDecoder.h source code [qv2ray/3rdparty/zxing-cpp/core/src/textcodec/Big5TextDecoder.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Big5TextDecoder "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/textcodec/Big5TextDecoder.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>textcodec</a>/<a href='Big5TextDecoder.h.html'>Big5TextDecoder.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="3">3</th><td><i>**</i></td></tr>
+<tr><th id="4">4</th><td><i>** Copyright (C) 2015 The Qt Company Ltd.</i></td></tr>
+<tr><th id="5">5</th><td><i>** Contact: <a href="http://www.qt.io/licensing/">http://www.qt.io/licensing/</a></i></td></tr>
+<tr><th id="6">6</th><td><i>**</i></td></tr>
+<tr><th id="7">7</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="8">8</th><td><i>**</i></td></tr>
+<tr><th id="9">9</th><td><i>** $QT_BEGIN_LICENSE:LGPL21$</i></td></tr>
+<tr><th id="10">10</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="11">11</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="12">12</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="13">13</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="14">14</th><td><i>** a written agreement between you and The Qt Company. For licensing terms</i></td></tr>
+<tr><th id="15">15</th><td><i>** and conditions see <a href="http://www.qt.io/terms-conditions">http://www.qt.io/terms-conditions</a>. For further</i></td></tr>
+<tr><th id="16">16</th><td><i>** information use the contact form at <a href="http://www.qt.io/contact-us">http://www.qt.io/contact-us</a>.</i></td></tr>
+<tr><th id="17">17</th><td><i>**</i></td></tr>
+<tr><th id="18">18</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="19">19</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="20">20</th><td><i>** General Public License version 2.1 or version 3 as published by the Free</i></td></tr>
+<tr><th id="21">21</th><td><i>** Software Foundation and appearing in the file LICENSE.LGPLv21 and</i></td></tr>
+<tr><th id="22">22</th><td><i>** LICENSE.LGPLv3 included in the packaging of this file. Please review the</i></td></tr>
+<tr><th id="23">23</th><td><i>** following information to ensure the GNU Lesser General Public License</i></td></tr>
+<tr><th id="24">24</th><td><i>** requirements will be met: <a href="https://www.gnu.org/licenses/lgpl.html">https://www.gnu.org/licenses/lgpl.html</a> and</i></td></tr>
+<tr><th id="25">25</th><td><i>** <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="26">26</th><td><i>**</i></td></tr>
+<tr><th id="27">27</th><td><i>** As a special exception, The Qt Company gives you certain additional</i></td></tr>
+<tr><th id="28">28</th><td><i>** rights. These rights are described in The Qt Company LGPL Exception</i></td></tr>
+<tr><th id="29">29</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="30">30</th><td><i>**</i></td></tr>
+<tr><th id="31">31</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="32">32</th><td><i>**</i></td></tr>
+<tr><th id="33">33</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="../../../../../../include/c++/10/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="../../../../../../include/c++/10/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="../../../../../../include/c++/10/cstddef.html">&lt;cstddef&gt;</a></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><b>class</b> <dfn class="type def" id="Big5TextDecoder" title='Big5TextDecoder' data-ref="Big5TextDecoder" data-ref-filename="Big5TextDecoder">Big5TextDecoder</dfn></td></tr>
+<tr><th id="40">40</th><td>{</td></tr>
+<tr><th id="41">41</th><td><b>public</b>:</td></tr>
+<tr><th id="42">42</th><td>	<em>static</em> <em>void</em> <dfn class="decl fn" id="_ZN15Big5TextDecoder10AppendBig5ERSt6vectorItSaItEEPKhm" title='Big5TextDecoder::AppendBig5' data-ref="_ZN15Big5TextDecoder10AppendBig5ERSt6vectorItSaItEEPKhm" data-ref-filename="_ZN15Big5TextDecoder10AppendBig5ERSt6vectorItSaItEEPKhm">AppendBig5</dfn>(<span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="typedef" href="../../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint16_t" title='uint16_t' data-type='__uint16_t' data-ref="uint16_t" data-ref-filename="uint16_t">uint16_t</a>&gt;&amp; <dfn class="local col7 decl" id="27utf16" title='utf16' data-type='std::vector&lt;uint16_t&gt; &amp;' data-ref="27utf16" data-ref-filename="27utf16">utf16</dfn>, <em>const</em> <a class="typedef" href="../../../../../../include/x86_64-linux-gnu/bits/stdint-uintn.h.html#uint8_t" title='uint8_t' data-type='__uint8_t' data-ref="uint8_t" data-ref-filename="uint8_t">uint8_t</a>* <dfn class="local col8 decl" id="28bytes" title='bytes' data-type='const uint8_t *' data-ref="28bytes" data-ref-filename="28bytes">bytes</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col9 decl" id="29length" title='length' data-type='size_t' data-ref="29length" data-ref-filename="29length">length</dfn>);</td></tr>
+<tr><th id="43">43</th><td>};</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../TextDecoder.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

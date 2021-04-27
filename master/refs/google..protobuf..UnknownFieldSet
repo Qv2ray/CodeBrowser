@@ -1,0 +1,152 @@
+<def f='include/google/protobuf/unknown_field_set.h' l='77' ll='182'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='92' c='_ZN6google8protobuf15UnknownFieldSet9MergeFromERKS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='95' c='_ZN6google8protobuf15UnknownFieldSet19MergeFromAndDestroyEPS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='101' c='_ZN6google8protobuf15UnknownFieldSet22MergeToInternalMetdataERKS1_PNS0_8internal25InternalMetadataWithArenaE'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='105' c='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='140' c='_ZN6google8protobuf15UnknownFieldSet8AddGroupEi'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='165' c='_ZN6google8protobuf15UnknownFieldSet16default_instanceEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='171' c='_ZN6google8protobuf15UnknownFieldSet17InternalMergeFromERKS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='181' c='_ZN6google8protobuf15UnknownFieldSetC1ERKS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='181' c='_ZN6google8protobuf15UnknownFieldSetaSERKS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='208' c='_ZNK6google8protobuf12UnknownField5groupEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='215' c='_ZN6google8protobuf12UnknownField13mutable_groupEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='252'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='276' c='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='320' c='_ZNK6google8protobuf12UnknownField5groupEv'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='345' c='_ZN6google8protobuf12UnknownField13mutable_groupEv'/>
+<use f='include/google/protobuf/metadata.h' l='49'/>
+<use f='include/google/protobuf/metadata.h' l='54' c='_ZN6google8protobuf8internal25InternalMetadataWithArenaC1EPNS0_5ArenaE'/>
+<use f='include/google/protobuf/metadata.h' l='57' c='_ZN6google8protobuf8internal25InternalMetadataWithArena6DoSwapEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/metadata.h' l='61' c='_ZN6google8protobuf8internal25InternalMetadataWithArena11DoMergeFromERKNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/metadata.h' l='69' c='_ZN6google8protobuf8internal25InternalMetadataWithArena16default_instanceEv'/>
+<use f='include/google/protobuf/message.h' l='421' c='_ZNK6google8protobuf10Reflection16GetUnknownFieldsERKNS0_7MessageE'/>
+<use f='include/google/protobuf/message.h' l='428' c='_ZNK6google8protobuf10Reflection20MutableUnknownFieldsEPNS0_7MessageE'/>
+<use f='include/google/protobuf/extension_set.h' l='376' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_7MessageEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='393' c='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPKNS0_7MessageEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='331' c='_ZNK6google8protobuf17FileDescriptorSet14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='334' c='_ZN6google8protobuf17FileDescriptorSet22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='463' c='_ZNK6google8protobuf19FileDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='466' c='_ZN6google8protobuf19FileDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='800' c='_ZNK6google8protobuf30DescriptorProto_ExtensionRange14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='803' c='_ZN6google8protobuf30DescriptorProto_ExtensionRange22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='957' c='_ZNK6google8protobuf29DescriptorProto_ReservedRange14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='960' c='_ZN6google8protobuf29DescriptorProto_ReservedRange22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1096' c='_ZNK6google8protobuf15DescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1099' c='_ZN6google8protobuf15DescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1377' c='_ZNK6google8protobuf21ExtensionRangeOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1380' c='_ZN6google8protobuf21ExtensionRangeOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1512' c='_ZNK6google8protobuf20FieldDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1515' c='_ZN6google8protobuf20FieldDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1910' c='_ZNK6google8protobuf20OneofDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1913' c='_ZN6google8protobuf20OneofDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2074' c='_ZNK6google8protobuf37EnumDescriptorProto_EnumReservedRange14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2077' c='_ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2213' c='_ZNK6google8protobuf19EnumDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2216' c='_ZN6google8protobuf19EnumDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2428' c='_ZNK6google8protobuf24EnumValueDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2431' c='_ZN6google8protobuf24EnumValueDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2602' c='_ZNK6google8protobuf22ServiceDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2605' c='_ZN6google8protobuf22ServiceDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2779' c='_ZNK6google8protobuf21MethodDescriptorProto14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2782' c='_ZN6google8protobuf21MethodDescriptorProto22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3017' c='_ZNK6google8protobuf11FileOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3020' c='_ZN6google8protobuf11FileOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3550' c='_ZNK6google8protobuf14MessageOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3553' c='_ZN6google8protobuf14MessageOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3725' c='_ZNK6google8protobuf12FieldOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3728' c='_ZN6google8protobuf12FieldOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3976' c='_ZNK6google8protobuf12OneofOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3979' c='_ZN6google8protobuf12OneofOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4111' c='_ZNK6google8protobuf11EnumOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4114' c='_ZN6google8protobuf11EnumOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4266' c='_ZNK6google8protobuf16EnumValueOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4269' c='_ZN6google8protobuf16EnumValueOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4411' c='_ZNK6google8protobuf14ServiceOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4414' c='_ZN6google8protobuf14ServiceOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4556' c='_ZNK6google8protobuf13MethodOptions14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4559' c='_ZN6google8protobuf13MethodOptions22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4739' c='_ZNK6google8protobuf28UninterpretedOption_NamePart14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4742' c='_ZN6google8protobuf28UninterpretedOption_NamePart22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4898' c='_ZNK6google8protobuf19UninterpretedOption14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4901' c='_ZN6google8protobuf19UninterpretedOption22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5143' c='_ZNK6google8protobuf23SourceCodeInfo_Location14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5146' c='_ZN6google8protobuf23SourceCodeInfo_Location22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5367' c='_ZNK6google8protobuf14SourceCodeInfo14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5370' c='_ZN6google8protobuf14SourceCodeInfo22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5501' c='_ZNK6google8protobuf28GeneratedCodeInfo_Annotation14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5504' c='_ZN6google8protobuf28GeneratedCodeInfo_Annotation22mutable_unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5681' c='_ZNK6google8protobuf17GeneratedCodeInfo14unknown_fieldsEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5684' c='_ZN6google8protobuf17GeneratedCodeInfo22mutable_unknown_fieldsEv'/>
+<size>8</size>
+<doc f='include/google/protobuf/unknown_field_set.h' l='65'>// An UnknownFieldSet contains fields that were encountered while parsing a
+// message but were not defined by its type.  Keeping track of these can be
+// useful, especially in that they may be written if the message is serialized
+// again without being cleared in between.  This means that software which
+// simply receives messages and forwards them to other servers does not need
+// to be updated every time a new field is added to the message definition.
+//
+// To get the UnknownFieldSet attached to any message, call
+// Reflection::GetUnknownFields().
+//
+// This class is necessarily tied to the protocol buffer wire format, unlike
+// the Reflection interface which is independent of any serialization scheme.</doc>
+<fun r='_ZN6google8protobuf15UnknownFieldSetC1Ev'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSetD1Ev'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet5ClearEv'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet18ClearAndFreeMemoryEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet5emptyEv'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet9MergeFromERKS1_'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet19MergeFromAndDestroyEPS1_'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet22MergeToInternalMetdataERKS1_PNS0_8internal25InternalMetadataWithArenaE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet26SpaceUsedExcludingSelfLongEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet22SpaceUsedExcludingSelfEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet13SpaceUsedLongEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet9SpaceUsedEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet11field_countEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet5fieldEi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet13mutable_fieldEi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet9AddVarintEim'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet10AddFixed32Eij'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet10AddFixed64Eim'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet18AddLengthDelimitedEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet18AddLengthDelimitedB5cxx11Ei'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet8AddGroupEi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet8AddFieldERKNS0_12UnknownFieldE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet14DeleteSubrangeEii'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet14DeleteByNumberEi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet20MergeFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet20ParseFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet23ParseFromZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet14ParseFromArrayEPKvi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet15ParseFromStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet16default_instanceEv'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet17InternalMergeFromERKS1_'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet13ClearFallbackEv'/>
+<mbr r='google::protobuf::UnknownFieldSet::fields_' o='0' t='std::vector&lt;UnknownField&gt; *'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSetC1ERKS1_'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSetC1Ev'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSetD1Ev'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet18ClearAndFreeMemoryEv'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet5ClearEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet5emptyEv'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet4SwapEPS1_'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet11field_countEv'/>
+<fun r='_ZNK6google8protobuf15UnknownFieldSet5fieldEi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet13mutable_fieldEi'/>
+<fun r='_ZN6google8protobuf15UnknownFieldSet18AddLengthDelimitedEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='311' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection16GetUnknownFieldsERKNS0_7MessageE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='312' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection20MutableUnknownFieldsEPNS0_7MessageE'/>
+<use f='include/google/protobuf/wire_format.h' l='128' c='_ZN6google8protobuf8internal10WireFormat9SkipFieldEPNS0_2io16CodedInputStreamEjPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='133' c='_ZN6google8protobuf8internal10WireFormat11SkipMessageEPNS0_2io16CodedInputStreamEPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='140' c='_ZN6google8protobuf8internal10WireFormat30ReadPackedEnumPreserveUnknownsEPNS0_2io16CodedInputStreamEjPFbiEPNS0_15UnknownFieldSetEPNS0_13RepeatedFieldIiEE'/>
+<use f='include/google/protobuf/wire_format.h' l='144' c='_ZN6google8protobuf8internal10WireFormat22SerializeUnknownFieldsERKNS0_15UnknownFieldSetEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format.h' l='152' c='_ZN6google8protobuf8internal10WireFormat29SerializeUnknownFieldsToArrayERKNS0_15UnknownFieldSetEPh'/>
+<use f='include/google/protobuf/wire_format.h' l='158' c='_ZN6google8protobuf8internal10WireFormat31SerializeUnknownMessageSetItemsERKNS0_15UnknownFieldSetEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format.h' l='166' c='_ZN6google8protobuf8internal10WireFormat38SerializeUnknownMessageSetItemsToArrayERKNS0_15UnknownFieldSetEPh'/>
+<use f='include/google/protobuf/wire_format.h' l='170' c='_ZN6google8protobuf8internal10WireFormat24ComputeUnknownFieldsSizeERKNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='175' c='_ZN6google8protobuf8internal10WireFormat33ComputeUnknownMessageSetItemsSizeERKNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='247' c='_ZN6google8protobuf8internal10WireFormat19SkipMessageSetFieldEPNS0_2io16CodedInputStreamEjPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='261' c='_ZN6google8protobuf8internal27UnknownFieldSetFieldSkipperC1EPNS0_15UnknownFieldSetE'/>
+<use f='include/google/protobuf/wire_format.h' l='271'/>
+<size>8</size>

@@ -1,0 +1,13 @@
+<dec f='qv2ray/src/core/connection/Generation.hpp' l='33' type='Qv2ray::base::safetype::INBOUND Qv2ray::core::connection::generation::inbounds::GenerateInboundEntry(const QString &amp; tag, const QString &amp; protocol, const QString &amp; listen, int port, const Qv2ray::base::safetype::INBOUNDSETTING &amp; settings, const QJsonObject &amp; sniffing = {}, const QJsonObject &amp; allocate = {})'/>
+<doc f='qv2ray/src/core/connection/Generation.hpp' l='33'>//</doc>
+<def f='qv2ray/src/core/connection/generation/inbounds.cpp' l='58' ll='66' type='Qv2ray::base::safetype::INBOUND Qv2ray::core::connection::generation::inbounds::GenerateInboundEntry(const QString &amp; tag, const QString &amp; protocol, const QString &amp; listen, int port, const Qv2ray::base::safetype::INBOUNDSETTING &amp; settings, const QJsonObject &amp; sniffing = {}, const QJsonObject &amp; allocate = {})'/>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='99' u='c' c='_ZN6Qv2ray4core10connection10generation8inbounds23GenerateDefaultInboundsEv'/>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='116' u='c' c='_ZN6Qv2ray4core10connection10generation8inbounds23GenerateDefaultInboundsEv'/>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='139' u='c' c='_ZN6Qv2ray4core10connection10generation8inbounds23GenerateDefaultInboundsEv'/>
+<use f='qv2ray/src/core/connection/generation/inbounds.cpp' l='150' u='c' c='_ZN6Qv2ray4core10connection10generation8inbounds23GenerateDefaultInboundsEv'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='123' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler22ExpandChainedOutboundsER13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='420' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigE13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERKNS4_6IDTypeINS4_16__GroupRoutingIdEEEb'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='343' u='c' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='357' u='c' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='379' u='c' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='387' u='c' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>

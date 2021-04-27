@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1304' type='uv_stat_t'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='208' u='a' c='poll_cb'/>
+<offset>896</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1304'>/* Stores the result of uv_fs_stat() and uv_fs_fstat(). */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1553' u='a' c='uv__fs_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1558' u='a' c='uv__fs_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1574' u='a' c='uv__fs_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1593' u='a' c='uv__fs_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='2051' u='a' c='uv_fs_req_cleanup'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='89' u='a' c='uv_fs_get_statbuf'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='394' c='_ZN3uvw9FsRequest14fsStatCallbackEP7uv_fs_s'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='137' u='a' c='_ZN3uvw7FileReq8statSyncEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='377' u='a' c='_ZN3uvw5FsReq8statSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='389' u='a' c='_ZN3uvw5FsReq9lstatSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

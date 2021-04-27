@@ -1,0 +1,45 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.h' l='34' c='ZXing::LuminanceSource'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='29' ll='76'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='36' c='_ZN5ZXing22GenericLuminanceSourceC1EiiPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='47' c='_ZN5ZXing22GenericLuminanceSourceC1EiiPKvi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='53' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKvi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='165' c='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='188' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='194' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='205' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='208' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<size>48</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.h' l='26'>/**
+* This decode images from an address in memory as RGB or ARGB data.
+*/</doc>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiPKviiiii'/>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKviiiii'/>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiPKvi'/>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKvi'/>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiiiSt10shared_ptrIKNS_9ByteArrayEEi'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource5widthEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource6heightEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource7canCropEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource9canRotateEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<mbr r='ZXing::GenericLuminanceSource::_pixels' o='64' t='std::shared_ptr&lt;const ByteArray&gt;'/>
+<mbr r='ZXing::GenericLuminanceSource::_left' o='192' t='int'/>
+<mbr r='ZXing::GenericLuminanceSource::_top' o='224' t='int'/>
+<mbr r='ZXing::GenericLuminanceSource::_width' o='256' t='int'/>
+<mbr r='ZXing::GenericLuminanceSource::_height' o='288' t='int'/>
+<mbr r='ZXing::GenericLuminanceSource::_rowBytes' o='320' t='int'/>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKviiiii'/>
+<fun r='_ZN5ZXing22GenericLuminanceSourceC1EiiiiSt10shared_ptrIKNS_9ByteArrayEEi'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource5widthEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource6heightEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource7canCropEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource7croppedEiiii'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource9canRotateEv'/>
+<fun r='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='81' c='_ZN5ZXingL11ReadBarcodeEONS_22GenericLuminanceSourceERKNS_11DecodeHintsE'/>
+<size>48</size>

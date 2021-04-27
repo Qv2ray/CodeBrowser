@@ -1,0 +1,15 @@
+<dec f='include/grpcpp/impl/codegen/async_unary_call.h' l='69' type='void grpc::ClientAsyncResponseReaderInterface::Finish(R * msg, grpc::Status * status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_unary_call.h' l='55'>/// Request to receive the server&apos;s response \a msg and final \a status for
+  /// the call, and to notify \a tag on this call&apos;s completion queue when
+  /// finished.
+  ///
+  /// This function will return when either:
+  /// - when the server&apos;s response message and status have been received.
+  /// - when the server has returned a non-OK status (no message expected in
+  ///   this case).
+  /// - when the call failed for some reason and the library generated a
+  ///   non-OK status.
+  ///
+  /// \param[in] tag Tag identifying this request.
+  /// \param[out] status To be updated with the operation status.
+  /// \param[out] msg To be filled in with the server&apos;s response message.</doc>

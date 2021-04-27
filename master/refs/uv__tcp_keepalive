@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='237' type='int uv__tcp_keepalive(int fd, int on, unsigned int delay)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='423' u='c' c='uv__stream_open'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='377' ll='404' type='int uv__tcp_keepalive(int fd, int on, unsigned int delay)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='429' u='c' c='uv_tcp_keepalive'/>

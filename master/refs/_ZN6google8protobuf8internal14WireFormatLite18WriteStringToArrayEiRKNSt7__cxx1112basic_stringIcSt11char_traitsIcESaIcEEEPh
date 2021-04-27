@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='600' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WriteStringToArray(int field_number, const std::string &amp; value, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='868' ll='877' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WriteStringToArray(int field_number, const std::string &amp; value, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/map_type_handler.h' l='396' macro='1' u='c' c='_ZN6google8protobuf8internal14MapTypeHandlerILNS1_14WireFormatLite9FieldTypeE9ET_E20InternalWriteToArrayEiRKNS1_22MapWireFieldTypeTraitsILS4_9ES5_E20M11599411'/>
+<use f='/v2ray_api.pb.cc' l='524' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_api.pb.cc' l='803' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_api.pb.cc' l='1318' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='468' u='c' c='_ZNK22DomainObject_Attribute39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='807' u='c' c='_ZNK12DomainObject39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<use f='/v2ray_geosite.pb.cc' l='1104' u='c' c='_ZNK7GeoSite39InternalSerializeWithCachedSizesToArrayEbPh'/>

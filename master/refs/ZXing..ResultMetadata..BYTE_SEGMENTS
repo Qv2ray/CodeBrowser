@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.h' l='65' type='2'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ResultMetadata.h' l='56'>/**
+		* &lt;p&gt;2D barcode formats typically encode text, but allow for a sort of &apos;byte mode&apos;
+		* which is sometimes used to encode binary data. While {@link Result} makes available
+		* the complete raw bytes in the barcode for these formats, it does not offer the bytes
+		* from the byte segments alone.&lt;/p&gt;
+		*
+		* &lt;p&gt;This maps to a {@link java.util.List} of byte arrays corresponding to the
+		* raw bytes in the byte segments in the barcode, in order.&lt;/p&gt;
+		*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Result.cpp' l='46' u='r' c='_ZN5ZXing6ResultC1EONS_13DecoderResultEONS_13QuadrilateralINS_6PointTIiEEEENS_13BarcodeFormatE'/>

@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/message_lite.h' l='331' type='size_t google::protobuf::MessageLite::ByteSizeLong() const'/>
+<use f='include/google/protobuf/message_lite.h' l='336' u='c' c='_ZNK6google8protobuf11MessageLite8ByteSizeEv'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='74' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage12ByteSizeLongEv'/>
+<doc f='include/google/protobuf/message_lite.h' l='326'>// Computes the serialized size of the message.  This recursively calls
+  // ByteSizeLong() on all embedded messages.
+  //
+  // ByteSizeLong() is generally linear in the number of fields defined for the
+  // proto.</doc>

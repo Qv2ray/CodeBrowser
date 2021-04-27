@@ -1,0 +1,20 @@
+<dec f='include/grpcpp/impl/codegen/status_code_enum.h' l='115' type='12'/>
+<use f='include/grpcpp/impl/codegen/status.h' l='75' u='r' c='_ZN4grpc6StatusC1Ev'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='307'/>
+<use f='/v2ray_api.grpc.pb.h' l='154' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService24WithAsyncMethod_GetStats8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='174' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService26WithAsyncMethod_QueryStats10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='194' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService27WithAsyncMethod_GetSysStats11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='215' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService26WithGenericMethod_GetStats8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='232' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService28WithGenericMethod_QueryStats10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='249' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService29WithGenericMethod_GetSysStats11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='266' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService22WithRawMethod_GetStats8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='286' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService24WithRawMethod_QueryStats10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='306' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService25WithRawMethod_GetSysStats11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='327' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService32WithStreamedUnaryMethod_GetStats8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='347' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService34WithStreamedUnaryMethod_QueryStats10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.h' l='367' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService35WithStreamedUnaryMethod_GetSysStats11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>
+<doc f='include/grpcpp/impl/codegen/status_code_enum.h' l='114'>/// Operation is not implemented or not supported/enabled in this service.</doc>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='74' u='r' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='/v2ray_api.grpc.pb.cc' l='115' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService7Service8GetStatsEPN4grpc13ServerContextEPKNS3_15GetStatsRequestEPNS3_16GetStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='122' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService7Service10QueryStatsEPN4grpc13ServerContextEPKNS3_17QueryStatsRequestEPNS3_18QueryStatsResponseE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='129' u='r' c='_ZN5v2ray4core3app5stats7command12StatsService7Service11GetSysStatsEPN4grpc13ServerContextEPKNS3_15SysStatsRequestEPNS3_16SysStatsResponseE'/>

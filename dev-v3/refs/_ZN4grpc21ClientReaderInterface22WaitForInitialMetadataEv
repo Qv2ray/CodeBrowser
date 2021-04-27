@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/impl/codegen/sync_stream.h' l='156' type='void grpc::ClientReaderInterface::WaitForInitialMetadata()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='152'>/// Block to wait for initial metadata from server. The received metadata
+  /// can only be accessed after this call returns. Should only be called before
+  /// the first read. Calling this method is optional, and if it is not called
+  /// the metadata will be available in ClientContext after the first read.</doc>

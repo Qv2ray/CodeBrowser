@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libsemver/version.hpp' l='230' type='bool semver::version::operator==(const semver::version &amp; rh) const'/>
+<def f='qv2ray/3rdparty/libsemver/version.cpp' l='259' ll='262' type='bool semver::version::operator==(const semver::version &amp; v) const'/>
+<doc f='qv2ray/3rdparty/libsemver/version.hpp' l='222'>/**
+     * @brief Checks two instances for equality.
+     *
+     * Two instances are equal if and only if all its components are equal.
+     *
+     * @param v The instance to be compared with.
+     * @return `true` if @p rh is equal to this instance, `false` otherwise.
+     */</doc>

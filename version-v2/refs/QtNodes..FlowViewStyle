@@ -1,0 +1,31 @@
+<inh f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Style.hpp' l='5' c='QtNodes::Style'/>
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/FlowViewStyle.hpp' l='8' ll='28'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='12' c='_ZN7QtNodes15StyleCollection13flowViewStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='17' c='_ZN7QtNodes15StyleCollection16setFlowViewStyleENS_13FlowViewStyleE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.hpp' l='28'/>
+<size>56</size>
+<fun r='_ZN7QtNodes13FlowViewStyleC1Ev'/>
+<fun r='_ZN7QtNodes13FlowViewStyleC1E7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle8setStyleE7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle5resetEv'/>
+<fun r='_ZN7QtNodes13FlowViewStyle10resetStyleEv'/>
+<fun r='_ZN7QtNodes13FlowViewStyle12loadJsonTextE7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle12loadJsonFileE7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<mbr r='QtNodes::FlowViewStyle::BackgroundColor' o='64' t='QColor'/>
+<mbr r='QtNodes::FlowViewStyle::FineGridColor' o='192' t='QColor'/>
+<mbr r='QtNodes::FlowViewStyle::CoarseGridColor' o='320' t='QColor'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='31' c='_ZN7QtNodes13FlowViewStyle5resetEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowViewStyle.cpp' l='39' c='_ZN7QtNodes13FlowViewStyle8setStyleE7QString'/>
+<size>56</size>
+<fun r='_ZN7QtNodes13FlowViewStyleC1Ev'/>
+<fun r='_ZN7QtNodes13FlowViewStyleC1E7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle5resetEv'/>
+<fun r='_ZN7QtNodes13FlowViewStyle10resetStyleEv'/>
+<fun r='_ZN7QtNodes13FlowViewStyle8setStyleE7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle12loadJsonFileE7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle12loadJsonTextE7QString'/>
+<fun r='_ZN7QtNodes13FlowViewStyle21loadJsonFromByteArrayERK10QByteArray'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.cpp' l='14' c='_ZN7QtNodes15StyleCollection13flowViewStyleEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/StyleCollection.cpp' l='26' c='_ZN7QtNodes15StyleCollection16setFlowViewStyleENS_13FlowViewStyleE'/>
+<size>56</size>

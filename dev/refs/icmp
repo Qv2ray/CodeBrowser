@@ -1,0 +1,11 @@
+<def f='include/netinet/ip_icmp.h' l='137' ll='201'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='150' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='157' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='210' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='222' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>28</size>
+<mbr r='icmp::icmp_type' o='0' t='uint8_t'/>
+<mbr r='icmp::icmp_code' o='8' t='uint8_t'/>
+<mbr r='icmp::icmp_cksum' o='16' t='uint16_t'/>
+<mbr r='icmp::icmp_hun' o='32' t='union (anonymous union at /usr/include/netinet/ip_icmp.h:142:3)'/>
+<mbr r='icmp::icmp_dun' o='64' t='union (anonymous union at /usr/include/netinet/ip_icmp.h:177:3)'/>

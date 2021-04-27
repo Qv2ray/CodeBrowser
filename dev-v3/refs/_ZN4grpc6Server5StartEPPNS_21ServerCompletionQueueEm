@@ -1,0 +1,7 @@
+<dec f='include/grpcpp/server.h' l='185' type='void grpc::Server::Start(grpc::ServerCompletionQueue ** cqs, size_t num_cqs)'/>
+<doc f='include/grpcpp/server.h' l='179'>/// Start the server.
+  ///
+  /// \param cqs Completion queues for handling asynchronous services. The
+  /// caller is required to keep all completion queues live until the server is
+  /// destroyed.
+  /// \param num_cqs How many completion queues does \a cqs hold.</doc>

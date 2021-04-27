@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pipe.h source code [qv2ray/3rdparty/uvw/src/uvw/pipe.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::PipeHandle,uvw::details::UVChmodFlags "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/pipe.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='pipe.h.html'>pipe.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_PIPE_INCLUDE_H">UVW_PIPE_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_PIPE_INCLUDE_H" data-ref="_M/UVW_PIPE_INCLUDE_H">UVW_PIPE_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/type_traits.html">&lt;type_traits&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="request.hpp.html">"request.hpp"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="stream.h.html">"stream.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="loop.h.html">"loop.h"</a></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVChmodFlags" title='uvw::details::UVChmodFlags' data-ref="uvw::details::UVChmodFlags" data-ref-filename="uvw..details..UVChmodFlags">UVChmodFlags</dfn>: std::underlying_type_t&lt;uv_poll_event&gt; {</td></tr>
+<tr><th id="22">22</th><td>    <dfn class="enum" id="uvw::details::UVChmodFlags::READABLE" title='uvw::details::UVChmodFlags::READABLE' data-ref="uvw::details::UVChmodFlags::READABLE" data-ref-filename="uvw..details..UVChmodFlags..READABLE">READABLE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_READABLE" title='UV_READABLE' data-ref="UV_READABLE" data-ref-filename="UV_READABLE">UV_READABLE</a>,</td></tr>
+<tr><th id="23">23</th><td>    <dfn class="enum" id="uvw::details::UVChmodFlags::WRITABLE" title='uvw::details::UVChmodFlags::WRITABLE' data-ref="uvw::details::UVChmodFlags::WRITABLE" data-ref-filename="uvw..details..UVChmodFlags..WRITABLE">WRITABLE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_WRITABLE" title='UV_WRITABLE' data-ref="UV_WRITABLE" data-ref-filename="UV_WRITABLE">UV_WRITABLE</a></td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * <span class="command">@brief</span> The PipeHandle handle.</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * Pipe handles provide an abstraction over local domain sockets on Unix and</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * named pipes on Windows.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * To create a `PipeHandle` through a `Loop`, arguments follow:</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * * An optional boolean value that indicates if this pipe will be used for</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * handle passing between processes.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="41">41</th><td><b>class</b> <dfn class="type def" id="uvw::PipeHandle" title='uvw::PipeHandle' data-ref="uvw::PipeHandle" data-ref-filename="uvw..PipeHandle">PipeHandle</dfn> final: <b>public</b> <a class="type" href="stream.h.html#uvw::StreamHandle" title='uvw::StreamHandle' data-ref="uvw::StreamHandle" data-ref-filename="uvw..StreamHandle">StreamHandle</a>&lt;<a class="type" href="#uvw::PipeHandle" title='uvw::PipeHandle' data-ref="uvw::PipeHandle" data-ref-filename="uvw..PipeHandle">PipeHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_pipe_t" title='uv_pipe_t' data-type='struct uv_pipe_s' data-ref="uv_pipe_t" data-ref-filename="uv_pipe_t">uv_pipe_t</a>&gt; {</td></tr>
+<tr><th id="42">42</th><td><b>public</b>:</td></tr>
+<tr><th id="43">43</th><td>    <b>using</b> <dfn class="typedef" id="uvw::PipeHandle::Chmod" title='uvw::PipeHandle::Chmod' data-type='details::UVChmodFlags' data-ref="uvw::PipeHandle::Chmod" data-ref-filename="uvw..PipeHandle..Chmod">Chmod</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVChmodFlags" title='uvw::details::UVChmodFlags' data-ref="uvw::details::UVChmodFlags" data-ref-filename="uvw..details..UVChmodFlags">UVChmodFlags</a>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <b>explicit</b> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb" title='uvw::PipeHandle::PipeHandle' data-ref="_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb" data-ref-filename="_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb" id="_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb">PipeHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::PipeHandle,uv_pipe_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::PipeHandle, uv_pipe_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;PipeHandle, uv_pipe_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::PipeHandle,uv_pipe_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..PipeHandle,uv_pipe_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col2 decl" id="62ca" title='ca' data-type='uvw::Resource&lt;uvw::PipeHandle, uv_pipe_s&gt;::ConstructorAccess' data-ref="62ca" data-ref-filename="62ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col3 decl" id="63ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="63ref" data-ref-filename="63ref">ref</dfn>, <em>bool</em> <dfn class="local col4 decl" id="64pass" title='pass' data-type='bool' data-ref="64pass" data-ref-filename="64pass">pass</dfn> = <b>false</b>);</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="51">51</th><td>    <em>bool</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle4initEv" title='uvw::PipeHandle::init' data-ref="_ZN3uvw10PipeHandle4initEv" data-ref-filename="_ZN3uvw10PipeHandle4initEv" id="_ZN3uvw10PipeHandle4initEv">init</a>();</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc">     * <span class="command">@brief</span> Opens an existing file descriptor or HANDLE as a pipe.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">     * The passed file descriptor or HANDLE is not checked for its type, but</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">     * it’s required that it represents a valid pipe.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors.</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">file</span> A valid file handle (either a file descriptor or a HANDLE).</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="62">62</th><td>    <em>void</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle4openENS_7details13UVTypeWrapperIiEE" title='uvw::PipeHandle::open' data-ref="_ZN3uvw10PipeHandle4openENS_7details13UVTypeWrapperIiEE" data-ref-filename="_ZN3uvw10PipeHandle4openENS_7details13UVTypeWrapperIiEE" id="_ZN3uvw10PipeHandle4openENS_7details13UVTypeWrapperIiEE">open</a>(<a class="typedef" href="util.h.html#uvw::FileHandle" title='uvw::FileHandle' data-type='details::UVTypeWrapper&lt;uv_file&gt;' data-ref="uvw::FileHandle" data-ref-filename="uvw..FileHandle">FileHandle</a> <dfn class="local col5 decl" id="65file" title='file' data-type='uvw::FileHandle' data-ref="65file" data-ref-filename="65file">file</dfn>);</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc">     * <span class="command">@brief</span> bind Binds the pipe to a file path (Unix) or a name (Windows).</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc">     * Paths on Unix get truncated typically between 92 and 108 bytes.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">name</span> A valid file path.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="72">72</th><td>    <em>void</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='uvw::PipeHandle::bind' data-ref="_ZN3uvw10PipeHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN3uvw10PipeHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" id="_ZN3uvw10PipeHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">bind</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col6 decl" id="66name" title='name' data-type='std::string' data-ref="66name" data-ref-filename="66name">name</dfn>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">     * <span class="command">@brief</span> Connects to the Unix domain socket or the named pipe.</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">     * Paths on Unix get truncated typically between 92 and 108 bytes.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     * A ConnectEvent event is emitted when the connection has been</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     * established.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     * An ErrorEvent event is emitted in case of errors during the connection.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">name</span> A valid domain socket or named pipe.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="84">84</th><td>    <em>void</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='uvw::PipeHandle::connect' data-ref="_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" id="_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">connect</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col7 decl" id="67name" title='name' data-type='std::string' data-ref="67name" data-ref-filename="67name">name</dfn>);</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     * <span class="command">@brief</span> Gets the name of the Unix domain socket or the named pipe.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">     * <span class="command">@return</span> The name of the Unix domain socket or the named pipe, an empty</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc">     * string in case of errors.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="91">91</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="decl fn" href="pipe.cpp.html#_ZNK3uvw10PipeHandle4sockB5cxx11Ev" title='uvw::PipeHandle::sock' data-ref="_ZNK3uvw10PipeHandle4sockB5cxx11Ev" data-ref-filename="_ZNK3uvw10PipeHandle4sockB5cxx11Ev" id="_ZNK3uvw10PipeHandle4sockB5cxx11Ev">sock</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * <span class="command">@brief</span> Gets the name of the Unix domain socket or the named pipe to which</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     * the handle is connected.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * <span class="command">@return</span> The name of the Unix domain socket or the named pipe to which</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     * the handle is connected, an empty string in case of errors.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="99">99</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="decl fn" href="pipe.cpp.html#_ZNK3uvw10PipeHandle4peerB5cxx11Ev" title='uvw::PipeHandle::peer' data-ref="_ZNK3uvw10PipeHandle4peerB5cxx11Ev" data-ref-filename="_ZNK3uvw10PipeHandle4peerB5cxx11Ev" id="_ZNK3uvw10PipeHandle4peerB5cxx11Ev">peer</a>() <em>const</em> <b>noexcept</b>;</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">     * <span class="command">@brief</span> Sets the number of pending pipe this instance can handle.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     * This method can be used to set the number of pending pipe this instance</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     * handles when the pipe server is waiting for connections.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">     * Note that this setting applies to Windows only.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">count</span> The number of accepted pending pipe.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="110">110</th><td>    <em>void</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle7pendingEi" title='uvw::PipeHandle::pending' data-ref="_ZN3uvw10PipeHandle7pendingEi" data-ref-filename="_ZN3uvw10PipeHandle7pendingEi" id="_ZN3uvw10PipeHandle7pendingEi">pending</a>(<em>int</em> <dfn class="local col8 decl" id="68count" title='count' data-type='int' data-ref="68count" data-ref-filename="68count">count</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * <span class="command">@brief</span> Gets the number of pending pipe this instance can handle.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * <span class="command">@return</span> The number of pending pipe this instance can handle.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="116">116</th><td>    <em>int</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle7pendingEv" title='uvw::PipeHandle::pending' data-ref="_ZN3uvw10PipeHandle7pendingEv" data-ref-filename="_ZN3uvw10PipeHandle7pendingEv" id="_ZN3uvw10PipeHandle7pendingEv">pending</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">     * <span class="command">@brief</span> Used to receive handles over IPC pipes.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">     * Steps to be done:</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">     * * Call `pending()`, if it’s greater than zero then proceed.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">     * * Initialize a handle of the given type, as returned by `receive()`.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     * * Call `accept(pipe, handle)`.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     * <span class="command">@return</span> The type of the pending handle. Possible values are:</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">     * * `HandleType::PIPE`</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">     * * `HandleType::TCP`</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     * * `HandleType::UDP`</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">     * * `HandleType::UNKNOWN`</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="134">134</th><td>    <a class="typedef" href="util.h.html#uvw::HandleType" title='uvw::HandleType' data-type='details::UVHandleType' data-ref="uvw::HandleType" data-ref-filename="uvw..HandleType">HandleType</a> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle7receiveEv" title='uvw::PipeHandle::receive' data-ref="_ZN3uvw10PipeHandle7receiveEv" data-ref-filename="_ZN3uvw10PipeHandle7receiveEv" id="_ZN3uvw10PipeHandle7receiveEv">receive</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     * <span class="command">@brief</span> Alters pipe permissions.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc">     * It allows the pipe to be accessed from processes run by different users.</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">     * * `PipeHandle::Chmod::READABLE`</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">     * * `PipeHandle::Chmod::WRITABLE`</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/pipe.html#c.uv_pipe_chmod">http://docs.libuv.org/en/v1.x/pipe.html#c.uv_pipe_chmod</a>)</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flags</span> A valid set of flags.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="153">153</th><td>    <em>bool</em> <a class="decl fn" href="pipe.cpp.html#_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE" title='uvw::PipeHandle::chmod' data-ref="_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE" data-ref-filename="_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE" id="_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE">chmod</a>(<a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::PipeHandle::Chmod" title='uvw::PipeHandle::Chmod' data-type='details::UVChmodFlags' data-ref="uvw::PipeHandle::Chmod" data-ref-filename="uvw..PipeHandle..Chmod">Chmod</a>&gt; <dfn class="local col9 decl" id="69flags" title='flags' data-type='Flags&lt;uvw::PipeHandle::Chmod&gt;' data-ref="69flags" data-ref-filename="69flags">flags</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><b>private</b>:</td></tr>
+<tr><th id="156">156</th><td>    <em>bool</em> <dfn class="decl field" id="uvw::PipeHandle::ipc" title='uvw::PipeHandle::ipc' data-ref="uvw::PipeHandle::ipc" data-ref-filename="uvw..PipeHandle..ipc">ipc</dfn>;</td></tr>
+<tr><th id="157">157</th><td>};</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>}</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="163">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="164">164</th><td><u>#include "pipe.cpp"</u></td></tr>
+<tr><th id="165">165</th><td><u>#<span data-ppcond="163">endif</span></u></td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td><u>#<span data-ppcond="1">endif</span> // UVW_PIPE_INCLUDE_H</u></td></tr>
+<tr><th id="168">168</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='pipe.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/pipe.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

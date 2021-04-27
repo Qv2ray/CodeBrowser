@@ -1,0 +1,39 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='287' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='128' c='uvw::StreamHandle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='41' ll='157'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='41'/>
+<size>376</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='30'>/**
+ * @brief The PipeHandle handle.
+ *
+ * Pipe handles provide an abstraction over local domain sockets on Unix and
+ * named pipes on Windows.
+ *
+ * To create a `PipeHandle` through a `Loop`, arguments follow:
+ *
+ * * An optional boolean value that indicates if this pipe will be used for
+ * handle passing between processes.
+ */</doc>
+<fun r='_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<fun r='_ZN3uvw10PipeHandle4initEv'/>
+<fun r='_ZN3uvw10PipeHandle4openENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw10PipeHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK3uvw10PipeHandle4sockB5cxx11Ev'/>
+<fun r='_ZNK3uvw10PipeHandle4peerB5cxx11Ev'/>
+<fun r='_ZN3uvw10PipeHandle7pendingEi'/>
+<fun r='_ZN3uvw10PipeHandle7pendingEv'/>
+<fun r='_ZN3uvw10PipeHandle7receiveEv'/>
+<fun r='_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE'/>
+<mbr r='uvw::PipeHandle::ipc' o='2944' t='bool'/>
+<fun r='_ZN3uvw10PipeHandleC1ENS_14UnderlyingTypeIS0_9uv_pipe_sE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>
+<fun r='_ZN3uvw10PipeHandle4initEv'/>
+<fun r='_ZN3uvw10PipeHandle4openENS_7details13UVTypeWrapperIiEE'/>
+<fun r='_ZN3uvw10PipeHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK3uvw10PipeHandle4sockB5cxx11Ev'/>
+<fun r='_ZNK3uvw10PipeHandle4peerB5cxx11Ev'/>
+<fun r='_ZN3uvw10PipeHandle7pendingEi'/>
+<fun r='_ZN3uvw10PipeHandle7pendingEv'/>
+<fun r='_ZN3uvw10PipeHandle7receiveEv'/>
+<fun r='_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE'/>

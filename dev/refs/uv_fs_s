@@ -1,0 +1,27 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='236'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='1296' ll='1306'/>
+<size>440</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1295'>/* uv_fs_t is a subclass of uv_req_t. */</doc>
+<mbr r='uv_fs_s::data' o='0' t='void *'/>
+<mbr r='uv_fs_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_fs_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_fs_s::fs_type' o='512' t='uv_fs_type'/>
+<mbr r='uv_fs_s::loop' o='576' t='uv_loop_t *'/>
+<mbr r='uv_fs_s::cb' o='640' t='uv_fs_cb'/>
+<mbr r='uv_fs_s::result' o='704' t='ssize_t'/>
+<mbr r='uv_fs_s::ptr' o='768' t='void *'/>
+<mbr r='uv_fs_s::path' o='832' t='const char *'/>
+<mbr r='uv_fs_s::statbuf' o='896' t='uv_stat_t'/>
+<mbr r='uv_fs_s::new_path' o='2176' t='const char *'/>
+<mbr r='uv_fs_s::file' o='2240' t='uv_file'/>
+<mbr r='uv_fs_s::flags' o='2272' t='int'/>
+<mbr r='uv_fs_s::mode' o='2304' t='mode_t'/>
+<mbr r='uv_fs_s::nbufs' o='2336' t='unsigned int'/>
+<mbr r='uv_fs_s::bufs' o='2368' t='uv_buf_t *'/>
+<mbr r='uv_fs_s::off' o='2432' t='off_t'/>
+<mbr r='uv_fs_s::uid' o='2496' t='uv_uid_t'/>
+<mbr r='uv_fs_s::gid' o='2528' t='uv_gid_t'/>
+<mbr r='uv_fs_s::atime' o='2560' t='double'/>
+<mbr r='uv_fs_s::mtime' o='2624' t='double'/>
+<mbr r='uv_fs_s::work_req' o='2688' t='struct uv__work'/>
+<mbr r='uv_fs_s::bufsml' o='3008' t='uv_buf_t [4]'/>

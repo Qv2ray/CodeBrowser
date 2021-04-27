@@ -1,0 +1,3 @@
+<dec f='include/google/protobuf/arena_impl.h' l='151' type='static google::protobuf::uint64 google::protobuf::internal::ArenaImpl::SerialArena::Free(google::protobuf::internal::ArenaImpl::SerialArena * serial, google::protobuf::internal::ArenaImpl::Block * initial_block, void (*)(void *, size_t) block_dealloc)'/>
+<doc f='include/google/protobuf/arena_impl.h' l='149'>// Destroys this SerialArena, freeing all blocks with the given dealloc
+    // function, except any block equal to |initial_block|.</doc>

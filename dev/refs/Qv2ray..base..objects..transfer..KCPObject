@@ -1,0 +1,22 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='216' ll='230'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='228' c='_ZNK6Qv2ray4base7objects8transfer9KCPObjecteqERKS3_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='229' c='_ZN6Qv2ray4base7objects8transfer9KCPObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='229' c='_ZNK6Qv2ray4base7objects8transfer9KCPObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='229' c='_ZN6Qv2ray4base7objects8transfer9KCPObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='337'/>
+<size>48</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='214'>//
+        //</doc>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::mtu' o='0' t='int'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::tti' o='32' t='int'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::uplinkCapacity' o='64' t='int'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::downlinkCapacity' o='96' t='int'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::congestion' o='128' t='bool'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::readBufferSize' o='160' t='int'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::writeBufferSize' o='192' t='int'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::seed' o='256' t='QString'/>
+<mbr r='Qv2ray::base::objects::transfer::KCPObject::header' o='320' t='Qv2ray::base::objects::transfer::ObfsHeaderObject'/>
+<fun r='_ZN6Qv2ray4base7objects8transfer9KCPObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects8transfer9KCPObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects8transfer9KCPObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base7objects8transfer9KCPObject8fromJsonERK10QJsonValue'/>

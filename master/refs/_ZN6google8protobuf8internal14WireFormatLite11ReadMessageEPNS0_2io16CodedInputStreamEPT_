@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='354' type='static bool google::protobuf::internal::WireFormatLite::ReadMessage(io::CodedInputStream * input, MessageType * value)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='443' ll='453' type='static bool google::protobuf::internal::WireFormatLite::ReadMessage(io::CodedInputStream * input, MessageType * value)'/>
+<use f='/v2ray_api.pb.cc' l='998' u='c' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1500' u='c' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='721' u='c' c='_ZN12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1030' u='c' c='_ZN7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1293' u='c' c='_ZN11GeoSiteList27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>

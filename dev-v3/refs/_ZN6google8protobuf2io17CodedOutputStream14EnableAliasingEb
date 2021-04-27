@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='750' type='void google::protobuf::io::CodedOutputStream::EnableAliasing(bool enabled)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='741'>// Instructs the CodedOutputStream to allow the underlying
+  // ZeroCopyOutputStream to hold pointers to the original structure instead of
+  // copying, if it supports it (i.e. output-&gt;AllowsAliasing() is true).  If the
+  // underlying stream does not support aliasing, then enabling it has no
+  // affect.  For now, this only affects the behavior of
+  // WriteRawMaybeAliased().
+  //
+  // NOTE: It is caller&apos;s responsibility to ensure that the chunk of memory
+  // remains live until all of the data has been consumed from the stream.</doc>

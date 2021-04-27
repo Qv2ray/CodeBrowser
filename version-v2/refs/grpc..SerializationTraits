@@ -1,0 +1,18 @@
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='138'/>
+<def f='include/grpcpp/impl/codegen/byte_buffer.h' l='184' ll='197'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='185'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='305' c='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='348' c='_ZN4grpc8internal17CallOpRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='381' c='_ZN4grpc8internal19DeserializeFuncType11DeserializeEPNS_10ByteBufferE'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='221' c='_ZN4grpc15ServerInterface19PayloadAsyncRequest14FinalizeResultEPPvPb'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='63' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='154' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<def f='include/grpcpp/impl/codegen/proto_utils.h' l='104' ll='116'/>
+<size>1</size>
+<doc f='include/grpcpp/impl/codegen/proto_utils.h' l='101'>// This class provides a protobuf serializer. It translates between protobuf
+// objects and grpc_byte_buffers. More information about SerializationTraits can
+// be found in include/grpcpp/impl/codegen/serialization_traits.h.</doc>
+<fun r='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE11DeserializeEPS1_S3_'/>
+<fun r='_ZN4grpc19SerializationTraitsINS_10ByteBufferEvE9SerializeERKS1_PS1_Pb'/>
+<fun r='_ZN4grpc19SerializationTraitsIT_NSt9enable_ifIXsr3std10is_base_ofIN6google8protobuf7MessageES1_EE5valueEvE4typeEE9SerializeERKS5_PNS_10ByteBufferEPb'/>
+<fun r='_ZN4grpc19SerializationTraitsIT_NSt9enable_ifIXsr3std10is_base_ofIN6google8protobuf7MessageES1_EE5valueEvE4typeEE11DeserializeEPNS_10ByteBufferEPS5_'/>

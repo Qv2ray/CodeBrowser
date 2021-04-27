@@ -1,0 +1,17 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='334' type='bool uvw::Condition::timedWait(uvw::Mutex &amp; mutex, uint64_t timeout)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='198' ll='200' type='bool uvw::Condition::timedWait(uvw::Mutex &amp; mutex, uint64_t timeout)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='319'>/**
+     * @brief Waits on a condition.
+     *
+     * These function atomically releases the mutex and causes the calling
+     * thread to block on the condition variable.&lt;br/&gt;
+     * The functions returns with an error if the absolute time specified passes
+     * (that is, system time equals or exceeds it) before the condition is
+     * signaled or broadcasted, or if the absolute time specified has already
+     * been passed at the time of the call.
+     *
+     * @param mutex A mutex locked by the calling thread, otherwise expect
+     * undefined behavior.
+     * @param timeout The maximum time to wait before to return.
+     * @return True in case of success, false otherwise.
+     */</doc>

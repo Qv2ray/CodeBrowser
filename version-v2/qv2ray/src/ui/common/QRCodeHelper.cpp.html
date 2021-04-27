@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QRCodeHelper.cpp source code [qv2ray/src/ui/common/QRCodeHelper.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/common/QRCodeHelper.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>ui</a>/<a href='./'>common</a>/<a href='QRCodeHelper.cpp.html'>QRCodeHelper.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="QRCodeHelper.hpp.html">"QRCodeHelper.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../../3rdparty/qt-qrcode/lib/QtQrCode.html">"QtQrCode"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../../../3rdparty/qt-qrcode/lib/QtQrCodePainter.html">"QtQrCodePainter"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QImage&gt;</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">ui</span></td></tr>
+<tr><th id="9">9</th><td>{</td></tr>
+<tr><th id="10">10</th><td>    <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl def fn" id="_ZN6Qv2ray2ui12DecodeQRCodeERK6QImage" title='Qv2ray::ui::DecodeQRCode' data-ref="_ZN6Qv2ray2ui12DecodeQRCodeERK6QImage" data-ref-filename="_ZN6Qv2ray2ui12DecodeQRCodeERK6QImage">DecodeQRCode</dfn>(<em>const</em> <span class='type' title='QImage' data-ref="QImage" data-ref-filename="QImage">QImage</span> &amp;)</td></tr>
+<tr><th id="11">11</th><td>    {</td></tr>
+<tr><th id="12">12</th><td>        <b>return</b> <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>""</q>;</td></tr>
+<tr><th id="13">13</th><td>    }</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td>    <span class='type' title='QImage' data-ref="QImage" data-ref-filename="QImage">QImage</span> <dfn class="decl def fn" id="_ZN6Qv2ray2ui12EncodeQRCodeE7QStringi" title='Qv2ray::ui::EncodeQRCode' data-ref="_ZN6Qv2ray2ui12EncodeQRCodeE7QStringi" data-ref-filename="_ZN6Qv2ray2ui12EncodeQRCodeE7QStringi">EncodeQRCode</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col4 decl" id="4content" title='content' data-type='const QString' data-ref="4content" data-ref-filename="4content">content</dfn>, <em>int</em> <dfn class="local col5 decl" id="5size" title='size' data-type='int' data-ref="5size" data-ref-filename="5size">size</dfn>)</td></tr>
+<tr><th id="16">16</th><td>    {</td></tr>
+<tr><th id="17">17</th><td>        <a class="type" href="../../../3rdparty/qt-qrcode/lib/qtqrcode.h.html#QtQrCode" title='QtQrCode' data-ref="QtQrCode" data-ref-filename="QtQrCode">QtQrCode</a> <a class="ref fn fake" href="../../../3rdparty/qt-qrcode/lib/qtqrcode.h.html#_ZN8QtQrCodeC1ERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE" title='QtQrCode::QtQrCode' data-ref="_ZN8QtQrCodeC1ERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE" data-ref-filename="_ZN8QtQrCodeC1ERK10QByteArrayiNS_10EncodeModeENS_10ProportionEN2Qt15CaseSensitivityENS_20ErrorCorrectionLevelE"></a><dfn class="local col6 decl" id="6c" title='c' data-type='QtQrCode' data-ref="6c" data-ref-filename="6c">c</dfn>;</td></tr>
+<tr><th id="18">18</th><td>        <a class="local col6 ref" href="#6c" title='c' data-ref="6c" data-ref-filename="6c">c</a>.<a class="ref fn" href="../../../3rdparty/qt-qrcode/lib/qtqrcode.h.html#_ZN8QtQrCode7setDataERK10QByteArray" title='QtQrCode::setData' data-ref="_ZN8QtQrCode7setDataERK10QByteArray" data-ref-filename="_ZN8QtQrCode7setDataERK10QByteArray">setData</a>(<a class="local col4 ref" href="#4content" title='content' data-ref="4content" data-ref-filename="4content">content</a>.<span class='ref fn' title='QString::toUtf8' data-ref="_ZNKR7QString6toUtf8Ev" data-ref-filename="_ZNKR7QString6toUtf8Ev">toUtf8</span>());</td></tr>
+<tr><th id="19">19</th><td>        <b>return</b> <a class="type" href="../../../3rdparty/qt-qrcode/lib/qtqrcodepainter.h.html#QtQrCodePainter" title='QtQrCodePainter' data-ref="QtQrCodePainter" data-ref-filename="QtQrCodePainter">QtQrCodePainter</a><a class="ref fn" href="../../../3rdparty/qt-qrcode/lib/qtqrcodepainter.h.html#_ZN15QtQrCodePainterC1EfRK6QBrushS2_" title='QtQrCodePainter::QtQrCodePainter' data-ref="_ZN15QtQrCodePainterC1EfRK6QBrushS2_" data-ref-filename="_ZN15QtQrCodePainterC1EfRK6QBrushS2_">(</a><var>2.0</var>).<a class="ref fn" href="../../../3rdparty/qt-qrcode/lib/qtqrcodepainter.h.html#_ZN15QtQrCodePainter7toImageERK8QtQrCodei" title='QtQrCodePainter::toImage' data-ref="_ZN15QtQrCodePainter7toImageERK8QtQrCodei" data-ref-filename="_ZN15QtQrCodePainter7toImageERK8QtQrCodei">toImage</a>(<a class="local col6 ref" href="#6c" title='c' data-ref="6c" data-ref-filename="6c">c</a>, <a class="local col5 ref" href="#5size" title='size' data-ref="5size" data-ref-filename="5size">size</a>);</td></tr>
+<tr><th id="20">20</th><td>    }</td></tr>
+<tr><th id="21">21</th><td>} <i>// namespace Qv2ray::ui</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

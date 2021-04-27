@@ -1,0 +1,39 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='60' c='ZXing::OneD::RowReader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='42' ll='147'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN13Reader.h' l='31' c='ZXing::OneD::EAN13Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN13Reader.h' l='31'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN13Reader.h' l='34' c='_ZN5ZXing4OneD11EAN13ReaderC1ERKNS_11DecodeHintsE'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='34'>/**
+* &lt;p&gt;Encapsulates functionality and implementation that is common to UPC and EAN families
+* of one-dimensional barcodes.&lt;/p&gt;
+*
+* @author dswitkin@google.com (Daniel Switkin)
+* @author Sean Owen
+* @author alasdair@google.com (Alasdair Mackintosh)
+*/</doc>
+<fun r='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<fun r='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<smbr r='ZXing::OneD::UPCEANReader::MAX_AVG_VARIANCE' t='const float'/>
+<smbr r='ZXing::OneD::UPCEANReader::MAX_INDIVIDUAL_VARIANCE' t='const float'/>
+<fun r='_ZN5ZXing4OneD12UPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing4OneD12UPCEANReader14expectedFormatEv'/>
+<fun r='_ZNK5ZXing4OneD12UPCEANReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing4OneD12UPCEANReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing4OneD12UPCEANReader9decodeEndERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>
+<fun r='_ZN5ZXing4OneD12UPCEANReader21FindStartGuardPatternERKNS_8BitArrayE'/>
+<fun r='_ZN5ZXing4OneD12UPCEANReader11DecodeDigitEPNS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEERKSt5arrayISD_IiLm4EEXT_EEPNSt7__cxx1112ba10075502'/>
+<fun r='_ZN5ZXing4OneD12UPCEANReader16ReadGuardPatternEPNS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEERKSt5arrayIiXT_EE'/>
+<mbr r='ZXing::OneD::UPCEANReader::_allowedExtensions' o='64' t='std::vector&lt;int&gt;'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN8Reader.h' l='29' c='ZXing::OneD::EAN8Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN8Reader.h' l='29'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODEAN8Reader.h' l='32' c='_ZN5ZXing4OneD10EAN8ReaderC1ERKNS_11DecodeHintsE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='49'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.h' l='30' c='ZXing::OneD::UPCAReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.h' l='30'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.h' l='33' c='_ZN5ZXing4OneD10UPCAReaderC1ERKNS_11DecodeHintsE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h' l='31' c='ZXing::OneD::UPCEReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h' l='31'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h' l='34' c='_ZN5ZXing4OneD10UPCEReaderC1ERKNS_11DecodeHintsE'/>
+<size>32</size>

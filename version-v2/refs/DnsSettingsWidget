@@ -1,0 +1,55 @@
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='75'/>
+<inh f='/qv2ray_autogen/include/ui_DnsSettingsWidget.h' l='422' c='Ui::DnsSettingsWidget'/>
+<def f='qv2ray/src/ui/widgets/widgets/DnsSettingsWidget.hpp' l='12' ll='60'/>
+<use f='/qv2ray_autogen/F2BAGSG3NE/moc_DnsSettingsWidget.cpp' l='141' c='_ZN17DnsSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.hpp' l='73'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='145'/>
+<size>544</size>
+<smbr r='DnsSettingsWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17DnsSettingsWidget10metaObjectEv'/>
+<fun r='_ZN17DnsSettingsWidget11qt_metacastEPKc'/>
+<fun r='_ZN17DnsSettingsWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17DnsSettingsWidget2trEPKcS1_i'/>
+<fun r='_ZN17DnsSettingsWidget6trUtf8EPKcS1_i'/>
+<fun r='_ZN17DnsSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN17DnsSettingsWidgetC1EP7QWidget'/>
+<fun r='_ZN17DnsSettingsWidget12SetDNSObjectERKN6Qv2ray4base7objects9DNSObjectERKNS2_13FakeDNSObjectE'/>
+<fun r='_ZN17DnsSettingsWidget12GetDNSObjectEv'/>
+<fun r='_ZNK17DnsSettingsWidget15CheckIsValidDNSEv'/>
+<fun r='_ZN17DnsSettingsWidget28on_dnsClientIPTxt_textEditedERK7QString'/>
+<fun r='_ZN17DnsSettingsWidget23on_dnsTagTxt_textEditedERK7QString'/>
+<fun r='_ZN17DnsSettingsWidget23on_addServerBtn_clickedEv'/>
+<fun r='_ZN17DnsSettingsWidget26on_removeServerBtn_clickedEv'/>
+<fun r='_ZN17DnsSettingsWidget35on_serversListbox_currentRowChangedEi'/>
+<fun r='_ZN17DnsSettingsWidget26on_moveServerUpBtn_clickedEv'/>
+<fun r='_ZN17DnsSettingsWidget28on_moveServerDownBtn_clickedEv'/>
+<fun r='_ZN17DnsSettingsWidget30on_serverAddressTxt_textEditedERK7QString'/>
+<fun r='_ZN17DnsSettingsWidget28on_serverPortSB_valueChangedEi'/>
+<fun r='_ZN17DnsSettingsWidget27on_addStaticHostBtn_clickedEv'/>
+<fun r='_ZN17DnsSettingsWidget30on_removeStaticHostBtn_clickedEv'/>
+<fun r='_ZN17DnsSettingsWidget28on_detailsSettingsGB_toggledEb'/>
+<fun r='_ZN17DnsSettingsWidget41on_staticResolvedDomainsTable_cellChangedEii'/>
+<fun r='_ZN17DnsSettingsWidget35on_fakeDNSIPPool_currentTextChangedERK7QString'/>
+<fun r='_ZN17DnsSettingsWidget33on_fakeDNSIPPoolSize_valueChangedEi'/>
+<fun r='_ZN17DnsSettingsWidget33on_dnsDisableCacheCB_stateChangedEi'/>
+<fun r='_ZN17DnsSettingsWidget36on_dnsDisableFallbackCB_stateChangedEi'/>
+<fun r='_ZN17DnsSettingsWidget40on_dnsQueryStrategyCB_currentTextChangedERK7QString'/>
+<fun r='_ZN17DnsSettingsWidget17updateColorSchemeEv'/>
+<fun r='_ZN17DnsSettingsWidget27ShowCurrentDnsServerDetailsEv'/>
+<fun r='_ZN17DnsSettingsWidget26ProcessDnsPortEnabledStateEv'/>
+<fun r='_ZN17DnsSettingsWidget20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<mbr r='DnsSettingsWidget::dns' o='3712' t='Qv2ray::base::objects::DNSObject'/>
+<mbr r='DnsSettingsWidget::fakeDNS' o='4096' t='Qv2ray::base::objects::FakeDNSObject'/>
+<mbr r='DnsSettingsWidget::domainListTxt' o='4224' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<mbr r='DnsSettingsWidget::ipListTxt' o='4288' t='Qv2ray::ui::widgets::AutoCompleteTextEdit *'/>
+<fun r='_ZN17DnsSettingsWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='DnsSettingsWidget::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK17DnsSettingsWidget10metaObjectEv'/>
+<fun r='_ZN17DnsSettingsWidget11qt_metacastEPKc'/>
+<fun r='_ZN17DnsSettingsWidget11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='93' c='_ZN11RouteEditorC1E11QJsonObjectP7QWidget'/>
+<size>544</size>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.cpp' l='60' c='_ZN12GroupManagerC1EP7QWidget'/>
+<size>544</size>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.cpp' l='229' c='_ZN17PreferencesWindowC1EP7QWidget'/>
+<size>544</size>

@@ -1,0 +1,22 @@
+<def f='include/grpcpp/impl/codegen/security/auth_context.h' l='65' ll='91'/>
+<use f='include/grpcpp/impl/codegen/create_auth_context.h' l='29' c='_ZN4grpc17CreateAuthContextEP9grpc_call'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='275' c='_ZNK4grpc13ClientContext12auth_contextEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='429'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='211' c='_ZNK4grpc13ServerContext12auth_contextEv'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='296'/>
+<use f='include/grpcpp/security/credentials.h' l='249' c='_ZN4grpc25MetadataCredentialsPlugin11GetMetadataENS_10string_refES1_RKNS_11AuthContextEPSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcE11651941'/>
+<use f='include/grpcpp/security/auth_metadata_processor.h' l='54' c='_ZN4grpc21AuthMetadataProcessor7ProcessERKSt8multimapINS_10string_refES2_St4lessIS2_ESaISt4pairIKS2_S2_EEEPNS_11AuthContextEPS1_INSt7__cxx1112basic_st10988925'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/security/auth_context.h' l='61'>/// Class encapsulating the Authentication Information.
+///
+/// It includes the secure identity of the peer, the type of secure transport
+/// used as well as any other properties required by the authorization layer.</doc>
+<fun r='_ZN4grpc11AuthContextD1Ev'/>
+<fun r='_ZNK4grpc11AuthContext19IsPeerAuthenticatedEv'/>
+<fun r='_ZNK4grpc11AuthContext15GetPeerIdentityEv'/>
+<fun r='_ZNK4grpc11AuthContext27GetPeerIdentityPropertyNameB5cxx11Ev'/>
+<fun r='_ZNK4grpc11AuthContext18FindPropertyValuesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK4grpc11AuthContext5beginEv'/>
+<fun r='_ZNK4grpc11AuthContext3endEv'/>
+<fun r='_ZN4grpc11AuthContext11AddPropertyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_10string_refE'/>
+<fun r='_ZN4grpc11AuthContext27SetPeerIdentityPropertyNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

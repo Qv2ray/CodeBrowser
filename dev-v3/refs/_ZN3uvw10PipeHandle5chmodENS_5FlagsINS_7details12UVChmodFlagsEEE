@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='153' type='bool uvw::PipeHandle::chmod(Flags&lt;uvw::PipeHandle::Chmod&gt; flags)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='71' ll='73' type='bool uvw::PipeHandle::chmod(Flags&lt;uvw::PipeHandle::Chmod&gt; flags)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='136'>/**
+     * @brief Alters pipe permissions.
+     *
+     * It allows the pipe to be accessed from processes run by different users.
+     *
+     * Available flags are:
+     *
+     * * `PipeHandle::Chmod::READABLE`
+     * * `PipeHandle::Chmod::WRITABLE`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/pipe.html#c.uv_pipe_chmod)
+     * for further details.
+     *
+     * @param flags A valid set of flags.
+     * @return True in case of success, false otherwise.
+     */</doc>

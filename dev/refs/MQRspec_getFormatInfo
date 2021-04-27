@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='125' type='unsigned int MQRspec_getFormatInfo(int mask, int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mmask.c' l='40' u='c' c='MMask_writeFormatInformation'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='118'>/**
+ * Return BCH encoded format information pattern.
+ * @param mask
+ * @param version
+ * @param level
+ * @return BCH encoded format information pattern
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.c' l='139' ll='150' type='unsigned int MQRspec_getFormatInfo(int mask, int version, QRecLevel level)'/>

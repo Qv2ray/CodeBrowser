@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>w_ScreenShot_Core.hpp source code [qv2ray/src/ui/widgets/windows/w_ScreenShot_Core.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ScreenShotWindow "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/widgets/windows/w_ScreenShot_Core.hpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>ui</a>/<a href='..'>widgets</a>/<a href='./'>windows</a>/<a href='w_ScreenShot_Core.hpp.html'>w_ScreenShot_Core.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="/qv2ray_autogen/include/ui_w_ScreenShot_Core.h.html">"ui_w_ScreenShot_Core.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include &lt;QDialog&gt;</u></td></tr>
+<tr><th id="5">5</th><td><u>#include &lt;QImage&gt;</u></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QKeyEvent&gt;</u></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;QLabel&gt;</u></td></tr>
+<tr><th id="8">8</th><td><u>#include &lt;QMouseEvent&gt;</u></td></tr>
+<tr><th id="9">9</th><td><u>#include &lt;QPalette&gt;</u></td></tr>
+<tr><th id="10">10</th><td><u>#include &lt;QPushButton&gt;</u></td></tr>
+<tr><th id="11">11</th><td><u>#include &lt;QRubberBand&gt;</u></td></tr>
+<tr><th id="12">12</th><td><u>#include &lt;QScreen&gt;</u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>class</b> <dfn class="type def" id="ScreenShotWindow" title='ScreenShotWindow' data-ref="ScreenShotWindow" data-ref-filename="ScreenShotWindow">ScreenShotWindow</dfn></td></tr>
+<tr><th id="15">15</th><td>    : <b>public</b> <span class='type' title='QDialog' data-ref="QDialog" data-ref-filename="QDialog">QDialog</span></td></tr>
+<tr><th id="16">16</th><td>    , <b>private</b> <span class="namespace">Ui::</span><a class="type" href="/qv2ray_autogen/include/ui_w_ScreenShot_Core.h.html#Ui::ScreenShot" title='Ui::ScreenShot' data-ref="Ui::ScreenShot" data-ref-filename="Ui..ScreenShot">ScreenShot</a></td></tr>
+<tr><th id="17">17</th><td>{</td></tr>
+<tr><th id="18">18</th><td>    <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td>  <b>public</b>:</td></tr>
+<tr><th id="21">21</th><td>    <dfn class="decl fn" id="_ZN16ScreenShotWindowC1Ev" title='ScreenShotWindow::ScreenShotWindow' data-ref="_ZN16ScreenShotWindowC1Ev" data-ref-filename="_ZN16ScreenShotWindowC1Ev">ScreenShotWindow</dfn>();</td></tr>
+<tr><th id="22">22</th><td>    <dfn class="virtual decl fn" id="_ZN16ScreenShotWindowD1Ev" title='ScreenShotWindow::~ScreenShotWindow' data-ref="_ZN16ScreenShotWindowD1Ev" data-ref-filename="_ZN16ScreenShotWindowD1Ev">~ScreenShotWindow</dfn>();</td></tr>
+<tr><th id="23">23</th><td>    <span class='type' title='QImage' data-ref="QImage" data-ref-filename="QImage">QImage</span> <dfn class="decl fn" id="_ZN16ScreenShotWindow12DoScreenShotEv" title='ScreenShotWindow::DoScreenShot' data-ref="_ZN16ScreenShotWindow12DoScreenShotEv" data-ref-filename="_ZN16ScreenShotWindow12DoScreenShotEv">DoScreenShot</dfn>();</td></tr>
+<tr><th id="24">24</th><td>    <i>//</i></td></tr>
+<tr><th id="25">25</th><td>    <em>void</em> <dfn class="virtual decl fn" id="_ZN16ScreenShotWindow14mouseMoveEventEP11QMouseEvent" title='ScreenShotWindow::mouseMoveEvent' data-ref="_ZN16ScreenShotWindow14mouseMoveEventEP11QMouseEvent" data-ref-filename="_ZN16ScreenShotWindow14mouseMoveEventEP11QMouseEvent">mouseMoveEvent</dfn>(<span class='type' title='QMouseEvent' data-ref="QMouseEvent" data-ref-filename="QMouseEvent">QMouseEvent</span> *<dfn class="local col2 decl" id="1422e" title='e' data-type='QMouseEvent *' data-ref="1422e" data-ref-filename="1422e">e</dfn>) override;</td></tr>
+<tr><th id="26">26</th><td>    <em>void</em> <dfn class="virtual decl fn" id="_ZN16ScreenShotWindow15mousePressEventEP11QMouseEvent" title='ScreenShotWindow::mousePressEvent' data-ref="_ZN16ScreenShotWindow15mousePressEventEP11QMouseEvent" data-ref-filename="_ZN16ScreenShotWindow15mousePressEventEP11QMouseEvent">mousePressEvent</dfn>(<span class='type' title='QMouseEvent' data-ref="QMouseEvent" data-ref-filename="QMouseEvent">QMouseEvent</span> *<dfn class="local col3 decl" id="1423e" title='e' data-type='QMouseEvent *' data-ref="1423e" data-ref-filename="1423e">e</dfn>) override;</td></tr>
+<tr><th id="27">27</th><td>    <em>void</em> <dfn class="virtual decl fn" id="_ZN16ScreenShotWindow17mouseReleaseEventEP11QMouseEvent" title='ScreenShotWindow::mouseReleaseEvent' data-ref="_ZN16ScreenShotWindow17mouseReleaseEventEP11QMouseEvent" data-ref-filename="_ZN16ScreenShotWindow17mouseReleaseEventEP11QMouseEvent">mouseReleaseEvent</dfn>(<span class='type' title='QMouseEvent' data-ref="QMouseEvent" data-ref-filename="QMouseEvent">QMouseEvent</span> *<dfn class="local col4 decl" id="1424e" title='e' data-type='QMouseEvent *' data-ref="1424e" data-ref-filename="1424e">e</dfn>) override;</td></tr>
+<tr><th id="28">28</th><td>    <em>void</em> <dfn class="virtual decl fn" id="_ZN16ScreenShotWindow13keyPressEventEP9QKeyEvent" title='ScreenShotWindow::keyPressEvent' data-ref="_ZN16ScreenShotWindow13keyPressEventEP9QKeyEvent" data-ref-filename="_ZN16ScreenShotWindow13keyPressEventEP9QKeyEvent">keyPressEvent</dfn>(<span class='type' title='QKeyEvent' data-ref="QKeyEvent" data-ref-filename="QKeyEvent">QKeyEvent</span> *<dfn class="local col5 decl" id="1425e" title='e' data-type='QKeyEvent *' data-ref="1425e" data-ref-filename="1425e">e</dfn>) override;</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>  <b>private</b> <span class="macro" title="" data-ref="_M/slots">slots</span>:</td></tr>
+<tr><th id="31">31</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN16ScreenShotWindow19on_startBtn_clickedEv" title='ScreenShotWindow::on_startBtn_clicked' data-ref="_ZN16ScreenShotWindow19on_startBtn_clickedEv" data-ref-filename="_ZN16ScreenShotWindow19on_startBtn_clickedEv">on_startBtn_clicked</dfn>();</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>  <b>private</b>:</td></tr>
+<tr><th id="34">34</th><td>    <em>double</em> <dfn class="decl field" id="ScreenShotWindow::scale" title='ScreenShotWindow::scale' data-ref="ScreenShotWindow::scale" data-ref-filename="ScreenShotWindow..scale">scale</dfn>;</td></tr>
+<tr><th id="35">35</th><td>    <span class='type' title='QRubberBand' data-ref="QRubberBand" data-ref-filename="QRubberBand">QRubberBand</span> <dfn class="decl field" id="ScreenShotWindow::rubber" title='ScreenShotWindow::rubber' data-ref="ScreenShotWindow::rubber" data-ref-filename="ScreenShotWindow..rubber">rubber</dfn>;</td></tr>
+<tr><th id="36">36</th><td>    <i>// Desktop Image</i></td></tr>
+<tr><th id="37">37</th><td>    <span class='type' title='QPixmap' data-ref="QPixmap" data-ref-filename="QPixmap">QPixmap</span> <dfn class="decl field" id="ScreenShotWindow::desktopImage" title='ScreenShotWindow::desktopImage' data-ref="ScreenShotWindow::desktopImage" data-ref-filename="ScreenShotWindow..desktopImage">desktopImage</dfn>;</td></tr>
+<tr><th id="38">38</th><td>    <span class='type' title='QImage' data-ref="QImage" data-ref-filename="QImage">QImage</span> <dfn class="decl field" id="ScreenShotWindow::windowBg" title='ScreenShotWindow::windowBg' data-ref="ScreenShotWindow::windowBg" data-ref-filename="ScreenShotWindow..windowBg">windowBg</dfn>;</td></tr>
+<tr><th id="39">39</th><td>    <span class='type' title='QImage' data-ref="QImage" data-ref-filename="QImage">QImage</span> <dfn class="decl field" id="ScreenShotWindow::resultImage" title='ScreenShotWindow::resultImage' data-ref="ScreenShotWindow::resultImage" data-ref-filename="ScreenShotWindow..resultImage">resultImage</dfn>;</td></tr>
+<tr><th id="40">40</th><td>    <i>//</i></td></tr>
+<tr><th id="41">41</th><td>    <span class='type' title='QPoint' data-ref="QPoint" data-ref-filename="QPoint">QPoint</span> <dfn class="decl field" id="ScreenShotWindow::origin" title='ScreenShotWindow::origin' data-ref="ScreenShotWindow::origin" data-ref-filename="ScreenShotWindow..origin">origin</dfn>;</td></tr>
+<tr><th id="42">42</th><td>    <span class='type' title='QPoint' data-ref="QPoint" data-ref-filename="QPoint">QPoint</span> <dfn class="decl field" id="ScreenShotWindow::end" title='ScreenShotWindow::end' data-ref="ScreenShotWindow::end" data-ref-filename="ScreenShotWindow..end">end</dfn>;</td></tr>
+<tr><th id="43">43</th><td>    <em>int</em> <dfn class="decl field" id="ScreenShotWindow::imgW" title='ScreenShotWindow::imgW' data-ref="ScreenShotWindow::imgW" data-ref-filename="ScreenShotWindow..imgW">imgW</dfn>, <dfn class="decl field" id="ScreenShotWindow::imgH" title='ScreenShotWindow::imgH' data-ref="ScreenShotWindow::imgH" data-ref-filename="ScreenShotWindow..imgH">imgH</dfn>, <dfn class="decl field" id="ScreenShotWindow::imgX" title='ScreenShotWindow::imgX' data-ref="ScreenShotWindow::imgX" data-ref-filename="ScreenShotWindow..imgX">imgX</dfn>, <dfn class="decl field" id="ScreenShotWindow::imgY" title='ScreenShotWindow::imgY' data-ref="ScreenShotWindow::imgY" data-ref-filename="ScreenShotWindow..imgY">imgY</dfn>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN16ScreenShotWindow5pSizeEv" title='ScreenShotWindow::pSize' data-ref="_ZN16ScreenShotWindow5pSizeEv" data-ref-filename="_ZN16ScreenShotWindow5pSizeEv">pSize</dfn>();</td></tr>
+<tr><th id="46">46</th><td>};</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

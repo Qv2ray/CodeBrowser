@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/curl/curl.h' l='2314' type='CURLFORMcode curl_formadd(struct curl_httppost ** httppost, struct curl_httppost ** last_post)'/>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='2305'>/*
+ * NAME curl_formadd()
+ *
+ * DESCRIPTION
+ *
+ * Pretty advanced function for building multi-part formposts. Each invoke
+ * adds one part that together construct a full post. Then use
+ * CURLOPT_HTTPPOST to send it off to libcurl.
+ */</doc>

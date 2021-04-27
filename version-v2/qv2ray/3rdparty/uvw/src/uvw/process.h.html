@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>process.h source code [qv2ray/3rdparty/uvw/src/uvw/process.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uvw::ExitEvent,uvw::ProcessHandle,uvw::details::UVProcessFlags,uvw::details::UVStdIOFlags "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/uvw/src/uvw/process.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>uvw</a>/<a href='..'>src</a>/<a href='./'>uvw</a>/<a href='process.h.html'>process.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UVW_PROCESS_INCLUDE_H">UVW_PROCESS_INCLUDE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UVW_PROCESS_INCLUDE_H" data-ref="_M/UVW_PROCESS_INCLUDE_H">UVW_PROCESS_INCLUDE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../../../../include/c++/10/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../../include/c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../../../../../include/c++/10/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../../../libuv/include/uv.h.html">&lt;uv.h&gt;</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="handle.hpp.html">"handle.hpp"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="stream.h.html">"stream.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="util.h.html">"util.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="loop.h.html">"loop.h"</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>namespace</b> <span class="namespace">uvw</span> {</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">details</span> {</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVProcessFlags" title='uvw::details::UVProcessFlags' data-ref="uvw::details::UVProcessFlags" data-ref-filename="uvw..details..UVProcessFlags">UVProcessFlags</dfn>: std::underlying_type_t&lt;uv_process_flags&gt; {</td></tr>
+<tr><th id="23">23</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::SETUID" title='uvw::details::UVProcessFlags::SETUID' data-ref="uvw::details::UVProcessFlags::SETUID" data-ref-filename="uvw..details..UVProcessFlags..SETUID">SETUID</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_SETUID" title='UV_PROCESS_SETUID' data-ref="UV_PROCESS_SETUID" data-ref-filename="UV_PROCESS_SETUID">UV_PROCESS_SETUID</a>,</td></tr>
+<tr><th id="24">24</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::SETGID" title='uvw::details::UVProcessFlags::SETGID' data-ref="uvw::details::UVProcessFlags::SETGID" data-ref-filename="uvw..details..UVProcessFlags..SETGID">SETGID</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_SETGID" title='UV_PROCESS_SETGID' data-ref="UV_PROCESS_SETGID" data-ref-filename="UV_PROCESS_SETGID">UV_PROCESS_SETGID</a>,</td></tr>
+<tr><th id="25">25</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::WINDOWS_VERBATIM_ARGUMENTS" title='uvw::details::UVProcessFlags::WINDOWS_VERBATIM_ARGUMENTS' data-ref="uvw::details::UVProcessFlags::WINDOWS_VERBATIM_ARGUMENTS" data-ref-filename="uvw..details..UVProcessFlags..WINDOWS_VERBATIM_ARGUMENTS">WINDOWS_VERBATIM_ARGUMENTS</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS" title='UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS' data-ref="UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS" data-ref-filename="UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS">UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS</a>,</td></tr>
+<tr><th id="26">26</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::DETACHED" title='uvw::details::UVProcessFlags::DETACHED' data-ref="uvw::details::UVProcessFlags::DETACHED" data-ref-filename="uvw..details..UVProcessFlags..DETACHED">DETACHED</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_DETACHED" title='UV_PROCESS_DETACHED' data-ref="UV_PROCESS_DETACHED" data-ref-filename="UV_PROCESS_DETACHED">UV_PROCESS_DETACHED</a>,</td></tr>
+<tr><th id="27">27</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::WINDOWS_HIDE" title='uvw::details::UVProcessFlags::WINDOWS_HIDE' data-ref="uvw::details::UVProcessFlags::WINDOWS_HIDE" data-ref-filename="uvw..details..UVProcessFlags..WINDOWS_HIDE">WINDOWS_HIDE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_WINDOWS_HIDE" title='UV_PROCESS_WINDOWS_HIDE' data-ref="UV_PROCESS_WINDOWS_HIDE" data-ref-filename="UV_PROCESS_WINDOWS_HIDE">UV_PROCESS_WINDOWS_HIDE</a>,</td></tr>
+<tr><th id="28">28</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::WINDOWS_HIDE_CONSOLE" title='uvw::details::UVProcessFlags::WINDOWS_HIDE_CONSOLE' data-ref="uvw::details::UVProcessFlags::WINDOWS_HIDE_CONSOLE" data-ref-filename="uvw..details..UVProcessFlags..WINDOWS_HIDE_CONSOLE">WINDOWS_HIDE_CONSOLE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_WINDOWS_HIDE_CONSOLE" title='UV_PROCESS_WINDOWS_HIDE_CONSOLE' data-ref="UV_PROCESS_WINDOWS_HIDE_CONSOLE" data-ref-filename="UV_PROCESS_WINDOWS_HIDE_CONSOLE">UV_PROCESS_WINDOWS_HIDE_CONSOLE</a>,</td></tr>
+<tr><th id="29">29</th><td>    <dfn class="enum" id="uvw::details::UVProcessFlags::WINDOWS_HIDE_GUI" title='uvw::details::UVProcessFlags::WINDOWS_HIDE_GUI' data-ref="uvw::details::UVProcessFlags::WINDOWS_HIDE_GUI" data-ref-filename="uvw..details..UVProcessFlags..WINDOWS_HIDE_GUI">WINDOWS_HIDE_GUI</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_PROCESS_WINDOWS_HIDE_GUI" title='UV_PROCESS_WINDOWS_HIDE_GUI' data-ref="UV_PROCESS_WINDOWS_HIDE_GUI" data-ref-filename="UV_PROCESS_WINDOWS_HIDE_GUI">UV_PROCESS_WINDOWS_HIDE_GUI</a></td></tr>
+<tr><th id="30">30</th><td>};</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="uvw::details::UVStdIOFlags" title='uvw::details::UVStdIOFlags' data-ref="uvw::details::UVStdIOFlags" data-ref-filename="uvw..details..UVStdIOFlags">UVStdIOFlags</dfn>: std::underlying_type_t&lt;uv_stdio_flags&gt; {</td></tr>
+<tr><th id="34">34</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::IGNORE_STREAM" title='uvw::details::UVStdIOFlags::IGNORE_STREAM' data-ref="uvw::details::UVStdIOFlags::IGNORE_STREAM" data-ref-filename="uvw..details..UVStdIOFlags..IGNORE_STREAM">IGNORE_STREAM</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_IGNORE" title='UV_IGNORE' data-ref="UV_IGNORE" data-ref-filename="UV_IGNORE">UV_IGNORE</a>,</td></tr>
+<tr><th id="35">35</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::CREATE_PIPE" title='uvw::details::UVStdIOFlags::CREATE_PIPE' data-ref="uvw::details::UVStdIOFlags::CREATE_PIPE" data-ref-filename="uvw..details..UVStdIOFlags..CREATE_PIPE">CREATE_PIPE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_CREATE_PIPE" title='UV_CREATE_PIPE' data-ref="UV_CREATE_PIPE" data-ref-filename="UV_CREATE_PIPE">UV_CREATE_PIPE</a>,</td></tr>
+<tr><th id="36">36</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::INHERIT_FD" title='uvw::details::UVStdIOFlags::INHERIT_FD' data-ref="uvw::details::UVStdIOFlags::INHERIT_FD" data-ref-filename="uvw..details..UVStdIOFlags..INHERIT_FD">INHERIT_FD</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_INHERIT_FD" title='UV_INHERIT_FD' data-ref="UV_INHERIT_FD" data-ref-filename="UV_INHERIT_FD">UV_INHERIT_FD</a>,</td></tr>
+<tr><th id="37">37</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::INHERIT_STREAM" title='uvw::details::UVStdIOFlags::INHERIT_STREAM' data-ref="uvw::details::UVStdIOFlags::INHERIT_STREAM" data-ref-filename="uvw..details..UVStdIOFlags..INHERIT_STREAM">INHERIT_STREAM</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_INHERIT_STREAM" title='UV_INHERIT_STREAM' data-ref="UV_INHERIT_STREAM" data-ref-filename="UV_INHERIT_STREAM">UV_INHERIT_STREAM</a>,</td></tr>
+<tr><th id="38">38</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::READABLE_PIPE" title='uvw::details::UVStdIOFlags::READABLE_PIPE' data-ref="uvw::details::UVStdIOFlags::READABLE_PIPE" data-ref-filename="uvw..details..UVStdIOFlags..READABLE_PIPE">READABLE_PIPE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_READABLE_PIPE" title='UV_READABLE_PIPE' data-ref="UV_READABLE_PIPE" data-ref-filename="UV_READABLE_PIPE">UV_READABLE_PIPE</a>,</td></tr>
+<tr><th id="39">39</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::WRITABLE_PIPE" title='uvw::details::UVStdIOFlags::WRITABLE_PIPE' data-ref="uvw::details::UVStdIOFlags::WRITABLE_PIPE" data-ref-filename="uvw..details..UVStdIOFlags..WRITABLE_PIPE">WRITABLE_PIPE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_WRITABLE_PIPE" title='UV_WRITABLE_PIPE' data-ref="UV_WRITABLE_PIPE" data-ref-filename="UV_WRITABLE_PIPE">UV_WRITABLE_PIPE</a>,</td></tr>
+<tr><th id="40">40</th><td>    <dfn class="enum" id="uvw::details::UVStdIOFlags::OVERLAPPED_PIPE" title='uvw::details::UVStdIOFlags::OVERLAPPED_PIPE' data-ref="uvw::details::UVStdIOFlags::OVERLAPPED_PIPE" data-ref-filename="uvw..details..UVStdIOFlags..OVERLAPPED_PIPE">OVERLAPPED_PIPE</dfn> = <a class="enum" href="../../../libuv/include/uv.h.html#UV_OVERLAPPED_PIPE" title='UV_OVERLAPPED_PIPE' data-ref="UV_OVERLAPPED_PIPE" data-ref-filename="UV_OVERLAPPED_PIPE">UV_OVERLAPPED_PIPE</a></td></tr>
+<tr><th id="41">41</th><td>};</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>}</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * <span class="command">@brief</span> ExitEvent event.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * It will be emitted by ProcessHandle according with its functionalities.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="52">52</th><td><b>struct</b> <dfn class="type def" id="uvw::ExitEvent" title='uvw::ExitEvent' data-ref="uvw::ExitEvent" data-ref-filename="uvw..ExitEvent">ExitEvent</dfn> {</td></tr>
+<tr><th id="53">53</th><td>    <b>explicit</b> <a class="decl fn" href="process.cpp.html#_ZN3uvw9ExitEventC1Eli" title='uvw::ExitEvent::ExitEvent' data-ref="_ZN3uvw9ExitEventC1Eli" data-ref-filename="_ZN3uvw9ExitEventC1Eli" id="_ZN3uvw9ExitEventC1Eli">ExitEvent</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int64_t" title='int64_t' data-type='__int64_t' data-ref="int64_t" data-ref-filename="int64_t">int64_t</a> <dfn class="local col1 decl" id="1code" title='code' data-type='int64_t' data-ref="1code" data-ref-filename="1code">code</dfn>, <em>int</em> <dfn class="local col2 decl" id="2sig" title='sig' data-type='int' data-ref="2sig" data-ref-filename="2sig">sig</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int64_t" title='int64_t' data-type='__int64_t' data-ref="int64_t" data-ref-filename="int64_t">int64_t</a> <dfn class="decl field" id="uvw::ExitEvent::status" title='uvw::ExitEvent::status' data-ref="uvw::ExitEvent::status" data-ref-filename="uvw..ExitEvent..status">status</dfn>; <i class="doc">/*!&lt; The exit status. */</i></td></tr>
+<tr><th id="56">56</th><td>    <em>int</em> <dfn class="decl field" id="uvw::ExitEvent::signal" title='uvw::ExitEvent::signal' data-ref="uvw::ExitEvent::signal" data-ref-filename="uvw..ExitEvent..signal">signal</dfn>; <i class="doc">/*!&lt; The signal that caused the process to terminate, if any. */</i></td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * <span class="command">@brief</span> The ProcessHandle handle.</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * Process handles will spawn a new process and allow the user to control it and</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * establish communication channels with it using streams.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="65">65</th><td><b>class</b> <dfn class="type def" id="uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</dfn> final: <b>public</b> <a class="type" href="handle.hpp.html#uvw::Handle" title='uvw::Handle' data-ref="uvw::Handle" data-ref-filename="uvw..Handle">Handle</a>&lt;<a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a>, <a class="typedef" href="../../../libuv/include/uv.h.html#uv_process_t" title='uv_process_t' data-type='struct uv_process_s' data-ref="uv_process_t" data-ref-filename="uv_process_t">uv_process_t</a>&gt; {</td></tr>
+<tr><th id="66">66</th><td>    <em>static</em> <em>void</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli" title='uvw::ProcessHandle::exitCallback' data-ref="_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli" data-ref-filename="_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli" id="_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli">exitCallback</a>(<a class="typedef" href="../../../libuv/include/uv.h.html#uv_process_t" title='uv_process_t' data-type='struct uv_process_s' data-ref="uv_process_t" data-ref-filename="uv_process_t">uv_process_t</a> *<dfn class="local col3 decl" id="3handle" title='handle' data-type='uv_process_t *' data-ref="3handle" data-ref-filename="3handle">handle</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/bits/stdint-intn.h.html#int64_t" title='int64_t' data-type='__int64_t' data-ref="int64_t" data-ref-filename="int64_t">int64_t</a> <dfn class="local col4 decl" id="4exitStatus" title='exitStatus' data-type='int64_t' data-ref="4exitStatus" data-ref-filename="4exitStatus">exitStatus</dfn>, <em>int</em> <dfn class="local col5 decl" id="5termSignal" title='termSignal' data-type='int' data-ref="5termSignal" data-ref-filename="5termSignal">termSignal</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>public</b>:</td></tr>
+<tr><th id="69">69</th><td>    <b>using</b> <dfn class="typedef" id="uvw::ProcessHandle::Process" title='uvw::ProcessHandle::Process' data-type='details::UVProcessFlags' data-ref="uvw::ProcessHandle::Process" data-ref-filename="uvw..ProcessHandle..Process">Process</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVProcessFlags" title='uvw::details::UVProcessFlags' data-ref="uvw::details::UVProcessFlags" data-ref-filename="uvw..details..UVProcessFlags">UVProcessFlags</a>;</td></tr>
+<tr><th id="70">70</th><td>    <b>using</b> <dfn class="typedef" id="uvw::ProcessHandle::StdIO" title='uvw::ProcessHandle::StdIO' data-type='details::UVStdIOFlags' data-ref="uvw::ProcessHandle::StdIO" data-ref-filename="uvw..ProcessHandle..StdIO">StdIO</dfn> = <span class="namespace">details::</span><a class="type" href="#uvw::details::UVStdIOFlags" title='uvw::details::UVStdIOFlags' data-ref="uvw::details::UVStdIOFlags" data-ref-filename="uvw..details..UVStdIOFlags">UVStdIOFlags</a>;</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>    <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE" title='uvw::ProcessHandle::ProcessHandle' data-ref="_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE" data-ref-filename="_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE" id="_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE">ProcessHandle</a>(<a class="typedef" href="resource.hpp.html#uvw::Resource{uvw::ProcessHandle,uv_process_s}::ConstructorAccess" title='uvw::Resource&lt;uvw::ProcessHandle, uv_process_s&gt;::ConstructorAccess' data-type='typename UnderlyingType&lt;ProcessHandle, uv_process_s&gt;::ConstructorAccess' data-ref="uvw::Resource{uvw::ProcessHandle,uv_process_s}::ConstructorAccess" data-ref-filename="uvw..Resource{uvw..ProcessHandle,uv_process_s}..ConstructorAccess">ConstructorAccess</a> <dfn class="local col6 decl" id="6ca" title='ca' data-type='uvw::Resource&lt;uvw::ProcessHandle, uv_process_s&gt;::ConstructorAccess' data-ref="6ca" data-ref-filename="6ca">ca</dfn>, <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr" data-ref-filename="std..shared_ptr">shared_ptr</a>&lt;<a class="type" href="loop.h.html#uvw::Loop" title='uvw::Loop' data-ref="uvw::Loop" data-ref-filename="uvw..Loop">Loop</a>&gt; <dfn class="local col7 decl" id="7ref" title='ref' data-type='std::shared_ptr&lt;Loop&gt;' data-ref="7ref" data-ref-filename="7ref">ref</dfn>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">     * <span class="command">@brief</span> Disables inheritance for file descriptors/handles.</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">     * Disables inheritance for file descriptors/handles that this process</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     * inherited from its parent. The effect is that child processes spawned by</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     * this process don’t accidentally inherit these handles.<span class="tag">&lt;br/</span>&gt;</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     * It is recommended to call this function as early in your program as</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     * possible, before the inherited file descriptors can be closed or</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">     * duplicated.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/process.html#c.uv_disable_stdio_inheritance">http://docs.libuv.org/en/v1.x/process.html#c.uv_disable_stdio_inheritance</a>)</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="88">88</th><td>    <em>static</em> <em>void</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle23disableStdIOInheritanceEv" title='uvw::ProcessHandle::disableStdIOInheritance' data-ref="_ZN3uvw13ProcessHandle23disableStdIOInheritanceEv" data-ref-filename="_ZN3uvw13ProcessHandle23disableStdIOInheritanceEv" id="_ZN3uvw13ProcessHandle23disableStdIOInheritanceEv">disableStdIOInheritance</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc">     * <span class="command">@brief</span> kill Sends the specified signal to the given PID.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">pid</span> A valid process id.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">signum</span> A valid signal identifier.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="96">96</th><td>    <em>static</em> <em>bool</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle4killEii" title='uvw::ProcessHandle::kill' data-ref="_ZN3uvw13ProcessHandle4killEii" data-ref-filename="_ZN3uvw13ProcessHandle4killEii" id="_ZN3uvw13ProcessHandle4killEii">kill</a>(<em>int</em> <dfn class="local col8 decl" id="8pid" title='pid' data-type='int' data-ref="8pid" data-ref-filename="8pid">pid</dfn>, <em>int</em> <dfn class="local col9 decl" id="9signum" title='signum' data-type='int' data-ref="9signum" data-ref-filename="9signum">signum</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * <span class="command">@brief</span> Initializes the handle.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     * <span class="command">@return</span> True in case of success, false otherwise.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="102">102</th><td>    <em>bool</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle4initEv" title='uvw::ProcessHandle::init' data-ref="_ZN3uvw13ProcessHandle4initEv" data-ref-filename="_ZN3uvw13ProcessHandle4initEv" id="_ZN3uvw13ProcessHandle4initEv">init</a>();</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     * <span class="command">@brief</span> spawn Starts the process.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">     * If the process isn't successfully spawned, an ErrorEvent event will be</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">     * emitted by the handle.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/process.html">http://docs.libuv.org/en/v1.x/process.html</a>)</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">file</span> Path pointing to the program to be executed.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">args</span> Command line arguments.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">env</span> Optional environment for the new process.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="118">118</th><td>    <em>void</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_" title='uvw::ProcessHandle::spawn' data-ref="_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_" data-ref-filename="_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_" id="_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_">spawn</a>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10file" title='file' data-type='const char *' data-ref="10file" data-ref-filename="10file">file</dfn>, <em>char</em> **<dfn class="local col1 decl" id="11args" title='args' data-type='char **' data-ref="11args" data-ref-filename="11args">args</dfn>, <em>char</em> **<dfn class="local col2 decl" id="12env" title='env' data-type='char **' data-ref="12env" data-ref-filename="12env">env</dfn> = <b>nullptr</b>);</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">     * <span class="command">@brief</span> Sends the specified signal to the internal process handle.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">signum</span> A valid signal identifier.</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="124">124</th><td>    <em>void</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle4killEi" title='uvw::ProcessHandle::kill' data-ref="_ZN3uvw13ProcessHandle4killEi" data-ref-filename="_ZN3uvw13ProcessHandle4killEi" id="_ZN3uvw13ProcessHandle4killEi">kill</a>(<em>int</em> <dfn class="local col3 decl" id="13signum" title='signum' data-type='int' data-ref="13signum" data-ref-filename="13signum">signum</dfn>);</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     * <span class="command">@brief</span> Gets the PID of the spawned process.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">     * It’s set after calling `spawn()`.</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">     * <span class="command">@return</span> The PID of the spawned process.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="133">133</th><td>    <em>int</em> <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle3pidEv" title='uvw::ProcessHandle::pid' data-ref="_ZN3uvw13ProcessHandle3pidEv" data-ref-filename="_ZN3uvw13ProcessHandle3pidEv" id="_ZN3uvw13ProcessHandle3pidEv">pid</a>() <b>noexcept</b>;</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     * <span class="command">@brief</span> Sets the current working directory for the subprocess.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">path</span> The working directory to be used when `spawn()` is invoked.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc">     * <span class="command">@return</span> A reference to this process handle.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="140">140</th><td>    <a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> &amp; <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='uvw::ProcessHandle::cwd' data-ref="_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" id="_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">cwd</a>(<span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col4 decl" id="14path" title='path' data-type='std::string' data-ref="14path" data-ref-filename="14path">path</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">     * <span class="command">@brief</span> Sets flags that control how `spawn()` behaves.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc">     * * `ProcessHandle::Process::SETUID`</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc">     * * `ProcessHandle::Process::SETGID`</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">     * * `ProcessHandle::Process::WINDOWS_VERBATIM_ARGUMENTS`</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc">     * * `ProcessHandle::Process::DETACHED`</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">     * * `ProcessHandle::Process::WINDOWS_HIDE`</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc">     * * `ProcessHandle::Process::WINDOWS_HIDE_CONSOLE`</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc">     * * `ProcessHandle::Process::WINDOWS_HIDE_GUI`</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/process.html#c.uv_process_flags">http://docs.libuv.org/en/v1.x/process.html#c.uv_process_flags</a>)</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flags</span> A valid set of flags.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc">     * <span class="command">@return</span> A reference to this process handle.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="162">162</th><td>    <a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> &amp; <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE" title='uvw::ProcessHandle::flags' data-ref="_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE" data-ref-filename="_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE" id="_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE">flags</a>(<a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::ProcessHandle::Process" title='uvw::ProcessHandle::Process' data-type='details::UVProcessFlags' data-ref="uvw::ProcessHandle::Process" data-ref-filename="uvw..ProcessHandle..Process">Process</a>&gt; <dfn class="local col5 decl" id="15flags" title='flags' data-type='Flags&lt;uvw::ProcessHandle::Process&gt;' data-ref="15flags" data-ref-filename="15flags">flags</dfn>) <b>noexcept</b>;</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc">     * <span class="command">@brief</span> Makes a `stdio` handle available to the child process.</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc">     * * `ProcessHandle::StdIO::IGNORE_STREAM`</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc">     * * `ProcessHandle::StdIO::CREATE_PIPE`</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc">     * * `ProcessHandle::StdIO::INHERIT_FD`</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc">     * * `ProcessHandle::StdIO::INHERIT_STREAM`</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc">     * * `ProcessHandle::StdIO::READABLE_PIPE`</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc">     * * `ProcessHandle::StdIO::WRITABLE_PIPE`</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc">     * * `ProcessHandle::StdIO::OVERLAPPED_PIPE`</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/process.html#c.uv_stdio_flags">http://docs.libuv.org/en/v1.x/process.html#c.uv_stdio_flags</a>)</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">stream</span> A valid `stdio` handle.</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flags</span> A valid set of flags.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc">     * <span class="command">@return</span> A reference to this process handle.</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="185">185</th><td>    <b>template</b>&lt;<b>typename</b> T, <b>typename</b> U&gt;</td></tr>
+<tr><th id="186">186</th><td>    <a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> &amp; <dfn class="decl def fn" id="_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE" title='uvw::ProcessHandle::stdio' data-ref="_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE" data-ref-filename="_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE">stdio</dfn>(<a class="type" href="stream.h.html#uvw::StreamHandle" title='uvw::StreamHandle' data-ref="uvw::StreamHandle" data-ref-filename="uvw..StreamHandle">StreamHandle</a>&lt;T, U&gt; &amp;<dfn class="local col6 decl" id="16stream" title='stream' data-type='StreamHandle&lt;T, U&gt; &amp;' data-ref="16stream" data-ref-filename="16stream">stream</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::ProcessHandle::StdIO" title='uvw::ProcessHandle::StdIO' data-type='details::UVStdIOFlags' data-ref="uvw::ProcessHandle::StdIO" data-ref-filename="uvw..ProcessHandle..StdIO">StdIO</a>&gt; <dfn class="local col7 decl" id="17flags" title='flags' data-type='Flags&lt;uvw::ProcessHandle::StdIO&gt;' data-ref="17flags" data-ref-filename="17flags">flags</dfn>) {</td></tr>
+<tr><th id="187">187</th><td>        <a class="typedef" href="../../../libuv/include/uv.h.html#uv_stdio_container_t" title='uv_stdio_container_t' data-type='struct uv_stdio_container_s' data-ref="uv_stdio_container_t" data-ref-filename="uv_stdio_container_t">uv_stdio_container_t</a> <a class="ref fn fake" href="../../../libuv/include/uv.h.html#933" title='uv_stdio_container_s::uv_stdio_container_s' data-ref="_ZN20uv_stdio_container_sC1Ev" data-ref-filename="_ZN20uv_stdio_container_sC1Ev"></a><dfn class="local col8 decl" id="18container" title='container' data-type='uv_stdio_container_t' data-ref="18container" data-ref-filename="18container">container</dfn>;</td></tr>
+<tr><th id="188">188</th><td>        <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::ProcessHandle::StdIO" title='uvw::ProcessHandle::StdIO' data-type='details::UVStdIOFlags' data-ref="uvw::ProcessHandle::StdIO" data-ref-filename="uvw..ProcessHandle..StdIO">StdIO</a>&gt;::<a class="typedef" href="util.h.html#uvw::Flags{uvw::details::UVStdIOFlags}::Type" title='uvw::Flags&lt;uvw::details::UVStdIOFlags&gt;::Type' data-type='uvw::Flags&lt;uvw::details::UVStdIOFlags&gt;::InnerType' data-ref="uvw::Flags{uvw::details::UVStdIOFlags}::Type" data-ref-filename="uvw..Flags{uvw..details..UVStdIOFlags}..Type">Type</a> <dfn class="local col9 decl" id="19fgs" title='fgs' data-type='Flags&lt;StdIO&gt;::Type' data-ref="19fgs" data-ref-filename="19fgs">fgs</dfn> = <a class="ref fn fake" href="util.h.html#_ZNK3uvw5FlagscvNSt15underlying_typeIT_E4typeEEv" title='uvw::Flags::operator typename underlying_type&lt;type-parameter-0-0&gt;::type' data-ref="_ZNK3uvw5FlagscvNSt15underlying_typeIT_E4typeEEv" data-ref-filename="_ZNK3uvw5FlagscvNSt15underlying_typeIT_E4typeEEv"></a><a class="local col7 ref" href="#17flags" title='flags' data-ref="17flags" data-ref-filename="17flags">flags</a>;</td></tr>
+<tr><th id="189">189</th><td>        <a class="local col8 ref" href="#18container" title='container' data-ref="18container" data-ref-filename="18container">container</a>.<a class="ref field" href="../../../libuv/include/uv.h.html#uv_stdio_container_s::flags" title='uv_stdio_container_s::flags' data-ref="uv_stdio_container_s::flags" data-ref-filename="uv_stdio_container_s..flags">flags</a> = <b>static_cast</b>&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_stdio_flags" title='uv_stdio_flags' data-type='enum uv_stdio_flags' data-ref="uv_stdio_flags" data-ref-filename="uv_stdio_flags">uv_stdio_flags</a>&gt;(<a class="local col9 ref" href="#19fgs" title='fgs' data-ref="19fgs" data-ref-filename="19fgs">fgs</a>);</td></tr>
+<tr><th id="190">190</th><td>        <a class="local col8 ref" href="#18container" title='container' data-ref="18container" data-ref-filename="18container">container</a>.<a class="ref field" href="../../../libuv/include/uv.h.html#uv_stdio_container_s::data" title='uv_stdio_container_s::data' data-ref="uv_stdio_container_s::data" data-ref-filename="uv_stdio_container_s..data">data</a>.<a class="ref field" href="../../../libuv/include/uv.h.html#uv_stdio_container_s::(anonymous)::stream" title='uv_stdio_container_s::(anonymous union)::stream' data-ref="uv_stdio_container_s::(anonymous)::stream" data-ref-filename="uv_stdio_container_s..(anonymous)..stream">stream</a> = get&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_stream_t" title='uv_stream_t' data-type='struct uv_stream_s' data-ref="uv_stream_t" data-ref-filename="uv_stream_t">uv_stream_t</a>&gt;(<a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream" data-ref-filename="16stream">stream</a>);</td></tr>
+<tr><th id="191">191</th><td>        <a class="member field" href="#uvw::ProcessHandle::poStreamStdio" title='uvw::ProcessHandle::poStreamStdio' data-ref="uvw::ProcessHandle::poStreamStdio" data-ref-filename="uvw..ProcessHandle..poStreamStdio">poStreamStdio</a>.<a class="ref fn" href="../../../../../include/c++/10/bits/stl_vector.h.html#_ZNSt6vector9push_backEOT_" title='std::vector::push_back' data-ref="_ZNSt6vector9push_backEOT_" data-ref-filename="_ZNSt6vector9push_backEOT_">push_back</a>(<span class="namespace">std::</span><a class="ref fn" href="../../../../../include/c++/10/bits/move.h.html#_ZSt4moveOT_" title='std::move' data-ref="_ZSt4moveOT_" data-ref-filename="_ZSt4moveOT_">move</a>(<span class='refarg'><a class="local col8 ref" href="#18container" title='container' data-ref="18container" data-ref-filename="18container">container</a></span>));</td></tr>
+<tr><th id="192">192</th><td>        <b>return</b> *<b>this</b>;</td></tr>
+<tr><th id="193">193</th><td>    }</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc">     * <span class="command">@brief</span> Makes a file descriptor available to the child process.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc">     * Available flags are:</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc">     * * `ProcessHandle::StdIO::IGNORE_STREAM`</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc">     * * `ProcessHandle::StdIO::CREATE_PIPE`</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc">     * * `ProcessHandle::StdIO::INHERIT_FD`</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc">     * * `ProcessHandle::StdIO::INHERIT_STREAM`</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">     * * `ProcessHandle::StdIO::READABLE_PIPE`</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc">     * * `ProcessHandle::StdIO::WRITABLE_PIPE`</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc">     * * `ProcessHandle::StdIO::OVERLAPPED_PIPE`</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc">     * Default file descriptors are:</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc">     *     * `uvw::StdIN` for `stdin`</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc">     *     * `uvw::StdOUT` for `stdout`</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc">     *     * `uvw::StdERR` for `stderr`</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc">     * See the official</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc">     * [documentation](<a href="http://docs.libuv.org/en/v1.x/process.html#c.uv_stdio_flags">http://docs.libuv.org/en/v1.x/process.html#c.uv_stdio_flags</a>)</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc">     * for further details.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">fd</span> A valid file descriptor.</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">flags</span> A valid set of flags.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc">     * <span class="command">@return</span> A reference to this process handle.</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="221">221</th><td>    <a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> &amp; <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE" title='uvw::ProcessHandle::stdio' data-ref="_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE" data-ref-filename="_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE" id="_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE">stdio</a>(<a class="typedef" href="util.h.html#uvw::FileHandle" title='uvw::FileHandle' data-type='details::UVTypeWrapper&lt;uv_file&gt;' data-ref="uvw::FileHandle" data-ref-filename="uvw..FileHandle">FileHandle</a> <dfn class="local col0 decl" id="20fd" title='fd' data-type='uvw::FileHandle' data-ref="20fd" data-ref-filename="20fd">fd</dfn>, <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::ProcessHandle::StdIO" title='uvw::ProcessHandle::StdIO' data-type='details::UVStdIOFlags' data-ref="uvw::ProcessHandle::StdIO" data-ref-filename="uvw..ProcessHandle..StdIO">StdIO</a>&gt; <dfn class="local col1 decl" id="21flags" title='flags' data-type='Flags&lt;uvw::ProcessHandle::StdIO&gt;' data-ref="21flags" data-ref-filename="21flags">flags</dfn>);</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc">     * <span class="command">@brief</span> Sets the child process' user id.</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">id</span> A valid user id to be used.</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc">     * <span class="command">@return</span> A reference to this process handle.</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="228">228</th><td>    <a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> &amp; <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle3uidEj" title='uvw::ProcessHandle::uid' data-ref="_ZN3uvw13ProcessHandle3uidEj" data-ref-filename="_ZN3uvw13ProcessHandle3uidEj" id="_ZN3uvw13ProcessHandle3uidEj">uid</a>(<a class="typedef" href="util.h.html#uvw::Uid" title='uvw::Uid' data-type='uv_uid_t' data-ref="uvw::Uid" data-ref-filename="uvw..Uid">Uid</a> <dfn class="local col2 decl" id="22id" title='id' data-type='uvw::Uid' data-ref="22id" data-ref-filename="22id">id</dfn>);</td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc">     * <span class="command">@brief</span> Sets the child process' group id.</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">id</span> A valid group id to be used.</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc">     * <span class="command">@return</span> A reference to this process handle.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="235">235</th><td>    <a class="type" href="#uvw::ProcessHandle" title='uvw::ProcessHandle' data-ref="uvw::ProcessHandle" data-ref-filename="uvw..ProcessHandle">ProcessHandle</a> &amp; <a class="decl fn" href="process.cpp.html#_ZN3uvw13ProcessHandle3gidEj" title='uvw::ProcessHandle::gid' data-ref="_ZN3uvw13ProcessHandle3gidEj" data-ref-filename="_ZN3uvw13ProcessHandle3gidEj" id="_ZN3uvw13ProcessHandle3gidEj">gid</a>(<a class="typedef" href="util.h.html#uvw::Gid" title='uvw::Gid' data-type='uv_gid_t' data-ref="uvw::Gid" data-ref-filename="uvw..Gid">Gid</a> <dfn class="local col3 decl" id="23id" title='id' data-type='uvw::Gid' data-ref="23id" data-ref-filename="23id">id</dfn>);</td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><b>private</b>:</td></tr>
+<tr><th id="238">238</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="decl field" id="uvw::ProcessHandle::poCwd" title='uvw::ProcessHandle::poCwd' data-ref="uvw::ProcessHandle::poCwd" data-ref-filename="uvw..ProcessHandle..poCwd">poCwd</dfn>;</td></tr>
+<tr><th id="239">239</th><td>    <a class="type" href="util.h.html#uvw::Flags" title='uvw::Flags' data-ref="uvw::Flags" data-ref-filename="uvw..Flags">Flags</a>&lt;<a class="typedef" href="#uvw::ProcessHandle::Process" title='uvw::ProcessHandle::Process' data-type='details::UVProcessFlags' data-ref="uvw::ProcessHandle::Process" data-ref-filename="uvw..ProcessHandle..Process">Process</a>&gt; <dfn class="decl field" id="uvw::ProcessHandle::poFlags" title='uvw::ProcessHandle::poFlags' data-ref="uvw::ProcessHandle::poFlags" data-ref-filename="uvw..ProcessHandle..poFlags">poFlags</dfn>;</td></tr>
+<tr><th id="240">240</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_stdio_container_t" title='uv_stdio_container_t' data-type='struct uv_stdio_container_s' data-ref="uv_stdio_container_t" data-ref-filename="uv_stdio_container_t">uv_stdio_container_t</a>&gt; <dfn class="decl field" id="uvw::ProcessHandle::poFdStdio" title='uvw::ProcessHandle::poFdStdio' data-ref="uvw::ProcessHandle::poFdStdio" data-ref-filename="uvw..ProcessHandle..poFdStdio">poFdStdio</dfn>;</td></tr>
+<tr><th id="241">241</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="typedef" href="../../../libuv/include/uv.h.html#uv_stdio_container_t" title='uv_stdio_container_t' data-type='struct uv_stdio_container_s' data-ref="uv_stdio_container_t" data-ref-filename="uv_stdio_container_t">uv_stdio_container_t</a>&gt; <dfn class="decl field" id="uvw::ProcessHandle::poStreamStdio" title='uvw::ProcessHandle::poStreamStdio' data-ref="uvw::ProcessHandle::poStreamStdio" data-ref-filename="uvw..ProcessHandle..poStreamStdio">poStreamStdio</dfn>;</td></tr>
+<tr><th id="242">242</th><td>    <a class="typedef" href="util.h.html#uvw::Uid" title='uvw::Uid' data-type='uv_uid_t' data-ref="uvw::Uid" data-ref-filename="uvw..Uid">Uid</a> <dfn class="decl field" id="uvw::ProcessHandle::poUid" title='uvw::ProcessHandle::poUid' data-ref="uvw::ProcessHandle::poUid" data-ref-filename="uvw..ProcessHandle..poUid">poUid</dfn>;</td></tr>
+<tr><th id="243">243</th><td>    <a class="typedef" href="util.h.html#uvw::Gid" title='uvw::Gid' data-type='uv_gid_t' data-ref="uvw::Gid" data-ref-filename="uvw..Gid">Gid</a> <dfn class="decl field" id="uvw::ProcessHandle::poGid" title='uvw::ProcessHandle::poGid' data-ref="uvw::ProcessHandle::poGid" data-ref-filename="uvw..ProcessHandle..poGid">poGid</dfn>;</td></tr>
+<tr><th id="244">244</th><td>};</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td>}</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><u>#<span data-ppcond="250">ifndef</span> <span class="macro" data-ref="_M/UVW_AS_LIB">UVW_AS_LIB</span></u></td></tr>
+<tr><th id="251">251</th><td><u>#include "process.cpp"</u></td></tr>
+<tr><th id="252">252</th><td><u>#<span data-ppcond="250">endif</span></u></td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><u>#<span data-ppcond="1">endif</span> // UVW_PROCESS_INCLUDE_H</u></td></tr>
+<tr><th id="255">255</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='process.cpp.html'>qv2ray/3rdparty/uvw/src/uvw/process.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

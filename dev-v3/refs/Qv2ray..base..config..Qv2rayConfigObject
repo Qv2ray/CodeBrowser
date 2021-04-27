@@ -1,0 +1,83 @@
+<def f='qv2ray/src/base/models/QvSettingsObject.hpp' l='177' ll='199'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='196' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1ERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='196' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectaSERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='196' c='_ZN6Qv2ray4base6config18Qv2rayConfigObjectaSERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='196' c='_ZNK6Qv2ray4base6config18Qv2rayConfigObjecteqERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='196' c='_ZNK6Qv2ray4base6config18Qv2rayConfigObjectneERKS2_'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.hpp' l='58'/>
+<use f='qv2ray/src/ui/widgets/windows/w_PreferencesWindow.hpp' l='148'/>
+<size>96928</size>
+<smbr r='Qv2ray::base::config::Qv2rayConfigObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4base6config18Qv2rayConfigObject10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject25on_config_version_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::config_version' o='128' t='QJS_Prop&lt;int&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject19on_logLevel_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::logLevel' o='640' t='QJS_Prop&lt;int&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject22on_autoStartId_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::autoStartId' o='1152' t='QJS_Prop&lt;Qv2ray::base::ConnectionGroupPair&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject26on_lastConnectedId_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::lastConnectedId' o='2688' t='QJS_Prop&lt;Qv2ray::base::ConnectionGroupPair&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject28on_autoStartBehavior_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::autoStartBehavior' o='4224' t='QJS_Prop&lt;Qv2ray::base::config::Qv2rayAutoConnectionBehavior&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject19on_uiConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::uiConfig' o='4736' t='QJS_Prop&lt;Qv2ray::base::config::Qv2rayConfig_UI&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject23on_pluginConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::pluginConfig' o='41600' t='QJS_Prop&lt;Qv2ray::base::config::Qv2rayConfig_Plugin&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject23on_kernelConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::kernelConfig' o='47168' t='QJS_Prop&lt;Qv2ray::base::config::Qv2rayConfig_Kernel&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject23on_updateConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::updateConfig' o='68288' t='QJS_Prop&lt;Qv2ray::base::config::Qv2rayConfig_Update&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject24on_networkConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::networkConfig' o='73472' t='QJS_Prop&lt;Qv2ray::base::config::Qv2rayConfig_Network&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject24on_inboundConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::inboundConfig' o='90368' t='QJS_Prop&lt;Qv2ray::base::config::QvConfig_Inbounds&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject25on_outboundConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::outboundConfig' o='423488' t='QJS_Prop&lt;Qv2ray::base::config::QvConfig_Outbounds&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject29on_defaultRouteConfig_changedEv'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfigObject::defaultRouteConfig' o='425792' t='QJS_Prop&lt;Qv2ray::base::GroupRoutingConfig&gt;'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1ERKS2_'/>
+<fun r='_ZNK6Qv2ray4base6config18Qv2rayConfigObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObjectC1ERK11QJsonObject'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2108' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2129' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2136' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2143' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2150' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2157' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2164' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2171' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2178' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2185' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2192' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2199' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2206' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2213' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2230' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/KBQUCU6ZTO/moc_QvSettingsObject.cpp' l='2250' c='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>96928</size>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::base::config::Qv2rayConfigObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4base6config18Qv2rayConfigObject10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject25on_config_version_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject19on_logLevel_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject22on_autoStartId_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject26on_lastConnectedId_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject28on_autoStartBehavior_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject19on_uiConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject23on_pluginConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject23on_kernelConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject23on_updateConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject24on_networkConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject24on_inboundConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject25on_outboundConfig_changedEv'/>
+<fun r='_ZN6Qv2ray4base6config18Qv2rayConfigObject29on_defaultRouteConfig_changedEv'/>
+<use f='qv2ray/src/base/Qv2rayBaseApplication.cpp' l='15' c='_ZN6Qv2ray26Qv2rayApplicationInterfaceC1Ev'/>
+<size>96928</size>

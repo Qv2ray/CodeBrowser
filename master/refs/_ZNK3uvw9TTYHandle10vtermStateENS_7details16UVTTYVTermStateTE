@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='120' type='void uvw::TTYHandle::vtermState(uvw::TTYHandle::VTermState s) const'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tty.cpp' l='61' ll='70' type='void uvw::TTYHandle::vtermState(TTYHandle::VTermState s) const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tty.h' l='102'>/**
+     * @brief Controls whether console virtual terminal sequences are processed
+     * by the library or console.
+     *
+     * This function is only meaningful on Windows systems. On Unix it is
+     * silently ignored.
+     *
+     * Available states are:
+     *
+     * * `TTY::VTermState::SUPPORTED`
+     * * `TTY::VTermState::UNSUPPORTED`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/tty.html#c.uv_tty_vtermstate_t)
+     * for further details.
+     *
+     * @param s The state to be set.
+     */</doc>

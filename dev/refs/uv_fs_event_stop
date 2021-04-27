@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1619' type='int uv_fs_event_stop(uv_fs_event_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='124' u='c' c='uv__inotify_fork'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='305' ll='322' type='int uv_fs_event_stop(uv_fs_event_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='326' u='c' c='uv__fs_event_close'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='45' u='a' c='_ZN3uvw13FsEventHandle4stopEv'/>

@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='506' type='static std::string uvw::Utilities::OS::tmpdir()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='497'>/**
+         * @brief Gets the temp directory.
+         *
+         * See the official
+         * [documentation](http://docs.libuv.org/en/v1.x/misc.html#c.uv_os_tmpdir)
+         * for further details.
+         *
+         * @return The temp directory, an empty string in case of errors.
+         */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='88' ll='90' type='static std::string uvw::Utilities::OS::tmpdir()'/>

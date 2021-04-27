@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='520' type='QRcode_List * QRcode_encodeDataStructured(int size, const unsigned char * data, int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='507'>/**
+ * Create structured symbols from byte stream (may include &apos;\0&apos;). Wholde data
+ * are encoded in 8-bit mode.
+ * @warning This function is THREAD UNSAFE when pthread is disabled.
+ * @param size size of the input data.
+ * @param data input dat.
+ * @param version version of the symbol.
+ * @param level error correction level.
+ * @return a singly-linked list of QRcode. On error, NULL is returned, and
+ *         errno is set to indicate the error. See Exceptions for the details.
+ * @throw EINVAL invalid input object.
+ * @throw ENOMEM unable to allocate memory for input objects.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='842' ll='844' type='QRcode_List * QRcode_encodeDataStructured(int size, const unsigned char * data, int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='851' u='c' c='QRcode_encodeString8bitStructured'/>

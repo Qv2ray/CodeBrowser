@@ -1,0 +1,10 @@
+<def f='include/grpc/impl/codegen/grpc_types.h' l='40' ll='52'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='40'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='566'/>
+<use f='include/grpc/impl/codegen/grpc_types.h' l='591'/>
+<use f='include/grpc/impl/codegen/byte_buffer_reader.h' l='29'/>
+<use f='include/grpc/impl/codegen/byte_buffer_reader.h' l='30'/>
+<size>320</size>
+<mbr r='grpc_byte_buffer::reserved' o='0' t='void *'/>
+<mbr r='grpc_byte_buffer::type' o='64' t='grpc_byte_buffer_type'/>
+<mbr r='grpc_byte_buffer::data' o='128' t='union grpc_byte_buffer_data'/>

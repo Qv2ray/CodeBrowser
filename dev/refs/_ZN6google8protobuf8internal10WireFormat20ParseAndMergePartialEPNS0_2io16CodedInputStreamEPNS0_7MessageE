@@ -1,0 +1,17 @@
+<dec f='include/google/protobuf/wire_format.h' l='100' type='static bool google::protobuf::internal::WireFormat::ParseAndMergePartial(io::CodedInputStream * input, google::protobuf::Message * message)'/>
+<doc f='include/google/protobuf/wire_format.h' l='84'>// These procedures can be used to implement the methods of Message which
+  // handle parsing and serialization of the protocol buffer wire format
+  // using only the Reflection interface.  When you ask the protocol
+  // compiler to optimize for code size rather than speed, it will implement
+  // those methods in terms of these procedures.  Of course, these are much
+  // slower than the specialized implementations which the protocol compiler
+  // generates when told to optimize for speed.
+
+  // Read a message in protocol buffer wire format.
+  //
+  // This procedure reads either to the end of the input stream or through
+  // a WIRETYPE_END_GROUP tag ending the message, whichever comes first.
+  // It returns false if the input is invalid.
+  //
+  // Required fields are NOT checked by this method.  You must call
+  // IsInitialized() on the resulting message yourself.</doc>

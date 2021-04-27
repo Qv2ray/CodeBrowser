@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1305' macro='1' type='double'/>
+<offset>2560</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='230' u='r' c='uv__fs_futime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='985' u='r' c='uv__fs_utime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1025' u='r' c='uv__fs_lutime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1743' u='w' c='uv_fs_futime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1756' u='w' c='uv_fs_lutime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1993' u='w' c='uv_fs_utime'/>

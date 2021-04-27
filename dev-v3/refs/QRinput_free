@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='265' type='void QRinput_free(QRinput * input)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='260'>/**
+ * Free the input object.
+ * All of data chunks in the input object are freed too.
+ * @param input input object.
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='620' u='c' c='QRcode_encodeStringReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='624' u='c' c='QRcode_encodeStringReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='659' u='c' c='QRcode_encodeDataReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='663' u='c' c='QRcode_encodeDataReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='833' u='c' c='QRcode_encodeDataStructuredReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='837' u='c' c='QRcode_encodeDataStructuredReal'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='294' ll='307' type='void QRinput_free(QRinput * input)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='344' u='c' c='QRinput_dup'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1357' u='c' c='QRinput_InputList_freeEntry'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1524' u='c' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1547' u='c' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1574' u='c' c='QRinput_splitQRinputToStruct'/>

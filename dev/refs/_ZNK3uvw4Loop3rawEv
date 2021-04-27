@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='383' type='const uv_loop_t * uvw::Loop::raw() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='368'>/**
+     * @brief Gets the underlying raw data structure.
+     *
+     * This function should not be used, unless you know exactly what you are
+     * doing and what are the risks.&lt;br/&gt;
+     * Going raw is dangerous, mainly because the lifetime management of a loop,
+     * a handle or a request is in charge to the library itself and users should
+     * not work around it.
+     *
+     * @warning
+     * Use this function at your own risk, but do not expect any support in case
+     * of bugs.
+     *
+     * @return The underlying raw data structure.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='124' ll='126' type='const uv_loop_t * uvw::Loop::raw() const'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='130' u='c' c='_ZN3uvw4Loop3rawEv'/>

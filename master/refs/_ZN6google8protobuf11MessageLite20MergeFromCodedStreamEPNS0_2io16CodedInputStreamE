@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/message_lite.h' l='274' type='bool google::protobuf::MessageLite::MergeFromCodedStream(io::CodedInputStream * input)'/>
+<doc f='include/google/protobuf/message_lite.h' l='263'>// Reads a protocol buffer from the stream and merges it into this
+  // Message.  Singular fields read from the what is
+  // already in the Message and repeated fields are appended to those
+  // already present.
+  //
+  // It is the responsibility of the caller to call input-&gt;LastTagWas()
+  // (for groups) or input-&gt;ConsumedEntireMessage() (for non-groups) after
+  // this returns to verify that the message&apos;s end was delimited correctly.
+  //
+  // ParsefromCodedStream() is implemented as Clear() followed by
+  // MergeFromCodedStream().</doc>

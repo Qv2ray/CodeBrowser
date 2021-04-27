@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='525' ll='537' type='grpc::Status grpc::ClientReaderWriter::Finish()'/>
+<doc f='include/grpcpp/impl/codegen/sync_stream.h' l='520'>/// See the ClientStreamingInterface.Finish method for semantics.
+  ///
+  /// Side effect:
+  ///   - the \a ClientContext associated with this call is updated with
+  ///     possible trailing metadata sent from the server.</doc>

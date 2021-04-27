@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='58' type='int QRspec_getMinimumVersion(int size, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='52'>/**
+ * Return a version number that satisfies the input code length.
+ * @param size input code length (byte)
+ * @param level
+ * @return version number
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='941' u='c' c='QRinput_estimateVersion'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1115' u='c' c='QRinput_convertData'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='108' ll='119' type='int QRspec_getMinimumVersion(int size, QRecLevel level)'/>

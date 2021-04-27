@@ -1,0 +1,14 @@
+<def f='include/google/protobuf/extension_set.h' l='92' ll='116'/>
+<use f='include/google/protobuf/extension_set.h' l='125' c='_ZN6google8protobuf8internal15ExtensionFinder4FindEiPNS1_13ExtensionInfoE'/>
+<use f='include/google/protobuf/extension_set.h' l='137' c='_ZN6google8protobuf8internal24GeneratedExtensionFinder4FindEiPNS1_13ExtensionInfoE'/>
+<use f='include/google/protobuf/extension_set.h' l='667' c='_ZN6google8protobuf8internal12ExtensionSet24FindExtensionInfoFromTagEjPNS1_15ExtensionFinderEPiPNS1_13ExtensionInfoEPb'/>
+<use f='include/google/protobuf/extension_set.h' l='676' c='_ZN6google8protobuf8internal12ExtensionSet32FindExtensionInfoFromFieldNumberEiiPNS1_15ExtensionFinderEPNS1_13ExtensionInfoEPb'/>
+<use f='include/google/protobuf/extension_set.h' l='685' c='_ZN6google8protobuf8internal12ExtensionSet27ParseFieldWithExtensionInfoEibRKNS1_13ExtensionInfoEPNS0_2io16CodedInputStreamEPNS1_12FieldSkipperE'/>
+<size>32</size>
+<doc f='include/google/protobuf/extension_set.h' l='91'>// Information about a registered extension.</doc>
+<fun r='_ZN6google8protobuf8internal13ExtensionInfoC1Ev'/>
+<fun r='_ZN6google8protobuf8internal13ExtensionInfoC1Ehbb'/>
+<mbr r='google::protobuf::internal::ExtensionInfo::type' o='0' t='google::protobuf::internal::FieldType'/>
+<mbr r='google::protobuf::internal::ExtensionInfo::is_repeated' o='8' t='bool'/>
+<mbr r='google::protobuf::internal::ExtensionInfo::is_packed' o='16' t='bool'/>
+<mbr r='google::protobuf::internal::ExtensionInfo::descriptor' o='192' t='const google::protobuf::FieldDescriptor *'/>

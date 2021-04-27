@@ -1,0 +1,29 @@
+<def f='include/c++/10/bits/stl_vector.h' l='1167' ll='1169' type='_Tp * std::vector::data()'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='1163'>/**
+       *   Returns a pointer such that [data(), data() + size()) is a valid
+       *   range.  For a non-empty %vector, data() == &amp;front().
+       */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='63' u='c' c='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='109' u='c' c='_ZN5ZXing9BitMatrix3rowEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='109' u='c' c='_ZN5ZXing9BitMatrix3rowEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='48' u='c' c='_ZN5ZXingL8MakeCopyEPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='79' u='c' c='_ZN5ZXing22GenericLuminanceSourceC1EiiiiPKviiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='132' u='c' c='_ZNK5ZXing22GenericLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='146' u='c' c='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='150' u='c' c='_ZNK5ZXing22GenericLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='182' u='c' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GenericLuminanceSource.cpp' l='199' u='c' c='_ZNK5ZXing22GenericLuminanceSource7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='46' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource6getRowEiRNS_9ByteArrayEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/LuminanceSource.cpp' l='53' u='c' c='_ZNK5ZXing12_GLOBAL__N_123InvertedLuminanceSource9getMatrixERNS_9ByteArrayERib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='274' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='281' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='288' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='295' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='302' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='309' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='493' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL20DecodeBase256SegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS4_4listINS4118670'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='429' u='c' c='_ZN5ZXing6Pdf417L14ByteCompactionEiRKSt6vectorIiSaIiEENS_12CharacterSetEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='103' u='c' c='_ZN5ZXing6QRCodeL18DecodeHanziSegmentERNS_9BitSourceEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='136' u='c' c='_ZN5ZXing6QRCodeL18DecodeKanjiSegmentERNS_9BitSourceEiRNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='164' u='c' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='167' u='c' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>

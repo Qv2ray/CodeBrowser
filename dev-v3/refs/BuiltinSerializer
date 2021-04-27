@@ -1,0 +1,11 @@
+<inh f='qv2ray/src/plugin-interface/handlers/OutboundHandler.hpp' l='19' c='Qv2rayPlugin::handlers::outbound::PluginOutboundHandler'/>
+<def f='qv2ray/src/plugins/protocols/core/OutboundHandler.hpp' l='5' ll='19'/>
+<use f='qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.cpp' l='10' c='_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<size>8</size>
+<fun r='_ZN17BuiltinSerializerC1Ev'/>
+<fun r='_ZNK17BuiltinSerializer17SerializeOutboundERK7QStringS2_S2_RK11QJsonObjectS5_'/>
+<fun r='_ZNK17BuiltinSerializer19DeserializeOutboundERK7QStringPS0_S3_'/>
+<fun r='_ZNK17BuiltinSerializer15GetOutboundInfoERK7QStringRK11QJsonObject'/>
+<fun r='_ZNK17BuiltinSerializer15SetOutboundInfoERK7QStringRK4QMapIN12Qv2rayPlugin8handlers8outbound17OutboundInfoFlagsE8QVariantER11QJsonObject'/>
+<fun r='_ZNK17BuiltinSerializer21SupportedLinkPrefixesEv'/>
+<fun r='_ZNK17BuiltinSerializer18SupportedProtocolsEv'/>

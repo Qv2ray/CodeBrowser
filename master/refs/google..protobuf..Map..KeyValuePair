@@ -1,0 +1,18 @@
+<def f='include/google/protobuf/map.h' l='284' ll='296'/>
+<use f='include/google/protobuf/map.h' l='298'/>
+<use f='include/google/protobuf/map.h' l='356'/>
+<use f='include/google/protobuf/map.h' l='507'/>
+<use f='include/google/protobuf/map.h' l='508'/>
+<use f='include/google/protobuf/map.h' l='558' c='_ZN6google8protobuf3Map8InnerMap6insertERKNS1_12KeyValuePairE'/>
+<use f='include/google/protobuf/map.h' l='596' c='_ZN6google8protobuf3Map8InnerMapixERKT_'/>
+<doc f='include/google/protobuf/map.h' l='280'>// InnerMap&apos;s key type is Key and its value type is value_type*.  We use a
+  // custom class here and for Node, below, to ensure that k_ is at offset 0,
+  // allowing safe conversion from pointer to Node to pointer to Key, and vice
+  // versa when appropriate.</doc>
+<fun r='_ZN6google8protobuf3Map12KeyValuePairC1ERKT_PNS0_7MapPairIS3_T0_EE'/>
+<fun r='_ZNK6google8protobuf3Map12KeyValuePair3keyEv'/>
+<fun r='_ZN6google8protobuf3Map12KeyValuePair3keyEv'/>
+<fun r='_ZNK6google8protobuf3Map12KeyValuePair5valueEv'/>
+<fun r='_ZN6google8protobuf3Map12KeyValuePair5valueEv'/>
+<mbr r='google::protobuf::Map::KeyValuePair::k_' t='Key'/>
+<mbr r='google::protobuf::Map::KeyValuePair::v_' t='google::protobuf::Map::value_type *'/>

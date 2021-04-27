@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/byte_buffer.h' l='112' ll='114' type='void grpc::ByteBuffer::Duplicate()'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='308' u='c' c='_ZN4grpc8internal17CallOpSendMessage11SendMessageERKT_NS_12WriteOptionsE'/>
+<doc f='include/grpcpp/impl/codegen/byte_buffer.h' l='109'>/// Make a duplicate copy of the internals of this byte
+  /// buffer so that we have our own owned version of it.
+  /// bbuf.Duplicate(); is equivalent to bbuf=bbuf; but is actually readable</doc>

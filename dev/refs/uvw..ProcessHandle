@@ -1,0 +1,57 @@
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='296' c='_ZN3uvw4Loop4walkET_'/>
+<inh f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='65' ll='244'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='65'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='140' c='_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='162' c='_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='186' c='_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='221' c='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='228' c='_ZN3uvw13ProcessHandle3uidEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='235' c='_ZN3uvw13ProcessHandle3gidEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='18' c='_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='18' c='_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='85' c='_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='91' c='_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='97' c='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='120' c='_ZN3uvw13ProcessHandle3uidEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='126' c='_ZN3uvw13ProcessHandle3gidEj'/>
+<size>336</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='59'>/**
+ * @brief The ProcessHandle handle.
+ *
+ * Process handles will spawn a new process and allow the user to control it and
+ * establish communication channels with it using streams.
+ */</doc>
+<fun r='_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli'/>
+<fun r='_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<fun r='_ZN3uvw13ProcessHandle23disableStdIOInheritanceEv'/>
+<fun r='_ZN3uvw13ProcessHandle4killEii'/>
+<fun r='_ZN3uvw13ProcessHandle4initEv'/>
+<fun r='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>
+<fun r='_ZN3uvw13ProcessHandle4killEi'/>
+<fun r='_ZN3uvw13ProcessHandle3pidEv'/>
+<fun r='_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE'/>
+<fun r='_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE'/>
+<fun r='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>
+<fun r='_ZN3uvw13ProcessHandle3uidEj'/>
+<fun r='_ZN3uvw13ProcessHandle3gidEj'/>
+<mbr r='uvw::ProcessHandle::poCwd' o='1920' t='std::string'/>
+<mbr r='uvw::ProcessHandle::poFlags' o='2176' t='Flags&lt;uvw::ProcessHandle::Process&gt;'/>
+<mbr r='uvw::ProcessHandle::poFdStdio' o='2240' t='std::vector&lt;uv_stdio_container_t&gt;'/>
+<mbr r='uvw::ProcessHandle::poStreamStdio' o='2432' t='std::vector&lt;uv_stdio_container_t&gt;'/>
+<mbr r='uvw::ProcessHandle::poUid' o='2624' t='uvw::Uid'/>
+<mbr r='uvw::ProcessHandle::poGid' o='2656' t='uvw::Gid'/>
+<fun r='_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli'/>
+<fun r='_ZN3uvw13ProcessHandleC1ENS_14UnderlyingTypeIS0_12uv_process_sE17ConstructorAccessESt10shared_ptrINS_4LoopEE'/>
+<fun r='_ZN3uvw13ProcessHandle23disableStdIOInheritanceEv'/>
+<fun r='_ZN3uvw13ProcessHandle4killEii'/>
+<fun r='_ZN3uvw13ProcessHandle4initEv'/>
+<fun r='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>
+<fun r='_ZN3uvw13ProcessHandle4killEi'/>
+<fun r='_ZN3uvw13ProcessHandle3pidEv'/>
+<fun r='_ZN3uvw13ProcessHandle3cwdENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN3uvw13ProcessHandle5flagsENS_5FlagsINS_7details14UVProcessFlagsEEE'/>
+<fun r='_ZN3uvw13ProcessHandle5stdioENS_7details13UVTypeWrapperIiEENS_5FlagsINS1_12UVStdIOFlagsEEE'/>
+<fun r='_ZN3uvw13ProcessHandle3uidEj'/>
+<fun r='_ZN3uvw13ProcessHandle3gidEj'/>

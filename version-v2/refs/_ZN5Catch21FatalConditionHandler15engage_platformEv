@@ -1,0 +1,6 @@
+<dec f='qv2ray/test/catch.hpp' l='8006' type='void Catch::FatalConditionHandler::engage_platform()'/>
+<use f='qv2ray/test/catch.hpp' l='8016' u='c' c='_ZN5Catch21FatalConditionHandler6engageEv'/>
+<def f='qv2ray/test/catch.hpp' l='10927' ll='10940' type='void Catch::FatalConditionHandler::engage_platform()'/>
+<doc f='qv2ray/test/catch.hpp' l='8003'>// Install/disengage implementation for specific platform.
+        // Should be if-defed to work on current platform, can assume
+        // engage-disengage 1:1 pairing.</doc>

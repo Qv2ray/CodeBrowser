@@ -1,0 +1,40 @@
+<use f='qv2ray/3rdparty/libuv/include/uv/threadpool.h' l='33'/>
+<use f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='89'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='209'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='1770' ll='1783'/>
+<size>848</size>
+<mbr r='uv_loop_s::data' o='0' t='void *'/>
+<mbr r='uv_loop_s::active_handles' o='64' t='unsigned int'/>
+<mbr r='uv_loop_s::handle_queue' o='128' t='void *[2]'/>
+<mbr r='uv_loop_s::active_reqs' o='256' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/dev/code_build/../3rdparty/libuv/include/uv.h:1776:3)'/>
+<mbr r='uv_loop_s::stop_flag' o='384' t='unsigned int'/>
+<mbr r='uv_loop_s::flags' o='448' t='unsigned long'/>
+<mbr r='uv_loop_s::backend_fd' o='512' t='int'/>
+<mbr r='uv_loop_s::pending_queue' o='576' t='void *[2]'/>
+<mbr r='uv_loop_s::watcher_queue' o='704' t='void *[2]'/>
+<mbr r='uv_loop_s::watchers' o='832' t='uv__io_t **'/>
+<mbr r='uv_loop_s::nwatchers' o='896' t='unsigned int'/>
+<mbr r='uv_loop_s::nfds' o='928' t='unsigned int'/>
+<mbr r='uv_loop_s::wq' o='960' t='void *[2]'/>
+<mbr r='uv_loop_s::wq_mutex' o='1088' t='uv_mutex_t'/>
+<mbr r='uv_loop_s::wq_async' o='1408' t='uv_async_t'/>
+<mbr r='uv_loop_s::cloexec_lock' o='2432' t='uv_rwlock_t'/>
+<mbr r='uv_loop_s::closing_handles' o='2880' t='uv_handle_t *'/>
+<mbr r='uv_loop_s::process_handles' o='2944' t='void *[2]'/>
+<mbr r='uv_loop_s::prepare_handles' o='3072' t='void *[2]'/>
+<mbr r='uv_loop_s::check_handles' o='3200' t='void *[2]'/>
+<mbr r='uv_loop_s::idle_handles' o='3328' t='void *[2]'/>
+<mbr r='uv_loop_s::async_handles' o='3456' t='void *[2]'/>
+<mbr r='uv_loop_s::async_unused' o='3584' t='void (*)(void)'/>
+<mbr r='uv_loop_s::async_io_watcher' o='3648' t='uv__io_t'/>
+<mbr r='uv_loop_s::async_wfd' o='4096' t='int'/>
+<mbr r='uv_loop_s::timer_heap' o='4160' t='struct (anonymous struct at /home/runner/work/CodeBrowser/CodeBrowser/source/dev/code_build/../3rdparty/libuv/include/uv.h:1782:3)'/>
+<mbr r='uv_loop_s::timer_counter' o='4288' t='uint64_t'/>
+<mbr r='uv_loop_s::time' o='4352' t='uint64_t'/>
+<mbr r='uv_loop_s::signal_pipefd' o='4416' t='int [2]'/>
+<mbr r='uv_loop_s::signal_io_watcher' o='4480' t='uv__io_t'/>
+<mbr r='uv_loop_s::child_watcher' o='4928' t='uv_signal_t'/>
+<mbr r='uv_loop_s::emfile_fd' o='6144' t='int'/>
+<mbr r='uv_loop_s::inotify_read_watcher' o='6208' t='uv__io_t'/>
+<mbr r='uv_loop_s::inotify_watchers' o='6656' t='void *'/>
+<mbr r='uv_loop_s::inotify_fd' o='6720' t='int'/>

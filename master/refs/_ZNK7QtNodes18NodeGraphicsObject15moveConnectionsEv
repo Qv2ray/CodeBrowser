@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGraphicsObject.hpp' l='28' type='void QtNodes::NodeGraphicsObject::moveConnections() const'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGraphicsObject.hpp' l='26'>/// Visits all attached connections and corrects
+        /// their corresponding end points.</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='240' u='c' c='_ZNK7QtNodes9FlowScene15setNodePositionERNS_4NodeERK7QPointF'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='126' u='c' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='84' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='105' u='c' c='_ZN7QtNodes18NodeGraphicsObject12embedQWidgetEb'/>
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='116' ll='127' type='void QtNodes::NodeGraphicsObject::moveConnections() const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='144' u='c' c='_ZN7QtNodes18NodeGraphicsObject10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='231' u='c' c='_ZN7QtNodes18NodeGraphicsObject14mouseMoveEventEP24QGraphicsSceneMouseEvent'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='239' u='c' c='_ZN7QtNodes18NodeGraphicsObject14mouseMoveEventEP24QGraphicsSceneMouseEvent'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGraphicsObject.cpp' l='252' u='c' c='_ZN7QtNodes18NodeGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>

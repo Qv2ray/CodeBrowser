@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='649' type='void uvw::FileReq::datasync()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='153' ll='155' type='void uvw::FileReq::datasync()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='643'>/**
+     * @brief Async [fdatasync](http://linux.die.net/man/2/fdatasync).
+     *
+     * Emit a `FsEvent&lt;FileReq::Type::FDATASYNC&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     */</doc>

@@ -1,0 +1,26 @@
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='154'/>
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='181' c='google::protobuf::io::ZeroCopyOutputStream'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='53' ll='163'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='110' c='_ZN4grpc19SerializationTraitsIT_NSt9enable_ifIXsr3std10is_base_ofIN6google8protobuf7MessageES1_EE5valueEvE4typeEE9SerializeERKS5_PNS_10ByteBufferEPb'/>
+<size>104</size>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='46'>/// This is a specialization of the protobuf class ZeroCopyOutputStream.
+/// The principle is to give the proto layer one buffer of bytes at a time
+/// that it can use to serialize the next portion of the message, with the
+/// option to &quot;backup&quot; if more buffer is given than required at the last buffer.
+///
+/// Read more about ZeroCopyOutputStream interface here:
+/// https://developers.google.com/protocol-buffers/docs/reference/cpp/google.protobuf.io.zero_copy_stream#ZeroCopyOutputStream</doc>
+<fun r='_ZN4grpc17ProtoBufferWriterC1EPNS_10ByteBufferEii'/>
+<fun r='_ZN4grpc17ProtoBufferWriterD1Ev'/>
+<fun r='_ZN4grpc17ProtoBufferWriter4NextEPPvPi'/>
+<fun r='_ZN4grpc17ProtoBufferWriter6BackUpEi'/>
+<fun r='_ZNK4grpc17ProtoBufferWriter9ByteCountEv'/>
+<fun r='_ZN4grpc17ProtoBufferWriter12slice_bufferEv'/>
+<fun r='_ZN4grpc17ProtoBufferWriter14set_byte_countEl'/>
+<mbr r='grpc::ProtoBufferWriter::block_size_' o='64' t='const int'/>
+<mbr r='grpc::ProtoBufferWriter::total_size_' o='96' t='const int'/>
+<mbr r='grpc::ProtoBufferWriter::byte_count_' o='128' t='int64_t'/>
+<mbr r='grpc::ProtoBufferWriter::slice_buffer_' o='192' t='grpc_slice_buffer *'/>
+<mbr r='grpc::ProtoBufferWriter::have_backup_' o='256' t='bool'/>
+<mbr r='grpc::ProtoBufferWriter::backup_slice_' o='320' t='grpc_slice'/>
+<mbr r='grpc::ProtoBufferWriter::slice_' o='576' t='grpc_slice'/>

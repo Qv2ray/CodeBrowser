@@ -1,0 +1,11 @@
+<def f='include/grpc/impl/codegen/slice.h' l='98' ll='114'/>
+<use f='include/grpc/impl/codegen/slice.h' l='98'/>
+<size>296</size>
+<doc f='include/grpc/impl/codegen/slice.h' l='96'>/** Represents an expandable array of slices, to be interpreted as a
+   single item. */</doc>
+<mbr r='grpc_slice_buffer::base_slices' o='0' t='grpc_slice *'/>
+<mbr r='grpc_slice_buffer::slices' o='64' t='grpc_slice *'/>
+<mbr r='grpc_slice_buffer::count' o='128' t='size_t'/>
+<mbr r='grpc_slice_buffer::capacity' o='192' t='size_t'/>
+<mbr r='grpc_slice_buffer::length' o='256' t='size_t'/>
+<mbr r='grpc_slice_buffer::inlined' o='320' t='grpc_slice [8]'/>

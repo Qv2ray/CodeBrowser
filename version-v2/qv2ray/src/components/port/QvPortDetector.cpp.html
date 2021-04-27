@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QvPortDetector.cpp source code [qv2ray/src/components/port/QvPortDetector.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/port/QvPortDetector.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>components</a>/<a href='./'>port</a>/<a href='QvPortDetector.cpp.html'>QvPortDetector.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="QvPortDetector.hpp.html">"QvPortDetector.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include &lt;QHostAddress&gt;</u></td></tr>
+<tr><th id="4">4</th><td><u>#include &lt;QTcpServer&gt;</u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">components</span>::<span class="namespace">port</span></td></tr>
+<tr><th id="7">7</th><td>{</td></tr>
+<tr><th id="8">8</th><td>    <em>bool</em> <dfn class="decl def fn" id="_ZN6Qv2ray10components4port18CheckTCPPortStatusERK7QStringi" title='Qv2ray::components::port::CheckTCPPortStatus' data-ref="_ZN6Qv2ray10components4port18CheckTCPPortStatusERK7QStringi" data-ref-filename="_ZN6Qv2ray10components4port18CheckTCPPortStatusERK7QStringi">CheckTCPPortStatus</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col4 decl" id="4addr" title='addr' data-type='const QString &amp;' data-ref="4addr" data-ref-filename="4addr">addr</dfn>, <em>int</em> <dfn class="local col5 decl" id="5port" title='port' data-type='int' data-ref="5port" data-ref-filename="5port">port</dfn>)</td></tr>
+<tr><th id="9">9</th><td>    {</td></tr>
+<tr><th id="10">10</th><td>        <span class='type' title='QTcpServer' data-ref="QTcpServer" data-ref-filename="QTcpServer">QTcpServer</span> <span class='ref fn fake' title='QTcpServer::QTcpServer' data-ref="_ZN10QTcpServerC1EP7QObject" data-ref-filename="_ZN10QTcpServerC1EP7QObject"></span><dfn class="local col6 decl" id="6server" title='server' data-type='QTcpServer' data-ref="6server" data-ref-filename="6server">server</dfn>;</td></tr>
+<tr><th id="11">11</th><td>        <span class='type' title='QHostAddress' data-ref="QHostAddress" data-ref-filename="QHostAddress">QHostAddress</span> <dfn class="local col7 decl" id="7address" title='address' data-type='QHostAddress' data-ref="7address" data-ref-filename="7address">address</dfn><span class='ref fn' title='QHostAddress::QHostAddress' data-ref="_ZN12QHostAddressC1ERK7QString" data-ref-filename="_ZN12QHostAddressC1ERK7QString">(</span><a class="local col4 ref" href="#4addr" title='addr' data-ref="4addr" data-ref-filename="4addr">addr</a>);</td></tr>
+<tr><th id="12">12</th><td>        <b>if</b> (<a class="local col7 ref" href="#7address" title='address' data-ref="7address" data-ref-filename="7address">address</a> <span class='ref fn' title='QHostAddress::operator==' data-ref="_ZNK12QHostAddresseqENS_14SpecialAddressE" data-ref-filename="_ZNK12QHostAddresseqENS_14SpecialAddressE">==</span> <span class='type' title='QHostAddress' data-ref="QHostAddress" data-ref-filename="QHostAddress">QHostAddress</span>::<span class='enum' title='QHostAddress::AnyIPv4' data-ref="QHostAddress::AnyIPv4" data-ref-filename="QHostAddress..AnyIPv4">AnyIPv4</span> || <a class="local col7 ref" href="#7address" title='address' data-ref="7address" data-ref-filename="7address">address</a> <span class='ref fn' title='QHostAddress::operator==' data-ref="_ZNK12QHostAddresseqENS_14SpecialAddressE" data-ref-filename="_ZNK12QHostAddresseqENS_14SpecialAddressE">==</span> <span class='type' title='QHostAddress' data-ref="QHostAddress" data-ref-filename="QHostAddress">QHostAddress</span>::<span class='enum' title='QHostAddress::AnyIPv6' data-ref="QHostAddress::AnyIPv6" data-ref-filename="QHostAddress..AnyIPv6">AnyIPv6</span>)</td></tr>
+<tr><th id="13">13</th><td>        {</td></tr>
+<tr><th id="14">14</th><td>            <a class="local col7 ref" href="#7address" title='address' data-ref="7address" data-ref-filename="7address">address</a> <span class='ref fn' title='QHostAddress::operator=' data-ref="_ZN12QHostAddressaSENS_14SpecialAddressE" data-ref-filename="_ZN12QHostAddressaSENS_14SpecialAddressE">=</span> <span class='type' title='QHostAddress' data-ref="QHostAddress" data-ref-filename="QHostAddress">QHostAddress</span>::<span class='enum' title='QHostAddress::Any' data-ref="QHostAddress::Any" data-ref-filename="QHostAddress..Any">Any</span>;</td></tr>
+<tr><th id="15">15</th><td>        }</td></tr>
+<tr><th id="16">16</th><td>        <b>return</b> <a class="local col6 ref" href="#6server" title='server' data-ref="6server" data-ref-filename="6server">server</a>.<span class='ref fn' title='QTcpServer::listen' data-ref="_ZN10QTcpServer6listenERK12QHostAddresst" data-ref-filename="_ZN10QTcpServer6listenERK12QHostAddresst">listen</span>(<a class="local col7 ref" href="#7address" title='address' data-ref="7address" data-ref-filename="7address">address</a>, <a class="local col5 ref" href="#5port" title='port' data-ref="5port" data-ref-filename="5port">port</a>);</td></tr>
+<tr><th id="17">17</th><td>    }</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>} <i>// namespace Qv2ray::components::port</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

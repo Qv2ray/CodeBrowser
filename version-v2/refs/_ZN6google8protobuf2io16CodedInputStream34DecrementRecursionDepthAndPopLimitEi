@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='438' type='bool google::protobuf::io::CodedInputStream::DecrementRecursionDepthAndPopLimit(google::protobuf::io::CodedInputStream::Limit limit)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='452' u='c' c='_ZN6google8protobuf8internal14WireFormatLite11ReadMessageEPNS0_2io16CodedInputStreamEPT_'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='431'>// Helper that is equivalent to: {
+  //  bool result = ConsumedEntireMessage();
+  //  PopLimit(limit);
+  //  UnsafeDecrementRecursionDepth();
+  //  return result; }
+  // Using this can reduce code size and complexity in some cases.
+  // Do not use unless the current recursion depth is greater than zero.</doc>

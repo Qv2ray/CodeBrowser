@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='59' type='uvw::HandleCategory uvw::BaseHandle::category() const'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='78' c='_ZNK3uvw6Handle8categoryEv'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='50'>/**
+     * @brief Gets the category of the handle.
+     *
+     * A base handle offers no functionality to promote it to the actual handle
+     * type. By means of this function, an opaque value that identifies the
+     * category of the handle is made available to the users.
+     *
+     * @return The actual category of the handle.
+     */</doc>

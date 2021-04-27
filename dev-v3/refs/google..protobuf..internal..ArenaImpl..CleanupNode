@@ -1,0 +1,10 @@
+<def f='include/google/protobuf/arena_impl.h' l='122' ll='125'/>
+<use f='include/google/protobuf/arena_impl.h' l='130' c='_ZN6google8protobuf8internal9ArenaImpl12CleanupChunk6SizeOfEm'/>
+<use f='include/google/protobuf/arena_impl.h' l='134'/>
+<use f='include/google/protobuf/arena_impl.h' l='209'/>
+<use f='include/google/protobuf/arena_impl.h' l='210'/>
+<size>16</size>
+<doc f='include/google/protobuf/arena_impl.h' l='120'>// Node contains the ptr of the object to be cleaned up and the associated
+  // cleanup function ptr.</doc>
+<mbr r='google::protobuf::internal::ArenaImpl::CleanupNode::elem' o='0' t='void *'/>
+<mbr r='google::protobuf::internal::ArenaImpl::CleanupNode::cleanup' o='64' t='void (*)(void *)'/>

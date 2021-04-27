@@ -1,0 +1,16 @@
+<dec f='include/google/protobuf/extension_set.h' l='286' type='const void * google::protobuf::internal::ExtensionSet::GetRawRepeatedField(int number, const void * default_value) const'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='928' u='c' c='_ZN6google8protobuf8internal27RepeatedPrimitiveTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1010' u='c' c='_ZN6google8protobuf8internal24RepeatedStringTypeTraits11GetRepeatedB5cxx11EiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1092' u='c' c='_ZN6google8protobuf8internal22RepeatedEnumTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<use f='include/google/protobuf/extension_set.h' l='1203' u='c' c='_ZN6google8protobuf8internal25RepeatedMessageTypeTraits11GetRepeatedEiRKNS1_12ExtensionSetE'/>
+<doc f='include/google/protobuf/extension_set.h' l='281'>// repeated fields -------------------------------------------------
+
+  // Fetches a RepeatedField extension by number; returns |default_value|
+  // if no such extension exists. User should not touch this directly; it is
+  // used by the GetRepeatedExtension() method.</doc>

@@ -1,0 +1,5 @@
+<def f='include/grpcpp/impl/codegen/status.h' l='97' ll='101' type='void grpc::Status::Status(grpc::StatusCode code, const grpc::string &amp; error_message, const grpc::string &amp; error_details)'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='568' u='c' c='_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb'/>
+<doc f='include/grpcpp/impl/codegen/status.h' l='94'>/// Construct an instance with \a code,  \a error_message and
+  /// \a error_details. It is an error to construct an OK status with non-empty
+  /// \a error_message and/or \a error_details.</doc>

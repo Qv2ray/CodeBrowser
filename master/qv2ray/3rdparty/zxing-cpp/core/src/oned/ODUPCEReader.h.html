@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ODUPCEReader.h source code [qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ZXing::OneD::UPCEReader "/>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>oned</a>/<a href='ODUPCEReader.h.html'>ODUPCEReader.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="5">5</th><td><i>*</i></td></tr>
+<tr><th id="6">6</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="7">7</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="8">8</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="9">9</th><td><i>*</i></td></tr>
+<tr><th id="10">10</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="11">11</th><td><i>*</i></td></tr>
+<tr><th id="12">12</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="13">13</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="14">14</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="15">15</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="16">16</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="17">17</th><td><i>*/</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="ODUPCEANReader.h.html">"ODUPCEANReader.h"</a></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="22">22</th><td><b>namespace</b> <span class="namespace">OneD</span> {</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc">* <span class="tag">&lt;p&gt;</span>Implements decoding of the UPC-E format.<span class="tag">&lt;/p&gt;</span></i></td></tr>
+<tr><th id="26">26</th><td><i class="doc">* <span class="tag">&lt;p&gt;</span><span class="tag">&lt;a href="<a href="http://www.barcodeisland.com/upce.phtml">http://www.barcodeisland.com/upce.phtml</a>"&gt;</span>This<span class="tag">&lt;/a&gt;</span> is a great reference for</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc">* UPC-E information.<span class="tag">&lt;/p&gt;</span></i></td></tr>
+<tr><th id="28">28</th><td><i class="doc">*</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc">* <span class="command">@author</span> Sean Owen</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="31">31</th><td><b>class</b> <dfn class="type def" id="ZXing::OneD::UPCEReader" title='ZXing::OneD::UPCEReader' data-ref="ZXing::OneD::UPCEReader" data-ref-filename="ZXing..OneD..UPCEReader">UPCEReader</dfn> : <b>public</b> <a class="type" href="ODUPCEANReader.h.html#ZXing::OneD::UPCEANReader" title='ZXing::OneD::UPCEANReader' data-ref="ZXing::OneD::UPCEANReader" data-ref-filename="ZXing..OneD..UPCEANReader">UPCEANReader</a></td></tr>
+<tr><th id="32">32</th><td>{</td></tr>
+<tr><th id="33">33</th><td><b>public</b>:</td></tr>
+<tr><th id="34">34</th><td>	<b>explicit</b> <dfn class="decl def fn" id="_ZN5ZXing4OneD10UPCEReaderC1ERKNS_11DecodeHintsE" title='ZXing::OneD::UPCEReader::UPCEReader' data-ref="_ZN5ZXing4OneD10UPCEReaderC1ERKNS_11DecodeHintsE" data-ref-filename="_ZN5ZXing4OneD10UPCEReaderC1ERKNS_11DecodeHintsE">UPCEReader</dfn>(<em>const</em> <a class="type" href="../DecodeHints.h.html#ZXing::DecodeHints" title='ZXing::DecodeHints' data-ref="ZXing::DecodeHints" data-ref-filename="ZXing..DecodeHints">DecodeHints</a>&amp; <dfn class="local col5 decl" id="15hints" title='hints' data-type='const ZXing::DecodeHints &amp;' data-ref="15hints" data-ref-filename="15hints">hints</dfn>) : <a class="type" href="ODUPCEANReader.h.html#ZXing::OneD::UPCEANReader" title='ZXing::OneD::UPCEANReader' data-ref="ZXing::OneD::UPCEANReader" data-ref-filename="ZXing..OneD..UPCEANReader">UPCEANReader</a><a class="ref fn" href="ODUPCEANReader.h.html#_ZN5ZXing4OneD12UPCEANReaderC1ERKNS_11DecodeHintsE" title='ZXing::OneD::UPCEANReader::UPCEANReader' data-ref="_ZN5ZXing4OneD12UPCEANReaderC1ERKNS_11DecodeHintsE" data-ref-filename="_ZN5ZXing4OneD12UPCEANReaderC1ERKNS_11DecodeHintsE">(</a><a class="local col5 ref" href="#15hints" title='hints' data-ref="15hints" data-ref-filename="15hints">hints</a>) {}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><b>protected</b>:</td></tr>
+<tr><th id="37">37</th><td>	<a class="type" href="../BarcodeFormat.h.html#ZXing::BarcodeFormat" title='ZXing::BarcodeFormat' data-ref="ZXing::BarcodeFormat" data-ref-filename="ZXing..BarcodeFormat">BarcodeFormat</a> <dfn class="virtual decl fn" id="_ZNK5ZXing4OneD10UPCEReader14expectedFormatEv" title='ZXing::OneD::UPCEReader::expectedFormat' data-ref="_ZNK5ZXing4OneD10UPCEReader14expectedFormatEv" data-ref-filename="_ZNK5ZXing4OneD10UPCEReader14expectedFormatEv">expectedFormat</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="38">38</th><td>	<a class="type" href="../BitArray.h.html#ZXing::BitArray" title='ZXing::BitArray' data-ref="ZXing::BitArray" data-ref-filename="ZXing..BitArray">BitArray</a>::<a class="typedef" href="../BitArray.h.html#ZXing::BitArray::Range" title='ZXing::BitArray::Range' data-type='ZXing::Range&lt;Iterator&gt;' data-ref="ZXing::BitArray::Range" data-ref-filename="ZXing..BitArray..Range">Range</a> <dfn class="virtual decl fn" id="_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='ZXing::OneD::UPCEReader::decodeMiddle' data-ref="_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">decodeMiddle</dfn>(<em>const</em> <a class="type" href="../BitArray.h.html#ZXing::BitArray" title='ZXing::BitArray' data-ref="ZXing::BitArray" data-ref-filename="ZXing..BitArray">BitArray</a>&amp; <dfn class="local col6 decl" id="16row" title='row' data-type='const ZXing::BitArray &amp;' data-ref="16row" data-ref-filename="16row">row</dfn>, <a class="type" href="../BitArray.h.html#ZXing::BitArray" title='ZXing::BitArray' data-ref="ZXing::BitArray" data-ref-filename="ZXing..BitArray">BitArray</a>::<a class="typedef" href="../BitArray.h.html#ZXing::BitArray::Iterator" title='ZXing::BitArray::Iterator' data-type='std::vector&lt;uint8_t&gt;::const_iterator' data-ref="ZXing::BitArray::Iterator" data-ref-filename="ZXing..BitArray..Iterator">Iterator</a>, <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col7 decl" id="17resultString" title='resultString' data-type='std::string &amp;' data-ref="17resultString" data-ref-filename="17resultString">resultString</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="39">39</th><td>	<em>bool</em> <dfn class="virtual decl fn" id="_ZNK5ZXing4OneD10UPCEReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='ZXing::OneD::UPCEReader::checkChecksum' data-ref="_ZNK5ZXing4OneD10UPCEReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZNK5ZXing4OneD10UPCEReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">checkChecksum</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col8 decl" id="18s" title='s' data-type='const std::string &amp;' data-ref="18s" data-ref-filename="18s">s</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="40">40</th><td>	<a class="type" href="../BitArray.h.html#ZXing::BitArray" title='ZXing::BitArray' data-ref="ZXing::BitArray" data-ref-filename="ZXing..BitArray">BitArray</a>::<a class="typedef" href="../BitArray.h.html#ZXing::BitArray::Range" title='ZXing::BitArray::Range' data-type='ZXing::Range&lt;Iterator&gt;' data-ref="ZXing::BitArray::Range" data-ref-filename="ZXing..BitArray..Range">Range</a> <dfn class="virtual decl fn" id="_ZNK5ZXing4OneD10UPCEReader9decodeEndERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE" title='ZXing::OneD::UPCEReader::decodeEnd' data-ref="_ZNK5ZXing4OneD10UPCEReader9decodeEndERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE" data-ref-filename="_ZNK5ZXing4OneD10UPCEReader9decodeEndERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE">decodeEnd</dfn>(<em>const</em> <a class="type" href="../BitArray.h.html#ZXing::BitArray" title='ZXing::BitArray' data-ref="ZXing::BitArray" data-ref-filename="ZXing..BitArray">BitArray</a>&amp; <dfn class="local col9 decl" id="19row" title='row' data-type='const ZXing::BitArray &amp;' data-ref="19row" data-ref-filename="19row">row</dfn>, <a class="type" href="../BitArray.h.html#ZXing::BitArray" title='ZXing::BitArray' data-ref="ZXing::BitArray" data-ref-filename="ZXing..BitArray">BitArray</a>::<a class="typedef" href="../BitArray.h.html#ZXing::BitArray::Iterator" title='ZXing::BitArray::Iterator' data-type='std::vector&lt;uint8_t&gt;::const_iterator' data-ref="ZXing::BitArray::Iterator" data-ref-filename="ZXing..BitArray..Iterator">Iterator</a> <dfn class="local col0 decl" id="20begin" title='begin' data-type='BitArray::Iterator' data-ref="20begin" data-ref-filename="20begin">begin</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="41">41</th><td>};</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>} <i>// OneD</i></td></tr>
+<tr><th id="44">44</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='ODMultiUPCEANReader.cpp.html'>qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

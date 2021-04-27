@@ -1,0 +1,9 @@
+<dec f='include/fcntl.h' l='151' type='int fcntl(int __fd, int __cmd)'/>
+<dec f='include/fcntl.h' l='157' type='int fcntl64(int __fd, int __cmd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='601' u='c' c='uv__nonblock_fcntl'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='617' u='c' c='uv__nonblock_fcntl'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='632' u='c' c='uv__cloexec_fcntl'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='648' u='c' c='uv__cloexec_fcntl'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='147' u='c' c='uv_pipe_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='289' u='c' c='uv__process_child_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='146' u='c' c='uv_tty_init'/>

@@ -1,0 +1,3 @@
+<dec f='include/grpc/grpc.h' l='164' type='void grpc_completion_queue_destroy(grpc_completion_queue * cq)'/>
+<doc f='include/grpc/grpc.h' l='162'>/** Destroy a completion queue. The caller must ensure that the queue is
+    drained and no threads are executing grpc_completion_queue_next */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='1160' type='bool google::protobuf::ServiceDescriptor::GetSourceLocation(google::protobuf::SourceLocation * out_location) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1155'>// Source Location ---------------------------------------------------
+
+  // Updates |*out_location| to the source location of the complete
+  // extent of this service declaration.  Returns false and leaves
+  // |*out_location| unchanged iff location information was not available.</doc>

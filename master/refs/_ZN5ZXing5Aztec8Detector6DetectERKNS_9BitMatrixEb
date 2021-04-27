@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.h' l='44' type='static ZXing::Aztec::DetectorResult ZXing::Aztec::Detector::Detect(const ZXing::BitMatrix &amp; image, bool isMirror)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='478' ll='509' type='static ZXing::Aztec::DetectorResult ZXing::Aztec::Detector::Detect(const ZXing::BitMatrix &amp; image, bool isMirror)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.h' l='37'>/**
+	* Detects an Aztec Code in an image.
+	*
+	* @param isMirror if true, image is a mirror-image of original
+	* @return {@link AztecDetectorResult} encapsulating results of detecting an Aztec Code
+	* @throws NotFoundException if no Aztec Code can be found
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='41' u='c' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='49' u='c' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>

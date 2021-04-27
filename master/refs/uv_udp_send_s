@@ -1,0 +1,16 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='235'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='647' ll='652'/>
+<size>320</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='646'>/* uv_udp_send_t is a subclass of uv_req_t. */</doc>
+<mbr r='uv_udp_send_s::data' o='0' t='void *'/>
+<mbr r='uv_udp_send_s::type' o='64' t='uv_req_type'/>
+<mbr r='uv_udp_send_s::reserved' o='128' t='void *[6]'/>
+<mbr r='uv_udp_send_s::handle' o='512' t='uv_udp_t *'/>
+<mbr r='uv_udp_send_s::cb' o='576' t='uv_udp_send_cb'/>
+<mbr r='uv_udp_send_s::queue' o='640' t='void *[2]'/>
+<mbr r='uv_udp_send_s::addr' o='768' t='struct sockaddr_storage'/>
+<mbr r='uv_udp_send_s::nbufs' o='1792' t='unsigned int'/>
+<mbr r='uv_udp_send_s::bufs' o='1856' t='uv_buf_t *'/>
+<mbr r='uv_udp_send_s::status' o='1920' t='ssize_t'/>
+<mbr r='uv_udp_send_s::send_cb' o='1984' t='uv_udp_send_cb'/>
+<mbr r='uv_udp_send_s::bufsml' o='2048' t='uv_buf_t [4]'/>

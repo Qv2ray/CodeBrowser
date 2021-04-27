@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='854' macro='1' type='uint64_t'/>
+<offset>1088</offset>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='61' u='w' c='uv_timer_init'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='84' u='w' c='uv_timer_start'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='114' u='r' c='uv_timer_again'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='116' u='r' c='uv_timer_again'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='116' u='r' c='uv_timer_again'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='124' u='w' c='uv_timer_set_repeat'/>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='129' u='r' c='uv_timer_get_repeat'/>

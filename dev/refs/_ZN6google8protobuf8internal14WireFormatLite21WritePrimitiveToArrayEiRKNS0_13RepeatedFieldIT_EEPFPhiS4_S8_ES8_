@@ -1,0 +1,16 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='566' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WritePrimitiveToArray(int field_number, const RepeatedField&lt;T&gt; &amp; value, google::protobuf::uint8 *(*)(int, T, google::protobuf::uint8 *) Writer, google::protobuf::uint8 * target)'/>
+<def f='include/google/protobuf/wire_format_lite_inl.h' l='790' ll='806' type='static google::protobuf::uint8 * google::protobuf::internal::WireFormatLite::WritePrimitiveToArray(int field_number, const RepeatedField&lt;T&gt; &amp; value, google::protobuf::uint8 *(*)(int, T, google::protobuf::uint8 *) Writer, google::protobuf::uint8 * target)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='810' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteInt32ToArrayEiRKNS0_13RepeatedFieldIiEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='814' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteInt64ToArrayEiRKNS0_13RepeatedFieldIlEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='818' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteUInt32ToArrayEiRKNS0_13RepeatedFieldIjEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='822' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteUInt64ToArrayEiRKNS0_13RepeatedFieldImEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='826' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteSInt32ToArrayEiRKNS0_13RepeatedFieldIiEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='830' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteSInt64ToArrayEiRKNS0_13RepeatedFieldIlEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='834' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19WriteFixed32ToArrayEiRKNS0_13RepeatedFieldIjEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='839' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19WriteFixed64ToArrayEiRKNS0_13RepeatedFieldImEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='844' u='c' c='_ZN6google8protobuf8internal14WireFormatLite20WriteSFixed32ToArrayEiRKNS0_13RepeatedFieldIiEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='849' u='c' c='_ZN6google8protobuf8internal14WireFormatLite20WriteSFixed64ToArrayEiRKNS0_13RepeatedFieldIlEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='854' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteFloatToArrayEiRKNS0_13RepeatedFieldIfEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='858' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteDoubleToArrayEiRKNS0_13RepeatedFieldIdEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='862' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteBoolToArrayEiRKNS0_13RepeatedFieldIbEEPh'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='866' u='c' c='_ZN6google8protobuf8internal14WireFormatLite16WriteEnumToArrayEiRKNS0_13RepeatedFieldIiEEPh'/>

@@ -1,0 +1,122 @@
+<def f='qv2ray/src/core/handler/ConfigHandler.hpp' l='19' ll='177'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='179'/>
+<size>72</size>
+<smbr r='Qv2ray::core::handler::QvConfigHandler::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler6trUtf8EPKcS4_i'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandlerD1Ev'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler14GetConnectionsEv'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler14GetConnectionsERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler9AllGroupsEv'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler9IsValidIdERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler9IsValidIdERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler9IsValidIdERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler23GetConnectionMetaObjectERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler18GetGroupMetaObjectERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler11IsConnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler24IgnoreSubscriptionUpdateERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20SaveConnectionConfigEv'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler13SubscriptionsEv'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler24GetConnectionContainedInERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14StopConnectionEv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler17RestartConnectionEv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler15ClearGroupUsageERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20ClearConnectionUsageERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERK13SAFETYPE_IMPLINS_4base8safetype14__CONFIGROOT__E11QJsonObjectERK7QStringRKNS4_6IDTypeINS4_9__GroupIdEEEb'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16UpdateConnectionERKNS_4base6IDTypeINS3_14__ConnectionIdEEERK13SAFETYPE_IMPLINS3_8safetype14__CONFIGROOT__E11QJsonObjectEb'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16RenameConnectionERKNS_4base6IDTypeINS3_14__ConnectionIdEEERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler25RemoveConnectionFromGroupERKNS_4base6IDTypeINS3_14__ConnectionIdEEERKNS4_INS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler25MoveConnectionFromToGroupERKNS_4base6IDTypeINS3_14__ConnectionIdEEERKNS4_INS3_9__GroupIdEEESC_'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler23LinkConnectionWithGroupERKNS_4base6IDTypeINS3_14__ConnectionIdEEERKNS4_INS3_9__GroupIdEEE'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler17GetConnectionRootERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16StartLatencyTestEv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16StartLatencyTestERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16StartLatencyTestERKNS_4base6IDTypeINS3_14__ConnectionIdEEENS3_6config26Qv2rayLatencyTestingMethodE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11DeleteGroupERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11RenameGroupERKNS_4base6IDTypeINS3_9__GroupIdEEERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler17GetGroupRoutingIdERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler23UpdateSubscriptionAsyncERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler18UpdateSubscriptionERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler19SetSubscriptionDataERKNS_4base6IDTypeINS3_9__GroupIdEEESt8optionalIbERKS9_I7QStringES9_IfE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler19SetSubscriptionTypeERKNS_4base6IDTypeINS3_9__GroupIdEEERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler30SetSubscriptionIncludeKeywordsERKNS_4base6IDTypeINS3_9__GroupIdEEERK11QStringList'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler30SetSubscriptionExcludeKeywordsERKNS_4base6IDTypeINS3_9__GroupIdEEERK11QStringList'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler30SetSubscriptionIncludeRelationERKNS_4base6IDTypeINS3_9__GroupIdEEENS3_26SubscriptionFilterRelationE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler30SetSubscriptionExcludeRelationERKNS_4base6IDTypeINS3_9__GroupIdEEENS3_26SubscriptionFilterRelationE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16OnStatsAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIS9_IllES9_IyyEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20OnConnectionModifiedERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler19OnConnectionRenamedERKNS_4base6IDTypeINS3_14__ConnectionIdEEERK7QStringSB_'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler28OnConnectionRemovedFromGroupERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20OnLatencyTestStartedERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler21OnLatencyTestFinishedERKNS_4base6IDTypeINS3_14__ConnectionIdEEEi'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnGroupCreatedERKNS_4base6IDTypeINS3_9__GroupIdEEERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnGroupRenamedERKNS_4base6IDTypeINS3_9__GroupIdEEERK7QStringSB_'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnGroupDeletedERKNS_4base6IDTypeINS3_9__GroupIdEEERK5QListINS4_INS3_14__ConnectionIdEEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler33OnSubscriptionAsyncUpdateFinishedERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler15OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler17p_OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler22p_OnLatencyDataArrivedERKNS_4base6IDTypeINS3_14__ConnectionIdEEERKNS_10components7latency17LatencyTestResultE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20p_OnStatsDataArrivedERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIllEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler10timerEventEP11QTimerEvent'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler22p_CHUpdateSubscriptionERKNS_4base6IDTypeINS3_9__GroupIdEEERK10QByteArray'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::saveTimerId' o='128' t='int'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::pingAllTimerId' o='160' t='int'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::pingConnectionTimerId' o='192' t='int'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::groups' o='256' t='QHash&lt;Qv2ray::base::GroupId, Qv2ray::base::GroupObject&gt;'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::connections' o='320' t='QHash&lt;Qv2ray::base::ConnectionId, Qv2ray::base::ConnectionObject&gt;'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::connectionRootCache' o='384' t='QHash&lt;Qv2ray::base::ConnectionId, Qv2ray::base::safetype::CONFIGROOT&gt;'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::pingHelper' o='448' t='Qv2ray::components::latency::LatencyTestHost *'/>
+<mbr r='Qv2ray::core::handler::QvConfigHandler::kernelHandler' o='512' t='Qv2ray::core::handler::KernelInstanceHandler *'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='352' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='876' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='883' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='890' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='897' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='904' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='911' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='918' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='925' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='932' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='939' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='946' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='953' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='960' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='967' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='974' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='981' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>72</size>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::core::handler::QvConfigHandler::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray4core7handler15QvConfigHandler10metaObjectEv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20OnKernelLogAvailableERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler16OnStatsAvailableERKNS_4base19ConnectionGroupPairERK4QMapINS3_14StatisticsTypeESt4pairIS9_IllES9_IyyEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler19OnConnectionCreatedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20OnConnectionModifiedERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler19OnConnectionRenamedERKNS_4base6IDTypeINS3_14__ConnectionIdEEERK7QStringSB_'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler27OnConnectionLinkedWithGroupERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler28OnConnectionRemovedFromGroupERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler20OnLatencyTestStartedERKNS_4base6IDTypeINS3_14__ConnectionIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler21OnLatencyTestFinishedERKNS_4base6IDTypeINS3_14__ConnectionIdEEEi'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnGroupCreatedERKNS_4base6IDTypeINS3_9__GroupIdEEERK7QString'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnGroupRenamedERKNS_4base6IDTypeINS3_9__GroupIdEEERK7QStringSB_'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnGroupDeletedERKNS_4base6IDTypeINS3_9__GroupIdEEERK5QListINS4_INS3_14__ConnectionIdEEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler33OnSubscriptionAsyncUpdateFinishedERKNS_4base6IDTypeINS3_9__GroupIdEEE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler11OnConnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler14OnDisconnectedERKNS_4base19ConnectionGroupPairE'/>
+<fun r='_ZN6Qv2ray4core7handler15QvConfigHandler15OnKernelCrashedERKNS_4base19ConnectionGroupPairERK7QString'/>
+<use f='qv2ray/src/ui/Qv2rayPlatformApplication.cpp' l='146' c='_ZN25Qv2rayPlatformApplication9RunQv2rayEv'/>
+<size>72</size>

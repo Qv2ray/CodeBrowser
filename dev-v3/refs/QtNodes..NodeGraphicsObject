@@ -1,0 +1,78 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGraphicsObject.hpp' l='16' ll='58'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='41' c='_ZNK7QtNodes4Node18nodeGraphicsObjectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='42' c='_ZN7QtNodes4Node18nodeGraphicsObjectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='43' c='_ZN7QtNodes4Node17setGraphicsObjectEOSt10unique_ptrINS_18NodeGraphicsObjectESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/Node.hpp' l='66'/>
+<size>64</size>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGraphicsObject.hpp' l='14'>/// Class reacts on GUI events, mouse clicks and
+    /// forwards painting operation.</doc>
+<smbr r='QtNodes::NodeGraphicsObject::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject10metaObjectEv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject11qt_metacastEPKc'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject2trEPKcS2_i'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObjectC1ERNS_9FlowSceneERNS_4NodeE'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObjectD1Ev'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject4nodeEv'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject4nodeEv'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject12boundingRectEv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject18setGeometryChangedEv'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject15moveConnectionsEv'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject4typeEv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject4lockEb'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject12embedQWidgetEb'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject14mouseMoveEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject15hoverEnterEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject15hoverLeaveEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject14hoverMoveEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject16contextMenuEventEP30QGraphicsSceneContextMenuEvent'/>
+<mbr r='QtNodes::NodeGraphicsObject::_scene' o='256' t='QtNodes::FlowScene &amp;'/>
+<mbr r='QtNodes::NodeGraphicsObject::_node' o='320' t='QtNodes::Node &amp;'/>
+<mbr r='QtNodes::NodeGraphicsObject::_locked' o='384' t='bool'/>
+<mbr r='QtNodes::NodeGraphicsObject::_proxyWidget' o='448' t='QGraphicsProxyWidget *'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='115' c='_ZN7QtNodes9FlowScene10createNodeEOSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='129' c='_ZN7QtNodes9FlowScene11restoreNodeERK11QJsonObject'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='268' c='_ZNK7QtNodes9FlowScene13selectedNodesEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='403' c='_ZN7QtNodes12locateNodeAtE7QPointFRNS_9FlowSceneERK10QTransform'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='408' c='_ZN7QtNodes12locateNodeAtE7QPointFRNS_9FlowSceneERK10QTransform'/>
+<size>64</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowView.cpp' l='187' c='_ZN7QtNodes8FlowView19deleteSelectedNodesEv'/>
+<size>64</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='67' c='_ZNK7QtNodes4Node18nodeGraphicsObjectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='71' c='_ZN7QtNodes4Node18nodeGraphicsObjectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='75' c='_ZN7QtNodes4Node17setGraphicsObjectEOSt10unique_ptrINS_18NodeGraphicsObjectESt14default_deleteIS2_EE'/>
+<size>64</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='140' c='_ZNK7QtNodes25NodeConnectionInteraction21nodePortScenePositionENS_8PortTypeEi'/>
+<size>64</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='20' c='_ZN7QtNodes11NodePainter12drawNodeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.hpp' l='28' c='_ZN7QtNodes11NodePainter18drawValidationRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<size>64</size>
+<fun r='_ZN7QtNodes18NodeGraphicsObjectC1ERNS_9FlowSceneERNS_4NodeE'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObjectD1Ev'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject4nodeEv'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject4nodeEv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject12embedQWidgetEb'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject12boundingRectEv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject18setGeometryChangedEv'/>
+<fun r='_ZNK7QtNodes18NodeGraphicsObject15moveConnectionsEv'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject4lockEb'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject15mousePressEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject14mouseMoveEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject17mouseReleaseEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject15hoverEnterEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject15hoverLeaveEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject14hoverMoveEventEP24QGraphicsSceneHoverEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent'/>
+<fun r='_ZN7QtNodes18NodeGraphicsObject16contextMenuEventEP30QGraphicsSceneContextMenuEvent'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='25' c='_ZN7QtNodes11NodePainter5paintEP8QPainterRNS_4NodeERKNS_9FlowSceneE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='42' c='_ZN7QtNodes11NodePainter12drawNodeRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodePainter.cpp' l='215' c='_ZN7QtNodes11NodePainter18drawValidationRectEP8QPainterRKNS_12NodeGeometryEPKNS_13NodeDataModelERKNS_18NodeGraphicsObjectE'/>
+<size>64</size>

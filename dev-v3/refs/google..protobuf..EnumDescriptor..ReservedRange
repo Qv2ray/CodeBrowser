@@ -1,0 +1,11 @@
+<def f='include/google/protobuf/descriptor.h' l='939' ll='942'/>
+<use f='include/google/protobuf/descriptor.h' l='949' c='_ZNK6google8protobuf14EnumDescriptor14reserved_rangeEi'/>
+<use f='include/google/protobuf/descriptor.h' l='955' c='_ZNK6google8protobuf14EnumDescriptor33FindReservedRangeContainingNumberEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1016'/>
+<use f='include/google/protobuf/descriptor.h' l='1909' c='_ZNK6google8protobuf14EnumDescriptor14reserved_rangeEi'/>
+<size>8</size>
+<doc f='include/google/protobuf/descriptor.h' l='936'>// Reserved fields -------------------------------------------------
+
+  // A range of reserved field numbers.</doc>
+<mbr r='google::protobuf::EnumDescriptor::ReservedRange::start' o='0' t='int'/>
+<mbr r='google::protobuf::EnumDescriptor::ReservedRange::end' o='32' t='int'/>

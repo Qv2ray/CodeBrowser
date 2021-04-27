@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/curl/multi.h' l='282'/>
+<doc f='include/x86_64-linux-gnu/curl/multi.h' l='273'>/*
+ * Name:    curl_multi_socket() and
+ *          curl_multi_socket_all()
+ *
+ * Desc:    An alternative version of curl_multi_perform() that allows the
+ *          application to pass in one of the file descriptors that have been
+ *          detected to have &quot;action&quot; on them and let libcurl perform.
+ *          See man page for details.
+ */</doc>

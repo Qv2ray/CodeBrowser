@@ -1,0 +1,4 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='319'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='316'>/* Timeout in milliseconds to wait for the serverlist from the grpclb load
+   balancer before using fallback backend addresses from the resolver.
+   If 0, fallback will never be used. Default value is 10000. */</doc>

@@ -1,0 +1,25 @@
+<inh f='qv2ray/src/components/latency/coroutine.hpp' l='9' c='coroutine'/>
+<def f='qv2ray/src/components/latency/DNSBase.hpp' l='9' ll='125'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='127' c='_ZN6Qv2ray10components7latency7DNSBaseD1Ev'/>
+<ovr f='qv2ray/src/components/latency/TCPing.hpp' l='9' c='Qv2ray::components::latency::tcping::TCPing'/>
+<use f='qv2ray/src/components/latency/TCPing.hpp' l='9'/>
+<use f='qv2ray/src/components/latency/TCPing.hpp' l='12'/>
+<ovr f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='11' c='Qv2ray::components::latency::icmping::ICMPPing'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='11'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.hpp' l='14'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBaseC1ERKSt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBaseD1Ev'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBase6isAddrEv'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBase16async_DNS_lookupEOTL0__OTL0_0_'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBase4pingEv'/>
+<mbr r='Qv2ray::components::latency::DNSBase::af' t='int'/>
+<mbr r='Qv2ray::components::latency::DNSBase::successCount' t='int'/>
+<mbr r='Qv2ray::components::latency::DNSBase::req' t='Qv2ray::components::latency::LatencyTestRequest'/>
+<mbr r='Qv2ray::components::latency::DNSBase::data' t='Qv2ray::components::latency::LatencyTestResult'/>
+<mbr r='Qv2ray::components::latency::DNSBase::testHost' t='Qv2ray::components::latency::LatencyTestHost *'/>
+<mbr r='Qv2ray::components::latency::DNSBase::storage' t='struct sockaddr_storage'/>
+<mbr r='Qv2ray::components::latency::DNSBase::digitBuffer' t='char [20]'/>
+<mbr r='Qv2ray::components::latency::DNSBase::loop' t='std::shared_ptr&lt;uvw::Loop&gt;'/>
+<mbr r='Qv2ray::components::latency::DNSBase::getAddrHandle' t='std::shared_ptr&lt;uvw::GetAddrInfoReq&gt;'/>
+<fun r='_ZN6Qv2ray10components7latency7DNSBaseD1Ev'/>

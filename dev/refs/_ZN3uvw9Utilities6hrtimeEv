@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='788' type='static uint64_t uvw::Utilities::hrtime()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='778'>/**
+     * @brief Gets the current high-resolution real time.
+     *
+     * The time is expressed in nanoseconds. It is relative to an arbitrary time
+     * in the past. It is not related to the time of the day and therefore not
+     * subject to clock drift. The primary use is for measuring performance
+     * between interval.
+     *
+     * @return The current high-resolution real time.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='314' ll='316' type='static uint64_t uvw::Utilities::hrtime()'/>

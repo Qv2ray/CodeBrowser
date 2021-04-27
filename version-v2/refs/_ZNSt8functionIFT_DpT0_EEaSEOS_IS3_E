@@ -1,0 +1,18 @@
+<def f='include/c++/10/bits/std_function.h' l='413' ll='418' type='function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp; std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::operator=(function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp;&amp; __x)'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='54' u='c' c='_ZN7QtNodes17DataModelRegistry21registerTypeConverterERKSt4pairI7QStringS2_ESt8functionIFSt10shared_ptrINS_8NodeDataEES9_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='91' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/DataModelRegistry.hpp' l='103' u='c' c='_ZN7QtNodes17DataModelRegistry17registerModelImplESt8functionIFSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS3_EEvEERK7QString'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Connection.cpp' l='254' u='c' c='_ZN7QtNodes10Connection16setTypeConverterESt8functionIFSt10shared_ptrINS_8NodeDataEES4_EE'/>
+<doc f='include/c++/10/bits/std_function.h' l='402'>/**
+       *  @brief %Function move-assignment operator.
+       *  @param __x A %function rvalue with identical call signature.
+       *  @returns @c *this
+       *
+       *  The target of @a __x is moved to @c *this. If @a __x has no
+       *  target, then @c *this will be empty.
+       *
+       *  If @a __x targets a function pointer or a reference to a function
+       *  object, then this operation will not throw an %exception.
+       */</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='52' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='56' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10canConnectERiRSt8functionIFSt10shared_ptrINS_8NodeDataEES5_EE'/>

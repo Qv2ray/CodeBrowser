@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='268' ll='279' type='bool ZXing::BitArray::hasQuiteZone(ZXing::BitArray::Iterator i, int signedZoneSize, bool allowClippedZone = true) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='282' u='c' c='_ZNK5ZXing8BitArray12hasQuiteZoneESt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEib'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='265'>// Little helper method to make common isRange use case more readable.
+	// Pass positive zone size to look for quite zone after i and negative for zone in front of i.
+	// Set allowClippedZone to false if clipping the zone at the image border is not acceptable.</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='188' u='c' c='_ZN5ZXing4OneDL16FindStartPatternERKNS_8BitArrayEPi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='239' u='c' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='117' u='c' c='_ZN5ZXing4OneDL19FindAsteriskPatternERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='196' u='c' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='154' u='c' c='_ZN5ZXing4OneDL16FindGuardPatternERKNS_8BitArrayERKT_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='75' u='c' c='_ZN5ZXing4OneD12UPCEANReader21FindStartGuardPatternERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='114' u='c' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>

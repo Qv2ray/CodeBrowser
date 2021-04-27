@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/unknown_field_set.h' l='110' type='size_t google::protobuf::UnknownFieldSet::SpaceUsedExcludingSelfLong() const'/>
+<use f='include/google/protobuf/unknown_field_set.h' l='113' u='c' c='_ZNK6google8protobuf15UnknownFieldSet22SpaceUsedExcludingSelfEv'/>
+<doc f='include/google/protobuf/unknown_field_set.h' l='107'>// Computes (an estimate of) the total number of bytes currently used for
+  // storing the unknown fields in memory. Does NOT include
+  // sizeof(*this) in the calculation.</doc>

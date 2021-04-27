@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='40' ll='60'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='24' c='_ZN3uvw13FsEventHandle13startCallbackEP13uv_fs_event_sPKcii'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='35'>/**
+ * @brief FsEventEvent event.
+ *
+ * It will be emitted by FsEventHandle according with its functionalities.
+ */</doc>
+<fun r='_ZN3uvw12FsEventEventC1EPKcNS_5FlagsINS_7details9UVFsEventEEE'/>
+<mbr r='uvw::FsEventEvent::filename' o='0' t='const char *'/>
+<mbr r='uvw::FsEventEvent::flags' o='64' t='Flags&lt;details::UVFsEvent&gt;'/>
+<fun r='_ZN3uvw12FsEventEventC1EPKcNS_5FlagsINS_7details9UVFsEventEEE'/>

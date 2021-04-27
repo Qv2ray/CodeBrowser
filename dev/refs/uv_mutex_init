@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1688' type='int uv_mutex_init(uv_mutex_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='214' u='c' c='init_threads'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='84' u='c' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='42' u='c' c='init_process_title_mutex_once'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='282' ll='302' type='int uv_mutex_init(uv_mutex_t * mutex)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='534' u='c' c='uv__custom_sem_init'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='77' u='c' c='_ZN3uvw5MutexC1ENS_14UnderlyingTypeIS0_15pthread_mutex_tE17ConstructorAccessESt10shared_ptrINS_4LoopEEb'/>

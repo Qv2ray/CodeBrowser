@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='61' type='ZXing::Result ZXing::OneD::UPCEANReader::decodeRow(int rowNumber, const ZXing::BitArray &amp; row, BitArray::Range startGuard) const'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='47'>/**
+	* &lt;p&gt;Like {@link #decodeRow(int, BitArray, java.util.Map)}, but
+	* allows caller to inform method about where the UPC/EAN start pattern is
+	* found. This allows this to be computed once and reused across many implementations.&lt;/p&gt;
+	*
+	* @param rowNumber row index into the image
+	* @param row encoding of the row of the barcode image
+	* @param startGuardRange start/end column where the opening start pattern was found
+	* @param hints optional hints that influence decoding
+	* @return {@link Result} encapsulating the result of decoding a barcode in the row
+	* @throws NotFoundException if no potential barcode is found
+	* @throws ChecksumException if a potential barcode is found but does not pass its checksum
+	* @throws FormatException if a potential barcode is found but format is invalid
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='66' u='c' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='46' c='_ZNK5ZXing4OneD10UPCAReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='48' u='c' c='_ZNK5ZXing4OneD10UPCAReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='88' u='c' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='99' ll='146' type='ZXing::Result ZXing::OneD::UPCEANReader::decodeRow(int rowNumber, const ZXing::BitArray &amp; row, BitArray::Range startGuard) const'/>

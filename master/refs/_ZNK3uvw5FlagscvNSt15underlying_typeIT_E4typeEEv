@@ -1,0 +1,8 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='170' type='uvw::Flags::Type uvw::Flags::operator typename underlying_type&lt;type-parameter-0-0&gt;::type() const'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='166'>/**
+     * @brief Casts the instance to the underlying type of `E`.
+     * @return An integral representation of the contained flags.
+     */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='72' u='c' c='_ZN3uvw10PipeHandle5chmodENS_5FlagsINS_7details12UVChmodFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='188' u='c' c='_ZN3uvw13ProcessHandle5stdioERNS_12StreamHandleIT_T0_EENS_5FlagsINS_7details12UVStdIOFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='53' u='c' c='_ZN3uvw13ProcessHandle5spawnEPKcPPcS4_'/>

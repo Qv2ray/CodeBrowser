@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/descriptor.h' l='158' type='bool'/>
+<use f='include/google/protobuf/descriptor.h' l='164' u='w' c='_ZN6google8protobuf18DebugStringOptionsC1Ev'/>
+<offset>0</offset>
+<doc f='include/google/protobuf/descriptor.h' l='154'>// include original user comments as recorded in SourceLocation entries. N.B.
+  // that this must be |false| by default: several other pieces of code (for
+  // example, the C++ code generation for fields in the proto compiler) rely on
+  // DebugString() output being unobstructed by user comments.</doc>

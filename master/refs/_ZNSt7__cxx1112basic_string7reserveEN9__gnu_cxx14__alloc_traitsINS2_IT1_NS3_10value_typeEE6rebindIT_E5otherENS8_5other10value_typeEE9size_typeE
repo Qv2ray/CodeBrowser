@@ -1,0 +1,59 @@
+<use f='include/c++/10/bits/basic_string.h' l='951' u='c' c='_ZNSt7__cxx1112basic_string13shrink_to_fitEv'/>
+<dec f='include/c++/10/bits/basic_string.h' l='988' type='void std::__cxx11::basic_string::reserve(std::__cxx11::basic_string::size_type __res_arg = 0)'/>
+<def f='include/c++/10/bits/basic_string.tcc' l='278' ll='306' type='void std::__cxx11::basic_string::reserve(std::__cxx11::basic_string::size_type __res = 0)'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='211' u='c' c='_ZNKSt7num_get16_M_extract_floatB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='469' u='c' c='_ZNKSt7num_get14_M_extract_intB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRTL0__'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='695' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='710' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
+<use f='include/c++/10/bits/locale_facets.tcc' l='742' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
+<doc f='include/c++/10/bits/basic_string.h' l='970'>/**
+       *  @brief  Attempt to preallocate enough memory for specified number of
+       *          characters.
+       *  @param  __res_arg  Number of characters required.
+       *  @throw  std::length_error  If @a __res_arg exceeds @c max_size().
+       *
+       *  This function attempts to reserve enough memory for the
+       *  %string to hold the specified number of characters.  If the
+       *  number requested is more than max_size(), length_error is
+       *  thrown.
+       *
+       *  The advantage of this function is that if optimal code is a
+       *  necessity and the user can determine the string length that will be
+       *  required, the user can reserve the memory in %advance, and thus
+       *  prevent a possible reallocation of memory and copying of %string
+       *  data.
+       */</doc>
+<use f='include/c++/10/bits/locale_facets_nonio.tcc' l='162' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/10/bits/locale_facets_nonio.tcc' l='174' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='260' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='315' u='c' c='_ZN5ZXing11TextDecoder6AppendERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKhmNS_12CharacterSetE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.cpp' l='191' u='c' c='_ZN5ZXing12_GLOBAL__N_114mapFromUnicodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKNS0_8MapEntryEmRNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.cpp' l='215' u='c' c='_ZN5ZXing11TextEncoder8GetBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetERNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextEncoder.cpp' l='227' u='c' c='_ZN5ZXing11TextEncoder8GetBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEENS_12CharacterSetERNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextUtfEncoding.cpp' l='249' u='c' c='_ZN5ZXing15TextUtfEncoding6ToUtf8ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS2_IcS3_IcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/TextUtfEncoding.cpp' l='276' u='c' c='_ZN5ZXing15TextUtfEncoding11AppendUtf16ERNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEPKtm'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='282' u='c' c='_ZN5ZXing5AztecL14GetEncodedDataB5cxx11ERKSt6vectorIbSaIbEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='502' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL6DecodeEONS_9ByteArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='252' u='c' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL6DecodeEONS_9ByteArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='270' u='c' c='_ZNK5ZXing4OneD13CodabarReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='335' u='c' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='85' u='c' c='_ZN5ZXing4OneD14Raw2TxtDecoderC1Eib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='174' u='c' c='_ZNK5ZXing4OneD12Code39Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='238' u='c' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='70' u='c' c='_ZN5ZXing4OneDL26TryToConvertToExtendedModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='120' u='c' c='_ZNK5ZXing4OneD12Code93Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='189' u='c' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='78' u='c' c='_ZN5ZXing4OneDL23Code93ConvertToExtendedERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='88' u='c' c='_ZN5ZXing4OneDL12DecodeMiddleB5cxx11EN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEES8_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='250' u='c' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.cpp' l='103' u='c' c='_ZNK5ZXing4OneD12UPCEANReader9decodeRowEiRKNS_8BitArrayENS_5RangeIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEEE'/>
+<use f='qv2ray/test/catch.hpp' l='3295' u='c' c='_ZNK5Catch8Matchers4Impl10MatchAllOf8describeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='3329' u='c' c='_ZNK5Catch8Matchers4Impl10MatchAnyOf8describeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8323' u='c' c='_ZNK5Catch15AssertionResult13getExpressionB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='8339' u='c' c='_ZNK5Catch15AssertionResult20getExpressionInMacroB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='11221' u='c' c='_ZNK5Catch7TagInfo3allB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='11636' u='c' c='_ZNK5Catch8Matchers9StdString17StringMatcherBase8describeB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='13967' u='c' c='_ZNK5Catch12TestCaseInfo12tagsAsStringB5cxx11Ev'/>
+<use f='qv2ray/test/catch.hpp' l='14521' u='c' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14522' u='c' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14937' u='c' c='_ZN5Catch11StringMakerINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEvE7convertERKS6_'/>

@@ -1,0 +1,170 @@
+<use f='include/google/protobuf/arena.h' l='692'/>
+<def f='include/google/protobuf/message_lite.h' l='164' ll='403'/>
+<use f='include/google/protobuf/message_lite.h' l='176' c='_ZNK6google8protobuf11MessageLite3NewEv'/>
+<use f='include/google/protobuf/message_lite.h' l='180' c='_ZNK6google8protobuf11MessageLite3NewEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/message_lite.h' l='217' c='_ZN6google8protobuf11MessageLite21CheckTypeAndMergeFromERKS1_'/>
+<use f='include/google/protobuf/message_lite.h' l='402' c='_ZN6google8protobuf11MessageLiteC1ERKS1_'/>
+<use f='include/google/protobuf/message_lite.h' l='402' c='_ZN6google8protobuf11MessageLiteaSERKS1_'/>
+<ovr f='include/google/protobuf/implicit_weak_message.h' l='48' c='google::protobuf::internal::ImplicitWeakMessage'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='48'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='57' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEv'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='58' c='_ZNK6google8protobuf8internal19ImplicitWeakMessage3NewEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='68' c='_ZN6google8protobuf8internal19ImplicitWeakMessage21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='95'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='103' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler16NewFromPrototypeEPKNS0_11MessageLiteEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='104' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler16NewFromPrototypeEPKNS0_11MessageLiteEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='108' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler6DeleteEPNS0_11MessageLiteEPNS0_5ArenaE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='113' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler8GetArenaEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='116' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler20GetMaybeArenaPointerEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='119' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler5ClearEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='122' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler5MergeERKNS0_11MessageLiteEPS3_'/>
+<use f='include/google/protobuf/implicit_weak_message.h' l='123' c='_ZN6google8protobuf8internal23ImplicitWeakTypeHandler5MergeERKNS0_11MessageLiteEPS3_'/>
+<use f='include/google/protobuf/repeated_field.h' l='456' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7AddWeakEPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/repeated_field.h' l='456' c='_ZN6google8protobuf8internal20RepeatedPtrFieldBase7AddWeakEPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/repeated_field.h' l='682' c='_ZN6google8protobuf8internal18GenericTypeHandler16NewFromPrototypeEPKT_PNS0_5ArenaE'/>
+<use f='include/google/protobuf/repeated_field.h' l='683' c='_ZN6google8protobuf8internal18GenericTypeHandler16NewFromPrototypeEPKT_PNS0_5ArenaE'/>
+<use f='include/google/protobuf/repeated_field.h' l='686' c='_ZN6google8protobuf8internal18GenericTypeHandler8GetArenaEPT_'/>
+<use f='include/google/protobuf/repeated_field.h' l='691' c='_ZN6google8protobuf8internal18GenericTypeHandler20GetMaybeArenaPointerEPT_'/>
+<use f='include/google/protobuf/repeated_field.h' l='695' c='_ZN6google8protobuf8internal18GenericTypeHandler5MergeERKT_PS3_'/>
+<use f='include/google/protobuf/repeated_field.h' l='696' c='_ZN6google8protobuf8internal18GenericTypeHandler5MergeERKT_PS3_'/>
+<use f='include/google/protobuf/repeated_field.h' l='1021'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='452' c='_ZN6google8protobuf8internal14WireFormatLite10WriteGroupEiRKNS0_11MessageLiteEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='454' c='_ZN6google8protobuf8internal14WireFormatLite12WriteMessageEiRKNS0_11MessageLiteEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='458' c='_ZN6google8protobuf8internal14WireFormatLite22WriteGroupMaybeToArrayEiRKNS0_11MessageLiteEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='461' c='_ZN6google8protobuf8internal14WireFormatLite24WriteMessageMaybeToArrayEiRKNS0_11MessageLiteEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='637' c='_ZN6google8protobuf8internal14WireFormatLite17WriteGroupToArrayEiRKNS0_11MessageLiteEPh'/>
+<use f='include/google/protobuf/wire_format_lite.h' l='641' c='_ZN6google8protobuf8internal14WireFormatLite19WriteMessageToArrayEiRKNS0_11MessageLiteEPh'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='182' c='_ZN6google8protobuf8internal12MapEntryImpl21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='538'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='541'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='112' c='_ZNK6google8protobuf8internal24AuxillaryParseTableField11message_aux15default_messageEv'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='113' c='_ZNK6google8protobuf8internal24AuxillaryParseTableField11message_aux15default_messageEv'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='156' c='_ZNK6google8protobuf8internal10ParseTable16default_instanceEv'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='157' c='_ZNK6google8protobuf8internal10ParseTable16default_instanceEv'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='178' c='_ZN6google8protobuf8internal27MergePartialFromCodedStreamEPNS0_11MessageLiteERKNS1_10ParseTableEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/generated_message_table_driven.h' l='180' c='_ZN6google8protobuf8internal31MergePartialFromCodedStreamLiteEPNS0_11MessageLiteERKNS1_10ParseTableEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='211' c='_ZN6google8protobuf8internal14TableSerializeERKNS0_11MessageLiteEPKNS1_18SerializationTableEPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='230' c='_ZN6google8protobuf8internal21TableSerializeToArrayERKNS0_11MessageLiteEPKNS1_18SerializationTableEbPh'/>
+<use f='include/google/protobuf/generated_message_util.h' l='300' c='_ZN6google8protobuf8internal26DuplicateIfNonNullInternalEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='300' c='_ZN6google8protobuf8internal26DuplicateIfNonNullInternalEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/generated_message_util.h' l='301' c='_ZN6google8protobuf8internal23GetOwnedMessageInternalEPNS0_5ArenaEPNS0_11MessageLiteES3_'/>
+<use f='include/google/protobuf/generated_message_util.h' l='302' c='_ZN6google8protobuf8internal23GetOwnedMessageInternalEPNS0_5ArenaEPNS0_11MessageLiteES3_'/>
+<use f='include/google/protobuf/generated_message_util.h' l='310' c='_ZN6google8protobuf8internal18DuplicateIfNonNullEPT_'/>
+<use f='include/google/protobuf/generated_message_util.h' l='319' c='_ZN6google8protobuf8internal15GetOwnedMessageEPNS0_5ArenaEPT_S3_'/>
+<ovr f='include/google/protobuf/message.h' l='189' c='google::protobuf::Message'/>
+<use f='include/google/protobuf/message.h' l='189'/>
+<use f='include/google/protobuf/message.h' l='311' c='_ZN6google8protobuf7Message21CheckTypeAndMergeFromERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='109'/>
+<use f='include/google/protobuf/extension_set.h' l='132' c='_ZN6google8protobuf8internal24GeneratedExtensionFinderC1EPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='140'/>
+<use f='include/google/protobuf/extension_set.h' l='171' c='_ZN6google8protobuf8internal12ExtensionSet17RegisterExtensionEPKNS0_11MessageLiteEihbb'/>
+<use f='include/google/protobuf/extension_set.h' l='174' c='_ZN6google8protobuf8internal12ExtensionSet21RegisterEnumExtensionEPKNS0_11MessageLiteEihbbPFbiE'/>
+<use f='include/google/protobuf/extension_set.h' l='178' c='_ZN6google8protobuf8internal12ExtensionSet24RegisterMessageExtensionEPKNS0_11MessageLiteEihbbS5_'/>
+<use f='include/google/protobuf/extension_set.h' l='181' c='_ZN6google8protobuf8internal12ExtensionSet24RegisterMessageExtensionEPKNS0_11MessageLiteEihbbS5_'/>
+<use f='include/google/protobuf/extension_set.h' l='238' c='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiRKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='239' c='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiRKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='240' c='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiPKNS0_10DescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='257' c='_ZN6google8protobuf8internal12ExtensionSet14MutableMessageEihRKNS0_11MessageLiteEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/extension_set.h' l='258' c='_ZN6google8protobuf8internal12ExtensionSet14MutableMessageEihRKNS0_11MessageLiteEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/extension_set.h' l='259' c='_ZN6google8protobuf8internal12ExtensionSet14MutableMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='266' c='_ZN6google8protobuf8internal12ExtensionSet19SetAllocatedMessageEihPKNS0_15FieldDescriptorEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='269' c='_ZN6google8protobuf8internal12ExtensionSet30UnsafeArenaSetAllocatedMessageEihPKNS0_15FieldDescriptorEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='270' c='_ZN6google8protobuf8internal12ExtensionSet14ReleaseMessageEiRKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='270' c='_ZN6google8protobuf8internal12ExtensionSet14ReleaseMessageEiRKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='271' c='_ZN6google8protobuf8internal12ExtensionSet25UnsafeArenaReleaseMessageEiRKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='272' c='_ZN6google8protobuf8internal12ExtensionSet25UnsafeArenaReleaseMessageEiRKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='274' c='_ZN6google8protobuf8internal12ExtensionSet14ReleaseMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='276' c='_ZN6google8protobuf8internal12ExtensionSet25UnsafeArenaReleaseMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='308' c='_ZNK6google8protobuf8internal12ExtensionSet18GetRepeatedMessageEii'/>
+<use f='include/google/protobuf/extension_set.h' l='320' c='_ZN6google8protobuf8internal12ExtensionSet22MutableRepeatedMessageEii'/>
+<use f='include/google/protobuf/extension_set.h' l='333' c='_ZN6google8protobuf8internal12ExtensionSet10AddMessageEihRKNS0_11MessageLiteEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/extension_set.h' l='334' c='_ZN6google8protobuf8internal12ExtensionSet10AddMessageEihRKNS0_11MessageLiteEPKNS0_15FieldDescriptorE'/>
+<use f='include/google/protobuf/extension_set.h' l='335' c='_ZN6google8protobuf8internal12ExtensionSet10AddMessageEPKNS0_15FieldDescriptorEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/extension_set.h' l='338' c='_ZN6google8protobuf8internal12ExtensionSet19AddAllocatedMessageEPKNS0_15FieldDescriptorEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='342' c='_ZN6google8protobuf8internal12ExtensionSet11ReleaseLastEi'/>
+<use f='include/google/protobuf/extension_set.h' l='373' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='378' c='_ZN6google8protobuf8internal12ExtensionSet10ParseFieldEjPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteEPNS3_17CodedOutputStreamE'/>
+<use f='include/google/protobuf/extension_set.h' l='390' c='_ZN6google8protobuf8internal12ExtensionSet15ParseMessageSetEPNS0_2io16CodedInputStreamEPKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='457' c='_ZNK6google8protobuf8internal12ExtensionSet20LazyMessageExtension10GetMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='458' c='_ZNK6google8protobuf8internal12ExtensionSet20LazyMessageExtension10GetMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='459' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension14MutableMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='459' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension14MutableMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='460' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension19SetAllocatedMessageEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='461' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension30UnsafeArenaSetAllocatedMessageEPNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='462' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension14ReleaseMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='462' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension14ReleaseMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='463' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension25UnsafeArenaReleaseMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='464' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension25UnsafeArenaReleaseMessageERKNS0_11MessageLiteE'/>
+<use f='include/google/protobuf/extension_set.h' l='478' c='_ZN6google8protobuf8internal12ExtensionSet20LazyMessageExtension11ReadMessageERKNS0_11MessageLiteEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/extension_set.h' l='508'/>
+<use f='include/google/protobuf/extension_set.h' l='520'/>
+<size>8</size>
+<doc f='include/google/protobuf/message_lite.h' l='141'>// Interface to light weight protocol messages.
+//
+// This interface is implemented by all protocol message objects.  Non-lite
+// messages additionally implement the Message interface, which is a
+// subclass of MessageLite.  Use MessageLite instead when you only need
+// the subset of features which it supports -- namely, nothing that uses
+// descriptors or reflection.  You can instruct the protocol compiler
+// to generate classes which implement only MessageLite, not the full
+// Message interface, by adding the following line to the .proto file:
+//
+//   option optimize_for = LITE_RUNTIME;
+//
+// This is particularly useful on resource-constrained systems where
+// the full protocol buffers runtime library is too big.
+//
+// Note that on non-constrained systems (e.g. servers) when you need
+// to link in lots of protocol definitions, a better way to reduce
+// total code footprint is to use optimize_for = CODE_SIZE.  This
+// will make the generated code smaller while still supporting all the
+// same features (at the expense of speed).  optimize_for = LITE_RUNTIME
+// is best when you only have a small number of message types linked
+// into your binary, in which case the size of the protocol buffers
+// runtime itself is the biggest problem.</doc>
+<fun r='_ZN6google8protobuf11MessageLiteC1Ev'/>
+<fun r='_ZN6google8protobuf11MessageLiteD1Ev'/>
+<fun r='_ZNK6google8protobuf11MessageLite11GetTypeNameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf11MessageLite3NewEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite3NewEPNS0_5ArenaE'/>
+<fun r='_ZNK6google8protobuf11MessageLite8GetArenaEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite20GetMaybeArenaPointerEv'/>
+<fun r='_ZN6google8protobuf11MessageLite5ClearEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite13IsInitializedEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite25InitializationErrorStringB5cxx11Ev'/>
+<fun r='_ZN6google8protobuf11MessageLite21CheckTypeAndMergeFromERKS1_'/>
+<fun r='_ZN6google8protobuf11MessageLite20ParseFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf11MessageLite27ParsePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf11MessageLite23ParseFromZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamE'/>
+<fun r='_ZN6google8protobuf11MessageLite30ParsePartialFromZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamE'/>
+<fun r='_ZN6google8protobuf11MessageLite30ParseFromBoundedZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamEi'/>
+<fun r='_ZN6google8protobuf11MessageLite37ParsePartialFromBoundedZeroCopyStreamEPNS0_2io19ZeroCopyInputStreamEi'/>
+<fun r='_ZN6google8protobuf11MessageLite15ParseFromStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11MessageLite22ParsePartialFromStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf11MessageLite14ParseFromArrayEPKvi'/>
+<fun r='_ZN6google8protobuf11MessageLite21ParsePartialFromArrayEPKvi'/>
+<fun r='_ZN6google8protobuf11MessageLite20MergeFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZN6google8protobuf11MessageLite27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<fun r='_ZNK6google8protobuf11MessageLite22SerializeToCodedStreamEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf11MessageLite29SerializePartialToCodedStreamEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf11MessageLite25SerializeToZeroCopyStreamEPNS0_2io20ZeroCopyOutputStreamE'/>
+<fun r='_ZNK6google8protobuf11MessageLite32SerializePartialToZeroCopyStreamEPNS0_2io20ZeroCopyOutputStreamE'/>
+<fun r='_ZNK6google8protobuf11MessageLite17SerializeToStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11MessageLite24SerializePartialToStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11MessageLite16SerializeToArrayEPvi'/>
+<fun r='_ZNK6google8protobuf11MessageLite23SerializePartialToArrayEPvi'/>
+<fun r='_ZNK6google8protobuf11MessageLite17SerializeAsStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf11MessageLite24SerializePartialAsStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf11MessageLite14AppendToStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11MessageLite21AppendPartialToStringEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf11MessageLite12ByteSizeLongEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite8ByteSizeEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite24SerializeWithCachedSizesEPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf11MessageLite31SerializeWithCachedSizesToArrayEPh'/>
+<fun r='_ZNK6google8protobuf11MessageLite13GetCachedSizeEv'/>
+<fun r='_ZNK6google8protobuf11MessageLite39InternalSerializeWithCachedSizesToArrayEbPh'/>
+<fun r='_ZN6google8protobuf11MessageLite10CastToBaseEPNS0_16RepeatedPtrFieldIT_EE'/>
+<fun r='_ZN6google8protobuf11MessageLite10CastToBaseERKNS0_16RepeatedPtrFieldIT_EE'/>
+<fun r='_ZN6google8protobuf11MessageLite18CreateMaybeMessageEPNS0_5ArenaE'/>
+<fun r='_ZNK6google8protobuf11MessageLite16InternalGetTableEv'/>
+<fun r='_ZN6google8protobuf11MessageLiteC1ERKS1_'/>

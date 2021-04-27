@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1772' type='void *'/>
+<offset>0</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1771'>/* User data - use this for whatever. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='35' u='r' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='37' u='w' c='uv_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='810' u='r' c='uv_loop_close'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='812' u='w' c='uv_loop_close'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='93' u='r' c='uv_loop_get_data'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='97' u='w' c='uv_loop_set_data'/>

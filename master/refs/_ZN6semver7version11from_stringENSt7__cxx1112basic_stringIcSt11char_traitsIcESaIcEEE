@@ -1,0 +1,18 @@
+<dec f='qv2ray/3rdparty/libsemver/version.hpp' l='106' type='static semver::version semver::version::from_string(std::string v)'/>
+<def f='qv2ray/3rdparty/libsemver/version.cpp' l='112' ll='150' type='static semver::version semver::version::from_string(std::string v)'/>
+<doc f='qv2ray/3rdparty/libsemver/version.hpp' l='95'>/**
+     * @brief Constructs a semver::version instance from a std::string.
+     *
+     * The version number @p v must comply with _Semantic Versioning 2.0.0_.  As
+     * a supported extension this class allows version numbers to contain any
+     * number of components greater than 2.
+     *
+     * @param v The version number to parse.
+     * @return A semver::version instance.
+     * @throws std::invalid_argument if @p v is not a valid version number.
+     */</doc>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='120' u='c' c='_ZN6Qv2ray17Qv2rayApplication17onMessageReceivedEj10QByteArray'/>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='122' u='c' c='_ZN6Qv2ray17Qv2rayApplication17onMessageReceivedEj10QByteArray'/>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='55' u='c' c='_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray'/>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='56' u='c' c='_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray'/>
+<use f='qv2ray/src/components/update/UpdateChecker.cpp' l='57' u='c' c='_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray'/>

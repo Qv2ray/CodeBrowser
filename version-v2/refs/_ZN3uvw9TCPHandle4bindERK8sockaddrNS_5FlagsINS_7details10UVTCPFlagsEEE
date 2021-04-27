@@ -1,0 +1,19 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='119' type='void uvw::TCPHandle::bind(const sockaddr &amp; addr, Flags&lt;uvw::TCPHandle::Bind&gt; opts = Flags&lt;uvw::TCPHandle::Bind&gt;{})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='41' ll='43' type='void uvw::TCPHandle::bind(const sockaddr &amp; addr, Flags&lt;uvw::TCPHandle::Bind&gt; opts = Flags&lt;uvw::TCPHandle::Bind&gt;{})'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='51' u='c' c='_ZN3uvw9TCPHandle4bindENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjNS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='103'>/**
+     * @brief Binds the handle to an address and port.
+     *
+     * A successful call to this function does not guarantee that the call to
+     * `listen()` or `connect()` will work properly.&lt;br/&gt;
+     * ErrorEvent events can be emitted because of either this function or the
+     * ones mentioned above.
+     *
+     * Available flags are:
+     *
+     * * `TCPHandle::Bind::IPV6ONLY`: it disables dual-stack support and only
+     * IPv6 is used.
+     *
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     * @param opts Optional additional flags.
+     */</doc>

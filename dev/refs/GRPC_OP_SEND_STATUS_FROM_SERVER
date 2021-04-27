@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='510' type='3'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='483' u='r' c='_ZN4grpc8internal22CallOpServerSendStatus5AddOpEP7grpc_opPm'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='506'>/** Send status from the server: one and only one instance MUST be sent from
+      the server unless the call was cancelled - in which case this can be
+      skipped. This op completes after all bytes for the call
+      (including the status) have passed outgoing flow control. */</doc>

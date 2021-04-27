@@ -1,0 +1,14 @@
+<def f='include/c++/10/bits/stl_list.h' l='1497' ll='1502' type='void std::__cxx11::list::clear()'/>
+<use f='include/c++/10/bits/list.tcc' l='281' u='c' c='_ZNSt7__cxx114listaSERKNS_4listIT_T0_EE'/>
+<doc f='include/c++/10/bits/stl_list.h' l='1491'>/**
+       *  Erases all the elements.  Note that this function only erases
+       *  the elements, and that if the elements themselves are
+       *  pointers, the pointed-to memory is not touched in any way.
+       *  Managing the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/httpout.hpp' l='34' macro='1' u='c' c='_ZN18HttpOutboundEditor10SetContentERK11QJsonObject'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/shadowsocks.hpp' l='30' macro='1' u='c' c='_ZN25ShadowsocksOutboundEditor10SetContentERK11QJsonObject'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/socksout.hpp' l='33' macro='1' u='c' c='_ZN19SocksOutboundEditor10SetContentERK11QJsonObject'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vless.hpp' l='31' macro='1' u='c' c='_ZN19VlessOutboundEditor10SetContentERK11QJsonObject'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='315' u='c' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler14StopConnectionEv'/>
+<use f='qv2ray/src/plugins/protocols/ui/outbound/vmess.cpp' l='28' macro='1' u='c' c='_ZN19VmessOutboundEditor10SetContentERK11QJsonObject'/>

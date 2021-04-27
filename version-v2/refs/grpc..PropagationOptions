@@ -1,0 +1,29 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='96' ll='144'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='100' c='_ZN4grpc18PropagationOptions27enable_deadline_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='105' c='_ZN4grpc18PropagationOptions28disable_deadline_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='110' c='_ZN4grpc18PropagationOptions31enable_census_stats_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='115' c='_ZN4grpc18PropagationOptions32disable_census_stats_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='120' c='_ZN4grpc18PropagationOptions33enable_census_tracing_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='125' c='_ZN4grpc18PropagationOptions34disable_census_tracing_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='130' c='_ZN4grpc18PropagationOptions31enable_cancellation_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='135' c='_ZN4grpc18PropagationOptions32disable_cancellation_propagationEv'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='181' c='_ZN4grpc13ClientContext17FromServerContextERKNS_13ServerContextENS_18PropagationOptionsE'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='181' c='_ZN4grpc13ClientContext17FromServerContextERKNS_13ServerContextENS_18PropagationOptionsE'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='436'/>
+<size>4</size>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='91'>/// Options for \a ClientContext::FromServerContext specifying which traits from
+/// the \a ServerContext to propagate (copy) from it into a new \a
+/// ClientContext.
+///
+/// \see ClientContext::FromServerContext</doc>
+<fun r='_ZN4grpc18PropagationOptionsC1Ev'/>
+<fun r='_ZN4grpc18PropagationOptions27enable_deadline_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions28disable_deadline_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions31enable_census_stats_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions32disable_census_stats_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions33enable_census_tracing_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions34disable_census_tracing_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions31enable_cancellation_propagationEv'/>
+<fun r='_ZN4grpc18PropagationOptions32disable_cancellation_propagationEv'/>
+<fun r='_ZNK4grpc18PropagationOptions9c_bitmaskEv'/>
+<mbr r='grpc::PropagationOptions::propagate_' o='0' t='uint32_t'/>

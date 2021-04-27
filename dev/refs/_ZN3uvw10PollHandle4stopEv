@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='127' type='void uvw::PollHandle::stop()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/poll.cpp' l='54' ll='56' type='void uvw::PollHandle::stop()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/poll.h' l='124'>/**
+     * @brief Stops polling the file descriptor.
+     */</doc>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='127' u='c' c='_ZL13handle_socketPviiS_S_'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='102' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing14notifyTestHostEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='124' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>

@@ -1,0 +1,10 @@
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='1073' ll='1079'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1084'/>
+<size>40</size>
+<mbr r='uv_cpu_times_s::user' o='0' t='uint64_t'/>
+<mbr r='uv_cpu_times_s::nice' o='64' t='uint64_t'/>
+<mbr r='uv_cpu_times_s::sys' o='128' t='uint64_t'/>
+<mbr r='uv_cpu_times_s::idle' o='192' t='uint64_t'/>
+<mbr r='uv_cpu_times_s::irq' o='256' t='uint64_t'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='770' c='read_times'/>
+<size>40</size>

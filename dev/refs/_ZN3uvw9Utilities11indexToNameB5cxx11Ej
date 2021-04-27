@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='680' type='static std::string uvw::Utilities::indexToName(unsigned int index)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='667'>/**
+     * @brief IPv6-capable implementation of
+     * [if_indextoname](https://linux.die.net/man/3/if_indextoname).
+     *
+     * Mapping between network interface names and indexes.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/misc.html#c.uv_if_indextoname)
+     * for further details.
+     *
+     * @param index Network interface index.
+     * @return Network interface name.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='241' ll='243' type='static std::string uvw::Utilities::indexToName(unsigned int index)'/>

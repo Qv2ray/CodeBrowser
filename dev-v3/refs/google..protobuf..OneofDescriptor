@@ -1,0 +1,58 @@
+<use f='include/google/protobuf/descriptor.h' l='302' c='_ZNK6google8protobuf10Descriptor10oneof_declEi'/>
+<use f='include/google/protobuf/descriptor.h' l='305' c='_ZNK6google8protobuf10Descriptor15FindOneofByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='451'/>
+<use f='include/google/protobuf/descriptor.h' l='483'/>
+<use f='include/google/protobuf/descriptor.h' l='664' c='_ZNK6google8protobuf15FieldDescriptor16containing_oneofEv'/>
+<use f='include/google/protobuf/descriptor.h' l='769'/>
+<use f='include/google/protobuf/descriptor.h' l='806'/>
+<def f='include/google/protobuf/descriptor.h' l='812' ll='880'/>
+<use f='include/google/protobuf/descriptor.h' l='879' c='_ZN6google8protobuf15OneofDescriptorC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='879' c='_ZN6google8protobuf15OneofDescriptoraSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='1463'/>
+<use f='include/google/protobuf/descriptor.h' l='1557' c='_ZNK6google8protobuf14DescriptorPool15FindOneofByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1847' c='_ZNK6google8protobuf10Descriptor10oneof_declEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1877' c='_ZNK6google8protobuf15FieldDescriptor16containing_oneofEv'/>
+<use f='include/google/protobuf/message.h' l='456' c='_ZNK6google8protobuf10Reflection8HasOneofERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='461' c='_ZNK6google8protobuf10Reflection10ClearOneofEPNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/message.h' l='467' c='_ZNK6google8protobuf10Reflection23GetOneofFieldDescriptorERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<size>48</size>
+<doc f='include/google/protobuf/descriptor.h' l='811'>// Describes a oneof defined in a message type.</doc>
+<fun r='_ZNK6google8protobuf15OneofDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor5indexEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor15containing_typeEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor11field_countEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor5fieldEi'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor6CopyToEPNS0_20OneofDescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor11DebugStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor15GetLocationPathEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::OneofDescriptor::name_' o='0' t='const std::string *'/>
+<mbr r='google::protobuf::OneofDescriptor::full_name_' o='64' t='const std::string *'/>
+<mbr r='google::protobuf::OneofDescriptor::containing_type_' o='128' t='const google::protobuf::Descriptor *'/>
+<mbr r='google::protobuf::OneofDescriptor::is_extendable_' o='192' t='bool'/>
+<mbr r='google::protobuf::OneofDescriptor::field_count_' o='224' t='int'/>
+<mbr r='google::protobuf::OneofDescriptor::fields_' o='256' t='const google::protobuf::FieldDescriptor **'/>
+<mbr r='google::protobuf::OneofDescriptor::options_' o='320' t='const google::protobuf::OneofOptions *'/>
+<fun r='_ZN6google8protobuf15OneofDescriptorC1Ev'/>
+<fun r='_ZN6google8protobuf15OneofDescriptorC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor15containing_typeEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor11field_countEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor5indexEv'/>
+<fun r='_ZNK6google8protobuf15OneofDescriptor5fieldEi'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='163' c='_ZNK6google8protobuf8internal16ReflectionSchema18GetOneofCaseOffsetEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='320' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection8HasOneofERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='321' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection10ClearOneofEPNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='361' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection23GetOneofFieldDescriptorERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='564' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection12GetOneofCaseERKNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='567' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection16MutableOneofCaseEPNS0_7MessageEPKNS0_15OneofDescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='598' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection14SwapOneofFieldEPNS0_7MessageES4_PKNS0_15OneofDescriptorE'/>
+<size>48</size>

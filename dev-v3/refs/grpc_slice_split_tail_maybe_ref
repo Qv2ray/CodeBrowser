@@ -1,0 +1,4 @@
+<dec f='include/grpc/slice.h' l='122' type='grpc_slice grpc_slice_split_tail_maybe_ref(grpc_slice * s, size_t split, grpc_slice_ref_whom ref_whom)'/>
+<doc f='include/grpc/slice.h' l='119'>/** The same as grpc_slice_split_tail, but with an option to skip altering
+ * refcounts (grpc_slice_split_tail_maybe_ref(..., true) is equivalent to
+ * grpc_slice_split_tail(...)) */</doc>

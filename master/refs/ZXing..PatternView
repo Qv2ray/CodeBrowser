@@ -1,0 +1,58 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='30' ll='107'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='78' c='_ZNK5ZXing11PatternView7subViewEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='146' c='_ZN5ZXing9IsPatternERKNS_11PatternViewERKNS_12FixedPatternIXT_EXT0_ELb0EEEf'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='166' c='_ZN5ZXing9IsPatternERKNS_11PatternViewERKNS_12FixedPatternIXT_EXT0_ELb1EEEf'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='193' c='_ZN5ZXing11FindPatternERKNS_11PatternViewET0_f'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='193' c='_ZN5ZXing11FindPatternERKNS_11PatternViewET0_f'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='207' c='_ZN5ZXing11FindPatternERKNS_11PatternViewERKNS_12FixedPatternIXT_EXT0_EXT1_EEEf'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Pattern.h' l='207' c='_ZN5ZXing11FindPatternERKNS_11PatternViewERKNS_12FixedPatternIXT_EXT0_EXT1_EEEf'/>
+<size>32</size>
+<mbr r='ZXing::PatternView::_data' o='0' t='ZXing::PatternView::Iterator'/>
+<mbr r='ZXing::PatternView::_size' o='64' t='int'/>
+<mbr r='ZXing::PatternView::_base' o='128' t='ZXing::PatternView::Iterator'/>
+<mbr r='ZXing::PatternView::_end' o='192' t='ZXing::PatternView::Iterator'/>
+<fun r='_ZN5ZXing11PatternViewC1Ev'/>
+<fun r='_ZN5ZXing11PatternViewC1ERKSt6vectorItSaItEE'/>
+<fun r='_ZN5ZXing11PatternViewC1EPKtiS2_S2_'/>
+<fun r='_ZNK5ZXing11PatternView4dataEv'/>
+<fun r='_ZNK5ZXing11PatternView5beginEv'/>
+<fun r='_ZNK5ZXing11PatternView3endEv'/>
+<fun r='_ZNK5ZXing11PatternViewixEi'/>
+<fun r='_ZNK5ZXing11PatternView3sumEi'/>
+<fun r='_ZNK5ZXing11PatternView4sizeEv'/>
+<fun r='_ZNK5ZXing11PatternView5indexEv'/>
+<fun r='_ZNK5ZXing11PatternView13pixelsInFrontEv'/>
+<fun r='_ZNK5ZXing11PatternView12isAtFirstBarEv'/>
+<fun r='_ZNK5ZXing11PatternView11isAtLastBarEv'/>
+<fun r='_ZNK5ZXing11PatternView7isValidEv'/>
+<fun r='_ZNK5ZXing11PatternView18hasQuiteZoneBeforeEf'/>
+<fun r='_ZNK5ZXing11PatternView17hasQuiteZoneAfterEf'/>
+<fun r='_ZNK5ZXing11PatternView7subViewEii'/>
+<fun r='_ZN5ZXing11PatternView8skipPairEv'/>
+<fun r='_ZN5ZXing11PatternView10skipSymbolEv'/>
+<fun r='_ZN5ZXing11PatternView10skipSingleEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='87' c='_ZNK5ZXing4OneD9RowReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='240' c='_ZN5ZXing4OneD9RowReader19NarrowWideThresholdERKNS_11PatternViewE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='268' c='_ZN5ZXing4OneD9RowReader20NarrowWideBitPatternERKNS_11PatternViewE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='288' c='_ZN5ZXing4OneD9RowReader19OneToFourBitPatternERKNS_11PatternViewE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='326' c='_ZN5ZXing4OneD9RowReader23DecodeNarrowWidePatternERKNS_11PatternViewERKT_RKT0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.h' l='38' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='313' c='_ZN5ZXing4OneD20IsStartOrStopPatternERKNS_11PatternViewE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.cpp' l='319' c='_ZNK5ZXing4OneD13CodabarReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.h' l='37' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='289' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='292' c='_ZNK5ZXing4OneD13Code128Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='49' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.cpp' l='221' c='_ZNK5ZXing4OneD12Code39Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.h' l='34' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='170' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='175' c='_ZNK5ZXing4OneD12Code93Reader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='50' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.cpp' l='241' c='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<size>32</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.cpp' l='37' c='_ZNK5ZXing4OneD9RowReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<size>32</size>

@@ -1,0 +1,8 @@
+<dec f='include/google/protobuf/generated_message_reflection.h' l='512' type='const int'/>
+<doc f='include/google/protobuf/generated_message_reflection.h' l='505'>// This value for unknown_field_offset_ indicates that there is no
+  // UnknownFieldSet in this message, and that instead, we are using the
+  // Zero-Overhead Arena Pointer trick. When this is the case, arena_offset_
+  // actually indexes to an InternalMetadataWithArena instance, which can return
+  // either an arena pointer or an UnknownFieldSet or both. It is never the case
+  // that unknown_field_offset_ == kUnknownFieldSetInMetadata &amp;&amp; arena_offset_
+  // == kNoArenaPointer.</doc>

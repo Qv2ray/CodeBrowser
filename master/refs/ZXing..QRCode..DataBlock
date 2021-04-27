@@ -1,0 +1,21 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='36' ll='67'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='62' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='27' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='39' c='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='29'>/**
+* &lt;p&gt;Encapsulates a block of data within a QR Code. QR Codes may split their data into
+* multiple blocks, each of which is a unit of data and error-correction codewords. Each
+* is represented by an instance of this class.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<fun r='_ZNK5ZXing6QRCode9DataBlock16numDataCodewordsEv'/>
+<fun r='_ZNK5ZXing6QRCode9DataBlock9codewordsEv'/>
+<fun r='_ZN5ZXing6QRCode9DataBlock9codewordsEv'/>
+<fun r='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<mbr r='ZXing::QRCode::DataBlock::_numDataCodewords' o='0' t='int'/>
+<mbr r='ZXing::QRCode::DataBlock::_codewords' o='64' t='ZXing::ByteArray'/>
+<fun r='_ZN5ZXing6QRCode9DataBlock13GetDataBlocksERKNS_9ByteArrayERKNS0_7VersionENS0_20ErrorCorrectionLevelE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='432' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<size>32</size>

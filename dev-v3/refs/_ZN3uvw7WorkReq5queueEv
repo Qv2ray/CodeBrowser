@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/work.h' l='54' type='void uvw::WorkReq::queue()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/work.cpp' l='23' ll='25' type='void uvw::WorkReq::queue()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/work.h' l='47'>/**
+     * @brief Runs the given task in a separate thread.
+     *
+     * A WorkEvent event will be emitted on the loop thread when the task is
+     * finished.&lt;br/&gt;
+     * This request can be cancelled with `cancel()`.
+     */</doc>

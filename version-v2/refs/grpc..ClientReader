@@ -1,0 +1,11 @@
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='164' c='_ZN4grpc8internal19ClientReaderFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='167' c='_ZN4grpc8internal19ClientReaderFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='176' ll='261'/>
+<fun r='_ZN4grpc12ClientReader22WaitForInitialMetadataEv'/>
+<fun r='_ZN4grpc12ClientReader15NextMessageSizeEPj'/>
+<fun r='_ZN4grpc12ClientReader4ReadEPT_'/>
+<fun r='_ZN4grpc12ClientReader6FinishEv'/>
+<mbr r='grpc::ClientReader::context_' t='grpc::ClientContext *'/>
+<mbr r='grpc::ClientReader::cq_' t='grpc::CompletionQueue'/>
+<mbr r='grpc::ClientReader::call_' t='::grpc::internal::Call'/>
+<fun r='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>

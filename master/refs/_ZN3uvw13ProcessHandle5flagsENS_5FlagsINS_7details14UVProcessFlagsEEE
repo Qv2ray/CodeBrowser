@@ -1,0 +1,22 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='162' type='uvw::ProcessHandle &amp; uvw::ProcessHandle::flags(Flags&lt;uvw::ProcessHandle::Process&gt; flags)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='91' ll='94' type='uvw::ProcessHandle &amp; uvw::ProcessHandle::flags(Flags&lt;uvw::ProcessHandle::Process&gt; flags)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='142'>/**
+     * @brief Sets flags that control how `spawn()` behaves.
+     *
+     * Available flags are:
+     *
+     * * `ProcessHandle::Process::SETUID`
+     * * `ProcessHandle::Process::SETGID`
+     * * `ProcessHandle::Process::WINDOWS_VERBATIM_ARGUMENTS`
+     * * `ProcessHandle::Process::DETACHED`
+     * * `ProcessHandle::Process::WINDOWS_HIDE`
+     * * `ProcessHandle::Process::WINDOWS_HIDE_CONSOLE`
+     * * `ProcessHandle::Process::WINDOWS_HIDE_GUI`
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/process.html#c.uv_process_flags)
+     * for further details.
+     *
+     * @param flags A valid set of flags.
+     * @return A reference to this process handle.
+     */</doc>

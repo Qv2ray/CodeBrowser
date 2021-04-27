@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='106' type='void QRspec_getEccSpec(int version, QRecLevel level, int * spec)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.h' l='98'>/**
+ * Return an array of ECC specification.
+ * @param version
+ * @param level
+ * @param spec an array of ECC specification contains as following:
+ * {# of type1 blocks, # of data code, # of ecc code,
+ *  # of type2 blocks, # of data code}
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='121' u='c' c='QRraw_new'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrspec.c' l='234' ll='256' type='void QRspec_getEccSpec(int version, QRecLevel level, int * spec)'/>

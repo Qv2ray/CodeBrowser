@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='249' type='uint64_t uv__hrtime(uv_clocktype_t type)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='305' u='c' c='uv__update_time'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='248'>/* platform specific */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='104' u='c' c='uv_hrtime'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='473' ll='503' type='uint64_t uv__hrtime(uv_clocktype_t type)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='802' u='c' c='uv_cond_timedwait'/>

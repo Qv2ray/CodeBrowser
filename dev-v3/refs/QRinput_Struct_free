@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='314' type='void QRinput_Struct_free(QRinput_Struct * s)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='310'>/**
+ * Free all of QRinput in the set.
+ * @param s a structured input object.
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='801' u='c' c='QRcode_encodeInputToStructured'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1406' ll='1419' type='void QRinput_Struct_free(QRinput_Struct * s)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1492' u='c' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1558' u='c' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1564' u='c' c='QRinput_splitQRinputToStruct'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1575' u='c' c='QRinput_splitQRinputToStruct'/>

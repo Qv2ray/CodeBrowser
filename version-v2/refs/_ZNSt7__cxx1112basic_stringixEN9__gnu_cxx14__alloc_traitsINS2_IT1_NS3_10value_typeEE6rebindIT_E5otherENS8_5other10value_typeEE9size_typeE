@@ -1,0 +1,24 @@
+<def f='include/c++/10/bits/basic_string.h' l='1033' ll='1042' type='std::__cxx11::basic_string::reference std::__cxx11::basic_string::operator[](std::__cxx11::basic_string::size_type __pos)'/>
+<use f='include/c++/10/bits/basic_string.h' l='6593' u='c' c='_ZNSt7__cxx119to_stringEi'/>
+<use f='include/c++/10/bits/basic_string.h' l='6601' u='c' c='_ZNSt7__cxx119to_stringEj'/>
+<use f='include/c++/10/bits/basic_string.h' l='6612' u='c' c='_ZNSt7__cxx119to_stringEl'/>
+<use f='include/c++/10/bits/basic_string.h' l='6620' u='c' c='_ZNSt7__cxx119to_stringEm'/>
+<use f='include/c++/10/bits/basic_string.h' l='6632' u='c' c='_ZNSt7__cxx119to_stringEx'/>
+<use f='include/c++/10/bits/basic_string.h' l='6640' u='c' c='_ZNSt7__cxx119to_stringEy'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1023'>/**
+       *  @brief  Subscript access to the data contained in the %string.
+       *  @param  __pos  The index of the character to access.
+       *  @return  Read/write reference to the character.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='include/c++/10/bits/locale_facets_nonio.tcc' l='320' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='8878' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='10470' u='c' c='_ZN5Catch16isDebuggerActiveEv'/>
+<use f='qv2ray/test/catch.hpp' l='13382' u='c' c='_ZN5Catch12_GLOBAL__N_120applyFilenamesAsTagsERKNS_7IConfigE'/>
+<use f='qv2ray/test/catch.hpp' l='14707' u='c' c='_ZN5Catch14TestSpecParser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='14896' u='c' c='_ZN5Catch14TestSpecParser13addTagPatternEv'/>
+<use f='qv2ray/test/catch.hpp' l='15057' u='c' c='_ZN5Catch10fpToStringB5cxx11ET_i'/>

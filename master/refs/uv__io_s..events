@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='99' type='unsigned int'/>
+<offset>352</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv/unix.h' l='99'>/* Current event mask. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='860' u='w' c='uv__io_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='884' u='r' c='uv__io_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='922' u='w' c='uv__io_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='250' u='r' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='269' u='w' c='uv__io_poll'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop.c' l='139' u='w' c='uv_loop_fork'/>

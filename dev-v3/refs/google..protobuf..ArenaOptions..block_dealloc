@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/arena.h' l='139' type='void (*)(void *, size_t)'/>
+<use f='include/google/protobuf/arena.h' l='147' u='w' c='_ZN6google8protobuf12ArenaOptionsC1Ev'/>
+<offset>320</offset>
+<doc f='include/google/protobuf/arena.h' l='136'>// A function pointer to a dealloc method that takes ownership of the blocks
+  // from the arena. By default, it contains a ptr to a wrapper function that
+  // calls free.</doc>

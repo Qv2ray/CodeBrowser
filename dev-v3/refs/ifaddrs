@@ -1,0 +1,17 @@
+<def f='include/ifaddrs.h' l='29' ll='57'/>
+<use f='include/ifaddrs.h' l='31'/>
+<use f='include/ifaddrs.h' l='66' c='getifaddrs'/>
+<use f='include/ifaddrs.h' l='69' c='freeifaddrs'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='864' c='uv__ifaddr_exclude'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='884' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='884' c='uv_interface_addresses'/>
+<size>56</size>
+<doc f='include/ifaddrs.h' l='27'>/* The `getifaddrs&apos; function generates a linked list of these structures.
+   Each element of the list describes one network interface.  */</doc>
+<mbr r='ifaddrs::ifa_next' o='0' t='struct ifaddrs *'/>
+<mbr r='ifaddrs::ifa_name' o='64' t='char *'/>
+<mbr r='ifaddrs::ifa_flags' o='128' t='unsigned int'/>
+<mbr r='ifaddrs::ifa_addr' o='192' t='struct sockaddr *'/>
+<mbr r='ifaddrs::ifa_netmask' o='256' t='struct sockaddr *'/>
+<mbr r='ifaddrs::ifa_ifu' o='320' t='union (anonymous union at /usr/include/ifaddrs.h:38:3)'/>
+<mbr r='ifaddrs::ifa_data' o='384' t='void *'/>

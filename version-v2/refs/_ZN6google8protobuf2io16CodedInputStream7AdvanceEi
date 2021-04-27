@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='583' type='void google::protobuf::io::CodedInputStream::Advance(int amount)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='908' u='c' c='_ZN6google8protobuf2io16CodedInputStream12ReadVarint32EPj'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='920' u='c' c='_ZN6google8protobuf2io16CodedInputStream12ReadVarint64EPm'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='933' u='c' c='_ZN6google8protobuf2io16CodedInputStream19ReadVarintSizeAsIntEPi'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1009' u='c' c='_ZN6google8protobuf2io16CodedInputStream16ReadTagNoLastTagEv'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1031' u='c' c='_ZN6google8protobuf2io16CodedInputStream26ReadTagWithCutoffNoLastTagEj'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1041' u='c' c='_ZN6google8protobuf2io16CodedInputStream26ReadTagWithCutoffNoLastTagEj'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1068' u='c' c='_ZN6google8protobuf2io16CodedInputStream9ExpectTagEj'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1077' u='c' c='_ZN6google8protobuf2io16CodedInputStream9ExpectTagEj'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1287' ll='1289' type='void google::protobuf::io::CodedInputStream::Advance(int amount)'/>
+<use f='include/google/protobuf/io/coded_stream.h' l='1384' u='c' c='_ZN6google8protobuf2io16CodedInputStream4SkipEi'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='582'>// Advance the buffer by a given number of bytes.</doc>

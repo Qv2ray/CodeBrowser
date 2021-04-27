@@ -1,0 +1,11 @@
+<use f='include/google/protobuf/map.h' l='564' u='c' c='_ZN6google8protobuf3Map8InnerMap6insertERKNS1_12KeyValuePairE'/>
+<use f='include/google/protobuf/map.h' l='583' u='c' c='_ZN6google8protobuf3Map8InnerMap6insertERKT_'/>
+<def f='include/google/protobuf/map.h' l='730' ll='761' type='bool google::protobuf::Map::InnerMap::ResizeIfLoadIsOutOfRange(google::protobuf::Map::size_type new_size)'/>
+<doc f='include/google/protobuf/map.h' l='722'>// Returns whether it did resize.  Currently this is only used when
+    // num_elements_ increases, though it could be used in other situations.
+    // It checks for load too low as well as load too high: because any number
+    // of erases can occur between inserts, the load could be as low as 0 here.
+    // Resizing to a lower size is not always helpful, but failing to do so can
+    // destroy the expected big-O bounds for some operations. By having the
+    // policy that sometimes we resize down as well as up, clients can easily
+    // keep O(size()) = O(number of buckets) if they want that.</doc>

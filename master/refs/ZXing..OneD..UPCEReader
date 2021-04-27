@@ -1,0 +1,16 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='42' c='ZXing::OneD::UPCEANReader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h' l='31' ll='41'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='51' c='_ZN5ZXing4OneD17MultiUPCEANReaderC1ERKNS_11DecodeHintsE'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEReader.h' l='24'>/**
+* &lt;p&gt;Implements decoding of the UPC-E format.&lt;/p&gt;
+* &lt;p&gt;&lt;a href=&quot;http://www.barcodeisland.com/upce.phtml&quot;&gt;This&lt;/a&gt; is a great reference for
+* UPC-E information.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<fun r='_ZN5ZXing4OneD10UPCEReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing4OneD10UPCEReader14expectedFormatEv'/>
+<fun r='_ZNK5ZXing4OneD10UPCEReader12decodeMiddleERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing4OneD10UPCEReader13checkChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK5ZXing4OneD10UPCEReader9decodeEndERKNS_8BitArrayEN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEE'/>

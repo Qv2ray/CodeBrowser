@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>version.hpp source code [qv2ray/3rdparty/libsemver/version.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="semver::prerelease_component,semver::version "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libsemver/version.hpp'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>qv2ray</a>/<a href='..'>3rdparty</a>/<a href='./'>libsemver</a>/<a href='version.hpp.html'>version.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (c) 2016-2017 Enrico M. Crisostomo</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This program is free software; you can redistribute it and/or modify it under</i></td></tr>
+<tr><th id="5">5</th><td><i> * the terms of the GNU General Public License as published by the Free Software</i></td></tr>
+<tr><th id="6">6</th><td><i> * Foundation; either version 3, or (at your option) any later version.</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * This program is distributed in the hope that it will be useful, but WITHOUT</i></td></tr>
+<tr><th id="9">9</th><td><i> * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS</i></td></tr>
+<tr><th id="10">10</th><td><i> * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more</i></td></tr>
+<tr><th id="11">11</th><td><i> * details.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * You should have received a copy of the GNU General Public License along with</i></td></tr>
+<tr><th id="14">14</th><td><i> * this program.  If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="15">15</th><td><i> */</i></td></tr>
+<tr><th id="16">16</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="17">17</th><td><i class="doc"> *<span class="command"> @file</span></i></td></tr>
+<tr><th id="18">18</th><td><i class="doc"> * <span class="command">@brief</span> Header of the semver::version class.</i></td></tr>
+<tr><th id="19">19</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="20">20</th><td><i class="doc"> * This header defines the semver::version class, the central type of the C++</i></td></tr>
+<tr><th id="21">21</th><td><i class="doc"> * API of `libsemver` library.</i></td></tr>
+<tr><th id="22">22</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command">@copyright</span> Copyright (c) 2016 Enrico M. Crisostomo</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *<span class="command"> @license</span> GNU General Public License v. 3.0</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> * <span class="command">@author</span> Enrico M. Crisostomo</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">@version</span> 1.0.0</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/SEMVER_UTILS_VERSION_H">SEMVER_UTILS_VERSION_H</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/SEMVER_UTILS_VERSION_H" data-ref="_M/SEMVER_UTILS_VERSION_H">SEMVER_UTILS_VERSION_H</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../../include/c++/10/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="../../../include/c++/10/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#pragma clang diagnostic push</u></td></tr>
+<tr><th id="35">35</th><td><u>#pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * <span class="command">@brief</span> Main namespace of `libsemver`.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="40">40</th><td><b>namespace</b> <span class="namespace">semver</span></td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td>  <i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">   * <span class="command">@brief</span> Class that represents a prerelease identifier.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc">   *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">   * This class represents a prerelease identifier complying with _Semantic</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">   * Versioning_ 2.0.0 (<a href="http://semver.org/">http://semver.org/</a>).</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc">   */</i></td></tr>
+<tr><th id="48">48</th><td>  <b>class</b> <dfn class="type def" id="semver::prerelease_component" title='semver::prerelease_component' data-ref="semver::prerelease_component" data-ref-filename="semver..prerelease_component">prerelease_component</dfn></td></tr>
+<tr><th id="49">49</th><td>  {</td></tr>
+<tr><th id="50">50</th><td>  <b>private</b>:</td></tr>
+<tr><th id="51">51</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">     * <span class="command">@brief</span> Indicates whether the component is a number.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="54">54</th><td>    <em>bool</em> <dfn class="decl field" id="semver::prerelease_component::is_number" title='semver::prerelease_component::is_number' data-ref="semver::prerelease_component::is_number" data-ref-filename="semver..prerelease_component..is_number">is_number</dfn>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">     * <span class="command">@brief</span> The component representation as a string.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="59">59</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="decl field" id="semver::prerelease_component::identifier" title='semver::prerelease_component::identifier' data-ref="semver::prerelease_component::identifier" data-ref-filename="semver..prerelease_component..identifier">identifier</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">     * <span class="command">@brief</span> The component numeric value.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">     * This field is meaningful only if the current component is a number.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="66">66</th><td>    <em>unsigned</em> <em>long</em> <dfn class="decl field" id="semver::prerelease_component::value_as_number" title='semver::prerelease_component::value_as_number' data-ref="semver::prerelease_component::value_as_number" data-ref-filename="semver..prerelease_component..value_as_number">value_as_number</dfn>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>  <b>public</b>:</td></tr>
+<tr><th id="69">69</th><td>    <a class="decl fn" href="version.cpp.html#_ZN6semver20prerelease_componentC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='semver::prerelease_component::prerelease_component' data-ref="_ZN6semver20prerelease_componentC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN6semver20prerelease_componentC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" id="_ZN6semver20prerelease_componentC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">prerelease_component</a>(<span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col1 decl" id="1s" title='s' data-type='std::string' data-ref="1s" data-ref-filename="1s">s</dfn>);</td></tr>
+<tr><th id="70">70</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver20prerelease_componentltERKS0_" title='semver::prerelease_component::operator&lt;' data-ref="_ZNK6semver20prerelease_componentltERKS0_" data-ref-filename="_ZNK6semver20prerelease_componentltERKS0_" id="_ZNK6semver20prerelease_componentltERKS0_"><b>operator</b>&lt;</a>(<em>const</em> <a class="type" href="#semver::prerelease_component" title='semver::prerelease_component' data-ref="semver::prerelease_component" data-ref-filename="semver..prerelease_component">prerelease_component</a>&amp; <dfn class="local col2 decl" id="2rh" title='rh' data-type='const semver::prerelease_component &amp;' data-ref="2rh" data-ref-filename="2rh">rh</dfn>) <em>const</em>;</td></tr>
+<tr><th id="71">71</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver20prerelease_componentgtERKS0_" title='semver::prerelease_component::operator&gt;' data-ref="_ZNK6semver20prerelease_componentgtERKS0_" data-ref-filename="_ZNK6semver20prerelease_componentgtERKS0_" id="_ZNK6semver20prerelease_componentgtERKS0_"><b>operator</b>&gt;</a>(<em>const</em> <a class="type" href="#semver::prerelease_component" title='semver::prerelease_component' data-ref="semver::prerelease_component" data-ref-filename="semver..prerelease_component">prerelease_component</a>&amp; <dfn class="local col3 decl" id="3rh" title='rh' data-type='const semver::prerelease_component &amp;' data-ref="3rh" data-ref-filename="3rh">rh</dfn>) <em>const</em>;</td></tr>
+<tr><th id="72">72</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver20prerelease_componenteqERKS0_" title='semver::prerelease_component::operator==' data-ref="_ZNK6semver20prerelease_componenteqERKS0_" data-ref-filename="_ZNK6semver20prerelease_componenteqERKS0_" id="_ZNK6semver20prerelease_componenteqERKS0_"><b>operator</b>==</a>(<em>const</em> <a class="type" href="#semver::prerelease_component" title='semver::prerelease_component' data-ref="semver::prerelease_component" data-ref-filename="semver..prerelease_component">prerelease_component</a>&amp; <dfn class="local col4 decl" id="4v" title='v' data-type='const semver::prerelease_component &amp;' data-ref="4v" data-ref-filename="4v">v</dfn>) <em>const</em>;</td></tr>
+<tr><th id="73">73</th><td>  };</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>  <i class="doc">/**</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">   * <span class="command">@brief</span> Class that represents a version number.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">   *</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">   * This class represents a version number complying with _Semantic Versioning_</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">   * 2.0.0 (<a href="http://semver.org/">http://semver.org/</a>).  As a supported extension this class allows</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">   * version numbers to contain any number of components greater than 2.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">   *</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">   * Instances of this class are designed to be immutable.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">   */</i></td></tr>
+<tr><th id="84">84</th><td>  <b>class</b> <dfn class="type def" id="semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</dfn></td></tr>
+<tr><th id="85">85</th><td>  {</td></tr>
+<tr><th id="86">86</th><td>  <b>private</b>:</td></tr>
+<tr><th id="87">87</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<em>unsigned</em> <em>int</em>&gt; <dfn class="decl field" id="semver::version::versions" title='semver::version::versions' data-ref="semver::version::versions" data-ref-filename="semver..version..versions">versions</dfn>;</td></tr>
+<tr><th id="88">88</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="decl field" id="semver::version::prerelease" title='semver::version::prerelease' data-ref="semver::version::prerelease" data-ref-filename="semver..version..prerelease">prerelease</dfn>;</td></tr>
+<tr><th id="89">89</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<a class="type" href="#semver::prerelease_component" title='semver::prerelease_component' data-ref="semver::prerelease_component" data-ref-filename="semver..prerelease_component">prerelease_component</a>&gt; <dfn class="decl field" id="semver::version::prerelease_comp" title='semver::version::prerelease_comp' data-ref="semver::version::prerelease_comp" data-ref-filename="semver..version..prerelease_comp">prerelease_comp</dfn>;</td></tr>
+<tr><th id="90">90</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="decl field" id="semver::version::metadata" title='semver::version::metadata' data-ref="semver::version::metadata" data-ref-filename="semver..version..metadata">metadata</dfn>;</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>    <em>void</em> <a class="decl fn" href="version.cpp.html#_ZN6semver7version16parse_prereleaseEv" title='semver::version::parse_prerelease' data-ref="_ZN6semver7version16parse_prereleaseEv" data-ref-filename="_ZN6semver7version16parse_prereleaseEv" id="_ZN6semver7version16parse_prereleaseEv">parse_prerelease</a>();</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>  <b>public</b>:</td></tr>
+<tr><th id="95">95</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * <span class="command">@brief</span> Constructs a semver::version instance from a std::string.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     * The version number<span class="command"> @p</span> <span class="arg">v</span> must comply with _Semantic Versioning 2.0.0_.  As</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * a supported extension this class allows version numbers to contain any</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     * number of components greater than 2.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">v</span> The version number to parse.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">     * <span class="command">@return</span> A semver::version instance.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">     * <span class="command">@throws</span> std::invalid_argument if<span class="command"> @p</span> <span class="arg">v</span> is not a valid version number.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="106">106</th><td>    <em>static</em> <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='semver::version::from_string' data-ref="_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" id="_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">from_string</a>(<span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col5 decl" id="5v" title='v' data-type='std::string' data-ref="5v" data-ref-filename="5v">v</dfn>);</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">     * <span class="command">@brief</span> Constructs a semver::version instance with the specified</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     * parameters.  The parameters must comply with _Semantic Versioning 2.0.0_.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">versions</span> The version components.  As a supported extension this</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * class allows versions numbers to contain any number of components greater</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     * than 2.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">prerelease</span> An optional prerelease string.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">metadata</span> An optional metadata string.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     * <span class="command">@return</span> A semver::version instance.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     * <span class="command">@throws</span> std::invalid_argument if the parameters do not comply with</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">     * _Semantic Versioning 2.0.0_.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="121">121</th><td>    <a class="decl fn" href="version.cpp.html#_ZN6semver7versionC1ESt6vectorIjSaIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_" title='semver::version::version' data-ref="_ZN6semver7versionC1ESt6vectorIjSaIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_" data-ref-filename="_ZN6semver7versionC1ESt6vectorIjSaIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_" id="_ZN6semver7versionC1ESt6vectorIjSaIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_">version</a>(<span class="namespace">std::</span><a class="type" href="../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<em>unsigned</em> <em>int</em>&gt; <dfn class="local col6 decl" id="6versions" title='versions' data-type='std::vector&lt;unsigned int&gt;' data-ref="6versions" data-ref-filename="6versions">versions</dfn>,</td></tr>
+<tr><th id="122">122</th><td>            <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col7 decl" id="7prerelease" title='prerelease' data-type='std::string' data-ref="7prerelease" data-ref-filename="7prerelease">prerelease</dfn> = <a class="ref fn fake" href="../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" data-ref-filename="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_"></a><a class="ref fn fake" href="../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" data-ref-filename="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_"></a><q>""</q>,</td></tr>
+<tr><th id="123">123</th><td>            <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="local col8 decl" id="8metadata" title='metadata' data-type='std::string' data-ref="8metadata" data-ref-filename="8metadata">metadata</dfn> = <a class="ref fn fake" href="../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" data-ref-filename="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_"></a><a class="ref fn fake" href="../../../include/c++/10/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" data-ref-filename="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_"></a><q>""</q>);</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">     * <span class="command">@brief</span> Converts a version to its string representation.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">     * <span class="command">@return</span> The string representation of this instance.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="130">130</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version3strB5cxx11Ev" title='semver::version::str' data-ref="_ZNK6semver7version3strB5cxx11Ev" data-ref-filename="_ZNK6semver7version3strB5cxx11Ev" id="_ZNK6semver7version3strB5cxx11Ev">str</a>() <em>const</em>;</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">     * <span class="command">@brief</span> Gets the version components.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">     * <span class="command">@return</span> The version components.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="137">137</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/10/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector" data-ref-filename="std..vector">vector</a>&lt;<em>unsigned</em> <em>int</em>&gt; <a class="decl fn" href="version.cpp.html#_ZNK6semver7version11get_versionEv" title='semver::version::get_version' data-ref="_ZNK6semver7version11get_versionEv" data-ref-filename="_ZNK6semver7version11get_versionEv" id="_ZNK6semver7version11get_versionEv">get_version</a>() <em>const</em>;</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc">     * <span class="command">@brief</span> Gets the specified version component.</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">     * <span class="command">@return</span> The specified version component, or 0 if the specified<span class="command"> @p</span> <span class="arg">index</span></i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">     * does not exist.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="145">145</th><td>    <em>unsigned</em> <em>int</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version11get_versionEj" title='semver::version::get_version' data-ref="_ZNK6semver7version11get_versionEj" data-ref-filename="_ZNK6semver7version11get_versionEj" id="_ZNK6semver7version11get_versionEj">get_version</a>(<em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="9index" title='index' data-type='unsigned int' data-ref="9index" data-ref-filename="9index">index</dfn>) <em>const</em>;</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc">     * <span class="command">@brief</span> Gets the prerelease string.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc">     * <span class="command">@return</span> The prerelease string.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="152">152</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version14get_prereleaseB5cxx11Ev" title='semver::version::get_prerelease' data-ref="_ZNK6semver7version14get_prereleaseB5cxx11Ev" data-ref-filename="_ZNK6semver7version14get_prereleaseB5cxx11Ev" id="_ZNK6semver7version14get_prereleaseB5cxx11Ev">get_prerelease</a>() <em>const</em>;</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">     * <span class="command">@brief</span> Gets the metadata string.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc">     * <span class="command">@return</span> The metadata string.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="159">159</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version12get_metadataB5cxx11Ev" title='semver::version::get_metadata' data-ref="_ZNK6semver7version12get_metadataB5cxx11Ev" data-ref-filename="_ZNK6semver7version12get_metadataB5cxx11Ev" id="_ZNK6semver7version12get_metadataB5cxx11Ev">get_metadata</a>() <em>const</em>;</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc">     * <span class="command">@brief</span> Bumps the major version component.</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc">     * This method uses ::bump();</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc">     * <span class="command">@return</span> A semver::version object containing the bumped version.</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="168">168</th><td>    <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version10bump_majorEv" title='semver::version::bump_major' data-ref="_ZNK6semver7version10bump_majorEv" data-ref-filename="_ZNK6semver7version10bump_majorEv" id="_ZNK6semver7version10bump_majorEv">bump_major</a>() <em>const</em>;</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc">     * <span class="command">@brief</span> Bumps the minor version component.</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc">     * This method uses ::bump();</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc">     * <span class="command">@return</span> A semver::version object representing the bumped version.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="177">177</th><td>    <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version10bump_minorEv" title='semver::version::bump_minor' data-ref="_ZNK6semver7version10bump_minorEv" data-ref-filename="_ZNK6semver7version10bump_minorEv" id="_ZNK6semver7version10bump_minorEv">bump_minor</a>() <em>const</em>;</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc">     * <span class="command">@brief</span> Bumps the patch version component.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">     * This method uses ::bump();</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc">     * <span class="command">@return</span> A semver::version object representing the bumped version.</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="186">186</th><td>    <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version10bump_patchEv" title='semver::version::bump_patch' data-ref="_ZNK6semver7version10bump_patchEv" data-ref-filename="_ZNK6semver7version10bump_patchEv" id="_ZNK6semver7version10bump_patchEv">bump_patch</a>() <em>const</em>;</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc">     * <span class="command">@brief</span> Bumps the specified version component.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc">     * The component<span class="command"> @p</span> <span class="arg">index</span> is bumped and all components whose index is grater</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc">     * than<span class="command"> @p</span> <span class="arg">index</span> are set to 0.  If<span class="command"> @p</span> <span class="arg">index</span> is greater than the current size</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc">     * `s` of the version number, then `index + 1 - s` components are added and</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc">     * set to 0.</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc">     * <span class="command">@return</span> A semver::version object representing the bumped version.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="198">198</th><td>    <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version4bumpEj" title='semver::version::bump' data-ref="_ZNK6semver7version4bumpEj" data-ref-filename="_ZNK6semver7version4bumpEj" id="_ZNK6semver7version4bumpEj">bump</a>(<em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="10index" title='index' data-type='unsigned int' data-ref="10index" data-ref-filename="10index">index</dfn>) <em>const</em>;</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc">     * <span class="command">@brief</span> Strips the prerelease component.</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc">     * <span class="command">@return</span> A semver::version object representing the modified version.</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="205">205</th><td>    <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version16strip_prereleaseEv" title='semver::version::strip_prerelease' data-ref="_ZNK6semver7version16strip_prereleaseEv" data-ref-filename="_ZNK6semver7version16strip_prereleaseEv" id="_ZNK6semver7version16strip_prereleaseEv">strip_prerelease</a>() <em>const</em>;</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc">     * <span class="command">@brief</span> Strips the metadata component.</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc">     * <span class="command">@return</span> A semver::version object representing the modified version.</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="212">212</th><td>    <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version14strip_metadataEv" title='semver::version::strip_metadata' data-ref="_ZNK6semver7version14strip_metadataEv" data-ref-filename="_ZNK6semver7version14strip_metadataEv" id="_ZNK6semver7version14strip_metadataEv">strip_metadata</a>() <em>const</em>;</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc">     * <span class="command">@brief</span> Checks whether the instance is a release version.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc">     * <span class="command">@return</span> `true` if the instance represents a release version, `false`</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc">     * otherwise.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="220">220</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver7version10is_releaseEv" title='semver::version::is_release' data-ref="_ZNK6semver7version10is_releaseEv" data-ref-filename="_ZNK6semver7version10is_releaseEv" id="_ZNK6semver7version10is_releaseEv">is_release</a>() <em>const</em>;</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc">     * <span class="command">@brief</span> Checks two instances for equality.</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc">     * Two instances are equal if and only if all its components are equal.</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">v</span> The instance to be compared with.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc">     * <span class="command">@return</span> `true` if<span class="command"> @p</span> <span class="arg">rh</span> is equal to this instance, `false` otherwise.</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="230">230</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver7versioneqERKS0_" title='semver::version::operator==' data-ref="_ZNK6semver7versioneqERKS0_" data-ref-filename="_ZNK6semver7versioneqERKS0_" id="_ZNK6semver7versioneqERKS0_"><b>operator</b>==</a>(<em>const</em> <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a>&amp; <dfn class="local col1 decl" id="11rh" title='rh' data-type='const semver::version &amp;' data-ref="11rh" data-ref-filename="11rh">rh</dfn>) <em>const</em>;</td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc">     * <span class="command">@brief</span> Compares two instances.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc">     * An instance is less than another if its version number is less than the</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc">     * other's.  Components are compared one by one, starting from the first.</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc">     * If the two components are equal, then the following component is</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc">     * considered.  If the first component is less than the second, then `true`</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc">     * is returned, otherwise `false` is returned.</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">v</span> The instance to be compared with.</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc">     * <span class="command">@return</span> `true` if this instance is less than<span class="command"> @p</span> <span class="arg">rh,</span> `false` otherwise.</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="244">244</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver7versionltERKS0_" title='semver::version::operator&lt;' data-ref="_ZNK6semver7versionltERKS0_" data-ref-filename="_ZNK6semver7versionltERKS0_" id="_ZNK6semver7versionltERKS0_"><b>operator</b>&lt;</a>(<em>const</em> <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a>&amp; <dfn class="local col2 decl" id="12rh" title='rh' data-type='const semver::version &amp;' data-ref="12rh" data-ref-filename="12rh">rh</dfn>) <em>const</em>;</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc">     * <span class="command">@brief</span> Compares two instances.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc">     * An instance is greater than another if its version number is less than</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc">     * the other's.  Components are compared one by one, starting from the</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc">     * first.  If the two components are equal, then the following component is</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc">     * considered.  If the first component is greater than the second, then</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc">     * `true` is returned, otherwise `false` is returned.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc">     * <span class="command">@param</span> <span class="arg">v</span> The instance to be compared with.</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc">     * <span class="command">@return</span> `true` if this instance is greater than<span class="command"> @p</span> <span class="arg">rh,</span> `false` otherwise.</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="258">258</th><td>    <em>bool</em> <a class="decl fn" href="version.cpp.html#_ZNK6semver7versiongtERKS0_" title='semver::version::operator&gt;' data-ref="_ZNK6semver7versiongtERKS0_" data-ref-filename="_ZNK6semver7versiongtERKS0_" id="_ZNK6semver7versiongtERKS0_"><b>operator</b>&gt;</a>(<em>const</em> <a class="type" href="#semver::version" title='semver::version' data-ref="semver::version" data-ref-filename="semver..version">version</a>&amp; <dfn class="local col3 decl" id="13rh" title='rh' data-type='const semver::version &amp;' data-ref="13rh" data-ref-filename="13rh">rh</dfn>) <em>const</em>;</td></tr>
+<tr><th id="259">259</th><td>  };</td></tr>
+<tr><th id="260">260</th><td>}</td></tr>
+<tr><th id="261">261</th><td></td></tr>
+<tr><th id="262">262</th><td><u>#<span data-ppcond="28">endif</span> // SEMVER_UTILS_VERSION_H</u></td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><u>#pragma clang diagnostic pop</u></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='version.cpp.html'>qv2ray/3rdparty/libsemver/version.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

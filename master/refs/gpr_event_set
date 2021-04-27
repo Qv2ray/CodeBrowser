@@ -1,0 +1,4 @@
+<dec f='include/grpc/support/sync.h' l='117' type='void gpr_event_set(gpr_event * ev, void * value)'/>
+<doc f='include/grpc/support/sync.h' l='114'>/** Set *ev so that gpr_event_get() and gpr_event_wait() will return value.
+   Requires:  *ev initialized; value != NULL; no prior or concurrent calls to
+   gpr_event_set(ev, ...) since initialization.  */</doc>

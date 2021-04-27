@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='236' type='int uv__tcp_nodelay(int fd, int on)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='418' u='c' c='uv__stream_open'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='370' ll='374' type='int uv__tcp_nodelay(int fd, int on)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='411' u='c' c='uv_tcp_nodelay'/>

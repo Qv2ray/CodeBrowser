@@ -1,0 +1,22 @@
+<def f='qv2ray/src/base/models/QvSettingsObject.hpp' l='44' ll='68'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='64' c='_ZNK6Qv2ray4base6config15Qv2rayConfig_UIeqERKS2_'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='66' c='_ZN6Qv2ray4base6config15Qv2rayConfig_UI8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='66' c='_ZNK6Qv2ray4base6config15Qv2rayConfig_UI6toJsonEv'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='66' c='_ZN6Qv2ray4base6config15Qv2rayConfig_UI8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/QvSettingsObject.hpp' l='190'/>
+<size>56</size>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::theme' o='0' t='QString'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::language' o='64' t='QString'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::recentConnections' o='128' t='QList&lt;Qv2ray::base::ConnectionGroupPair&gt;'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::graphConfig' o='192' t='Qv2ray::base::config::Qv2rayConfig_Graph'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::quietMode' o='320' t='bool'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::useDarkTheme' o='328' t='bool'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::useGlyphTrayIcon' o='336' t='bool'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::useDarkTrayIcon' o='344' t='bool'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::maximumLogLines' o='352' t='int'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::maxJumpListCount' o='384' t='int'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::useOldShareLinkFormat' o='416' t='bool'/>
+<mbr r='Qv2ray::base::config::Qv2rayConfig_UI::startMinimized' o='424' t='bool'/>
+<fun r='_ZN6Qv2ray4base6config15Qv2rayConfig_UI8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base6config15Qv2rayConfig_UI6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base6config15Qv2rayConfig_UI8fromJsonERK10QJsonValue'/>

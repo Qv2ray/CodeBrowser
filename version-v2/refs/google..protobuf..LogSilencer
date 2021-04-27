@@ -1,0 +1,11 @@
+<def f='include/google/protobuf/stubs/logging.h' l='228' ll='232'/>
+<size>1</size>
+<doc f='include/google/protobuf/stubs/logging.h' l='221'>// Create a LogSilencer if you want to temporarily suppress all log
+// messages.  As long as any LogSilencer objects exist, non-fatal
+// log messages will be discarded (the current LogHandler will *not*
+// be called).  Constructing a LogSilencer is thread-safe.  You may
+// accidentally suppress log messages occurring in another thread, but
+// since messages are generally for debugging purposes only, this isn&apos;t
+// a big deal.  If you want to intercept log messages, use SetLogHandler().</doc>
+<fun r='_ZN6google8protobuf11LogSilencerC1Ev'/>
+<fun r='_ZN6google8protobuf11LogSilencerD1Ev'/>

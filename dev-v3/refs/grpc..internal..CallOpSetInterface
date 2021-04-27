@@ -1,0 +1,18 @@
+<use f='include/grpcpp/impl/codegen/call_hook.h' l='33' c='_ZN4grpc8internal8CallHook16PerformOpsOnCallEPNS0_18CallOpSetInterfaceEPNS0_4CallE'/>
+<inh f='include/grpcpp/impl/codegen/completion_queue_tag.h' l='26' c='grpc::internal::CompletionQueueTag'/>
+<def f='include/grpcpp/impl/codegen/call.h' l='597' ll='607'/>
+<ovr f='include/grpcpp/impl/codegen/call.h' l='618' c='grpc::internal::CallOpSet'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='618'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='684' c='_ZN4grpc8internal4Call10PerformOpsEPNS0_18CallOpSetInterfaceE'/>
+<use f='include/grpcpp/impl/codegen/channel_interface.h' l='114' c='_ZN4grpc16ChannelInterface16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='144' c='_ZN4grpc15ServerInterface16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<use f='include/grpcpp/channel.h' l='78' c='_ZN4grpc7Channel16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<use f='include/grpcpp/server.h' l='208' c='_ZN4grpc6Server16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/call.h' l='592'>/// An abstract collection of call ops, used to generate the
+/// grpc_call_op structure to pass down to the lower layers,
+/// and as it is-a CompletionQueueTag, also massages the final
+/// completion into the correct form for consumption in the C++
+/// API.</doc>
+<fun r='_ZN4grpc8internal18CallOpSetInterface7FillOpsEP9grpc_callP7grpc_opPm'/>
+<fun r='_ZN4grpc8internal18CallOpSetInterface6cq_tagEv'/>

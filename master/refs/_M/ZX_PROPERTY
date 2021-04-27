@@ -1,0 +1,32 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='64'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='69' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='72' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='75' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='78' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='81' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='84' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='87' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='90' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='93' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='99' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='106' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='115' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecodeHints.h' l='117' u='w'/>
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='82'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='90' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='91' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='92' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='93' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='94' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='95' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='96' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='97' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='98' u='c'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='100' u='w'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/DecoderResult.h' l='75'>// Simple macro to set up getter/setter methods that save lots of boilerplate.
+	// It sets up a standard &apos;const &amp; () const&apos;, 2 setters for setting lvalues via
+	// copy and 2 for setting rvalues via move. They are provided each to work
+	// either on lvalues (normal &apos;void (...)&apos;) or on rvalues (returning &apos;*this&apos; as
+	// rvalue). The latter can be used to optionally initialize a temporary in a
+	// return statement, e.g.
+	//    return DecoderResult(bytes, text).setEcLevel(level);</doc>

@@ -1,0 +1,14 @@
+<dec f='qv2ray/src/components/latency/LatencyTest.hpp' l='49' type='Qv2ray::components::latency::LatencyTestThread *'/>
+<offset>192</offset>
+<doc f='qv2ray/src/components/latency/LatencyTest.hpp' l='46'>// we&apos;re not introduce multi latency test thread for now,
+        // cause it&apos;s easy to use a scheduler like round-robin scheme
+        // and libuv event loop is fast.</doc>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='13' u='w' c='_ZN6Qv2ray10components7latency15LatencyTestHostC1EiP7QObject'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='14' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHostC1EiP7QObject'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='19' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHostD1Ev'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='20' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHostD1Ev'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='25' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHost18StopAllLatencyTestEv'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='26' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHost18StopAllLatencyTestEv'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='27' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHost18StopAllLatencyTestEv'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='32' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHost11TestLatencyERKNS_4base6IDTypeINS3_14__ConnectionIdEEENS3_6config26Qv2rayLatencyTestingMethodE'/>
+<use f='qv2ray/src/components/latency/LatencyTest.cpp' l='36' u='r' c='_ZN6Qv2ray10components7latency15LatencyTestHost11TestLatencyERK5QListINS_4base6IDTypeINS4_14__ConnectionIdEEEENS4_6config26Qv2rayLatencyTestingMethodE'/>

@@ -1,0 +1,20 @@
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='331' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='339' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='338' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='348' ll='467'/>
+<fun r='_ZN4grpc17ClientAsyncWriterdlEPvm'/>
+<fun r='_ZN4grpc17ClientAsyncWriterdlEPvS1_'/>
+<fun r='_ZN4grpc17ClientAsyncWriter9StartCallEPv'/>
+<fun r='_ZN4grpc17ClientAsyncWriter19ReadInitialMetadataEPv'/>
+<fun r='_ZN4grpc17ClientAsyncWriter5WriteERKT_Pv'/>
+<fun r='_ZN4grpc17ClientAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<fun r='_ZN4grpc17ClientAsyncWriter10WritesDoneEPv'/>
+<fun r='_ZN4grpc17ClientAsyncWriter6FinishEPNS_6StatusEPv'/>
+<fun r='_ZN4grpc17ClientAsyncWriterC1ENS_8internal4CallEPNS_13ClientContextEPTL0__bPv'/>
+<fun r='_ZN4grpc17ClientAsyncWriter17StartCallInternalEPv'/>
+<mbr r='grpc::ClientAsyncWriter::context_' t='grpc::ClientContext *'/>
+<mbr r='grpc::ClientAsyncWriter::call_' t='::grpc::internal::Call'/>
+<mbr r='grpc::ClientAsyncWriter::started_' t='bool'/>
+<mbr r='grpc::ClientAsyncWriter::meta_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpRecvInitialMetadata&gt;'/>
+<mbr r='grpc::ClientAsyncWriter::write_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata, ::grpc::internal::CallOpSendMessage, ::grpc::internal::CallOpClientSendClose&gt;'/>
+<mbr r='grpc::ClientAsyncWriter::finish_ops_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpRecvInitialMetadata, ::grpc::internal::CallOpGenericRecvMessage, ::grpc::internal::CallOpClientRecvStatus&gt;'/>

@@ -1,0 +1,30 @@
+<def f='include/c++/10/bits/basic_string.h' l='1233' ll='1240' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::append(const _CharT * __s)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1228'>/**
+       *  @brief  Append a C string.
+       *  @param __s  The C string to append.
+       *  @return  Reference to this string.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='330' u='c' c='_ZN5ZXing5AztecL14GetEncodedDataB5cxx11ERKSt6vectorIbSaIbEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='126' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL18DecodeAsciiSegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDecoder.cpp' l='130' u='c' c='_ZN5ZXing10DataMatrix22DecodedBitStreamParserL18DecodeAsciiSegmentERNS_9BitSourceERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='419' u='c' c='_ZN5ZXing10DataMatrix10C40EncoderL10EncodeCharEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='593' u='c' c='_ZN5ZXing10DataMatrix13DMTextEncoderL10EncodeCharEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='73' u='c' c='_ZN5ZXing4OneD14Raw2TxtDecoder4fnc1Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='76' u='c' c='_ZN5ZXing4OneDL26TryToConvertToExtendedModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='84' u='c' c='_ZN5ZXing4OneDL26TryToConvertToExtendedModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='87' u='c' c='_ZN5ZXing4OneDL26TryToConvertToExtendedModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='85' u='c' c='_ZN5ZXing4OneDL23Code93ConvertToExtendedERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='111' u='c' c='_ZN5ZXing4OneDL23Code93ConvertToExtendedERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='120' u='c' c='_ZN5ZXing4OneDL23Code93ConvertToExtendedERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='133' u='c' c='_ZN5ZXing4OneDL23Code93ConvertToExtendedERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='77' u='c' c='_ZN5ZXing4OneD3RSSL24AI01EncodeCompressedGtinERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_8BitArrayEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='114' u='c' c='_ZN5ZXing4OneD3RSSL21DecodeAI01AndOtherAIsB5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='151' u='c' c='_ZN5ZXing4OneD3RSSL14DecodeAI013103B5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='172' u='c' c='_ZN5ZXing4OneD3RSSL14DecodeAI01320xB5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='193' u='c' c='_ZN5ZXing4OneD3RSSL14DecodeAI01392xB5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='219' u='c' c='_ZN5ZXing4OneD3RSSL14DecodeAI01393xB5cxx11ERKNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='255' u='c' c='_ZN5ZXing4OneD3RSSL16DecodeAI013x0x1xB5cxx11ERKNS_8BitArrayEPKcS6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/rss/ODRSSExpandedBinaryDecoder.cpp' l='268' u='c' c='_ZN5ZXing4OneD3RSSL16DecodeAI013x0x1xB5cxx11ERKNS_8BitArrayEPKcS6_'/>
+<use f='qv2ray/test/catch.hpp' l='14899' u='c' c='_ZN5Catch11StringMakerINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvE7convertERKS6_'/>
+<use f='qv2ray/test/catch.hpp' l='14902' u='c' c='_ZN5Catch11StringMakerINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvE7convertERKS6_'/>
+<use f='qv2ray/test/catch.hpp' l='14909' u='c' c='_ZN5Catch11StringMakerINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvE7convertERKS6_'/>

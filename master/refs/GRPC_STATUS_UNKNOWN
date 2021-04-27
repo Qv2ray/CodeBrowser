@@ -1,0 +1,7 @@
+<dec f='include/grpc/impl/codegen/status.h' l='38' type='2'/>
+<use f='include/grpcpp/impl/codegen/status.h' l='43' u='r' c='_ZN4grpc6StatusC1Ev'/>
+<doc f='include/grpc/impl/codegen/status.h' l='33'>/** Unknown error.  An example of where this error may be returned is
+     if a Status value received from another address space belongs to
+     an error-space that is not known in this address space.  Also
+     errors raised by APIs that do not return enough error information
+     may be converted to this error. */</doc>

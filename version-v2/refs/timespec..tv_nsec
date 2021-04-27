@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/bits/types/struct_timespec.h' l='16' type='__syscall_slong_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/types/struct_timespec.h' l='16'>/* Nanoseconds.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='1523' u='w' c='uv_sleep'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='211' u='w' c='uv__fs_to_timespec'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1308' u='r' c='uv__to_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1310' u='r' c='uv__to_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1312' u='r' c='uv__to_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1321' u='r' c='uv__to_stat'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='488' u='r' c='uv__hrtime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='502' u='r' c='uv__hrtime'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='805' u='w' c='uv_cond_timedwait'/>

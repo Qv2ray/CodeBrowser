@@ -1,0 +1,56 @@
+<def f='include/c++/10/type_traits' l='2249' ll='2251'/>
+<use f='include/c++/10/type_traits' l='2250'/>
+<def f='include/c++/10/type_traits' l='2254' ll='2257'/>
+<use f='include/c++/10/type_traits' l='2256'/>
+<use f='include/c++/10/type_traits' l='2266'/>
+<def f='include/c++/10/type_traits' l='2279' ll='2282'/>
+<def f='include/c++/10/type_traits' l='2292' ll='2296'/>
+<use f='include/c++/10/type_traits' l='2294'/>
+<use f='include/c++/10/type_traits' l='2304'/>
+<use f='include/c++/10/type_traits' l='2562'/>
+<use f='include/c++/10/bits/uniform_int_dist.h' l='248' c='_ZNSt24uniform_int_distributionclERTL0__RKNS_10param_typeE'/>
+<use f='include/c++/10/bits/uniform_int_dist.h' l='317' c='_ZNSt24uniform_int_distribution15__generate_implETL0__S0_RTL0_0_RKNS_10param_typeE'/>
+<use f='include/c++/10/bits/stl_algo.h' l='3768' c='_ZSt7shuffleT_S_OT0_'/>
+<use f='include/c++/10/bits/unique_ptr.h' l='799' c='_ZStltRKSt10unique_ptrIT_T0_ERKS_IT1_T2_E'/>
+<use f='include/c++/10/bits/shared_ptr_base.h' l='1491' c='_ZStltRKSt12__shared_ptrIT_XT1_EERKS_IT0_XT1_EE'/>
+<use f='include/c++/10/bits/shared_ptr.h' l='491' c='_ZStltRKSt10shared_ptrIT_ERKS_IT0_E'/>
+<def f='include/c++/10/chrono' l='108' ll='112'/>
+<use f='include/c++/10/chrono' l='111'/>
+<def f='include/c++/10/chrono' l='132' ll='136'/>
+<use f='include/c++/10/chrono' l='135'/>
+<use f='include/c++/10/chrono' l='229' c='_ZNSt6chrono13duration_castERKNS_8durationIT0_T1_EE'/>
+<use f='include/c++/10/chrono' l='542' c='_ZNSt6chronoplERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='549' c='_ZNSt6chronoplERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='556' c='_ZNSt6chronomiERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='563' c='_ZNSt6chronomiERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='576'/>
+<use f='include/c++/10/chrono' l='589' c='_ZNSt6chronomlERKNS_8durationIT_T0_EERKT1_'/>
+<use f='include/c++/10/chrono' l='605' c='_ZNSt6chronodvERKNS_8durationIT_T0_EERKT1_'/>
+<use f='include/c++/10/chrono' l='612' c='_ZNSt6chronodvERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='618' c='_ZNSt6chronodvERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='628' c='_ZNSt6chronormERKNS_8durationIT_T0_EERKT1_'/>
+<use f='include/c++/10/chrono' l='635' c='_ZNSt6chronormERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='642' c='_ZNSt6chronormERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='656' c='_ZNSt6chronoeqERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='668' c='_ZNSt6chronoltERKNS_8durationIT_T0_EERKNS0_IT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='866' c='_ZNSt6chronoplERKNS_10time_pointIT_T0_EERKNS_8durationIT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='871' c='_ZNSt6chronoplERKNS_10time_pointIT_T0_EERKNS_8durationIT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='880' c='_ZNSt6chronoplERKNS_8durationIT_T0_EERKNS_10time_pointIT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='885' c='_ZNSt6chronoplERKNS_8durationIT_T0_EERKNS_10time_pointIT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='894' c='_ZNSt6chronomiERKNS_10time_pointIT_T0_EERKNS_8durationIT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='899' c='_ZNSt6chronomiERKNS_10time_pointIT_T0_EERKNS_8durationIT1_T2_EE'/>
+<use f='include/c++/10/chrono' l='910' c='_ZNSt6chronomiERKNS_10time_pointIT_T0_EERKNS0_IS1_T1_EE'/>
+<use f='include/c++/10/bits/random.tcc' l='746' c='_ZNSt23independent_bits_engineclEv'/>
+<size>1</size>
+<doc f='include/c++/10/type_traits' l='2248'>// If sizeof...(T) is zero, there shall be no member type.</doc>
+<doc f='include/c++/10/type_traits' l='2253'>// If sizeof...(T) is one, the same type, if any, as common_type_t&lt;T0, T0&gt;.</doc>
+<doc f='include/c++/10/type_traits' l='2278'>// If sizeof...(T) is two, ...</doc>
+<doc f='include/c++/10/type_traits' l='2291'>// If sizeof...(T) is greater than two, ...</doc>
+<doc f='include/c++/10/chrono' l='104'>/// @endcond
+
+  /// Specialization of common_type for chrono::duration types.
+  /// @relates duration</doc>
+<doc f='include/c++/10/chrono' l='128'>/// @endcond
+
+  /// Specialization of common_type for chrono::time_point types.
+  /// @relates time_point</doc>

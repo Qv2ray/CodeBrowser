@@ -1,0 +1,5 @@
+<dec f='include/ifaddrs.h' l='69' type='void freeifaddrs(struct ifaddrs * __ifa)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='904' u='c' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='911' u='c' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='959' u='c' c='uv_interface_addresses'/>
+<doc f='include/ifaddrs.h' l='68'>/* Reclaim the storage allocated by a previous `getifaddrs&apos; call.  */</doc>

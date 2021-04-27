@@ -1,0 +1,4 @@
+<dec f='qv2ray/src/core/connection/Generation.hpp' l='24' type='Qv2ray::base::safetype::INBOUNDSETTING Qv2ray::core::connection::generation::inbounds::GenerateHTTPIN(const QList&lt;Qv2ray::base::objects::AccountObject&gt; &amp; accounts, int timeout = 300, bool allowTransparent = true, int userLevel = 0)'/>
+<def f='qv2ray/src/core/connection/generation/inbounds.cpp' l='12' ll='29' type='Qv2ray::base::safetype::INBOUNDSETTING Qv2ray::core::connection::generation::inbounds::GenerateHTTPIN(const QList&lt;Qv2ray::base::objects::AccountObject&gt; &amp; _accounts, int timeout = 300, bool allowTransparent = true, int userLevel = 0)'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='174' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='710' u='c' c='_ZN11RouteEditor24on_addDefaultBtn_clickedEv'/>

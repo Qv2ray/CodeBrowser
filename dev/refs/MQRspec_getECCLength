@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='58' type='int MQRspec_getECCLength(int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.h' l='52'>/**
+ * Return maximum error correction code length (bytes) for the version.
+ * @param version
+ * @param level
+ * @return ECC size (bytes)
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/mqrspec.c' l='75' ll='78' type='int MQRspec_getECCLength(int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='215' u='c' c='MQRraw_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='143' u='c' c='QRinput_newMQR'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='195' u='c' c='QRinput_setVersionAndErrorCorrectionLevel'/>

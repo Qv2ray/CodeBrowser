@@ -1,0 +1,18 @@
+<dec f='include/c++/10/bits/stl_vector.h' l='695' type='vector&lt;_Tp, _Alloc&gt; &amp; std::vector::operator=(const vector&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<def f='include/c++/10/bits/vector.tcc' l='196' ll='253' type='vector&lt;_Tp, _Alloc&gt; &amp; std::vector::operator=(const vector&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='685'>/**
+       *  @brief  %Vector assignment operator.
+       *  @param  __x  A %vector of identical element and allocator types.
+       *
+       *  All the elements of @a __x are copied, but any unused capacity in
+       *  @a __x will not be copied.
+       *
+       *  Whether the allocator is copied depends on the allocator traits.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='235' u='c' c='_ZN5ZXingL19DivideWithRemainderERKSt6vectorImSaImEES4_RS2_S5_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='274' u='c' c='_ZN5ZXingL19DivideWithRemainderERKSt6vectorImSaImEES4_RS2_S5_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='456' u='c' c='_ZN5ZXing10BigInteger8SubtractERKS0_S2_RS0_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecoderResultExtra.h' l='67' u='c' c='_ZN5ZXing6Pdf41718DecoderResultExtra15setOptionalDataERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='46' u='c' c='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='95' u='c' c='_ZNK5ZXing6Pdf4176Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='116' u='c' c='_ZNK5ZXing6Pdf4176Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

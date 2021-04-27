@@ -1,0 +1,10 @@
+<def f='include/c++/10/bits/regex.h' l='1850' ll='1852' type='std::__cxx11::match_results::string_type std::__cxx11::match_results::str(std::__cxx11::match_results::size_type __sub = 0) const'/>
+<doc f='include/c++/10/bits/regex.h' l='1841'>/**
+       * @brief Gets the match or submatch converted to a string type.
+       * @param __sub indicates the submatch.
+       * @pre   ready() == true
+       *
+       * This function gets the submatch (or match, if @p __sub is
+       * zero) extracted from the target range and converted to the
+       * associated string type.
+       */</doc>

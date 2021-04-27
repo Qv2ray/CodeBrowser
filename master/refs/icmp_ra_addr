@@ -1,0 +1,8 @@
+<def f='include/netinet/ip_icmp.h' l='131' ll='135'/>
+<use f='include/netinet/ip_icmp.h' l='190'/>
+<size>8</size>
+<doc f='include/netinet/ip_icmp.h' l='128'>/*
+ * Internal of an ICMP Router Advertisement
+ */</doc>
+<mbr r='icmp_ra_addr::ira_addr' o='0' t='uint32_t'/>
+<mbr r='icmp_ra_addr::ira_preference' o='32' t='uint32_t'/>

@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='192' macro='1' type='8'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='163' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='263' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='769' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='89' u='r' c='uv_poll_init'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='135' macro='1' c='uv_handle_size'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='521' macro='1' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='6' macro='1' c='uv_handle_type_name'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='31'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='159' c='_ZN3uvw9Utilities11guessHandleENS_7details13UVTypeWrapperI14uv_handle_typeEE'/>

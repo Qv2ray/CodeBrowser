@@ -1,0 +1,15 @@
+<inh f='include/grpcpp/impl/codegen/server_interface.h' l='167' c='grpc::ServerInterface::RegisteredAsyncRequest'/>
+<def f='include/grpcpp/impl/codegen/server_interface.h' l='195' ll='251'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='275' c='_ZN4grpc15ServerInterface16RequestAsyncCallEPNS_8internal16RpcServiceMethodEPNS_13ServerContextEPNS1_29ServerAsyncStreamingInterfaceEPNS_15CompletionQ12813302'/>
+<fun r='_ZN4grpc15ServerInterface19PayloadAsyncRequestC1EPvPS0_PNS_13ServerContextEPNS_8internal29ServerAsyncStreamingInterfaceEPNS_15CompletionQueueEPNS_21Se4045928'/>
+<fun r='_ZN4grpc15ServerInterface19PayloadAsyncRequestD1Ev'/>
+<fun r='_ZN4grpc15ServerInterface19PayloadAsyncRequest14FinalizeResultEPPvPb'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::registered_method_' t='void *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::server_' t='grpc::ServerInterface *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::context_' t='grpc::ServerContext *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::stream_' t='internal::ServerAsyncStreamingInterface *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::call_cq_' t='grpc::CompletionQueue *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::notification_cq_' t='grpc::ServerCompletionQueue *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::tag_' t='void *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::request_' t='Message *const'/>
+<mbr r='grpc::ServerInterface::PayloadAsyncRequest::payload_' t='grpc::ByteBuffer'/>

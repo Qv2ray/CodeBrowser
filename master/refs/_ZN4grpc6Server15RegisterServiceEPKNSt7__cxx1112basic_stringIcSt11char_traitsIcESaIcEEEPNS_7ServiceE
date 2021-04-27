@@ -1,0 +1,3 @@
+<dec f='include/grpcpp/server.h' l='130' type='bool grpc::Server::RegisterService(const grpc::string * host, grpc::Service * service)'/>
+<doc f='include/grpcpp/server.h' l='128'>/// Register a service. This call does not take ownership of the service.
+  /// The service must exist for the lifetime of the Server instance.</doc>

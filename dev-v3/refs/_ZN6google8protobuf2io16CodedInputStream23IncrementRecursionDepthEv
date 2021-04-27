@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='410' type='bool google::protobuf::io::CodedInputStream::IncrementRecursionDepth()'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1301' ll='1304' type='bool google::protobuf::io::CodedInputStream::IncrementRecursionDepth()'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='433' u='c' c='_ZN6google8protobuf8internal14WireFormatLite9ReadGroupEiPNS0_2io16CodedInputStreamEPT_'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='408'>// Increments the current recursion depth.  Returns true if the depth is
+  // under the limit, false if it has gone over.</doc>

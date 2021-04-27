@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/impl/codegen/channel_interface.h' l='62' type='grpc_connectivity_state grpc::ChannelInterface::GetState(bool try_to_connect)'/>
+<use f='include/grpcpp/impl/codegen/channel_interface.h' l='85' u='c' c='_ZN4grpc16ChannelInterface16WaitForConnectedET_'/>
+<doc f='include/grpcpp/impl/codegen/channel_interface.h' l='60'>/// Get the current channel state. If the channel is in IDLE and
+  /// \a try_to_connect is set to true, try to connect.</doc>

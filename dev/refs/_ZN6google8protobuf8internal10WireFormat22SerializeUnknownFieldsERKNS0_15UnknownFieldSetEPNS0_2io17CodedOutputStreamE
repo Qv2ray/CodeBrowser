@@ -1,0 +1,17 @@
+<dec f='include/google/protobuf/wire_format.h' l='144' type='static void google::protobuf::internal::WireFormat::SerializeUnknownFields(const google::protobuf::UnknownFieldSet &amp; unknown_fields, io::CodedOutputStream * output)'/>
+<use f='/v2ray_api.pb.cc' l='505' u='c' c='_ZNK5v2ray4core3app5stats7command15GetStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='784' u='c' c='_ZNK5v2ray4core3app5stats7command4Stat24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1040' u='c' c='_ZNK5v2ray4core3app5stats7command16GetStatsResponse24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1299' u='c' c='_ZNK5v2ray4core3app5stats7command17QueryStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1545' u='c' c='_ZNK5v2ray4core3app5stats7command18QueryStatsResponse24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1745' u='c' c='_ZNK5v2ray4core3app5stats7command15SysStatsRequest24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2138' u='c' c='_ZNK5v2ray4core3app5stats7command16SysStatsResponse24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='2477' u='c' c='_ZNK5v2ray4core3app5stats7command6Config24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/wire_format.h' l='143'>// Write the contents of an UnknownFieldSet to the output.</doc>
+<use f='/v2ray_geosite.pb.cc' l='559' u='c' c='_ZNK5v2ray4core3app6router22DomainObject_Attribute24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='892' u='c' c='_ZNK5v2ray4core3app6router12DomainObject24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1186' u='c' c='_ZNK5v2ray4core3app6router4CIDR24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1464' u='c' c='_ZNK5v2ray4core3app6router5GeoIP24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1717' u='c' c='_ZNK5v2ray4core3app6router9GeoIPList24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1980' u='c' c='_ZNK5v2ray4core3app6router7GeoSite24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='2233' u='c' c='_ZNK5v2ray4core3app6router11GeoSiteList24SerializeWithCachedSizesEPN6google8protobuf2io17CodedOutputStreamE'/>

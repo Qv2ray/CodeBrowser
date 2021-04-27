@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1697' type='void uv_rwlock_rdlock(uv_rwlock_t * rwlock)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='333' u='c' c='uv__fs_mkstemp'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='367' ll='370' type='void uv_rwlock_rdlock(uv_rwlock_t * rwlock)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='115' u='c' c='_ZN3uvw6RWLock6rdLockEv'/>

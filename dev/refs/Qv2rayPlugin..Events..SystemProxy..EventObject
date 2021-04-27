@@ -1,0 +1,13 @@
+<def f='qv2ray/src/plugin-interface/QvPluginInterfaceModels.hpp' l='25' ll='33'/>
+<use f='qv2ray/src/plugin-interface/QvPluginProcessor.hpp' l='8' c='_ZN12Qv2rayPlugin18PluginEventHandler24ProcessEvent_SystemProxyERKNS_6Events11SystemProxy11EventObjectE'/>
+<size>16</size>
+<mbr r='Qv2rayPlugin::Events::SystemProxy::EventObject::systemProxyPortSettings' o='0' t='QMap&lt;Qv2rayPlugin::Events::SystemProxy::SystemProxyType, int&gt;'/>
+<mbr r='Qv2rayPlugin::Events::SystemProxy::EventObject::systemProxyState' o='64' t='Qv2rayPlugin::Events::SystemProxy::SystemProxyStateType'/>
+<fun r='_ZN12Qv2rayPlugin6Events11SystemProxy11EventObjectC1Ev'/>
+<fun r='_ZN12Qv2rayPlugin6Events11SystemProxy11EventObjectC1ERK4QMapINS1_15SystemProxyTypeEiERKNS1_20SystemProxyStateTypeE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='73' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin6Events11SystemProxy11EventObjectE'/>
+<size>16</size>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='218' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin6Events11SystemProxy11EventObjectE'/>
+<size>16</size>
+<use f='qv2ray/src/components/proxy/QvProxyConfigurator.cpp' l='475' c='_ZN6Qv2ray10components5proxy16ClearSystemProxyEv'/>
+<size>16</size>

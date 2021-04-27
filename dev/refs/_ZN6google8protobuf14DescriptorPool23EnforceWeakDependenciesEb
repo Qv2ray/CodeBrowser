@@ -1,0 +1,5 @@
+<def f='include/google/protobuf/descriptor.h' l='1659' type='void google::protobuf::DescriptorPool::EnforceWeakDependencies(bool enforce)'/>
+<doc f='include/google/protobuf/descriptor.h' l='1655'>// By default, weak imports are allowed to be missing, in which case we will
+  // use a placeholder for the dependency and convert the field to be an Empty
+  // message field. If you call EnforceWeakDependencies(true), however, the
+  // DescriptorPool will report a import not found error.</doc>

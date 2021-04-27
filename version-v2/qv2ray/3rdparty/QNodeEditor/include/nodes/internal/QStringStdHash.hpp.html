@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QStringStdHash.hpp source code [qv2ray/3rdparty/QNodeEditor/include/nodes/internal/QStringStdHash.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/QNodeEditor/include/nodes/internal/QStringStdHash.hpp'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>QNodeEditor</a>/<a href='../..'>include</a>/<a href='..'>nodes</a>/<a href='./'>internal</a>/<a href='QStringStdHash.hpp.html'>QStringStdHash.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td><u>#include &lt;QtGlobal&gt;</u></td></tr>
+<tr><th id="3">3</th><td><u>#<span data-ppcond="3">if</span> (<span class="macro" title="((5&lt;&lt;16)|(15&lt;&lt;8)|(1))" data-ref="_M/QT_VERSION">QT_VERSION</span> &lt; <span class="macro" title="((5&lt;&lt;16)|(14&lt;&lt;8)|(0))" data-ref="_M/QT_VERSION_CHECK">QT_VERSION_CHECK</span>(5, 14, 0))</u></td></tr>
+<tr><th id="4">4</th><td><i>// As of 5.14 there is a specialization std::hash&lt;QString&gt;</i></td></tr>
+<tr><th id="5">5</th><td>    <u>#include &lt;QtCore/QString&gt;</u></td></tr>
+<tr><th id="6">6</th><td>    <u>#include &lt;QtCore/QVariant&gt;</u></td></tr>
+<tr><th id="7">7</th><td>    <u>#include &lt;functional&gt;</u></td></tr>
+<tr><th id="8">8</th><td><b>namespace</b> std</td></tr>
+<tr><th id="9">9</th><td>{</td></tr>
+<tr><th id="10">10</th><td>    <b>template</b>&lt;&gt;</td></tr>
+<tr><th id="11">11</th><td>    <b>struct</b> hash&lt;QString&gt;</td></tr>
+<tr><th id="12">12</th><td>    {</td></tr>
+<tr><th id="13">13</th><td>        <b>inline</b> std::size_t <b>operator</b>()(QString <em>const</em> &amp;s) <em>const</em></td></tr>
+<tr><th id="14">14</th><td>        {</td></tr>
+<tr><th id="15">15</th><td>            <b>return</b> qHash(s);</td></tr>
+<tr><th id="16">16</th><td>        }</td></tr>
+<tr><th id="17">17</th><td>    };</td></tr>
+<tr><th id="18">18</th><td>} <i>// namespace std</i></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="3">endif</span></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/Connection.cpp.html'>qv2ray/3rdparty/QNodeEditor/src/Connection.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

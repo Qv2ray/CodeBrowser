@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1385' type='void uvw::FsReq::readdir()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='565' ll='571' type='void uvw::FsReq::readdir()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1375'>/**
+     * @brief Iterates asynchronously over a directory stream one entry at a
+     * time.
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::READDIR&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * This function isn&apos;t thread safe. Moreover, it doesn&apos;t return the `.` and
+     * `..` entries.
+     */</doc>

@@ -1,0 +1,21 @@
+<dec f='qv2ray/src/core/handler/ConfigHandler.hpp' l='104' type='const Qv2ray::base::safetype::CONFIGROOT Qv2ray::core::handler::QvConfigHandler::GetConnectionRoot(const Qv2ray::base::ConnectionId &amp; id) const'/>
+<doc f='qv2ray/src/core/handler/ConfigHandler.hpp' l='102'>//
+        // Get Conncetion Property</doc>
+<use f='/qv2ray_baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='416' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='13' u='c' c='_ZN6Qv2ray4core15IsComplexConfigERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='54' u='c' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEEPb'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='117' u='c' c='_ZN6Qv2ray4core27GetConnectionProtocolStringERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='171' u='c' c='_ZN6Qv2ray4core14GetInboundInfoERKNS_4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='72' u='c' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='303' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<def f='qv2ray/src/core/handler/ConfigHandler.cpp' l='343' ll='347' type='const Qv2ray::base::safetype::CONFIGROOT Qv2ray::core::handler::QvConfigHandler::GetConnectionRoot(const Qv2ray::base::ConnectionId &amp; id) const'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='191' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler24ExpandExternalConnectionERK13SAFETYPE_IMPLINS_4base8safetype13__OUTBOUNDS__E10QJsonArrayE'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='201' u='c' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigERKNS_4base19ConnectionGroupPairEb'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='451' u='c' c='_ZN11RouteEditor28on_importExistingBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='69' u='c' c='_ZN21InboundOutboundWidget18on_editBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/InboundOutboundWidget.cpp' l='113' u='c' c='_ZN21InboundOutboundWidget22on_editJsonBtn_clickedEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_GroupManager.cpp' l='232' u='c' c='_ZN12GroupManager25onRCMActionTriggered_CopyEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='633' u='c' c='_ZN10MainWindow18Action_EditComplexEv'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='795' u='c' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='825' u='c' c='_ZN10MainWindow19OnEditJsonRequestedERKN6Qv2ray4base6IDTypeINS1_14__ConnectionIdEEE'/>
+<use f='qv2ray/src/ui/widgets/windows/w_MainWindow.cpp' l='884' u='c' c='_ZN10MainWindow26Action_DuplicateConnectionEv'/>

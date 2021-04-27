@@ -1,0 +1,79 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='119' ll='125' type='bool ZXing::BitMatrix::get(int x, int y) const'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='303' u='c' c='_ZN5ZXing8ToMatrixERKNS_9BitMatrixET_S3_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='48' u='c' c='_ZNK5ZXing9BitMatrix12toByteMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='84' u='c' c='_ZN5ZXing9BitMatrix8rotate90Ev'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='107' u='c' c='_ZN5ZXing9BitMatrix6mirrorEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='107' u='c' c='_ZN5ZXing9BitMatrix6mirrorEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='125' u='c' c='_ZNK5ZXing9BitMatrix15findBoundingBoxERiS1_S1_S1_i'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='130' u='c' c='_ZNK5ZXing9BitMatrix15findBoundingBoxERiS1_S1_S1_i'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='224' u='c' c='_ZN5ZXing7InflateEONS_9BitMatrixEiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='238' u='c' c='_ZN5ZXing7DeflateERKNS_9BitMatrixEiiiii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='112'>/**
+	* &lt;p&gt;Gets the requested bit, where true means black.&lt;/p&gt;
+	*
+	* @param x The horizontal component (i.e. which column)
+	* @param y The vertical component (i.e. which row)
+	* @return value of given bit in matrix
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GridSampler.cpp' l='39' u='c' c='_ZN5ZXing10SampleGridERKNS_9BitMatrixEiiRKNS_20PerspectiveTransformE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/WhiteRectDetector.cpp' l='46' u='c' c='_ZN5ZXingL18ContainsBlackPointERKNS_9BitMatrixEiiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/WhiteRectDetector.cpp' l='53' u='c' c='_ZN5ZXingL18ContainsBlackPointERKNS_9BitMatrixEiiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/WhiteRectDetector.cpp' l='70' u='c' c='_ZN5ZXingL22GetBlackPointOnSegmentERKNS_9BitMatrixEiiiiRNS_11ResultPointE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='116' u='c' c='_ZN5ZXing5AztecL11ExtractBitsERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='119' u='c' c='_ZN5ZXing5AztecL11ExtractBitsERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='122' u='c' c='_ZN5ZXing5AztecL11ExtractBitsERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='125' u='c' c='_ZN5ZXing5AztecL11ExtractBitsERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='104' u='c' c='_ZN5ZXing5AztecL10SampleLineERKNS_9BitMatrixERKNS_11ResultPointES6_i'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='234' u='c' c='_ZN5ZXing5AztecL8GetColorERKNS_9BitMatrixERKNS_6PointTIiEES7_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='239' u='c' c='_ZN5ZXing5AztecL8GetColorERKNS_9BitMatrixERKNS_6PointTIiEES7_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='297' u='c' c='_ZN5ZXing5AztecL17GetFirstDifferentERKNS_9BitMatrixERKNS_6PointTIiEEbii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='305' u='c' c='_ZN5ZXing5AztecL17GetFirstDifferentERKNS_9BitMatrixERKNS_6PointTIiEEbii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='310' u='c' c='_ZN5ZXing5AztecL17GetFirstDifferentERKNS_9BitMatrixERKNS_6PointTIiEEbii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.h' l='98' u='c' c='_ZN5ZXing10DataMatrix11VisitMatrixEiiT_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.h' l='110' u='c' c='_ZN5ZXing10DataMatrix11VisitMatrixEiiT_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='75' u='c' c='_ZN5ZXing10DataMatrixL17ExtractDataRegionERKNS0_7VersionERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMBitMatrixParser.cpp' l='112' u='c' c='_ZN5ZXing10DataMatrix15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDefaultPlacement.cpp' l='48' u='c' c='_ZN5ZXing10DataMatrix16DefaultPlacement5PlaceERKNS_9ByteArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='96' u='c' c='_ZN5ZXing10DataMatrixL18TransitionsBetweenERKNS_9BitMatrixERKNS_11ResultPointES6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='98' u='c' c='_ZN5ZXing10DataMatrixL18TransitionsBetweenERKNS_9BitMatrixERKNS_11ResultPointES6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='601' u='c' c='_ZNK5ZXing10DataMatrix10EdgeTracer5getAtENS_6PointTIdEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMDetector.cpp' l='1028' u='c' c='_ZN5ZXing10DataMatrixL10DetectPureERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMWriter.cpp' l='66' u='c' c='_ZN5ZXing10DataMatrixL14EncodeLowLevelERKNS_9BitMatrixERKNS0_10SymbolInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCBitMatrixParser.cpp' l='71' u='c' c='_ZN5ZXing8MaxiCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='50' u='c' c='_ZN5ZXing8MaxiCodeL15ExtractPureBitsERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='119' u='c' c='_ZN5ZXing6Pdf417L16FindGuardPatternERKNS_9BitMatrixEiiibRKSt6vectorIiSaIiEERS6_RiSA_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='125' u='c' c='_ZN5ZXing6Pdf417L16FindGuardPatternERKNS_9BitMatrixEiiibRKSt6vectorIiSaIiEERS6_RiSA_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='55' u='c' c='_ZN5ZXing6Pdf417L25AdjustCodewordStartColumnERKNS_9BitMatrixEiibii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='75' u='c' c='_ZN5ZXing6Pdf417L17GetModuleBitCountERKNS_9BitMatrixEiibiiRSt5arrayIiLm8EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='77' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='85' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='95' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='102' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='167' u='c' c='_ZN5ZXing6QRCode22AlignmentPatternFinder4FindERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRAlignmentPatternFinder.cpp' l='172' u='c' c='_ZN5ZXing6QRCode22AlignmentPatternFinder4FindERKNS_9BitMatrixEiiiif'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='29' u='c' c='_ZN5ZXing6QRCodeL7copyBitERKNS_9BitMatrixEiiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='29' u='c' c='_ZN5ZXing6QRCodeL7copyBitERKNS_9BitMatrixEiiib'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='163' u='c' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp' l='166' u='c' c='_ZN5ZXing6QRCode15BitMatrixParser13ReadCodewordsERKNS_9BitMatrixERKNS0_7VersionE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='73' u='c' c='_ZN5ZXing6QRCodeL24SizeOfBlackWhiteBlackRunERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='313' u='c' c='_ZN5ZXing6QRCodeL10DetectPureERKNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='97' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckDiagonalERKNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='106' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckDiagonalERKNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='115' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckDiagonalERKNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='128' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckDiagonalERKNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='133' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckDiagonalERKNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='141' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckDiagonalERKNS_9BitMatrixEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='170' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='177' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='185' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='195' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='202' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='209' u='c' c='_ZN5ZXing6QRCodeL18CrossCheckVerticalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='238' u='c' c='_ZN5ZXing6QRCodeL20CrossCheckHorizontalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='245' u='c' c='_ZN5ZXing6QRCodeL20CrossCheckHorizontalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='252' u='c' c='_ZN5ZXing6QRCodeL20CrossCheckHorizontalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='261' u='c' c='_ZN5ZXing6QRCodeL20CrossCheckHorizontalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='268' u='c' c='_ZN5ZXing6QRCodeL20CrossCheckHorizontalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='275' u='c' c='_ZN5ZXing6QRCodeL20CrossCheckHorizontalERKNS_9BitMatrixEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='515' u='c' c='_ZN5ZXing6QRCode19FinderPatternFinder4FindERKNS_9BitMatrixEb'/>
+<use f='qv2ray/src/ui/common/QRCodeHelper.cpp' l='67' u='c' c='_ZN6Qv2ray2ui12EncodeQRCodeERK7QStringRK5QSize'/>

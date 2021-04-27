@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>UpdateChecker.hpp source code [qv2ray/src/components/update/UpdateChecker.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Qv2ray::components::QvUpdateChecker,Qv2ray::components::QvUpdateInfo "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/components/update/UpdateChecker.hpp'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>src</a>/<a href='..'>components</a>/<a href='./'>update</a>/<a href='UpdateChecker.hpp.html'>UpdateChecker.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#pragma once</u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include &lt;QObject&gt;</u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">common</span>::<span class="namespace">network</span></td></tr>
+<tr><th id="6">6</th><td>{</td></tr>
+<tr><th id="7">7</th><td>    <b>class</b> <a class="type" href="../../utils/HTTPRequestHelper.hpp.html#Qv2ray::common::network::NetworkRequestHelper" title='Qv2ray::common::network::NetworkRequestHelper' data-ref="Qv2ray::common::network::NetworkRequestHelper" data-ref-filename="Qv2ray..common..network..NetworkRequestHelper" id="Qv2ray::common::network::NetworkRequestHelper">NetworkRequestHelper</a>;</td></tr>
+<tr><th id="8">8</th><td>}</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">components</span></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    <b>struct</b> <dfn class="type def" id="Qv2ray::components::QvUpdateInfo" title='Qv2ray::components::QvUpdateInfo' data-ref="Qv2ray::components::QvUpdateInfo" data-ref-filename="Qv2ray..components..QvUpdateInfo">QvUpdateInfo</dfn></td></tr>
+<tr><th id="13">13</th><td>    {</td></tr>
+<tr><th id="14">14</th><td>        <em>int</em> <dfn class="decl field" id="Qv2ray::components::QvUpdateInfo::channel" title='Qv2ray::components::QvUpdateInfo::channel' data-ref="Qv2ray::components::QvUpdateInfo::channel" data-ref-filename="Qv2ray..components..QvUpdateInfo..channel">channel</dfn>;</td></tr>
+<tr><th id="15">15</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::QvUpdateInfo::tag" title='Qv2ray::components::QvUpdateInfo::tag' data-ref="Qv2ray::components::QvUpdateInfo::tag" data-ref-filename="Qv2ray..components..QvUpdateInfo..tag">tag</dfn>;</td></tr>
+<tr><th id="16">16</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::QvUpdateInfo::title" title='Qv2ray::components::QvUpdateInfo::title' data-ref="Qv2ray::components::QvUpdateInfo::title" data-ref-filename="Qv2ray..components..QvUpdateInfo..title">title</dfn>;</td></tr>
+<tr><th id="17">17</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::QvUpdateInfo::releaseNotes" title='Qv2ray::components::QvUpdateInfo::releaseNotes' data-ref="Qv2ray::components::QvUpdateInfo::releaseNotes" data-ref-filename="Qv2ray..components..QvUpdateInfo..releaseNotes">releaseNotes</dfn>;</td></tr>
+<tr><th id="18">18</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="Qv2ray::components::QvUpdateInfo::downloadLink" title='Qv2ray::components::QvUpdateInfo::downloadLink' data-ref="Qv2ray::components::QvUpdateInfo::downloadLink" data-ref-filename="Qv2ray..components..QvUpdateInfo..downloadLink">downloadLink</dfn>;</td></tr>
+<tr><th id="19">19</th><td>    };</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>    <b>class</b> <dfn class="type def" id="Qv2ray::components::QvUpdateChecker" title='Qv2ray::components::QvUpdateChecker' data-ref="Qv2ray::components::QvUpdateChecker" data-ref-filename="Qv2ray..components..QvUpdateChecker">QvUpdateChecker</dfn> : <b>public</b> <span class='type' title='QObject' data-ref="QObject" data-ref-filename="QObject">QObject</span></td></tr>
+<tr><th id="22">22</th><td>    {</td></tr>
+<tr><th id="23">23</th><td>        <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } __attribute__ ((__deprecated__)) static inline QString trUtf8(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="24">24</th><td>      <b>public</b>:</td></tr>
+<tr><th id="25">25</th><td>        <b>explicit</b> <dfn class="decl fn" id="_ZN6Qv2ray10components15QvUpdateCheckerC1EP7QObject" title='Qv2ray::components::QvUpdateChecker::QvUpdateChecker' data-ref="_ZN6Qv2ray10components15QvUpdateCheckerC1EP7QObject" data-ref-filename="_ZN6Qv2ray10components15QvUpdateCheckerC1EP7QObject">QvUpdateChecker</dfn>(<span class='type' title='QObject' data-ref="QObject" data-ref-filename="QObject">QObject</span> *<dfn class="local col8 decl" id="478parent" title='parent' data-type='QObject *' data-ref="478parent" data-ref-filename="478parent">parent</dfn> = <b>nullptr</b>);</td></tr>
+<tr><th id="26">26</th><td>        <em>void</em> <dfn class="decl fn" id="_ZN6Qv2ray10components15QvUpdateChecker11CheckUpdateEv" title='Qv2ray::components::QvUpdateChecker::CheckUpdate' data-ref="_ZN6Qv2ray10components15QvUpdateChecker11CheckUpdateEv" data-ref-filename="_ZN6Qv2ray10components15QvUpdateChecker11CheckUpdateEv">CheckUpdate</dfn>();</td></tr>
+<tr><th id="27">27</th><td>        <dfn class="virtual decl fn" id="_ZN6Qv2ray10components15QvUpdateCheckerD1Ev" title='Qv2ray::components::QvUpdateChecker::~QvUpdateChecker' data-ref="_ZN6Qv2ray10components15QvUpdateCheckerD1Ev" data-ref-filename="_ZN6Qv2ray10components15QvUpdateCheckerD1Ev">~QvUpdateChecker</dfn>();</td></tr>
+<tr><th id="28">28</th><td>      <span class="macro" title="public" data-ref="_M/signals">signals</span>:</td></tr>
+<tr><th id="29">29</th><td>        <em>void</em> <a class="decl fn" href="/qv2ray_baselib_autogen/63XGVSSJFO/moc_UpdateChecker.cpp.html#_ZN6Qv2ray10components15QvUpdateChecker22OnCheckUpdateCompletedEbRKNS0_12QvUpdateInfoE" title='Qv2ray::components::QvUpdateChecker::OnCheckUpdateCompleted' data-ref="_ZN6Qv2ray10components15QvUpdateChecker22OnCheckUpdateCompletedEbRKNS0_12QvUpdateInfoE" data-ref-filename="_ZN6Qv2ray10components15QvUpdateChecker22OnCheckUpdateCompletedEbRKNS0_12QvUpdateInfoE" id="_ZN6Qv2ray10components15QvUpdateChecker22OnCheckUpdateCompletedEbRKNS0_12QvUpdateInfoE">OnCheckUpdateCompleted</a>(<em>bool</em> <dfn class="local col9 decl" id="479hasUpdate" title='hasUpdate' data-type='bool' data-ref="479hasUpdate" data-ref-filename="479hasUpdate">hasUpdate</dfn>, <em>const</em> <a class="type" href="#Qv2ray::components::QvUpdateInfo" title='Qv2ray::components::QvUpdateInfo' data-ref="Qv2ray::components::QvUpdateInfo" data-ref-filename="Qv2ray..components..QvUpdateInfo">QvUpdateInfo</a> &amp;<dfn class="local col0 decl" id="480updateInfo" title='updateInfo' data-type='const Qv2ray::components::QvUpdateInfo &amp;' data-ref="480updateInfo" data-ref-filename="480updateInfo">updateInfo</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>      <b>private</b>:</td></tr>
+<tr><th id="32">32</th><td>        <span class="namespace">Qv2ray::common::network::</span><a class="type" href="../../utils/HTTPRequestHelper.hpp.html#Qv2ray::common::network::NetworkRequestHelper" title='Qv2ray::common::network::NetworkRequestHelper' data-ref="Qv2ray::common::network::NetworkRequestHelper" data-ref-filename="Qv2ray..common..network..NetworkRequestHelper">NetworkRequestHelper</a> *<dfn class="decl field" id="Qv2ray::components::QvUpdateChecker::requestHelper" title='Qv2ray::components::QvUpdateChecker::requestHelper' data-ref="Qv2ray::components::QvUpdateChecker::requestHelper" data-ref-filename="Qv2ray..components..QvUpdateChecker..requestHelper">requestHelper</dfn>;</td></tr>
+<tr><th id="33">33</th><td>        <em>void</em> <em>static</em> <dfn class="decl fn" id="_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray" title='Qv2ray::components::QvUpdateChecker::VersionUpdate' data-ref="_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray" data-ref-filename="_ZN6Qv2ray10components15QvUpdateChecker13VersionUpdateERK10QByteArray">VersionUpdate</dfn>(<em>const</em> <span class='type' title='QByteArray' data-ref="QByteArray" data-ref-filename="QByteArray">QByteArray</span> &amp;<dfn class="local col1 decl" id="481data" title='data' data-type='const QByteArray &amp;' data-ref="481data" data-ref-filename="481data">data</dfn>);</td></tr>
+<tr><th id="34">34</th><td>    };</td></tr>
+<tr><th id="35">35</th><td>} <i>// namespace Qv2ray::components</i></td></tr>
+<tr><th id="36">36</th><td><b>using</b> <b>namespace</b> <span class="namespace">Qv2ray::components</span>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

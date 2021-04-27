@@ -1,0 +1,80 @@
+<inh f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='374' c='uvw::FsRequest'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='436' ll='772'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='436'/>
+<size>576</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='424'>/**
+ * @brief The FileReq request.
+ *
+ * Cross-platform sync and async filesystem operations.&lt;br/&gt;
+ * All file operations are run on the threadpool.
+ *
+ * To create a `FileReq` through a `Loop`, no arguments are required.
+ *
+ * See the official
+ * [documentation](http://docs.libuv.org/en/v1.x/fs.html)
+ * for further details.
+ */</doc>
+<smbr r='uvw::FileReq::BAD_FD' t='const uv_file'/>
+<fun r='_ZN3uvw7FileReq14fsOpenCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw7FileReq15fsCloseCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw7FileReq14fsReadCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw7FileReqD1Ev'/>
+<fun r='_ZN3uvw7FileReq5closeEv'/>
+<fun r='_ZN3uvw7FileReq9closeSyncEv'/>
+<fun r='_ZN3uvw7FileReq4openENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details15UVFileOpenFlagsEEEi'/>
+<fun r='_ZN3uvw7FileReq8openSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details15UVFileOpenFlagsEEEi'/>
+<fun r='_ZN3uvw7FileReq4readElj'/>
+<fun r='_ZN3uvw7FileReq8readSyncElj'/>
+<fun r='_ZN3uvw7FileReq5writeESt10unique_ptrIA_cSt14default_deleteIS2_EEjl'/>
+<fun r='_ZN3uvw7FileReq5writeEPcjl'/>
+<fun r='_ZN3uvw7FileReq9writeSyncESt10unique_ptrIA_cSt14default_deleteIS2_EEjl'/>
+<fun r='_ZN3uvw7FileReq4statEv'/>
+<fun r='_ZN3uvw7FileReq8statSyncEv'/>
+<fun r='_ZN3uvw7FileReq4syncEv'/>
+<fun r='_ZN3uvw7FileReq8syncSyncEv'/>
+<fun r='_ZN3uvw7FileReq8datasyncEv'/>
+<fun r='_ZN3uvw7FileReq12datasyncSyncEv'/>
+<fun r='_ZN3uvw7FileReq8truncateEl'/>
+<fun r='_ZN3uvw7FileReq12truncateSyncEl'/>
+<fun r='_ZN3uvw7FileReq8sendfileENS_7details13UVTypeWrapperIiEElm'/>
+<fun r='_ZN3uvw7FileReq12sendfileSyncENS_7details13UVTypeWrapperIiEElm'/>
+<fun r='_ZN3uvw7FileReq5chmodEi'/>
+<fun r='_ZN3uvw7FileReq9chmodSyncEi'/>
+<fun r='_ZN3uvw7FileReq6futimeENSt6chrono8durationIdSt5ratioILl1ELl1EEEES5_'/>
+<fun r='_ZN3uvw7FileReq10futimeSyncENSt6chrono8durationIdSt5ratioILl1ELl1EEEES5_'/>
+<fun r='_ZN3uvw7FileReq5chownEjj'/>
+<fun r='_ZN3uvw7FileReq9chownSyncEjj'/>
+<fun r='_ZNK3uvw7FileReqcvNS_7details13UVTypeWrapperIiEEEv'/>
+<mbr r='uvw::FileReq::current' o='4352' t='std::unique_ptr&lt;char []&gt;'/>
+<mbr r='uvw::FileReq::buffer' o='4416' t='uv_buf_t'/>
+<mbr r='uvw::FileReq::file' o='4544' t='uv_file'/>
+<fun r='_ZN3uvw7FileReq14fsOpenCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw7FileReq15fsCloseCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw7FileReq14fsReadCallbackEP7uv_fs_s'/>
+<fun r='_ZN3uvw7FileReqD1Ev'/>
+<fun r='_ZN3uvw7FileReq5closeEv'/>
+<fun r='_ZN3uvw7FileReq9closeSyncEv'/>
+<fun r='_ZN3uvw7FileReq4openENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details15UVFileOpenFlagsEEEi'/>
+<fun r='_ZN3uvw7FileReq8openSyncENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_5FlagsINS_7details15UVFileOpenFlagsEEEi'/>
+<fun r='_ZN3uvw7FileReq4readElj'/>
+<fun r='_ZN3uvw7FileReq8readSyncElj'/>
+<fun r='_ZN3uvw7FileReq5writeESt10unique_ptrIA_cSt14default_deleteIS2_EEjl'/>
+<fun r='_ZN3uvw7FileReq5writeEPcjl'/>
+<fun r='_ZN3uvw7FileReq9writeSyncESt10unique_ptrIA_cSt14default_deleteIS2_EEjl'/>
+<fun r='_ZN3uvw7FileReq4statEv'/>
+<fun r='_ZN3uvw7FileReq8statSyncEv'/>
+<fun r='_ZN3uvw7FileReq4syncEv'/>
+<fun r='_ZN3uvw7FileReq8syncSyncEv'/>
+<fun r='_ZN3uvw7FileReq8datasyncEv'/>
+<fun r='_ZN3uvw7FileReq12datasyncSyncEv'/>
+<fun r='_ZN3uvw7FileReq8truncateEl'/>
+<fun r='_ZN3uvw7FileReq12truncateSyncEl'/>
+<fun r='_ZN3uvw7FileReq8sendfileENS_7details13UVTypeWrapperIiEElm'/>
+<fun r='_ZN3uvw7FileReq12sendfileSyncENS_7details13UVTypeWrapperIiEElm'/>
+<fun r='_ZN3uvw7FileReq5chmodEi'/>
+<fun r='_ZN3uvw7FileReq9chmodSyncEi'/>
+<fun r='_ZN3uvw7FileReq6futimeENSt6chrono8durationIdSt5ratioILl1ELl1EEEES5_'/>
+<fun r='_ZN3uvw7FileReq10futimeSyncENSt6chrono8durationIdSt5ratioILl1ELl1EEEES5_'/>
+<fun r='_ZN3uvw7FileReq5chownEjj'/>
+<fun r='_ZN3uvw7FileReq9chownSyncEjj'/>
+<fun r='_ZNK3uvw7FileReqcvNS_7details13UVTypeWrapperIiEEEv'/>

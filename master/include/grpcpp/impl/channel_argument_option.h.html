@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>channel_argument_option.h source code [include/grpcpp/impl/channel_argument_option.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpcpp/impl/channel_argument_option.h'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>grpcpp</a>/<a href='./'>impl</a>/<a href='channel_argument_option.h.html'>channel_argument_option.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2017 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPCPP_IMPL_CHANNEL_ARGUMENT_OPTION_H">GRPCPP_IMPL_CHANNEL_ARGUMENT_OPTION_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPCPP_IMPL_CHANNEL_ARGUMENT_OPTION_H" data-ref="_M/GRPCPP_IMPL_CHANNEL_ARGUMENT_OPTION_H">GRPCPP_IMPL_CHANNEL_ARGUMENT_OPTION_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../c++/10/map.html">&lt;map&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../c++/10/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="server_builder_option.h.html">&lt;grpcpp/impl/server_builder_option.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../support/channel_arguments.h.html">&lt;grpcpp/support/channel_arguments.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>namespace</b> <span class="namespace">grpc</span> {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><span class="namespace">std::</span><a class="type" href="../../c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<a class="type" href="server_builder_option.h.html#grpc::ServerBuilderOption" title='grpc::ServerBuilderOption' data-ref="grpc::ServerBuilderOption" data-ref-filename="grpc..ServerBuilderOption">ServerBuilderOption</a>&gt; <dfn class="decl fn" id="_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_" title='grpc::MakeChannelArgumentOption' data-ref="_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_" data-ref-filename="_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_">MakeChannelArgumentOption</dfn>(</td></tr>
+<tr><th id="31">31</th><td>    <em>const</em> <span class="namespace">grpc::</span><a class="typedef" href="codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&amp; <dfn class="local col7 decl" id="8997name" title='name' data-type='const grpc::string &amp;' data-ref="8997name" data-ref-filename="8997name">name</dfn>, <em>const</em> <span class="namespace">grpc::</span><a class="typedef" href="codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&amp; <dfn class="local col8 decl" id="8998value" title='value' data-type='const grpc::string &amp;' data-ref="8998value" data-ref-filename="8998value">value</dfn>);</td></tr>
+<tr><th id="32">32</th><td><span class="namespace">std::</span><a class="type" href="../../c++/10/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr" data-ref-filename="std..unique_ptr">unique_ptr</a>&lt;<a class="type" href="server_builder_option.h.html#grpc::ServerBuilderOption" title='grpc::ServerBuilderOption' data-ref="grpc::ServerBuilderOption" data-ref-filename="grpc..ServerBuilderOption">ServerBuilderOption</a>&gt; <dfn class="decl fn" id="_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi" title='grpc::MakeChannelArgumentOption' data-ref="_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi" data-ref-filename="_ZN4grpc25MakeChannelArgumentOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi">MakeChannelArgumentOption</dfn>(</td></tr>
+<tr><th id="33">33</th><td>    <em>const</em> <span class="namespace">grpc::</span><a class="typedef" href="codegen/config.h.html#grpc::string" title='grpc::string' data-type='std::string' data-ref="grpc::string" data-ref-filename="grpc..string">string</a>&amp; <dfn class="local col9 decl" id="8999name" title='name' data-type='const grpc::string &amp;' data-ref="8999name" data-ref-filename="8999name">name</dfn>, <em>int</em> <dfn class="local col0 decl" id="9000value" title='value' data-type='int' data-ref="9000value" data-ref-filename="9000value">value</dfn>);</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>}  <i>// namespace grpc</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="19">endif</span>  // GRPCPP_IMPL_CHANNEL_ARGUMENT_OPTION_H</u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

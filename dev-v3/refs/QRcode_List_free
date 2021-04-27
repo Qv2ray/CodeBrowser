@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='533' type='void QRcode_List_free(QRcode_List * qrlist)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='529'>/**
+ * Free the QRcode_List.
+ * @param qrlist a head entry of a QRcode_List.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='722' ll='731' type='void QRcode_List_free(QRcode_List * qrlist)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='788' u='c' c='QRcode_encodeInputStructured'/>

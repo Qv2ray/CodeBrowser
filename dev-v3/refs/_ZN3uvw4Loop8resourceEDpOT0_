@@ -1,0 +1,13 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='162' ll='164' type='std::shared_ptr&lt;R&gt; uvw::Loop::resource(Args &amp;&amp;... args)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='38' u='c' c='_ZN3uvw10PipeHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='92' u='c' c='_ZN3uvw9TCPHandle7connectERK8sockaddr'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='131' u='c' c='_ZN3uvw9UDPHandle4sendERK8sockaddrSt10unique_ptrIA_cSt14default_deleteIS5_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='161' u='c' c='_ZN3uvw9UDPHandle4sendERK8sockaddrPcj'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='33' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread3runEv'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='13' u='c' c='_ZN15RealPingContextC1EiRN3uvw4LoopE'/>
+<use f='qv2ray/src/components/latency/RealPing.cpp' l='155' u='c' c='_ZN6Qv2ray10components7latency8realping8RealPingC1ESt10shared_ptrIN3uvw4LoopEERNS1_18LatencyTestRequestEPNS1_15LatencyTestHostE'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='48' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing5startEv'/>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='71' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='78' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing5startEi'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='113' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='115' u='c' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>

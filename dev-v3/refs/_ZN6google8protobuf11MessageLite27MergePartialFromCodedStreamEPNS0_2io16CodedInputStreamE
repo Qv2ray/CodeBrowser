@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/message_lite.h' l='281' type='bool google::protobuf::MessageLite::MergePartialFromCodedStream(io::CodedInputStream * input)'/>
+<doc f='include/google/protobuf/message_lite.h' l='276'>// Like MergeFromCodedStream(), but succeeds even if required fields are
+  // missing in the input.
+  //
+  // MergeFromCodedStream() is just implemented as MergePartialFromCodedStream()
+  // followed by IsInitialized().</doc>

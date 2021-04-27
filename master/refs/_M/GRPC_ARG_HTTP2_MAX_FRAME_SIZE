@@ -1,0 +1,4 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='192'/>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='189'>/** How big a frame are we willing to receive via HTTP2.
+    Min 16384, max 16777215. Larger values give lower CPU usage for large
+    messages, but more head of line blocking for small messages. */</doc>

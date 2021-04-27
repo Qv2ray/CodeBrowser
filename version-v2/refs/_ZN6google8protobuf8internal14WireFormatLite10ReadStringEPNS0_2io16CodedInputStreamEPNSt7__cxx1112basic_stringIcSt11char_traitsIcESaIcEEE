@@ -1,0 +1,12 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='328' type='static bool google::protobuf::internal::WireFormatLite::ReadString(io::CodedInputStream * input, std::string * value)'/>
+<def f='include/google/protobuf/wire_format_lite.h' l='879' ll='882' type='static bool google::protobuf::internal::WireFormatLite::ReadString(io::CodedInputStream * input, std::string * value)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='327'>// Read a string.  ReadString(..., string* value) requires an existing string.</doc>
+<doc f='include/google/protobuf/wire_format_lite.h' l='876'>// String is for UTF-8 text only, but, even so, ReadString() can simply
+// call ReadBytes().</doc>
+<use f='/v2ray_api.pb.cc' l='437' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='716' u='c' c='_ZN5v2ray4core3app5stats7command4Stat27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_api.pb.cc' l='1231' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='470' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='816' u='c' c='_ZN5v2ray4core3app6router12DomainObject27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1394' u='c' c='_ZN5v2ray4core3app6router5GeoIP27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>
+<use f='/v2ray_geosite.pb.cc' l='1910' u='c' c='_ZN5v2ray4core3app6router7GeoSite27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE'/>

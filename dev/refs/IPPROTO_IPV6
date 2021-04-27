@@ -1,0 +1,8 @@
+<dec f='include/netinet/in.h' l='64' type='41'/>
+<doc f='include/netinet/in.h' l='64'>/* IPv6 header.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='172' macro='1' u='r' c='uv__tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='545' macro='1' u='r' c='uv__udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='842' macro='1' u='r' c='uv__udp_set_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='941' macro='1' u='r' c='uv__udp_set_source_membership6'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1077' macro='1' u='r' c='uv__setsockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1246' macro='1' u='r' c='uv_udp_set_multicast_interface'/>

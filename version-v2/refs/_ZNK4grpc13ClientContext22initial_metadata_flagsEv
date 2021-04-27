@@ -1,0 +1,12 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='405' ll='413' type='uint32_t grpc::ClientContext::initial_metadata_flags() const'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='280' u='c' c='_ZN4grpc17ClientAsyncReader17StartCallInternalEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='445' u='c' c='_ZN4grpc17ClientAsyncWriter17StartCallInternalEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='616' u='c' c='_ZN4grpc23ClientAsyncReaderWriter17StartCallInternalEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='178' u='c' c='_ZN4grpc25ClientAsyncResponseReader17StartCallInternalEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='254' u='c' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='331' u='c' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='390' u='c' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='502' u='c' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='561' u='c' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='65' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='81' u='c' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>

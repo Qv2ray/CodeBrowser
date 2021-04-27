@@ -1,0 +1,77 @@
+<def f='include/c++/10/bits/basic_string.h' l='1016' ll='1021' type='std::__cxx11::basic_string::const_reference std::__cxx11::basic_string::operator[](std::__cxx11::basic_string::size_type __pos) const'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1006'>/**
+       *  @brief  Subscript access to the data contained in the %string.
+       *  @param  __pos  The index of the character to access.
+       *  @return  Read-only (constant) reference to the character.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='326' u='c' c='_ZN6semverL16check_identifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='331' u='c' c='_ZN6semverL16check_identifierERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='310' u='c' c='_ZN5ZXing5AztecL18UpdateStateForCharERKNS0_13EncodingStateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRNS4_4listIS1_SaIS1_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='368' u='c' c='_ZN5ZXing5Aztec16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZHighLevelEncoder.cpp' l='369' u='c' c='_ZN5ZXing5Aztec16HighLevelEncoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZToken.cpp' l='49' u='c' c='_ZNK5ZXing5Aztec5Token8appendToERNS_8BitArrayERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='64' u='c' c='_ZN5ZXing4OneDL9FindCTypeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='74' u='c' c='_ZN5ZXing4OneDL9FindCTypeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='92' u='c' c='_ZN5ZXing4OneDL10ChooseCodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='156' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='186' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='207' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='214' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='217' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Writer.cpp' l='217' u='c' c='_ZNK5ZXing4OneD13Code128Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='73' u='c' c='_ZN5ZXing4OneDL26TryToConvertToExtendedModeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Writer.cpp' l='147' u='c' c='_ZNK5ZXing4OneD12Code39Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='92' u='c' c='_ZN5ZXing4OneDL16CheckOneChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.cpp' l='97' u='c' c='_ZN5ZXing4OneDL16CheckOneChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='63' u='c' c='_ZN5ZXing4OneDL20ComputeChecksumIndexERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Writer.cpp' l='81' u='c' c='_ZN5ZXing4OneDL23Code93ConvertToExtendedERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFWriter.cpp' l='66' u='c' c='_ZNK5ZXing4OneD9ITFWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFWriter.cpp' l='67' u='c' c='_ZNK5ZXing4OneD9ITFWriter6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.cpp' l='83' u='c' c='_ZNK5ZXing4OneD17MultiUPCEANReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCAReader.cpp' l='29' u='c' c='_ZN5ZXing4OneDL17MaybeReturnResultEONS_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='43' u='c' c='_ZN5ZXing4OneD23UPCEANExtension5SupportL17ExtensionChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANExtensionSupport.cpp' l='47' u='c' c='_ZN5ZXing4OneD23UPCEANExtension5SupportL17ExtensionChecksumERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='232' u='c' c='_ZN5ZXing6Pdf417L10EncodeTextERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='288' u='c' c='_ZN5ZXing6Pdf417L10EncodeTextERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='366' u='c' c='_ZN5ZXing6Pdf417L12EncodeBinaryERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='380' u='c' c='_ZN5ZXing6Pdf417L12EncodeBinaryERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiRSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='424' u='c' c='_ZN5ZXing6Pdf417L30DetermineConsecutiveDigitCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='429' u='c' c='_ZN5ZXing6Pdf417L30DetermineConsecutiveDigitCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='448' u='c' c='_ZN5ZXing6Pdf417L29DetermineConsecutiveTextCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='454' u='c' c='_ZN5ZXing6Pdf417L29DetermineConsecutiveTextCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='464' u='c' c='_ZN5ZXing6Pdf417L29DetermineConsecutiveTextCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='488' u='c' c='_ZN5ZXing6Pdf417L31DetermineConsecutiveBinaryCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='498' u='c' c='_ZN5ZXing6Pdf417L31DetermineConsecutiveBinaryCountERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='150' u='c' c='_ZN5ZXing6QRCodeL18AppendNumericBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='153' u='c' c='_ZN5ZXing6QRCodeL18AppendNumericBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='154' u='c' c='_ZN5ZXing6QRCodeL18AppendNumericBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='160' u='c' c='_ZN5ZXing6QRCodeL18AppendNumericBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='178' u='c' c='_ZN5ZXing6QRCodeL23AppendAlphanumericBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='183' u='c' c='_ZN5ZXing6QRCodeL23AppendAlphanumericBytesERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS_8BitArrayE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/textcodec/GBTextEncoder.cpp' l='3987' u='c' c='_ZN13GBTextEncoder13EncodeGB18030ERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEERNS1_IcS2_IcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='8506' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8506' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8507' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8508' u='c' c='_ZNK5Catch5clara8TextFlow6Column8iterator10isBoundaryEm'/>
+<use f='qv2ray/test/catch.hpp' l='8517' u='c' c='_ZN5Catch5clara8TextFlow6Column8iterator10calcLengthEv'/>
+<use f='qv2ray/test/catch.hpp' l='8520' u='c' c='_ZN5Catch5clara8TextFlow6Column8iterator10calcLengthEv'/>
+<use f='qv2ray/test/catch.hpp' l='8529' u='c' c='_ZN5Catch5clara8TextFlow6Column8iterator10calcLengthEv'/>
+<use f='qv2ray/test/catch.hpp' l='8573' u='c' c='_ZN5Catch5clara8TextFlow6Column8iteratorppEv'/>
+<use f='qv2ray/test/catch.hpp' l='8576' u='c' c='_ZN5Catch5clara8TextFlow6Column8iteratorppEv'/>
+<use f='qv2ray/test/catch.hpp' l='8864' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='8870' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='8873' u='c' c='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<use f='qv2ray/test/catch.hpp' l='9453' u='c' c='_ZNK5Catch5clara6detail3Opt8validateEv'/>
+<use f='qv2ray/test/catch.hpp' l='13640' u='c' c='_ZN5Catch10startsWithERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc'/>
+<use f='qv2ray/test/catch.hpp' l='13646' u='c' c='_ZN5Catch8endsWithERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc'/>
+<use f='qv2ray/test/catch.hpp' l='13861' u='c' c='_ZN5Catch12_GLOBAL__N_113isReservedTagERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/test/catch.hpp' l='15284' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15291' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15291' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15344' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>
+<use f='qv2ray/test/catch.hpp' l='15365' u='c' c='_ZNK5Catch9XmlEncode8encodeToERSo'/>

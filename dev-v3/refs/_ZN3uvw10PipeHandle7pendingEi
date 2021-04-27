@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='110' type='void uvw::PipeHandle::pending(int count)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/pipe.cpp' l='55' ll='57' type='void uvw::PipeHandle::pending(int count)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/pipe.h' l='101'>/**
+     * @brief Sets the number of pending pipe this instance can handle.
+     *
+     * This method can be used to set the number of pending pipe this instance
+     * handles when the pipe server is waiting for connections.&lt;br/&gt;
+     * Note that this setting applies to Windows only.
+     *
+     * @param count The number of accepted pending pipe.
+     */</doc>

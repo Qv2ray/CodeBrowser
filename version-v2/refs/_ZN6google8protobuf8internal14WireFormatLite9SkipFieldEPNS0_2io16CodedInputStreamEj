@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='183' type='static bool google::protobuf::internal::WireFormatLite::SkipField(io::CodedInputStream * input, google::protobuf::uint32 tag)'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='221' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='179'>// Skips a field value with the given tag.  The input should start
+  // positioned immediately after the tag.  Skipped values are simply discarded,
+  // not recorded anywhere.  See WireFormat::SkipField() for a version that
+  // records to an UnknownFieldSet.</doc>

@@ -1,0 +1,17 @@
+<def f='include/google/protobuf/descriptor_database.h' l='174' ll='261'/>
+<use f='include/google/protobuf/descriptor_database.h' l='264'/>
+<use f='include/google/protobuf/descriptor_database.h' l='313'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex7AddFileERKNS0_19FileDescriptorProtoET_'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex9AddSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex19AddNestedExtensionsERKNS0_15DescriptorProtoET_'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex12AddExtensionERKNS0_20FieldDescriptorProtoET_'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex8FindFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex10FindSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex13FindExtensionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex23FindAllExtensionNumbersERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::SimpleDescriptorDatabase::DescriptorIndex::by_name_' t='std::map&lt;string, Value&gt;'/>
+<mbr r='google::protobuf::SimpleDescriptorDatabase::DescriptorIndex::by_symbol_' t='std::map&lt;string, Value&gt;'/>
+<mbr r='google::protobuf::SimpleDescriptorDatabase::DescriptorIndex::by_extension_' t='std::map&lt;std::pair&lt;string, int&gt;, Value&gt;'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex19FindLastLessOrEqualERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex11IsSubSymbolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_'/>
+<fun r='_ZN6google8protobuf24SimpleDescriptorDatabase15DescriptorIndex18ValidateSymbolNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

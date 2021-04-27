@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='336' ll='346' type='void grpc::CompletionQueue::TryPluck(internal::CompletionQueueTag * tag, gpr_timespec deadline)'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='331'>/// Performs a single polling pluck on \a tag. Calls tag-&gt;FinalizeResult if
+  /// the pluck() was successful and returned the tag.
+  ///
+  /// This exects tag-&gt;FinalizeResult (if called) to return &apos;false&apos; i.e expects
+  /// that the tag is internal not something that is returned to the user.</doc>

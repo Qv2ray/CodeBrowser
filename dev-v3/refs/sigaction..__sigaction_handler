@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='38' type='union (anonymous union at /usr/include/x86_64-linux-gnu/bits/sigaction.h:31:5)'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='230' macro='1' u='m' c='uv__signal_register_handler'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='248' macro='1' u='m' c='uv__signal_unregister_handler'/>
+<use f='qv2ray/test/catch.hpp' l='10824' macro='1' u='m' c='_ZN5Catch21FatalConditionHandlerC1Ev'/>

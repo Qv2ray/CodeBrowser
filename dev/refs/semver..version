@@ -1,0 +1,75 @@
+<def f='qv2ray/3rdparty/libsemver/version.hpp' l='84' ll='259'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='106' c='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='168' c='_ZNK6semver7version10bump_majorEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='177' c='_ZNK6semver7version10bump_minorEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='186' c='_ZNK6semver7version10bump_patchEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='198' c='_ZNK6semver7version4bumpEj'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='205' c='_ZNK6semver7version16strip_prereleaseEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='212' c='_ZNK6semver7version14strip_metadataEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='230' c='_ZNK6semver7versioneqERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='244' c='_ZNK6semver7versionltERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.hpp' l='258' c='_ZNK6semver7versiongtERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='112' c='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='148' c='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='195' c='_ZNK6semver7version10bump_majorEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='200' c='_ZNK6semver7version10bump_minorEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='205' c='_ZNK6semver7version10bump_patchEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='210' c='_ZNK6semver7version4bumpEj'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='226' c='_ZNK6semver7version4bumpEj'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='244' c='_ZNK6semver7version16strip_prereleaseEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='246' c='_ZNK6semver7version16strip_prereleaseEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='249' c='_ZNK6semver7version14strip_metadataEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='251' c='_ZNK6semver7version14strip_metadataEv'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='259' c='_ZNK6semver7versioneqERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='264' c='_ZNK6semver7versionltERKS0_'/>
+<use f='qv2ray/3rdparty/libsemver/version.cpp' l='283' c='_ZNK6semver7versiongtERKS0_'/>
+<size>112</size>
+<doc f='qv2ray/3rdparty/libsemver/version.hpp' l='75'>/**
+   * @brief Class that represents a version number.
+   *
+   * This class represents a version number complying with _Semantic Versioning_
+   * 2.0.0 (http://semver.org/).  As a supported extension this class allows
+   * version numbers to contain any number of components greater than 2.
+   *
+   * Instances of this class are designed to be immutable.
+   */</doc>
+<mbr r='semver::version::versions' o='0' t='std::vector&lt;unsigned int&gt;'/>
+<mbr r='semver::version::prerelease' o='192' t='std::string'/>
+<mbr r='semver::version::prerelease_comp' o='448' t='std::vector&lt;prerelease_component&gt;'/>
+<mbr r='semver::version::metadata' o='640' t='std::string'/>
+<fun r='_ZN6semver7version16parse_prereleaseEv'/>
+<fun r='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6semver7versionC1ESt6vectorIjSaIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_'/>
+<fun r='_ZNK6semver7version3strB5cxx11Ev'/>
+<fun r='_ZNK6semver7version11get_versionEv'/>
+<fun r='_ZNK6semver7version11get_versionEj'/>
+<fun r='_ZNK6semver7version14get_prereleaseB5cxx11Ev'/>
+<fun r='_ZNK6semver7version12get_metadataB5cxx11Ev'/>
+<fun r='_ZNK6semver7version10bump_majorEv'/>
+<fun r='_ZNK6semver7version10bump_minorEv'/>
+<fun r='_ZNK6semver7version10bump_patchEv'/>
+<fun r='_ZNK6semver7version4bumpEj'/>
+<fun r='_ZNK6semver7version16strip_prereleaseEv'/>
+<fun r='_ZNK6semver7version14strip_metadataEv'/>
+<fun r='_ZNK6semver7version10is_releaseEv'/>
+<fun r='_ZNK6semver7versioneqERKS0_'/>
+<fun r='_ZNK6semver7versionltERKS0_'/>
+<fun r='_ZNK6semver7versiongtERKS0_'/>
+<fun r='_ZN6semver7version11from_stringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN6semver7versionC1ESt6vectorIjSaIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_'/>
+<fun r='_ZNK6semver7version3strB5cxx11Ev'/>
+<fun r='_ZNK6semver7version10bump_majorEv'/>
+<fun r='_ZNK6semver7version10bump_minorEv'/>
+<fun r='_ZNK6semver7version10bump_patchEv'/>
+<fun r='_ZNK6semver7version4bumpEj'/>
+<fun r='_ZNK6semver7version11get_versionEv'/>
+<fun r='_ZNK6semver7version14get_prereleaseB5cxx11Ev'/>
+<fun r='_ZNK6semver7version12get_metadataB5cxx11Ev'/>
+<fun r='_ZNK6semver7version16strip_prereleaseEv'/>
+<fun r='_ZNK6semver7version14strip_metadataEv'/>
+<fun r='_ZNK6semver7version10is_releaseEv'/>
+<fun r='_ZNK6semver7versioneqERKS0_'/>
+<fun r='_ZNK6semver7versionltERKS0_'/>
+<fun r='_ZNK6semver7versiongtERKS0_'/>
+<fun r='_ZNK6semver7version11get_versionEj'/>
+<fun r='_ZN6semver7version16parse_prereleaseEv'/>

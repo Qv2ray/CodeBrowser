@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/extension_set.h' l='616' type='std::pair&lt;Extension *, bool&gt; google::protobuf::internal::ExtensionSet::Insert(int key)'/>
+<doc f='include/google/protobuf/extension_set.h' l='613'>// Inserts a new (key, Extension) into the ExtensionSet (and returns true), or
+  // finds the already-existing Extension for that key (returns false).
+  // The Extension* will point to the new-or-found Extension.</doc>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/descriptor.h' l='189' type='void google::protobuf::internal::LazyDescriptor::Set(const google::protobuf::Descriptor * descriptor)'/>
+<doc f='include/google/protobuf/descriptor.h' l='185'>// Sets the value of the descriptor if it is known during the descriptor
+  // building process. Not thread safe, should only be called during the
+  // descriptor build process. Should not be called after SetLazy has been
+  // called.</doc>

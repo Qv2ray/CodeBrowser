@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='813' type='int uv_prepare_stop(uv_prepare_t * prepare)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/loop-watcher.c' l='66' macro='1' type='int uv_prepare_stop(uv_prepare_t * handle)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop-watcher.c' l='66' macro='1' u='c' c='uv__prepare_close'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/prepare.cpp' l='28' u='a' c='_ZN3uvw13PrepareHandle4stopEv'/>

@@ -1,0 +1,9 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='719' type='google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::GetDirectBufferForNBytesAndAdvance(int size)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1128' ll='1136' type='google::protobuf::uint8 * google::protobuf::io::CodedOutputStream::GetDirectBufferForNBytesAndAdvance(int size)'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='712'>// If there are at least &quot;size&quot; bytes available in the current buffer,
+  // returns a pointer directly into the buffer and advances over these bytes.
+  // The caller may then write directly into this buffer (e.g. using the
+  // *ToArray static methods) rather than go through CodedOutputStream.  If
+  // there are not enough bytes available, returns NULL.  The return pointer is
+  // invalidated as soon as any other non-const method of CodedOutputStream
+  // is called.</doc>

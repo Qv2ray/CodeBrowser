@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1050' type='int uv_kill(int pid, int signum)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='578' u='c' c='uv_process_kill'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/process.c' l='582' ll='587' type='int uv_kill(int pid, int signum)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='34' u='c' c='_ZN3uvw13ProcessHandle4killEii'/>

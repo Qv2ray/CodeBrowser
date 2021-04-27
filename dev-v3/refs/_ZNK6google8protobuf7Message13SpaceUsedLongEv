@@ -1,0 +1,10 @@
+<dec f='include/google/protobuf/message.h' l='258' type='size_t google::protobuf::Message::SpaceUsedLong() const'/>
+<use f='include/google/protobuf/message.h' l='261' u='c' c='_ZNK6google8protobuf7Message9SpaceUsedEv'/>
+<doc f='include/google/protobuf/message.h' l='250'>// Computes (an estimate of) the total number of bytes currently used for
+  // storing the message in memory.  The default implementation calls the
+  // Reflection object&apos;s SpaceUsed() method.
+  //
+  // SpaceUsed() is noticeably slower than ByteSize(), as it is implemented
+  // using reflection (rather than the generated code implementation for
+  // ByteSize()). Like ByteSize(), its CPU time is linear in the number of
+  // fields defined for the proto.</doc>

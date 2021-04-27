@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1712' type='void uv_cond_signal(uv_cond_t * cond)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='82' u='c' c='worker'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='115' u='c' c='worker'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='158' u='c' c='post'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='568' u='c' c='uv__custom_sem_post'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='769' ll='772' type='void uv_cond_signal(uv_cond_t * cond)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='184' u='c' c='_ZN3uvw9Condition6signalEv'/>

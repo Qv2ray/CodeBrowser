@@ -1,0 +1,3 @@
+<dec f='include/google/protobuf/extension_set.h' l='620' type='void google::protobuf::internal::ExtensionSet::GrowCapacity(size_t minimum_new_capacity)'/>
+<doc f='include/google/protobuf/extension_set.h' l='618'>// Grows the flat_capacity_.
+  // If flat_capacity_ &gt; kMaximumFlatCapacity, converts to LargeMap.</doc>

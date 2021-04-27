@@ -1,0 +1,39 @@
+<inh f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='22' c='QtNodes::NodeDataModel'/>
+<def f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='138' macro='1'/>
+<size>304</size>
+<smbr r='Qv2ray::ui::nodemodels::RuleNodeModel::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel10metaObjectEv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel2trEPKcS4_i'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModelC1ESt10shared_ptrI14NodeDispatcherES3_INS_4base7objects10RuleObjectEE'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel7captionEv'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel14captionVisibleEv'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel4nameEv'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel23portOutConnectionPolicyEi'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel22portInConnectionPolicyEi'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel6nPortsEN7QtNodes8PortTypeE'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel8dataTypeEN7QtNodes8PortTypeEi'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel16onNodeHoverEnterEv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel16onNodeHoverLeaveEv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel9setInDataESt6vectorISt10shared_ptrIN7QtNodes8NodeDataEESaIS7_EEi'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel7outDataEi'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel14embeddedWidgetEv'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel5cloneEv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel22inputConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel22inputConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel23outputConnectionCreatedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel23outputConnectionDeletedERKN7QtNodes10ConnectionE'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel7getDataEv'/>
+<mbr r='Qv2ray::ui::nodemodels::RuleNodeModel::dataptr' o='2112' t='std::shared_ptr&lt;node_data_t&gt;'/>
+<mbr r='Qv2ray::ui::nodemodels::RuleNodeModel::widget' o='2240' t='Qv2ray::ui::nodemodels::QvNodeWidget *'/>
+<mbr r='Qv2ray::ui::nodemodels::RuleNodeModel::dispatcher' o='2304' t='std::shared_ptr&lt;NodeDispatcher&gt;'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='Qv2ray::ui::nodemodels::RuleNodeModel::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK6Qv2ray2ui10nodemodels13RuleNodeModel10metaObjectEv'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel11qt_metacastEPKc'/>
+<fun r='_ZN6Qv2ray2ui10nodemodels13RuleNodeModel11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='233' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<size>304</size>

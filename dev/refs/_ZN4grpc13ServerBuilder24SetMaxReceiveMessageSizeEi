@@ -1,0 +1,7 @@
+<def f='include/grpcpp/server_builder.h' l='148' ll='151' type='grpc::ServerBuilder &amp; grpc::ServerBuilder::SetMaxReceiveMessageSize(int max_receive_message_size)'/>
+<use f='include/grpcpp/server_builder.h' l='162' u='c' c='_ZN4grpc13ServerBuilder17SetMaxMessageSizeEi'/>
+<doc f='include/grpcpp/server_builder.h' l='143'>//////////////////////////////////////////////////////////////////////////////
+  // Fine control knobs
+
+  /// Set max receive message size in bytes.
+  /// The default is GRPC_DEFAULT_MAX_RECV_MESSAGE_LENGTH.</doc>

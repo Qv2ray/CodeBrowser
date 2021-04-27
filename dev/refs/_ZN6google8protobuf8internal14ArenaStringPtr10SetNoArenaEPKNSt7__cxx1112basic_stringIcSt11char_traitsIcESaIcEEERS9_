@@ -1,0 +1,17 @@
+<def f='include/google/protobuf/arenastring.h' l='261' ll='268' type='void google::protobuf::internal::ArenaStringPtr::SetNoArena(const ::std::string * default_value, const ::std::string &amp; value)'/>
+<use f='include/google/protobuf/arenastring.h' l='395' u='c' c='_ZN6google8protobuf8internal14ArenaStringPtr17AssignWithDefaultEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES2_'/>
+<use f='/v2ray_api.pb.h' l='1051' u='c' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest8set_nameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_api.pb.h' l='1122' u='c' c='_ZN5v2ray4core3app5stats7command4Stat8set_nameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_api.pb.h' l='1251' u='c' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest11set_patternERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<doc f='include/google/protobuf/arenastring.h' l='254'>// The &apos;NoArena&apos; variants of methods below assume arena == NULL and are
+  // optimized to provide very little overhead relative to a raw string pointer
+  // (while still being in-memory compatible with other code that assumes
+  // ArenaStringPtr). Note the invariant that a class instance that has only
+  // ever been mutated by NoArena methods must *only* be in the String state
+  // (i.e., tag bits are not used), *NEVER* ArenaString. This allows all
+  // tagged-pointer manipulations to be avoided.</doc>
+<use f='/v2ray_geosite.pb.h' l='1034' u='c' c='_ZN5v2ray4core3app6router22DomainObject_Attribute7set_keyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_geosite.pb.h' l='1172' u='c' c='_ZN5v2ray4core3app6router12DomainObject9set_valueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_geosite.pb.h' l='1259' u='c' c='_ZN5v2ray4core3app6router4CIDR6set_ipERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_geosite.pb.h' l='1330' u='c' c='_ZN5v2ray4core3app6router5GeoIP16set_country_codeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='/v2ray_geosite.pb.h' l='1451' u='c' c='_ZN5v2ray4core3app6router7GeoSite16set_country_codeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

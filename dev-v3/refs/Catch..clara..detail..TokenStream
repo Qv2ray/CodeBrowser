@@ -1,0 +1,26 @@
+<use f='qv2ray/test/catch.hpp' l='8811'/>
+<def f='qv2ray/test/catch.hpp' l='8849' ll='8919'/>
+<use f='qv2ray/test/catch.hpp' l='8887' c='_ZN5Catch5clara6detail11TokenStreamC1ERKNS1_4ArgsE'/>
+<use f='qv2ray/test/catch.hpp' l='8909' c='_ZN5Catch5clara6detail11TokenStreamppEv'/>
+<use f='qv2ray/test/catch.hpp' l='9033' c='_ZN5Catch5clara6detail10ParseStateC1ENS1_15ParseResultTypeERKNS1_11TokenStreamE'/>
+<use f='qv2ray/test/catch.hpp' l='9039' c='_ZNK5Catch5clara6detail10ParseState15remainingTokensEv'/>
+<use f='qv2ray/test/catch.hpp' l='9043'/>
+<use f='qv2ray/test/catch.hpp' l='9213' c='_ZNK5Catch5clara6detail10ParserBase5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS1_11TokenStreamE'/>
+<use f='qv2ray/test/catch.hpp' l='9217' c='_ZNK5Catch5clara6detail10ParserBase5parseERKNS1_4ArgsE'/>
+<use f='qv2ray/test/catch.hpp' l='9306' c='_ZNK5Catch5clara6detail7ExeName5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS1_11TokenStreamE'/>
+<use f='qv2ray/test/catch.hpp' l='9330' c='_ZNK5Catch5clara6detail3Arg5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS1_11TokenStreamE'/>
+<use f='qv2ray/test/catch.hpp' l='9407' c='_ZNK5Catch5clara6detail3Opt5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS1_11TokenStreamE'/>
+<use f='qv2ray/test/catch.hpp' l='9584' c='_ZNK5Catch5clara6detail6Parser5parseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS1_11TokenStreamE'/>
+<size>40</size>
+<doc f='qv2ray/test/catch.hpp' l='8848'>// Abstracts iterators into args as a stream of tokens, with option arguments uniformly handled</doc>
+<mbr r='Catch::clara::detail::TokenStream::it' o='0' t='Catch::clara::detail::TokenStream::Iterator'/>
+<mbr r='Catch::clara::detail::TokenStream::itEnd' o='64' t='Catch::clara::detail::TokenStream::Iterator'/>
+<mbr r='Catch::clara::detail::TokenStream::m_tokenBuffer' o='128' t='std::vector&lt;Token&gt;'/>
+<fun r='_ZN5Catch5clara6detail11TokenStream10loadBufferEv'/>
+<fun r='_ZN5Catch5clara6detail11TokenStreamC1ERKNS1_4ArgsE'/>
+<fun r='_ZN5Catch5clara6detail11TokenStreamC1EN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorISA_SaISA_EEEESG_'/>
+<fun r='_ZNK5Catch5clara6detail11TokenStreamcvbEv'/>
+<fun r='_ZNK5Catch5clara6detail11TokenStream5countEv'/>
+<fun r='_ZNK5Catch5clara6detail11TokenStreamdeEv'/>
+<fun r='_ZNK5Catch5clara6detail11TokenStreamptEv'/>
+<fun r='_ZN5Catch5clara6detail11TokenStreamppEv'/>

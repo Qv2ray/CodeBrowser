@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='269' type='FILE * uv__open_file(const char * path)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='465' ll='478' type='FILE * uv__open_file(const char * path)'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/core.c' l='464'>/* get a file pointer to a file in read-only and close-on-exec mode */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='619' u='c' c='uv_cpu_info'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='699' u='c' c='read_models'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='851' u='c' c='read_cpufreq'/>

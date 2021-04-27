@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='184' macro='1' type='-16'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='283' u='r' c='uv__work_cancel'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='412' u='r' c='uv__stream_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='343' u='r' c='uv_mutex_trylock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='380' u='r' c='uv_rwlock_tryrdlock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='406' u='r' c='uv_rwlock_trywrlock'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='384' u='r' c='uv_tty_reset_mode'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='984' u='r' c='uv_udp_open'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='180' macro='1' c='uv_err_name_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='191' macro='1' c='uv_err_name'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='203' macro='1' c='uv_strerror_r'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='214' macro='1' c='uv_strerror'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='799' u='r' c='uv_loop_close'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='804' u='r' c='uv_loop_close'/>

@@ -1,0 +1,5 @@
+<def f='include/google/protobuf/arenastring.h' l='97' ll='103' type='::std::string * google::protobuf::internal::ArenaStringPtr::Release(const ::std::string * default_value, ::google::protobuf::Arena * arena)'/>
+<doc f='include/google/protobuf/arenastring.h' l='93'>// Release returns a ::std::string* instance that is heap-allocated and is not
+  // Own()&apos;d by any arena. If the field was not set, it returns NULL. The caller
+  // retains ownership. Clears this field back to NULL state. Used to implement
+  // release_&lt;field&gt;() methods on generated classes.</doc>

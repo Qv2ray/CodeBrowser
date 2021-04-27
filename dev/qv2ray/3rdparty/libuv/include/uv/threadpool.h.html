@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>threadpool.h source code [qv2ray/3rdparty/libuv/include/uv/threadpool.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="uv__work "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/include/uv/threadpool.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>3rdparty</a>/<a href='../..'>libuv</a>/<a href='..'>include</a>/<a href='./'>uv</a>/<a href='threadpool.h.html'>threadpool.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Permission is hereby granted, free of charge, to any person obtaining a copy</i></td></tr>
+<tr><th id="4">4</th><td><i> * of this software and associated documentation files (the "Software"), to</i></td></tr>
+<tr><th id="5">5</th><td><i> * deal in the Software without restriction, including without limitation the</i></td></tr>
+<tr><th id="6">6</th><td><i> * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * sell copies of the Software, and to permit persons to whom the Software is</i></td></tr>
+<tr><th id="8">8</th><td><i> * furnished to do so, subject to the following conditions:</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * The above copyright notice and this permission notice shall be included in</i></td></tr>
+<tr><th id="11">11</th><td><i> * all copies or substantial portions of the Software.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</i></td></tr>
+<tr><th id="14">14</th><td><i> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</i></td></tr>
+<tr><th id="15">15</th><td><i> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</i></td></tr>
+<tr><th id="16">16</th><td><i> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</i></td></tr>
+<tr><th id="17">17</th><td><i> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING</i></td></tr>
+<tr><th id="18">18</th><td><i> * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</i></td></tr>
+<tr><th id="19">19</th><td><i> * IN THE SOFTWARE.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>/*</i></td></tr>
+<tr><th id="23">23</th><td><i> * This file is private to libuv. It provides common functionality to both</i></td></tr>
+<tr><th id="24">24</th><td><i> * Windows and Unix backends.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/UV_THREADPOOL_H_">UV_THREADPOOL_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/UV_THREADPOOL_H_" data-ref="_M/UV_THREADPOOL_H_">UV_THREADPOOL_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>struct</b> <dfn class="type def" id="uv__work" title='uv__work' data-ref="uv__work" data-ref-filename="uv__work">uv__work</dfn> {</td></tr>
+<tr><th id="31">31</th><td>  <em>void</em> (*<dfn class="decl field" id="uv__work::work" title='uv__work::work' data-ref="uv__work::work" data-ref-filename="uv__work..work">work</dfn>)(<b>struct</b> <a class="type" href="#uv__work" title='uv__work' data-ref="uv__work" data-ref-filename="uv__work">uv__work</a> *<dfn class="local col6 decl" id="746w" title='w' data-type='struct uv__work *' data-ref="746w" data-ref-filename="746w">w</dfn>);</td></tr>
+<tr><th id="32">32</th><td>  <em>void</em> (*<dfn class="decl field" id="uv__work::done" title='uv__work::done' data-ref="uv__work::done" data-ref-filename="uv__work..done">done</dfn>)(<b>struct</b> <a class="type" href="#uv__work" title='uv__work' data-ref="uv__work" data-ref-filename="uv__work">uv__work</a> *<dfn class="local col7 decl" id="747w" title='w' data-type='struct uv__work *' data-ref="747w" data-ref-filename="747w">w</dfn>, <em>int</em> <dfn class="local col8 decl" id="748status" title='status' data-type='int' data-ref="748status" data-ref-filename="748status">status</dfn>);</td></tr>
+<tr><th id="33">33</th><td>  <b>struct</b> <a class="type" href="../uv.h.html#uv_loop_s" title='uv_loop_s' data-ref="uv_loop_s" data-ref-filename="uv_loop_s" id="uv_loop_s"><a class="type" href="../uv.h.html#uv_loop_s" title='uv_loop_s' data-ref="uv_loop_s" data-ref-filename="uv_loop_s">uv_loop_s</a></a>* <dfn class="decl field" id="uv__work::loop" title='uv__work::loop' data-ref="uv__work::loop" data-ref-filename="uv__work..loop">loop</dfn>;</td></tr>
+<tr><th id="34">34</th><td>  <em>void</em>* <dfn class="decl field" id="uv__work::wq" title='uv__work::wq' data-ref="uv__work::wq" data-ref-filename="uv__work..wq">wq</dfn>[<var>2</var>];</td></tr>
+<tr><th id="35">35</th><td>};</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="27">endif</span> /* UV_THREADPOOL_H_ */</u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../src/fs-poll.c.html'>qv2ray/3rdparty/libuv/src/fs-poll.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

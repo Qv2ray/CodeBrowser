@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='62' type='static std::vector&lt;DataBlock&gt; ZXing::QRCode::DataBlock::GetDataBlocks(const ZXing::ByteArray &amp; rawCodewords, const ZXing::QRCode::Version &amp; version, ZXing::QRCode::ErrorCorrectionLevel ecLevel)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.cpp' l='27' ll='85' type='static std::vector&lt;DataBlock&gt; ZXing::QRCode::DataBlock::GetDataBlocks(const ZXing::ByteArray &amp; rawCodewords, const ZXing::QRCode::Version &amp; version, ZXing::QRCode::ErrorCorrectionLevel ecLevel)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataBlock.h' l='51'>/**
+	* &lt;p&gt;When QR Codes use multiple data blocks, they are actually interleaved.
+	* That is, the first byte of data block 1 to n is written, then the second bytes, and so on. This
+	* method will separate the data into original blocks.&lt;/p&gt;
+	*
+	* @param rawCodewords bytes as read directly from the QR Code
+	* @param version version of the QR Code
+	* @param ecLevel error-correction level of the QR Code
+	* @return DataBlocks containing original bytes, &quot;de-interleaved&quot; from representation in the
+	*         QR Code
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='432' u='c' c='_ZN5ZXing6QRCodeL8DoDecodeERKNS_9BitMatrixERKNS0_7VersionERKNS0_17FormatInformationERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

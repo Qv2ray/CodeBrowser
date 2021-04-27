@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/sys/inotify.h' l='96' type='int inotify_rm_watch(int __fd, int __wd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='162' u='c' c='maybe_free_watcher_list'/>
+<doc f='include/x86_64-linux-gnu/sys/inotify.h' l='95'>/* Remove the watch specified by WD from the inotify instance FD.  */</doc>

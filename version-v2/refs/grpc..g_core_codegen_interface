@@ -1,0 +1,132 @@
+<dec f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='135' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='38' u='r' c='_ZN4grpc5SliceC1Ev'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='40' u='r' c='_ZN4grpc5SliceD1Ev'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='45' u='r' c='_ZN4grpc5SliceC1E10grpc_sliceNS0_6AddRefE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='53' u='r' c='_ZN4grpc5SliceC1Em'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='57' u='r' c='_ZN4grpc5SliceC1EPKvm'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='62' u='r' c='_ZN4grpc5SliceC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='69' u='r' c='_ZN4grpc5SliceC1EPKvmNS0_11StaticSliceE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='74' u='r' c='_ZN4grpc5SliceC1ERKS0_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='88' u='r' c='_ZN4grpc5SliceC1EPvmPFvS1_ES1_'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='97' u='r' c='_ZN4grpc5SliceC1EPvmPFvS1_mE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='111' u='r' c='_ZNK4grpc5Slice7c_sliceEv'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='132' u='r' c='_ZN4grpc22SliceReferencingStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/slice.h' l='137' u='r' c='_ZN4grpc21SliceFromCopiedStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='82' u='r' c='_ZN4grpc10ByteBufferC1EPKNS_5SliceEm'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='92' u='r' c='_ZN4grpc10ByteBufferD1Ev'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='104' u='r' c='_ZN4grpc10ByteBuffer5ClearEv'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='113' u='r' c='_ZN4grpc10ByteBuffer9DuplicateEv'/>
+<use f='include/grpcpp/impl/codegen/byte_buffer.h' l='124' u='r' c='_ZNK4grpc10ByteBuffer6LengthEv'/>
+<use f='include/grpcpp/impl/codegen/metadata_map.h' l='36' u='r' c='_ZN4grpc8internal11MetadataMapD1Ev'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='206' macro='1' u='r' c='_ZNK4grpc13ClientContext24GetServerInitialMetadataEv'/>
+<dec f='include/grpcpp/impl/codegen/call.h' l='47' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='63' u='r' c='_ZN4grpc8internal17FillMetadataArrayERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_St4lessIS7_ESaISt4pairIKS7_S7_EEEPmRSB_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='72' u='r' c='_ZN4grpc8internal17FillMetadataArrayERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_St4lessIS7_ESaISt4pairIKS7_S7_EEEPmRSB_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='252' u='r' c='_ZN4grpc8internal25CallOpSendInitialMetadata8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='497' u='r' c='_ZN4grpc8internal22CallOpServerSendStatus8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='548' u='r' c='_ZN4grpc8internal22CallOpClientRecvStatus16ClientRecvStatusEPNS_13ClientContextEPNS_6StatusE'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='576' u='r' c='_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='578' u='r' c='_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='634' u='r' c='_ZN4grpc8internal9CallOpSet7FillOpsEP9grpc_callP7grpc_opPm'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='647' u='r' c='_ZN4grpc8internal9CallOpSet14FinalizeResultEPPvPb'/>
+<dec f='include/grpcpp/impl/codegen/server_interface.h' l='39' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='96' u='r' c='_ZN4grpc15ServerInterface8ShutdownEv'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='228' u='r' c='_ZN4grpc15ServerInterface19PayloadAsyncRequest14FinalizeResultEPPvPb'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='230' u='r' c='_ZN4grpc15ServerInterface19PayloadAsyncRequest14FinalizeResultEPPvPb'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='274' macro='1' u='r' c='_ZN4grpc15ServerInterface16RequestAsyncCallEPNS_8internal16RpcServiceMethodEPNS_13ServerContextEPNS1_29ServerAsyncStreamingInterfaceEPNS_15CompletionQ12813302'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='285' macro='1' u='r' c='_ZN4grpc15ServerInterface16RequestAsyncCallEPNS_8internal16RpcServiceMethodEPNS_13ServerContextEPNS1_29ServerAsyncStreamingInterfaceEPNS_15CompletionQ7871544'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='137' macro='1' u='r' c='_ZN4grpc7Service15MarkMethodAsyncEi'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='149' macro='1' u='r' c='_ZN4grpc7Service13MarkMethodRawEi'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='160' macro='1' u='r' c='_ZN4grpc7Service17MarkMethodGenericEi'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='171' macro='1' u='r' c='_ZN4grpc7Service18MarkMethodStreamedEiPNS_8internal13MethodHandlerE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='189' u='r' c='_ZN4grpc8internal24ClientAsyncReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='230' macro='1' u='r' c='_ZN4grpc17ClientAsyncReader19ReadInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='269' macro='1' u='r' c='_ZN4grpc17ClientAsyncReaderC1ENS_8internal4CallEPNS_13ClientContextERKTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='337' u='r' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='377' macro='1' u='r' c='_ZN4grpc17ClientAsyncWriter19ReadInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='388' macro='1' u='r' c='_ZN4grpc17ClientAsyncWriter5WriteERKT_Pv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='400' macro='1' u='r' c='_ZN4grpc17ClientAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='502' u='r' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='544' macro='1' u='r' c='_ZN4grpc23ClientAsyncReaderWriter19ReadInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='565' macro='1' u='r' c='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_Pv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='577' macro='1' u='r' c='_ZN4grpc23ClientAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='710' macro='1' u='r' c='_ZN4grpc17ServerAsyncReader19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='769' macro='1' u='r' c='_ZN4grpc17ServerAsyncReader15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='859' macro='1' u='r' c='_ZN4grpc17ServerAsyncWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='875' macro='1' u='r' c='_ZN4grpc17ServerAsyncWriter5WriteERKT_Pv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='887' macro='1' u='r' c='_ZN4grpc17ServerAsyncWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='906' macro='1' u='r' c='_ZN4grpc17ServerAsyncWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1025' macro='1' u='r' c='_ZN4grpc23ServerAsyncReaderWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1047' macro='1' u='r' c='_ZN4grpc23ServerAsyncReaderWriter5WriteERKT_Pv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1057' macro='1' u='r' c='_ZN4grpc23ServerAsyncReaderWriter5WriteERKT_NS_12WriteOptionsEPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1077' macro='1' u='r' c='_ZN4grpc23ServerAsyncReaderWriter14WriteAndFinishERKT_NS_12WriteOptionsERKNS_6StatusEPv'/>
+<dec f='include/grpcpp/impl/codegen/async_unary_call.h' l='33' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='88' u='r' c='_ZN4grpc8internal32ClientAsyncResponseReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__b'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='127' macro='1' u='r' c='_ZN4grpc25ClientAsyncResponseReader19ReadInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='171' macro='1' u='r' c='_ZN4grpc25ClientAsyncResponseReaderC1ENS_8internal4CallEPNS_13ClientContextERKTL0__b'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='214' macro='1' u='r' c='_ZN4grpc25ServerAsyncResponseWriter19SendInitialMetadataEPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='274' macro='1' u='r' c='_ZN4grpc25ServerAsyncResponseWriter15FinishWithErrorERKNS_6StatusEPv'/>
+<use f='include/grpcpp/impl/codegen/grpc_library.h' l='42' macro='1' u='r' c='_ZN4grpc18GrpcLibraryCodegenC1Eb'/>
+<use f='include/grpcpp/impl/codegen/grpc_library.h' l='51' macro='1' u='r' c='_ZN4grpc18GrpcLibraryCodegenD1Ev'/>
+<dec f='include/grpcpp/impl/codegen/completion_queue.h' l='89' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='111' u='r' c='_ZN4grpc15CompletionQueueD1Ev'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='172' u='r' c='_ZN4grpc15CompletionQueue4NextEPPvPb'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='239' u='r' c='_ZN4grpc15CompletionQueueC1ERK32grpc_completion_queue_attributes'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='240' u='r' c='_ZN4grpc15CompletionQueueC1ERK32grpc_completion_queue_attributes'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='301' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='302' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='306' macro='1' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='307' macro='1' u='r' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='321' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='322' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='328' macro='1' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='337' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE12gpr_timespec'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='345' macro='1' u='r' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE12gpr_timespec'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='186' macro='1' u='r' c='_ZN4grpc12ClientReader22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='227' macro='1' u='r' c='_ZN4grpc12ClientReader6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='256' macro='1' u='r' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='303' macro='1' u='r' c='_ZN4grpc12ClientWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='362' macro='1' u='r' c='_ZN4grpc12ClientWriter6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='454' macro='1' u='r' c='_ZN4grpc18ClientReaderWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='535' macro='1' u='r' c='_ZN4grpc18ClientReaderWriter6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='583' macro='1' u='r' c='_ZN4grpc12ServerReader19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='635' macro='1' u='r' c='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='708' macro='1' u='r' c='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='72' macro='1' u='r' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<dec f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='38' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='55' u='r' c='_ZN4grpc17ProtoBufferReaderC1EPNS_10ByteBufferE'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='64' u='r' c='_ZN4grpc17ProtoBufferReaderD1Ev'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='78' macro='1' u='r' c='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='84' u='r' c='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='88' u='r' c='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='91' macro='1' u='r' c='_ZN4grpc17ProtoBufferReader4NextEPPKvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='103' macro='1' u='r' c='_ZN4grpc17ProtoBufferReader6BackUpEi'/>
+<dec f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='37' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='65' macro='1' u='r' c='_ZN4grpc17ProtoBufferWriterC1EPNS_10ByteBufferEii'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='68' u='r' c='_ZN4grpc17ProtoBufferWriterC1EPNS_10ByteBufferEii'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='75' u='r' c='_ZN4grpc17ProtoBufferWriterD1Ev'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='83' macro='1' u='r' c='_ZN4grpc17ProtoBufferWriter4NextEPPvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='102' u='r' c='_ZN4grpc17ProtoBufferWriter4NextEPPvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='109' macro='1' u='r' c='_ZN4grpc17ProtoBufferWriter4NextEPPvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='111' u='r' c='_ZN4grpc17ProtoBufferWriter4NextEPPvPi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='123' macro='1' u='r' c='_ZN4grpc17ProtoBufferWriter6BackUpEi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='124' u='r' c='_ZN4grpc17ProtoBufferWriter6BackUpEi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='128' u='r' c='_ZN4grpc17ProtoBufferWriter6BackUpEi'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='130' u='r' c='_ZN4grpc17ProtoBufferWriter6BackUpEi'/>
+<dec f='include/grpcpp/impl/codegen/proto_utils.h' l='41' type='grpc::CoreCodegenInterface *'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='56' macro='1' u='r' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='61' u='r' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='65' u='r' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='79' u='r' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='78' macro='1' u='r' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='70' u='r' c='_ZN4grpc8internal21CallbackWithStatusTagC1EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='97' macro='1' u='r' c='_ZN4grpc8internal21CallbackWithStatusTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='98' macro='1' u='r' c='_ZN4grpc8internal21CallbackWithStatusTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='105' u='r' c='_ZN4grpc8internal21CallbackWithStatusTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='127' u='r' c='_ZN4grpc8internal22CallbackWithSuccessTagC1EP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='150' macro='1' u='r' c='_ZN4grpc8internal22CallbackWithSuccessTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='151' macro='1' u='r' c='_ZN4grpc8internal22CallbackWithSuccessTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='157' u='r' c='_ZN4grpc8internal22CallbackWithSuccessTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='59' macro='1' u='r' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='67' u='r' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='70' u='r' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>

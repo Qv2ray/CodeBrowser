@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/descriptor_database.h' l='256' type='bool google::protobuf::SimpleDescriptorDatabase::DescriptorIndex::IsSubSymbol(const std::string &amp; sub_symbol, const std::string &amp; super_symbol)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='253'>// True if either the arguments are equal or super_symbol identifies a
+    // parent symbol of sub_symbol (e.g. &quot;foo.bar&quot; is a parent of
+    // &quot;foo.bar.baz&quot;, but not a parent of &quot;foo.barbaz&quot;).</doc>

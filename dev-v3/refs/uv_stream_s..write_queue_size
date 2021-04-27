@@ -1,0 +1,16 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='480' type='size_t'/>
+<offset>768</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='102' u='w' c='uv__stream_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='482' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='482' u='r' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='725' u='r' c='uv__write_req_size'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='725' u='r' c='uv__write_req_size'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='743' u='r' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='743' u='r' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='744' u='w' c='uv__write_req_update'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='945' u='w' c='uv__write_callbacks'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1439' u='r' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1459' u='w' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1517' u='r' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1533' u='w' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-data-getter-setters.c' l='57' u='r' c='uv_stream_get_write_queue_size'/>

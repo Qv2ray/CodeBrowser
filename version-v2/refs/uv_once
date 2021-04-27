@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1724' type='void uv_once(uv_once_t * guard, void (*)(void) callback)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='261' u='c' c='uv__work_submit'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='312' u='c' c='uv__fs_mkstemp'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='106' u='c' c='uv_set_process_title'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/proctitle.c' l='129' u='c' c='uv_get_process_title'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/random-devurandom.c' l='87' u='c' c='uv__random_devurandom'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='112' u='c' c='uv__signal_global_once_init'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='419' ll='422' type='void uv_once(uv_once_t * guard, void (*)(void) callback)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='652' u='c' c='uv_sem_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='274' u='c' c='uv__udp_recvmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='416' u='c' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='171' u='c' c='_ZN3uvw4Once4onceEOT_'/>

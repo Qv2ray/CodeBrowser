@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='523' type='static bool uvw::Utilities::OS::env(const std::string &amp; name, const std::string &amp; value)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='516'>/**
+         * @brief Creates, updates or deletes an environment variable.
+         * @param name The name of the variable to be updated.
+         * @param value The value to be used for the variable (an empty string
+         * to unset it).
+         * @return True in case of success, false otherwise.
+         */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='98' ll='100' type='static bool uvw::Utilities::OS::env(const std::string &amp; name, const std::string &amp; value)'/>

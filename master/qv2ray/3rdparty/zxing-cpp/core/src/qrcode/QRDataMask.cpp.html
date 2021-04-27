@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QRDataMask.cpp source code [qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataMask.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDataMask.cpp'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>qv2ray</a>/<a href='../../../..'>3rdparty</a>/<a href='../../..'>zxing-cpp</a>/<a href='../..'>core</a>/<a href='..'>src</a>/<a href='./'>qrcode</a>/<a href='QRDataMask.cpp.html'>QRDataMask.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>* Copyright 2016 Nu-book Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i>* Copyright 2016 ZXing authors</i></td></tr>
+<tr><th id="4">4</th><td><i>*</i></td></tr>
+<tr><th id="5">5</th><td><i>* Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i>* you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i>* You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i>*</i></td></tr>
+<tr><th id="9">9</th><td><i>*      <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i>*</i></td></tr>
+<tr><th id="11">11</th><td><i>* Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i>* distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i>* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i>* See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i>* limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i>*/</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="QRDataMask.h.html">"QRDataMask.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../BitMatrix.h.html">"BitMatrix.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../ZXContainerAlgorithms.h.html">"ZXContainerAlgorithms.h"</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../../../../include/c++/10/stdexcept.html">&lt;stdexcept&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">ZXing</span> {</td></tr>
+<tr><th id="25">25</th><td><b>namespace</b> <span class="namespace">QRCode</span> {</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>namespace</b> {</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii">/**</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii">* 000: mask bits for which (x + y) mod 2 == 0</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii">*/</i></td></tr>
+<tr><th id="32">32</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask000' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask000(int i, int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii">DataMask000</dfn>(<em>int</em> <dfn class="local col4 decl" id="4i" title='i' data-type='int' data-ref="4i" data-ref-filename="4i">i</dfn>, <em>int</em> <dfn class="local col5 decl" id="5j" title='j' data-type='int' data-ref="5j" data-ref-filename="5j">j</dfn>)</td></tr>
+<tr><th id="33">33</th><td>{</td></tr>
+<tr><th id="34">34</th><td>	<b>return</b> ((<a class="local col4 ref" href="#4i" title='i' data-ref="4i" data-ref-filename="4i">i</a> + <a class="local col5 ref" href="#5j" title='j' data-ref="5j" data-ref-filename="5j">j</a>) &amp; <var>0x01</var>) == <var>0</var>;</td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii">* 001: mask bits for which x mod 2 == 0</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii">*/</i></td></tr>
+<tr><th id="40">40</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask001' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask001(int i, int )' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii">DataMask001</dfn>(<em>int</em> <dfn class="local col6 decl" id="6i" title='i' data-type='int' data-ref="6i" data-ref-filename="6i">i</dfn>, <em>int</em>)</td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td>	<b>return</b> (<a class="local col6 ref" href="#6i" title='i' data-ref="6i" data-ref-filename="6i">i</a> &amp; <var>0x01</var>) == <var>0</var>;</td></tr>
+<tr><th id="43">43</th><td>}</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii">/**</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii">* 010: mask bits for which y mod 3 == 0</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii">*/</i></td></tr>
+<tr><th id="48">48</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask010' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask010(int , int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii">DataMask010</dfn>(<em>int</em>, <em>int</em> <dfn class="local col7 decl" id="7j" title='j' data-type='int' data-ref="7j" data-ref-filename="7j">j</dfn>)</td></tr>
+<tr><th id="49">49</th><td>{</td></tr>
+<tr><th id="50">50</th><td>	<b>return</b> <a class="local col7 ref" href="#7j" title='j' data-ref="7j" data-ref-filename="7j">j</a> % <var>3</var> == <var>0</var>;</td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii">/**</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii">* 011: mask bits for which (x + y) mod 3 == 0</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii">*/</i></td></tr>
+<tr><th id="56">56</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask011' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask011(int i, int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii">DataMask011</dfn>(<em>int</em> <dfn class="local col8 decl" id="8i" title='i' data-type='int' data-ref="8i" data-ref-filename="8i">i</dfn>, <em>int</em> <dfn class="local col9 decl" id="9j" title='j' data-type='int' data-ref="9j" data-ref-filename="9j">j</dfn>)</td></tr>
+<tr><th id="57">57</th><td>{</td></tr>
+<tr><th id="58">58</th><td>	<b>return</b> (<a class="local col8 ref" href="#8i" title='i' data-ref="8i" data-ref-filename="8i">i</a> + <a class="local col9 ref" href="#9j" title='j' data-ref="9j" data-ref-filename="9j">j</a>) % <var>3</var> == <var>0</var>;</td></tr>
+<tr><th id="59">59</th><td>}</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii">* 100: mask bits for which (x/2 + y/3) mod 2 == 0</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii">*/</i></td></tr>
+<tr><th id="64">64</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask100' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask100(int i, int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii">DataMask100</dfn>(<em>int</em> <dfn class="local col0 decl" id="10i" title='i' data-type='int' data-ref="10i" data-ref-filename="10i">i</dfn>, <em>int</em> <dfn class="local col1 decl" id="11j" title='j' data-type='int' data-ref="11j" data-ref-filename="11j">j</dfn>)</td></tr>
+<tr><th id="65">65</th><td>{</td></tr>
+<tr><th id="66">66</th><td>	<b>return</b> (((<a class="local col0 ref" href="#10i" title='i' data-ref="10i" data-ref-filename="10i">i</a> / <var>2</var>) + (<a class="local col1 ref" href="#11j" title='j' data-ref="11j" data-ref-filename="11j">j</a> / <var>3</var>)) &amp; <var>0x01</var>) == <var>0</var>;</td></tr>
+<tr><th id="67">67</th><td>}</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii">/**</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii">* 101: mask bits for which xy mod 2 + xy mod 3 == 0</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii">* equivalently, such that xy mod 6 == 0</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii">*/</i></td></tr>
+<tr><th id="73">73</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask101' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask101(int i, int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii">DataMask101</dfn>(<em>int</em> <dfn class="local col2 decl" id="12i" title='i' data-type='int' data-ref="12i" data-ref-filename="12i">i</dfn>, <em>int</em> <dfn class="local col3 decl" id="13j" title='j' data-type='int' data-ref="13j" data-ref-filename="13j">j</dfn>)</td></tr>
+<tr><th id="74">74</th><td>{</td></tr>
+<tr><th id="75">75</th><td>	<b>return</b> (<a class="local col2 ref" href="#12i" title='i' data-ref="12i" data-ref-filename="12i">i</a> * <a class="local col3 ref" href="#13j" title='j' data-ref="13j" data-ref-filename="13j">j</a>) % <var>6</var> == <var>0</var>;</td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii">* 110: mask bits for which (xy mod 2 + xy mod 3) mod 2 == 0</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii">* equivalently, such that xy mod 6 &lt; 3</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii">*/</i></td></tr>
+<tr><th id="82">82</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask110' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask110(int i, int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii">DataMask110</dfn>(<em>int</em> <dfn class="local col4 decl" id="14i" title='i' data-type='int' data-ref="14i" data-ref-filename="14i">i</dfn>, <em>int</em> <dfn class="local col5 decl" id="15j" title='j' data-type='int' data-ref="15j" data-ref-filename="15j">j</dfn>)</td></tr>
+<tr><th id="83">83</th><td>{</td></tr>
+<tr><th id="84">84</th><td>	<b>return</b> ((<a class="local col4 ref" href="#14i" title='i' data-ref="14i" data-ref-filename="14i">i</a> * <a class="local col5 ref" href="#15j" title='j' data-ref="15j" data-ref-filename="15j">j</a>) % <var>6</var>) &lt; <var>3</var>;</td></tr>
+<tr><th id="85">85</th><td>}</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii">/**</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii">* 111: mask bits for which ((x+y)mod 2 + xy mod 3) mod 2 == 0</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii">* equivalently, such that (x + y + xy mod 3) mod 2 == 0</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc" data-doc="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii">*/</i></td></tr>
+<tr><th id="91">91</th><td><em>bool</em> <dfn class="tu decl def fn" id="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask111' data-type='bool ZXing::QRCode::(anonymous namespace)::DataMask111(int i, int j)' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii">DataMask111</dfn>(<em>int</em> <dfn class="local col6 decl" id="16i" title='i' data-type='int' data-ref="16i" data-ref-filename="16i">i</dfn>, <em>int</em> <dfn class="local col7 decl" id="17j" title='j' data-type='int' data-ref="17j" data-ref-filename="17j">j</dfn>)</td></tr>
+<tr><th id="92">92</th><td>{</td></tr>
+<tr><th id="93">93</th><td>	<b>return</b> ((<a class="local col6 ref" href="#16i" title='i' data-ref="16i" data-ref-filename="16i">i</a> + <a class="local col7 ref" href="#17j" title='j' data-ref="17j" data-ref-filename="17j">j</a> + ((<a class="local col6 ref" href="#16i" title='i' data-ref="16i" data-ref-filename="16i">i</a> * <a class="local col7 ref" href="#17j" title='j' data-ref="17j" data-ref-filename="17j">j</a>) % <var>3</var>)) &amp; <var>0x01</var>) == <var>0</var>;</td></tr>
+<tr><th id="94">94</th><td>}</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><b>using</b> <dfn class="tu typedef" id="ZXing::QRCode::(anonymousnamespace)::IsMaskedFunc" title='ZXing::QRCode::(anonymous namespace)::IsMaskedFunc' data-type='bool (*)(int, int)' data-ref="ZXing::QRCode::(anonymousnamespace)::IsMaskedFunc" data-ref-filename="ZXing..QRCode..(anonymousnamespace)..IsMaskedFunc">IsMaskedFunc</dfn> = <em>bool</em> (*)(<em>int</em>, <em>int</em>);</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i class="doc" data-doc="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS">/**</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc" data-doc="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS">* See ISO 18004:2006 6.8.1</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc" data-doc="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS">*/</i></td></tr>
+<tr><th id="101">101</th><td><em>static</em> <em>const</em> <a class="tu typedef" href="#ZXing::QRCode::(anonymousnamespace)::IsMaskedFunc" title='ZXing::QRCode::(anonymous namespace)::IsMaskedFunc' data-type='bool (*)(int, int)' data-ref="ZXing::QRCode::(anonymousnamespace)::IsMaskedFunc" data-ref-filename="ZXing..QRCode..(anonymousnamespace)..IsMaskedFunc">IsMaskedFunc</a> <dfn class="tu decl def" id="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS" title='ZXing::QRCode::(anonymous namespace)::DATA_MASKS' data-type='const ZXing::QRCode::(anonymous namespace)::IsMaskedFunc [8]' data-ref="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS" data-ref-filename="ZXing..QRCode..(anonymousnamespace)..DATA_MASKS">DATA_MASKS</dfn>[] = {</td></tr>
+<tr><th id="102">102</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask000' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask000Eii">DataMask000</a>,</td></tr>
+<tr><th id="103">103</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask001' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask001Eii">DataMask001</a>,</td></tr>
+<tr><th id="104">104</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask010' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask010Eii">DataMask010</a>,</td></tr>
+<tr><th id="105">105</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask011' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask011Eii">DataMask011</a>,</td></tr>
+<tr><th id="106">106</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask100' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask100Eii">DataMask100</a>,</td></tr>
+<tr><th id="107">107</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask101' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask101Eii">DataMask101</a>,</td></tr>
+<tr><th id="108">108</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask110' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask110Eii">DataMask110</a>,</td></tr>
+<tr><th id="109">109</th><td>	<a class="tu ref fn" href="#_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii" title='ZXing::QRCode::(anonymous namespace)::DataMask111' data-ref="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii" data-ref-filename="_ZN5ZXing6QRCode12_GLOBAL__N_111DataMask111Eii">DataMask111</a>,</td></tr>
+<tr><th id="110">110</th><td>};</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>} <i>// anonymous</i></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><a class="type" href="QRDataMask.h.html#ZXing::QRCode::DataMask" title='ZXing::QRCode::DataMask' data-ref="ZXing::QRCode::DataMask" data-ref-filename="ZXing..QRCode..DataMask">DataMask</a>::<dfn class="decl def fn" id="_ZN5ZXing6QRCode8DataMaskC1Ei" title='ZXing::QRCode::DataMask::DataMask' data-ref="_ZN5ZXing6QRCode8DataMaskC1Ei" data-ref-filename="_ZN5ZXing6QRCode8DataMaskC1Ei">DataMask</dfn>(<em>int</em> <dfn class="local col8 decl" id="18reference" title='reference' data-type='int' data-ref="18reference" data-ref-filename="18reference">reference</dfn>)</td></tr>
+<tr><th id="115">115</th><td>{</td></tr>
+<tr><th id="116">116</th><td>	<b>if</b> (<a class="local col8 ref" href="#18reference" title='reference' data-ref="18reference" data-ref-filename="18reference">reference</a> &lt; <var>0</var> || <a class="local col8 ref" href="#18reference" title='reference' data-ref="18reference" data-ref-filename="18reference">reference</a> &gt;= <a class="ref fn" href="../ZXContainerAlgorithms.h.html#_ZN5ZXing4SizeERAT0__KT_" title='ZXing::Size' data-ref="_ZN5ZXing4SizeERAT0__KT_" data-ref-filename="_ZN5ZXing4SizeERAT0__KT_">Size</a>(<a class="tu ref" href="#ZXing::QRCode::(anonymousnamespace)::DATA_MASKS" title='ZXing::QRCode::(anonymous namespace)::DATA_MASKS' data-use='r' data-ref="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS" data-ref-filename="ZXing..QRCode..(anonymousnamespace)..DATA_MASKS">DATA_MASKS</a>)) {</td></tr>
+<tr><th id="117">117</th><td>		<b>throw</b> <span class="namespace">std::</span><a class="type" href="../../../../../../include/c++/10/stdexcept.html#std::invalid_argument" title='std::invalid_argument' data-ref="std::invalid_argument" data-ref-filename="std..invalid_argument">invalid_argument</a><a class="ref fn" href="../../../../../../include/c++/10/stdexcept.html#_ZNSt16invalid_argumentC1EPKc" title='std::invalid_argument::invalid_argument' data-ref="_ZNSt16invalid_argumentC1EPKc" data-ref-filename="_ZNSt16invalid_argumentC1EPKc">(</a><q>"Invalid data mask"</q>);</td></tr>
+<tr><th id="118">118</th><td>	}</td></tr>
+<tr><th id="119">119</th><td>	<a class="member field" href="QRDataMask.h.html#ZXing::QRCode::DataMask::_isMasked" title='ZXing::QRCode::DataMask::_isMasked' data-ref="ZXing::QRCode::DataMask::_isMasked" data-ref-filename="ZXing..QRCode..DataMask.._isMasked">_isMasked</a> = <a class="tu ref" href="#ZXing::QRCode::(anonymousnamespace)::DATA_MASKS" title='ZXing::QRCode::(anonymous namespace)::DATA_MASKS' data-use='r' data-ref="ZXing::QRCode::(anonymousnamespace)::DATA_MASKS" data-ref-filename="ZXing..QRCode..(anonymousnamespace)..DATA_MASKS">DATA_MASKS</a>[<a class="local col8 ref" href="#18reference" title='reference' data-ref="18reference" data-ref-filename="18reference">reference</a>];</td></tr>
+<tr><th id="120">120</th><td>}</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><em>void</em></td></tr>
+<tr><th id="123">123</th><td><a class="type" href="QRDataMask.h.html#ZXing::QRCode::DataMask" title='ZXing::QRCode::DataMask' data-ref="ZXing::QRCode::DataMask" data-ref-filename="ZXing..QRCode..DataMask">DataMask</a>::<dfn class="decl def fn" id="_ZNK5ZXing6QRCode8DataMask15unmaskBitMatrixERNS_9BitMatrixEi" title='ZXing::QRCode::DataMask::unmaskBitMatrix' data-ref="_ZNK5ZXing6QRCode8DataMask15unmaskBitMatrixERNS_9BitMatrixEi" data-ref-filename="_ZNK5ZXing6QRCode8DataMask15unmaskBitMatrixERNS_9BitMatrixEi">unmaskBitMatrix</dfn>(<a class="type" href="../BitMatrix.h.html#ZXing::BitMatrix" title='ZXing::BitMatrix' data-ref="ZXing::BitMatrix" data-ref-filename="ZXing..BitMatrix">BitMatrix</a>&amp; <dfn class="local col9 decl" id="19bits" title='bits' data-type='ZXing::BitMatrix &amp;' data-ref="19bits" data-ref-filename="19bits">bits</dfn>, <em>int</em> <dfn class="local col0 decl" id="20dimension" title='dimension' data-type='int' data-ref="20dimension" data-ref-filename="20dimension">dimension</dfn>) <em>const</em></td></tr>
+<tr><th id="124">124</th><td>{</td></tr>
+<tr><th id="125">125</th><td>	<b>for</b> (<em>int</em> <dfn class="local col1 decl" id="21i" title='i' data-type='int' data-ref="21i" data-ref-filename="21i">i</dfn> = <var>0</var>; <a class="local col1 ref" href="#21i" title='i' data-ref="21i" data-ref-filename="21i">i</a> &lt; <a class="local col0 ref" href="#20dimension" title='dimension' data-ref="20dimension" data-ref-filename="20dimension">dimension</a>; <a class="local col1 ref" href="#21i" title='i' data-ref="21i" data-ref-filename="21i">i</a>++) {</td></tr>
+<tr><th id="126">126</th><td>		<b>for</b> (<em>int</em> <dfn class="local col2 decl" id="22j" title='j' data-type='int' data-ref="22j" data-ref-filename="22j">j</dfn> = <var>0</var>; <a class="local col2 ref" href="#22j" title='j' data-ref="22j" data-ref-filename="22j">j</a> &lt; <a class="local col0 ref" href="#20dimension" title='dimension' data-ref="20dimension" data-ref-filename="20dimension">dimension</a>; <a class="local col2 ref" href="#22j" title='j' data-ref="22j" data-ref-filename="22j">j</a>++) {</td></tr>
+<tr><th id="127">127</th><td>			<b>if</b> (<a class="member field" href="QRDataMask.h.html#ZXing::QRCode::DataMask::_isMasked" title='ZXing::QRCode::DataMask::_isMasked' data-ref="ZXing::QRCode::DataMask::_isMasked" data-ref-filename="ZXing..QRCode..DataMask.._isMasked">_isMasked</a>(<a class="local col1 ref" href="#21i" title='i' data-ref="21i" data-ref-filename="21i">i</a>, <a class="local col2 ref" href="#22j" title='j' data-ref="22j" data-ref-filename="22j">j</a>)) {</td></tr>
+<tr><th id="128">128</th><td>				<a class="local col9 ref" href="#19bits" title='bits' data-ref="19bits" data-ref-filename="19bits">bits</a>.<a class="ref fn" href="../BitMatrix.h.html#_ZN5ZXing9BitMatrix4flipEii" title='ZXing::BitMatrix::flip' data-ref="_ZN5ZXing9BitMatrix4flipEii" data-ref-filename="_ZN5ZXing9BitMatrix4flipEii">flip</a>(<a class="local col2 ref" href="#22j" title='j' data-ref="22j" data-ref-filename="22j">j</a>, <a class="local col1 ref" href="#21i" title='i' data-ref="21i" data-ref-filename="21i">i</a>);</td></tr>
+<tr><th id="129">129</th><td>			}</td></tr>
+<tr><th id="130">130</th><td>		}</td></tr>
+<tr><th id="131">131</th><td>	}</td></tr>
+<tr><th id="132">132</th><td>}</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>} <i>// QRCode</i></td></tr>
+<tr><th id="135">135</th><td>} <i>// ZXing</i></td></tr>
+<tr><th id="136">136</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

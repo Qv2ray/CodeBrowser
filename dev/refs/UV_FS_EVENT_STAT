@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1603' type='2'/>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='1596'>/*
+   * By default uv_fs_event will try to use a kernel interface such as inotify
+   * or kqueue to detect events. This may not work on remote filesystems such
+   * as NFS mounts. This flag makes fs_event fall back to calling stat() on a
+   * regular interval.
+   * This flag is currently not implemented yet on any backend.
+   */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='21'/>

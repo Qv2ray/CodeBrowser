@@ -1,0 +1,7 @@
+<def f='include/google/protobuf/stubs/stringpiece.h' l='210' type='void google::protobuf::StringPiece::StringPiece()'/>
+<doc f='include/google/protobuf/stubs/stringpiece.h' l='204'>// We provide non-explicit singleton constructors so users can pass
+  // in a &quot;const char*&quot; or a &quot;string&quot; wherever a &quot;StringPiece&quot; is
+  // expected.
+  //
+  // Style guide exception granted:
+  // http://goto/style-guide-exception-20978288</doc>

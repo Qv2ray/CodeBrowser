@@ -1,0 +1,33 @@
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='299' ll='310' type='bool grpc::CompletionQueue::Pluck(internal::CompletionQueueTag * tag)'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='192' u='c' c='_ZN4grpc12ClientReader22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='214' u='c' c='_ZN4grpc12ClientReader4ReadEPT_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='227' u='c' c='_ZN4grpc12ClientReader6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='259' u='c' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='309' u='c' c='_ZN4grpc12ClientWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='339' u='c' c='_ZN4grpc12ClientWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='346' u='c' c='_ZN4grpc12ClientWriter10WritesDoneEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='362' u='c' c='_ZN4grpc12ClientWriter6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='392' u='c' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='460' u='c' c='_ZN4grpc18ClientReaderWriter22WaitForInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='481' u='c' c='_ZN4grpc18ClientReaderWriter4ReadEPT0_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='510' u='c' c='_ZN4grpc18ClientReaderWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='517' u='c' c='_ZN4grpc18ClientReaderWriter10WritesDoneEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='535' u='c' c='_ZN4grpc18ClientReaderWriter6FinishEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='563' u='c' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='593' u='c' c='_ZN4grpc12ServerReader19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='605' u='c' c='_ZN4grpc12ServerReader4ReadEPT_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='645' u='c' c='_ZN4grpc12ServerWriter19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='679' u='c' c='_ZN4grpc12ServerWriter5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='718' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody19SendInitialMetadataEv'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='730' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody4ReadEPT0_'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='757' u='c' c='_ZN4grpc8internal22ServerReaderWriterBody5WriteERKT_NS_12WriteOptionsE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='86' u='c' c='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='131' u='c' c='_ZN4grpc8internal22ClientStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='175' u='c' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='177' u='c' c='_ZN4grpc8internal22ServerStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='224' u='c' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='226' u='c' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='298' u='c' c='_ZN4grpc8internal18ErrorMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='297'>/// Wraps \a grpc_completion_queue_pluck.
+  /// \warning Must not be mixed with calls to \a Next.</doc>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='72' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>

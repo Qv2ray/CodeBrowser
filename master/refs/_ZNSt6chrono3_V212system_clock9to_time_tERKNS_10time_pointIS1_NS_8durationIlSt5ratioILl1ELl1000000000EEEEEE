@@ -1,0 +1,16 @@
+<def f='include/c++/10/chrono' l='1005' ll='1010' type='static std::time_t std::chrono::_V2::system_clock::to_time_t(const std::chrono::_V2::system_clock::time_point &amp; __t)'/>
+<doc f='include/c++/10/chrono' l='1004'>// Map to C API</doc>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='88' u='c' c='_ZN6Qv2ray4base24__Qv2rayConfigObjectBaseC1Ev'/>
+<use f='qv2ray/src/base/models/QvConfigIdentifier.hpp' l='89' u='c' c='_ZN6Qv2ray4base24__Qv2rayConfigObjectBaseC1Ev'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='84' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler24IgnoreSubscriptionUpdateERKNS_4base6IDTypeINS3_9__QvGroupEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='323' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='402' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler11CreateGroupERK7QStringb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='684' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler22CHUpdateSubscription_pERKNS_4base6IDTypeINS3_9__QvGroupEEERK10QByteArray'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='716' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERKNS_4base8safetype10CONFIGROOTERK7QStringRKNS3_6IDTypeINS3_9__QvGroupEEEb'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='250' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='274' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='275' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='306' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/core/settings/SettingsUpgrade.cpp' l='307' u='c' c='_ZN6Qv2ray17UpgradeConfig_IncEiRK11QJsonObject'/>
+<use f='qv2ray/src/main.cpp' l='112' u='c' c='_Z13signalHandleri'/>
+<use f='qv2ray/test/catch.hpp' l='2145' u='c' c='_ZN5Catch11StringMakerINSt6chrono10time_pointINS1_3_V212system_clockET_EEvE7convertB5cxx11ERKS6_'/>

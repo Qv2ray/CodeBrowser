@@ -1,0 +1,15 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.h' l='44' type='int Split_splitStringToQRinput(const char * string, QRinput * input, QRencodeMode hint, int casesensitive)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='618' u='c' c='QRcode_encodeStringReal'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='830' u='c' c='QRcode_encodeDataStructuredReal'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.h' l='33'>/**
+ * Split the input string (null terminated) into QRinput.
+ * @param string input string
+ * @param hint give QR_MODE_KANJI if the input string contains Kanji character encoded in Shift-JIS. If not, give QR_MODE_8.
+ * @param casesensitive 0 for case-insensitive encoding (all alphabet characters are replaced to UPPER-CASE CHARACTERS.
+ * @retval 0 success.
+ * @retval -1 an error occurred. errno is set to indicate the error. See
+ *               Exceptions for the details.
+ * @throw EINVAL invalid input object.
+ * @throw ENOMEM unable to allocate memory for input objects.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/split.c' l='306' ll='326' type='int Split_splitStringToQRinput(const char * string, QRinput * input, QRencodeMode hint, int casesensitive)'/>

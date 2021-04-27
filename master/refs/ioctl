@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/sys/ioctl.h' l='41' type='int ioctl(int __fd, unsigned long __request)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='570' u='c' c='uv__nonblock_ioctl'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='585' u='c' c='uv__cloexec_ioctl'/>
+<doc f='include/x86_64-linux-gnu/sys/ioctl.h' l='38'>/* Perform the I/O control operation specified by REQUEST on FD.
+   One argument may follow; its presence and type depend on REQUEST.
+   Return value depends on REQUEST.  Usually -1 indicates error.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='1194' u='c' c='uv__fs_copyfile'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='74' u='c' c='uv__tty_is_slave'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tty.c' l='302' u='c' c='uv_tty_get_winsize'/>

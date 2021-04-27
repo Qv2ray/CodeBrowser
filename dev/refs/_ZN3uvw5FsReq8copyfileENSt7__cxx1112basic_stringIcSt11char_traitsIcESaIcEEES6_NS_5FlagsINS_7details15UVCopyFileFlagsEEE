@@ -1,0 +1,31 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1101' type='void uvw::FsReq::copyfile(std::string old, std::string path, Flags&lt;uvw::FsReq::CopyFile&gt; flags = Flags&lt;uvw::FsReq::CopyFile&gt;{})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='417' ll='419' type='void uvw::FsReq::copyfile(std::string old, std::string path, Flags&lt;uvw::FsReq::CopyFile&gt; flags = Flags&lt;uvw::FsReq::CopyFile&gt;{})'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1072'>/**
+     * @brief Copies a file asynchronously from a path to a new one.
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::UV_FS_COPYFILE&gt;` event when
+     * completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * Available flags are:
+     *
+     * * `FsReq::CopyFile::EXCL`: it fails if the destination path
+     * already exists (the default behavior is to overwrite the destination if
+     * it exists).
+     * * `FsReq::CopyFile::FICLONE`: If present, it will attempt to create a
+     * copy-on-write reflink. If the underlying platform does not support
+     * copy-on-write, then a fallback copy mechanism is used.
+     * * `FsReq::CopyFile::FICLONE_FORCE`: If present, it will attempt to create
+     * a copy-on-write reflink. If the underlying platform does not support
+     * copy-on-write, then an error is returned.
+     *
+     * @warning
+     * If the destination path is created, but an error occurs while copying the
+     * data, then the destination path is removed. There is a brief window of
+     * time between closing and removing the file where another process could
+     * access the file.
+     *
+     * @param old Old path, as described in the official documentation.
+     * @param path New path, as described in the official documentation.
+     * @param flags Optional additional flags.
+     */</doc>

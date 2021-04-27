@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1373' type='bool uvw::FsReq::closedirSync()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='557' ll='562' type='bool uvw::FsReq::closedirSync()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1365'>/**
+     * @brief Closes synchronously a directory stream.
+     *
+     * It frees also the memory allocated internally when a path has been opened
+     * as a directory stream.
+     *
+     * @return True in case of success, false otherwise.
+     */</doc>

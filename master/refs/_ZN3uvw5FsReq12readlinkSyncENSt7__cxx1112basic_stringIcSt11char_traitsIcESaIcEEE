@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1263' type='std::pair&lt;bool, std::pair&lt;const char *, std::size_t&gt;&gt; uvw::FsReq::readlinkSync(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='494' ll='499' type='std::pair&lt;bool, std::pair&lt;const char *, std::size_t&gt;&gt; uvw::FsReq::readlinkSync(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1252'>/**
+     * @brief Sync [readlink](http://linux.die.net/man/2/readlink).
+     *
+     * @param path Path, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * A `std::pair` composed as it follows:
+     *   * A bunch of data read from the given path.
+     *   * The amount of data read from the given path.
+     */</doc>

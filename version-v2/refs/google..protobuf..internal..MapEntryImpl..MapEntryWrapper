@@ -1,0 +1,17 @@
+<use f='include/google/protobuf/map_entry_lite.h' l='330' c='_ZN6google8protobuf8internal12MapEntryImpl4WrapERKT1_RKT2_PNS0_5ArenaE'/>
+<def f='include/google/protobuf/map_entry_lite.h' l='457' ll='479'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='447'>// Serializing a generated message containing map field involves serializing
+  // key-value pairs from google::protobuf::Map. The wire format of each key-value pair
+  // after serialization should be the same as that of a MapEntry message
+  // containing the same key and value inside it.  However, google::protobuf::Map doesn&apos;t
+  // store key and value as MapEntry message, which disables us to use existing
+  // code to serialize message. In order to use existing code to serialize
+  // message, we need to construct a MapEntry from key-value pair. But it
+  // involves copy of key and value to construct a MapEntry. In order to avoid
+  // this copy in constructing a MapEntry, we need the following class which
+  // only takes references of given key and value.</doc>
+<fun r='_ZN6google8protobuf8internal12MapEntryImpl15MapEntryWrapperC1EPNS0_5ArenaERKT1_RKT2_'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl15MapEntryWrapper3keyEv'/>
+<fun r='_ZNK6google8protobuf8internal12MapEntryImpl15MapEntryWrapper5valueEv'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::MapEntryWrapper::key_' t='const Key &amp;'/>
+<mbr r='google::protobuf::internal::MapEntryImpl::MapEntryWrapper::value_' t='const Value &amp;'/>

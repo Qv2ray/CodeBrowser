@@ -1,0 +1,35 @@
+<def f='include/c++/10/bits/stl_vector.h' l='522' ll='525' type='void std::vector::vector&lt;_Tp, _Alloc&gt;(std::vector::size_type __n, const std::vector::value_type &amp; __value, const std::vector::allocator_type &amp; __a = std::vector::allocator_type())'/>
+<use f='include/c++/10/bits/random.h' l='5307' u='c' c='_ZNKSt21discrete_distribution10param_type13probabilitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5364' u='c' c='_ZNKSt21discrete_distribution13probabilitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5553' u='c' c='_ZNKSt31piecewise_constant_distribution10param_type9densitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5631' u='c' c='_ZNKSt31piecewise_constant_distribution9densitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5824' u='c' c='_ZNKSt29piecewise_linear_distribution10param_type9densitiesEv'/>
+<use f='include/c++/10/bits/random.h' l='5904' u='c' c='_ZNKSt29piecewise_linear_distribution9densitiesEv'/>
+<doc f='include/c++/10/bits/stl_vector.h' l='514'>/**
+       *  @brief  Creates a %vector with copies of an exemplar element.
+       *  @param  __n  The number of elements to initially create.
+       *  @param  __value  An element to copy.
+       *  @param  __a  An allocator.
+       *
+       *  This constructor fills the %vector with @a __n copies of @a __value.
+       */</doc>
+<use f='include/c++/10/bits/regex.h' l='2786' u='c' c='_ZNSt7__cxx1120regex_token_iteratorC1ET_S1_RKNS_11basic_regexIT0_T1_EEiNSt15regex_constants15match_flag_typeE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitArray.h' l='126' u='c' c='_ZN5ZXing8BitArrayC1Ei'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ByteArray.h' l='31' u='c' c='_ZN5ZXing9ByteArrayC1Ei'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='76' u='c' c='_ZN5ZXing9BitMatrixC1Eii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReedSolomonDecoder.cpp' l='140' u='c' c='_ZN5ZXing18ReedSolomonDecoder6DecodeERKNS_9GenericGFERSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='87' u='c' c='_ZN5ZXing5AztecL11ExtractBitsERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='80' u='c' c='_ZN5ZXing5AztecL11BitsToWordsERKNS_8BitArrayEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZEncoder.cpp' l='278' u='c' c='_ZN5ZXing5Aztec7Encoder6EncodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='52' u='c' c='_ZN5ZXing8MaxiCodeL13CorrectErrorsERNS_9ByteArrayEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.cpp' l='211' u='c' c='_ZNK5ZXing4OneD13Code128Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='280' u='c' c='_ZN5ZXing6Pdf417L14TextCompactionERKSt6vectorIiSaIiEEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp' l='282' u='c' c='_ZN5ZXing6Pdf417L14TextCompactionERKSt6vectorIiSaIiEEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='164' u='c' c='_ZN5ZXing6Pdf417L19FindRowsWithPatternERKNS_9BitMatrixEiiiiRKSt6vectorIiSaIiEERSt5arrayINS_8NullableINS_11ResultPointEEELm4EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFEncoder.cpp' l='327' u='c' c='_ZN5ZXing6Pdf417L23GenerateErrorCorrectionERSt6vectorIiSaIiEEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.cpp' l='51' u='c' c='_ZNK5ZXing6Pdf4179ModulusGF13buildMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='130' u='c' c='_ZNK5ZXing6Pdf41711ModulusPoly8multiplyERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='178' u='c' c='_ZNK5ZXing6Pdf41711ModulusPoly18multiplyByMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='623' u='c' c='_ZN5ZXing6Pdf417L38CreateDecoderResultFromAmbiguousValuesEiRSt6vectorIiSaIiEERKS3_S6_RKS1_IS3_SaIS3_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='662' u='c' c='_ZN5ZXing6Pdf417L19CreateDecoderResultERNS0_15DetectionResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='385' u='c' c='_ZN5ZXing6QRCodeL15GenerateECBytesERKNS_9ByteArrayEiRS1_'/>

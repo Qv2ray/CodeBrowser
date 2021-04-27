@@ -1,0 +1,6 @@
+<dec f='include/grpc/grpc.h' l='323' type='grpc_call_error grpc_call_cancel(grpc_call * call, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='318'>/** Called by clients to cancel an RPC on the server.
+    Can be called multiple times, from any thread.
+    THREAD-SAFETY grpc_call_cancel and grpc_call_cancel_with_status
+    are thread-safe, and can be called at any point before grpc_call_unref
+    is called.*/</doc>

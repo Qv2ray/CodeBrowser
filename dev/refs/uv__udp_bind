@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/uv-common.h' l='155' type='int uv__udp_bind(uv_udp_t * handle, const struct sockaddr * addr, unsigned int addrlen, unsigned int flags)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='511' ll='569' type='int uv__udp_bind(uv_udp_t * handle, const struct sockaddr * addr, unsigned int addrlen, unsigned int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='605' u='c' c='uv__udp_maybe_deferred_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='341' u='c' c='uv_udp_bind'/>

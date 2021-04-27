@@ -1,0 +1,62 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='99' ll='126'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='119' c='_ZNK6Qv2ray4base7objects10RuleObjecteqERKS2_'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='122' c='_ZN6Qv2ray4base7objects10RuleObject8loadJsonERK10QJsonValue'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='122' c='_ZNK6Qv2ray4base7objects10RuleObject6toJsonEv'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='122' c='_ZN6Qv2ray4base7objects10RuleObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='24' c='_ZN6Qv2ray4core6getTagERKNS_4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='65' c='_ZN11RouteEditor23OnDispatcherRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.hpp' l='66' c='_ZN11RouteEditor23OnDispatcherRuleDeletedERKN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='/qv2ray_autogen/DWD7ZFCWQR/moc_w_RoutesEditor.cpp' l='184' c='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/DWD7ZFCWQR/moc_w_RoutesEditor.cpp' l='185' c='_ZN11RouteEditor18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='12'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='29' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='119' c='_ZN14NodeDispatcher13OnRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='120' c='_ZN14NodeDispatcher13OnRuleDeletedERKN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.hpp' l='143'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='63' c='_ZN6Qv2ray2ui10nodemodels12RuleNodeDataC1ESt10shared_ptrINS_4base7objects10RuleObjectEE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='63' c='_ZN6Qv2ray2ui10nodemodels12RuleNodeData7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='63' c='_ZN6Qv2ray2ui10nodemodels12RuleNodeData7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='63'/>
+<use f='qv2ray/src/ui/widgets/node/NodeBase.hpp' l='138'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='136' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='137' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='184' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='191' c='_ZN14NodeDispatcher18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='319' c='_ZN14NodeDispatcher13OnRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<use f='/qv2ray_autogen/OJUAJZDRLJ/moc_NodeDispatcher.cpp' l='326' c='_ZN14NodeDispatcher13OnRuleDeletedERKN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/RuleWidget.hpp' l='15' c='_ZN16QvNodeRuleWidget8setValueESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEE'/>
+<use f='qv2ray/src/ui/widgets/node/widgets/RuleWidget.hpp' l='40'/>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.hpp' l='32' c='_ZN19RoutingEditorWidget23OnDispatcherRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<use f='/qv2ray_autogen/5XHV6SBJ63/moc_RoutingEditorWidget.cpp' l='96' c='_ZN19RoutingEditorWidget18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>112</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='97'>//
+    //</doc>
+<mbr r='Qv2ray::base::objects::RuleObject::QV2RAY_RULE_ENABLED' o='0' t='bool'/>
+<mbr r='Qv2ray::base::objects::RuleObject::QV2RAY_RULE_TAG' o='64' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::type' o='128' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::inboundTag' o='192' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::outboundTag' o='256' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::balancerTag' o='320' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::source' o='384' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::domain' o='448' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::ip' o='512' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::sourcePort' o='576' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::port' o='640' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::network' o='704' t='QString'/>
+<mbr r='Qv2ray::base::objects::RuleObject::protocol' o='768' t='QList&lt;QString&gt;'/>
+<mbr r='Qv2ray::base::objects::RuleObject::attrs' o='832' t='QString'/>
+<fun r='_ZN6Qv2ray4base7objects10RuleObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects10RuleObject6toJsonEv'/>
+<fun r='_ZN6Qv2ray4base7objects10RuleObject8fromJsonERK10QJsonValue'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='167' c='_ZN11RouteEditor23OnDispatcherRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<use f='qv2ray/src/ui/widgets/editors/w_RoutesEditor.cpp' l='172' c='_ZN11RouteEditor23OnDispatcherRuleDeletedERKN6Qv2ray4base7objects10RuleObjectE'/>
+<size>112</size>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='21' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='24' c='_ZNK14NodeDispatcher7GetDataEv'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='222' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<use f='qv2ray/src/ui/widgets/node/NodeDispatcher.cpp' l='229' c='_ZN14NodeDispatcher10CreateRuleEN6Qv2ray4base7objects10RuleObjectE'/>
+<size>112</size>
+<use f='qv2ray/src/ui/widgets/node/widgets/RuleWidget.cpp' l='42' c='_ZN16QvNodeRuleWidget8setValueESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEE'/>
+<size>112</size>
+<use f='qv2ray/src/ui/widgets/widgets/complex/RoutingEditorWidget.cpp' l='72' c='_ZN19RoutingEditorWidget23OnDispatcherRuleCreatedESt10shared_ptrIN6Qv2ray4base7objects10RuleObjectEERN7QtNodes4NodeE'/>
+<size>112</size>

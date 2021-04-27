@@ -1,0 +1,15 @@
+<def f='qv2ray/src/plugin-interface/QvPluginInterfaceModels.hpp' l='138' ll='165'/>
+<use f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='23' c='_ZNK12Qv2rayPlugin15Qv2rayInterface11GetMetadataEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='17'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='57' c='_ZNK6Qv2ray10components7plugins12QvPluginHost17GetPluginMetadataERK7QString'/>
+<size>64</size>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Name' o='0' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Author' o='64' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::InternalName' o='128' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Description' o='192' t='QString'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Icon' o='256' t='QIcon'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::KernelOutboundCapabilities' o='320' t='QList&lt;Qv2rayPlugin::QvPluginOutboundProtocolObject&gt;'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::Capabilities' o='384' t='Qv2rayPlugin::CAPABILITY_FLAGS'/>
+<mbr r='Qv2rayPlugin::QvPluginMetadata::SpecialPluginType' o='448' t='Qv2rayPlugin::SPECIAL_TYPE_FLAGS'/>
+<fun r='_ZN12Qv2rayPlugin16QvPluginMetadataC1ERK7QStringS3_S3_S3_RK5QIconRK5QListINS_10CAPABILITYEERKS7_INS_12SPECIAL_TYPEEE'/>
+<fun r='_ZN12Qv2rayPlugin16QvPluginMetadataC1Ev'/>

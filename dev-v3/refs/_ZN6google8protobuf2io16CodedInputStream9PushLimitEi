@@ -1,0 +1,13 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='355' type='google::protobuf::io::CodedInputStream::Limit google::protobuf::io::CodedInputStream::PushLimit(int byte_limit)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='331' u='c' c='_ZN6google8protobuf8internal14WireFormatLite19ReadPackedPrimitiveEPNS0_2io16CodedInputStreamEPNS0_13RepeatedFieldIT_EE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='344'>// Places a limit on the number of bytes that the stream may read,
+  // starting from the current position.  Once the stream hits this limit,
+  // it will act like the end of the input has been reached until PopLimit()
+  // is called.
+  //
+  // As the names imply, the stream conceptually has a stack of limits.  The
+  // shortest limit on the stack is always enforced, even if it is not the
+  // top limit.
+  //
+  // The value returned by PushLimit() is opaque to the caller, and must
+  // be passed unchanged to the corresponding call to PopLimit().</doc>

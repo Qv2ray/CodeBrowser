@@ -1,0 +1,9 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='22' type='bool QtNodes::NodeConnectionInteraction::canConnect(QtNodes::PortIndex &amp; portIndex, QtNodes::TypeConverter &amp; converter) const'/>
+<doc f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.hpp' l='16'>/// Can connect when following conditions are met:
+        /// 1) Connection &apos;requires&apos; a port
+        /// 2) Connection&apos;s vacant end is above the node port
+        /// 3) Node port is vacant
+        /// 4) Connection type equals node port type, or there is a registered type
+        /// conversion that can translate between the two</doc>
+<def f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='20' ll='61' type='bool QtNodes::NodeConnectionInteraction::canConnect(QtNodes::PortIndex &amp; portIndex, QtNodes::TypeConverter &amp; converter) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeConnectionInteraction.cpp' l='67' u='c' c='_ZNK7QtNodes25NodeConnectionInteraction10tryConnectEv'/>

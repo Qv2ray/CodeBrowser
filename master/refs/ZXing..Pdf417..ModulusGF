@@ -1,0 +1,37 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='35'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.h' l='43' c='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='32' ll='89'/>
+<size>120</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusGF.h' l='26'>/**
+* &lt;p&gt;A field based on powers of a generator integer, modulo some modulus.&lt; / p&gt;
+*
+* @author Sean Owen
+* @see com.google.zxing.common.reedsolomon.GenericGF
+*/</doc>
+<mbr r='ZXing::Pdf417::ModulusGF::_modulus' o='0' t='int'/>
+<mbr r='ZXing::Pdf417::ModulusGF::_expTable' o='64' t='std::vector&lt;int&gt;'/>
+<mbr r='ZXing::Pdf417::ModulusGF::_logTable' o='256' t='std::vector&lt;int&gt;'/>
+<mbr r='ZXing::Pdf417::ModulusGF::_zero' o='448' t='ZXing::Pdf417::ModulusPoly'/>
+<mbr r='ZXing::Pdf417::ModulusGF::_one' o='704' t='ZXing::Pdf417::ModulusPoly'/>
+<fun r='_ZN5ZXing6Pdf4179ModulusGFC1Eii'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF4zeroEv'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF3oneEv'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF13buildMonomialEii'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF3addEii'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF8subtractEii'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF3expEi'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF3logEi'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF7inverseEi'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF8multiplyEii'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF4sizeEv'/>
+<fun r='_ZN5ZXing6Pdf4179ModulusGFC1Eii'/>
+<fun r='_ZNK5ZXing6Pdf4179ModulusGF13buildMonomialEii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFModulusPoly.cpp' l='27' c='_ZN5ZXing6Pdf41711ModulusPolyC1ERKNS0_9ModulusGFERKSt6vectorIiSaIiEE'/>
+<size>120</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='375' c='_ZN5ZXing6Pdf417L12GetModulusGFEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='377' c='_ZN5ZXing6Pdf417L12GetModulusGFEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='383' c='_ZN5ZXing6Pdf417L21RunEuclideanAlgorithmENS0_11ModulusPolyES1_iRS1_S2_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='434' c='_ZN5ZXing6Pdf417L18FindErrorLocationsERKNS0_11ModulusPolyERSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='450' c='_ZN5ZXing6Pdf417L19FindErrorMagnitudesERKNS0_11ModulusPolyES3_RKSt6vectorIiSaIiEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFScanningDecoder.cpp' l='479' c='_ZN5ZXing6Pdf417L21DecodeErrorCorrectionERSt6vectorIiSaIiEEiRKS3_Ri'/>
+<size>120</size>

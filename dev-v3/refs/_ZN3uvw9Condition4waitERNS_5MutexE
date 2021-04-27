@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='317' type='void uvw::Condition::wait(uvw::Mutex &amp; mutex)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='193' ll='195' type='void uvw::Condition::wait(uvw::Mutex &amp; mutex)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/thread.h' l='308'>/**
+     * @brief Waits on a condition.
+     *
+     * These function atomically releases the mutex and causes the calling
+     * thread to block on the condition variable.
+     *
+     * @param mutex A mutex locked by the calling thread, otherwise expect
+     * undefined behavior.
+     */</doc>

@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='193' type='void ZXing::BitMatrix::setRegion(int left, int top, int width, int height)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='52' ll='76' type='void ZXing::BitMatrix::setRegion(int left, int top, int width, int height)'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.cpp' l='225' u='c' c='_ZN5ZXing7InflateEONS_9BitMatrixEiii'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BitMatrix.h' l='185'>/**
+	* &lt;p&gt;Sets a square region of the bit matrix to true.&lt;/p&gt;
+	*
+	* @param left The horizontal position to begin at (inclusive)
+	* @param top The vertical position to begin at (inclusive)
+	* @param width The width of the region
+	* @param height The height of the region
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODWriterHelper.cpp' l='43' u='c' c='_ZN5ZXing4OneD12WriterHelper12RenderResultERKSt6vectorIbSaIbEEiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='366' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='368' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='370' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='381' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='386' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='388' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='392' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='394' u='c' c='_ZNK5ZXing6QRCode7Version20buildFunctionPatternERNS_9BitMatrixE'/>

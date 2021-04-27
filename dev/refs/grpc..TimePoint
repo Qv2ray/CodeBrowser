@@ -1,0 +1,20 @@
+<def f='include/grpcpp/impl/codegen/time.h' l='40' ll='50'/>
+<def f='include/grpcpp/impl/codegen/time.h' l='52' ll='60'/>
+<use f='include/grpcpp/impl/codegen/time.h' l='53'/>
+<def f='include/grpcpp/impl/codegen/time.h' l='75' ll='85'/>
+<use f='include/grpcpp/impl/codegen/time.h' l='76'/>
+<use f='include/grpcpp/impl/codegen/client_context.h' l='230' c='_ZN4grpc13ClientContext12set_deadlineERKT_'/>
+<use f='include/grpcpp/impl/codegen/channel_interface.h' l='69' c='_ZN4grpc16ChannelInterface19NotifyOnStateChangeE23grpc_connectivity_stateT_PNS_15CompletionQueueEPv'/>
+<use f='include/grpcpp/impl/codegen/channel_interface.h' l='77' c='_ZN4grpc16ChannelInterface18WaitForStateChangeE23grpc_connectivity_stateT_'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='86' c='_ZN4grpc15ServerInterface8ShutdownERKT_'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='189' c='_ZN4grpc15CompletionQueue9AsyncNextEPPvPbRKT_'/>
+<size>16</size>
+<fun r='_ZN4grpc9TimePointC1ERKT_'/>
+<fun r='_ZN4grpc9TimePoint8raw_timeEv'/>
+<fun r='_ZN4grpc9TimePoint38you_need_a_specialization_of_TimePointEv'/>
+<fun r='_ZN4grpc9TimePointI12gpr_timespecEC1ERKS1_'/>
+<fun r='_ZN4grpc9TimePointI12gpr_timespecE8raw_timeEv'/>
+<mbr r='grpc::TimePoint::time_' o='0' t='gpr_timespec'/>
+<fun r='_ZN4grpc9TimePointINSt6chrono10time_pointINS1_3_V212system_clockENS1_8durationIlSt5ratioILl1ELl1000000000EEEEEEEC1ERKS9_'/>
+<fun r='_ZNK4grpc9TimePointINSt6chrono10time_pointINS1_3_V212system_clockENS1_8durationIlSt5ratioILl1ELl1000000000EEEEEEE8raw_timeEv'/>
+<mbr r='grpc::TimePoint::time_' o='0' t='gpr_timespec'/>

@@ -1,0 +1,21 @@
+<use f='include/c++/10/bits/unique_ptr.h' l='388' u='c' c='_ZNSt10unique_ptraSEOSt10unique_ptrITL0__TL0_0_E'/>
+<use f='include/c++/10/bits/unique_ptr.h' l='397' u='c' c='_ZNSt10unique_ptraSEDn'/>
+<def f='include/c++/10/bits/unique_ptr.h' l='451' ll='457' type='void std::unique_ptr::reset(std::unique_ptr::pointer __p = std::unique_ptr::pointer())'/>
+<doc f='include/c++/10/bits/unique_ptr.h' l='445'>/** @brief Replace the stored pointer.
+       *
+       * @param __p  The new pointer to store.
+       *
+       * The deleter will be invoked if a pointer is already owned.
+       */</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='67' u='c' c='_ZN3uvw4Loop5closeEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.cpp' l='423' u='c' c='_ZNK5ZXing4OneD11RSS14Reader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.cpp' l='717' u='c' c='_ZNK5ZXing4OneD17RSSExpandedReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFWriter.cpp' l='127' u='c' c='_ZN5ZXing6Pdf4176WriterC1Ev'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='400' u='c' c='_ZN4grpc8internal24CallOpGenericRecvMessage11RecvMessageEPT_'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='435' u='c' c='_ZN4grpc8internal24CallOpGenericRecvMessage8FinishOpEPb'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='77' u='c' c='_ZN4grpc8internal16RpcServiceMethod10SetHandlerEPNS0_13MethodHandlerE'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='81' u='c' c='_ZN4grpc8internal16RpcServiceMethod18SetServerAsyncTypeENS1_9AsyncTypeE'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='164' u='c' c='_ZN4grpc7Service17MarkMethodGenericEi'/>
+<use f='qv2ray/src/common/QvTranslator.cpp' l='58' u='c' c='_ZN6Qv2ray6common12QvTranslator18InstallTranslationERK7QString'/>
+<use f='qv2ray/src/ui/editors/w_JsonEditor.cpp' l='39' u='c' c='_ZN10JsonEditor20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<use f='qv2ray/src/ui/windows/w_PluginManager.cpp' l='51' u='c' c='_ZN18PluginManageWindow38on_pluginListWidget_currentItemChangedEP15QListWidgetItemS1_'/>

@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='567' type='std::pair&lt;bool, std::pair&lt;std::unique_ptr&lt;const char []&gt;, std::size_t&gt;&gt; uvw::FileReq::readSync(int64_t offset, unsigned int len)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='95' ll='103' type='std::pair&lt;bool, std::pair&lt;std::unique_ptr&lt;const char []&gt;, std::size_t&gt;&gt; uvw::FileReq::readSync(int64_t offset, unsigned int len)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='555'>/**
+     * @brief Sync [read](http://linux.die.net/man/2/preadv).
+     *
+     * @param offset Offset, as described in the official documentation.
+     * @param len Length, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * A `std::pair` composed as it follows:
+     *   * A bunch of data read from the given path.
+     *   * The amount of data read from the given path.
+     */</doc>

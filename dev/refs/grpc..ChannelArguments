@@ -1,0 +1,48 @@
+<use f='include/grpcpp/security/credentials.h' l='48' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/security/credentials.h' l='76' c='_ZN4grpc19CreateCustomChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredentialsEERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/security/credentials.h' l='82' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/security/credentials.h' l='88' c='_ZN4grpc18ChannelCredentials13CreateChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/security/credentials.h' l='93' c='_ZN4grpc18ChannelCredentials29CreateChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_16ChannelArgumentsESt10unique_p633212'/>
+<def f='include/grpcpp/support/channel_arguments.h' l='39' ll='144'/>
+<use f='include/grpcpp/support/channel_arguments.h' l='44' c='_ZN4grpc16ChannelArgumentsC1ERKS0_'/>
+<use f='include/grpcpp/support/channel_arguments.h' l='45' c='_ZN4grpc16ChannelArgumentsaSES0_'/>
+<use f='include/grpcpp/support/channel_arguments.h' l='45' c='_ZN4grpc16ChannelArgumentsaSES0_'/>
+<use f='include/grpcpp/support/channel_arguments.h' l='50' c='_ZN4grpc16ChannelArguments4SwapERS0_'/>
+<use f='include/grpcpp/create_channel.h' l='55' c='_ZN4grpc19CreateCustomChannelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredentialsEERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/create_channel.h' l='72' c='_ZN4grpc12experimental35CreateCustomChannelWithInterceptorsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt10shared_ptrINS_18ChannelCredent10621135'/>
+<use f='include/grpcpp/create_channel_posix.h' l='46' c='_ZN4grpc33CreateCustomInsecureChannelFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/create_channel_posix.h' l='58' c='_ZN4grpc12experimental49CreateCustomInsecureChannelWithInterceptorsFromFdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKNS_16ChannelArgumen7356499'/>
+<use f='include/grpcpp/server.h' l='73' c='_ZN4grpc6Server15GlobalCallbacks15UpdateArgumentsEPNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/server.h' l='101' c='_ZN4grpc6Server16InProcessChannelERKNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/server.h' l='113' c='_ZN4grpc6Server17experimental_type32InProcessChannelWithInterceptorsERKNS_16ChannelArgumentsESt10unique_ptrISt6vectorIS5_INS_12experimental33ClientInt8051591'/>
+<use f='include/grpcpp/server.h' l='173' c='_ZN4grpc6ServerC1EiPNS_16ChannelArgumentsESt10shared_ptrISt6vectorISt10unique_ptrINS_21ServerCompletionQueueESt14default_deleteIS6_EESaIS9_EEEiiiP19grpc_resource_quota'/>
+<use f='include/grpcpp/impl/server_builder_plugin.h' l='58' c='_ZN4grpc19ServerBuilderPlugin22UpdateChannelArgumentsEPNS_16ChannelArgumentsE'/>
+<use f='include/grpcpp/impl/server_builder_option.h' l='35' c='_ZN4grpc19ServerBuilderOption15UpdateArgumentsEPNS_16ChannelArgumentsE'/>
+<size>48</size>
+<doc f='include/grpcpp/support/channel_arguments.h' l='36'>/// Options for channel creation. The user can use generic setters to pass
+/// key value pairs down to C channel creation code. For gRPC related options,
+/// concrete setters are provided.</doc>
+<fun r='_ZN4grpc16ChannelArgumentsC1Ev'/>
+<fun r='_ZN4grpc16ChannelArgumentsD1Ev'/>
+<fun r='_ZN4grpc16ChannelArgumentsC1ERKS0_'/>
+<fun r='_ZN4grpc16ChannelArgumentsaSES0_'/>
+<fun r='_ZN4grpc16ChannelArguments4SwapERS0_'/>
+<fun r='_ZNK4grpc16ChannelArguments14SetChannelArgsEP17grpc_channel_args'/>
+<fun r='_ZN4grpc16ChannelArguments24SetSslTargetNameOverrideERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN4grpc16ChannelArguments23SetCompressionAlgorithmE26grpc_compression_algorithm'/>
+<fun r='_ZN4grpc16ChannelArguments24SetGrpclbFallbackTimeoutEi'/>
+<fun r='_ZN4grpc16ChannelArguments16SetSocketMutatorEP19grpc_socket_mutator'/>
+<fun r='_ZN4grpc16ChannelArguments18SetUserAgentPrefixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN4grpc16ChannelArguments16SetResourceQuotaERKNS_13ResourceQuotaE'/>
+<fun r='_ZN4grpc16ChannelArguments24SetMaxReceiveMessageSizeEi'/>
+<fun r='_ZN4grpc16ChannelArguments21SetMaxSendMessageSizeEi'/>
+<fun r='_ZN4grpc16ChannelArguments26SetLoadBalancingPolicyNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN4grpc16ChannelArguments20SetServiceConfigJSONERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZN4grpc16ChannelArguments6SetIntERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZN4grpc16ChannelArguments10SetPointerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPv'/>
+<fun r='_ZN4grpc16ChannelArguments20SetPointerWithVtableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPvPK23grpc_arg_pointer_vtable'/>
+<fun r='_ZN4grpc16ChannelArguments9SetStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_'/>
+<fun r='_ZNK4grpc16ChannelArguments14c_channel_argsEv'/>
+<fun r='_ZNK4grpc16ChannelArguments24GetSslTargetNameOverrideB5cxx11Ev'/>
+<mbr r='grpc::ChannelArguments::args_' o='0' t='std::vector&lt;grpc_arg&gt;'/>
+<mbr r='grpc::ChannelArguments::strings_' o='192' t='std::list&lt;grpc::string&gt;'/>

@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/support/channel_arguments.h' l='71' type='void grpc::ChannelArguments::SetGrpclbFallbackTimeout(int fallback_timeout)'/>
+<doc f='include/grpcpp/support/channel_arguments.h' l='67'>/// Set the grpclb fallback timeout (in ms) for the channel. If this amount
+  /// of time has passed but we have not gotten any non-empty \a serverlist from
+  /// the balancer, we will fall back to use the backend address(es) returned by
+  /// the resolver.</doc>

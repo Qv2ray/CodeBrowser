@@ -1,0 +1,30 @@
+<def f='include/google/protobuf/extension_set.h' l='495' ll='576'/>
+<use f='include/google/protobuf/extension_set.h' l='586'/>
+<use f='include/google/protobuf/extension_set.h' l='601'/>
+<use f='include/google/protobuf/extension_set.h' l='606' c='_ZNK6google8protobuf8internal12ExtensionSet10FindOrNullEi'/>
+<use f='include/google/protobuf/extension_set.h' l='607' c='_ZN6google8protobuf8internal12ExtensionSet10FindOrNullEi'/>
+<use f='include/google/protobuf/extension_set.h' l='610' c='_ZNK6google8protobuf8internal12ExtensionSet20FindOrNullInLargeMapEi'/>
+<use f='include/google/protobuf/extension_set.h' l='611' c='_ZN6google8protobuf8internal12ExtensionSet20FindOrNullInLargeMapEi'/>
+<use f='include/google/protobuf/extension_set.h' l='616' c='_ZN6google8protobuf8internal12ExtensionSet6InsertEi'/>
+<use f='include/google/protobuf/extension_set.h' l='660' c='_ZN6google8protobuf8internal12ExtensionSet26InternalExtensionMergeFromEiRKNS2_9ExtensionE'/>
+<use f='include/google/protobuf/extension_set.h' l='699' c='_ZN6google8protobuf8internal12ExtensionSet17MaybeNewExtensionEiPKNS0_15FieldDescriptorEPPNS2_9ExtensionE'/>
+<use f='include/google/protobuf/extension_set.h' l='703' c='_ZN6google8protobuf8internal12ExtensionSet25MaybeNewRepeatedExtensionEPKNS0_15FieldDescriptorE'/>
+<size>24</size>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::type' o='64' t='google::protobuf::internal::FieldType'/>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::is_repeated' o='72' t='bool'/>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::is_cleared' o='80' t='bool'/>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::is_lazy' o='84' t='bool'/>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::is_packed' o='88' t='bool'/>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::cached_size' o='96' t='int'/>
+<mbr r='google::protobuf::internal::ExtensionSet::Extension::descriptor' o='128' t='const google::protobuf::FieldDescriptor *'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension29SerializeFieldWithCachedSizesEiPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension44InternalSerializeFieldWithCachedSizesToArrayEibPh'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension38SerializeMessageSetItemWithCachedSizesEiPNS0_2io17CodedOutputStreamE'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension53InternalSerializeMessageSetItemWithCachedSizesToArrayEibPh'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension8ByteSizeEi'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension22MessageSetItemByteSizeEi'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9Extension5ClearEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension7GetSizeEv'/>
+<fun r='_ZN6google8protobuf8internal12ExtensionSet9Extension4FreeEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension26SpaceUsedExcludingSelfLongEv'/>
+<fun r='_ZNK6google8protobuf8internal12ExtensionSet9Extension13IsInitializedEv'/>

@@ -1,0 +1,62 @@
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='36' ll='134'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='113' c='_ZNK5ZXing12BinaryBitmap7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='130' c='_ZNK5ZXing12BinaryBitmap7rotatedEi'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='38' c='ZXing::GlobalHistogramBinarizer'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='38'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='53' c='_ZNK5ZXing24GlobalHistogramBinarizer7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='55' c='_ZNK5ZXing24GlobalHistogramBinarizer7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.h' l='57' c='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='257' c='_ZNK5ZXing24GlobalHistogramBinarizer7croppedEiiii'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='269' c='_ZNK5ZXing24GlobalHistogramBinarizer7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/GlobalHistogramBinarizer.cpp' l='275' c='_ZNK5ZXing24GlobalHistogramBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/BinaryBitmap.h' l='30'>/**
+* This class is the core bitmap class used by ZXing to represent 1 bit data. Reader objects
+* accept a BinaryBitmap and attempt to decode it.
+*
+* @author dswitkin@google.com (Daniel Switkin)
+*/</doc>
+<fun r='_ZN5ZXing12BinaryBitmapD1Ev'/>
+<fun r='_ZNK5ZXing12BinaryBitmap13isPureBarcodeEv'/>
+<fun r='_ZNK5ZXing12BinaryBitmap5widthEv'/>
+<fun r='_ZNK5ZXing12BinaryBitmap6heightEv'/>
+<fun r='_ZNK5ZXing12BinaryBitmap11getBlackRowEiRNS_8BitArrayE'/>
+<fun r='_ZNK5ZXing12BinaryBitmap13getPatternRowEiRSt6vectorItSaItEE'/>
+<fun r='_ZNK5ZXing12BinaryBitmap14getBlackMatrixEv'/>
+<fun r='_ZNK5ZXing12BinaryBitmap7canCropEv'/>
+<fun r='_ZNK5ZXing12BinaryBitmap7croppedEiiii'/>
+<fun r='_ZNK5ZXing12BinaryBitmap9canRotateEv'/>
+<fun r='_ZNK5ZXing12BinaryBitmap7rotatedEi'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.h' l='49' c='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/HybridBinarizer.cpp' l='206' c='_ZNK5ZXing15HybridBinarizer11newInstanceERKSt10shared_ptrIKNS_15LuminanceSourceEE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.h' l='43' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/Reader.h' l='57' c='_ZNK5ZXing6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='41' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.h' l='38' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.h' l='37' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.h' l='32' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.h' l='33' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.h' l='33' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.h' l='34' c='_ZNK5ZXing6Pdf4176Reader14decodeMultipleB5cxx11ERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/MultiFormatReader.cpp' l='94' c='_ZNK5ZXing17MultiFormatReader4readERKNS_12BinaryBitmapE'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='32' c='ZXing::ThresholdBinarizer'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='32'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='34' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMReader.cpp' l='48' c='_ZNK5ZXing10DataMatrix6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCReader.cpp' l='61' c='_ZNK5ZXing8MaxiCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='102' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='201' c='_ZNK5ZXing4OneD6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.h' l='51' c='_ZN5ZXing6Pdf4178Detector6DetectERKNS_12BinaryBitmapEbRNS1_6ResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFDetector.cpp' l='322' c='_ZN5ZXing6Pdf4178Detector6DetectERKNS_12BinaryBitmapEbRNS1_6ResultE'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='67' c='_ZN5ZXing6Pdf4178DoDecodeERKNS_12BinaryBitmapEbRNSt7__cxx114listINS_6ResultESaIS6_EEE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='99' c='_ZNK5ZXing6Pdf4176Reader6decodeERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFReader.cpp' l='110' c='_ZNK5ZXing6Pdf4176Reader14decodeMultipleB5cxx11ERKNS_12BinaryBitmapE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRReader.cpp' l='42' c='_ZNK5ZXing6QRCode6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>8</size>

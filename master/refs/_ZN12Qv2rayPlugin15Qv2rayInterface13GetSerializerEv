@@ -1,0 +1,6 @@
+<dec f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='44' type='std::shared_ptr&lt;QvPluginSerializer&gt; Qv2rayPlugin::Qv2rayInterface::GetSerializer()'/>
+<doc f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='42'>/// \brief Get Serializer Instance if the QvPluginMetadata contains SPECIAL_TYPE_SERIALIZOR
+        /// \warning The owner of this QvPluginSerializer instance is the plugin instance itself.</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='263' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost23TryDeserializeShareLinkERK7QStringPS3_S6_S6_Pb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='290' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18TryGetOutboundInfoERK7QStringRK11QJsonObjectPb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='312' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost21TrySerializeShareLinkERK7QStringRK11QJsonObjectS5_S5_Pb'/>

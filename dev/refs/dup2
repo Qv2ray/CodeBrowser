@@ -1,0 +1,3 @@
+<dec f='include/unistd.h' l='534' type='int dup2(int __fd, int __fd2)'/>
+<doc f='include/unistd.h' l='533'>/* Duplicate FD to FD2, closing FD2 and making it open on the same file.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='320' u='c' c='uv__process_child_init'/>

@@ -1,0 +1,11 @@
+<def f='include/c++/10/bits/regex.h' l='936' ll='938' type='int std::__cxx11::sub_match::compare(const std::__cxx11::sub_match::string_type &amp; __s) const'/>
+<doc f='include/c++/10/bits/regex.h' l='926'>/**
+       * @{
+       * @brief Compares this sub_match to a string.
+       *
+       * @param __s A string to compare to this sub_match.
+       *
+       * @retval &lt;0 this matched sequence will collate before @p __s.
+       * @retval =0 this matched sequence is equivalent to @p __s.
+       * @retval &lt;0 this matched sequence will collate after @p __s.
+       */</doc>

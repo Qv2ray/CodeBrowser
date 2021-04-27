@@ -1,0 +1,11 @@
+<dec f='include/grpc/grpc_security_constants.h' l='85' type='2'/>
+<doc f='include/grpc/grpc_security_constants.h' l='75'>/** Server requests client certificate but does not enforce that the client
+     presents a certificate.
+
+     If the client presents a certificate, the client authentication is done by
+     the gRPC framework. (For a successful connection the client needs to either
+     present a certificate that can be verified against the root certificate
+     configured by the server or not present a certificate at all)
+
+     The client&apos;s key certificate pair must be valid for the SSL connection to
+     be established. */</doc>

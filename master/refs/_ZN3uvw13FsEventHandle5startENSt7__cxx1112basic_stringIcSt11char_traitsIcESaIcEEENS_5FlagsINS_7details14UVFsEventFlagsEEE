@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='108' type='void uvw::FsEventHandle::start(std::string path, Flags&lt;uvw::FsEventHandle::Event&gt; flags = Flags&lt;uvw::FsEventHandle::Event&gt;{})'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='34' ll='36' type='void uvw::FsEventHandle::start(std::string path, Flags&lt;uvw::FsEventHandle::Event&gt; flags = Flags&lt;uvw::FsEventHandle::Event&gt;{})'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs_event.cpp' l='40' u='c' c='_ZN3uvw13FsEventHandle5startENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_7details14UVFsEventFlagsE'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs_event.h' l='91'>/**
+     * @brief Starts watching the specified path.
+     *
+     * It will watch the specified path for changes.&lt;br/&gt;
+     * As soon as a change is observed, a FsEventEvent is emitted by the
+     * handle.&lt;br&gt;
+     * It could happen that ErrorEvent events are emitted while running.
+     *
+     * Available flags are:
+     *
+     * * `FsEventHandle::Event::WATCH_ENTRY`
+     * * `FsEventHandle::Event::STAT`
+     * * `FsEventHandle::Event::RECURSIVE`
+     *
+     * @param path The file or directory to be monitored.
+     * @param flags Additional flags to control the behavior.
+     */</doc>

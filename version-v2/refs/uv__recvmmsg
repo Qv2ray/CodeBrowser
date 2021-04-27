@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='338' type='int uv__recvmmsg(int fd, struct uv__mmsghdr * mmsg, unsigned int vlen, unsigned int flags, struct timespec * timeout)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/linux-syscalls.c' l='143' ll='153' type='int uv__recvmmsg(int fd, struct uv__mmsghdr * mmsg, unsigned int vlen, unsigned int flags, struct timespec * timeout)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='81' u='c' c='uv__udp_mmsg_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='216' u='c' c='uv__udp_recvmmsg'/>

@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='610' type='std::pair&lt;bool, std::size_t&gt; uvw::FileReq::writeSync(std::unique_ptr&lt;char []&gt; buf, unsigned int len, int64_t offset)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='119' ll='126' type='std::pair&lt;bool, std::size_t&gt; uvw::FileReq::writeSync(std::unique_ptr&lt;char []&gt; buf, unsigned int len, int64_t offset)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='599'>/**
+     * @brief Sync [write](http://linux.die.net/man/2/pwritev).
+     *
+     * @param buf The data to be written.
+     * @param len The lenght of the submitted data.
+     * @param offset Offset, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * The amount of data written to the given path.
+     */</doc>

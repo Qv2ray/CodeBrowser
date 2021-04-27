@@ -1,0 +1,6 @@
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='163' c='_ZN6google8protobuf2io19ZeroCopyInputStream6BackUpEi'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='102' ll='105' type='void grpc::ProtoBufferReader::BackUp(int count)'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='114' u='c' c='_ZN4grpc17ProtoBufferReader4SkipEi'/>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='99'>/// The proto library calls this to indicate that we should back up \a count
+  /// bytes that have already been returned by the last call of Next.
+  /// So do the backup and have that ready for a later Next.</doc>

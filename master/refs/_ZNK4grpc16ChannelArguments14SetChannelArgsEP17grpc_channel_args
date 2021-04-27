@@ -1,0 +1,6 @@
+<dec f='include/grpcpp/support/channel_arguments.h' l='57' type='void grpc::ChannelArguments::SetChannelArgs(grpc_channel_args * channel_args) const'/>
+<doc f='include/grpcpp/support/channel_arguments.h' l='52'>/// Dump arguments in this instance to \a channel_args. Does not take
+  /// ownership of \a channel_args.
+  ///
+  /// Note that the underlying arguments are shared. Changes made to either \a
+  /// channel_args or this instance would be reflected on both.</doc>

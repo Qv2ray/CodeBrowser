@@ -1,0 +1,10 @@
+<dec f='include/grpcpp/impl/codegen/status_code_enum.h' l='119' type='13'/>
+<use f='include/grpcpp/impl/codegen/status.h' l='79' u='r' c='_ZN4grpc6StatusC1Ev'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='217' u='r' c='_ZN4grpc8internal29TemplatedBidiStreamingHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<use f='include/grpcpp/impl/codegen/proto_buffer_reader.h' l='57' u='r' c='_ZN4grpc17ProtoBufferReaderC1EPNS_10ByteBufferE'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='66' u='r' c='_ZN4grpc16GenericSerializeERKN6google8protobuf7MessageEPNS_10ByteBufferEPb'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='77' u='r' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='88' u='r' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<use f='include/grpcpp/impl/codegen/proto_utils.h' l='91' u='r' c='_ZN4grpc18GenericDeserializeEPNS_10ByteBufferEPN6google8protobuf7MessageE'/>
+<doc f='include/grpcpp/impl/codegen/status_code_enum.h' l='117'>/// Internal errors. Means some invariants expected by underlying System has
+  /// been broken. If you see one of these errors, Something is very broken.</doc>

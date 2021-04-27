@@ -1,0 +1,8 @@
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='100' u='c' c='_ZN4grpc15CompletionQueueC1Ev'/>
+<def f='include/grpcpp/impl/codegen/completion_queue.h' l='238' ll='244' type='void grpc::CompletionQueue::CompletionQueue(const grpc_completion_queue_attributes &amp; attributes)'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='384' u='c' c='_ZN4grpc21ServerCompletionQueueC1E20grpc_cq_polling_type'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='245' u='c' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='379' u='c' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='553' u='c' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<doc f='include/grpcpp/impl/codegen/completion_queue.h' l='237'>/// Private constructor of CompletionQueue only visible to friend classes</doc>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='52' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>

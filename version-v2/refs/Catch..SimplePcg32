@@ -1,0 +1,34 @@
+<use f='qv2ray/test/catch.hpp' l='4390' c='_ZN5Catch3rngEv'/>
+<def f='qv2ray/test/catch.hpp' l='4551' ll='4585'/>
+<use f='qv2ray/test/catch.hpp' l='4563' c='_ZN5Catch11SimplePcg32C1Ev'/>
+<use f='qv2ray/test/catch.hpp' l='4573' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4573' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4574' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4574' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='4597'/>
+<use f='qv2ray/test/catch.hpp' l='4619'/>
+<use f='qv2ray/test/catch.hpp' l='10340' c='_ZN5Catch3rngEv'/>
+<use f='qv2ray/test/catch.hpp' l='10341' c='_ZN5Catch3rngEv'/>
+<use f='qv2ray/test/catch.hpp' l='12254' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='12254' c='_ZN5CatcheqERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='12258' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<use f='qv2ray/test/catch.hpp' l='12258' c='_ZN5CatchneERKNS_11SimplePcg32ES2_'/>
+<size>8</size>
+<doc f='qv2ray/test/catch.hpp' l='4546'>// This is a simple implementation of C++11 Uniform Random Number
+    // Generator. It does not provide all operators, because Catch2
+    // does not use it, but it should behave as expected inside stdlib&apos;s
+    // distributions.
+    // The implementation is based on the PCG family (http://pcg-random.org)</doc>
+<fun r='_ZN5Catch11SimplePcg323minEv'/>
+<fun r='_ZN5Catch11SimplePcg323maxEv'/>
+<fun r='_ZN5Catch11SimplePcg32C1Ev'/>
+<fun r='_ZN5Catch11SimplePcg32C1Ej'/>
+<fun r='_ZN5Catch11SimplePcg324seedEj'/>
+<fun r='_ZN5Catch11SimplePcg327discardEm'/>
+<fun r='_ZN5Catch11SimplePcg32clEv'/>
+<mbr r='Catch::SimplePcg32::m_state' o='0' t='std::uint64_t'/>
+<smbr r='Catch::SimplePcg32::s_inc' t='const std::uint64_t'/>
+<fun r='_ZN5Catch11SimplePcg32C1Ej'/>
+<fun r='_ZN5Catch11SimplePcg324seedEj'/>
+<fun r='_ZN5Catch11SimplePcg327discardEm'/>
+<fun r='_ZN5Catch11SimplePcg32clEv'/>

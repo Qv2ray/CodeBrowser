@@ -1,0 +1,6 @@
+<def f='include/grpcpp/impl/codegen/client_context.h' l='239' type='void grpc::ClientContext::set_idempotent(bool idempotent)'/>
+<doc f='include/grpcpp/impl/codegen/client_context.h' l='234'>/// EXPERIMENTAL: Indicate that this request is idempotent.
+  /// By default, RPCs are assumed to &lt;i&gt;not&lt;/i&gt; be idempotent.
+  ///
+  /// If true, the gRPC library assumes that it&apos;s safe to initiate
+  /// this RPC multiple times.</doc>

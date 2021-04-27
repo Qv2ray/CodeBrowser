@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='292' type='int uv__make_pipe(int * fds, int flags)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/process.c' l='142' ll='173' type='int uv__make_pipe(int * fds, int flags)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='481' u='c' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='103' u='c' c='uv__signal_global_reinit'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='266' u='c' c='uv__signal_loop_once_init'/>

@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/repeated_field.h' l='799' type='void google::protobuf::RepeatedPtrField::DeleteSubrange(int start, int num)'/>
+<def f='include/google/protobuf/repeated_field.h' l='1990' ll='1999' type='void google::protobuf::RepeatedPtrField::DeleteSubrange(int start, int num)'/>
+<use f='include/google/protobuf/repeated_field.h' l='2103' u='c' c='_ZN6google8protobuf16RepeatedPtrField5eraseENS0_8internal19RepeatedPtrIteratorIKT_EES6_'/>
+<doc f='include/google/protobuf/repeated_field.h' l='796'>// Delete elements with indices in the range [start .. start+num-1].
+  // Caution: implementation moves all elements with indices [start+num .. ].
+  // Calling this routine inside a loop can cause quadratic behavior.</doc>

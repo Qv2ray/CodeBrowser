@@ -1,0 +1,12 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='52' ll='57'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/process.cpp' l='19' c='_ZN3uvw13ProcessHandle12exitCallbackEP12uv_process_sli'/>
+<size>16</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/process.h' l='47'>/**
+ * @brief ExitEvent event.
+ *
+ * It will be emitted by ProcessHandle according with its functionalities.
+ */</doc>
+<fun r='_ZN3uvw9ExitEventC1Eli'/>
+<mbr r='uvw::ExitEvent::status' o='0' t='int64_t'/>
+<mbr r='uvw::ExitEvent::signal' o='64' t='int'/>
+<fun r='_ZN3uvw9ExitEventC1Eli'/>

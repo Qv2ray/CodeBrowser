@@ -1,0 +1,120 @@
+<def f='qv2ray/src/base/models/QvSafeType.hpp' l='33' macro='1'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='39' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base8safetype10CONFIGROOTEPb'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='42' c='_ZN6Qv2ray4core15IsComplexConfigERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/CoreUtils.hpp' l='52' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.hpp' l='5' c='_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.hpp' l='6' c='_ZN6Qv2ray4core10connection12connectionIO35GetConnectionConfigFromSubscriptionERK10QByteArrayRK7QString'/>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.hpp' l='17' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.hpp' l='18' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairENS3_8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='102' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERKNS_4base8safetype10CONFIGROOTERK7QStringRKNS3_6IDTypeINS3_9__QvGroupEEEb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='104' c='_ZN6Qv2ray4core7handler15QvConfigHandler16UpdateConnectionERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS3_8safetype10CONFIGROOTEb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='113' c='_ZNK6Qv2ray4core7handler15QvConfigHandler17GetConnectionRootERKNS_4base6IDTypeINS3_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.hpp' l='181'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='394' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='396' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='398' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='400' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='402' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='412' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='/qv2ray-baselib_autogen/UVCKRPNY7F/moc_ConfigHandler.cpp' l='413' c='_ZN6Qv2ray4core7handler15QvConfigHandler18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='29' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigERKNS_4base19ConnectionGroupPairEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='30' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.hpp' l='30' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<size>16</size>
+<fun r='_ZN6Qv2ray4base8safetype10CONFIGROOTC1EDpT_'/>
+<fun r='_ZNK6Qv2ray4base8safetype10CONFIGROOT3rawEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='35' c='_ZN11RouteEditor10OpenEditorEv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='123'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.hpp' l='124'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.hpp' l='22' c='_ZN12GroupManager17GetSelectedConfigEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.hpp' l='76' c='_ZN12GroupManager22ExportConnectionFilterERN6Qv2ray4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.hpp' l='18' c='_ZN18ImportConfigWindow16SelectConnectionEb'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.hpp' l='56'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.hpp' l='57'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='22' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='25' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERK7QStringS5_RKNS_4base8safetype10CONFIGROOTEb'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='29' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='35' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='41' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='47' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='13' c='_ZN6Qv2ray4core15IsComplexConfigERKNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='82' c='_ZN6Qv2ray4core17GetConnectionInfoERKNS_4base8safetype10CONFIGROOTEPb'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='140' c='_ZN6Qv2ray4core27GetConnectionProtocolStringERKNS_4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/CoreUtils.cpp' l='168' c='_ZN6Qv2ray4core20GetConfigInboundInfoERKNS_4base8safetype10CONFIGROOTE'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='8' c='_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='10' c='_ZN6Qv2ray4core10connection12connectionIO21ConvertConfigFromFileERK7QStringb'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='25' c='_ZN6Qv2ray4core10connection12connectionIO35GetConnectionConfigFromSubscriptionERK10QByteArrayRK7QString'/>
+<use f='qv2ray/src/core/connection/ConnectionIO.cpp' l='27' c='_ZN6Qv2ray4core10connection12connectionIO35GetConnectionConfigFromSubscriptionERK10QByteArrayRK7QString'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='48' c='_ZN6Qv2ray4core10connection10generation7filters25OutboundMarkSettingFilterERNS_4base8safetype10CONFIGROOTEi'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='49' c='_ZN6Qv2ray4core10connection10generation7filters20RemoveEmptyMuxFilterERNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='50' c='_ZN6Qv2ray4core10connection10generation7filters18DNSInterceptFilterERNS_4base8safetype10CONFIGROOTEbbb'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='51' c='_ZN6Qv2ray4core10connection10generation7filters14BypassBTFilterERNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='52' c='_ZN6Qv2ray4core10connection10generation7filters14mKCPSeedFilterERNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/Generation.hpp' l='53' c='_ZN6Qv2ray4core10connection10generation7filters16FillupTagsFilterERNS_4base8safetype10CONFIGROOTERK7QString'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='13' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='26' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='59' c='_ZN6Qv2ray4core10connection13serialization23ConvertConfigFromStringERK7QStringPS3_S6_S6_'/>
+<use f='qv2ray/src/core/connection/Serialization.cpp' l='86' c='_ZN6Qv2ray4core10connection13serialization21ConvertConfigToStringERK7QStringS5_RKNS_4base8safetype10CONFIGROOTEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='6' c='_ZN6Qv2ray4core10connection10generation7filters25OutboundMarkSettingFilterERNS_4base8safetype10CONFIGROOTEi'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='14' c='_ZN6Qv2ray4core10connection10generation7filters20RemoveEmptyMuxFilterERNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='25' c='_ZN6Qv2ray4core10connection10generation7filters18DNSInterceptFilterERNS_4base8safetype10CONFIGROOTEbbb'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='56' c='_ZN6Qv2ray4core10connection10generation7filters14BypassBTFilterERNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='66' c='_ZN6Qv2ray4core10connection10generation7filters14mKCPSeedFilterERNS_4base8safetype10CONFIGROOTE'/>
+<use f='qv2ray/src/core/connection/generation/filters.cpp' l='76' c='_ZN6Qv2ray4core10connection10generation7filters16FillupTagsFilterERNS_4base8safetype10CONFIGROOTERK7QString'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='10' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='92' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/ss.cpp' l='101' c='_ZN6Qv2ray4core10connection13serialization2ss11DeserializeERK7QStringPS4_S7_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='76' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='139' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<use f='qv2ray/src/core/connection/serialization/ssd.cpp' l='208' c='_ZN6Qv2ray4core10connection13serialization3ssd11DeserializeERK7QStringPS4_P11QStringList'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='66' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='68' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='113' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<size>16</size>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='18' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='23' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='23' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='23' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='123' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='55' c='_ZN6Qv2ray4core7handler15QvConfigHandlerC1EP7QObject'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='325' c='_ZN6Qv2ray4core7handler15QvConfigHandler15StartConnectionERKNS_4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='365' c='_ZNK6Qv2ray4core7handler15QvConfigHandler17GetConnectionRootERKNS_4base6IDTypeINS3_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='367' c='_ZNK6Qv2ray4core7handler15QvConfigHandler17GetConnectionRootERKNS_4base6IDTypeINS3_14__QvConnectionEEE'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='378' c='_ZN6Qv2ray4core7handler15QvConfigHandler16UpdateConnectionERKNS_4base6IDTypeINS3_14__QvConnectionEEERKNS3_8safetype10CONFIGROOTEb'/>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='710' c='_ZN6Qv2ray4core7handler15QvConfigHandler16CreateConnectionERKNS_4base8safetype10CONFIGROOTERK7QStringRKNS3_6IDTypeINS3_9__QvGroupEEEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/KernelInstanceHandler.cpp' l='79' c='_ZN6Qv2ray4core7handler21KernelInstanceHandler15StartConnectionERKNS_4base19ConnectionGroupPairENS3_8safetype10CONFIGROOTE'/>
+<size>16</size>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='114' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigERKNS_4base19ConnectionGroupPairEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='118' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<use f='qv2ray/src/core/handler/RouteHandler.cpp' l='118' c='_ZNK6Qv2ray4core7handler12RouteHandler19GenerateFinalConfigENS_4base8safetype10CONFIGROOTERKNS3_6IDTypeINS3_9__QvRouteEEEb'/>
+<size>16</size>
+<use f='qv2ray/src/core/kernel/V2RayKernelInteractions.cpp' l='270' c='_ZN6Qv2ray4core6kernel19V2RayKernelInstance15StartConnectionERKNS_4base8safetype10CONFIGROOTE'/>
+<size>16</size>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='313' c='_ZN11RouteEditor10OpenEditorEv'/>
+<size>16</size>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='256' c='_ZN12GroupManager17GetSelectedConfigEv'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='471' c='_ZN12GroupManager22ExportConnectionFilterERN6Qv2ray4base8safetype10CONFIGROOTE'/>
+<size>16</size>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='57' c='_ZN18ImportConfigWindow16SelectConnectionEb'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='65' c='_ZN18ImportConfigWindow16SelectConnectionEb'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='74' c='_ZN18ImportConfigWindow16SelectConnectionEb'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='259' c='_ZN18ImportConfigWindow25on_beginImportBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='326' c='_ZN18ImportConfigWindow28on_connectionEditBtn_clickedEv'/>
+<use f='qv2ray/src/ui/windows/w_ImportConfig.cpp' l='368' c='_ZN18ImportConfigWindow22on_jsonEditBtn_clickedEv'/>
+<size>16</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='626' c='_ZN10MainWindow37on_action_RCM_EditAsComplex_triggeredEv'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='867' c='_ZN10MainWindow15OnEditRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='897' c='_ZN10MainWindow19OnEditJsonRequestedERKN6Qv2ray4base6IDTypeINS1_14__QvConnectionEEE'/>
+<size>16</size>

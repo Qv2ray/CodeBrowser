@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1782' macro='1' type='int'/>
+<offset>6720</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='111' u='w' c='uv__platform_loop_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='140' u='r' c='uv__platform_loop_delete'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='142' u='r' c='uv__platform_loop_delete'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='143' u='w' c='uv__platform_loop_delete'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='71' u='r' c='init_inotify'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='78' u='w' c='init_inotify'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='79' u='r' c='init_inotify'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='162' u='r' c='maybe_free_watcher_list'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='183' u='r' c='uv__inotify_read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='275' u='r' c='uv_fs_event_start'/>

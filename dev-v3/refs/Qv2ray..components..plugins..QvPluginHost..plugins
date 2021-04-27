@@ -1,0 +1,29 @@
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='41' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost9GetPluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='41' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost9GetPluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='45' u='m' c='_ZNK6Qv2ray10components7plugins12QvPluginHost10AllPluginsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='50' u='m' c='_ZNK6Qv2ray10components7plugins12QvPluginHost13UsablePluginsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='83' u='m' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15shouldUsePluginERK7QString'/>
+<dec f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='91' type='QHash&lt;QString, Qv2ray::components::plugins::QvPluginInfo&gt;'/>
+<offset>128</offset>
+<doc f='qv2ray/src/components/plugins/QvPluginHost.hpp' l='90'>// Internal name, plugin info</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='74' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost17refreshPluginListEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='83' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost17refreshPluginListEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='86' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost17refreshPluginListEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='121' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost16SetPluginEnabledERK7QStringb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='132' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost20initializePluginHostEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='140' c='_ZN6Qv2ray10components7plugins12QvPluginHost12clearPluginsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='146' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost12clearPluginsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='150' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='169' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='170' u='m' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='176' u='m' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18SavePluginSettingsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='178' u='m' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18SavePluginSettingsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='181' u='m' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18SavePluginSettingsEv'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='196' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event15ConnectionStats11EventObjectE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='204' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event12Connectivity11EventObjectE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='212' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event15ConnectionEntry11EventObjectE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='220' c='_ZN6Qv2ray10components7plugins12QvPluginHost9SendEventERKN12Qv2rayPlugin8handlers5event11SystemProxy11EventObjectE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='236' c='_ZNK6Qv2ray10components7plugins12QvPluginHost23TryDeserializeShareLinkERK7QStringPS3_S6_S6_Rb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='270' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15GetOutboundInfoERK7QStringRK11QJsonObjectRb'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='288' c='_ZNK6Qv2ray10components7plugins12QvPluginHost15SetOutboundInfoERK7QStringRK4QMapIN12Qv2rayPlugin8handlers8outbound17OutboundInfoFlagsE8QVariantER11QJsonObject'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='309' c='_ZNK6Qv2ray10components7plugins12QvPluginHost17SerializeOutboundERK7QStringRK11QJsonObjectS8_S5_S5_Pb'/>

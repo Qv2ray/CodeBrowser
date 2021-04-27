@@ -1,0 +1,54 @@
+<dec f='include/google/protobuf/descriptor_database.h' l='250' type='typename std::map&lt;string, Value&gt;::iterator google::protobuf::SimpleDescriptorDatabase::DescriptorIndex::FindLastLessOrEqual(const std::string &amp; name)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='197'>// Invariant:  The by_symbol_ map does not contain any symbols which are
+    // prefixes of other symbols in the map.  For example, &quot;foo.bar&quot; is a
+    // prefix of &quot;foo.bar.baz&quot; (but is not a prefix of &quot;foo.barbaz&quot;).
+    //
+    // This invariant is important because it means that given a symbol name,
+    // we can find a key in the map which is a prefix of the symbol in O(lg n)
+    // time, and we know that there is at most one such key.
+    //
+    // The prefix lookup algorithm works like so:
+    // 1) Find the last key in the map which is less than or equal to the
+    //    search key.
+    // 2) If the found key is a prefix of the search key, then return it.
+    //    Otherwise, there is no match.
+    //
+    // I am sure this algorithm has been described elsewhere, but since I
+    // wasn&apos;t able to find it quickly I will instead prove that it works
+    // myself.  The key to the algorithm is that if a match exists, step (1)
+    // will find it.  Proof:
+    // 1) Define the &quot;search key&quot; to be the key we are looking for, the &quot;found
+    //    key&quot; to be the key found in step (1), and the &quot;match key&quot; to be the
+    //    key which actually matches the search key (i.e. the key we&apos;re trying
+    //    to find).
+    // 2) The found key must be less than or equal to the search key by
+    //    definition.
+    // 3) The match key must also be less than or equal to the search key
+    //    (because it is a prefix).
+    // 4) The match key cannot be greater than the found key, because if it
+    //    were, then step (1) of the algorithm would have returned the match
+    //    key instead (since it finds the *greatest* key which is less than or
+    //    equal to the search key).
+    // 5) Therefore, the found key must be between the match key and the search
+    //    key, inclusive.
+    // 6) Since the search key must be a sub-symbol of the match key, if it is
+    //    not equal to the match key, then search_key[match_key.size()] must
+    //    be &apos;.&apos;.
+    // 7) Since &apos;.&apos; sorts before any other character that is valid in a symbol
+    //    name, then if the found key is not equal to the match key, then
+    //    found_key[match_key.size()] must also be &apos;.&apos;, because any other value
+    //    would make it sort after the search key.
+    // 8) Therefore, if the found key is not equal to the match key, then the
+    //    found key must be a sub-symbol of the match key.  However, this would
+    //    contradict our map invariant which says that no symbol in the map is
+    //    a sub-symbol of any other.
+    // 9) Therefore, the found key must match the match key.
+    //
+    // The above proof assumes the match key exists.  In the case that the
+    // match key does not exist, then step (1) will return some other symbol.
+    // That symbol cannot be a super-symbol of the search key since if it were,
+    // then it would be a match, and we&apos;re assuming the match key doesn&apos;t exist.
+    // Therefore, step 2 will correctly return no match.
+
+    // Find the last entry in the by_symbol_ map whose key is less than or
+    // equal to the given name.</doc>

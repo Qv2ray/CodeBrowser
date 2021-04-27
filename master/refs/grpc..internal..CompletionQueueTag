@@ -1,0 +1,19 @@
+<def f='include/grpcpp/impl/codegen/completion_queue_tag.h' l='26' ll='49'/>
+<ovr f='include/grpcpp/impl/codegen/call.h' l='597' c='grpc::internal::CallOpSetInterface'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='597'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='280' c='_ZN4grpc13ServerContext18GetCompletionOpTagEv'/>
+<ovr f='include/grpcpp/impl/codegen/server_interface.h' l='147' c='grpc::ServerInterface::BaseAsyncRequest'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='147'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='299' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='320' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='336' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE12gpr_timespec'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/completion_queue_tag.h' l='25'>/// An interface allowing implementors to process and filter event tags.</doc>
+<fun r='_ZN4grpc8internal18CompletionQueueTagD1Ev'/>
+<fun r='_ZN4grpc8internal18CompletionQueueTag14FinalizeResultEPPvPb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='68' c='_ZN4grpc8internal21CallbackWithStatusTagC1EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='87'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='125' c='_ZN4grpc8internal22CallbackWithSuccessTagC1EP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='131' c='_ZN4grpc8internal22CallbackWithSuccessTag3opsEv'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='141'/>
+<size>8</size>

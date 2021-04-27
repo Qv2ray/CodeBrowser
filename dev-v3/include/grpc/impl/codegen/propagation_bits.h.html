@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>propagation_bits.h source code [include/grpc/impl/codegen/propagation_bits.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpc/impl/codegen/propagation_bits.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>grpc</a>/<a href='..'>impl</a>/<a href='./'>codegen</a>/<a href='propagation_bits.h.html'>propagation_bits.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2016 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPC_IMPL_CODEGEN_PROPAGATION_BITS_H">GRPC_IMPL_CODEGEN_PROPAGATION_BITS_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPC_IMPL_CODEGEN_PROPAGATION_BITS_H" data-ref="_M/GRPC_IMPL_CODEGEN_PROPAGATION_BITS_H">GRPC_IMPL_CODEGEN_PROPAGATION_BITS_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="port_platform.h.html">&lt;grpc/impl/codegen/port_platform.h&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="25">25</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/** Propagation bits: this can be bitwise or-ed to form propagation_mask for</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * grpc_call */</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/** Propagate deadline */</i></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/GRPC_PROPAGATE_DEADLINE" data-ref="_M/GRPC_PROPAGATE_DEADLINE">GRPC_PROPAGATE_DEADLINE</dfn> ((uint32_t)1)</u></td></tr>
+<tr><th id="32">32</th><td><i class="doc">/** Propagate census context */</i></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/GRPC_PROPAGATE_CENSUS_STATS_CONTEXT" data-ref="_M/GRPC_PROPAGATE_CENSUS_STATS_CONTEXT">GRPC_PROPAGATE_CENSUS_STATS_CONTEXT</dfn> ((uint32_t)2)</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/GRPC_PROPAGATE_CENSUS_TRACING_CONTEXT" data-ref="_M/GRPC_PROPAGATE_CENSUS_TRACING_CONTEXT">GRPC_PROPAGATE_CENSUS_TRACING_CONTEXT</dfn> ((uint32_t)4)</u></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/** Propagate cancellation */</i></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/GRPC_PROPAGATE_CANCELLATION" data-ref="_M/GRPC_PROPAGATE_CANCELLATION">GRPC_PROPAGATE_CANCELLATION</dfn> ((uint32_t)8)</u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i class="doc">/** Default propagation mask: clients of the core API are encouraged to encode</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc">   deltas from this in their implementations... ie write:</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc">   GRPC_PROPAGATE_DEFAULTS &amp; ~GRPC_PROPAGATE_DEADLINE to disable deadline</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">   propagation. Doing so gives flexibility in the future to define new</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc">   propagation types that are default inherited or not. */</i></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GRPC_PROPAGATE_DEFAULTS" data-ref="_M/GRPC_PROPAGATE_DEFAULTS">GRPC_PROPAGATE_DEFAULTS</dfn>                                                \</u></td></tr>
+<tr><th id="44">44</th><td><u>  ((uint32_t)((                                                                \</u></td></tr>
+<tr><th id="45">45</th><td><u>      0xffff | GRPC_PROPAGATE_DEADLINE | GRPC_PROPAGATE_CENSUS_STATS_CONTEXT | \</u></td></tr>
+<tr><th id="46">46</th><td><u>      GRPC_PROPAGATE_CENSUS_TRACING_CONTEXT | GRPC_PROPAGATE_CANCELLATION)))</u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="48">endif</span></u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="19">endif</span> /* GRPC_IMPL_CODEGEN_PROPAGATION_BITS_H */</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

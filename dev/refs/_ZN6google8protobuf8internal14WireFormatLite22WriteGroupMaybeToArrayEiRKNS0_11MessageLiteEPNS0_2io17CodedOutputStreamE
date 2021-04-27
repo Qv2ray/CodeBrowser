@@ -1,0 +1,3 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='458' type='static void google::protobuf::internal::WireFormatLite::WriteGroupMaybeToArray(int field_number, const google::protobuf::MessageLite &amp; value, io::CodedOutputStream * output)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='456'>// Like above, but these will check if the output stream has enough
+  // space to write directly to a flat array.</doc>

@@ -1,0 +1,17 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='187' type='void uvw::TCPHandle::connect(const sockaddr &amp; addr)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='77' u='c' c='_ZN3uvw9TCPHandle7connectENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='87' ll='96' type='void uvw::TCPHandle::connect(const sockaddr &amp; addr)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='174'>/**
+     * @brief Establishes an IPv4 or IPv6 TCP connection.
+     *
+     * On Windows if the addr is initialized to point to an unspecified address
+     * (`0.0.0.0` or `::`) it will be changed to point to localhost. This is
+     * done to match the behavior of Linux systems.
+     *
+     * A ConnectEvent event is emitted when the connection has been
+     * established.&lt;br/&gt;
+     * An ErrorEvent event is emitted in case of errors during the connection.
+     *
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     */</doc>
+<use f='qv2ray/src/components/latency/TCPing.cpp' l='93' u='c' c='_ZN6Qv2ray10components7latency6tcping6TCPing4pingEv'/>

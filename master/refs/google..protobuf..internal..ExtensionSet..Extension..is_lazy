@@ -1,0 +1,7 @@
+<dec f='include/google/protobuf/extension_set.h' l='539' type='bool'/>
+<offset>84</offset>
+<doc f='include/google/protobuf/extension_set.h' l='534'>// For singular message types, indicates whether lazy parsing is enabled
+    // for this extension. This field is only valid when type == TYPE_MESSAGE
+    // and !is_repeated because we only support lazy parsing for singular
+    // message types currently. If is_lazy = true, the extension is stored in
+    // lazymessage_value. Otherwise, the extension will be message_value.</doc>

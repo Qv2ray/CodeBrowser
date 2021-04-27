@@ -1,0 +1,10 @@
+<def f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='48' ll='52'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.h' l='95'/>
+<size>16</size>
+<mbr r='ConnectionInfo::msgLen' o='0' t='qint64'/>
+<mbr r='ConnectionInfo::instanceId' o='64' t='quint32'/>
+<mbr r='ConnectionInfo::stage' o='96' t='quint8'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='322' c='_ZN24SingleApplicationPrivate25slotConnectionEstablishedEv'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='378' c='_ZN24SingleApplicationPrivate21readInitMessageHeaderEP12QLocalSocket'/>
+<use f='qv2ray/3rdparty/SingleApplication/singleapplication_p.cpp' l='395' c='_ZN24SingleApplicationPrivate19readInitMessageBodyEP12QLocalSocket'/>
+<size>16</size>

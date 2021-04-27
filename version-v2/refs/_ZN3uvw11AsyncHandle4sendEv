@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/async.h' l='55' type='void uvw::AsyncHandle::send()'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/async.cpp' l='22' ll='24' type='void uvw::AsyncHandle::send()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/async.h' l='45'>/**
+     * @brief Wakeups the event loop and emits the AsyncEvent event.
+     *
+     * It’s safe to call this function from any thread.&lt;br/&gt;
+     * An AsyncEvent event will be emitted on the loop thread.
+     *
+     * See the official
+     * [documentation](http://docs.libuv.org/en/v1.x/async.html#c.uv_async_send)
+     * for further details.
+     */</doc>

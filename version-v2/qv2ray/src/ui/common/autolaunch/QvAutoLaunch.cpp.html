@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>QvAutoLaunch.cpp source code [qv2ray/src/ui/common/autolaunch/QvAutoLaunch.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/common/autolaunch/QvAutoLaunch.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>ui</a>/<a href='..'>common</a>/<a href='./'>autolaunch</a>/<a href='QvAutoLaunch.cpp.html'>QvAutoLaunch.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="QvAutoLaunch.hpp.html">"QvAutoLaunch.hpp"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../../base/Qv2rayBase.hpp.html">"base/Qv2rayBase.hpp"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include &lt;QCoreApplication&gt;</u></td></tr>
+<tr><th id="6">6</th><td><u>#include &lt;QDir&gt;</u></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;QSettings&gt;</u></td></tr>
+<tr><th id="8">8</th><td><u>#include &lt;QStandardPaths&gt;</u></td></tr>
+<tr><th id="9">9</th><td><u>#include &lt;QTextStream&gt;</u></td></tr>
+<tr><th id="10">10</th><td><i>// macOS headers (possibly OBJ-c)</i></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="11">if</span> defined(<span class="macro" data-ref="_M/Q_OS_MAC">Q_OS_MAC</span>)</u></td></tr>
+<tr><th id="12">12</th><td><u>#include &lt;CoreFoundation/CoreFoundation.h&gt;</u></td></tr>
+<tr><th id="13">13</th><td><u>#include &lt;CoreServices/CoreServices.h&gt;</u></td></tr>
+<tr><th id="14">14</th><td><u>#<span data-ppcond="11">endif</span></u></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">Qv2ray</span>::<span class="namespace">components</span>::<span class="namespace">autolaunch</span></td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td>    <i>//</i></td></tr>
+<tr><th id="18">18</th><td><i>    //  launchatlogin.cpp</i></td></tr>
+<tr><th id="19">19</th><td><i>    //  ShadowClash</i></td></tr>
+<tr><th id="20">20</th><td><i>    //</i></td></tr>
+<tr><th id="21">21</th><td><i>    //  Created by TheWanderingCoel on 2018/6/12.</i></td></tr>
+<tr><th id="22">22</th><td><i>    //  Copyright © 2019 Coel Wu. All rights reserved.</i></td></tr>
+<tr><th id="23">23</th><td><i>    //</i></td></tr>
+<tr><th id="24">24</th><td>    <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl def fn" id="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv" title='Qv2ray::components::autolaunch::getUserAutostartDir_private' data-ref="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv" data-ref-filename="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv">getUserAutostartDir_private</dfn>()</td></tr>
+<tr><th id="25">25</th><td>    {</td></tr>
+<tr><th id="26">26</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col2 decl" id="2config" title='config' data-type='QString' data-ref="2config" data-ref-filename="2config">config</dfn> = <span class='type' title='QStandardPaths' data-ref="QStandardPaths" data-ref-filename="QStandardPaths">QStandardPaths</span>::<span class='ref fn' title='QStandardPaths::writableLocation' data-ref="_ZN14QStandardPaths16writableLocationENS_16StandardLocationE" data-ref-filename="_ZN14QStandardPaths16writableLocationENS_16StandardLocationE">writableLocation</span>(<span class='type' title='QStandardPaths' data-ref="QStandardPaths" data-ref-filename="QStandardPaths">QStandardPaths</span>::<span class='enum' title='QStandardPaths::ConfigLocation' data-ref="QStandardPaths::ConfigLocation" data-ref-filename="QStandardPaths..ConfigLocation">ConfigLocation</span>);</td></tr>
+<tr><th id="27">27</th><td>        <a class="local col2 ref" href="#2config" title='config' data-ref="2config" data-ref-filename="2config">config</a> <span class='ref fn' title='QString::operator+=' data-ref="_ZN7QStringpLE13QLatin1String" data-ref-filename="_ZN7QStringpLE13QLatin1String">+=</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"/autostart/"</q>);</td></tr>
+<tr><th id="28">28</th><td>        <b>return</b> <a class="local col2 ref" href="#2config" title='config' data-ref="2config" data-ref-filename="2config">config</a>;</td></tr>
+<tr><th id="29">29</th><td>    }</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>    <em>bool</em> <dfn class="decl def fn" id="_ZN6Qv2ray10components10autolaunch22GetLaunchAtLoginStatusEv" title='Qv2ray::components::autolaunch::GetLaunchAtLoginStatus' data-ref="_ZN6Qv2ray10components10autolaunch22GetLaunchAtLoginStatusEv" data-ref-filename="_ZN6Qv2ray10components10autolaunch22GetLaunchAtLoginStatusEv">GetLaunchAtLoginStatus</dfn>()</td></tr>
+<tr><th id="32">32</th><td>    {</td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="33">ifdef</span> <span class="macro" data-ref="_M/Q_OS_WIN">Q_OS_WIN</span></u></td></tr>
+<tr><th id="34">34</th><td>        QString appName = QCoreApplication::applicationName();</td></tr>
+<tr><th id="35">35</th><td>        QSettings reg(<q>"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"</q>, QSettings::NativeFormat);</td></tr>
+<tr><th id="36">36</th><td>        <b>return</b> reg.contains(appName);</td></tr>
+<tr><th id="37">37</th><td>    }</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="33">elif</span> defined <span class="macro" data-ref="_M/Q_OS_MAC">Q_OS_MAC</span></u></td></tr>
+<tr><th id="40">40</th><td>        <i>// From</i></td></tr>
+<tr><th id="41">41</th><td><i>        // <a href="https://github.com/nextcloud/desktop/blob/master/src/common/utility_mac.cpp">https://github.com/nextcloud/desktop/blob/master/src/common/utility_mac.cpp</a></i></td></tr>
+<tr><th id="42">42</th><td><i>        // this is quite some duplicate code with setLaunchOnStartup, at some</i></td></tr>
+<tr><th id="43">43</th><td><i>        // point we should fix this FIXME.</i></td></tr>
+<tr><th id="44">44</th><td>        <em>bool</em> returnValue = <b>false</b>;</td></tr>
+<tr><th id="45">45</th><td>        QString filePath = QDir(QCoreApplication::applicationDirPath() + QLatin1String(<q>"/../.."</q>)).absolutePath();</td></tr>
+<tr><th id="46">46</th><td>        CFStringRef folderCFStr = CFStringCreateWithCString(<var>0</var>, filePath.toUtf8().data(), kCFStringEncodingUTF8);</td></tr>
+<tr><th id="47">47</th><td>        CFURLRef urlRef = CFURLCreateWithFileSystemPath(<var>0</var>, folderCFStr, kCFURLPOSIXPathStyle, <b>true</b>);</td></tr>
+<tr><th id="48">48</th><td>        LSSharedFileListRef loginItems = LSSharedFileListCreate(<var>0</var>, kLSSharedFileListSessionLoginItems, <var>0</var>);</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>        <b>if</b> (loginItems)</td></tr>
+<tr><th id="51">51</th><td>        {</td></tr>
+<tr><th id="52">52</th><td>            <i>// We need to iterate over the items and check which one is "ours".</i></td></tr>
+<tr><th id="53">53</th><td>            UInt32 seedValue;</td></tr>
+<tr><th id="54">54</th><td>            CFArrayRef itemsArray = LSSharedFileListCopySnapshot(loginItems, &amp;seedValue);</td></tr>
+<tr><th id="55">55</th><td>            CFStringRef appUrlRefString = CFURLGetString(urlRef); <i>// no need for release</i></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>            <b>for</b> (<em>int</em> i = <var>0</var>; i &lt; CFArrayGetCount(itemsArray); i++)</td></tr>
+<tr><th id="58">58</th><td>            {</td></tr>
+<tr><th id="59">59</th><td>                LSSharedFileListItemRef item = (LSSharedFileListItemRef) CFArrayGetValueAtIndex(itemsArray, i);</td></tr>
+<tr><th id="60">60</th><td>                CFURLRef itemUrlRef = NULL;</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td>                <b>if</b> (LSSharedFileListItemResolve(item, <var>0</var>, &amp;itemUrlRef, NULL) == noErr &amp;&amp; itemUrlRef)</td></tr>
+<tr><th id="63">63</th><td>                {</td></tr>
+<tr><th id="64">64</th><td>                    CFStringRef itemUrlString = CFURLGetString(itemUrlRef);</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>                    <b>if</b> (CFStringCompare(itemUrlString, appUrlRefString, <var>0</var>) == kCFCompareEqualTo)</td></tr>
+<tr><th id="67">67</th><td>                    {</td></tr>
+<tr><th id="68">68</th><td>                        returnValue = <b>true</b>;</td></tr>
+<tr><th id="69">69</th><td>                    }</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>                    CFRelease(itemUrlRef);</td></tr>
+<tr><th id="72">72</th><td>                }</td></tr>
+<tr><th id="73">73</th><td>            }</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>            CFRelease(itemsArray);</td></tr>
+<tr><th id="76">76</th><td>        }</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>        CFRelease(loginItems);</td></tr>
+<tr><th id="79">79</th><td>        CFRelease(folderCFStr);</td></tr>
+<tr><th id="80">80</th><td>        CFRelease(urlRef);</td></tr>
+<tr><th id="81">81</th><td>        <b>return</b> returnValue;</td></tr>
+<tr><th id="82">82</th><td>    }</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><u>#<span data-ppcond="33">elif</span> defined <span class="macro" data-ref="_M/Q_OS_LINUX">Q_OS_LINUX</span></u></td></tr>
+<tr><th id="85">85</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col3 decl" id="3appName" title='appName' data-type='QString' data-ref="3appName" data-ref-filename="3appName">appName</dfn> = <span class='type' title='QCoreApplication' data-ref="QCoreApplication" data-ref-filename="QCoreApplication">QCoreApplication</span>::<span class='ref fn' title='QCoreApplication::applicationName' data-ref="_ZN16QCoreApplication15applicationNameEv" data-ref-filename="_ZN16QCoreApplication15applicationNameEv">applicationName</span>();</td></tr>
+<tr><th id="86">86</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col4 decl" id="4desktopFileLocation" title='desktopFileLocation' data-type='QString' data-ref="4desktopFileLocation" data-ref-filename="4desktopFileLocation">desktopFileLocation</dfn> = <a class="ref fn" href="#_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv" title='Qv2ray::components::autolaunch::getUserAutostartDir_private' data-ref="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv" data-ref-filename="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv">getUserAutostartDir_private</a>() <span class='ref fn' title='operator+' data-ref="_ZplRK7QStringS1_" data-ref-filename="_ZplRK7QStringS1_">+</span> <a class="local col3 ref" href="#3appName" title='appName' data-ref="3appName" data-ref-filename="3appName">appName</a> <span class='ref fn' title='operator+' data-ref="_ZplRK7QStringS1_" data-ref-filename="_ZplRK7QStringS1_">+</span> <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1E13QLatin1String" data-ref-filename="_ZN7QStringC1E13QLatin1String"></span><span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>".desktop"</q>);</td></tr>
+<tr><th id="87">87</th><td>        <b>return</b> <span class='type' title='QFile' data-ref="QFile" data-ref-filename="QFile">QFile</span>::<span class='ref fn' title='QFile::exists' data-ref="_ZN5QFile6existsERK7QString" data-ref-filename="_ZN5QFile6existsERK7QString">exists</span>(<a class="local col4 ref" href="#4desktopFileLocation" title='desktopFileLocation' data-ref="4desktopFileLocation" data-ref-filename="4desktopFileLocation">desktopFileLocation</a>);</td></tr>
+<tr><th id="88">88</th><td>    }</td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="33">endif</span></u></td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>    <em>void</em> <dfn class="decl def fn" id="_ZN6Qv2ray10components10autolaunch22SetLaunchAtLoginStatusEb" title='Qv2ray::components::autolaunch::SetLaunchAtLoginStatus' data-ref="_ZN6Qv2ray10components10autolaunch22SetLaunchAtLoginStatusEb" data-ref-filename="_ZN6Qv2ray10components10autolaunch22SetLaunchAtLoginStatusEb">SetLaunchAtLoginStatus</dfn>(<em>bool</em> <dfn class="local col5 decl" id="5enable" title='enable' data-type='bool' data-ref="5enable" data-ref-filename="5enable">enable</dfn>)</td></tr>
+<tr><th id="92">92</th><td>    {</td></tr>
+<tr><th id="93">93</th><td><u>#<span data-ppcond="93">ifdef</span> <span class="macro" data-ref="_M/Q_OS_WIN">Q_OS_WIN</span></u></td></tr>
+<tr><th id="94">94</th><td>        QString appName = QCoreApplication::applicationName();</td></tr>
+<tr><th id="95">95</th><td>        QSettings reg(<q>"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"</q>, QSettings::NativeFormat);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>        <b>if</b> (enable)</td></tr>
+<tr><th id="98">98</th><td>        {</td></tr>
+<tr><th id="99">99</th><td>            QString strAppPath = QDir::toNativeSeparators(QCoreApplication::applicationFilePath());</td></tr>
+<tr><th id="100">100</th><td>            reg.setValue(appName, strAppPath);</td></tr>
+<tr><th id="101">101</th><td>        }</td></tr>
+<tr><th id="102">102</th><td>        <b>else</b></td></tr>
+<tr><th id="103">103</th><td>        {</td></tr>
+<tr><th id="104">104</th><td>            reg.remove(appName);</td></tr>
+<tr><th id="105">105</th><td>        }</td></tr>
+<tr><th id="106">106</th><td>    }</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="93">elif</span> defined <span class="macro" data-ref="_M/Q_OS_MAC">Q_OS_MAC</span></u></td></tr>
+<tr><th id="109">109</th><td>        <i>// From</i></td></tr>
+<tr><th id="110">110</th><td><i>        // <a href="https://github.com/nextcloud/desktop/blob/master/src/common/utility_mac.cpp">https://github.com/nextcloud/desktop/blob/master/src/common/utility_mac.cpp</a></i></td></tr>
+<tr><th id="111">111</th><td>        QString filePath = QDir(QCoreApplication::applicationDirPath() + QLatin1String(<q>"/../.."</q>)).absolutePath();</td></tr>
+<tr><th id="112">112</th><td>        CFStringRef folderCFStr = CFStringCreateWithCString(<var>0</var>, filePath.toUtf8().data(), kCFStringEncodingUTF8);</td></tr>
+<tr><th id="113">113</th><td>        CFURLRef urlRef = CFURLCreateWithFileSystemPath(<var>0</var>, folderCFStr, kCFURLPOSIXPathStyle, <b>true</b>);</td></tr>
+<tr><th id="114">114</th><td>        LSSharedFileListRef loginItems = LSSharedFileListCreate(<var>0</var>, kLSSharedFileListSessionLoginItems, <var>0</var>);</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>        <b>if</b> (loginItems &amp;&amp; enable)</td></tr>
+<tr><th id="117">117</th><td>        {</td></tr>
+<tr><th id="118">118</th><td>            <i>// Insert an item to the list.</i></td></tr>
+<tr><th id="119">119</th><td>            LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemLast, <var>0</var>, <var>0</var>, urlRef, <var>0</var>, <var>0</var>);</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>            <b>if</b> (item)</td></tr>
+<tr><th id="122">122</th><td>                CFRelease(item);</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td>            CFRelease(loginItems);</td></tr>
+<tr><th id="125">125</th><td>        }</td></tr>
+<tr><th id="126">126</th><td>        <b>else</b> <b>if</b> (loginItems &amp;&amp; !enable)</td></tr>
+<tr><th id="127">127</th><td>        {</td></tr>
+<tr><th id="128">128</th><td>            <i>// We need to iterate over the items and check which one is "ours".</i></td></tr>
+<tr><th id="129">129</th><td>            UInt32 seedValue;</td></tr>
+<tr><th id="130">130</th><td>            CFArrayRef itemsArray = LSSharedFileListCopySnapshot(loginItems, &amp;seedValue);</td></tr>
+<tr><th id="131">131</th><td>            CFStringRef appUrlRefString = CFURLGetString(urlRef);</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td>            <b>for</b> (<em>int</em> i = <var>0</var>; i &lt; CFArrayGetCount(itemsArray); i++)</td></tr>
+<tr><th id="134">134</th><td>            {</td></tr>
+<tr><th id="135">135</th><td>                LSSharedFileListItemRef item = (LSSharedFileListItemRef) CFArrayGetValueAtIndex(itemsArray, i);</td></tr>
+<tr><th id="136">136</th><td>                CFURLRef itemUrlRef = NULL;</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>                <b>if</b> (LSSharedFileListItemResolve(item, <var>0</var>, &amp;itemUrlRef, NULL) == noErr &amp;&amp; itemUrlRef)</td></tr>
+<tr><th id="139">139</th><td>                {</td></tr>
+<tr><th id="140">140</th><td>                    CFStringRef itemUrlString = CFURLGetString(itemUrlRef);</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td>                    <b>if</b> (CFStringCompare(itemUrlString, appUrlRefString, <var>0</var>) == kCFCompareEqualTo)</td></tr>
+<tr><th id="143">143</th><td>                    {</td></tr>
+<tr><th id="144">144</th><td>                        LSSharedFileListItemRemove(loginItems, item); <i>// remove it!</i></td></tr>
+<tr><th id="145">145</th><td>                    }</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>                    CFRelease(itemUrlRef);</td></tr>
+<tr><th id="148">148</th><td>                }</td></tr>
+<tr><th id="149">149</th><td>            }</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td>            CFRelease(itemsArray);</td></tr>
+<tr><th id="152">152</th><td>            CFRelease(loginItems);</td></tr>
+<tr><th id="153">153</th><td>        }</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td>        CFRelease(folderCFStr);</td></tr>
+<tr><th id="156">156</th><td>        CFRelease(urlRef);</td></tr>
+<tr><th id="157">157</th><td>    }</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="93">elif</span> defined <span class="macro" data-ref="_M/Q_OS_LINUX">Q_OS_LINUX</span></u></td></tr>
+<tr><th id="160">160</th><td>        <i>//</i></td></tr>
+<tr><th id="161">161</th><td><i>        // For AppImage packaging.</i></td></tr>
+<tr><th id="162">162</th><td>        <em>auto</em> <dfn class="local col6 decl" id="6binPath" title='binPath' data-type='QString' data-ref="6binPath" data-ref-filename="6binPath">binPath</dfn> = <span class='ref fn' title='qEnvironmentVariableIsSet' data-ref="_Z25qEnvironmentVariableIsSetPKc" data-ref-filename="_Z25qEnvironmentVariableIsSetPKc">qEnvironmentVariableIsSet</span>(<q>"APPIMAGE"</q>) ? <span class='ref fn' title='qEnvironmentVariable' data-ref="_Z20qEnvironmentVariablePKc" data-ref-filename="_Z20qEnvironmentVariablePKc">qEnvironmentVariable</span>(<q>"APPIMAGE"</q>) : <span class='type' title='QCoreApplication' data-ref="QCoreApplication" data-ref-filename="QCoreApplication">QCoreApplication</span>::<span class='ref fn' title='QCoreApplication::applicationFilePath' data-ref="_ZN16QCoreApplication19applicationFilePathEv" data-ref-filename="_ZN16QCoreApplication19applicationFilePathEv">applicationFilePath</span>();</td></tr>
+<tr><th id="163">163</th><td>        <i>//</i></td></tr>
+<tr><th id="164">164</th><td><i>        // From <a href="https://github.com/nextcloud/desktop/blob/master/src/common/utility_unix.cpp">https://github.com/nextcloud/desktop/blob/master/src/common/utility_unix.cpp</a></i></td></tr>
+<tr><th id="165">165</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col7 decl" id="7appName" title='appName' data-type='QString' data-ref="7appName" data-ref-filename="7appName">appName</dfn> = <span class='type' title='QCoreApplication' data-ref="QCoreApplication" data-ref-filename="QCoreApplication">QCoreApplication</span>::<span class='ref fn' title='QCoreApplication::applicationName' data-ref="_ZN16QCoreApplication15applicationNameEv" data-ref-filename="_ZN16QCoreApplication15applicationNameEv">applicationName</span>();</td></tr>
+<tr><th id="166">166</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col8 decl" id="8userAutoStartPath" title='userAutoStartPath' data-type='QString' data-ref="8userAutoStartPath" data-ref-filename="8userAutoStartPath">userAutoStartPath</dfn> = <a class="ref fn" href="#_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv" title='Qv2ray::components::autolaunch::getUserAutostartDir_private' data-ref="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv" data-ref-filename="_ZN6Qv2ray10components10autolaunch27getUserAutostartDir_privateEv">getUserAutostartDir_private</a>();</td></tr>
+<tr><th id="167">167</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="local col9 decl" id="9desktopFileLocation" title='desktopFileLocation' data-type='QString' data-ref="9desktopFileLocation" data-ref-filename="9desktopFileLocation">desktopFileLocation</dfn> = <a class="local col8 ref" href="#8userAutoStartPath" title='userAutoStartPath' data-ref="8userAutoStartPath" data-ref-filename="8userAutoStartPath">userAutoStartPath</a> <span class='ref fn' title='operator+' data-ref="_ZplRK7QStringS1_" data-ref-filename="_ZplRK7QStringS1_">+</span> <a class="local col7 ref" href="#7appName" title='appName' data-ref="7appName" data-ref-filename="7appName">appName</a> <span class='ref fn' title='operator+' data-ref="_ZplRK7QStringS1_" data-ref-filename="_ZplRK7QStringS1_">+</span> <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1E13QLatin1String" data-ref-filename="_ZN7QStringC1E13QLatin1String"></span><span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>".desktop"</q>);</td></tr>
+<tr><th id="168">168</th><td>        <span class='type' title='QStringList' data-ref="QStringList" data-ref-filename="QStringList">QStringList</span> <dfn class="local col0 decl" id="10appCmdList" title='appCmdList' data-type='QStringList' data-ref="10appCmdList" data-ref-filename="10appCmdList">appCmdList</dfn> = <span class='type' title='QCoreApplication' data-ref="QCoreApplication" data-ref-filename="QCoreApplication">QCoreApplication</span>::<span class='ref fn' title='QCoreApplication::arguments' data-ref="_ZN16QCoreApplication9argumentsEv" data-ref-filename="_ZN16QCoreApplication9argumentsEv">arguments</span>();</td></tr>
+<tr><th id="169">169</th><td>        <a class="local col0 ref" href="#10appCmdList" title='appCmdList' data-ref="10appCmdList" data-ref-filename="10appCmdList">appCmdList</a>.<span class='ref fn' title='QList::replace' data-ref="_ZN5QList7replaceEiRKT_" data-ref-filename="_ZN5QList7replaceEiRKT_">replace</span>(<var>0</var>, <a class="local col6 ref" href="#6binPath" title='binPath' data-ref="6binPath" data-ref-filename="6binPath">binPath</a>);</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>        <b>if</b> (<a class="local col5 ref" href="#5enable" title='enable' data-ref="5enable" data-ref-filename="5enable">enable</a>)</td></tr>
+<tr><th id="172">172</th><td>        {</td></tr>
+<tr><th id="173">173</th><td>            <b>if</b> (!<span class='type' title='QDir' data-ref="QDir" data-ref-filename="QDir">QDir</span><span class='ref fn' title='QDir::QDir' data-ref="_ZN4QDirC1ERK7QString" data-ref-filename="_ZN4QDirC1ERK7QString">(</span>).<span class='ref fn' title='QDir::exists' data-ref="_ZNK4QDir6existsERK7QString" data-ref-filename="_ZNK4QDir6existsERK7QString">exists</span>(<a class="local col8 ref" href="#8userAutoStartPath" title='userAutoStartPath' data-ref="8userAutoStartPath" data-ref-filename="8userAutoStartPath">userAutoStartPath</a>) &amp;&amp; !<span class='type' title='QDir' data-ref="QDir" data-ref-filename="QDir">QDir</span><span class='ref fn' title='QDir::QDir' data-ref="_ZN4QDirC1ERK7QString" data-ref-filename="_ZN4QDirC1ERK7QString">(</span>).<span class='ref fn' title='QDir::mkpath' data-ref="_ZNK4QDir6mkpathERK7QString" data-ref-filename="_ZNK4QDir6mkpathERK7QString">mkpath</span>(<a class="local col8 ref" href="#8userAutoStartPath" title='userAutoStartPath' data-ref="8userAutoStartPath" data-ref-filename="8userAutoStartPath">userAutoStartPath</a>))</td></tr>
+<tr><th id="174">174</th><td>            {</td></tr>
+<tr><th id="175">175</th><td>                <i>// qCWarning(lcUtility) &lt;&lt; "Could not create autostart folder"</i></td></tr>
+<tr><th id="176">176</th><td><i>                // &lt;&lt; userAutoStartPath;</i></td></tr>
+<tr><th id="177">177</th><td>                <b>return</b>;</td></tr>
+<tr><th id="178">178</th><td>            }</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td>            <span class='type' title='QFile' data-ref="QFile" data-ref-filename="QFile">QFile</span> <dfn class="local col1 decl" id="11iniFile" title='iniFile' data-type='QFile' data-ref="11iniFile" data-ref-filename="11iniFile">iniFile</dfn><span class='ref fn' title='QFile::QFile' data-ref="_ZN5QFileC1ERK7QString" data-ref-filename="_ZN5QFileC1ERK7QString">(</span><a class="local col9 ref" href="#9desktopFileLocation" title='desktopFileLocation' data-ref="9desktopFileLocation" data-ref-filename="9desktopFileLocation">desktopFileLocation</a>);</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>            <b>if</b> (!<a class="local col1 ref" href="#11iniFile" title='iniFile' data-ref="11iniFile" data-ref-filename="11iniFile">iniFile</a>.<span class='virtual ref fn' title='QFile::open' data-ref="_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE" data-ref-filename="_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE">open</span>(<span class='ref fn fake' title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_" data-ref-filename="_ZN6QFlagsC1ET_"></span><span class='type' title='QIODevice' data-ref="QIODevice" data-ref-filename="QIODevice">QIODevice</span>::<span class='enum' title='QIODevice::WriteOnly' data-ref="QIODevice::WriteOnly" data-ref-filename="QIODevice..WriteOnly">WriteOnly</span>))</td></tr>
+<tr><th id="183">183</th><td>            {</td></tr>
+<tr><th id="184">184</th><td>                <i>// qCWarning(lcUtility) &lt;&lt; "Could not write auto start entry" &lt;&lt;</i></td></tr>
+<tr><th id="185">185</th><td><i>                // desktopFileLocation;</i></td></tr>
+<tr><th id="186">186</th><td>                <b>return</b>;</td></tr>
+<tr><th id="187">187</th><td>            }</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td>            <span class='type' title='QTextStream' data-ref="QTextStream" data-ref-filename="QTextStream">QTextStream</span> <dfn class="local col2 decl" id="12ts" title='ts' data-type='QTextStream' data-ref="12ts" data-ref-filename="12ts">ts</dfn><span class='ref fn' title='QTextStream::QTextStream' data-ref="_ZN11QTextStreamC1EP9QIODevice" data-ref-filename="_ZN11QTextStreamC1EP9QIODevice">(</span>&amp;<a class="local col1 ref" href="#11iniFile" title='iniFile' data-ref="11iniFile" data-ref-filename="11iniFile">iniFile</a>);</td></tr>
+<tr><th id="190">190</th><td><u>#<span data-ppcond="190">if</span> <span class="macro" title="((5&lt;&lt;16)|(15&lt;&lt;8)|(1))" data-ref="_M/QT_VERSION">QT_VERSION</span> &lt; <span class="macro" title="((6&lt;&lt;16)|(0&lt;&lt;8)|(0))" data-ref="_M/QT_VERSION_CHECK">QT_VERSION_CHECK</span>(6, 0, 0)</u></td></tr>
+<tr><th id="191">191</th><td>            <a class="local col2 ref" href="#12ts" title='ts' data-ref="12ts" data-ref-filename="12ts">ts</a>.<span class='ref fn' title='QTextStream::setCodec' data-ref="_ZN11QTextStream8setCodecEPKc" data-ref-filename="_ZN11QTextStream8setCodecEPKc">setCodec</span>(<q>"UTF-8"</q>);</td></tr>
+<tr><th id="192">192</th><td><u>#<span data-ppcond="190">endif</span></u></td></tr>
+<tr><th id="193">193</th><td>            <a class="local col2 ref" href="#12ts" title='ts' data-ref="12ts" data-ref-filename="12ts">ts</a> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"[Desktop Entry]"</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                                 <i>//</i></td></tr>
+<tr><th id="194">194</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"Name="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsERK7QString" data-ref-filename="_ZN11QTextStreamlsERK7QString">&lt;&lt;</span> <a class="local col7 ref" href="#7appName" title='appName' data-ref="7appName" data-ref-filename="7appName">appName</a> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                                <i>//</i></td></tr>
+<tr><th id="195">195</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"GenericName="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"V2Ray Frontend"</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a> <i>//</i></td></tr>
+<tr><th id="196">196</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"Exec="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsERK7QString" data-ref-filename="_ZN11QTextStreamlsERK7QString">&lt;&lt;</span> <a class="local col0 ref" href="#10appCmdList" title='appCmdList' data-ref="10appCmdList" data-ref-filename="10appCmdList">appCmdList</a>.<span class='ref fn' title='QListSpecialMethods&lt;QString&gt;::join' data-ref="_ZNK19QListSpecialMethodsI7QStringE4joinERKS0_" data-ref-filename="_ZNK19QListSpecialMethodsI7QStringE4joinERKS0_">join</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>" "</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                   <i>//</i></td></tr>
+<tr><th id="197">197</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"Terminal="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"false"</q> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                            <i>//</i></td></tr>
+<tr><th id="198">198</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"Icon="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"qv2ray"</q> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                               <i>//</i></td></tr>
+<tr><th id="199">199</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"Categories="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"Network"</q> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                        <i>//</i></td></tr>
+<tr><th id="200">200</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"Type="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"Application"</q> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                          <i>//</i></td></tr>
+<tr><th id="201">201</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"StartupNotify="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"false"</q> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>                       <i>//</i></td></tr>
+<tr><th id="202">202</th><td>               <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsE13QLatin1String" data-ref-filename="_ZN11QTextStreamlsE13QLatin1String">&lt;&lt;</span> <span class='type' title='QLatin1String' data-ref="QLatin1String" data-ref-filename="QLatin1String">QLatin1String</span><span class='ref fn' title='QLatin1String::QLatin1String' data-ref="_ZN13QLatin1StringC1EPKc" data-ref-filename="_ZN13QLatin1StringC1EPKc">(</span><q>"X-GNOME-Autostart-enabled="</q>) <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <q>"true"</q> <span class='ref fn' title='QTextStream::operator&lt;&lt;' data-ref="_ZN11QTextStreamlsEPKc" data-ref-filename="_ZN11QTextStreamlsEPKc">&lt;&lt;</span> <a class="macro" href="../../../base/Qv2rayLog.hpp.html#16" title="&quot;\r\n&quot;" data-ref="_M/NEWLINE">NEWLINE</a>;</td></tr>
+<tr><th id="203">203</th><td>            <a class="local col2 ref" href="#12ts" title='ts' data-ref="12ts" data-ref-filename="12ts">ts</a>.<span class='ref fn' title='QTextStream::flush' data-ref="_ZN11QTextStream5flushEv" data-ref-filename="_ZN11QTextStream5flushEv">flush</span>();</td></tr>
+<tr><th id="204">204</th><td>            <a class="local col1 ref" href="#11iniFile" title='iniFile' data-ref="11iniFile" data-ref-filename="11iniFile">iniFile</a>.<span class='virtual ref fn' title='QFileDevice::close' data-ref="_ZN11QFileDevice5closeEv" data-ref-filename="_ZN11QFileDevice5closeEv">close</span>();</td></tr>
+<tr><th id="205">205</th><td>        }</td></tr>
+<tr><th id="206">206</th><td>        <b>else</b></td></tr>
+<tr><th id="207">207</th><td>        {</td></tr>
+<tr><th id="208">208</th><td>            <span class='type' title='QFile' data-ref="QFile" data-ref-filename="QFile">QFile</span>::<span class='ref fn' title='QFile::remove' data-ref="_ZN5QFile6removeERK7QString" data-ref-filename="_ZN5QFile6removeERK7QString">remove</span>(<a class="local col9 ref" href="#9desktopFileLocation" title='desktopFileLocation' data-ref="9desktopFileLocation" data-ref-filename="9desktopFileLocation">desktopFileLocation</a>);</td></tr>
+<tr><th id="209">209</th><td>            <span class='type' title='QFile' data-ref="QFile" data-ref-filename="QFile">QFile</span>::<span class='ref fn' title='QFile::remove' data-ref="_ZN5QFile6removeERK7QString" data-ref-filename="_ZN5QFile6removeERK7QString">remove</span>(<a class="local col9 ref" href="#9desktopFileLocation" title='desktopFileLocation' data-ref="9desktopFileLocation" data-ref-filename="9desktopFileLocation">desktopFileLocation</a>.<span class='ref fn' title='QString::replace' data-ref="_ZN7QString7replaceERKS_S1_N2Qt15CaseSensitivityE" data-ref-filename="_ZN7QString7replaceERKS_S1_N2Qt15CaseSensitivityE">replace</span>(<span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"qv2ray"</q>, <span class='ref fn fake' title='QString::QString' data-ref="_ZN7QStringC1EPKc" data-ref-filename="_ZN7QStringC1EPKc"></span><q>"Qv2ray"</q>));</td></tr>
+<tr><th id="210">210</th><td>        }</td></tr>
+<tr><th id="211">211</th><td>    }</td></tr>
+<tr><th id="212">212</th><td><u>#<span data-ppcond="93">endif</span></u></td></tr>
+<tr><th id="213">213</th><td>} <i>// namespace Qv2ray::components::autolaunch</i></td></tr>
+<tr><th id="214">214</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

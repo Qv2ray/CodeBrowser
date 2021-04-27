@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>client_context.h source code [include/grpcpp/client_context.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpcpp/client_context.h'; var root_path = '../..'; var data_path = '../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>grpcpp</a>/<a href='client_context.h.html'>client_context.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2015 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td><i></i></td></tr>
+<tr><th id="19">19</th><td><i>/// A ClientContext allows the person implementing a service client to:</i></td></tr>
+<tr><th id="20">20</th><td><i>///</i></td></tr>
+<tr><th id="21">21</th><td><i>/// - Add custom metadata key-value pairs that will propagated to the server</i></td></tr>
+<tr><th id="22">22</th><td><i>/// side.</i></td></tr>
+<tr><th id="23">23</th><td><i>/// - Control call settings such as compression and authentication.</i></td></tr>
+<tr><th id="24">24</th><td><i>/// - Initial and trailing metadata coming from the server.</i></td></tr>
+<tr><th id="25">25</th><td><i>/// - Get performance metrics (ie, census).</i></td></tr>
+<tr><th id="26">26</th><td><i>///</i></td></tr>
+<tr><th id="27">27</th><td><i>/// Context settings are only relevant to the call they are invoked with, that</i></td></tr>
+<tr><th id="28">28</th><td><i>/// is to say, they aren't sticky. Some of these settings, such as the</i></td></tr>
+<tr><th id="29">29</th><td><i>/// compression options, can be made persistent at channel construction time</i></td></tr>
+<tr><th id="30">30</th><td><i>/// (see \a grpc::CreateCustomChannel).</i></td></tr>
+<tr><th id="31">31</th><td><i>///</i></td></tr>
+<tr><th id="32">32</th><td><i>/// \warning ClientContext instances should \em not be reused across rpcs.</i></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="34">ifndef</span> <span class="macro" data-ref="_M/GRPCPP_CLIENT_CONTEXT_H">GRPCPP_CLIENT_CONTEXT_H</span></u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/GRPCPP_CLIENT_CONTEXT_H" data-ref="_M/GRPCPP_CLIENT_CONTEXT_H">GRPCPP_CLIENT_CONTEXT_H</dfn></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="impl/codegen/client_context.h.html">&lt;grpcpp/impl/codegen/client_context.h&gt;</a></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="34">endif</span>  // GRPCPP_CLIENT_CONTEXT_H</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

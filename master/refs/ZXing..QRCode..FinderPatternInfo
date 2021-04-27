@@ -1,0 +1,18 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.h' l='40' c='_ZN5ZXing6QRCode19FinderPatternFinder4FindERKNS_9BitMatrixEb'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternInfo.h' l='30' ll='38'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='252' c='_ZN5ZXing6QRCodeL24ProcessFinderPatternInfoERKNS_9BitMatrixERKNS0_17FinderPatternInfoE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='339' c='_ZN5ZXing6QRCode8Detector6DetectERKNS_9BitMatrixEbb'/>
+<size>72</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternInfo.h' l='24'>/**
+* &lt;p&gt;Encapsulates information about finder patterns in an image, including the location of
+* the three finder patterns, and their estimated module size.&lt;/p&gt;
+*
+* @author Sean Owen
+*/</doc>
+<mbr r='ZXing::QRCode::FinderPatternInfo::bottomLeft' o='0' t='ZXing::QRCode::FinderPattern'/>
+<mbr r='ZXing::QRCode::FinderPatternInfo::topLeft' o='192' t='ZXing::QRCode::FinderPattern'/>
+<mbr r='ZXing::QRCode::FinderPatternInfo::topRight' o='384' t='ZXing::QRCode::FinderPattern'/>
+<fun r='_ZNK5ZXing6QRCode17FinderPatternInfo7isValidEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='405' c='_ZN5ZXing6QRCodeL18SelectBestPatternsESt6vectorINS0_13FinderPatternESaIS2_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRFinderPatternFinder.cpp' l='490' c='_ZN5ZXing6QRCode19FinderPatternFinder4FindERKNS_9BitMatrixEb'/>
+<size>72</size>

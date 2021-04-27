@@ -1,0 +1,11 @@
+<dec f='include/google/protobuf/generated_enum_reflection.h' l='81' type='const std::string &amp; google::protobuf::internal::NameOfEnum(const google::protobuf::EnumDescriptor * descriptor, int value)'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='195' u='c' c='_ZN6google8protobuf30FieldDescriptorProto_Type_NameB5cxx11ENS0_25FieldDescriptorProto_TypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='215' u='c' c='_ZN6google8protobuf31FieldDescriptorProto_Label_NameB5cxx11ENS0_26FieldDescriptorProto_LabelE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='235' u='c' c='_ZN6google8protobuf29FileOptions_OptimizeMode_NameB5cxx11ENS0_24FileOptions_OptimizeModeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='255' u='c' c='_ZN6google8protobuf23FieldOptions_CType_NameB5cxx11ENS0_18FieldOptions_CTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='275' u='c' c='_ZN6google8protobuf24FieldOptions_JSType_NameB5cxx11ENS0_19FieldOptions_JSTypeE'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='295' u='c' c='_ZN6google8protobuf35MethodOptions_IdempotencyLevel_NameB5cxx11ENS0_30MethodOptions_IdempotencyLevelE'/>
+<doc f='include/google/protobuf/generated_enum_reflection.h' l='78'>// Just a wrapper around printing the name of a value. The main point of this
+// function is not to be inlined, so that you can do this without including
+// descriptor.h.</doc>
+<use f='/v2ray_geosite.pb.h' l='85' u='c' c='_Z22DomainObject_Type_NameB5cxx1117DomainObject_Type'/>

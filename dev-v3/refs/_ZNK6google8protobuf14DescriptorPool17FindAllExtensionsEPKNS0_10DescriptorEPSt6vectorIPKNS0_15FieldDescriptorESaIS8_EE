@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='1573' type='void google::protobuf::DescriptorPool::FindAllExtensions(const google::protobuf::Descriptor * extendee, std::vector&lt;const FieldDescriptor *&gt; * out) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='1568'>// Finds extensions of extendee. The extensions will be appended to
+  // out in an undefined order. Only extensions defined directly in
+  // this DescriptorPool or one of its underlays are guaranteed to be
+  // found: extensions defined in the fallback database might not be found
+  // depending on the database implementation.</doc>

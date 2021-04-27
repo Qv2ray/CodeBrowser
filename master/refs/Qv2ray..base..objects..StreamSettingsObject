@@ -1,0 +1,35 @@
+<def f='qv2ray/src/base/models/CoreObjectModels.hpp' l='285' ll='302'/>
+<use f='qv2ray/src/base/models/CoreObjectModels.hpp' l='300' c='_ZN6Qv2ray4base7objects20StreamSettingsObject8fromJsonERK10QJsonValue'/>
+<size>256</size>
+<doc f='qv2ray/src/base/models/CoreObjectModels.hpp' l='283'>//
+    //</doc>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::network' o='0' t='QString'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::security' o='64' t='QString'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::sockopt' o='128' t='transfer::SockoptObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::tlsSettings' o='256' t='transfer::TLSObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::tcpSettings' o='576' t='transfer::TCPObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::kcpSettings' o='1152' t='transfer::KCPObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::wsSettings' o='1536' t='transfer::WebSocketObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::httpSettings' o='1664' t='transfer::HttpObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::dsSettings' o='1792' t='transfer::DomainSocketObject'/>
+<mbr r='Qv2ray::base::objects::StreamSettingsObject::quicSettings' o='1856' t='transfer::QuicObject'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObjectC1Ev'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject8loadJsonERK10QJsonValue'/>
+<fun r='_ZN6Qv2ray4base7objects20StreamSettingsObject8fromJsonERK10QJsonValue'/>
+<fun r='_ZNK6Qv2ray4base7objects20StreamSettingsObject6toJsonEv'/>
+<use f='qv2ray/src/ui/widgets/StreamSettingsWidget.hpp' l='17' c='_ZN20StreamSettingsWidget15SetStreamObjectERKN6Qv2ray4base7objects20StreamSettingsObjectE'/>
+<use f='qv2ray/src/ui/widgets/StreamSettingsWidget.hpp' l='18' c='_ZNK20StreamSettingsWidget17GetStreamSettingsEv'/>
+<use f='qv2ray/src/ui/widgets/StreamSettingsWidget.hpp' l='89'/>
+<size>256</size>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='30' c='_ZN6Qv2ray4core10connection13serialization5vmess9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<use f='qv2ray/src/core/connection/Serialization.hpp' l='36' c='_ZN6Qv2ray4core10connection13serialization9vmess_new9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<size>256</size>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='12' c='_ZN6Qv2ray4core10connection13serialization5vmess9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<use f='qv2ray/src/core/connection/serialization/vmess.cpp' l='227' c='_ZN6Qv2ray4core10connection13serialization5vmess11DeserializeERK7QStringPS4_S7_'/>
+<size>256</size>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='36' c='_ZN6Qv2ray4core10connection13serialization9vmess_new11DeserializeERK7QStringPS4_S7_'/>
+<use f='qv2ray/src/core/connection/serialization/vmess_new.cpp' l='134' c='_ZN6Qv2ray4core10connection13serialization9vmess_new9SerializeERKNS_4base7objects20StreamSettingsObjectERKNS5_8protocol17VMessServerObjectERK7QString'/>
+<size>256</size>
+<use f='qv2ray/src/ui/widgets/StreamSettingsWidget.cpp' l='23' c='_ZNK20StreamSettingsWidget17GetStreamSettingsEv'/>
+<use f='qv2ray/src/ui/widgets/StreamSettingsWidget.cpp' l='28' c='_ZN20StreamSettingsWidget15SetStreamObjectERKN6Qv2ray4base7objects20StreamSettingsObjectE'/>
+<size>256</size>

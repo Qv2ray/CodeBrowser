@@ -1,0 +1,3 @@
+<dec f='include/google/protobuf/wire_format_lite.h' l='317' type='static bool google::protobuf::internal::WireFormatLite::ReadPackedEnumNoInline(io::CodedInputStream * input, bool (*)(int) is_valid, RepeatedField&lt;int&gt; * values)'/>
+<doc f='include/google/protobuf/wire_format_lite.h' l='315'>// Read a packed enum field. If the is_valid function is not NULL, values for
+  // which is_valid(value) returns false are silently dropped.</doc>

@@ -1,0 +1,18 @@
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='31' u='r' c='_ZNK7QtNodes12NodeGeometry5widthEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='35' u='w' c='_ZN7QtNodes12NodeGeometry8setWidthEj'/>
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='113' type='unsigned int'/>
+<offset>0</offset>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeGeometry.hpp' l='109'>// some variables are mutable because
+        // we need to change drawing metrics
+        // corresponding to fontMetrics
+        // but this doesn&apos;t change constness of Node</doc>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='18' u='w' c='_ZN7QtNodes12NodeGeometryC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='44' u='r' c='_ZNK7QtNodes12NodeGeometry12boundingRectEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='62' u='w' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='66' u='w' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='68' u='w' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='68' u='r' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='71' u='w' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='71' u='r' c='_ZNK7QtNodes12NodeGeometry15recalculateSizeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='124' u='r' c='_ZNK7QtNodes12NodeGeometry17portScenePositionEiNS_8PortTypeERK10QTransform'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='162' u='r' c='_ZNK7QtNodes12NodeGeometry10resizeRectEv'/>

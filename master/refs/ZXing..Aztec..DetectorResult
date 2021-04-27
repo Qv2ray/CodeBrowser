@@ -1,0 +1,30 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.h' l='36' c='_ZN5ZXing5Aztec7Decoder6DecodeERKNS0_14DetectorResultE'/>
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/DetectorResult.h' l='31' c='ZXing::DetectorResult'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='25' ll='47'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='31' c='_ZN5ZXing5Aztec14DetectorResultC1ERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='32' c='_ZN5ZXing5Aztec14DetectorResultaSERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='32' c='_ZN5ZXing5Aztec14DetectorResultaSERKS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='36' c='_ZN5ZXing5Aztec14DetectorResultC1EOS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='37' c='_ZN5ZXing5Aztec14DetectorResultaSEOS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetectorResult.h' l='37' c='_ZN5ZXing5Aztec14DetectorResultaSEOS1_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='82' c='_ZN5ZXing5AztecL11ExtractBitsERKNS0_14DetectorResultE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='151' c='_ZN5ZXing5AztecL11CorrectBitsERKNS0_14DetectorResultERKSt6vectorIbSaIbEERS6_'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDecoder.cpp' l='363' c='_ZN5ZXing5Aztec7Decoder6DecodeERKNS0_14DetectorResultE'/>
+<size>88</size>
+<mbr r='ZXing::Aztec::DetectorResult::_compact' o='576' t='bool'/>
+<mbr r='ZXing::Aztec::DetectorResult::_nbDatablocks' o='608' t='int'/>
+<mbr r='ZXing::Aztec::DetectorResult::_nbLayers' o='640' t='int'/>
+<fun r='_ZN5ZXing5Aztec14DetectorResultC1ERKS1_'/>
+<fun r='_ZN5ZXing5Aztec14DetectorResultaSERKS1_'/>
+<fun r='_ZN5ZXing5Aztec14DetectorResultC1Ev'/>
+<fun r='_ZN5ZXing5Aztec14DetectorResultC1EOS1_'/>
+<fun r='_ZN5ZXing5Aztec14DetectorResultaSEOS1_'/>
+<fun r='_ZN5ZXing5Aztec14DetectorResultC1EONS_14DetectorResultEbii'/>
+<fun r='_ZNK5ZXing5Aztec14DetectorResult9isCompactEv'/>
+<fun r='_ZNK5ZXing5Aztec14DetectorResult12nbDatablocksEv'/>
+<fun r='_ZNK5ZXing5Aztec14DetectorResult8nbLayersEv'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.h' l='44' c='_ZN5ZXing5Aztec8Detector6DetectERKNS_9BitMatrixEb'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZDetector.cpp' l='478' c='_ZN5ZXing5Aztec8Detector6DetectERKNS_9BitMatrixEb'/>
+<size>88</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/aztec/AZReader.cpp' l='41' c='_ZNK5ZXing5Aztec6Reader6decodeERKNS_12BinaryBitmapE'/>
+<size>88</size>

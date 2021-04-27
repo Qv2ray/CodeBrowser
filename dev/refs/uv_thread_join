@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1755' type='int uv_thread_join(uv_thread_t * tid)'/>
+<use f='qv2ray/3rdparty/libuv/src/threadpool.c' l='173' u='c' c='uv__threadpool_cleanup'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/thread.c' l='272' ll='274' type='int uv_thread_join(uv_thread_t * tid)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/thread.cpp' l='49' u='c' c='_ZN3uvw6Thread4joinEv'/>

@@ -1,0 +1,10 @@
+<dec f='include/grpcpp/impl/codegen/channel_interface.h' l='111' type='internal::Call grpc::ChannelInterface::CreateCall(const internal::RpcMethod &amp; method, grpc::ClientContext * context, grpc::CompletionQueue * cq)'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='188' u='c' c='_ZN4grpc8internal24ClientAsyncReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='336' u='c' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='500' u='c' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='87' u='c' c='_ZN4grpc8internal32ClientAsyncResponseReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__b'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='248' u='c' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='382' u='c' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='556' u='c' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='55' u='c' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='60' u='c' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>

@@ -1,0 +1,29 @@
+<inh f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='60' c='ZXing::OneD::RowReader'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='45' ll='54'/>
+<size>32</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='29'>/**
+* &lt;p&gt;Implements decoding of the ITF format, or Interleaved Two of Five.&lt;/p&gt;
+*
+* &lt;p&gt;This Reader will scan ITF barcodes of certain lengths only.
+* At the moment it reads length 6, 8, 10, 12, 14, 16, 18, 20, 24, and 44 as these have appeared &quot;in the wild&quot;. Not all
+* lengths are scanned, especially shorter ones, to avoid false positives. This in turn is due to a lack of
+* required checksum function.&lt;/p&gt;
+*
+* &lt;p&gt;The checksum is optional and is not applied by this Reader. The consumer of the decoded
+* value will have to apply a checksum if required.&lt;/p&gt;
+*
+* &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Interleaved_2_of_5&quot;&gt;http://en.wikipedia.org/wiki/Interleaved_2_of_5&lt;/a&gt;
+* is a great reference for Interleaved 2 of 5 information.&lt;/p&gt;
+*
+* @author kevin.osullivan@sita.aero, SITA Lab.
+*/</doc>
+<fun r='_ZN5ZXing4OneD9ITFReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<fun r='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<mbr r='ZXing::OneD::ITFReader::_allowedLengths' o='64' t='std::vector&lt;int&gt;'/>
+<fun r='_ZN5ZXing4OneD9ITFReaderC1ERKNS_11DecodeHintsE'/>
+<fun r='_ZNK5ZXing4OneD9ITFReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<fun r='_ZNK5ZXing4OneD9ITFReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS0_9RowReader13DecodingStateESt14default_deleteIS7_EE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='50' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='71' c='_ZN5ZXing4OneD6ReaderC1ERKNS_11DecodeHintsE'/>
+<size>32</size>

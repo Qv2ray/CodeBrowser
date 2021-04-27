@@ -1,0 +1,53 @@
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.h' l='44'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='60' ll='330'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.h' l='33' c='ZXing::OneD::CodabarReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCodabarReader.h' l='33'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRowReader.h' l='53'>/**
+* Encapsulates functionality and implementation that is common to all families
+* of one-dimensional barcodes.
+*
+* @author dswitkin@google.com (Daniel Switkin)
+* @author Sean Owen
+*/</doc>
+<fun r='_ZNK5ZXing4OneD9RowReader15decodeSingleRowEiRKNS_8BitArrayE'/>
+<fun r='_ZN5ZXing4OneD9RowReaderD1Ev'/>
+<fun r='_ZNK5ZXing4OneD9RowReader9decodeRowEiRKNS_8BitArrayERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<fun r='_ZNK5ZXing4OneD9RowReader13decodePatternEiRKNS_11PatternViewERSt10unique_ptrINS1_13DecodingStateESt14default_deleteIS6_EE'/>
+<fun r='_ZN5ZXing4OneD9RowReader11FindPatternET_S2_RT0_T1_'/>
+<fun r='_ZN5ZXing4OneD9RowReader13RecordPatternET_S2_RT0_'/>
+<fun r='_ZN5ZXing4OneD9RowReader22RecordPatternInReverseET_S2_RT0_'/>
+<fun r='_ZN5ZXing4OneD9RowReader20PatternMatchVarianceEPKT_PKT0_mf'/>
+<fun r='_ZN5ZXing4OneD9RowReader20PatternMatchVarianceERKT_RKT0_f'/>
+<fun r='_ZN5ZXing4OneD9RowReader11DecodeDigitERKT_RKT0_ffb'/>
+<fun r='_ZN5ZXing4OneD9RowReader19NarrowWideThresholdERKNS_11PatternViewE'/>
+<fun r='_ZN5ZXing4OneD9RowReader20NarrowWideBitPatternERKNS_11PatternViewE'/>
+<fun r='_ZN5ZXing4OneD9RowReader19OneToFourBitPatternERKNS_11PatternViewE'/>
+<fun r='_ZN5ZXing4OneD9RowReader16LookupBitPatternEiRKT_RKT0_'/>
+<fun r='_ZN5ZXing4OneD9RowReader23DecodeNarrowWidePatternERKNS_11PatternViewERKT_RKT0_'/>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.h' l='32' c='ZXing::OneD::Code128Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode128Reader.h' l='32'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='33' c='ZXing::OneD::Code39Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode39Reader.h' l='33'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.h' l='30' c='ZXing::OneD::Code93Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODCode93Reader.h' l='30'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='42' c='ZXing::OneD::UPCEANReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODUPCEANReader.h' l='42'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='45' c='ZXing::OneD::ITFReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODITFReader.h' l='45'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='40' c='ZXing::OneD::MultiUPCEANReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h' l='40'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.h' l='27' c='ZXing::OneD::RSS14Reader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSS14Reader.h' l='27'/>
+<size>8</size>
+<ovr f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.h' l='28' c='ZXing::OneD::RSSExpandedReader'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODRSSExpandedReader.h' l='28'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/oned/ODReader.cpp' l='102' c='_ZN5ZXing4OneDL8DoDecodeERKSt6vectorISt10unique_ptrINS0_9RowReaderESt14default_deleteIS3_EESaIS6_EERKNS_12BinaryBitmapEb'/>
+<size>8</size>

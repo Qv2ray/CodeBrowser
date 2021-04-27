@@ -1,0 +1,11 @@
+<dec f='include/google/protobuf/message.h' l='248' type='void google::protobuf::Message::DiscardUnknownFields()'/>
+<doc f='include/google/protobuf/message.h' l='238'>// Clears all unknown fields from this message and all embedded messages.
+  // Normally, if unknown tag numbers are encountered when parsing a message,
+  // the tag and value are stored in the message&apos;s UnknownFieldSet and
+  // then written back out when the message is serialized.  This allows servers
+  // which simply route messages to other servers to pass through messages
+  // that have new field definitions which they don&apos;t yet know about.  However,
+  // this behavior can have security implications.  To avoid it, call this
+  // method after parsing.
+  //
+  // See Reflection::GetUnknownFields() for more on unknown fields.</doc>

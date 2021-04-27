@@ -1,0 +1,20 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='409' type='void uvw::UDPHandle::send(const sockaddr &amp; addr, char * data, unsigned int len)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='160' ll='172' type='void uvw::UDPHandle::send(const sockaddr &amp; addr, char * data, unsigned int len)'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='179' u='c' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPcj'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='392'>/**
+     * @brief Sends data over the UDP socket.
+     *
+     * Note that if the socket has not previously been bound with `bind()`, it
+     * will be bound to `0.0.0.0` (the _all interfaces_ IPv4 address) and a
+     * random port number.
+     *
+     * The handle doesn&apos;t take the ownership of the data. Be sure that their
+     * lifetime overcome the one of the request.
+     *
+     * A SendEvent event will be emitted when the data have been sent.&lt;br/&gt;
+     * An ErrorEvent event will be emitted in case of errors.
+     *
+     * @param addr Initialized `sockaddr_in` or `sockaddr_in6` data structure.
+     * @param data The data to be sent.
+     * @param len The lenght of the submitted data.
+     */</doc>

@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='87' type='void uvw::GetAddrInfoReq::nodeAddrInfo(std::string node, addrinfo * hints = nullptr)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='52' ll='54' type='void uvw::GetAddrInfoReq::nodeAddrInfo(std::string node, addrinfo * hints = nullptr)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='81'>/**
+     * @brief Async [getaddrinfo](http://linux.die.net/man/3/getaddrinfo).
+     * @param node Either a numerical network address or a network hostname.
+     * @param hints Optional `addrinfo` data structure with additional address
+     * type constraints.
+     */</doc>

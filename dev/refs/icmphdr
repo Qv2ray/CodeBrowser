@@ -1,0 +1,6 @@
+<def f='include/netinet/ip_icmp.h' l='26' ll='45'/>
+<size>8</size>
+<mbr r='icmphdr::type' o='0' t='uint8_t'/>
+<mbr r='icmphdr::code' o='8' t='uint8_t'/>
+<mbr r='icmphdr::checksum' o='16' t='uint16_t'/>
+<mbr r='icmphdr::un' o='32' t='union (anonymous union at /usr/include/netinet/ip_icmp.h:31:3)'/>

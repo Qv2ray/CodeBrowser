@@ -1,0 +1,50 @@
+<use f='include/x86_64-linux-gnu/sys/socket.h' l='69'/>
+<use f='include/x86_64-linux-gnu/sys/socket.h' l='69'/>
+<def f='include/netinet/in.h' l='238' ll='249'/>
+<use f='include/netinet/in.h' l='503' c='bindresvport'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1092'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1096'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1624' c='uv_ip4_addr'/>
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='1627' c='uv_ip4_name'/>
+<size>16</size>
+<doc f='include/netinet/in.h' l='237'>/* Structure describing an Internet socket address.  */</doc>
+<mbr r='sockaddr_in::sin_family' o='0' t='sa_family_t'/>
+<mbr r='sockaddr_in::sin_port' o='16' t='in_port_t'/>
+<mbr r='sockaddr_in::sin_addr' o='32' t='struct in_addr'/>
+<mbr r='sockaddr_in::sin_zero' o='64' t='unsigned char [8]'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getnameinfo.c' l='39' c='uv__getnameinfo_work'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getnameinfo.c' l='92' c='uv_getnameinfo'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='926' c='uv_interface_addresses'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-core.c' l='932' c='uv_interface_addresses'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='95' c='maybe_new_socket'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='47'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='349' c='uv__udp_sendmmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='439' c='uv__udp_sendmsg'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='584' c='uv__udp_maybe_deferred_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='764' c='uv__udp_set_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='859' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='861' c='uv__udp_set_source_membership4'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1010' c='uv_udp_set_membership'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1213' c='uv_udp_set_multicast_interface'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1216' c='uv_udp_set_multicast_interface'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='221' c='uv_ip4_addr'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='267' c='uv_ip4_name'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='286' c='uv_tcp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='335' c='uv_udp_bind'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='355' c='uv_tcp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='380' c='uv_udp_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='421' c='uv__udp_check_before_send'/>
+<size>16</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='370'/>
+<size>16</size>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='24' c='_ZN6Qv2ray10components7latency7DNSBase6isAddrEv'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='82' c='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>
+<use f='qv2ray/src/components/latency/DNSBase.hpp' l='99' c='_ZN6Qv2ray10components7latency7DNSBase14getAddrInfoResERN3uvw13AddrInfoEventE'/>
+<size>16</size>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='135' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<use f='qv2ray/src/components/latency/unix/ICMPPing.cpp' l='136' c='_ZN6Qv2ray10components7latency7icmping8ICMPPing4pingEv'/>
+<size>16</size>

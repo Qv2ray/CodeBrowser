@@ -1,0 +1,17 @@
+<def f='include/c++/10/bits/basic_string.h' l='1075' ll='1084' type='std::__cxx11::basic_string::reference std::__cxx11::basic_string::at(std::__cxx11::basic_string::size_type __n)'/>
+<doc f='include/c++/10/bits/basic_string.h' l='1065'>/**
+       *  @brief  Provides access to the data contained in the %string.
+       *  @param __n The index of the character to access.
+       *  @return  Read/write reference to the character.
+       *  @throw  std::out_of_range  If @a n is an invalid index.
+       *
+       *  This function provides for safer data access.  The parameter is
+       *  first checked that it is in the range of the string.  The function
+       *  throws out_of_range if the check fails.
+       */</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='850' u='c' c='_ZN5ZXing10DataMatrix14Base256EncoderL13EncodeBase256ERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp' l='853' u='c' c='_ZN5ZXing10DataMatrix14Base256EncoderL13EncodeBase256ERNS0_14EncoderContextE'/>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/maxicode/MCDecoder.cpp' l='243' u='c' c='_ZN5ZXing8MaxiCode22DecodedBitStreamParserL10GetMessageB5cxx11ERKNS_9ByteArrayEii'/>
+<use f='qv2ray/libs/puresource/src/PureJson.hpp' l='35' u='c' c='_Z13RemoveCommentRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/libs/puresource/src/PureJson.hpp' l='36' u='c' c='_Z13RemoveCommentRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='qv2ray/libs/puresource/src/PureJson.hpp' l='37' u='c' c='_Z13RemoveCommentRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

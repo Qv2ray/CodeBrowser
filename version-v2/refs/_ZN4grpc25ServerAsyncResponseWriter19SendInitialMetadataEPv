@@ -1,0 +1,9 @@
+<inh f='include/grpcpp/impl/codegen/service_type.h' l='49' c='_ZN4grpc8internal29ServerAsyncStreamingInterface19SendInitialMetadataEPv'/>
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='213' ll='224' type='void grpc::ServerAsyncResponseWriter::SendInitialMetadata(void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_unary_call.h' l='206'>/// See \a ServerAsyncStreamingInterface::SendInitialMetadata for semantics.
+  ///
+  /// Side effect:
+  ///   The initial metadata that will be sent to the client from this op will
+  ///   be taken from the \a ServerContext associated with the call.
+  ///
+  /// \param[in] tag Tag identifying this request.</doc>

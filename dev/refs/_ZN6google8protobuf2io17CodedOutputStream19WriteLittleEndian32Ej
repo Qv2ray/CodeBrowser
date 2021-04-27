@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='753' type='void google::protobuf::io::CodedOutputStream::WriteLittleEndian32(google::protobuf::uint32 value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='488' u='c' c='_ZN6google8protobuf8internal14WireFormatLite17WriteFixed32NoTagEjPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='496' u='c' c='_ZN6google8protobuf8internal14WireFormatLite18WriteSFixed32NoTagEiPNS0_2io17CodedOutputStreamE'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='504' u='c' c='_ZN6google8protobuf8internal14WireFormatLite15WriteFloatNoTagEfPNS0_2io17CodedOutputStreamE'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='752'>// Write a 32-bit little-endian integer.</doc>

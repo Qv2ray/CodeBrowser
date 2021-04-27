@@ -1,0 +1,9 @@
+<def f='include/grpc/impl/codegen/log.h' l='77' ll='82'/>
+<use f='include/grpc/impl/codegen/log.h' l='84'/>
+<size>24</size>
+<doc f='include/grpc/impl/codegen/log.h' l='74'>/** Log overrides: applications can use this API to intercept logging calls
+   and use their own implementations */</doc>
+<mbr r='gpr_log_func_args::file' o='0' t='const char *'/>
+<mbr r='gpr_log_func_args::line' o='64' t='int'/>
+<mbr r='gpr_log_func_args::severity' o='96' t='gpr_log_severity'/>
+<mbr r='gpr_log_func_args::message' o='128' t='const char *'/>

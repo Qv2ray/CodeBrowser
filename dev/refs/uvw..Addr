@@ -1,0 +1,47 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='321' ll='324'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='353'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='354'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='391' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='392' c='_ZN3uvw7details7addressEPKNS0_8IpTraitsIT_E4TypeE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='407' c='_ZN3uvw7details7addressEOT0_PKT1_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='410' c='_ZN3uvw7details7addressEOT0_PKT1_'/>
+<size>40</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='318'>/**
+ * @brief Address representation.
+ */</doc>
+<mbr r='uvw::Addr::ip' o='0' t='std::string'/>
+<mbr r='uvw::Addr::port' o='256' t='unsigned int'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='184' c='_ZN3uvw14GetNameInfoReq8nameInfoENS_4AddrEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.h' l='229' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncENS_4AddrEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='106' c='_ZN3uvw14GetNameInfoReq8nameInfoENS_4AddrEi'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/dns.cpp' l='126' c='_ZN3uvw14GetNameInfoReq12nameInfoSyncENS_4AddrEi'/>
+<size>40</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='158' c='_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='165' c='_ZNK3uvw9TCPHandle4sockEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='172' c='_ZNK3uvw9TCPHandle4peerEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.h' l='212' c='_ZN3uvw9TCPHandle7connectENS_4AddrE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='56' c='_ZN3uvw9TCPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVTCPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='62' c='_ZNK3uvw9TCPHandle4sockEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='68' c='_ZNK3uvw9TCPHandle4peerEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/tcp.cpp' l='82' c='_ZN3uvw9TCPHandle7connectENS_4AddrE'/>
+<size>40</size>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='33' c='_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='37'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='209' c='_ZN3uvw9UDPHandle7connectENS_4AddrE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='225' c='_ZNK3uvw9UDPHandle4peerEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='268' c='_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='275' c='_ZNK3uvw9UDPHandle4sockEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='390' c='_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='450' c='_ZN3uvw9UDPHandle4sendENS_4AddrEPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='493' c='_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.h' l='536' c='_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='11' c='_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='62' c='_ZN3uvw9UDPHandle7connectENS_4AddrE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='73' c='_ZNK3uvw9UDPHandle4peerEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='87' c='_ZN3uvw9UDPHandle4bindENS_4AddrENS_5FlagsINS_7details10UVUDPFlagsEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='93' c='_ZNK3uvw9UDPHandle4sockEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='155' c='_ZN3uvw9UDPHandle4sendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='184' c='_ZN3uvw9UDPHandle4sendENS_4AddrEPcj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='212' c='_ZN3uvw9UDPHandle7trySendENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='240' c='_ZN3uvw9UDPHandle7trySendENS_4AddrEPcj'/>
+<size>40</size>

@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='69' type='static const ZXing::QRCode::Version * ZXing::QRCode::Version::ProvisionalVersionForDimension(int dimension)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.h' l='62'>/**
+	* &lt;p&gt;Deduces version information purely from QR Code dimensions.&lt;/p&gt;
+	*
+	* @param dimension dimension in modules
+	* @return Version for a QR Code of that dimension
+	* @throws FormatException if dimension is not 1 mod 4
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDetector.cpp' l='262' u='c' c='_ZN5ZXing6QRCodeL24ProcessFinderPatternInfoERKNS_9BitMatrixERKNS0_17FinderPatternInfoE'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRVersion.cpp' l='316' ll='324' type='static const ZXing::QRCode::Version * ZXing::QRCode::Version::ProvisionalVersionForDimension(int dimension)'/>

@@ -1,0 +1,6 @@
+<dec f='qv2ray/src/plugin-interface/QvPluginInterfaceModels.hpp' l='117' type='0'/>
+<use f='/qv2ray-baselib_autogen/L3BSCMQAMQ/moc_QvPluginInterfaceModels.cpp' l='81'/>
+<doc f='qv2ray/src/plugin-interface/QvPluginInterfaceModels.hpp' l='115'>/// This plugin listens on group (Creation, Renaming, Modifying, Updating (subscription) and Removing)
+        /// and connection               (Creation, Renaming, Modifying, Latency Testing and Removing)</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='217' u='r' c='_ZN6Qv2ray10components7plugins12QvPluginHost20Send_ConnectionEventERKN12Qv2rayPlugin6Events15ConnectionEntry11EventObjectE'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='385' c='_ZN6Qv2ray10components7plugins25GetPluginCapabilityStringERK5QListIN12Qv2rayPlugin10CAPABILITYEE'/>

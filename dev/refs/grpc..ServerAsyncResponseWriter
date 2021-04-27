@@ -1,0 +1,18 @@
+<use f='include/grpcpp/impl/codegen/async_generic_service.h' l='31'/>
+<inh f='include/grpcpp/impl/codegen/service_type.h' l='39' c='grpc::internal::ServerAsyncStreamingInterface'/>
+<def f='include/grpcpp/impl/codegen/async_unary_call.h' l='200' ll='299'/>
+<use f='/v2ray_api.grpc.pb.h' l='156' c='_ZN5v2ray4core3app5stats7command12StatsService24WithAsyncMethod_GetStats15RequestGetStatsEPN4grpc13ServerContextEPNS3_15GetStatsRequestEPNS6_25ServerA9220474'/>
+<use f='/v2ray_api.grpc.pb.h' l='176' c='_ZN5v2ray4core3app5stats7command12StatsService26WithAsyncMethod_QueryStats17RequestQueryStatsEPN4grpc13ServerContextEPNS3_17QueryStatsRequestEPNS6_25S7677346'/>
+<use f='/v2ray_api.grpc.pb.h' l='196' c='_ZN5v2ray4core3app5stats7command12StatsService27WithAsyncMethod_GetSysStats18RequestGetSysStatsEPN4grpc13ServerContextEPNS3_15SysStatsRequestEPNS6_25S12639392'/>
+<use f='/v2ray_api.grpc.pb.h' l='268' c='_ZN5v2ray4core3app5stats7command12StatsService22WithRawMethod_GetStats15RequestGetStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyncRes16641939'/>
+<use f='/v2ray_api.grpc.pb.h' l='288' c='_ZN5v2ray4core3app5stats7command12StatsService24WithRawMethod_QueryStats17RequestQueryStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAsyn3994814'/>
+<use f='/v2ray_api.grpc.pb.h' l='308' c='_ZN5v2ray4core3app5stats7command12StatsService25WithRawMethod_GetSysStats18RequestGetSysStatsEPN4grpc13ServerContextEPNS6_10ByteBufferEPNS6_25ServerAs15482467'/>
+<fun r='_ZN4grpc25ServerAsyncResponseWriterC1EPNS_13ServerContextE'/>
+<fun r='_ZN4grpc25ServerAsyncResponseWriter19SendInitialMetadataEPv'/>
+<fun r='_ZN4grpc25ServerAsyncResponseWriter6FinishERKT_RKNS_6StatusEPv'/>
+<fun r='_ZN4grpc25ServerAsyncResponseWriter15FinishWithErrorERKNS_6StatusEPv'/>
+<fun r='_ZN4grpc25ServerAsyncResponseWriter8BindCallEPNS_8internal4CallE'/>
+<mbr r='grpc::ServerAsyncResponseWriter::call_' t='::grpc::internal::Call'/>
+<mbr r='grpc::ServerAsyncResponseWriter::ctx_' t='grpc::ServerContext *'/>
+<mbr r='grpc::ServerAsyncResponseWriter::meta_buf_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata&gt;'/>
+<mbr r='grpc::ServerAsyncResponseWriter::finish_buf_' t='::grpc::internal::CallOpSet&lt; ::grpc::internal::CallOpSendInitialMetadata, ::grpc::internal::CallOpSendMessage, ::grpc::internal::CallOpServerSendStatus&gt;'/>

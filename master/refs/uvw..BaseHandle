@@ -1,0 +1,29 @@
+<def f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='48' ll='133'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='231' c='_ZN3uvw4Loop8resourceEDpOT0_'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='338' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>
+<ovr f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30' c='uvw::Handle'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/handle.hpp' l='30'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/loop.h' l='40'>/**
+ * @brief Untyped handle class
+ *
+ * Handles&apos; types are unknown from the point of view of the loop.&lt;br/&gt;
+ * Anyway, a loop maintains a list of all the associated handles and let the
+ * users walk them as untyped instances.&lt;br/&gt;
+ * This can help to end all the pending requests by closing the handles.
+ */</doc>
+<fun r='_ZN3uvw10BaseHandleD1Ev'/>
+<fun r='_ZNK3uvw10BaseHandle8categoryEv'/>
+<fun r='_ZNK3uvw10BaseHandle4typeEv'/>
+<fun r='_ZNK3uvw10BaseHandle6activeEv'/>
+<fun r='_ZNK3uvw10BaseHandle7closingEv'/>
+<fun r='_ZN3uvw10BaseHandle9referenceEv'/>
+<fun r='_ZN3uvw10BaseHandle11unreferenceEv'/>
+<fun r='_ZNK3uvw10BaseHandle10referencedEv'/>
+<fun r='_ZN3uvw10BaseHandle5closeEv'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='110' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='113' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='113' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='114' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/loop.cpp' l='114' c='_ZN3uvw4Loop4walkESt8functionIFvRNS_10BaseHandleEEE'/>
+<size>8</size>

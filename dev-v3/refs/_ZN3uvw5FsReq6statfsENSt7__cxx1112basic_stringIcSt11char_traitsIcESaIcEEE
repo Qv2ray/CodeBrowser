@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1037' type='void uvw::FsReq::statfs(std::string path)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='393' ll='395' type='void uvw::FsReq::statfs(std::string path)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='1026'>/**
+     * @brief Async [statfs](http://linux.die.net/man/2/statfs).
+     *
+     * Emit a `FsEvent&lt;FsReq::Type::STATFS&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * Any fields in the resulting object that are not supported by the
+     * underlying operating system are set to zero.
+     *
+     * @param path Path, as described in the official documentation.
+     */</doc>

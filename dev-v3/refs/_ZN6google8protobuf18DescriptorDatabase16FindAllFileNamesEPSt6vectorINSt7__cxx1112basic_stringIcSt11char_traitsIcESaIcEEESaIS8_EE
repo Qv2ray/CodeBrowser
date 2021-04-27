@@ -1,0 +1,9 @@
+<def f='include/google/protobuf/descriptor_database.h' l='113' ll='115' type='bool google::protobuf::DescriptorDatabase::FindAllFileNames(std::vector&lt;string&gt; * output)'/>
+<doc f='include/google/protobuf/descriptor_database.h' l='105'>// Finds the file names and appends them to the output in an
+  // undefined order. This method is best-effort: it&apos;s not guaranteed that the
+  // database will find all files. Returns true if the database supports
+  // searching all file names, otherwise returns false and leaves output
+  // unchanged.
+  //
+  // This method has a default implementation that always returns
+  // false.</doc>

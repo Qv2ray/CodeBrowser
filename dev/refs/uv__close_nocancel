@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/libuv/src/unix/internal.h' l='194' type='int uv__close_nocancel(int fd)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='522' ll='539' type='int uv__close_nocancel(int fd)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='549' u='c' c='uv__close_nocheckstdio'/>
+<doc f='qv2ray/3rdparty/libuv/src/unix/core.c' l='514'>/* close() on macos has the &quot;interesting&quot; quirk that it fails with EINTR
+ * without closing the file descriptor when a thread is in the cancel state.
+ * That&apos;s why libuv calls close$NOCANCEL() instead.
+ *
+ * glibc on linux has a similar issue: close() is a cancellation point and
+ * will unwind the thread when it&apos;s in the cancel state. Work around that
+ * by making the system call directly. Musl libc is unaffected.
+ */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/fs.c' l='163' u='c' c='uv__fs_close'/>

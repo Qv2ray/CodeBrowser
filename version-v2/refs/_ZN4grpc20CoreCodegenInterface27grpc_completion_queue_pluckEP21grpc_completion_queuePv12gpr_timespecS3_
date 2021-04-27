@@ -1,0 +1,4 @@
+<dec f='include/grpcpp/impl/codegen/core_codegen_interface.h' l='56' type='grpc_event grpc::CoreCodegenInterface::grpc_completion_queue_pluck(grpc_completion_queue * cq, void * tag, gpr_timespec deadline, void * reserved)'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='302' u='c' c='_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='322' u='c' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE'/>
+<use f='include/grpcpp/impl/codegen/completion_queue.h' l='337' u='c' c='_ZN4grpc15CompletionQueue8TryPluckEPNS_8internal18CompletionQueueTagE12gpr_timespec'/>

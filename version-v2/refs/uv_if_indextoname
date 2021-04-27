@@ -1,0 +1,4 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='1661' type='int uv_if_indextoname(unsigned int ifindex, char * buffer, size_t * size)'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='229' ll='251' type='int uv_if_indextoname(unsigned int ifindex, char * buffer, size_t * size)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/getaddrinfo.c' l='254' u='c' c='uv_if_indextoiid'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='242' u='a' c='_ZN3uvw9Utilities11indexToNameB5cxx11Ej'/>

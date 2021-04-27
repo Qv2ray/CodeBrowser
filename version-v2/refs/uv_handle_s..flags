@@ -1,0 +1,49 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='444' macro='1' type='unsigned int'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='60' macro='1' u='w' c='uv_fs_poll_init'/>
+<offset>704</offset>
+<use f='qv2ray/3rdparty/libuv/src/timer.c' l='59' macro='1' u='w' c='uv_timer_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/async.c' l='52' macro='1' u='w' c='uv_async_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='109' macro='1' u='r' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='109' macro='1' u='r' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='111' u='w' c='uv_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='209' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='209' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='210' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='210' u='r' c='uv__make_close_pending'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='254' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='254' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='255' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='255' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='256' u='w' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='278' u='w' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='299' macro='1' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='299' macro='1' u='w' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='299' macro='1' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='299' macro='1' u='r' c='uv__finish_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='324' macro='1' u='r' c='uv_is_closing'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='423' macro='1' u='r' c='uv_is_active'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='781' macro='1' u='r' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/linux-inotify.c' l='244' macro='1' u='w' c='uv_fs_event_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop-watcher.c' l='66' macro='1' u='w' c='uv_prepare_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop-watcher.c' l='67' macro='1' u='w' c='uv_check_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/loop-watcher.c' l='68' macro='1' u='w' c='uv_idle_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/poll.c' l='89' macro='1' u='w' c='uv_poll_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='435' macro='1' u='w' c='uv_spawn'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/signal.c' l='324' macro='1' u='w' c='uv_signal_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='90' macro='1' u='w' c='uv__stream_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='966' macro='1' u='w' c='uv__udp_init_ex'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='499' u='r' c='uv_walk'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='516' macro='1' u='r' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='528' u='r' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='529' u='r' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='530' u='r' c='uv__print_handles'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='548' macro='1' u='r' c='uv_ref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='548' macro='1' u='w' c='uv_ref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='548' macro='1' u='r' c='uv_ref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='548' macro='1' u='r' c='uv_ref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='553' macro='1' u='r' c='uv_unref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='553' macro='1' u='w' c='uv_unref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='553' macro='1' u='r' c='uv_unref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='553' macro='1' u='r' c='uv_unref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='558' macro='1' u='r' c='uv_has_ref'/>
+<use f='qv2ray/3rdparty/libuv/src/uv-common.c' l='803' u='r' c='uv_loop_close'/>

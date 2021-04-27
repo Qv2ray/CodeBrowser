@@ -1,0 +1,5 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='468' type='void uv_close(uv_handle_t * handle, uv_close_cb close_cb)'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='130' u='c' c='uv_fs_poll_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/fs-poll.c' l='221' u='c' c='poll_cb'/>
+<def f='qv2ray/3rdparty/libuv/src/unix/core.c' l='112' ll='182' type='void uv_close(uv_handle_t * handle, uv_close_cb close_cb)'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='323' u='c' c='uv_tcp_close_reset'/>

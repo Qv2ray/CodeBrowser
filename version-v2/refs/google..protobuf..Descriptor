@@ -1,0 +1,220 @@
+<use f='include/google/protobuf/descriptor.h' l='189' c='_ZN6google8protobuf8internal14LazyDescriptor3SetEPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/descriptor.h' l='201' c='_ZN6google8protobuf8internal14LazyDescriptor3GetEv'/>
+<use f='include/google/protobuf/descriptor.h' l='211'/>
+<def f='include/google/protobuf/descriptor.h' l='223' ll='487'/>
+<use f='include/google/protobuf/descriptor.h' l='244' c='_ZNK6google8protobuf10Descriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='313' c='_ZNK6google8protobuf10Descriptor11nested_typeEi'/>
+<use f='include/google/protobuf/descriptor.h' l='317' c='_ZNK6google8protobuf10Descriptor20FindNestedTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='446'/>
+<use f='include/google/protobuf/descriptor.h' l='452'/>
+<use f='include/google/protobuf/descriptor.h' l='486' c='_ZN6google8protobuf10DescriptorC1ERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='486' c='_ZN6google8protobuf10DescriptoraSERKS1_'/>
+<use f='include/google/protobuf/descriptor.h' l='660' c='_ZNK6google8protobuf15FieldDescriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='674' c='_ZNK6google8protobuf15FieldDescriptor15extension_scopeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='678' c='_ZNK6google8protobuf15FieldDescriptor12message_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='768'/>
+<use f='include/google/protobuf/descriptor.h' l='770'/>
+<use f='include/google/protobuf/descriptor.h' l='771'/>
+<use f='include/google/protobuf/descriptor.h' l='805'/>
+<use f='include/google/protobuf/descriptor.h' l='823' c='_ZNK6google8protobuf15OneofDescriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='865'/>
+<use f='include/google/protobuf/descriptor.h' l='878'/>
+<use f='include/google/protobuf/descriptor.h' l='914' c='_ZNK6google8protobuf14EnumDescriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1003'/>
+<use f='include/google/protobuf/descriptor.h' l='1026'/>
+<use f='include/google/protobuf/descriptor.h' l='1213' c='_ZNK6google8protobuf16MethodDescriptor10input_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1215' c='_ZNK6google8protobuf16MethodDescriptor11output_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1323' c='_ZNK6google8protobuf14FileDescriptor12message_typeEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1362' c='_ZNK6google8protobuf14FileDescriptor21FindMessageTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1444'/>
+<use f='include/google/protobuf/descriptor.h' l='1460'/>
+<use f='include/google/protobuf/descriptor.h' l='1554' c='_ZNK6google8protobuf14DescriptorPool21FindMessageTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/google/protobuf/descriptor.h' l='1565' c='_ZNK6google8protobuf14DescriptorPool21FindExtensionByNumberEPKNS0_10DescriptorEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1573' c='_ZNK6google8protobuf14DescriptorPool17FindAllExtensionsEPKNS0_10DescriptorEPSt6vectorIPKNS0_15FieldDescriptorESaIS8_EE'/>
+<use f='include/google/protobuf/descriptor.h' l='1741'/>
+<use f='include/google/protobuf/descriptor.h' l='1763' c='_ZNK6google8protobuf14DescriptorPool34TryFindExtensionInFallbackDatabaseEPKNS0_10DescriptorEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1839' c='_ZNK6google8protobuf10Descriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1848' c='_ZNK6google8protobuf10Descriptor11nested_typeEi'/>
+<use f='include/google/protobuf/descriptor.h' l='1875' c='_ZNK6google8protobuf15FieldDescriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1879' c='_ZNK6google8protobuf15FieldDescriptor15extension_scopeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1894' c='_ZNK6google8protobuf15OneofDescriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1901' c='_ZNK6google8protobuf14EnumDescriptor15containing_typeEv'/>
+<use f='include/google/protobuf/descriptor.h' l='1946' c='_ZNK6google8protobuf14FileDescriptor12message_typeEi'/>
+<use f='include/google/protobuf/message.h' l='175'/>
+<use f='include/google/protobuf/message.h' l='336' c='_ZNK6google8protobuf7Message13GetDescriptorEv'/>
+<use f='include/google/protobuf/message.h' l='913' c='_ZNK6google8protobuf10Reflection23MutableRawRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorENS4_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='919' c='_ZNK6google8protobuf10Reflection19GetRawRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='943' c='_ZNK6google8protobuf10Reflection17RepeatedFieldDataEPNS0_7MessageEPKNS0_15FieldDescriptorENS4_7CppTypeEPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='1055' c='_ZN6google8protobuf14MessageFactory12GetPrototypeEPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/message.h' l='1087' c='_ZN6google8protobuf14MessageFactory32InternalRegisterGeneratedMessageEPKNS0_10DescriptorEPKNS0_7MessageE'/>
+<use f='include/google/protobuf/extension_set.h' l='187' c='_ZNK6google8protobuf8internal12ExtensionSet12AppendToListEPKNS0_10DescriptorEPKNS0_14DescriptorPoolEPSt6vectorIPKNS0_15FieldDescriptorESaISC_EE'/>
+<use f='include/google/protobuf/extension_set.h' l='240' c='_ZNK6google8protobuf8internal12ExtensionSet10GetMessageEiPKNS0_10DescriptorEPNS0_14MessageFactoryE'/>
+<use f='/v2ray_api.pb.h' l='128' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='246' c='_ZN5v2ray4core3app5stats7command4Stat10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='364' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='473' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='591' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='700' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='796' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse10descriptorEv'/>
+<use f='/v2ray_api.pb.h' l='962' c='_ZN5v2ray4core3app5stats7command6Config10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='344' c='_ZN6google8protobuf17FileDescriptorSet10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='476' c='_ZN6google8protobuf19FileDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='813' c='_ZN6google8protobuf30DescriptorProto_ExtensionRange10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='970' c='_ZN6google8protobuf29DescriptorProto_ReservedRange10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1109' c='_ZN6google8protobuf15DescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1390' c='_ZN6google8protobuf21ExtensionRangeOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1525' c='_ZN6google8protobuf20FieldDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='1923' c='_ZN6google8protobuf20OneofDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2087' c='_ZN6google8protobuf37EnumDescriptorProto_EnumReservedRange10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2226' c='_ZN6google8protobuf19EnumDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2441' c='_ZN6google8protobuf24EnumValueDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2615' c='_ZN6google8protobuf22ServiceDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='2792' c='_ZN6google8protobuf21MethodDescriptorProto10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3030' c='_ZN6google8protobuf11FileOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3563' c='_ZN6google8protobuf14MessageOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3738' c='_ZN6google8protobuf12FieldOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='3989' c='_ZN6google8protobuf12OneofOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4124' c='_ZN6google8protobuf11EnumOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4279' c='_ZN6google8protobuf16EnumValueOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4424' c='_ZN6google8protobuf14ServiceOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4569' c='_ZN6google8protobuf13MethodOptions10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4752' c='_ZN6google8protobuf28UninterpretedOption_NamePart10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='4911' c='_ZN6google8protobuf19UninterpretedOption10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5156' c='_ZN6google8protobuf23SourceCodeInfo_Location10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5380' c='_ZN6google8protobuf14SourceCodeInfo10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5514' c='_ZN6google8protobuf28GeneratedCodeInfo_Annotation10descriptorEv'/>
+<use f='include/google/protobuf/descriptor.pb.h' l='5694' c='_ZN6google8protobuf17GeneratedCodeInfo10descriptorEv'/>
+<use f='include/grpcpp/impl/codegen/config_protobuf.h' l='42'/>
+<size>144</size>
+<doc f='include/google/protobuf/descriptor.h' l='218'>// Describes a type of protocol message, or a particular group within a
+// message.  To obtain the Descriptor for a given message object, call
+// Message::GetDescriptor().  Generated message classes also have a
+// static method called descriptor() which returns the type&apos;s descriptor.
+// Use DescriptorPool to construct your own descriptors.</doc>
+<fun r='_ZNK6google8protobuf10Descriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf10Descriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf10Descriptor5indexEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor15containing_typeEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor6CopyToEPNS0_15DescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf10Descriptor11DebugStringB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf10Descriptor22DebugStringWithOptionsB5cxx11ERKNS0_18DebugStringOptionsE'/>
+<fun r='_ZNK6google8protobuf10Descriptor14is_placeholderEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor11field_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor5fieldEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor17FindFieldByNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor15FindFieldByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor24FindFieldByLowercaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor24FindFieldByCamelcaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor16oneof_decl_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor10oneof_declEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor15FindOneofByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor17nested_type_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor11nested_typeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor20FindNestedTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor15enum_type_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor9enum_typeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor18FindEnumTypeByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor19FindEnumValueByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor21extension_range_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor15extension_rangeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor17IsExtensionNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor34FindExtensionRangeContainingNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor15extension_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor9extensionEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor19FindExtensionByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor28FindExtensionByLowercaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor28FindExtensionByCamelcaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor20reserved_range_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor14reserved_rangeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor16IsReservedNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor33FindReservedRangeContainingNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor19reserved_name_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor13reserved_nameB5cxx11Ei'/>
+<fun r='_ZNK6google8protobuf10Descriptor14IsReservedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor17GetSourceLocationEPNS0_14SourceLocationE'/>
+<fun r='_ZNK6google8protobuf10Descriptor14CopyJsonNameToEPNS0_15DescriptorProtoE'/>
+<fun r='_ZNK6google8protobuf10Descriptor11DebugStringEiPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_18DebugStringOptionsEb'/>
+<fun r='_ZNK6google8protobuf10Descriptor15GetLocationPathEPSt6vectorIiSaIiEE'/>
+<mbr r='google::protobuf::Descriptor::name_' o='0' t='const std::string *'/>
+<mbr r='google::protobuf::Descriptor::full_name_' o='64' t='const std::string *'/>
+<mbr r='google::protobuf::Descriptor::file_' o='128' t='const google::protobuf::FileDescriptor *'/>
+<mbr r='google::protobuf::Descriptor::containing_type_' o='192' t='const google::protobuf::Descriptor *'/>
+<mbr r='google::protobuf::Descriptor::options_' o='256' t='const google::protobuf::MessageOptions *'/>
+<mbr r='google::protobuf::Descriptor::fields_' o='320' t='google::protobuf::FieldDescriptor *'/>
+<mbr r='google::protobuf::Descriptor::oneof_decls_' o='384' t='google::protobuf::OneofDescriptor *'/>
+<mbr r='google::protobuf::Descriptor::nested_types_' o='448' t='google::protobuf::Descriptor *'/>
+<mbr r='google::protobuf::Descriptor::enum_types_' o='512' t='google::protobuf::EnumDescriptor *'/>
+<mbr r='google::protobuf::Descriptor::extension_ranges_' o='576' t='google::protobuf::Descriptor::ExtensionRange *'/>
+<mbr r='google::protobuf::Descriptor::extensions_' o='640' t='google::protobuf::FieldDescriptor *'/>
+<mbr r='google::protobuf::Descriptor::reserved_ranges_' o='704' t='google::protobuf::Descriptor::ReservedRange *'/>
+<mbr r='google::protobuf::Descriptor::reserved_names_' o='768' t='const std::string **'/>
+<mbr r='google::protobuf::Descriptor::field_count_' o='832' t='int'/>
+<mbr r='google::protobuf::Descriptor::oneof_decl_count_' o='864' t='int'/>
+<mbr r='google::protobuf::Descriptor::nested_type_count_' o='896' t='int'/>
+<mbr r='google::protobuf::Descriptor::enum_type_count_' o='928' t='int'/>
+<mbr r='google::protobuf::Descriptor::extension_range_count_' o='960' t='int'/>
+<mbr r='google::protobuf::Descriptor::extension_count_' o='992' t='int'/>
+<mbr r='google::protobuf::Descriptor::reserved_range_count_' o='1024' t='int'/>
+<mbr r='google::protobuf::Descriptor::reserved_name_count_' o='1056' t='int'/>
+<mbr r='google::protobuf::Descriptor::is_placeholder_' o='1088' t='bool'/>
+<mbr r='google::protobuf::Descriptor::is_unqualified_placeholder_' o='1096' t='bool'/>
+<fun r='_ZN6google8protobuf10DescriptorC1Ev'/>
+<fun r='_ZN6google8protobuf10DescriptorC1ERKS1_'/>
+<fun r='_ZNK6google8protobuf10Descriptor4nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf10Descriptor9full_nameB5cxx11Ev'/>
+<fun r='_ZNK6google8protobuf10Descriptor4fileEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor15containing_typeEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor11field_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor16oneof_decl_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor17nested_type_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor15enum_type_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor5fieldEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor10oneof_declEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor11nested_typeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor9enum_typeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor21extension_range_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor15extension_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor15extension_rangeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor9extensionEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor20reserved_range_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor14reserved_rangeEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor19reserved_name_countEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor7optionsEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor14is_placeholderEv'/>
+<fun r='_ZNK6google8protobuf10Descriptor17IsExtensionNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor16IsReservedNumberEi'/>
+<fun r='_ZNK6google8protobuf10Descriptor14IsReservedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNK6google8protobuf10Descriptor13reserved_nameB5cxx11Ei'/>
+<fun r='_ZNK6google8protobuf10Descriptor5indexEv'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='302' c='_ZN6google8protobuf8internal26GeneratedMessageReflectionC1EPKNS0_10DescriptorERKNS1_16ReflectionSchemaEPKNS0_14DescriptorPoolEPNS0_14MessageFactoryE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='517' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection23MutableRawRepeatedFieldEPNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='522' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection19GetRawRepeatedFieldERKNS0_7MessageEPKNS0_15FieldDescriptorENS6_7CppTypeEiPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='529' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection17RepeatedFieldDataEPNS0_7MessageEPKNS0_15FieldDescriptorENS5_7CppTypeEPKNS0_10DescriptorE'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='535'/>
+<use f='include/google/protobuf/generated_message_reflection.h' l='639' c='_ZNK6google8protobuf8internal26GeneratedMessageReflection23GetExtensionNumberOrDieEPKNS0_10DescriptorE'/>
+<use f='/v2ray_api.pb.cc' l='401' c='_ZN5v2ray4core3app5stats7command15GetStatsRequest10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='680' c='_ZN5v2ray4core3app5stats7command4Stat10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='961' c='_ZN5v2ray4core3app5stats7command16GetStatsResponse10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='1195' c='_ZN5v2ray4core3app5stats7command17QueryStatsRequest10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='1466' c='_ZN5v2ray4core3app5stats7command18QueryStatsResponse10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='1693' c='_ZN5v2ray4core3app5stats7command15SysStatsRequest10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='1888' c='_ZN5v2ray4core3app5stats7command16SysStatsResponse10descriptorEv'/>
+<use f='/v2ray_api.pb.cc' l='2425' c='_ZN5v2ray4core3app5stats7command6Config10descriptorEv'/>
+<size>144</size>
+<use f='/v2ray_geosite.pb.h' l='145' c='_ZN5v2ray4core3app6router22DomainObject_Attribute10descriptorEv'/>
+<use f='/v2ray_geosite.pb.h' l='294' c='_ZN5v2ray4core3app6router12DomainObject10descriptorEv'/>
+<use f='/v2ray_geosite.pb.h' l='457' c='_ZN5v2ray4core3app6router4CIDR10descriptorEv'/>
+<use f='/v2ray_geosite.pb.h' l='575' c='_ZN5v2ray4core3app6router5GeoIP10descriptorEv'/>
+<use f='/v2ray_geosite.pb.h' l='699' c='_ZN5v2ray4core3app6router9GeoIPList10descriptorEv'/>
+<use f='/v2ray_geosite.pb.h' l='808' c='_ZN5v2ray4core3app6router7GeoSite10descriptorEv'/>
+<use f='/v2ray_geosite.pb.h' l='932' c='_ZN5v2ray4core3app6router11GeoSiteList10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='415' c='_ZN5v2ray4core3app6router22DomainObject_Attribute10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='764' c='_ZN5v2ray4core3app6router12DomainObject10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1090' c='_ZN5v2ray4core3app6router4CIDR10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1358' c='_ZN5v2ray4core3app6router5GeoIP10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1638' c='_ZN5v2ray4core3app6router9GeoIPList10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='1874' c='_ZN5v2ray4core3app6router7GeoSite10descriptorEv'/>
+<use f='/v2ray_geosite.pb.cc' l='2154' c='_ZN5v2ray4core3app6router11GeoSiteList10descriptorEv'/>
+<size>144</size>

@@ -1,0 +1,6 @@
+<dec f='include/grpc/impl/codegen/grpc_types.h' l='605' type='const char **'/>
+<use f='include/grpcpp/impl/codegen/call.h' l='559' u='w' c='_ZN4grpc8internal22CallOpClientRecvStatus5AddOpEP7grpc_opPm'/>
+<offset>192</offset>
+<doc f='include/grpc/impl/codegen/grpc_types.h' l='602'>/** If this is not nullptr, it will be populated with the full fidelity
+       * error string for debugging purposes. The application is responsible
+       * for freeing the data by using gpr_free(). */</doc>

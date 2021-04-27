@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='951' type='std::pair&lt;bool, std::size_t&gt; uvw::FsReq::scandirSync(std::string path, int flags)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='344' ll='349' type='std::pair&lt;bool, std::size_t&gt; uvw::FsReq::scandirSync(std::string path, int flags)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='941'>/**
+     * @brief Sync [scandir](http://linux.die.net/man/3/scandir).
+     *
+     * @param path Path, as described in the official documentation.
+     * @param flags Flags, as described in the official documentation.
+     *
+     * @return A `std::pair` composed as it follows:
+     * * A boolean value that is true in case of success, false otherwise.
+     * * The number of directory entries selected.
+     */</doc>

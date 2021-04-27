@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/curl/multi.h' l='157' type='CURLMcode curl_multi_fdset(CURLM * multi_handle, fd_set * read_fd_set, fd_set * write_fd_set, fd_set * exc_fd_set, int * max_fd)'/>
+<doc f='include/x86_64-linux-gnu/curl/multi.h' l='148'>/*
+  * Name:    curl_multi_fdset()
+  *
+  * Desc:    Ask curl for its fd_set sets. The app can use these to select() or
+  *          poll() on. We want curl_multi_perform() called as soon as one of
+  *          them are ready.
+  *
+  * Returns: CURLMcode type, general multi error code.
+  */</doc>

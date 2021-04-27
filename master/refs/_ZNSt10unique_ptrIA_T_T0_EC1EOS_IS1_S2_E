@@ -1,0 +1,9 @@
+<def f='include/c++/10/bits/unique_ptr.h' l='590' type='void std::unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt;::unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt;(unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt; &amp;&amp; )'/>
+<doc f='include/c++/10/bits/unique_ptr.h' l='589'>/// Move constructor.</doc>
+<use f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='185' u='c' c='_ZN3uvw7FsEventILNS_7details8UVFsTypeE3EEC1EPKcSt10unique_ptrIA_S4_St14default_deleteIS7_EEm'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.h' l='145' u='c' c='_ZN3uvw12StreamHandle12readCallbackEP11uv_stream_slPK8uv_buf_t'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/stream.cpp' l='12' u='c' c='_ZN3uvw9DataEventC1ESt10unique_ptrIA_cSt14default_deleteIS2_EEm'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='12' u='c' c='_ZN3uvw12UDPDataEventC1ENS_4AddrESt10unique_ptrIA_cSt14default_deleteIS3_EEmb'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='18' u='c' c='_ZN3uvw7details7SendReqC1ENS_14UnderlyingTypeIS1_13uv_udp_send_sE17ConstructorAccessESt10shared_ptrINS_4LoopEESt10unique_ptrIA_cPFvPcEEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='150' u='c' c='_ZN3uvw9UDPHandle4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>
+<use f='qv2ray/3rdparty/uvw/src/uvw/udp.cpp' l='207' u='c' c='_ZN3uvw9UDPHandle7trySendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjSt10unique_ptrIA_cSt14default_deleteIS8_EEj'/>

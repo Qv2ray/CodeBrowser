@@ -1,0 +1,8 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='527' type='uv_stream_t *'/>
+<offset>576</offset>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='527'>/* TODO: make private and unix-only in v2.x. */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='841' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='850' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='855' u='r' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='888' u='w' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1446' u='w' c='uv_write2'/>

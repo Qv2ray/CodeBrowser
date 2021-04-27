@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='130' type='int getpeername(int __fd, __SOCKADDR_ARG __addr, socklen_t *__restrict __len)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='128'>/* Put the address of the peer connected to socket FD into *ADDR
+   (which is *LEN bytes long), and its actual length into *LEN.  */</doc>
+<use f='qv2ray/3rdparty/libuv/src/unix/pipe.c' l='290' u='r' c='uv_pipe_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/tcp.c' l='305' u='r' c='uv_tcp_getpeername'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/udp.c' l='1265' u='r' c='uv_udp_getpeername'/>

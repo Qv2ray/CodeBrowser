@@ -1,0 +1,8 @@
+<dec f='include/grpc/grpc.h' l='302' type='grpc_channel * grpc_insecure_channel_create(const char * target, const grpc_channel_args * args, void * reserved)'/>
+<doc f='include/grpc/grpc.h' l='295'>/** Create a client channel to &apos;target&apos;. Additional channel level configuration
+    MAY be provided by grpc_channel_args, though the expectation is that most
+    clients will want to simply pass NULL. The user data in &apos;args&apos; need only
+    live through the invocation of this function. However, if any args of the
+    &apos;pointer&apos; type are passed, then the referenced vtable must be maintained
+    by the caller until grpc_channel_destroy terminates. See grpc_channel_args
+    definition for more on this. */</doc>

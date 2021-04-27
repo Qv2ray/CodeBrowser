@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>strscpy.h source code [qv2ray/3rdparty/libuv/src/strscpy.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/3rdparty/libuv/src/strscpy.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>qv2ray</a>/<a href='../..'>3rdparty</a>/<a href='..'>libuv</a>/<a href='./'>src</a>/<a href='strscpy.h.html'>strscpy.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UV_STRSCPY_H_">UV_STRSCPY_H_</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UV_STRSCPY_H_" data-ref="_M/UV_STRSCPY_H_">UV_STRSCPY_H_</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/* Include uv.h for its definitions of size_t and ssize_t.</i></td></tr>
+<tr><th id="5">5</th><td><i> * size_t can be obtained directly from &lt;stddef.h&gt; but ssize_t requires</i></td></tr>
+<tr><th id="6">6</th><td><i> * some hoop jumping on Windows that I didn't want to duplicate here.</i></td></tr>
+<tr><th id="7">7</th><td><i> */</i></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../include/uv.h.html">"uv.h"</a></u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><i>/* Copies up to |n-1| bytes from |d| to |s| and always zero-terminates</i></td></tr>
+<tr><th id="11">11</th><td><i> * the result, except when |n==0|. Returns the number of bytes copied</i></td></tr>
+<tr><th id="12">12</th><td><i> * or UV_E2BIG if |d| is too small.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * See <a href="https://www.kernel.org/doc/htmldocs/kernel-api/API-strscpy.html">https://www.kernel.org/doc/htmldocs/kernel-api/API-strscpy.html</a></i></td></tr>
+<tr><th id="15">15</th><td><i> */</i></td></tr>
+<tr><th id="16">16</th><td><a class="typedef" href="../../../../include/stdio.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t" data-ref-filename="ssize_t">ssize_t</a> <dfn class="decl fn" id="uv__strscpy" title='uv__strscpy' data-ref="uv__strscpy" data-ref-filename="uv__strscpy">uv__strscpy</dfn>(<em>char</em>* <dfn class="local col3 decl" id="1413d" title='d' data-type='char *' data-ref="1413d" data-ref-filename="1413d">d</dfn>, <em>const</em> <em>char</em>* <dfn class="local col4 decl" id="1414s" title='s' data-type='const char *' data-ref="1414s" data-ref-filename="1414s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t" data-ref-filename="size_t">size_t</span> <dfn class="local col5 decl" id="1415n" title='n' data-type='size_t' data-ref="1415n" data-ref-filename="1415n">n</dfn>);</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#<span data-ppcond="1">endif</span>  /* UV_STRSCPY_H_ */</u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='fs-poll.c.html'>qv2ray/3rdparty/libuv/src/fs-poll.c</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

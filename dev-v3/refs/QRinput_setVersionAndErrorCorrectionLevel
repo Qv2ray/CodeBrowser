@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='258' type='int QRinput_setVersionAndErrorCorrectionLevel(QRinput * input, int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='249'>/**
+ * Set version and error correction level of the QR code at once.
+ * This function is recommened for Micro QR Code.
+ * @param input input object.
+ * @param version version number (0 = auto)
+ * @param level Error correction level.
+ * @retval 0 success.
+ * @retval -1 invalid argument.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='191' ll='209' type='int QRinput_setVersionAndErrorCorrectionLevel(QRinput * input, int version, QRecLevel level)'/>

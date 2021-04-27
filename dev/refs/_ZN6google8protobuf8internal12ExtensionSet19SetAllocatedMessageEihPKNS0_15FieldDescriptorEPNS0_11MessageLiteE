@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/extension_set.h' l='264' type='void google::protobuf::internal::ExtensionSet::SetAllocatedMessage(int number, google::protobuf::internal::FieldType type, const google::protobuf::FieldDescriptor * descriptor, google::protobuf::MessageLite * message)'/>
+<use f='include/google/protobuf/extension_set.h' l='1145' u='c' c='_ZN6google8protobuf8internal17MessageTypeTraits12SetAllocatedEihPT_PNS1_12ExtensionSetE'/>
+<doc f='include/google/protobuf/extension_set.h' l='261'>// Adds the given message to the ExtensionSet, taking ownership of the
+  // message object. Existing message with the same number will be deleted.
+  // If &quot;message&quot; is NULL, this is equivalent to &quot;ClearExtension(number)&quot;.</doc>

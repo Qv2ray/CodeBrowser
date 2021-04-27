@@ -1,0 +1,5 @@
+<dec f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='26' type='bool Qv2rayPlugin::Qv2rayInterface::InitializePlugin(const QString &amp; , const QJsonObject &amp; )'/>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='169' u='c' c='_ZN6Qv2ray10components7plugins12QvPluginHost16initializePluginERK7QString'/>
+<ovr f='qv2ray/src/plugins/protocols/BuiltinProtocolPlugin.cpp' l='6' c='_ZN29InternalProtocolSupportPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/subscription-adapters/BuiltinSubscriptionAdapter.cpp' l='5' c='_ZN33InternalSubscriptionSupportPlugin16InitializePluginERK7QStringRK11QJsonObject'/>
+<ovr f='qv2ray/src/plugins/utils/BuiltinUtils.cpp' l='6' c='_ZN19InternalUtilsPlugin16InitializePluginERK7QStringRK11QJsonObject'/>

@@ -1,0 +1,6 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='723' type='static std::array&lt;double, 3&gt; uvw::Utilities::loadAverage()'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/util.h' l='719'>/**
+     * @brief Gets the load average.
+     * @return `[0,0,0]` on Windows (not available), the load average otherwise.
+     */</doc>
+<def f='qv2ray/3rdparty/uvw/src/uvw/util.cpp' l='256' ll='260' type='static std::array&lt;double, 3&gt; uvw::Utilities::loadAverage()'/>

@@ -1,0 +1,14 @@
+<dec f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='54' type='unsigned int QtNodes::NodeDataModel::nPorts(QtNodes::PortType portType) const'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='181' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/FlowScene.cpp' l='203' u='c' c='_ZN7QtNodes9FlowScene33iterateOverNodeDataDependentOrderERKSt8functionIFvPNS_13NodeDataModelEEE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='19' u='c' c='_ZN7QtNodes12NodeGeometryC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='19' u='c' c='_ZN7QtNodes12NodeGeometryC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='28' u='c' c='_ZNK7QtNodes12NodeGeometry8nSourcesEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='32' u='c' c='_ZNK7QtNodes12NodeGeometry6nSinksEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='144' u='c' c='_ZNK7QtNodes12NodeGeometry18checkHitScenePointENS_8PortTypeE7QPointFRK10QTransform'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeGeometry.cpp' l='237' u='c' c='_ZNK7QtNodes12NodeGeometry9portWidthENS_8PortTypeE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='12' u='c' c='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeState.cpp' l='12' u='c' c='_ZN7QtNodes9NodeStateC1ERKSt10unique_ptrINS_13NodeDataModelESt14default_deleteIS2_EE'/>
+<ovr f='qv2ray/src/ui/models/InboundNodeModel.hpp' l='29' c='_ZNK18QvInboundNodeModel6nPortsEN7QtNodes8PortTypeE'/>
+<ovr f='qv2ray/src/ui/models/OutboundNodeModel.hpp' l='28' c='_ZNK19QvOutboundNodeModel6nPortsEN7QtNodes8PortTypeE'/>
+<ovr f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='29' c='_ZNK15QvRuleNodeModel6nPortsEN7QtNodes8PortTypeE'/>

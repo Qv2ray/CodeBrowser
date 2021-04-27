@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/repeated_field.h' l='305' type='void google::protobuf::RepeatedField::CopyArray(Element * to, const Element * from, int size)'/>
+<use f='include/google/protobuf/repeated_field.h' l='1051' u='c' c='_ZN6google8protobuf13RepeatedFieldC1ERKNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1236' u='c' c='_ZN6google8protobuf13RepeatedField9MergeFromERKNS0_13RepeatedFieldIT_EE'/>
+<use f='include/google/protobuf/repeated_field.h' l='1406' u='c' c='_ZN6google8protobuf13RepeatedField9MoveArrayEPT_S3_i'/>
+<def f='include/google/protobuf/repeated_field.h' l='1409' ll='1413' type='void google::protobuf::RepeatedField::CopyArray(Element * to, const Element * from, int array_size)'/>
+<doc f='include/google/protobuf/repeated_field.h' l='304'>// Copy the elements of |from| into |to|.</doc>

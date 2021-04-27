@@ -1,0 +1,10 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.h' l='30' type='static ZXing::CharacterSet ZXing::TextDecoder::GuessEncoding(const uint8_t * bytes, size_t length, ZXing::CharacterSet fallback = DefaultEncoding())'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='338' ll='502' type='static ZXing::CharacterSet ZXing::TextDecoder::GuessEncoding(const uint8_t * bytes, size_t length, ZXing::CharacterSet fallback = DefaultEncoding())'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/TextDecoder.cpp' l='331'>/**
+* @param bytes bytes encoding a string, whose encoding should be guessed
+* @param hints decode hints if applicable
+* @return name of guessed encoding; at the moment will only guess one of:
+*  {@link #SHIFT_JIS}, {@link #UTF8}, {@link #ISO88591}, or the platform
+*  default encoding if none of these can possibly be correct
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRDecoder.cpp' l='164' u='c' c='_ZN5ZXing6QRCodeL17DecodeByteSegmentERNS_9BitSourceEiNS_12CharacterSetERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS5_IwS6_IwESaIwEEERNS4_14529763'/>

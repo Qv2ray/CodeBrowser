@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='52' type='ZXing::Result ZXing::ReadBarcode(const ZXing::ImageView &amp; , const ZXing::DecodeHints &amp; )'/>
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='81' type='ZXing::Result ZXing::ReadBarcode(const ZXing::ImageView &amp; buffer, const ZXing::DecodeHints &amp; hints = {})'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.cpp' l='92' ll='111' type='ZXing::Result ZXing::ReadBarcode(const ZXing::ImageView &amp; iv, const ZXing::DecodeHints &amp; hints = {})'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ReadBarcode.h' l='74'>/**
+ * Read barcode from an ImageView
+ *
+ * @param buffer  view of the image data including layout and format
+ * @param hints  optional DecodeHints to parameterize / speed up decoding
+ * @return #Result structure
+ */</doc>
+<use f='qv2ray/src/ui/common/QRCodeHelper.cpp' l='38' u='c' c='_ZN6Qv2ray2ui12DecodeQRCodeERK6QImage'/>

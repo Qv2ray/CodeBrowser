@@ -1,0 +1,21 @@
+<use f='qv2ray/3rdparty/libuv/include/uv.h' l='218'/>
+<def f='qv2ray/3rdparty/libuv/include/uv.h' l='852' ll='855'/>
+<size>152</size>
+<doc f='qv2ray/3rdparty/libuv/include/uv.h' l='847'>/*
+ * uv_timer_t is a subclass of uv_handle_t.
+ *
+ * Used to get woken up at a specified time in the future.
+ */</doc>
+<mbr r='uv_timer_s::data' o='0' t='void *'/>
+<mbr r='uv_timer_s::loop' o='64' t='uv_loop_t *'/>
+<mbr r='uv_timer_s::type' o='128' t='uv_handle_type'/>
+<mbr r='uv_timer_s::close_cb' o='192' t='uv_close_cb'/>
+<mbr r='uv_timer_s::handle_queue' o='256' t='void *[2]'/>
+<mbr r='uv_timer_s::u' o='384' t='union (anonymous union at /home/runner/work/CodeBrowser/CodeBrowser/source/dev/code_build/../3rdparty/libuv/include/uv.h:853:3)'/>
+<mbr r='uv_timer_s::next_closing' o='640' t='uv_handle_t *'/>
+<mbr r='uv_timer_s::flags' o='704' t='unsigned int'/>
+<mbr r='uv_timer_s::timer_cb' o='768' t='uv_timer_cb'/>
+<mbr r='uv_timer_s::heap_node' o='832' t='void *[3]'/>
+<mbr r='uv_timer_s::timeout' o='1024' t='uint64_t'/>
+<mbr r='uv_timer_s::repeat' o='1088' t='uint64_t'/>
+<mbr r='uv_timer_s::start_id' o='1152' t='uint64_t'/>

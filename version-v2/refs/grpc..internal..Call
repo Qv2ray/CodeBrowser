@@ -1,0 +1,59 @@
+<use f='include/grpcpp/impl/codegen/call_hook.h' l='33' c='_ZN4grpc8internal8CallHook16PerformOpsOnCallEPNS0_18CallOpSetInterfaceEPNS0_4CallE'/>
+<def f='include/grpcpp/impl/codegen/call.h' l='668' ll='698'/>
+<use f='include/grpcpp/impl/codegen/channel_interface.h' l='111' c='_ZN4grpc16ChannelInterface10CreateCallERKNS_8internal9RpcMethodEPNS_13ClientContextEPNS_15CompletionQueueE'/>
+<use f='include/grpcpp/impl/codegen/channel_interface.h' l='115' c='_ZN4grpc16ChannelInterface16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<use f='include/grpcpp/impl/codegen/server_context.h' l='278' c='_ZN4grpc13ServerContext17BeginCompletionOpEPNS_8internal4CallE'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='43' c='_ZN4grpc8internal13MethodHandler16HandlerParameterC1EPNS0_4CallEPNS_13ServerContextEP16grpc_byte_buffer'/>
+<use f='include/grpcpp/impl/codegen/rpc_service_method.h' l='48'/>
+<use f='include/grpcpp/impl/codegen/server_interface.h' l='145' c='_ZN4grpc15ServerInterface16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<use f='include/grpcpp/impl/codegen/service_type.h' l='53' c='_ZN4grpc8internal29ServerAsyncStreamingInterface8BindCallEPNS0_4CallE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='188' c='_ZN4grpc8internal24ClientAsyncReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='265' c='_ZN4grpc17ClientAsyncReaderC1ENS_8internal4CallEPNS_13ClientContextERKTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='286'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='336' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='431' c='_ZN4grpc17ClientAsyncWriterC1ENS_8internal4CallEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='455'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='500' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='604' c='_ZN4grpc23ClientAsyncReaderWriterC1ENS_8internal4CallEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='626'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='784' c='_ZN4grpc17ServerAsyncReader8BindCallEPNS_8internal4CallE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='786'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='930' c='_ZN4grpc17ServerAsyncWriter8BindCallEPNS_8internal4CallE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='944'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1104' c='_ZN4grpc23ServerAsyncReaderWriter8BindCallEPNS_8internal4CallE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='1118'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='87' c='_ZN4grpc8internal32ClientAsyncResponseReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__b'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='161'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='166' c='_ZN4grpc25ClientAsyncResponseReaderC1ENS_8internal4CallEPNS_13ClientContextERKTL0__b'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='289' c='_ZN4grpc25ServerAsyncResponseWriter8BindCallEPNS_8internal4CallE'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='291'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='235'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='402'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='544'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='609'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='615' c='_ZN4grpc12ServerReaderC1EPNS_8internal4CallEPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='683'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='689' c='_ZN4grpc12ServerWriterC1EPNS_8internal4CallEPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='704' c='_ZN4grpc8internal22ServerReaderWriterBodyC1EPNS0_4CallEPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='761'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='800' c='_ZN4grpc18ServerReaderWriterC1EPNS_8internal4CallEPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='868' c='_ZN4grpc19ServerUnaryStreamerC1EPNS_8internal4CallEPNS_13ServerContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='928' c='_ZN4grpc19ServerSplitStreamerC1EPNS_8internal4CallEPNS_13ServerContextE'/>
+<use f='include/grpcpp/channel.h' l='75' c='_ZN4grpc7Channel10CreateCallERKNS_8internal9RpcMethodEPNS_13ClientContextEPNS_15CompletionQueueE'/>
+<use f='include/grpcpp/channel.h' l='79' c='_ZN4grpc7Channel16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<use f='include/grpcpp/server.h' l='209' c='_ZN4grpc6Server16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<size>32</size>
+<doc f='include/grpcpp/impl/codegen/call.h' l='667'>/// Straightforward wrapping of the C call object</doc>
+<fun r='_ZN4grpc8internal4CallC1EP9grpc_callPNS0_8CallHookEPNS_15CompletionQueueE'/>
+<fun r='_ZN4grpc8internal4CallC1EP9grpc_callPNS0_8CallHookEPNS_15CompletionQueueEi'/>
+<fun r='_ZN4grpc8internal4Call10PerformOpsEPNS0_18CallOpSetInterfaceE'/>
+<fun r='_ZNK4grpc8internal4Call4callEv'/>
+<fun r='_ZNK4grpc8internal4Call2cqEv'/>
+<fun r='_ZNK4grpc8internal4Call24max_receive_message_sizeEv'/>
+<mbr r='grpc::internal::Call::call_hook_' o='0' t='grpc::internal::CallHook *'/>
+<mbr r='grpc::internal::Call::cq_' o='64' t='grpc::CompletionQueue *'/>
+<mbr r='grpc::internal::Call::call_' o='128' t='grpc_call *'/>
+<mbr r='grpc::internal::Call::max_receive_message_size_' o='192' t='int'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='55' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='60' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<size>32</size>

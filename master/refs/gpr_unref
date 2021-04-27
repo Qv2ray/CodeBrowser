@@ -1,0 +1,3 @@
+<dec f='include/grpc/support/sync.h' l='152' type='int gpr_unref(gpr_refcount * r)'/>
+<doc f='include/grpc/support/sync.h' l='150'>/** Decrement the reference count *r and return non-zero iff it has reached
+   zero. .  Requires *r initialized. */</doc>

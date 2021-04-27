@@ -1,0 +1,9 @@
+<inh f='include/grpcpp/impl/codegen/rpc_service_method.h' l='39' c='grpc::internal::MethodHandler'/>
+<def f='include/grpcpp/impl/codegen/method_handler_impl.h' l='53' ll='96'/>
+<fun r='_ZN4grpc8internal16RpcMethodHandlerC1ESt8functionIFNS_6StatusEPT_PNS_13ServerContextEPKT0_PT1_EES5_'/>
+<fun r='_ZN4grpc8internal16RpcMethodHandler10RunHandlerERKNS0_13MethodHandler16HandlerParameterE'/>
+<mbr r='grpc::internal::RpcMethodHandler::func_' t='std::function&lt;Status (ServiceType *, ServerContext *, const RequestType *, ResponseType *)&gt;'/>
+<mbr r='grpc::internal::RpcMethodHandler::service_' t='ServiceType *'/>
+<use f='/v2ray_api.grpc.pb.cc' l='94' c='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<use f='/v2ray_api.grpc.pb.cc' l='99' c='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>
+<use f='/v2ray_api.grpc.pb.cc' l='104' c='_ZN5v2ray4core3app5stats7command12StatsService7ServiceC1Ev'/>

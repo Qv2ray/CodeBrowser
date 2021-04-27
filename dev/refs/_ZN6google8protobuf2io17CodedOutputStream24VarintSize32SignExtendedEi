@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/io/coded_stream.h' l='794' type='static size_t google::protobuf::io::CodedOutputStream::VarintSize32SignExtended(google::protobuf::int32 value)'/>
+<def f='include/google/protobuf/io/coded_stream.h' l='1257' ll='1263' type='static size_t google::protobuf::io::CodedOutputStream::VarintSize32SignExtended(google::protobuf::int32 value)'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='931' u='c' c='_ZN6google8protobuf8internal14WireFormatLite9Int32SizeEi'/>
+<use f='include/google/protobuf/wire_format_lite_inl.h' l='949' u='c' c='_ZN6google8protobuf8internal14WireFormatLite8EnumSizeEi'/>
+<doc f='include/google/protobuf/io/coded_stream.h' l='793'>// If negative, 10 bytes.  Otheriwse, same as VarintSize32().</doc>

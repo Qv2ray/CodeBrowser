@@ -1,0 +1,89 @@
+<def f='include/google/protobuf/stubs/callback.h' l='71' ll='80'/>
+<use f='include/google/protobuf/stubs/callback.h' l='79' c='_ZN6google8protobuf7ClosureC1ERKS1_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='79' c='_ZN6google8protobuf7ClosureaSERKS1_'/>
+<ovr f='include/google/protobuf/stubs/callback.h' l='120' c='google::protobuf::internal::FunctionClosure0'/>
+<use f='include/google/protobuf/stubs/callback.h' l='120'/>
+<ovr f='include/google/protobuf/stubs/callback.h' l='140' c='google::protobuf::internal::MethodClosure0'/>
+<use f='include/google/protobuf/stubs/callback.h' l='140'/>
+<ovr f='include/google/protobuf/stubs/callback.h' l='161' c='google::protobuf::internal::FunctionClosure1'/>
+<use f='include/google/protobuf/stubs/callback.h' l='161'/>
+<ovr f='include/google/protobuf/stubs/callback.h' l='184' c='google::protobuf::internal::MethodClosure1'/>
+<use f='include/google/protobuf/stubs/callback.h' l='184'/>
+<ovr f='include/google/protobuf/stubs/callback.h' l='208' c='google::protobuf::internal::FunctionClosure2'/>
+<use f='include/google/protobuf/stubs/callback.h' l='208'/>
+<ovr f='include/google/protobuf/stubs/callback.h' l='232' c='google::protobuf::internal::MethodClosure2'/>
+<use f='include/google/protobuf/stubs/callback.h' l='232'/>
+<use f='include/google/protobuf/stubs/callback.h' l='411' c='_ZN6google8protobuf11NewCallbackEPFvvE'/>
+<use f='include/google/protobuf/stubs/callback.h' l='416' c='_ZN6google8protobuf20NewPermanentCallbackEPFvvE'/>
+<use f='include/google/protobuf/stubs/callback.h' l='422' c='_ZN6google8protobuf11NewCallbackEPT_MS1_FvvE'/>
+<use f='include/google/protobuf/stubs/callback.h' l='428' c='_ZN6google8protobuf20NewPermanentCallbackEPT_MS1_FvvE'/>
+<use f='include/google/protobuf/stubs/callback.h' l='434' c='_ZN6google8protobuf11NewCallbackEPFvT_ES1_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='441' c='_ZN6google8protobuf20NewPermanentCallbackEPFvT_ES1_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='448' c='_ZN6google8protobuf11NewCallbackEPT_MS1_FvT0_ES3_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='455' c='_ZN6google8protobuf20NewPermanentCallbackEPT_MS1_FvT0_ES3_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='462' c='_ZN6google8protobuf11NewCallbackEPFvT_T0_ES1_S2_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='470' c='_ZN6google8protobuf20NewPermanentCallbackEPFvT_T0_ES1_S2_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='478' c='_ZN6google8protobuf11NewCallbackEPT_MS1_FvT0_T1_ES3_S4_'/>
+<use f='include/google/protobuf/stubs/callback.h' l='486' c='_ZN6google8protobuf20NewPermanentCallbackEPT_MS1_FvT0_T1_ES3_S4_'/>
+<size>8</size>
+<doc f='include/google/protobuf/stubs/callback.h' l='14'>// Abstract interface for a callback.  When calling an RPC, you must provide
+// a Closure to call when the procedure completes.  See the Service interface
+// in service.h.
+//
+// To automatically construct a Closure which calls a particular function or
+// method with a particular set of parameters, use the NewCallback() function.
+// Example:
+//   void FooDone(const FooResponse* response) {
+//     ...
+//   }
+//
+//   void CallFoo() {
+//     ...
+//     // When done, call FooDone() and pass it a pointer to the response.
+//     Closure* callback = NewCallback(&amp;FooDone, response);
+//     // Make the call.
+//     service-&gt;Foo(controller, request, response, callback);
+//   }
+//
+// Example that calls a method:
+//   class Handler {
+//    public:
+//     ...
+//
+//     void FooDone(const FooResponse* response) {
+//       ...
+//     }
+//
+//     void CallFoo() {
+//       ...
+//       // When done, call FooDone() and pass it a pointer to the response.
+//       Closure* callback = NewCallback(this, &amp;Handler::FooDone, response);
+//       // Make the call.
+//       service-&gt;Foo(controller, request, response, callback);
+//     }
+//   };
+//
+// Currently NewCallback() supports binding zero, one, or two arguments.
+//
+// Callbacks created with NewCallback() automatically delete themselves when
+// executed.  They should be used when a callback is to be called exactly
+// once (usually the case with RPC callbacks).  If a callback may be called
+// a different number of times (including zero), create it with
+// NewPermanentCallback() instead.  You are then responsible for deleting the
+// callback (using the &quot;delete&quot; keyword as normal).
+//
+// Note that NewCallback() is a bit touchy regarding argument types.  Generally,
+// the values you provide for the parameter bindings must exactly match the
+// types accepted by the callback function.  For example:
+//   void Foo(string s);
+//   NewCallback(&amp;Foo, &quot;foo&quot;);          // WON&apos;T WORK:  const char* != string
+//   NewCallback(&amp;Foo, string(&quot;foo&quot;));  // WORKS
+// Also note that the arguments cannot be references:
+//   void Foo(const string&amp; s);
+//   string my_str;
+//   NewCallback(&amp;Foo, my_str);  // WON&apos;T WORK:  Can&apos;t use referecnes.
+// However, correctly-typed pointers will work just fine.</doc>
+<fun r='_ZN6google8protobuf7ClosureC1Ev'/>
+<fun r='_ZN6google8protobuf7ClosureD1Ev'/>
+<fun r='_ZN6google8protobuf7Closure3RunEv'/>
+<fun r='_ZN6google8protobuf7ClosureC1ERKS1_'/>

@@ -1,0 +1,16 @@
+<use f='include/google/protobuf/map_entry_lite.h' l='378' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='379' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='380' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='382' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='382' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser27MergePartialFromCodedStreamEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='395' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser23UseKeyAndValueFromEntryEv'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='401' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser23UseKeyAndValueFromEntryEv'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='419' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='420' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='422' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='423' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='425' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<use f='include/google/protobuf/map_entry_lite.h' l='425' u='c' c='_ZN6google8protobuf8internal12MapEntryImpl6Parser22ReadBeyondKeyValuePairEPNS0_2io16CodedInputStreamE'/>
+<dec f='include/google/protobuf/map_entry_lite.h' l='435' type='std::unique_ptr&lt;MapEntryImpl&lt;Derived, Base, Key, Value, kKeyFieldType, kValueFieldType, default_enum_value&gt;&gt;'/>
+<doc f='include/google/protobuf/map_entry_lite.h' l='433'>// On the fast path entry_ is not used.  And, when entry_ is used, it&apos;s set
+    // to mf_-&gt;NewEntry(), so in the arena case we must call entry_.release.</doc>

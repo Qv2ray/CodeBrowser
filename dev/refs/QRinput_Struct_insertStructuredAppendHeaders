@@ -1,0 +1,13 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='340' type='int QRinput_Struct_insertStructuredAppendHeaders(QRinput_Struct * s)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='330'>/**
+ * Insert structured-append headers to the input structure. It calculates
+ * a parity and set it if the parity is not set yet.
+ * @param s input structure
+ * @retval 0 success.
+ * @retval -1 an error occurred and errno is set to indeicate the error.
+ *            See Execptions for the details.
+ * @throw EINVAL invalid input object.
+ * @throw ENOMEM unable to allocate memory.
+ */</doc>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1562' u='c' c='QRinput_splitQRinputToStruct'/>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1579' ll='1601' type='int QRinput_Struct_insertStructuredAppendHeaders(QRinput_Struct * s)'/>

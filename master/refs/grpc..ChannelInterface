@@ -1,0 +1,37 @@
+<def f='include/grpcpp/impl/codegen/channel_interface.h' l='57' ll='132'/>
+<use f='include/grpcpp/impl/codegen/rpc_method.h' l='42' c='_ZN4grpc8internal9RpcMethodC1EPKcNS1_7RpcTypeERKSt10shared_ptrINS_16ChannelInterfaceEE'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='183' c='_ZN4grpc8internal24ClientAsyncReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='331' c='_ZN4grpc8internal24ClientAsyncWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__bPv'/>
+<use f='include/grpcpp/impl/codegen/async_stream.h' l='497' c='_ZN4grpc8internal30ClientAsyncReaderWriterFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextEbPv'/>
+<use f='include/grpcpp/impl/codegen/async_unary_call.h' l='84' c='_ZN4grpc8internal32ClientAsyncResponseReaderFactory6CreateEPNS_16ChannelInterfaceEPNS_15CompletionQueueERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__b'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='164' c='_ZN4grpc8internal19ClientReaderFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='241' c='_ZN4grpc12ClientReaderC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextERKTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='282' c='_ZN4grpc8internal19ClientWriterFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='375' c='_ZN4grpc12ClientWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextEPTL0__'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='433' c='_ZN4grpc8internal25ClientReaderWriterFactory6CreateEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextE'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='549' c='_ZN4grpc18ClientReaderWriterC1EPNS_16ChannelInterfaceERKNS_8internal9RpcMethodEPNS_13ClientContextE'/>
+<use f='/v2ray_api.grpc.pb.h' l='81' c='_ZN5v2ray4core3app5stats7command12StatsService4StubC1ERKSt10shared_ptrIN4grpc16ChannelInterfaceEE'/>
+<use f='/v2ray_api.grpc.pb.h' l='118'/>
+<use f='/v2ray_api.grpc.pb.h' l='130' c='_ZN5v2ray4core3app5stats7command12StatsService7NewStubERKSt10shared_ptrIN4grpc16ChannelInterfaceEERKNS6_11StubOptionsE'/>
+<ovr f='include/grpcpp/channel.h' l='43' c='grpc::Channel'/>
+<use f='include/grpcpp/channel.h' l='43'/>
+<size>8</size>
+<doc f='include/grpcpp/impl/codegen/channel_interface.h' l='56'>/// Codegen interface for \a grpc::Channel.</doc>
+<fun r='_ZN4grpc16ChannelInterfaceD1Ev'/>
+<fun r='_ZN4grpc16ChannelInterface8GetStateEb'/>
+<fun r='_ZN4grpc16ChannelInterface19NotifyOnStateChangeE23grpc_connectivity_stateT_PNS_15CompletionQueueEPv'/>
+<fun r='_ZN4grpc16ChannelInterface18WaitForStateChangeE23grpc_connectivity_stateT_'/>
+<fun r='_ZN4grpc16ChannelInterface16WaitForConnectedET_'/>
+<fun r='_ZN4grpc16ChannelInterface10CreateCallERKNS_8internal9RpcMethodEPNS_13ClientContextEPNS_15CompletionQueueE'/>
+<fun r='_ZN4grpc16ChannelInterface16PerformOpsOnCallEPNS_8internal18CallOpSetInterfaceEPNS1_4CallE'/>
+<fun r='_ZN4grpc16ChannelInterface14RegisterMethodEPKc'/>
+<fun r='_ZN4grpc16ChannelInterface23NotifyOnStateChangeImplE23grpc_connectivity_state12gpr_timespecPNS_15CompletionQueueEPv'/>
+<fun r='_ZN4grpc16ChannelInterface22WaitForStateChangeImplE23grpc_connectivity_state12gpr_timespec'/>
+<fun r='_ZN4grpc16ChannelInterface10CallbackCQEv'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='38' c='_ZN4grpc8internal17BlockingUnaryCallEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_unary_call.h' l='49' c='_ZN4grpc8internal21BlockingUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextERKT_PT0_'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='43' c='_ZN4grpc8internal17CallbackUnaryCallEPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<use f='include/grpcpp/impl/codegen/client_callback.h' l='54' c='_ZN4grpc8internal21CallbackUnaryCallImplC1EPNS_16ChannelInterfaceERKNS0_9RpcMethodEPNS_13ClientContextEPKT_PT0_St8functionIFvNS_6StatusEEE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='30' c='_ZN5v2ray4core3app5stats7command12StatsService7NewStubERKSt10shared_ptrIN4grpc16ChannelInterfaceEERKNS6_11StubOptionsE'/>
+<use f='/v2ray_api.grpc.pb.cc' l='36' c='_ZN5v2ray4core3app5stats7command12StatsService4StubC1ERKSt10shared_ptrIN4grpc16ChannelInterfaceEE'/>
+<size>8</size>

@@ -1,0 +1,7 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='464' type='QRcode * QRcode_encodeDataMQR(int size, const unsigned char * data, int version, QRecLevel level)'/>
+<doc f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.h' l='460'>/**
+ * Micro QR Code version of QRcode_encodeData().
+ * @warning This function is THREAD UNSAFE when pthread is disabled.
+ */</doc>
+<def f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrencode.c' l='682' ll='685' type='QRcode * QRcode_encodeDataMQR(int size, const unsigned char * data, int version, QRecLevel level)'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/qtqrcode.cpp' l='128' u='c' c='_ZN8QtQrCode10encodeDataEv'/>

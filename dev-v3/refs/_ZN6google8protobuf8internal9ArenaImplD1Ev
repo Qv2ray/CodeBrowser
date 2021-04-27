@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/arena_impl.h' l='101' type='void google::protobuf::internal::ArenaImpl::~ArenaImpl()'/>
+<doc f='include/google/protobuf/arena_impl.h' l='97'>// Destructor deletes all owned heap allocated objects, and destructs objects
+  // that have non-trivial destructors, except for proto2 message objects whose
+  // destructors can be skipped. Also, frees all blocks except the initial block
+  // if it was passed in.</doc>

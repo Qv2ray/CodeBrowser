@@ -1,0 +1,10 @@
+<dec f='qv2ray/src/core/CoreUtils.hpp' l='38' type='const std::tuple&lt;QString, QString, int&gt; Qv2ray::core::GetConnectionInfo(const Qv2ray::base::ConnectionId &amp; id, bool * status = nullptr)'/>
+<doc f='qv2ray/src/core/CoreUtils.hpp' l='37'>//</doc>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='25' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERKNS_4base6IDTypeINS3_14__QvConnectionEEEiNS3_6config26Qv2rayLatencyTestingMethodE'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.cpp' l='94' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread11pushRequestERK5QListINS_4base6IDTypeINS4_14__QvConnectionEEEEiNS4_6config26Qv2rayLatencyTestingMethodE'/>
+<def f='qv2ray/src/core/CoreUtils.cpp' l='74' ll='80' type='const std::tuple&lt;QString, QString, int&gt; Qv2ray::core::GetConnectionInfo(const Qv2ray::base::ConnectionId &amp; id, bool * status = nullptr)'/>
+<doc f='qv2ray/src/core/CoreUtils.cpp' l='72'>///
+    /// [Protocol, Host, Port]</doc>
+<use f='qv2ray/src/core/handler/ConfigHandler.cpp' l='544' u='c' c='_ZN6Qv2ray4core7handler15QvConfigHandler22CHUpdateSubscription_pERKNS_4base6IDTypeINS3_9__QvGroupEEERK10QByteArray'/>
+<use f='qv2ray/src/ui/widgets/ConnectionInfoWidget.cpp' l='79' u='c' c='_ZN20ConnectionInfoWidget11ShowDetailsERKN6Qv2ray4base19ConnectionGroupPairE'/>
+<use f='qv2ray/src/ui/windows/w_GroupManager.cpp' l='182' u='c' c='_ZN12GroupManager21reloadConnectionsListERKN6Qv2ray4base6IDTypeINS1_9__QvGroupEEE'/>

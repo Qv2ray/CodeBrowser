@@ -1,0 +1,19 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='159' ll='161' type='void grpc::internal::AsyncWriterInterface::WriteLast(const W &amp; msg, grpc::WriteOptions options, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='141'>/// Request the writing of \a msg and coalesce it with the writing
+  /// of trailing metadata, using WriteOptions \a options with
+  /// identifying tag \a tag.
+  ///
+  /// For client, WriteLast is equivalent of performing Write and
+  /// WritesDone in a single step.
+  /// For server, WriteLast buffers the \a msg. The writing of \a msg is held
+  /// until Finish is called, where \a msg and trailing metadata are coalesced
+  /// and write is initiated. Note that WriteLast can only buffer \a msg up to
+  /// the flow control window size. If \a msg size is larger than the window
+  /// size, it will be sent on wire without buffering.
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a msg, so it is safe to
+  /// to deallocate once Write returns.
+  ///
+  /// \param[in] msg The message to be written.
+  /// \param[in] options The WriteOptions to be used to write this message.
+  /// \param[in] tag The tag identifying the operation.</doc>

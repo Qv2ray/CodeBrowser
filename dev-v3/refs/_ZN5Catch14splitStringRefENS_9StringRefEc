@@ -1,0 +1,4 @@
+<dec f='qv2ray/test/catch.hpp' l='3210' type='std::vector&lt;StringRef&gt; Catch::splitStringRef(Catch::StringRef str, char delimiter)'/>
+<use f='qv2ray/test/catch.hpp' l='10555' u='c' c='_ZN5Catch6Detail10parseEnumsENS_9StringRefE'/>
+<def f='qv2ray/test/catch.hpp' l='13693' ll='13706' type='std::vector&lt;StringRef&gt; Catch::splitStringRef(Catch::StringRef str, char delimiter)'/>
+<doc f='qv2ray/test/catch.hpp' l='3209'>// !!! Be aware, returns refs into original string - make sure original string outlives them</doc>

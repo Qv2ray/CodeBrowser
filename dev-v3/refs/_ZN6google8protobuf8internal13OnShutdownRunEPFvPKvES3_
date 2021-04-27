@@ -1,0 +1,4 @@
+<dec f='include/google/protobuf/stubs/common.h' l='205' type='void google::protobuf::internal::OnShutdownRun(void (*)(const void *) f, const void * arg)'/>
+<use f='include/google/protobuf/generated_message_util.h' l='380' u='c' c='_ZN6google8protobuf8internal24OnShutdownDestroyMessageEPKv'/>
+<use f='include/google/protobuf/generated_message_util.h' l='384' u='c' c='_ZN6google8protobuf8internal23OnShutdownDestroyStringEPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<doc f='include/google/protobuf/stubs/common.h' l='204'>// Run an arbitrary function on an arg</doc>

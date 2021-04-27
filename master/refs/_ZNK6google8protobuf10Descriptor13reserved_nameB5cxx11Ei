@@ -1,0 +1,6 @@
+<dec f='include/google/protobuf/descriptor.h' l='407' type='const std::string &amp; google::protobuf::Descriptor::reserved_name(int index) const'/>
+<use f='include/google/protobuf/descriptor.h' l='1969' u='c' c='_ZNK6google8protobuf10Descriptor14IsReservedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<def f='include/google/protobuf/descriptor.h' l='1978' ll='1980' type='const std::string &amp; google::protobuf::Descriptor::reserved_name(int index) const'/>
+<doc f='include/google/protobuf/descriptor.h' l='406'>// Gets a reserved name by index, where 0 &lt;= index &lt; reserved_name_count().</doc>
+<doc f='include/google/protobuf/descriptor.h' l='1976'>// Can&apos;t use PROTOBUF_DEFINE_ARRAY_ACCESSOR because reserved_names_ is actually
+// an array of pointers rather than the usual array of objects.</doc>

@@ -1,0 +1,96 @@
+<use f='include/google/protobuf/map.h' l='180' c='_ZN6google8protobuf3Map4InitEv'/>
+<def f='include/google/protobuf/map.h' l='329' ll='951'/>
+<use f='include/google/protobuf/map.h' l='393' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseC1EPKS2_'/>
+<use f='include/google/protobuf/map.h' l='404' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseC1EPNS2_4NodeEPKS2_m'/>
+<use f='include/google/protobuf/map.h' l='407' c='_ZN6google8protobuf3Map8InnerMap13iterator_baseC1ENSt3setIPT_NS2_10KeyCompareENS1_12MapAllocatorINS1_12KeyValuePairEE6rebindIS6_E5otherEE8iteratorEPKS2_m'/>
+<use f='include/google/protobuf/map.h' l='502'/>
+<use f='include/google/protobuf/map.h' l='884' c='_ZNK6google8protobuf3Map8InnerMap12BucketNumberERKT_'/>
+<use f='include/google/protobuf/map.h' l='950' c='_ZN6google8protobuf3Map8InnerMapC1ERKS2_'/>
+<use f='include/google/protobuf/map.h' l='950' c='_ZN6google8protobuf3Map8InnerMapaSERKS2_'/>
+<use f='include/google/protobuf/map.h' l='1204'/>
+<doc f='include/google/protobuf/map.h' l='300'>// InnerMap is a generic hash-based map.  It doesn&apos;t contain any
+  // protocol-buffer-specific logic.  It is a chaining hash map with the
+  // additional feature that some buckets can be converted to use an ordered
+  // container.  This ensures O(lg n) bounds on find, insert, and erase, while
+  // avoiding the overheads of ordered containers most of the time.
+  //
+  // The implementation doesn&apos;t need the full generality of unordered_map,
+  // and it doesn&apos;t have it.  More bells and whistles can be added as needed.
+  // Some implementation details:
+  // 1. The hash function has type hasher and the equality function
+  //    equal_to&lt;Key&gt;.  We inherit from hasher to save space
+  //    (empty-base-class optimization).
+  // 2. The number of buckets is a power of two.
+  // 3. Buckets are converted to trees in pairs: if we convert bucket b then
+  //    buckets b and b^1 will share a tree.  Invariant: buckets b and b^1 have
+  //    the same non-NULL value iff they are sharing a tree.  (An alternative
+  //    implementation strategy would be to have a tag bit per bucket.)
+  // 4. As is typical for hash_map and such, the Keys and Values are always
+  //    stored in linked list nodes.  Pointers to elements are never invalidated
+  //    until the element is deleted.
+  // 5. The trees&apos; payload type is pointer to linked-list node.  Tree-converting
+  //    a bucket doesn&apos;t copy Key-Value pairs.
+  // 6. Once we&apos;ve tree-converted a bucket, it is never converted back. However,
+  //    the items a tree contains may wind up assigned to trees or lists upon a
+  //    rehash.
+  // 7. The code requires no C++ features from C++11 or later.
+  // 8. Mutations to a map do not invalidate the map&apos;s iterators, pointers to
+  //    elements, or references to elements.
+  // 9. Except for erase(iterator), any non-const method can reorder iterators.</doc>
+<fun r='_ZN6google8protobuf3Map8InnerMapC1EmNS0_4hashIT_EENS1_12MapAllocatorINS1_12KeyValuePairEEE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMapD1Ev'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap17NodePtrFromKeyPtrEPT_'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap17KeyPtrFromNodePtrEPNS2_4NodeE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap5beginEv'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap3endEv'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap5beginEv'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap3endEv'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap5clearEv'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap13hash_functionEv'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap8max_sizeEv'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap4sizeEv'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap5emptyEv'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap4findERKT_'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap4findERKT_'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap6insertERKNS1_12KeyValuePairE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap6insertERKT_'/>
+<fun r='_ZN6google8protobuf3Map8InnerMapixERKT_'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap5eraseENS2_13iterator_baseINS1_12KeyValuePairEEE'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap4findERKT_PNSt3setIPS3_NS2_10KeyCompareENS1_12MapAllocatorINS1_12KeyValuePairEE6rebindIS7_E5otherEE8iteratorE'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap10FindHelperERKT_'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap10FindHelperERKT_PNSt3setIPS3_NS2_10KeyCompareENS1_12MapAllocatorINS1_12KeyValuePairEE6rebindIS7_E5otherEE8iteratorE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap12InsertUniqueEmPNS2_4NodeE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap18InsertUniqueInListEmPNS2_4NodeE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap18InsertUniqueInTreeEmPNS2_4NodeE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap24ResizeIfLoadIsOutOfRangeEm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap6ResizeEm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap12TransferListEPKPvm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap12TransferTreeEPKPvm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap19EraseFromLinkedListEPNS2_4NodeES4_'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap17TableEntryIsEmptyEm'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap24TableEntryIsNonEmptyListEm'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap16TableEntryIsTreeEm'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap16TableEntryIsListEm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap17TableEntryIsEmptyEPKPvm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap24TableEntryIsNonEmptyListEPKPvm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap16TableEntryIsTreeEPKPvm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap16TableEntryIsListEPKPvm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap11TreeConvertEm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap14CopyListToTreeEmPSt3setIPT_NS2_10KeyCompareENS1_12MapAllocatorINS1_12KeyValuePairEE6rebindIS5_E5otherEE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap19TableEntryIsTooLongEm'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap12BucketNumberERKT_'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap7IsMatchERKT_S5_'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap9TableSizeEm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap5AllocEm'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap7DeallocEPTL0__m'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap11DestroyNodeEPNS2_4NodeE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap11DestroyTreeEPSt3setIPT_NS2_10KeyCompareENS1_12MapAllocatorINS1_12KeyValuePairEE6rebindIS5_E5otherEE'/>
+<fun r='_ZN6google8protobuf3Map8InnerMap16CreateEmptyTableEm'/>
+<fun r='_ZNK6google8protobuf3Map8InnerMap4SeedEv'/>
+<mbr r='google::protobuf::Map::InnerMap::num_elements_' t='google::protobuf::Map::size_type'/>
+<mbr r='google::protobuf::Map::InnerMap::num_buckets_' t='google::protobuf::Map::size_type'/>
+<mbr r='google::protobuf::Map::InnerMap::seed_' t='google::protobuf::Map::size_type'/>
+<mbr r='google::protobuf::Map::InnerMap::index_of_first_non_null_' t='google::protobuf::Map::size_type'/>
+<mbr r='google::protobuf::Map::InnerMap::table_' t='void **'/>
+<mbr r='google::protobuf::Map::InnerMap::alloc_' t='google::protobuf::Map::Allocator'/>
+<fun r='_ZN6google8protobuf3Map8InnerMapC1ERKS2_'/>

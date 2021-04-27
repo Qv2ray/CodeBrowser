@@ -1,0 +1,33 @@
+<def f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='46' ll='56'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='50' c='_ZNK7QtNodes8NodeData8sameTypeERKS0_'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/TypeConverter.hpp' l='8'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='78' c='_ZN7QtNodes13NodeDataModel9setInDataESt10shared_ptrINS_8NodeDataEEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='79' c='_ZN7QtNodes13NodeDataModel9setInDataESt6vectorISt10shared_ptrINS_8NodeDataEESaIS4_EEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeDataModel.hpp' l='80' c='_ZN7QtNodes13NodeDataModel7outDataEi'/>
+<size>8</size>
+<doc f='qv2ray/3rdparty/QNodeEditor/include/nodes/internal/NodeData.hpp' l='43'>/// Class represents data transferred between nodes.
+    /// @param type is used for comparing the types
+    /// The actual data is stored in subtypes</doc>
+<fun r='_ZN7QtNodes8NodeDataD1Ev'/>
+<fun r='_ZNK7QtNodes8NodeData8sameTypeERKS0_'/>
+<fun r='_ZNK7QtNodes8NodeData4typeEv'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='104' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<use f='qv2ray/3rdparty/QNodeEditor/src/Node.cpp' l='111' c='_ZNK7QtNodes4Node13propagateDataEi'/>
+<size>8</size>
+<use f='qv2ray/3rdparty/QNodeEditor/src/NodeDataModel.cpp' l='38' c='_ZN7QtNodes13NodeDataModel9setInDataESt6vectorISt10shared_ptrINS_8NodeDataEESaIS4_EEi'/>
+<size>8</size>
+<ovr f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='28' c='Qv2ray::ui::nodemodels::InboundNodeData'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='28'/>
+<ovr f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='51' c='Qv2ray::ui::nodemodels::OutboundNodeData'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='51'/>
+<ovr f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='74' c='Qv2ray::ui::nodemodels::RuleNodeData'/>
+<use f='qv2ray/src/ui/models/NodeModelsBase.hpp' l='74'/>
+<use f='qv2ray/src/ui/models/InboundNodeModel.hpp' l='46' c='_ZN18QvInboundNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/models/InboundNodeModel.hpp' l='51' c='_ZN18QvInboundNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<use f='qv2ray/src/ui/models/OutboundNodeModel.hpp' l='45' c='_ZN19QvOutboundNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/models/OutboundNodeModel.hpp' l='50' c='_ZN19QvOutboundNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<use f='qv2ray/src/ui/models/OutboundNodeModel.hpp' l='54' c='_ZN19QvOutboundNodeModel9setInDataESt6vectorISt10shared_ptrIN7QtNodes8NodeDataEESaIS4_EEi'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='64' c='_ZN15QvRuleNodeModel7outDataEi'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='70' c='_ZN15QvRuleNodeModel9setInDataESt10shared_ptrIN7QtNodes8NodeDataEEi'/>
+<use f='qv2ray/src/ui/models/RuleNodeModel.hpp' l='73' c='_ZN15QvRuleNodeModel9setInDataESt6vectorISt10shared_ptrIN7QtNodes8NodeDataEESaIS4_EEi'/>
+<size>8</size>

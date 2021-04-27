@@ -1,0 +1,5 @@
+<dec f='include/grpcpp/impl/codegen/server_context.h' l='222' type='grpc::string grpc::ServerContext::peer() const'/>
+<doc f='include/grpcpp/impl/codegen/server_context.h' l='218'>/// Return the peer uri in a string.
+  /// WARNING: this value is never authenticated or subject to any security
+  /// related code. It must not be used for any authentication related
+  /// functionality. Instead, use auth_context.</doc>

@@ -1,0 +1,4 @@
+<dec f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='41' type='std::unique_ptr&lt;QvPluginKernel&gt; Qv2rayPlugin::Qv2rayInterface::CreateKernel()'/>
+<doc f='qv2ray/src/plugin-interface/QvPluginInterface.hpp' l='39'>/// \brief Get Kernel Instance if the QvPluginMetadata contains SPECIAL_TYPE_KERNEL
+        /// \warning The owner of QvPluginKernel instance will be transfered to its caller.</doc>
+<use f='qv2ray/src/components/plugins/QvPluginHost.cpp' l='331' u='c' c='_ZNK6Qv2ray10components7plugins12QvPluginHost18CreatePluginKernelERK7QString'/>

@@ -1,0 +1,12 @@
+<def f='include/grpcpp/impl/codegen/sync_stream.h' l='878' ll='930'/>
+<use f='include/grpcpp/impl/codegen/sync_stream.h' l='927'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='265'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='269' c='_ZN4grpc8internal27SplitServerStreamingHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPNS_19ServerSplitStreamerIT_T0_EEEE'/>
+<use f='include/grpcpp/impl/codegen/method_handler_impl.h' l='272' c='_ZN4grpc8internal27SplitServerStreamingHandlerC1ESt8functionIFNS_6StatusEPNS_13ServerContextEPNS_19ServerSplitStreamerIT_T0_EEEE'/>
+<fun r='_ZN4grpc19ServerSplitStreamer19SendInitialMetadataEv'/>
+<fun r='_ZN4grpc19ServerSplitStreamer15NextMessageSizeEPj'/>
+<fun r='_ZN4grpc19ServerSplitStreamer4ReadEPT_'/>
+<fun r='_ZN4grpc19ServerSplitStreamer5WriteERKT0_NS_12WriteOptionsE'/>
+<mbr r='grpc::ServerSplitStreamer::body_' t='internal::ServerReaderWriterBody&lt;ResponseType, RequestType&gt;'/>
+<mbr r='grpc::ServerSplitStreamer::read_done_' t='bool'/>
+<fun r='_ZN4grpc19ServerSplitStreamerC1EPNS_8internal4CallEPNS_13ServerContextE'/>

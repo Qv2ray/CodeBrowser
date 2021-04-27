@@ -1,0 +1,12 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='922' ll='927' type='void grpc::ServerAsyncWriter::Finish(const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='911'>/// See the \a ServerAsyncWriterInterface.Finish method for semantics.
+  ///
+  /// Implicit input parameter:
+  ///   - the \a ServerContext associated with this call is used for sending
+  ///     trailing (and initial if not already sent) metadata to the client.
+  ///
+  /// Note: there are no restrictions are the code of
+  /// \a status,it may be non-OK
+  ///
+  /// gRPC doesn&apos;t take ownership or a reference to \a status, so it is safe to
+  /// to deallocate once Finish returns.</doc>

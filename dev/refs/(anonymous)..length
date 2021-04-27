@@ -1,0 +1,23 @@
+<dec f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.h' l='26' type='int'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='40' u='w' c='BitStream_new'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='113' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='117' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='117' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='122' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='122' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='123' u='w' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='123' u='r' c='BitStream_append'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='134' u='r' c='BitStream_appendNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='138' u='r' c='BitStream_appendNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='139' u='w' c='BitStream_appendNum'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='150' u='r' c='BitStream_appendBytes'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='154' u='r' c='BitStream_appendBytes'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='155' u='w' c='BitStream_appendBytes'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/bitstream.c' l='166' macro='1' u='r' c='BitStream_toByte'/>
+<offset>0</offset>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1012' macro='1' u='r' c='QRinput_encodeBitStream'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1058' macro='1' u='r' c='QRinput_encodeBitStream'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1112' macro='1' u='w' c='QRinput_convertData'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1141' macro='1' u='r' c='QRinput_appendPaddingBit'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1190' macro='1' u='r' c='QRinput_appendPaddingBitMQR'/>
+<use f='qv2ray/3rdparty/qt-qrcode/lib/libqrencode/qrinput.c' l='1510' macro='1' u='w' c='QRinput_splitQRinputToStruct'/>

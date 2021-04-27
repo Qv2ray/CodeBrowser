@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sync.h source code [include/grpc/support/sync.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/grpc/support/sync.h'; var root_path = '../../..'; var data_path = '../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>grpc</a>/<a href='./'>support</a>/<a href='sync.h.html'>sync.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright 2015 gRPC authors.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Licensed under the Apache License, Version 2.0 (the "License");</i></td></tr>
+<tr><th id="6">6</th><td><i> * you may not use this file except in compliance with the License.</i></td></tr>
+<tr><th id="7">7</th><td><i> * You may obtain a copy of the License at</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Unless required by applicable law or agreed to in writing, software</i></td></tr>
+<tr><th id="12">12</th><td><i> * distributed under the License is distributed on an "AS IS" BASIS,</i></td></tr>
+<tr><th id="13">13</th><td><i> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</i></td></tr>
+<tr><th id="14">14</th><td><i> * See the License for the specific language governing permissions and</i></td></tr>
+<tr><th id="15">15</th><td><i> * limitations under the License.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GRPC_SUPPORT_SYNC_H">GRPC_SUPPORT_SYNC_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GRPC_SUPPORT_SYNC_H" data-ref="_M/GRPC_SUPPORT_SYNC_H">GRPC_SUPPORT_SYNC_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="port_platform.h.html">&lt;grpc/support/port_platform.h&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../impl/codegen/gpr_types.h.html">&lt;grpc/impl/codegen/gpr_types.h&gt;</a> /* for gpr_timespec */</u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../impl/codegen/sync.h.html">&lt;grpc/impl/codegen/sync.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="28">28</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i class="doc">/** --- Mutex interface ---</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"></i></td></tr>
+<tr><th id="33">33</th><td><i class="doc">   At most one thread may hold an exclusive lock on a mutex at any given time.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc">   Actions taken by a thread that holds a mutex exclusively happen after</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc">   actions taken by all previous holders of the mutex.  Variables of type</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc">   gpr_mu are uninitialized when first declared.  */</i></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i class="doc">/** Initialize *mu.  Requires:  *mu uninitialized.  */</i></td></tr>
+<tr><th id="39">39</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_mu_init" title='gpr_mu_init' data-ref="gpr_mu_init" data-ref-filename="gpr_mu_init">gpr_mu_init</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_mu" title='gpr_mu' data-type='pthread_mutex_t' data-ref="gpr_mu" data-ref-filename="gpr_mu">gpr_mu</a>* <dfn class="local col9 decl" id="8269mu" title='mu' data-type='gpr_mu *' data-ref="8269mu" data-ref-filename="8269mu">mu</dfn>);</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i class="doc">/** Cause *mu no longer to be initialized, freeing any memory in use.  Requires:</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *mu initialized; no other concurrent operation on *mu.  */</i></td></tr>
+<tr><th id="43">43</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_mu_destroy" title='gpr_mu_destroy' data-ref="gpr_mu_destroy" data-ref-filename="gpr_mu_destroy">gpr_mu_destroy</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_mu" title='gpr_mu' data-type='pthread_mutex_t' data-ref="gpr_mu" data-ref-filename="gpr_mu">gpr_mu</a>* <dfn class="local col0 decl" id="8270mu" title='mu' data-type='gpr_mu *' data-ref="8270mu" data-ref-filename="8270mu">mu</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i class="doc">/** Wait until no thread has a lock on *mu, cause the calling thread to own an</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">   exclusive lock on *mu, then return.  May block indefinitely or crash if the</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc">   calling thread has a lock on *mu.  Requires:  *mu initialized.  */</i></td></tr>
+<tr><th id="48">48</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_mu_lock" title='gpr_mu_lock' data-ref="gpr_mu_lock" data-ref-filename="gpr_mu_lock">gpr_mu_lock</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_mu" title='gpr_mu' data-type='pthread_mutex_t' data-ref="gpr_mu" data-ref-filename="gpr_mu">gpr_mu</a>* <dfn class="local col1 decl" id="8271mu" title='mu' data-type='gpr_mu *' data-ref="8271mu" data-ref-filename="8271mu">mu</dfn>);</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i class="doc">/** Release an exclusive lock on *mu held by the calling thread.  Requires:  *mu</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">   initialized; the calling thread holds an exclusive lock on *mu.  */</i></td></tr>
+<tr><th id="52">52</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_mu_unlock" title='gpr_mu_unlock' data-ref="gpr_mu_unlock" data-ref-filename="gpr_mu_unlock">gpr_mu_unlock</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_mu" title='gpr_mu' data-type='pthread_mutex_t' data-ref="gpr_mu" data-ref-filename="gpr_mu">gpr_mu</a>* <dfn class="local col2 decl" id="8272mu" title='mu' data-type='gpr_mu *' data-ref="8272mu" data-ref-filename="8272mu">mu</dfn>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i class="doc">/** Without blocking, attempt to acquire an exclusive lock on *mu for the</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">   calling thread, then return non-zero iff success.  Fail, if any thread holds</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">   the lock; succeeds with high probability if no thread holds the lock.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">   Requires:  *mu initialized.  */</i></td></tr>
+<tr><th id="58">58</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>int</em> <dfn class="decl fn" id="gpr_mu_trylock" title='gpr_mu_trylock' data-ref="gpr_mu_trylock" data-ref-filename="gpr_mu_trylock">gpr_mu_trylock</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_mu" title='gpr_mu' data-type='pthread_mutex_t' data-ref="gpr_mu" data-ref-filename="gpr_mu">gpr_mu</a>* <dfn class="local col3 decl" id="8273mu" title='mu' data-type='gpr_mu *' data-ref="8273mu" data-ref-filename="8273mu">mu</dfn>);</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i class="doc">/** --- Condition variable interface ---</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"></i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">   A while-loop should be used with gpr_cv_wait() when waiting for conditions</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">   to become true.  See the example below.  Variables of type gpr_cv are</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">   uninitialized when first declared.  */</i></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><i class="doc">/** Initialize *cv.  Requires:  *cv uninitialized.  */</i></td></tr>
+<tr><th id="67">67</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_cv_init" title='gpr_cv_init' data-ref="gpr_cv_init" data-ref-filename="gpr_cv_init">gpr_cv_init</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_cv" title='gpr_cv' data-type='pthread_cond_t' data-ref="gpr_cv" data-ref-filename="gpr_cv">gpr_cv</a>* <dfn class="local col4 decl" id="8274cv" title='cv' data-type='gpr_cv *' data-ref="8274cv" data-ref-filename="8274cv">cv</dfn>);</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc">/** Cause *cv no longer to be initialized, freeing any memory in use.  Requires:</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *cv initialized; no other concurrent operation on *cv.*/</i></td></tr>
+<tr><th id="71">71</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_cv_destroy" title='gpr_cv_destroy' data-ref="gpr_cv_destroy" data-ref-filename="gpr_cv_destroy">gpr_cv_destroy</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_cv" title='gpr_cv' data-type='pthread_cond_t' data-ref="gpr_cv" data-ref-filename="gpr_cv">gpr_cv</a>* <dfn class="local col5 decl" id="8275cv" title='cv' data-type='gpr_cv *' data-ref="8275cv" data-ref-filename="8275cv">cv</dfn>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><i class="doc">/** Atomically release *mu and wait on *cv.  When the calling thread is woken</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">   from *cv or the deadline abs_deadline is exceeded, execute gpr_mu_lock(mu)</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">   and return whether the deadline was exceeded.  Use</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">   abs_deadline==gpr_inf_future for no deadline.  abs_deadline can be either</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">   an absolute deadline, or a GPR_TIMESPAN.  May return even when not</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">   woken explicitly.  Requires:  *mu and *cv initialized; the calling thread</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">   holds an exclusive lock on *mu.  */</i></td></tr>
+<tr><th id="80">80</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>int</em> <dfn class="decl fn" id="gpr_cv_wait" title='gpr_cv_wait' data-ref="gpr_cv_wait" data-ref-filename="gpr_cv_wait">gpr_cv_wait</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_cv" title='gpr_cv' data-type='pthread_cond_t' data-ref="gpr_cv" data-ref-filename="gpr_cv">gpr_cv</a>* <dfn class="local col6 decl" id="8276cv" title='cv' data-type='gpr_cv *' data-ref="8276cv" data-ref-filename="8276cv">cv</dfn>, <a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_mu" title='gpr_mu' data-type='pthread_mutex_t' data-ref="gpr_mu" data-ref-filename="gpr_mu">gpr_mu</a>* <dfn class="local col7 decl" id="8277mu" title='mu' data-type='gpr_mu *' data-ref="8277mu" data-ref-filename="8277mu">mu</dfn>, <a class="typedef" href="../impl/codegen/gpr_types.h.html#gpr_timespec" title='gpr_timespec' data-type='struct gpr_timespec' data-ref="gpr_timespec" data-ref-filename="gpr_timespec">gpr_timespec</a> <dfn class="local col8 decl" id="8278abs_deadline" title='abs_deadline' data-type='gpr_timespec' data-ref="8278abs_deadline" data-ref-filename="8278abs_deadline">abs_deadline</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i class="doc">/** If any threads are waiting on *cv, wake at least one.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">   Clients may treat this as an optimization of gpr_cv_broadcast()</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">   for use in the case where waking more than one waiter is not useful.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">   Requires:  *cv initialized.  */</i></td></tr>
+<tr><th id="86">86</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_cv_signal" title='gpr_cv_signal' data-ref="gpr_cv_signal" data-ref-filename="gpr_cv_signal">gpr_cv_signal</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_cv" title='gpr_cv' data-type='pthread_cond_t' data-ref="gpr_cv" data-ref-filename="gpr_cv">gpr_cv</a>* <dfn class="local col9 decl" id="8279cv" title='cv' data-type='gpr_cv *' data-ref="8279cv" data-ref-filename="8279cv">cv</dfn>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i class="doc">/** Wake all threads waiting on *cv.  Requires:  *cv initialized.  */</i></td></tr>
+<tr><th id="89">89</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_cv_broadcast" title='gpr_cv_broadcast' data-ref="gpr_cv_broadcast" data-ref-filename="gpr_cv_broadcast">gpr_cv_broadcast</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_cv" title='gpr_cv' data-type='pthread_cond_t' data-ref="gpr_cv" data-ref-filename="gpr_cv">gpr_cv</a>* <dfn class="local col0 decl" id="8280cv" title='cv' data-type='gpr_cv *' data-ref="8280cv" data-ref-filename="8280cv">cv</dfn>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/** --- One-time initialization ---</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"></i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">   gpr_once must be declared with static storage class, and initialized with</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">   GPR_ONCE_INIT.  e.g.,</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     static gpr_once once_var = GPR_ONCE_INIT;     */</i></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i class="doc">/** Ensure that (*init_routine)() has been called exactly once (for the</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">   specified gpr_once instance) and then return.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">   If multiple threads call gpr_once() on the same gpr_once instance, one of</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">   them will call (*init_routine)(), and the others will block until that call</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">   finishes.*/</i></td></tr>
+<tr><th id="102">102</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_once_init" title='gpr_once_init' data-ref="gpr_once_init" data-ref-filename="gpr_once_init">gpr_once_init</dfn>(<a class="typedef" href="../impl/codegen/sync_posix.h.html#gpr_once" title='gpr_once' data-type='pthread_once_t' data-ref="gpr_once" data-ref-filename="gpr_once">gpr_once</a>* <dfn class="local col1 decl" id="8281once" title='once' data-type='gpr_once *' data-ref="8281once" data-ref-filename="8281once">once</dfn>, <em>void</em> (*<dfn class="local col2 decl" id="8282init_routine" title='init_routine' data-type='void (*)()' data-ref="8282init_routine" data-ref-filename="8282init_routine">init_routine</dfn>)(<em>void</em>));</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i class="doc">/** --- One-time event notification ---</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"></i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">  These operations act on a gpr_event, which should be initialized with</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">  gpr_ev_init(), or with GPR_EVENT_INIT if static, e.g.,</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">       static gpr_event event_var = GPR_EVENT_INIT;</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">  It requires no destruction.  */</i></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><i class="doc">/** Initialize *ev. */</i></td></tr>
+<tr><th id="112">112</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_event_init" title='gpr_event_init' data-ref="gpr_event_init" data-ref-filename="gpr_event_init">gpr_event_init</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_event" title='gpr_event' data-type='struct gpr_event' data-ref="gpr_event" data-ref-filename="gpr_event">gpr_event</a>* <dfn class="local col3 decl" id="8283ev" title='ev' data-type='gpr_event *' data-ref="8283ev" data-ref-filename="8283ev">ev</dfn>);</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i class="doc">/** Set *ev so that gpr_event_get() and gpr_event_wait() will return value.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">   Requires:  *ev initialized; value != NULL; no prior or concurrent calls to</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">   gpr_event_set(ev, ...) since initialization.  */</i></td></tr>
+<tr><th id="117">117</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_event_set" title='gpr_event_set' data-ref="gpr_event_set" data-ref-filename="gpr_event_set">gpr_event_set</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_event" title='gpr_event' data-type='struct gpr_event' data-ref="gpr_event" data-ref-filename="gpr_event">gpr_event</a>* <dfn class="local col4 decl" id="8284ev" title='ev' data-type='gpr_event *' data-ref="8284ev" data-ref-filename="8284ev">ev</dfn>, <em>void</em>* <dfn class="local col5 decl" id="8285value" title='value' data-type='void *' data-ref="8285value" data-ref-filename="8285value">value</dfn>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><i class="doc">/** Return the value set by gpr_event_set(ev, ...), or NULL if no such call has</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">   completed.  If the result is non-NULL, all operations that occurred prior to</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">   the gpr_event_set(ev, ...) set will be visible after this call returns.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">   Requires:  *ev initialized.  This operation is faster than acquiring a mutex</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">   on most platforms.  */</i></td></tr>
+<tr><th id="124">124</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em>* <dfn class="decl fn" id="gpr_event_get" title='gpr_event_get' data-ref="gpr_event_get" data-ref-filename="gpr_event_get">gpr_event_get</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_event" title='gpr_event' data-type='struct gpr_event' data-ref="gpr_event" data-ref-filename="gpr_event">gpr_event</a>* <dfn class="local col6 decl" id="8286ev" title='ev' data-type='gpr_event *' data-ref="8286ev" data-ref-filename="8286ev">ev</dfn>);</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><i class="doc">/** Wait until *ev is set by gpr_event_set(ev, ...), or abs_deadline is</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">   exceeded, then return gpr_event_get(ev).  Requires:  *ev initialized.  Use</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc">   abs_deadline==gpr_inf_future for no deadline.  When the event has been</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc">   signalled before the call, this operation is faster than acquiring a mutex</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc">   on most platforms.  */</i></td></tr>
+<tr><th id="131">131</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em>* <dfn class="decl fn" id="gpr_event_wait" title='gpr_event_wait' data-ref="gpr_event_wait" data-ref-filename="gpr_event_wait">gpr_event_wait</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_event" title='gpr_event' data-type='struct gpr_event' data-ref="gpr_event" data-ref-filename="gpr_event">gpr_event</a>* <dfn class="local col7 decl" id="8287ev" title='ev' data-type='gpr_event *' data-ref="8287ev" data-ref-filename="8287ev">ev</dfn>, <a class="typedef" href="../impl/codegen/gpr_types.h.html#gpr_timespec" title='gpr_timespec' data-type='struct gpr_timespec' data-ref="gpr_timespec" data-ref-filename="gpr_timespec">gpr_timespec</a> <dfn class="local col8 decl" id="8288abs_deadline" title='abs_deadline' data-type='gpr_timespec' data-ref="8288abs_deadline" data-ref-filename="8288abs_deadline">abs_deadline</dfn>);</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><i class="doc">/** --- Reference counting ---</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"></i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">   These calls act on the type gpr_refcount.  It requires no destruction.  */</i></td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><i class="doc">/** Initialize *r to value n.  */</i></td></tr>
+<tr><th id="138">138</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_ref_init" title='gpr_ref_init' data-ref="gpr_ref_init" data-ref-filename="gpr_ref_init">gpr_ref_init</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_refcount" title='gpr_refcount' data-type='struct gpr_refcount' data-ref="gpr_refcount" data-ref-filename="gpr_refcount">gpr_refcount</a>* <dfn class="local col9 decl" id="8289r" title='r' data-type='gpr_refcount *' data-ref="8289r" data-ref-filename="8289r">r</dfn>, <em>int</em> <dfn class="local col0 decl" id="8290n" title='n' data-type='int' data-ref="8290n" data-ref-filename="8290n">n</dfn>);</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i class="doc">/** Increment the reference count *r.  Requires *r initialized. */</i></td></tr>
+<tr><th id="141">141</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_ref" title='gpr_ref' data-ref="gpr_ref" data-ref-filename="gpr_ref">gpr_ref</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_refcount" title='gpr_refcount' data-type='struct gpr_refcount' data-ref="gpr_refcount" data-ref-filename="gpr_refcount">gpr_refcount</a>* <dfn class="local col1 decl" id="8291r" title='r' data-type='gpr_refcount *' data-ref="8291r" data-ref-filename="8291r">r</dfn>);</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/** Increment the reference count *r.  Requires *r initialized.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">   Crashes if refcount is zero */</i></td></tr>
+<tr><th id="145">145</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_ref_non_zero" title='gpr_ref_non_zero' data-ref="gpr_ref_non_zero" data-ref-filename="gpr_ref_non_zero">gpr_ref_non_zero</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_refcount" title='gpr_refcount' data-type='struct gpr_refcount' data-ref="gpr_refcount" data-ref-filename="gpr_refcount">gpr_refcount</a>* <dfn class="local col2 decl" id="8292r" title='r' data-type='gpr_refcount *' data-ref="8292r" data-ref-filename="8292r">r</dfn>);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i class="doc">/** Increment the reference count *r by n.  Requires *r initialized, n &gt; 0. */</i></td></tr>
+<tr><th id="148">148</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_refn" title='gpr_refn' data-ref="gpr_refn" data-ref-filename="gpr_refn">gpr_refn</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_refcount" title='gpr_refcount' data-type='struct gpr_refcount' data-ref="gpr_refcount" data-ref-filename="gpr_refcount">gpr_refcount</a>* <dfn class="local col3 decl" id="8293r" title='r' data-type='gpr_refcount *' data-ref="8293r" data-ref-filename="8293r">r</dfn>, <em>int</em> <dfn class="local col4 decl" id="8294n" title='n' data-type='int' data-ref="8294n" data-ref-filename="8294n">n</dfn>);</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><i class="doc">/** Decrement the reference count *r and return non-zero iff it has reached</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">   zero. .  Requires *r initialized. */</i></td></tr>
+<tr><th id="152">152</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>int</em> <dfn class="decl fn" id="gpr_unref" title='gpr_unref' data-ref="gpr_unref" data-ref-filename="gpr_unref">gpr_unref</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_refcount" title='gpr_refcount' data-type='struct gpr_refcount' data-ref="gpr_refcount" data-ref-filename="gpr_refcount">gpr_refcount</a>* <dfn class="local col5 decl" id="8295r" title='r' data-type='gpr_refcount *' data-ref="8295r" data-ref-filename="8295r">r</dfn>);</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><i class="doc">/** Return non-zero iff the reference count of *r is one, and thus is owned</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">   by exactly one object. */</i></td></tr>
+<tr><th id="156">156</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>int</em> <dfn class="decl fn" id="gpr_ref_is_unique" title='gpr_ref_is_unique' data-ref="gpr_ref_is_unique" data-ref-filename="gpr_ref_is_unique">gpr_ref_is_unique</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_refcount" title='gpr_refcount' data-type='struct gpr_refcount' data-ref="gpr_refcount" data-ref-filename="gpr_refcount">gpr_refcount</a>* <dfn class="local col6 decl" id="8296r" title='r' data-type='gpr_refcount *' data-ref="8296r" data-ref-filename="8296r">r</dfn>);</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><i class="doc">/** --- Stats counters ---</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"></i></td></tr>
+<tr><th id="160">160</th><td><i class="doc">   These calls act on the integral type gpr_stats_counter.  It requires no</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc">   destruction.  Static instances may be initialized with</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc">       gpr_stats_counter c = GPR_STATS_INIT;</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc">   Beware:  These operations do not imply memory barriers.  Do not use them to</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc">   synchronize other events.  */</i></td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><i class="doc">/** Initialize *c to the value n. */</i></td></tr>
+<tr><th id="167">167</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_stats_init" title='gpr_stats_init' data-ref="gpr_stats_init" data-ref-filename="gpr_stats_init">gpr_stats_init</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_stats_counter" title='gpr_stats_counter' data-type='struct gpr_stats_counter' data-ref="gpr_stats_counter" data-ref-filename="gpr_stats_counter">gpr_stats_counter</a>* <dfn class="local col7 decl" id="8297c" title='c' data-type='gpr_stats_counter *' data-ref="8297c" data-ref-filename="8297c">c</dfn>, <a class="typedef" href="../../stdint.h.html#intptr_t" title='intptr_t' data-type='long' data-ref="intptr_t" data-ref-filename="intptr_t">intptr_t</a> <dfn class="local col8 decl" id="8298n" title='n' data-type='intptr_t' data-ref="8298n" data-ref-filename="8298n">n</dfn>);</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><i class="doc">/** *c += inc.  Requires: *c initialized. */</i></td></tr>
+<tr><th id="170">170</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <em>void</em> <dfn class="decl fn" id="gpr_stats_inc" title='gpr_stats_inc' data-ref="gpr_stats_inc" data-ref-filename="gpr_stats_inc">gpr_stats_inc</dfn>(<a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_stats_counter" title='gpr_stats_counter' data-type='struct gpr_stats_counter' data-ref="gpr_stats_counter" data-ref-filename="gpr_stats_counter">gpr_stats_counter</a>* <dfn class="local col9 decl" id="8299c" title='c' data-type='gpr_stats_counter *' data-ref="8299c" data-ref-filename="8299c">c</dfn>, <a class="typedef" href="../../stdint.h.html#intptr_t" title='intptr_t' data-type='long' data-ref="intptr_t" data-ref-filename="intptr_t">intptr_t</a> <dfn class="local col0 decl" id="8300inc" title='inc' data-type='intptr_t' data-ref="8300inc" data-ref-filename="8300inc">inc</dfn>);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i class="doc">/** Return *c.  Requires: *c initialized. */</i></td></tr>
+<tr><th id="173">173</th><td><a class="macro" href="../impl/codegen/port_platform.h.html#507" title="" data-ref="_M/GPRAPI">GPRAPI</a> <a class="typedef" href="../../stdint.h.html#intptr_t" title='intptr_t' data-type='long' data-ref="intptr_t" data-ref-filename="intptr_t">intptr_t</a> <dfn class="decl fn" id="gpr_stats_read" title='gpr_stats_read' data-ref="gpr_stats_read" data-ref-filename="gpr_stats_read">gpr_stats_read</dfn>(<em>const</em> <a class="typedef" href="../impl/codegen/sync_generic.h.html#gpr_stats_counter" title='gpr_stats_counter' data-type='struct gpr_stats_counter' data-ref="gpr_stats_counter" data-ref-filename="gpr_stats_counter">gpr_stats_counter</a>* <dfn class="local col1 decl" id="8301c" title='c' data-type='const gpr_stats_counter *' data-ref="8301c" data-ref-filename="8301c">c</dfn>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><i class="doc">/** ==================Example use of interface===================</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc">   A producer-consumer queue of up to N integers,</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc">   illustrating the use of the calls in this interface. */</i></td></tr>
+<tr><th id="178">178</th><td><u>#<span data-ppcond="178">if</span> 0</u></td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><u>#define N 4</u></td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>   <b>typedef</b> <b>struct</b> queue {</td></tr>
+<tr><th id="183">183</th><td>     gpr_cv non_empty;  <i>/* Signalled when length becomes non-zero. */</i></td></tr>
+<tr><th id="184">184</th><td>     gpr_cv non_full;   <i>/* Signalled when length becomes non-N. */</i></td></tr>
+<tr><th id="185">185</th><td>     gpr_mu mu;         <i>/* Protects all fields below.</i></td></tr>
+<tr><th id="186">186</th><td><i>                            (That is, except during initialization or</i></td></tr>
+<tr><th id="187">187</th><td><i>                            destruction, the fields below should be accessed</i></td></tr>
+<tr><th id="188">188</th><td><i>                            only by a thread that holds mu.) */</i></td></tr>
+<tr><th id="189">189</th><td>     <em>int</em> head;           <i>/* Index of head of queue 0..N-1. */</i></td></tr>
+<tr><th id="190">190</th><td>     <em>int</em> length;         <i>/* Number of valid elements in queue 0..N. */</i></td></tr>
+<tr><th id="191">191</th><td>     <em>int</em> elem[N];        <i>/* elem[head .. head+length-1] are queue elements. */</i></td></tr>
+<tr><th id="192">192</th><td>   } queue;</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td>   <i>/* Initialize *q. */</i></td></tr>
+<tr><th id="195">195</th><td>   <em>void</em> queue_init(queue *q) {</td></tr>
+<tr><th id="196">196</th><td>     gpr_mu_init(&amp;q-&gt;mu);</td></tr>
+<tr><th id="197">197</th><td>     gpr_cv_init(&amp;q-&gt;non_empty);</td></tr>
+<tr><th id="198">198</th><td>     gpr_cv_init(&amp;q-&gt;non_full);</td></tr>
+<tr><th id="199">199</th><td>     q-&gt;head = <var>0</var>;</td></tr>
+<tr><th id="200">200</th><td>     q-&gt;length = <var>0</var>;</td></tr>
+<tr><th id="201">201</th><td>   }</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td>   <i>/* Free storage associated with *q. */</i></td></tr>
+<tr><th id="204">204</th><td>   <em>void</em> queue_destroy(queue *q) {</td></tr>
+<tr><th id="205">205</th><td>     gpr_mu_destroy(&amp;q-&gt;mu);</td></tr>
+<tr><th id="206">206</th><td>     gpr_cv_destroy(&amp;q-&gt;non_empty);</td></tr>
+<tr><th id="207">207</th><td>     gpr_cv_destroy(&amp;q-&gt;non_full);</td></tr>
+<tr><th id="208">208</th><td>   }</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td>   <i>/* Wait until there is room in *q, then append x to *q. */</i></td></tr>
+<tr><th id="211">211</th><td>   <em>void</em> queue_append(queue *q, <em>int</em> x) {</td></tr>
+<tr><th id="212">212</th><td>     gpr_mu_lock(&amp;q-&gt;mu);</td></tr>
+<tr><th id="213">213</th><td>     <i>/* To wait for a predicate without a deadline, loop on the negation of the</i></td></tr>
+<tr><th id="214">214</th><td><i>        predicate, and use gpr_cv_wait(..., gpr_inf_future) inside the loop</i></td></tr>
+<tr><th id="215">215</th><td><i>        to release the lock, wait, and reacquire on each iteration.  Code that</i></td></tr>
+<tr><th id="216">216</th><td><i>        makes the condition true should use gpr_cv_broadcast() on the</i></td></tr>
+<tr><th id="217">217</th><td><i>        corresponding condition variable.  The predicate must be on state</i></td></tr>
+<tr><th id="218">218</th><td><i>        protected by the lock.  */</i></td></tr>
+<tr><th id="219">219</th><td>     <b>while</b> (q-&gt;length == N) {</td></tr>
+<tr><th id="220">220</th><td>       gpr_cv_wait(&amp;q-&gt;non_full, &amp;q-&gt;mu, gpr_inf_future);</td></tr>
+<tr><th id="221">221</th><td>     }</td></tr>
+<tr><th id="222">222</th><td>     <b>if</b> (q-&gt;length == <var>0</var>) {  <i>/* Wake threads blocked in queue_remove(). */</i></td></tr>
+<tr><th id="223">223</th><td>       <i>/* It's normal to use gpr_cv_broadcast() or gpr_signal() while</i></td></tr>
+<tr><th id="224">224</th><td><i>          holding the lock. */</i></td></tr>
+<tr><th id="225">225</th><td>       gpr_cv_broadcast(&amp;q-&gt;non_empty);</td></tr>
+<tr><th id="226">226</th><td>     }</td></tr>
+<tr><th id="227">227</th><td>     q-&gt;elem[(q-&gt;head + q-&gt;length) % N] = x;</td></tr>
+<tr><th id="228">228</th><td>     q-&gt;length++;</td></tr>
+<tr><th id="229">229</th><td>     gpr_mu_unlock(&amp;q-&gt;mu);</td></tr>
+<tr><th id="230">230</th><td>   }</td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td>   <i>/* If it can be done without blocking, append x to *q and return non-zero.</i></td></tr>
+<tr><th id="233">233</th><td><i>      Otherwise return 0. */</i></td></tr>
+<tr><th id="234">234</th><td>   <em>int</em> queue_try_append(queue *q, <em>int</em> x) {</td></tr>
+<tr><th id="235">235</th><td>     <em>int</em> result = <var>0</var>;</td></tr>
+<tr><th id="236">236</th><td>     <b>if</b> (gpr_mu_trylock(&amp;q-&gt;mu)) {</td></tr>
+<tr><th id="237">237</th><td>       <b>if</b> (q-&gt;length != N) {</td></tr>
+<tr><th id="238">238</th><td>         <b>if</b> (q-&gt;length == <var>0</var>) {  <i>/* Wake threads blocked in queue_remove(). */</i></td></tr>
+<tr><th id="239">239</th><td>           gpr_cv_broadcast(&amp;q-&gt;non_empty);</td></tr>
+<tr><th id="240">240</th><td>         }</td></tr>
+<tr><th id="241">241</th><td>         q-&gt;elem[(q-&gt;head + q-&gt;length) % N] = x;</td></tr>
+<tr><th id="242">242</th><td>         q-&gt;length++;</td></tr>
+<tr><th id="243">243</th><td>         result = <var>1</var>;</td></tr>
+<tr><th id="244">244</th><td>       }</td></tr>
+<tr><th id="245">245</th><td>       gpr_mu_unlock(&amp;q-&gt;mu);</td></tr>
+<tr><th id="246">246</th><td>     }</td></tr>
+<tr><th id="247">247</th><td>     <b>return</b> result;</td></tr>
+<tr><th id="248">248</th><td>   }</td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td>   <i>/* Wait until the *q is non-empty or deadline abs_deadline passes.  If the</i></td></tr>
+<tr><th id="251">251</th><td><i>      queue is non-empty, remove its head entry, place it in *head, and return</i></td></tr>
+<tr><th id="252">252</th><td><i>      non-zero.  Otherwise return 0.  */</i></td></tr>
+<tr><th id="253">253</th><td>   <em>int</em> queue_remove(queue *q, <em>int</em> *head, gpr_timespec abs_deadline) {</td></tr>
+<tr><th id="254">254</th><td>     <em>int</em> result = <var>0</var>;</td></tr>
+<tr><th id="255">255</th><td>     gpr_mu_lock(&amp;q-&gt;mu);</td></tr>
+<tr><th id="256">256</th><td>     <i>/* To wait for a predicate with a deadline, loop on the negation of the</i></td></tr>
+<tr><th id="257">257</th><td><i>        predicate or until gpr_cv_wait() returns true.  Code that makes</i></td></tr>
+<tr><th id="258">258</th><td><i>        the condition true should use gpr_cv_broadcast() on the corresponding</i></td></tr>
+<tr><th id="259">259</th><td><i>        condition variable.  The predicate must be on state protected by the</i></td></tr>
+<tr><th id="260">260</th><td><i>        lock. */</i></td></tr>
+<tr><th id="261">261</th><td>     <b>while</b> (q-&gt;length == <var>0</var> &amp;&amp;</td></tr>
+<tr><th id="262">262</th><td>            !gpr_cv_wait(&amp;q-&gt;non_empty, &amp;q-&gt;mu, abs_deadline)) {</td></tr>
+<tr><th id="263">263</th><td>     }</td></tr>
+<tr><th id="264">264</th><td>     <b>if</b> (q-&gt;length != <var>0</var>) {    <i>/* Queue is non-empty. */</i></td></tr>
+<tr><th id="265">265</th><td>       result = <var>1</var>;</td></tr>
+<tr><th id="266">266</th><td>       <b>if</b> (q-&gt;length == N) {  <i>/* Wake threads blocked in queue_append(). */</i></td></tr>
+<tr><th id="267">267</th><td>         gpr_cv_broadcast(&amp;q-&gt;non_full);</td></tr>
+<tr><th id="268">268</th><td>       }</td></tr>
+<tr><th id="269">269</th><td>       *head = q-&gt;elem[q-&gt;head];</td></tr>
+<tr><th id="270">270</th><td>       q-&gt;head = (q-&gt;head + <var>1</var>) % N;</td></tr>
+<tr><th id="271">271</th><td>       q-&gt;length--;</td></tr>
+<tr><th id="272">272</th><td>     } <i>/* else deadline exceeded */</i></td></tr>
+<tr><th id="273">273</th><td>     gpr_mu_unlock(&amp;q-&gt;mu);</td></tr>
+<tr><th id="274">274</th><td>     <b>return</b> result;</td></tr>
+<tr><th id="275">275</th><td>   }</td></tr>
+<tr><th id="276">276</th><td><u>#<span data-ppcond="178">endif</span> /* 0 */</u></td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><u>#<span data-ppcond="278">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="279">279</th><td>}  <i>// extern "C"</i></td></tr>
+<tr><th id="280">280</th><td><u>#<span data-ppcond="278">endif</span></u></td></tr>
+<tr><th id="281">281</th><td></td></tr>
+<tr><th id="282">282</th><td><u>#<span data-ppcond="19">endif</span> /* GRPC_SUPPORT_SYNC_H */</u></td></tr>
+<tr><th id="283">283</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_baselib_autogen/mocs_compilation.cpp.html'>/qv2ray_baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

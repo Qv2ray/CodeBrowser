@@ -1,0 +1,42 @@
+<inh f='qv2ray/src/ui/common/QvDialog.hpp' l='4' c='QvDialog'/>
+<inh f='/qv2ray_autogen/include/ui_w_ImportConfig.h' l='390' c='Ui::ImportConfigWindow'/>
+<def f='qv2ray/src/ui/windows/w_ImportConfig.hpp' l='8' ll='58'/>
+<use f='/qv2ray_autogen/Q6PPXN4TKV/moc_w_ImportConfig.cpp' l='110' c='_ZN18ImportConfigWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<size>472</size>
+<smbr r='ImportConfigWindow::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK18ImportConfigWindow10metaObjectEv'/>
+<fun r='_ZN18ImportConfigWindow11qt_metacastEPKc'/>
+<fun r='_ZN18ImportConfigWindow11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN18ImportConfigWindow2trEPKcS1_i'/>
+<fun r='_ZN18ImportConfigWindow6trUtf8EPKcS1_i'/>
+<fun r='_ZN18ImportConfigWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN18ImportConfigWindowC1EP7QWidget'/>
+<fun r='_ZN18ImportConfigWindowD1Ev'/>
+<fun r='_ZN18ImportConfigWindow23PerformImportConnectionEv'/>
+<fun r='_ZN18ImportConfigWindow16SelectConnectionEb'/>
+<fun r='_ZN18ImportConfigWindow15processCommandsE7QString11QStringList4QMapIS0_S0_E'/>
+<fun r='_ZN18ImportConfigWindow20on_QvMessageReceivedERKN6Qv2ray2ui9messaging11QvMBMessageE'/>
+<fun r='_ZN18ImportConfigWindow24on_selectFileBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow26on_qrFromScreenBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow25on_beginImportBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow25on_selectImageBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow32on_errorsList_currentItemChangedEP15QListWidgetItemS1_'/>
+<fun r='_ZN18ImportConfigWindow28on_connectionEditBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow26on_cancelImportBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow23on_routeEditBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow28on_hideQv2rayCB_stateChangedEi'/>
+<fun r='_ZN18ImportConfigWindow22on_jsonEditBtn_clickedEv'/>
+<fun r='_ZN18ImportConfigWindow17updateColorSchemeEv'/>
+<mbr r='ImportConfigWindow::linkErrors' o='3584' t='QMap&lt;QString, QString&gt;'/>
+<mbr r='ImportConfigWindow::connectionsToExistingGroup' o='3648' t='QHash&lt;Qv2ray::base::GroupId, QMultiMap&lt;QString, Qv2ray::base::safetype::CONFIGROOT&gt;&gt;'/>
+<mbr r='ImportConfigWindow::connectionsToNewGroup' o='3712' t='QMap&lt;QString, QMultiMap&lt;QString, Qv2ray::base::safetype::CONFIGROOT&gt;&gt;'/>
+<fun r='_ZN18ImportConfigWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='ImportConfigWindow::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK18ImportConfigWindow10metaObjectEv'/>
+<fun r='_ZN18ImportConfigWindow11qt_metacastEPKc'/>
+<fun r='_ZN18ImportConfigWindow11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<use f='qv2ray/src/ui/editors/w_RoutesEditor.cpp' l='789' c='_ZN11RouteEditor25on_addOutboundBtn_clickedEv'/>
+<size>472</size>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='368' c='_ZN10MainWindow14ProcessCommandE7QString11QStringList4QMapIS0_S0_E'/>
+<use f='qv2ray/src/ui/windows/w_MainWindow.cpp' l='616' c='_ZN10MainWindow29on_importConfigButton_clickedEv'/>
+<size>472</size>

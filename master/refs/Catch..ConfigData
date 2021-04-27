@@ -1,0 +1,42 @@
+<def f='qv2ray/test/catch.hpp' l='5260' ll='5301'/>
+<use f='qv2ray/test/catch.hpp' l='5307' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='5352'/>
+<use f='qv2ray/test/catch.hpp' l='9678' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9688' c='_ZN5Catch21makeCommandLineParserERNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='9934' c='_ZN5Catch6ConfigC1ERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='13051' c='_ZN5Catch7Session13useConfigDataERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='13067' c='_ZN5Catch7Session10configDataEv'/>
+<use f='qv2ray/test/catch.hpp' l='13073'/>
+<use f='qv2ray/test/catch.hpp' l='13327' c='_ZN5Catch7Session13useConfigDataERKNS_10ConfigDataE'/>
+<use f='qv2ray/test/catch.hpp' l='13351' c='_ZN5Catch7Session10configDataEv'/>
+<size>256</size>
+<mbr r='Catch::ConfigData::listTests' o='0' t='bool'/>
+<mbr r='Catch::ConfigData::listTags' o='8' t='bool'/>
+<mbr r='Catch::ConfigData::listReporters' o='16' t='bool'/>
+<mbr r='Catch::ConfigData::listTestNamesOnly' o='24' t='bool'/>
+<mbr r='Catch::ConfigData::showSuccessfulTests' o='32' t='bool'/>
+<mbr r='Catch::ConfigData::shouldDebugBreak' o='40' t='bool'/>
+<mbr r='Catch::ConfigData::noThrow' o='48' t='bool'/>
+<mbr r='Catch::ConfigData::showHelp' o='56' t='bool'/>
+<mbr r='Catch::ConfigData::showInvisibles' o='64' t='bool'/>
+<mbr r='Catch::ConfigData::filenamesAsTags' o='72' t='bool'/>
+<mbr r='Catch::ConfigData::libIdentify' o='80' t='bool'/>
+<mbr r='Catch::ConfigData::abortAfter' o='96' t='int'/>
+<mbr r='Catch::ConfigData::rngSeed' o='128' t='unsigned int'/>
+<mbr r='Catch::ConfigData::benchmarkNoAnalysis' o='160' t='bool'/>
+<mbr r='Catch::ConfigData::benchmarkSamples' o='192' t='unsigned int'/>
+<mbr r='Catch::ConfigData::benchmarkConfidenceInterval' o='256' t='double'/>
+<mbr r='Catch::ConfigData::benchmarkResamples' o='320' t='unsigned int'/>
+<mbr r='Catch::ConfigData::benchmarkWarmupTime' o='384' t='std::chrono::milliseconds::rep'/>
+<mbr r='Catch::ConfigData::verbosity' o='448' t='Catch::Verbosity'/>
+<mbr r='Catch::ConfigData::warnings' o='480' t='WarnAbout::What'/>
+<mbr r='Catch::ConfigData::showDurations' o='512' t='ShowDurations::OrNot'/>
+<mbr r='Catch::ConfigData::runOrder' o='544' t='RunTests::InWhatOrder'/>
+<mbr r='Catch::ConfigData::useColour' o='576' t='UseColour::YesOrNo'/>
+<mbr r='Catch::ConfigData::waitForKeypress' o='608' t='WaitForKeypress::When'/>
+<mbr r='Catch::ConfigData::outputFilename' o='640' t='std::string'/>
+<mbr r='Catch::ConfigData::name' o='896' t='std::string'/>
+<mbr r='Catch::ConfigData::processName' o='1152' t='std::string'/>
+<mbr r='Catch::ConfigData::reporterName' o='1408' t='std::string'/>
+<mbr r='Catch::ConfigData::testsOrTags' o='1664' t='std::vector&lt;std::string&gt;'/>
+<mbr r='Catch::ConfigData::sectionsToRun' o='1856' t='std::vector&lt;std::string&gt;'/>

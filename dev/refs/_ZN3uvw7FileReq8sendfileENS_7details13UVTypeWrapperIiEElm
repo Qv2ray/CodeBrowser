@@ -1,0 +1,12 @@
+<dec f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='684' type='void uvw::FileReq::sendfile(uvw::FileHandle out, int64_t offset, std::size_t length)'/>
+<def f='qv2ray/3rdparty/uvw/src/uvw/fs.cpp' l='177' ll='179' type='void uvw::FileReq::sendfile(uvw::FileHandle out, int64_t offset, std::size_t length)'/>
+<doc f='qv2ray/3rdparty/uvw/src/uvw/fs.h' l='674'>/**
+     * @brief Async [sendfile](http://linux.die.net/man/2/sendfile).
+     *
+     * Emit a `FsEvent&lt;FileReq::Type::SENDFILE&gt;` event when completed.&lt;br/&gt;
+     * Emit an ErrorEvent event in case of errors.
+     *
+     * @param out A valid instance of FileHandle.
+     * @param offset Offset, as described in the official documentation.
+     * @param length Length, as described in the official documentation.
+     */</doc>

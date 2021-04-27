@@ -1,0 +1,9 @@
+<dec f='qv2ray/src/common/QvTranslator.hpp' l='19' type='QStringList Qv2ray::common::QvTranslator::GetAvailableLanguages()'/>
+<use f='qv2ray/src/Qv2rayApplication.cpp' l='411' u='c' c='_ZN6Qv2ray17Qv2rayApplication17LoadConfigurationEv'/>
+<doc f='qv2ray/src/common/QvTranslator.hpp' l='15'>/**
+         * @brief get the available languages.
+         * @return (if available) languages (zh_CN, en_US, ...)
+         */</doc>
+<use f='qv2ray/src/common/QvTranslator.cpp' l='28' u='c' c='_ZN6Qv2ray6common12QvTranslatorC1Ev'/>
+<def f='qv2ray/src/common/QvTranslator.cpp' l='31' ll='42' type='QStringList Qv2ray::common::QvTranslator::GetAvailableLanguages()'/>
+<use f='qv2ray/src/ui/windows/w_PreferencesWindow.cpp' l='57' u='c' c='_ZN17PreferencesWindowC1EP7QWidget'/>

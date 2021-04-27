@@ -1,0 +1,12 @@
+<def f='include/grpcpp/impl/codegen/async_stream.h' l='1072' ll='1080' type='void grpc::ServerAsyncReaderWriter::WriteAndFinish(const W &amp; msg, grpc::WriteOptions options, const grpc::Status &amp; status, void * tag)'/>
+<doc f='include/grpcpp/impl/codegen/async_stream.h' l='1061'>/// See the \a ServerAsyncReaderWriterInterface.WriteAndFinish
+  /// method for semantics.
+  ///
+  /// Implicit input parameter:
+  ///   - the \a ServerContext associated with this call is used
+  ///     for sending trailing (and initial) metadata to the client.
+  ///
+  /// Note: \a status must have an OK code.
+  //
+  /// gRPC doesn&apos;t take ownership or a reference to \a msg and \a status, so it
+  /// is safe to to deallocate once WriteAndFinish returns.</doc>

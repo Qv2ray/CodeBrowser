@@ -1,0 +1,11 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.h' l='44' type='static ZXing::QRCode::EncodeResult ZXing::QRCode::Encoder::Encode(const std::wstring &amp; content, ZXing::QRCode::ErrorCorrectionLevel ecLevel, ZXing::CharacterSet encoding, int versionNumber, bool useGs1Format, int maskPattern)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.cpp' l='496' ll='582' type='static ZXing::QRCode::EncodeResult ZXing::QRCode::Encoder::Encode(const std::wstring &amp; content, ZXing::QRCode::ErrorCorrectionLevel ecLevel, ZXing::CharacterSet charset, int versionNumber, bool useGs1Format, int maskPattern)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QREncoder.h' l='36'>/**
+	* @param content text to encode
+	* @param ecLevel error correction level to use
+	* @param maskPattern Mask patern to use or -1 for automatically chosen pattern
+	* @return {@link QRCode} representing the encoded QR code
+	* @throws WriterException if encoding can&apos;t succeed, because of for example invalid content
+	*   or configuration
+	*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/qrcode/QRWriter.cpp' l='54' u='c' c='_ZNK5ZXing6QRCode6Writer6encodeERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEii'/>

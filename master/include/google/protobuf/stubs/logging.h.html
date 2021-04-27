@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>logging.h source code [include/google/protobuf/stubs/logging.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="google::protobuf::LogLevel,google::protobuf::LogSilencer,google::protobuf::internal::LogFinisher,google::protobuf::internal::LogMessage "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/google/protobuf/stubs/logging.h'; var root_path = '../../../..'; var data_path = '../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>google</a>/<a href='..'>protobuf</a>/<a href='./'>stubs</a>/<a href='logging.h.html'>logging.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Protocol Buffers - Google's data interchange format</i></td></tr>
+<tr><th id="2">2</th><td><i>// Copyright 2008 Google Inc.  All rights reserved.</i></td></tr>
+<tr><th id="3">3</th><td><i>// <a href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a></i></td></tr>
+<tr><th id="4">4</th><td><i>//</i></td></tr>
+<tr><th id="5">5</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="7">7</th><td><i>// met:</i></td></tr>
+<tr><th id="8">8</th><td><i>//</i></td></tr>
+<tr><th id="9">9</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="10">10</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="12">12</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="13">13</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="14">14</th><td><i>// distribution.</i></td></tr>
+<tr><th id="15">15</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="16">16</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="17">17</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="18">18</th><td><i>//</i></td></tr>
+<tr><th id="19">19</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="20">20</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="21">21</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="22">22</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="23">23</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="24">24</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="25">25</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="26">26</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="27">27</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="28">28</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="29">29</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">ifndef</span> <span class="macro" data-ref="_M/GOOGLE_PROTOBUF_STUBS_LOGGING_H_">GOOGLE_PROTOBUF_STUBS_LOGGING_H_</span></u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_PROTOBUF_STUBS_LOGGING_H_" data-ref="_M/GOOGLE_PROTOBUF_STUBS_LOGGING_H_">GOOGLE_PROTOBUF_STUBS_LOGGING_H_</dfn></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="macros.h.html">&lt;google/protobuf/stubs/macros.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="port.h.html">&lt;google/protobuf/stubs/port.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>// ===================================================================</i></td></tr>
+<tr><th id="38">38</th><td><i>// emulates google3/base/logging.h</i></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><b>namespace</b> <span class="namespace">google</span> {</td></tr>
+<tr><th id="41">41</th><td><b>namespace</b> <span class="namespace">protobuf</span> {</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><b>enum</b> <dfn class="type def" id="google::protobuf::LogLevel" title='google::protobuf::LogLevel' data-ref="google::protobuf::LogLevel" data-ref-filename="google..protobuf..LogLevel">LogLevel</dfn> {</td></tr>
+<tr><th id="44">44</th><td>  <dfn class="enum" id="google::protobuf::LOGLEVEL_INFO" title='google::protobuf::LOGLEVEL_INFO' data-ref="google::protobuf::LOGLEVEL_INFO" data-ref-filename="google..protobuf..LOGLEVEL_INFO">LOGLEVEL_INFO</dfn>,     <i>// Informational.  This is never actually used by</i></td></tr>
+<tr><th id="45">45</th><td>                     <i>// libprotobuf.</i></td></tr>
+<tr><th id="46">46</th><td>  <dfn class="enum" id="google::protobuf::LOGLEVEL_WARNING" title='google::protobuf::LOGLEVEL_WARNING' data-ref="google::protobuf::LOGLEVEL_WARNING" data-ref-filename="google..protobuf..LOGLEVEL_WARNING">LOGLEVEL_WARNING</dfn>,  <i>// Warns about issues that, although not technically a</i></td></tr>
+<tr><th id="47">47</th><td>                     <i>// problem now, could cause problems in the future.  For</i></td></tr>
+<tr><th id="48">48</th><td><i>                     // example, a // warning will be printed when parsing a</i></td></tr>
+<tr><th id="49">49</th><td><i>                     // message that is near the message size limit.</i></td></tr>
+<tr><th id="50">50</th><td>  <dfn class="enum" id="google::protobuf::LOGLEVEL_ERROR" title='google::protobuf::LOGLEVEL_ERROR' data-ref="google::protobuf::LOGLEVEL_ERROR" data-ref-filename="google..protobuf..LOGLEVEL_ERROR">LOGLEVEL_ERROR</dfn>,    <i>// An error occurred which should never happen during</i></td></tr>
+<tr><th id="51">51</th><td>                     <i>// normal use.</i></td></tr>
+<tr><th id="52">52</th><td>  <dfn class="enum" id="google::protobuf::LOGLEVEL_FATAL" title='google::protobuf::LOGLEVEL_FATAL' data-ref="google::protobuf::LOGLEVEL_FATAL" data-ref-filename="google..protobuf..LOGLEVEL_FATAL">LOGLEVEL_FATAL</dfn>,    <i>// An error occurred from which the library cannot</i></td></tr>
+<tr><th id="53">53</th><td>                     <i>// recover.  This usually indicates a programming error</i></td></tr>
+<tr><th id="54">54</th><td><i>                     // in the code which calls the library, especially when</i></td></tr>
+<tr><th id="55">55</th><td><i>                     // compiled in debug mode.</i></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="57">ifdef</span> <span class="macro" data-ref="_M/NDEBUG">NDEBUG</span></u></td></tr>
+<tr><th id="58">58</th><td>  LOGLEVEL_DFATAL = LOGLEVEL_ERROR</td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="57">else</span></u></td></tr>
+<tr><th id="60">60</th><td>  <dfn class="enum" id="google::protobuf::LOGLEVEL_DFATAL" title='google::protobuf::LOGLEVEL_DFATAL' data-ref="google::protobuf::LOGLEVEL_DFATAL" data-ref-filename="google..protobuf..LOGLEVEL_DFATAL">LOGLEVEL_DFATAL</dfn> = <a class="enum" href="#google::protobuf::LOGLEVEL_FATAL" title='google::protobuf::LOGLEVEL_FATAL' data-ref="google::protobuf::LOGLEVEL_FATAL" data-ref-filename="google..protobuf..LOGLEVEL_FATAL">LOGLEVEL_FATAL</a></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="57">endif</span></u></td></tr>
+<tr><th id="62">62</th><td>};</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><b>class</b> <a class="type" href="stringpiece.h.html#google::protobuf::StringPiece" title='google::protobuf::StringPiece' data-ref="google::protobuf::StringPiece" data-ref-filename="google..protobuf..StringPiece" id="google::protobuf::StringPiece">StringPiece</a>;</td></tr>
+<tr><th id="65">65</th><td><b>namespace</b> <span class="namespace">util</span> {</td></tr>
+<tr><th id="66">66</th><td><b>class</b> <dfn class="type" id="google::protobuf::util::Status" title='google::protobuf::util::Status' data-ref="google::protobuf::util::Status" data-ref-filename="google..protobuf..util..Status">Status</dfn>;</td></tr>
+<tr><th id="67">67</th><td>}</td></tr>
+<tr><th id="68">68</th><td><b>class</b> <dfn class="type" id="google::protobuf::uint128" title='google::protobuf::uint128' data-ref="google::protobuf::uint128" data-ref-filename="google..protobuf..uint128">uint128</dfn>;</td></tr>
+<tr><th id="69">69</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><b>class</b> <a class="type" href="#google::protobuf::internal::LogFinisher" title='google::protobuf::internal::LogFinisher' data-ref="google::protobuf::internal::LogFinisher" data-ref-filename="google..protobuf..internal..LogFinisher">LogFinisher</a>;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><b>class</b> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</dfn> {</td></tr>
+<tr><th id="74">74</th><td> <b>public</b>:</td></tr>
+<tr><th id="75">75</th><td>  <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci" title='google::protobuf::internal::LogMessage::LogMessage' data-ref="_ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci" data-ref-filename="_ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci">LogMessage</dfn>(<a class="type" href="#google::protobuf::LogLevel" title='google::protobuf::LogLevel' data-ref="google::protobuf::LogLevel" data-ref-filename="google..protobuf..LogLevel">LogLevel</a> <dfn class="local col6 decl" id="916level" title='level' data-type='google::protobuf::LogLevel' data-ref="916level" data-ref-filename="916level">level</dfn>, <em>const</em> <em>char</em>* <dfn class="local col7 decl" id="917filename" title='filename' data-type='const char *' data-ref="917filename" data-ref-filename="917filename">filename</dfn>, <em>int</em> <dfn class="local col8 decl" id="918line" title='line' data-type='int' data-ref="918line" data-ref-filename="918line">line</dfn>);</td></tr>
+<tr><th id="76">76</th><td>  <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessageD1Ev" title='google::protobuf::internal::LogMessage::~LogMessage' data-ref="_ZN6google8protobuf8internal10LogMessageD1Ev" data-ref-filename="_ZN6google8protobuf8internal10LogMessageD1Ev">~LogMessage</dfn>();</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"><b>operator</b>&lt;&lt;</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col9 decl" id="919value" title='value' data-type='const std::string &amp;' data-ref="919value" data-ref-filename="919value">value</dfn>);</td></tr>
+<tr><th id="79">79</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEPKc" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEPKc" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEPKc"><b>operator</b>&lt;&lt;</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="920value" title='value' data-type='const char *' data-ref="920value" data-ref-filename="920value">value</dfn>);</td></tr>
+<tr><th id="80">80</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEc" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEc" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEc"><b>operator</b>&lt;&lt;</dfn>(<em>char</em> <dfn class="local col1 decl" id="921value" title='value' data-type='char' data-ref="921value" data-ref-filename="921value">value</dfn>);</td></tr>
+<tr><th id="81">81</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEi" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEi" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEi"><b>operator</b>&lt;&lt;</dfn>(<em>int</em> <dfn class="local col2 decl" id="922value" title='value' data-type='int' data-ref="922value" data-ref-filename="922value">value</dfn>);</td></tr>
+<tr><th id="82">82</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEj" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEj" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEj"><b>operator</b>&lt;&lt;</dfn>(<a class="typedef" href="port.h.html#google::protobuf::uint" title='google::protobuf::uint' data-type='unsigned int' data-ref="google::protobuf::uint" data-ref-filename="google..protobuf..uint">uint</a> <dfn class="local col3 decl" id="923value" title='value' data-type='google::protobuf::uint' data-ref="923value" data-ref-filename="923value">value</dfn>);</td></tr>
+<tr><th id="83">83</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEl" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEl" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEl"><b>operator</b>&lt;&lt;</dfn>(<em>long</em> <dfn class="local col4 decl" id="924value" title='value' data-type='long' data-ref="924value" data-ref-filename="924value">value</dfn>);</td></tr>
+<tr><th id="84">84</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEm" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEm" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEm"><b>operator</b>&lt;&lt;</dfn>(<em>unsigned</em> <em>long</em> <dfn class="local col5 decl" id="925value" title='value' data-type='unsigned long' data-ref="925value" data-ref-filename="925value">value</dfn>);</td></tr>
+<tr><th id="85">85</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEx" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEx" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEx"><b>operator</b>&lt;&lt;</dfn>(<em>long</em> <em>long</em> <dfn class="local col6 decl" id="926value" title='value' data-type='long long' data-ref="926value" data-ref-filename="926value">value</dfn>);</td></tr>
+<tr><th id="86">86</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEy" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEy" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEy"><b>operator</b>&lt;&lt;</dfn>(<em>unsigned</em> <em>long</em> <em>long</em> <dfn class="local col7 decl" id="927value" title='value' data-type='unsigned long long' data-ref="927value" data-ref-filename="927value">value</dfn>);</td></tr>
+<tr><th id="87">87</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEd" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEd" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEd"><b>operator</b>&lt;&lt;</dfn>(<em>double</em> <dfn class="local col8 decl" id="928value" title='value' data-type='double' data-ref="928value" data-ref-filename="928value">value</dfn>);</td></tr>
+<tr><th id="88">88</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsEPv" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEPv" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEPv"><b>operator</b>&lt;&lt;</dfn>(<em>void</em>* <dfn class="local col9 decl" id="929value" title='value' data-type='void *' data-ref="929value" data-ref-filename="929value">value</dfn>);</td></tr>
+<tr><th id="89">89</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsERKNS0_11StringPieceE" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsERKNS0_11StringPieceE" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsERKNS0_11StringPieceE"><b>operator</b>&lt;&lt;</dfn>(<em>const</em> <a class="type" href="stringpiece.h.html#google::protobuf::StringPiece" title='google::protobuf::StringPiece' data-ref="google::protobuf::StringPiece" data-ref-filename="google..protobuf..StringPiece">StringPiece</a>&amp; <dfn class="local col0 decl" id="930value" title='value' data-type='const google::protobuf::StringPiece &amp;' data-ref="930value" data-ref-filename="930value">value</dfn>);</td></tr>
+<tr><th id="90">90</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsERKNS0_4util6StatusE" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsERKNS0_4util6StatusE" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsERKNS0_4util6StatusE"><b>operator</b>&lt;&lt;</dfn>(<em>const</em> <span class="namespace">::google::protobuf::util::</span><a class="type" href="#google::protobuf::util::Status" title='google::protobuf::util::Status' data-ref="google::protobuf::util::Status" data-ref-filename="google..protobuf..util..Status">Status</a>&amp; <dfn class="local col1 decl" id="931status" title='status' data-type='const ::google::protobuf::util::Status &amp;' data-ref="931status" data-ref-filename="931status">status</dfn>);</td></tr>
+<tr><th id="91">91</th><td>  <a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessagelsERKNS0_7uint128E" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsERKNS0_7uint128E" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsERKNS0_7uint128E"><b>operator</b>&lt;&lt;</dfn>(<em>const</em> <a class="type" href="#google::protobuf::uint128" title='google::protobuf::uint128' data-ref="google::protobuf::uint128" data-ref-filename="google..protobuf..uint128">uint128</a>&amp; <dfn class="local col2 decl" id="932value" title='value' data-type='const google::protobuf::uint128 &amp;' data-ref="932value" data-ref-filename="932value">value</dfn>);</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td> <b>private</b>:</td></tr>
+<tr><th id="94">94</th><td>  <b>friend</b> <b>class</b> <a class="type" href="#google::protobuf::internal::LogFinisher" title='google::protobuf::internal::LogFinisher' data-ref="google::protobuf::internal::LogFinisher" data-ref-filename="google..protobuf..internal..LogFinisher">LogFinisher</a>;</td></tr>
+<tr><th id="95">95</th><td>  <em>void</em> <dfn class="decl fn" id="_ZN6google8protobuf8internal10LogMessage6FinishEv" title='google::protobuf::internal::LogMessage::Finish' data-ref="_ZN6google8protobuf8internal10LogMessage6FinishEv" data-ref-filename="_ZN6google8protobuf8internal10LogMessage6FinishEv">Finish</dfn>();</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>  <a class="type" href="#google::protobuf::LogLevel" title='google::protobuf::LogLevel' data-ref="google::protobuf::LogLevel" data-ref-filename="google..protobuf..LogLevel">LogLevel</a> <dfn class="decl field" id="google::protobuf::internal::LogMessage::level_" title='google::protobuf::internal::LogMessage::level_' data-ref="google::protobuf::internal::LogMessage::level_" data-ref-filename="google..protobuf..internal..LogMessage..level_">level_</dfn>;</td></tr>
+<tr><th id="98">98</th><td>  <em>const</em> <em>char</em>* <dfn class="decl field" id="google::protobuf::internal::LogMessage::filename_" title='google::protobuf::internal::LogMessage::filename_' data-ref="google::protobuf::internal::LogMessage::filename_" data-ref-filename="google..protobuf..internal..LogMessage..filename_">filename_</dfn>;</td></tr>
+<tr><th id="99">99</th><td>  <em>int</em> <dfn class="decl field" id="google::protobuf::internal::LogMessage::line_" title='google::protobuf::internal::LogMessage::line_' data-ref="google::protobuf::internal::LogMessage::line_" data-ref-filename="google..protobuf..internal..LogMessage..line_">line_</dfn>;</td></tr>
+<tr><th id="100">100</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a> <dfn class="decl field" id="google::protobuf::internal::LogMessage::message_" title='google::protobuf::internal::LogMessage::message_' data-ref="google::protobuf::internal::LogMessage::message_" data-ref-filename="google..protobuf..internal..LogMessage..message_">message_</dfn>;</td></tr>
+<tr><th id="101">101</th><td>};</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><i>// Used to make the entire "LOG(BLAH) &lt;&lt; etc." expression have a void return</i></td></tr>
+<tr><th id="104">104</th><td><i>// type and print a newline after each message.</i></td></tr>
+<tr><th id="105">105</th><td><b>class</b> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::internal::LogFinisher" title='google::protobuf::internal::LogFinisher' data-ref="google::protobuf::internal::LogFinisher" data-ref-filename="google..protobuf..internal..LogFinisher">LogFinisher</dfn> {</td></tr>
+<tr><th id="106">106</th><td> <b>public</b>:</td></tr>
+<tr><th id="107">107</th><td>  <em>void</em> <dfn class="decl fn" id="_ZN6google8protobuf8internal11LogFinisheraSERNS1_10LogMessageE" title='google::protobuf::internal::LogFinisher::operator=' data-ref="_ZN6google8protobuf8internal11LogFinisheraSERNS1_10LogMessageE" data-ref-filename="_ZN6google8protobuf8internal11LogFinisheraSERNS1_10LogMessageE"><b>operator</b>=</dfn>(<a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a>&amp; <dfn class="local col3 decl" id="933other" title='other' data-type='google::protobuf::internal::LogMessage &amp;' data-ref="933other" data-ref-filename="933other">other</dfn>);</td></tr>
+<tr><th id="108">108</th><td>};</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="111">111</th><td><em>bool</em> <dfn class="decl def fn" id="_ZN6google8protobuf8internal4IsOkET_" title='google::protobuf::internal::IsOk' data-ref="_ZN6google8protobuf8internal4IsOkET_" data-ref-filename="_ZN6google8protobuf8internal4IsOkET_">IsOk</dfn>(T <dfn class="local col4 decl" id="934status" title='status' data-type='T' data-ref="934status" data-ref-filename="934status">status</dfn>) { <b>return</b> <a class="local col4 ref" href="#934status" title='status' data-ref="934status" data-ref-filename="934status">status</a>.ok(); }</td></tr>
+<tr><th id="112">112</th><td><b>template</b>&lt;&gt;</td></tr>
+<tr><th id="113">113</th><td><b>inline</b> <em>bool</em> <dfn class="decl def fn" id="_ZN6google8protobuf8internal4IsOkET_" title='google::protobuf::internal::IsOk' data-ref="_ZN6google8protobuf8internal4IsOkET_" data-ref-filename="_ZN6google8protobuf8internal4IsOkET_">IsOk</dfn>(<em>bool</em> <dfn class="local col5 decl" id="935status" title='status' data-type='bool' data-ref="935status" data-ref-filename="935status">status</dfn>) { <b>return</b> <a class="local col5 ref" href="#935status" title='status' data-ref="935status" data-ref-filename="935status">status</a>; }</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i>// Undef everything in case we're being mixed with some other Google library</i></td></tr>
+<tr><th id="118">118</th><td><i>// which already defined them itself.  Presumably all Google libraries will</i></td></tr>
+<tr><th id="119">119</th><td><i>// support the same syntax for these so it should not be a big deal if they</i></td></tr>
+<tr><th id="120">120</th><td><i>// end up using our definitions instead.</i></td></tr>
+<tr><th id="121">121</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_LOG">GOOGLE_LOG</span></u></td></tr>
+<tr><th id="122">122</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_LOG_IF">GOOGLE_LOG_IF</span></u></td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK">GOOGLE_CHECK</span></u></td></tr>
+<tr><th id="125">125</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_OK">GOOGLE_CHECK_OK</span></u></td></tr>
+<tr><th id="126">126</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_EQ">GOOGLE_CHECK_EQ</span></u></td></tr>
+<tr><th id="127">127</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_NE">GOOGLE_CHECK_NE</span></u></td></tr>
+<tr><th id="128">128</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_LT">GOOGLE_CHECK_LT</span></u></td></tr>
+<tr><th id="129">129</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_LE">GOOGLE_CHECK_LE</span></u></td></tr>
+<tr><th id="130">130</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_GT">GOOGLE_CHECK_GT</span></u></td></tr>
+<tr><th id="131">131</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_GE">GOOGLE_CHECK_GE</span></u></td></tr>
+<tr><th id="132">132</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_CHECK_NOTNULL">GOOGLE_CHECK_NOTNULL</span></u></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DLOG">GOOGLE_DLOG</span></u></td></tr>
+<tr><th id="135">135</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK">GOOGLE_DCHECK</span></u></td></tr>
+<tr><th id="136">136</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_OK">GOOGLE_DCHECK_OK</span></u></td></tr>
+<tr><th id="137">137</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_EQ">GOOGLE_DCHECK_EQ</span></u></td></tr>
+<tr><th id="138">138</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_NE">GOOGLE_DCHECK_NE</span></u></td></tr>
+<tr><th id="139">139</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_LT">GOOGLE_DCHECK_LT</span></u></td></tr>
+<tr><th id="140">140</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_LE">GOOGLE_DCHECK_LE</span></u></td></tr>
+<tr><th id="141">141</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_GT">GOOGLE_DCHECK_GT</span></u></td></tr>
+<tr><th id="142">142</th><td><u>#undef <span class="macro" data-ref="_M/GOOGLE_DCHECK_GE">GOOGLE_DCHECK_GE</span></u></td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_LOG" data-ref="_M/GOOGLE_LOG">GOOGLE_LOG</dfn>(LEVEL)                                                 \</u></td></tr>
+<tr><th id="145">145</th><td><u>  ::google::protobuf::internal::<a class="type" href="#google::protobuf::internal::LogFinisher" title='google::protobuf::internal::LogFinisher' data-ref="google::protobuf::internal::LogFinisher" data-ref-filename="google..protobuf..internal..LogFinisher">LogFinisher</a><a class="ref fn" href="#105" title='google::protobuf::internal::LogFinisher::LogFinisher' data-ref="_ZN6google8protobuf8internal11LogFinisherC1Ev" data-ref-filename="_ZN6google8protobuf8internal11LogFinisherC1Ev">(</a>) <a class="ref fn" href="#_ZN6google8protobuf8internal11LogFinisheraSERNS1_10LogMessageE" title='google::protobuf::internal::LogFinisher::operator=' data-ref="_ZN6google8protobuf8internal11LogFinisheraSERNS1_10LogMessageE" data-ref-filename="_ZN6google8protobuf8internal11LogFinisheraSERNS1_10LogMessageE">=</a>                           \</u></td></tr>
+<tr><th id="146">146</th><td><u>    ::google::protobuf::internal::<a class="type" href="#google::protobuf::internal::LogMessage" title='google::protobuf::internal::LogMessage' data-ref="google::protobuf::internal::LogMessage" data-ref-filename="google..protobuf..internal..LogMessage">LogMessage</a><a class="ref fn" href="#_ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci" title='google::protobuf::internal::LogMessage::LogMessage' data-ref="_ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci" data-ref-filename="_ZN6google8protobuf8internal10LogMessageC1ENS0_8LogLevelEPKci">(</a>                             \</u></td></tr>
+<tr><th id="147">147</th><td><u>      ::google::protobuf::LOGLEVEL_##LEVEL, __FILE__, __LINE__)</u></td></tr>
+<tr><th id="148">148</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_LOG_IF" data-ref="_M/GOOGLE_LOG_IF">GOOGLE_LOG_IF</dfn>(LEVEL, CONDITION) \</u></td></tr>
+<tr><th id="149">149</th><td><u>  !(CONDITION) ? (void)0 : GOOGLE_LOG(LEVEL)</u></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK" data-ref="_M/GOOGLE_CHECK">GOOGLE_CHECK</dfn>(EXPRESSION) \</u></td></tr>
+<tr><th id="152">152</th><td><u>  GOOGLE_LOG_IF(FATAL, !(EXPRESSION)) &lt;&lt; "CHECK failed: " #EXPRESSION ": "</u></td></tr>
+<tr><th id="153">153</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_OK" data-ref="_M/GOOGLE_CHECK_OK">GOOGLE_CHECK_OK</dfn>(A) GOOGLE_CHECK(::google::protobuf::internal::IsOk(A))</u></td></tr>
+<tr><th id="154">154</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_EQ" data-ref="_M/GOOGLE_CHECK_EQ">GOOGLE_CHECK_EQ</dfn>(A, B) GOOGLE_CHECK((A) == (B))</u></td></tr>
+<tr><th id="155">155</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_NE" data-ref="_M/GOOGLE_CHECK_NE">GOOGLE_CHECK_NE</dfn>(A, B) GOOGLE_CHECK((A) != (B))</u></td></tr>
+<tr><th id="156">156</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_LT" data-ref="_M/GOOGLE_CHECK_LT">GOOGLE_CHECK_LT</dfn>(A, B) GOOGLE_CHECK((A) &lt;  (B))</u></td></tr>
+<tr><th id="157">157</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_LE" data-ref="_M/GOOGLE_CHECK_LE">GOOGLE_CHECK_LE</dfn>(A, B) GOOGLE_CHECK((A) &lt;= (B))</u></td></tr>
+<tr><th id="158">158</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_GT" data-ref="_M/GOOGLE_CHECK_GT">GOOGLE_CHECK_GT</dfn>(A, B) GOOGLE_CHECK((A) &gt;  (B))</u></td></tr>
+<tr><th id="159">159</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_GE" data-ref="_M/GOOGLE_CHECK_GE">GOOGLE_CHECK_GE</dfn>(A, B) GOOGLE_CHECK((A) &gt;= (B))</u></td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="162">162</th><td><b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="163">163</th><td>T* <dfn class="decl def fn" id="_ZN6google8protobuf8internal12CheckNotNullEPKciS3_PT_" title='google::protobuf::internal::CheckNotNull' data-ref="_ZN6google8protobuf8internal12CheckNotNullEPKciS3_PT_" data-ref-filename="_ZN6google8protobuf8internal12CheckNotNullEPKciS3_PT_">CheckNotNull</dfn>(<em>const</em> <em>char</em>* <i>/* file */</i>, <em>int</em> <i>/* line */</i>,</td></tr>
+<tr><th id="164">164</th><td>                <em>const</em> <em>char</em>* <dfn class="local col6 decl" id="936name" title='name' data-type='const char *' data-ref="936name" data-ref-filename="936name">name</dfn>, T* <dfn class="local col7 decl" id="937val" title='val' data-type='T *' data-ref="937val" data-ref-filename="937val">val</dfn>) {</td></tr>
+<tr><th id="165">165</th><td>  <b>if</b> (<a class="local col7 ref" href="#937val" title='val' data-ref="937val" data-ref-filename="937val">val</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="166">166</th><td>    <a class="macro" href="#144" title="::google::protobuf::internal::LogFinisher() = ::google::protobuf::internal::LogMessage( ::google::protobuf::LOGLEVEL_FATAL, &quot;/usr/include/google/protobuf/stubs/logging.h&quot;, 166)" data-ref="_M/GOOGLE_LOG">GOOGLE_LOG</a>(FATAL) <a class="ref fn" href="#_ZN6google8protobuf8internal10LogMessagelsEPKc" title='google::protobuf::internal::LogMessage::operator&lt;&lt;' data-ref="_ZN6google8protobuf8internal10LogMessagelsEPKc" data-ref-filename="_ZN6google8protobuf8internal10LogMessagelsEPKc">&lt;&lt;</a> <a class="local col6 ref" href="#936name" title='name' data-ref="936name" data-ref-filename="936name">name</a>;</td></tr>
+<tr><th id="167">167</th><td>  }</td></tr>
+<tr><th id="168">168</th><td>  <b>return</b> <a class="local col7 ref" href="#937val" title='val' data-ref="937val" data-ref-filename="937val">val</a>;</td></tr>
+<tr><th id="169">169</th><td>}</td></tr>
+<tr><th id="170">170</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="171">171</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_CHECK_NOTNULL" data-ref="_M/GOOGLE_CHECK_NOTNULL">GOOGLE_CHECK_NOTNULL</dfn>(A) \</u></td></tr>
+<tr><th id="172">172</th><td><u>  ::google::protobuf::internal::CheckNotNull(\</u></td></tr>
+<tr><th id="173">173</th><td><u>      __FILE__, __LINE__, "'" #A "' must not be NULL", (A))</u></td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><u>#<span data-ppcond="175">ifdef</span> <span class="macro" data-ref="_M/NDEBUG">NDEBUG</span></u></td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><u>#define GOOGLE_DLOG(LEVEL) GOOGLE_LOG_IF(LEVEL, false)</u></td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><u>#define GOOGLE_DCHECK(EXPRESSION) while(false) GOOGLE_CHECK(EXPRESSION)</u></td></tr>
+<tr><th id="180">180</th><td><u>#define GOOGLE_DCHECK_OK(E) GOOGLE_DCHECK(::google::protobuf::internal::IsOk(E))</u></td></tr>
+<tr><th id="181">181</th><td><u>#define GOOGLE_DCHECK_EQ(A, B) GOOGLE_DCHECK((A) == (B))</u></td></tr>
+<tr><th id="182">182</th><td><u>#define GOOGLE_DCHECK_NE(A, B) GOOGLE_DCHECK((A) != (B))</u></td></tr>
+<tr><th id="183">183</th><td><u>#define GOOGLE_DCHECK_LT(A, B) GOOGLE_DCHECK((A) &lt;  (B))</u></td></tr>
+<tr><th id="184">184</th><td><u>#define GOOGLE_DCHECK_LE(A, B) GOOGLE_DCHECK((A) &lt;= (B))</u></td></tr>
+<tr><th id="185">185</th><td><u>#define GOOGLE_DCHECK_GT(A, B) GOOGLE_DCHECK((A) &gt;  (B))</u></td></tr>
+<tr><th id="186">186</th><td><u>#define GOOGLE_DCHECK_GE(A, B) GOOGLE_DCHECK((A) &gt;= (B))</u></td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td><u>#<span data-ppcond="175">else</span>  // NDEBUG</u></td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DLOG" data-ref="_M/GOOGLE_DLOG">GOOGLE_DLOG</dfn> GOOGLE_LOG</u></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK" data-ref="_M/GOOGLE_DCHECK">GOOGLE_DCHECK</dfn>    GOOGLE_CHECK</u></td></tr>
+<tr><th id="193">193</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_OK" data-ref="_M/GOOGLE_DCHECK_OK">GOOGLE_DCHECK_OK</dfn> GOOGLE_CHECK_OK</u></td></tr>
+<tr><th id="194">194</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_EQ" data-ref="_M/GOOGLE_DCHECK_EQ">GOOGLE_DCHECK_EQ</dfn> GOOGLE_CHECK_EQ</u></td></tr>
+<tr><th id="195">195</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_NE" data-ref="_M/GOOGLE_DCHECK_NE">GOOGLE_DCHECK_NE</dfn> GOOGLE_CHECK_NE</u></td></tr>
+<tr><th id="196">196</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_LT" data-ref="_M/GOOGLE_DCHECK_LT">GOOGLE_DCHECK_LT</dfn> GOOGLE_CHECK_LT</u></td></tr>
+<tr><th id="197">197</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_LE" data-ref="_M/GOOGLE_DCHECK_LE">GOOGLE_DCHECK_LE</dfn> GOOGLE_CHECK_LE</u></td></tr>
+<tr><th id="198">198</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_GT" data-ref="_M/GOOGLE_DCHECK_GT">GOOGLE_DCHECK_GT</dfn> GOOGLE_CHECK_GT</u></td></tr>
+<tr><th id="199">199</th><td><u>#define <dfn class="macro" id="_M/GOOGLE_DCHECK_GE" data-ref="_M/GOOGLE_DCHECK_GE">GOOGLE_DCHECK_GE</dfn> GOOGLE_CHECK_GE</u></td></tr>
+<tr><th id="200">200</th><td></td></tr>
+<tr><th id="201">201</th><td><u>#<span data-ppcond="175">endif</span>  // !NDEBUG</u></td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="google::protobuf::LogHandler" title='google::protobuf::LogHandler' data-type='void (google::protobuf::LogLevel, const char *, int, const std::string &amp;)' data-ref="google::protobuf::LogHandler" data-ref-filename="google..protobuf..LogHandler">LogHandler</dfn>(<a class="type" href="#google::protobuf::LogLevel" title='google::protobuf::LogLevel' data-ref="google::protobuf::LogLevel" data-ref-filename="google..protobuf..LogLevel">LogLevel</a> <dfn class="local col8 decl" id="938level" title='level' data-type='google::protobuf::LogLevel' data-ref="938level" data-ref-filename="938level">level</dfn>, <em>const</em> <em>char</em>* <dfn class="local col9 decl" id="939filename" title='filename' data-type='const char *' data-ref="939filename" data-ref-filename="939filename">filename</dfn>, <em>int</em> <dfn class="local col0 decl" id="940line" title='line' data-type='int' data-ref="940line" data-ref-filename="940line">line</dfn>,</td></tr>
+<tr><th id="204">204</th><td>                        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../c++/10/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string" data-ref-filename="std..string">string</a>&amp; <dfn class="local col1 decl" id="941message" title='message' data-type='const std::string &amp;' data-ref="941message" data-ref-filename="941message">message</dfn>);</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><i>// The protobuf library sometimes writes warning and error messages to</i></td></tr>
+<tr><th id="207">207</th><td><i>// stderr.  These messages are primarily useful for developers, but may</i></td></tr>
+<tr><th id="208">208</th><td><i>// also help end users figure out a problem.  If you would prefer that</i></td></tr>
+<tr><th id="209">209</th><td><i>// these messages be sent somewhere other than stderr, call SetLogHandler()</i></td></tr>
+<tr><th id="210">210</th><td><i>// to set your own handler.  This returns the old handler.  Set the handler</i></td></tr>
+<tr><th id="211">211</th><td><i>// to NULL to ignore log messages (but see also LogSilencer, below).</i></td></tr>
+<tr><th id="212">212</th><td><i>//</i></td></tr>
+<tr><th id="213">213</th><td><i>// Obviously, SetLogHandler is not thread-safe.  You should only call it</i></td></tr>
+<tr><th id="214">214</th><td><i>// at initialization time, and probably not from library code.  If you</i></td></tr>
+<tr><th id="215">215</th><td><i>// simply want to suppress log messages temporarily (e.g. because you</i></td></tr>
+<tr><th id="216">216</th><td><i>// have some code that tends to trigger them frequently and you know</i></td></tr>
+<tr><th id="217">217</th><td><i>// the warnings are not important to you), use the LogSilencer class</i></td></tr>
+<tr><th id="218">218</th><td><i>// below.</i></td></tr>
+<tr><th id="219">219</th><td><a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <a class="typedef" href="#google::protobuf::LogHandler" title='google::protobuf::LogHandler' data-type='void (google::protobuf::LogLevel, const char *, int, const std::string &amp;)' data-ref="google::protobuf::LogHandler" data-ref-filename="google..protobuf..LogHandler">LogHandler</a>* <dfn class="decl fn" id="_ZN6google8protobuf13SetLogHandlerEPFvNS0_8LogLevelEPKciRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE" title='google::protobuf::SetLogHandler' data-ref="_ZN6google8protobuf13SetLogHandlerEPFvNS0_8LogLevelEPKciRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE" data-ref-filename="_ZN6google8protobuf13SetLogHandlerEPFvNS0_8LogLevelEPKciRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE">SetLogHandler</dfn>(<a class="typedef" href="#google::protobuf::LogHandler" title='google::protobuf::LogHandler' data-type='void (google::protobuf::LogLevel, const char *, int, const std::string &amp;)' data-ref="google::protobuf::LogHandler" data-ref-filename="google..protobuf..LogHandler">LogHandler</a>* <dfn class="local col2 decl" id="942new_func" title='new_func' data-type='google::protobuf::LogHandler *' data-ref="942new_func" data-ref-filename="942new_func">new_func</dfn>);</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td><i>// Create a LogSilencer if you want to temporarily suppress all log</i></td></tr>
+<tr><th id="222">222</th><td><i>// messages.  As long as any LogSilencer objects exist, non-fatal</i></td></tr>
+<tr><th id="223">223</th><td><i>// log messages will be discarded (the current LogHandler will *not*</i></td></tr>
+<tr><th id="224">224</th><td><i>// be called).  Constructing a LogSilencer is thread-safe.  You may</i></td></tr>
+<tr><th id="225">225</th><td><i>// accidentally suppress log messages occurring in another thread, but</i></td></tr>
+<tr><th id="226">226</th><td><i>// since messages are generally for debugging purposes only, this isn't</i></td></tr>
+<tr><th id="227">227</th><td><i>// a big deal.  If you want to intercept log messages, use SetLogHandler().</i></td></tr>
+<tr><th id="228">228</th><td><b>class</b> <a class="macro" href="port.h.html#87" title="" data-ref="_M/LIBPROTOBUF_EXPORT">LIBPROTOBUF_EXPORT</a> <dfn class="type def" id="google::protobuf::LogSilencer" title='google::protobuf::LogSilencer' data-ref="google::protobuf::LogSilencer" data-ref-filename="google..protobuf..LogSilencer">LogSilencer</dfn> {</td></tr>
+<tr><th id="229">229</th><td> <b>public</b>:</td></tr>
+<tr><th id="230">230</th><td>  <dfn class="decl fn" id="_ZN6google8protobuf11LogSilencerC1Ev" title='google::protobuf::LogSilencer::LogSilencer' data-ref="_ZN6google8protobuf11LogSilencerC1Ev" data-ref-filename="_ZN6google8protobuf11LogSilencerC1Ev">LogSilencer</dfn>();</td></tr>
+<tr><th id="231">231</th><td>  <dfn class="decl fn" id="_ZN6google8protobuf11LogSilencerD1Ev" title='google::protobuf::LogSilencer::~LogSilencer' data-ref="_ZN6google8protobuf11LogSilencerD1Ev" data-ref-filename="_ZN6google8protobuf11LogSilencerD1Ev">~LogSilencer</dfn>();</td></tr>
+<tr><th id="232">232</th><td>};</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td>}  <i>// namespace protobuf</i></td></tr>
+<tr><th id="235">235</th><td>}  <i>// namespace google</i></td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><u>#<span data-ppcond="31">endif</span>  // GOOGLE_PROTOBUF_STUBS_LOGGING_H_</u></td></tr>
+<tr><th id="238">238</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray-baselib_autogen/mocs_compilation.cpp.html'>/qv2ray-baselib_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

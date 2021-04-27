@@ -1,0 +1,66 @@
+<dec f='qv2ray/3rdparty/libuv/include/uv.h' l='495' macro='1' type='uv__io_t'/>
+<offset>1088</offset>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='193' macro='1' u='m' c='uv__socket_sockopt'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/core.c' l='762' macro='1' u='m' c='uv_fileno'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/process.c' l='202' macro='1' u='m' c='uv__process_init_stdio'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='119' u='a' c='uv__stream_init'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='411' u='m' c='uv__stream_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='411' u='m' c='uv__stream_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='437' u='m' c='uv__stream_open'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='459' u='a' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='459' u='a' c='uv__stream_destroy'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='537' u='a' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='542' macro='1' u='m' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='550' macro='1' u='m' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='559' macro='1' u='m' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='574' u='a' c='uv__server_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='650' u='a' c='uv_accept'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='684' u='a' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='699' macro='1' u='m' c='uv__drain'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='784' u='a' c='uv__write_req_finish'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='792' u='m' c='uv__handle_fd'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='813' macro='1' u='m' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='813' macro='1' u='m' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='883' macro='1' u='m' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='891' macro='1' u='m' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='910' u='a' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='920' u='a' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='921' u='a' c='uv__write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1004' u='a' c='uv__stream_eof'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1005' u='a' c='uv__stream_eof'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1151' macro='1' u='m' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1151' macro='1' u='m' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1155' macro='1' u='m' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1170' macro='1' u='m' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1180' u='a' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1194' u='a' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1195' u='a' c='uv__read'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1271' macro='1' u='m' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1271' macro='1' u='m' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1280' u='a' c='uv_shutdown'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1302' macro='1' u='m' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1302' macro='1' u='m' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1308' macro='1' u='m' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1325' macro='1' u='m' c='uv__stream_io'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1361' macro='1' u='m' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1361' macro='1' u='m' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1362' macro='1' u='m' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1377' u='a' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1383' macro='1' u='m' c='uv__stream_connect'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1407' macro='1' u='m' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1481' u='a' c='uv_write2'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1520' u='a' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1544' u='a' c='uv_try_write'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1576' macro='1' u='m' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1576' macro='1' u='m' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1582' u='a' c='uv_read_start'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1595' u='a' c='uv_read_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1596' u='a' c='uv_read_stop'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1658' u='a' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1663' u='m' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1665' u='m' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1666' u='m' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1667' u='m' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1684' u='a' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1684' u='a' c='uv__stream_close'/>
+<use f='qv2ray/3rdparty/libuv/src/unix/stream.c' l='1692' macro='1' u='m' c='uv_stream_set_blocking'/>

@@ -1,0 +1,5 @@
+<dec f='include/google/protobuf/repeated_field.h' l='164' type='Element * google::protobuf::RepeatedField::AddAlreadyReserved()'/>
+<def f='include/google/protobuf/repeated_field.h' l='1137' ll='1141' type='Element * google::protobuf::RepeatedField::AddAlreadyReserved()'/>
+<doc f='include/google/protobuf/repeated_field.h' l='161'>// Appends a new element and return a pointer to it.
+  // The new element is uninitialized if |Element| is a POD type.
+  // Should be called only if Capacity() &gt; Size().</doc>

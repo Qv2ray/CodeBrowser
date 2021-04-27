@@ -1,0 +1,25 @@
+<dec f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.h' l='83' type='static void ZXing::BigInteger::Divide(const ZXing::BigInteger &amp; a, const ZXing::BigInteger &amp; b, ZXing::BigInteger &amp; quotient, ZXing::BigInteger &amp; remainder)'/>
+<def f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='521' ll='580' type='static void ZXing::BigInteger::Divide(const ZXing::BigInteger &amp; a, const ZXing::BigInteger &amp; b, ZXing::BigInteger &amp; quotient, ZXing::BigInteger &amp; remainder)'/>
+<doc f='qv2ray/3rdparty/zxing-cpp/core/src/ZXBigInteger.cpp' l='499'>/*
+* DIVISION WITH REMAINDER
+* Please read the comments before the definition of
+* `BigUnsigned::divideWithRemainder&apos; in `BigUnsigned.cc&apos; for lots of
+* information you should know before reading this function.
+*
+* Following Knuth, I decree that x / y is to be
+* 0 if y==0 and floor(real-number x / y) if y!=0.
+* Then x % y shall be x - y*(integer x / y).
+*
+* Note that x = y * (x / y) + (x % y) always holds.
+* In addition, (x % y) is from 0 to y - 1 if y &gt; 0,
+* and from -(|y| - 1) to 0 if y &lt; 0.  (x % y) = x if y = 0.
+*
+* Examples: (q = a / b, r = a % b)
+*	a	b	q	r
+*	===	===	===	===
+*	4	3	1	1
+*	-4	3	-2	2
+*	4	-3	-2	-2
+*	-4	-3	1	-1
+*/</doc>
+<use f='qv2ray/3rdparty/zxing-cpp/core/src/pdf417/PDFHighLevelEncoder.cpp' l='400' u='c' c='_ZN5ZXing6Pdf417L13EncodeNumericERKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEiiRSt6vectorIiSaIiEE'/>

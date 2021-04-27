@@ -1,0 +1,4 @@
+<inh f='include/google/protobuf/io/zero_copy_stream.h' l='206' c='_ZN6google8protobuf2io20ZeroCopyOutputStream4NextEPPvPi'/>
+<def f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='81' ll='113' type='bool grpc::ProtoBufferWriter::Next(void ** data, int * size)'/>
+<doc f='include/grpcpp/impl/codegen/proto_buffer_writer.h' l='79'>/// Give the proto library the next buffer of bytes and its size. It is
+  /// safe for the caller to write from data[0, size - 1].</doc>

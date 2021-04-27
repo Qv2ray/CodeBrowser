@@ -1,0 +1,10 @@
+<def f='include/c++/10/bits/std_function.h' l='427' ll='437' type='function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp; std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::operator=(std::nullptr_t )'/>
+<doc f='include/c++/10/bits/std_function.h' l='420'>/**
+       *  @brief %Function assignment to zero.
+       *  @post @c !(bool)*this
+       *  @returns @c *this
+       *
+       *  The target of @c *this is deallocated, leaving it empty.
+       */</doc>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='103' u='c' c='_ZN4grpc8internal21CallbackWithStatusTag3RunEb'/>
+<use f='include/grpcpp/impl/codegen/callback_common.h' l='156' u='c' c='_ZN4grpc8internal22CallbackWithSuccessTag3RunEb'/>

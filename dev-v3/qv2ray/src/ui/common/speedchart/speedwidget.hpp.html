@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>speedwidget.hpp source code [qv2ray/src/ui/common/speedchart/speedwidget.hpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="SpeedWidget "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'qv2ray/src/ui/common/speedchart/speedwidget.hpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data'; var ecma_script_api_version = 2;</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>qv2ray</a>/<a href='../../..'>src</a>/<a href='../..'>ui</a>/<a href='..'>common</a>/<a href='./'>speedchart</a>/<a href='speedwidget.hpp.html'>speedwidget.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Bittorrent Client using Qt and libtorrent.</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2015 Anton Lashkov &lt;lenton_91@mail.ru&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This program is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU General Public License</i></td></tr>
+<tr><th id="7">7</th><td><i> * as published by the Free Software Foundation; either version 2</i></td></tr>
+<tr><th id="8">8</th><td><i> * of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="13">13</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU General Public License</i></td></tr>
+<tr><th id="16">16</th><td><i> * along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="17">17</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> * In addition, as a special exception, the copyright holders give permission to</i></td></tr>
+<tr><th id="20">20</th><td><i> * link this program with the OpenSSL project's "OpenSSL" library (or with</i></td></tr>
+<tr><th id="21">21</th><td><i> * modified versions of it that use the same license as the "OpenSSL" library),</i></td></tr>
+<tr><th id="22">22</th><td><i> * and distribute the linked executables. You must obey the GNU General Public</i></td></tr>
+<tr><th id="23">23</th><td><i> * License in all respects for all of the code used other than "OpenSSL".  If you</i></td></tr>
+<tr><th id="24">24</th><td><i> * modify file(s), you may extend this exception to your version of the file(s),</i></td></tr>
+<tr><th id="25">25</th><td><i> * but you are not obligated to do so. If you do not wish to do so, delete this</i></td></tr>
+<tr><th id="26">26</th><td><i> * exception statement from your version.</i></td></tr>
+<tr><th id="27">27</th><td><i> */</i></td></tr>
+<tr><th id="28">28</th><td><u>#pragma once</u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#include &lt;QGraphicsView&gt;</u></td></tr>
+<tr><th id="31">31</th><td><u>#include &lt;QMap&gt;</u></td></tr>
+<tr><th id="32">32</th><td><u>#include &lt;QPen&gt;</u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>class</b> <dfn class="type def" id="SpeedWidget" title='SpeedWidget' data-ref="SpeedWidget" data-ref-filename="SpeedWidget">SpeedWidget</dfn> : <b>public</b> <span class='type' title='QGraphicsView' data-ref="QGraphicsView" data-ref-filename="QGraphicsView">QGraphicsView</span></td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>    <span class="macro" title="public: static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); static inline QString tr(const char *s, const char *c = nullptr, int n = -1) { return staticMetaObject.tr(s, c, n); } private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</span></td></tr>
+<tr><th id="37">37</th><td>  <b>public</b>:</td></tr>
+<tr><th id="38">38</th><td>    <b>enum</b> <dfn class="type def" id="SpeedWidget::GraphType" title='SpeedWidget::GraphType' data-ref="SpeedWidget::GraphType" data-ref-filename="SpeedWidget..GraphType">GraphType</dfn></td></tr>
+<tr><th id="39">39</th><td>    {</td></tr>
+<tr><th id="40">40</th><td>        <dfn class="enum" id="SpeedWidget::INBOUND_UP" title='SpeedWidget::INBOUND_UP' data-ref="SpeedWidget::INBOUND_UP" data-ref-filename="SpeedWidget..INBOUND_UP">INBOUND_UP</dfn>,</td></tr>
+<tr><th id="41">41</th><td>        <dfn class="enum" id="SpeedWidget::INBOUND_DOWN" title='SpeedWidget::INBOUND_DOWN' data-ref="SpeedWidget::INBOUND_DOWN" data-ref-filename="SpeedWidget..INBOUND_DOWN">INBOUND_DOWN</dfn>,</td></tr>
+<tr><th id="42">42</th><td>        <dfn class="enum" id="SpeedWidget::OUTBOUND_PROXY_UP" title='SpeedWidget::OUTBOUND_PROXY_UP' data-ref="SpeedWidget::OUTBOUND_PROXY_UP" data-ref-filename="SpeedWidget..OUTBOUND_PROXY_UP">OUTBOUND_PROXY_UP</dfn>,</td></tr>
+<tr><th id="43">43</th><td>        <dfn class="enum" id="SpeedWidget::OUTBOUND_PROXY_DOWN" title='SpeedWidget::OUTBOUND_PROXY_DOWN' data-ref="SpeedWidget::OUTBOUND_PROXY_DOWN" data-ref-filename="SpeedWidget..OUTBOUND_PROXY_DOWN">OUTBOUND_PROXY_DOWN</dfn>,</td></tr>
+<tr><th id="44">44</th><td>        <dfn class="enum" id="SpeedWidget::OUTBOUND_DIRECT_UP" title='SpeedWidget::OUTBOUND_DIRECT_UP' data-ref="SpeedWidget::OUTBOUND_DIRECT_UP" data-ref-filename="SpeedWidget..OUTBOUND_DIRECT_UP">OUTBOUND_DIRECT_UP</dfn>,</td></tr>
+<tr><th id="45">45</th><td>        <dfn class="enum" id="SpeedWidget::OUTBOUND_DIRECT_DOWN" title='SpeedWidget::OUTBOUND_DIRECT_DOWN' data-ref="SpeedWidget::OUTBOUND_DIRECT_DOWN" data-ref-filename="SpeedWidget..OUTBOUND_DIRECT_DOWN">OUTBOUND_DIRECT_DOWN</dfn>,</td></tr>
+<tr><th id="46">46</th><td>        <dfn class="enum" id="SpeedWidget::OUTBOUND_BLOCK_UP" title='SpeedWidget::OUTBOUND_BLOCK_UP' data-ref="SpeedWidget::OUTBOUND_BLOCK_UP" data-ref-filename="SpeedWidget..OUTBOUND_BLOCK_UP">OUTBOUND_BLOCK_UP</dfn>,</td></tr>
+<tr><th id="47">47</th><td>        <dfn class="enum" id="SpeedWidget::OUTBOUND_BLOCK_DOWN" title='SpeedWidget::OUTBOUND_BLOCK_DOWN' data-ref="SpeedWidget::OUTBOUND_BLOCK_DOWN" data-ref-filename="SpeedWidget..OUTBOUND_BLOCK_DOWN">OUTBOUND_BLOCK_DOWN</dfn>,</td></tr>
+<tr><th id="48">48</th><td>        <dfn class="enum" id="SpeedWidget::NB_GRAPHS" title='SpeedWidget::NB_GRAPHS' data-ref="SpeedWidget::NB_GRAPHS" data-ref-filename="SpeedWidget..NB_GRAPHS">NB_GRAPHS</dfn>,</td></tr>
+<tr><th id="49">49</th><td>    };</td></tr>
+<tr><th id="50">50</th><td>    <b>struct</b> <dfn class="type def" id="SpeedWidget::PointData" title='SpeedWidget::PointData' data-ref="SpeedWidget::PointData" data-ref-filename="SpeedWidget..PointData">PointData</dfn></td></tr>
+<tr><th id="51">51</th><td>    {</td></tr>
+<tr><th id="52">52</th><td>        <span class='typedef' title='qint64' data-type='long long' data-ref="qint64" data-ref-filename="qint64">qint64</span> <dfn class="decl field" id="SpeedWidget::PointData::x" title='SpeedWidget::PointData::x' data-ref="SpeedWidget::PointData::x" data-ref-filename="SpeedWidget..PointData..x">x</dfn>;</td></tr>
+<tr><th id="53">53</th><td>        <span class='typedef' title='quint64' data-type='unsigned long long' data-ref="quint64" data-ref-filename="quint64">quint64</span> <dfn class="decl field" id="SpeedWidget::PointData::y" title='SpeedWidget::PointData::y' data-ref="SpeedWidget::PointData::y" data-ref-filename="SpeedWidget..PointData..y">y</dfn>[<a class="enum" href="#SpeedWidget::NB_GRAPHS" title='SpeedWidget::NB_GRAPHS' data-ref="SpeedWidget::NB_GRAPHS" data-ref-filename="SpeedWidget..NB_GRAPHS">NB_GRAPHS</a>];</td></tr>
+<tr><th id="54">54</th><td>        <dfn class="decl def fn" id="_ZN11SpeedWidget9PointDataC1Ev" title='SpeedWidget::PointData::PointData' data-ref="_ZN11SpeedWidget9PointDataC1Ev" data-ref-filename="_ZN11SpeedWidget9PointDataC1Ev">PointData</dfn>()</td></tr>
+<tr><th id="55">55</th><td>        {</td></tr>
+<tr><th id="56">56</th><td>            <b>for</b> (<em>auto</em> <dfn class="local col7 decl" id="27i" title='i' data-type='int' data-ref="27i" data-ref-filename="27i">i</dfn> = <var>0</var>; <a class="local col7 ref" href="#27i" title='i' data-ref="27i" data-ref-filename="27i">i</a> &lt; <a class="enum" href="#SpeedWidget::NB_GRAPHS" title='SpeedWidget::NB_GRAPHS' data-ref="SpeedWidget::NB_GRAPHS" data-ref-filename="SpeedWidget..NB_GRAPHS">NB_GRAPHS</a>; <a class="local col7 ref" href="#27i" title='i' data-ref="27i" data-ref-filename="27i">i</a>++)</td></tr>
+<tr><th id="57">57</th><td>                <a class="member field" href="#SpeedWidget::PointData::y" title='SpeedWidget::PointData::y' data-ref="SpeedWidget::PointData::y" data-ref-filename="SpeedWidget..PointData..y">y</a>[<a class="local col7 ref" href="#27i" title='i' data-ref="27i" data-ref-filename="27i">i</a>] = <var>0</var>;</td></tr>
+<tr><th id="58">58</th><td>        }</td></tr>
+<tr><th id="59">59</th><td>    };</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <b>explicit</b> <dfn class="decl fn" id="_ZN11SpeedWidgetC1EP7QWidget" title='SpeedWidget::SpeedWidget' data-ref="_ZN11SpeedWidgetC1EP7QWidget" data-ref-filename="_ZN11SpeedWidgetC1EP7QWidget">SpeedWidget</dfn>(<span class='type' title='QWidget' data-ref="QWidget" data-ref-filename="QWidget">QWidget</span> *<dfn class="local col8 decl" id="28parent" title='parent' data-type='QWidget *' data-ref="28parent" data-ref-filename="28parent">parent</dfn> = <b>nullptr</b>);</td></tr>
+<tr><th id="62">62</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN11SpeedWidget23UpdateSpeedPlotSettingsEv" title='SpeedWidget::UpdateSpeedPlotSettings' data-ref="_ZN11SpeedWidget23UpdateSpeedPlotSettingsEv" data-ref-filename="_ZN11SpeedWidget23UpdateSpeedPlotSettingsEv">UpdateSpeedPlotSettings</dfn>();</td></tr>
+<tr><th id="63">63</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN11SpeedWidget12AddPointDataE4QMapINS_9GraphTypeElE" title='SpeedWidget::AddPointData' data-ref="_ZN11SpeedWidget12AddPointDataE4QMapINS_9GraphTypeElE" data-ref-filename="_ZN11SpeedWidget12AddPointDataE4QMapINS_9GraphTypeElE">AddPointData</dfn>(<span class='type' title='QMap' data-ref="QMap" data-ref-filename="QMap">QMap</span>&lt;<a class="type" href="#SpeedWidget" title='SpeedWidget' data-ref="SpeedWidget" data-ref-filename="SpeedWidget">SpeedWidget</a>::<a class="type" href="#SpeedWidget::GraphType" title='SpeedWidget::GraphType' data-ref="SpeedWidget::GraphType" data-ref-filename="SpeedWidget..GraphType">GraphType</a>, <em>long</em>&gt; <dfn class="local col9 decl" id="29data" title='data' data-type='QMap&lt;SpeedWidget::GraphType, long&gt;' data-ref="29data" data-ref-filename="29data">data</dfn>);</td></tr>
+<tr><th id="64">64</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN11SpeedWidget5ClearEv" title='SpeedWidget::Clear' data-ref="_ZN11SpeedWidget5ClearEv" data-ref-filename="_ZN11SpeedWidget5ClearEv">Clear</dfn>();</td></tr>
+<tr><th id="65">65</th><td>    <em>void</em> <dfn class="decl fn" id="_ZN11SpeedWidget6replotEv" title='SpeedWidget::replot' data-ref="_ZN11SpeedWidget6replotEv" data-ref-filename="_ZN11SpeedWidget6replotEv">replot</dfn>();</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>  <b>protected</b>:</td></tr>
+<tr><th id="68">68</th><td>    <em>void</em> <dfn class="virtual decl fn" id="_ZN11SpeedWidget10paintEventEP11QPaintEvent" title='SpeedWidget::paintEvent' data-ref="_ZN11SpeedWidget10paintEventEP11QPaintEvent" data-ref-filename="_ZN11SpeedWidget10paintEventEP11QPaintEvent">paintEvent</dfn>(<span class='type' title='QPaintEvent' data-ref="QPaintEvent" data-ref-filename="QPaintEvent">QPaintEvent</span> *<dfn class="local col0 decl" id="30event" title='event' data-type='QPaintEvent *' data-ref="30event" data-ref-filename="30event">event</dfn>) override;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>  <b>private</b>:</td></tr>
+<tr><th id="71">71</th><td>    <b>struct</b> <dfn class="type def" id="SpeedWidget::GraphProperties" title='SpeedWidget::GraphProperties' data-ref="SpeedWidget::GraphProperties" data-ref-filename="SpeedWidget..GraphProperties">GraphProperties</dfn></td></tr>
+<tr><th id="72">72</th><td>    {</td></tr>
+<tr><th id="73">73</th><td>        <dfn class="decl def fn" id="_ZN11SpeedWidget15GraphPropertiesC1Ev" title='SpeedWidget::GraphProperties::GraphProperties' data-ref="_ZN11SpeedWidget15GraphPropertiesC1Ev" data-ref-filename="_ZN11SpeedWidget15GraphPropertiesC1Ev">GraphProperties</dfn>(){};</td></tr>
+<tr><th id="74">74</th><td>        <dfn class="decl def fn" id="_ZN11SpeedWidget15GraphPropertiesC1ERK7QStringRK4QPen" title='SpeedWidget::GraphProperties::GraphProperties' data-ref="_ZN11SpeedWidget15GraphPropertiesC1ERK7QStringRK4QPen" data-ref-filename="_ZN11SpeedWidget15GraphPropertiesC1ERK7QStringRK4QPen">GraphProperties</dfn>(<em>const</em> <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> &amp;<dfn class="local col1 decl" id="31name" title='name' data-type='const QString &amp;' data-ref="31name" data-ref-filename="31name">name</dfn>, <em>const</em> <span class='type' title='QPen' data-ref="QPen" data-ref-filename="QPen">QPen</span> &amp;<dfn class="local col2 decl" id="32pen" title='pen' data-type='const QPen &amp;' data-ref="32pen" data-ref-filename="32pen">pen</dfn>) : <a class="member field" href="#SpeedWidget::GraphProperties::name" title='SpeedWidget::GraphProperties::name' data-ref="SpeedWidget::GraphProperties::name" data-ref-filename="SpeedWidget..GraphProperties..name">name</a><span class='ref fn' title='QString::QString' data-ref="_ZN7QStringC1ERKS_" data-ref-filename="_ZN7QStringC1ERKS_">(</span><a class="local col1 ref" href="#31name" title='name' data-ref="31name" data-ref-filename="31name">name</a>), <a class="member field" href="#SpeedWidget::GraphProperties::pen" title='SpeedWidget::GraphProperties::pen' data-ref="SpeedWidget::GraphProperties::pen" data-ref-filename="SpeedWidget..GraphProperties..pen">pen</a><span class='ref fn' title='QPen::QPen' data-ref="_ZN4QPenC1ERKS_" data-ref-filename="_ZN4QPenC1ERKS_">(</span><a class="local col2 ref" href="#32pen" title='pen' data-ref="32pen" data-ref-filename="32pen">pen</a>){};</td></tr>
+<tr><th id="75">75</th><td>        <span class='type' title='QString' data-ref="QString" data-ref-filename="QString">QString</span> <dfn class="decl field" id="SpeedWidget::GraphProperties::name" title='SpeedWidget::GraphProperties::name' data-ref="SpeedWidget::GraphProperties::name" data-ref-filename="SpeedWidget..GraphProperties..name">name</dfn>;</td></tr>
+<tr><th id="76">76</th><td>        <span class='type' title='QPen' data-ref="QPen" data-ref-filename="QPen">QPen</span> <dfn class="decl field" id="SpeedWidget::GraphProperties::pen" title='SpeedWidget::GraphProperties::pen' data-ref="SpeedWidget::GraphProperties::pen" data-ref-filename="SpeedWidget..GraphProperties..pen">pen</dfn>;</td></tr>
+<tr><th id="77">77</th><td>    };</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>    <span class='typedef' title='quint64' data-type='unsigned long long' data-ref="quint64" data-ref-filename="quint64">quint64</span> <dfn class="decl fn" id="_ZN11SpeedWidget9maxYValueEv" title='SpeedWidget::maxYValue' data-ref="_ZN11SpeedWidget9maxYValueEv" data-ref-filename="_ZN11SpeedWidget9maxYValueEv">maxYValue</dfn>();</td></tr>
+<tr><th id="80">80</th><td>    <span class='type' title='QList' data-ref="QList" data-ref-filename="QList">QList</span>&lt;<a class="type" href="#SpeedWidget::PointData" title='SpeedWidget::PointData' data-ref="SpeedWidget::PointData" data-ref-filename="SpeedWidget..PointData">PointData</a>&gt; <dfn class="decl field" id="SpeedWidget::dataCollection" title='SpeedWidget::dataCollection' data-ref="SpeedWidget::dataCollection" data-ref-filename="SpeedWidget..dataCollection">dataCollection</dfn>;</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>    <span class='type' title='QMap' data-ref="QMap" data-ref-filename="QMap">QMap</span>&lt;<a class="type" href="#SpeedWidget::GraphType" title='SpeedWidget::GraphType' data-ref="SpeedWidget::GraphType" data-ref-filename="SpeedWidget..GraphType">GraphType</a>, <a class="type" href="#SpeedWidget::GraphProperties" title='SpeedWidget::GraphProperties' data-ref="SpeedWidget::GraphProperties" data-ref-filename="SpeedWidget..GraphProperties">GraphProperties</a>&gt; <dfn class="decl field" id="SpeedWidget::m_properties" title='SpeedWidget::m_properties' data-ref="SpeedWidget::m_properties" data-ref-filename="SpeedWidget..m_properties">m_properties</dfn>;</td></tr>
+<tr><th id="83">83</th><td>};</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='/qv2ray_autogen/mocs_compilation.cpp.html'>/qv2ray_autogen/mocs_compilation.cpp</a><br/>Generated on <em>2021-Apr-27</em> from project qv2ray<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

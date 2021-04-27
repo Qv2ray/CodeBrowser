@@ -1,0 +1,19 @@
+<def f='include/grpc/impl/codegen/slice.h' l='43' ll='48'/>
+<use f='include/grpc/impl/codegen/slice.h' l='43'/>
+<size>32</size>
+<doc f='include/grpc/impl/codegen/slice.h' l='30'>/** Slice API
+
+   A slice represents a contiguous reference counted array of bytes.
+   It is cheap to take references to a slice, and it is cheap to create a
+   slice pointing to a subset of another slice.
+
+   The data-structure for slices is exposed here to allow non-gpr code to
+   build slices from whatever data they have available.
+
+   When defining interfaces that handle slices, care should be taken to define
+   reference ownership semantics (who should call unref?) and mutability
+   constraints (is the callee allowed to modify the slice?) */</doc>
+<mbr r='grpc_slice_refcount_vtable::ref' o='0' t='void (*)(void *)'/>
+<mbr r='grpc_slice_refcount_vtable::unref' o='64' t='void (*)(void *)'/>
+<mbr r='grpc_slice_refcount_vtable::eq' o='128' t='int (*)(grpc_slice, grpc_slice)'/>
+<mbr r='grpc_slice_refcount_vtable::hash' o='192' t='uint32_t (*)(grpc_slice)'/>

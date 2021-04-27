@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/curl/curl.h' l='2427' type='CURLcode curl_global_init(long flags)'/>
+<use f='qv2ray/src/components/latency/LatencyTestThread.hpp' l='36' u='c' c='_ZN6Qv2ray10components7latency17LatencyTestThread10CURLGlobalC1Ev'/>
+<doc f='include/x86_64-linux-gnu/curl/curl.h' l='2417'>/*
+ * NAME curl_global_init()
+ *
+ * DESCRIPTION
+ *
+ * curl_global_init() should be invoked exactly once for each application that
+ * uses libcurl and before any call of other libcurl functions.
+ *
+ * This function is not thread-safe!
+ */</doc>
